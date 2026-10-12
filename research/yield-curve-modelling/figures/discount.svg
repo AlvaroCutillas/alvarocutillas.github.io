@@ -1,0 +1,795 @@
+<svg role="img" aria-labelledby="discount-title discount-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="266.4pt" viewBox="0 0 792 266.4" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="discount-title">Figure 01 · Discount factors and compounding conventions</title><desc id="discount-desc">Left: three flat continuous-rate curves. Right: reference Svensson zero rates and their nominal semiannual equivalents; the difference is a convention, not a different price.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T20:19:12.081423</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="discount-figure_1">
+  <g id="discount-patch_1">
+   <path d="M 0 266.4 
+L 792 266.4 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="discount-axes_1">
+   <g id="discount-patch_2">
+    <path d="M 48.26 223.18 
+L 382.05 223.18 
+L 382.05 35.14 
+L 48.26 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="discount-matplotlib.axis_1">
+    <g id="discount-xtick_1">
+     <g id="discount-line2d_1">
+      <path d="M 63.432273 223.18 
+L 63.432273 35.14 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_2">
+      <defs>
+       <path id="discount-m4038b547d7" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#discount-m4038b547d7" x="63.432273" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="63.432273" y="237.018594" transform="rotate(-0 63.432273 237.018594)">0</text>
+     </g>
+    </g>
+    <g id="discount-xtick_2">
+     <g id="discount-line2d_3">
+      <path d="M 114.006515 223.18 
+L 114.006515 35.14 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_4">
+      <g>
+       <use href="#discount-m4038b547d7" x="114.006515" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="114.006515" y="237.018594" transform="rotate(-0 114.006515 237.018594)">5</text>
+     </g>
+    </g>
+    <g id="discount-xtick_3">
+     <g id="discount-line2d_5">
+      <path d="M 164.580758 223.18 
+L 164.580758 35.14 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_6">
+      <g>
+       <use href="#discount-m4038b547d7" x="164.580758" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="164.580758" y="237.018594" transform="rotate(-0 164.580758 237.018594)">10</text>
+     </g>
+    </g>
+    <g id="discount-xtick_4">
+     <g id="discount-line2d_7">
+      <path d="M 215.155 223.18 
+L 215.155 35.14 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_8">
+      <g>
+       <use href="#discount-m4038b547d7" x="215.155" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="215.155" y="237.018594" transform="rotate(-0 215.155 237.018594)">15</text>
+     </g>
+    </g>
+    <g id="discount-xtick_5">
+     <g id="discount-line2d_9">
+      <path d="M 265.729242 223.18 
+L 265.729242 35.14 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_10">
+      <g>
+       <use href="#discount-m4038b547d7" x="265.729242" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="265.729242" y="237.018594" transform="rotate(-0 265.729242 237.018594)">20</text>
+     </g>
+    </g>
+    <g id="discount-xtick_6">
+     <g id="discount-line2d_11">
+      <path d="M 316.303485 223.18 
+L 316.303485 35.14 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_12">
+      <g>
+       <use href="#discount-m4038b547d7" x="316.303485" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="316.303485" y="237.018594" transform="rotate(-0 316.303485 237.018594)">25</text>
+     </g>
+    </g>
+    <g id="discount-xtick_7">
+     <g id="discount-line2d_13">
+      <path d="M 366.877727 223.18 
+L 366.877727 35.14 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_14">
+      <g>
+       <use href="#discount-m4038b547d7" x="366.877727" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="366.877727" y="237.018594" transform="rotate(-0 366.877727 237.018594)">30</text>
+     </g>
+    </g>
+    <g id="discount-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="215.155" y="249.728906" transform="rotate(-0 215.155 249.728906)">Maturity (years)</text>
+    </g>
+   </g>
+   <g id="discount-matplotlib.axis_2">
+    <g id="discount-ytick_1">
+     <g id="discount-line2d_15">
+      <path d="M 48.26 219.722377 
+L 382.05 219.722377 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_16">
+      <defs>
+       <path id="discount-me44a44deae" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#discount-me44a44deae" x="48.26" y="219.722377" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="223.141674" transform="rotate(-0 41.26 223.141674)">0.2</text>
+     </g>
+    </g>
+    <g id="discount-ytick_2">
+     <g id="discount-line2d_17">
+      <path d="M 48.26 197.717989 
+L 382.05 197.717989 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_18">
+      <g>
+       <use href="#discount-me44a44deae" x="48.26" y="197.717989" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="201.137286" transform="rotate(-0 41.26 201.137286)">0.3</text>
+     </g>
+    </g>
+    <g id="discount-ytick_3">
+     <g id="discount-line2d_19">
+      <path d="M 48.26 175.713601 
+L 382.05 175.713601 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_20">
+      <g>
+       <use href="#discount-me44a44deae" x="48.26" y="175.713601" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="179.132898" transform="rotate(-0 41.26 179.132898)">0.4</text>
+     </g>
+    </g>
+    <g id="discount-ytick_4">
+     <g id="discount-line2d_21">
+      <path d="M 48.26 153.709213 
+L 382.05 153.709213 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_22">
+      <g>
+       <use href="#discount-me44a44deae" x="48.26" y="153.709213" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="157.12851" transform="rotate(-0 41.26 157.12851)">0.5</text>
+     </g>
+    </g>
+    <g id="discount-ytick_5">
+     <g id="discount-line2d_23">
+      <path d="M 48.26 131.704825 
+L 382.05 131.704825 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_24">
+      <g>
+       <use href="#discount-me44a44deae" x="48.26" y="131.704825" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="135.124122" transform="rotate(-0 41.26 135.124122)">0.6</text>
+     </g>
+    </g>
+    <g id="discount-ytick_6">
+     <g id="discount-line2d_25">
+      <path d="M 48.26 109.700437 
+L 382.05 109.700437 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_26">
+      <g>
+       <use href="#discount-me44a44deae" x="48.26" y="109.700437" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="113.119734" transform="rotate(-0 41.26 113.119734)">0.7</text>
+     </g>
+    </g>
+    <g id="discount-ytick_7">
+     <g id="discount-line2d_27">
+      <path d="M 48.26 87.696049 
+L 382.05 87.696049 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_28">
+      <g>
+       <use href="#discount-me44a44deae" x="48.26" y="87.696049" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="91.115346" transform="rotate(-0 41.26 91.115346)">0.8</text>
+     </g>
+    </g>
+    <g id="discount-ytick_8">
+     <g id="discount-line2d_29">
+      <path d="M 48.26 65.691661 
+L 382.05 65.691661 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_30">
+      <g>
+       <use href="#discount-me44a44deae" x="48.26" y="65.691661" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="69.110958" transform="rotate(-0 41.26 69.110958)">0.9</text>
+     </g>
+    </g>
+    <g id="discount-ytick_9">
+     <g id="discount-line2d_31">
+      <path d="M 48.26 43.687273 
+L 382.05 43.687273 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_32">
+      <g>
+       <use href="#discount-me44a44deae" x="48.26" y="43.687273" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="47.10657" transform="rotate(-0 41.26 47.10657)">1.0</text>
+     </g>
+    </g>
+    <g id="discount-text_18">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.075469" y="129.16" transform="rotate(-90 21.075469 129.16)">Discount factor</text>
+    </g>
+   </g>
+   <g id="discount-line2d_33">
+    <path d="M 63.432273 43.687273 
+L 96.30553 50.723737 
+L 129.68453 57.638265 
+L 163.569273 64.428013 
+L 197.959758 71.090417 
+L 232.855985 77.623184 
+L 268.257955 84.024291 
+L 304.165667 90.291975 
+L 341.084864 96.508365 
+L 366.877727 100.718637 
+L 366.877727 100.718637 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="discount-line2d_34">
+    <path d="M 63.432273 43.687273 
+L 75.064348 51.149326 
+L 87.202167 58.666157 
+L 99.339985 65.917195 
+L 111.477803 72.911839 
+L 124.121364 79.935055 
+L 136.764924 86.699777 
+L 149.408485 93.21552 
+L 162.557788 99.737622 
+L 175.707091 106.010258 
+L 188.856394 112.042971 
+L 202.511439 118.063602 
+L 216.166485 123.845268 
+L 230.327273 129.598806 
+L 244.488061 135.115698 
+L 259.154591 140.59053 
+L 273.821121 145.832312 
+L 288.993394 151.020158 
+L 304.671409 156.141231 
+L 320.349424 161.029627 
+L 336.533182 165.842858 
+L 353.222682 170.570358 
+L 366.877727 174.267988 
+L 366.877727 174.267988 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="discount-line2d_35">
+    <path d="M 63.432273 43.687273 
+L 71.524152 52.315317 
+L 79.61603 60.60505 
+L 87.707909 68.569739 
+L 95.799788 76.222127 
+L 103.891667 83.574461 
+L 111.983545 90.638506 
+L 120.581167 97.840811 
+L 129.178788 104.743431 
+L 137.776409 111.358836 
+L 146.37403 117.698977 
+L 154.971652 123.775308 
+L 164.075015 129.933718 
+L 173.178379 135.821142 
+L 182.281742 141.449504 
+L 191.890848 147.122092 
+L 201.499955 152.531531 
+L 211.109061 157.690029 
+L 221.223909 162.861716 
+L 231.338758 167.781176 
+L 241.453606 172.460712 
+L 252.074197 177.128801 
+L 262.694788 181.558137 
+L 273.821121 185.955614 
+L 284.947455 190.11776 
+L 296.57953 194.231137 
+L 308.717348 198.278503 
+L 320.855167 202.090169 
+L 333.498727 205.824807 
+L 346.64803 209.469001 
+L 359.797333 212.883856 
+L 366.877727 214.632727 
+L 366.877727 214.632727 
+" clip-path="url(#discount-p88113855a3)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="discount-patch_3">
+    <path d="M 48.26 223.18 
+L 48.26 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="discount-patch_4">
+    <path d="M 48.26 223.18 
+L 382.05 223.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="discount-text_19">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="48.26" y="22.14" transform="rotate(-0 48.26 22.14)">Time changes the value of a unit</text>
+   </g>
+   <g id="discount-legend_1">
+    <g id="discount-line2d_36">
+     <path d="M 302.68625 45.61875 
+L 310.68625 45.61875 
+L 318.68625 45.61875 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="discount-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="325.08625" y="48.41875" transform="rotate(-0 325.08625 48.41875)">Flat zero 1%</text>
+    </g>
+    <g id="discount-line2d_37">
+     <path d="M 302.68625 57.36125 
+L 310.68625 57.36125 
+L 318.68625 57.36125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="discount-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="325.08625" y="60.16125" transform="rotate(-0 325.08625 60.16125)">Flat zero 3%</text>
+    </g>
+    <g id="discount-line2d_38">
+     <path d="M 302.68625 69.10375 
+L 310.68625 69.10375 
+L 318.68625 69.10375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="discount-text_22">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="325.08625" y="71.90375" transform="rotate(-0 325.08625 71.90375)">Flat zero 5%</text>
+    </g>
+   </g>
+  </g>
+  <g id="discount-axes_2">
+   <g id="discount-patch_5">
+    <path d="M 444.71 223.18 
+L 778.5 223.18 
+L 778.5 35.14 
+L 444.71 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="discount-matplotlib.axis_3">
+    <g id="discount-xtick_8">
+     <g id="discount-line2d_39">
+      <path d="M 459.882273 223.18 
+L 459.882273 35.14 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_40">
+      <g>
+       <use href="#discount-m4038b547d7" x="459.882273" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="459.882273" y="237.018594" transform="rotate(-0 459.882273 237.018594)">0</text>
+     </g>
+    </g>
+    <g id="discount-xtick_9">
+     <g id="discount-line2d_41">
+      <path d="M 510.456515 223.18 
+L 510.456515 35.14 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_42">
+      <g>
+       <use href="#discount-m4038b547d7" x="510.456515" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="510.456515" y="237.018594" transform="rotate(-0 510.456515 237.018594)">5</text>
+     </g>
+    </g>
+    <g id="discount-xtick_10">
+     <g id="discount-line2d_43">
+      <path d="M 561.030758 223.18 
+L 561.030758 35.14 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_44">
+      <g>
+       <use href="#discount-m4038b547d7" x="561.030758" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="561.030758" y="237.018594" transform="rotate(-0 561.030758 237.018594)">10</text>
+     </g>
+    </g>
+    <g id="discount-xtick_11">
+     <g id="discount-line2d_45">
+      <path d="M 611.605 223.18 
+L 611.605 35.14 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_46">
+      <g>
+       <use href="#discount-m4038b547d7" x="611.605" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="611.605" y="237.018594" transform="rotate(-0 611.605 237.018594)">15</text>
+     </g>
+    </g>
+    <g id="discount-xtick_12">
+     <g id="discount-line2d_47">
+      <path d="M 662.179242 223.18 
+L 662.179242 35.14 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_48">
+      <g>
+       <use href="#discount-m4038b547d7" x="662.179242" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="662.179242" y="237.018594" transform="rotate(-0 662.179242 237.018594)">20</text>
+     </g>
+    </g>
+    <g id="discount-xtick_13">
+     <g id="discount-line2d_49">
+      <path d="M 712.753485 223.18 
+L 712.753485 35.14 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_50">
+      <g>
+       <use href="#discount-m4038b547d7" x="712.753485" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="712.753485" y="237.018594" transform="rotate(-0 712.753485 237.018594)">25</text>
+     </g>
+    </g>
+    <g id="discount-xtick_14">
+     <g id="discount-line2d_51">
+      <path d="M 763.327727 223.18 
+L 763.327727 35.14 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_52">
+      <g>
+       <use href="#discount-m4038b547d7" x="763.327727" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="763.327727" y="237.018594" transform="rotate(-0 763.327727 237.018594)">30</text>
+     </g>
+    </g>
+    <g id="discount-text_30">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="611.605" y="249.728906" transform="rotate(-0 611.605 249.728906)">Maturity (years)</text>
+    </g>
+   </g>
+   <g id="discount-matplotlib.axis_4">
+    <g id="discount-ytick_10">
+     <g id="discount-line2d_53">
+      <path d="M 444.71 214.632727 
+L 778.5 214.632727 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_54">
+      <g>
+       <use href="#discount-me44a44deae" x="444.71" y="214.632727" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="218.052024" transform="rotate(-0 437.71 218.052024)">1.50%</text>
+     </g>
+    </g>
+    <g id="discount-ytick_11">
+     <g id="discount-line2d_55">
+      <path d="M 444.71 190.153022 
+L 778.5 190.153022 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_56">
+      <g>
+       <use href="#discount-me44a44deae" x="444.71" y="190.153022" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="193.572319" transform="rotate(-0 437.71 193.572319)">1.75%</text>
+     </g>
+    </g>
+    <g id="discount-ytick_12">
+     <g id="discount-line2d_57">
+      <path d="M 444.71 165.673316 
+L 778.5 165.673316 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_58">
+      <g>
+       <use href="#discount-me44a44deae" x="444.71" y="165.673316" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="169.092613" transform="rotate(-0 437.71 169.092613)">2.00%</text>
+     </g>
+    </g>
+    <g id="discount-ytick_13">
+     <g id="discount-line2d_59">
+      <path d="M 444.71 141.193611 
+L 778.5 141.193611 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_60">
+      <g>
+       <use href="#discount-me44a44deae" x="444.71" y="141.193611" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="144.612908" transform="rotate(-0 437.71 144.612908)">2.25%</text>
+     </g>
+    </g>
+    <g id="discount-ytick_14">
+     <g id="discount-line2d_61">
+      <path d="M 444.71 116.713905 
+L 778.5 116.713905 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_62">
+      <g>
+       <use href="#discount-me44a44deae" x="444.71" y="116.713905" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_35">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="120.133202" transform="rotate(-0 437.71 120.133202)">2.50%</text>
+     </g>
+    </g>
+    <g id="discount-ytick_15">
+     <g id="discount-line2d_63">
+      <path d="M 444.71 92.2342 
+L 778.5 92.2342 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_64">
+      <g>
+       <use href="#discount-me44a44deae" x="444.71" y="92.2342" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_36">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="95.653497" transform="rotate(-0 437.71 95.653497)">2.75%</text>
+     </g>
+    </g>
+    <g id="discount-ytick_16">
+     <g id="discount-line2d_65">
+      <path d="M 444.71 67.754494 
+L 778.5 67.754494 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_66">
+      <g>
+       <use href="#discount-me44a44deae" x="444.71" y="67.754494" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_37">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="71.173791" transform="rotate(-0 437.71 71.173791)">3.00%</text>
+     </g>
+    </g>
+    <g id="discount-ytick_17">
+     <g id="discount-line2d_67">
+      <path d="M 444.71 43.274789 
+L 778.5 43.274789 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="discount-line2d_68">
+      <g>
+       <use href="#discount-me44a44deae" x="444.71" y="43.274789" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="discount-text_38">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="46.694086" transform="rotate(-0 437.71 46.694086)">3.25%</text>
+     </g>
+    </g>
+    <g id="discount-text_39">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="403.247812" y="129.16" transform="rotate(-90 403.247812 129.16)">Annual rate</text>
+    </g>
+   </g>
+   <g id="discount-line2d_69">
+    <path d="M 459.882273 214.632727 
+L 461.905242 191.01851 
+L 463.928212 170.462219 
+L 465.951182 152.590372 
+L 467.974152 137.074109 
+L 469.997121 123.623902 
+L 472.020091 111.984891 
+L 474.043061 101.932771 
+L 476.06603 93.270167 
+L 478.089 85.823432 
+L 480.11197 79.43983 
+L 482.134939 73.985051 
+L 484.157909 69.341013 
+L 486.180879 65.403938 
+L 488.203848 62.08264 
+L 490.226818 59.297028 
+L 492.249788 56.976779 
+L 494.272758 55.060175 
+L 496.295727 53.49307 
+L 498.318697 52.227985 
+L 500.341667 51.223307 
+L 502.364636 50.442591 
+L 504.893348 49.733424 
+L 507.422061 49.270971 
+L 510.456515 48.978357 
+L 513.49097 48.910994 
+L 517.031167 49.047006 
+L 521.582848 49.460652 
+L 527.651758 50.263274 
+L 556.479076 54.408713 
+L 565.076697 55.253042 
+L 573.674318 55.864945 
+L 582.777682 56.27641 
+L 592.386788 56.476772 
+L 602.501636 56.46649 
+L 614.133712 56.225211 
+L 627.283015 55.721903 
+L 642.96103 54.889168 
+L 662.684985 53.607714 
+L 693.02953 51.386147 
+L 756.753076 46.691888 
+L 763.327727 46.238676 
+L 763.327727 46.238676 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="discount-line2d_70">
+    <path d="M 459.882273 214.080554 
+L 461.905242 190.274215 
+L 463.928212 169.527297 
+L 465.951182 151.472011 
+L 467.974152 135.783119 
+L 469.997121 122.173208 
+L 472.020091 110.388452 
+L 474.043061 100.204821 
+L 476.06603 91.42469 
+L 478.089 83.873819 
+L 480.11197 77.398662 
+L 482.134939 71.863977 
+L 484.157909 67.150694 
+L 486.180879 63.15404 
+L 488.203848 59.781856 
+L 490.226818 56.953124 
+L 492.249788 54.596653 
+L 494.272758 52.649917 
+L 496.295727 51.058033 
+L 498.318697 49.772851 
+L 500.341667 48.752155 
+L 502.364636 47.958955 
+L 504.893348 47.23842 
+L 507.422061 46.76854 
+L 510.456515 46.471221 
+L 513.49097 46.402775 
+L 517.031167 46.540974 
+L 521.582848 46.961269 
+L 527.651758 47.776765 
+L 555.973333 51.93029 
+L 564.065212 52.757341 
+L 572.662833 53.406098 
+L 581.260455 53.831706 
+L 590.363818 54.064508 
+L 600.478667 54.096937 
+L 611.605 53.905077 
+L 624.248561 53.458634 
+L 638.915091 52.714258 
+L 657.121818 51.561206 
+L 683.420424 49.649661 
+L 763.327727 43.687273 
+L 763.327727 43.687273 
+" clip-path="url(#discount-p6c41f08960)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="discount-patch_6">
+    <path d="M 444.71 223.18 
+L 444.71 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="discount-patch_7">
+    <path d="M 444.71 223.18 
+L 778.5 223.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="discount-text_40">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="444.71" y="22.14" transform="rotate(-0 444.71 22.14)">Same discount factors, different quotation</text>
+   </g>
+   <g id="discount-legend_2">
+    <g id="discount-line2d_71">
+     <path d="M 666.925 199.77375 
+L 674.925 199.77375 
+L 682.925 199.77375 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="discount-text_41">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="689.325" y="202.57375" transform="rotate(-0 689.325 202.57375)">Continuous zero</text>
+    </g>
+    <g id="discount-line2d_72">
+     <path d="M 666.925 211.51625 
+L 674.925 211.51625 
+L 682.925 211.51625 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="discount-text_42">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="689.325" y="214.31625" transform="rotate(-0 689.325 214.31625)">Nominal semiannual</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="discount-p88113855a3">
+   <rect x="48.26" y="35.14" width="333.79" height="188.04"/>
+  </clipPath>
+  <clipPath id="discount-p6c41f08960">
+   <rect x="444.71" y="35.14" width="333.79" height="188.04"/>
+  </clipPath>
+ </defs>
+</svg>

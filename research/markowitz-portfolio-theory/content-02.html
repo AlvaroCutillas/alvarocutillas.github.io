@@ -1,0 +1,90 @@
+<section id="two-assets" data-title="Two-asset diversification">
+<div class="section-label">06 / Diversification</div><h2>Two-asset diversification</h2>
+<p>With weight \(w\) in asset A and \(1-w\) in B, the mean is affine in the weight and the variance is quadratic:</p>
+\[ \mu_p=w\mu_A+(1-w)\mu_B,\quad \sigma_p^2=w^2\sigma_A^2+(1-w)^2\sigma_B^2+2w(1-w)\rho\sigma_A\sigma_B. \]
+<p>This small example contains the essential mechanism of diversification. When correlation is less than one, portfolio volatility can lie below the weighted average of individual volatilities. The reduction reflects partially offsetting deviations, not a change in either asset's marginal distribution.</p>
+<h3>Perfect positive correlation</h3>
+<p>For nonnegative weights and \(\rho=1\), volatility is \(w\sigma_A+(1-w)\sigma_B\). There is no diversification benefit relative to that weighted average. With short positions, the formula becomes the absolute value of a signed sum; cancellation can arise, but its return implications and financing assumptions require separate analysis.</p>
+<h3>Perfect negative correlation</h3>
+<p>At \(\rho=-1\), variance is a squared difference. The nonnegative weight that eliminates the random variation is</p>
+\[ \sigma_p^2=[w\sigma_A-(1-w)\sigma_B]^2,\qquad w^\star=\frac{\sigma_B}{\sigma_A+\sigma_B}. \]
+<p>For volatilities 10% and 20%, the zero-variance combination puts two-thirds in A and one-third in B. This is an idealised singular covariance model. It does not imply that a historical correlation close to minus one guarantees a risk-free payoff in future periods. If a genuinely deterministic combination is attainable, its return must also be considered in relation to the available risk-free opportunity and financing constraints.</p>
+{{figure:correlation}}
+<h3>The minimum-variance weight</h3>
+<p>Differentiate the variance with respect to \(w\), set the derivative to zero, and solve:</p>
+\[ w_{\mathrm{GMV}}=\frac{\sigma_B^2-\rho\sigma_A\sigma_B}{\sigma_A^2+\sigma_B^2-2\rho\sigma_A\sigma_B}. \]
+<p>The denominator is the variance of \(R_A-R_B\). A strictly positive denominator gives a unique unconstrained minimum along the budget line. The resulting weight need not lie between zero and one. If long-only investment is required, minimise the convex quadratic on \([0,1]\), which amounts here to clipping the scalar minimiser to that interval. Clipping general multi-asset weights and renormalising is not an equivalent optimisation procedure.</p>
+<div class="callout"><p><strong>Analogy: balancing two weather-sensitive businesses.</strong> An outdoor café and an indoor cinema may react differently to rainy days. Combining them can stabilise total revenue even though neither business becomes less variable. The strength and reliability of that offset matter more than merely counting the two businesses.</p></div>
+<p>Changing correlation while holding means and volatilities fixed is a useful comparative experiment. In real data, those parameters can change together. The plotted family isolates covariance's role; it should not be interpreted as a forecast of which pair of assets will retain a particular correlation.</p>
+</section>
+
+<section id="diversification-limits" data-title="Diversification limits and factor dependence">
+<div class="section-label">07 / Portfolio breadth</div><h2>Diversification limits and factor dependence</h2>
+<p>Consider \(n\) equal-weighted assets, each with variance \(\sigma^2\) and the same pairwise correlation \(\rho\). Counting diagonal and off-diagonal covariance terms gives</p>
+\[ \sigma_p^2=\frac{\sigma^2}{n}+\frac{n(n-1)}{n^2}\rho\sigma^2=\sigma^2\left[\rho+\frac{1-\rho}{n}\right]. \]
+<p>At zero correlation, volatility decreases as \(1/\sqrt n\). With a fixed positive correlation, variance approaches \(\rho\sigma^2\), leaving a nonzero common-risk floor. More holdings diversify the component that is not shared; they do not eliminate the covariance that every pair retains.</p>
+{{figure:breadth}}
+<h3>Correlation must remain admissible</h3>
+<p>An equal-correlation matrix is positive semidefinite only if \(-1/(n-1)\le\rho\le1\). A fixed negative correlation cannot therefore be extended to arbitrarily many assets. Plugging a negative constant into the large-\(n\) limit and obtaining negative variance is a sign that the assumed joint distribution has become impossible.</p>
+<h3>A factor interpretation</h3>
+<p>Suppose asset returns have exposures to a common factor \(F\) and residuals \(\varepsilon_i\):</p>
+\[ R_i=\alpha_i+\beta_iF+\varepsilon_i,\qquad \operatorname{Cov}(F,\varepsilon_i)=0. \]
+<p>If residuals are mutually uncorrelated, their weighted variance decreases as capital is spread across sufficiently small positions. The portfolio factor exposure remains \(\sum_iw_i\beta_i\), so a portfolio containing hundreds of assets can retain substantial market, duration, currency or sector risk.</p>
+\[ \operatorname{Var}(R_p)=\left(\sum_iw_i\beta_i\right)^2\operatorname{Var}(F)+\sum_iw_i^2\operatorname{Var}(\varepsilon_i). \]
+<p>Factor models generalise this identity to several drivers and residual covariance. Their structure can make covariance estimation more economical, but omitted factors and unstable loadings remain possible. A factor model is an assumption about dependence, not proof that its residual risk is harmless.</p>
+<h3>Concentration and effective breadth</h3>
+<p>For equal standalone variance and uncorrelated returns, portfolio variance is proportional to \(\sum_iw_i^2\). The inverse concentration \(1/\sum_iw_i^2\) is an effective number of capital positions for nonnegative normalised weights. It says little about common-factor concentration: ten equally weighted assets can behave almost like one if their returns are highly correlated.</p>
+<p>Counting tickers, sectors or funds can also double-count exposure when their holdings overlap. Risk diversification concerns economic drivers and joint outcomes. It may fail precisely when correlations and volatilities increase during a shared stress. Scenario analysis complements the covariance summary by asking which mechanisms could make those exposures move together.</p>
+</section>
+
+<section id="efficiency" data-title="Mean–variance efficiency and feasible portfolios">
+<div class="section-label">08 / Opportunity sets</div><h2>Mean–variance efficiency and feasible portfolios</h2>
+<p>A feasible portfolio satisfies the stated budget and investment restrictions. Its point in the risk–return plane has horizontal coordinate \(\sigma_p\) and vertical coordinate \(\mu_p\). A portfolio is mean–variance dominated if another feasible portfolio has at least as much expected return and no more variance, with one strict improvement.</p>
+<p>The efficient set contains the undominated portfolios. This definition is relative to the feasible set and supplied moments. A portfolio can be efficient under one constraint set and inefficient when additional assets or financing opportunities are allowed.</p>
+{{figure:feasible}}
+<h3>Boundary versus frontier</h3>
+<p>For each exact expected return, one can find the minimum attainable variance. Collecting those solutions gives the minimum-variance boundary. Under the usual unrestricted, nondegenerate model it has an upper and a lower branch around the global minimum-variance portfolio. Only the upper branch is efficient for an investor who prefers higher mean and lower variance.</p>
+<p>A lower-branch portfolio can minimise variance at its own exact target while still be dominated by an upper-branch portfolio at the same volatility. This distinction explains why solving many equality-constrained target problems does not make every plotted point an efficient investment choice.</p>
+<h3>Random clouds and numerical frontiers</h3>
+<p>A random portfolio cloud visualises feasible combinations, but a sparse sample does not establish the optimum. Sampling weights uniformly from a simplex also differs from sampling each weight independently and normalising. The plotted cloud is illustrative; its boundary is calculated by optimisation.</p>
+<p>Increasing the cloud size may reveal better portfolios without reaching an exact boundary. It can miss narrow regions and corner solutions. A numerical frontier should report constraint feasibility and optimality conditions, rather than rely on how convincingly a curve appears to trace the outer cloud.</p>
+<h3>Variance and volatility axes</h3>
+<p>Variance and volatility preserve the ordering of risk for nonnegative values, but change the geometry of plots. A quadratic expression in expected return appears as a parabola in variance coordinates and as a hyperbolic boundary in volatility coordinates. A capital allocation line is linear in volatility along a positive risky-allocation ray, not in variance.</p>
+<p>The frontier describes possible trade-offs. It does not identify a uniquely best portfolio without an investor objective, a required return or additional preferences. Calling the highest-return point “optimal” ignores risk; calling the lowest-volatility point “optimal” implicitly chooses a risk-minimisation objective.</p>
+</section>
+
+<section id="preferences" data-title="Preferences, utility and model assumptions">
+<div class="section-label">09 / Investor objectives</div><h2>Preferences, utility and model assumptions</h2>
+<p>The mean–variance framework can be used directly as a preference model or derived under particular distributional and utility assumptions. A common objective is</p>
+\[ U(w)=w^\mathsf{T}\mu-\frac{\gamma}{2}w^\mathsf{T}\Sigma w,\qquad \gamma>0. \]
+<p>The parameter \(\gamma\) trades expected return against variance. It is not an observable market constant. Its interpretation depends on return units, the horizon and whether utility is applied to returns or wealth. Decimal inputs must be used consistently; substituting percentage numbers without changing the objective's scale changes the effective risk preference.</p>
+{{figure:utility}}
+<h3>When moments are sufficient</h3>
+<p>If portfolio returns are normal, their mean and variance determine the entire distribution. With exponential utility of normally distributed wealth, expected utility is exactly represented by a certainty equivalent involving mean minus a variance penalty. This is a specific model of preferences and outcomes, not a statement that all investors should use variance.</p>
+<p>Quadratic utility makes expected utility depend on the first two moments for any distribution with those moments, but eventually decreases with increasing wealth beyond its turning point. Its economic use therefore requires attention to the relevant range. A second-order Taylor expansion of a general smooth utility also produces a local mean–variance approximation, with accuracy depending on higher moments and the size of the risk.</p>
+<h3>What the classical model leaves out</h3>
+<p>The basic problem is single-period, uses fixed initial weights, and treats supplied moments as the decision inputs. It does not automatically represent taxes, external contributions, changing investment opportunities, state-dependent financing, liabilities, transaction costs or an investor's preference for avoiding specific losses.</p>
+<p>Finite variance is necessary for the covariance objective. Heavy tails can make sample estimates unstable even when population variance exists, and infinite variance makes the conventional quadratic risk measure unavailable. Skewness, drawdowns and tail dependence can distinguish portfolios with similar first two moments.</p>
+<h3>Preferences and dominance</h3>
+<p>An efficient portfolio is a candidate for an increasing-in-mean, decreasing-in-variance preference. It does not necessarily dominate another portfolio for every expected-utility investor. Mean–variance dominance is a statement about two summaries; stochastic dominance compares fuller distributions under corresponding preference classes.</p>
+<div class="callout"><p><strong>Analogy: choosing a route by average travel time and reliability.</strong> One route may be faster on average but less predictable. A traveller with a strict arrival deadline and a traveller who dislikes ordinary delays may value that uncertainty differently. A frontier lists the trade-offs; a preference determines the choice.</p></div>
+<p>Investment objectives should be formulated before optimisation. A required terminal liability, a benchmark tracking mandate or a downside-loss constraint may be more relevant than an arbitrary target return. Those can often be expressed in an extended optimisation model, but they should not be hidden inside an unexplained choice of \(\gamma\).</p>
+</section>
+
+<section id="formulations" data-title="Mean–variance optimisation formulations">
+<div class="section-label">10 / Mathematical programmes</div><h2>Mean–variance optimisation formulations</h2>
+<p>Several related optimisation problems describe different ways to choose a point on the opportunity set. The equality-constrained minimum-variance problem fixes an exact target \(m\):</p>
+\[ \min_w\frac12w^\mathsf{T}\Sigma w\quad\text{subject to }\mathbf{1}^\mathsf{T}w=1,\ \mu^\mathsf{T}w=m. \]
+<p>The factor one-half simplifies derivatives and does not change the minimiser. With positive-definite covariance and independent budget and return constraints, a feasible equality problem has a unique solution. Long-only or position-limit constraints can make some targets infeasible.</p>
+<h3>Exact targets versus minimum requirements</h3>
+<p>A requirement of at least \(m\) uses \(\mu^\mathsf{T}w\ge m\). If \(m\) is below the feasible global minimum-variance return, the requirement is slack and the GMV portfolio remains optimal. An exact target below that return instead forces a lower-branch allocation. The two problems agree on the ordinary efficient branch when the requirement binds, but not everywhere.</p>
+\[ \min_w\frac12w^\mathsf{T}\Sigma w\quad\text{subject to }\mathbf{1}^\mathsf{T}w=1,\ \mu^\mathsf{T}w\ge m. \]
+<h3>Risk budgets and penalised objectives</h3>
+<p>One can maximise mean subject to a variance budget, or maximise mean minus a variance penalty. With appropriate convexity and regularity, varying the budget or penalty traces supported efficient choices. Flat objectives, degeneracy and binding constraints can complicate one-to-one parameter mappings.</p>
+\[ \max_w\mu^\mathsf{T}w\quad\text{subject to }\mathbf{1}^\mathsf{T}w=1,\ w^\mathsf{T}\Sigma w\le v. \]
+\[ \max_w\left(\mu^\mathsf{T}w-\frac{\gamma}{2}w^\mathsf{T}\Sigma w\right)\quad\text{subject to }\mathbf{1}^\mathsf{T}w=1. \]
+<p>These are convex optimisation problems in the standard sense when covariance is positive semidefinite: minimising a convex quadratic, or maximising a concave objective over a convex feasible set. For a risk-budget problem, feasibility requires a budget at least as large as the minimum attainable variance under the other constraints.</p>
+<h3>Target selection and interpretation</h3>
+<p>A target should be economically meaningful and expressed in the same return convention as the forecasts. With unrestricted short selling, a mathematically attainable extreme mean may require unrealistic gross exposure. With long-only weights, feasible means lie in the asset-mean range; concentration limits narrow that range further.</p>
+<p>The objective and constraints define the answer. Changing any of them changes the problem, rather than merely adjusting a numerical setting. The laboratory reports an exact-target solution and separately states whether it lies on the efficient branch. This avoids labelling every feasible target as an efficient allocation.</p>
+</section>

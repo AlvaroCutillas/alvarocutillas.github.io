@@ -1,0 +1,780 @@
+<svg role="img" aria-labelledby="profile-title profile-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="266.4pt" viewBox="0 0 792 266.4" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="profile-title">Figure 13 · Profile optimization and identification</title><desc id="profile-desc">The one-dimensional Nelson–Siegel profile separates linear rate coefficients from the nonlinear decay parameter. A low residual and a well-conditioned design answer different questions.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T20:19:14.079393</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="profile-figure_1">
+  <g id="profile-patch_1">
+   <path d="M 0 266.4 
+L 792 266.4 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="profile-axes_1">
+   <g id="profile-patch_2">
+    <path d="M 54.02 220.588 
+L 383.548488 220.588 
+L 383.548488 35.14 
+L 54.02 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="profile-matplotlib.axis_1">
+    <g id="profile-xtick_1">
+     <g id="profile-line2d_1">
+      <path d="M 204.323022 220.588 
+L 204.323022 35.14 
+" clip-path="url(#profile-p2b160e090a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="profile-line2d_2">
+      <defs>
+       <path id="profile-m0c8deac8db" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#profile-m0c8deac8db" x="204.323022" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="profile-text_1">
+      <!-- $\mathdefault{10^{0}}$ -->
+      <g style="fill: #939b94" transform="translate(196.403022 234.426594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_2">
+     <g id="profile-line2d_3">
+      <path d="M 368.56992 220.588 
+L 368.56992 35.14 
+" clip-path="url(#profile-p2b160e090a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="profile-line2d_4">
+      <g>
+       <use href="#profile-m0c8deac8db" x="368.56992" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="profile-text_2">
+      <!-- $\mathdefault{10^{1}}$ -->
+      <g style="fill: #939b94" transform="translate(360.64992 234.426594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.40625">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_3">
+     <g id="profile-line2d_5">
+      <defs>
+       <path id="profile-m56b7b1a8c4" d="M 0 0 
+L 0 2 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="89.519368" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_4">
+     <g id="profile-line2d_6">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="118.441811" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_5">
+     <g id="profile-line2d_7">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="138.96261" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_6">
+     <g id="profile-line2d_8">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="154.879779" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_7">
+     <g id="profile-line2d_9">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="167.885054" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_8">
+     <g id="profile-line2d_10">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="178.880856" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_9">
+     <g id="profile-line2d_11">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="188.405853" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_10">
+     <g id="profile-line2d_12">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="196.807497" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_11">
+     <g id="profile-line2d_13">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="253.766265" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_12">
+     <g id="profile-line2d_14">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="282.688708" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_13">
+     <g id="profile-line2d_15">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="303.209508" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_14">
+     <g id="profile-line2d_16">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="319.126677" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_15">
+     <g id="profile-line2d_17">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="332.131951" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_16">
+     <g id="profile-line2d_18">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="343.127754" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_17">
+     <g id="profile-line2d_19">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="352.652751" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_18">
+     <g id="profile-line2d_20">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="361.054394" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-text_3">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="218.784244" y="247.136906" transform="rotate(-0 218.784244 247.136906)">Decay time τ (years)</text>
+    </g>
+   </g>
+   <g id="profile-matplotlib.axis_2">
+    <g id="profile-ytick_1">
+     <g id="profile-line2d_21">
+      <path d="M 54.02 210.684083 
+L 383.548488 210.684083 
+" clip-path="url(#profile-p2b160e090a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="profile-line2d_22">
+      <defs>
+       <path id="profile-m0cfd2514a4" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#profile-m0cfd2514a4" x="54.02" y="210.684083" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="profile-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="214.10338" transform="rotate(-0 47.02 214.10338)">2.5</text>
+     </g>
+    </g>
+    <g id="profile-ytick_2">
+     <g id="profile-line2d_23">
+      <path d="M 54.02 190.059886 
+L 383.548488 190.059886 
+" clip-path="url(#profile-p2b160e090a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="profile-line2d_24">
+      <g>
+       <use href="#profile-m0cfd2514a4" x="54.02" y="190.059886" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="profile-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="193.479183" transform="rotate(-0 47.02 193.479183)">5.0</text>
+     </g>
+    </g>
+    <g id="profile-ytick_3">
+     <g id="profile-line2d_25">
+      <path d="M 54.02 169.435689 
+L 383.548488 169.435689 
+" clip-path="url(#profile-p2b160e090a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="profile-line2d_26">
+      <g>
+       <use href="#profile-m0cfd2514a4" x="54.02" y="169.435689" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="profile-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="172.854986" transform="rotate(-0 47.02 172.854986)">7.5</text>
+     </g>
+    </g>
+    <g id="profile-ytick_4">
+     <g id="profile-line2d_27">
+      <path d="M 54.02 148.811492 
+L 383.548488 148.811492 
+" clip-path="url(#profile-p2b160e090a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="profile-line2d_28">
+      <g>
+       <use href="#profile-m0cfd2514a4" x="54.02" y="148.811492" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="profile-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="152.230789" transform="rotate(-0 47.02 152.230789)">10.0</text>
+     </g>
+    </g>
+    <g id="profile-ytick_5">
+     <g id="profile-line2d_29">
+      <path d="M 54.02 128.187294 
+L 383.548488 128.187294 
+" clip-path="url(#profile-p2b160e090a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="profile-line2d_30">
+      <g>
+       <use href="#profile-m0cfd2514a4" x="54.02" y="128.187294" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="profile-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="131.606591" transform="rotate(-0 47.02 131.606591)">12.5</text>
+     </g>
+    </g>
+    <g id="profile-ytick_6">
+     <g id="profile-line2d_31">
+      <path d="M 54.02 107.563097 
+L 383.548488 107.563097 
+" clip-path="url(#profile-p2b160e090a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="profile-line2d_32">
+      <g>
+       <use href="#profile-m0cfd2514a4" x="54.02" y="107.563097" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="profile-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="110.982394" transform="rotate(-0 47.02 110.982394)">15.0</text>
+     </g>
+    </g>
+    <g id="profile-ytick_7">
+     <g id="profile-line2d_33">
+      <path d="M 54.02 86.9389 
+L 383.548488 86.9389 
+" clip-path="url(#profile-p2b160e090a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="profile-line2d_34">
+      <g>
+       <use href="#profile-m0cfd2514a4" x="54.02" y="86.9389" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="profile-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="90.358197" transform="rotate(-0 47.02 90.358197)">17.5</text>
+     </g>
+    </g>
+    <g id="profile-ytick_8">
+     <g id="profile-line2d_35">
+      <path d="M 54.02 66.314703 
+L 383.548488 66.314703 
+" clip-path="url(#profile-p2b160e090a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="profile-line2d_36">
+      <g>
+       <use href="#profile-m0cfd2514a4" x="54.02" y="66.314703" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="profile-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="69.734" transform="rotate(-0 47.02 69.734)">20.0</text>
+     </g>
+    </g>
+    <g id="profile-ytick_9">
+     <g id="profile-line2d_37">
+      <path d="M 54.02 45.690506 
+L 383.548488 45.690506 
+" clip-path="url(#profile-p2b160e090a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="profile-line2d_38">
+      <g>
+       <use href="#profile-m0cfd2514a4" x="54.02" y="45.690506" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="profile-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="49.109802" transform="rotate(-0 47.02 49.109802)">22.5</text>
+     </g>
+    </g>
+    <g id="profile-text_13">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.109219" y="127.864" transform="rotate(-90 21.109219 127.864)">RMSE (basis points)</text>
+    </g>
+   </g>
+   <g id="profile-line2d_39">
+    <path d="M 68.998568 188.442351 
+L 73.991424 189.248167 
+L 78.984279 189.837845 
+L 83.977135 190.182063 
+L 88.969991 190.269219 
+L 93.962847 190.107772 
+L 98.955703 189.725515 
+L 104.94713 189.037535 
+L 113.934271 187.737267 
+L 124.918553 186.159191 
+L 130.909981 185.493464 
+L 136.901408 185.063866 
+L 141.894263 184.931125 
+L 146.887119 185.035007 
+L 151.879975 185.400198 
+L 155.87426 185.894296 
+L 159.868545 186.577296 
+L 163.862829 187.45618 
+L 167.857114 188.536268 
+L 171.851399 189.821 
+L 175.845683 191.311514 
+L 179.839968 193.005924 
+L 184.832824 195.400878 
+L 189.82568 198.078587 
+L 195.817107 201.590904 
+L 206.80139 208.194298 
+L 209.797103 209.749658 
+L 212.792817 211.019412 
+L 214.789959 211.641047 
+L 216.787102 212.033651 
+L 218.784244 212.158545 
+L 220.781386 211.986017 
+L 222.778529 211.499927 
+L 224.775671 210.699646 
+L 226.772813 209.598562 
+L 228.769956 208.220067 
+L 230.767098 206.592791 
+L 232.76424 204.746572 
+L 235.759954 201.628106 
+L 238.755667 198.163931 
+L 242.749952 193.122544 
+L 246.744237 187.709832 
+L 251.737093 180.561993 
+L 258.727091 170.083416 
+L 270.709945 151.573878 
+L 281.694228 134.775012 
+L 288.684226 124.46227 
+L 294.675653 115.961947 
+L 300.66708 107.828462 
+L 306.658507 100.095634 
+L 312.649934 92.782744 
+L 317.64279 87.01485 
+L 322.635646 81.542466 
+L 327.628502 76.360731 
+L 332.621358 71.462028 
+L 337.614214 66.836797 
+L 342.60707 62.474207 
+L 347.599926 58.362699 
+L 353.591353 53.743594 
+L 359.58278 49.448437 
+L 365.574207 45.457182 
+L 368.56992 43.569455 
+L 368.56992 43.569455 
+" clip-path="url(#profile-p2b160e090a)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="profile-patch_3">
+    <path d="M 54.02 220.588 
+L 54.02 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="profile-patch_4">
+    <path d="M 54.02 220.588 
+L 383.548488 220.588 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="profile-text_14">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="54.02" y="22.14" transform="rotate(-0 54.02 22.14)">Linear coefficients are re-estimated at every τ</text>
+   </g>
+   <g id="profile-legend_1">
+    <g id="profile-line2d_40">
+     <path d="M 61.22 45.61875 
+L 69.22 45.61875 
+L 77.22 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="profile-text_15">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="83.62" y="48.41875" transform="rotate(-0 83.62 48.41875)">Profiled training RMSE</text>
+    </g>
+   </g>
+  </g>
+  <g id="profile-axes_2">
+   <g id="profile-patch_5">
+    <path d="M 448.971512 220.588 
+L 778.5 220.588 
+L 778.5 35.14 
+L 448.971512 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="profile-matplotlib.axis_3">
+    <g id="profile-xtick_19">
+     <g id="profile-line2d_41">
+      <path d="M 599.274535 220.588 
+L 599.274535 35.14 
+" clip-path="url(#profile-pf830e4a90c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="profile-line2d_42">
+      <g>
+       <use href="#profile-m0c8deac8db" x="599.274535" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="profile-text_16">
+      <!-- $\mathdefault{10^{0}}$ -->
+      <g style="fill: #939b94" transform="translate(591.354535 234.426594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_20">
+     <g id="profile-line2d_43">
+      <path d="M 763.521432 220.588 
+L 763.521432 35.14 
+" clip-path="url(#profile-pf830e4a90c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="profile-line2d_44">
+      <g>
+       <use href="#profile-m0c8deac8db" x="763.521432" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="profile-text_17">
+      <!-- $\mathdefault{10^{1}}$ -->
+      <g style="fill: #939b94" transform="translate(755.601432 234.426594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.40625">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_21">
+     <g id="profile-line2d_45">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="484.47088" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_22">
+     <g id="profile-line2d_46">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="513.393323" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_23">
+     <g id="profile-line2d_47">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="533.914123" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_24">
+     <g id="profile-line2d_48">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="549.831292" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_25">
+     <g id="profile-line2d_49">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="562.836566" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_26">
+     <g id="profile-line2d_50">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="573.832368" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_27">
+     <g id="profile-line2d_51">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="583.357366" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_28">
+     <g id="profile-line2d_52">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="591.759009" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_29">
+     <g id="profile-line2d_53">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="648.717777" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_30">
+     <g id="profile-line2d_54">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="677.640221" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_31">
+     <g id="profile-line2d_55">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="698.16102" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_32">
+     <g id="profile-line2d_56">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="714.078189" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_33">
+     <g id="profile-line2d_57">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="727.083463" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_34">
+     <g id="profile-line2d_58">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="738.079266" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_35">
+     <g id="profile-line2d_59">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="747.604263" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-xtick_36">
+     <g id="profile-line2d_60">
+      <g>
+       <use href="#profile-m56b7b1a8c4" x="756.005906" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-text_18">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="613.735756" y="247.136906" transform="rotate(-0 613.735756 247.136906)">Decay time τ (years)</text>
+    </g>
+   </g>
+   <g id="profile-matplotlib.axis_4">
+    <g id="profile-ytick_10">
+     <g id="profile-line2d_61">
+      <defs>
+       <path id="profile-md974151f61" d="M 0 0 
+L -2 0 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#profile-md974151f61" x="448.971512" y="164.600491" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="profile-text_19">
+      <!-- $\mathdefault{2\times10^{1}}$ -->
+      <g style="fill: #939b94" transform="translate(410.991512 168.019788)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 7.479492 16.773926 22.5" y="-0.9609375">2×10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="28.312207" y="-4.40625">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="profile-ytick_11">
+     <g id="profile-line2d_62">
+      <g>
+       <use href="#profile-md974151f61" x="448.971512" y="116.63442" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="profile-text_20">
+      <!-- $\mathdefault{3\times10^{1}}$ -->
+      <g style="fill: #939b94" transform="translate(410.991512 120.053717)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 7.479492 16.773926 22.5" y="-0.9609375">3×10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="28.312207" y="-4.40625">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="profile-ytick_12">
+     <g id="profile-line2d_63">
+      <g>
+       <use href="#profile-md974151f61" x="448.971512" y="82.601951" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="profile-text_21">
+      <!-- $\mathdefault{4\times10^{1}}$ -->
+      <g style="fill: #939b94" transform="translate(410.991512 86.021248)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 7.479492 16.773926 22.5" y="-0.9609375">4×10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="28.312207" y="-4.40625">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="profile-ytick_13">
+     <g id="profile-line2d_64">
+      <g>
+       <use href="#profile-md974151f61" x="448.971512" y="56.204317" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="profile-text_22">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="405.119793" y="127.864" transform="rotate(-90 405.119793 127.864)">Condition number</text>
+    </g>
+   </g>
+   <g id="profile-line2d_65">
+    <path d="M 463.95008 43.569455 
+L 467.944364 54.347924 
+L 471.938649 64.564764 
+L 475.932934 74.259106 
+L 479.927219 83.467086 
+L 483.921503 92.221588 
+L 488.914359 102.571558 
+L 493.907215 112.308623 
+L 498.900071 121.474321 
+L 503.892927 130.102374 
+L 508.885783 138.219522 
+L 513.878639 145.846543 
+L 518.871494 152.99939 
+L 523.86435 159.690323 
+L 528.857206 165.928984 
+L 532.851491 170.599676 
+L 536.845776 174.989712 
+L 540.84006 179.102655 
+L 544.834345 182.94215 
+L 548.82863 186.512082 
+L 552.822914 189.816696 
+L 556.817199 192.860697 
+L 560.811484 195.649318 
+L 564.805768 198.18837 
+L 568.800053 200.484277 
+L 572.794338 202.544088 
+L 576.788623 204.375477 
+L 580.782907 205.986723 
+L 584.777192 207.386674 
+L 588.771477 208.584686 
+L 592.765761 209.59054 
+L 597.758617 210.593035 
+L 602.751473 211.331136 
+L 607.744329 211.824838 
+L 612.737185 212.09348 
+L 617.730041 212.155121 
+L 623.721468 211.978382 
+L 629.712895 211.549541 
+L 635.704322 210.884763 
+L 641.695749 209.992263 
+L 647.687176 208.871326 
+L 653.678603 207.51161 
+L 659.67003 205.892772 
+L 664.662886 204.32424 
+L 669.655742 202.532378 
+L 674.648598 200.490627 
+L 679.641454 198.169092 
+L 683.635738 196.088751 
+L 687.630023 193.79145 
+L 691.624308 191.259769 
+L 695.618592 188.476484 
+L 699.612877 185.424949 
+L 703.607162 182.08945 
+L 707.601447 178.455515 
+L 711.595731 174.510199 
+L 715.590016 170.242295 
+L 719.584301 165.642513 
+L 723.578585 160.703589 
+L 727.57287 155.42035 
+L 731.567155 149.789733 
+L 735.561439 143.810747 
+L 739.555724 137.484412 
+L 743.550009 130.813649 
+L 748.542865 121.998149 
+L 753.535721 112.664601 
+L 758.528576 102.82909 
+L 763.521432 92.510546 
+L 763.521432 92.510546 
+" clip-path="url(#profile-pf830e4a90c)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="profile-patch_6">
+    <path d="M 448.971512 220.588 
+L 448.971512 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="profile-patch_7">
+    <path d="M 448.971512 220.588 
+L 778.5 220.588 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="profile-text_23">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="448.971512" y="22.14" transform="rotate(-0 448.971512 22.14)">Small decay makes loadings harder to distinguish</text>
+   </g>
+   <g id="profile-legend_2">
+    <g id="profile-line2d_66">
+     <path d="M 647.9825 45.61875 
+L 655.9825 45.61875 
+L 663.9825 45.61875 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="profile-text_24">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="670.3825" y="48.41875" transform="rotate(-0 670.3825 48.41875)">Design condition number</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="profile-p2b160e090a">
+   <rect x="54.02" y="35.14" width="329.528488" height="185.448"/>
+  </clipPath>
+  <clipPath id="profile-pf830e4a90c">
+   <rect x="448.971512" y="35.14" width="329.528488" height="185.448"/>
+  </clipPath>
+ </defs>
+</svg>

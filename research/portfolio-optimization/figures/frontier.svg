@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="571.125pt" height="384.98525pt" viewBox="0 0 571.125 384.98525" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M -0 384.98525 
+L 571.125 384.98525 
+L 571.125 0 
+L -0 0 
+z
+" style="fill: #050505"/>
+  </g>
+  <g id="chart-axes">
+   <g id="patch_2">
+    <path d="M 54.525 341.055562 
+L 556.725 341.055562 
+L 556.725 30.591562 
+L 54.525 30.591562 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 80.726801 341.055562 
+L 80.726801 30.591562 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m6f2c4510d4" d="M 0 0 
+L 0 3.5 
+" style="stroke: #9a9a94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="80.726801" y="341.055562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="80.726801" y="355.213375" transform="rotate(-0 80.726801 355.213375)">2.5</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 138.434785 341.055562 
+L 138.434785 30.591562 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="138.434785" y="341.055562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="138.434785" y="355.213375" transform="rotate(-0 138.434785 355.213375)">5.0</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 196.14277 341.055562 
+L 196.14277 30.591562 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="196.14277" y="341.055562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="196.14277" y="355.213375" transform="rotate(-0 196.14277 355.213375)">7.5</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 253.850754 341.055562 
+L 253.850754 30.591562 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="253.850754" y="341.055562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="253.850754" y="355.213375" transform="rotate(-0 253.850754 355.213375)">10.0</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 311.558738 341.055562 
+L 311.558738 30.591562 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="311.558738" y="341.055562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="311.558738" y="355.213375" transform="rotate(-0 311.558738 355.213375)">12.5</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 369.266722 341.055562 
+L 369.266722 30.591562 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="369.266722" y="341.055562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="369.266722" y="355.213375" transform="rotate(-0 369.266722 355.213375)">15.0</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 426.974706 341.055562 
+L 426.974706 30.591562 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="426.974706" y="341.055562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="426.974706" y="355.213375" transform="rotate(-0 426.974706 355.213375)">17.5</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_15">
+      <path d="M 484.68269 341.055562 
+L 484.68269 30.591562 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="484.68269" y="341.055562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="484.68269" y="355.213375" transform="rotate(-0 484.68269 355.213375)">20.0</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_17">
+      <path d="M 542.390674 341.055562 
+L 542.390674 30.591562 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="542.390674" y="341.055562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="542.390674" y="355.213375" transform="rotate(-0 542.390674 355.213375)">22.5</text>
+     </g>
+    </g>
+    <g id="text_10">
+     <text style="fill: #f5f5f2; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="305.625" y="368.480562" transform="rotate(-0 305.625 368.480562)">Estimated annual volatility (%)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_19">
+      <path d="M 54.525 312.392983 
+L 556.725 312.392983 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_20">
+      <defs>
+       <path id="me580be6b42" d="M 0 0 
+L -3.5 0 
+" style="stroke: #9a9a94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#me580be6b42" x="54.525" y="312.392983" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="47.525" y="315.971889" transform="rotate(-0 47.525 315.971889)">−5.0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_21">
+      <path d="M 54.525 275.53475 
+L 556.725 275.53475 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#me580be6b42" x="54.525" y="275.53475" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="47.525" y="279.113656" transform="rotate(-0 47.525 279.113656)">−2.5</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_23">
+      <path d="M 54.525 238.676517 
+L 556.725 238.676517 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#me580be6b42" x="54.525" y="238.676517" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="47.525" y="242.255423" transform="rotate(-0 47.525 242.255423)">0.0</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_25">
+      <path d="M 54.525 201.818284 
+L 556.725 201.818284 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#me580be6b42" x="54.525" y="201.818284" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="47.525" y="205.39719" transform="rotate(-0 47.525 205.39719)">2.5</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_27">
+      <path d="M 54.525 164.960051 
+L 556.725 164.960051 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_28">
+      <g>
+       <use xlink:href="#me580be6b42" x="54.525" y="164.960051" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="47.525" y="168.538957" transform="rotate(-0 47.525 168.538957)">5.0</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_29">
+      <path d="M 54.525 128.101818 
+L 556.725 128.101818 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_30">
+      <g>
+       <use xlink:href="#me580be6b42" x="54.525" y="128.101818" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="47.525" y="131.680724" transform="rotate(-0 47.525 131.680724)">7.5</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_31">
+      <path d="M 54.525 91.243585 
+L 556.725 91.243585 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_32">
+      <g>
+       <use xlink:href="#me580be6b42" x="54.525" y="91.243585" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="47.525" y="94.822491" transform="rotate(-0 47.525 94.822491)">10.0</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_33">
+      <path d="M 54.525 54.385352 
+L 556.725 54.385352 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_34">
+      <g>
+       <use xlink:href="#me580be6b42" x="54.525" y="54.385352" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="47.525" y="57.964259" transform="rotate(-0 47.525 57.964259)">12.5</text>
+     </g>
+    </g>
+    <g id="text_19">
+     <text style="fill: #f5f5f2; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="21.679688" y="185.823562" transform="rotate(-90 21.679688 185.823562)">Estimated annual arithmetic return (%)</text>
+    </g>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="mf0db5c7a79" d="M 0 2.44949 
+C 0.649612 2.44949 1.272706 2.191396 1.732051 1.732051 
+C 2.191396 1.272706 2.44949 0.649612 2.44949 0 
+C 2.44949 -0.649612 2.191396 -1.272706 1.732051 -1.732051 
+C 1.272706 -2.191396 0.649612 -2.44949 0 -2.44949 
+C -0.649612 -2.44949 -1.272706 -2.191396 -1.732051 -1.732051 
+C -2.191396 -1.272706 -2.44949 -0.649612 -2.44949 0 
+C -2.44949 0.649612 -2.191396 1.272706 -1.732051 1.732051 
+C -1.272706 2.191396 -0.649612 2.44949 0 2.44949 
+z
+" style="stroke: #9a9a94"/>
+    </defs>
+    <g clip-path="url(#p748ba0e5c0)">
+     <use xlink:href="#mf0db5c7a79" x="367.294473" y="62.623562" style="fill: #9a9a94; stroke: #9a9a94"/>
+    </g>
+   </g>
+   <g id="PathCollection_2">
+    <g clip-path="url(#p748ba0e5c0)">
+     <use xlink:href="#mf0db5c7a79" x="474.37806" y="68.023912" style="fill: #9a9a94; stroke: #9a9a94"/>
+    </g>
+   </g>
+   <g id="PathCollection_3">
+    <g clip-path="url(#p748ba0e5c0)">
+     <use xlink:href="#mf0db5c7a79" x="445.836668" y="164.092248" style="fill: #9a9a94; stroke: #9a9a94"/>
+    </g>
+   </g>
+   <g id="PathCollection_4">
+    <g clip-path="url(#p748ba0e5c0)">
+     <use xlink:href="#mf0db5c7a79" x="522.090517" y="189.271983" style="fill: #9a9a94; stroke: #9a9a94"/>
+    </g>
+   </g>
+   <g id="PathCollection_5">
+    <g clip-path="url(#p748ba0e5c0)">
+     <use xlink:href="#mf0db5c7a79" x="97.685241" y="192.46391" style="fill: #9a9a94; stroke: #9a9a94"/>
+    </g>
+   </g>
+   <g id="PathCollection_6">
+    <g clip-path="url(#p748ba0e5c0)">
+     <use xlink:href="#mf0db5c7a79" x="344.677401" y="131.329891" style="fill: #9a9a94; stroke: #9a9a94"/>
+    </g>
+   </g>
+   <g id="PathCollection_7">
+    <g clip-path="url(#p748ba0e5c0)">
+     <use xlink:href="#mf0db5c7a79" x="144.013095" y="169.315221" style="fill: #9a9a94; stroke: #9a9a94"/>
+    </g>
+   </g>
+   <g id="PathCollection_8">
+    <g clip-path="url(#p748ba0e5c0)">
+     <use xlink:href="#mf0db5c7a79" x="446.797476" y="69.382974" style="fill: #9a9a94; stroke: #9a9a94"/>
+    </g>
+   </g>
+   <g id="PathCollection_9">
+    <g clip-path="url(#p748ba0e5c0)">
+     <use xlink:href="#mf0db5c7a79" x="389.048979" y="203.798261" style="fill: #9a9a94; stroke: #9a9a94"/>
+    </g>
+   </g>
+   <g id="PathCollection_10">
+    <g clip-path="url(#p748ba0e5c0)">
+     <use xlink:href="#mf0db5c7a79" x="389.700406" y="309.023562" style="fill: #9a9a94; stroke: #9a9a94"/>
+    </g>
+   </g>
+   <g id="line2d_35">
+    <path d="M 89.159483 184.910017 
+L 89.259318 182.464583 
+L 89.559915 180.019149 
+L 90.012457 177.981287 
+L 90.499837 176.75857 
+L 91.423323 175.128281 
+L 92.647899 173.497991 
+L 94.158017 171.867702 
+L 97.232451 169.014695 
+L 103.229747 163.716254 
+L 110.486153 157.602668 
+L 119.559602 150.266366 
+L 130.521515 141.707346 
+L 143.95339 131.518037 
+L 160.456519 119.290866 
+L 181.203241 104.210688 
+L 194.920621 94.428951 
+L 197.254431 93.206234 
+L 200.148107 91.983517 
+L 203.574735 90.760799 
+L 208.921016 89.13051 
+L 215.087099 87.50022 
+L 223.831579 85.462359 
+L 233.593347 83.424497 
+L 246.461661 80.979063 
+L 262.807924 78.126056 
+L 282.913876 74.865477 
+L 306.961936 71.197326 
+L 337.918268 66.71403 
+L 367.186995 62.638306 
+L 367.186995 62.638306 
+" clip-path="url(#p748ba0e5c0)" style="fill: none; stroke: #a7bdb3; stroke-width: 2.6; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 54.525 341.055562 
+L 54.525 30.591562 
+" style="fill: none; stroke: #303030; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 556.725 341.055562 
+L 556.725 30.591562 
+" style="fill: none; stroke: #303030; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 54.525 341.055562 
+L 556.725 341.055562 
+" style="fill: none; stroke: #303030; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 54.525 30.591562 
+L 556.725 30.591562 
+" style="fill: none; stroke: #303030; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_20">
+    <text style="fill: #f5f5f2; font: 7px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="371.294473" y="59.623562" transform="rotate(-0 371.294473 59.623562)">SPY</text>
+   </g>
+   <g id="text_21">
+    <text style="fill: #f5f5f2; font: 7px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="478.37806" y="65.023912" transform="rotate(-0 478.37806 65.023912)">IWM</text>
+   </g>
+   <g id="text_22">
+    <text style="fill: #f5f5f2; font: 7px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="449.836668" y="161.092248" transform="rotate(-0 449.836668 161.092248)">EFA</text>
+   </g>
+   <g id="text_23">
+    <text style="fill: #f5f5f2; font: 7px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="526.090517" y="186.271983" transform="rotate(-0 526.090517 186.271983)">EEM</text>
+   </g>
+   <g id="text_24">
+    <text style="fill: #f5f5f2; font: 7px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="101.685241" y="189.46391" transform="rotate(-0 101.685241 189.46391)">AGG</text>
+   </g>
+   <g id="text_25">
+    <text style="fill: #f5f5f2; font: 7px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="348.677401" y="128.329891" transform="rotate(-0 348.677401 128.329891)">TLT</text>
+   </g>
+   <g id="text_26">
+    <text style="fill: #f5f5f2; font: 7px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="148.013095" y="166.315221" transform="rotate(-0 148.013095 166.315221)">LQD</text>
+   </g>
+   <g id="text_27">
+    <text style="fill: #f5f5f2; font: 7px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="450.797476" y="66.382974" transform="rotate(-0 450.797476 66.382974)">VNQ</text>
+   </g>
+   <g id="text_28">
+    <text style="fill: #f5f5f2; font: 7px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="393.048979" y="200.798261" transform="rotate(-0 393.048979 200.798261)">GLD</text>
+   </g>
+   <g id="text_29">
+    <text style="fill: #f5f5f2; font: 7px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="393.700406" y="306.023562" transform="rotate(-0 393.700406 306.023562)">DBC</text>
+   </g>
+   <g id="text_30">
+    <text style="fill: #f5f5f2; font: 600 14px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="305.625" y="24.591562" transform="rotate(-0 305.625 24.591562)">Estimated efficient frontier · training sample</text>
+   </g>
+   <g id="PathCollection_11">
+    <defs>
+     <path id="m4ecbdbfa9a" d="M 0 4.873397 
+C 1.29244 4.873397 2.532119 4.359905 3.446012 3.446012 
+C 4.359905 2.532119 4.873397 1.29244 4.873397 0 
+C 4.873397 -1.29244 4.359905 -2.532119 3.446012 -3.446012 
+C 2.532119 -4.359905 1.29244 -4.873397 0 -4.873397 
+C -1.29244 -4.873397 -2.532119 -4.359905 -3.446012 -3.446012 
+C -4.359905 -2.532119 -4.873397 -1.29244 -4.873397 0 
+C -4.873397 1.29244 -4.359905 2.532119 -3.446012 3.446012 
+C -2.532119 4.359905 -1.29244 4.873397 0 4.873397 
+z
+" style="stroke: #050505"/>
+    </defs>
+    <g clip-path="url(#p748ba0e5c0)">
+     <use xlink:href="#m4ecbdbfa9a" x="236.754392" y="155.932552" style="fill: #d3ad84; stroke: #050505"/>
+    </g>
+   </g>
+   <g id="PathCollection_12">
+    <defs>
+     <path id="ma3ccdac74a" d="M -4.873397 4.873397 
+L 4.873397 4.873397 
+L 4.873397 -4.873397 
+L -4.873397 -4.873397 
+z
+" style="stroke: #050505"/>
+    </defs>
+    <g clip-path="url(#p748ba0e5c0)">
+     <use xlink:href="#ma3ccdac74a" x="89.159484" y="184.910017" style="fill: #f5f5f2; stroke: #050505"/>
+    </g>
+   </g>
+   <g id="PathCollection_13">
+    <defs>
+     <path id="mab1a2127ca" d="M 0 6.892024 
+L 6.892024 0 
+L 0 -6.892024 
+L -6.892024 0 
+z
+" style="stroke: #050505"/>
+    </defs>
+    <g clip-path="url(#p748ba0e5c0)">
+     <use xlink:href="#mab1a2127ca" x="99.140711" y="167.298772" style="fill: #6e9080; stroke: #050505"/>
+    </g>
+   </g>
+   <g id="legend_1">
+    <g id="line2d_36">
+     <path d="M 61.725 40.815312 
+L 69.725 40.815312 
+L 77.725 40.815312 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2.6; stroke-linecap: square"/>
+    </g>
+    <g id="text_31">
+     <text style="fill: #f5f5f2; font: 8px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="84.125" y="43.615312" transform="rotate(-0 84.125 43.615312)">Solved long-only frontier</text>
+    </g>
+    <g id="PathCollection_14">
+     <g>
+      <use xlink:href="#m4ecbdbfa9a" x="69.725" y="52.925312" style="fill: #d3ad84; stroke: #050505"/>
+     </g>
+    </g>
+    <g id="text_32">
+     <text style="fill: #f5f5f2; font: 8px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="84.125" y="55.025312" transform="rotate(-0 84.125 55.025312)">Equal weight</text>
+    </g>
+    <g id="PathCollection_15">
+     <g>
+      <use xlink:href="#ma3ccdac74a" x="69.725" y="64.432812" style="fill: #f5f5f2; stroke: #050505"/>
+     </g>
+    </g>
+    <g id="text_33">
+     <text style="fill: #f5f5f2; font: 8px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="84.125" y="66.532812" transform="rotate(-0 84.125 66.532812)">GMV · sample</text>
+    </g>
+    <g id="PathCollection_16">
+     <g>
+      <use xlink:href="#mab1a2127ca" x="69.725" y="75.846562" style="fill: #6e9080; stroke: #050505"/>
+     </g>
+    </g>
+    <g id="text_34">
+     <text style="fill: #f5f5f2; font: 8px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="84.125" y="77.946562" transform="rotate(-0 84.125 77.946562)">Max Sharpe · sample</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p748ba0e5c0">
+   <rect x="54.525" y="30.591562" width="502.2" height="310.464"/>
+  </clipPath>
+ </defs>
+<metadata data-chart="true">{"mode":"points","context":"Training sample · 2010-01-05–2018-12-31","points":[{"x":2.865316926169577,"y":3.646844629350997,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.87%"],["Estimated arithmetic return","3.65%"],["Target return","3.65%"]],"kind":"line"},{"x":2.8654310756664003,"y":3.674489224577722,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.87%"],["Estimated arithmetic return","3.67%"],["Target return","3.67%"]],"kind":"line"},{"x":2.8657881264338765,"y":3.7021338198044464,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.87%"],["Estimated arithmetic return","3.70%"],["Target return","3.70%"]],"kind":"line"},{"x":2.866387920737769,"y":3.729778415031171,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.87%"],["Estimated arithmetic return","3.73%"],["Target return","3.73%"]],"kind":"line"},{"x":2.867230306239928,"y":3.7574230102578974,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.87%"],["Estimated arithmetic return","3.76%"],["Target return","3.76%"]],"kind":"line"},{"x":2.8683150898411065,"y":3.7850676054846213,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.87%"],["Estimated arithmetic return","3.79%"],["Target return","3.79%"]],"kind":"line"},{"x":2.869641934761427,"y":3.812712200711346,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.87%"],["Estimated arithmetic return","3.81%"],["Target return","3.81%"]],"kind":"line"},{"x":2.871210567268202,"y":3.8403567959380704,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.87%"],["Estimated arithmetic return","3.84%"],["Target return","3.84%"]],"kind":"line"},{"x":2.8730207637466236,"y":3.8680013911647966,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.87%"],["Estimated arithmetic return","3.87%"],["Target return","3.87%"]],"kind":"line"},{"x":2.875071551663849,"y":3.89564598639152,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.88%"],["Estimated arithmetic return","3.90%"],["Target return","3.90%"]],"kind":"line"},{"x":2.8773628076956728,"y":3.9232905816182453,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.88%"],["Estimated arithmetic return","3.92%"],["Target return","3.92%"]],"kind":"line"},{"x":2.8798939522612423,"y":3.9509351768449705,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.88%"],["Estimated arithmetic return","3.95%"],["Target return","3.95%"]],"kind":"line"},{"x":2.8826642911998515,"y":3.9785797720716958,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.88%"],["Estimated arithmetic return","3.98%"],["Target return","3.98%"]],"kind":"line"},{"x":2.8856731356087315,"y":4.006224367298421,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.89%"],["Estimated arithmetic return","4.01%"],["Target return","4.01%"]],"kind":"line"},{"x":2.8889198717638993,"y":4.033868962525144,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.89%"],["Estimated arithmetic return","4.03%"],["Target return","4.03%"]],"kind":"line"},{"x":2.89252516794113,"y":4.06151355775187,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.89%"],["Estimated arithmetic return","4.06%"],["Target return","4.06%"]],"kind":"line"},{"x":2.896960489156752,"y":4.0891581529785945,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.90%"],["Estimated arithmetic return","4.09%"],["Target return","4.09%"]],"kind":"line"},{"x":2.9022691000683736,"y":4.116802748205321,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.90%"],["Estimated arithmetic return","4.12%"],["Target return","4.12%"]],"kind":"line"},{"x":2.9084462187913886,"y":4.144447343432046,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.91%"],["Estimated arithmetic return","4.14%"],["Target return","4.14%"]],"kind":"line"},{"x":2.915486324938955,"y":4.172091938658771,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.92%"],["Estimated arithmetic return","4.17%"],["Target return","4.17%"]],"kind":"line"},{"x":2.9233831837656976,"y":4.199736533885495,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.92%"],["Estimated arithmetic return","4.20%"],["Target return","4.20%"]],"kind":"line"},{"x":2.9321298730199454,"y":4.227381129112219,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.93%"],["Estimated arithmetic return","4.23%"],["Target return","4.23%"]],"kind":"line"},{"x":2.9417188122425544,"y":4.255025724338944,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.94%"],["Estimated arithmetic return","4.26%"],["Target return","4.26%"]],"kind":"line"},{"x":2.952141794233706,"y":4.282670319565669,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.95%"],["Estimated arithmetic return","4.28%"],["Target return","4.28%"]],"kind":"line"},{"x":2.9633900183969972,"y":4.310314914792393,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.96%"],["Estimated arithmetic return","4.31%"],["Target return","4.31%"]],"kind":"line"},{"x":2.975454125662568,"y":4.33795951001912,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.98%"],["Estimated arithmetic return","4.34%"],["Target return","4.34%"]],"kind":"line"},{"x":2.9883242346880157,"y":4.365604105245844,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","2.99%"],["Estimated arithmetic return","4.37%"],["Target return","4.37%"]],"kind":"line"},{"x":3.0019899790370577,"y":4.393248700472569,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.00%"],["Estimated arithmetic return","4.39%"],["Target return","4.39%"]],"kind":"line"},{"x":3.0164405450411254,"y":4.420893295699293,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.02%"],["Estimated arithmetic return","4.42%"],["Target return","4.42%"]],"kind":"line"},{"x":3.031664710057987,"y":4.448537890926019,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.03%"],["Estimated arithmetic return","4.45%"],["Target return","4.45%"]],"kind":"line"},{"x":3.047650880853619,"y":4.4761824861527435,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.05%"],["Estimated arithmetic return","4.48%"],["Target return","4.48%"]],"kind":"line"},{"x":3.0643871318484845,"y":4.503827081379469,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.06%"],["Estimated arithmetic return","4.50%"],["Target return","4.50%"]],"kind":"line"},{"x":3.0818612429866485,"y":4.531471676606193,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.08%"],["Estimated arithmetic return","4.53%"],["Target return","4.53%"]],"kind":"line"},{"x":3.10006073700528,"y":4.5591162718329175,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.10%"],["Estimated arithmetic return","4.56%"],["Target return","4.56%"]],"kind":"line"},{"x":3.1189122907691087,"y":4.586760867059642,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.12%"],["Estimated arithmetic return","4.59%"],["Target return","4.59%"]],"kind":"line"},{"x":3.137953693215102,"y":4.614405462286368,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.14%"],["Estimated arithmetic return","4.61%"],["Target return","4.61%"]],"kind":"line"},{"x":3.157089912395434,"y":4.642050057513093,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.16%"],["Estimated arithmetic return","4.64%"],["Target return","4.64%"]],"kind":"line"},{"x":3.1763192345969777,"y":4.6696946527398175,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.18%"],["Estimated arithmetic return","4.67%"],["Target return","4.67%"]],"kind":"line"},{"x":3.195639979116464,"y":4.697339247966543,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.20%"],["Estimated arithmetic return","4.70%"],["Target return","4.70%"]],"kind":"line"},{"x":3.2150504977557093,"y":4.724983843193267,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.22%"],["Estimated arithmetic return","4.72%"],["Target return","4.72%"]],"kind":"line"},{"x":3.234549174312553,"y":4.7526284384199915,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.23%"],["Estimated arithmetic return","4.75%"],["Target return","4.75%"]],"kind":"line"},{"x":3.2541344240685306,"y":4.780273033646717,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.25%"],["Estimated arithmetic return","4.78%"],["Target return","4.78%"]],"kind":"line"},{"x":3.273804693274271,"y":4.807917628873442,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.27%"],["Estimated arithmetic return","4.81%"],["Target return","4.81%"]],"kind":"line"},{"x":3.2935588735984656,"y":4.8355622241001655,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.29%"],["Estimated arithmetic return","4.84%"],["Target return","4.84%"]],"kind":"line"},{"x":3.3133949471021182,"y":4.8632068193268925,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.31%"],["Estimated arithmetic return","4.86%"],["Target return","4.86%"]],"kind":"line"},{"x":3.3333105341206632,"y":4.890851414553618,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.33%"],["Estimated arithmetic return","4.89%"],["Target return","4.89%"]],"kind":"line"},{"x":3.353306250663813,"y":4.918496009780342,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.35%"],["Estimated arithmetic return","4.92%"],["Target return","4.92%"]],"kind":"line"},{"x":3.373379067426475,"y":4.946140605007067,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.37%"],["Estimated arithmetic return","4.95%"],["Target return","4.95%"]],"kind":"line"},{"x":3.3935288638226724,"y":4.973785200233792,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.39%"],["Estimated arithmetic return","4.97%"],["Target return","4.97%"]],"kind":"line"},{"x":3.4137528856627677,"y":5.001429795460516,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.41%"],["Estimated arithmetic return","5.00%"],["Target return","5.00%"]],"kind":"line"},{"x":3.4340509084374276,"y":5.029074390687241,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.43%"],["Estimated arithmetic return","5.03%"],["Target return","5.03%"]],"kind":"line"},{"x":3.454421288718549,"y":5.0567189859139665,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.45%"],["Estimated arithmetic return","5.06%"],["Target return","5.06%"]],"kind":"line"},{"x":3.4748627410444475,"y":5.084363581140691,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.47%"],["Estimated arithmetic return","5.08%"],["Target return","5.08%"]],"kind":"line"},{"x":3.495374018496585,"y":5.112008176367416,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.50%"],["Estimated arithmetic return","5.11%"],["Target return","5.11%"]],"kind":"line"},{"x":3.5159538990433346,"y":5.139652771594141,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.52%"],["Estimated arithmetic return","5.14%"],["Target return","5.14%"]],"kind":"line"},{"x":3.5366011850574974,"y":5.167297366820865,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.54%"],["Estimated arithmetic return","5.17%"],["Target return","5.17%"]],"kind":"line"},{"x":3.557314702839375,"y":5.19494196204759,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.56%"],["Estimated arithmetic return","5.19%"],["Target return","5.19%"]],"kind":"line"},{"x":3.578093302145614,"y":5.222586557274316,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.58%"],["Estimated arithmetic return","5.22%"],["Target return","5.22%"]],"kind":"line"},{"x":3.5989358557240827,"y":5.2502311525010406,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.60%"],["Estimated arithmetic return","5.25%"],["Target return","5.25%"]],"kind":"line"},{"x":3.619841258854949,"y":5.277875747727766,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.62%"],["Estimated arithmetic return","5.28%"],["Target return","5.28%"]],"kind":"line"},{"x":3.640808428898142,"y":5.305520342954489,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.64%"],["Estimated arithmetic return","5.31%"],["Target return","5.31%"]],"kind":"line"},{"x":3.661836304847329,"y":5.333164938181214,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.66%"],["Estimated arithmetic return","5.33%"],["Target return","5.33%"]],"kind":"line"},{"x":3.6829238468905596,"y":5.36080953340794,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.68%"],["Estimated arithmetic return","5.36%"],["Target return","5.36%"]],"kind":"line"},{"x":3.7040700359776384,"y":5.388454128634664,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.70%"],["Estimated arithmetic return","5.39%"],["Target return","5.39%"]],"kind":"line"},{"x":3.7252738733943627,"y":5.41609872386139,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.73%"],["Estimated arithmetic return","5.42%"],["Target return","5.42%"]],"kind":"line"},{"x":3.7465343803436393,"y":5.443743319088115,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.75%"],["Estimated arithmetic return","5.44%"],["Target return","5.44%"]],"kind":"line"},{"x":3.767850597533583,"y":5.471387914314839,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.77%"],["Estimated arithmetic return","5.47%"],["Target return","5.47%"]],"kind":"line"},{"x":3.789221584772589,"y":5.499032509541564,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.79%"],["Estimated arithmetic return","5.50%"],["Target return","5.50%"]],"kind":"line"},{"x":3.8106464205714263,"y":5.5266771047682886,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.81%"],["Estimated arithmetic return","5.53%"],["Target return","5.53%"]],"kind":"line"},{"x":3.832124201752362,"y":5.5543216999950165,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.83%"],["Estimated arithmetic return","5.55%"],["Target return","5.55%"]],"kind":"line"},{"x":3.8536540430655344,"y":5.58196629522174,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.85%"],["Estimated arithmetic return","5.58%"],["Target return","5.58%"]],"kind":"line"},{"x":3.8752350768109443,"y":5.609610890448465,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.88%"],["Estimated arithmetic return","5.61%"],["Target return","5.61%"]],"kind":"line"},{"x":3.8968664524709227,"y":5.637255485675189,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.90%"],["Estimated arithmetic return","5.64%"],["Target return","5.64%"]],"kind":"line"},{"x":3.9185473363449033,"y":5.664900080901914,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.92%"],["Estimated arithmetic return","5.66%"],["Target return","5.66%"]],"kind":"line"},{"x":3.940277230449511,"y":5.692544676128639,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.94%"],["Estimated arithmetic return","5.69%"],["Target return","5.69%"]],"kind":"line"},{"x":3.962054375894612,"y":5.7201892713553635,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.96%"],["Estimated arithmetic return","5.72%"],["Target return","5.72%"]],"kind":"line"},{"x":3.983878945090215,"y":5.747833866582089,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","3.98%"],["Estimated arithmetic return","5.75%"],["Target return","5.75%"]],"kind":"line"},{"x":4.005749848861711,"y":5.775478461808814,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.01%"],["Estimated arithmetic return","5.78%"],["Target return","5.78%"]],"kind":"line"},{"x":4.027666332395614,"y":5.803123057035539,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.03%"],["Estimated arithmetic return","5.80%"],["Target return","5.80%"]],"kind":"line"},{"x":4.049627655662393,"y":5.830767652262264,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.05%"],["Estimated arithmetic return","5.83%"],["Target return","5.83%"]],"kind":"line"},{"x":4.071633174723657,"y":5.858412247488989,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.07%"],["Estimated arithmetic return","5.86%"],["Target return","5.86%"]],"kind":"line"},{"x":4.093682191293047,"y":5.886056842715714,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.09%"],["Estimated arithmetic return","5.89%"],["Target return","5.89%"]],"kind":"line"},{"x":4.115773478739254,"y":5.913701437942439,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.12%"],["Estimated arithmetic return","5.91%"],["Target return","5.91%"]],"kind":"line"},{"x":4.137907045406655,"y":5.941346033169162,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.14%"],["Estimated arithmetic return","5.94%"],["Target return","5.94%"]],"kind":"line"},{"x":4.160081962593246,"y":5.968990628395889,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.16%"],["Estimated arithmetic return","5.97%"],["Target return","5.97%"]],"kind":"line"},{"x":4.182297572566582,"y":5.996635223622612,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.18%"],["Estimated arithmetic return","6.00%"],["Target return","6.00%"]],"kind":"line"},{"x":4.204553230300932,"y":6.024279818849338,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.20%"],["Estimated arithmetic return","6.02%"],["Target return","6.02%"]],"kind":"line"},{"x":4.2268483084318635,"y":6.051924414076063,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.23%"],["Estimated arithmetic return","6.05%"],["Target return","6.05%"]],"kind":"line"},{"x":4.24918217587986,"y":6.079569009302787,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.25%"],["Estimated arithmetic return","6.08%"],["Target return","6.08%"]],"kind":"line"},{"x":4.271554229991727,"y":6.1072136045295125,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.27%"],["Estimated arithmetic return","6.11%"],["Target return","6.11%"]],"kind":"line"},{"x":4.2939638679819945,"y":6.134858199756239,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.29%"],["Estimated arithmetic return","6.13%"],["Target return","6.13%"]],"kind":"line"},{"x":4.316410519280186,"y":6.16250279498296,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.32%"],["Estimated arithmetic return","6.16%"],["Target return","6.16%"]],"kind":"line"},{"x":4.338893599042646,"y":6.190147390209686,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.34%"],["Estimated arithmetic return","6.19%"],["Target return","6.19%"]],"kind":"line"},{"x":4.361412536725426,"y":6.217791985436412,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.36%"],["Estimated arithmetic return","6.22%"],["Target return","6.22%"]],"kind":"line"},{"x":4.383966817787367,"y":6.245436580663136,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.38%"],["Estimated arithmetic return","6.25%"],["Target return","6.25%"]],"kind":"line"},{"x":4.406555820990326,"y":6.27308117588986,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.41%"],["Estimated arithmetic return","6.27%"],["Target return","6.27%"]],"kind":"line"},{"x":4.4291790861554485,"y":6.300725771116586,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.43%"],["Estimated arithmetic return","6.30%"],["Target return","6.30%"]],"kind":"line"},{"x":4.451836070483695,"y":6.328370366343311,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.45%"],["Estimated arithmetic return","6.33%"],["Target return","6.33%"]],"kind":"line"},{"x":4.474526259909266,"y":6.356014961570038,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.47%"],["Estimated arithmetic return","6.36%"],["Target return","6.36%"]],"kind":"line"},{"x":4.497249151841686,"y":6.383659556796761,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.50%"],["Estimated arithmetic return","6.38%"],["Target return","6.38%"]],"kind":"line"},{"x":4.520004253066415,"y":6.411304152023487,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.52%"],["Estimated arithmetic return","6.41%"],["Target return","6.41%"]],"kind":"line"},{"x":4.542791079728965,"y":6.438948747250213,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.54%"],["Estimated arithmetic return","6.44%"],["Target return","6.44%"]],"kind":"line"},{"x":4.5656091661292395,"y":6.466593342476935,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.57%"],["Estimated arithmetic return","6.47%"],["Target return","6.47%"]],"kind":"line"},{"x":4.588458023249322,"y":6.494237937703662,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.59%"],["Estimated arithmetic return","6.49%"],["Target return","6.49%"]],"kind":"line"},{"x":4.611337215034051,"y":6.521882532930387,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.61%"],["Estimated arithmetic return","6.52%"],["Target return","6.52%"]],"kind":"line"},{"x":4.634246327939232,"y":6.549527128157111,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.63%"],["Estimated arithmetic return","6.55%"],["Target return","6.55%"]],"kind":"line"},{"x":4.657184769959375,"y":6.577171723383836,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.66%"],["Estimated arithmetic return","6.58%"],["Target return","6.58%"]],"kind":"line"},{"x":4.680152274458027,"y":6.60481631861056,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.68%"],["Estimated arithmetic return","6.60%"],["Target return","6.60%"]],"kind":"line"},{"x":4.703148359105031,"y":6.632460913837285,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.70%"],["Estimated arithmetic return","6.63%"],["Target return","6.63%"]],"kind":"line"},{"x":4.726172716861905,"y":6.66010550906401,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.73%"],["Estimated arithmetic return","6.66%"],["Target return","6.66%"]],"kind":"line"},{"x":4.74922459875757,"y":6.6877501042907355,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.75%"],["Estimated arithmetic return","6.69%"],["Target return","6.69%"]],"kind":"line"},{"x":4.772303945030867,"y":6.715394699517462,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.77%"],["Estimated arithmetic return","6.72%"],["Target return","6.72%"]],"kind":"line"},{"x":4.795410246163027,"y":6.743039294744185,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.80%"],["Estimated arithmetic return","6.74%"],["Target return","6.74%"]],"kind":"line"},{"x":4.818543114385151,"y":6.770683889970912,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.82%"],["Estimated arithmetic return","6.77%"],["Target return","6.77%"]],"kind":"line"},{"x":4.841702168897501,"y":6.7983284851976356,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.84%"],["Estimated arithmetic return","6.80%"],["Target return","6.80%"]],"kind":"line"},{"x":4.8648870357244665,"y":6.825973080424359,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.86%"],["Estimated arithmetic return","6.83%"],["Target return","6.83%"]],"kind":"line"},{"x":4.888097347572801,"y":6.853617675651084,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.89%"],["Estimated arithmetic return","6.85%"],["Target return","6.85%"]],"kind":"line"},{"x":4.911332743891171,"y":6.881262270877811,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.91%"],["Estimated arithmetic return","6.88%"],["Target return","6.88%"]],"kind":"line"},{"x":4.934592990825958,"y":6.908906866104535,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.93%"],["Estimated arithmetic return","6.91%"],["Target return","6.91%"]],"kind":"line"},{"x":4.957877377661042,"y":6.936551461331258,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.96%"],["Estimated arithmetic return","6.94%"],["Target return","6.94%"]],"kind":"line"},{"x":4.981185925525312,"y":6.9641960565579835,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","4.98%"],["Estimated arithmetic return","6.96%"],["Target return","6.96%"]],"kind":"line"},{"x":5.004518177438754,"y":6.991840651784709,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.00%"],["Estimated arithmetic return","6.99%"],["Target return","6.99%"]],"kind":"line"},{"x":5.0278738038160835,"y":7.019485247011435,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.03%"],["Estimated arithmetic return","7.02%"],["Target return","7.02%"]],"kind":"line"},{"x":5.051252487644308,"y":7.047129842238159,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.05%"],["Estimated arithmetic return","7.05%"],["Target return","7.05%"]],"kind":"line"},{"x":5.074653887481069,"y":7.074774437464885,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.07%"],["Estimated arithmetic return","7.07%"],["Target return","7.07%"]],"kind":"line"},{"x":5.098077711482872,"y":7.102419032691609,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.10%"],["Estimated arithmetic return","7.10%"],["Target return","7.10%"]],"kind":"line"},{"x":5.121523647378471,"y":7.130063627918334,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.12%"],["Estimated arithmetic return","7.13%"],["Target return","7.13%"]],"kind":"line"},{"x":5.144991391628402,"y":7.157708223145059,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.14%"],["Estimated arithmetic return","7.16%"],["Target return","7.16%"]],"kind":"line"},{"x":5.1684806471669065,"y":7.1853528183717845,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.17%"],["Estimated arithmetic return","7.19%"],["Target return","7.19%"]],"kind":"line"},{"x":5.191991122034238,"y":7.212997413598507,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.19%"],["Estimated arithmetic return","7.21%"],["Target return","7.21%"]],"kind":"line"},{"x":5.2155225292736365,"y":7.240642008825233,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.22%"],["Estimated arithmetic return","7.24%"],["Target return","7.24%"]],"kind":"line"},{"x":5.239074586830647,"y":7.268286604051958,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.24%"],["Estimated arithmetic return","7.27%"],["Target return","7.27%"]],"kind":"line"},{"x":5.262647113174517,"y":7.295931199278682,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.26%"],["Estimated arithmetic return","7.30%"],["Target return","7.30%"]],"kind":"line"},{"x":5.286239548838577,"y":7.323575794505407,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.29%"],["Estimated arithmetic return","7.32%"],["Target return","7.32%"]],"kind":"line"},{"x":5.309851912959214,"y":7.351220389732132,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.31%"],["Estimated arithmetic return","7.35%"],["Target return","7.35%"]],"kind":"line"},{"x":5.333483847112141,"y":7.37886498495886,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.33%"],["Estimated arithmetic return","7.38%"],["Target return","7.38%"]],"kind":"line"},{"x":5.357135093095053,"y":7.406509580185585,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.36%"],["Estimated arithmetic return","7.41%"],["Target return","7.41%"]],"kind":"line"},{"x":5.380805401945351,"y":7.434154175412309,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.38%"],["Estimated arithmetic return","7.43%"],["Target return","7.43%"]],"kind":"line"},{"x":5.404494582593758,"y":7.461798770639033,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.40%"],["Estimated arithmetic return","7.46%"],["Target return","7.46%"]],"kind":"line"},{"x":5.428202153949639,"y":7.489443365865757,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.43%"],["Estimated arithmetic return","7.49%"],["Target return","7.49%"]],"kind":"line"},{"x":5.4519281337497665,"y":7.517087961092482,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.45%"],["Estimated arithmetic return","7.52%"],["Target return","7.52%"]],"kind":"line"},{"x":5.475672192337298,"y":7.544732556319208,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.48%"],["Estimated arithmetic return","7.54%"],["Target return","7.54%"]],"kind":"line"},{"x":5.4994340955839,"y":7.572377151545931,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.50%"],["Estimated arithmetic return","7.57%"],["Target return","7.57%"]],"kind":"line"},{"x":5.523213613057936,"y":7.600021746772656,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.52%"],["Estimated arithmetic return","7.60%"],["Target return","7.60%"]],"kind":"line"},{"x":5.54701052092361,"y":7.6276663419993795,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.55%"],["Estimated arithmetic return","7.63%"],["Target return","7.63%"]],"kind":"line"},{"x":5.570824589434116,"y":7.655310937226107,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.57%"],["Estimated arithmetic return","7.66%"],["Target return","7.66%"]],"kind":"line"},{"x":5.59465560584523,"y":7.682955532452832,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.59%"],["Estimated arithmetic return","7.68%"],["Target return","7.68%"]],"kind":"line"},{"x":5.618503352972391,"y":7.710600127679557,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.62%"],["Estimated arithmetic return","7.71%"],["Target return","7.71%"]],"kind":"line"},{"x":5.642367618215235,"y":7.738244722906283,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.64%"],["Estimated arithmetic return","7.74%"],["Target return","7.74%"]],"kind":"line"},{"x":5.666248197682612,"y":7.765889318133008,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.67%"],["Estimated arithmetic return","7.77%"],["Target return","7.77%"]],"kind":"line"},{"x":5.690144865579919,"y":7.793533913359732,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.69%"],["Estimated arithmetic return","7.79%"],["Target return","7.79%"]],"kind":"line"},{"x":5.71405744484595,"y":7.821178508586455,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.71%"],["Estimated arithmetic return","7.82%"],["Target return","7.82%"]],"kind":"line"},{"x":5.737985869730821,"y":7.848823103813181,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.74%"],["Estimated arithmetic return","7.85%"],["Target return","7.85%"]],"kind":"line"},{"x":5.761929526408846,"y":7.876467699039906,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.76%"],["Estimated arithmetic return","7.88%"],["Target return","7.88%"]],"kind":"line"},{"x":5.785888621789339,"y":7.90411229426663,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.79%"],["Estimated arithmetic return","7.90%"],["Target return","7.90%"]],"kind":"line"},{"x":5.809862852013406,"y":7.931756889493356,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.81%"],["Estimated arithmetic return","7.93%"],["Target return","7.93%"]],"kind":"line"},{"x":5.833852029445998,"y":7.95940148472008,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.83%"],["Estimated arithmetic return","7.96%"],["Target return","7.96%"]],"kind":"line"},{"x":5.857855947930249,"y":7.987046079946805,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.86%"],["Estimated arithmetic return","7.99%"],["Target return","7.99%"]],"kind":"line"},{"x":5.881874445376875,"y":8.014690675173531,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.88%"],["Estimated arithmetic return","8.01%"],["Target return","8.01%"]],"kind":"line"},{"x":5.90590734183763,"y":8.042335270400256,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.91%"],["Estimated arithmetic return","8.04%"],["Target return","8.04%"]],"kind":"line"},{"x":5.929954460238351,"y":8.06997986562698,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.93%"],["Estimated arithmetic return","8.07%"],["Target return","8.07%"]],"kind":"line"},{"x":5.954015880044743,"y":8.097624460853707,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.95%"],["Estimated arithmetic return","8.10%"],["Target return","8.10%"]],"kind":"line"},{"x":5.978090699379448,"y":8.12526905608043,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","5.98%"],["Estimated arithmetic return","8.13%"],["Target return","8.13%"]],"kind":"line"},{"x":6.002179437212633,"y":8.152913651307156,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.00%"],["Estimated arithmetic return","8.15%"],["Target return","8.15%"]],"kind":"line"},{"x":6.0262817466799,"y":8.180558246533879,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.03%"],["Estimated arithmetic return","8.18%"],["Target return","8.18%"]],"kind":"line"},{"x":6.050397442744696,"y":8.208202841760606,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.05%"],["Estimated arithmetic return","8.21%"],["Target return","8.21%"]],"kind":"line"},{"x":6.074526365973793,"y":8.23584743698733,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.07%"],["Estimated arithmetic return","8.24%"],["Target return","8.24%"]],"kind":"line"},{"x":6.098668359370349,"y":8.263492032214053,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.10%"],["Estimated arithmetic return","8.26%"],["Target return","8.26%"]],"kind":"line"},{"x":6.1228232928510655,"y":8.291136627440778,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.12%"],["Estimated arithmetic return","8.29%"],["Target return","8.29%"]],"kind":"line"},{"x":6.1469909405935,"y":8.318781222667504,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.15%"],["Estimated arithmetic return","8.32%"],["Target return","8.32%"]],"kind":"line"},{"x":6.171171263918374,"y":8.34642581789423,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.17%"],["Estimated arithmetic return","8.35%"],["Target return","8.35%"]],"kind":"line"},{"x":6.195363980371154,"y":8.374070413120956,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.20%"],["Estimated arithmetic return","8.37%"],["Target return","8.37%"]],"kind":"line"},{"x":6.219569056617974,"y":8.40171500834768,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.22%"],["Estimated arithmetic return","8.40%"],["Target return","8.40%"]],"kind":"line"},{"x":6.243786297697137,"y":8.429359603574405,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.24%"],["Estimated arithmetic return","8.43%"],["Target return","8.43%"]],"kind":"line"},{"x":6.2680155818411105,"y":8.45700419880113,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.27%"],["Estimated arithmetic return","8.46%"],["Target return","8.46%"]],"kind":"line"},{"x":6.29225676277885,"y":8.484648794027855,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.29%"],["Estimated arithmetic return","8.48%"],["Target return","8.48%"]],"kind":"line"},{"x":6.316509705946947,"y":8.51229338925458,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.32%"],["Estimated arithmetic return","8.51%"],["Target return","8.51%"]],"kind":"line"},{"x":6.340774268632619,"y":8.539937984481304,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.34%"],["Estimated arithmetic return","8.54%"],["Target return","8.54%"]],"kind":"line"},{"x":6.365050326015733,"y":8.567582579708027,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.37%"],["Estimated arithmetic return","8.57%"],["Target return","8.57%"]],"kind":"line"},{"x":6.389337745044756,"y":8.595227174934756,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.39%"],["Estimated arithmetic return","8.60%"],["Target return","8.60%"]],"kind":"line"},{"x":6.413636396337178,"y":8.622871770161478,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.41%"],["Estimated arithmetic return","8.62%"],["Target return","8.62%"]],"kind":"line"},{"x":6.43794620782966,"y":8.650516365388203,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.44%"],["Estimated arithmetic return","8.65%"],["Target return","8.65%"]],"kind":"line"},{"x":6.462266883215285,"y":8.678160960614928,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.46%"],["Estimated arithmetic return","8.68%"],["Target return","8.68%"]],"kind":"line"},{"x":6.486598562723097,"y":8.705805555841653,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.49%"],["Estimated arithmetic return","8.71%"],["Target return","8.71%"]],"kind":"line"},{"x":6.510940797158668,"y":8.733450151068379,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.51%"],["Estimated arithmetic return","8.73%"],["Target return","8.73%"]],"kind":"line"},{"x":6.535293735373318,"y":8.761094746295104,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.54%"],["Estimated arithmetic return","8.76%"],["Target return","8.76%"]],"kind":"line"},{"x":6.559657215313868,"y":8.78873934152183,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.56%"],["Estimated arithmetic return","8.79%"],["Target return","8.79%"]],"kind":"line"},{"x":6.584030983198579,"y":8.816383936748553,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.58%"],["Estimated arithmetic return","8.82%"],["Target return","8.82%"]],"kind":"line"},{"x":6.608415061507033,"y":8.844028531975278,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.61%"],["Estimated arithmetic return","8.84%"],["Target return","8.84%"]],"kind":"line"},{"x":6.632809291139297,"y":8.871673127202003,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.63%"],["Estimated arithmetic return","8.87%"],["Target return","8.87%"]],"kind":"line"},{"x":6.657213560580614,"y":8.899317722428727,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.66%"],["Estimated arithmetic return","8.90%"],["Target return","8.90%"]],"kind":"line"},{"x":6.68162775983501,"y":8.926962317655452,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.68%"],["Estimated arithmetic return","8.93%"],["Target return","8.93%"]],"kind":"line"},{"x":6.706051780485287,"y":8.954606912882177,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.71%"],["Estimated arithmetic return","8.95%"],["Target return","8.95%"]],"kind":"line"},{"x":6.730485515584873,"y":8.982251508108902,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.73%"],["Estimated arithmetic return","8.98%"],["Target return","8.98%"]],"kind":"line"},{"x":6.7549288598028445,"y":9.009896103335628,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.75%"],["Estimated arithmetic return","9.01%"],["Target return","9.01%"]],"kind":"line"},{"x":6.779381708147164,"y":9.037540698562353,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.78%"],["Estimated arithmetic return","9.04%"],["Target return","9.04%"]],"kind":"line"},{"x":6.8038439596945155,"y":9.065185293789076,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.80%"],["Estimated arithmetic return","9.07%"],["Target return","9.07%"]],"kind":"line"},{"x":6.82831554039083,"y":9.092829889015803,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.83%"],["Estimated arithmetic return","9.09%"],["Target return","9.09%"]],"kind":"line"},{"x":6.8527962738822525,"y":9.120474484242527,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.85%"],["Estimated arithmetic return","9.12%"],["Target return","9.12%"]],"kind":"line"},{"x":6.87728613555489,"y":9.148119079469252,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.88%"],["Estimated arithmetic return","9.15%"],["Target return","9.15%"]],"kind":"line"},{"x":6.9017849917525655,"y":9.175763674695977,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.90%"],["Estimated arithmetic return","9.18%"],["Target return","9.18%"]],"kind":"line"},{"x":6.9262927682018915,"y":9.2034082699227,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.93%"],["Estimated arithmetic return","9.20%"],["Target return","9.20%"]],"kind":"line"},{"x":6.950809417926735,"y":9.231052865149426,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.95%"],["Estimated arithmetic return","9.23%"],["Target return","9.23%"]],"kind":"line"},{"x":6.975334678750598,"y":9.25869746037615,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","6.98%"],["Estimated arithmetic return","9.26%"],["Target return","9.26%"]],"kind":"line"},{"x":6.9998686328722695,"y":9.286342055602875,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.00%"],["Estimated arithmetic return","9.29%"],["Target return","9.29%"]],"kind":"line"},{"x":7.024411211672307,"y":9.3139866508296,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.02%"],["Estimated arithmetic return","9.31%"],["Target return","9.31%"]],"kind":"line"},{"x":7.048962063112249,"y":9.341631246056327,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.05%"],["Estimated arithmetic return","9.34%"],["Target return","9.34%"]],"kind":"line"},{"x":7.0735213718467955,"y":9.369275841283054,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.07%"],["Estimated arithmetic return","9.37%"],["Target return","9.37%"]],"kind":"line"},{"x":7.0980889622226275,"y":9.39692043650978,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.10%"],["Estimated arithmetic return","9.40%"],["Target return","9.40%"]],"kind":"line"},{"x":7.122664735865392,"y":9.4245650317365,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.12%"],["Estimated arithmetic return","9.42%"],["Target return","9.42%"]],"kind":"line"},{"x":7.147248620910418,"y":9.452209626963224,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.15%"],["Estimated arithmetic return","9.45%"],["Target return","9.45%"]],"kind":"line"},{"x":7.171840530639326,"y":9.47985422218995,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.17%"],["Estimated arithmetic return","9.48%"],["Target return","9.48%"]],"kind":"line"},{"x":7.196440462355326,"y":9.507498817416677,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.20%"],["Estimated arithmetic return","9.51%"],["Target return","9.51%"]],"kind":"line"},{"x":7.221048094657465,"y":9.535143412643398,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.22%"],["Estimated arithmetic return","9.54%"],["Target return","9.54%"]],"kind":"line"},{"x":7.24566365219004,"y":9.562788007870124,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.25%"],["Estimated arithmetic return","9.56%"],["Target return","9.56%"]],"kind":"line"},{"x":7.27028678234439,"y":9.590432603096849,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.27%"],["Estimated arithmetic return","9.59%"],["Target return","9.59%"]],"kind":"line"},{"x":7.2949178698536485,"y":9.618077198323574,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.29%"],["Estimated arithmetic return","9.62%"],["Target return","9.62%"]],"kind":"line"},{"x":7.319555965592925,"y":9.645721793550303,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.32%"],["Estimated arithmetic return","9.65%"],["Target return","9.65%"]],"kind":"line"},{"x":7.344201801272021,"y":9.673366388777026,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.34%"],["Estimated arithmetic return","9.67%"],["Target return","9.67%"]],"kind":"line"},{"x":7.368855127650238,"y":9.70101098400375,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.37%"],["Estimated arithmetic return","9.70%"],["Target return","9.70%"]],"kind":"line"},{"x":7.3935155864100075,"y":9.728655579230477,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.39%"],["Estimated arithmetic return","9.73%"],["Target return","9.73%"]],"kind":"line"},{"x":7.418921285412959,"y":9.7563001744572,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.42%"],["Estimated arithmetic return","9.76%"],["Target return","9.76%"]],"kind":"line"},{"x":7.447054619795912,"y":9.783944769683925,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.45%"],["Estimated arithmetic return","9.78%"],["Target return","9.78%"]],"kind":"line"},{"x":7.477995538939915,"y":9.811589364910649,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.48%"],["Estimated arithmetic return","9.81%"],["Target return","9.81%"]],"kind":"line"},{"x":7.511709349389021,"y":9.839233960137376,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.51%"],["Estimated arithmetic return","9.84%"],["Target return","9.84%"]],"kind":"line"},{"x":7.548158895923102,"y":9.866878555364096,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.55%"],["Estimated arithmetic return","9.87%"],["Target return","9.87%"]],"kind":"line"},{"x":7.587304751070646,"y":9.894523150590823,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.59%"],["Estimated arithmetic return","9.89%"],["Target return","9.89%"]],"kind":"line"},{"x":7.629105409695615,"y":9.92216774581755,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.63%"],["Estimated arithmetic return","9.92%"],["Target return","9.92%"]],"kind":"line"},{"x":7.673517486654082,"y":9.949812341044273,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.67%"],["Estimated arithmetic return","9.95%"],["Target return","9.95%"]],"kind":"line"},{"x":7.720495915602613,"y":9.977456936270999,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.72%"],["Estimated arithmetic return","9.98%"],["Target return","9.98%"]],"kind":"line"},{"x":7.769994147153445,"y":10.005101531497726,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.77%"],["Estimated arithmetic return","10.01%"],["Target return","10.01%"]],"kind":"line"},{"x":7.821964344707302,"y":10.032746126724447,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.82%"],["Estimated arithmetic return","10.03%"],["Target return","10.03%"]],"kind":"line"},{"x":7.876357576447219,"y":10.060390721951174,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.88%"],["Estimated arithmetic return","10.06%"],["Target return","10.06%"]],"kind":"line"},{"x":7.93312400214153,"y":10.088035317177898,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.93%"],["Estimated arithmetic return","10.09%"],["Target return","10.09%"]],"kind":"line"},{"x":7.9922130535767275,"y":10.115679912404625,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","7.99%"],["Estimated arithmetic return","10.12%"],["Target return","10.12%"]],"kind":"line"},{"x":8.053573607615554,"y":10.143324507631348,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","8.05%"],["Estimated arithmetic return","10.14%"],["Target return","10.14%"]],"kind":"line"},{"x":8.11715415105029,"y":10.170969102858074,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","8.12%"],["Estimated arithmetic return","10.17%"],["Target return","10.17%"]],"kind":"line"},{"x":8.182902936590137,"y":10.198613698084797,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","8.18%"],["Estimated arithmetic return","10.20%"],["Target return","10.20%"]],"kind":"line"},{"x":8.250768129484044,"y":10.226258293311522,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","8.25%"],["Estimated arithmetic return","10.23%"],["Target return","10.23%"]],"kind":"line"},{"x":8.32069794443202,"y":10.253902888538247,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","8.32%"],["Estimated arithmetic return","10.25%"],["Target return","10.25%"]],"kind":"line"},{"x":8.392640772578817,"y":10.281547483764975,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","8.39%"],["Estimated arithmetic return","10.28%"],["Target return","10.28%"]],"kind":"line"},{"x":8.46654529851113,"y":10.309192078991696,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","8.47%"],["Estimated arithmetic return","10.31%"],["Target return","10.31%"]],"kind":"line"},{"x":8.542360607293572,"y":10.336836674218423,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","8.54%"],["Estimated arithmetic return","10.34%"],["Target return","10.34%"]],"kind":"line"},{"x":8.620036281678434,"y":10.364481269445147,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","8.62%"],["Estimated arithmetic return","10.36%"],["Target return","10.36%"]],"kind":"line"},{"x":8.699522489710326,"y":10.392125864671872,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","8.70%"],["Estimated arithmetic return","10.39%"],["Target return","10.39%"]],"kind":"line"},{"x":8.780770063018977,"y":10.419770459898599,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","8.78%"],["Estimated arithmetic return","10.42%"],["Target return","10.42%"]],"kind":"line"},{"x":8.863730566153077,"y":10.447415055125322,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","8.86%"],["Estimated arithmetic return","10.45%"],["Target return","10.45%"]],"kind":"line"},{"x":8.948356357354903,"y":10.475059650352046,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","8.95%"],["Estimated arithmetic return","10.48%"],["Target return","10.48%"]],"kind":"line"},{"x":9.034600641211693,"y":10.50270424557877,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","9.03%"],["Estimated arithmetic return","10.50%"],["Target return","10.50%"]],"kind":"line"},{"x":9.122417513645354,"y":10.530348840805496,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","9.12%"],["Estimated arithmetic return","10.53%"],["Target return","10.53%"]],"kind":"line"},{"x":9.211761999718382,"y":10.557993436032223,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","9.21%"],["Estimated arithmetic return","10.56%"],["Target return","10.56%"]],"kind":"line"},{"x":9.302590084743013,"y":10.585638031258947,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","9.30%"],["Estimated arithmetic return","10.59%"],["Target return","10.59%"]],"kind":"line"},{"x":9.394858739181453,"y":10.61328262648567,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","9.39%"],["Estimated arithmetic return","10.61%"],["Target return","10.61%"]],"kind":"line"},{"x":9.48852593782094,"y":10.640927221712396,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","9.49%"],["Estimated arithmetic return","10.64%"],["Target return","10.64%"]],"kind":"line"},{"x":9.58355067369807,"y":10.66857181693912,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","9.58%"],["Estimated arithmetic return","10.67%"],["Target return","10.67%"]],"kind":"line"},{"x":9.679892967233075,"y":10.69621641216585,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","9.68%"],["Estimated arithmetic return","10.70%"],["Target return","10.70%"]],"kind":"line"},{"x":9.777513871018002,"y":10.723861007392571,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","9.78%"],["Estimated arithmetic return","10.72%"],["Target return","10.72%"]],"kind":"line"},{"x":9.876375470683659,"y":10.751505602619297,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","9.88%"],["Estimated arithmetic return","10.75%"],["Target return","10.75%"]],"kind":"line"},{"x":9.97644088224884,"y":10.779150197846022,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","9.98%"],["Estimated arithmetic return","10.78%"],["Target return","10.78%"]],"kind":"line"},{"x":10.077674246332894,"y":10.806794793072745,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","10.08%"],["Estimated arithmetic return","10.81%"],["Target return","10.81%"]],"kind":"line"},{"x":10.18004071958989,"y":10.834439388299467,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","10.18%"],["Estimated arithmetic return","10.83%"],["Target return","10.83%"]],"kind":"line"},{"x":10.283506463698403,"y":10.862083983526194,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","10.28%"],["Estimated arithmetic return","10.86%"],["Target return","10.86%"]],"kind":"line"},{"x":10.388038632218153,"y":10.889728578752917,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","10.39%"],["Estimated arithmetic return","10.89%"],["Target return","10.89%"]],"kind":"line"},{"x":10.493605355601014,"y":10.917373173979643,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","10.49%"],["Estimated arithmetic return","10.92%"],["Target return","10.92%"]],"kind":"line"},{"x":10.600175724621334,"y":10.945017769206371,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","10.60%"],["Estimated arithmetic return","10.95%"],["Target return","10.95%"]],"kind":"line"},{"x":10.707719772468641,"y":10.972662364433097,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","10.71%"],["Estimated arithmetic return","10.97%"],["Target return","10.97%"]],"kind":"line"},{"x":10.816208455724768,"y":11.000306959659822,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","10.82%"],["Estimated arithmetic return","11.00%"],["Target return","11.00%"]],"kind":"line"},{"x":10.925613634427103,"y":11.027951554886545,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","10.93%"],["Estimated arithmetic return","11.03%"],["Target return","11.03%"]],"kind":"line"},{"x":11.035908051401043,"y":11.055596150113269,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","11.04%"],["Estimated arithmetic return","11.06%"],["Target return","11.06%"]],"kind":"line"},{"x":11.147065311026441,"y":11.083240745339996,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","11.15%"],["Estimated arithmetic return","11.08%"],["Target return","11.08%"]],"kind":"line"},{"x":11.25905985758629,"y":11.110885340566721,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","11.26%"],["Estimated arithmetic return","11.11%"],["Target return","11.11%"]],"kind":"line"},{"x":11.37186695333023,"y":11.138529935793443,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","11.37%"],["Estimated arithmetic return","11.14%"],["Target return","11.14%"]],"kind":"line"},{"x":11.485462656370851,"y":11.166174531020168,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","11.49%"],["Estimated arithmetic return","11.17%"],["Target return","11.17%"]],"kind":"line"},{"x":11.599823798517187,"y":11.193819126246893,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","11.60%"],["Estimated arithmetic return","11.19%"],["Target return","11.19%"]],"kind":"line"},{"x":11.714927963138045,"y":11.221463721473619,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","11.71%"],["Estimated arithmetic return","11.22%"],["Target return","11.22%"]],"kind":"line"},{"x":11.830753463135522,"y":11.249108316700344,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","11.83%"],["Estimated arithmetic return","11.25%"],["Target return","11.25%"]],"kind":"line"},{"x":11.947279319099561,"y":11.276752911927069,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","11.95%"],["Estimated arithmetic return","11.28%"],["Target return","11.28%"]],"kind":"line"},{"x":12.064485237704373,"y":11.304397507153794,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","12.06%"],["Estimated arithmetic return","11.30%"],["Target return","11.30%"]],"kind":"line"},{"x":12.182351590399147,"y":11.332042102380521,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","12.18%"],["Estimated arithmetic return","11.33%"],["Target return","11.33%"]],"kind":"line"},{"x":12.300859392437836,"y":11.359686697607245,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","12.30%"],["Estimated arithmetic return","11.36%"],["Target return","11.36%"]],"kind":"line"},{"x":12.419990282285372,"y":11.38733129283397,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","12.42%"],["Estimated arithmetic return","11.39%"],["Target return","11.39%"]],"kind":"line"},{"x":12.539726501431819,"y":11.414975888060694,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","12.54%"],["Estimated arithmetic return","11.41%"],["Target return","11.41%"]],"kind":"line"},{"x":12.660050874639941,"y":11.44262048328742,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","12.66%"],["Estimated arithmetic return","11.44%"],["Target return","11.44%"]],"kind":"line"},{"x":12.780946790646722,"y":11.470265078514144,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","12.78%"],["Estimated arithmetic return","11.47%"],["Target return","11.47%"]],"kind":"line"},{"x":12.902398183334974,"y":11.49790967374087,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","12.90%"],["Estimated arithmetic return","11.50%"],["Target return","11.50%"]],"kind":"line"},{"x":13.024389513386806,"y":11.525554268967593,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","13.02%"],["Estimated arithmetic return","11.53%"],["Target return","11.53%"]],"kind":"line"},{"x":13.146905750427592,"y":11.55319886419432,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","13.15%"],["Estimated arithmetic return","11.55%"],["Target return","11.55%"]],"kind":"line"},{"x":13.269932355665686,"y":11.58084345942104,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","13.27%"],["Estimated arithmetic return","11.58%"],["Target return","11.58%"]],"kind":"line"},{"x":13.393455265030477,"y":11.60848805464777,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","13.39%"],["Estimated arithmetic return","11.61%"],["Target return","11.61%"]],"kind":"line"},{"x":13.517460872808645,"y":11.636132649874492,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","13.52%"],["Estimated arithmetic return","11.64%"],["Target return","11.64%"]],"kind":"line"},{"x":13.641936015777405,"y":11.663777245101219,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","13.64%"],["Estimated arithmetic return","11.66%"],["Target return","11.66%"]],"kind":"line"},{"x":13.766867957830078,"y":11.691421840327946,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","13.77%"],["Estimated arithmetic return","11.69%"],["Target return","11.69%"]],"kind":"line"},{"x":13.892244375089405,"y":11.71906643555467,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","13.89%"],["Estimated arithmetic return","11.72%"],["Target return","11.72%"]],"kind":"line"},{"x":14.018053341501787,"y":11.746711030781391,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","14.02%"],["Estimated arithmetic return","11.75%"],["Target return","11.75%"]],"kind":"line"},{"x":14.144283314904563,"y":11.77435562600812,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","14.14%"],["Estimated arithmetic return","11.77%"],["Target return","11.77%"]],"kind":"line"},{"x":14.2709231235578,"y":11.80200022123484,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","14.27%"],["Estimated arithmetic return","11.80%"],["Target return","11.80%"]],"kind":"line"},{"x":14.397961953131333,"y":11.829644816461565,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","14.40%"],["Estimated arithmetic return","11.83%"],["Target return","11.83%"]],"kind":"line"},{"x":14.525389334136626,"y":11.857289411688292,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","14.53%"],["Estimated arithmetic return","11.86%"],["Target return","11.86%"]],"kind":"line"},{"x":14.65319512979315,"y":11.884934006915017,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","14.65%"],["Estimated arithmetic return","11.88%"],["Target return","11.88%"]],"kind":"line"},{"x":14.781369524318416,"y":11.91257860214174,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","14.78%"],["Estimated arithmetic return","11.91%"],["Target return","11.91%"]],"kind":"line"},{"x":14.90990301163009,"y":11.940223197368464,"title":"Solved efficient portfolio","rows":[["Estimated annual volatility","14.91%"],["Estimated arithmetic return","11.94%"],["Target return","11.94%"]],"kind":"line"},{"x":14.914559121262322,"y":11.941223197368467,"title":"SPY","rows":[["Annual volatility","14.91%"],["Arithmetic mean return","11.94%"]]},{"x":19.553587323565694,"y":11.57493123517857,"title":"IWM","rows":[["Annual volatility","19.55%"],["Arithmetic mean return","11.57%"]]},{"x":18.317129669863082,"y":5.0588608869604705,"title":"EFA","rows":[["Annual volatility","18.32%"],["Arithmetic mean return","5.06%"]]},{"x":21.620565511116556,"y":3.350983652236634,"title":"EEM","rows":[["Annual volatility","21.62%"],["Arithmetic mean return","3.35%"]]},{"x":3.234666097960188,"y":3.134483336065297,"title":"AGG","rows":[["Annual volatility","3.23%"],["Arithmetic mean return","3.13%"]]},{"x":13.93475221421549,"y":7.281048024702494,"title":"TLT","rows":[["Annual volatility","13.93%"],["Arithmetic mean return","7.28%"]]},{"x":5.24166107216973,"y":4.704599927900078,"title":"LQD","rows":[["Annual volatility","5.24%"],["Arithmetic mean return","4.70%"]]},{"x":18.35875337364654,"y":11.482749571168267,"title":"VNQ","rows":[["Annual volatility","18.36%"],["Arithmetic mean return","11.48%"]]},{"x":15.856998287495239,"y":2.3657032181124777,"title":"GLD","rows":[["Annual volatility","15.86%"],["Arithmetic mean return","2.37%"]]},{"x":15.885219139229035,"y":-4.771460805978804,"title":"DBC","rows":[["Annual volatility","15.89%"],["Arithmetic mean return","-4.77%"]]},{"x":9.25935892195722,"y":5.6123122243713945,"title":"Equal weight","rows":[["Estimated annual volatility","9.26%"],["Estimated arithmetic return","5.61%"],["Estimated excess Sharpe","0.580"],["SPY","10.00%"],["IWM","10.00%"],["EFA","10.00%"],["EEM","10.00%"],["AGG","10.00%"],["TLT","10.00%"],["LQD","10.00%"],["VNQ","10.00%"],["GLD","10.00%"],["DBC","10.00%"]]},{"x":2.8653169691606366,"y":3.646844629350996,"title":"GMV · sample","rows":[["Estimated annual volatility","2.87%"],["Estimated arithmetic return","3.65%"],["Estimated excess Sharpe","1.189"],["SPY","7.87%"],["AGG","89.85%"],["DBC","2.28%"]]},{"x":3.2977193153417934,"y":4.841370516215835,"title":"Max Sharpe · sample","rows":[["Estimated annual volatility","3.30%"],["Estimated arithmetic return","4.84%"],["Estimated excess Sharpe","1.395"],["SPY","18.23%"],["AGG","79.32%"],["TLT","2.45%"]]}],"box":[54.525,30.591562,556.725,341.055562],"xlim":[1.3648970393738187,23.120985397912314],"ylim":[-6.944109726413949,14.113872117803613]}</metadata>
+</svg>

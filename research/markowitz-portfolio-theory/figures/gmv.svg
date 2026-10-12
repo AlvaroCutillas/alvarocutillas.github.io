@@ -1,0 +1,394 @@
+<svg role="img" aria-labelledby="gmv-title gmv-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="gmv-title">Figure 05 · The minimum-variance weight minimises a quadratic</title><desc id="gmv-desc">Assets A and B: σA = 10%, σB = 18%, correlation .20. The minimum occurs at wA = 0.818182. Variance uses squared decimal-return units; it is not a percentage volatility.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T17:14:58.566010</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="gmv-figure_1">
+  <g id="gmv-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="gmv-axes_1">
+   <g id="gmv-patch_2">
+    <path d="M 59.78 208.78 
+L 648.9 208.78 
+L 648.9 13.5 
+L 59.78 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="gmv-matplotlib.axis_1">
+    <g id="gmv-xtick_1">
+     <g id="gmv-line2d_1">
+      <path d="M 86.558182 208.78 
+L 86.558182 13.5 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="gmv-line2d_2">
+      <defs>
+       <path id="gmv-m11bc3ca2a5" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#gmv-m11bc3ca2a5" x="86.558182" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="gmv-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="86.558182" y="222.618594" transform="rotate(-0 86.558182 222.618594)">−20%</text>
+     </g>
+    </g>
+    <g id="gmv-xtick_2">
+     <g id="gmv-line2d_3">
+      <path d="M 163.067273 208.78 
+L 163.067273 13.5 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="gmv-line2d_4">
+      <g>
+       <use href="#gmv-m11bc3ca2a5" x="163.067273" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="gmv-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="163.067273" y="222.618594" transform="rotate(-0 163.067273 222.618594)">0%</text>
+     </g>
+    </g>
+    <g id="gmv-xtick_3">
+     <g id="gmv-line2d_5">
+      <path d="M 239.576364 208.78 
+L 239.576364 13.5 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="gmv-line2d_6">
+      <g>
+       <use href="#gmv-m11bc3ca2a5" x="239.576364" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="gmv-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="239.576364" y="222.618594" transform="rotate(-0 239.576364 222.618594)">20%</text>
+     </g>
+    </g>
+    <g id="gmv-xtick_4">
+     <g id="gmv-line2d_7">
+      <path d="M 316.085455 208.78 
+L 316.085455 13.5 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="gmv-line2d_8">
+      <g>
+       <use href="#gmv-m11bc3ca2a5" x="316.085455" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="gmv-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="316.085455" y="222.618594" transform="rotate(-0 316.085455 222.618594)">40%</text>
+     </g>
+    </g>
+    <g id="gmv-xtick_5">
+     <g id="gmv-line2d_9">
+      <path d="M 392.594545 208.78 
+L 392.594545 13.5 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="gmv-line2d_10">
+      <g>
+       <use href="#gmv-m11bc3ca2a5" x="392.594545" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="gmv-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="392.594545" y="222.618594" transform="rotate(-0 392.594545 222.618594)">60%</text>
+     </g>
+    </g>
+    <g id="gmv-xtick_6">
+     <g id="gmv-line2d_11">
+      <path d="M 469.103636 208.78 
+L 469.103636 13.5 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="gmv-line2d_12">
+      <g>
+       <use href="#gmv-m11bc3ca2a5" x="469.103636" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="gmv-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="469.103636" y="222.618594" transform="rotate(-0 469.103636 222.618594)">80%</text>
+     </g>
+    </g>
+    <g id="gmv-xtick_7">
+     <g id="gmv-line2d_13">
+      <path d="M 545.612727 208.78 
+L 545.612727 13.5 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="gmv-line2d_14">
+      <g>
+       <use href="#gmv-m11bc3ca2a5" x="545.612727" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="gmv-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="545.612727" y="222.618594" transform="rotate(-0 545.612727 222.618594)">100%</text>
+     </g>
+    </g>
+    <g id="gmv-xtick_8">
+     <g id="gmv-line2d_15">
+      <path d="M 622.121818 208.78 
+L 622.121818 13.5 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="gmv-line2d_16">
+      <g>
+       <use href="#gmv-m11bc3ca2a5" x="622.121818" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="gmv-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="622.121818" y="222.618594" transform="rotate(-0 622.121818 222.618594)">120%</text>
+     </g>
+    </g>
+    <g id="gmv-text_9">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="354.34" y="235.328906" transform="rotate(-0 354.34 235.328906)">Weight in asset A</text>
+    </g>
+   </g>
+   <g id="gmv-matplotlib.axis_2">
+    <g id="gmv-ytick_1">
+     <g id="gmv-line2d_17">
+      <path d="M 59.78 194.2433 
+L 648.9 194.2433 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="gmv-line2d_18">
+      <defs>
+       <path id="gmv-m75d245f925" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#gmv-m75d245f925" x="59.78" y="194.2433" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="gmv-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="197.662597" transform="rotate(-0 52.78 197.662597)">0.010</text>
+     </g>
+    </g>
+    <g id="gmv-ytick_2">
+     <g id="gmv-line2d_19">
+      <path d="M 59.78 169.918836 
+L 648.9 169.918836 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="gmv-line2d_20">
+      <g>
+       <use href="#gmv-m75d245f925" x="59.78" y="169.918836" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="gmv-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="173.338133" transform="rotate(-0 52.78 173.338133)">0.015</text>
+     </g>
+    </g>
+    <g id="gmv-ytick_3">
+     <g id="gmv-line2d_21">
+      <path d="M 59.78 145.594371 
+L 648.9 145.594371 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="gmv-line2d_22">
+      <g>
+       <use href="#gmv-m75d245f925" x="59.78" y="145.594371" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="gmv-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="149.013668" transform="rotate(-0 52.78 149.013668)">0.020</text>
+     </g>
+    </g>
+    <g id="gmv-ytick_4">
+     <g id="gmv-line2d_23">
+      <path d="M 59.78 121.269907 
+L 648.9 121.269907 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="gmv-line2d_24">
+      <g>
+       <use href="#gmv-m75d245f925" x="59.78" y="121.269907" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="gmv-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="124.689204" transform="rotate(-0 52.78 124.689204)">0.025</text>
+     </g>
+    </g>
+    <g id="gmv-ytick_5">
+     <g id="gmv-line2d_25">
+      <path d="M 59.78 96.945442 
+L 648.9 96.945442 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="gmv-line2d_26">
+      <g>
+       <use href="#gmv-m75d245f925" x="59.78" y="96.945442" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="gmv-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="100.364739" transform="rotate(-0 52.78 100.364739)">0.030</text>
+     </g>
+    </g>
+    <g id="gmv-ytick_6">
+     <g id="gmv-line2d_27">
+      <path d="M 59.78 72.620978 
+L 648.9 72.620978 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="gmv-line2d_28">
+      <g>
+       <use href="#gmv-m75d245f925" x="59.78" y="72.620978" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="gmv-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="76.040275" transform="rotate(-0 52.78 76.040275)">0.035</text>
+     </g>
+    </g>
+    <g id="gmv-ytick_7">
+     <g id="gmv-line2d_29">
+      <path d="M 59.78 48.296513 
+L 648.9 48.296513 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="gmv-line2d_30">
+      <g>
+       <use href="#gmv-m75d245f925" x="59.78" y="48.296513" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="gmv-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="51.71581" transform="rotate(-0 52.78 51.71581)">0.040</text>
+     </g>
+    </g>
+    <g id="gmv-ytick_8">
+     <g id="gmv-line2d_31">
+      <path d="M 59.78 23.972049 
+L 648.9 23.972049 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="gmv-line2d_32">
+      <g>
+       <use href="#gmv-m75d245f925" x="59.78" y="23.972049" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="gmv-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="27.391345" transform="rotate(-0 52.78 27.391345)">0.045</text>
+     </g>
+    </g>
+    <g id="gmv-text_18">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.142969" y="111.14" transform="rotate(-90 21.142969 111.14)">Return variance</text>
+    </g>
+   </g>
+   <g id="gmv-line2d_33">
+    <path d="M 86.558182 22.376364 
+L 97.32328 32.053856 
+L 108.088378 41.460131 
+L 118.853476 50.595191 
+L 129.618575 59.459034 
+L 140.383673 68.05166 
+L 151.148771 76.373071 
+L 161.913869 84.423265 
+L 172.678968 92.202242 
+L 183.444066 99.710004 
+L 194.209164 106.946549 
+L 204.974262 113.911877 
+L 215.73936 120.605989 
+L 226.504459 127.028885 
+L 237.269557 133.180565 
+L 248.034655 139.061028 
+L 258.799753 144.670275 
+L 269.564852 150.008306 
+L 280.32995 155.07512 
+L 291.095048 159.870718 
+L 301.860146 164.3951 
+L 312.625244 168.648265 
+L 323.390343 172.630214 
+L 334.155441 176.340947 
+L 344.920539 179.780463 
+L 355.685637 182.948763 
+L 366.450735 185.845846 
+L 377.215834 188.471714 
+L 387.980932 190.826365 
+L 398.74603 192.909799 
+L 409.511128 194.722017 
+L 420.276227 196.263019 
+L 431.041325 197.532805 
+L 441.806423 198.531374 
+L 452.571521 199.258727 
+L 463.336619 199.714864 
+L 474.101718 199.899784 
+L 484.866816 199.813488 
+L 495.631914 199.455975 
+L 506.397012 198.827247 
+L 517.162111 197.927301 
+L 527.927209 196.75614 
+L 538.692307 195.313762 
+L 549.457405 193.600168 
+L 560.222503 191.615358 
+L 570.987602 189.359331 
+L 581.7527 186.832088 
+L 592.517798 184.033628 
+L 603.282896 180.963952 
+L 614.047995 177.62306 
+L 622.121818 174.939405 
+L 622.121818 174.939405 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="gmv-line2d_34">
+    <path d="M 476.059008 208.78 
+L 476.059008 13.5 
+" clip-path="url(#gmv-p03157fded8)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+   </g>
+   <g id="gmv-patch_3">
+    <path d="M 59.78 208.78 
+L 59.78 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="gmv-patch_4">
+    <path d="M 59.78 208.78 
+L 648.9 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="gmv-legend_1">
+    <g id="gmv-line2d_35">
+     <path d="M 515.59375 23.97875 
+L 523.59375 23.97875 
+L 531.59375 23.97875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="gmv-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="537.99375" y="26.77875" transform="rotate(-0 537.99375 26.77875)">Two-asset variance</text>
+    </g>
+    <g id="gmv-line2d_36">
+     <path d="M 515.59375 35.72125 
+L 523.59375 35.72125 
+L 531.59375 35.72125 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+    </g>
+    <g id="gmv-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="537.99375" y="38.52125" transform="rotate(-0 537.99375 38.52125)">Minimum-variance weight</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="gmv-p03157fded8">
+   <rect x="59.78" y="13.5" width="589.12" height="195.28"/>
+  </clipPath>
+ </defs>
+</svg>

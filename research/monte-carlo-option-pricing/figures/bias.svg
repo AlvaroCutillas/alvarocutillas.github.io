@@ -1,0 +1,390 @@
+<svg role="img" aria-labelledby="bias-title bias-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="bias-title">Figure 05 · Euler discretisation bias and paired statistical uncertainty</title><desc id="bias-desc">100,000 coupled paths; seed 1006. Euler and exact terminals share the same total Brownian increment. Shading is a pointwise 95% normal interval for their expected payoff difference. More samples estimate this bias more precisely; they do not remove it.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T19:11:28.446428</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="bias-figure_1">
+  <g id="bias-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="bias-axes_1">
+   <g id="bias-patch_2">
+    <path d="M 61.58 206.188 
+L 648.9 206.188 
+L 648.9 13.5 
+L 61.58 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="bias-matplotlib.axis_1">
+    <g id="bias-xtick_1">
+     <g id="bias-line2d_1">
+      <path d="M 229.439056 206.188 
+L 229.439056 13.5 
+" clip-path="url(#bias-p1af4a74c4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bias-line2d_2">
+      <defs>
+       <path id="bias-m3028af0710" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#bias-m3028af0710" x="229.439056" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bias-text_1">
+      <!-- $\mathdefault{10^{1}}$ -->
+      <g style="fill: #939b94" transform="translate(221.519056 220.026594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.40625">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="bias-xtick_2">
+     <g id="bias-line2d_3">
+      <path d="M 584.172658 206.188 
+L 584.172658 13.5 
+" clip-path="url(#bias-p1af4a74c4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bias-line2d_4">
+      <g>
+       <use href="#bias-m3028af0710" x="584.172658" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bias-text_2">
+      <!-- $\mathdefault{10^{2}}$ -->
+      <g style="fill: #939b94" transform="translate(576.252658 220.026594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="bias-xtick_3">
+     <g id="bias-line2d_5">
+      <defs>
+       <path id="bias-mab8a774efd" d="M 0 0 
+L 0 2 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#bias-mab8a774efd" x="88.276364" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="bias-xtick_4">
+     <g id="bias-line2d_6">
+      <g>
+       <use href="#bias-mab8a774efd" x="122.653602" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="bias-xtick_5">
+     <g id="bias-line2d_7">
+      <g>
+       <use href="#bias-mab8a774efd" x="150.74185" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="bias-xtick_6">
+     <g id="bias-line2d_8">
+      <g>
+       <use href="#bias-mab8a774efd" x="174.490126" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="bias-xtick_7">
+     <g id="bias-line2d_9">
+      <g>
+       <use href="#bias-mab8a774efd" x="195.061818" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="bias-xtick_8">
+     <g id="bias-line2d_10">
+      <g>
+       <use href="#bias-mab8a774efd" x="213.207337" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="bias-xtick_9">
+     <g id="bias-line2d_11">
+      <g>
+       <use href="#bias-mab8a774efd" x="336.224511" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="bias-xtick_10">
+     <g id="bias-line2d_12">
+      <g>
+       <use href="#bias-mab8a774efd" x="398.689997" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="bias-xtick_11">
+     <g id="bias-line2d_13">
+      <g>
+       <use href="#bias-mab8a774efd" x="443.009965" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="bias-xtick_12">
+     <g id="bias-line2d_14">
+      <g>
+       <use href="#bias-mab8a774efd" x="477.387203" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="bias-xtick_13">
+     <g id="bias-line2d_15">
+      <g>
+       <use href="#bias-mab8a774efd" x="505.475452" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="bias-xtick_14">
+     <g id="bias-line2d_16">
+      <g>
+       <use href="#bias-mab8a774efd" x="529.223728" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="bias-xtick_15">
+     <g id="bias-line2d_17">
+      <g>
+       <use href="#bias-mab8a774efd" x="549.79542" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="bias-xtick_16">
+     <g id="bias-line2d_18">
+      <g>
+       <use href="#bias-mab8a774efd" x="567.940938" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="bias-text_3">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="355.24" y="232.736906" transform="rotate(-0 355.24 232.736906)">Euler steps m</text>
+    </g>
+   </g>
+   <g id="bias-matplotlib.axis_2">
+    <g id="bias-ytick_1">
+     <g id="bias-line2d_19">
+      <path d="M 61.58 204.551392 
+L 648.9 204.551392 
+" clip-path="url(#bias-p1af4a74c4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bias-line2d_20">
+      <defs>
+       <path id="bias-m9dc5b9e2eb" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#bias-m9dc5b9e2eb" x="61.58" y="204.551392" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bias-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="54.58" y="207.970689" transform="rotate(-0 54.58 207.970689)">−0.05</text>
+     </g>
+    </g>
+    <g id="bias-ytick_2">
+     <g id="bias-line2d_21">
+      <path d="M 61.58 168.956238 
+L 648.9 168.956238 
+" clip-path="url(#bias-p1af4a74c4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bias-line2d_22">
+      <g>
+       <use href="#bias-m9dc5b9e2eb" x="61.58" y="168.956238" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bias-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="54.58" y="172.375535" transform="rotate(-0 54.58 172.375535)">−0.04</text>
+     </g>
+    </g>
+    <g id="bias-ytick_3">
+     <g id="bias-line2d_23">
+      <path d="M 61.58 133.361085 
+L 648.9 133.361085 
+" clip-path="url(#bias-p1af4a74c4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bias-line2d_24">
+      <g>
+       <use href="#bias-m9dc5b9e2eb" x="61.58" y="133.361085" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bias-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="54.58" y="136.780382" transform="rotate(-0 54.58 136.780382)">−0.03</text>
+     </g>
+    </g>
+    <g id="bias-ytick_4">
+     <g id="bias-line2d_25">
+      <path d="M 61.58 97.765932 
+L 648.9 97.765932 
+" clip-path="url(#bias-p1af4a74c4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bias-line2d_26">
+      <g>
+       <use href="#bias-m9dc5b9e2eb" x="61.58" y="97.765932" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bias-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="54.58" y="101.185229" transform="rotate(-0 54.58 101.185229)">−0.02</text>
+     </g>
+    </g>
+    <g id="bias-ytick_5">
+     <g id="bias-line2d_27">
+      <path d="M 61.58 62.170779 
+L 648.9 62.170779 
+" clip-path="url(#bias-p1af4a74c4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bias-line2d_28">
+      <g>
+       <use href="#bias-m9dc5b9e2eb" x="61.58" y="62.170779" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bias-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="54.58" y="65.590075" transform="rotate(-0 54.58 65.590075)">−0.01</text>
+     </g>
+    </g>
+    <g id="bias-ytick_6">
+     <g id="bias-line2d_29">
+      <path d="M 61.58 26.575625 
+L 648.9 26.575625 
+" clip-path="url(#bias-p1af4a74c4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bias-line2d_30">
+      <g>
+       <use href="#bias-m9dc5b9e2eb" x="61.58" y="26.575625" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bias-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="54.58" y="29.994922" transform="rotate(-0 54.58 29.994922)">0.00</text>
+     </g>
+    </g>
+    <g id="bias-text_10">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.1275" y="109.844" transform="rotate(-90 21.1275 109.844)">Estimated price bias</text>
+    </g>
+   </g>
+   <g id="bias-PolyCollection_1">
+    <defs>
+     <path id="bias-m8908d59ba0" d="M 88.276364 -108.750866 
+L 88.276364 -54.570545 
+L 195.061818 -145.982212 
+L 301.847273 -190.462594 
+L 408.632727 -208.99545 
+L 515.418182 -216.353416 
+L 622.203636 -219.391464 
+L 622.203636 -228.798077 
+L 622.203636 -228.798077 
+L 515.418182 -229.741455 
+L 408.632727 -227.872188 
+L 301.847273 -217.271288 
+L 195.061818 -183.977139 
+L 88.276364 -108.750866 
+z
+" style="stroke: #a7bdb3; stroke-opacity: 0.15"/>
+    </defs>
+    <g clip-path="url(#bias-p1af4a74c4a)">
+     <use href="#bias-m8908d59ba0" x="0" y="252" style="fill: #a7bdb3; fill-opacity: 0.15; stroke: #a7bdb3; stroke-opacity: 0.15"/>
+    </g>
+   </g>
+   <g id="bias-line2d_31">
+    <path d="M 88.276364 170.339294 
+L 195.061818 87.020324 
+L 301.847273 48.133059 
+L 408.632727 33.566181 
+L 515.418182 28.952565 
+L 622.203636 27.90523 
+" clip-path="url(#bias-p1af4a74c4a)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="bias-m6947b53dd8" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#bias-p1af4a74c4a)">
+     <use href="#bias-m6947b53dd8" x="88.276364" y="170.339294" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#bias-m6947b53dd8" x="195.061818" y="87.020324" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#bias-m6947b53dd8" x="301.847273" y="48.133059" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#bias-m6947b53dd8" x="408.632727" y="33.566181" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#bias-m6947b53dd8" x="515.418182" y="28.952565" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#bias-m6947b53dd8" x="622.203636" y="27.90523" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="bias-line2d_32">
+    <path d="M 61.58 26.575625 
+L 648.9 26.575625 
+" clip-path="url(#bias-p1af4a74c4a)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+   </g>
+   <g id="bias-patch_3">
+    <path d="M 61.58 206.188 
+L 61.58 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="bias-patch_4">
+    <path d="M 61.58 206.188 
+L 648.9 206.188 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="bias-legend_1">
+    <g id="bias-line2d_33">
+     <path d="M 68.78 182.78175 
+L 76.78 182.78175 
+L 84.78 182.78175 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#bias-m6947b53dd8" x="76.78" y="182.78175" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="bias-text_11">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="91.18" y="185.58175" transform="rotate(-0 91.18 185.58175)">Coupled Euler − exact estimate</text>
+    </g>
+    <g id="bias-line2d_34">
+     <path d="M 68.78 194.52425 
+L 76.78 194.52425 
+L 84.78 194.52425 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+    </g>
+    <g id="bias-text_12">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="91.18" y="197.32425" transform="rotate(-0 91.18 197.32425)">Zero bias</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="bias-p1af4a74c4a">
+   <rect x="61.58" y="13.5" width="587.32" height="192.688"/>
+  </clipPath>
+ </defs>
+</svg>

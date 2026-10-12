@@ -1,0 +1,298 @@
+<svg role="img" aria-labelledby="frontier-title frontier-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="259.2pt" viewBox="0 0 662.4 259.2" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="frontier-title">Figure 06 · The minimum-variance boundary has two branches</title><desc id="frontier-desc">Benchmark inputs, unrestricted short selling and net weights summing to one. Only the branch at or above the global minimum-variance return is efficient for increasing mean and decreasing variance. The lower branch is dominated at the same volatility.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T17:14:58.629645</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="frontier-figure_1">
+  <g id="frontier-patch_1">
+   <path d="M 0 259.2 
+L 662.4 259.2 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="frontier-axes_1">
+   <g id="frontier-patch_2">
+    <path d="M 62.66 215.98 
+L 648.9 215.98 
+L 648.9 13.5 
+L 62.66 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="frontier-matplotlib.axis_1">
+    <g id="frontier-xtick_1">
+     <g id="frontier-line2d_1">
+      <path d="M 98.091437 215.98 
+L 98.091437 13.5 
+" clip-path="url(#frontier-p3adb7d46eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="frontier-line2d_2">
+      <defs>
+       <path id="frontier-m7e6b64f77f" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#frontier-m7e6b64f77f" x="98.091437" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="frontier-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="98.091437" y="229.818594" transform="rotate(-0 98.091437 229.818594)">10.0%</text>
+     </g>
+    </g>
+    <g id="frontier-xtick_2">
+     <g id="frontier-line2d_3">
+      <path d="M 226.348674 215.98 
+L 226.348674 13.5 
+" clip-path="url(#frontier-p3adb7d46eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="frontier-line2d_4">
+      <g>
+       <use href="#frontier-m7e6b64f77f" x="226.348674" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="frontier-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="226.348674" y="229.818594" transform="rotate(-0 226.348674 229.818594)">20.0%</text>
+     </g>
+    </g>
+    <g id="frontier-xtick_3">
+     <g id="frontier-line2d_5">
+      <path d="M 354.60591 215.98 
+L 354.60591 13.5 
+" clip-path="url(#frontier-p3adb7d46eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="frontier-line2d_6">
+      <g>
+       <use href="#frontier-m7e6b64f77f" x="354.60591" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="frontier-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="354.60591" y="229.818594" transform="rotate(-0 354.60591 229.818594)">30.0%</text>
+     </g>
+    </g>
+    <g id="frontier-xtick_4">
+     <g id="frontier-line2d_7">
+      <path d="M 482.863147 215.98 
+L 482.863147 13.5 
+" clip-path="url(#frontier-p3adb7d46eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="frontier-line2d_8">
+      <g>
+       <use href="#frontier-m7e6b64f77f" x="482.863147" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="frontier-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="482.863147" y="229.818594" transform="rotate(-0 482.863147 229.818594)">40.0%</text>
+     </g>
+    </g>
+    <g id="frontier-xtick_5">
+     <g id="frontier-line2d_9">
+      <path d="M 611.120384 215.98 
+L 611.120384 13.5 
+" clip-path="url(#frontier-p3adb7d46eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="frontier-line2d_10">
+      <g>
+       <use href="#frontier-m7e6b64f77f" x="611.120384" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="frontier-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="611.120384" y="229.818594" transform="rotate(-0 611.120384 229.818594)">50.0%</text>
+     </g>
+    </g>
+    <g id="frontier-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="355.78" y="242.528906" transform="rotate(-0 355.78 242.528906)">Portfolio volatility</text>
+    </g>
+   </g>
+   <g id="frontier-matplotlib.axis_2">
+    <g id="frontier-ytick_1">
+     <g id="frontier-line2d_11">
+      <path d="M 62.66 191.43697 
+L 648.9 191.43697 
+" clip-path="url(#frontier-p3adb7d46eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="frontier-line2d_12">
+      <defs>
+       <path id="frontier-m6632e3869d" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#frontier-m6632e3869d" x="62.66" y="191.43697" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="frontier-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="194.856267" transform="rotate(-0 55.66 194.856267)">0.0%</text>
+     </g>
+    </g>
+    <g id="frontier-ytick_2">
+     <g id="frontier-line2d_13">
+      <path d="M 62.66 153.088485 
+L 648.9 153.088485 
+" clip-path="url(#frontier-p3adb7d46eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="frontier-line2d_14">
+      <g>
+       <use href="#frontier-m6632e3869d" x="62.66" y="153.088485" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="frontier-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="156.507782" transform="rotate(-0 55.66 156.507782)">5.0%</text>
+     </g>
+    </g>
+    <g id="frontier-ytick_3">
+     <g id="frontier-line2d_15">
+      <path d="M 62.66 114.74 
+L 648.9 114.74 
+" clip-path="url(#frontier-p3adb7d46eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="frontier-line2d_16">
+      <g>
+       <use href="#frontier-m6632e3869d" x="62.66" y="114.74" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="frontier-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="118.159297" transform="rotate(-0 55.66 118.159297)">10.0%</text>
+     </g>
+    </g>
+    <g id="frontier-ytick_4">
+     <g id="frontier-line2d_17">
+      <path d="M 62.66 76.391515 
+L 648.9 76.391515 
+" clip-path="url(#frontier-p3adb7d46eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="frontier-line2d_18">
+      <g>
+       <use href="#frontier-m6632e3869d" x="62.66" y="76.391515" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="frontier-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="79.810812" transform="rotate(-0 55.66 79.810812)">15.0%</text>
+     </g>
+    </g>
+    <g id="frontier-ytick_5">
+     <g id="frontier-line2d_19">
+      <path d="M 62.66 38.04303 
+L 648.9 38.04303 
+" clip-path="url(#frontier-p3adb7d46eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="frontier-line2d_20">
+      <g>
+       <use href="#frontier-m6632e3869d" x="62.66" y="38.04303" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="frontier-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="41.462327" transform="rotate(-0 55.66 41.462327)">20.0%</text>
+     </g>
+    </g>
+    <g id="frontier-text_12">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.197813" y="114.74" transform="rotate(-90 21.197813 114.74)">Expected return</text>
+    </g>
+   </g>
+   <g id="frontier-line2d_21">
+    <path d="M 372.375977 206.776364 
+L 307.540337 194.477737 
+L 260.711207 185.387447 
+L 223.25437 177.901326 
+L 194.878229 172.019374 
+L 172.651167 167.206868 
+L 153.923681 162.929085 
+L 138.59805 159.186024 
+L 126.48246 155.977687 
+L 117.284501 153.304072 
+L 110.630469 151.16518 
+L 104.703528 149.026289 
+L 100.795332 147.42212 
+L 97.394906 145.817951 
+L 94.543795 144.213782 
+L 92.280375 142.609614 
+L 91.114526 141.540168 
+L 90.23273 140.470722 
+L 89.641261 139.401276 
+L 89.344429 138.33183 
+L 89.307273 137.797107 
+L 89.307273 137.797107 
+" clip-path="url(#frontier-p3adb7d46eb)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="frontier-line2d_22">
+    <path d="M 89.307273 137.797107 
+L 89.375353 137.073249 
+L 89.579361 136.349391 
+L 89.918605 135.625533 
+L 90.997803 134.177816 
+L 92.598813 132.730099 
+L 94.701565 131.282383 
+L 97.281227 129.834666 
+L 100.309515 128.386949 
+L 103.755998 126.939233 
+L 109.641175 124.767658 
+L 116.29181 122.596083 
+L 123.608616 120.424508 
+L 134.24581 117.529075 
+L 145.721927 114.633642 
+L 161.015744 111.01435 
+L 180.454742 106.6712 
+L 204.257279 101.604192 
+L 232.538052 95.813326 
+L 269.02681 88.574742 
+L 317.735571 79.164584 
+L 378.953297 67.582852 
+L 460.59603 52.381827 
+L 570.775858 32.113794 
+L 622.252727 22.703636 
+L 622.252727 22.703636 
+" clip-path="url(#frontier-p3adb7d46eb)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="frontier-patch_3">
+    <path d="M 62.66 215.98 
+L 62.66 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="frontier-patch_4">
+    <path d="M 62.66 215.98 
+L 648.9 215.98 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="frontier-legend_1">
+    <g id="frontier-line2d_23">
+     <path d="M 69.86 23.97875 
+L 77.86 23.97875 
+L 85.86 23.97875 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="frontier-text_13">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="92.26" y="26.77875" transform="rotate(-0 92.26 26.77875)">Minimum-variance boundary · lower branch</text>
+    </g>
+    <g id="frontier-line2d_24">
+     <path d="M 69.86 35.72125 
+L 77.86 35.72125 
+L 85.86 35.72125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="frontier-text_14">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="92.26" y="38.52125" transform="rotate(-0 92.26 38.52125)">Efficient frontier · upper branch</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="frontier-p3adb7d46eb">
+   <rect x="62.66" y="13.5" width="586.24" height="202.48"/>
+  </clipPath>
+ </defs>
+</svg>

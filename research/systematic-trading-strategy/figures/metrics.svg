@@ -1,0 +1,469 @@
+<svg role="img" aria-labelledby="metrics-title metrics-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="302.4pt" viewBox="0 0 720 302.4" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="metrics-title">Figure 13 · Return and volatility comparisons</title><desc id="metrics-desc">Long/cash momentum without volatility scaling; lookbacks 21–252; cost 10 bps and cash 2%. All begin at close 253. This is a descriptive sample comparison, not a forecast.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:05:14.020753</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="metrics-figure_1">
+  <g id="metrics-patch_1">
+   <path d="M 0 302.4 
+L 720 302.4 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="metrics-axes_1">
+   <g id="metrics-patch_2">
+    <path d="M 64.46 259.18 
+L 351.27 259.18 
+L 351.27 35.14 
+L 64.46 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="metrics-matplotlib.axis_1">
+    <g id="metrics-xtick_1">
+     <g id="metrics-line2d_1">
+      <path d="M 110.229955 259.18 
+L 110.229955 35.14 
+" clip-path="url(#metrics-pa9b1283d09)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_2">
+      <defs>
+       <path id="metrics-m6bf443e482" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#metrics-m6bf443e482" x="110.229955" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="110.229955" y="273.018594" transform="rotate(-0 110.229955 273.018594)">50</text>
+     </g>
+    </g>
+    <g id="metrics-xtick_2">
+     <g id="metrics-line2d_3">
+      <path d="M 166.666397 259.18 
+L 166.666397 35.14 
+" clip-path="url(#metrics-pa9b1283d09)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_4">
+      <g>
+       <use href="#metrics-m6bf443e482" x="166.666397" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="166.666397" y="273.018594" transform="rotate(-0 166.666397 273.018594)">100</text>
+     </g>
+    </g>
+    <g id="metrics-xtick_3">
+     <g id="metrics-line2d_5">
+      <path d="M 223.102839 259.18 
+L 223.102839 35.14 
+" clip-path="url(#metrics-pa9b1283d09)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_6">
+      <g>
+       <use href="#metrics-m6bf443e482" x="223.102839" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="223.102839" y="273.018594" transform="rotate(-0 223.102839 273.018594)">150</text>
+     </g>
+    </g>
+    <g id="metrics-xtick_4">
+     <g id="metrics-line2d_7">
+      <path d="M 279.539282 259.18 
+L 279.539282 35.14 
+" clip-path="url(#metrics-pa9b1283d09)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_8">
+      <g>
+       <use href="#metrics-m6bf443e482" x="279.539282" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="279.539282" y="273.018594" transform="rotate(-0 279.539282 273.018594)">200</text>
+     </g>
+    </g>
+    <g id="metrics-xtick_5">
+     <g id="metrics-line2d_9">
+      <path d="M 335.975724 259.18 
+L 335.975724 35.14 
+" clip-path="url(#metrics-pa9b1283d09)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_10">
+      <g>
+       <use href="#metrics-m6bf443e482" x="335.975724" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="335.975724" y="273.018594" transform="rotate(-0 335.975724 273.018594)">250</text>
+     </g>
+    </g>
+    <g id="metrics-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="207.865" y="285.728906" transform="rotate(-0 207.865 285.728906)">Lookback (sessions)</text>
+    </g>
+   </g>
+   <g id="metrics-matplotlib.axis_2">
+    <g id="metrics-ytick_1">
+     <g id="metrics-line2d_11">
+      <path d="M 64.46 235.258412 
+L 351.27 235.258412 
+" clip-path="url(#metrics-pa9b1283d09)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_12">
+      <defs>
+       <path id="metrics-m4f970d7e05" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#metrics-m4f970d7e05" x="64.46" y="235.258412" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="238.677709" transform="rotate(-0 57.46 238.677709)">−2.0%</text>
+     </g>
+    </g>
+    <g id="metrics-ytick_2">
+     <g id="metrics-line2d_13">
+      <path d="M 64.46 199.867633 
+L 351.27 199.867633 
+" clip-path="url(#metrics-pa9b1283d09)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_14">
+      <g>
+       <use href="#metrics-m4f970d7e05" x="64.46" y="199.867633" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="203.28693" transform="rotate(-0 57.46 203.28693)">0.0%</text>
+     </g>
+    </g>
+    <g id="metrics-ytick_3">
+     <g id="metrics-line2d_15">
+      <path d="M 64.46 164.476854 
+L 351.27 164.476854 
+" clip-path="url(#metrics-pa9b1283d09)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_16">
+      <g>
+       <use href="#metrics-m4f970d7e05" x="64.46" y="164.476854" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="167.896151" transform="rotate(-0 57.46 167.896151)">2.0%</text>
+     </g>
+    </g>
+    <g id="metrics-ytick_4">
+     <g id="metrics-line2d_17">
+      <path d="M 64.46 129.086075 
+L 351.27 129.086075 
+" clip-path="url(#metrics-pa9b1283d09)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_18">
+      <g>
+       <use href="#metrics-m4f970d7e05" x="64.46" y="129.086075" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="132.505372" transform="rotate(-0 57.46 132.505372)">4.0%</text>
+     </g>
+    </g>
+    <g id="metrics-ytick_5">
+     <g id="metrics-line2d_19">
+      <path d="M 64.46 93.695296 
+L 351.27 93.695296 
+" clip-path="url(#metrics-pa9b1283d09)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_20">
+      <g>
+       <use href="#metrics-m4f970d7e05" x="64.46" y="93.695296" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="97.114593" transform="rotate(-0 57.46 97.114593)">6.0%</text>
+     </g>
+    </g>
+    <g id="metrics-ytick_6">
+     <g id="metrics-line2d_21">
+      <path d="M 64.46 58.304517 
+L 351.27 58.304517 
+" clip-path="url(#metrics-pa9b1283d09)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_22">
+      <g>
+       <use href="#metrics-m4f970d7e05" x="64.46" y="58.304517" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="61.723814" transform="rotate(-0 57.46 61.723814)">8.0%</text>
+     </g>
+    </g>
+    <g id="metrics-text_13">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.182344" y="147.16" transform="rotate(-90 21.182344 147.16)">CAGR</text>
+    </g>
+   </g>
+   <g id="metrics-line2d_23">
+    <path d="M 77.496818 45.323636 
+L 101.200124 50.358411 
+L 124.90343 154.031167 
+L 196.013347 248.996364 
+L 338.233182 75.318961 
+" clip-path="url(#metrics-pa9b1283d09)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="metrics-me610123770" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#metrics-pa9b1283d09)">
+     <use href="#metrics-me610123770" x="77.496818" y="45.323636" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#metrics-me610123770" x="101.200124" y="50.358411" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#metrics-me610123770" x="124.90343" y="154.031167" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#metrics-me610123770" x="196.013347" y="248.996364" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#metrics-me610123770" x="338.233182" y="75.318961" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="metrics-patch_3">
+    <path d="M 64.46 259.18 
+L 64.46 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="metrics-patch_4">
+    <path d="M 64.46 259.18 
+L 351.27 259.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="metrics-text_14">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="64.46" y="22.14" transform="rotate(-0 64.46 22.14)">Same eligible sample, different rules</text>
+   </g>
+  </g>
+  <g id="metrics-axes_2">
+   <g id="metrics-patch_5">
+    <path d="M 419.69 259.18 
+L 706.5 259.18 
+L 706.5 35.14 
+L 419.69 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="metrics-matplotlib.axis_3">
+    <g id="metrics-xtick_6">
+     <g id="metrics-line2d_24">
+      <path d="M 465.459955 259.18 
+L 465.459955 35.14 
+" clip-path="url(#metrics-p21dcc400e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_25">
+      <g>
+       <use href="#metrics-m6bf443e482" x="465.459955" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="465.459955" y="273.018594" transform="rotate(-0 465.459955 273.018594)">50</text>
+     </g>
+    </g>
+    <g id="metrics-xtick_7">
+     <g id="metrics-line2d_26">
+      <path d="M 521.896397 259.18 
+L 521.896397 35.14 
+" clip-path="url(#metrics-p21dcc400e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_27">
+      <g>
+       <use href="#metrics-m6bf443e482" x="521.896397" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="521.896397" y="273.018594" transform="rotate(-0 521.896397 273.018594)">100</text>
+     </g>
+    </g>
+    <g id="metrics-xtick_8">
+     <g id="metrics-line2d_28">
+      <path d="M 578.332839 259.18 
+L 578.332839 35.14 
+" clip-path="url(#metrics-p21dcc400e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_29">
+      <g>
+       <use href="#metrics-m6bf443e482" x="578.332839" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="578.332839" y="273.018594" transform="rotate(-0 578.332839 273.018594)">150</text>
+     </g>
+    </g>
+    <g id="metrics-xtick_9">
+     <g id="metrics-line2d_30">
+      <path d="M 634.769282 259.18 
+L 634.769282 35.14 
+" clip-path="url(#metrics-p21dcc400e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_31">
+      <g>
+       <use href="#metrics-m6bf443e482" x="634.769282" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_18">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="634.769282" y="273.018594" transform="rotate(-0 634.769282 273.018594)">200</text>
+     </g>
+    </g>
+    <g id="metrics-xtick_10">
+     <g id="metrics-line2d_32">
+      <path d="M 691.205724 259.18 
+L 691.205724 35.14 
+" clip-path="url(#metrics-p21dcc400e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_33">
+      <g>
+       <use href="#metrics-m6bf443e482" x="691.205724" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_19">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="691.205724" y="273.018594" transform="rotate(-0 691.205724 273.018594)">250</text>
+     </g>
+    </g>
+    <g id="metrics-text_20">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="563.095" y="285.728906" transform="rotate(-0 563.095 285.728906)">Lookback (sessions)</text>
+    </g>
+   </g>
+   <g id="metrics-matplotlib.axis_4">
+    <g id="metrics-ytick_7">
+     <g id="metrics-line2d_34">
+      <path d="M 419.69 229.83605 
+L 706.5 229.83605 
+" clip-path="url(#metrics-p21dcc400e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_35">
+      <g>
+       <use href="#metrics-m4f970d7e05" x="419.69" y="229.83605" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="412.69" y="233.255347" transform="rotate(-0 412.69 233.255347)">15.00%</text>
+     </g>
+    </g>
+    <g id="metrics-ytick_8">
+     <g id="metrics-line2d_36">
+      <path d="M 419.69 181.072367 
+L 706.5 181.072367 
+" clip-path="url(#metrics-p21dcc400e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_37">
+      <g>
+       <use href="#metrics-m4f970d7e05" x="419.69" y="181.072367" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="412.69" y="184.491663" transform="rotate(-0 412.69 184.491663)">16.00%</text>
+     </g>
+    </g>
+    <g id="metrics-ytick_9">
+     <g id="metrics-line2d_38">
+      <path d="M 419.69 132.308683 
+L 706.5 132.308683 
+" clip-path="url(#metrics-p21dcc400e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_39">
+      <g>
+       <use href="#metrics-m4f970d7e05" x="419.69" y="132.308683" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="412.69" y="135.72798" transform="rotate(-0 412.69 135.72798)">17.00%</text>
+     </g>
+    </g>
+    <g id="metrics-ytick_10">
+     <g id="metrics-line2d_40">
+      <path d="M 419.69 83.545 
+L 706.5 83.545 
+" clip-path="url(#metrics-p21dcc400e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="metrics-line2d_41">
+      <g>
+       <use href="#metrics-m4f970d7e05" x="419.69" y="83.545" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="metrics-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="412.69" y="86.964297" transform="rotate(-0 412.69 86.964297)">18.00%</text>
+     </g>
+    </g>
+    <g id="metrics-text_25">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="372.501562" y="147.16" transform="rotate(-90 372.501562 147.16)">Annualized volatility</text>
+    </g>
+   </g>
+   <g id="metrics-line2d_42">
+    <path d="M 432.726818 248.996364 
+L 456.430124 227.294053 
+L 480.13343 191.103301 
+L 551.243347 190.881308 
+L 693.463182 45.323636 
+" clip-path="url(#metrics-p21dcc400e1)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="metrics-mf3def50ad3" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #d3ad84"/>
+    </defs>
+    <g clip-path="url(#metrics-p21dcc400e1)">
+     <use href="#metrics-mf3def50ad3" x="432.726818" y="248.996364" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#metrics-mf3def50ad3" x="456.430124" y="227.294053" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#metrics-mf3def50ad3" x="480.13343" y="191.103301" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#metrics-mf3def50ad3" x="551.243347" y="190.881308" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#metrics-mf3def50ad3" x="693.463182" y="45.323636" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="metrics-patch_6">
+    <path d="M 419.69 259.18 
+L 419.69 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="metrics-patch_7">
+    <path d="M 419.69 259.18 
+L 706.5 259.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="metrics-text_26">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="419.69" y="22.14" transform="rotate(-0 419.69 22.14)">Same eligible sample, different rules</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="metrics-pa9b1283d09">
+   <rect x="64.46" y="35.14" width="286.81" height="224.04"/>
+  </clipPath>
+  <clipPath id="metrics-p21dcc400e1">
+   <rect x="419.69" y="35.14" width="286.81" height="224.04"/>
+  </clipPath>
+ </defs>
+</svg>

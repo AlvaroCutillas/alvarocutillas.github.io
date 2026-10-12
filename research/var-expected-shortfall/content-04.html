@@ -1,0 +1,104 @@
+<section id="filtered-history" data-title="Volatility filtering and conditional risk">
+<div class="section-kicker">16 / Conditional models</div><h2>Volatility filtering and conditional risk</h2>
+<p>Financial volatility often changes over time. A return that was routine in a volatile period can be unusually large in a quiet one. Filtered historical simulation estimates historical conditional means and volatilities, standardizes past observations, then rescales the residual scenarios to today's forecast conditions.</p>
+\[ R_t=\mu_t+\sigma_t\varepsilon_t,\qquad
+\widehat\varepsilon_t=\frac{R_t-\widehat\mu_t}{\widehat\sigma_t},\qquad
+R_{t+1}^{(i)}=\widehat\mu_{t+1}+\widehat\sigma_{t+1}\widehat\varepsilon_i. \]
+<p>The analogy is comparing storms after accounting for local weather conditions: a 3% move on a normally quiet day carries different information from the same move during a high-volatility episode. Standardization tries to make shocks comparable before applying them to the current forecast scale.</p>
+<h3>EWMA and GARCH</h3>
+<p>An exponentially weighted moving-average variance forecast uses earlier residuals. With \(\sigma_t^2\) known before observing date-\(t\) residual \(a_t=R_t-\mu_t\), the next forecast is:</p>
+\[ \sigma_{t+1}^2=\lambda\sigma_t^2+(1-\lambda)a_t^2. \]
+<p>A GARCH(1,1) model adds an intercept and separates shock and persistence parameters:</p>
+\[ \sigma_{t+1}^2=\omega+a\,a_t^2+b\,\sigma_t^2,\quad
+\omega&gt;0,\ a,b\ge0. \]
+<p>Under the usual normalized innovation assumptions, \(a+b&lt;1\) gives a finite stationary unconditional variance \(\omega/(1-a-b)\). EWMA corresponds to a zero-intercept, unit-persistence variance recursion and lacks that same finite long-run mean-reversion structure. Parameter conditions and the innovation distribution jointly determine which higher moments exist.</p>
+{{figure:filtered}}
+<h3>Correct forecast timing</h3>
+<p>Use \(\sigma_t\), estimated from information available before date \(t\), to standardize the date-\(t\) observation. Updating volatility with \(a_t\) and then using the updated value as the forecast that supposedly existed before \(a_t\) is observed leaks future information. The figure explicitly plots pre-observation risk forecasts; the response to a shock occurs in subsequent forecasts.</p>
+<p>A filtered scenario model assumes that standardized innovations are sufficiently stable. Check residual autocorrelation, remaining squared-residual dependence, tail behavior and regime changes. Filtering can remove conditional variance dynamics without eliminating jumps or a changing tail shape. A fitted normal GARCH model and a historical residual bootstrap are different innovation models.</p>
+<h3>Multivariate and multi-day extensions</h3>
+<p>For multiple factors, preserve residual dependence across same-date observations or specify a joint standardized-shock model. Individually filtered residuals should not automatically be shuffled independently. Changing correlations can require a dynamic covariance model or explicit stressed dependence assumptions.</p>
+<p>For multi-day forecasts, update simulated volatility recursively along each simulated path. Reusing today's scale at every future day is a frozen-volatility approximation. Filtered historical simulation and conditional extreme-value models share this idea of separating dynamic scale from residual tail shape; <a href="https://doi.org/10.1016/S0927-5398(00)00012-8">McNeil and Frey (2000)</a> study the latter combination.</p>
+</section>
+
+<section id="extreme-value" data-title="Extreme-value theory and tail extrapolation">
+<div class="section-kicker">17 / Tail models</div><h2>Extreme-value theory and tail extrapolation</h2>
+<p>Extreme-value theory concentrates modeling effort on observations above a high threshold. The peaks-over-threshold approach approximates the conditional excess \(Y=L-u\), given \(L&gt;u\), by a generalized Pareto distribution. Its survival function is:</p>
+\[ \mathbb P(Y&gt;y\mid L&gt;u)\approx
+\left(1+\xi\frac{y}{\beta}\right)^{-1/\xi},
+\quad \beta&gt;0,\ y\ge0,\ 1+\xi y/\beta&gt;0. \]
+<p>For \(\xi=0\), the limiting survival function is \(e^{-y/\beta}\). Positive shape \(\xi\) gives a heavy, unbounded tail. Negative shape gives a finite upper endpoint. The approximation is motivated by asymptotic tail theory; it is not a claim that every finite threshold produces an exact generalized Pareto law.</p>
+<h3>VaR and ES beyond the threshold</h3>
+<p>Let \(p_u=\mathbb P(L&gt;u)\), estimated by the threshold exceedance fraction in a basic IID model. For a target tail probability \(p=1-\alpha&lt;p_u\), solving the survival equation gives:</p>
+\[ q_\alpha\approx u+\frac{\beta}{\xi}
+\left[\left(\frac{p_u}{1-\alpha}\right)^\xi-1\right],\qquad \xi\ne0. \]
+\[ q_\alpha\approx u+\beta\ln\!\left(\frac{p_u}{1-\alpha}\right)\quad(\xi=0),\qquad
+\operatorname{ES}_\alpha\approx q_\alpha+
+\frac{\beta+\xi(q_\alpha-u)}{1-\xi}\quad(\xi&lt;1). \]
+<p>The scale of excesses above the new quantile is \(\beta+\xi(q_\alpha-u)\). Dividing it by \(1-\xi\) gives their conditional mean, provided \(\xi&lt;1\). ES becomes extremely sensitive as shape approaches one. For \(\xi\ge1\), this model's upper-tail mean is infinite; a finite numerical answer would conceal a failure of the moment condition.</p>
+{{figure:evt}}
+<h3>The threshold trade-off</h3>
+<p>A low threshold supplies many observations but can include data outside the asymptotic tail regime. A high threshold improves the plausibility of the approximation while leaving few excesses and unstable parameter estimates. Inspect threshold stability, mean-excess plots, quantile diagnostics and uncertainty bands. A single fitted shape estimate without sensitivity analysis is weak evidence for a precise extreme ES.</p>
+<p>For an exact generalized Pareto tail, raising the threshold preserves shape and changes scale linearly. This motivates stability diagnostics, but samples can be too short to reveal a stable region clearly. An extrapolated 99.99% quantile from a small dataset is driven heavily by the chosen tail family and shape.</p>
+<h3>Dependence and conditioning</h3>
+<p>Serially clustered extremes violate a basic IID fitting interpretation. Volatility filtering, declustering or a dependence-aware analysis can help, each with its own assumptions. Modeling standardized conditional residuals is different from fitting a Pareto tail directly to unconditional returns. For weighted history, replacing counts with weights is not automatically a valid likelihood derivation.</p>
+<p>EVT extends a model beyond the largest observed loss, which is useful and also makes extrapolation risk explicit. Unlike a stress test, it assigns probabilities through a statistical tail model. Unlike plain historical simulation, it can generate previously unseen magnitudes. Document which part of the distribution is empirical and which part is extrapolated.</p>
+</section>
+
+<section id="stress-dependence" data-title="Tail dependence, stress and liquidity">
+<div class="section-kicker">18 / Model risk</div><h2>Tail dependence, stress and liquidity</h2>
+<p>Correlation measures linear co-movement across the distribution. Tail dependence asks whether one variable's extreme outcome makes another variable's extreme outcome persistently more likely as the threshold moves outward. For continuous loss marginals, upper-tail dependence is:</p>
+\[ \lambda_U=\lim_{u\uparrow1}
+\mathbb P(L_2&gt;q_u(L_2)\mid L_1&gt;q_u(L_1)), \]
+<p>provided the limit exists. A nonsingular Gaussian copula has zero asymptotic tail dependence, despite positive dependence at ordinary thresholds. A Student-t copula can have positive tail dependence even when its correlation parameter matches the Gaussian copula's. The shared random scale creates scenarios in which several factors become extreme together.</p>
+{{figure:copula}}
+<p>The figure plots the population upper-tail dependence coefficient for two t-copula degrees of freedom. Zero asymptotic Gaussian tail dependence should not be described as zero probability of joint losses, nor does it imply that a Gaussian model is always an inappropriate approximation. It identifies a specific difference in the extreme limit.</p>
+<h3>Stress scenarios complement probabilistic tails</h3>
+<p>A stress scenario asks what the book loses under a specified adverse configuration. It can combine an equity drop, a volatility increase, curve changes, widening spreads and a liquidity shock. Unless calibrated through a probability model, it does not have an implied confidence level. A €200,000 stress loss should not be called a 99.9% VaR merely because it is large.</p>
+<p>Historical crises supply interpretable scenario templates. Hypothetical scenarios can address exposures absent from historical episodes. Reverse stress testing starts with a loss or business-failure threshold and asks which plausible factor combinations would cross it. Report the factor changes and valuation assumptions so that the result is reproducible.</p>
+<h3>Liquidity and endogenous effects</h3>
+<p>Mark-to-market losses assume a valuation at a modeled horizon, but selling a large position can incur bid–ask costs, price impact and delayed execution. A liquidation loss can add a cost function that depends on quantity, market depth and the liquidation schedule. If price impact is nonlinear in position size, positive homogeneity of the total loss-based risk may no longer hold.</p>
+<p>Margin calls and funding constraints can force trades at adverse times. Correlations and liquidity can deteriorate together in a stress episode. These feedback mechanisms are not captured simply by adding a fixed percentage to a normal VaR. A model should state whether it measures valuation risk, liquidation risk or a strategy under funding constraints.</p>
+<p>A practical report can combine a central forecast, several alternative tail models and a set of stress losses. Disagreements are informative: they reveal which exposure or assumption determines the tail. Averaging incompatible risk numbers without interpreting their underlying experiments can obscure that information.</p>
+</section>
+
+<section id="risk-attribution" data-title="Marginal and component risk">
+<div class="section-kicker">19 / Risk attribution</div><h2>Marginal and component risk</h2>
+<p>A portfolio risk number is more actionable when its source is identified. Let losses depend on exposure vector \(w\), and let \(\rho(w)\) be a differentiable, positively homogeneous risk measure. Euler's theorem yields:</p>
+\[ \rho(w)=\sum_{i=1}^{d}w_i\frac{\partial\rho(w)}{\partial w_i},
+\qquad \operatorname{RC}_i=w_i\frac{\partial\rho(w)}{\partial w_i}. \]
+<p>The derivative is marginal risk: the local change per unit of added exposure. Component risk multiplies that derivative by the current exposure. Component contributions sum to total risk under the stated assumptions. They can be negative for hedging positions; a negative contribution does not mean the position has no standalone risk.</p>
+<h3>Normal portfolio formulas</h3>
+<p>For return weights with wealth \(W\), portfolio standard deviation \(\sigma_p=\sqrt{w^{\mathsf T}\Sigma w}&gt;0\), and normal ES multiplier \(k_\alpha=\phi(z_\alpha)/(1-\alpha)\), the marginal ES is:</p>
+\[ \frac{\partial\operatorname{ES}_\alpha}{\partial w_i}
+=-W\mu_i+W k_\alpha\frac{(\Sigma w)_i}{\sigma_p}. \]
+<p>The corresponding VaR expression replaces \(k_\alpha\) with \(z_\alpha\). These derivatives treat weights as exposure coordinates before imposing a budget constraint. A budget-preserving trade that buys asset \(i\) and sells asset \(j\) has directional risk derivative equal to the difference of their marginal risks.</p>
+{{figure:allocation}}
+<h3>Tail-conditional contributions</h3>
+<p>If scenario loss is a linear combination \(L(w)=\sum_i w_i\ell_i\), the distribution is sufficiently regular and there is no quantile atom, marginal ES can be expressed as:</p>
+\[ \frac{\partial\operatorname{ES}_\alpha}{\partial w_i}
+=\mathbb E[\ell_i\mid L(w)&gt;q_\alpha]. \]
+<p>The position's importance is determined by what it does in portfolio-tail scenarios, rather than its average behavior across all scenarios. In an empirical distribution, use the same fractional boundary mass as the portfolio ES estimator. When tied losses create nondifferentiability, subgradients and allocation rules may not be unique. Arbitrarily breaking ties can change attribution while leaving total ES unchanged.</p>
+<h3>Incremental risk</h3>
+<p>Incremental risk is the finite difference between risk with and without a trade. It differs from a derivative when the trade is large or reshapes the tail. Removing a position can change which scenarios enter ES, so its incremental risk need not equal its Euler component. Report which attribution convention is being used.</p>
+<p>For a nonlinear portfolio, losses may not be homogeneous in exposure because of impact, nonlinear financing or strategy rules. Check the assumptions before enforcing a sum-to-total decomposition. Numerical finite differences should reuse scenarios to reduce simulation noise and should be checked across several perturbation sizes.</p>
+</section>
+
+<section id="es-optimization" data-title="Expected Shortfall portfolio optimization">
+<div class="section-kicker">20 / Portfolio choice</div><h2>Expected Shortfall portfolio optimization</h2>
+<p>Expected Shortfall can be represented as the minimum of an auxiliary threshold objective. For integrable losses:</p>
+\[ \operatorname{ES}_\alpha(L)=\min_{\theta\in\mathbb R}
+\left\{\theta+\frac{1}{1-\alpha}\mathbb E[(L-\theta)_+]\right\}. \]
+<p>A minimizing threshold is an \(\alpha\)-quantile; with flat regions or atoms, the set of minimizers may contain multiple values. The minimum is ES regardless of that possible nonuniqueness. Away from atoms the derivative of the objective is \(1-\mathbb P(L&gt;\theta)/(1-\alpha)\), so the optimum balances the probability above the threshold with the specified tail mass.</p>
+<p>This representation, developed by <a href="https://doi.org/10.21314/JOR.2000.038">Rockafellar and Uryasev (2000)</a>, is especially useful when scenario losses are affine in portfolio positions. Each excess-loss term is convex, so the scenario objective is convex in the threshold and the positions.</p>
+{{figure:objective}}
+<h3>A linear-program formulation</h3>
+<p>For scenario probabilities \(p_j\), introduce auxiliary excess variables \(z_j\). Minimize the following objective subject to the excess constraints and the desired investment constraints:</p>
+\[ \min_{w,\theta,z}\ \theta+\frac{1}{1-\alpha}\sum_{j=1}^{N}p_jz_j,
+\qquad z_j\ge L_j(w)-\theta,\quad z_j\ge0. \]
+<p>If each \(L_j(w)\) is affine and the feasible portfolio set is described by linear constraints, this is a linear program. Typical constraints include full investment, no short selling, bounds on individual positions and a minimum estimated return. Transaction costs can be incorporated if their chosen formulation preserves convexity.</p>
+<h3>Optimization does not remove estimation risk</h3>
+<p>An optimizer can exploit peculiarities of the sample: a position may appear attractive because the scenarios contain few events that expose its weakness. Highly confident tail objectives emphasize a small portion of the scenario set. Add position limits, turnover control, robust scenarios or other justified regularization, then evaluate the resulting portfolio outside the sample used for selection.</p>
+<p>Compare optimized ES with the losses of practical benchmark portfolios. Sensitivity to removing one extreme date can reveal concentration in estimation information. Refit across rolling windows or bootstrap samples to inspect weight stability, while recognizing that ordinary bootstrap resampling cannot create an absent stress regime.</p>
+<p>Convexity relies on the loss map and the constraints. Nonlinear instrument revaluation in risk factors can still be affine in quantities for a static book, which preserves scenario convexity in quantities. Position-dependent price impact, integer contracts or path-dependent trading decisions can change that structure. Define the decision variables carefully before assuming that an off-the-shelf linear solver applies.</p>
+</section>

@@ -1,0 +1,900 @@
+<svg role="img" aria-labelledby="inverse-title inverse-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="inverse-title">Figure 01 · Black inversion and its conditioning</title><desc id="inverse-desc">European calls; forward 100, discount factor 1, maturity one year. Vega is per 1.00 decimal volatility; divide by 100 for one volatility percentage point.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:54:52.615278</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="inverse-figure_1">
+  <g id="inverse-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="inverse-axes_1">
+   <g id="inverse-patch_2">
+    <path d="M 45.38 244.78 
+L 353.25 244.78 
+L 353.25 35.14 
+L 45.38 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="inverse-matplotlib.axis_1">
+    <g id="inverse-xtick_1">
+     <g id="inverse-line2d_1">
+      <path d="M 59.023801 244.78 
+L 59.023801 35.14 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_2">
+      <defs>
+       <path id="inverse-m29b924ad13" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#inverse-m29b924ad13" x="59.023801" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="59.023801" y="258.618594" transform="rotate(-0 59.023801 258.618594)">0%</text>
+     </g>
+    </g>
+    <g id="inverse-xtick_2">
+     <g id="inverse-line2d_3">
+      <path d="M 94.052814 244.78 
+L 94.052814 35.14 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_4">
+      <g>
+       <use href="#inverse-m29b924ad13" x="94.052814" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="94.052814" y="258.618594" transform="rotate(-0 94.052814 258.618594)">10%</text>
+     </g>
+    </g>
+    <g id="inverse-xtick_3">
+     <g id="inverse-line2d_5">
+      <path d="M 129.081828 244.78 
+L 129.081828 35.14 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_6">
+      <g>
+       <use href="#inverse-m29b924ad13" x="129.081828" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="129.081828" y="258.618594" transform="rotate(-0 129.081828 258.618594)">20%</text>
+     </g>
+    </g>
+    <g id="inverse-xtick_4">
+     <g id="inverse-line2d_7">
+      <path d="M 164.110841 244.78 
+L 164.110841 35.14 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_8">
+      <g>
+       <use href="#inverse-m29b924ad13" x="164.110841" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="164.110841" y="258.618594" transform="rotate(-0 164.110841 258.618594)">30%</text>
+     </g>
+    </g>
+    <g id="inverse-xtick_5">
+     <g id="inverse-line2d_9">
+      <path d="M 199.139855 244.78 
+L 199.139855 35.14 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_10">
+      <g>
+       <use href="#inverse-m29b924ad13" x="199.139855" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="199.139855" y="258.618594" transform="rotate(-0 199.139855 258.618594)">40%</text>
+     </g>
+    </g>
+    <g id="inverse-xtick_6">
+     <g id="inverse-line2d_11">
+      <path d="M 234.168868 244.78 
+L 234.168868 35.14 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_12">
+      <g>
+       <use href="#inverse-m29b924ad13" x="234.168868" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="234.168868" y="258.618594" transform="rotate(-0 234.168868 258.618594)">50%</text>
+     </g>
+    </g>
+    <g id="inverse-xtick_7">
+     <g id="inverse-line2d_13">
+      <path d="M 269.197882 244.78 
+L 269.197882 35.14 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_14">
+      <g>
+       <use href="#inverse-m29b924ad13" x="269.197882" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="269.197882" y="258.618594" transform="rotate(-0 269.197882 258.618594)">60%</text>
+     </g>
+    </g>
+    <g id="inverse-xtick_8">
+     <g id="inverse-line2d_15">
+      <path d="M 304.226896 244.78 
+L 304.226896 35.14 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_16">
+      <g>
+       <use href="#inverse-m29b924ad13" x="304.226896" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="304.226896" y="258.618594" transform="rotate(-0 304.226896 258.618594)">70%</text>
+     </g>
+    </g>
+    <g id="inverse-xtick_9">
+     <g id="inverse-line2d_17">
+      <path d="M 339.255909 244.78 
+L 339.255909 35.14 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_18">
+      <g>
+       <use href="#inverse-m29b924ad13" x="339.255909" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="339.255909" y="258.618594" transform="rotate(-0 339.255909 258.618594)">80%</text>
+     </g>
+    </g>
+    <g id="inverse-text_10">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="199.315" y="271.328906" transform="rotate(-0 199.315 271.328906)">Implied volatility</text>
+    </g>
+   </g>
+   <g id="inverse-matplotlib.axis_2">
+    <g id="inverse-ytick_1">
+     <g id="inverse-line2d_19">
+      <path d="M 45.38 235.250909 
+L 353.25 235.250909 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_20">
+      <defs>
+       <path id="inverse-m29b053bde9" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#inverse-m29b053bde9" x="45.38" y="235.250909" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="238.670206" transform="rotate(-0 38.38 238.670206)">0</text>
+     </g>
+    </g>
+    <g id="inverse-ytick_2">
+     <g id="inverse-line2d_21">
+      <path d="M 45.38 210.814501 
+L 353.25 210.814501 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_22">
+      <g>
+       <use href="#inverse-m29b053bde9" x="45.38" y="210.814501" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="214.233798" transform="rotate(-0 38.38 214.233798)">5</text>
+     </g>
+    </g>
+    <g id="inverse-ytick_3">
+     <g id="inverse-line2d_23">
+      <path d="M 45.38 186.378094 
+L 353.25 186.378094 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_24">
+      <g>
+       <use href="#inverse-m29b053bde9" x="45.38" y="186.378094" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="189.797391" transform="rotate(-0 38.38 189.797391)">10</text>
+     </g>
+    </g>
+    <g id="inverse-ytick_4">
+     <g id="inverse-line2d_25">
+      <path d="M 45.38 161.941686 
+L 353.25 161.941686 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_26">
+      <g>
+       <use href="#inverse-m29b053bde9" x="45.38" y="161.941686" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="165.360983" transform="rotate(-0 38.38 165.360983)">15</text>
+     </g>
+    </g>
+    <g id="inverse-ytick_5">
+     <g id="inverse-line2d_27">
+      <path d="M 45.38 137.505279 
+L 353.25 137.505279 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_28">
+      <g>
+       <use href="#inverse-m29b053bde9" x="45.38" y="137.505279" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="140.924576" transform="rotate(-0 38.38 140.924576)">20</text>
+     </g>
+    </g>
+    <g id="inverse-ytick_6">
+     <g id="inverse-line2d_29">
+      <path d="M 45.38 113.068871 
+L 353.25 113.068871 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_30">
+      <g>
+       <use href="#inverse-m29b053bde9" x="45.38" y="113.068871" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="116.488168" transform="rotate(-0 38.38 116.488168)">25</text>
+     </g>
+    </g>
+    <g id="inverse-ytick_7">
+     <g id="inverse-line2d_31">
+      <path d="M 45.38 88.632463 
+L 353.25 88.632463 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_32">
+      <g>
+       <use href="#inverse-m29b053bde9" x="45.38" y="88.632463" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="92.05176" transform="rotate(-0 38.38 92.05176)">30</text>
+     </g>
+    </g>
+    <g id="inverse-ytick_8">
+     <g id="inverse-line2d_33">
+      <path d="M 45.38 64.196056 
+L 353.25 64.196056 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_34">
+      <g>
+       <use href="#inverse-m29b053bde9" x="45.38" y="64.196056" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_18">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="67.615353" transform="rotate(-0 38.38 67.615353)">35</text>
+     </g>
+    </g>
+    <g id="inverse-ytick_9">
+     <g id="inverse-line2d_35">
+      <path d="M 45.38 39.759648 
+L 353.25 39.759648 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_36">
+      <g>
+       <use href="#inverse-m29b053bde9" x="45.38" y="39.759648" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_19">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="43.178945" transform="rotate(-0 38.38 43.178945)">40</text>
+     </g>
+    </g>
+    <g id="inverse-text_20">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.055781" y="139.96" transform="rotate(-90 21.055781 139.96)">Call premium</text>
+    </g>
+   </g>
+   <g id="inverse-line2d_37">
+    <path d="M 59.374091 137.505279 
+L 91.200117 137.405389 
+L 97.752534 137.115049 
+L 103.368892 136.639226 
+L 108.985249 135.933421 
+L 114.601607 135.003368 
+L 120.217964 133.867092 
+L 126.770382 132.311004 
+L 134.258858 130.27299 
+L 141.747335 128.004653 
+L 150.171871 125.228481 
+L 159.532467 121.920333 
+L 170.765182 117.708058 
+L 183.870017 112.540754 
+L 198.84697 106.392059 
+L 217.568162 98.453606 
+L 240.969652 88.279165 
+L 275.603857 72.956872 
+L 339.255909 44.669091 
+L 339.255909 44.669091 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="inverse-line2d_38">
+    <path d="M 59.374091 235.055935 
+L 146.427633 186.727139 
+L 193.230613 161.004692 
+L 232.545116 139.646029 
+L 268.11538 120.573796 
+L 300.877466 103.259945 
+L 331.767432 87.188796 
+L 339.255909 83.332948 
+L 339.255909 83.332948 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="inverse-line2d_39">
+    <path d="M 59.374091 235.250909 
+L 85.58376 235.142054 
+L 90.264057 234.891483 
+L 94.944355 234.423471 
+L 99.624653 233.716228 
+L 104.304951 232.77458 
+L 108.985249 231.617207 
+L 114.601607 229.977256 
+L 120.217964 228.102677 
+L 126.770382 225.66915 
+L 134.258858 222.6239 
+L 142.683395 218.931956 
+L 152.043991 214.57456 
+L 163.276706 209.078872 
+L 176.38154 202.39903 
+L 192.294553 194.017528 
+L 211.951804 183.397146 
+L 239.097533 168.455755 
+L 339.255909 112.932578 
+L 339.255909 112.932578 
+" clip-path="url(#inverse-pc7586e2680)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="inverse-patch_3">
+    <path d="M 45.38 244.78 
+L 45.38 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="inverse-patch_4">
+    <path d="M 45.38 244.78 
+L 353.25 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="inverse-text_21">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="45.38" y="22.14" transform="rotate(-0 45.38 22.14)">A monotone price-to-volatility map</text>
+   </g>
+   <g id="inverse-legend_1">
+    <g id="inverse-line2d_40">
+     <path d="M 52.58 45.61875 
+L 60.58 45.61875 
+L 68.58 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="inverse-text_22">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="48.41875" transform="rotate(-0 74.98 48.41875)">K = 80</text>
+    </g>
+    <g id="inverse-line2d_41">
+     <path d="M 52.58 57.36125 
+L 60.58 57.36125 
+L 68.58 57.36125 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="inverse-text_23">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="60.16125" transform="rotate(-0 74.98 60.16125)">K = 100</text>
+    </g>
+    <g id="inverse-line2d_42">
+     <path d="M 52.58 69.10375 
+L 60.58 69.10375 
+L 68.58 69.10375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="inverse-text_24">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="71.90375" transform="rotate(-0 74.98 71.90375)">K = 120</text>
+    </g>
+   </g>
+  </g>
+  <g id="inverse-axes_2">
+   <g id="inverse-patch_5">
+    <path d="M 398.63 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 398.63 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="inverse-matplotlib.axis_3">
+    <g id="inverse-xtick_10">
+     <g id="inverse-line2d_43">
+      <path d="M 412.273801 244.78 
+L 412.273801 35.14 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_44">
+      <g>
+       <use href="#inverse-m29b924ad13" x="412.273801" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="412.273801" y="258.618594" transform="rotate(-0 412.273801 258.618594)">0%</text>
+     </g>
+    </g>
+    <g id="inverse-xtick_11">
+     <g id="inverse-line2d_45">
+      <path d="M 447.302814 244.78 
+L 447.302814 35.14 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_46">
+      <g>
+       <use href="#inverse-m29b924ad13" x="447.302814" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="447.302814" y="258.618594" transform="rotate(-0 447.302814 258.618594)">10%</text>
+     </g>
+    </g>
+    <g id="inverse-xtick_12">
+     <g id="inverse-line2d_47">
+      <path d="M 482.331828 244.78 
+L 482.331828 35.14 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_48">
+      <g>
+       <use href="#inverse-m29b924ad13" x="482.331828" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="482.331828" y="258.618594" transform="rotate(-0 482.331828 258.618594)">20%</text>
+     </g>
+    </g>
+    <g id="inverse-xtick_13">
+     <g id="inverse-line2d_49">
+      <path d="M 517.360841 244.78 
+L 517.360841 35.14 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_50">
+      <g>
+       <use href="#inverse-m29b924ad13" x="517.360841" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="517.360841" y="258.618594" transform="rotate(-0 517.360841 258.618594)">30%</text>
+     </g>
+    </g>
+    <g id="inverse-xtick_14">
+     <g id="inverse-line2d_51">
+      <path d="M 552.389855 244.78 
+L 552.389855 35.14 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_52">
+      <g>
+       <use href="#inverse-m29b924ad13" x="552.389855" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="552.389855" y="258.618594" transform="rotate(-0 552.389855 258.618594)">40%</text>
+     </g>
+    </g>
+    <g id="inverse-xtick_15">
+     <g id="inverse-line2d_53">
+      <path d="M 587.418868 244.78 
+L 587.418868 35.14 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_54">
+      <g>
+       <use href="#inverse-m29b924ad13" x="587.418868" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="587.418868" y="258.618594" transform="rotate(-0 587.418868 258.618594)">50%</text>
+     </g>
+    </g>
+    <g id="inverse-xtick_16">
+     <g id="inverse-line2d_55">
+      <path d="M 622.447882 244.78 
+L 622.447882 35.14 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_56">
+      <g>
+       <use href="#inverse-m29b924ad13" x="622.447882" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="622.447882" y="258.618594" transform="rotate(-0 622.447882 258.618594)">60%</text>
+     </g>
+    </g>
+    <g id="inverse-xtick_17">
+     <g id="inverse-line2d_57">
+      <path d="M 657.476896 244.78 
+L 657.476896 35.14 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_58">
+      <g>
+       <use href="#inverse-m29b924ad13" x="657.476896" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="657.476896" y="258.618594" transform="rotate(-0 657.476896 258.618594)">70%</text>
+     </g>
+    </g>
+    <g id="inverse-xtick_18">
+     <g id="inverse-line2d_59">
+      <path d="M 692.505909 244.78 
+L 692.505909 35.14 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_60">
+      <g>
+       <use href="#inverse-m29b924ad13" x="692.505909" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="692.505909" y="258.618594" transform="rotate(-0 692.505909 258.618594)">80%</text>
+     </g>
+    </g>
+    <g id="inverse-text_34">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="552.565" y="271.328906" transform="rotate(-0 552.565 271.328906)">Implied volatility</text>
+    </g>
+   </g>
+   <g id="inverse-matplotlib.axis_4">
+    <g id="inverse-ytick_10">
+     <g id="inverse-line2d_61">
+      <path d="M 398.63 235.250909 
+L 706.5 235.250909 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_62">
+      <g>
+       <use href="#inverse-m29b053bde9" x="398.63" y="235.250909" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_35">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="391.63" y="238.670206" transform="rotate(-0 391.63 238.670206)">0</text>
+     </g>
+    </g>
+    <g id="inverse-ytick_11">
+     <g id="inverse-line2d_63">
+      <path d="M 398.63 211.365017 
+L 706.5 211.365017 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_64">
+      <g>
+       <use href="#inverse-m29b053bde9" x="398.63" y="211.365017" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_36">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="391.63" y="214.784314" transform="rotate(-0 391.63 214.784314)">5</text>
+     </g>
+    </g>
+    <g id="inverse-ytick_12">
+     <g id="inverse-line2d_65">
+      <path d="M 398.63 187.479126 
+L 706.5 187.479126 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_66">
+      <g>
+       <use href="#inverse-m29b053bde9" x="398.63" y="187.479126" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_37">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="391.63" y="190.898423" transform="rotate(-0 391.63 190.898423)">10</text>
+     </g>
+    </g>
+    <g id="inverse-ytick_13">
+     <g id="inverse-line2d_67">
+      <path d="M 398.63 163.593234 
+L 706.5 163.593234 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_68">
+      <g>
+       <use href="#inverse-m29b053bde9" x="398.63" y="163.593234" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_38">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="391.63" y="167.012531" transform="rotate(-0 391.63 167.012531)">15</text>
+     </g>
+    </g>
+    <g id="inverse-ytick_14">
+     <g id="inverse-line2d_69">
+      <path d="M 398.63 139.707342 
+L 706.5 139.707342 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_70">
+      <g>
+       <use href="#inverse-m29b053bde9" x="398.63" y="139.707342" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_39">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="391.63" y="143.126639" transform="rotate(-0 391.63 143.126639)">20</text>
+     </g>
+    </g>
+    <g id="inverse-ytick_15">
+     <g id="inverse-line2d_71">
+      <path d="M 398.63 115.821451 
+L 706.5 115.821451 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_72">
+      <g>
+       <use href="#inverse-m29b053bde9" x="398.63" y="115.821451" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_40">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="391.63" y="119.240748" transform="rotate(-0 391.63 119.240748)">25</text>
+     </g>
+    </g>
+    <g id="inverse-ytick_16">
+     <g id="inverse-line2d_73">
+      <path d="M 398.63 91.935559 
+L 706.5 91.935559 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_74">
+      <g>
+       <use href="#inverse-m29b053bde9" x="398.63" y="91.935559" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_41">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="391.63" y="95.354856" transform="rotate(-0 391.63 95.354856)">30</text>
+     </g>
+    </g>
+    <g id="inverse-ytick_17">
+     <g id="inverse-line2d_75">
+      <path d="M 398.63 68.049667 
+L 706.5 68.049667 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_76">
+      <g>
+       <use href="#inverse-m29b053bde9" x="398.63" y="68.049667" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_42">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="391.63" y="71.468964" transform="rotate(-0 391.63 71.468964)">35</text>
+     </g>
+    </g>
+    <g id="inverse-ytick_18">
+     <g id="inverse-line2d_77">
+      <path d="M 398.63 44.163776 
+L 706.5 44.163776 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inverse-line2d_78">
+      <g>
+       <use href="#inverse-m29b053bde9" x="398.63" y="44.163776" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inverse-text_43">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="391.63" y="47.583072" transform="rotate(-0 391.63 47.583072)">40</text>
+     </g>
+    </g>
+    <g id="inverse-text_44">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="374.305781" y="139.96" transform="rotate(-90 374.305781 139.96)">Vega per unit volatility</text>
+    </g>
+   </g>
+   <g id="inverse-line2d_79">
+    <path d="M 412.624091 235.250909 
+L 432.281342 235.168276 
+L 434.153462 234.96249 
+L 436.025581 234.492939 
+L 437.8977 233.626488 
+L 438.83376 233.009119 
+L 440.705879 231.359844 
+L 442.577998 229.133959 
+L 444.450117 226.344448 
+L 446.322236 223.041459 
+L 448.194355 219.298738 
+L 451.002534 213.046786 
+L 454.746773 203.96291 
+L 465.043428 178.502755 
+L 468.787666 169.966225 
+L 472.531905 162.029609 
+L 476.276143 154.725671 
+L 480.020382 148.049143 
+L 482.82856 143.437447 
+L 485.636739 139.147114 
+L 489.380978 133.894778 
+L 493.125216 129.1357 
+L 496.869454 124.824773 
+L 500.613693 120.918978 
+L 504.357931 117.37831 
+L 508.102169 114.166174 
+L 511.846408 111.249454 
+L 515.590646 108.598394 
+L 519.334884 106.186388 
+L 524.015182 103.471664 
+L 528.69548 101.052911 
+L 533.375778 98.895005 
+L 538.056076 96.96761 
+L 543.672434 94.922348 
+L 549.288791 93.132736 
+L 554.905149 91.566127 
+L 561.457566 89.983649 
+L 568.009983 88.630473 
+L 575.49846 87.325813 
+L 582.986937 86.243284 
+L 591.411473 85.252824 
+L 600.772069 84.393249 
+L 611.068725 83.695698 
+L 621.36538 83.217946 
+L 632.598095 82.909097 
+L 644.76687 82.786875 
+L 658.807764 82.877962 
+L 673.784717 83.206601 
+L 689.69773 83.777072 
+L 692.505909 83.898776 
+L 692.505909 83.898776 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="inverse-line2d_80">
+    <path d="M 412.624091 44.669091 
+L 436.96164 44.787362 
+L 461.29919 45.135132 
+L 485.636739 45.711142 
+L 509.974289 46.513315 
+L 534.311838 47.538762 
+L 558.649387 48.783803 
+L 583.922996 50.304378 
+L 609.196605 52.051129 
+L 634.470214 54.017398 
+L 660.679883 56.280389 
+L 686.889552 58.762311 
+L 692.505909 59.321695 
+L 692.505909 59.321695 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="inverse-line2d_81">
+    <path d="M 412.624091 235.250909 
+L 428.537104 235.157387 
+L 430.409223 234.827694 
+L 431.345283 234.484592 
+L 432.281342 233.971774 
+L 433.217402 233.254457 
+L 434.153462 232.304327 
+L 435.089521 231.101395 
+L 436.025581 229.634697 
+L 436.96164 227.90204 
+L 438.83376 223.668 
+L 440.705879 218.514135 
+L 442.577998 212.61417 
+L 445.386177 202.788256 
+L 451.002534 181.731787 
+L 455.682832 164.650368 
+L 459.427071 152.009287 
+L 462.235249 143.260781 
+L 465.043428 135.164866 
+L 467.851607 127.711218 
+L 470.659786 120.871954 
+L 473.467964 114.609523 
+L 476.276143 108.881907 
+L 479.084322 103.645939 
+L 481.892501 98.859344 
+L 484.70068 94.481933 
+L 487.508858 90.476222 
+L 490.317037 86.807711 
+L 493.125216 83.444925 
+L 495.933395 80.359322 
+L 499.677633 76.632192 
+L 503.421871 73.298224 
+L 507.16611 70.31051 
+L 510.910348 67.628415 
+L 514.654587 65.216748 
+L 518.398825 63.044997 
+L 523.079123 60.627684 
+L 527.759421 58.499841 
+L 532.439719 56.624172 
+L 537.120017 54.969145 
+L 542.736374 53.236977 
+L 548.352732 51.745391 
+L 554.905149 50.266624 
+L 561.457566 49.029625 
+L 568.946043 47.868261 
+L 576.43452 46.936603 
+L 584.859056 46.121742 
+L 594.219652 45.461835 
+L 603.580248 45.020649 
+L 613.876903 44.749312 
+L 625.109618 44.670393 
+L 637.278393 44.801799 
+L 650.383227 45.157715 
+L 665.360181 45.795924 
+L 681.273194 46.704617 
+L 692.505909 47.470574 
+L 692.505909 47.470574 
+" clip-path="url(#inverse-pef6262c934)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="inverse-patch_6">
+    <path d="M 398.63 244.78 
+L 398.63 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="inverse-patch_7">
+    <path d="M 398.63 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="inverse-text_45">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="398.63" y="22.14" transform="rotate(-0 398.63 22.14)">Inversion is poorly conditioned at low vega</text>
+   </g>
+   <g id="inverse-legend_2">
+    <g id="inverse-line2d_82">
+     <path d="M 644.595 209.63125 
+L 652.595 209.63125 
+L 660.595 209.63125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="inverse-text_46">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="666.995" y="212.43125" transform="rotate(-0 666.995 212.43125)">K = 80</text>
+    </g>
+    <g id="inverse-line2d_83">
+     <path d="M 644.595 221.37375 
+L 652.595 221.37375 
+L 660.595 221.37375 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="inverse-text_47">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="666.995" y="224.17375" transform="rotate(-0 666.995 224.17375)">K = 100</text>
+    </g>
+    <g id="inverse-line2d_84">
+     <path d="M 644.595 233.11625 
+L 652.595 233.11625 
+L 660.595 233.11625 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="inverse-text_48">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="666.995" y="235.91625" transform="rotate(-0 666.995 235.91625)">K = 120</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="inverse-pc7586e2680">
+   <rect x="45.38" y="35.14" width="307.87" height="209.64"/>
+  </clipPath>
+  <clipPath id="inverse-pef6262c934">
+   <rect x="398.63" y="35.14" width="307.87" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

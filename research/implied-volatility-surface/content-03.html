@@ -1,0 +1,107 @@
+<section id="strike-arbitrage" data-title="Strike arbitrage: bounds, verticals and butterflies">
+<div class="section-kicker">11 / Static consistency</div><h2>Strike arbitrage: bounds, verticals and butterflies</h2>
+<p>A surface is statically consistent when its European option prices respect the payoff relationships that can be assembled today. Positive volatility is insufficient. An independently chosen IV for every strike can produce a call curve that increases with strike or becomes locally concave.</p>
+<h3>Price bounds and vertical spreads</h3>
+<p>For a positive underlying with forward \(F\), a European call lies between discounted intrinsic value and discounted forward value. At one maturity, the call payoff decreases as strike rises. The payoff difference between calls with strikes \(K_1&lt;K_2\) lies between zero and \(K_2-K_1\), giving:</p>
+\[ 0\le C(K_1,T)-C(K_2,T)\le D(T)(K_2-K_1). \]
+<p>In a differentiable continuum, the associated slope restriction is \(-D(T)\le C_K\le0\). The upper bound prevents an increasing call curve. The lower bound prevents a vertical spread from costing more than its discounted maximum payoff.</p>
+{{figure:vertical}}
+<h3>Butterfly convexity</h3>
+<p>A symmetric strike butterfly is long calls at \(K-h\) and \(K+h\), and short two calls at \(K\). Its terminal payoff is nonnegative. Its price must therefore be nonnegative:</p>
+\[ C(K-h,T)-2C(K,T)+C(K+h,T)\ge0,\qquad C_{KK}(K,T)\ge0. \]
+<p>For irregular strike spacing, compare consecutive secant slopes. The slope between \(K_1,K_2\) must not exceed the slope between \(K_2,K_3\). Using a symmetric finite-difference formula on an irregular chain can produce misleading signs.</p>
+<p>These restrictions apply to option premiums at common expiry and carry inputs. They do not require implied volatility to be monotone or convex. A steep but economically admissible skew can have quite different geometry from the convex call-price function it generates.</p>
+<h3>Discrete tests and continuous extensions</h3>
+<p>A price table can pass every available-strike test while an interpolating curve violates convexity between those strikes. Conversely, a tiny negative estimated second derivative can result from finite precision. State the tested domain, step size and tolerance, and distinguish a payoff violation in raw quotes from a derivative violation introduced by fitting.</p>
+<p>Bid and ask change the practical test. A midpoint butterfly can be negative even when the package cannot be bought at a negative executable price. For a long butterfly, its execution cost uses wing asks and center bids. A frictionless surface fit may still seek convexity, but the data diagnosis should not equate every midpoint inconsistency with an immediately tradable arbitrage.</p>
+<p>A proper extension also needs terminal behavior: calls approach zero as strike tends to infinity, and approach \(DF\) as strike approaches zero for a nonnegative underlying with the stated mean. Local convexity without correct boundaries can describe an incomplete or misnormalized distribution.</p>
+</section>
+
+<section id="calendar-arbitrage" data-title="Calendar ordering under deterministic carry">
+<div class="section-kicker">12 / Cross-expiry consistency</div><h2>Calendar ordering under deterministic carry</h2>
+<p>Calendar comparisons require a precise framework. Assume deterministic discounting and proportional carry, and a positive underlying whose forward-normalized price is a true martingale under the pricing measure. At a common forward-moneyness ratio, normalized call values should not decrease with maturity.</p>
+<p>Let \(X_T=S_T/F(T)\) and \(x=K/F(T)\). The normalized call is an expectation of a convex payoff, \(c(x,T)=\mathbb E[(X_T-x)^+]\). The martingale property and conditional Jensen inequality imply that a later \(X_T\) has at least as much convex-payoff value at the same \(x\).</p>
+\[ \frac{C(F(T_2)e^k,T_2)}{D(T_2)F(T_2)}
+\ge
+\frac{C(F(T_1)e^k,T_1)}{D(T_1)F(T_1)},
+\qquad T_2&gt;T_1. \]
+<p>The normalized Black formula is increasing in total variance at fixed \(k\). Consequently the calendar restriction becomes:</p>
+\[ w(k,T_2)\ge w(k,T_1),\qquad
+\partial_T w(k,T)\ge0\quad\text{at fixed }k. \]
+<h3>Why annualized volatility is the wrong test</h3>
+<p>A one-year IV of 25% accumulates more variance than a six-month IV of 30%. Requiring \(\sigma(k,T_2)\ge\sigma(k,T_1)\) would reject this valid possibility. The factor \(T\) in \(w=T\sigma^2\) is essential.</p>
+{{figure:calendar}}
+<h3>Absolute strike and nonzero carry</h3>
+<p>With zero carry and constant discounting, a fixed strike is also a fixed forward-moneyness ratio. With nonzero carry, these coordinates differ. Checking raw call premiums at a fixed strike without normalizing can conflate discounting, forward movement and convex-order consistency.</p>
+<p>The maturity derivative at fixed absolute strike includes the changing \(k(T)=\ln(K/F(T))\). Under constant \(r,q\), \(dk/dT=-(r-q)\). A derivative reported as “calendar theta” must specify which coordinate is held fixed. The laboratory's calendar checks use fixed \(k\), while its selected option uses an explicit absolute strike reconstructed from the chosen forward ratio.</p>
+<h3>Limits of the argument</h3>
+<p>Discrete cash dividends can disrupt the simple forward-normalized martingale relationship used here. Stochastic rates, different settlement dates and early exercise also require a richer analysis. Apply the normalized total-variance condition within its assumptions; do not use it as a universal test for every option market.</p>
+<p>Checking calendar ordering at a finite strike grid is useful but cannot prove the condition between or beyond sampled points. A parameterization with analytical sufficient conditions can supply stronger assurance. A proof for each separate smile still leaves cross-expiry ordering unresolved unless the smiles are linked coherently.</p>
+<p>A calibration routine should distinguish failure of a sufficient certification bound from an observed negative calendar increment. The former means the selected proof does not apply; the latter is direct evidence of inconsistency on the tested domain. Reporting both prevents an absence-of-proof message from being confused with an actual arbitrage diagnosis.</p>
+</section>
+
+<section id="density" data-title="Risk-neutral density and smile derivatives">
+<div class="section-kicker">13 / Distribution recovery</div><h2>Risk-neutral density and smile derivatives</h2>
+<p>Assume a European call price can be written \(C(K,T)=D(T)\int_K^\infty(s-K)p_T(s)\,ds\), with a sufficiently regular terminal density. Differentiating in strike first removes the payoff magnitude and then recovers the density:</p>
+\[ C_K(K,T)=-D(T)\Pr(S_T&gt;K),\qquad
+C_{KK}(K,T)=D(T)p_T(K). \]
+<p>This connection between option prices and state-contingent claims is associated with <a href="https://www.gsb.stanford.edu/faculty-research/working-papers/prices-state-contingent-claims-implicit-option-prices">Breeden and Litzenberger (1978)</a>. Atoms require a distributional interpretation rather than an ordinary smooth density. A finite set of strikes identifies neither every tail nor a unique continuous interpolation.</p>
+<h3>Differentiating through the smile</h3>
+<p>When \(w\) varies with \(k\), differentiating a Black premium requires derivatives of \(w\). Holding implied volatility fixed while taking strike derivatives would recover a different distribution. Direct chain-rule differentiation gives a convenient sign diagnostic:</p>
+\[ g(k)=\left(1-\frac{k w_k}{2w}\right)^2
+-\frac{w_k^2}{4}\left(\frac{1}{w}+\frac{1}{4}\right)
++\frac{w_{kk}}{2}. \]
+<p>At \(K=Fe^k\), define \(d_2=-k/\sqrt w-\sqrt w/2\). The strike density implied by the fitted smile is:</p>
+\[ p_T(K)=\frac{\varphi(d_2)}{K\sqrt w}\,g(k). \]
+<p>The prefactor is strictly positive for positive \(K,w\). A negative \(g\) therefore identifies a negative density and a concave call-price region. The formula also makes the numerical problem visible: first and second smile derivatives enter a quantity that should remain nonnegative.</p>
+{{figure:butterfly}}
+<h3>Normalization and the forward moment</h3>
+<p>For a complete nonnegative-terminal-price distribution, check that integrated mass is one and its first moment is the forward. Positive density on a short interval alone establishes neither property. Missing wings can leave substantial probability or forward value outside the observed range.</p>
+{{figure:density}}
+<p>The numerical study integrates the reference density over a very broad positive-strike range using log-strike quadrature. It reports both mass and mean, with the finite integration range disclosed. This verifies the chosen example numerically; analytical tail conditions remain the stronger basis for an unrestricted surface.</p>
+<h3>What the recovered density means</h3>
+<p>This is a risk-neutral pricing distribution under the selected carry assumptions. A heavier left tail indicates expensive downside states in that measure. Translating it into a physical crash probability requires a model for state-dependent risk premia. Similarly, its variance is not generally the square of a single ATM implied volatility.</p>
+<p>Differentiation magnifies quote noise. Use a consistent smooth price representation, compare derivative step sizes and quantify uncertainty in recovered tail probabilities. A density plot without its fitted-price residuals, extrapolation assumptions and numerical checks can look more precise than its inputs justify.</p>
+</section>
+
+<section id="interpolation" data-title="Interpolation, smoothing and surface regularity">
+<div class="section-kicker">14 / Functional estimation</div><h2>Interpolation, smoothing and surface regularity</h2>
+<p>The market supplies observations at discrete strikes and expiries. Interpolation supplies values between them; smoothing also allows fitted values to differ from observations. Choose the representation and regularity to match the intended output. Pricing a vanilla between quoted strikes needs less derivative stability than constructing a local-volatility diffusion.</p>
+<h3>Interpolating option prices</h3>
+<p>Piecewise-linear call prices can preserve monotonicity and convexity if their node slopes satisfy the strike conditions. The resulting second derivative is concentrated at knots, corresponding to a discrete terminal distribution. This can be adequate for a simple static pricing table, but it is unsuitable as a smooth local-volatility input without further modeling.</p>
+<p>A convex smooth price interpolation can supply an ordinary density. Boundary behavior and calendar restrictions still need enforcement. Repairing each expiry's convexity independently may move its prices enough to break cross-expiry ordering.</p>
+<h3>Interpolating total variance</h3>
+<p>Total variance is convenient for maturity interpolation. At fixed \(k\), a linear interpolation between ordered total-variance slices preserves that calendar ordering between the two nodes. It does not automatically preserve butterfly freedom because the density diagnostic is nonlinear in \(w,w_k,w_{kk}\).</p>
+<p>Piecewise-linear \(w(k)\) has derivative jumps. A cubic spline can overshoot and create negative curvature in prices. A shape-preserving interpolator such as PCHIP preserves selected geometric properties of its input data, not the complete no-arbitrage structure of option prices.</p>
+{{figure:interpolation}}
+<h3>Regularization</h3>
+<p>A penalized fitting problem balances observation errors with a roughness measure. For example, one may penalize squared second derivatives in a chosen coordinate:</p>
+\[ L(p)=L_{\mathrm{quotes}}(p)+
+\lambda_k\int w_{kk}(k,T)^2\,dk+
+\lambda_T\int w_{TT}(k,T)^2\,dT. \]
+<p>The penalty is a modeling choice with units that depend on coordinates and integration domain. A small \(\lambda\) may chase noise; a large one may erase event structure. Smoothness alone is not an arbitrage guarantee. Add explicit consistency constraints or use a parameter family with suitable analytical restrictions.</p>
+<h3>Derivative quality and boundary policy</h3>
+<p>For local-volatility use, ensure that \(w\), its first time derivative and first two strike derivatives exist and are numerically stable on the valuation domain. Knots, expiry transitions and event dates require an explicit policy. Finite differences across a maturity knot can mix two different local regimes.</p>
+<p>Never let an interpolator's default extrapolation silently choose the tails. State a separate wing and long-maturity rule. Compare values, slopes and, when required, curvatures at the transition. A surface can fit every observation while its uncontrolled extrapolation dominates a variance swap or a deep-out-of-the-money exotic.</p>
+<p>Retain the fitted premium residuals alongside the smooth plot. Visual elegance is a presentation property; economic admissibility and data agreement are calculation properties that require their own evidence.</p>
+</section>
+
+<section id="raw-svi" data-title="The raw SVI total-variance parameterization">
+<div class="section-kicker">15 / Parametric smiles</div><h2>The raw SVI total-variance parameterization</h2>
+<p>Stochastic Volatility Inspired, or SVI, is a parsimonious representation of a single-expiry total-variance smile. In its raw form, it combines a linear asymmetry term with a smoothed absolute-value shape:</p>
+\[ w(k)=a+b\left[\rho(k-m)+\sqrt{(k-m)^2+s^2}\right],
+\qquad b\ge0,\quad |\rho|&lt;1,\quad s&gt;0. \]
+<p>The parameter \(a\) shifts the variance level, \(b\) scales the wings, \(\rho\) creates asymmetry, \(m\) moves the shape horizontally and \(s\) smooths its center. Their effects overlap; \(a\) is not generally ATM variance, and \(m\) is not generally the location of the minimum.</p>
+<h3>Minimum and positivity</h3>
+<p>Differentiate the expression to find its minimum at \(k=m-\rho s/\sqrt{1-\rho^2}\). The corresponding minimum total variance is \(a+bs\sqrt{1-\rho^2}\). Hence positivity requires that quantity to be nonnegative; the fitted value should be strictly positive where a finite smooth IV is used.</p>
+\[ w_k=b\left[\rho+\frac{k-m}{\sqrt{(k-m)^2+s^2}}\right],\qquad
+w_{kk}=\frac{bs^2}{\left((k-m)^2+s^2\right)^{3/2}}. \]
+<p>Although this \(w_{kk}\) is positive, the call density can still become negative because \(g\) contains additional terms. A convex total-variance function is not equivalent to a convex call-price function.</p>
+{{figure:svi}}
+<h3>Wing slopes</h3>
+<p>For large positive \(k\), the asymptotic slope is \(b(1+\rho)\). For large negative \(k\), the coefficient of \(|k|\) is \(b(1-\rho)\). The parameters therefore control the two tail slopes jointly. Necessary tail restrictions help eliminate obviously inadmissible candidates but do not settle behavior in the center.</p>
+<h3>Fitting and identifiability</h3>
+<p>With only a narrow ATM strike range, several parameter combinations can produce nearly identical prices. The wings may then be determined mainly by bounds and initialization. Inspect the outputs actually needed—premiums, ATM level, skew and tail slopes—rather than interpreting every raw parameter as an independently measured economic quantity.</p>
+<p>Use transforms or bounds for \(b,s,\rho\), enforce positive variance, and validate the resulting \(g\) and boundaries. A good single-expiry fit says nothing about calendar ordering versus the next expiry. SSVI, developed in the next chapter, provides a linked surface representation that can be subjected to stronger consistency conditions.</p>
+<p>The numerical calibration study fits raw SVI to thirteen noisy synthetic quotes and withholds four other strikes. It reports fit error and out-of-fit interpolation error separately. Its price and derivative diagnostics are validation of that fitted example, not a claim that every raw SVI calibration is automatically admissible.</p>
+</section>

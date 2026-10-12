@@ -1,0 +1,392 @@
+<svg role="img" aria-labelledby="capacity-title capacity-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="capacity-title">Figure 19 · An illustrative capacity curve</title><desc id="capacity-desc">Square-root impact toy model: 0.5 × daily volatility × √(trade/volume), converted to bps. The coefficient, participation horizon and functional form require empirical calibration; this figure is not an execution-cost forecast.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:05:15.155494</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="capacity-figure_1">
+  <g id="capacity-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="capacity-axes_1">
+   <g id="capacity-patch_2">
+    <path d="M 51.14 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 51.14 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="capacity-matplotlib.axis_1">
+    <g id="capacity-xtick_1">
+     <g id="capacity-line2d_1">
+      <path d="M 80.690683 244.78 
+L 80.690683 35.14 
+" clip-path="url(#capacity-pbff0102ac9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capacity-line2d_2">
+      <defs>
+       <path id="capacity-mdc400d3727" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#capacity-mdc400d3727" x="80.690683" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capacity-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="80.690683" y="258.618594" transform="rotate(-0 80.690683 258.618594)">0.0%</text>
+     </g>
+    </g>
+    <g id="capacity-xtick_2">
+     <g id="capacity-line2d_3">
+      <path d="M 199.894728 244.78 
+L 199.894728 35.14 
+" clip-path="url(#capacity-pbff0102ac9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capacity-line2d_4">
+      <g>
+       <use href="#capacity-mdc400d3727" x="199.894728" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capacity-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="199.894728" y="258.618594" transform="rotate(-0 199.894728 258.618594)">5.0%</text>
+     </g>
+    </g>
+    <g id="capacity-xtick_3">
+     <g id="capacity-line2d_5">
+      <path d="M 319.098773 244.78 
+L 319.098773 35.14 
+" clip-path="url(#capacity-pbff0102ac9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capacity-line2d_6">
+      <g>
+       <use href="#capacity-mdc400d3727" x="319.098773" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capacity-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="319.098773" y="258.618594" transform="rotate(-0 319.098773 258.618594)">10.0%</text>
+     </g>
+    </g>
+    <g id="capacity-xtick_4">
+     <g id="capacity-line2d_7">
+      <path d="M 438.302819 244.78 
+L 438.302819 35.14 
+" clip-path="url(#capacity-pbff0102ac9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capacity-line2d_8">
+      <g>
+       <use href="#capacity-mdc400d3727" x="438.302819" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capacity-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="438.302819" y="258.618594" transform="rotate(-0 438.302819 258.618594)">15.0%</text>
+     </g>
+    </g>
+    <g id="capacity-xtick_5">
+     <g id="capacity-line2d_9">
+      <path d="M 557.506864 244.78 
+L 557.506864 35.14 
+" clip-path="url(#capacity-pbff0102ac9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capacity-line2d_10">
+      <g>
+       <use href="#capacity-mdc400d3727" x="557.506864" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capacity-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="557.506864" y="258.618594" transform="rotate(-0 557.506864 258.618594)">20.0%</text>
+     </g>
+    </g>
+    <g id="capacity-xtick_6">
+     <g id="capacity-line2d_11">
+      <path d="M 676.710909 244.78 
+L 676.710909 35.14 
+" clip-path="url(#capacity-pbff0102ac9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capacity-line2d_12">
+      <g>
+       <use href="#capacity-mdc400d3727" x="676.710909" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capacity-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="676.710909" y="258.618594" transform="rotate(-0 676.710909 258.618594)">25.0%</text>
+     </g>
+    </g>
+    <g id="capacity-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="378.82" y="271.328906" transform="rotate(-0 378.82 271.328906)">Trade / daily traded volume</text>
+    </g>
+   </g>
+   <g id="capacity-matplotlib.axis_2">
+    <g id="capacity-ytick_1">
+     <g id="capacity-line2d_13">
+      <path d="M 51.14 236.208607 
+L 706.5 236.208607 
+" clip-path="url(#capacity-pbff0102ac9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capacity-line2d_14">
+      <defs>
+       <path id="capacity-ma901a83acf" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#capacity-ma901a83acf" x="51.14" y="236.208607" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capacity-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="239.627904" transform="rotate(-0 44.14 239.627904)">0</text>
+     </g>
+    </g>
+    <g id="capacity-ytick_2">
+     <g id="capacity-line2d_15">
+      <path d="M 51.14 197.900704 
+L 706.5 197.900704 
+" clip-path="url(#capacity-pbff0102ac9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capacity-line2d_16">
+      <g>
+       <use href="#capacity-ma901a83acf" x="51.14" y="197.900704" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capacity-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="201.32" transform="rotate(-0 44.14 201.32)">20</text>
+     </g>
+    </g>
+    <g id="capacity-ytick_3">
+     <g id="capacity-line2d_17">
+      <path d="M 51.14 159.5928 
+L 706.5 159.5928 
+" clip-path="url(#capacity-pbff0102ac9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capacity-line2d_18">
+      <g>
+       <use href="#capacity-ma901a83acf" x="51.14" y="159.5928" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capacity-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="163.012097" transform="rotate(-0 44.14 163.012097)">40</text>
+     </g>
+    </g>
+    <g id="capacity-ytick_4">
+     <g id="capacity-line2d_19">
+      <path d="M 51.14 121.284897 
+L 706.5 121.284897 
+" clip-path="url(#capacity-pbff0102ac9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capacity-line2d_20">
+      <g>
+       <use href="#capacity-ma901a83acf" x="51.14" y="121.284897" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capacity-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="124.704194" transform="rotate(-0 44.14 124.704194)">60</text>
+     </g>
+    </g>
+    <g id="capacity-ytick_5">
+     <g id="capacity-line2d_21">
+      <path d="M 51.14 82.976994 
+L 706.5 82.976994 
+" clip-path="url(#capacity-pbff0102ac9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capacity-line2d_22">
+      <g>
+       <use href="#capacity-ma901a83acf" x="51.14" y="82.976994" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capacity-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="86.396291" transform="rotate(-0 44.14 86.396291)">80</text>
+     </g>
+    </g>
+    <g id="capacity-ytick_6">
+     <g id="capacity-line2d_23">
+      <path d="M 51.14 44.669091 
+L 706.5 44.669091 
+" clip-path="url(#capacity-pbff0102ac9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capacity-line2d_24">
+      <g>
+       <use href="#capacity-ma901a83acf" x="51.14" y="44.669091" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capacity-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="48.088388" transform="rotate(-0 44.14 48.088388)">100</text>
+     </g>
+    </g>
+    <g id="capacity-text_14">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.089531" y="139.96" transform="rotate(-90 21.089531 139.96)">Illustrative impact (bps)</text>
+    </g>
+   </g>
+   <g id="capacity-line2d_25">
+    <path d="M 80.929091 235.250909 
+L 83.649556 232.834716 
+L 86.370021 231.534305 
+L 89.090486 230.523974 
+L 94.531416 228.911555 
+L 99.972345 227.595891 
+L 108.13374 225.933552 
+L 116.295135 224.504991 
+L 127.176995 222.835558 
+L 140.779319 221.004389 
+L 157.102109 219.063229 
+L 176.145363 217.045474 
+L 197.909083 214.972945 
+L 222.393267 212.860225 
+L 252.318381 210.51284 
+L 284.96396 208.175342 
+L 323.050469 205.673589 
+L 366.577908 203.044732 
+L 415.546276 200.316688 
+L 469.955575 197.510429 
+L 532.526268 194.51609 
+L 600.537891 191.488199 
+L 676.710909 188.323728 
+L 676.710909 188.323728 
+" clip-path="url(#capacity-pbff0102ac9)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="capacity-line2d_26">
+    <path d="M 80.929091 234.293212 
+L 83.649556 229.460825 
+L 86.370021 226.860003 
+L 89.090486 224.83934 
+L 91.810951 223.127168 
+L 94.531416 221.614503 
+L 99.972345 218.983174 
+L 105.413275 216.703654 
+L 110.854205 214.663983 
+L 119.0156 211.923585 
+L 127.176995 209.462508 
+L 135.338389 207.209551 
+L 146.220249 204.453283 
+L 157.102109 201.917852 
+L 170.704433 198.990668 
+L 184.306758 196.27749 
+L 200.629548 193.247263 
+L 219.672802 189.962268 
+L 238.716056 186.89562 
+L 260.479776 183.609356 
+L 284.96396 180.142078 
+L 312.168609 176.525327 
+L 342.093724 172.784668 
+L 374.739303 168.94077 
+L 410.105347 165.010351 
+L 448.191856 161.006976 
+L 488.998829 156.9417 
+L 532.526268 152.823573 
+L 581.494637 148.421292 
+L 633.18347 144.002179 
+L 676.710909 140.438849 
+L 676.710909 140.438849 
+" clip-path="url(#capacity-pbff0102ac9)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="capacity-line2d_27">
+    <path d="M 80.929091 232.377816 
+L 83.649556 222.713042 
+L 86.370021 217.511399 
+L 89.090486 213.470074 
+L 91.810951 210.045729 
+L 94.531416 207.020399 
+L 97.25188 204.280457 
+L 99.972345 201.757742 
+L 105.413275 197.198702 
+L 110.854205 193.119359 
+L 116.295135 189.394144 
+L 121.736065 185.944261 
+L 127.176995 182.71641 
+L 135.338389 178.210495 
+L 143.499784 174.030259 
+L 151.661179 170.113881 
+L 159.822574 166.416926 
+L 170.704433 161.772729 
+L 181.586293 157.401747 
+L 192.468153 153.260778 
+L 206.070477 148.358627 
+L 219.672802 143.715929 
+L 233.275127 139.295388 
+L 249.597916 134.243398 
+L 265.920706 129.430166 
+L 284.96396 124.075549 
+L 304.007215 118.965229 
+L 323.050469 114.068536 
+L 344.814188 108.702374 
+L 366.577908 103.553107 
+L 391.062092 97.98929 
+L 415.546276 92.640932 
+L 442.750926 86.922874 
+L 472.67604 80.875936 
+L 502.601154 75.055739 
+L 535.246733 68.937239 
+L 570.612777 62.551965 
+L 605.978821 56.39329 
+L 644.06533 49.988515 
+L 676.710909 44.669091 
+L 676.710909 44.669091 
+" clip-path="url(#capacity-pbff0102ac9)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="capacity-patch_3">
+    <path d="M 51.14 244.78 
+L 51.14 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="capacity-patch_4">
+    <path d="M 51.14 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="capacity-text_15">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="51.14" y="22.14" transform="rotate(-0 51.14 22.14)">A larger book need not retain the same cost</text>
+   </g>
+   <g id="capacity-legend_1">
+    <g id="capacity-line2d_28">
+     <path d="M 58.34 45.61875 
+L 66.34 45.61875 
+L 74.34 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="capacity-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="80.74" y="48.41875" transform="rotate(-0 80.74 48.41875)">Daily volatility 1%</text>
+    </g>
+    <g id="capacity-line2d_29">
+     <path d="M 58.34 57.36125 
+L 66.34 57.36125 
+L 74.34 57.36125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="capacity-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="80.74" y="60.16125" transform="rotate(-0 80.74 60.16125)">Daily volatility 2%</text>
+    </g>
+    <g id="capacity-line2d_30">
+     <path d="M 58.34 69.10375 
+L 66.34 69.10375 
+L 74.34 69.10375 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="capacity-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="80.74" y="71.90375" transform="rotate(-0 80.74 71.90375)">Daily volatility 4%</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="capacity-pbff0102ac9">
+   <rect x="51.14" y="35.14" width="655.36" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

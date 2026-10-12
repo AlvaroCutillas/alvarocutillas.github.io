@@ -1,0 +1,107 @@
+<section id="contract-conventions" data-title="Schedules, day counts and quotation conventions">
+<div class="section-kicker">06 / Contract specification</div><h2>Schedules, day counts and quotation conventions</h2>
+<p>The discount function is only one part of a price. A schedule generator determines accrual start dates, accrual end dates, reset dates, fixing dates and payment dates. These can differ. A model that uses the right rates at the wrong dates is still a wrong valuation model.</p>
+<h3>Curve time and coupon accrual</h3>
+<p>A curve may measure time using Actual/365 Fixed while an instrument uses a different convention for its coupon accrual. Keep these quantities separate. If \(t_j\) is the curve year fraction to payment and \(\alpha_j\) the instrument's accrual fraction, a fixed coupon cash flow is \(Nc\alpha_j\) and its present value is \(Nc\alpha_jD(t_j)\).</p>
+\[ \alpha_{\mathrm{Act/365F}}=\frac{\text{actual days}}{365},\qquad
+\alpha_{\mathrm{Act/360}}=\frac{\text{actual days}}{360},\qquad
+C_j=Nc\alpha_j. \]
+<p>For an interval of exactly 181 days, these fractions are approximately 0.495890 and 0.502778. At an annual coupon of 4% on face 100, the associated interest amounts are 1.983562 and 2.011111. A convention change is a change in contractual accrual, not simply a display preference.</p>
+<p>Actual/Actual is a family of conventions, and 30/360 also has several variants. Leap years, coupon-period denominators, month-end rules and treatment of February must follow the selected contract convention. A generic “days divided by 365” implementation should not be advertised as supporting all bonds.</p>
+<h3>Clean price, dirty price and accrued interest</h3>
+<p>The discounted value of remaining cash flows is the dirty price paid at settlement, subject to the instrument's settlement rules. The clean quoted price excludes accrued interest:</p>
+\[ P_{\mathrm{dirty}}=P_{\mathrm{clean}}+AI,\qquad
+AI=C_{\mathrm{next}}\frac{\text{accrual elapsed}}{\text{full accrual period}}
+\quad\text{under proportional-period accrual}. \]
+<p>For a regular semiannual 4% coupon on face 100, the full coupon is 2. If 40% of the coupon accrual period has elapsed, accrued interest is 0.8. A clean quote of 101.2 then corresponds to a dirty amount of 102.0. This simplified proportional rule needs modification for contracts with ex-coupon treatment or other conventions.</p>
+{{figure:accrual}}
+<h3>Calendar adjustments and settlement</h3>
+<p>A business-day adjustment moves a date according to a calendar and a convention such as following, modified following or preceding. The adjusted payment date need not replace the accrual end date. A payment lag introduces another distinction. Apply calendars to their intended fields and avoid deriving all dates from a single adjusted timestamp.</p>
+<p>Settlement after the valuation date may require forward discounting from the valuation date to settlement, cash-flow eligibility checks and an accrued-interest calculation as of settlement. Stubs, amortization, floating-rate fixings and redemption premiums alter the payment ledger. A bond purchased just before a coupon date should not accidentally receive a coupon to which the buyer is not entitled.</p>
+<h3>Scope of the numerical laboratory</h3>
+<p>The laboratory deliberately values regular fixed-rate bonds on a coupon date, with exact-year intervals and zero accrued interest. It requires maturity multiplied by coupon frequency to be an integer. It supports annual, semiannual and quarterly payments but does not generate real calendars, stubs or ex-coupon periods. This makes the arithmetic reproducible while identifying exactly which contract layer a market implementation would add.</p>
+<p>Validate schedules before optimizing curve parameters. Compare payment counts, total principal and coupon amounts against an independent contract description. Otherwise a calibration can absorb schedule errors into strange curvature coefficients, producing a small residual with an incorrect economic interpretation.</p>
+</section>
+
+<section id="instruments" data-title="Market instruments and curve families">
+<div class="section-kicker">07 / Market inputs</div><h2>Market instruments and curve families</h2>
+<p>A curve is identified by both its purpose and its inputs. Government securities, overnight-index swaps, deposits, futures and tenor swaps contain different contractual and risk information. Selecting instruments is part of model specification.</p>
+<h3>Government bond curves</h3>
+<p>A sovereign curve can be fitted directly to coupon-bond prices after generating each bond's cash flows. On-the-run securities may carry liquidity premia; bills and bonds can have different market microstructure; securities with special repo demand can be unusually expensive. Pooling every bond into an equal-weight fit can turn these instrument effects into artificial term-structure features.</p>
+<p>Use an eligibility policy for embedded options, unusual redemption provisions, stale quotes and securities with distinctive liquidity treatment. A bond with a call option is not a deterministic cash-flow observation unless its option value is modelled separately. Inflation-linked securities require an indexation framework and cannot be treated as nominal fixed coupons.</p>
+<h3>Deposits, forwards and futures</h3>
+<p>A deposit supplies a short-period simple-rate relation. A forward rate agreement supplies a rate for a future accrual period, subject to its settlement convention. A futures quote can be converted into an implied futures rate, but the corresponding forward rate can differ because of daily settlement and correlation with funding rates. A futures-forward convexity adjustment belongs to a dynamic model, rather than a static identity that can be guessed from one quote.</p>
+<p>Near-term fixings and known overnight accruals may anchor portions of the short end. Quotes spanning a policy meeting can contain concentrated timing information that a smooth global function will average away. Whether that is acceptable depends on whether the curve is intended for broad economic analysis or precise short-dated instrument pricing.</p>
+<h3>Overnight and tenor-dependent curves</h3>
+<p>Under idealized daily collateralization remunerated at an overnight benchmark, discounting is associated with the collateral rate. An OIS curve therefore has a different role from an unsecured term-rate forecasting curve. The precise collateral agreement, currency, payment lag and settlement conventions matter. Uncollateralized trades or cross-currency collateral introduce further adjustments.</p>
+<p>A tenor-specific forecasting curve can represent projected fixings for one reference index, while a common collateral curve discounts their payments. Basis-swap quotes help connect different tenor forecasts. The word “curve” should therefore include identifiers for currency, collateral framework and reference tenor.</p>
+<h3>Data selection and measurement uncertainty</h3>
+<p>Bid and ask are an uncertainty interval, not two independent exact equilibrium prices. Synchronized quotes, source quality, trade timestamps and liquidity should be recorded. A thinly traded long-end bond does not deserve unlimited influence merely because its maturity is unique. Nor should an illiquid observation be excluded simply because it disagrees with a preferred smooth shape; the exclusion needs a reproducible reason.</p>
+<p>The ECB describes zero, forward and par curves derived from selected euro-area government bonds and uses a Svensson representation. This illustrates a curve with a defined universe and methodology, rather than one generic curve for every euro claim. <a href="https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/euro_area_yield_curves/html/index.en.html">ECB yield-curve methodology</a>. The Federal Reserve's Treasury-curve research similarly emphasizes instrument selection and smooth estimation. <a href="https://www.federalreserve.gov/pubs/feds/2006/200628/index.html">Gürkaynak, Sack and Wright</a>.</p>
+<p>The laboratory uses synthetic zero-rate observations directly. Real government-bond calibration would instead start from bond quotations and a cash-flow engine. Treating those synthetic zeros as already available isolates parameter estimation; it does not reproduce the full market-data construction pipeline.</p>
+</section>
+
+<section id="short-end-bootstrap" data-title="Bootstrapping deposits and zero-coupon claims">
+<div class="section-kicker">08 / Sequential construction</div><h2>Bootstrapping deposits and zero-coupon claims</h2>
+<p>Bootstrapping solves for discount factors in a sequence of maturities, using previously identified values where possible. The simplest instruments expose individual nodes directly.</p>
+<h3>A deposit node</h3>
+<p>For a spot-starting deposit with simple rate \(L\), year fraction \(\alpha\), one unit lent today and repayment \(1+\alpha L\), the single-curve discount is:</p>
+\[ 1=(1+\alpha L)D(T),\qquad D(T)=\frac{1}{1+\alpha L}. \]
+<p>At a 3% simple rate for an exact half-year interval, \(D(0.5)=1/1.015=0.985222\). The associated continuous zero rate is \(\ln(1.015)/0.5=2.977722\%\). The rate conversion and bootstrap are consistent because they reproduce the same repayment value.</p>
+<p>If the deposit begins at a future settlement date \(t_s\), the relation uses the ratio \(D(T)/D(t_s)\), rather than automatically setting the starting discount to one. Settlement lags require a starting node or an explicit short-end assumption. In a credit-sensitive deposit market, the relation belongs to the deposit's curve framework, not automatically the collateral curve.</p>
+<h3>A zero-coupon price node</h3>
+<p>A zero-coupon claim with face value \(N\) and price \(P\) directly identifies \(D(T)=P/N\), when both cash flows belong to the intended curve. A price of 95 per 100 payable in two years identifies \(D(2)=0.95\) and a continuous zero of about 2.564665%. No coupon interpolation is needed at that instrument's maturity.</p>
+<h3>A known forward period</h3>
+<p>When a simple forward \(L(t_1,t_2)\) and starting discount are known, the ending node follows recursively:</p>
+\[ D(t_2)=\frac{D(t_1)}{1+\alpha L(t_1,t_2)}. \]
+<p>The denominator must be positive. Negative simple forwards are allowed if the denominator remains positive; they produce an ending discount larger than the starting discount. A failure of the positivity domain signals inconsistent inputs or a quotation error before any optimizer is involved.</p>
+<h3>Information versus assumptions</h3>
+<p>A finite collection of zero prices supplies a finite collection of discounts. It does not uniquely determine every intermediate discount. Bootstrapping alone is not a complete continuous curve model; interpolation fills the gaps. Instruments with payment dates inside those gaps can force interpolation into the bootstrap itself.</p>
+<div class="callout"><strong>An analogy: solving a triangular system</strong><p>If the first equation contains only the first unknown, solve it. If the second contains that known value and one new unknown, solve the second. Continue down the system. This is the ideal bootstrap. Once an equation involves several still-unknown intermediate dates, a rule connecting those dates is needed before the triangular logic can continue.</p></div>
+<p>After obtaining each node, reprice the instrument that generated it. This distinguishes an algebraic error from the later modelling decision used between nodes. Record the original quote, convention, solved node and pricing residual together. A discount table without those inputs cannot be reliably audited.</p>
+</section>
+
+<section id="coupon-bootstrap" data-title="Bootstrapping coupon bonds and par swaps">
+<div class="section-kicker">09 / Cash-flow equations</div><h2>Bootstrapping coupon bonds and par swaps</h2>
+<p>Coupon instruments combine several dates in one observed price. If all earlier coupon-date discounts are already known, isolate the final discount algebraically. For a regular bond with coupon amount \(C\) each period:</p>
+\[ P=C\sum_{j=1}^{n-1}D(t_j)+(N+C)D(T),\qquad
+D(T)=\frac{P-C\sum_{j=1}^{n-1}D(t_j)}{N+C}. \]
+<p>Use dirty price \(P\). A clean quotation that omits accrued interest cannot be placed into this equation unchanged. For amortizing principal or irregular coupons, replace the simplified final cash flow and coupon amounts with the actual ledger.</p>
+<h3>Annual par instruments</h3>
+<p>A synthetic annual par bond or idealized single-curve par swap with maturity \(n\) and annual rate \(S_n\) satisfies \(1=S_n\sum_{j=1}^{n}D(j)+D(n)\). The recursion is:</p>
+\[ D(n)=\frac{1-S_n\sum_{j=1}^{n-1}D(j)}{1+S_n}. \]
+<p>Generate three such quotations from continuous zero rates 2%, 2.5% and 3% at years one, two and three. The resulting annual par rates are approximately 2.020134%, 2.525104% and 3.024884%. Applying the recursion recovers the original discounts. These are distinct annual coupon and continuous zero conventions.</p>
+{{table:bootstrap}}
+{{figure:bootstrap}}
+<h3>The floating-leg telescoping argument</h3>
+<p>In an idealized single-curve swap, a floating coupon projected over \((t_{j-1},t_j)\) has discounted value \(\alpha_jL_jD(t_j)=D(t_{j-1})-D(t_j)\). Summing coupons telescopes to \(D(t_0)-D(T)\). For a spot-starting swap with \(t_0=0\), this is \(1-D(T)\). The par fixed rate is the floating-leg present value divided by the fixed-leg annuity.</p>
+\[ S=\frac{D(t_0)-D(T)}{\sum_{j=1}^{n}\alpha_jD(t_j)}
+\quad\text{under matched single-curve conventions}. \]
+<p>The assumptions matter: one curve forecasts and discounts, payment dates align with the derivation, and coupons have not already fixed differently. OIS compounded accruals, payment lags, known fixings and multicurve forecasts can require a fuller cash-flow treatment.</p>
+<h3>Missing intermediate nodes</h3>
+<p>Suppose the available swaps mature at two and five years, but the five-year fixed leg pays annually. Discounts at years three and four are not yet observed. Solving the five-year equation therefore needs an interpolation rule involving the proposed five-year endpoint. A root solver can determine that endpoint while regenerating the intermediate discounts on every candidate.</p>
+<p>With a global spline, changing a distant endpoint can change earlier interpolated values, so a simple one-pass bootstrap may not remain exact. Iteration or a joint solve is then appropriate. Interpolation and construction must be designed together; they are not always separable postprocessing steps. <a href="https://bank.uni-hohenheim.de/uploads/media/Hagan_and_West__2006__-_Interpolation_Methods_for_Curve_Construction.pdf">Hagan and West, Interpolation Methods for Curve Construction</a>.</p>
+<h3>Exact fitting and noisy markets</h3>
+<p>An exact bootstrap reproduces selected input quotes by construction, but it may transmit stale data or bid–ask noise directly into forwards. A smooth parametric fit sacrifices exact repricing to reduce local noise and estimate a coherent broad shape. The choice depends on the task: instrument valuation, hedging, economic interpretation and forecasting can prioritize different properties.</p>
+<p>Always inspect both the fitted object and instrument residuals. Smooth-looking zero rates can conceal implausible forwards; tiny price residuals can coexist with unstable node sensitivities. Neither visual smoothness nor exact input repricing is a complete quality criterion.</p>
+</section>
+
+<section id="multicurve" data-title="Discounting, forecasting and multicurve valuation">
+<div class="section-kicker">10 / Curve architecture</div><h2>Discounting, forecasting and multicurve valuation</h2>
+<p>A modern curve architecture can use one function for collateral discounting and another for projecting a tenor-specific floating index. Denote the discount curve by \(D^c\) and the projected simple fixing for period \(j\) by \(L_j^x\). A swap's par fixed rate is determined by:</p>
+\[ S=\frac{\sum_{j=1}^{n}\alpha_j L_j^xD^c(p_j)}
+{\sum_{k=1}^{m}\delta_kD^c(q_k)}. \]
+<p>Here \(p_j\) and \(q_k\) are the actual floating and fixed payment dates, and \(\alpha_j,\delta_k\) their respective accrual fractions. The notional cancels for a constant-notional par swap. Known fixings replace projected values where applicable.</p>
+<h3>Why the numerator need not telescope</h3>
+<p>If \(L_j^x\) is generated from a different forecasting curve, multiplying by \(D^c(p_j)\) does not produce a difference of discount-curve nodes. The single-curve numerator \(1-D(T)\) is therefore not a general multicurve identity. Distinguishing the two roles is essential when reproducing swap quotes.</p>
+<p>A forecasting curve may be represented by positive auxiliary quantities \(Q^x(t)\), with \(L_j^x=[Q^x(t_{j-1})/Q^x(t_j)-1]/\alpha_j\). These quantities are often called pseudo-discounts. They parameterize projected rates but are not necessarily traded zero-coupon prices. An arbitrage argument applying to genuine discount factors cannot automatically be applied to them.</p>
+<h3>Calibration order and basis information</h3>
+<p>A common construction sequence first anchors a collateral discount curve with suitable overnight instruments, then fits a tenor forecast curve using deposits, forwards and swaps referencing that tenor, and finally uses basis instruments to connect additional tenors. Some sets of instruments require a joint iterative solve because curves enter one another's valuation equations.</p>
+<p>A basis spread can compensate for differences between projected floating legs. It is not generally a single constant added to all zero rates. The valuation weights, payment frequencies and accrual conventions affect how quoted basis information maps to node values. One should calibrate the instrument equation that defines the quote.</p>
+<h3>Collateral assumptions</h3>
+<p>The simple overnight-discounting rule assumes an appropriate collateral agreement with frequent margining and remuneration at the benchmark being modelled. Thresholds, optional collateral currencies, funding costs and counterparty exposure can make the actual valuation more complex. State the framework instead of calling every selected curve universally risk free.</p>
+<p>Bianchetti's multiple-curve research explains the separation between forwarding and discounting and the resulting role of basis information. The algebra in this section is the elementary deterministic version of that architecture. <a href="https://arxiv.org/abs/0905.2770">Two Curves, One Price</a>.</p>
+<h3>Risk implications</h3>
+<p>A bump to a discount quote and a bump to a forecasting quote need not move the same cash-flow components. Hedge reports should identify which curve was recalibrated, what quotes were bumped and whether other curves were held fixed or rebuilt. A single portfolio DV01 can hide substantial offsetting discount and forecast exposures.</p>
+<p>This page's laboratory uses one curve for deterministic fixed-bond cash flows. It demonstrates zero, forward and par transformations within that setting. It does not claim to bootstrap a full OIS/tenor system or price a collateralized swap from market data. The separation developed here is the architectural extension needed for that application.</p>
+</section>

@@ -1,0 +1,726 @@
+<svg role="img" aria-labelledby="iv-title iv-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="iv-title">Figure 08 · European price–volatility relationship and illustrative skew</title><desc id="iv-desc">Left: benchmark call value as σ varies. Right: a deliberately synthetic strike-dependent volatility curve, not observed quotes or a calibrated arbitrage-free surface.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T17:24:10.227436</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="iv-figure_1">
+  <g id="iv-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="iv-axes_1">
+   <g id="iv-patch_2">
+    <path d="M 45.38 208.78 
+L 324.45 208.78 
+L 324.45 35.14 
+L 45.38 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="iv-matplotlib.axis_1">
+    <g id="iv-xtick_1">
+     <g id="iv-line2d_1">
+      <path d="M 57.747478 208.78 
+L 57.747478 35.14 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_2">
+      <defs>
+       <path id="iv-mf43d865f0b" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#iv-mf43d865f0b" x="57.747478" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="57.747478" y="222.618594" transform="rotate(-0 57.747478 222.618594)">0</text>
+     </g>
+    </g>
+    <g id="iv-xtick_2">
+     <g id="iv-line2d_3">
+      <path d="M 89.499668 208.78 
+L 89.499668 35.14 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_4">
+      <g>
+       <use href="#iv-mf43d865f0b" x="89.499668" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="89.499668" y="222.618594" transform="rotate(-0 89.499668 222.618594)">10</text>
+     </g>
+    </g>
+    <g id="iv-xtick_3">
+     <g id="iv-line2d_5">
+      <path d="M 121.251859 208.78 
+L 121.251859 35.14 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_6">
+      <g>
+       <use href="#iv-mf43d865f0b" x="121.251859" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="121.251859" y="222.618594" transform="rotate(-0 121.251859 222.618594)">20</text>
+     </g>
+    </g>
+    <g id="iv-xtick_4">
+     <g id="iv-line2d_7">
+      <path d="M 153.004049 208.78 
+L 153.004049 35.14 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_8">
+      <g>
+       <use href="#iv-mf43d865f0b" x="153.004049" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="153.004049" y="222.618594" transform="rotate(-0 153.004049 222.618594)">30</text>
+     </g>
+    </g>
+    <g id="iv-xtick_5">
+     <g id="iv-line2d_9">
+      <path d="M 184.756239 208.78 
+L 184.756239 35.14 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_10">
+      <g>
+       <use href="#iv-mf43d865f0b" x="184.756239" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="184.756239" y="222.618594" transform="rotate(-0 184.756239 222.618594)">40</text>
+     </g>
+    </g>
+    <g id="iv-xtick_6">
+     <g id="iv-line2d_11">
+      <path d="M 216.508429 208.78 
+L 216.508429 35.14 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_12">
+      <g>
+       <use href="#iv-mf43d865f0b" x="216.508429" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="216.508429" y="222.618594" transform="rotate(-0 216.508429 222.618594)">50</text>
+     </g>
+    </g>
+    <g id="iv-xtick_7">
+     <g id="iv-line2d_13">
+      <path d="M 248.26062 208.78 
+L 248.26062 35.14 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_14">
+      <g>
+       <use href="#iv-mf43d865f0b" x="248.26062" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="248.26062" y="222.618594" transform="rotate(-0 248.26062 222.618594)">60</text>
+     </g>
+    </g>
+    <g id="iv-xtick_8">
+     <g id="iv-line2d_15">
+      <path d="M 280.01281 208.78 
+L 280.01281 35.14 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_16">
+      <g>
+       <use href="#iv-mf43d865f0b" x="280.01281" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="280.01281" y="222.618594" transform="rotate(-0 280.01281 222.618594)">70</text>
+     </g>
+    </g>
+    <g id="iv-xtick_9">
+     <g id="iv-line2d_17">
+      <path d="M 311.765 208.78 
+L 311.765 35.14 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_18">
+      <g>
+       <use href="#iv-mf43d865f0b" x="311.765" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="311.765" y="222.618594" transform="rotate(-0 311.765 222.618594)">80</text>
+     </g>
+    </g>
+    <g id="iv-text_10">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="184.915" y="235.328906" transform="rotate(-0 184.915 235.328906)">Volatility (%)</text>
+    </g>
+   </g>
+   <g id="iv-matplotlib.axis_2">
+    <g id="iv-ytick_1">
+     <g id="iv-line2d_19">
+      <path d="M 45.38 200.192774 
+L 324.45 200.192774 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_20">
+      <defs>
+       <path id="iv-mcb572db2a8" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#iv-mcb572db2a8" x="45.38" y="200.192774" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="203.612071" transform="rotate(-0 38.38 203.612071)">5</text>
+     </g>
+    </g>
+    <g id="iv-ytick_2">
+     <g id="iv-line2d_21">
+      <path d="M 45.38 171.947897 
+L 324.45 171.947897 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_22">
+      <g>
+       <use href="#iv-mcb572db2a8" x="45.38" y="171.947897" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="175.367194" transform="rotate(-0 38.38 175.367194)">10</text>
+     </g>
+    </g>
+    <g id="iv-ytick_3">
+     <g id="iv-line2d_23">
+      <path d="M 45.38 143.703019 
+L 324.45 143.703019 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_24">
+      <g>
+       <use href="#iv-mcb572db2a8" x="45.38" y="143.703019" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="147.122316" transform="rotate(-0 38.38 147.122316)">15</text>
+     </g>
+    </g>
+    <g id="iv-ytick_4">
+     <g id="iv-line2d_25">
+      <path d="M 45.38 115.458142 
+L 324.45 115.458142 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_26">
+      <g>
+       <use href="#iv-mcb572db2a8" x="45.38" y="115.458142" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="118.877439" transform="rotate(-0 38.38 118.877439)">20</text>
+     </g>
+    </g>
+    <g id="iv-ytick_5">
+     <g id="iv-line2d_27">
+      <path d="M 45.38 87.213265 
+L 324.45 87.213265 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_28">
+      <g>
+       <use href="#iv-mcb572db2a8" x="45.38" y="87.213265" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="90.632562" transform="rotate(-0 38.38 90.632562)">25</text>
+     </g>
+    </g>
+    <g id="iv-ytick_6">
+     <g id="iv-line2d_29">
+      <path d="M 45.38 58.968388 
+L 324.45 58.968388 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_30">
+      <g>
+       <use href="#iv-mcb572db2a8" x="45.38" y="58.968388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="62.387685" transform="rotate(-0 38.38 62.387685)">30</text>
+     </g>
+    </g>
+    <g id="iv-text_17">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.055781" y="121.96" transform="rotate(-90 21.055781 121.96)">Call value</text>
+    </g>
+   </g>
+   <g id="iv-PathCollection_1">
+    <defs>
+     <path id="iv-m5126d955f9" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #d3ad84"/>
+    </defs>
+    <g clip-path="url(#iv-p2cbe0e4b95)">
+     <use href="#iv-m5126d955f9" x="121.251859" y="169.402561" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="iv-line2d_31">
+    <path d="M 58.065 200.887273 
+L 65.495544 200.787283 
+L 67.618556 200.496989 
+L 69.741569 199.98655 
+L 71.864582 199.286823 
+L 75.0491 197.968956 
+L 79.295126 195.871876 
+L 84.602657 192.917899 
+L 90.971695 189.093553 
+L 100.525251 183.051874 
+L 114.324833 174.011701 
+L 136.616464 159.096224 
+L 231.090523 95.621662 
+L 261.874205 75.307309 
+L 290.534874 56.658395 
+L 311.765 43.032727 
+L 311.765 43.032727 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="iv-line2d_32">
+    <path d="M 45.38 169.402561 
+L 324.45 169.402561 
+" clip-path="url(#iv-p2cbe0e4b95)" style="fill: none; stroke-dasharray: 0.8,1.32; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 0.8"/>
+   </g>
+   <g id="iv-patch_3">
+    <path d="M 45.38 208.78 
+L 45.38 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="iv-patch_4">
+    <path d="M 45.38 208.78 
+L 324.45 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="iv-text_18">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="45.38" y="22.14" transform="rotate(-0 45.38 22.14)">Implied volatility is an inverse problem</text>
+   </g>
+  </g>
+  <g id="iv-axes_2">
+   <g id="iv-patch_5">
+    <path d="M 369.83 208.78 
+L 648.9 208.78 
+L 648.9 35.14 
+L 369.83 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="iv-matplotlib.axis_3">
+    <g id="iv-xtick_10">
+     <g id="iv-line2d_33">
+      <path d="M 382.515 208.78 
+L 382.515 35.14 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_34">
+      <g>
+       <use href="#iv-mf43d865f0b" x="382.515" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_19">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="382.515" y="222.618594" transform="rotate(-0 382.515 222.618594)">60</text>
+     </g>
+    </g>
+    <g id="iv-xtick_11">
+     <g id="iv-line2d_35">
+      <path d="M 414.2275 208.78 
+L 414.2275 35.14 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_36">
+      <g>
+       <use href="#iv-mf43d865f0b" x="414.2275" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_20">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="414.2275" y="222.618594" transform="rotate(-0 414.2275 222.618594)">70</text>
+     </g>
+    </g>
+    <g id="iv-xtick_12">
+     <g id="iv-line2d_37">
+      <path d="M 445.94 208.78 
+L 445.94 35.14 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_38">
+      <g>
+       <use href="#iv-mf43d865f0b" x="445.94" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="445.94" y="222.618594" transform="rotate(-0 445.94 222.618594)">80</text>
+     </g>
+    </g>
+    <g id="iv-xtick_13">
+     <g id="iv-line2d_39">
+      <path d="M 477.6525 208.78 
+L 477.6525 35.14 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_40">
+      <g>
+       <use href="#iv-mf43d865f0b" x="477.6525" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="477.6525" y="222.618594" transform="rotate(-0 477.6525 222.618594)">90</text>
+     </g>
+    </g>
+    <g id="iv-xtick_14">
+     <g id="iv-line2d_41">
+      <path d="M 509.365 208.78 
+L 509.365 35.14 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_42">
+      <g>
+       <use href="#iv-mf43d865f0b" x="509.365" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="509.365" y="222.618594" transform="rotate(-0 509.365 222.618594)">100</text>
+     </g>
+    </g>
+    <g id="iv-xtick_15">
+     <g id="iv-line2d_43">
+      <path d="M 541.0775 208.78 
+L 541.0775 35.14 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_44">
+      <g>
+       <use href="#iv-mf43d865f0b" x="541.0775" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="541.0775" y="222.618594" transform="rotate(-0 541.0775 222.618594)">110</text>
+     </g>
+    </g>
+    <g id="iv-xtick_16">
+     <g id="iv-line2d_45">
+      <path d="M 572.79 208.78 
+L 572.79 35.14 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_46">
+      <g>
+       <use href="#iv-mf43d865f0b" x="572.79" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="572.79" y="222.618594" transform="rotate(-0 572.79 222.618594)">120</text>
+     </g>
+    </g>
+    <g id="iv-xtick_17">
+     <g id="iv-line2d_47">
+      <path d="M 604.5025 208.78 
+L 604.5025 35.14 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_48">
+      <g>
+       <use href="#iv-mf43d865f0b" x="604.5025" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="604.5025" y="222.618594" transform="rotate(-0 604.5025 222.618594)">130</text>
+     </g>
+    </g>
+    <g id="iv-xtick_18">
+     <g id="iv-line2d_49">
+      <path d="M 636.215 208.78 
+L 636.215 35.14 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_50">
+      <g>
+       <use href="#iv-mf43d865f0b" x="636.215" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="636.215" y="222.618594" transform="rotate(-0 636.215 222.618594)">140</text>
+     </g>
+    </g>
+    <g id="iv-text_28">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="509.365" y="235.328906" transform="rotate(-0 509.365 235.328906)">Strike K</text>
+    </g>
+   </g>
+   <g id="iv-matplotlib.axis_4">
+    <g id="iv-ytick_7">
+     <g id="iv-line2d_51">
+      <path d="M 369.83 190.92104 
+L 648.9 190.92104 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_52">
+      <g>
+       <use href="#iv-mcb572db2a8" x="369.83" y="190.92104" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="362.83" y="194.340337" transform="rotate(-0 362.83 194.340337)">20</text>
+     </g>
+    </g>
+    <g id="iv-ytick_8">
+     <g id="iv-line2d_53">
+      <path d="M 369.83 171.542252 
+L 648.9 171.542252 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_54">
+      <g>
+       <use href="#iv-mcb572db2a8" x="369.83" y="171.542252" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="362.83" y="174.961548" transform="rotate(-0 362.83 174.961548)">22</text>
+     </g>
+    </g>
+    <g id="iv-ytick_9">
+     <g id="iv-line2d_55">
+      <path d="M 369.83 152.163463 
+L 648.9 152.163463 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_56">
+      <g>
+       <use href="#iv-mcb572db2a8" x="369.83" y="152.163463" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="362.83" y="155.58276" transform="rotate(-0 362.83 155.58276)">24</text>
+     </g>
+    </g>
+    <g id="iv-ytick_10">
+     <g id="iv-line2d_57">
+      <path d="M 369.83 132.784675 
+L 648.9 132.784675 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_58">
+      <g>
+       <use href="#iv-mcb572db2a8" x="369.83" y="132.784675" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="362.83" y="136.203972" transform="rotate(-0 362.83 136.203972)">26</text>
+     </g>
+    </g>
+    <g id="iv-ytick_11">
+     <g id="iv-line2d_59">
+      <path d="M 369.83 113.405887 
+L 648.9 113.405887 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_60">
+      <g>
+       <use href="#iv-mcb572db2a8" x="369.83" y="113.405887" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="362.83" y="116.825184" transform="rotate(-0 362.83 116.825184)">28</text>
+     </g>
+    </g>
+    <g id="iv-ytick_12">
+     <g id="iv-line2d_61">
+      <path d="M 369.83 94.027099 
+L 648.9 94.027099 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_62">
+      <g>
+       <use href="#iv-mcb572db2a8" x="369.83" y="94.027099" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="362.83" y="97.446396" transform="rotate(-0 362.83 97.446396)">30</text>
+     </g>
+    </g>
+    <g id="iv-ytick_13">
+     <g id="iv-line2d_63">
+      <path d="M 369.83 74.648311 
+L 648.9 74.648311 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_64">
+      <g>
+       <use href="#iv-mcb572db2a8" x="369.83" y="74.648311" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_35">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="362.83" y="78.067607" transform="rotate(-0 362.83 78.067607)">32</text>
+     </g>
+    </g>
+    <g id="iv-ytick_14">
+     <g id="iv-line2d_65">
+      <path d="M 369.83 55.269522 
+L 648.9 55.269522 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_66">
+      <g>
+       <use href="#iv-mcb572db2a8" x="369.83" y="55.269522" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_36">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="362.83" y="58.688819" transform="rotate(-0 362.83 58.688819)">34</text>
+     </g>
+    </g>
+    <g id="iv-ytick_15">
+     <g id="iv-line2d_67">
+      <path d="M 369.83 35.890734 
+L 648.9 35.890734 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="iv-line2d_68">
+      <g>
+       <use href="#iv-mcb572db2a8" x="369.83" y="35.890734" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="iv-text_37">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="362.83" y="39.310031" transform="rotate(-0 362.83 39.310031)">36</text>
+     </g>
+    </g>
+    <g id="iv-text_38">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="345.505781" y="121.96" transform="rotate(-90 345.505781 121.96)">Implied volatility (%)</text>
+    </g>
+   </g>
+   <g id="iv-line2d_69">
+    <path d="M 382.515 43.032727 
+L 386.339623 52.107555 
+L 390.164246 60.744485 
+L 393.988869 68.965225 
+L 397.813492 76.790076 
+L 402.91299 86.640061 
+L 408.012487 95.861701 
+L 413.111985 104.493422 
+L 418.211482 112.570608 
+L 423.31098 120.125901 
+L 428.410477 127.189464 
+L 433.509975 133.789216 
+L 438.609472 139.951036 
+L 443.70897 145.698951 
+L 448.808467 151.0553 
+L 453.907965 156.040878 
+L 459.007462 160.67507 
+L 464.10696 164.975971 
+L 469.206457 168.960491 
+L 474.305955 172.644448 
+L 479.405452 176.042661 
+L 484.50495 179.169023 
+L 489.604447 182.036577 
+L 494.703945 184.657575 
+L 499.803442 187.043542 
+L 504.90294 189.205327 
+L 510.002437 191.153152 
+L 515.101935 192.896657 
+L 520.201432 194.444941 
+L 526.575804 196.118815 
+L 532.950176 197.516817 
+L 539.324548 198.653661 
+L 545.69892 199.543095 
+L 552.073291 200.19798 
+L 558.447663 200.630359 
+L 564.822035 200.851523 
+L 571.196407 200.872066 
+L 577.570779 200.701937 
+L 585.220025 200.259227 
+L 592.869271 199.570514 
+L 600.518518 198.649872 
+L 608.167764 197.510417 
+L 615.81701 196.164384 
+L 624.741131 194.348125 
+L 633.665251 192.283092 
+L 636.215 191.649605 
+L 636.215 191.649605 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="iv-line2d_70">
+    <path d="M 369.83 190.92104 
+L 648.9 190.92104 
+" clip-path="url(#iv-p91eec4d3d4)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #a7bdb3; stroke-width: 2"/>
+   </g>
+   <g id="iv-patch_6">
+    <path d="M 369.83 208.78 
+L 369.83 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="iv-patch_7">
+    <path d="M 369.83 208.78 
+L 648.9 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="iv-text_39">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="369.83" y="22.14" transform="rotate(-0 369.83 22.14)">Flat model versus a synthetic smile</text>
+   </g>
+   <g id="iv-legend_1">
+    <g id="iv-line2d_71">
+     <path d="M 534.141797 44.963828 
+L 541.641797 44.963828 
+L 549.141797 44.963828 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="iv-text_40">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="555.141797" y="47.588828" transform="rotate(-0 555.141797 47.588828)">Illustrative smile</text>
+    </g>
+    <g id="iv-line2d_72">
+     <path d="M 534.141797 55.972422 
+L 541.641797 55.972422 
+L 549.141797 55.972422 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #a7bdb3; stroke-width: 2"/>
+    </g>
+    <g id="iv-text_41">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="555.141797" y="58.597422" transform="rotate(-0 555.141797 58.597422)">Constant BSM volatility</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="iv-p2cbe0e4b95">
+   <rect x="45.38" y="35.14" width="279.07" height="173.64"/>
+  </clipPath>
+  <clipPath id="iv-p91eec4d3d4">
+   <rect x="369.83" y="35.14" width="279.07" height="173.64"/>
+  </clipPath>
+ </defs>
+</svg>

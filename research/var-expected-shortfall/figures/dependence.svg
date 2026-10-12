@@ -1,0 +1,405 @@
+<svg role="img" aria-labelledby="dependence-title dependence-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="dependence-title">Figure 05 · Correlation and portfolio tail risk</title><desc id="dependence-desc">A 50/50 portfolio of two jointly normal, zero-mean losses with unit standard deviation. Changing correlation changes risk even though each marginal distribution is unchanged.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T18:09:10.050107</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="dependence-figure_1">
+  <g id="dependence-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="dependence-axes_1">
+   <g id="dependence-patch_2">
+    <path d="M 48.26 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 48.26 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="dependence-matplotlib.axis_1">
+    <g id="dependence-xtick_1">
+     <g id="dependence-line2d_1">
+      <path d="M 75.157778 244.78 
+L 75.157778 35.14 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dependence-line2d_2">
+      <defs>
+       <path id="dependence-mc1cd029b4b" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#dependence-mc1cd029b4b" x="75.157778" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dependence-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="75.157778" y="258.618594" transform="rotate(-0 75.157778 258.618594)">−1.00</text>
+     </g>
+    </g>
+    <g id="dependence-xtick_2">
+     <g id="dependence-line2d_3">
+      <path d="M 150.713333 244.78 
+L 150.713333 35.14 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dependence-line2d_4">
+      <g>
+       <use href="#dependence-mc1cd029b4b" x="150.713333" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dependence-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="150.713333" y="258.618594" transform="rotate(-0 150.713333 258.618594)">−0.75</text>
+     </g>
+    </g>
+    <g id="dependence-xtick_3">
+     <g id="dependence-line2d_5">
+      <path d="M 226.268889 244.78 
+L 226.268889 35.14 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dependence-line2d_6">
+      <g>
+       <use href="#dependence-mc1cd029b4b" x="226.268889" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dependence-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="226.268889" y="258.618594" transform="rotate(-0 226.268889 258.618594)">−0.50</text>
+     </g>
+    </g>
+    <g id="dependence-xtick_4">
+     <g id="dependence-line2d_7">
+      <path d="M 301.824444 244.78 
+L 301.824444 35.14 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dependence-line2d_8">
+      <g>
+       <use href="#dependence-mc1cd029b4b" x="301.824444" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dependence-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="301.824444" y="258.618594" transform="rotate(-0 301.824444 258.618594)">−0.25</text>
+     </g>
+    </g>
+    <g id="dependence-xtick_5">
+     <g id="dependence-line2d_9">
+      <path d="M 377.38 244.78 
+L 377.38 35.14 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dependence-line2d_10">
+      <g>
+       <use href="#dependence-mc1cd029b4b" x="377.38" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dependence-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="377.38" y="258.618594" transform="rotate(-0 377.38 258.618594)">0.00</text>
+     </g>
+    </g>
+    <g id="dependence-xtick_6">
+     <g id="dependence-line2d_11">
+      <path d="M 452.935556 244.78 
+L 452.935556 35.14 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dependence-line2d_12">
+      <g>
+       <use href="#dependence-mc1cd029b4b" x="452.935556" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dependence-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="452.935556" y="258.618594" transform="rotate(-0 452.935556 258.618594)">0.25</text>
+     </g>
+    </g>
+    <g id="dependence-xtick_7">
+     <g id="dependence-line2d_13">
+      <path d="M 528.491111 244.78 
+L 528.491111 35.14 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dependence-line2d_14">
+      <g>
+       <use href="#dependence-mc1cd029b4b" x="528.491111" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dependence-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="528.491111" y="258.618594" transform="rotate(-0 528.491111 258.618594)">0.50</text>
+     </g>
+    </g>
+    <g id="dependence-xtick_8">
+     <g id="dependence-line2d_15">
+      <path d="M 604.046667 244.78 
+L 604.046667 35.14 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dependence-line2d_16">
+      <g>
+       <use href="#dependence-mc1cd029b4b" x="604.046667" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dependence-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="604.046667" y="258.618594" transform="rotate(-0 604.046667 258.618594)">0.75</text>
+     </g>
+    </g>
+    <g id="dependence-xtick_9">
+     <g id="dependence-line2d_17">
+      <path d="M 679.602222 244.78 
+L 679.602222 35.14 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dependence-line2d_18">
+      <g>
+       <use href="#dependence-mc1cd029b4b" x="679.602222" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dependence-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="679.602222" y="258.618594" transform="rotate(-0 679.602222 258.618594)">1.00</text>
+     </g>
+    </g>
+    <g id="dependence-text_10">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="377.38" y="271.328906" transform="rotate(-0 377.38 271.328906)">Correlation</text>
+    </g>
+   </g>
+   <g id="dependence-matplotlib.axis_2">
+    <g id="dependence-ytick_1">
+     <g id="dependence-line2d_19">
+      <path d="M 48.26 209.613583 
+L 706.5 209.613583 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dependence-line2d_20">
+      <defs>
+       <path id="dependence-mf2ba914282" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#dependence-mf2ba914282" x="48.26" y="209.613583" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dependence-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="213.03288" transform="rotate(-0 41.26 213.03288)">0.5</text>
+     </g>
+    </g>
+    <g id="dependence-ytick_2">
+     <g id="dependence-line2d_21">
+      <path d="M 48.26 171.406212 
+L 706.5 171.406212 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dependence-line2d_22">
+      <g>
+       <use href="#dependence-mf2ba914282" x="48.26" y="171.406212" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dependence-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="174.825509" transform="rotate(-0 41.26 174.825509)">1.0</text>
+     </g>
+    </g>
+    <g id="dependence-ytick_3">
+     <g id="dependence-line2d_23">
+      <path d="M 48.26 133.198842 
+L 706.5 133.198842 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dependence-line2d_24">
+      <g>
+       <use href="#dependence-mf2ba914282" x="48.26" y="133.198842" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dependence-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="136.618139" transform="rotate(-0 41.26 136.618139)">1.5</text>
+     </g>
+    </g>
+    <g id="dependence-ytick_4">
+     <g id="dependence-line2d_25">
+      <path d="M 48.26 94.991471 
+L 706.5 94.991471 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dependence-line2d_26">
+      <g>
+       <use href="#dependence-mf2ba914282" x="48.26" y="94.991471" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dependence-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="98.410768" transform="rotate(-0 41.26 98.410768)">2.0</text>
+     </g>
+    </g>
+    <g id="dependence-ytick_5">
+     <g id="dependence-line2d_27">
+      <path d="M 48.26 56.784101 
+L 706.5 56.784101 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dependence-line2d_28">
+      <g>
+       <use href="#dependence-mf2ba914282" x="48.26" y="56.784101" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dependence-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="60.203397" transform="rotate(-0 41.26 60.203397)">2.5</text>
+     </g>
+    </g>
+    <g id="dependence-text_16">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.075469" y="139.96" transform="rotate(-90 21.075469 139.96)">Loss / asset standard deviation</text>
+    </g>
+   </g>
+   <g id="dependence-line2d_29">
+    <path d="M 78.18 235.250909 
+L 82.196107 228.638312 
+L 86.212215 223.78054 
+L 90.228322 219.751233 
+L 94.24443 216.231764 
+L 98.260537 213.066894 
+L 102.276644 210.167104 
+L 106.292752 207.475197 
+L 110.308859 204.951993 
+L 118.341074 200.305869 
+L 126.373289 196.075242 
+L 134.405503 192.165279 
+L 142.437718 188.512526 
+L 150.469933 185.072049 
+L 158.502148 181.810648 
+L 170.55047 177.200393 
+L 182.598792 172.873193 
+L 194.647114 168.782545 
+L 206.695436 164.893436 
+L 222.759866 159.975384 
+L 238.824295 155.318441 
+L 254.888725 150.884966 
+L 274.969262 145.613202 
+L 295.049799 140.600326 
+L 315.130336 135.811572 
+L 339.22698 130.322409 
+L 363.323624 125.078482 
+L 387.420268 120.049593 
+L 415.53302 114.421948 
+L 443.645772 109.022291 
+L 475.774631 103.097733 
+L 507.90349 97.406352 
+L 544.048456 91.250644 
+L 580.193423 85.327965 
+L 620.354497 78.990718 
+L 660.51557 72.882891 
+L 676.58 70.498658 
+L 676.58 70.498658 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="dependence-line2d_30">
+    <path d="M 78.18 233.4199 
+L 82.196107 225.844082 
+L 86.212215 220.278705 
+L 90.228322 215.662471 
+L 94.24443 211.63034 
+L 98.260537 208.004461 
+L 102.276644 204.682275 
+L 106.292752 201.598252 
+L 110.308859 198.707506 
+L 114.324966 195.977697 
+L 122.357181 190.909546 
+L 130.389396 186.257219 
+L 138.421611 181.932574 
+L 146.453826 177.874806 
+L 154.48604 174.039867 
+L 162.518255 170.394642 
+L 174.566577 165.227907 
+L 186.614899 160.365885 
+L 198.663221 155.760285 
+L 210.711544 151.374366 
+L 222.759866 147.179402 
+L 238.824295 141.844107 
+L 254.888725 136.764831 
+L 270.953154 131.907915 
+L 291.033691 126.109018 
+L 311.114228 120.574115 
+L 331.194765 115.270131 
+L 351.275302 110.170369 
+L 375.371946 104.289638 
+L 399.468591 98.640547 
+L 423.565235 93.197705 
+L 451.677987 87.080489 
+L 479.790738 81.18769 
+L 511.919597 74.698497 
+L 544.048456 68.443905 
+L 576.177315 62.400173 
+L 612.322282 55.828249 
+L 648.467248 49.473956 
+L 676.58 44.669091 
+L 676.58 44.669091 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="dependence-line2d_31">
+    <path d="M 48.26 44.159299 
+L 706.5 44.159299 
+" clip-path="url(#dependence-p65486a1eae)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #91a9bd; stroke-width: 2"/>
+   </g>
+   <g id="dependence-patch_3">
+    <path d="M 48.26 244.78 
+L 48.26 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="dependence-patch_4">
+    <path d="M 48.26 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="dependence-text_17">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="48.26" y="22.14" transform="rotate(-0 48.26 22.14)">Equal weights in two unit-volatility normal assets</text>
+   </g>
+   <g id="dependence-legend_1">
+    <g id="dependence-line2d_32">
+     <path d="M 529.990313 205.237656 
+L 538.990313 205.237656 
+L 547.990313 205.237656 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="dependence-text_18">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="555.190313" y="208.387656" transform="rotate(-0 555.190313 208.387656)">Portfolio VaR 99%</text>
+    </g>
+    <g id="dependence-line2d_33">
+     <path d="M 529.990313 218.447969 
+L 538.990313 218.447969 
+L 547.990313 218.447969 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="dependence-text_19">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="555.190313" y="221.597969" transform="rotate(-0 555.190313 221.597969)">Portfolio ES 99%</text>
+    </g>
+    <g id="dependence-line2d_34">
+     <path d="M 529.990313 231.658281 
+L 538.990313 231.658281 
+L 547.990313 231.658281 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #91a9bd; stroke-width: 2"/>
+    </g>
+    <g id="dependence-text_20">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="555.190313" y="234.808281" transform="rotate(-0 555.190313 234.808281)">Sum of weighted standalone ES</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="dependence-p65486a1eae">
+   <rect x="48.26" y="35.14" width="658.24" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

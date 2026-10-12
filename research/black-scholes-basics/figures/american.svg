@@ -1,0 +1,641 @@
+<svg role="img" aria-labelledby="american-title american-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="262.8pt" viewBox="0 0 662.4 262.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="american-title">Figure 13 · American put values and early-exercise premium</title><desc id="american-desc">K = 100, r = 5%, q = 0, σ = 20%, τ = 1. The American curve uses 600 CRR steps; its small discretisation effects are separate from the analytical European value.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T17:24:11.596671</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="american-figure_1">
+  <g id="american-patch_1">
+   <path d="M 0 262.8 
+L 662.4 262.8 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="american-axes_1">
+   <g id="american-patch_2">
+    <path d="M 45.38 219.58 
+L 327.33 219.58 
+L 327.33 13.5 
+L 45.38 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="american-matplotlib.axis_1">
+    <g id="american-xtick_1">
+     <g id="american-line2d_1">
+      <path d="M 45.990281 219.58 
+L 45.990281 13.5 
+" clip-path="url(#american-p48ad0033d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_2">
+      <defs>
+       <path id="american-m05d41d71ee" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#american-m05d41d71ee" x="45.990281" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="45.990281" y="233.418594" transform="rotate(-0 45.990281 233.418594)">40</text>
+     </g>
+    </g>
+    <g id="american-xtick_2">
+     <g id="american-line2d_3">
+      <path d="M 94.812792 219.58 
+L 94.812792 13.5 
+" clip-path="url(#american-p48ad0033d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_4">
+      <g>
+       <use href="#american-m05d41d71ee" x="94.812792" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="94.812792" y="233.418594" transform="rotate(-0 94.812792 233.418594)">60</text>
+     </g>
+    </g>
+    <g id="american-xtick_3">
+     <g id="american-line2d_5">
+      <path d="M 143.635303 219.58 
+L 143.635303 13.5 
+" clip-path="url(#american-p48ad0033d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_6">
+      <g>
+       <use href="#american-m05d41d71ee" x="143.635303" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="143.635303" y="233.418594" transform="rotate(-0 143.635303 233.418594)">80</text>
+     </g>
+    </g>
+    <g id="american-xtick_4">
+     <g id="american-line2d_7">
+      <path d="M 192.457814 219.58 
+L 192.457814 13.5 
+" clip-path="url(#american-p48ad0033d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_8">
+      <g>
+       <use href="#american-m05d41d71ee" x="192.457814" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="192.457814" y="233.418594" transform="rotate(-0 192.457814 233.418594)">100</text>
+     </g>
+    </g>
+    <g id="american-xtick_5">
+     <g id="american-line2d_9">
+      <path d="M 241.280325 219.58 
+L 241.280325 13.5 
+" clip-path="url(#american-p48ad0033d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_10">
+      <g>
+       <use href="#american-m05d41d71ee" x="241.280325" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="241.280325" y="233.418594" transform="rotate(-0 241.280325 233.418594)">120</text>
+     </g>
+    </g>
+    <g id="american-xtick_6">
+     <g id="american-line2d_11">
+      <path d="M 290.102835 219.58 
+L 290.102835 13.5 
+" clip-path="url(#american-p48ad0033d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_12">
+      <g>
+       <use href="#american-m05d41d71ee" x="290.102835" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="290.102835" y="233.418594" transform="rotate(-0 290.102835 233.418594)">140</text>
+     </g>
+    </g>
+    <g id="american-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="186.355" y="246.128906" transform="rotate(-0 186.355 246.128906)">Spot S</text>
+    </g>
+   </g>
+   <g id="american-matplotlib.axis_2">
+    <g id="american-ytick_1">
+     <g id="american-line2d_13">
+      <path d="M 45.38 210.212727 
+L 327.33 210.212727 
+" clip-path="url(#american-p48ad0033d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_14">
+      <defs>
+       <path id="american-m1a73189c6f" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#american-m1a73189c6f" x="45.38" y="210.212727" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="213.632024" transform="rotate(-0 38.38 213.632024)">0</text>
+     </g>
+    </g>
+    <g id="american-ytick_2">
+     <g id="american-line2d_15">
+      <path d="M 45.38 176.149917 
+L 327.33 176.149917 
+" clip-path="url(#american-p48ad0033d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_16">
+      <g>
+       <use href="#american-m1a73189c6f" x="45.38" y="176.149917" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="179.569214" transform="rotate(-0 38.38 179.569214)">10</text>
+     </g>
+    </g>
+    <g id="american-ytick_3">
+     <g id="american-line2d_17">
+      <path d="M 45.38 142.087107 
+L 327.33 142.087107 
+" clip-path="url(#american-p48ad0033d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_18">
+      <g>
+       <use href="#american-m1a73189c6f" x="45.38" y="142.087107" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="145.506404" transform="rotate(-0 38.38 145.506404)">20</text>
+     </g>
+    </g>
+    <g id="american-ytick_4">
+     <g id="american-line2d_19">
+      <path d="M 45.38 108.024298 
+L 327.33 108.024298 
+" clip-path="url(#american-p48ad0033d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_20">
+      <g>
+       <use href="#american-m1a73189c6f" x="45.38" y="108.024298" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="111.443594" transform="rotate(-0 38.38 111.443594)">30</text>
+     </g>
+    </g>
+    <g id="american-ytick_5">
+     <g id="american-line2d_21">
+      <path d="M 45.38 73.961488 
+L 327.33 73.961488 
+" clip-path="url(#american-p48ad0033d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_22">
+      <g>
+       <use href="#american-m1a73189c6f" x="45.38" y="73.961488" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="77.380784" transform="rotate(-0 38.38 77.380784)">40</text>
+     </g>
+    </g>
+    <g id="american-ytick_6">
+     <g id="american-line2d_23">
+      <path d="M 45.38 39.898678 
+L 327.33 39.898678 
+" clip-path="url(#american-p48ad0033d4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_24">
+      <g>
+       <use href="#american-m1a73189c6f" x="45.38" y="39.898678" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="43.317975" transform="rotate(-0 38.38 43.317975)">50</text>
+     </g>
+    </g>
+    <g id="american-text_14">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.055781" y="116.54" transform="rotate(-90 21.055781 116.54)">Put value</text>
+    </g>
+   </g>
+   <g id="american-line2d_25">
+    <path d="M 58.195909 22.867273 
+L 148.552678 148.867918 
+L 152.24071 153.648732 
+L 155.928741 158.148859 
+L 159.616772 162.376065 
+L 163.304804 166.339801 
+L 166.992835 170.049009 
+L 170.680867 173.512698 
+L 174.368898 176.740021 
+L 178.056929 179.74039 
+L 181.744961 182.523469 
+L 185.432992 185.099225 
+L 189.121024 187.477807 
+L 194.653071 190.686649 
+L 198.341102 192.612978 
+L 202.029133 194.378078 
+L 207.561181 196.740399 
+L 213.093228 198.80332 
+L 218.625275 200.571945 
+L 224.157322 202.095541 
+L 229.689369 203.405549 
+L 235.221416 204.526432 
+L 242.597479 205.751875 
+L 249.973542 206.741155 
+L 259.19362 207.68445 
+L 268.413698 208.38509 
+L 277.633777 208.902149 
+L 290.541887 209.397518 
+L 305.294012 209.745628 
+L 314.514091 209.885002 
+L 314.514091 209.885002 
+" clip-path="url(#american-p48ad0033d4)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="american-line2d_26">
+    <path d="M 58.195909 39.478938 
+L 95.076223 90.751158 
+L 107.984333 108.319782 
+L 117.204411 120.517307 
+L 124.580474 129.951259 
+L 131.956537 139.006072 
+L 137.488584 145.497926 
+L 143.020631 151.696673 
+L 148.552678 157.573425 
+L 154.084725 163.104302 
+L 159.616772 168.271269 
+L 165.148819 173.062607 
+L 170.680867 177.473018 
+L 176.212914 181.503412 
+L 181.744961 185.160415 
+L 187.277008 188.45568 
+L 192.809055 191.405065 
+L 198.341102 194.027745 
+L 203.873149 196.345323 
+L 209.405196 198.38098 
+L 214.937243 200.158699 
+L 220.46929 201.702594 
+L 226.001337 203.036348 
+L 231.533385 204.182766 
+L 238.909447 205.457016 
+L 246.28551 206.483514 
+L 253.661573 207.304217 
+L 262.881651 208.096039 
+L 273.945746 208.780935 
+L 286.853855 209.316066 
+L 301.605981 209.694758 
+L 314.514091 209.895662 
+L 314.514091 209.895662 
+" clip-path="url(#american-p48ad0033d4)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="american-line2d_27">
+    <path d="M 58.195909 22.867273 
+L 190.965039 208.12975 
+L 192.809055 210.212727 
+L 314.514091 210.212727 
+L 314.514091 210.212727 
+" clip-path="url(#american-p48ad0033d4)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+   </g>
+   <g id="american-patch_3">
+    <path d="M 45.38 219.58 
+L 45.38 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="american-patch_4">
+    <path d="M 45.38 219.58 
+L 327.33 219.58 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="american-legend_1">
+    <g id="american-line2d_28">
+     <path d="M 209.541328 23.323828 
+L 217.041328 23.323828 
+L 224.541328 23.323828 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="american-text_15">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="230.541328" y="25.948828" transform="rotate(-0 230.541328 25.948828)">American put · CRR 600</text>
+    </g>
+    <g id="american-line2d_29">
+     <path d="M 209.541328 34.332422 
+L 217.041328 34.332422 
+L 224.541328 34.332422 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="american-text_16">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="230.541328" y="36.957422" transform="rotate(-0 230.541328 36.957422)">European put · BSM</text>
+    </g>
+    <g id="american-line2d_30">
+     <path d="M 209.541328 45.341016 
+L 217.041328 45.341016 
+L 224.541328 45.341016 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+    </g>
+    <g id="american-text_17">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="230.541328" y="47.966016" transform="rotate(-0 230.541328 47.966016)">Immediate exercise</text>
+    </g>
+   </g>
+  </g>
+  <g id="american-axes_2">
+   <g id="american-patch_5">
+    <path d="M 366.95 219.58 
+L 648.9 219.58 
+L 648.9 13.5 
+L 366.95 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="american-matplotlib.axis_3">
+    <g id="american-xtick_7">
+     <g id="american-line2d_31">
+      <path d="M 367.560281 219.58 
+L 367.560281 13.5 
+" clip-path="url(#american-p693b925d73)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_32">
+      <g>
+       <use href="#american-m05d41d71ee" x="367.560281" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_18">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="367.560281" y="233.418594" transform="rotate(-0 367.560281 233.418594)">40</text>
+     </g>
+    </g>
+    <g id="american-xtick_8">
+     <g id="american-line2d_33">
+      <path d="M 416.382792 219.58 
+L 416.382792 13.5 
+" clip-path="url(#american-p693b925d73)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_34">
+      <g>
+       <use href="#american-m05d41d71ee" x="416.382792" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_19">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="416.382792" y="233.418594" transform="rotate(-0 416.382792 233.418594)">60</text>
+     </g>
+    </g>
+    <g id="american-xtick_9">
+     <g id="american-line2d_35">
+      <path d="M 465.205303 219.58 
+L 465.205303 13.5 
+" clip-path="url(#american-p693b925d73)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_36">
+      <g>
+       <use href="#american-m05d41d71ee" x="465.205303" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_20">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="465.205303" y="233.418594" transform="rotate(-0 465.205303 233.418594)">80</text>
+     </g>
+    </g>
+    <g id="american-xtick_10">
+     <g id="american-line2d_37">
+      <path d="M 514.027814 219.58 
+L 514.027814 13.5 
+" clip-path="url(#american-p693b925d73)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_38">
+      <g>
+       <use href="#american-m05d41d71ee" x="514.027814" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="514.027814" y="233.418594" transform="rotate(-0 514.027814 233.418594)">100</text>
+     </g>
+    </g>
+    <g id="american-xtick_11">
+     <g id="american-line2d_39">
+      <path d="M 562.850325 219.58 
+L 562.850325 13.5 
+" clip-path="url(#american-p693b925d73)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_40">
+      <g>
+       <use href="#american-m05d41d71ee" x="562.850325" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="562.850325" y="233.418594" transform="rotate(-0 562.850325 233.418594)">120</text>
+     </g>
+    </g>
+    <g id="american-xtick_12">
+     <g id="american-line2d_41">
+      <path d="M 611.672835 219.58 
+L 611.672835 13.5 
+" clip-path="url(#american-p693b925d73)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_42">
+      <g>
+       <use href="#american-m05d41d71ee" x="611.672835" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="611.672835" y="233.418594" transform="rotate(-0 611.672835 233.418594)">140</text>
+     </g>
+    </g>
+    <g id="american-text_24">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="507.925" y="246.128906" transform="rotate(-0 507.925 246.128906)">Spot S</text>
+    </g>
+   </g>
+   <g id="american-matplotlib.axis_4">
+    <g id="american-ytick_7">
+     <g id="american-line2d_43">
+      <path d="M 366.95 219.58 
+L 648.9 219.58 
+" clip-path="url(#american-p693b925d73)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_44">
+      <g>
+       <use href="#american-m1a73189c6f" x="366.95" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="359.95" y="222.999297" transform="rotate(-0 359.95 222.999297)">0</text>
+     </g>
+    </g>
+    <g id="american-ytick_8">
+     <g id="american-line2d_45">
+      <path d="M 366.95 179.333593 
+L 648.9 179.333593 
+" clip-path="url(#american-p693b925d73)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_46">
+      <g>
+       <use href="#american-m1a73189c6f" x="366.95" y="179.333593" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="359.95" y="182.75289" transform="rotate(-0 359.95 182.75289)">1</text>
+     </g>
+    </g>
+    <g id="american-ytick_9">
+     <g id="american-line2d_47">
+      <path d="M 366.95 139.087187 
+L 648.9 139.087187 
+" clip-path="url(#american-p693b925d73)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_48">
+      <g>
+       <use href="#american-m1a73189c6f" x="366.95" y="139.087187" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="359.95" y="142.506484" transform="rotate(-0 359.95 142.506484)">2</text>
+     </g>
+    </g>
+    <g id="american-ytick_10">
+     <g id="american-line2d_49">
+      <path d="M 366.95 98.84078 
+L 648.9 98.84078 
+" clip-path="url(#american-p693b925d73)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_50">
+      <g>
+       <use href="#american-m1a73189c6f" x="366.95" y="98.84078" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="359.95" y="102.260077" transform="rotate(-0 359.95 102.260077)">3</text>
+     </g>
+    </g>
+    <g id="american-ytick_11">
+     <g id="american-line2d_51">
+      <path d="M 366.95 58.594374 
+L 648.9 58.594374 
+" clip-path="url(#american-p693b925d73)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_52">
+      <g>
+       <use href="#american-m1a73189c6f" x="366.95" y="58.594374" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="359.95" y="62.01367" transform="rotate(-0 359.95 62.01367)">4</text>
+     </g>
+    </g>
+    <g id="american-ytick_12">
+     <g id="american-line2d_53">
+      <path d="M 366.95 18.347967 
+L 648.9 18.347967 
+" clip-path="url(#american-p693b925d73)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="american-line2d_54">
+      <g>
+       <use href="#american-m1a73189c6f" x="366.95" y="18.347967" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="american-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="359.95" y="21.767264" transform="rotate(-0 359.95 21.767264)">5</text>
+     </g>
+    </g>
+    <g id="american-text_31">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="348.352031" y="116.54" transform="rotate(-90 348.352031 116.54)">Early-exercise premium</text>
+    </g>
+   </g>
+   <g id="american-line2d_55">
+    <path d="M 379.765909 23.307336 
+L 394.518035 23.438591 
+L 401.894097 23.698171 
+L 407.426145 24.102698 
+L 411.114176 24.535339 
+L 414.802207 25.152172 
+L 418.490239 26.01095 
+L 422.17827 27.180394 
+L 425.866302 28.740357 
+L 427.710317 29.694723 
+L 429.554333 30.781552 
+L 431.398349 32.013759 
+L 433.242364 33.404823 
+L 435.08638 34.968735 
+L 436.930396 36.719949 
+L 438.774411 38.673318 
+L 440.618427 40.844032 
+L 442.462443 43.247547 
+L 444.306458 45.899515 
+L 446.150474 48.815703 
+L 447.99449 52.01192 
+L 449.838506 55.503935 
+L 451.682521 59.307396 
+L 453.526537 63.437755 
+L 455.370553 67.910185 
+L 457.214568 72.739504 
+L 459.058584 77.940103 
+L 460.9026 83.525875 
+L 462.746615 89.510147 
+L 464.590631 95.905617 
+L 471.966694 123.118555 
+L 473.81071 129.173479 
+L 477.498741 140.19371 
+L 481.186772 149.926092 
+L 484.874804 158.51959 
+L 488.562835 166.102073 
+L 492.250867 172.787429 
+L 495.938898 178.676996 
+L 499.626929 183.861827 
+L 503.314961 188.423556 
+L 507.002992 192.4363 
+L 510.691024 195.966487 
+L 514.379055 199.072538 
+L 516.223071 200.345581 
+L 518.067086 201.798449 
+L 519.911102 202.864031 
+L 521.755118 204.09642 
+L 527.287165 207.033925 
+L 534.663228 210.246193 
+L 538.351259 211.440702 
+L 543.883306 213.110508 
+L 545.727322 213.457971 
+L 547.571337 213.964314 
+L 556.791416 215.713363 
+L 567.85551 217.115154 
+L 575.231573 217.738191 
+L 577.075589 217.935404 
+L 580.76362 218.132764 
+L 586.295667 218.450294 
+L 602.891808 219.051429 
+L 610.267871 219.165963 
+L 632.39606 219.43159 
+L 636.084091 219.454048 
+L 636.084091 219.454048 
+" clip-path="url(#american-p693b925d73)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="american-patch_6">
+    <path d="M 366.95 219.58 
+L 366.95 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="american-patch_7">
+    <path d="M 366.95 219.58 
+L 648.9 219.58 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="american-p48ad0033d4">
+   <rect x="45.38" y="13.5" width="281.95" height="206.08"/>
+  </clipPath>
+  <clipPath id="american-p693b925d73">
+   <rect x="366.95" y="13.5" width="281.95" height="206.08"/>
+  </clipPath>
+ </defs>
+</svg>

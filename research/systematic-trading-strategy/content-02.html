@@ -1,0 +1,99 @@
+<section id="signal-families" data-title="Signal families and forecasting targets">
+<div class="section-kicker">06 / Signals</div><h2>Signal families and forecasting targets</h2>
+<p>A signal summarizes information thought to be relevant to a future return, risk or trading opportunity. Its forecasting target may be a conditional mean return, a probability of a positive move, a relative ranking or a volatility forecast. These targets require different evaluation methods. Classification accuracy alone does not determine a strategy's profitability.</p>
+\[ \widehat\mu_{t,h}=\widehat{\mathbb E}[R_{t,t+h}\mid\mathcal F_t],\qquad
+\widehat p_{t,h}=\widehat{\mathbb P}(R_{t,t+h}&gt;0\mid\mathcal F_t). \]
+<p>A rule can predict direction correctly most of the time while losing money if its occasional errors are much larger than its gains. A ranking can identify relatively strong assets even when every asset falls. A volatility forecast can improve sizing without predicting the sign of returns. Keep the signal's target separate from the portfolio's realized objective.</p>
+<h3>Common families</h3>
+<p>Trend signals use an asset's past movement. Contrarian signals respond to deviations or recent losses. Cross-sectional signals rank assets relative to one another. Value and quality signals use economic or accounting quantities. Carry signals summarize the return associated with holding a position under specified unchanged-state assumptions. Event signals use announcements or order-flow changes.</p>
+<p>These names cover many implementations. A futures carry strategy needs contract rolls, financing and collateral assumptions. An equity value signal needs publication dates and point-in-time accounting data. A price z-score is a standardized deviation, not an estimate of fundamental value. The economic mechanism determines which definition is meaningful.</p>
+<h3>Signal strength and position maps</h3>
+<p>Binary rules choose among states such as long or cash. Continuous rules translate signal strength into exposure, often with clipping. A smooth map can reduce abrupt changes but can still produce large turnover when features move rapidly. Combining several signals can diversify model error, provided their dependence and research-selection process are examined.</p>
+\[ w_t^{\mathrm{raw}}=\operatorname{clip}(a s_t,-w_{\max},w_{\max}). \]
+<p>The coefficient \(a\) sets sensitivity, and clipping bounds exposure. In the main laboratory the allowed range is instead zero to one, because the example excludes shorting and leverage. A negative directional signal selects cash rather than an opposite stock position.</p>
+<h3>Feature quality versus portfolio quality</h3>
+<p>Evaluate a feature before embedding it in an elaborate optimization. Inspect its temporal stability, conditional returns, turnover implications and dependence on known risk factors. Then evaluate the complete strategy with execution and costs. A strong-looking feature can fail economically after trading frictions; an apparently weak direction forecast can still be useful for reducing a particular portfolio risk.</p>
+<p>Every feature transformation is a research choice. Lag length, winsorization, nonlinear interactions and regime filters expand the set of tested variants. Preserve the search history so that the eventual result is evaluated against the experiment actually conducted.</p>
+</section>
+
+<section id="momentum" data-title="Time-series momentum and trend filters">
+<div class="section-kicker">07 / Signals</div><h2>Time-series momentum and trend filters</h2>
+<p>Time-series momentum uses an asset's own past movement. A simple formation signal compares the current close with a close \(L\) sessions earlier:</p>
+\[ M_{t,L}=\frac{P_t}{P_{t-L}}-1,\qquad
+a_t=\mathbb 1_{\{M_{t,L}&gt;0\}}. \]
+<p>The indicator is a long/cash signal. A long/short version would map positive and negative values to opposite positions and would need a different financing and shorting model. Cross-sectional momentum instead compares assets' past returns with each other, so it need not agree with this absolute direction rule.</p>
+<p><a href="https://fairmodel.econ.yale.edu/ec439/mosk.pdf">Moskowitz, Ooi and Pedersen (2012)</a> study time-series momentum in a broad futures dataset. The daily single-asset teaching rule here is a distinct implementation and does not reproduce that paper's instrument universe, horizon or empirical result.</p>
+{{figure:momentum}}
+<h3>Moving-average filters</h3>
+<p>A moving average smooths noisy price observations. For a window of \(L\) price observations:</p>
+\[ \operatorname{MA}_{t,L}=\frac1L\sum_{j=0}^{L-1}P_{t-j}. \]
+<p>A price-above-average rule compares \(P_t\) with this smoothed level. A crossover rule compares fast and slow averages. These rules are related to trend direction but differ from a trailing return: one uses an average of intervening prices, while the other compares two endpoints. A plot that overlays both should not label them as mathematically identical.</p>
+<h3>Trend persistence and whipsaw</h3>
+<p>Trend filters can benefit when price movement persists long enough for a delayed signal to participate. They can suffer in alternating markets where a signal turns positive just before reversal. The delay means the strategy usually gives up part of a move at entry and exit. That is part of its design rather than necessarily a coding mistake.</p>
+<div class="callout"><strong>An analogy: a thermostat with a slow sensor</strong><p>A smoothed trend signal resembles a thermostat averaging recent temperatures. Averaging suppresses short fluctuations, but the reading responds late when conditions change. A faster sensor reacts sooner and also changes its recommendation more often. The trade-off appears as lag versus turnover and whipsaw.</p></div>
+<h3>Lookback and hysteresis</h3>
+<p>Short lookbacks can react quickly but often trade more. Long lookbacks can miss rapid regime changes. A no-trade band or hysteresis can reduce repeated transitions near zero: enter when momentum exceeds a positive threshold and exit when it falls below a lower threshold. Such a rule has state and must be implemented sequentially.</p>
+<p>The laboratory uses the simpler zero-threshold binary signal, evaluated on each formation day. It keeps no hidden hysteresis state. Optional volatility scaling changes the amount held on long days. This separation makes the effects of directional selection and risk scaling easier to inspect.</p>
+<p>Do not select a lookback only because one sample gives it the best Sharpe ratio. Examine neighboring values, cost sensitivity, delayed execution and independent evaluation. A mechanism should normally tolerate small changes in an arbitrary measurement window better than a peak created by noise.</p>
+</section>
+
+<section id="mean-reversion" data-title="Mean reversion and contrarian signals">
+<div class="section-kicker">08 / Signals</div><h2>Mean reversion and contrarian signals</h2>
+<p>A mean-reversion strategy assumes some deviation tends to decline over a specified horizon. The deviation might be a price relative to an economic anchor, a spread between related instruments or a standardized short-term move. The anchor and horizon are essential: an asset price below a moving average is not automatically below a stable equilibrium.</p>
+\[ z_t=\frac{P_t-\overline P_{t,L}}{s_{P,t,L}},\qquad
+a_t=\mathbb 1_{\{z_t&lt;-1\}}. \]
+<p>This is the laboratory's illustrative contrarian long/cash signal. The rolling mean and sample standard deviation use \(L\) price observations ending at formation close \(t\). It goes long while the current z-score is below −1 and is otherwise in cash. It is not a persistent position held until a separate exit condition is met.</p>
+{{figure:reversion}}
+<h3>Normalization is not stationarity</h3>
+<p>Dividing by a rolling standard deviation makes a deviation dimensionless, but does not prove that price levels are stationary or that a low z-score predicts recovery. A declining trend can produce repeated negative deviations while continuing to fall. A moving anchor can also follow the price rather than represent an independent equilibrium.</p>
+<p>A genuinely stationary spread may be modeled by a discrete autoregression or an Ornstein–Uhlenbeck process. For an OU deviation \(X_t\) with mean-reversion speed \(\kappa&gt;0\):</p>
+\[ dX_t=\kappa(\theta-X_t)\,dt+\sigma\,dW_t,\qquad
+h_{1/2}=\frac{\ln2}{\kappa}. \]
+<p>The half-life is a conditional expected-deviation decay measure under that model. Estimating it from a short, selected sample can be unstable. A fitted half-life is not a guarantee that a particular trade recovers within that time.</p>
+<h3>Pairs and relative value</h3>
+<p>A pairs strategy trades a spread or residual after a hedge relation is estimated. High correlation does not imply a stationary spread. Cointegration concerns a stable combination of nonstationary levels under specific statistical assumptions. Estimate hedge ratios and test relationships within the training period, then account for hedge rebalancing, short borrow and execution on both legs.</p>
+<p>A spread's apparent mean reversion can reflect stale prices or asynchronous closes. A strategy may be buying the leg with an old mark and selling the leg whose price has already updated. A synchronized and executable data model is therefore crucial before interpreting a statistical relationship as an opportunity.</p>
+<h3>Tail behavior and stopping rules</h3>
+<p>Contrarian positions can accumulate exposure during large adverse moves. A stop-loss or maximum holding period limits a stated trading policy but changes the return distribution and must be tested as part of that policy. A stop trigger does not guarantee a fill at the trigger price; jumps and illiquidity can create larger losses.</p>
+<p>Distinguish a statistical reversion forecast from risk control. Position caps, diversification and exit rules may be necessary even when the forecast is well motivated. A negative deviation alone is insufficient to justify unlimited averaging into a losing position.</p>
+</section>
+
+<section id="features" data-title="Feature normalization and predictive models">
+<div class="section-kicker">09 / Forecasting</div><h2>Feature normalization and predictive models</h2>
+<p>Features should use information available at their formation dates. Rolling standardization, volatility estimates and cross-sectional rankings can make signals comparable, but their fitting procedure must remain causal. A full-sample mean and standard deviation leak future distribution information into earlier feature rows.</p>
+\[ \widetilde x_t=\frac{x_t-\widehat\mu_{\mathrm{train}}}
+{\widehat\sigma_{\mathrm{train}}},\qquad
+\widehat y_t=f_{\widehat\theta_{\mathrm{train}}}(\widetilde x_t). \]
+<p>Fit normalization parameters and model coefficients in the training set, then apply them unchanged during the evaluation block unless an online update rule was specified in advance. Refit them at the next scheduled training date. The same logic applies to missing-value imputation, dimensionality reduction, feature selection and target transformations.</p>
+<h3>Prediction targets and overlapping labels</h3>
+<p>A label such as the next five-session return uses observations after the feature date. That is normal for supervised learning, but the label is not available until its horizon ends. Training at date \(t\) can include only labels already realized by \(t\). Adjacent five-session labels overlap, making errors and samples dependent.</p>
+<p>A direction classifier, expected-return regression and volatility model should be scored against their own targets. Calibration matters for predicted probabilities. A model output of 0.8 should have a stated interpretation and empirical reliability, rather than being treated as a dimensionless confidence score without validation.</p>
+<h3>Forecast-to-position translation</h3>
+<p>Under a simple mean–variance decision model, a scalar exposure can be proportional to forecast expected excess return divided by forecast variance:</p>
+\[ w_t^{\mathrm{raw}}=\frac{\widehat\mu_t}{\gamma\widehat\sigma_t^2}. \]
+<p>This formula assumes a particular utility approximation, horizon and definition of returns. Small variance estimates can create very large positions; practical systems cap exposure and account for estimation uncertainty, costs and constraints. A model trained to minimize forecast error is not automatically trained to maximize implementable portfolio utility.</p>
+<h3>Complexity and regularization</h3>
+<p>Regularization can reduce coefficient instability and discourage fitting noise. It does not repair data leakage or eliminate multiple-testing bias from trying many regularizers, architectures and feature sets. Compare complex models with simple baselines on the same sample and execution assumptions.</p>
+<p>Feature importance is conditional on the model and dataset. A feature can be useful because it proxies market exposure or volatility rather than because it forecasts a tradable anomaly. Inspect economic interpretation, stability and costs, and preserve the full training pipeline rather than only its final fitted model.</p>
+</section>
+
+<section id="position-sizing" data-title="Position sizing and volatility targeting">
+<div class="section-kicker">10 / Risk allocation</div><h2>Position sizing and volatility targeting</h2>
+<p>A directional rule specifies when to take risk. Sizing specifies how much. The laboratory combines its long/cash indicator with a backward-looking volatility estimate, using a maximum risky weight of one:</p>
+\[ \widehat\sigma_t^{\mathrm{ann}}=
+\sqrt A\,s(R_{t-v+1},\ldots,R_t),\qquad
+w_t^{\mathrm{target}}=a_t
+\min\!\left(1,\frac{\sigma_{\mathrm{target}}}
+{\widehat\sigma_t^{\mathrm{ann}}}\right). \]
+<p>The sample standard deviation uses \(v\) returns and denominator \(v-1\). Inputs belong to the formation day's information set. The position is subsequently executed with the specified delay. If observed volatility is numerically zero, the laboratory uses the exposure cap rather than dividing by zero.</p>
+{{figure:voltarget}}
+<h3>What the target means</h3>
+<p>A 12% volatility target is a scaling rule based on an estimate, not a promise that realized strategy volatility will be 12%. The strategy may be in cash, the cap may bind, volatility may change after formation, and estimation and execution can lag. Costs also affect realized returns.</p>
+<p>Volatility targeting can materially change a signal's performance. It reduces exposure after high-volatility observations and increases it when estimated risk is lower, up to the cap. The effect is distinct from the directional signal and should be evaluated separately. A strategy that looks stronger after scaling may owe much of its change to risk management rather than return forecasting.</p>
+<h3>Risk limits and concentration</h3>
+<p>Other limits include gross and net exposure, single-position concentration, factor exposures, liquidity participation, drawdown rules and tail-risk budgets. A single-asset unlevered laboratory cannot demonstrate diversification; it can only show exposure modulation. Multi-asset systems require covariance or joint scenario information.</p>
+<p>Kelly sizing maximizes expected log growth under its model. For a small-return approximation, exposure resembles expected excess return divided by variance. Parameter uncertainty, fat tails and trading constraints can make estimated full-Kelly exposures highly unstable. Fractional sizing and caps express different practical choices, rather than an exact universal optimum.</p>
+<h3>Sizing creates trading</h3>
+<p>Even if a directional signal remains long for many days, a changing volatility estimate can trigger frequent small rebalances. Turnover and costs depend on the entire position map. Count actual notional traded from the account, not only the number of signal sign changes.</p>
+<p>A no-trade band can compare target and current drifted exposure and act only when their difference is sufficiently large. Rebalance frequency and bands should be part of the tested specification. They trade off tracking the desired risk with paying implementation costs.</p>
+</section>

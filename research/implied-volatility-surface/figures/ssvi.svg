@@ -1,0 +1,902 @@
+<svg role="img" aria-labelledby="ssvi-title ssvi-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="ssvi-title">Figure 14 · The reference SSVI surface as maturity slices</title><desc id="ssvi-desc">Short variance rate 24% squared, long variance rate 18% squared, decay 1.2 years, rho -0.65 and eta 2.3; phi(theta) = eta / (1 + theta). Both global sufficient butterfly bounds pass.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:54:54.533622</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="ssvi-figure_1">
+  <g id="ssvi-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="ssvi-axes_1">
+   <g id="ssvi-patch_2">
+    <path d="M 62.66 244.78 
+L 357.57 244.78 
+L 357.57 35.14 
+L 62.66 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="ssvi-matplotlib.axis_1">
+    <g id="ssvi-xtick_1">
+     <g id="ssvi-line2d_1">
+      <path d="M 76.065 244.78 
+L 76.065 35.14 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_2">
+      <defs>
+       <path id="ssvi-mc63d9a2cf4" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#ssvi-mc63d9a2cf4" x="76.065" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="76.065" y="258.618594" transform="rotate(-0 76.065 258.618594)">−0.6</text>
+     </g>
+    </g>
+    <g id="ssvi-xtick_2">
+     <g id="ssvi-line2d_3">
+      <path d="M 120.748333 244.78 
+L 120.748333 35.14 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_4">
+      <g>
+       <use href="#ssvi-mc63d9a2cf4" x="120.748333" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="120.748333" y="258.618594" transform="rotate(-0 120.748333 258.618594)">−0.4</text>
+     </g>
+    </g>
+    <g id="ssvi-xtick_3">
+     <g id="ssvi-line2d_5">
+      <path d="M 165.431667 244.78 
+L 165.431667 35.14 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_6">
+      <g>
+       <use href="#ssvi-mc63d9a2cf4" x="165.431667" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="165.431667" y="258.618594" transform="rotate(-0 165.431667 258.618594)">−0.2</text>
+     </g>
+    </g>
+    <g id="ssvi-xtick_4">
+     <g id="ssvi-line2d_7">
+      <path d="M 210.115 244.78 
+L 210.115 35.14 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_8">
+      <g>
+       <use href="#ssvi-mc63d9a2cf4" x="210.115" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="210.115" y="258.618594" transform="rotate(-0 210.115 258.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="ssvi-xtick_5">
+     <g id="ssvi-line2d_9">
+      <path d="M 254.798333 244.78 
+L 254.798333 35.14 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_10">
+      <g>
+       <use href="#ssvi-mc63d9a2cf4" x="254.798333" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="254.798333" y="258.618594" transform="rotate(-0 254.798333 258.618594)">0.2</text>
+     </g>
+    </g>
+    <g id="ssvi-xtick_6">
+     <g id="ssvi-line2d_11">
+      <path d="M 299.481667 244.78 
+L 299.481667 35.14 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_12">
+      <g>
+       <use href="#ssvi-mc63d9a2cf4" x="299.481667" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="299.481667" y="258.618594" transform="rotate(-0 299.481667 258.618594)">0.4</text>
+     </g>
+    </g>
+    <g id="ssvi-xtick_7">
+     <g id="ssvi-line2d_13">
+      <path d="M 344.165 244.78 
+L 344.165 35.14 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_14">
+      <g>
+       <use href="#ssvi-mc63d9a2cf4" x="344.165" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="344.165" y="258.618594" transform="rotate(-0 344.165 258.618594)">0.6</text>
+     </g>
+    </g>
+    <g id="ssvi-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="210.115" y="271.328906" transform="rotate(-0 210.115 271.328906)">Log-forward moneyness k</text>
+    </g>
+   </g>
+   <g id="ssvi-matplotlib.axis_2">
+    <g id="ssvi-ytick_1">
+     <g id="ssvi-line2d_15">
+      <path d="M 62.66 240.811804 
+L 357.57 240.811804 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_16">
+      <defs>
+       <path id="ssvi-m2422aa9f22" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#ssvi-m2422aa9f22" x="62.66" y="240.811804" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="244.231101" transform="rotate(-0 55.66 244.231101)">15.0%</text>
+     </g>
+    </g>
+    <g id="ssvi-ytick_2">
+     <g id="ssvi-line2d_17">
+      <path d="M 62.66 214.096802 
+L 357.57 214.096802 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_18">
+      <g>
+       <use href="#ssvi-m2422aa9f22" x="62.66" y="214.096802" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="217.516099" transform="rotate(-0 55.66 217.516099)">17.5%</text>
+     </g>
+    </g>
+    <g id="ssvi-ytick_3">
+     <g id="ssvi-line2d_19">
+      <path d="M 62.66 187.381801 
+L 357.57 187.381801 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_20">
+      <g>
+       <use href="#ssvi-m2422aa9f22" x="62.66" y="187.381801" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="190.801098" transform="rotate(-0 55.66 190.801098)">20.0%</text>
+     </g>
+    </g>
+    <g id="ssvi-ytick_4">
+     <g id="ssvi-line2d_21">
+      <path d="M 62.66 160.666799 
+L 357.57 160.666799 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_22">
+      <g>
+       <use href="#ssvi-m2422aa9f22" x="62.66" y="160.666799" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="164.086096" transform="rotate(-0 55.66 164.086096)">22.5%</text>
+     </g>
+    </g>
+    <g id="ssvi-ytick_5">
+     <g id="ssvi-line2d_23">
+      <path d="M 62.66 133.951798 
+L 357.57 133.951798 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_24">
+      <g>
+       <use href="#ssvi-m2422aa9f22" x="62.66" y="133.951798" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="137.371095" transform="rotate(-0 55.66 137.371095)">25.0%</text>
+     </g>
+    </g>
+    <g id="ssvi-ytick_6">
+     <g id="ssvi-line2d_25">
+      <path d="M 62.66 107.236796 
+L 357.57 107.236796 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_26">
+      <g>
+       <use href="#ssvi-m2422aa9f22" x="62.66" y="107.236796" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="110.656093" transform="rotate(-0 55.66 110.656093)">27.5%</text>
+     </g>
+    </g>
+    <g id="ssvi-ytick_7">
+     <g id="ssvi-line2d_27">
+      <path d="M 62.66 80.521795 
+L 357.57 80.521795 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_28">
+      <g>
+       <use href="#ssvi-m2422aa9f22" x="62.66" y="80.521795" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="83.941092" transform="rotate(-0 55.66 83.941092)">30.0%</text>
+     </g>
+    </g>
+    <g id="ssvi-ytick_8">
+     <g id="ssvi-line2d_29">
+      <path d="M 62.66 53.806793 
+L 357.57 53.806793 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_30">
+      <g>
+       <use href="#ssvi-m2422aa9f22" x="62.66" y="53.806793" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="57.22609" transform="rotate(-0 55.66 57.22609)">32.5%</text>
+     </g>
+    </g>
+    <g id="ssvi-text_17">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.197813" y="139.96" transform="rotate(-90 21.197813 139.96)">Implied volatility</text>
+    </g>
+   </g>
+   <g id="ssvi-line2d_31">
+    <path d="M 76.065 44.669091 
+L 91.704167 55.933643 
+L 106.22625 66.656755 
+L 120.748333 77.6408 
+L 135.270417 88.888819 
+L 150.909583 101.292082 
+L 167.665833 114.889909 
+L 186.65625 130.604118 
+L 221.285833 159.323439 
+L 231.339583 167.352892 
+L 240.27625 174.208805 
+L 248.095833 179.906109 
+L 254.798333 184.506424 
+L 260.38375 188.104844 
+L 265.969167 191.462755 
+L 271.554583 194.558496 
+L 277.14 197.374987 
+L 282.725417 199.900717 
+L 288.310833 202.13029 
+L 293.89625 204.064434 
+L 299.481667 205.709528 
+L 305.067083 207.076731 
+L 310.6525 208.180898 
+L 316.237917 209.039432 
+L 321.823333 209.671203 
+L 327.40875 210.095626 
+L 334.11125 210.358272 
+L 340.81375 210.381811 
+L 344.165 210.313246 
+L 344.165 210.313246 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="ssvi-line2d_32">
+    <path d="M 76.065 52.809432 
+L 91.704167 63.744518 
+L 107.343333 74.961856 
+L 122.9825 86.469477 
+L 138.621667 98.269546 
+L 154.260833 110.353742 
+L 171.017083 123.585796 
+L 192.241667 140.650971 
+L 219.051667 162.1885 
+L 230.2225 170.877819 
+L 239.159167 177.564088 
+L 246.97875 183.140074 
+L 253.68125 187.660229 
+L 260.38375 191.894372 
+L 265.969167 195.174324 
+L 271.554583 198.205913 
+L 277.14 200.972381 
+L 282.725417 203.462065 
+L 288.310833 205.668958 
+L 293.89625 207.592805 
+L 299.481667 209.238722 
+L 305.067083 210.616462 
+L 310.6525 211.739431 
+L 316.237917 212.623638 
+L 321.823333 213.286672 
+L 327.40875 213.746817 
+L 334.11125 214.056861 
+L 340.81375 214.131458 
+L 344.165 214.089445 
+L 344.165 214.089445 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="ssvi-line2d_33">
+    <path d="M 76.065 66.506664 
+L 91.704167 76.888315 
+L 107.343333 87.532383 
+L 122.9825 98.445519 
+L 138.621667 109.628732 
+L 155.377917 121.900028 
+L 173.25125 135.281893 
+L 197.827083 153.99892 
+L 219.051667 170.087516 
+L 230.2225 178.308313 
+L 239.159167 184.644236 
+L 246.97875 189.939804 
+L 253.68125 194.244516 
+L 260.38375 198.29055 
+L 265.969167 201.437088 
+L 271.554583 204.35796 
+L 277.14 207.03706 
+L 282.725417 209.462613 
+L 288.310833 211.627761 
+L 293.89625 213.530753 
+L 299.481667 215.174735 
+L 305.067083 216.567197 
+L 310.6525 217.71918 
+L 316.237917 218.644376 
+L 321.823333 219.358218 
+L 327.40875 219.877063 
+L 334.11125 220.265631 
+L 340.81375 220.425329 
+L 344.165 220.427722 
+L 344.165 220.427722 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="ssvi-line2d_34">
+    <path d="M 76.065 86.327631 
+L 92.82125 96.59131 
+L 109.5775 107.123365 
+L 126.33375 117.928972 
+L 143.09 129.005722 
+L 160.963333 141.101613 
+L 181.070833 154.994268 
+L 224.637083 185.221358 
+L 235.807917 192.625819 
+L 244.744583 198.294294 
+L 252.564167 203.00279 
+L 259.266667 206.808777 
+L 265.969167 210.367333 
+L 272.671667 213.64811 
+L 278.257083 216.151529 
+L 283.8425 218.433531 
+L 289.427917 220.487154 
+L 295.013333 222.30961 
+L 300.59875 223.902209 
+L 306.184167 225.270009 
+L 311.769583 226.421249 
+L 317.355 227.366657 
+L 324.0575 228.247121 
+L 330.76 228.872758 
+L 337.4625 229.267885 
+L 344.165 229.456488 
+L 344.165 229.456488 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="ssvi-line2d_35">
+    <path d="M 76.065 99.612393 
+L 92.82125 109.268995 
+L 109.5775 119.170079 
+L 126.33375 129.319141 
+L 144.207083 140.413785 
+L 163.1975 152.483127 
+L 185.539167 166.970094 
+L 221.285833 190.199855 
+L 233.57375 197.90005 
+L 243.6275 203.941295 
+L 252.564167 209.034846 
+L 260.38375 213.220497 
+L 267.08625 216.569462 
+L 273.78875 219.669511 
+L 280.49125 222.497918 
+L 286.076667 224.635006 
+L 291.662083 226.565416 
+L 297.2475 228.286531 
+L 302.832917 229.799232 
+L 308.418333 231.107618 
+L 314.00375 232.218555 
+L 320.70625 233.303953 
+L 327.40875 234.136831 
+L 334.11125 234.737776 
+L 340.81375 235.128104 
+L 344.165 235.250909 
+L 344.165 235.250909 
+" clip-path="url(#ssvi-p7643f76033)" style="fill: none; stroke: #bbbac7; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="ssvi-patch_3">
+    <path d="M 62.66 244.78 
+L 62.66 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ssvi-patch_4">
+    <path d="M 62.66 244.78 
+L 357.57 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ssvi-text_18">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="62.66" y="22.14" transform="rotate(-0 62.66 22.14)">Coherent slices of one synthetic surface</text>
+   </g>
+   <g id="ssvi-legend_1">
+    <g id="ssvi-line2d_36">
+     <path d="M 305.4225 45.61875 
+L 313.4225 45.61875 
+L 321.4225 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="ssvi-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="327.8225" y="48.41875" transform="rotate(-0 327.8225 48.41875)">0.25y</text>
+    </g>
+    <g id="ssvi-line2d_37">
+     <path d="M 305.4225 57.36125 
+L 313.4225 57.36125 
+L 321.4225 57.36125 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="ssvi-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="327.8225" y="60.16125" transform="rotate(-0 327.8225 60.16125)">0.5y</text>
+    </g>
+    <g id="ssvi-line2d_38">
+     <path d="M 305.4225 69.10375 
+L 313.4225 69.10375 
+L 321.4225 69.10375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="ssvi-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="327.8225" y="71.90375" transform="rotate(-0 327.8225 71.90375)">1y</text>
+    </g>
+    <g id="ssvi-line2d_39">
+     <path d="M 305.4225 80.84625 
+L 313.4225 80.84625 
+L 321.4225 80.84625 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="ssvi-text_22">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="327.8225" y="83.64625" transform="rotate(-0 327.8225 83.64625)">2y</text>
+    </g>
+    <g id="ssvi-line2d_40">
+     <path d="M 305.4225 92.58875 
+L 313.4225 92.58875 
+L 321.4225 92.58875 
+" style="fill: none; stroke: #bbbac7; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="ssvi-text_23">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="327.8225" y="95.38875" transform="rotate(-0 327.8225 95.38875)">3y</text>
+    </g>
+   </g>
+  </g>
+  <g id="ssvi-axes_2">
+   <g id="ssvi-patch_5">
+    <path d="M 411.59 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 411.59 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="ssvi-matplotlib.axis_3">
+    <g id="ssvi-xtick_8">
+     <g id="ssvi-line2d_41">
+      <path d="M 424.995 244.78 
+L 424.995 35.14 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_42">
+      <g>
+       <use href="#ssvi-mc63d9a2cf4" x="424.995" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="424.995" y="258.618594" transform="rotate(-0 424.995 258.618594)">−0.6</text>
+     </g>
+    </g>
+    <g id="ssvi-xtick_9">
+     <g id="ssvi-line2d_43">
+      <path d="M 469.678333 244.78 
+L 469.678333 35.14 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_44">
+      <g>
+       <use href="#ssvi-mc63d9a2cf4" x="469.678333" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="469.678333" y="258.618594" transform="rotate(-0 469.678333 258.618594)">−0.4</text>
+     </g>
+    </g>
+    <g id="ssvi-xtick_10">
+     <g id="ssvi-line2d_45">
+      <path d="M 514.361667 244.78 
+L 514.361667 35.14 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_46">
+      <g>
+       <use href="#ssvi-mc63d9a2cf4" x="514.361667" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="514.361667" y="258.618594" transform="rotate(-0 514.361667 258.618594)">−0.2</text>
+     </g>
+    </g>
+    <g id="ssvi-xtick_11">
+     <g id="ssvi-line2d_47">
+      <path d="M 559.045 244.78 
+L 559.045 35.14 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_48">
+      <g>
+       <use href="#ssvi-mc63d9a2cf4" x="559.045" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="559.045" y="258.618594" transform="rotate(-0 559.045 258.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="ssvi-xtick_12">
+     <g id="ssvi-line2d_49">
+      <path d="M 603.728333 244.78 
+L 603.728333 35.14 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_50">
+      <g>
+       <use href="#ssvi-mc63d9a2cf4" x="603.728333" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="603.728333" y="258.618594" transform="rotate(-0 603.728333 258.618594)">0.2</text>
+     </g>
+    </g>
+    <g id="ssvi-xtick_13">
+     <g id="ssvi-line2d_51">
+      <path d="M 648.411667 244.78 
+L 648.411667 35.14 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_52">
+      <g>
+       <use href="#ssvi-mc63d9a2cf4" x="648.411667" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="648.411667" y="258.618594" transform="rotate(-0 648.411667 258.618594)">0.4</text>
+     </g>
+    </g>
+    <g id="ssvi-xtick_14">
+     <g id="ssvi-line2d_53">
+      <path d="M 693.095 244.78 
+L 693.095 35.14 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_54">
+      <g>
+       <use href="#ssvi-mc63d9a2cf4" x="693.095" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="693.095" y="258.618594" transform="rotate(-0 693.095 258.618594)">0.6</text>
+     </g>
+    </g>
+    <g id="ssvi-text_31">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="559.045" y="271.328906" transform="rotate(-0 559.045 271.328906)">Log-forward moneyness k</text>
+    </g>
+   </g>
+   <g id="ssvi-matplotlib.axis_4">
+    <g id="ssvi-ytick_9">
+     <g id="ssvi-line2d_55">
+      <path d="M 411.59 241.824443 
+L 706.5 241.824443 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_56">
+      <g>
+       <use href="#ssvi-m2422aa9f22" x="411.59" y="241.824443" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="404.59" y="245.24374" transform="rotate(-0 404.59 245.24374)">0.00</text>
+     </g>
+    </g>
+    <g id="ssvi-ytick_10">
+     <g id="ssvi-line2d_57">
+      <path d="M 411.59 200.544076 
+L 706.5 200.544076 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_58">
+      <g>
+       <use href="#ssvi-m2422aa9f22" x="411.59" y="200.544076" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="404.59" y="203.963373" transform="rotate(-0 404.59 203.963373)">0.05</text>
+     </g>
+    </g>
+    <g id="ssvi-ytick_11">
+     <g id="ssvi-line2d_59">
+      <path d="M 411.59 159.263708 
+L 706.5 159.263708 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_60">
+      <g>
+       <use href="#ssvi-m2422aa9f22" x="411.59" y="159.263708" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="404.59" y="162.683005" transform="rotate(-0 404.59 162.683005)">0.10</text>
+     </g>
+    </g>
+    <g id="ssvi-ytick_12">
+     <g id="ssvi-line2d_61">
+      <path d="M 411.59 117.98334 
+L 706.5 117.98334 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_62">
+      <g>
+       <use href="#ssvi-m2422aa9f22" x="411.59" y="117.98334" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_35">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="404.59" y="121.402637" transform="rotate(-0 404.59 121.402637)">0.15</text>
+     </g>
+    </g>
+    <g id="ssvi-ytick_13">
+     <g id="ssvi-line2d_63">
+      <path d="M 411.59 76.702972 
+L 706.5 76.702972 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_64">
+      <g>
+       <use href="#ssvi-m2422aa9f22" x="411.59" y="76.702972" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_36">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="404.59" y="80.122269" transform="rotate(-0 404.59 80.122269)">0.20</text>
+     </g>
+    </g>
+    <g id="ssvi-ytick_14">
+     <g id="ssvi-line2d_65">
+      <path d="M 411.59 35.422604 
+L 706.5 35.422604 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ssvi-line2d_66">
+      <g>
+       <use href="#ssvi-m2422aa9f22" x="411.59" y="35.422604" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ssvi-text_37">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="404.59" y="38.841901" transform="rotate(-0 404.59 38.841901)">0.25</text>
+     </g>
+    </g>
+    <g id="ssvi-text_38">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="378.679219" y="139.96" transform="rotate(-90 378.679219 139.96)">Total variance</text>
+    </g>
+   </g>
+   <g id="ssvi-line2d_67">
+    <path d="M 424.995 218.860931 
+L 493.137083 224.99219 
+L 535.58625 228.598998 
+L 564.630417 230.855914 
+L 586.972083 232.380668 
+L 605.9625 233.459175 
+L 622.71875 234.199972 
+L 639.475 234.726594 
+L 657.348333 235.068421 
+L 678.572917 235.238012 
+L 693.095 235.24502 
+L 693.095 235.24502 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="ssvi-line2d_68">
+    <path d="M 424.995 197.971261 
+L 476.380833 206.794034 
+L 512.1275 212.723545 
+L 538.9375 216.960764 
+L 560.162083 220.101029 
+L 578.035417 222.521081 
+L 592.5575 224.277463 
+L 605.9625 225.686251 
+L 618.250417 226.76865 
+L 630.538333 227.635547 
+L 642.82625 228.287658 
+L 656.23125 228.773262 
+L 670.753333 229.072559 
+L 687.509583 229.186947 
+L 693.095 229.181336 
+L 693.095 229.181336 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="ssvi-line2d_69">
+    <path d="M 424.995 160.880857 
+L 465.21 173.518842 
+L 495.37125 182.775219 
+L 518.83 189.75981 
+L 538.9375 195.51703 
+L 555.69375 200.079303 
+L 570.215833 203.793257 
+L 582.50375 206.707533 
+L 593.674583 209.130778 
+L 603.728333 211.094022 
+L 613.782083 212.824082 
+L 622.71875 214.150612 
+L 631.655417 215.271549 
+L 640.592083 216.188581 
+L 650.645833 216.98833 
+L 660.699583 217.56399 
+L 671.870417 217.974176 
+L 684.158333 218.191753 
+L 693.095 218.223198 
+L 693.095 218.223198 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="ssvi-line2d_70">
+    <path d="M 424.995 98.54913 
+L 456.273333 115.644696 
+L 481.96625 129.447235 
+L 503.190833 140.608806 
+L 521.064167 149.76867 
+L 536.703333 157.537412 
+L 550.108333 163.953724 
+L 562.39625 169.581582 
+L 572.45 173.96146 
+L 582.50375 178.096224 
+L 591.440417 181.529742 
+L 599.26 184.320542 
+L 607.079583 186.889823 
+L 614.899167 189.218892 
+L 622.71875 191.29343 
+L 630.538333 193.105176 
+L 638.357917 194.653002 
+L 646.1775 195.943061 
+L 653.997083 196.987977 
+L 661.816667 197.805305 
+L 669.63625 198.415658 
+L 678.572917 198.887838 
+L 688.626667 199.170129 
+L 693.095 199.221744 
+L 693.095 199.221744 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="ssvi-line2d_71">
+    <path d="M 424.995 44.669091 
+L 452.922083 65.32436 
+L 476.380833 82.414739 
+L 496.488333 96.797732 
+L 513.244583 108.527576 
+L 527.766667 118.443847 
+L 541.171667 127.331253 
+L 552.3425 134.491507 
+L 562.39625 140.700635 
+L 572.45 146.641551 
+L 581.386667 151.656188 
+L 589.20625 155.80619 
+L 597.025833 159.705152 
+L 603.728333 162.826364 
+L 610.430833 165.726607 
+L 617.133333 168.39178 
+L 623.835833 170.810963 
+L 630.538333 172.977328 
+L 637.240833 174.888757 
+L 643.943333 176.548043 
+L 650.645833 177.962624 
+L 657.348333 179.143922 
+L 664.050833 180.106395 
+L 670.753333 180.866495 
+L 678.572917 181.520776 
+L 686.3925 181.951155 
+L 693.095 182.162128 
+L 693.095 182.162128 
+" clip-path="url(#ssvi-p201f3c76c4)" style="fill: none; stroke: #bbbac7; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="ssvi-patch_6">
+    <path d="M 411.59 244.78 
+L 411.59 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ssvi-patch_7">
+    <path d="M 411.59 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ssvi-text_39">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="411.59" y="22.14" transform="rotate(-0 411.59 22.14)">Calendar-ordered slices at common k</text>
+   </g>
+   <g id="ssvi-legend_2">
+    <g id="ssvi-line2d_72">
+     <path d="M 654.3525 45.61875 
+L 662.3525 45.61875 
+L 670.3525 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="ssvi-text_40">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="676.7525" y="48.41875" transform="rotate(-0 676.7525 48.41875)">0.25y</text>
+    </g>
+    <g id="ssvi-line2d_73">
+     <path d="M 654.3525 57.36125 
+L 662.3525 57.36125 
+L 670.3525 57.36125 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="ssvi-text_41">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="676.7525" y="60.16125" transform="rotate(-0 676.7525 60.16125)">0.5y</text>
+    </g>
+    <g id="ssvi-line2d_74">
+     <path d="M 654.3525 69.10375 
+L 662.3525 69.10375 
+L 670.3525 69.10375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="ssvi-text_42">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="676.7525" y="71.90375" transform="rotate(-0 676.7525 71.90375)">1y</text>
+    </g>
+    <g id="ssvi-line2d_75">
+     <path d="M 654.3525 80.84625 
+L 662.3525 80.84625 
+L 670.3525 80.84625 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="ssvi-text_43">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="676.7525" y="83.64625" transform="rotate(-0 676.7525 83.64625)">2y</text>
+    </g>
+    <g id="ssvi-line2d_76">
+     <path d="M 654.3525 92.58875 
+L 662.3525 92.58875 
+L 670.3525 92.58875 
+" style="fill: none; stroke: #bbbac7; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="ssvi-text_44">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="676.7525" y="95.38875" transform="rotate(-0 676.7525 95.38875)">3y</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="ssvi-p7643f76033">
+   <rect x="62.66" y="35.14" width="294.91" height="209.64"/>
+  </clipPath>
+  <clipPath id="ssvi-p201f3c76c4">
+   <rect x="411.59" y="35.14" width="294.91" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

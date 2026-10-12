@@ -1,0 +1,439 @@
+<svg role="img" aria-labelledby="barrier-title barrier-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="barrier-title">Figure 14 · Missed barrier crossings and conditional survival weights</title><desc id="barrier-desc">Up-and-out call, K = 100, upper barrier 130, no rebate; seed 1009, 60,000 coupled paths. Node-only prices refer to different discrete monitoring contracts. Bridge weights target the continuously monitored GBM contract; the reference is one-dimensional numerical integration of the exact terminal conditional survival payoff.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T19:11:29.833638</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="barrier-figure_1">
+  <g id="barrier-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="barrier-axes_1">
+   <g id="barrier-patch_2">
+    <path d="M 48.26 206.188 
+L 648.9 206.188 
+L 648.9 15.41238 
+L 48.26 15.41238 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="barrier-matplotlib.axis_1">
+    <g id="barrier-xtick_1">
+     <g id="barrier-line2d_1">
+      <path d="M 219.92598 206.188 
+L 219.92598 15.41238 
+" clip-path="url(#barrier-p70f73da605)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="barrier-line2d_2">
+      <defs>
+       <path id="barrier-m13e6e2ca09" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#barrier-m13e6e2ca09" x="219.92598" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="barrier-text_1">
+      <!-- $\mathdefault{10^{1}}$ -->
+      <g style="fill: #939b94" transform="translate(212.00598 220.026594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.40625">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="barrier-xtick_2">
+     <g id="barrier-line2d_3">
+      <path d="M 582.704688 206.188 
+L 582.704688 15.41238 
+" clip-path="url(#barrier-p70f73da605)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="barrier-line2d_4">
+      <g>
+       <use href="#barrier-m13e6e2ca09" x="582.704688" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="barrier-text_2">
+      <!-- $\mathdefault{10^{2}}$ -->
+      <g style="fill: #939b94" transform="translate(574.784688 220.026594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="barrier-xtick_3">
+     <g id="barrier-line2d_5">
+      <defs>
+       <path id="barrier-mfaad87010f" d="M 0 0 
+L 0 2 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#barrier-mfaad87010f" x="75.561818" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="barrier-xtick_4">
+     <g id="barrier-line2d_6">
+      <g>
+       <use href="#barrier-mfaad87010f" x="110.718707" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="barrier-xtick_5">
+     <g id="barrier-line2d_7">
+      <g>
+       <use href="#barrier-mfaad87010f" x="139.443978" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="barrier-xtick_6">
+     <g id="barrier-line2d_8">
+      <g>
+       <use href="#barrier-mfaad87010f" x="163.730847" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="barrier-xtick_7">
+     <g id="barrier-line2d_9">
+      <g>
+       <use href="#barrier-mfaad87010f" x="184.769091" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="barrier-xtick_8">
+     <g id="barrier-line2d_10">
+      <g>
+       <use href="#barrier-mfaad87010f" x="203.326137" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="barrier-xtick_9">
+     <g id="barrier-line2d_11">
+      <g>
+       <use href="#barrier-mfaad87010f" x="329.133253" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="barrier-xtick_10">
+     <g id="barrier-line2d_12">
+      <g>
+       <use href="#barrier-mfaad87010f" x="393.015412" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="barrier-xtick_11">
+     <g id="barrier-line2d_13">
+      <g>
+       <use href="#barrier-mfaad87010f" x="438.340526" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="barrier-xtick_12">
+     <g id="barrier-line2d_14">
+      <g>
+       <use href="#barrier-mfaad87010f" x="473.497415" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="barrier-xtick_13">
+     <g id="barrier-line2d_15">
+      <g>
+       <use href="#barrier-mfaad87010f" x="502.222685" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="barrier-xtick_14">
+     <g id="barrier-line2d_16">
+      <g>
+       <use href="#barrier-mfaad87010f" x="526.509555" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="barrier-xtick_15">
+     <g id="barrier-line2d_17">
+      <g>
+       <use href="#barrier-mfaad87010f" x="547.547798" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="barrier-xtick_16">
+     <g id="barrier-line2d_18">
+      <g>
+       <use href="#barrier-mfaad87010f" x="566.104844" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="barrier-text_3">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="348.58" y="232.736906" transform="rotate(-0 348.58 232.736906)">Monitoring intervals m</text>
+    </g>
+   </g>
+   <g id="barrier-matplotlib.axis_2">
+    <g id="barrier-ytick_1">
+     <g id="barrier-line2d_19">
+      <path d="M 48.26 186.554376 
+L 648.9 186.554376 
+" clip-path="url(#barrier-p70f73da605)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="barrier-line2d_20">
+      <defs>
+       <path id="barrier-m67a3dfe05e" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#barrier-m67a3dfe05e" x="48.26" y="186.554376" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="barrier-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="189.973673" transform="rotate(-0 41.26 189.973673)">3.4</text>
+     </g>
+    </g>
+    <g id="barrier-ytick_2">
+     <g id="barrier-line2d_21">
+      <path d="M 48.26 162.342552 
+L 648.9 162.342552 
+" clip-path="url(#barrier-p70f73da605)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="barrier-line2d_22">
+      <g>
+       <use href="#barrier-m67a3dfe05e" x="48.26" y="162.342552" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="barrier-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="165.761849" transform="rotate(-0 41.26 165.761849)">3.6</text>
+     </g>
+    </g>
+    <g id="barrier-ytick_3">
+     <g id="barrier-line2d_23">
+      <path d="M 48.26 138.130728 
+L 648.9 138.130728 
+" clip-path="url(#barrier-p70f73da605)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="barrier-line2d_24">
+      <g>
+       <use href="#barrier-m67a3dfe05e" x="48.26" y="138.130728" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="barrier-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="141.550025" transform="rotate(-0 41.26 141.550025)">3.8</text>
+     </g>
+    </g>
+    <g id="barrier-ytick_4">
+     <g id="barrier-line2d_25">
+      <path d="M 48.26 113.918904 
+L 648.9 113.918904 
+" clip-path="url(#barrier-p70f73da605)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="barrier-line2d_26">
+      <g>
+       <use href="#barrier-m67a3dfe05e" x="48.26" y="113.918904" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="barrier-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="117.338201" transform="rotate(-0 41.26 117.338201)">4.0</text>
+     </g>
+    </g>
+    <g id="barrier-ytick_5">
+     <g id="barrier-line2d_27">
+      <path d="M 48.26 89.70708 
+L 648.9 89.70708 
+" clip-path="url(#barrier-p70f73da605)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="barrier-line2d_28">
+      <g>
+       <use href="#barrier-m67a3dfe05e" x="48.26" y="89.70708" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="barrier-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="93.126377" transform="rotate(-0 41.26 93.126377)">4.2</text>
+     </g>
+    </g>
+    <g id="barrier-ytick_6">
+     <g id="barrier-line2d_29">
+      <path d="M 48.26 65.495257 
+L 648.9 65.495257 
+" clip-path="url(#barrier-p70f73da605)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="barrier-line2d_30">
+      <g>
+       <use href="#barrier-m67a3dfe05e" x="48.26" y="65.495257" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="barrier-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="68.914553" transform="rotate(-0 41.26 68.914553)">4.4</text>
+     </g>
+    </g>
+    <g id="barrier-ytick_7">
+     <g id="barrier-line2d_31">
+      <path d="M 48.26 41.283433 
+L 648.9 41.283433 
+" clip-path="url(#barrier-p70f73da605)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="barrier-line2d_32">
+      <g>
+       <use href="#barrier-m67a3dfe05e" x="48.26" y="41.283433" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="barrier-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="44.70273" transform="rotate(-0 41.26 44.70273)">4.6</text>
+     </g>
+    </g>
+    <g id="barrier-ytick_8">
+     <g id="barrier-line2d_33">
+      <path d="M 48.26 17.071609 
+L 648.9 17.071609 
+" clip-path="url(#barrier-p70f73da605)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="barrier-line2d_34">
+      <g>
+       <use href="#barrier-m67a3dfe05e" x="48.26" y="17.071609" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="barrier-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="20.490906" transform="rotate(-0 41.26 20.490906)">4.8</text>
+     </g>
+    </g>
+    <g id="barrier-text_12">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.075469" y="110.80019" transform="rotate(-90 21.075469 110.80019)">Up-and-out call value</text>
+    </g>
+   </g>
+   <g id="barrier-line2d_35">
+    <path d="M 75.561818 24.083999 
+L 184.769091 63.765746 
+L 293.976364 98.055732 
+L 403.183636 123.077125 
+L 512.390909 142.475148 
+L 621.598182 155.886055 
+" clip-path="url(#barrier-p70f73da605)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="barrier-m24ea0dc6f8" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #d3ad84"/>
+    </defs>
+    <g clip-path="url(#barrier-p70f73da605)">
+     <use href="#barrier-m24ea0dc6f8" x="75.561818" y="24.083999" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#barrier-m24ea0dc6f8" x="184.769091" y="63.765746" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#barrier-m24ea0dc6f8" x="293.976364" y="98.055732" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#barrier-m24ea0dc6f8" x="403.183636" y="123.077125" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#barrier-m24ea0dc6f8" x="512.390909" y="142.475148" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#barrier-m24ea0dc6f8" x="621.598182" y="155.886055" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="barrier-line2d_36">
+    <path d="M 75.561818 197.516381 
+L 184.769091 195.660367 
+L 293.976364 195.354873 
+L 403.183636 194.768849 
+L 512.390909 194.748385 
+L 621.598182 194.064776 
+" clip-path="url(#barrier-p70f73da605)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="barrier-m1722143cc0" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#barrier-p70f73da605)">
+     <use href="#barrier-m1722143cc0" x="75.561818" y="197.516381" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#barrier-m1722143cc0" x="184.769091" y="195.660367" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#barrier-m1722143cc0" x="293.976364" y="195.354873" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#barrier-m1722143cc0" x="403.183636" y="194.768849" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#barrier-m1722143cc0" x="512.390909" y="194.748385" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#barrier-m1722143cc0" x="621.598182" y="194.064776" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="barrier-line2d_37">
+    <path d="M 48.26 194.68258 
+L 648.9 194.68258 
+" clip-path="url(#barrier-p70f73da605)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #91a9bd; stroke-width: 2"/>
+   </g>
+   <g id="barrier-patch_3">
+    <path d="M 48.26 206.188 
+L 48.26 15.41238 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="barrier-patch_4">
+    <path d="M 48.26 206.188 
+L 648.9 206.188 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="barrier-legend_1">
+    <g id="barrier-line2d_38">
+     <path d="M 480.45875 25.89113 
+L 488.45875 25.89113 
+L 496.45875 25.89113 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#barrier-m24ea0dc6f8" x="488.45875" y="25.89113" style="fill: #d3ad84; stroke: #d3ad84"/>
+     </g>
+    </g>
+    <g id="barrier-text_13">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="502.85875" y="28.69113" transform="rotate(-0 502.85875 28.69113)">Node-only monitoring</text>
+    </g>
+    <g id="barrier-line2d_39">
+     <path d="M 480.45875 37.63363 
+L 488.45875 37.63363 
+L 496.45875 37.63363 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#barrier-m1722143cc0" x="488.45875" y="37.63363" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="barrier-text_14">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="502.85875" y="40.43363" transform="rotate(-0 502.85875 40.43363)">Bridge survival weights</text>
+    </g>
+    <g id="barrier-line2d_40">
+     <path d="M 480.45875 49.37613 
+L 488.45875 49.37613 
+L 496.45875 49.37613 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #91a9bd; stroke-width: 2"/>
+    </g>
+    <g id="barrier-text_15">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="502.85875" y="52.17613" transform="rotate(-0 502.85875 52.17613)">Continuous-monitoring quadrature</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="barrier-p70f73da605">
+   <rect x="48.26" y="15.41238" width="600.64" height="190.77562"/>
+  </clipPath>
+ </defs>
+</svg>

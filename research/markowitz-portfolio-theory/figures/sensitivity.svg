@@ -1,0 +1,622 @@
+<svg role="img" aria-labelledby="sensitivity-title sensitivity-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="sensitivity-title">Figure 15 · Expected-return changes propagate into portfolio weights</title><desc id="sensitivity-desc">Risk-free return 2% and covariance held fixed. The horizontal axis changes A’s annual expected simple return by up to ±1.2 percentage points. This is input sensitivity, not evidence that any changed estimate is more accurate.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T17:14:59.613411</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="sensitivity-figure_1">
+  <g id="sensitivity-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="sensitivity-axes_1">
+   <g id="sensitivity-patch_2">
+    <path d="M 54.02 208.78 
+L 648.9 208.78 
+L 648.9 13.5 
+L 54.02 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="sensitivity-matplotlib.axis_1">
+    <g id="sensitivity-xtick_1">
+     <g id="sensitivity-line2d_1">
+      <path d="M 126.126667 208.78 
+L 126.126667 13.5 
+" clip-path="url(#sensitivity-pd501881072)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sensitivity-line2d_2">
+      <defs>
+       <path id="sensitivity-m84f3b5210e" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#sensitivity-m84f3b5210e" x="126.126667" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sensitivity-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="126.126667" y="222.618594" transform="rotate(-0 126.126667 222.618594)">−1.00%</text>
+     </g>
+    </g>
+    <g id="sensitivity-xtick_2">
+     <g id="sensitivity-line2d_3">
+      <path d="M 238.793333 208.78 
+L 238.793333 13.5 
+" clip-path="url(#sensitivity-pd501881072)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sensitivity-line2d_4">
+      <g>
+       <use href="#sensitivity-m84f3b5210e" x="238.793333" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sensitivity-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="238.793333" y="222.618594" transform="rotate(-0 238.793333 222.618594)">−0.50%</text>
+     </g>
+    </g>
+    <g id="sensitivity-xtick_3">
+     <g id="sensitivity-line2d_5">
+      <path d="M 351.46 208.78 
+L 351.46 13.5 
+" clip-path="url(#sensitivity-pd501881072)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sensitivity-line2d_6">
+      <g>
+       <use href="#sensitivity-m84f3b5210e" x="351.46" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sensitivity-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="351.46" y="222.618594" transform="rotate(-0 351.46 222.618594)">0.00%</text>
+     </g>
+    </g>
+    <g id="sensitivity-xtick_4">
+     <g id="sensitivity-line2d_7">
+      <path d="M 464.126667 208.78 
+L 464.126667 13.5 
+" clip-path="url(#sensitivity-pd501881072)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sensitivity-line2d_8">
+      <g>
+       <use href="#sensitivity-m84f3b5210e" x="464.126667" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sensitivity-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="464.126667" y="222.618594" transform="rotate(-0 464.126667 222.618594)">0.50%</text>
+     </g>
+    </g>
+    <g id="sensitivity-xtick_5">
+     <g id="sensitivity-line2d_9">
+      <path d="M 576.793333 208.78 
+L 576.793333 13.5 
+" clip-path="url(#sensitivity-pd501881072)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sensitivity-line2d_10">
+      <g>
+       <use href="#sensitivity-m84f3b5210e" x="576.793333" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sensitivity-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="576.793333" y="222.618594" transform="rotate(-0 576.793333 222.618594)">1.00%</text>
+     </g>
+    </g>
+    <g id="sensitivity-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="351.46" y="235.328906" transform="rotate(-0 351.46 235.328906)">Change in expected return of A</text>
+    </g>
+   </g>
+   <g id="sensitivity-matplotlib.axis_2">
+    <g id="sensitivity-ytick_1">
+     <g id="sensitivity-line2d_11">
+      <path d="M 54.02 183.185455 
+L 648.9 183.185455 
+" clip-path="url(#sensitivity-pd501881072)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sensitivity-line2d_12">
+      <defs>
+       <path id="sensitivity-me4e2ad5836" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#sensitivity-me4e2ad5836" x="54.02" y="183.185455" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sensitivity-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="186.604752" transform="rotate(-0 47.02 186.604752)">20%</text>
+     </g>
+    </g>
+    <g id="sensitivity-ytick_2">
+     <g id="sensitivity-line2d_13">
+      <path d="M 54.02 146.729224 
+L 648.9 146.729224 
+" clip-path="url(#sensitivity-pd501881072)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sensitivity-line2d_14">
+      <g>
+       <use href="#sensitivity-me4e2ad5836" x="54.02" y="146.729224" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sensitivity-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="150.148521" transform="rotate(-0 47.02 150.148521)">30%</text>
+     </g>
+    </g>
+    <g id="sensitivity-ytick_3">
+     <g id="sensitivity-line2d_15">
+      <path d="M 54.02 110.272993 
+L 648.9 110.272993 
+" clip-path="url(#sensitivity-pd501881072)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sensitivity-line2d_16">
+      <g>
+       <use href="#sensitivity-me4e2ad5836" x="54.02" y="110.272993" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sensitivity-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="113.69229" transform="rotate(-0 47.02 113.69229)">40%</text>
+     </g>
+    </g>
+    <g id="sensitivity-ytick_4">
+     <g id="sensitivity-line2d_17">
+      <path d="M 54.02 73.816762 
+L 648.9 73.816762 
+" clip-path="url(#sensitivity-pd501881072)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sensitivity-line2d_18">
+      <g>
+       <use href="#sensitivity-me4e2ad5836" x="54.02" y="73.816762" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sensitivity-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="77.236059" transform="rotate(-0 47.02 77.236059)">50%</text>
+     </g>
+    </g>
+    <g id="sensitivity-ytick_5">
+     <g id="sensitivity-line2d_19">
+      <path d="M 54.02 37.360531 
+L 648.9 37.360531 
+" clip-path="url(#sensitivity-pd501881072)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sensitivity-line2d_20">
+      <g>
+       <use href="#sensitivity-me4e2ad5836" x="54.02" y="37.360531" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sensitivity-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="40.779828" transform="rotate(-0 47.02 40.779828)">60%</text>
+     </g>
+    </g>
+    <g id="sensitivity-text_12">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.144375" y="111.14" transform="rotate(-90 21.144375 111.14)">Tangency portfolio weight</text>
+    </g>
+   </g>
+   <g id="sensitivity-line2d_21">
+    <path d="M 81.06 107.477754 
+L 85.604538 106.426808 
+L 90.149076 105.384192 
+L 94.693613 104.34981 
+L 99.238151 103.323562 
+L 103.782689 102.305354 
+L 108.327227 101.295092 
+L 112.871765 100.292683 
+L 117.416303 99.298036 
+L 121.96084 98.311061 
+L 126.505378 97.331669 
+L 131.049916 96.359774 
+L 135.594454 95.39529 
+L 140.138992 94.438132 
+L 144.683529 93.488217 
+L 149.228067 92.545464 
+L 153.772605 91.609791 
+L 158.317143 90.681119 
+L 162.861681 89.75937 
+L 167.406218 88.844466 
+L 171.950756 87.936333 
+L 176.495294 87.034894 
+L 181.039832 86.140076 
+L 185.58437 85.251807 
+L 190.128908 84.370015 
+L 194.673445 83.494629 
+L 199.217983 82.625579 
+L 203.762521 81.762798 
+L 208.307059 80.906217 
+L 212.851597 80.05577 
+L 217.396134 79.211391 
+L 221.940672 78.373016 
+L 226.48521 77.540581 
+L 231.029748 76.714022 
+L 235.574286 75.893279 
+L 240.118824 75.078289 
+L 244.663361 74.268992 
+L 249.207899 73.465329 
+L 253.752437 72.667242 
+L 258.296975 71.874672 
+L 262.841513 71.087563 
+L 267.38605 70.305858 
+L 271.930588 69.529502 
+L 276.475126 68.75844 
+L 281.019664 67.992618 
+L 285.564202 67.231983 
+L 290.108739 66.476482 
+L 294.653277 65.726063 
+L 299.197815 64.980677 
+L 303.742353 64.240271 
+L 308.286891 63.504796 
+L 312.831429 62.774204 
+L 317.375966 62.048445 
+L 321.920504 61.327472 
+L 326.465042 60.611238 
+L 331.00958 59.899695 
+L 335.554118 59.192799 
+L 340.098655 58.490504 
+L 344.643193 57.792765 
+L 349.187731 57.099538 
+L 353.732269 56.410779 
+L 358.276807 55.726445 
+L 362.821345 55.046493 
+L 367.365882 54.370883 
+L 371.91042 53.699571 
+L 376.454958 53.032518 
+L 380.999496 52.369683 
+L 385.544034 51.711026 
+L 390.088571 51.056508 
+L 394.633109 50.406089 
+L 399.177647 49.759732 
+L 403.722185 49.117398 
+L 408.266723 48.479051 
+L 412.811261 47.844652 
+L 417.355798 47.214166 
+L 421.900336 46.587556 
+L 426.444874 45.964788 
+L 430.989412 45.345824 
+L 435.53395 44.730632 
+L 440.078487 44.119176 
+L 444.623025 43.511422 
+L 449.167563 42.907338 
+L 453.712101 42.306889 
+L 458.256639 41.710043 
+L 462.801176 41.116769 
+L 467.345714 40.527033 
+L 471.890252 39.940804 
+L 476.43479 39.358052 
+L 480.979328 38.778744 
+L 485.523866 38.202852 
+L 490.068403 37.630344 
+L 494.612941 37.061191 
+L 499.157479 36.495364 
+L 503.702017 35.932833 
+L 508.246555 35.37357 
+L 512.791092 34.817546 
+L 517.33563 34.264734 
+L 521.880168 33.715105 
+L 526.424706 33.168632 
+L 530.969244 32.625288 
+L 535.513782 32.085047 
+L 540.058319 31.547881 
+L 544.602857 31.013765 
+L 549.147395 30.482672 
+L 553.691933 29.954578 
+L 558.236471 29.429456 
+L 562.781008 28.907282 
+L 567.325546 28.388031 
+L 571.870084 27.871678 
+L 576.414622 27.3582 
+L 580.95916 26.847571 
+L 585.503697 26.33977 
+L 590.048235 25.834772 
+L 594.592773 25.332554 
+L 599.137311 24.833093 
+L 603.681849 24.336367 
+L 608.226387 23.842353 
+L 612.770924 23.351029 
+L 617.315462 22.862373 
+L 621.86 22.376364 
+" clip-path="url(#sensitivity-pd501881072)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="sensitivity-line2d_22">
+    <path d="M 81.06 125.463144 
+L 85.604538 126.154563 
+L 90.149076 126.840501 
+L 94.693613 127.521022 
+L 99.238151 128.196191 
+L 103.782689 128.866071 
+L 108.327227 129.530724 
+L 112.871765 130.19021 
+L 117.416303 130.844589 
+L 121.96084 131.493921 
+L 126.505378 132.138264 
+L 131.049916 132.777675 
+L 135.594454 133.41221 
+L 140.138992 134.041926 
+L 144.683529 134.666876 
+L 149.228067 135.287114 
+L 153.772605 135.902694 
+L 158.317143 136.513669 
+L 162.861681 137.120088 
+L 167.406218 137.722004 
+L 171.950756 138.319466 
+L 176.495294 138.912524 
+L 181.039832 139.501225 
+L 185.58437 140.085619 
+L 190.128908 140.665751 
+L 194.673445 141.241668 
+L 199.217983 141.813417 
+L 203.762521 142.381042 
+L 208.307059 142.944587 
+L 212.851597 143.504097 
+L 217.396134 144.059615 
+L 221.940672 144.611183 
+L 226.48521 145.158843 
+L 231.029748 145.702637 
+L 235.574286 146.242605 
+L 240.118824 146.778788 
+L 244.663361 147.311225 
+L 249.207899 147.839955 
+L 253.752437 148.365018 
+L 258.296975 148.88645 
+L 262.841513 149.40429 
+L 267.38605 149.918575 
+L 271.930588 150.42934 
+L 276.475126 150.936623 
+L 281.019664 151.440458 
+L 285.564202 151.940881 
+L 290.108739 152.437926 
+L 294.653277 152.931627 
+L 299.197815 153.422017 
+L 303.742353 153.909131 
+L 308.286891 154.393001 
+L 312.831429 154.873658 
+L 317.375966 155.351136 
+L 321.920504 155.825465 
+L 326.465042 156.296676 
+L 331.00958 156.7648 
+L 335.554118 157.229868 
+L 340.098655 157.691909 
+L 344.643193 158.150952 
+L 349.187731 158.607027 
+L 353.732269 159.060163 
+L 358.276807 159.510387 
+L 362.821345 159.957727 
+L 367.365882 160.402212 
+L 371.91042 160.843869 
+L 376.454958 161.282724 
+L 380.999496 161.718804 
+L 385.544034 162.152135 
+L 390.088571 162.582743 
+L 394.633109 163.010654 
+L 399.177647 163.435893 
+L 403.722185 163.858485 
+L 408.266723 164.278455 
+L 412.811261 164.695826 
+L 417.355798 165.110624 
+L 421.900336 165.522871 
+L 426.444874 165.932591 
+L 430.989412 166.339808 
+L 435.53395 166.744544 
+L 440.078487 167.146821 
+L 444.623025 167.546663 
+L 449.167563 167.944091 
+L 453.712101 168.339127 
+L 458.256639 168.731792 
+L 462.801176 169.122108 
+L 467.345714 169.510096 
+L 471.890252 169.895777 
+L 476.43479 170.27917 
+L 480.979328 170.660297 
+L 485.523866 171.039177 
+L 490.068403 171.415831 
+L 494.612941 171.790277 
+L 499.157479 172.162536 
+L 503.702017 172.532625 
+L 508.246555 172.900565 
+L 512.791092 173.266374 
+L 517.33563 173.63007 
+L 521.880168 173.991671 
+L 526.424706 174.351196 
+L 530.969244 174.708662 
+L 535.513782 175.064088 
+L 540.058319 175.41749 
+L 544.602857 175.768886 
+L 549.147395 176.118292 
+L 553.691933 176.465726 
+L 558.236471 176.811204 
+L 562.781008 177.154743 
+L 567.325546 177.496359 
+L 571.870084 177.836068 
+L 576.414622 178.173886 
+L 580.95916 178.509829 
+L 585.503697 178.843912 
+L 590.048235 179.176151 
+L 594.592773 179.50656 
+L 599.137311 179.835156 
+L 603.681849 180.161953 
+L 608.226387 180.486965 
+L 612.770924 180.810208 
+L 617.315462 181.131695 
+L 621.86 181.451441 
+" clip-path="url(#sensitivity-pd501881072)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="sensitivity-line2d_23">
+    <path d="M 81.06 170.790543 
+L 85.604538 171.150071 
+L 90.149076 171.506748 
+L 94.693613 171.86061 
+L 99.238151 172.211688 
+L 103.782689 172.560015 
+L 108.327227 172.905625 
+L 112.871765 173.248548 
+L 117.416303 173.588816 
+L 121.96084 173.926459 
+L 126.505378 174.261508 
+L 131.049916 174.593992 
+L 135.594454 174.923941 
+L 140.138992 175.251384 
+L 144.683529 175.576349 
+L 149.228067 175.898863 
+L 153.772605 176.218956 
+L 158.317143 176.536654 
+L 162.861681 176.851983 
+L 167.406218 177.164971 
+L 171.950756 177.475642 
+L 176.495294 177.784023 
+L 181.039832 178.090139 
+L 185.58437 178.394015 
+L 190.128908 178.695676 
+L 194.673445 178.995144 
+L 199.217983 179.292445 
+L 203.762521 179.587602 
+L 208.307059 179.880637 
+L 212.851597 180.171574 
+L 217.396134 180.460435 
+L 221.940672 180.747242 
+L 226.48521 181.032018 
+L 231.029748 181.314782 
+L 235.574286 181.595558 
+L 240.118824 181.874365 
+L 244.663361 182.151225 
+L 249.207899 182.426157 
+L 253.752437 182.699181 
+L 258.296975 182.970319 
+L 262.841513 183.239588 
+L 267.38605 183.507008 
+L 271.930588 183.772599 
+L 276.475126 184.036378 
+L 281.019664 184.298365 
+L 285.564202 184.558578 
+L 290.108739 184.817034 
+L 294.653277 185.073751 
+L 299.197815 185.328747 
+L 303.742353 185.582039 
+L 308.286891 185.833644 
+L 312.831429 186.083579 
+L 317.375966 186.33186 
+L 321.920504 186.578505 
+L 326.465042 186.823528 
+L 331.00958 187.066945 
+L 335.554118 187.308774 
+L 340.098655 187.549028 
+L 344.643193 187.787724 
+L 349.187731 188.024876 
+L 353.732269 188.2605 
+L 358.276807 188.49461 
+L 362.821345 188.72722 
+L 367.365882 188.958346 
+L 371.91042 189.188001 
+L 376.454958 189.416199 
+L 380.999496 189.642954 
+L 385.544034 189.86828 
+L 390.088571 190.09219 
+L 394.633109 190.314698 
+L 399.177647 190.535816 
+L 403.722185 190.755557 
+L 408.266723 190.973935 
+L 412.811261 191.190962 
+L 417.355798 191.406651 
+L 421.900336 191.621014 
+L 426.444874 191.834062 
+L 430.989412 192.045809 
+L 435.53395 192.256265 
+L 440.078487 192.465444 
+L 444.623025 192.673356 
+L 449.167563 192.880012 
+L 453.712101 193.085425 
+L 458.256639 193.289605 
+L 462.801176 193.492564 
+L 467.345714 193.694312 
+L 471.890252 193.89486 
+L 476.43479 194.094219 
+L 480.979328 194.2924 
+L 485.523866 194.489412 
+L 490.068403 194.685266 
+L 494.612941 194.879973 
+L 499.157479 195.073542 
+L 503.702017 195.265983 
+L 508.246555 195.457306 
+L 512.791092 195.647521 
+L 517.33563 195.836638 
+L 521.880168 196.024665 
+L 526.424706 196.211613 
+L 530.969244 196.39749 
+L 535.513782 196.582306 
+L 540.058319 196.76607 
+L 544.602857 196.948791 
+L 549.147395 197.130477 
+L 553.691933 197.311138 
+L 558.236471 197.490781 
+L 562.781008 197.669416 
+L 567.325546 197.847052 
+L 571.870084 198.023695 
+L 576.414622 198.199356 
+L 580.95916 198.374041 
+L 585.503697 198.547759 
+L 590.048235 198.720519 
+L 594.592773 198.892327 
+L 599.137311 199.063192 
+L 603.681849 199.233121 
+L 608.226387 199.402123 
+L 612.770924 199.570204 
+L 617.315462 199.737373 
+L 621.86 199.903636 
+" clip-path="url(#sensitivity-pd501881072)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="sensitivity-patch_3">
+    <path d="M 54.02 208.78 
+L 54.02 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="sensitivity-patch_4">
+    <path d="M 54.02 208.78 
+L 648.9 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="sensitivity-legend_1">
+    <g id="sensitivity-line2d_24">
+     <path d="M 61.22 23.97875 
+L 69.22 23.97875 
+L 77.22 23.97875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="sensitivity-text_13">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="83.62" y="26.77875" transform="rotate(-0 83.62 26.77875)">Asset A</text>
+    </g>
+    <g id="sensitivity-line2d_25">
+     <path d="M 61.22 35.72125 
+L 69.22 35.72125 
+L 77.22 35.72125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="sensitivity-text_14">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="83.62" y="38.52125" transform="rotate(-0 83.62 38.52125)">Asset B</text>
+    </g>
+    <g id="sensitivity-line2d_26">
+     <path d="M 61.22 47.46375 
+L 69.22 47.46375 
+L 77.22 47.46375 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="sensitivity-text_15">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="83.62" y="50.26375" transform="rotate(-0 83.62 50.26375)">Asset C</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="sensitivity-pd501881072">
+   <rect x="54.02" y="13.5" width="594.88" height="195.28"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,322 @@
+<svg role="img" aria-labelledby="residuals-title residuals-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="252pt" viewBox="0 0 792 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="residuals-title">Figure 10 · Residual serial correlation</title><desc id="residuals-desc">The generating disturbance has AR coefficient 0.25 and state-dependent innovation variance. The displayed sample ACF is centered and normalized by the zero-lag sum of squares.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-05T16:04:05.706194</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="residuals-figure_1">
+  <g id="residuals-patch_1">
+   <path d="M 0 252 
+L 792 252 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="residuals-axes_1">
+   <g id="residuals-patch_2">
+    <path d="M 55.82 208.78 
+L 778.5 208.78 
+L 778.5 35.14 
+L 55.82 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="residuals-matplotlib.axis_1">
+    <g id="residuals-xtick_1">
+     <g id="residuals-line2d_1">
+      <path d="M 148.394711 208.78 
+L 148.394711 35.14 
+" clip-path="url(#residuals-p51c33f58d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="residuals-line2d_2">
+      <defs>
+       <path id="residuals-m2a1cae0fda" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#residuals-m2a1cae0fda" x="148.394711" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="residuals-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="148.394711" y="222.618594" transform="rotate(-0 148.394711 222.618594)">2</text>
+     </g>
+    </g>
+    <g id="residuals-xtick_2">
+     <g id="residuals-line2d_3">
+      <path d="M 267.84595 208.78 
+L 267.84595 35.14 
+" clip-path="url(#residuals-p51c33f58d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="residuals-line2d_4">
+      <g>
+       <use href="#residuals-m2a1cae0fda" x="267.84595" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="residuals-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="267.84595" y="222.618594" transform="rotate(-0 267.84595 222.618594)">4</text>
+     </g>
+    </g>
+    <g id="residuals-xtick_3">
+     <g id="residuals-line2d_5">
+      <path d="M 387.29719 208.78 
+L 387.29719 35.14 
+" clip-path="url(#residuals-p51c33f58d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="residuals-line2d_6">
+      <g>
+       <use href="#residuals-m2a1cae0fda" x="387.29719" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="residuals-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="387.29719" y="222.618594" transform="rotate(-0 387.29719 222.618594)">6</text>
+     </g>
+    </g>
+    <g id="residuals-xtick_4">
+     <g id="residuals-line2d_7">
+      <path d="M 506.74843 208.78 
+L 506.74843 35.14 
+" clip-path="url(#residuals-p51c33f58d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="residuals-line2d_8">
+      <g>
+       <use href="#residuals-m2a1cae0fda" x="506.74843" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="residuals-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="506.74843" y="222.618594" transform="rotate(-0 506.74843 222.618594)">8</text>
+     </g>
+    </g>
+    <g id="residuals-xtick_5">
+     <g id="residuals-line2d_9">
+      <path d="M 626.199669 208.78 
+L 626.199669 35.14 
+" clip-path="url(#residuals-p51c33f58d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="residuals-line2d_10">
+      <g>
+       <use href="#residuals-m2a1cae0fda" x="626.199669" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="residuals-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="626.199669" y="222.618594" transform="rotate(-0 626.199669 222.618594)">10</text>
+     </g>
+    </g>
+    <g id="residuals-xtick_6">
+     <g id="residuals-line2d_11">
+      <path d="M 745.650909 208.78 
+L 745.650909 35.14 
+" clip-path="url(#residuals-p51c33f58d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="residuals-line2d_12">
+      <g>
+       <use href="#residuals-m2a1cae0fda" x="745.650909" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="residuals-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="745.650909" y="222.618594" transform="rotate(-0 745.650909 222.618594)">12</text>
+     </g>
+    </g>
+    <g id="residuals-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="417.16" y="235.328906" transform="rotate(-0 417.16 235.328906)">Lag (months)</text>
+    </g>
+   </g>
+   <g id="residuals-matplotlib.axis_2">
+    <g id="residuals-ytick_1">
+     <g id="residuals-line2d_13">
+      <path d="M 55.82 205.327338 
+L 778.5 205.327338 
+" clip-path="url(#residuals-p51c33f58d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="residuals-line2d_14">
+      <defs>
+       <path id="residuals-m5ed96f1e9f" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#residuals-m5ed96f1e9f" x="55.82" y="205.327338" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="residuals-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="48.82" y="208.746635" transform="rotate(-0 48.82 208.746635)">−0.2</text>
+     </g>
+    </g>
+    <g id="residuals-ytick_2">
+     <g id="residuals-line2d_15">
+      <path d="M 55.82 169.990236 
+L 778.5 169.990236 
+" clip-path="url(#residuals-p51c33f58d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="residuals-line2d_16">
+      <g>
+       <use href="#residuals-m5ed96f1e9f" x="55.82" y="169.990236" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="residuals-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="48.82" y="173.409533" transform="rotate(-0 48.82 173.409533)">−0.1</text>
+     </g>
+    </g>
+    <g id="residuals-ytick_3">
+     <g id="residuals-line2d_17">
+      <path d="M 55.82 134.653134 
+L 778.5 134.653134 
+" clip-path="url(#residuals-p51c33f58d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="residuals-line2d_18">
+      <g>
+       <use href="#residuals-m5ed96f1e9f" x="55.82" y="134.653134" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="residuals-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="48.82" y="138.072431" transform="rotate(-0 48.82 138.072431)">0.0</text>
+     </g>
+    </g>
+    <g id="residuals-ytick_4">
+     <g id="residuals-line2d_19">
+      <path d="M 55.82 99.316032 
+L 778.5 99.316032 
+" clip-path="url(#residuals-p51c33f58d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="residuals-line2d_20">
+      <g>
+       <use href="#residuals-m5ed96f1e9f" x="55.82" y="99.316032" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="residuals-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="48.82" y="102.735329" transform="rotate(-0 48.82 102.735329)">0.1</text>
+     </g>
+    </g>
+    <g id="residuals-ytick_5">
+     <g id="residuals-line2d_21">
+      <path d="M 55.82 63.97893 
+L 778.5 63.97893 
+" clip-path="url(#residuals-p51c33f58d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="residuals-line2d_22">
+      <g>
+       <use href="#residuals-m5ed96f1e9f" x="55.82" y="63.97893" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="residuals-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="48.82" y="67.398226" transform="rotate(-0 48.82 67.398226)">0.2</text>
+     </g>
+    </g>
+    <g id="residuals-text_13">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.09375" y="121.96" transform="rotate(-90 21.09375 121.96)">Autocorrelation</text>
+    </g>
+   </g>
+   <g id="residuals-line2d_23">
+    <path d="M 88.669091 43.032727 
+L 148.394711 99.338964 
+L 208.120331 126.492132 
+L 267.84595 69.325206 
+L 327.57157 103.852423 
+L 387.29719 150.572213 
+L 447.02281 129.786361 
+L 506.74843 113.478693 
+L 566.47405 116.606586 
+L 626.199669 120.237543 
+L 685.925289 140.431852 
+L 745.650909 200.887273 
+" clip-path="url(#residuals-p51c33f58d5)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="residuals-ma855b7deb3" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#residuals-p51c33f58d5)">
+     <use href="#residuals-ma855b7deb3" x="88.669091" y="43.032727" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#residuals-ma855b7deb3" x="148.394711" y="99.338964" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#residuals-ma855b7deb3" x="208.120331" y="126.492132" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#residuals-ma855b7deb3" x="267.84595" y="69.325206" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#residuals-ma855b7deb3" x="327.57157" y="103.852423" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#residuals-ma855b7deb3" x="387.29719" y="150.572213" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#residuals-ma855b7deb3" x="447.02281" y="129.786361" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#residuals-ma855b7deb3" x="506.74843" y="113.478693" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#residuals-ma855b7deb3" x="566.47405" y="116.606586" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#residuals-ma855b7deb3" x="626.199669" y="120.237543" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#residuals-ma855b7deb3" x="685.925289" y="140.431852" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#residuals-ma855b7deb3" x="745.650909" y="200.887273" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="residuals-line2d_24">
+    <path d="M 88.669091 46.310378 
+L 148.394711 112.567445 
+L 208.120331 129.131712 
+L 267.84595 133.272778 
+L 327.57157 134.308045 
+L 387.29719 134.566862 
+L 447.02281 134.631566 
+L 506.74843 134.647742 
+L 566.47405 134.651786 
+L 626.199669 134.652797 
+L 685.925289 134.65305 
+L 745.650909 134.653113 
+" clip-path="url(#residuals-p51c33f58d5)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="residuals-patch_3">
+    <path d="M 55.82 208.78 
+L 55.82 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="residuals-patch_4">
+    <path d="M 55.82 208.78 
+L 778.5 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="residuals-text_14">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="55.82" y="22.14" transform="rotate(-0 55.82 22.14)">Serial dependence survives factor attribution</text>
+   </g>
+   <g id="residuals-legend_1">
+    <g id="residuals-line2d_25">
+     <path d="M 618.88 45.61875 
+L 626.88 45.61875 
+L 634.88 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#residuals-ma855b7deb3" x="626.88" y="45.61875" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="residuals-text_15">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="641.28" y="48.41875" transform="rotate(-0 641.28 48.41875)">Fitted residual ACF</text>
+    </g>
+    <g id="residuals-line2d_26">
+     <path d="M 618.88 57.36125 
+L 626.88 57.36125 
+L 634.88 57.36125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="residuals-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="641.28" y="60.16125" transform="rotate(-0 641.28 60.16125)">Generating AR coefficient power</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="residuals-p51c33f58d5">
+   <rect x="55.82" y="35.14" width="722.68" height="173.64"/>
+  </clipPath>
+ </defs>
+</svg>

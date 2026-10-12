@@ -1,0 +1,651 @@
+<svg role="img" aria-labelledby="validation-title validation-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="259.2pt" viewBox="0 0 792 259.2" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="validation-title">Figure 14 · Chronological validation</title><desc id="validation-desc">Each coefficient vector is fitted using only the stated prefix. The following 30 months form its evaluation block. This diagnostic display is not used to choose a winning training window.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-05T16:04:06.003687</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="validation-figure_1">
+  <g id="validation-patch_1">
+   <path d="M 0 259.2 
+L 792 259.2 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="validation-axes_1">
+   <g id="validation-patch_2">
+    <path d="M 59.78 215.98 
+L 387.81 215.98 
+L 387.81 35.14 
+L 59.78 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="validation-matplotlib.axis_1">
+    <g id="validation-xtick_1">
+     <g id="validation-line2d_1">
+      <path d="M 74.690455 215.98 
+L 74.690455 35.14 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_2">
+      <defs>
+       <path id="validation-m0c8e3c98e5" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#validation-m0c8e3c98e5" x="74.690455" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="74.690455" y="229.818594" transform="rotate(-0 74.690455 229.818594)">60</text>
+     </g>
+    </g>
+    <g id="validation-xtick_2">
+     <g id="validation-line2d_3">
+      <path d="M 114.451667 215.98 
+L 114.451667 35.14 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_4">
+      <g>
+       <use href="#validation-m0c8e3c98e5" x="114.451667" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="114.451667" y="229.818594" transform="rotate(-0 114.451667 229.818594)">80</text>
+     </g>
+    </g>
+    <g id="validation-xtick_3">
+     <g id="validation-line2d_5">
+      <path d="M 154.212879 215.98 
+L 154.212879 35.14 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_6">
+      <g>
+       <use href="#validation-m0c8e3c98e5" x="154.212879" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="154.212879" y="229.818594" transform="rotate(-0 154.212879 229.818594)">100</text>
+     </g>
+    </g>
+    <g id="validation-xtick_4">
+     <g id="validation-line2d_7">
+      <path d="M 193.974091 215.98 
+L 193.974091 35.14 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_8">
+      <g>
+       <use href="#validation-m0c8e3c98e5" x="193.974091" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="193.974091" y="229.818594" transform="rotate(-0 193.974091 229.818594)">120</text>
+     </g>
+    </g>
+    <g id="validation-xtick_5">
+     <g id="validation-line2d_9">
+      <path d="M 233.735303 215.98 
+L 233.735303 35.14 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_10">
+      <g>
+       <use href="#validation-m0c8e3c98e5" x="233.735303" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="233.735303" y="229.818594" transform="rotate(-0 233.735303 229.818594)">140</text>
+     </g>
+    </g>
+    <g id="validation-xtick_6">
+     <g id="validation-line2d_11">
+      <path d="M 273.496515 215.98 
+L 273.496515 35.14 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_12">
+      <g>
+       <use href="#validation-m0c8e3c98e5" x="273.496515" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="273.496515" y="229.818594" transform="rotate(-0 273.496515 229.818594)">160</text>
+     </g>
+    </g>
+    <g id="validation-xtick_7">
+     <g id="validation-line2d_13">
+      <path d="M 313.257727 215.98 
+L 313.257727 35.14 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_14">
+      <g>
+       <use href="#validation-m0c8e3c98e5" x="313.257727" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="313.257727" y="229.818594" transform="rotate(-0 313.257727 229.818594)">180</text>
+     </g>
+    </g>
+    <g id="validation-xtick_8">
+     <g id="validation-line2d_15">
+      <path d="M 353.018939 215.98 
+L 353.018939 35.14 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_16">
+      <g>
+       <use href="#validation-m0c8e3c98e5" x="353.018939" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="353.018939" y="229.818594" transform="rotate(-0 353.018939 229.818594)">200</text>
+     </g>
+    </g>
+    <g id="validation-text_9">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="223.795" y="242.528906" transform="rotate(-0 223.795 242.528906)">Training months</text>
+    </g>
+   </g>
+   <g id="validation-matplotlib.axis_2">
+    <g id="validation-ytick_1">
+     <g id="validation-line2d_17">
+      <path d="M 59.78 211.558862 
+L 387.81 211.558862 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_18">
+      <defs>
+       <path id="validation-m94578979a0" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#validation-m94578979a0" x="59.78" y="211.558862" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="214.978159" transform="rotate(-0 52.78 214.978159)">0.750</text>
+     </g>
+    </g>
+    <g id="validation-ytick_2">
+     <g id="validation-line2d_19">
+      <path d="M 59.78 187.743984 
+L 387.81 187.743984 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_20">
+      <g>
+       <use href="#validation-m94578979a0" x="59.78" y="187.743984" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="191.163281" transform="rotate(-0 52.78 191.163281)">0.755</text>
+     </g>
+    </g>
+    <g id="validation-ytick_3">
+     <g id="validation-line2d_21">
+      <path d="M 59.78 163.929107 
+L 387.81 163.929107 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_22">
+      <g>
+       <use href="#validation-m94578979a0" x="59.78" y="163.929107" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="167.348404" transform="rotate(-0 52.78 167.348404)">0.760</text>
+     </g>
+    </g>
+    <g id="validation-ytick_4">
+     <g id="validation-line2d_23">
+      <path d="M 59.78 140.114229 
+L 387.81 140.114229 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_24">
+      <g>
+       <use href="#validation-m94578979a0" x="59.78" y="140.114229" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="143.533526" transform="rotate(-0 52.78 143.533526)">0.765</text>
+     </g>
+    </g>
+    <g id="validation-ytick_5">
+     <g id="validation-line2d_25">
+      <path d="M 59.78 116.299352 
+L 387.81 116.299352 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_26">
+      <g>
+       <use href="#validation-m94578979a0" x="59.78" y="116.299352" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="119.718649" transform="rotate(-0 52.78 119.718649)">0.770</text>
+     </g>
+    </g>
+    <g id="validation-ytick_6">
+     <g id="validation-line2d_27">
+      <path d="M 59.78 92.484474 
+L 387.81 92.484474 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_28">
+      <g>
+       <use href="#validation-m94578979a0" x="59.78" y="92.484474" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="95.903771" transform="rotate(-0 52.78 95.903771)">0.775</text>
+     </g>
+    </g>
+    <g id="validation-ytick_7">
+     <g id="validation-line2d_29">
+      <path d="M 59.78 68.669597 
+L 387.81 68.669597 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_30">
+      <g>
+       <use href="#validation-m94578979a0" x="59.78" y="68.669597" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="72.088894" transform="rotate(-0 52.78 72.088894)">0.780</text>
+     </g>
+    </g>
+    <g id="validation-ytick_8">
+     <g id="validation-line2d_31">
+      <path d="M 59.78 44.854719 
+L 387.81 44.854719 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_32">
+      <g>
+       <use href="#validation-m94578979a0" x="59.78" y="44.854719" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="48.274016" transform="rotate(-0 52.78 48.274016)">0.785</text>
+     </g>
+    </g>
+    <g id="validation-text_18">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.142969" y="125.56" transform="rotate(-90 21.142969 125.56)">R²</text>
+    </g>
+   </g>
+   <g id="validation-line2d_33">
+    <path d="M 74.690455 207.76 
+L 134.332273 43.36 
+L 193.974091 80.184166 
+L 253.615909 72.331146 
+L 313.257727 135.464981 
+L 372.899545 135.296041 
+" clip-path="url(#validation-pb0371d759d)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="validation-m624479ded4" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#validation-pb0371d759d)">
+     <use href="#validation-m624479ded4" x="74.690455" y="207.76" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#validation-m624479ded4" x="134.332273" y="43.36" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#validation-m624479ded4" x="193.974091" y="80.184166" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#validation-m624479ded4" x="253.615909" y="72.331146" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#validation-m624479ded4" x="313.257727" y="135.464981" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#validation-m624479ded4" x="372.899545" y="135.296041" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="validation-patch_3">
+    <path d="M 59.78 215.98 
+L 59.78 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="validation-patch_4">
+    <path d="M 59.78 215.98 
+L 387.81 215.98 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="validation-text_19">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="59.78" y="22.14" transform="rotate(-0 59.78 22.14)">Expanding estimation windows</text>
+   </g>
+   <g id="validation-legend_1">
+    <g id="validation-line2d_34">
+     <path d="M 315.34 45.61875 
+L 323.34 45.61875 
+L 331.34 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#validation-m624479ded4" x="323.34" y="45.61875" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="validation-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="337.74" y="48.41875" transform="rotate(-0 337.74 48.41875)">Training R²</text>
+    </g>
+   </g>
+  </g>
+  <g id="validation-axes_2">
+   <g id="validation-patch_5">
+    <path d="M 450.47 215.98 
+L 778.5 215.98 
+L 778.5 35.14 
+L 450.47 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="validation-matplotlib.axis_3">
+    <g id="validation-xtick_9">
+     <g id="validation-line2d_35">
+      <path d="M 465.380455 215.98 
+L 465.380455 35.14 
+" clip-path="url(#validation-p43a5045f27)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_36">
+      <g>
+       <use href="#validation-m0c8e3c98e5" x="465.380455" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="465.380455" y="229.818594" transform="rotate(-0 465.380455 229.818594)">60</text>
+     </g>
+    </g>
+    <g id="validation-xtick_10">
+     <g id="validation-line2d_37">
+      <path d="M 505.141667 215.98 
+L 505.141667 35.14 
+" clip-path="url(#validation-p43a5045f27)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_38">
+      <g>
+       <use href="#validation-m0c8e3c98e5" x="505.141667" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="505.141667" y="229.818594" transform="rotate(-0 505.141667 229.818594)">80</text>
+     </g>
+    </g>
+    <g id="validation-xtick_11">
+     <g id="validation-line2d_39">
+      <path d="M 544.902879 215.98 
+L 544.902879 35.14 
+" clip-path="url(#validation-p43a5045f27)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_40">
+      <g>
+       <use href="#validation-m0c8e3c98e5" x="544.902879" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="544.902879" y="229.818594" transform="rotate(-0 544.902879 229.818594)">100</text>
+     </g>
+    </g>
+    <g id="validation-xtick_12">
+     <g id="validation-line2d_41">
+      <path d="M 584.664091 215.98 
+L 584.664091 35.14 
+" clip-path="url(#validation-p43a5045f27)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_42">
+      <g>
+       <use href="#validation-m0c8e3c98e5" x="584.664091" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="584.664091" y="229.818594" transform="rotate(-0 584.664091 229.818594)">120</text>
+     </g>
+    </g>
+    <g id="validation-xtick_13">
+     <g id="validation-line2d_43">
+      <path d="M 624.425303 215.98 
+L 624.425303 35.14 
+" clip-path="url(#validation-p43a5045f27)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_44">
+      <g>
+       <use href="#validation-m0c8e3c98e5" x="624.425303" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="624.425303" y="229.818594" transform="rotate(-0 624.425303 229.818594)">140</text>
+     </g>
+    </g>
+    <g id="validation-xtick_14">
+     <g id="validation-line2d_45">
+      <path d="M 664.186515 215.98 
+L 664.186515 35.14 
+" clip-path="url(#validation-p43a5045f27)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_46">
+      <g>
+       <use href="#validation-m0c8e3c98e5" x="664.186515" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="664.186515" y="229.818594" transform="rotate(-0 664.186515 229.818594)">160</text>
+     </g>
+    </g>
+    <g id="validation-xtick_15">
+     <g id="validation-line2d_47">
+      <path d="M 703.947727 215.98 
+L 703.947727 35.14 
+" clip-path="url(#validation-p43a5045f27)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_48">
+      <g>
+       <use href="#validation-m0c8e3c98e5" x="703.947727" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="703.947727" y="229.818594" transform="rotate(-0 703.947727 229.818594)">180</text>
+     </g>
+    </g>
+    <g id="validation-xtick_16">
+     <g id="validation-line2d_49">
+      <path d="M 743.708939 215.98 
+L 743.708939 35.14 
+" clip-path="url(#validation-p43a5045f27)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_50">
+      <g>
+       <use href="#validation-m0c8e3c98e5" x="743.708939" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="743.708939" y="229.818594" transform="rotate(-0 743.708939 229.818594)">200</text>
+     </g>
+    </g>
+    <g id="validation-text_29">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="614.485" y="242.528906" transform="rotate(-0 614.485 242.528906)">Training months</text>
+    </g>
+   </g>
+   <g id="validation-matplotlib.axis_4">
+    <g id="validation-ytick_9">
+     <g id="validation-line2d_51">
+      <path d="M 450.47 188.219615 
+L 778.5 188.219615 
+" clip-path="url(#validation-p43a5045f27)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_52">
+      <g>
+       <use href="#validation-m94578979a0" x="450.47" y="188.219615" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="443.47" y="191.638912" transform="rotate(-0 443.47 191.638912)">2.40%</text>
+     </g>
+    </g>
+    <g id="validation-ytick_10">
+     <g id="validation-line2d_53">
+      <path d="M 450.47 157.887647 
+L 778.5 157.887647 
+" clip-path="url(#validation-p43a5045f27)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_54">
+      <g>
+       <use href="#validation-m94578979a0" x="450.47" y="157.887647" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="443.47" y="161.306944" transform="rotate(-0 443.47 161.306944)">2.60%</text>
+     </g>
+    </g>
+    <g id="validation-ytick_11">
+     <g id="validation-line2d_55">
+      <path d="M 450.47 127.55568 
+L 778.5 127.55568 
+" clip-path="url(#validation-p43a5045f27)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_56">
+      <g>
+       <use href="#validation-m94578979a0" x="450.47" y="127.55568" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="443.47" y="130.974977" transform="rotate(-0 443.47 130.974977)">2.80%</text>
+     </g>
+    </g>
+    <g id="validation-ytick_12">
+     <g id="validation-line2d_57">
+      <path d="M 450.47 97.223713 
+L 778.5 97.223713 
+" clip-path="url(#validation-p43a5045f27)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_58">
+      <g>
+       <use href="#validation-m94578979a0" x="450.47" y="97.223713" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="443.47" y="100.643009" transform="rotate(-0 443.47 100.643009)">3.00%</text>
+     </g>
+    </g>
+    <g id="validation-ytick_13">
+     <g id="validation-line2d_59">
+      <path d="M 450.47 66.891745 
+L 778.5 66.891745 
+" clip-path="url(#validation-p43a5045f27)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_60">
+      <g>
+       <use href="#validation-m94578979a0" x="450.47" y="66.891745" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="443.47" y="70.311042" transform="rotate(-0 443.47 70.311042)">3.20%</text>
+     </g>
+    </g>
+    <g id="validation-ytick_14">
+     <g id="validation-line2d_61">
+      <path d="M 450.47 36.559778 
+L 778.5 36.559778 
+" clip-path="url(#validation-p43a5045f27)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="validation-line2d_62">
+      <g>
+       <use href="#validation-m94578979a0" x="450.47" y="36.559778" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="validation-text_35">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="443.47" y="39.979074" transform="rotate(-0 443.47 39.979074)">3.40%</text>
+     </g>
+    </g>
+    <g id="validation-text_36">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="409.007812" y="125.56" transform="rotate(-90 409.007812 125.56)">Monthly forecast error</text>
+    </g>
+   </g>
+   <g id="validation-line2d_63">
+    <path d="M 465.380455 123.023457 
+L 525.022273 43.36 
+L 584.664091 48.033327 
+L 644.305909 129.044854 
+L 703.947727 190.26493 
+L 763.589545 207.76 
+" clip-path="url(#validation-p43a5045f27)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="validation-m3188f53743" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #d3ad84"/>
+    </defs>
+    <g clip-path="url(#validation-p43a5045f27)">
+     <use href="#validation-m3188f53743" x="465.380455" y="123.023457" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#validation-m3188f53743" x="525.022273" y="43.36" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#validation-m3188f53743" x="584.664091" y="48.033327" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#validation-m3188f53743" x="644.305909" y="129.044854" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#validation-m3188f53743" x="703.947727" y="190.26493" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#validation-m3188f53743" x="763.589545" y="207.76" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="validation-patch_6">
+    <path d="M 450.47 215.98 
+L 450.47 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="validation-patch_7">
+    <path d="M 450.47 215.98 
+L 778.5 215.98 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="validation-text_37">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="450.47" y="22.14" transform="rotate(-0 450.47 22.14)">Held-out blocks</text>
+   </g>
+   <g id="validation-legend_2">
+    <g id="validation-line2d_64">
+     <path d="M 663.55125 45.61875 
+L 671.55125 45.61875 
+L 679.55125 45.61875 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#validation-m3188f53743" x="671.55125" y="45.61875" style="fill: #d3ad84; stroke: #d3ad84"/>
+     </g>
+    </g>
+    <g id="validation-text_38">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="685.95125" y="48.41875" transform="rotate(-0 685.95125 48.41875)">Next 30-month RMSE</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="validation-pb0371d759d">
+   <rect x="59.78" y="35.14" width="328.03" height="180.84"/>
+  </clipPath>
+  <clipPath id="validation-p43a5045f27">
+   <rect x="450.47" y="35.14" width="328.03" height="180.84"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,89 @@
+<section id="introduction" data-title="Introduction and research scope">
+<div class="section-kicker">01 / Introduction</div><h2>Introduction and research scope</h2>
+<p class="section-lede">A systematic strategy is a specified decision process: what information it observes, how it forms positions, how those positions are traded and how their economic results are measured.</p>
+<p>The previous Quant Basics projects explained <a href="black-scholes-basics.html">instrument valuation</a>, <a href="monte-carlo-option-pricing.html">simulation</a>, <a href="markowitz-portfolio-theory.html">portfolio construction</a> and <a href="var-expected-shortfall.html">tail risk</a>. This project connects those tools to a trading process that evolves over time. Its central object is a reproducible strategy specification, rather than a fitted curve that happens to rise in a historical chart.</p>
+<p>A strategy combines a hypothesis about returns with a rule for acting on that hypothesis. A signal alone is incomplete: execution delay, exposure, cash returns, costs, financing, risk limits and evaluation design can materially change the result. A seemingly minor time-indexing error can give a strategy information that was unavailable when its trade would have occurred.</p>
+<div class="callout"><strong>An analogy: an experiment and its laboratory notebook</strong><p>A trading idea resembles an experimental hypothesis. The strategy specification is the protocol, the backtest is an experiment under recorded assumptions, and the research log records every alteration. Rewriting the protocol after seeing the outcomes changes what the experiment can establish. A reproducible notebook makes that distinction visible.</p></div>
+<h3>What this guide develops</h3>
+<p>Part I establishes economic hypotheses, information timing, data, signals and sizing. Part II develops portfolio mechanics, trading costs, execution, account reconciliation and evaluation. Part III covers performance, statistical uncertainty, robustness, capacity and an interactive laboratory. Mathematical notation accompanies each layer, and worked examples connect the formulas to actual account movements.</p>
+<p>The main teaching strategy is a single-asset long/cash rule. It chooses a risky exposure from trailing price information, optionally scales that exposure by estimated volatility and executes after an explicit delay. A contrarian rule provides a comparison. These simple examples keep accounting transparent; the same research principles extend to multiple assets, long/short portfolios and more complex forecasting models.</p>
+<p>All price paths, numerical strategy outcomes and selection experiments on this page are synthetic. Their generating assumptions are stated. Synthetic data allow the mechanics to be inspected and independently tested; they do not establish that a trading rule has an exploitable edge in a real market. The offline laboratory lets you change a rule and immediately observe its mechanical consequences.</p>
+<h3>Prerequisites</h3>
+<p>Simple and log returns, expectations, variance and elementary statistics are sufficient for most chapters. Portfolio notation uses vectors. Statistical inference introduces serial dependence and multiple testing. Knowledge of a programming language helps with the appendix, but the account examples can be followed with a calculator.</p>
+<p>The aim is to learn how to formulate and evaluate a strategy honestly. A clear null hypothesis, explicit benchmark and complete cash ledger are as important as an elaborate signal. More sophisticated modeling can refine the process after those foundations are correct.</p>
+</section>
+
+<section id="hypothesis" data-title="Economic hypotheses and strategy specifications">
+<div class="section-kicker">02 / Research design</div><h2>Economic hypotheses and strategy specifications</h2>
+<p>Begin by stating why a signal might predict a return or compensate an investor for taking a risk. Candidate mechanisms include delayed information response, risk premia, institutional constraints, liquidity provision or temporary order-flow pressure. A rule found by searching many transformations without a hypothesis may still be interesting, but its statistical evidence must account for that search.</p>
+<p>A strategy specification should state its universe, data timestamps, feature definition, forecast horizon, position map, rebalance schedule, execution convention, cost model and benchmark. Write it in a form that two independent implementations can reproduce. “Buy when momentum is strong” is ambiguous; “after close \(t\), form a target using the sign of the last 63-session return, submit it for close \(t+1\), and hold the filled exposure over the next interval” is testable.</p>
+\[ \mathcal S=(\mathcal U,\mathcal I,g,h,\mathcal E,\mathcal C,\mathcal R),\qquad
+s_t=g(\mathcal I_t),\quad w_t^{\mathrm{target}}=h(s_t,\mathcal I_t). \]
+<p>Here \(\mathcal U\) is the universe, \(\mathcal I_t\) the available information, \(g\) the signal function, \(h\) the exposure map, \(\mathcal E\) execution, \(\mathcal C\) costs and \(\mathcal R\) risk controls. The notation emphasizes that the signal is only one part of the system.</p>
+<h3>Predictability, compensation and implementation</h3>
+<p>A positive average return can come from ordinary market exposure rather than forecasting skill. A strategy that stays long most of the time may earn an equity premium even if its timing adds no value. Compare it with relevant exposure and cash benchmarks. A long/short relative-value strategy needs a different benchmark from a long/cash allocation rule.</p>
+<p>A statistically detectable effect may be too small to trade after costs. Conversely, an economic exposure may be useful in a portfolio even if its standalone Sharpe ratio is modest. State the intended role: return generation, diversification, hedging, liquidity provision or dynamic allocation. Success criteria should reflect that role.</p>
+<h3>Precommitment and an experiment log</h3>
+<p>Before evaluating a candidate, define the sample split, primary metric, cost assumptions and rejection conditions. Record variants, failed ideas and revisions. A researcher who examines 100 strategies and reports only the best has conducted a different experiment from someone who tested one pre-specified rule.</p>
+<p>Separate a discovery stage from confirmatory evaluation. Exploratory plots help identify mechanisms and coding mistakes, but should not be relabeled as untouched evidence. A final evaluation period becomes development data once its results influence the model. Paper trading supplies additional forward observations while testing operational assumptions.</p>
+<p>Define a falsifiable implication. A mean-reversion idea should specify when, how quickly and under which market conditions deviations are expected to reverse. A vague story that explains every possible result cannot distinguish a working model from a narrative attached after the fact.</p>
+</section>
+
+<section id="information-timing" data-title="Information sets and execution timing">
+<div class="section-kicker">03 / Causality</div><h2>Information sets and execution timing</h2>
+<p>Let \(\mathcal F_t\) represent information available after time \(t\). A valid forecast or formation signal is measurable with respect to that information. It cannot depend on a price, a revised economic release or an instrument membership decision that becomes known later.</p>
+\[ s_t=g(\mathcal F_t),\qquad
+R_{t+1}=\frac{P_{t+1}}{P_t}-1. \]
+<p>A simple pedagogical return equation uses a position known at the interval's start: \(R_{p,t+1}=w_tR_{t+1}\). But if \(w_t\) depends on the finalized close \(P_t\), executing exactly at that same close requires a realistic closing-auction information and order-submission model. Merely shifting a return series by one row does not settle this operational question.</p>
+<h3>The convention used on this page</h3>
+<p>The laboratory uses a full-session execution delay by default. A target formed after close \(k\) is executed at close \(k+1\). It first earns the close-to-close return ending on day \(k+2\). For a general delay \(d\ge1\), the target used for return period \(j\) comes from formation close:</p>
+\[ k=j-1-d,\qquad
+w_j=w_k^{\mathrm{target}}. \]
+<p>The account is rebalanced at price \(P_{j-1}\), after the target has been known for \(d\) sessions, then held to \(P_j\). Costs are deducted at the rebalance. The prices are synthetic closing observations with assumed guaranteed fills; real auction execution needs additional modeling. This convention is intentionally explicit so that every ledger row can be traced to its information date.</p>
+{{figure:timing}}
+<h3>Common timing errors</h3>
+<p>Selecting today's position with today's realized return creates a profitable-looking selector that could only be known after the trade. Centered moving averages include future observations. A volatility estimate calculated over the full sample uses future scale information. Choosing a parameter on an evaluation block and then applying it to the start of that same block leaks the block's outcomes.</p>
+<p>Economic releases have publication and revision timestamps in addition to reference periods. A month-end value published weeks later was not available at month end. Use point-in-time versions when the strategy depends on real-time fundamentals. For machine learning, a label may extend into the future even when its feature row has an earlier timestamp.</p>
+<h3>A causality test</h3>
+<p>Compute all features and executed positions up to date \(t\). Replace every observation after \(t\) with a different future path. The earlier features and decisions should remain unchanged. This suffix-perturbation test catches many accidental future dependencies. It does not by itself verify data vintages or fill realism, which require their own checks.</p>
+<p>The right timing is a property of the entire pipeline. Formation, order release, execution, financing and attribution each have timestamps. Saving these in an event ledger turns a vague assurance of “no look-ahead” into something that can be inspected.</p>
+</section>
+
+<section id="market-data" data-title="Market data and point-in-time universes">
+<div class="section-kicker">04 / Data</div><h2>Market data and point-in-time universes</h2>
+<p>Data define the experiment's observable market. Identify price type, currency, timestamp, calendar, instrument identifier and adjustment policy. A closing trade, midpoint, settlement price and indicative quote are different observations. Their suitability depends on the proposed execution and valuation conventions.</p>
+<h3>Corporate actions and investable prices</h3>
+<p>Splits change share counts and nominal prices; dividends transfer value from the company to the cash account. A total-return series can model reinvested wealth, while a raw price series plus explicit corporate-action cash flows can support a detailed holdings ledger. Mixing adjusted prices with separate dividend credits double counts the distribution.</p>
+<p>A historical adjustment may use information learned later. That does not automatically invalidate a return series for every purpose, but feature interpretation matters. A split-adjusted price threshold designed to mimic an absolute market price can change retrospectively. Store raw data, adjustment factors and the intended feature convention.</p>
+<h3>Universe membership and missing observations</h3>
+<p>A present-day list of surviving equities excludes companies that disappeared. Testing past dates only on that list introduces survivorship bias. A historical universe should use membership and tradability known at each date, including delistings and their economic outcomes. Removing an instrument because its later history looks problematic conditions the past selection on future information.</p>
+<p>Missing data are not always random. A suspension, stale quote or market closure can carry economic information. Forward-filling a price may be appropriate for a valuation mark but does not imply that a trade could have filled there. Align markets carefully: different closing times can create spurious relationships when returns are treated as simultaneous.</p>
+{{figure:market}}
+<h3>The synthetic dataset</h3>
+<p>This guide uses 1,512 synthetic sessions with initial price 100 and five artificial regimes. Each log return has a regime-specific drift, an AR(1) term and normal innovation. The regimes divide the sample into five equal-length blocks; they are part of the data generator, not signals revealed to the strategy.</p>
+\[ g_j=m_{a(j)}+\phi_{a(j)}g_{j-1}+\sigma_{a(j)}Z_j,\qquad
+P_j=P_{j-1}e^{g_j},\quad Z_j\sim N(0,1). \]
+<p>The generator is reproducible from its seed and uses no external market data. Prices remain positive. Changing the seed changes the observations while retaining the chosen data-generating model. A simulated trend regime can make a trend rule look effective by construction; the experiment demonstrates conditional mechanics, not a universal trading result.</p>
+<p>For real research, keep a data manifest with source, download time, revision policy and transformation steps. Reproducibility requires the exact input dataset, not merely the name of a vendor whose history may later be corrected.</p>
+</section>
+
+<section id="returns" data-title="Returns, compounding and benchmarks">
+<div class="section-kicker">05 / Return measurement</div><h2>Returns, compounding and benchmarks</h2>
+<p>Simple returns measure proportional changes in wealth or price. Log returns provide additive time aggregation when prices are positive:</p>
+\[ R_t=\frac{P_t}{P_{t-1}}-1,\qquad
+g_t=\ln(1+R_t),\qquad
+\frac{P_T}{P_0}=\prod_{t=1}^{T}(1+R_t)=e^{\sum_tg_t}. \]
+<p>A portfolio of initial capital weights combines simple asset returns linearly over one period when the holdings and cash flows match that model. Log returns generally do not aggregate linearly across assets. They are useful for time-series modeling but should be converted back to prices or simple returns for an exact cash account.</p>
+{{figure:compounding}}
+<p>A +10% return followed by a −10% return multiplies wealth by 0.99, giving a 1% loss. Summing the simple returns produces zero and misses compounding. This also explains why an arithmetic average return and a compound growth rate answer different questions.</p>
+<h3>Cash and excess returns</h3>
+<p>For an effective annual cash return \(r_f^{\mathrm{ann}}\) and \(A=252\) assumed sessions per year, the laboratory's constant session cash return is:</p>
+\[ r_f=(1+r_f^{\mathrm{ann}})^{1/A}-1,\qquad
+x_t=R_{p,t}-r_f. \]
+<p>The conversion preserves compound annual cash growth. Dividing the annual percentage by 252 is an approximation and uses a different convention. For real markets, cash accrual follows actual dates, day-count rules and the appropriate funding instrument. Trading-day annualization is a teaching simplification.</p>
+<p>Uninvested capital is not automatically idle with zero return. A long/cash strategy should specify what the cash earns. A leveraged or short portfolio also needs borrowing and collateral assumptions, which can differ from the deposit rate. The main laboratory caps risky exposure at 100% and excludes borrowing and shorts to keep this distinction transparent.</p>
+<h3>Comparable benchmarks</h3>
+<p>Compare strategy and benchmark over the same eligible interval, from the same starting wealth and with stated costs. Buy-and-hold must pay its entry cost if the strategy pays entry costs. A benchmark with a longer sample includes different market episodes and cannot be directly compared by final wealth alone.</p>
+<p>Use cash, passive market exposure and a suitably risk-matched alternative when they answer relevant questions. A lower-risk strategy can have a smaller drawdown simply because it holds less stock. Comparing it with a proportionally scaled passive allocation can help distinguish exposure reduction from timing value, while the scaling itself should be determined without evaluation-sample hindsight.</p>
+<p>Save both return series and wealth curves. Returns support period-by-period attribution and statistics; wealth reveals compounding and path losses. Reconstructing wealth from the saved net returns is an important reconciliation check.</p>
+</section>

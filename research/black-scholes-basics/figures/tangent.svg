@@ -1,0 +1,393 @@
+<svg role="img" aria-labelledby="tangent-title tangent-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="259.2pt" viewBox="0 0 662.4 259.2" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="tangent-title">Figure 06 · First- and second-order spot sensitivity approximations</title><desc id="tangent-desc">Expansion about S = 100 for the one-year benchmark. The quadratic approximation improves nearby moves, but it is still a local approximation and does not account for time or volatility changes.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T17:24:09.675908</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="tangent-figure_1">
+  <g id="tangent-patch_1">
+   <path d="M 0 259.2 
+L 662.4 259.2 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="tangent-axes_1">
+   <g id="tangent-patch_2">
+    <path d="M 47.18 215.98 
+L 648.9 215.98 
+L 648.9 13.5 
+L 47.18 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="tangent-matplotlib.axis_1">
+    <g id="tangent-xtick_1">
+     <g id="tangent-line2d_1">
+      <path d="M 129.232727 215.98 
+L 129.232727 13.5 
+" clip-path="url(#tangent-pdec2a29397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangent-line2d_2">
+      <defs>
+       <path id="tangent-m4e5568d3bc" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#tangent-m4e5568d3bc" x="129.232727" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangent-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="129.232727" y="229.818594" transform="rotate(-0 129.232727 229.818594)">80</text>
+     </g>
+    </g>
+    <g id="tangent-xtick_2">
+     <g id="tangent-line2d_3">
+      <path d="M 238.636364 215.98 
+L 238.636364 13.5 
+" clip-path="url(#tangent-pdec2a29397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangent-line2d_4">
+      <g>
+       <use href="#tangent-m4e5568d3bc" x="238.636364" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangent-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="238.636364" y="229.818594" transform="rotate(-0 238.636364 229.818594)">90</text>
+     </g>
+    </g>
+    <g id="tangent-xtick_3">
+     <g id="tangent-line2d_5">
+      <path d="M 348.04 215.98 
+L 348.04 13.5 
+" clip-path="url(#tangent-pdec2a29397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangent-line2d_6">
+      <g>
+       <use href="#tangent-m4e5568d3bc" x="348.04" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangent-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="348.04" y="229.818594" transform="rotate(-0 348.04 229.818594)">100</text>
+     </g>
+    </g>
+    <g id="tangent-xtick_4">
+     <g id="tangent-line2d_7">
+      <path d="M 457.443636 215.98 
+L 457.443636 13.5 
+" clip-path="url(#tangent-pdec2a29397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangent-line2d_8">
+      <g>
+       <use href="#tangent-m4e5568d3bc" x="457.443636" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangent-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="457.443636" y="229.818594" transform="rotate(-0 457.443636 229.818594)">110</text>
+     </g>
+    </g>
+    <g id="tangent-xtick_5">
+     <g id="tangent-line2d_9">
+      <path d="M 566.847273 215.98 
+L 566.847273 13.5 
+" clip-path="url(#tangent-pdec2a29397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangent-line2d_10">
+      <g>
+       <use href="#tangent-m4e5568d3bc" x="566.847273" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangent-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="566.847273" y="229.818594" transform="rotate(-0 566.847273 229.818594)">120</text>
+     </g>
+    </g>
+    <g id="tangent-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="348.04" y="242.528906" transform="rotate(-0 348.04 242.528906)">Spot S (other inputs fixed)</text>
+    </g>
+   </g>
+   <g id="tangent-matplotlib.axis_2">
+    <g id="tangent-ytick_1">
+     <g id="tangent-line2d_11">
+      <path d="M 47.18 204.48095 
+L 648.9 204.48095 
+" clip-path="url(#tangent-pdec2a29397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangent-line2d_12">
+      <defs>
+       <path id="tangent-m109e5be9a0" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#tangent-m109e5be9a0" x="47.18" y="204.48095" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangent-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="40.18" y="207.900246" transform="rotate(-0 40.18 207.900246)">−5</text>
+     </g>
+    </g>
+    <g id="tangent-ytick_2">
+     <g id="tangent-line2d_13">
+      <path d="M 47.18 180.07114 
+L 648.9 180.07114 
+" clip-path="url(#tangent-pdec2a29397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangent-line2d_14">
+      <g>
+       <use href="#tangent-m109e5be9a0" x="47.18" y="180.07114" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangent-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="40.18" y="183.490437" transform="rotate(-0 40.18 183.490437)">0</text>
+     </g>
+    </g>
+    <g id="tangent-ytick_3">
+     <g id="tangent-line2d_15">
+      <path d="M 47.18 155.661331 
+L 648.9 155.661331 
+" clip-path="url(#tangent-pdec2a29397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangent-line2d_16">
+      <g>
+       <use href="#tangent-m109e5be9a0" x="47.18" y="155.661331" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangent-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="40.18" y="159.080628" transform="rotate(-0 40.18 159.080628)">5</text>
+     </g>
+    </g>
+    <g id="tangent-ytick_4">
+     <g id="tangent-line2d_17">
+      <path d="M 47.18 131.251521 
+L 648.9 131.251521 
+" clip-path="url(#tangent-pdec2a29397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangent-line2d_18">
+      <g>
+       <use href="#tangent-m109e5be9a0" x="47.18" y="131.251521" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangent-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="40.18" y="134.670818" transform="rotate(-0 40.18 134.670818)">10</text>
+     </g>
+    </g>
+    <g id="tangent-ytick_5">
+     <g id="tangent-line2d_19">
+      <path d="M 47.18 106.841712 
+L 648.9 106.841712 
+" clip-path="url(#tangent-pdec2a29397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangent-line2d_20">
+      <g>
+       <use href="#tangent-m109e5be9a0" x="47.18" y="106.841712" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangent-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="40.18" y="110.261009" transform="rotate(-0 40.18 110.261009)">15</text>
+     </g>
+    </g>
+    <g id="tangent-ytick_6">
+     <g id="tangent-line2d_21">
+      <path d="M 47.18 82.431903 
+L 648.9 82.431903 
+" clip-path="url(#tangent-pdec2a29397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangent-line2d_22">
+      <g>
+       <use href="#tangent-m109e5be9a0" x="47.18" y="82.431903" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangent-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="40.18" y="85.8512" transform="rotate(-0 40.18 85.8512)">20</text>
+     </g>
+    </g>
+    <g id="tangent-ytick_7">
+     <g id="tangent-line2d_23">
+      <path d="M 47.18 58.022093 
+L 648.9 58.022093 
+" clip-path="url(#tangent-pdec2a29397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangent-line2d_24">
+      <g>
+       <use href="#tangent-m109e5be9a0" x="47.18" y="58.022093" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangent-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="40.18" y="61.44139" transform="rotate(-0 40.18 61.44139)">25</text>
+     </g>
+    </g>
+    <g id="tangent-ytick_8">
+     <g id="tangent-line2d_25">
+      <path d="M 47.18 33.612284 
+L 648.9 33.612284 
+" clip-path="url(#tangent-pdec2a29397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangent-line2d_26">
+      <g>
+       <use href="#tangent-m109e5be9a0" x="47.18" y="33.612284" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangent-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="40.18" y="37.031581" transform="rotate(-0 40.18 37.031581)">30</text>
+     </g>
+    </g>
+    <g id="tangent-text_15">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.040313" y="114.74" transform="rotate(-90 21.040313 114.74)">Call value</text>
+    </g>
+   </g>
+   <g id="tangent-PathCollection_1">
+    <defs>
+     <path id="tangent-m58cfd15bf5" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#tangent-pdec2a29397)">
+     <use href="#tangent-m58cfd15bf5" x="348.04" y="129.05179" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="tangent-line2d_27">
+    <path d="M 74.530909 175.349171 
+L 92.764848 174.121664 
+L 110.998788 172.675677 
+L 129.232727 170.993525 
+L 145.643273 169.264511 
+L 162.053818 167.321244 
+L 178.464364 165.155216 
+L 194.874909 162.759604 
+L 211.285455 160.129342 
+L 227.696 157.261139 
+L 244.106545 154.153465 
+L 260.517091 150.806495 
+L 276.927636 147.222023 
+L 293.338182 143.403349 
+L 309.748727 139.355144 
+L 326.159273 135.083302 
+L 342.569818 130.59478 
+L 360.803758 125.362984 
+L 379.037697 119.885229 
+L 397.271636 114.174196 
+L 415.505576 108.243161 
+L 435.562909 101.4812 
+L 455.620242 94.487871 
+L 477.50097 86.616335 
+L 499.381697 78.514341 
+L 523.085818 69.503035 
+L 548.613333 59.556359 
+L 575.964242 48.655315 
+L 605.138545 36.788349 
+L 621.549091 30.018944 
+L 621.549091 30.018944 
+" clip-path="url(#tangent-pdec2a29397)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="tangent-line2d_28">
+    <path d="M 74.530909 206.776364 
+L 621.549091 51.327216 
+L 621.549091 51.327216 
+" clip-path="url(#tangent-pdec2a29397)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="tangent-line2d_29">
+    <path d="M 74.530909 178.152784 
+L 90.941455 176.821095 
+L 107.352 175.283315 
+L 123.762545 173.539446 
+L 140.173091 171.589487 
+L 156.583636 169.433438 
+L 172.994182 167.071299 
+L 189.404727 164.50307 
+L 205.815273 161.728752 
+L 222.225818 158.748344 
+L 238.636364 155.561847 
+L 255.046909 152.169259 
+L 271.457455 148.570582 
+L 287.868 144.765815 
+L 304.278545 140.754958 
+L 322.512485 136.05674 
+L 340.746424 131.10409 
+L 358.980364 125.897009 
+L 377.214303 120.435496 
+L 395.448242 114.719551 
+L 413.682182 108.749174 
+L 431.916121 102.524365 
+L 450.150061 96.045124 
+L 468.384 89.311452 
+L 486.617939 82.323348 
+L 504.851879 75.080812 
+L 523.085818 67.583844 
+L 541.319758 59.832445 
+L 559.553697 51.826613 
+L 577.787636 43.56635 
+L 596.021576 35.051655 
+L 614.255515 26.282528 
+L 621.549091 22.703636 
+L 621.549091 22.703636 
+" clip-path="url(#tangent-pdec2a29397)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #91a9bd; stroke-width: 2"/>
+   </g>
+   <g id="tangent-patch_3">
+    <path d="M 47.18 215.98 
+L 47.18 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="tangent-patch_4">
+    <path d="M 47.18 215.98 
+L 648.9 215.98 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="tangent-legend_1">
+    <g id="tangent-line2d_30">
+     <path d="M 54.38 23.97875 
+L 62.38 23.97875 
+L 70.38 23.97875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="tangent-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="76.78" y="26.77875" transform="rotate(-0 76.78 26.77875)">Exact call</text>
+    </g>
+    <g id="tangent-line2d_31">
+     <path d="M 54.38 35.72125 
+L 62.38 35.72125 
+L 70.38 35.72125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="tangent-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="76.78" y="38.52125" transform="rotate(-0 76.78 38.52125)">Delta approximation</text>
+    </g>
+    <g id="tangent-line2d_32">
+     <path d="M 54.38 47.46375 
+L 62.38 47.46375 
+L 70.38 47.46375 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #91a9bd; stroke-width: 2"/>
+    </g>
+    <g id="tangent-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="76.78" y="50.26375" transform="rotate(-0 76.78 50.26375)">Delta + gamma</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="tangent-pdec2a29397">
+   <rect x="47.18" y="13.5" width="601.72" height="202.48"/>
+  </clipPath>
+ </defs>
+</svg>

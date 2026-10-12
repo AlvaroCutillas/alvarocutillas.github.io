@@ -1,0 +1,395 @@
+<svg role="img" aria-labelledby="lsm-title lsm-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="lsm-title">Figure 16 · Least-squares exercise policies and independent evaluation</title><desc id="lsm-desc">25,000 training paths (seed 1012), 50,000 independent test paths (seed 1013), 50 exercise dates. Shading measures test-sample uncertainty conditional on the trained policy. The CRR comparison permits more exercise dates; a confidence interval for a suboptimal policy does not cover its policy bias.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T19:11:31.677006</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="lsm-figure_1">
+  <g id="lsm-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="lsm-axes_1">
+   <g id="lsm-patch_2">
+    <path d="M 59.78 208.78 
+L 648.9 208.78 
+L 648.9 13.5 
+L 59.78 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="lsm-matplotlib.axis_1">
+    <g id="lsm-xtick_1">
+     <g id="lsm-line2d_1">
+      <path d="M 86.558182 208.78 
+L 86.558182 13.5 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="lsm-line2d_2">
+      <defs>
+       <path id="lsm-m9d881bb5b6" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#lsm-m9d881bb5b6" x="86.558182" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="lsm-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="86.558182" y="222.618594" transform="rotate(-0 86.558182 222.618594)">1</text>
+     </g>
+    </g>
+    <g id="lsm-xtick_2">
+     <g id="lsm-line2d_3">
+      <path d="M 220.449091 208.78 
+L 220.449091 13.5 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="lsm-line2d_4">
+      <g>
+       <use href="#lsm-m9d881bb5b6" x="220.449091" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="lsm-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="220.449091" y="222.618594" transform="rotate(-0 220.449091 222.618594)">2</text>
+     </g>
+    </g>
+    <g id="lsm-xtick_3">
+     <g id="lsm-line2d_5">
+      <path d="M 354.34 208.78 
+L 354.34 13.5 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="lsm-line2d_6">
+      <g>
+       <use href="#lsm-m9d881bb5b6" x="354.34" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="lsm-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="354.34" y="222.618594" transform="rotate(-0 354.34 222.618594)">3</text>
+     </g>
+    </g>
+    <g id="lsm-xtick_4">
+     <g id="lsm-line2d_7">
+      <path d="M 488.230909 208.78 
+L 488.230909 13.5 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="lsm-line2d_8">
+      <g>
+       <use href="#lsm-m9d881bb5b6" x="488.230909" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="lsm-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="488.230909" y="222.618594" transform="rotate(-0 488.230909 222.618594)">4</text>
+     </g>
+    </g>
+    <g id="lsm-xtick_5">
+     <g id="lsm-line2d_9">
+      <path d="M 622.121818 208.78 
+L 622.121818 13.5 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="lsm-line2d_10">
+      <g>
+       <use href="#lsm-m9d881bb5b6" x="622.121818" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="lsm-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="622.121818" y="222.618594" transform="rotate(-0 622.121818 222.618594)">5</text>
+     </g>
+    </g>
+    <g id="lsm-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="354.34" y="235.328906" transform="rotate(-0 354.34 235.328906)">Polynomial degree</text>
+    </g>
+   </g>
+   <g id="lsm-matplotlib.axis_2">
+    <g id="lsm-ytick_1">
+     <g id="lsm-line2d_11">
+      <path d="M 59.78 198.581301 
+L 648.9 198.581301 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="lsm-line2d_12">
+      <defs>
+       <path id="lsm-m418d776f2b" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#lsm-m418d776f2b" x="59.78" y="198.581301" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="lsm-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="202.000598" transform="rotate(-0 52.78 202.000598)">5.900</text>
+     </g>
+    </g>
+    <g id="lsm-ytick_2">
+     <g id="lsm-line2d_13">
+      <path d="M 59.78 176.422456 
+L 648.9 176.422456 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="lsm-line2d_14">
+      <g>
+       <use href="#lsm-m418d776f2b" x="59.78" y="176.422456" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="lsm-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="179.841753" transform="rotate(-0 52.78 179.841753)">5.925</text>
+     </g>
+    </g>
+    <g id="lsm-ytick_3">
+     <g id="lsm-line2d_15">
+      <path d="M 59.78 154.263611 
+L 648.9 154.263611 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="lsm-line2d_16">
+      <g>
+       <use href="#lsm-m418d776f2b" x="59.78" y="154.263611" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="lsm-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="157.682908" transform="rotate(-0 52.78 157.682908)">5.950</text>
+     </g>
+    </g>
+    <g id="lsm-ytick_4">
+     <g id="lsm-line2d_17">
+      <path d="M 59.78 132.104766 
+L 648.9 132.104766 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="lsm-line2d_18">
+      <g>
+       <use href="#lsm-m418d776f2b" x="59.78" y="132.104766" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="lsm-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="135.524063" transform="rotate(-0 52.78 135.524063)">5.975</text>
+     </g>
+    </g>
+    <g id="lsm-ytick_5">
+     <g id="lsm-line2d_19">
+      <path d="M 59.78 109.945921 
+L 648.9 109.945921 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="lsm-line2d_20">
+      <g>
+       <use href="#lsm-m418d776f2b" x="59.78" y="109.945921" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="lsm-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="113.365217" transform="rotate(-0 52.78 113.365217)">6.000</text>
+     </g>
+    </g>
+    <g id="lsm-ytick_6">
+     <g id="lsm-line2d_21">
+      <path d="M 59.78 87.787075 
+L 648.9 87.787075 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="lsm-line2d_22">
+      <g>
+       <use href="#lsm-m418d776f2b" x="59.78" y="87.787075" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="lsm-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="91.206372" transform="rotate(-0 52.78 91.206372)">6.025</text>
+     </g>
+    </g>
+    <g id="lsm-ytick_7">
+     <g id="lsm-line2d_23">
+      <path d="M 59.78 65.62823 
+L 648.9 65.62823 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="lsm-line2d_24">
+      <g>
+       <use href="#lsm-m418d776f2b" x="59.78" y="65.62823" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="lsm-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="69.047527" transform="rotate(-0 52.78 69.047527)">6.050</text>
+     </g>
+    </g>
+    <g id="lsm-ytick_8">
+     <g id="lsm-line2d_25">
+      <path d="M 59.78 43.469385 
+L 648.9 43.469385 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="lsm-line2d_26">
+      <g>
+       <use href="#lsm-m418d776f2b" x="59.78" y="43.469385" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="lsm-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="46.888682" transform="rotate(-0 52.78 46.888682)">6.075</text>
+     </g>
+    </g>
+    <g id="lsm-ytick_9">
+     <g id="lsm-line2d_27">
+      <path d="M 59.78 21.31054 
+L 648.9 21.31054 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="lsm-line2d_28">
+      <g>
+       <use href="#lsm-m418d776f2b" x="59.78" y="21.31054" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="lsm-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="24.729837" transform="rotate(-0 52.78 24.729837)">6.100</text>
+     </g>
+    </g>
+    <g id="lsm-text_16">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.142969" y="111.14" transform="rotate(-90 21.142969 111.14)">Put value</text>
+    </g>
+   </g>
+   <g id="lsm-PolyCollection_1">
+    <defs>
+     <path id="lsm-m82cac48070" d="M 86.558182 -168.6496 
+L 86.558182 -52.096364 
+L 220.449091 -97.337268 
+L 354.34 -103.629512 
+L 622.121818 -115.393518 
+L 622.121818 -224.422791 
+L 622.121818 -224.422791 
+L 354.34 -212.088321 
+L 220.449091 -206.809168 
+L 86.558182 -168.6496 
+z
+" style="stroke: #a7bdb3; stroke-opacity: 0.14"/>
+    </defs>
+    <g clip-path="url(#lsm-p75a02aaa70)">
+     <use href="#lsm-m82cac48070" x="0" y="252" style="fill: #a7bdb3; fill-opacity: 0.14; stroke: #a7bdb3; stroke-opacity: 0.14"/>
+    </g>
+   </g>
+   <g id="lsm-line2d_29">
+    <path d="M 86.558182 141.627018 
+L 220.449091 99.926782 
+L 354.34 94.141083 
+L 622.121818 82.091846 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="lsm-m9f9c9f3457" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#lsm-p75a02aaa70)">
+     <use href="#lsm-m9f9c9f3457" x="86.558182" y="141.627018" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#lsm-m9f9c9f3457" x="220.449091" y="99.926782" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#lsm-m9f9c9f3457" x="354.34" y="94.141083" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#lsm-m9f9c9f3457" x="622.121818" y="82.091846" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="lsm-line2d_30">
+    <path d="M 86.558182 131.840139 
+L 220.449091 65.222529 
+L 354.34 36.716379 
+L 622.121818 22.376364 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="lsm-mcd11e6f401" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #d3ad84"/>
+    </defs>
+    <g clip-path="url(#lsm-p75a02aaa70)">
+     <use href="#lsm-mcd11e6f401" x="86.558182" y="131.840139" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#lsm-mcd11e6f401" x="220.449091" y="65.222529" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#lsm-mcd11e6f401" x="354.34" y="36.716379" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#lsm-mcd11e6f401" x="622.121818" y="22.376364" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="lsm-line2d_31">
+    <path d="M 59.78 30.269273 
+L 648.9 30.269273 
+" clip-path="url(#lsm-p75a02aaa70)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #91a9bd; stroke-width: 2"/>
+   </g>
+   <g id="lsm-patch_3">
+    <path d="M 59.78 208.78 
+L 59.78 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="lsm-patch_4">
+    <path d="M 59.78 208.78 
+L 648.9 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="lsm-legend_1">
+    <g id="lsm-line2d_32">
+     <path d="M 66.98 173.63125 
+L 74.98 173.63125 
+L 82.98 173.63125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#lsm-m9f9c9f3457" x="74.98" y="173.63125" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="lsm-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="89.38" y="176.43125" transform="rotate(-0 89.38 176.43125)">Independent policy evaluation</text>
+    </g>
+    <g id="lsm-line2d_33">
+     <path d="M 66.98 185.37375 
+L 74.98 185.37375 
+L 82.98 185.37375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#lsm-mcd11e6f401" x="74.98" y="185.37375" style="fill: #d3ad84; stroke: #d3ad84"/>
+     </g>
+    </g>
+    <g id="lsm-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="89.38" y="188.17375" transform="rotate(-0 89.38 188.17375)">In-sample valuation</text>
+    </g>
+    <g id="lsm-line2d_34">
+     <path d="M 66.98 197.11625 
+L 74.98 197.11625 
+L 82.98 197.11625 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #91a9bd; stroke-width: 2"/>
+    </g>
+    <g id="lsm-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="89.38" y="199.91625" transform="rotate(-0 89.38 199.91625)">American put · CRR 1,600</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="lsm-p75a02aaa70">
+   <rect x="59.78" y="13.5" width="589.12" height="195.28"/>
+  </clipPath>
+ </defs>
+</svg>

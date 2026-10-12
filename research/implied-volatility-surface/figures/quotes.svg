@@ -1,0 +1,716 @@
+<svg role="img" aria-labelledby="quotes-title quotes-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="quotes-title">Figure 07 · Premium and volatility quote intervals</title><desc id="quotes-desc">Synthetic one-year calls; premium half-spread 0.04. IV curves use a first-order vega conversion, not an exact bound inversion. Every premium bid in the shown range remains above its intrinsic lower bound.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:54:53.349586</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="quotes-figure_1">
+  <g id="quotes-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="quotes-axes_1">
+   <g id="quotes-patch_2">
+    <path d="M 45.38 244.78 
+L 344.61 244.78 
+L 344.61 35.14 
+L 45.38 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="quotes-matplotlib.axis_1">
+    <g id="quotes-xtick_1">
+     <g id="quotes-line2d_1">
+      <path d="M 78.411883 244.78 
+L 78.411883 35.14 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_2">
+      <defs>
+       <path id="quotes-m399eb6efe3" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#quotes-m399eb6efe3" x="78.411883" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="78.411883" y="258.618594" transform="rotate(-0 78.411883 258.618594)">70</text>
+     </g>
+    </g>
+    <g id="quotes-xtick_2">
+     <g id="quotes-line2d_3">
+      <path d="M 117.272922 244.78 
+L 117.272922 35.14 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_4">
+      <g>
+       <use href="#quotes-m399eb6efe3" x="117.272922" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="117.272922" y="258.618594" transform="rotate(-0 117.272922 258.618594)">80</text>
+     </g>
+    </g>
+    <g id="quotes-xtick_3">
+     <g id="quotes-line2d_5">
+      <path d="M 156.133961 244.78 
+L 156.133961 35.14 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_6">
+      <g>
+       <use href="#quotes-m399eb6efe3" x="156.133961" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="156.133961" y="258.618594" transform="rotate(-0 156.133961 258.618594)">90</text>
+     </g>
+    </g>
+    <g id="quotes-xtick_4">
+     <g id="quotes-line2d_7">
+      <path d="M 194.995 244.78 
+L 194.995 35.14 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_8">
+      <g>
+       <use href="#quotes-m399eb6efe3" x="194.995" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="194.995" y="258.618594" transform="rotate(-0 194.995 258.618594)">100</text>
+     </g>
+    </g>
+    <g id="quotes-xtick_5">
+     <g id="quotes-line2d_9">
+      <path d="M 233.856039 244.78 
+L 233.856039 35.14 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_10">
+      <g>
+       <use href="#quotes-m399eb6efe3" x="233.856039" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="233.856039" y="258.618594" transform="rotate(-0 233.856039 258.618594)">110</text>
+     </g>
+    </g>
+    <g id="quotes-xtick_6">
+     <g id="quotes-line2d_11">
+      <path d="M 272.717078 244.78 
+L 272.717078 35.14 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_12">
+      <g>
+       <use href="#quotes-m399eb6efe3" x="272.717078" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="272.717078" y="258.618594" transform="rotate(-0 272.717078 258.618594)">120</text>
+     </g>
+    </g>
+    <g id="quotes-xtick_7">
+     <g id="quotes-line2d_13">
+      <path d="M 311.578117 244.78 
+L 311.578117 35.14 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_14">
+      <g>
+       <use href="#quotes-m399eb6efe3" x="311.578117" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="311.578117" y="258.618594" transform="rotate(-0 311.578117 258.618594)">130</text>
+     </g>
+    </g>
+    <g id="quotes-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="194.995" y="271.328906" transform="rotate(-0 194.995 271.328906)">Strike</text>
+    </g>
+   </g>
+   <g id="quotes-matplotlib.axis_2">
+    <g id="quotes-ytick_1">
+     <g id="quotes-line2d_15">
+      <path d="M 45.38 238.084825 
+L 344.61 238.084825 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_16">
+      <defs>
+       <path id="quotes-m6e4f1e476b" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#quotes-m6e4f1e476b" x="45.38" y="238.084825" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="241.504122" transform="rotate(-0 38.38 241.504122)">0</text>
+     </g>
+    </g>
+    <g id="quotes-ytick_2">
+     <g id="quotes-line2d_17">
+      <path d="M 45.38 211.643062 
+L 344.61 211.643062 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_18">
+      <g>
+       <use href="#quotes-m6e4f1e476b" x="45.38" y="211.643062" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="215.062359" transform="rotate(-0 38.38 215.062359)">5</text>
+     </g>
+    </g>
+    <g id="quotes-ytick_3">
+     <g id="quotes-line2d_19">
+      <path d="M 45.38 185.201299 
+L 344.61 185.201299 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_20">
+      <g>
+       <use href="#quotes-m6e4f1e476b" x="45.38" y="185.201299" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="188.620596" transform="rotate(-0 38.38 188.620596)">10</text>
+     </g>
+    </g>
+    <g id="quotes-ytick_4">
+     <g id="quotes-line2d_21">
+      <path d="M 45.38 158.759536 
+L 344.61 158.759536 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_22">
+      <g>
+       <use href="#quotes-m6e4f1e476b" x="45.38" y="158.759536" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="162.178833" transform="rotate(-0 38.38 162.178833)">15</text>
+     </g>
+    </g>
+    <g id="quotes-ytick_5">
+     <g id="quotes-line2d_23">
+      <path d="M 45.38 132.317773 
+L 344.61 132.317773 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_24">
+      <g>
+       <use href="#quotes-m6e4f1e476b" x="45.38" y="132.317773" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="135.73707" transform="rotate(-0 38.38 135.73707)">20</text>
+     </g>
+    </g>
+    <g id="quotes-ytick_6">
+     <g id="quotes-line2d_25">
+      <path d="M 45.38 105.87601 
+L 344.61 105.87601 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_26">
+      <g>
+       <use href="#quotes-m6e4f1e476b" x="45.38" y="105.87601" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="109.295307" transform="rotate(-0 38.38 109.295307)">25</text>
+     </g>
+    </g>
+    <g id="quotes-ytick_7">
+     <g id="quotes-line2d_27">
+      <path d="M 45.38 79.434247 
+L 344.61 79.434247 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_28">
+      <g>
+       <use href="#quotes-m6e4f1e476b" x="45.38" y="79.434247" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="82.853544" transform="rotate(-0 38.38 82.853544)">30</text>
+     </g>
+    </g>
+    <g id="quotes-ytick_8">
+     <g id="quotes-line2d_29">
+      <path d="M 45.38 52.992484 
+L 344.61 52.992484 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_30">
+      <g>
+       <use href="#quotes-m6e4f1e476b" x="45.38" y="52.992484" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="56.411781" transform="rotate(-0 38.38 56.411781)">35</text>
+     </g>
+    </g>
+    <g id="quotes-text_17">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.055781" y="139.96" transform="rotate(-90 21.055781 139.96)">Call premium</text>
+    </g>
+   </g>
+   <g id="quotes-line2d_31">
+    <path d="M 58.981364 45.092159 
+L 68.696623 57.080986 
+L 78.411883 68.896676 
+L 88.127143 80.513487 
+L 97.842403 91.903639 
+L 107.557662 103.03747 
+L 117.272922 113.88368 
+L 126.988182 124.409662 
+L 136.703442 134.581932 
+L 146.418701 144.366672 
+L 156.133961 153.730387 
+L 165.849221 162.640666 
+L 175.564481 171.06705 
+L 185.27974 178.981982 
+L 194.995 186.361809 
+L 204.71026 193.187793 
+L 214.425519 199.447076 
+L 224.140779 205.133528 
+L 233.856039 210.248408 
+L 243.571299 214.800757 
+L 253.286558 218.807462 
+L 263.001818 222.292933 
+L 272.717078 225.288387 
+L 282.432338 227.830763 
+L 292.147597 229.961315 
+L 301.862857 231.724018 
+L 311.578117 233.163886 
+L 321.293377 234.325365 
+L 331.008636 235.250909 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="quotes-line2d_32">
+    <path d="M 58.981364 44.669091 
+L 68.696623 56.657918 
+L 78.411883 68.473608 
+L 88.127143 80.090419 
+L 97.842403 91.48057 
+L 107.557662 102.614401 
+L 117.272922 113.460612 
+L 126.988182 123.986594 
+L 136.703442 134.158864 
+L 146.418701 143.943604 
+L 156.133961 153.307319 
+L 165.849221 162.217598 
+L 175.564481 170.643981 
+L 185.27974 178.558913 
+L 194.995 185.938741 
+L 204.71026 192.764725 
+L 214.425519 199.024008 
+L 224.140779 204.71046 
+L 233.856039 209.82534 
+L 243.571299 214.377689 
+L 253.286558 218.384394 
+L 263.001818 221.869864 
+L 272.717078 224.865319 
+L 282.432338 227.407694 
+L 292.147597 229.538247 
+L 301.862857 231.30095 
+L 311.578117 232.740818 
+L 321.293377 233.902296 
+L 331.008636 234.827841 
+" clip-path="url(#quotes-p72b7d8d983)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="quotes-patch_3">
+    <path d="M 45.38 244.78 
+L 45.38 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="quotes-patch_4">
+    <path d="M 45.38 244.78 
+L 344.61 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="quotes-text_18">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="45.38" y="22.14" transform="rotate(-0 45.38 22.14)">A constant premium half-spread</text>
+   </g>
+   <g id="quotes-legend_1">
+    <g id="quotes-line2d_33">
+     <path d="M 260.995 45.61875 
+L 268.995 45.61875 
+L 276.995 45.61875 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="quotes-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="283.395" y="48.41875" transform="rotate(-0 283.395 48.41875)">Synthetic bid</text>
+    </g>
+    <g id="quotes-line2d_34">
+     <path d="M 260.995 57.36125 
+L 268.995 57.36125 
+L 276.995 57.36125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="quotes-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="283.395" y="60.16125" transform="rotate(-0 283.395 60.16125)">Synthetic ask</text>
+    </g>
+   </g>
+  </g>
+  <g id="quotes-axes_2">
+   <g id="quotes-patch_5">
+    <path d="M 407.27 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 407.27 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="quotes-matplotlib.axis_3">
+    <g id="quotes-xtick_8">
+     <g id="quotes-line2d_35">
+      <path d="M 440.301883 244.78 
+L 440.301883 35.14 
+" clip-path="url(#quotes-p2a923665a4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_36">
+      <g>
+       <use href="#quotes-m399eb6efe3" x="440.301883" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="440.301883" y="258.618594" transform="rotate(-0 440.301883 258.618594)">70</text>
+     </g>
+    </g>
+    <g id="quotes-xtick_9">
+     <g id="quotes-line2d_37">
+      <path d="M 479.162922 244.78 
+L 479.162922 35.14 
+" clip-path="url(#quotes-p2a923665a4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_38">
+      <g>
+       <use href="#quotes-m399eb6efe3" x="479.162922" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="479.162922" y="258.618594" transform="rotate(-0 479.162922 258.618594)">80</text>
+     </g>
+    </g>
+    <g id="quotes-xtick_10">
+     <g id="quotes-line2d_39">
+      <path d="M 518.023961 244.78 
+L 518.023961 35.14 
+" clip-path="url(#quotes-p2a923665a4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_40">
+      <g>
+       <use href="#quotes-m399eb6efe3" x="518.023961" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="518.023961" y="258.618594" transform="rotate(-0 518.023961 258.618594)">90</text>
+     </g>
+    </g>
+    <g id="quotes-xtick_11">
+     <g id="quotes-line2d_41">
+      <path d="M 556.885 244.78 
+L 556.885 35.14 
+" clip-path="url(#quotes-p2a923665a4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_42">
+      <g>
+       <use href="#quotes-m399eb6efe3" x="556.885" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="556.885" y="258.618594" transform="rotate(-0 556.885 258.618594)">100</text>
+     </g>
+    </g>
+    <g id="quotes-xtick_12">
+     <g id="quotes-line2d_43">
+      <path d="M 595.746039 244.78 
+L 595.746039 35.14 
+" clip-path="url(#quotes-p2a923665a4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_44">
+      <g>
+       <use href="#quotes-m399eb6efe3" x="595.746039" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="595.746039" y="258.618594" transform="rotate(-0 595.746039 258.618594)">110</text>
+     </g>
+    </g>
+    <g id="quotes-xtick_13">
+     <g id="quotes-line2d_45">
+      <path d="M 634.607078 244.78 
+L 634.607078 35.14 
+" clip-path="url(#quotes-p2a923665a4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_46">
+      <g>
+       <use href="#quotes-m399eb6efe3" x="634.607078" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="634.607078" y="258.618594" transform="rotate(-0 634.607078 258.618594)">120</text>
+     </g>
+    </g>
+    <g id="quotes-xtick_14">
+     <g id="quotes-line2d_47">
+      <path d="M 673.468117 244.78 
+L 673.468117 35.14 
+" clip-path="url(#quotes-p2a923665a4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_48">
+      <g>
+       <use href="#quotes-m399eb6efe3" x="673.468117" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="673.468117" y="258.618594" transform="rotate(-0 673.468117 258.618594)">130</text>
+     </g>
+    </g>
+    <g id="quotes-text_28">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="556.885" y="271.328906" transform="rotate(-0 556.885 271.328906)">Strike</text>
+    </g>
+   </g>
+   <g id="quotes-matplotlib.axis_4">
+    <g id="quotes-ytick_9">
+     <g id="quotes-line2d_49">
+      <path d="M 407.27 236.490076 
+L 706.5 236.490076 
+" clip-path="url(#quotes-p2a923665a4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_50">
+      <g>
+       <use href="#quotes-m6e4f1e476b" x="407.27" y="236.490076" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="400.27" y="239.909373" transform="rotate(-0 400.27 239.909373)">18.0%</text>
+     </g>
+    </g>
+    <g id="quotes-ytick_10">
+     <g id="quotes-line2d_51">
+      <path d="M 407.27 203.510619 
+L 706.5 203.510619 
+" clip-path="url(#quotes-p2a923665a4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_52">
+      <g>
+       <use href="#quotes-m6e4f1e476b" x="407.27" y="203.510619" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="400.27" y="206.929915" transform="rotate(-0 400.27 206.929915)">20.0%</text>
+     </g>
+    </g>
+    <g id="quotes-ytick_11">
+     <g id="quotes-line2d_53">
+      <path d="M 407.27 170.531161 
+L 706.5 170.531161 
+" clip-path="url(#quotes-p2a923665a4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_54">
+      <g>
+       <use href="#quotes-m6e4f1e476b" x="407.27" y="170.531161" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="400.27" y="173.950458" transform="rotate(-0 400.27 173.950458)">22.0%</text>
+     </g>
+    </g>
+    <g id="quotes-ytick_12">
+     <g id="quotes-line2d_55">
+      <path d="M 407.27 137.551704 
+L 706.5 137.551704 
+" clip-path="url(#quotes-p2a923665a4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_56">
+      <g>
+       <use href="#quotes-m6e4f1e476b" x="407.27" y="137.551704" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="400.27" y="140.971001" transform="rotate(-0 400.27 140.971001)">24.0%</text>
+     </g>
+    </g>
+    <g id="quotes-ytick_13">
+     <g id="quotes-line2d_57">
+      <path d="M 407.27 104.572247 
+L 706.5 104.572247 
+" clip-path="url(#quotes-p2a923665a4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_58">
+      <g>
+       <use href="#quotes-m6e4f1e476b" x="407.27" y="104.572247" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="400.27" y="107.991544" transform="rotate(-0 400.27 107.991544)">26.0%</text>
+     </g>
+    </g>
+    <g id="quotes-ytick_14">
+     <g id="quotes-line2d_59">
+      <path d="M 407.27 71.592789 
+L 706.5 71.592789 
+" clip-path="url(#quotes-p2a923665a4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_60">
+      <g>
+       <use href="#quotes-m6e4f1e476b" x="407.27" y="71.592789" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="400.27" y="75.012086" transform="rotate(-0 400.27 75.012086)">28.0%</text>
+     </g>
+    </g>
+    <g id="quotes-ytick_15">
+     <g id="quotes-line2d_61">
+      <path d="M 407.27 38.613332 
+L 706.5 38.613332 
+" clip-path="url(#quotes-p2a923665a4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="quotes-line2d_62">
+      <g>
+       <use href="#quotes-m6e4f1e476b" x="407.27" y="38.613332" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="quotes-text_35">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="400.27" y="42.032629" transform="rotate(-0 400.27 42.032629)">30.0%</text>
+     </g>
+    </g>
+    <g id="quotes-text_36">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="365.807812" y="139.96" transform="rotate(-90 365.807812 139.96)">Implied volatility</text>
+    </g>
+   </g>
+   <g id="quotes-line2d_63">
+    <path d="M 420.871364 58.580897 
+L 430.586623 66.541021 
+L 440.301883 74.516797 
+L 450.017143 82.464864 
+L 459.732403 90.354374 
+L 469.447662 98.163027 
+L 479.162922 105.874348 
+L 488.878182 113.475788 
+L 498.593442 120.957377 
+L 508.308701 128.310779 
+L 518.023961 135.528608 
+L 527.739221 142.603941 
+L 537.454481 149.529981 
+L 547.16974 156.299838 
+L 556.885 162.906404 
+L 566.60026 169.342318 
+L 576.315519 175.600025 
+L 586.030779 181.671915 
+L 595.746039 187.550566 
+L 605.461299 193.22908 
+L 615.176558 198.70154 
+L 624.891818 203.963573 
+L 634.607078 209.013045 
+L 644.322338 213.850885 
+L 654.037597 218.48206 
+L 663.752857 222.91671 
+L 673.468117 227.171502 
+L 683.183377 231.27125 
+L 692.898636 235.250909 
+" clip-path="url(#quotes-p2a923665a4)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="quotes-line2d_64">
+    <path d="M 420.871364 44.669091 
+L 430.586623 54.823109 
+L 440.301883 64.532698 
+L 450.017143 73.862541 
+L 459.732403 82.861266 
+L 469.447662 91.565651 
+L 479.162922 100.003552 
+L 488.878182 108.195941 
+L 498.593442 116.158357 
+L 508.308701 123.901938 
+L 518.023961 131.434166 
+L 527.739221 138.759412 
+L 537.454481 145.879334 
+L 547.16974 152.793177 
+L 556.885 159.498012 
+L 566.60026 165.98893 
+L 576.315519 172.259208 
+L 586.030779 178.300477 
+L 595.746039 184.102871 
+L 605.461299 189.655178 
+L 615.176558 194.944985 
+L 624.891818 199.958781 
+L 634.607078 204.682007 
+L 644.322338 209.098997 
+L 654.037597 213.192756 
+L 663.752857 216.944497 
+L 673.468117 220.332849 
+L 683.183377 223.33261 
+L 692.898636 225.912937 
+" clip-path="url(#quotes-p2a923665a4)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="quotes-patch_6">
+    <path d="M 407.27 244.78 
+L 407.27 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="quotes-patch_7">
+    <path d="M 407.27 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="quotes-text_37">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="407.27" y="22.14" transform="rotate(-0 407.27 22.14)">Different uncertainty in volatility units</text>
+   </g>
+   <g id="quotes-legend_2">
+    <g id="quotes-line2d_65">
+     <path d="M 609.07375 45.61875 
+L 617.07375 45.61875 
+L 625.07375 45.61875 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="quotes-text_38">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="631.47375" y="48.41875" transform="rotate(-0 631.47375 48.41875)">First-order bid IV</text>
+    </g>
+    <g id="quotes-line2d_66">
+     <path d="M 609.07375 57.36125 
+L 617.07375 57.36125 
+L 625.07375 57.36125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="quotes-text_39">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="631.47375" y="60.16125" transform="rotate(-0 631.47375 60.16125)">First-order ask IV</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="quotes-p72b7d8d983">
+   <rect x="45.38" y="35.14" width="299.23" height="209.64"/>
+  </clipPath>
+  <clipPath id="quotes-p2a923665a4">
+   <rect x="407.27" y="35.14" width="299.23" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

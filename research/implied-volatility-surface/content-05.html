@@ -1,0 +1,113 @@
+<section id="local-volatility" data-title="Dupire local volatility and derivative stability">
+<div class="section-kicker">21 / Dynamic interpretation</div><h2>Dupire local volatility and derivative stability</h2>
+<p>A local-volatility model specifies a deterministic diffusion coefficient depending on time and the current asset level. Under deterministic rates and proportional dividends, its risk-neutral dynamics are:</p>
+\[ dS_t=(r(t)-q(t))S_t\,dt+\sigma_{\mathrm{loc}}(S_t,t)S_t\,dW_t. \]
+<p>The local coefficient is not the same object as contract-level implied volatility. A vanilla option samples many future states and times, whereas local volatility describes uncertainty at a particular state and instant.</p>
+<h3>The forward pricing equation</h3>
+<p>For a sufficiently smooth European call surface \(C(K,T)\), with all strike derivatives taken at fixed \(T\) and the time derivative at fixed absolute \(K\), the Dupire expression is:</p>
+\[ \sigma_{\mathrm{loc}}^2(K,T)=
+\frac{C_T+q(T)C+(r(T)-q(T))K C_K}
+{\frac{1}{2}K^2C_{KK}}. \]
+<p>The formula follows from integrating the forward density equation against the call payoff. It requires the model assumptions, a valid surface and appropriate boundary behavior. <a href="https://columbia.edu/~mh2078/QRM/ModelRisk_MasterSlides.pdf">Columbia's model-risk lecture material</a> discusses the distinction between implied and local surfaces.</p>
+<p>In normalized forward log-moneyness coordinates, the equivalent expression is particularly compact:</p>
+\[ \sigma_{\mathrm{loc}}^2(Fe^k,T)=\frac{\partial_T w(k,T)}{g(k,T)}. \]
+<p>The numerator holds \(k\) fixed. This is consistent with the fixed-\(K\) premium formula only after including its carry terms. Using a fixed-\(K\) total-variance derivative without the coordinate conversion creates a different result.</p>
+{{figure:local}}
+<h3>Why local volatility is difficult to estimate</h3>
+<p>The numerator requires a maturity derivative and the denominator a second strike derivative. Both magnify observation noise and interpolation choices. A very small \(g\) can amplify a small numerator error into a large local variance. Negative calendar increments or negative density yield a nonphysical coefficient.</p>
+<p>Do not automatically clip negative local variance to zero and describe the output as calibrated. Clipping changes the dynamic model and breaks exact reproduction of the source prices. Investigate the input surface and regularity; if a repair is necessary, reprice the vanilla grid under the repaired model.</p>
+<h3>What vanilla matching can and cannot identify</h3>
+<p>Within the regular local-diffusion framework, a continuum of European prices can determine a local coefficient. Market observations are finite and noisy, so constructing that continuum requires estimation and boundary assumptions. Even an ideal vanilla-matching local model is only one possible dynamic explanation.</p>
+<p>A stochastic-volatility model can share the same terminal marginals while producing different forward smiles and path-dependent values. Matching today's calls does not determine barrier-crossing probabilities uniquely. Validate an exotic model against information relevant to its path dependence, and examine sensitivity to dynamics.</p>
+<p>The reference plots use analytic derivatives rather than noisy finite differences. This isolates the mathematical transformation from data-estimation difficulties. The laboratory displays local volatility for a selected contract only when its variance and density diagnostics permit a positive value.</p>
+</section>
+
+<section id="stochastic-models" data-title="Stochastic volatility, jumps and SABR">
+<div class="section-kicker">22 / Alternative dynamics</div><h2>Stochastic volatility, jumps and SABR</h2>
+<p>A static parameterization describes current vanilla prices directly. A stochastic model describes state variables and a law of motion, then derives those prices. It can be calibrated to a surface, but its usefulness also depends on whether its future smile behavior and hedge responses suit the application.</p>
+<h3>A stochastic variance example</h3>
+<p>The Heston model adds a mean-reverting square-root variance process:</p>
+\[ dS_t=(r-q)S_t\,dt+\sqrt{v_t}S_t\,dW_t^S,\qquad
+dv_t=\kappa(\bar v-v_t)\,dt+\xi\sqrt{v_t}\,dW_t^v,\qquad
+dW_t^S\,dW_t^v=\rho\,dt. \]
+<p>Initial variance, long-run variance, mean reversion, volatility of variance and correlation influence the level, term structure and skew. Negative correlation can produce a downward smile asymmetry. These dynamic parameters are not interchangeable with similarly named shape parameters in an SVI fit.</p>
+<p><a href="https://doi.org/10.1093/rfs/6.2.327">Heston (1993)</a> develops an option-pricing solution using this stochastic-volatility setting. Numerical calibration must still address integration conventions, parameter constraints and potential weak identification. A small residual at one snapshot need not select a unique dynamic parameter set.</p>
+<h3>SABR as a forward-based model</h3>
+<p>SABR models a forward and its stochastic scale, commonly under a suitable forward measure:</p>
+\[ dF_t=\alpha_t F_t^\beta\,dW_t^1,\qquad
+d\alpha_t=\nu\alpha_t\,dW_t^2,\qquad
+dW_t^1\,dW_t^2=\rho\,dt. \]
+<p>The elasticity parameter \(\beta\) affects how the diffusion scales with the forward; \(\nu\) governs volatility of the scale. <a href="https://lesniewski.us/papers/published/ManagingSmileRisk.pdf">Hagan, Kumar, Lesniewski and Woodward (2002)</a> develop an asymptotic smile approximation and discuss smile-related hedge behavior.</p>
+<p>An asymptotic implied-volatility formula has an approximation domain. Applying it to extremely long maturities or far wings does not guarantee admissible option prices. Normal, lognormal and shifted conventions also require care when forwards may be near or below zero. The positive-forward Black surface in this guide is not a direct solution to every interest-rate option convention.</p>
+<h3>Jumps and event risk</h3>
+<p>A jump component can produce non-Gaussian tails and distinctive short-expiry behavior. Its risk-neutral jump parameters may be weakly identified from a limited chain. Pricing methods, tail conditions and hedges differ from a continuous diffusion. In particular, a jump variance budget is not generally enough to price nonlinear option payoffs exactly.</p>
+<h3>Choosing a model for a task</h3>
+<p>For liquid European vanilla interpolation, a constrained surface representation may be sufficient. For path-dependent pricing, a dynamic model is required. For hedge analysis, evaluate the predicted relationship between spot moves and smile changes. For scenario generation, a physical measure may be needed rather than the risk-neutral calibration measure.</p>
+<p>The choice should be assessed with out-of-fit prices, stability, relevant exotic observations if available, and hedge behavior. Extra parameters can improve a fit while increasing estimation uncertainty. A model is useful when its outputs remain interpretable and robust for the intended calculation.</p>
+</section>
+
+<section id="surface-greeks" data-title="Surface sensitivities and smile-motion conventions">
+<div class="section-kicker">23 / Risk measurement</div><h2>Surface sensitivities and smile-motion conventions</h2>
+<p>The familiar Black Greeks differentiate a premium while holding specified inputs fixed. Once IV is a fitted function of strike, maturity and market state, a risk calculation must specify how that function changes when spot or another input is bumped.</p>
+<h3>Sticky strike</h3>
+<p>Under a sticky-strike scenario, IV at a fixed absolute strike and expiry is held constant as spot changes. For that option, delta is the ordinary Black spot delta under the given carry convention. This is a scenario assumption; the observed market surface need not move this way.</p>
+<h3>Sticky log-moneyness</h3>
+<p>Under sticky log-moneyness, \(\sigma(k,T)\) remains fixed as a function, but a fixed strike moves to a different \(k\) when the forward changes. If \(F\) is proportional to spot, \(dk/dS=-1/S\). The total derivative of a call then becomes:</p>
+\[ \frac{dC}{dS}
+=\Delta_{\mathrm{Black}}+
+\operatorname{Vega}\frac{d\sigma}{dS}
+=\Delta_{\mathrm{Black}}-
+\frac{\operatorname{Vega}}{S}\sigma_k. \]
+<p>For a negative local skew, the correction is positive: raising spot moves a fixed strike leftward in \(k\), increasing its IV under this particular sticky-moneyness rule. A different observed smile motion may reverse or modify that response.</p>
+{{figure:hedge}}
+<h3>Sticky delta and dynamic model Greeks</h3>
+<p>Sticky delta holds a delta-quoted representation fixed and requires an implicit coordinate conversion when spot moves. It is not generally identical to sticky log-moneyness because delta itself depends on volatility. A stochastic model supplies another rule through its state variables and calibrated parameter policy.</p>
+<p>When recalibrating after a bump, specify which observed quotes are held fixed and which parameters may change. Recalibrated delta measures a different operation from differentiating a model with fixed parameters. The risk report should identify that operation clearly.</p>
+<h3>Higher-order and bucket sensitivities</h3>
+<p>Gamma includes second-order smile-motion terms. Vanna captures mixed spot–volatility dependence, and volga captures curvature in volatility. Surface buckets measure exposure to a localized quote or parameter change rather than a parallel IV shift. Their values depend on interpolation and recalibration rules.</p>
+<p>To compute bucket vega, bump one market quote by a stated amount, rebuild the admissible surface and revalue the portfolio. The effect may spread across neighboring strikes and maturities because of shared parameters and constraints. A raw parameter derivative is not automatically an executable hedge ratio to a market contract.</p>
+<h3>Risk decomposition</h3>
+<p>For a small move, decompose price change into spot, carry, time and surface contributions under a chosen expansion. Large moves require full repricing and can make local Greek approximations inaccurate. Compare several smile-motion scenarios when the instrument is materially exposed to skew or wings.</p>
+<p>The plotted comparison is a synthetic one-year call with strike 100. Its two deltas differ because the surface-motion rules differ, while both start from the same type of price map. The example demonstrates model dependence rather than ranking one rule as universally superior.</p>
+</section>
+
+<section id="events-exercise" data-title="Scheduled events, dividends and exercise style">
+<div class="section-kicker">24 / Framework extensions</div><h2>Scheduled events, dividends and exercise style</h2>
+<p>A smooth European proportional-carry surface is an effective central framework. Real instruments can violate its simplifying assumptions in specific, identifiable ways. Handling those features explicitly is more reliable than allowing a flexible smile fit to absorb them without explanation.</p>
+<h3>Scheduled-event variance</h3>
+<p>An earnings release, policy announcement or other scheduled event can affect expiries on opposite sides of the event very differently. A simple variance-budget illustration adds a nonnegative event increment after its date:</p>
+\[ \theta(T)=v^2T+J\,\mathbf{1}_{T\ge t_e},
+\qquad J\ge0. \]
+<p>This formula is an illustrative ATM budget. For a genuine jump distribution, exact option values depend on more than its variance, including asymmetry and higher moments. Black implied total variance need not equal a sum of diffusion variance and jump variance for every strike.</p>
+{{figure:event}}
+<p>A maturity discontinuity is not compatible with the smooth derivative assumptions used in the basic Dupire expression at the event itself. A dynamic event model may use a jump kernel or separate pre-event and post-event evolution. Interpolating smoothly through the date can smear its risk into the wrong intervals.</p>
+<h3>Discrete dividends</h3>
+<p>A known cash dividend produces an asset-price jump under a standard equity model. It affects the forward and may alter exercise incentives. Replacing it with a constant yield can be a useful approximation for some contracts, but the approximation should be tested near ex-dividend dates and for large dividends relative to spot.</p>
+<p>Uncertain dividends introduce additional pricing risk and option-implied carry uncertainty. Report their assumptions alongside the volatility surface. Otherwise a changed dividend forecast can be misreported as an isolated volatility shock.</p>
+<h3>American options</h3>
+<p>An American premium includes the value of optimal exercise when it matters. Inverting it through European Black prices can create artificial IV differences across puts and calls or strikes. An American implied-volatility calculation must use an exercise-aware pricing model, with consistent dividends, rates and borrow assumptions.</p>
+<p>One may estimate a European-equivalent premium by subtracting a model-based exercise premium, then fit a European surface. The conversion inherits that model's uncertainty. It should be labeled and validated, particularly for deep in-the-money puts and dividend-sensitive calls.</p>
+<h3>Settlement and market-specific conventions</h3>
+<p>Different settlement times can cause same-date expiries to span different events. FX delta conventions, futures margining and negative-rate option conventions require their own data translation. There is no single IV field that automatically harmonizes all these markets.</p>
+<p>The laboratory intentionally remains within a European deterministic-carry setup. These extensions are explained so that its mathematically consistent example can be transferred carefully rather than copied into a contract environment where its inputs no longer describe the payoff.</p>
+</section>
+
+<section id="research-pipeline" data-title="Implementation pipeline, monitoring and model risk">
+<div class="section-kicker">25 / Research practice</div><h2>Implementation pipeline, monitoring and model risk</h2>
+<p>A production surface should be a reproducible calculation with recorded inputs, rather than a plot assembled from opaque IV fields. Separate ingestion, contract normalization, carry estimation, quote validation, inversion, fitting, consistency checks and downstream risk calculations.</p>
+<h3>Artifacts to retain</h3>
+<p>Save the raw snapshot, contract metadata, rates or discount factors, forward construction, accepted and rejected rows, fitted parameters, solver settings and validation report. Retain the model version and deterministic seed for any randomized procedure. These records allow a surprising density or hedge output to be traced back to its cause.</p>
+<p>The fitting report should state loss units, observation weights, regularization, bounds, initializations and convergence. The validation report should state its strike and maturity domain, grids, derivative steps and tolerances, plus any analytical certificate. The downstream report should state extrapolation and smile-motion conventions.</p>
+<h3>Monitoring a sequence of snapshots</h3>
+<p>Track ATM level, skew, wing slopes, fit residuals versus spreads, rejected-quote counts, forward dispersion and consistency diagnostics. Sudden changes can reflect market events or data problems. A large parameter move accompanied by tiny price changes can instead indicate weak identification.</p>
+<p>Monitor density and local-volatility outputs only on domains supported by the data and chosen extension. Large local-volatility spikes at maturity knots can be an interpolation issue rather than economic information. Keep the premium fit visible when reviewing derivative outputs.</p>
+<h3>Stress tests</h3>
+<p>Perturb spot, rates, dividends, timestamps, spreads and selected quotes. Compare admissible interpolation and extrapolation policies. Use alternative model families for instruments whose valuations depend materially on future dynamics. Separate the effects of measurement changes from changes in model assumptions.</p>
+<p>A shock may make a previously admissible parameter set inadmissible. Recompute constraints after every proposed bump or refit. Clamping only the displayed IV or hiding negative density makes the chart cleaner while leaving the underlying valuation inconsistent.</p>
+<h3>Interpretation of research results</h3>
+<p>A surface is descriptive of option prices at a valuation time. A trading claim requires transaction costs, execution, later observations and a prediction target. A synthetic calibration error is a numerical demonstration, not a measure of achievable trading profit.</p>
+<p>Out-of-sample pricing, temporal forecasting and hedging backtests are different experiments. Withheld strikes assess interpolation. Later-date quotes assess time evolution only if the forecasting rule was fixed beforehand. A hedge study assesses realized portfolio behavior under actual rebalancing and costs.</p>
+<h3>Implementation checks</h3>
+<p>Unit checks, round-trip inversion, put–call parity, price bounds and independent derivative comparisons cover the mathematical core. Browser checks cover reproducible controls, hover coordinates, downloads, keyboard and touch interaction, responsive layout and offline rendering. Both are necessary for this page: a correct formula with a misleading inspector is still an unreliable learning tool.</p>
+<p>The following laboratory and studies expose their conventions directly. The appendix provides reference calculations that can be compared with another implementation before the methods are applied to real quote files.</p>
+</section>

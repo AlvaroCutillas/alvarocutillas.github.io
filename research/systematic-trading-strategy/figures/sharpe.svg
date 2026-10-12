@@ -1,0 +1,318 @@
+<svg role="img" aria-labelledby="sharpe-title sharpe-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="sharpe-title">Figure 14 · Sharpe scaling under serial dependence</title><desc id="sharpe-desc">Stationary additive differential returns with autocorrelation ρᵏ and finite variance. The multiplier is √q divided by √(1 + 2Σ(1−k/q)ρᵏ). It concerns aggregated additive returns, not exact compounding of a trading account.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:05:14.154380</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="sharpe-figure_1">
+  <g id="sharpe-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="sharpe-axes_1">
+   <g id="sharpe-patch_2">
+    <path d="M 45.38 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 45.38 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="sharpe-matplotlib.axis_1">
+    <g id="sharpe-xtick_1">
+     <g id="sharpe-line2d_1">
+      <path d="M 121.663077 244.78 
+L 121.663077 35.14 
+" clip-path="url(#sharpe-pbeb8c6fc9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sharpe-line2d_2">
+      <defs>
+       <path id="sharpe-m184cd9ef0c" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#sharpe-m184cd9ef0c" x="121.663077" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sharpe-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="121.663077" y="258.618594" transform="rotate(-0 121.663077 258.618594)">−0.4</text>
+     </g>
+    </g>
+    <g id="sharpe-xtick_2">
+     <g id="sharpe-line2d_3">
+      <path d="M 214.127413 244.78 
+L 214.127413 35.14 
+" clip-path="url(#sharpe-pbeb8c6fc9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sharpe-line2d_4">
+      <g>
+       <use href="#sharpe-m184cd9ef0c" x="214.127413" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sharpe-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="214.127413" y="258.618594" transform="rotate(-0 214.127413 258.618594)">−0.2</text>
+     </g>
+    </g>
+    <g id="sharpe-xtick_3">
+     <g id="sharpe-line2d_5">
+      <path d="M 306.591748 244.78 
+L 306.591748 35.14 
+" clip-path="url(#sharpe-pbeb8c6fc9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sharpe-line2d_6">
+      <g>
+       <use href="#sharpe-m184cd9ef0c" x="306.591748" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sharpe-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="306.591748" y="258.618594" transform="rotate(-0 306.591748 258.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="sharpe-xtick_4">
+     <g id="sharpe-line2d_7">
+      <path d="M 399.056084 244.78 
+L 399.056084 35.14 
+" clip-path="url(#sharpe-pbeb8c6fc9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sharpe-line2d_8">
+      <g>
+       <use href="#sharpe-m184cd9ef0c" x="399.056084" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sharpe-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="399.056084" y="258.618594" transform="rotate(-0 399.056084 258.618594)">0.2</text>
+     </g>
+    </g>
+    <g id="sharpe-xtick_5">
+     <g id="sharpe-line2d_9">
+      <path d="M 491.52042 244.78 
+L 491.52042 35.14 
+" clip-path="url(#sharpe-pbeb8c6fc9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sharpe-line2d_10">
+      <g>
+       <use href="#sharpe-m184cd9ef0c" x="491.52042" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sharpe-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="491.52042" y="258.618594" transform="rotate(-0 491.52042 258.618594)">0.4</text>
+     </g>
+    </g>
+    <g id="sharpe-xtick_6">
+     <g id="sharpe-line2d_11">
+      <path d="M 583.984755 244.78 
+L 583.984755 35.14 
+" clip-path="url(#sharpe-pbeb8c6fc9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sharpe-line2d_12">
+      <g>
+       <use href="#sharpe-m184cd9ef0c" x="583.984755" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sharpe-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="583.984755" y="258.618594" transform="rotate(-0 583.984755 258.618594)">0.6</text>
+     </g>
+    </g>
+    <g id="sharpe-xtick_7">
+     <g id="sharpe-line2d_13">
+      <path d="M 676.449091 244.78 
+L 676.449091 35.14 
+" clip-path="url(#sharpe-pbeb8c6fc9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sharpe-line2d_14">
+      <g>
+       <use href="#sharpe-m184cd9ef0c" x="676.449091" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sharpe-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="676.449091" y="258.618594" transform="rotate(-0 676.449091 258.618594)">0.8</text>
+     </g>
+    </g>
+    <g id="sharpe-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="375.94" y="271.328906" transform="rotate(-0 375.94 271.328906)">Lag-one return correlation</text>
+    </g>
+   </g>
+   <g id="sharpe-matplotlib.axis_2">
+    <g id="sharpe-ytick_1">
+     <g id="sharpe-line2d_15">
+      <path d="M 45.38 238.174603 
+L 706.5 238.174603 
+" clip-path="url(#sharpe-pbeb8c6fc9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sharpe-line2d_16">
+      <defs>
+       <path id="sharpe-m4b0f3634ac" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#sharpe-m4b0f3634ac" x="45.38" y="238.174603" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sharpe-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="241.5939" transform="rotate(-0 38.38 241.5939)">5</text>
+     </g>
+    </g>
+    <g id="sharpe-ytick_2">
+     <g id="sharpe-line2d_17">
+      <path d="M 45.38 195.025717 
+L 706.5 195.025717 
+" clip-path="url(#sharpe-pbeb8c6fc9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sharpe-line2d_18">
+      <g>
+       <use href="#sharpe-m4b0f3634ac" x="45.38" y="195.025717" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sharpe-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="198.445014" transform="rotate(-0 38.38 198.445014)">10</text>
+     </g>
+    </g>
+    <g id="sharpe-ytick_3">
+     <g id="sharpe-line2d_19">
+      <path d="M 45.38 151.876832 
+L 706.5 151.876832 
+" clip-path="url(#sharpe-pbeb8c6fc9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sharpe-line2d_20">
+      <g>
+       <use href="#sharpe-m4b0f3634ac" x="45.38" y="151.876832" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sharpe-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="155.296128" transform="rotate(-0 38.38 155.296128)">15</text>
+     </g>
+    </g>
+    <g id="sharpe-ytick_4">
+     <g id="sharpe-line2d_21">
+      <path d="M 45.38 108.727946 
+L 706.5 108.727946 
+" clip-path="url(#sharpe-pbeb8c6fc9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sharpe-line2d_22">
+      <g>
+       <use href="#sharpe-m4b0f3634ac" x="45.38" y="108.727946" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sharpe-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="112.147243" transform="rotate(-0 38.38 112.147243)">20</text>
+     </g>
+    </g>
+    <g id="sharpe-ytick_5">
+     <g id="sharpe-line2d_23">
+      <path d="M 45.38 65.57906 
+L 706.5 65.57906 
+" clip-path="url(#sharpe-pbeb8c6fc9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="sharpe-line2d_24">
+      <g>
+       <use href="#sharpe-m4b0f3634ac" x="45.38" y="65.57906" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="sharpe-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="68.998357" transform="rotate(-0 38.38 68.998357)">25</text>
+     </g>
+    </g>
+    <g id="sharpe-text_14">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.055781" y="139.96" transform="rotate(-90 21.055781 139.96)">Daily-to-annual Sharpe multiplier</text>
+    </g>
+   </g>
+   <g id="sharpe-line2d_25">
+    <path d="M 75.430909 44.669091 
+L 82.990886 49.687017 
+L 90.550863 54.500205 
+L 98.11084 59.123933 
+L 109.450806 65.733987 
+L 120.790772 71.989296 
+L 132.130738 77.925192 
+L 143.470703 83.572369 
+L 154.810669 88.957644 
+L 166.150635 94.104578 
+L 177.4906 99.033972 
+L 188.830566 103.764281 
+L 203.95052 109.789841 
+L 219.070475 115.524819 
+L 234.190429 120.999013 
+L 249.310383 126.238479 
+L 264.430337 131.266149 
+L 283.33028 137.283626 
+L 302.230223 143.036656 
+L 321.130166 148.555755 
+L 340.030109 153.867863 
+L 362.71004 160.002817 
+L 385.389971 165.911268 
+L 411.849891 172.562451 
+L 442.0898 179.90323 
+L 476.109697 187.908618 
+L 521.46956 198.318536 
+L 600.84932 216.480675 
+L 627.30924 222.755131 
+L 649.989171 228.342799 
+L 668.889114 233.222479 
+L 676.449091 235.250909 
+L 676.449091 235.250909 
+" clip-path="url(#sharpe-pbeb8c6fc9d)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="sharpe-line2d_26">
+    <path d="M 45.38 144.330024 
+L 706.5 144.330024 
+" clip-path="url(#sharpe-pbeb8c6fc9d)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+   </g>
+   <g id="sharpe-patch_3">
+    <path d="M 45.38 244.78 
+L 45.38 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="sharpe-patch_4">
+    <path d="M 45.38 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="sharpe-text_15">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="45.38" y="22.14" transform="rotate(-0 45.38 22.14)">Autocorrelation changes time aggregation</text>
+   </g>
+   <g id="sharpe-legend_1">
+    <g id="sharpe-line2d_27">
+     <path d="M 562.87625 45.61875 
+L 570.87625 45.61875 
+L 578.87625 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="sharpe-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="585.27625" y="48.41875" transform="rotate(-0 585.27625 48.41875)">AR(1) aggregation multiplier</text>
+    </g>
+    <g id="sharpe-line2d_28">
+     <path d="M 562.87625 57.77125 
+L 570.87625 57.77125 
+L 578.87625 57.77125 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+    </g>
+    <g id="sharpe-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="585.27625" y="60.57125" transform="rotate(-0 585.27625 60.57125)">IID √252 multiplier</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="sharpe-pbeb8c6fc9d">
+   <rect x="45.38" y="35.14" width="661.12" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,110 @@
+<section id="portfolio-construction" data-title="Portfolio construction and exposure constraints">
+<div class="section-kicker">11 / Portfolios</div><h2>Portfolio construction and exposure constraints</h2>
+<p>In a multi-asset strategy, a collection of forecasts must be translated into jointly feasible positions. Expected return, covariance, signal reliability, trading costs and constraints all matter. The <a href="markowitz-portfolio-theory.html">Markowitz notes</a> derive the basic mean–variance problem; a trading implementation adds the cost of changing the existing portfolio.</p>
+\[ \max_w\ \widehat\mu^{\mathsf T}w
+-\frac{\gamma}{2}w^{\mathsf T}\widehat\Sigma w
+-\mathcal C(w-w^{\mathrm{current}}). \]
+<p>The current weights are the weights after market movement and before the new trade. The objective's units must be consistent: forecasts, covariance and cost penalties should refer to compatible horizons. A one-time transaction cost is not automatically comparable to an annual expected return without specifying how long the position is expected to persist.</p>
+<h3>Gross and net exposure</h3>
+<p>Net risky exposure is \(\sum_iw_i\), while gross risky exposure is \(\sum_i|w_i|\). A market-neutral portfolio can have net exposure near zero and substantial gross exposure, financing requirements and tail risk. A unit net budget does not limit leverage when large long and short positions offset each other.</p>
+<p>Dollar neutrality does not imply factor neutrality. A long small-cap basket and a short large-cap basket can have zero net capital while retaining market beta, size and liquidity exposure. Constraints should identify the actual risks intended to be controlled, and their estimation uncertainty should be examined.</p>
+<h3>Signal combination</h3>
+<p>Equal-weighted signal portfolios are useful baselines. Optimized combinations can exploit forecast differences but can also amplify estimation noise. Diversifying model families may be more informative than combining many almost-identical lookbacks whose errors move together.</p>
+<p>Risk contributions should be calculated for the aggregate portfolio. Summing standalone volatilities or VaRs ignores dependence. Scenario ES can provide a tail-sensitive objective when the decision and cost model permit it. The <a href="var-expected-shortfall.html">VaR and ES notes</a> explain coherent aggregation and component tail risk.</p>
+<h3>Constrained trading</h3>
+<p>Position limits, sector bounds, minimum lots, restricted instruments and borrow availability can make the desired portfolio unattainable. Store both desired and filled holdings. A research result based only on unconstrained target weights may not describe the account that can actually be traded.</p>
+<p>In the single-asset laboratory, risky weights lie between zero and one and the remainder is cash. The cap removes borrowing and short-position complications, while still illustrating signal timing, drifted weights, sizing and transaction costs. The simplicity is deliberate and should not be mistaken for a complete multi-asset implementation.</p>
+</section>
+
+<section id="transaction-costs" data-title="Transaction costs and turnover">
+<div class="section-kicker">12 / Trading frictions</div><h2>Transaction costs and turnover</h2>
+<p>A strategy earns implementable results after the costs of its trades. Commissions, bid–ask crossing, market impact, exchange fees, financing and borrow charges have different sources. A single proportional cost is a useful teaching abstraction, but should not conceal those differences when analyzing a real market.</p>
+<p>Define one-way traded notional as the absolute amount bought or sold. If a position increases by €10,000, one-way notional is €10,000. Buying and later selling that position involves two trades and approximately €20,000 total notional before price movement. Some reports divide total buys plus sells by two and call that turnover; state the convention.</p>
+\[ \tau_t=\frac{|\Delta q_t|P_t}{E_t^{\mathrm{pre}}},\qquad
+C_t=c\,|\Delta q_t|P_t=c\,\tau_tE_t^{\mathrm{pre}}. \]
+<p>Here \(c\) is cost as a fraction of one-way traded notional. Ten basis points means \(c=0.001\), because one basis point is \(10^{-4}\). The laboratory deducts this all-in amount from wealth at each trade. It does not additionally charge an implicit spread in the fill price.</p>
+{{figure:costs}}
+<h3>Spread conventions</h3>
+<p>If a full quoted spread is ten basis points around a midpoint, a market buy crosses roughly five basis points from midpoint to ask, and a market sell crosses roughly five to bid. A round trip crosses the full spread if conditions remain unchanged. Charging the full spread on each side doubles that simplified spread cost.</p>
+<p>If the backtest already executes at ask for buys and bid for sells, the spread is already reflected in P&amp;L. Adding another spread deduction double counts it. Fees and impact can still be additional. Specify whether prices are midpoints, trades or executable quotes before attaching a cost assumption.</p>
+<h3>Turnover depends on drift</h3>
+<p>For a costless multi-asset rebalance, pre-trade weights drift after returns. With a compatible cash model, the risky weight of asset \(i\) becomes:</p>
+\[ \widetilde w_{i,t}=
+\frac{w_{i,t-1}(1+R_{i,t})}{1+R_{p,t}}. \]
+<p>A new target should be compared with these drifted weights, not simply with yesterday's target. The difference is especially important for constant-mix portfolios. The exact laboratory additionally solves for post-cost target fractions, so fees and the denominator of wealth remain consistent.</p>
+<h3>Cost sensitivity and a break-even approximation</h3>
+<p>If average gross excess return per session is \(\overline x_{\mathrm{gross}}\) and average one-way turnover is \(\overline\tau&gt;0\), a first-order break-even cost is:</p>
+\[ c_{\mathrm{break}}\approx
+\frac{\overline x_{\mathrm{gross}}}{\overline\tau}. \]
+<p>This is a diagnostic approximation, not an exact compound-account identity. Financing, changing exposure, nonlinear impact and cost-dependent behavior can alter it. A negative gross excess mean has no positive cost allowance under this approximation.</p>
+<p>Test cost ranges rather than only a convenient optimistic value. A signal with small gross advantage and high turnover has little room for execution error. When costs depend on volatility, volume or trade size, perturb those conditions as well as the average coefficient.</p>
+</section>
+
+<section id="execution" data-title="Execution, orders and fill assumptions">
+<div class="section-kicker">13 / Execution</div><h2>Execution, orders and fill assumptions</h2>
+<p>A backtest needs a model of when orders are released, at what prices they can execute and what fraction fills. A closing observation is a valuation mark unless the execution model makes it an obtainable price. An assumption of guaranteed fills should be visible, especially when a strategy depends on brief or illiquid opportunities.</p>
+<h3>Market, limit and stop orders</h3>
+<p>A market order prioritizes execution but does not guarantee a price. A limit order bounds acceptable price but can remain unfilled or partially filled. A stop order defines a trigger and subsequent order behavior; a price gap can produce a fill far from the stop level. Historical bar highs and lows do not reveal the exact sequence of events inside a bar.</p>
+<p>If a bar contains both a stop and a profit target, their execution order can change the result. Choose a justified intrabar model, use finer data or report a range. A favorable ordering chosen after seeing the bar is a form of hindsight.</p>
+{{figure:execution}}
+<h3>Opportunity, queue and adverse selection</h3>
+<p>The figure's arrival model illustrates why waiting time changes the probability of observing an opportunity. It does not model a real limit order. Actual fills depend on displayed and hidden liquidity, queue position, cancellations, matching rules and prices. Orders may fill most often when the subsequent move is unfavorable, so estimating average spread capture without adverse selection can exaggerate results.</p>
+<p>A limit strategy should distinguish quoted opportunity from realized filled P&amp;L. Trades cannot be assigned solely to all historically touched prices without a fill model. Partial fills also change the portfolio's subsequent state and may leave hedges unbalanced.</p>
+<h3>Latency and market impact</h3>
+<p>Signal computation, order routing and execution all take time. For a daily strategy, an additional session of delay can test sensitivity. For intraday strategies, milliseconds or seconds may matter and demand appropriately timestamped data. A delay stress should preserve causal decisions rather than simply shift a profitable realized P&amp;L curve.</p>
+<p>Large orders can move prices and spread execution across time. A model such as <a href="https://doi.org/10.21314/JOR.2001.041">Almgren and Chriss (2001)</a> studies the trade-off between transaction costs and price risk during execution. Its framework requires calibrated inputs and a stated objective; it is not a universal fixed impact charge.</p>
+<h3>The teaching execution model</h3>
+<p>The laboratory executes the precomputed target at a subsequent synthetic close, in full, with a proportional all-in cost. It has no queue, bid–ask series, partial fills or market impact. Those assumptions make the ledger exact within the specified model. The execution-delay control examines one operational sensitivity while leaving the fill assumption explicit.</p>
+<p>For live deployment, log order intent, submission time, acknowledgments, cancellations, fills and position reconciliation. Compare realized implementation shortfall with the research assumptions. Operational records are part of the strategy evidence, not merely administrative data.</p>
+</section>
+
+<section id="accounting" data-title="Cash, holdings and self-financing accounting">
+<div class="section-kicker">14 / Account mechanics</div><h2>Cash, holdings and self-financing accounting</h2>
+<p>A share-and-cash ledger is a direct way to verify a backtest. Before trading at price \(P\), let wealth be \(E\), stock value be \(S=qP\), and cash be \(B=E-S\). Choose a desired risky fraction \(w\) measured after fees. The trade should leave exactly that fraction of post-cost wealth in stock.</p>
+<p>Let \(h=S/E\) be the current risky fraction and \(u=S_{\mathrm{new}}/E\) the new stock value expressed relative to pre-trade wealth. Fees are \(cE|u-h|\). The target condition is:</p>
+\[ w=\frac{u}{1-c|u-h|}. \]
+<p>Solve it separately according to trade direction. If \(w\ge h\), the transaction is a buy; if \(w&lt;h\), it is a sell:</p>
+\[ u_{\mathrm{buy}}=\frac{w(1+ch)}{1+cw},\qquad
+u_{\mathrm{sell}}=\frac{w(1-ch)}{1-cw}. \]
+<p>For \(0\le w,h\le1\) and small \(0\le c&lt;1\), the equations have valid positive denominators. The laboratory inputs use a much smaller cost range. The formulas avoid assuming that target fractions remain unchanged when fees reduce the wealth denominator.</p>
+\[ C=cE|u-h|,\qquad S_{\mathrm{new}}=Eu,\qquad
+B_{\mathrm{new}}=E-C-S_{\mathrm{new}}. \]
+<h3>Holdings evolution</h3>
+<p>After the trade, shares are \(q_{\mathrm{new}}=S_{\mathrm{new}}/P\). Hold them over the next price interval and accrue cash at the specified cash rate:</p>
+\[ E_{\mathrm{next}}=q_{\mathrm{new}}P_{\mathrm{next}}
++B_{\mathrm{new}}(1+r_f). \]
+<p>Equivalently, if \(R\) is the asset return and \(\tau=|u-h|\), the account's exact one-period wealth ratio in this model is:</p>
+\[ 1+R_p=(1-c\tau)\left[1+wR+(1-w)r_f\right]. \]
+<p>The familiar approximation \(R_p\approx wR+(1-w)r_f-c\tau\) drops the product between the fee deduction and subsequent gross return. It is often small, but the share-and-cash ledger retains it and reconciles exactly.</p>
+{{figure:ledger}}
+<h3>Entry and exit examples</h3>
+<p>Starting with €100 in cash, target \(w=1\) and cost 10 bps, new stock value is \(100/1.001\approx99.90010\), with fee about 0.09990 and zero remaining cash. Buying €100 of stock and then deducting a separate fee would create negative cash and accidental borrowing.</p>
+<p>Starting entirely in stock and targeting zero, sell the stock, deduct the fee and retain the remainder in cash. If the price fell before exit, that loss belongs to the holding interval before the trade. The target calculation must use the actual current stock value rather than the original investment amount.</p>
+<h3>Reconciliation checks</h3>
+<p>At each event, verify stock plus cash equals wealth, post-cost exposure equals the target, fees equal the stated cost times traded notional, and the next wealth equals revalued shares plus accrued cash. Reconstruct final wealth by multiplying saved net return factors. The checks are complementary and can locate errors in sizing, cash treatment or return attribution.</p>
+</section>
+
+<section id="backtest-engine" data-title="Backtest engines and event ordering">
+<div class="section-kicker">15 / Implementation</div><h2>Backtest engines and event ordering</h2>
+<p>A backtest engine simulates a decision policy under a market and execution model. A vectorized implementation can be efficient for simple rules, while an event-driven implementation is often clearer when orders, partial fills and state matter. Correct event ordering is more important than the programming style.</p>
+<h3>A daily event sequence</h3>
+<ol>
+<li>Read the already-known target whose execution time has arrived.</li>
+<li>Value current shares and cash at the rebalance mark.</li>
+<li>Calculate the trade, charge its cost and update holdings.</li>
+<li>Hold shares through the next price interval and accrue cash.</li>
+<li>Save net return, wealth, exposure, trade notional and fee.</li>
+<li>Observe the new closing data and form targets for later execution.</li>
+</ol>
+<p>Formation can be precomputed when it depends only on past data and its causality is verified. State-dependent rules require sequential computation: a stop, holding-period cap or hysteresis transition depends on earlier account decisions. Replacing such a rule with a stateless boolean array changes the strategy.</p>
+{{figure:equity}}
+<h3>Warm-up and common evaluation</h3>
+<p>A 63-session trailing return first exists at close 63. With one-session execution delay, it is executed at close 64 and first affects the return ending on day 65. The benchmark study therefore starts every wealth curve at close 64. A volatility window can extend warm-up if it requires more observations than the signal.</p>
+<p>Changing a lookback can change the first eligible date. For cross-parameter comparisons, use a common evaluation start after the longest required warm-up. The robustness study does so. Within the laboratory, the strategy and its benchmarks always share the start implied by the current inputs; comparing separate laboratory runs still requires checking their displayed start and period count.</p>
+<h3>Gross and net accounts</h3>
+<p>A zero-cost account is rerun with the same signals and sizing, rather than constructed by adding cumulative fees to final net wealth. Fees change the capital available to compound. Gross-minus-net wealth therefore differs from the arithmetic sum of fee payments.</p>
+<p>Do not silently omit the first purchase or require a final liquidation only for the strategy. The main comparison values both strategy and benchmark at the final mark without forced liquidation. A realized exit analysis can instead liquidate both and charge the applicable final cost, but it answers a slightly different accounting question.</p>
+<h3>Implementation verification</h3>
+<p>Use deterministic miniature paths that can be calculated by hand. Test all-cash, all-stock, unchanged targets, fractional weights, zero cost and nonzero cash return. Compare an optimized engine with an independently written holdings ledger. Perturb future prices to test causality. Such checks verify the computation within its assumptions; they do not establish market predictability.</p>
+<p>Store model configuration, seed or data snapshot, code version and event records. A final wealth chart alone contains too little information to reconstruct why a strategy traded or to diagnose a disagreement between implementations.</p>
+</section>

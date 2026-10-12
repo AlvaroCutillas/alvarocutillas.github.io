@@ -1,0 +1,705 @@
+<svg role="img" aria-labelledby="convexity-title convexity-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="266.4pt" viewBox="0 0 792 266.4" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="convexity-title">Figure 16 · Duration, convexity and finite shocks</title><desc id="convexity-desc">Parallel shifts apply to continuously compounded zero rates. No YTM shift is substituted for that curve shock; all approximations use the matching derivatives of discounted cash flows.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T20:19:14.435169</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="convexity-figure_1">
+  <g id="convexity-patch_1">
+   <path d="M 0 266.4 
+L 792 266.4 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="convexity-axes_1">
+   <g id="convexity-patch_2">
+    <path d="M 51.14 223.18 
+L 386.91 223.18 
+L 386.91 35.14 
+L 51.14 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="convexity-matplotlib.axis_1">
+    <g id="convexity-xtick_1">
+     <g id="convexity-line2d_1">
+      <path d="M 66.402273 223.18 
+L 66.402273 35.14 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_2">
+      <defs>
+       <path id="convexity-m1f1d1fb774" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#convexity-m1f1d1fb774" x="66.402273" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="66.402273" y="237.018594" transform="rotate(-0 66.402273 237.018594)">−300</text>
+     </g>
+    </g>
+    <g id="convexity-xtick_2">
+     <g id="convexity-line2d_3">
+      <path d="M 117.276515 223.18 
+L 117.276515 35.14 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_4">
+      <g>
+       <use href="#convexity-m1f1d1fb774" x="117.276515" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="117.276515" y="237.018594" transform="rotate(-0 117.276515 237.018594)">−200</text>
+     </g>
+    </g>
+    <g id="convexity-xtick_3">
+     <g id="convexity-line2d_5">
+      <path d="M 168.150758 223.18 
+L 168.150758 35.14 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_6">
+      <g>
+       <use href="#convexity-m1f1d1fb774" x="168.150758" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="168.150758" y="237.018594" transform="rotate(-0 168.150758 237.018594)">−100</text>
+     </g>
+    </g>
+    <g id="convexity-xtick_4">
+     <g id="convexity-line2d_7">
+      <path d="M 219.025 223.18 
+L 219.025 35.14 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_8">
+      <g>
+       <use href="#convexity-m1f1d1fb774" x="219.025" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="219.025" y="237.018594" transform="rotate(-0 219.025 237.018594)">0</text>
+     </g>
+    </g>
+    <g id="convexity-xtick_5">
+     <g id="convexity-line2d_9">
+      <path d="M 269.899242 223.18 
+L 269.899242 35.14 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_10">
+      <g>
+       <use href="#convexity-m1f1d1fb774" x="269.899242" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="269.899242" y="237.018594" transform="rotate(-0 269.899242 237.018594)">100</text>
+     </g>
+    </g>
+    <g id="convexity-xtick_6">
+     <g id="convexity-line2d_11">
+      <path d="M 320.773485 223.18 
+L 320.773485 35.14 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_12">
+      <g>
+       <use href="#convexity-m1f1d1fb774" x="320.773485" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="320.773485" y="237.018594" transform="rotate(-0 320.773485 237.018594)">200</text>
+     </g>
+    </g>
+    <g id="convexity-xtick_7">
+     <g id="convexity-line2d_13">
+      <path d="M 371.647727 223.18 
+L 371.647727 35.14 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_14">
+      <g>
+       <use href="#convexity-m1f1d1fb774" x="371.647727" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="371.647727" y="237.018594" transform="rotate(-0 371.647727 237.018594)">300</text>
+     </g>
+    </g>
+    <g id="convexity-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="219.025" y="249.728906" transform="rotate(-0 219.025 249.728906)">Parallel zero shift (basis points)</text>
+    </g>
+   </g>
+   <g id="convexity-matplotlib.axis_2">
+    <g id="convexity-ytick_1">
+     <g id="convexity-line2d_15">
+      <path d="M 51.14 211.125464 
+L 386.91 211.125464 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_16">
+      <defs>
+       <path id="convexity-mcf79e52628" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#convexity-mcf79e52628" x="51.14" y="211.125464" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="214.544761" transform="rotate(-0 44.14 214.544761)">90</text>
+     </g>
+    </g>
+    <g id="convexity-ytick_2">
+     <g id="convexity-line2d_17">
+      <path d="M 51.14 182.27326 
+L 386.91 182.27326 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_18">
+      <g>
+       <use href="#convexity-mcf79e52628" x="51.14" y="182.27326" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="185.692556" transform="rotate(-0 44.14 185.692556)">95</text>
+     </g>
+    </g>
+    <g id="convexity-ytick_3">
+     <g id="convexity-line2d_19">
+      <path d="M 51.14 153.421055 
+L 386.91 153.421055 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_20">
+      <g>
+       <use href="#convexity-mcf79e52628" x="51.14" y="153.421055" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="156.840351" transform="rotate(-0 44.14 156.840351)">100</text>
+     </g>
+    </g>
+    <g id="convexity-ytick_4">
+     <g id="convexity-line2d_21">
+      <path d="M 51.14 124.56885 
+L 386.91 124.56885 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_22">
+      <g>
+       <use href="#convexity-mcf79e52628" x="51.14" y="124.56885" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="127.988147" transform="rotate(-0 44.14 127.988147)">105</text>
+     </g>
+    </g>
+    <g id="convexity-ytick_5">
+     <g id="convexity-line2d_23">
+      <path d="M 51.14 95.716645 
+L 386.91 95.716645 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_24">
+      <g>
+       <use href="#convexity-mcf79e52628" x="51.14" y="95.716645" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="99.135942" transform="rotate(-0 44.14 99.135942)">110</text>
+     </g>
+    </g>
+    <g id="convexity-ytick_6">
+     <g id="convexity-line2d_25">
+      <path d="M 51.14 66.86444 
+L 386.91 66.86444 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_26">
+      <g>
+       <use href="#convexity-mcf79e52628" x="51.14" y="66.86444" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="70.283737" transform="rotate(-0 44.14 70.283737)">115</text>
+     </g>
+    </g>
+    <g id="convexity-ytick_7">
+     <g id="convexity-line2d_27">
+      <path d="M 51.14 38.012235 
+L 386.91 38.012235 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_28">
+      <g>
+       <use href="#convexity-mcf79e52628" x="51.14" y="38.012235" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="41.431532" transform="rotate(-0 44.14 41.431532)">120</text>
+     </g>
+    </g>
+    <g id="convexity-text_16">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.089531" y="129.16" transform="rotate(-90 21.089531 129.16)">Bond price per 100</text>
+    </g>
+   </g>
+   <g id="convexity-line2d_29">
+    <path d="M 66.402273 43.687273 
+L 87.769455 56.882032 
+L 109.136636 69.810811 
+L 130.503818 82.479051 
+L 151.871 94.892083 
+L 173.238182 107.055127 
+L 195.622848 119.534805 
+L 218.007515 131.751483 
+L 240.392182 143.710794 
+L 262.776848 155.418246 
+L 285.161515 166.87923 
+L 307.546182 178.09902 
+L 330.948333 189.576512 
+L 354.350485 200.801793 
+L 371.647727 208.93995 
+L 371.647727 208.93995 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="convexity-line2d_30">
+    <path d="M 66.402273 49.968532 
+L 371.647727 214.632727 
+L 371.647727 214.632727 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="convexity-line2d_31">
+    <path d="M 66.402273 43.992436 
+L 88.786939 57.692246 
+L 111.171606 71.134951 
+L 133.556273 84.320551 
+L 155.940939 97.249047 
+L 178.325606 109.920437 
+L 200.710273 122.334722 
+L 223.094939 134.491903 
+L 245.479606 146.391978 
+L 267.864273 158.034949 
+L 290.248939 169.420814 
+L 312.633606 180.549575 
+L 335.018273 191.42123 
+L 357.402939 202.035781 
+L 371.647727 208.656631 
+L 371.647727 208.656631 
+" clip-path="url(#convexity-pd860e437b4)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="convexity-patch_3">
+    <path d="M 51.14 223.18 
+L 51.14 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="convexity-patch_4">
+    <path d="M 51.14 223.18 
+L 386.91 223.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="convexity-text_17">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="51.14" y="22.14" transform="rotate(-0 51.14 22.14)">Five-year 4% semiannual coupon bond</text>
+   </g>
+   <g id="convexity-legend_1">
+    <g id="convexity-line2d_32">
+     <path d="M 262.2325 45.61875 
+L 270.2325 45.61875 
+L 278.2325 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="convexity-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="284.6325" y="48.41875" transform="rotate(-0 284.6325 48.41875)">Exact repricing</text>
+    </g>
+    <g id="convexity-line2d_33">
+     <path d="M 262.2325 57.36125 
+L 270.2325 57.36125 
+L 278.2325 57.36125 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="convexity-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="284.6325" y="60.16125" transform="rotate(-0 284.6325 60.16125)">Duration approximation</text>
+    </g>
+    <g id="convexity-line2d_34">
+     <path d="M 262.2325 69.10375 
+L 270.2325 69.10375 
+L 278.2325 69.10375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="convexity-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="284.6325" y="71.90375" transform="rotate(-0 284.6325 71.90375)">Duration + convexity</text>
+    </g>
+   </g>
+  </g>
+  <g id="convexity-axes_2">
+   <g id="convexity-patch_5">
+    <path d="M 442.73 223.18 
+L 778.5 223.18 
+L 778.5 35.14 
+L 442.73 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="convexity-matplotlib.axis_3">
+    <g id="convexity-xtick_8">
+     <g id="convexity-line2d_35">
+      <path d="M 457.992273 223.18 
+L 457.992273 35.14 
+" clip-path="url(#convexity-pc9ff9b2fcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_36">
+      <g>
+       <use href="#convexity-m1f1d1fb774" x="457.992273" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="457.992273" y="237.018594" transform="rotate(-0 457.992273 237.018594)">−300</text>
+     </g>
+    </g>
+    <g id="convexity-xtick_9">
+     <g id="convexity-line2d_37">
+      <path d="M 508.866515 223.18 
+L 508.866515 35.14 
+" clip-path="url(#convexity-pc9ff9b2fcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_38">
+      <g>
+       <use href="#convexity-m1f1d1fb774" x="508.866515" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="508.866515" y="237.018594" transform="rotate(-0 508.866515 237.018594)">−200</text>
+     </g>
+    </g>
+    <g id="convexity-xtick_10">
+     <g id="convexity-line2d_39">
+      <path d="M 559.740758 223.18 
+L 559.740758 35.14 
+" clip-path="url(#convexity-pc9ff9b2fcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_40">
+      <g>
+       <use href="#convexity-m1f1d1fb774" x="559.740758" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="559.740758" y="237.018594" transform="rotate(-0 559.740758 237.018594)">−100</text>
+     </g>
+    </g>
+    <g id="convexity-xtick_11">
+     <g id="convexity-line2d_41">
+      <path d="M 610.615 223.18 
+L 610.615 35.14 
+" clip-path="url(#convexity-pc9ff9b2fcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_42">
+      <g>
+       <use href="#convexity-m1f1d1fb774" x="610.615" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="610.615" y="237.018594" transform="rotate(-0 610.615 237.018594)">0</text>
+     </g>
+    </g>
+    <g id="convexity-xtick_12">
+     <g id="convexity-line2d_43">
+      <path d="M 661.489242 223.18 
+L 661.489242 35.14 
+" clip-path="url(#convexity-pc9ff9b2fcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_44">
+      <g>
+       <use href="#convexity-m1f1d1fb774" x="661.489242" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="661.489242" y="237.018594" transform="rotate(-0 661.489242 237.018594)">100</text>
+     </g>
+    </g>
+    <g id="convexity-xtick_13">
+     <g id="convexity-line2d_45">
+      <path d="M 712.363485 223.18 
+L 712.363485 35.14 
+" clip-path="url(#convexity-pc9ff9b2fcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_46">
+      <g>
+       <use href="#convexity-m1f1d1fb774" x="712.363485" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="712.363485" y="237.018594" transform="rotate(-0 712.363485 237.018594)">200</text>
+     </g>
+    </g>
+    <g id="convexity-xtick_14">
+     <g id="convexity-line2d_47">
+      <path d="M 763.237727 223.18 
+L 763.237727 35.14 
+" clip-path="url(#convexity-pc9ff9b2fcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_48">
+      <g>
+       <use href="#convexity-m1f1d1fb774" x="763.237727" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="763.237727" y="237.018594" transform="rotate(-0 763.237727 237.018594)">300</text>
+     </g>
+    </g>
+    <g id="convexity-text_28">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="610.615" y="249.728906" transform="rotate(-0 610.615 249.728906)">Parallel zero shift (basis points)</text>
+    </g>
+   </g>
+   <g id="convexity-matplotlib.axis_4">
+    <g id="convexity-ytick_8">
+     <g id="convexity-line2d_49">
+      <path d="M 442.73 201.330713 
+L 778.5 201.330713 
+" clip-path="url(#convexity-pc9ff9b2fcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_50">
+      <g>
+       <use href="#convexity-mcf79e52628" x="442.73" y="201.330713" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="435.73" y="204.750009" transform="rotate(-0 435.73 204.750009)">−1.0</text>
+     </g>
+    </g>
+    <g id="convexity-ytick_9">
+     <g id="convexity-line2d_51">
+      <path d="M 442.73 171.277584 
+L 778.5 171.277584 
+" clip-path="url(#convexity-pc9ff9b2fcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_52">
+      <g>
+       <use href="#convexity-mcf79e52628" x="442.73" y="171.277584" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="435.73" y="174.696881" transform="rotate(-0 435.73 174.696881)">−0.8</text>
+     </g>
+    </g>
+    <g id="convexity-ytick_10">
+     <g id="convexity-line2d_53">
+      <path d="M 442.73 141.224455 
+L 778.5 141.224455 
+" clip-path="url(#convexity-pc9ff9b2fcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_54">
+      <g>
+       <use href="#convexity-mcf79e52628" x="442.73" y="141.224455" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="435.73" y="144.643752" transform="rotate(-0 435.73 144.643752)">−0.6</text>
+     </g>
+    </g>
+    <g id="convexity-ytick_11">
+     <g id="convexity-line2d_55">
+      <path d="M 442.73 111.171327 
+L 778.5 111.171327 
+" clip-path="url(#convexity-pc9ff9b2fcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_56">
+      <g>
+       <use href="#convexity-mcf79e52628" x="442.73" y="111.171327" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="435.73" y="114.590624" transform="rotate(-0 435.73 114.590624)">−0.4</text>
+     </g>
+    </g>
+    <g id="convexity-ytick_12">
+     <g id="convexity-line2d_57">
+      <path d="M 442.73 81.118198 
+L 778.5 81.118198 
+" clip-path="url(#convexity-pc9ff9b2fcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_58">
+      <g>
+       <use href="#convexity-mcf79e52628" x="442.73" y="81.118198" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="435.73" y="84.537495" transform="rotate(-0 435.73 84.537495)">−0.2</text>
+     </g>
+    </g>
+    <g id="convexity-ytick_13">
+     <g id="convexity-line2d_59">
+      <path d="M 442.73 51.06507 
+L 778.5 51.06507 
+" clip-path="url(#convexity-pc9ff9b2fcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convexity-line2d_60">
+      <g>
+       <use href="#convexity-mcf79e52628" x="442.73" y="51.06507" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convexity-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="435.73" y="54.484366" transform="rotate(-0 435.73 54.484366)">0.0</text>
+     </g>
+    </g>
+    <g id="convexity-text_35">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="408.00375" y="129.16" transform="rotate(-90 408.00375 129.16)">Price approximation error</text>
+    </g>
+   </g>
+   <g id="convexity-line2d_61">
+    <path d="M 457.992273 214.632727 
+L 464.097182 201.505411 
+L 470.202091 188.951899 
+L 476.307 176.96881 
+L 482.411909 165.552785 
+L 487.499333 156.470196 
+L 492.586758 147.777159 
+L 497.674182 139.471763 
+L 502.761606 131.552104 
+L 507.84903 124.016288 
+L 512.936455 116.862432 
+L 518.023879 110.088659 
+L 523.111303 103.693105 
+L 528.198727 97.673911 
+L 533.286152 92.029232 
+L 538.373576 86.757229 
+L 543.461 81.856071 
+L 548.548424 77.32394 
+L 552.618364 73.962717 
+L 556.688303 70.835587 
+L 560.758242 67.941633 
+L 564.828182 65.279936 
+L 568.898121 62.849587 
+L 572.968061 60.649674 
+L 577.038 58.679295 
+L 581.107939 56.937546 
+L 585.177879 55.42353 
+L 589.247818 54.136353 
+L 593.317758 53.075124 
+L 597.387697 52.238955 
+L 601.457636 51.626962 
+L 605.527576 51.238266 
+L 609.597515 51.071988 
+L 613.667455 51.127257 
+L 617.737394 51.403201 
+L 621.807333 51.898955 
+L 625.877273 52.613655 
+L 629.947212 53.546441 
+L 634.017152 54.696457 
+L 638.087091 56.062851 
+L 642.15703 57.644773 
+L 646.22697 59.441376 
+L 650.296909 61.451818 
+L 654.366848 63.67526 
+L 658.436788 66.110864 
+L 662.506727 68.757799 
+L 667.594152 72.362387 
+L 672.681576 76.294269 
+L 677.769 80.551841 
+L 682.856424 85.133504 
+L 687.943848 90.037671 
+L 693.031273 95.262758 
+L 698.118697 100.807194 
+L 703.206121 106.669411 
+L 708.293545 112.847852 
+L 713.38097 119.340965 
+L 718.468394 126.14721 
+L 724.573303 134.725874 
+L 730.678212 143.750597 
+L 736.783121 153.218757 
+L 742.88803 163.127745 
+L 748.992939 173.474971 
+L 755.097848 184.257857 
+L 761.202758 195.473843 
+L 763.237727 199.308309 
+L 763.237727 199.308309 
+" clip-path="url(#convexity-pc9ff9b2fcd)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="convexity-line2d_62">
+    <path d="M 457.992273 59.011691 
+L 468.167121 57.509642 
+L 479.359455 56.092805 
+L 490.551788 54.902536 
+L 502.761606 53.838416 
+L 514.971424 52.993307 
+L 528.198727 52.294817 
+L 542.443515 51.758597 
+L 558.723273 51.369729 
+L 578.055485 51.139972 
+L 605.527576 51.065353 
+L 648.261939 50.951244 
+L 667.594152 50.672272 
+L 683.873909 50.233501 
+L 699.136182 49.603348 
+L 713.38097 48.785846 
+L 726.608273 47.797972 
+L 738.818091 46.666697 
+L 751.027909 45.303341 
+L 762.220242 43.832096 
+L 763.237727 43.687273 
+L 763.237727 43.687273 
+" clip-path="url(#convexity-pc9ff9b2fcd)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="convexity-patch_6">
+    <path d="M 442.73 223.18 
+L 442.73 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="convexity-patch_7">
+    <path d="M 442.73 223.18 
+L 778.5 223.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="convexity-text_36">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="442.73" y="22.14" transform="rotate(-0 442.73 22.14)">The second-order correction improves local accuracy</text>
+   </g>
+   <g id="convexity-legend_2">
+    <g id="convexity-line2d_63">
+     <path d="M 554.085 199.77375 
+L 562.085 199.77375 
+L 570.085 199.77375 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="convexity-text_37">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="576.485" y="202.57375" transform="rotate(-0 576.485 202.57375)">Linear minus exact</text>
+    </g>
+    <g id="convexity-line2d_64">
+     <path d="M 554.085 211.51625 
+L 562.085 211.51625 
+L 570.085 211.51625 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="convexity-text_38">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="576.485" y="214.31625" transform="rotate(-0 576.485 214.31625)">Quadratic minus exact</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="convexity-pd860e437b4">
+   <rect x="51.14" y="35.14" width="335.77" height="188.04"/>
+  </clipPath>
+  <clipPath id="convexity-pc9ff9b2fcd">
+   <rect x="442.73" y="35.14" width="335.77" height="188.04"/>
+  </clipPath>
+ </defs>
+</svg>

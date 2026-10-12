@@ -1,0 +1,752 @@
+<svg role="img" aria-labelledby="coverage-title coverage-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="259.2pt" viewBox="0 0 662.4 259.2" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="coverage-title">Figure 04 · Repeated-run coverage and root mean squared error</title><desc id="coverage-desc">600 independent experiments per sample size; seed 1002. Coverage itself is noisy: at 95%, its binomial standard error with 600 repetitions is about 0.89 percentage points. No monotonic convergence of an individual run is implied.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T19:11:26.699159</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="coverage-figure_1">
+  <g id="coverage-patch_1">
+   <path d="M 0 259.2 
+L 662.4 259.2 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="coverage-axes_1">
+   <g id="coverage-patch_2">
+    <path d="M 51.14 213.388 
+L 314.669132 213.388 
+L 314.669132 17.1 
+L 51.14 17.1 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="coverage-matplotlib.axis_1">
+    <g id="coverage-xtick_1">
+     <g id="coverage-line2d_1">
+      <path d="M 63.118597 213.388 
+L 63.118597 17.1 
+" clip-path="url(#coverage-p9eb0987bd7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coverage-line2d_2">
+      <defs>
+       <path id="coverage-m5f3788a181" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#coverage-m5f3788a181" x="63.118597" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coverage-text_1">
+      <!-- $\mathdefault{10^{2}}$ -->
+      <g style="fill: #939b94" transform="translate(55.198597 227.226594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_2">
+     <g id="coverage-line2d_3">
+      <path d="M 204.128702 213.388 
+L 204.128702 17.1 
+" clip-path="url(#coverage-p9eb0987bd7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coverage-line2d_4">
+      <g>
+       <use href="#coverage-m5f3788a181" x="204.128702" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coverage-text_2">
+      <!-- $\mathdefault{10^{3}}$ -->
+      <g style="fill: #939b94" transform="translate(196.208702 227.226594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">3</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_3">
+     <g id="coverage-line2d_5">
+      <defs>
+       <path id="coverage-m78bbc39c6f" d="M 0 0 
+L 0 2 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="56.666328" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_4">
+     <g id="coverage-line2d_6">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="105.566868" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_5">
+     <g id="coverage-line2d_7">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="130.397515" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_6">
+     <g id="coverage-line2d_8">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="148.015139" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_7">
+     <g id="coverage-line2d_9">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="161.680431" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_8">
+     <g id="coverage-line2d_10">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="172.845786" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_9">
+     <g id="coverage-line2d_11">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="182.28596" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_10">
+     <g id="coverage-line2d_12">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="190.463411" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_11">
+     <g id="coverage-line2d_13">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="197.676433" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_12">
+     <g id="coverage-line2d_14">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="246.576973" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_13">
+     <g id="coverage-line2d_15">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="271.40762" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_14">
+     <g id="coverage-line2d_16">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="289.025244" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_15">
+     <g id="coverage-line2d_17">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="302.690535" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_16">
+     <g id="coverage-line2d_18">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="313.855891" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-text_3">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="182.904566" y="239.936906" transform="rotate(-0 182.904566 239.936906)">Payoff evaluations N</text>
+    </g>
+   </g>
+   <g id="coverage-matplotlib.axis_2">
+    <g id="coverage-ytick_1">
+     <g id="coverage-line2d_19">
+      <path d="M 51.14 213.388 
+L 314.669132 213.388 
+" clip-path="url(#coverage-p9eb0987bd7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coverage-line2d_20">
+      <defs>
+       <path id="coverage-me77882f31c" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#coverage-me77882f31c" x="51.14" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coverage-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="216.807297" transform="rotate(-0 44.14 216.807297)">84</text>
+     </g>
+    </g>
+    <g id="coverage-ytick_2">
+     <g id="coverage-line2d_21">
+      <path d="M 51.14 188.852 
+L 314.669132 188.852 
+" clip-path="url(#coverage-p9eb0987bd7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coverage-line2d_22">
+      <g>
+       <use href="#coverage-me77882f31c" x="51.14" y="188.852" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coverage-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="192.271297" transform="rotate(-0 44.14 192.271297)">86</text>
+     </g>
+    </g>
+    <g id="coverage-ytick_3">
+     <g id="coverage-line2d_23">
+      <path d="M 51.14 164.316 
+L 314.669132 164.316 
+" clip-path="url(#coverage-p9eb0987bd7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coverage-line2d_24">
+      <g>
+       <use href="#coverage-me77882f31c" x="51.14" y="164.316" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coverage-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="167.735297" transform="rotate(-0 44.14 167.735297)">88</text>
+     </g>
+    </g>
+    <g id="coverage-ytick_4">
+     <g id="coverage-line2d_25">
+      <path d="M 51.14 139.78 
+L 314.669132 139.78 
+" clip-path="url(#coverage-p9eb0987bd7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coverage-line2d_26">
+      <g>
+       <use href="#coverage-me77882f31c" x="51.14" y="139.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coverage-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="143.199297" transform="rotate(-0 44.14 143.199297)">90</text>
+     </g>
+    </g>
+    <g id="coverage-ytick_5">
+     <g id="coverage-line2d_27">
+      <path d="M 51.14 115.244 
+L 314.669132 115.244 
+" clip-path="url(#coverage-p9eb0987bd7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coverage-line2d_28">
+      <g>
+       <use href="#coverage-me77882f31c" x="51.14" y="115.244" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coverage-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="118.663297" transform="rotate(-0 44.14 118.663297)">92</text>
+     </g>
+    </g>
+    <g id="coverage-ytick_6">
+     <g id="coverage-line2d_29">
+      <path d="M 51.14 90.708 
+L 314.669132 90.708 
+" clip-path="url(#coverage-p9eb0987bd7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coverage-line2d_30">
+      <g>
+       <use href="#coverage-me77882f31c" x="51.14" y="90.708" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coverage-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="94.127297" transform="rotate(-0 44.14 94.127297)">94</text>
+     </g>
+    </g>
+    <g id="coverage-ytick_7">
+     <g id="coverage-line2d_31">
+      <path d="M 51.14 66.172 
+L 314.669132 66.172 
+" clip-path="url(#coverage-p9eb0987bd7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coverage-line2d_32">
+      <g>
+       <use href="#coverage-me77882f31c" x="51.14" y="66.172" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coverage-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="69.591297" transform="rotate(-0 44.14 69.591297)">96</text>
+     </g>
+    </g>
+    <g id="coverage-ytick_8">
+     <g id="coverage-line2d_33">
+      <path d="M 51.14 41.636 
+L 314.669132 41.636 
+" clip-path="url(#coverage-p9eb0987bd7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coverage-line2d_34">
+      <g>
+       <use href="#coverage-me77882f31c" x="51.14" y="41.636" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coverage-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="45.055297" transform="rotate(-0 44.14 45.055297)">98</text>
+     </g>
+    </g>
+    <g id="coverage-ytick_9">
+     <g id="coverage-line2d_35">
+      <path d="M 51.14 17.1 
+L 314.669132 17.1 
+" clip-path="url(#coverage-p9eb0987bd7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coverage-line2d_36">
+      <g>
+       <use href="#coverage-me77882f31c" x="51.14" y="17.1" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coverage-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="20.519297" transform="rotate(-0 44.14 20.519297)">100</text>
+     </g>
+    </g>
+    <g id="coverage-text_13">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.089531" y="115.244" transform="rotate(-90 21.089531 115.244)">Coverage (%)</text>
+    </g>
+   </g>
+   <g id="coverage-line2d_37">
+    <path d="M 63.118597 96.842 
+L 119.232159 66.172 
+L 161.680431 80.484667 
+L 204.128702 66.172 
+L 260.242264 76.395333 
+L 302.690535 90.708 
+" clip-path="url(#coverage-p9eb0987bd7)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="coverage-ma7c5895b03" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#coverage-p9eb0987bd7)">
+     <use href="#coverage-ma7c5895b03" x="63.118597" y="96.842" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#coverage-ma7c5895b03" x="119.232159" y="66.172" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#coverage-ma7c5895b03" x="161.680431" y="80.484667" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#coverage-ma7c5895b03" x="204.128702" y="66.172" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#coverage-ma7c5895b03" x="260.242264" y="76.395333" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#coverage-ma7c5895b03" x="302.690535" y="90.708" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="coverage-line2d_38">
+    <path d="M 51.14 78.44 
+L 314.669132 78.44 
+" clip-path="url(#coverage-p9eb0987bd7)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+   </g>
+   <g id="coverage-patch_3">
+    <path d="M 51.14 213.388 
+L 51.14 17.1 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="coverage-patch_4">
+    <path d="M 51.14 213.388 
+L 314.669132 213.388 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="coverage-legend_1">
+    <g id="coverage-line2d_39">
+     <path d="M 206.891632 27.57875 
+L 214.891632 27.57875 
+L 222.891632 27.57875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#coverage-ma7c5895b03" x="214.891632" y="27.57875" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="coverage-text_14">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="229.291632" y="30.37875" transform="rotate(-0 229.291632 30.37875)">Observed coverage</text>
+    </g>
+    <g id="coverage-line2d_40">
+     <path d="M 206.891632 39.32125 
+L 214.891632 39.32125 
+L 222.891632 39.32125 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+    </g>
+    <g id="coverage-text_15">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="229.291632" y="42.12125" transform="rotate(-0 229.291632 42.12125)">Nominal 95%</text>
+    </g>
+   </g>
+  </g>
+  <g id="coverage-axes_2">
+   <g id="coverage-patch_5">
+    <path d="M 385.370868 213.388 
+L 648.9 213.388 
+L 648.9 17.1 
+L 385.370868 17.1 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="coverage-matplotlib.axis_3">
+    <g id="coverage-xtick_17">
+     <g id="coverage-line2d_41">
+      <path d="M 397.349465 213.388 
+L 397.349465 17.1 
+" clip-path="url(#coverage-p79cd14cd4e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coverage-line2d_42">
+      <g>
+       <use href="#coverage-m5f3788a181" x="397.349465" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coverage-text_16">
+      <!-- $\mathdefault{10^{2}}$ -->
+      <g style="fill: #939b94" transform="translate(389.429465 227.226594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_18">
+     <g id="coverage-line2d_43">
+      <path d="M 538.359569 213.388 
+L 538.359569 17.1 
+" clip-path="url(#coverage-p79cd14cd4e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coverage-line2d_44">
+      <g>
+       <use href="#coverage-m5f3788a181" x="538.359569" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coverage-text_17">
+      <!-- $\mathdefault{10^{3}}$ -->
+      <g style="fill: #939b94" transform="translate(530.439569 227.226594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">3</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_19">
+     <g id="coverage-line2d_45">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="390.897196" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_20">
+     <g id="coverage-line2d_46">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="439.797736" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_21">
+     <g id="coverage-line2d_47">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="464.628383" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_22">
+     <g id="coverage-line2d_48">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="482.246007" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_23">
+     <g id="coverage-line2d_49">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="495.911298" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_24">
+     <g id="coverage-line2d_50">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="507.076654" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_25">
+     <g id="coverage-line2d_51">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="516.516828" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_26">
+     <g id="coverage-line2d_52">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="524.694278" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_27">
+     <g id="coverage-line2d_53">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="531.907301" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_28">
+     <g id="coverage-line2d_54">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="580.807841" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_29">
+     <g id="coverage-line2d_55">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="605.638488" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_30">
+     <g id="coverage-line2d_56">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="623.256112" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_31">
+     <g id="coverage-line2d_57">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="636.921403" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-xtick_32">
+     <g id="coverage-line2d_58">
+      <g>
+       <use href="#coverage-m78bbc39c6f" x="648.086759" y="213.388" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-text_18">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="517.135434" y="239.936906" transform="rotate(-0 517.135434 239.936906)">Payoff evaluations N</text>
+    </g>
+   </g>
+   <g id="coverage-matplotlib.axis_4">
+    <g id="coverage-ytick_10">
+     <g id="coverage-line2d_59">
+      <path d="M 385.370868 62.92897 
+L 648.9 62.92897 
+" clip-path="url(#coverage-p79cd14cd4e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coverage-line2d_60">
+      <g>
+       <use href="#coverage-me77882f31c" x="385.370868" y="62.92897" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coverage-text_19">
+      <!-- $\mathdefault{10^{0}}$ -->
+      <g style="fill: #939b94" transform="translate(362.530868 66.348267)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-ytick_11">
+     <g id="coverage-line2d_61">
+      <defs>
+       <path id="coverage-m813dd987ae" d="M 0 0 
+L -2 0 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#coverage-m813dd987ae" x="385.370868" y="207.765021" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="coverage-text_20">
+      <!-- $\mathdefault{2\times10^{-1}}$ -->
+      <g style="fill: #939b94" transform="translate(342.080868 211.184318)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 7.479492 16.773926 22.5" y="-0.9609375">2×10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="28.312207 33.590918" y="-4.40625">−1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-ytick_12">
+     <g id="coverage-line2d_62">
+      <g>
+       <use href="#coverage-m813dd987ae" x="385.370868" y="171.276527" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="coverage-text_21">
+      <!-- $\mathdefault{3\times10^{-1}}$ -->
+      <g style="fill: #939b94" transform="translate(342.080868 174.695824)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 7.479492 16.773926 22.5" y="-0.9609375">3×10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="28.312207 33.590918" y="-4.40625">−1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-ytick_13">
+     <g id="coverage-line2d_63">
+      <g>
+       <use href="#coverage-m813dd987ae" x="385.370868" y="145.387529" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="coverage-text_22">
+      <!-- $\mathdefault{4\times10^{-1}}$ -->
+      <g style="fill: #939b94" transform="translate(342.080868 148.806826)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 7.479492 16.773926 22.5" y="-0.9609375">4×10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="28.312207 33.590918" y="-4.40625">−1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-ytick_14">
+     <g id="coverage-line2d_64">
+      <g>
+       <use href="#coverage-m813dd987ae" x="385.370868" y="125.306462" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-ytick_15">
+     <g id="coverage-line2d_65">
+      <g>
+       <use href="#coverage-m813dd987ae" x="385.370868" y="108.899035" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="coverage-text_23">
+      <!-- $\mathdefault{6\times10^{-1}}$ -->
+      <g style="fill: #939b94" transform="translate(342.080868 112.318332)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 7.479492 16.773926 22.5" y="-0.9609375">6×10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="28.312207 33.590918" y="-4.40625">−1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-ytick_16">
+     <g id="coverage-line2d_66">
+      <g>
+       <use href="#coverage-m813dd987ae" x="385.370868" y="95.026754" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-ytick_17">
+     <g id="coverage-line2d_67">
+      <g>
+       <use href="#coverage-m813dd987ae" x="385.370868" y="83.010037" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-ytick_18">
+     <g id="coverage-line2d_68">
+      <g>
+       <use href="#coverage-m813dd987ae" x="385.370868" y="72.410542" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="coverage-text_24">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="336.209149" y="115.244" transform="rotate(-90 336.209149 115.244)">Price RMSE</text>
+    </g>
+   </g>
+   <g id="coverage-line2d_69">
+    <path d="M 397.349465 26.022182 
+L 453.463027 71.302517 
+L 495.911298 100.577301 
+L 538.359569 134.428269 
+L 594.473132 173.162618 
+L 636.921403 202.810444 
+" clip-path="url(#coverage-p79cd14cd4e)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <g clip-path="url(#coverage-p79cd14cd4e)">
+     <use href="#coverage-ma7c5895b03" x="397.349465" y="26.022182" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#coverage-ma7c5895b03" x="453.463027" y="71.302517" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#coverage-ma7c5895b03" x="495.911298" y="100.577301" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#coverage-ma7c5895b03" x="538.359569" y="134.428269" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#coverage-ma7c5895b03" x="594.473132" y="173.162618" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#coverage-ma7c5895b03" x="636.921403" y="202.810444" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="coverage-line2d_70">
+    <path d="M 397.349465 28.441022 
+L 453.463027 69.670301 
+L 495.911298 100.859047 
+L 538.359569 132.047793 
+L 594.473132 173.277072 
+L 636.921403 204.465818 
+" clip-path="url(#coverage-p79cd14cd4e)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+   </g>
+   <g id="coverage-patch_6">
+    <path d="M 385.370868 213.388 
+L 385.370868 17.1 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="coverage-patch_7">
+    <path d="M 385.370868 213.388 
+L 648.9 213.388 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="coverage-legend_2">
+    <g id="coverage-line2d_71">
+     <path d="M 511.65625 27.57875 
+L 519.65625 27.57875 
+L 527.65625 27.57875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#coverage-ma7c5895b03" x="519.65625" y="27.57875" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="coverage-text_25">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="534.05625" y="30.37875" transform="rotate(-0 534.05625 30.37875)">Empirical RMSE</text>
+    </g>
+    <g id="coverage-line2d_72">
+     <path d="M 511.65625 39.32125 
+L 519.65625 39.32125 
+L 527.65625 39.32125 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+    </g>
+    <g id="coverage-text_26">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="534.05625" y="42.12125" transform="rotate(-0 534.05625 42.12125)">Estimated 1 / √N reference</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="coverage-p9eb0987bd7">
+   <rect x="51.14" y="17.1" width="263.529132" height="196.288"/>
+  </clipPath>
+  <clipPath id="coverage-p79cd14cd4e">
+   <rect x="385.370868" y="17.1" width="263.529132" height="196.288"/>
+  </clipPath>
+ </defs>
+</svg>

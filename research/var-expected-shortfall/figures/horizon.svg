@@ -1,0 +1,430 @@
+<svg role="img" aria-labelledby="horizon-title horizon-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="horizon-title">Figure 06 · Horizon scaling and the role of expected loss</title><desc id="horizon-desc">Independent additive daily normal losses: mean 0.08, standard deviation 1. This is a fixed-exposure mathematical benchmark; compound returns, volatility dynamics and nonlinear positions need separate treatment.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T18:09:10.186292</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="horizon-figure_1">
+  <g id="horizon-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="horizon-axes_1">
+   <g id="horizon-patch_2">
+    <path d="M 45.38 244.78 
+L 706.5 244.78 
+L 706.5 35.7025 
+L 45.38 35.7025 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="horizon-matplotlib.axis_1">
+    <g id="horizon-xtick_1">
+     <g id="horizon-line2d_1">
+      <path d="M 54.706144 244.78 
+L 54.706144 35.7025 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="horizon-line2d_2">
+      <defs>
+       <path id="horizon-mf5fb9fc4e1" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#horizon-mf5fb9fc4e1" x="54.706144" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="horizon-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="54.706144" y="258.618594" transform="rotate(-0 54.706144 258.618594)">0</text>
+     </g>
+    </g>
+    <g id="horizon-xtick_2">
+     <g id="horizon-line2d_3">
+      <path d="M 158.329969 244.78 
+L 158.329969 35.7025 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="horizon-line2d_4">
+      <g>
+       <use href="#horizon-mf5fb9fc4e1" x="158.329969" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="horizon-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="158.329969" y="258.618594" transform="rotate(-0 158.329969 258.618594)">5</text>
+     </g>
+    </g>
+    <g id="horizon-xtick_3">
+     <g id="horizon-line2d_5">
+      <path d="M 261.953793 244.78 
+L 261.953793 35.7025 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="horizon-line2d_6">
+      <g>
+       <use href="#horizon-mf5fb9fc4e1" x="261.953793" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="horizon-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="261.953793" y="258.618594" transform="rotate(-0 261.953793 258.618594)">10</text>
+     </g>
+    </g>
+    <g id="horizon-xtick_4">
+     <g id="horizon-line2d_7">
+      <path d="M 365.577618 244.78 
+L 365.577618 35.7025 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="horizon-line2d_8">
+      <g>
+       <use href="#horizon-mf5fb9fc4e1" x="365.577618" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="horizon-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="365.577618" y="258.618594" transform="rotate(-0 365.577618 258.618594)">15</text>
+     </g>
+    </g>
+    <g id="horizon-xtick_5">
+     <g id="horizon-line2d_9">
+      <path d="M 469.201442 244.78 
+L 469.201442 35.7025 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="horizon-line2d_10">
+      <g>
+       <use href="#horizon-mf5fb9fc4e1" x="469.201442" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="horizon-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="469.201442" y="258.618594" transform="rotate(-0 469.201442 258.618594)">20</text>
+     </g>
+    </g>
+    <g id="horizon-xtick_6">
+     <g id="horizon-line2d_11">
+      <path d="M 572.825266 244.78 
+L 572.825266 35.7025 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="horizon-line2d_12">
+      <g>
+       <use href="#horizon-mf5fb9fc4e1" x="572.825266" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="horizon-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="572.825266" y="258.618594" transform="rotate(-0 572.825266 258.618594)">25</text>
+     </g>
+    </g>
+    <g id="horizon-xtick_7">
+     <g id="horizon-line2d_13">
+      <path d="M 676.449091 244.78 
+L 676.449091 35.7025 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="horizon-line2d_14">
+      <g>
+       <use href="#horizon-mf5fb9fc4e1" x="676.449091" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="horizon-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="676.449091" y="258.618594" transform="rotate(-0 676.449091 258.618594)">30</text>
+     </g>
+    </g>
+    <g id="horizon-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="375.94" y="271.328906" transform="rotate(-0 375.94 271.328906)">Horizon (days)</text>
+    </g>
+   </g>
+   <g id="horizon-matplotlib.axis_2">
+    <g id="horizon-ytick_1">
+     <g id="horizon-line2d_15">
+      <path d="M 45.38 240.569561 
+L 706.5 240.569561 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="horizon-line2d_16">
+      <defs>
+       <path id="horizon-mb5f4c1ca4c" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#horizon-mb5f4c1ca4c" x="45.38" y="240.569561" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="horizon-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="243.988858" transform="rotate(-0 38.38 243.988858)">2</text>
+     </g>
+    </g>
+    <g id="horizon-ytick_2">
+     <g id="horizon-line2d_17">
+      <path d="M 45.38 214.51758 
+L 706.5 214.51758 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="horizon-line2d_18">
+      <g>
+       <use href="#horizon-mb5f4c1ca4c" x="45.38" y="214.51758" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="horizon-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="217.936877" transform="rotate(-0 38.38 217.936877)">4</text>
+     </g>
+    </g>
+    <g id="horizon-ytick_3">
+     <g id="horizon-line2d_19">
+      <path d="M 45.38 188.465599 
+L 706.5 188.465599 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="horizon-line2d_20">
+      <g>
+       <use href="#horizon-mb5f4c1ca4c" x="45.38" y="188.465599" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="horizon-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="191.884896" transform="rotate(-0 38.38 191.884896)">6</text>
+     </g>
+    </g>
+    <g id="horizon-ytick_4">
+     <g id="horizon-line2d_21">
+      <path d="M 45.38 162.413618 
+L 706.5 162.413618 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="horizon-line2d_22">
+      <g>
+       <use href="#horizon-mb5f4c1ca4c" x="45.38" y="162.413618" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="horizon-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="165.832915" transform="rotate(-0 38.38 165.832915)">8</text>
+     </g>
+    </g>
+    <g id="horizon-ytick_5">
+     <g id="horizon-line2d_23">
+      <path d="M 45.38 136.361637 
+L 706.5 136.361637 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="horizon-line2d_24">
+      <g>
+       <use href="#horizon-mb5f4c1ca4c" x="45.38" y="136.361637" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="horizon-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="139.780934" transform="rotate(-0 38.38 139.780934)">10</text>
+     </g>
+    </g>
+    <g id="horizon-ytick_6">
+     <g id="horizon-line2d_25">
+      <path d="M 45.38 110.309656 
+L 706.5 110.309656 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="horizon-line2d_26">
+      <g>
+       <use href="#horizon-mb5f4c1ca4c" x="45.38" y="110.309656" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="horizon-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="113.728953" transform="rotate(-0 38.38 113.728953)">12</text>
+     </g>
+    </g>
+    <g id="horizon-ytick_7">
+     <g id="horizon-line2d_27">
+      <path d="M 45.38 84.257675 
+L 706.5 84.257675 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="horizon-line2d_28">
+      <g>
+       <use href="#horizon-mb5f4c1ca4c" x="45.38" y="84.257675" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="horizon-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="87.676972" transform="rotate(-0 38.38 87.676972)">14</text>
+     </g>
+    </g>
+    <g id="horizon-ytick_8">
+     <g id="horizon-line2d_29">
+      <path d="M 45.38 58.205694 
+L 706.5 58.205694 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="horizon-line2d_30">
+      <g>
+       <use href="#horizon-mb5f4c1ca4c" x="45.38" y="58.205694" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="horizon-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="61.624991" transform="rotate(-0 38.38 61.624991)">16</text>
+     </g>
+    </g>
+    <g id="horizon-text_17">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.055781" y="140.24125" transform="rotate(-90 21.055781 140.24125)">Loss units</text>
+    </g>
+   </g>
+   <g id="horizon-line2d_31">
+    <path d="M 75.430909 235.276477 
+L 96.155674 221.682491 
+L 116.880439 211.008994 
+L 137.605204 201.847254 
+L 158.329969 193.651611 
+L 179.054734 186.142215 
+L 199.779498 179.152824 
+L 220.504263 172.575122 
+L 241.229028 166.333873 
+L 261.953793 160.374296 
+L 282.678558 154.655038 
+L 303.403323 149.143971 
+L 324.128088 143.815545 
+L 344.852853 138.649044 
+L 365.577618 133.627396 
+L 386.302382 128.736333 
+L 407.027147 123.963786 
+L 427.751912 119.299437 
+L 448.476677 114.734386 
+L 469.201442 110.260887 
+L 489.926207 105.872154 
+L 510.650972 101.562199 
+L 531.375737 97.325707 
+L 552.100502 93.157937 
+L 572.825266 89.054634 
+L 593.550031 85.011968 
+L 614.274796 81.026472 
+L 634.999561 77.094997 
+L 655.724326 73.214674 
+L 676.449091 69.382879 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="horizon-line2d_32">
+    <path d="M 75.430909 235.276477 
+L 96.155674 222.292926 
+L 116.880439 212.330297 
+L 137.605204 203.931413 
+L 158.329969 196.531847 
+L 179.054734 189.842128 
+L 199.779498 183.690296 
+L 220.504263 177.964311 
+L 241.229028 172.586348 
+L 261.953793 167.499745 
+L 282.678558 162.661724 
+L 303.403323 158.039053 
+L 324.128088 153.605304 
+L 344.852853 149.33905 
+L 365.577618 145.222629 
+L 386.302382 141.241284 
+L 407.027147 137.38253 
+L 427.751912 133.635696 
+L 448.476677 129.991573 
+L 469.201442 126.442152 
+L 489.926207 122.980411 
+L 510.650972 119.600157 
+L 531.375737 116.295893 
+L 552.100502 113.062714 
+L 572.825266 109.896219 
+L 593.550031 106.792446 
+L 614.274796 103.747809 
+L 634.999561 100.759051 
+L 655.724326 97.823204 
+L 676.449091 94.937553 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+   </g>
+   <g id="horizon-line2d_33">
+    <path d="M 75.430909 230.862407 
+L 96.155674 215.440053 
+L 116.880439 203.363601 
+L 137.605204 193.019115 
+L 158.329969 183.78145 
+L 179.054734 175.329996 
+L 199.779498 167.474293 
+L 220.504263 160.090248 
+L 241.229028 153.091663 
+L 261.953793 146.415782 
+L 282.678558 140.015225 
+L 303.403323 133.853184 
+L 324.128088 127.90039 
+L 344.852853 122.133107 
+L 365.577618 116.531777 
+L 386.302382 111.080054 
+L 407.027147 105.76411 
+L 427.751912 100.572125 
+L 448.476677 95.493902 
+L 469.201442 90.520567 
+L 489.926207 85.644345 
+L 510.650972 80.858376 
+L 531.375737 76.156572 
+L 552.100502 71.533499 
+L 572.825266 66.984285 
+L 593.550031 62.50454 
+L 614.274796 58.090293 
+L 634.999561 53.737935 
+L 655.724326 49.444181 
+L 676.449091 45.206023 
+" clip-path="url(#horizon-p7422787f1a)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="horizon-patch_3">
+    <path d="M 45.38 244.78 
+L 45.38 35.7025 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="horizon-patch_4">
+    <path d="M 45.38 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="horizon-text_18">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="45.38" y="22.7025" transform="rotate(-0 45.38 22.7025)">Mean scales linearly; standard deviation scales with √h</text>
+   </g>
+   <g id="horizon-legend_1">
+    <g id="horizon-line2d_34">
+     <path d="M 52.58 46.18125 
+L 60.58 46.18125 
+L 68.58 46.18125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="horizon-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="48.98125" transform="rotate(-0 74.98 48.98125)">IID normal VaR, with drift</text>
+    </g>
+    <g id="horizon-line2d_35">
+     <path d="M 52.58 57.92375 
+L 60.58 57.92375 
+L 68.58 57.92375 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+    </g>
+    <g id="horizon-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="60.72375" transform="rotate(-0 74.98 60.72375)">Square-root scaled one-day VaR</text>
+    </g>
+    <g id="horizon-line2d_36">
+     <path d="M 52.58 69.66625 
+L 60.58 69.66625 
+L 68.58 69.66625 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="horizon-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="72.46625" transform="rotate(-0 74.98 72.46625)">IID normal ES, with drift</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="horizon-p7422787f1a">
+   <rect x="45.38" y="35.7025" width="661.12" height="209.0775"/>
+  </clipPath>
+ </defs>
+</svg>

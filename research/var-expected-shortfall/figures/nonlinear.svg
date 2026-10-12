@@ -1,0 +1,433 @@
+<svg role="img" aria-labelledby="nonlinear-title nonlinear-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="302.4pt" viewBox="0 0 720 302.4" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="nonlinear-title">Figure 09 · Linear approximation and full option revaluation</title><desc id="nonlinear-desc">Short one call; S = K = 100, risk-free rate 2%, volatility 25%, initial maturity 0.5 years and horizon 1/252 years. Physical drift is 6%; option values use risk-neutral Black–Scholes pricing with unchanged volatility and rates.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T18:09:10.787419</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="nonlinear-figure_1">
+  <g id="nonlinear-patch_1">
+   <path d="M 0 302.4 
+L 720 302.4 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="nonlinear-axes_1">
+   <g id="nonlinear-patch_2">
+    <path d="M 47.18 259.18 
+L 706.5 259.18 
+L 706.5 35.14 
+L 47.18 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="nonlinear-matplotlib.axis_1">
+    <g id="nonlinear-xtick_1">
+     <g id="nonlinear-line2d_1">
+      <path d="M 77.149091 259.18 
+L 77.149091 35.14 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_2">
+      <defs>
+       <path id="nonlinear-mfcc31844e2" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#nonlinear-mfcc31844e2" x="77.149091" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="77.149091" y="273.018594" transform="rotate(-0 77.149091 273.018594)">−4</text>
+     </g>
+    </g>
+    <g id="nonlinear-xtick_2">
+     <g id="nonlinear-line2d_3">
+      <path d="M 152.071818 259.18 
+L 152.071818 35.14 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_4">
+      <g>
+       <use href="#nonlinear-mfcc31844e2" x="152.071818" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="152.071818" y="273.018594" transform="rotate(-0 152.071818 273.018594)">−3</text>
+     </g>
+    </g>
+    <g id="nonlinear-xtick_3">
+     <g id="nonlinear-line2d_5">
+      <path d="M 226.994545 259.18 
+L 226.994545 35.14 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_6">
+      <g>
+       <use href="#nonlinear-mfcc31844e2" x="226.994545" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="226.994545" y="273.018594" transform="rotate(-0 226.994545 273.018594)">−2</text>
+     </g>
+    </g>
+    <g id="nonlinear-xtick_4">
+     <g id="nonlinear-line2d_7">
+      <path d="M 301.917273 259.18 
+L 301.917273 35.14 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_8">
+      <g>
+       <use href="#nonlinear-mfcc31844e2" x="301.917273" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="301.917273" y="273.018594" transform="rotate(-0 301.917273 273.018594)">−1</text>
+     </g>
+    </g>
+    <g id="nonlinear-xtick_5">
+     <g id="nonlinear-line2d_9">
+      <path d="M 376.84 259.18 
+L 376.84 35.14 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_10">
+      <g>
+       <use href="#nonlinear-mfcc31844e2" x="376.84" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="376.84" y="273.018594" transform="rotate(-0 376.84 273.018594)">0</text>
+     </g>
+    </g>
+    <g id="nonlinear-xtick_6">
+     <g id="nonlinear-line2d_11">
+      <path d="M 451.762727 259.18 
+L 451.762727 35.14 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_12">
+      <g>
+       <use href="#nonlinear-mfcc31844e2" x="451.762727" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="451.762727" y="273.018594" transform="rotate(-0 451.762727 273.018594)">1</text>
+     </g>
+    </g>
+    <g id="nonlinear-xtick_7">
+     <g id="nonlinear-line2d_13">
+      <path d="M 526.685455 259.18 
+L 526.685455 35.14 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_14">
+      <g>
+       <use href="#nonlinear-mfcc31844e2" x="526.685455" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="526.685455" y="273.018594" transform="rotate(-0 526.685455 273.018594)">2</text>
+     </g>
+    </g>
+    <g id="nonlinear-xtick_8">
+     <g id="nonlinear-line2d_15">
+      <path d="M 601.608182 259.18 
+L 601.608182 35.14 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_16">
+      <g>
+       <use href="#nonlinear-mfcc31844e2" x="601.608182" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="601.608182" y="273.018594" transform="rotate(-0 601.608182 273.018594)">3</text>
+     </g>
+    </g>
+    <g id="nonlinear-xtick_9">
+     <g id="nonlinear-line2d_17">
+      <path d="M 676.530909 259.18 
+L 676.530909 35.14 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_18">
+      <g>
+       <use href="#nonlinear-mfcc31844e2" x="676.530909" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="676.530909" y="273.018594" transform="rotate(-0 676.530909 273.018594)">4</text>
+     </g>
+    </g>
+    <g id="nonlinear-text_10">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="376.84" y="285.728906" transform="rotate(-0 376.84 285.728906)">Physical normal shock Z</text>
+    </g>
+   </g>
+   <g id="nonlinear-matplotlib.axis_2">
+    <g id="nonlinear-ytick_1">
+     <g id="nonlinear-line2d_19">
+      <path d="M 47.18 237.328682 
+L 706.5 237.328682 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_20">
+      <defs>
+       <path id="nonlinear-m27c5934df8" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#nonlinear-m27c5934df8" x="47.18" y="237.328682" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="40.18" y="240.747978" transform="rotate(-0 40.18 240.747978)">−3</text>
+     </g>
+    </g>
+    <g id="nonlinear-ytick_2">
+     <g id="nonlinear-line2d_21">
+      <path d="M 47.18 210.18939 
+L 706.5 210.18939 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_22">
+      <g>
+       <use href="#nonlinear-m27c5934df8" x="47.18" y="210.18939" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="40.18" y="213.608687" transform="rotate(-0 40.18 213.608687)">−2</text>
+     </g>
+    </g>
+    <g id="nonlinear-ytick_3">
+     <g id="nonlinear-line2d_23">
+      <path d="M 47.18 183.050099 
+L 706.5 183.050099 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_24">
+      <g>
+       <use href="#nonlinear-m27c5934df8" x="47.18" y="183.050099" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="40.18" y="186.469396" transform="rotate(-0 40.18 186.469396)">−1</text>
+     </g>
+    </g>
+    <g id="nonlinear-ytick_4">
+     <g id="nonlinear-line2d_25">
+      <path d="M 47.18 155.910808 
+L 706.5 155.910808 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_26">
+      <g>
+       <use href="#nonlinear-m27c5934df8" x="47.18" y="155.910808" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="40.18" y="159.330105" transform="rotate(-0 40.18 159.330105)">0</text>
+     </g>
+    </g>
+    <g id="nonlinear-ytick_5">
+     <g id="nonlinear-line2d_27">
+      <path d="M 47.18 128.771516 
+L 706.5 128.771516 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_28">
+      <g>
+       <use href="#nonlinear-m27c5934df8" x="47.18" y="128.771516" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="40.18" y="132.190813" transform="rotate(-0 40.18 132.190813)">1</text>
+     </g>
+    </g>
+    <g id="nonlinear-ytick_6">
+     <g id="nonlinear-line2d_29">
+      <path d="M 47.18 101.632225 
+L 706.5 101.632225 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_30">
+      <g>
+       <use href="#nonlinear-m27c5934df8" x="47.18" y="101.632225" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="40.18" y="105.051522" transform="rotate(-0 40.18 105.051522)">2</text>
+     </g>
+    </g>
+    <g id="nonlinear-ytick_7">
+     <g id="nonlinear-line2d_31">
+      <path d="M 47.18 74.492934 
+L 706.5 74.492934 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_32">
+      <g>
+       <use href="#nonlinear-m27c5934df8" x="47.18" y="74.492934" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="40.18" y="77.912231" transform="rotate(-0 40.18 77.912231)">3</text>
+     </g>
+    </g>
+    <g id="nonlinear-ytick_8">
+     <g id="nonlinear-line2d_33">
+      <path d="M 47.18 47.353643 
+L 706.5 47.353643 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="nonlinear-line2d_34">
+      <g>
+       <use href="#nonlinear-m27c5934df8" x="47.18" y="47.353643" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="nonlinear-text_18">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="40.18" y="50.772939" transform="rotate(-0 40.18 50.772939)">4</text>
+     </g>
+    </g>
+    <g id="nonlinear-text_19">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.040313" y="147.16" transform="rotate(-90 21.040313 147.16)">Loss per option</text>
+    </g>
+   </g>
+   <g id="nonlinear-line2d_35">
+    <path d="M 77.149091 237.346437 
+L 105.182539 230.985724 
+L 133.215987 224.388383 
+L 159.914509 217.88185 
+L 186.613031 211.154346 
+L 213.311553 204.203011 
+L 240.010075 197.025143 
+L 266.708597 189.618207 
+L 293.407119 181.979839 
+L 320.105641 174.107846 
+L 346.804163 166.000217 
+L 373.502685 157.655119 
+L 400.201207 149.070903 
+L 426.899729 140.246108 
+L 453.598251 131.179457 
+L 480.296773 121.869862 
+L 506.995295 112.316424 
+L 533.693817 102.518431 
+L 560.392339 92.475356 
+L 587.09086 82.18686 
+L 613.789382 71.652786 
+L 640.487904 60.873157 
+L 667.186426 49.848173 
+L 676.530909 45.931528 
+L 676.530909 45.931528 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="nonlinear-line2d_36">
+    <path d="M 77.149091 248.996364 
+L 137.220765 230.938143 
+L 197.29244 212.650457 
+L 257.364114 194.130391 
+L 317.435789 175.374992 
+L 376.172537 156.805963 
+L 434.909285 138.006255 
+L 493.646034 118.973001 
+L 552.382782 99.703301 
+L 609.784604 80.640285 
+L 667.186426 61.345868 
+L 676.530909 58.182824 
+L 676.530909 58.182824 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+   </g>
+   <g id="nonlinear-line2d_37">
+    <path d="M 77.149091 237.741238 
+L 105.182539 231.298969 
+L 133.215987 224.630301 
+L 161.249435 217.731664 
+L 189.282883 210.599438 
+L 217.316331 203.229958 
+L 244.014853 195.98743 
+L 270.713375 188.523086 
+L 297.411897 180.833633 
+L 324.110419 172.915737 
+L 350.808941 164.766023 
+L 377.507463 156.381073 
+L 404.205985 147.757426 
+L 430.904507 138.891577 
+L 456.268103 130.241447 
+L 481.631699 121.366448 
+L 506.995295 112.263461 
+L 532.35889 102.929332 
+L 557.722486 93.36087 
+L 583.086082 83.554845 
+L 608.449678 73.507989 
+L 633.813274 63.216994 
+L 659.17687 52.678514 
+L 676.530909 45.323636 
+L 676.530909 45.323636 
+" clip-path="url(#nonlinear-pd76c61dd40)" style="fill: none; stroke-dasharray: 2,3.3; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+   </g>
+   <g id="nonlinear-patch_3">
+    <path d="M 47.18 259.18 
+L 47.18 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="nonlinear-patch_4">
+    <path d="M 47.18 259.18 
+L 706.5 259.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="nonlinear-text_20">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="47.18" y="22.14" transform="rotate(-0 47.18 22.14)">Convex option value produces nonlinear short-position losses</text>
+   </g>
+   <g id="nonlinear-legend_1">
+    <g id="nonlinear-line2d_38">
+     <path d="M 54.38 45.61875 
+L 62.38 45.61875 
+L 70.38 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="nonlinear-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="76.78" y="48.41875" transform="rotate(-0 76.78 48.41875)">Full-revaluation short-call loss</text>
+    </g>
+    <g id="nonlinear-line2d_39">
+     <path d="M 54.38 57.36125 
+L 62.38 57.36125 
+L 70.38 57.36125 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+    </g>
+    <g id="nonlinear-text_22">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="76.78" y="60.16125" transform="rotate(-0 76.78 60.16125)">Delta + time loss</text>
+    </g>
+    <g id="nonlinear-line2d_40">
+     <path d="M 54.38 69.10375 
+L 62.38 69.10375 
+L 70.38 69.10375 
+" style="fill: none; stroke-dasharray: 2,3.3; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+    </g>
+    <g id="nonlinear-text_23">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="76.78" y="71.90375" transform="rotate(-0 76.78 71.90375)">Delta–gamma + time loss</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="nonlinear-pd76c61dd40">
+   <rect x="47.18" y="35.14" width="659.32" height="224.04"/>
+  </clipPath>
+ </defs>
+</svg>

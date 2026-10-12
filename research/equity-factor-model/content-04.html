@@ -1,0 +1,127 @@
+<section id="time-series-regression" data-title="Time-series attribution and ordinary least squares">
+<div class="section-kicker">16 / Return attribution</div><h2>Time-series attribution and ordinary least squares</h2>
+<p>A time-series regression estimates how one asset or portfolio covaries with factor-return observations across dates. This differs from estimating factor returns across many stocks on one date.</p>
+\[ y=Xb+e,\qquad
+b=\left(\alpha,\beta_1,\ldots,\beta_K\right)^{\mathsf T},\qquad
+\widehat b=\arg\min_b\|y-Xb\|^2. \]
+<p>The first column of \(X\) is one; the remaining columns contain factors in matched return units. Under full rank, the mathematical solution is \((X^{\mathsf T}X)^{-1}X^{\mathsf T}y\). Numerically, solve by QR or singular-value decomposition rather than explicitly inverting the normal equations.</p>
+<h3>Projection properties</h3>
+<p>OLS residuals are orthogonal to the fitted design in the estimation sample: \(X^{\mathsf T}e=0\). With an intercept, residuals sum to zero. Those identities are algebraic properties of the sample projection, not proof that the economic model is correctly specified or that out-of-sample errors will be orthogonal.</p>
+<p>Estimated alpha equals the portfolio sample mean minus estimated betas times factor sample means. Consequently a high historical portfolio return can be explained by large exposures to factors that happened to perform well, leaving a small intercept:</p>
+\[ \widehat\alpha=\bar y-\widehat\beta^{\mathsf T}\bar f. \]
+<h3>Fit and adjusted fit</h3>
+\[ R^2=1-\frac{\sum_t e_t^2}{\sum_t(y_t-\bar y)^2},\qquad
+R_{\mathrm{adj}}^2=
+1-\frac{\sum_t e_t^2/(T-p)}{\sum_t(y_t-\bar y)^2/(T-1)}. \]
+<p>Here \(p=K+1\). \(R^2\) is undefined when the target has no variation. With an intercept, adding regressors cannot worsen unadjusted in-sample \(R^2\), even when they add no predictive value. Adjusted fit provides a penalty but is not a substitute for chronological validation.</p>
+{{figure:betas}}
+<h3>Benchmark dependence of alpha</h3>
+<p>A market-only alpha and a five-style alpha are different residual mean coordinates. Including a value factor can explain part of a portfolio's return that the market-only model labelled alpha. That is an attribution change, not proof that an investor's actual wealth changed.</p>
+<p>Fees and implementation costs should be reflected in the target return when evaluating net manager performance. A gross alpha compared with an investable benchmark can overstate the investor's result. Taxes, financing and benchmark costs may require additional alignment.</p>
+<h3>Estimation versus prediction</h3>
+<p>The fitted factor component uses realized factors. It can be applied ex post to explain a withheld return once that month's factors are known. It is not an advance trading forecast unless future factor realizations themselves are forecast or observed through a valid decision rule.</p>
+<p>The laboratory calls the output “model attribution”. It fits on a training prefix and then combines frozen coefficients with realized holdout factor returns. Its RMSE assesses coefficient transfer and residual variation, not a strategy that knew next month's factors before trading.</p>
+<p>A high \(R^2\) does not establish skill, expected-return predictability or causal exposure. It says that the included return series account for much of the sample's variation under the linear projection.</p>
+</section>
+
+<section id="inference" data-title="Standard errors, HAC inference and pricing tests">
+<div class="section-kicker">17 / Statistical uncertainty</div><h2>Standard errors, HAC inference and pricing tests</h2>
+<p>A coefficient estimate needs an uncertainty model. The familiar classical OLS covariance assumes appropriate exogeneity and homoskedastic uncorrelated disturbances. Financial returns often require a less restrictive covariance treatment.</p>
+<h3>Classical covariance</h3>
+\[ \widehat V_{\mathrm{classical}}
+=\frac{e^{\mathsf T}e}{T-p}(X^{\mathsf T}X)^{-1}. \]
+<p>Its standard errors are the square roots of diagonal entries. Under additional normality assumptions, classical t and F distributions can provide exact finite-sample tests. Without those assumptions, the same numerical ratios do not automatically have that exact distribution.</p>
+<h3>Heteroskedasticity and serial correlation</h3>
+<p>Let \(s_t=x_te_t\) be the score vector. A Bartlett-kernel Newey–West estimate with lag count \(L\), using the explicit finite-sample adjustment adopted here, is:</p>
+\[ S=\sum_{t=1}^{T}s_ts_t^{\mathsf T}
++\sum_{\ell=1}^{L}\left(1-\frac{\ell}{L+1}\right)
+\sum_{t=\ell+1}^{T}
+(s_ts_{t-\ell}^{\mathsf T}+s_{t-\ell}s_t^{\mathsf T}). \]
+\[ \widehat V_{\mathrm{HAC}}
+=\frac{T}{T-p}(X^{\mathsf T}X)^{-1}S(X^{\mathsf T}X)^{-1}. \]
+<p>Lag zero gives a heteroskedasticity-robust HC1-style covariance in this convention. Positive lags account for sample serial dependence up to the chosen bandwidth. Different packages use different small-sample adjustments and automatic bandwidth rules; compare those settings before comparing t-statistics.</p>
+{{figure:residuals}}
+{{figure:inference}}
+<p>HAC changes estimated uncertainty, not the OLS point coefficients. Its standard errors need not increase monotonically as more lags are included. Bandwidth is a modelling choice; general asymptotic consistency requires suitable dependence and bandwidth conditions, not merely selecting six lags for every dataset.</p>
+<h3>Intervals and significance</h3>
+<p>The page's plotted coefficient intervals use \(\widehat b_j\pm1.959964\,SE_{\mathrm{HAC},j}\), an asymptotic normal 95% construction. They are not exact small-sample Student intervals. When estimated standard error is effectively zero, a t-statistic is undefined rather than meaningful evidence of infinite significance.</p>
+<p>A statistically detectable alpha can still be too small to trade after fees and costs. A statistically undetectable alpha does not prove it is exactly zero. Confidence intervals communicate the uncertainty more completely than a pass/fail threshold.</p>
+<h3>Many assets and two-pass procedures</h3>
+<p>Joint alpha tests account for cross-asset residual covariance and factor estimation under their maintained assumptions. Applying a classical exact joint test to strongly dependent or heteroskedastic residuals without adjustment can misstate significance.</p>
+<p>Fama–MacBeth procedures estimate cross-sectional pricing relations across dates and average the estimated coefficients. Time dependence in those coefficient series matters for their standard errors. Estimated first-pass betas introduce a generated-regressor problem; a second-pass regression does not make those betas error-free.</p>
+<p>Newey and West provide the primary covariance construction, while Fama and MacBeth supply a foundational cross-sectional testing framework. <a href="https://www.nber.org/papers/t0055">Newey–West author working paper</a>; <a href="https://doi.org/10.1086/260061">Fama–MacBeth published paper</a>.</p>
+<p>The laboratory limits inference to a transparent OLS/HAC attribution problem. It does not present its synthetic portfolio as a completed empirical pricing test across a real asset universe.</p>
+</section>
+
+<section id="identification" data-title="Omitted factors, collinearity and identification">
+<div class="section-kicker">18 / Model specification</div><h2>Omitted factors, collinearity and identification</h2>
+<p>A factor coefficient is conditional on the included design. Omitting a correlated influence changes the meaning of the remaining slope, while including nearly redundant factors can make individual slopes unstable.</p>
+<h3>Omitted-variable bias</h3>
+<p>Suppose the population return is \(y=\alpha+\beta_M M+\beta_V V+\varepsilon\), with the disturbance orthogonal to both factors. Regressing only on the market gives:</p>
+\[ \beta_M^{\mathrm{restricted}}
+=\beta_M+\beta_V\frac{\operatorname{Cov}(M,V)}
+{\operatorname{Var}(M)}. \]
+<p>The restricted intercept also changes because omitted mean contributions are partly allocated to the remaining intercept and slope. The direction depends on exposures, correlations and factor means. Omitting a positive-premium factor does not imply every sample's alpha will move in the same direction.</p>
+{{figure:omission}}
+<h3>Collinearity</h3>
+<p>Highly correlated factors leave little independent variation for separating their coefficients. Many combinations can produce similar fitted returns. Standard errors grow and estimates become sensitive to observation windows or small data changes. This is an identification problem, not necessarily a software failure.</p>
+<p>For a regressor \(j\), the variance inflation factor is \(1/(1-R_j^2)\), where \(R_j^2\) comes from regressing it on the other regressors with matched intercept treatment. A large condition number of the scaled design supplies another diagnostic. Units matter: raw design conditioning can be inflated simply by mixing a constant column and small monthly-return columns.</p>
+<h3>Equivalent bases</h3>
+<p>Replacing factors by an invertible linear transformation preserves their span and fitted returns, while transforming coefficients and risk-price coordinates. The numerical factor attribution depends on the chosen basis:</p>
+\[ f^*=Af,\qquad
+\beta^*=A^{-\mathsf T}\beta,\qquad
+\beta^{*\mathsf T}f^*=\beta^{\mathsf T}f. \]
+<p>An orthogonalized value factor is a residual value return after projection on selected controls. It answers a different labeling question from the original factor even when the expanded span is unchanged. The order of sequential orthogonalization can affect the displayed components.</p>
+<h3>Nonlinearity and changing exposure</h3>
+<p>Option-like portfolios, volatility strategies and dynamic leverage can have nonlinear market exposure. A linear constant-beta model can put this behavior into its residual or alpha. Quadratic terms, conditional betas or economically motivated state variables can improve attribution, but add complexity and require validation.</p>
+<p>Stocks also change businesses, capital structure and financial condition. A constant coefficient estimated over a long window may average across regimes. A short window adapts faster but estimates more noisily. That trade-off is developed next.</p>
+<h3>Model specification discipline</h3>
+<p>Choose factors for a stated economic purpose, examine correlations and stability, and compare alternative specifications chronologically. Do not keep adding controls merely until a preferred alpha appears or disappears. Benchmark selection after observing the outcome is part of the research search.</p>
+<p>The laboratory compares a market-only benchmark with a market-plus-four-style specification. The portfolio's generating process is known, so differences can be traced to omitted exposures and sampling noise. Real data do not offer that knowledge; identification requires stronger evidence.</p>
+</section>
+
+<section id="rolling-exposures" data-title="Rolling estimates, regimes and conditional exposures">
+<div class="section-kicker">19 / Exposure dynamics</div><h2>Rolling estimates, regimes and conditional exposures</h2>
+<p>Rolling regressions estimate coefficients on a moving historical window. They can reveal changes in measured exposure, but they also amplify estimation noise because each fit uses fewer observations.</p>
+\[ \widehat b_t=\arg\min_b\sum_{u=t-W+1}^{t}(y_u-x_u^{\mathsf T}b)^2. \]
+<p>The estimate at time \(t\) uses only observations through \(t\). Applying a centered window to a historical decision date includes future observations and is unsuitable for a real-time estimate unless explicitly labelled retrospective smoothing.</p>
+{{figure:rolling}}
+<h3>Window length</h3>
+<p>A long window improves precision under stable coefficients but responds slowly to change. A short window adapts quickly but can produce erratic estimates when factors are correlated or returns noisy. Overlapping rolling windows make adjacent coefficient estimates strongly dependent, so smooth-looking paths do not represent many independent estimates.</p>
+<p>Evaluate prediction or risk forecasts with the exposure available before each evaluation period. If the window length is tuned repeatedly using later performance, reserve additional untouched data to assess the selected rule.</p>
+<h3>Weighted and conditional models</h3>
+<p>Exponentially weighted estimation gives greater influence to recent observations. Its half-life and normalization should be explicit. Conditional models allow exposures to depend on state variables known at the decision date:</p>
+\[ \beta_t=\beta_0+Gz_t,\qquad
+y_{t+1}=\alpha+\beta_t^{\mathsf T}f_{t+1}+\varepsilon_{t+1}. \]
+<p>This introduces interaction regressors. Their state variables need point-in-time timing, and additional coefficients can overfit. Using a future volatility regime label to explain a past return is retrospective attribution rather than an implementable conditional model.</p>
+<h3>Structural breaks and state-space models</h3>
+<p>Business changes, leverage shifts or a new investment mandate can justify considering a break. Statistical break tests and state-space models offer more systematic approaches than choosing a date from the prettiest chart. State-space estimates distinguish latent coefficient evolution from observation noise under their specified transition assumptions.</p>
+<p>Recursive filters use the information available through each date. Smoothers can use later observations to improve historical estimates. Keep those outputs separate in research and reporting because they answer different information-set questions.</p>
+<h3>Interpretation of the synthetic experiment</h3>
+<p>The generating betas on this page are constant. The sixty-month rolling market beta nevertheless moves appreciably. Its movement illustrates sampling variation rather than actual economic change. A visually varying coefficient path alone does not establish that exposures must be dynamic.</p>
+<p>For a real portfolio, compare the estimated path with holdings-based exposures, uncertainty intervals and known strategy changes. Agreement between multiple information sources is more persuasive than one rolling regression in isolation.</p>
+</section>
+
+<section id="validation" data-title="Chronological validation and model comparison">
+<div class="section-kicker">20 / Out-of-sample assessment</div><h2>Chronological validation and model comparison</h2>
+<p>A factor model should be evaluated in the role it is intended to serve. Attribution, covariance forecasting and return prediction require different targets and baselines.</p>
+<h3>Training and holdout</h3>
+<p>Estimate coefficients and any predictive transformations on a training prefix. Freeze them before evaluating the following observations. A holdout RMSE is:</p>
+\[ \mathrm{RMSE}_{\mathrm{test}}
+=\sqrt{\frac1{T_{\mathrm{test}}}
+\sum_{t\in\mathrm{test}}(y_t-x_t^{\mathsf T}\widehat b_{\mathrm{train}})^2}. \]
+<p>Because this expression uses realized factor returns, it evaluates transferred attribution coefficients. An actual advance forecast needs forecasts of those factors or a different model using variables known before the outcome. State which exercise is being performed.</p>
+{{figure:validation}}
+<h3>Baselines and competing models</h3>
+<p>Compare a market-only benchmark, a declared style set and suitable simple baselines. Adding factors can improve training fit while worsening holdout error. Assess alpha stability, residual structure and covariance accuracy alongside RMSE.</p>
+<p>Out-of-sample \(R^2\) can compare squared errors with a declared baseline such as the training mean. It can be negative. A held-out target's own sample mean is a retrospective baseline; a training mean is available beforehand. The denominator choice should be explicit.</p>
+<h3>Walk-forward and nested evaluation</h3>
+<p>A walk-forward procedure repeatedly fits on prior information and evaluates the next block. An expanding window retains older observations; a rolling window discards them. Refitting frequency, warm-up requirements and factor availability must be specified.</p>
+<p>Hyperparameter selection belongs inside the training procedure. If a ridge penalty, signal lookback or universe filter is chosen using a validation block, a later untouched block is needed for final assessment. Repeated inspection of the final block gradually destroys its role as independent evidence.</p>
+<h3>Measurement and statistical uncertainty</h3>
+<p>Holdout performance can vary because of market regime, small sample size and observation noise. Report block lengths and uncertainty rather than a single best error rounded to many decimals. Models evaluated on the same dates have correlated errors; independent-sample tests can be inappropriate.</p>
+<p>Economic evaluation adds costs, feasibility and tail behavior. A factor signal that predicts raw returns can still produce weak net performance after turnover and shorting costs. A covariance model with good average fit can fail during the periods when risk control matters most.</p>
+<h3>Results in the reference panel</h3>
+<p>The style model uses months 1–180 for estimation and 181–240 for evaluation. Its training \(R^2\) is approximately 0.765976 and withheld monthly RMSE 2.304345%. The market-only model has \(R^2\) about 0.659534 and RMSE 3.184953%. These differences arise in a simulation containing the included styles by construction.</p>
+<p>They illustrate the mechanics of model comparison, not evidence that this particular style set is universally superior. A real study would examine multiple periods, factor vintages, alternative specifications and the implementation setting of the target portfolio.</p>
+</section>

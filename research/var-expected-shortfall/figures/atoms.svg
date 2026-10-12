@@ -1,0 +1,560 @@
+<svg role="img" aria-labelledby="atoms-title atoms-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="302.4pt" viewBox="0 0 720 302.4" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="atoms-title">Figure 02 · Discrete loss distribution and tail risk</title><desc id="atoms-desc">Losses 0, 10 and 100 have probabilities 94%, 4% and 2%. At 95% confidence, VaR is 10 and ES is 46. The plotted discrete quantile uses the inverse-CDF convention; hover returns sampled confidence levels.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T18:09:09.052465</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="atoms-figure_1">
+  <g id="atoms-patch_1">
+   <path d="M 0 302.4 
+L 720 302.4 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="atoms-axes_1">
+   <g id="atoms-patch_2">
+    <path d="M 54.02 259.18 
+L 350.649925 259.18 
+L 350.649925 35.14 
+L 54.02 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="atoms-matplotlib.axis_1">
+    <g id="atoms-xtick_1">
+     <g id="atoms-line2d_1">
+      <path d="M 72.689016 259.18 
+L 72.689016 35.14 
+" clip-path="url(#atoms-p578581ccb0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_2">
+      <defs>
+       <path id="atoms-m6e16bdbe82" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#atoms-m6e16bdbe82" x="72.689016" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="72.689016" y="273.018594" transform="rotate(-0 72.689016 273.018594)">0</text>
+     </g>
+    </g>
+    <g id="atoms-xtick_2">
+     <g id="atoms-line2d_3">
+      <path d="M 124.547395 259.18 
+L 124.547395 35.14 
+" clip-path="url(#atoms-p578581ccb0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_4">
+      <g>
+       <use href="#atoms-m6e16bdbe82" x="124.547395" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="124.547395" y="273.018594" transform="rotate(-0 124.547395 273.018594)">20</text>
+     </g>
+    </g>
+    <g id="atoms-xtick_3">
+     <g id="atoms-line2d_5">
+      <path d="M 176.405773 259.18 
+L 176.405773 35.14 
+" clip-path="url(#atoms-p578581ccb0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_6">
+      <g>
+       <use href="#atoms-m6e16bdbe82" x="176.405773" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="176.405773" y="273.018594" transform="rotate(-0 176.405773 273.018594)">40</text>
+     </g>
+    </g>
+    <g id="atoms-xtick_4">
+     <g id="atoms-line2d_7">
+      <path d="M 228.264152 259.18 
+L 228.264152 35.14 
+" clip-path="url(#atoms-p578581ccb0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_8">
+      <g>
+       <use href="#atoms-m6e16bdbe82" x="228.264152" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="228.264152" y="273.018594" transform="rotate(-0 228.264152 273.018594)">60</text>
+     </g>
+    </g>
+    <g id="atoms-xtick_5">
+     <g id="atoms-line2d_9">
+      <path d="M 280.12253 259.18 
+L 280.12253 35.14 
+" clip-path="url(#atoms-p578581ccb0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_10">
+      <g>
+       <use href="#atoms-m6e16bdbe82" x="280.12253" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="280.12253" y="273.018594" transform="rotate(-0 280.12253 273.018594)">80</text>
+     </g>
+    </g>
+    <g id="atoms-xtick_6">
+     <g id="atoms-line2d_11">
+      <path d="M 331.980909 259.18 
+L 331.980909 35.14 
+" clip-path="url(#atoms-p578581ccb0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_12">
+      <g>
+       <use href="#atoms-m6e16bdbe82" x="331.980909" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="331.980909" y="273.018594" transform="rotate(-0 331.980909 273.018594)">100</text>
+     </g>
+    </g>
+    <g id="atoms-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="202.334962" y="285.728906" transform="rotate(-0 202.334962 285.728906)">Loss</text>
+    </g>
+   </g>
+   <g id="atoms-matplotlib.axis_2">
+    <g id="atoms-ytick_1">
+     <g id="atoms-line2d_13">
+      <path d="M 54.02 259.18 
+L 350.649925 259.18 
+" clip-path="url(#atoms-p578581ccb0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_14">
+      <defs>
+       <path id="atoms-mb467419565" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#atoms-mb467419565" x="54.02" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="262.599297" transform="rotate(-0 47.02 262.599297)">0%</text>
+     </g>
+    </g>
+    <g id="atoms-ytick_2">
+     <g id="atoms-line2d_15">
+      <path d="M 54.02 213.781824 
+L 350.649925 213.781824 
+" clip-path="url(#atoms-p578581ccb0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_16">
+      <g>
+       <use href="#atoms-mb467419565" x="54.02" y="213.781824" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="217.201121" transform="rotate(-0 47.02 217.201121)">20%</text>
+     </g>
+    </g>
+    <g id="atoms-ytick_3">
+     <g id="atoms-line2d_17">
+      <path d="M 54.02 168.383647 
+L 350.649925 168.383647 
+" clip-path="url(#atoms-p578581ccb0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_18">
+      <g>
+       <use href="#atoms-mb467419565" x="54.02" y="168.383647" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="171.802944" transform="rotate(-0 47.02 171.802944)">40%</text>
+     </g>
+    </g>
+    <g id="atoms-ytick_4">
+     <g id="atoms-line2d_19">
+      <path d="M 54.02 122.985471 
+L 350.649925 122.985471 
+" clip-path="url(#atoms-p578581ccb0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_20">
+      <g>
+       <use href="#atoms-mb467419565" x="54.02" y="122.985471" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="126.404768" transform="rotate(-0 47.02 126.404768)">60%</text>
+     </g>
+    </g>
+    <g id="atoms-ytick_5">
+     <g id="atoms-line2d_21">
+      <path d="M 54.02 77.587295 
+L 350.649925 77.587295 
+" clip-path="url(#atoms-p578581ccb0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_22">
+      <g>
+       <use href="#atoms-mb467419565" x="54.02" y="77.587295" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="81.006592" transform="rotate(-0 47.02 81.006592)">80%</text>
+     </g>
+    </g>
+    <g id="atoms-text_13">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.144375" y="147.16" transform="rotate(-90 21.144375 147.16)">Probability mass</text>
+    </g>
+   </g>
+   <g id="atoms-patch_3">
+    <path d="M 67.503178 259.18 
+L 77.874854 259.18 
+L 77.874854 45.808571 
+L 67.503178 45.808571 
+z
+" clip-path="url(#atoms-p578581ccb0)" style="fill: #7e8d86"/>
+   </g>
+   <g id="atoms-patch_4">
+    <path d="M 93.432368 259.18 
+L 103.804043 259.18 
+L 103.804043 250.100365 
+L 93.432368 250.100365 
+z
+" clip-path="url(#atoms-p578581ccb0)" style="fill: #a7bdb3"/>
+   </g>
+   <g id="atoms-patch_5">
+    <path d="M 326.795071 259.18 
+L 337.166746 259.18 
+L 337.166746 254.640182 
+L 326.795071 254.640182 
+z
+" clip-path="url(#atoms-p578581ccb0)" style="fill: #d3ad84"/>
+   </g>
+   <g id="atoms-patch_6">
+    <path d="M 54.02 259.18 
+L 54.02 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="atoms-patch_7">
+    <path d="M 54.02 259.18 
+L 350.649925 259.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="atoms-text_14">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="54.02" y="22.14" transform="rotate(-0 54.02 22.14)">A quantile at an atom</text>
+   </g>
+  </g>
+  <g id="atoms-axes_2">
+   <g id="atoms-patch_8">
+    <path d="M 401.789925 259.18 
+L 698.41985 259.18 
+L 698.41985 35.14 
+L 401.789925 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="atoms-matplotlib.axis_3">
+    <g id="atoms-xtick_7">
+     <g id="atoms-line2d_23">
+      <path d="M 415.273103 259.18 
+L 415.273103 35.14 
+" clip-path="url(#atoms-p341b2a301d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_24">
+      <g>
+       <use href="#atoms-m6e16bdbe82" x="415.273103" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="415.273103" y="273.018594" transform="rotate(-0 415.273103 273.018594)">90.0%</text>
+     </g>
+    </g>
+    <g id="atoms-xtick_8">
+     <g id="atoms-line2d_25">
+      <path d="M 469.750592 259.18 
+L 469.750592 35.14 
+" clip-path="url(#atoms-p341b2a301d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_26">
+      <g>
+       <use href="#atoms-m6e16bdbe82" x="469.750592" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="469.750592" y="273.018594" transform="rotate(-0 469.750592 273.018594)">92.0%</text>
+     </g>
+    </g>
+    <g id="atoms-xtick_9">
+     <g id="atoms-line2d_27">
+      <path d="M 524.22808 259.18 
+L 524.22808 35.14 
+" clip-path="url(#atoms-p341b2a301d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_28">
+      <g>
+       <use href="#atoms-m6e16bdbe82" x="524.22808" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="524.22808" y="273.018594" transform="rotate(-0 524.22808 273.018594)">94.0%</text>
+     </g>
+    </g>
+    <g id="atoms-xtick_10">
+     <g id="atoms-line2d_29">
+      <path d="M 578.705569 259.18 
+L 578.705569 35.14 
+" clip-path="url(#atoms-p341b2a301d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_30">
+      <g>
+       <use href="#atoms-m6e16bdbe82" x="578.705569" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_18">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="578.705569" y="273.018594" transform="rotate(-0 578.705569 273.018594)">96.0%</text>
+     </g>
+    </g>
+    <g id="atoms-xtick_11">
+     <g id="atoms-line2d_31">
+      <path d="M 633.183057 259.18 
+L 633.183057 35.14 
+" clip-path="url(#atoms-p341b2a301d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_32">
+      <g>
+       <use href="#atoms-m6e16bdbe82" x="633.183057" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_19">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="633.183057" y="273.018594" transform="rotate(-0 633.183057 273.018594)">98.0%</text>
+     </g>
+    </g>
+    <g id="atoms-xtick_12">
+     <g id="atoms-line2d_33">
+      <path d="M 687.660546 259.18 
+L 687.660546 35.14 
+" clip-path="url(#atoms-p341b2a301d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_34">
+      <g>
+       <use href="#atoms-m6e16bdbe82" x="687.660546" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_20">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="687.660546" y="273.018594" transform="rotate(-0 687.660546 273.018594)">100.0%</text>
+     </g>
+    </g>
+    <g id="atoms-text_21">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="550.104887" y="285.728906" transform="rotate(-0 550.104887 285.728906)">Confidence level</text>
+    </g>
+   </g>
+   <g id="atoms-matplotlib.axis_4">
+    <g id="atoms-ytick_6">
+     <g id="atoms-line2d_35">
+      <path d="M 401.789925 248.996364 
+L 698.41985 248.996364 
+" clip-path="url(#atoms-p341b2a301d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_36">
+      <g>
+       <use href="#atoms-mb467419565" x="401.789925" y="248.996364" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="394.789925" y="252.415661" transform="rotate(-0 394.789925 252.415661)">0</text>
+     </g>
+    </g>
+    <g id="atoms-ytick_7">
+     <g id="atoms-line2d_37">
+      <path d="M 401.789925 208.261818 
+L 698.41985 208.261818 
+" clip-path="url(#atoms-p341b2a301d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_38">
+      <g>
+       <use href="#atoms-mb467419565" x="401.789925" y="208.261818" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="394.789925" y="211.681115" transform="rotate(-0 394.789925 211.681115)">20</text>
+     </g>
+    </g>
+    <g id="atoms-ytick_8">
+     <g id="atoms-line2d_39">
+      <path d="M 401.789925 167.527273 
+L 698.41985 167.527273 
+" clip-path="url(#atoms-p341b2a301d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_40">
+      <g>
+       <use href="#atoms-mb467419565" x="401.789925" y="167.527273" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="394.789925" y="170.94657" transform="rotate(-0 394.789925 170.94657)">40</text>
+     </g>
+    </g>
+    <g id="atoms-ytick_9">
+     <g id="atoms-line2d_41">
+      <path d="M 401.789925 126.792727 
+L 698.41985 126.792727 
+" clip-path="url(#atoms-p341b2a301d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_42">
+      <g>
+       <use href="#atoms-mb467419565" x="401.789925" y="126.792727" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="394.789925" y="130.212024" transform="rotate(-0 394.789925 130.212024)">60</text>
+     </g>
+    </g>
+    <g id="atoms-ytick_10">
+     <g id="atoms-line2d_43">
+      <path d="M 401.789925 86.058182 
+L 698.41985 86.058182 
+" clip-path="url(#atoms-p341b2a301d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_44">
+      <g>
+       <use href="#atoms-mb467419565" x="401.789925" y="86.058182" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="394.789925" y="89.477479" transform="rotate(-0 394.789925 89.477479)">80</text>
+     </g>
+    </g>
+    <g id="atoms-ytick_11">
+     <g id="atoms-line2d_45">
+      <path d="M 401.789925 45.323636 
+L 698.41985 45.323636 
+" clip-path="url(#atoms-p341b2a301d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="atoms-line2d_46">
+      <g>
+       <use href="#atoms-mb467419565" x="401.789925" y="45.323636" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="atoms-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="394.789925" y="48.742933" transform="rotate(-0 394.789925 48.742933)">100</text>
+     </g>
+    </g>
+    <g id="atoms-text_28">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="371.739456" y="147.16" transform="rotate(-90 371.739456 147.16)">Loss</text>
+    </g>
+   </g>
+   <g id="atoms-line2d_47">
+    <path d="M 415.273103 248.996364 
+L 524.936288 248.996364 
+L 524.936288 228.629091 
+L 633.700593 228.629091 
+L 633.700593 45.323636 
+L 684.936671 45.323636 
+L 684.936671 45.323636 
+" clip-path="url(#atoms-p341b2a301d)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="atoms-line2d_48">
+    <path d="M 415.273103 200.114909 
+L 427.857403 197.747198 
+L 439.542824 195.333553 
+L 450.329367 192.894614 
+L 461.11591 190.223423 
+L 471.003574 187.541178 
+L 479.99236 184.881129 
+L 488.981145 181.980385 
+L 497.071052 179.135774 
+L 505.160959 176.038969 
+L 512.351988 173.04631 
+L 519.543016 169.797636 
+L 525.835166 166.920471 
+L 533.026195 164.050809 
+L 539.318345 161.311627 
+L 545.610495 158.329779 
+L 551.003766 155.55536 
+L 556.397037 152.552953 
+L 561.790309 149.293253 
+L 567.18358 145.741705 
+L 571.677973 142.52977 
+L 576.172366 139.058871 
+L 580.666758 135.296375 
+L 585.161151 131.203922 
+L 588.756665 127.662165 
+L 592.35218 123.853181 
+L 595.947694 119.745542 
+L 599.543208 115.302689 
+L 603.138722 110.481843 
+L 606.734237 105.232622 
+L 610.329751 99.495273 
+L 613.026387 94.829489 
+L 615.723022 89.813904 
+L 618.419658 84.407648 
+L 621.116294 78.563226 
+L 623.812929 72.225119 
+L 626.509565 65.328018 
+L 629.206201 57.794557 
+L 631.902836 49.532408 
+L 632.801715 46.597855 
+L 633.700593 45.323636 
+L 684.936671 45.323636 
+L 684.936671 45.323636 
+" clip-path="url(#atoms-p341b2a301d)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="atoms-patch_9">
+    <path d="M 401.789925 259.18 
+L 401.789925 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="atoms-patch_10">
+    <path d="M 401.789925 259.18 
+L 698.41985 259.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="atoms-text_29">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="401.789925" y="22.14" transform="rotate(-0 401.789925 22.14)">ES includes fractional boundary mass</text>
+   </g>
+   <g id="atoms-legend_1">
+    <g id="atoms-line2d_49">
+     <path d="M 409.889925 46.928594 
+L 418.889925 46.928594 
+L 418.889925 46.928594 
+L 427.889925 46.928594 
+L 427.889925 46.928594 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="atoms-text_30">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="435.089925" y="50.078594" transform="rotate(-0 435.089925 50.078594)">VaR</text>
+    </g>
+    <g id="atoms-line2d_50">
+     <path d="M 409.889925 60.138906 
+L 418.889925 60.138906 
+L 427.889925 60.138906 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="atoms-text_31">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="435.089925" y="63.288906" transform="rotate(-0 435.089925 63.288906)">ES</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="atoms-p578581ccb0">
+   <rect x="54.02" y="35.14" width="296.629925" height="224.04"/>
+  </clipPath>
+  <clipPath id="atoms-p341b2a301d">
+   <rect x="401.789925" y="35.14" width="296.629925" height="224.04"/>
+  </clipPath>
+ </defs>
+</svg>

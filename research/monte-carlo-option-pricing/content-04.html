@@ -1,0 +1,76 @@
+<section id="stratification" data-title="Stratified sampling and Latin hypercube">
+<div class="section-label">13 / Sampling design</div><h2>Stratified sampling and Latin hypercube</h2>
+<p>Partition the sample space into disjoint strata with known probabilities \(p_h\). Sample within each stratum from its conditional distribution, estimate the stratum mean, and combine these means using their probability weights. This avoids relying on accidental sample proportions to represent every important region.</p>
+\[ \widehat V_{\mathrm{strat}}=\sum_{h=1}^{H}p_h\overline Y_h,\qquad \operatorname{Var}(\widehat V_{\mathrm{strat}})=\sum_{h=1}^{H}\frac{p_h^2\sigma_h^2}{n_h}. \]
+<p>The variance expression assumes independence between stratum samples. With proportional allocation \(n_h\approx Np_h\), removing random variation in the number of observations allocated to each stratum reduces the between-stratum component of variance. The remaining uncertainty comes from variation within strata.</p>
+<h3>Allocation by variability and cost</h3>
+<p>Minimising variance at a fixed total sample size gives Neyman allocation, \(n_h\propto p_h\sigma_h\). If one observation in stratum \(h\) costs \(c_h\), the cost-constrained allocation instead satisfies</p>
+\[ n_h\propto\frac{p_h\sigma_h}{\sqrt{c_h}}. \]
+<p>Stratum variances must usually be estimated from a pilot. Rounding and minimum sample counts require attention, especially for small strata where a within-stratum variance cannot be estimated from one observation. Known deterministic strata can be integrated exactly instead of simulated.</p>
+<h3>A normal-input example</h3>
+<p>For a terminal vanilla option, stratify \(U=\Phi(Z)\) into equal-probability intervals. In each selected interval \(((h-1)/H,h/H)\), draw a conditional uniform value, transform it with \(\Phi^{-1}\), and evaluate the discounted payoff. The weighting belongs to the probability interval, not its corresponding stock-price width.</p>
+<p>A useful design gives explicit attention to the exercise threshold and the payoff tail. Strata with similar probability need not have similar contribution or variance: a rare high-stock stratum can contribute large call payoffs. Good allocation addresses this variation without changing the probability weights.</p>
+<h3>Latin hypercube designs</h3>
+<p>Latin hypercube sampling stratifies every marginal uniform coordinate. For \(N\) points, independently permute stratum indices in each coordinate and draw one random point within each assigned interval:</p>
+\[ U_{i,j}=\frac{\pi_j(i)-1+V_{i,j}}{N},\qquad V_{i,j}\sim\operatorname{Uniform}(0,1). \]
+<p>Each coordinate covers all its one-dimensional strata, but the resulting \(N\) multivariate points are dependent. The design can be effective when much of the integrand's variation comes from low-order marginal effects; arbitrary interactions and discontinuities may weaken its benefit. Coordinatewise stratification does not mean that every small multivariate cell receives an observation.</p>
+<p>For correlated assets, build the design in independent-normal coordinates, then apply the desired correlation transformation. To quantify uncertainty robustly, repeat the entire randomised design independently and estimate variance across design means. Using the ordinary IID observation variance within one Latin hypercube without analysing its dependence is not a generally valid standard-error calculation.</p>
+</section>
+
+<section id="importance" data-title="Importance sampling and rare events">
+<div class="section-label">14 / Rare-event simulation</div><h2>Importance sampling and rare events</h2>
+<p>Plain simulation may spend most of its time on scenarios with zero payoff. Importance sampling draws more often from consequential regions, then uses a density ratio to preserve the original expectation. If \(f\) is the target density and \(g\) is the proposal density,</p>
+\[ V=\int h(x)f(x)\,dx=\mathbb{E}_g\left[h(X)\frac{f(X)}{g(X)}\right]. \]
+<p>The proposal must assign positive density wherever the target's relevant payoff contribution is nonzero. The statistical units are the weighted payoffs \(h(X_i)f(X_i)/g(X_i)\), and their variance determines the standard error. Sample weights alone do not determine price uncertainty.</p>
+<h3>Exponential tilting of a normal shock</h3>
+<p>For a GBM terminal payoff, use a proposal \(Z\sim\mathcal{N}(\theta,1)\) instead of the target \(\mathcal{N}(0,1)\). Cancelling the two normal densities yields an exact weight:</p>
+\[ w(Z)=\frac{\phi(Z)}{\phi(Z-\theta)}=\exp(-\theta Z+\tfrac{1}{2}\theta^2). \]
+<p>For a deep out-of-the-money call, a positive \(\theta\) makes exercise more frequent. The exercise threshold in normal coordinates provides a starting proposal location:</p>
+\[ z_K=\frac{\ln(K/S_0)-(r-q-\tfrac{1}{2}\sigma^2)T}{\sigma\sqrt T}. \]
+<p>Choosing \(\theta=z_K\) is a transparent illustrative design, not the universally variance-minimising proposal. The best shift depends on the payoff size across the tail, not only on the exercise event. A pilot or a carefully derived optimisation can improve it.</p>
+{{figure:importance}}
+<div class="callout"><p><strong>Analogy: interviewing more people from a rare group.</strong> A survey can deliberately recruit more members of a rare group to learn about it. To estimate the whole population's average, the answers must be weighted back to the group's true prevalence. A proposal distribution likewise changes which scenarios are observed, while likelihood weights restore the required pricing average.</p></div>
+<h3>Weight instability and support</h3>
+<p>A poor proposal can increase variance dramatically. Some observations then carry enormous weights, dominating the estimate and undermining a normal confidence approximation. Examine weighted-payoff contributions, tail behaviour and independent-run stability; an attractive exercise count does not by itself establish an efficient estimator.</p>
+<p>The often used weight diagnostic \((\sum_i w_i)^2/\sum_i w_i^2\) measures concentration of weights, but it is not a universal effective sample size for the option price. Payoff–weight dependence also matters. For ordinary importance sampling with known normalised densities, use the average of weighted payoffs. Dividing by the realised sum of weights creates a self-normalised estimator, which is generally biased at finite sample sizes.</p>
+<p>For a nonnegative integrand, an ideal zero-variance proposal is proportional to \(h(x)f(x)\). Its normalising constant is the unknown target value, so it is generally a theoretical guide rather than an executable solution. Practical proposals approximate important payoff regions while keeping all likelihood calculations correct.</p>
+</section>
+
+<section id="qmc" data-title="Quasi-Monte Carlo methods">
+<div class="section-label">15 / Low-discrepancy integration</div><h2>Quasi-Monte Carlo methods</h2>
+<p>Express the price as an integral over independent uniforms on the unit cube. Transform each coordinate to the required random input and evaluate the discounted contract payoff:</p>
+\[ V=\int_{[0,1]^d}f(u)\,du,\qquad \widehat V_{\mathrm{QMC}}=\frac{1}{N}\sum_{i=1}^{N}f(u_i). \]
+<p>Quasi-Monte Carlo replaces unstructured random points with a low-discrepancy design, such as a Sobol sequence. Its points cover the integration domain more evenly according to particular geometric criteria. The goal is smaller integration error, not a closer resemblance to visually random paths.</p>
+<h3>Deterministic and randomised designs</h3>
+<p>A deterministic point set does not supply IID observations. Its ordinary sample payoff variance divided by \(N\) is not a justified Monte Carlo standard error. Mathematical discrepancy bounds require assumptions about variation and can be uninformative for singular inverse-normal transformations or discontinuous payoffs.</p>
+<p>Randomised QMC introduces a randomisation that preserves the design's structure and the needed marginal uniformity. Independently scramble the whole design \(R\) times, calculate one price estimate per scramble, and use those price estimates as the independent units for uncertainty:</p>
+\[ \overline V_R=\frac{1}{R}\sum_{r=1}^{R}\widehat V^{(r)},\qquad \widehat{\operatorname{SE}}(\overline V_R)=\sqrt{\frac{1}{R(R-1)}\sum_{r=1}^{R}(\widehat V^{(r)}-\overline V_R)^2}. \]
+<p>A \(t\)-based interval across scramble means is often useful, but its calibration still depends on the number and distribution of independent means. This construction measures the error of their average; it should not be presented as the standard error of an individual scramble.</p>
+{{figure:qmc}}
+<h3>Effective dimension and Brownian ordering</h3>
+<p>A path may use hundreds of normal coordinates while most payoff variation is driven by a few broad features. Effective dimension describes how strongly those coordinates or low-order interactions contribute. Assigning influential directions to early, well-covered QMC coordinates can improve performance.</p>
+<p>A Brownian-bridge construction samples the terminal Brownian value first, then intermediate values conditionally. Principal-component constructions similarly concentrate much covariance variation into leading directions. Both preserve the Brownian distribution when implemented correctly; they change which independent coordinates explain large-scale path variation.</p>
+<p>This Brownian-bridge construction is distinct from using bridge crossing probabilities to correct barrier monitoring. One is an ordering of Gaussian path generation; the other integrates unobserved crossing events conditional on endpoints. They can be combined, but they solve different problems.</p>
+<h3>Sequence conventions</h3>
+<p>Sobol balance properties are tied to suitable sample sizes, notably powers of two in the implementation used here. Arbitrarily thinning a sequence or dropping its first point can damage those properties. The computed experiment uses SciPy's scrambled Sobol engine and complete \(2^m\)-point designs; separate scramble seeds supply independent repetitions. See the <a href="#references">implementation reference</a> for the precise construction.</p>
+<p>The empirical advantage in the figure is especially favourable because the vanilla example is one-dimensional. A nonsmooth high-dimensional contract may behave differently. Report realised performance and uncertainty for the actual payoff instead of promising an \(N^{-1}\) rate for every application.</p>
+</section>
+
+<section id="mlmc" data-title="Multilevel Monte Carlo">
+<div class="section-label">16 / Multilevel estimation</div><h2>Multilevel Monte Carlo</h2>
+<p>When a fine path approximation is expensive, multilevel Monte Carlo estimates its expectation through a hierarchy of cheaper approximations and strongly coupled corrections. Let \(P_\ell\) be a discounted payoff at mesh \(h_\ell=2^{-\ell}T\). A telescoping identity decomposes the finest expectation exactly:</p>
+\[ \mathbb{E}[P_L]=\mathbb{E}[P_0]+\sum_{\ell=1}^{L}\mathbb{E}[P_\ell-P_{\ell-1}]. \]
+<p>Most of the value can be estimated with many cheap coarse samples. Fewer expensive samples estimate fine-minus-coarse corrections, provided those corrections have small variance. Fine and coarse payoffs in a correction must share the same underlying Brownian path: each coarse increment sums its associated fine increments.</p>
+\[ \widehat V_{\mathrm{ML}}=\frac{1}{N_0}\sum_iP_0^{(i)}+\sum_{\ell=1}^{L}\frac{1}{N_\ell}\sum_i(P_\ell^{(i)}-P_{\ell-1}^{(i)}). \]
+<p>Different levels can use independent samples; within each correction, coupling is essential. With independent fine and coarse simulations, the correction variance can remain comparable to the payoff variance instead of shrinking with the mesh.</p>
+{{figure:mlmc}}
+<div class="callout"><p><strong>Analogy: a rough map plus local corrections.</strong> It is cheaper to build a broad map at low resolution and use detailed surveys to correct its missing features than to survey every location at maximum resolution. The detailed surveys must refer to the same locations as the rough map; otherwise their differences include unrelated variation.</p></div>
+<h3>Allocating work</h3>
+<p>Let \(V_\ell\) be correction variance and \(C_\ell\) its per-sample cost. Minimising total cost subject to a sampling-variance target \(v_{\mathrm{target}}\) gives an approximate allocation</p>
+\[ N_\ell\approx\frac{1}{v_{\mathrm{target}}}\sqrt{\frac{V_\ell}{C_\ell}}\sum_{k=0}^{L}\sqrt{V_kC_k}. \]
+<p>Estimate variances and costs in a pilot, round allocations up and monitor whether the finest level's remaining bias meets its separate budget. The telescoping identity targets \(\mathbb{E}[P_L]\), not automatically the continuous-model expectation.</p>
+<h3>Complexity under explicit rate assumptions</h3>
+<p>Suppose bias decays as \(2^{-\alpha L}\), correction variance as \(2^{-\beta\ell}\), and cost per correction as \(2^{\gamma\ell}\), with the regularity and allocation conditions required by the multilevel theorem, including \(\alpha\ge\frac12\min(\beta,\gamma)\). The leading cost to reach RMSE \(\varepsilon\) has the following orders:</p>
+<div class="table-wrap"><table><caption>Multilevel cost regimes under the stated asymptotic assumptions</caption><thead><tr><th>Variance versus cost growth</th><th>Cost order</th></tr></thead><tbody><tr><td>\(\beta&gt;\gamma\)</td><td>\(\mathcal{O}(\varepsilon^{-2})\)</td></tr><tr><td>\(\beta=\gamma\)</td><td>\(\mathcal{O}(\varepsilon^{-2}(\log\varepsilon)^2)\)</td></tr><tr><td>\(\beta&lt;\gamma\)</td><td>\(\mathcal{O}(\varepsilon^{-2-(\gamma-\beta)/\alpha})\)</td></tr></tbody></table></div>
+<p>For many Euler diffusion examples, \(\alpha=1\), \(\beta=1\), \(\gamma=1\), giving a substantial improvement over single-level grid simulation. Discontinuous or path-dependent functionals may require specialised coupling or smoothing. Exact terminal GBM sampling remains simpler for the vanilla benchmark; using MLMC there would create an unnecessary approximation hierarchy. The method's value appears when such exact simplification is unavailable.</p>
+</section>

@@ -1,0 +1,560 @@
+<svg role="img" aria-labelledby="payoffs-title payoffs-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="244.8pt" viewBox="0 0 662.4 244.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="payoffs-title">Figure 01 · Option payoffs and financed terminal profit</title><desc id="payoffs-desc">K = 100, S₀ = 100, r = 5%, q = 0, σ = 20%, τ = 1 year. Profit subtracts the premium grown to maturity; the two break-even spots are therefore not simply the strike.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T17:24:09.065594</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="payoffs-figure_1">
+  <g id="payoffs-patch_1">
+   <path d="M 0 244.8 
+L 662.4 244.8 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="payoffs-axes_1">
+   <g id="payoffs-patch_2">
+    <path d="M 52.94 198.7 
+L 328.23 198.7 
+L 328.23 35.14 
+L 52.94 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="payoffs-matplotlib.axis_1">
+    <g id="payoffs-xtick_1">
+     <g id="payoffs-line2d_1">
+      <path d="M 90.479545 198.7 
+L 90.479545 35.14 
+" clip-path="url(#payoffs-pc1074d6f63)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_2">
+      <defs>
+       <path id="payoffs-mb1b00c9cde" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#payoffs-mb1b00c9cde" x="90.479545" y="198.7" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="90.479545" y="212.538594" transform="rotate(-0 90.479545 212.538594)">60</text>
+     </g>
+    </g>
+    <g id="payoffs-xtick_2">
+     <g id="payoffs-line2d_3">
+      <path d="M 140.532273 198.7 
+L 140.532273 35.14 
+" clip-path="url(#payoffs-pc1074d6f63)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_4">
+      <g>
+       <use href="#payoffs-mb1b00c9cde" x="140.532273" y="198.7" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="140.532273" y="212.538594" transform="rotate(-0 140.532273 212.538594)">80</text>
+     </g>
+    </g>
+    <g id="payoffs-xtick_3">
+     <g id="payoffs-line2d_5">
+      <path d="M 190.585 198.7 
+L 190.585 35.14 
+" clip-path="url(#payoffs-pc1074d6f63)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_6">
+      <g>
+       <use href="#payoffs-mb1b00c9cde" x="190.585" y="198.7" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="190.585" y="212.538594" transform="rotate(-0 190.585 212.538594)">100</text>
+     </g>
+    </g>
+    <g id="payoffs-xtick_4">
+     <g id="payoffs-line2d_7">
+      <path d="M 240.637727 198.7 
+L 240.637727 35.14 
+" clip-path="url(#payoffs-pc1074d6f63)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_8">
+      <g>
+       <use href="#payoffs-mb1b00c9cde" x="240.637727" y="198.7" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="240.637727" y="212.538594" transform="rotate(-0 240.637727 212.538594)">120</text>
+     </g>
+    </g>
+    <g id="payoffs-xtick_5">
+     <g id="payoffs-line2d_9">
+      <path d="M 290.690455 198.7 
+L 290.690455 35.14 
+" clip-path="url(#payoffs-pc1074d6f63)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_10">
+      <g>
+       <use href="#payoffs-mb1b00c9cde" x="290.690455" y="198.7" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="290.690455" y="212.538594" transform="rotate(-0 290.690455 212.538594)">140</text>
+     </g>
+    </g>
+    <g id="payoffs-text_6">
+     <!-- Terminal spot $S_T$ -->
+     <g style="fill: #c8cec8" transform="translate(153.235 225.250312)">
+      <text>
+       <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.497559 11.034668 14.734863 23.501953 26.002441 31.706543 37.22168 39.722168 42.583008 47.271973 52.984863 58.491211 62.02002" y="-0.15625">Terminal spot </tspan>
+       <tspan style="font: oblique 9px 'DejaVu Sans', Arial, sans-serif" x="64.880859" y="-0.15625">S</tspan>
+       <tspan style="font: oblique 6.3px 'DejaVu Sans', Arial, sans-serif" x="70.59375" y="1.3203125">T</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="payoffs-matplotlib.axis_2">
+    <g id="payoffs-ytick_1">
+     <g id="payoffs-line2d_11">
+      <path d="M 52.94 188.860522 
+L 328.23 188.860522 
+" clip-path="url(#payoffs-pc1074d6f63)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_12">
+      <defs>
+       <path id="payoffs-me45c6b1896" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#payoffs-me45c6b1896" x="52.94" y="188.860522" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="192.279819" transform="rotate(-0 45.94 192.279819)">−10</text>
+     </g>
+    </g>
+    <g id="payoffs-ytick_2">
+     <g id="payoffs-line2d_13">
+      <path d="M 52.94 164.479526 
+L 328.23 164.479526 
+" clip-path="url(#payoffs-pc1074d6f63)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_14">
+      <g>
+       <use href="#payoffs-me45c6b1896" x="52.94" y="164.479526" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="167.898823" transform="rotate(-0 45.94 167.898823)">0</text>
+     </g>
+    </g>
+    <g id="payoffs-ytick_3">
+     <g id="payoffs-line2d_15">
+      <path d="M 52.94 140.09853 
+L 328.23 140.09853 
+" clip-path="url(#payoffs-pc1074d6f63)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_16">
+      <g>
+       <use href="#payoffs-me45c6b1896" x="52.94" y="140.09853" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="143.517827" transform="rotate(-0 45.94 143.517827)">10</text>
+     </g>
+    </g>
+    <g id="payoffs-ytick_4">
+     <g id="payoffs-line2d_17">
+      <path d="M 52.94 115.717534 
+L 328.23 115.717534 
+" clip-path="url(#payoffs-pc1074d6f63)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_18">
+      <g>
+       <use href="#payoffs-me45c6b1896" x="52.94" y="115.717534" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="119.13683" transform="rotate(-0 45.94 119.13683)">20</text>
+     </g>
+    </g>
+    <g id="payoffs-ytick_5">
+     <g id="payoffs-line2d_19">
+      <path d="M 52.94 91.336538 
+L 328.23 91.336538 
+" clip-path="url(#payoffs-pc1074d6f63)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_20">
+      <g>
+       <use href="#payoffs-me45c6b1896" x="52.94" y="91.336538" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="94.755834" transform="rotate(-0 45.94 94.755834)">30</text>
+     </g>
+    </g>
+    <g id="payoffs-ytick_6">
+     <g id="payoffs-line2d_21">
+      <path d="M 52.94 66.955542 
+L 328.23 66.955542 
+" clip-path="url(#payoffs-pc1074d6f63)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_22">
+      <g>
+       <use href="#payoffs-me45c6b1896" x="52.94" y="66.955542" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="70.374838" transform="rotate(-0 45.94 70.374838)">40</text>
+     </g>
+    </g>
+    <g id="payoffs-ytick_7">
+     <g id="payoffs-line2d_23">
+      <path d="M 52.94 42.574545 
+L 328.23 42.574545 
+" clip-path="url(#payoffs-pc1074d6f63)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_24">
+      <g>
+       <use href="#payoffs-me45c6b1896" x="52.94" y="42.574545" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="45.993842" transform="rotate(-0 45.94 45.993842)">50</text>
+     </g>
+    </g>
+    <g id="payoffs-text_14">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.074063" y="116.92" transform="rotate(-90 21.074063 116.92)">Currency units</text>
+    </g>
+   </g>
+   <g id="payoffs-line2d_25">
+    <path d="M 65.453182 164.479526 
+L 190.585 164.479526 
+L 315.716818 42.574545 
+L 315.716818 42.574545 
+" clip-path="url(#payoffs-pc1074d6f63)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="payoffs-line2d_26">
+    <path d="M 65.453182 191.265455 
+L 190.585 191.265455 
+L 315.716818 69.360474 
+L 315.716818 69.360474 
+" clip-path="url(#payoffs-pc1074d6f63)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="payoffs-line2d_27">
+    <path d="M 52.94 164.479526 
+L 328.23 164.479526 
+" clip-path="url(#payoffs-pc1074d6f63)" style="fill: none; stroke: #596159; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="payoffs-line2d_28">
+    <path d="M 190.585 198.7 
+L 190.585 35.14 
+" clip-path="url(#payoffs-pc1074d6f63)" style="fill: none; stroke-dasharray: 0.8,1.32; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 0.8"/>
+   </g>
+   <g id="payoffs-patch_3">
+    <path d="M 52.94 198.7 
+L 52.94 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="payoffs-patch_4">
+    <path d="M 52.94 198.7 
+L 328.23 198.7 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="payoffs-text_15">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="52.94" y="22.14" transform="rotate(-0 52.94 22.14)">Long call</text>
+   </g>
+   <g id="payoffs-legend_1">
+    <g id="payoffs-line2d_29">
+     <path d="M 59.69 44.963828 
+L 67.19 44.963828 
+L 74.69 44.963828 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="payoffs-text_16">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="80.69" y="47.588828" transform="rotate(-0 80.69 47.588828)">Terminal payoff</text>
+    </g>
+    <g id="payoffs-line2d_30">
+     <path d="M 59.69 55.972422 
+L 67.19 55.972422 
+L 74.69 55.972422 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="payoffs-text_17">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="80.69" y="58.597422" transform="rotate(-0 80.69 58.597422)">P&amp;L (premium financed at 5%)</text>
+    </g>
+   </g>
+  </g>
+  <g id="payoffs-axes_2">
+   <g id="payoffs-patch_5">
+    <path d="M 373.61 198.7 
+L 648.9 198.7 
+L 648.9 35.14 
+L 373.61 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="payoffs-matplotlib.axis_3">
+    <g id="payoffs-xtick_6">
+     <g id="payoffs-line2d_31">
+      <path d="M 411.149545 198.7 
+L 411.149545 35.14 
+" clip-path="url(#payoffs-pcc771a219b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_32">
+      <g>
+       <use href="#payoffs-mb1b00c9cde" x="411.149545" y="198.7" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_18">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="411.149545" y="212.538594" transform="rotate(-0 411.149545 212.538594)">60</text>
+     </g>
+    </g>
+    <g id="payoffs-xtick_7">
+     <g id="payoffs-line2d_33">
+      <path d="M 461.202273 198.7 
+L 461.202273 35.14 
+" clip-path="url(#payoffs-pcc771a219b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_34">
+      <g>
+       <use href="#payoffs-mb1b00c9cde" x="461.202273" y="198.7" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_19">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="461.202273" y="212.538594" transform="rotate(-0 461.202273 212.538594)">80</text>
+     </g>
+    </g>
+    <g id="payoffs-xtick_8">
+     <g id="payoffs-line2d_35">
+      <path d="M 511.255 198.7 
+L 511.255 35.14 
+" clip-path="url(#payoffs-pcc771a219b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_36">
+      <g>
+       <use href="#payoffs-mb1b00c9cde" x="511.255" y="198.7" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_20">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="511.255" y="212.538594" transform="rotate(-0 511.255 212.538594)">100</text>
+     </g>
+    </g>
+    <g id="payoffs-xtick_9">
+     <g id="payoffs-line2d_37">
+      <path d="M 561.307727 198.7 
+L 561.307727 35.14 
+" clip-path="url(#payoffs-pcc771a219b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_38">
+      <g>
+       <use href="#payoffs-mb1b00c9cde" x="561.307727" y="198.7" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="561.307727" y="212.538594" transform="rotate(-0 561.307727 212.538594)">120</text>
+     </g>
+    </g>
+    <g id="payoffs-xtick_10">
+     <g id="payoffs-line2d_39">
+      <path d="M 611.360455 198.7 
+L 611.360455 35.14 
+" clip-path="url(#payoffs-pcc771a219b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_40">
+      <g>
+       <use href="#payoffs-mb1b00c9cde" x="611.360455" y="198.7" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="611.360455" y="212.538594" transform="rotate(-0 611.360455 212.538594)">140</text>
+     </g>
+    </g>
+    <g id="payoffs-text_23">
+     <!-- Terminal spot $S_T$ -->
+     <g style="fill: #c8cec8" transform="translate(473.905 225.250312)">
+      <text>
+       <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.497559 11.034668 14.734863 23.501953 26.002441 31.706543 37.22168 39.722168 42.583008 47.271973 52.984863 58.491211 62.02002" y="-0.15625">Terminal spot </tspan>
+       <tspan style="font: oblique 9px 'DejaVu Sans', Arial, sans-serif" x="64.880859" y="-0.15625">S</tspan>
+       <tspan style="font: oblique 6.3px 'DejaVu Sans', Arial, sans-serif" x="70.59375" y="1.3203125">T</tspan>
+      </text>
+     </g>
+    </g>
+   </g>
+   <g id="payoffs-matplotlib.axis_4">
+    <g id="payoffs-ytick_8">
+     <g id="payoffs-line2d_41">
+      <path d="M 373.61 175.668716 
+L 648.9 175.668716 
+" clip-path="url(#payoffs-pcc771a219b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_42">
+      <g>
+       <use href="#payoffs-me45c6b1896" x="373.61" y="175.668716" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="366.61" y="179.088013" transform="rotate(-0 366.61 179.088013)">0</text>
+     </g>
+    </g>
+    <g id="payoffs-ytick_9">
+     <g id="payoffs-line2d_43">
+      <path d="M 373.61 149.049882 
+L 648.9 149.049882 
+" clip-path="url(#payoffs-pcc771a219b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_44">
+      <g>
+       <use href="#payoffs-me45c6b1896" x="373.61" y="149.049882" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="366.61" y="152.469179" transform="rotate(-0 366.61 152.469179)">10</text>
+     </g>
+    </g>
+    <g id="payoffs-ytick_10">
+     <g id="payoffs-line2d_45">
+      <path d="M 373.61 122.431048 
+L 648.9 122.431048 
+" clip-path="url(#payoffs-pcc771a219b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_46">
+      <g>
+       <use href="#payoffs-me45c6b1896" x="373.61" y="122.431048" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="366.61" y="125.850345" transform="rotate(-0 366.61 125.850345)">20</text>
+     </g>
+    </g>
+    <g id="payoffs-ytick_11">
+     <g id="payoffs-line2d_47">
+      <path d="M 373.61 95.812214 
+L 648.9 95.812214 
+" clip-path="url(#payoffs-pcc771a219b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_48">
+      <g>
+       <use href="#payoffs-me45c6b1896" x="373.61" y="95.812214" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="366.61" y="99.231511" transform="rotate(-0 366.61 99.231511)">30</text>
+     </g>
+    </g>
+    <g id="payoffs-ytick_12">
+     <g id="payoffs-line2d_49">
+      <path d="M 373.61 69.19338 
+L 648.9 69.19338 
+" clip-path="url(#payoffs-pcc771a219b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_50">
+      <g>
+       <use href="#payoffs-me45c6b1896" x="373.61" y="69.19338" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="366.61" y="72.612676" transform="rotate(-0 366.61 72.612676)">40</text>
+     </g>
+    </g>
+    <g id="payoffs-ytick_13">
+     <g id="payoffs-line2d_51">
+      <path d="M 373.61 42.574545 
+L 648.9 42.574545 
+" clip-path="url(#payoffs-pcc771a219b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="payoffs-line2d_52">
+      <g>
+       <use href="#payoffs-me45c6b1896" x="373.61" y="42.574545" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="payoffs-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="366.61" y="45.993842" transform="rotate(-0 366.61 45.993842)">50</text>
+     </g>
+    </g>
+    <g id="payoffs-text_30">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="349.285781" y="116.92" transform="rotate(-90 349.285781 116.92)">Currency units</text>
+    </g>
+   </g>
+   <g id="payoffs-line2d_53">
+    <path d="M 386.123182 42.574545 
+L 511.255 175.668716 
+L 636.386818 175.668716 
+L 636.386818 175.668716 
+" clip-path="url(#payoffs-pcc771a219b)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="payoffs-line2d_54">
+    <path d="M 386.123182 58.171284 
+L 511.255 191.265455 
+L 636.386818 191.265455 
+L 636.386818 191.265455 
+" clip-path="url(#payoffs-pcc771a219b)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="payoffs-line2d_55">
+    <path d="M 373.61 175.668716 
+L 648.9 175.668716 
+" clip-path="url(#payoffs-pcc771a219b)" style="fill: none; stroke: #596159; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="payoffs-line2d_56">
+    <path d="M 511.255 198.7 
+L 511.255 35.14 
+" clip-path="url(#payoffs-pcc771a219b)" style="fill: none; stroke-dasharray: 0.8,1.32; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 0.8"/>
+   </g>
+   <g id="payoffs-patch_6">
+    <path d="M 373.61 198.7 
+L 373.61 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="payoffs-patch_7">
+    <path d="M 373.61 198.7 
+L 648.9 198.7 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="payoffs-text_31">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="373.61" y="22.14" transform="rotate(-0 373.61 22.14)">Long put</text>
+   </g>
+   <g id="payoffs-legend_2">
+    <g id="payoffs-line2d_57">
+     <path d="M 505.714453 44.963828 
+L 513.214453 44.963828 
+L 520.714453 44.963828 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="payoffs-text_32">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="526.714453" y="47.588828" transform="rotate(-0 526.714453 47.588828)">Terminal payoff</text>
+    </g>
+    <g id="payoffs-line2d_58">
+     <path d="M 505.714453 55.972422 
+L 513.214453 55.972422 
+L 520.714453 55.972422 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="payoffs-text_33">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="526.714453" y="58.597422" transform="rotate(-0 526.714453 58.597422)">P&amp;L (premium financed at 5%)</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="payoffs-pc1074d6f63">
+   <rect x="52.94" y="35.14" width="275.29" height="163.56"/>
+  </clipPath>
+  <clipPath id="payoffs-pcc771a219b">
+   <rect x="373.61" y="35.14" width="275.29" height="163.56"/>
+  </clipPath>
+ </defs>
+</svg>

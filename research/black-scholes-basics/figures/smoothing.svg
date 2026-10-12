@@ -1,0 +1,376 @@
+<svg role="img" aria-labelledby="smoothing-title smoothing-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="262.8pt" viewBox="0 0 662.4 262.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="smoothing-title">Figure 04 · European call values at different maturities</title><desc id="smoothing-desc">K = 100, r = 5%, q = 0, σ = 20%. A longer maturity changes both uncertainty and carry; it is not only a graphical smoothing parameter.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T17:24:09.183244</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="smoothing-figure_1">
+  <g id="smoothing-patch_1">
+   <path d="M 0 262.8 
+L 662.4 262.8 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="smoothing-axes_1">
+   <g id="smoothing-patch_2">
+    <path d="M 45.38 219.58 
+L 648.9 219.58 
+L 648.9 13.5 
+L 45.38 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="smoothing-matplotlib.axis_1">
+    <g id="smoothing-xtick_1">
+     <g id="smoothing-line2d_1">
+      <path d="M 127.678182 219.58 
+L 127.678182 13.5 
+" clip-path="url(#smoothing-p669b024456)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="smoothing-line2d_2">
+      <defs>
+       <path id="smoothing-ma74a14ffe4" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#smoothing-ma74a14ffe4" x="127.678182" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="smoothing-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="127.678182" y="233.418594" transform="rotate(-0 127.678182 233.418594)">60</text>
+     </g>
+    </g>
+    <g id="smoothing-xtick_2">
+     <g id="smoothing-line2d_3">
+      <path d="M 237.409091 219.58 
+L 237.409091 13.5 
+" clip-path="url(#smoothing-p669b024456)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="smoothing-line2d_4">
+      <g>
+       <use href="#smoothing-ma74a14ffe4" x="237.409091" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="smoothing-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="237.409091" y="233.418594" transform="rotate(-0 237.409091 233.418594)">80</text>
+     </g>
+    </g>
+    <g id="smoothing-xtick_3">
+     <g id="smoothing-line2d_5">
+      <path d="M 347.14 219.58 
+L 347.14 13.5 
+" clip-path="url(#smoothing-p669b024456)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="smoothing-line2d_6">
+      <g>
+       <use href="#smoothing-ma74a14ffe4" x="347.14" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="smoothing-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="347.14" y="233.418594" transform="rotate(-0 347.14 233.418594)">100</text>
+     </g>
+    </g>
+    <g id="smoothing-xtick_4">
+     <g id="smoothing-line2d_7">
+      <path d="M 456.870909 219.58 
+L 456.870909 13.5 
+" clip-path="url(#smoothing-p669b024456)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="smoothing-line2d_8">
+      <g>
+       <use href="#smoothing-ma74a14ffe4" x="456.870909" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="smoothing-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="456.870909" y="233.418594" transform="rotate(-0 456.870909 233.418594)">120</text>
+     </g>
+    </g>
+    <g id="smoothing-xtick_5">
+     <g id="smoothing-line2d_9">
+      <path d="M 566.601818 219.58 
+L 566.601818 13.5 
+" clip-path="url(#smoothing-p669b024456)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="smoothing-line2d_10">
+      <g>
+       <use href="#smoothing-ma74a14ffe4" x="566.601818" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="smoothing-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="566.601818" y="233.418594" transform="rotate(-0 566.601818 233.418594)">140</text>
+     </g>
+    </g>
+    <g id="smoothing-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="347.14" y="246.128906" transform="rotate(-0 347.14 246.128906)">Spot S</text>
+    </g>
+   </g>
+   <g id="smoothing-matplotlib.axis_2">
+    <g id="smoothing-ytick_1">
+     <g id="smoothing-line2d_11">
+      <path d="M 45.38 210.212727 
+L 648.9 210.212727 
+" clip-path="url(#smoothing-p669b024456)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="smoothing-line2d_12">
+      <defs>
+       <path id="smoothing-mb380f13ee1" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#smoothing-mb380f13ee1" x="45.38" y="210.212727" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="smoothing-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="213.632024" transform="rotate(-0 38.38 213.632024)">0</text>
+     </g>
+    </g>
+    <g id="smoothing-ytick_2">
+     <g id="smoothing-line2d_13">
+      <path d="M 45.38 176.131414 
+L 648.9 176.131414 
+" clip-path="url(#smoothing-p669b024456)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="smoothing-line2d_14">
+      <g>
+       <use href="#smoothing-mb380f13ee1" x="45.38" y="176.131414" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="smoothing-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="179.550711" transform="rotate(-0 38.38 179.550711)">10</text>
+     </g>
+    </g>
+    <g id="smoothing-ytick_3">
+     <g id="smoothing-line2d_15">
+      <path d="M 45.38 142.050101 
+L 648.9 142.050101 
+" clip-path="url(#smoothing-p669b024456)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="smoothing-line2d_16">
+      <g>
+       <use href="#smoothing-mb380f13ee1" x="45.38" y="142.050101" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="smoothing-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="145.469398" transform="rotate(-0 38.38 145.469398)">20</text>
+     </g>
+    </g>
+    <g id="smoothing-ytick_4">
+     <g id="smoothing-line2d_17">
+      <path d="M 45.38 107.968789 
+L 648.9 107.968789 
+" clip-path="url(#smoothing-p669b024456)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="smoothing-line2d_18">
+      <g>
+       <use href="#smoothing-mb380f13ee1" x="45.38" y="107.968789" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="smoothing-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="111.388085" transform="rotate(-0 38.38 111.388085)">30</text>
+     </g>
+    </g>
+    <g id="smoothing-ytick_5">
+     <g id="smoothing-line2d_19">
+      <path d="M 45.38 73.887476 
+L 648.9 73.887476 
+" clip-path="url(#smoothing-p669b024456)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="smoothing-line2d_20">
+      <g>
+       <use href="#smoothing-mb380f13ee1" x="45.38" y="73.887476" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="smoothing-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="77.306773" transform="rotate(-0 38.38 77.306773)">40</text>
+     </g>
+    </g>
+    <g id="smoothing-ytick_6">
+     <g id="smoothing-line2d_21">
+      <path d="M 45.38 39.806163 
+L 648.9 39.806163 
+" clip-path="url(#smoothing-p669b024456)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="smoothing-line2d_22">
+      <g>
+       <use href="#smoothing-mb380f13ee1" x="45.38" y="39.806163" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="smoothing-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="43.22546" transform="rotate(-0 38.38 43.22546)">50</text>
+     </g>
+    </g>
+    <g id="smoothing-text_13">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.055781" y="116.54" transform="rotate(-90 21.055781 116.54)">Call value</text>
+    </g>
+   </g>
+   <g id="smoothing-line2d_23">
+    <path d="M 72.812727 210.20455 
+L 122.191636 210.069366 
+L 146.881091 209.788889 
+L 164.712364 209.382255 
+L 179.800364 208.833228 
+L 193.516727 208.117386 
+L 205.861455 207.255669 
+L 216.834545 206.287382 
+L 227.807636 205.104193 
+L 238.780727 203.68451 
+L 248.382182 202.233278 
+L 257.983636 200.575642 
+L 267.585091 198.702941 
+L 277.186545 196.608743 
+L 286.788 194.288908 
+L 296.389455 191.741576 
+L 305.990909 188.967091 
+L 315.592364 185.967865 
+L 325.193818 182.748202 
+L 334.795273 179.314084 
+L 345.768364 175.136364 
+L 356.741455 170.701254 
+L 367.714545 166.023294 
+L 378.687636 161.118124 
+L 391.032364 155.348548 
+L 403.377091 149.335686 
+L 417.093455 142.397936 
+L 430.809818 135.220068 
+L 445.897818 127.082421 
+L 462.357455 117.957429 
+L 481.560364 107.040364 
+L 502.134909 95.082951 
+L 526.824364 80.461143 
+L 555.628727 63.129577 
+L 591.291273 41.400776 
+L 621.467273 22.867273 
+L 621.467273 22.867273 
+" clip-path="url(#smoothing-p669b024456)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="smoothing-line2d_24">
+    <path d="M 72.812727 210.212727 
+L 227.807636 210.111684 
+L 247.010545 209.865692 
+L 260.726909 209.471603 
+L 271.7 208.939087 
+L 281.301455 208.254419 
+L 289.531273 207.464649 
+L 297.761091 206.454163 
+L 305.990909 205.193732 
+L 312.849091 203.934206 
+L 319.707273 202.472074 
+L 326.565455 200.799022 
+L 333.423636 198.910238 
+L 340.281818 196.804524 
+L 347.14 194.484211 
+L 353.998182 191.954926 
+L 362.228 188.656143 
+L 370.457818 185.088157 
+L 378.687636 181.273969 
+L 388.289091 176.546764 
+L 397.890545 171.56074 
+L 408.863636 165.598277 
+L 421.208364 158.62193 
+L 436.296364 149.808553 
+L 454.127636 139.11845 
+L 478.817091 124.03601 
+L 519.966182 98.599115 
+L 621.467273 35.572383 
+L 621.467273 35.572383 
+" clip-path="url(#smoothing-p669b024456)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="smoothing-line2d_25">
+    <path d="M 72.812727 210.212727 
+L 316.964 210.125367 
+L 325.193818 209.872592 
+L 330.680364 209.482762 
+L 334.795273 209.004302 
+L 338.910182 208.31846 
+L 343.025091 207.389723 
+L 347.14 206.19639 
+L 351.254909 204.734548 
+L 355.369818 203.018485 
+L 359.484727 201.077519 
+L 364.971273 198.207181 
+L 371.829455 194.302016 
+L 381.430909 188.51972 
+L 403.377091 174.938112 
+L 621.467273 39.46552 
+L 621.467273 39.46552 
+" clip-path="url(#smoothing-p669b024456)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="smoothing-line2d_26">
+    <path d="M 72.812727 210.212727 
+L 347.14 210.212727 
+L 621.467273 39.806163 
+L 621.467273 39.806163 
+" clip-path="url(#smoothing-p669b024456)" style="fill: none; stroke-dasharray: 4.81,2.08; stroke-dashoffset: 0; stroke: #818781; stroke-width: 1.3"/>
+   </g>
+   <g id="smoothing-patch_3">
+    <path d="M 45.38 219.58 
+L 45.38 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="smoothing-patch_4">
+    <path d="M 45.38 219.58 
+L 648.9 219.58 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="smoothing-legend_1">
+    <g id="smoothing-line2d_27">
+     <path d="M 52.58 23.97875 
+L 60.58 23.97875 
+L 68.58 23.97875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="smoothing-text_14">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="26.77875" transform="rotate(-0 74.98 26.77875)">European call · τ = 1</text>
+    </g>
+    <g id="smoothing-line2d_28">
+     <path d="M 52.58 35.72125 
+L 60.58 35.72125 
+L 68.58 35.72125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="smoothing-text_15">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="38.52125" transform="rotate(-0 74.98 38.52125)">European call · τ = 0.25</text>
+    </g>
+    <g id="smoothing-line2d_29">
+     <path d="M 52.58 47.46375 
+L 60.58 47.46375 
+L 68.58 47.46375 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="smoothing-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="50.26375" transform="rotate(-0 74.98 50.26375)">European call · τ = 0.02</text>
+    </g>
+    <g id="smoothing-line2d_30">
+     <path d="M 52.58 59.20625 
+L 60.58 59.20625 
+L 68.58 59.20625 
+" style="fill: none; stroke-dasharray: 4.81,2.08; stroke-dashoffset: 0; stroke: #818781; stroke-width: 1.3"/>
+    </g>
+    <g id="smoothing-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="62.00625" transform="rotate(-0 74.98 62.00625)">Expiry payoff</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="smoothing-p669b024456">
+   <rect x="45.38" y="13.5" width="603.52" height="206.08"/>
+  </clipPath>
+ </defs>
+</svg>

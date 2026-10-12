@@ -1,0 +1,8 @@
+{
+  "panels": 25,
+  "coordinateAccuracy": "passed",
+  "percentUnits": "passed",
+  "neutralCardAndBounds": "passed",
+  "allSeries": "passed",
+  "keyboardAndTouch": "passed"
+}

@@ -1,0 +1,84 @@
+<section id="uncertainty" data-title="Error analysis and confidence intervals">
+<div class="section-label">05 / Statistical uncertainty</div><h2>Error analysis and confidence intervals</h2>
+<p>An estimate without a measure of its precision is incomplete. For \(N\) IID discounted payoffs, estimate the one-payoff variance from deviations around their sample mean. The estimated standard error divides that standard deviation by the square root of the independent sample size:</p>
+\[ s_Y^2=\frac{1}{N-1}\sum_{i=1}^{N}(Y_i-\widehat V_N)^2,\qquad \widehat{\operatorname{SE}}(\widehat V_N)=\frac{s_Y}{\sqrt{N}}. \]
+<p>Discount first, then compute the sample variance, or consistently multiply an undiscounted payoff standard deviation by the deterministic discount factor. Mixing a discounted mean with an undiscounted standard error produces an incorrect interval. With random discount factors, their interaction with payoffs must be retained within every observation.</p>
+<h3>Approximate confidence intervals</h3>
+<p>A central-limit-theorem approximation produces a two-sided \(100(1-\alpha)\%\) interval using a standard normal quantile \(z_{1-\alpha/2}\). At 95%, the commonly used quantile is approximately 1.96:</p>
+\[ I_N=\left[\widehat V_N-z_{1-\alpha/2}\frac{s_Y}{\sqrt{N}},\ \widehat V_N+z_{1-\alpha/2}\frac{s_Y}{\sqrt{N}}\right]. \]
+<p>The frequentist interpretation concerns the procedure: if the experiment were repeated independently, approximately 95% of intervals produced by a well-calibrated 95% procedure would contain the fixed model value. It does not assign a 95% probability to the already fixed model price conditional on one realised interval.</p>
+<p>A Student \(t\) quantile can replace the normal quantile when variance is estimated. The resulting interval is exact for IID normal observations; option payoffs are generally not normal, so using \(t\) is not a universal small-sample repair. Skewness and rare events still matter. A bootstrap also cannot recover a payoff region absent from the observed sample.</p>
+<h3>Bias and mean squared error</h3>
+<p>Let \(V_m\) be the expectation of a payoff calculated on a discretised scheme. Its estimator may be unbiased for \(V_m\) while biased for the desired continuous-model value \(V\). The total error decomposes into a random sampling component and a systematic approximation component:</p>
+\[ \widehat V_{N,m}-V=(\widehat V_{N,m}-V_m)+(V_m-V). \]
+\[ \operatorname{MSE}(\widehat V_{N,m})=\frac{\operatorname{Var}(Y_m)}{N}+(V_m-V)^2. \]
+<p>A narrow confidence interval estimates sampling uncertainty around the discretised target. It does not automatically include discretisation bias, an incorrect monitoring convention, policy approximation error or model risk. Reporting more decimal places also does not improve any of these errors.</p>
+<h3>Planning sample sizes</h3>
+<p>A pilot estimate \(s_Y\) gives an approximate production budget for a desired interval half-width \(\varepsilon\):</p>
+\[ N\approx\left(\frac{z_{1-\alpha/2}s_Y}{\varepsilon}\right)^2. \]
+<p>Round up, allow for uncertainty in the pilot variance and count independent units correctly. For an unbiased estimator, root mean squared error is \(\sigma_Y/\sqrt{N}\); achieving a particular confidence half-width introduces the additional quantile. The two accuracy targets should not be silently interchanged.</p>
+<div class="callout"><p><strong>Analogy: an instrument's repeatability and calibration.</strong> Repeating a measurement reduces noise from the instrument, but it does not correct a miscalibrated scale. More Monte Carlo observations reduce sampling error; refining the simulation scheme addresses numerical bias. Both require attention, but they require different experiments.</p></div>
+<h3>Rare payoffs and repeated monitoring</h3>
+<p>If every simulated payoff is zero, the usual sample variance and interval can both be zero. This is evidence of an uninformative sample, not proof that the price is zero. Inspect exercise counts, use a justified rare-event method, or increase the sample. For a binary event with zero successes in \(N\) independent trials, a one-sided 95% binomial upper bound on its probability is \(1-0.05^{1/N}\), approximately \(3/N\). That bound is for a probability, not for the unbounded monetary payoff of a call.</p>
+<p>Repeatedly checking a fixed-sample interval and stopping at the first attractive result changes the procedure's coverage. The running laboratory intervals are descriptive, pointwise intervals at their displayed sample sizes. A formally justified sequential stopping rule requires a sequential analysis or a confidence sequence; the entire displayed band is not a 95% simultaneous guarantee.</p>
+</section>
+
+<section id="random-numbers" data-title="Random number generation and reproducibility">
+<div class="section-label">06 / Randomness</div><h2>Random number generation and reproducibility</h2>
+<p>A numerical generator produces a reproducible stream of values that is used as an approximation to independent draws. A seed determines the initial state. Repeating a seed in the same implementation reproduces the calculation; repeating it does not provide a second independent experiment.</p>
+<h3>From uniforms to normal shocks</h3>
+<p>The inverse-transform method starts with an open-interval uniform variable \(U\) and sets \(Z=\Phi^{-1}(U)\). Normal shocks can also be generated in pairs by the Box–Muller transformation:</p>
+\[ Z_1=\sqrt{-2\ln U_1}\cos(2\pi U_2),\qquad Z_2=\sqrt{-2\ln U_1}\sin(2\pi U_2). \]
+<p>The logarithm requires \(U_1>0\). An inverse normal transform requires avoiding endpoints zero and one, which map to infinite shocks. Endpoint handling should be explicit; silently clipping a substantial tail region changes the distribution. Machine-level endpoint protection is different from deliberately truncating economically relevant tails.</p>
+<p>The static experiments use NumPy generators with stated seeds. The browser laboratory uses a compact 32-bit Mulberry32 stream and Box–Muller normals for a reproducible teaching example. Its identical seed is reproducible within that implementation; it does not reproduce NumPy's different generator. A serious simulation system should choose and document an established generator, its version, state and parallel-stream policy.</p>
+<h3>Reproducibility and independence</h3>
+<p>Keep the seed, generator, parameter set, payoff definition, monitoring schedule and estimator settings together. Changing how draws are consumed can change results even with the same initial seed. For example, switching from terminal-only draws to a time-grid path changes which shocks drive each scenario.</p>
+<p>Parallel jobs must not initialise every worker with the same seed. That duplicates paths and creates spurious apparent precision. Use a generator's supported stream-splitting, spawning or counter-based facility, and aggregate statistics over the genuinely distinct units. Merely observing different-looking worker outputs is not a stream-independence proof.</p>
+<h3>Common random numbers and moment matching</h3>
+<p>For controlled comparisons, reusing shocks is often desirable. When comparing two close parameter sets, common random numbers preserve path correspondence and can substantially reduce the variance of their difference. Independence between repetitions and deliberate dependence within a comparison serve different purposes.</p>
+<p>One can recenter and rescale a finite normal sample so that its sample mean is zero and variance is one. This “moment matching” can reduce some errors, but it also makes the transformed shocks dependent. Standard IID variance formulas cannot be assumed without considering the modified estimator. It is not used in the live laboratory.</p>
+<p>Useful diagnostics include sample moments, quantiles, tail counts, correlations and financial invariants. A sample mean near zero does not establish good high-dimensional behaviour. Conversely, a correct generator will exhibit ordinary sample deviations; forcing every diagnostic to its population value can obscure rather than validate the sampling design.</p>
+</section>
+
+<section id="gbm" data-title="Exact simulation of geometric Brownian motion">
+<div class="section-label">07 / Path simulation</div><h2>Exact simulation of geometric Brownian motion</h2>
+<p>Constant-coefficient GBM is a particularly useful teaching model because its transition distribution is known exactly. Applying Itô's lemma to \(X_t=\ln S_t\) turns the multiplicative stock diffusion into a drifted Brownian motion:</p>
+\[ dX_t=(r-q-\tfrac{1}{2}\sigma^2)\,dt+\sigma\,dW_t^{\mathbb{Q}}. \]
+<p>Integrating over a time interval \(\Delta t\) gives the exact transition. “Exact” refers to the model distribution at the selected dates; finite-precision arithmetic and finite-sample uncertainty still exist.</p>
+\[ S_{t+\Delta t}=S_t\exp\left[(r-q-\tfrac{1}{2}\sigma^2)\Delta t+\sigma\sqrt{\Delta t}\,Z\right],\qquad Z\sim\mathcal{N}(0,1). \]
+<h3>Direct terminal sampling</h3>
+<p>For a terminal-only payoff, one shock per scenario suffices:</p>
+\[ S_T=S_0\exp\left[(r-q-\tfrac{1}{2}\sigma^2)T+\sigma\sqrt{T}\,Z\right]. \]
+<p>Adding hundreds of intermediate dates cannot improve this exact terminal distribution. It increases work without removing any time-discretisation bias, because there was none in the first place. Path plots remain helpful for intuition, but the vanilla pricing algorithm does not need to retain those paths.</p>
+<h3>Path construction and dependence</h3>
+<p>For contract dates \(0<t_1<\cdots<t_m=T\), draw independent normal increments and apply the transition on each interval. Stock levels on the same path are dependent because later levels include earlier shocks. With irregular dates, use each actual \(\Delta t_j=t_j-t_{j-1}\); a uniform-grid approximation can change an averaging or exercise contract.</p>
+<p>The lognormal moments provide useful checks. For any real \(a\) with the expression finite,</p>
+\[ \mathbb{E}^{\mathbb{Q}}[S_T^a]=S_0^a\exp\left[a(r-q)T+\tfrac{1}{2}a(a-1)\sigma^2T\right]. \]
+<p>In particular, \(\mathbb{E}[S_T]=S_0e^{(r-q)T}\). Thus the discounted stock has mean \(S_0e^{-qT}\), which is the prepaid-forward value. With dividends, \(e^{-rt}S_t\) alone is not the cumulative dividend-reinvested gain process; the yield adjustment in the expected discounted spot matters.</p>
+{{figure:paths}}
+<h3>Boundary cases</h3>
+<p>If \(T=0\), the terminal stock is the current stock and the European price equals its immediate payoff. If \(\sigma=0\), the risk-neutral path is deterministic: \(S_t=S_0e^{(r-q)t}\). Simulation is unnecessary in both cases. A negative interest rate is mathematically admissible in this constant-rate model and makes discount factors exceed one; a pricing routine should not reject it simply because it is negative.</p>
+<p>GBM cannot represent negative prices, jumps, changing volatility or realistic volatility surfaces by itself. Its exact simulator is exact for this chosen model. Replacing it by a richer process requires revisiting transition sampling, numerical bias, calibration and payoff-specific error analysis.</p>
+</section>
+
+<section id="european" data-title="European option valuation">
+<div class="section-label">08 / European options</div><h2>European option valuation</h2>
+<p>A European call pays \((S_T-K)^+\), where \(x^+=\max(x,0)\); a put pays \((K-S_T)^+\). Substituting the exact terminal distribution into these payoffs gives direct simulation estimators:</p>
+\[ \widehat C_N=\frac{e^{-rT}}{N}\sum_{i=1}^{N}(S_T^{(i)}-K)^+,\qquad \widehat P_N=\frac{e^{-rT}}{N}\sum_{i=1}^{N}(K-S_T^{(i)})^+. \]
+<p>The same scenarios can estimate both options. Their estimates are then dependent, which is useful rather than problematic if the dependence is recognised. Pathwise, the call payoff minus the put payoff equals \(S_T-K\). Averaging produces a particularly informative parity diagnostic:</p>
+\[ \widehat C_N-\widehat P_N=e^{-rT}\overline S_T-Ke^{-rT}. \]
+<p>The finite-sample right-hand side contains the simulated stock mean. It generally differs from the population parity identity \(S_0e^{-qT}-Ke^{-rT}\) by sampling noise. A sample-level discrepancy against that population identity should be assessed using the discounted-stock standard error, not interpreted immediately as a bug.</p>
+<h3>The analytical benchmark</h3>
+<p>Under the same constant-coefficient model, the exact prices are</p>
+\[ C=S_0e^{-qT}\Phi(d_1)-Ke^{-rT}\Phi(d_2),\qquad P=Ke^{-rT}\Phi(-d_2)-S_0e^{-qT}\Phi(-d_1). \]
+\[ d_1=\frac{\ln(S_0/K)+(r-q+\tfrac{1}{2}\sigma^2)T}{\sigma\sqrt T},\qquad d_2=d_1-\sigma\sqrt T. \]
+<p>These formulas are normally faster and more accurate for vanilla GBM options than Monte Carlo. Their role here is to supply known truth for estimator validation. A simulation that reproduces one call price is a useful first check; it does not validate every payoff, variance formula or early-exercise algorithm built later.</p>
+<h3>Exercise probability and payoff distribution</h3>
+<p>The probability that a call finishes in the money under \(\mathbb{Q}\) is \(\Phi(d_2)\), not \(\Phi(d_1)\). Many discounted payoffs can therefore be exactly zero. The remaining positive observations form a skewed right tail:</p>
+\[ \mathbb{Q}(S_T>K)=\Phi(d_2),\qquad \mathbb{Q}(Y=0)=\Phi(-d_2). \]
+<p>A histogram that treats zero observations as an ordinary continuous density conceals the atom at zero. The plotted distribution below states the zero mass separately and displays the positive-payoff density. Deep out-of-the-money options make that atom large, leaving a relatively small number of observations to estimate economically important tail contributions.</p>
+{{figure:distribution}}
+<h3>Digital contracts and nonlinearity</h3>
+<p>A cash-or-nothing digital call with cash amount \(A\) has \(H=A\mathbb{1}_{S_T>K}\) and exact price \(Ae^{-rT}\Phi(d_2)\). Its payoff is discontinuous; this matters for Greek estimators and QMC smoothness. A call's price is not its exercise probability multiplied by a fixed expected stock gain unless the required conditional gain is also calculated.</p>
+<p>Because a call payoff is convex, evaluating it at the expected stock price understates or equals the expected payoff: \(\mathbb{E}[(S_T-K)^+]\ge(\mathbb{E}[S_T]-K)^+\). Pricing the “average scenario” is therefore different from averaging scenario prices. This is one of the simplest reasons simulation must evaluate the payoff before taking the average.</p>
+</section>

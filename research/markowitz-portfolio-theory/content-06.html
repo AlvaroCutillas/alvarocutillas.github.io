@@ -1,0 +1,153 @@
+<section id="examples" data-title="Worked numerical examples">
+<div class="section-label">26 / Numerical study</div><h2>Worked numerical examples</h2>
+<h3>The three-asset benchmark</h3>
+<p>The benchmark specifies annual simple-return moments directly. No price download, forecast estimation or backtest is involved. The assets are labels A, B and C, with a positive-definite covariance derived from their stated volatilities and correlations.</p>
+{{table:inputs}}
+{{table:covariance}}
+<p>For example, covariance AB is \(0.10\times0.18\times0.20=0.0036\). The diagonal entry for B is \(0.18^2=0.0324\). Covariance entries use squared decimal-return units, so the numerical matrix should not be read as a table of percentage volatilities.</p>
+<h3>Analytical frontier constants</h3>
+{{table:constants}}
+<p>The unrestricted GMV has expected return approximately 6.9937% and volatility 9.3151%. Its weights are approximately 79.9265%, 15.3036% and 4.7699%. All are positive, so imposing long-only investment does not change this particular minimum.</p>
+<p>At a target of 10%, the exact minimum-variance weights are approximately 31.4195%, 37.1610% and 31.4195%, with volatility 13.6798%. Equal weights also have expected return 10%, but slightly higher volatility, 13.6983%. A small model improvement here is not a demonstration of economically significant out-of-sample superiority.</p>
+{{table:portfolios}}
+<h3>Tangency and an investor allocation</h3>
+<p>With risk-free return 2%, tangency weights are approximately 54.6802%, 26.6797% and 18.6402%. The risky fund's expected return is 8.5584%, volatility is 10.6752%, and prospective Sharpe ratio is 0.614361. Positive weights again make the long-only and unrestricted tangencies coincide in this benchmark.</p>
+<p>For \(\gamma=4\), the cash-inclusive optimal risky fraction is approximately 1.43876, giving a cash fraction near −43.8756%. This is borrowing under the idealised common-rate assumptions. If borrowing is prohibited but the investor may allocate only between this fund and cash, the scalar optimum is capped at 100% risky capital.</p>
+<h3>A concentration cap</h3>
+<p>With each weight bounded above by 60%, the smallest feasible mean is \(0.6(0.06)+0.4(0.10)=7.6\%\). The largest is \(0.6(0.14)+0.4(0.10)=12.4\%\). A target of 13% is infeasible under those caps even though it is feasible without them.</p>
+<p>This calculation checks feasibility independently of the optimiser. It also distinguishes a concentration cap from a short-sale restriction. A solver should identify the reason a target fails, rather than returning a renormalised approximation with a different expected return.</p>
+<h3>Risk shares for equal capital</h3>
+{{table:risk}}
+<p>Equal initial weights do not give equal risk shares. The benchmark's most volatile asset contributes much more to portfolio variation than asset A. The sum of absolute volatility contributions equals the portfolio volatility; the sum of normalised shares equals one.</p>
+<p>Every numerical comparison holds the model and units fixed. Recompute the same quantities in the laboratory, then vary one input at a time. This connects the analytical expressions to the observable changes in the frontier and weights.</p>
+</section>
+
+<section id="implementation" data-title="Implementation and numerical verification">
+<div class="section-label">27 / Numerical methods</div><h2>Implementation and numerical verification</h2>
+<p>A reliable implementation separates moment validation, the optimisation problem and portfolio reporting. Validate dimensions, symmetry and finiteness; identify the return horizon; check covariance definiteness; then solve the stated constraints. Report mean, variance, weights and residuals from the same validated inputs.</p>
+<h3>An unrestricted reference implementation</h3>
+<p>The following NumPy example solves positive-definite, fully invested GMV or exact-target problems. It handles equal means explicitly and avoids constructing the covariance inverse.</p>
+<pre><code>import numpy as np
+
+def minimum_variance(mu, cov, target=None):
+    mu = np.asarray(mu, dtype=float)
+    cov = np.asarray(cov, dtype=float)
+    n = mu.size
+    if mu.ndim != 1 or n == 0 or cov.shape != (n, n):
+        raise ValueError("Inconsistent dimensions")
+    if not np.all(np.isfinite(mu)) or not np.all(np.isfinite(cov)):
+        raise ValueError("Nonfinite moments")
+    if not np.allclose(cov, cov.T, atol=1e-12, rtol=1e-10):
+        raise ValueError("Covariance must be symmetric")
+    np.linalg.cholesky(cov)  # requires positive definiteness
+    one = np.ones(n)
+    u = np.linalg.solve(cov, one)
+    A = one @ u
+    if target is None:
+        w = u / A
+    else:
+        if not np.isfinite(target):
+            raise ValueError("Nonfinite target")
+        if np.ptp(mu) &lt; 1e-10:
+            if abs(target - mu[0]) &gt; 1e-10:
+                raise ValueError("Equal means: target infeasible")
+            w = u / A
+        else:
+            F = np.column_stack([one, mu])
+            X = np.linalg.solve(cov, F)
+            multipliers = np.linalg.solve(F.T @ X, [1, target])
+            w = X @ multipliers
+    variance = w @ cov @ w
+    return {"weights": w, "mean": w @ mu,
+            "variance": variance, "volatility": np.sqrt(variance)}
+</code></pre>
+<p>The tolerance is a numerical convention for this example, not a general rank-detection policy across every data scale. A nearly redundant return constraint requires appropriate conditioning checks and scaling. Exact-target residuals should be verified after the solve.</p>
+<h3>Quadratic programming with constraints</h3>
+<p>A standard solver accepts a quadratic objective and affine equality and inequality constraints. Check whether it defines the objective with a one-half factor. Supply covariance accordingly, and verify its final status, primal feasibility, stationarity, complementarity and relevant dual signs.</p>
+<p>A success message does not explain whether tolerances are economically appropriate. A weight residual of \(10^{-6}\) may be negligible for an illustration and material for a tight exposure mandate. Recompute the objective and constraints from the returned weights instead of trusting rounded display values.</p>
+<h3>Meaningful verification cases</h3>
+<p>For independent equal-volatility assets, GMV should be equal weight. For diagonal unequal covariance, it should be inverse variance. In the benchmark, the target mean and net budget should agree with their constraints, and computed variance should match the analytical frontier formula.</p>
+<p>Long-only target variances cannot be below unrestricted target variances under identical positive-definite inputs. Infeasible targets should fail explicitly. Equal means should collapse the frontier. Invalid correlation matrices should be rejected even if all three pairwise entries lie within their permitted range.</p>
+<p>Compare constrained results against an independent solver or a dense feasible grid for a small example. A grid supplies an upper bound on the attainable minimum, rather than an exact proof of optimality. For a convex quadratic, valid KKT conditions give a stronger certificate.</p>
+<h3>Statistical and implementation validation</h3>
+<p>Numerical tests establish that the code solves the supplied model. Statistical evaluation investigates whether those inputs and decisions generalise. Keep both: a correct solver cannot eliminate estimation error, and a profitable-looking historical result cannot establish solver correctness.</p>
+<p>The standalone page contains its formulas, computed SVG figures and data tables locally. Its browser laboratory uses small deterministic linear solves and face enumeration. This makes the calculations reproducible without external libraries while preserving an explicit distinction between a teaching implementation and a large production optimisation system.</p>
+</section>
+
+<section id="appendix" data-title="Mathematical appendix">
+<div class="section-label">28 / Derivations</div><h2>Mathematical appendix</h2>
+<h3>Positive semidefinite covariance</h3>
+<p>For any fixed vector \(x\), expand the variance of its linear combination of returns:</p>
+\[ x^\mathsf{T}\Sigma x=\mathbb{E}\left[(x^\mathsf{T}(R-\mu))^2\right]\ge0. \]
+<p>This proves the necessary matrix property without an assumption of normality. It also shows why a covariance calculated from a common finite sample is positive semidefinite: its quadratic form is an average of squared projected sample deviations.</p>
+<h3>The frontier determinant</h3>
+<p>Use the inner product \(\langle a,b\rangle=a^\mathsf{T}\Sigma^{-1}b\). Cauchy–Schwarz gives</p>
+\[ (\mathbf{1}^\mathsf{T}\Sigma^{-1}\mu)^2\le(\mathbf{1}^\mathsf{T}\Sigma^{-1}\mathbf{1})(\mu^\mathsf{T}\Sigma^{-1}\mu). \]
+<p>Therefore \(D\ge0\). Equality requires linear dependence of the budget and mean vectors in this positive-definite metric, which means \(\mu=m_0\mathbf{1}\). Distinct means yield the strictly positive determinant needed by the analytical target formulas.</p>
+<h3>Budget-neutral efficient directions</h3>
+<p>Set \(d=\Sigma^{-1}(\mu-\mu_{\mathrm{GMV}}\mathbf{1})\). Its budget sum is \(B-A\mu_{\mathrm{GMV}}=0\), and its mean and variance satisfy</p>
+\[ \mu^\mathsf{T}d=\frac D A,\qquad d^\mathsf{T}\Sigma d=\frac D A. \]
+<p>Scaling \(d\) by \(A/D\) gives the direction \(h\) with unit mean change and variance \(A/D\). Orthogonality to GMV then yields \(\sigma^2(m)=1/A+(A/D)(m-\mu_{\mathrm{GMV}})^2\).</p>
+<h3>The tangency bound</h3>
+<p>Let \(a=\Sigma^{1/2}w\) and \(b=\Sigma^{-1/2}e\). Their inner product is \(w^\mathsf{T}e\). Cauchy–Schwarz therefore gives</p>
+\[ (w^\mathsf{T}e)^2\le(w^\mathsf{T}\Sigma w)(e^\mathsf{T}\Sigma^{-1}e). \]
+<p>Equality occurs for a covariance-adjusted excess-return direction. The squared inequality alone does not select its sign. Positive excess return and a positive normalising budget are the conditions behind the conventional fully invested tangency fund.</p>
+<h3>Uncertainty-set support</h3>
+<p>For \(\mu=\widehat\mu+U^{1/2}u\), minimise \(u^\mathsf{T}U^{1/2}w\) over \(\|u\|_2\le\kappa\). The minimizing direction opposes \(U^{1/2}w\), giving the penalty \(-\kappa\sqrt{w^\mathsf{T}Uw}\). If that vector is zero, the uncertain component has no effect on this portfolio.</p>
+<h3>Returns of an asset expressed in another currency</h3>
+<p>If \(R_{\mathrm{local}}\) is the local-currency return and \(R_{\mathrm{FX}}\) is the domestic-currency gain on one unit of that currency,</p>
+\[ R_{\mathrm{domestic}}=R_{\mathrm{local}}+R_{\mathrm{FX}}+R_{\mathrm{local}}R_{\mathrm{FX}}. \]
+<p>The interaction term matters for exact simple-return moments. A first-order additive approximation drops it. Currency hedging changes the payoff and financing structure, so covariance should be estimated for the actual hedged or unhedged return convention.</p>
+</section>
+
+<section id="exercises" data-title="Exercises and solutions">
+<div class="section-label">29 / Self-assessment</div><h2>Exercises and solutions</h2>
+<p>Try each question before opening its solution. State units and constraints before calculating. Several exercises distinguish a mathematically valid allocation from the different problem an implementation may actually solve.</p>
+<h3>1. A weighted expected return</h3>
+<p>Assets have means 6%, 10% and 14%. What is the mean of a 50% / 30% / 20% portfolio? Does dependence enter this calculation?</p>
+<details><summary>Solution</summary><p>The mean is 8.8%. Linearity of expectation holds regardless of dependence for fixed initial weights. Dependence enters variance and the distribution of outcomes, rather than this weighted mean identity.</p></details>
+<h3>2. A diversification calculation</h3>
+<p>Invest equally in assets with volatilities 10% and 20% and correlation zero. Calculate variance and volatility. Compare with the weighted average of volatilities.</p>
+<details><summary>Solution</summary><p>Variance is \(0.25(0.10^2)+0.25(0.20^2)=0.0125\). Volatility is \(\sqrt{0.0125}\), approximately 11.1803%, below the 15% weighted average. With correlation one and positive weights, volatility would equal that 15% average.</p></details>
+<h3>3. An impossible correlation matrix</h3>
+<p>Three pairwise correlations are 0.9, 0.9 and −0.9. Each lies in \([-1,1]\). Can they jointly describe a correlation matrix?</p>
+<details><summary>Solution</summary><p>No. The determinant is \(1+2(0.9)(0.9)(-0.9)-3(0.9^2)=-2.888\), which is negative. Pairwise plausibility does not ensure positive semidefiniteness.</p></details>
+<h3>4. Independent-asset GMV</h3>
+<p>For independent assets with volatilities 10% and 20%, derive the fully invested GMV weights. Are they inverse-volatility weights?</p>
+<details><summary>Solution</summary><p>Inverse variances are 100 and 25, so GMV weights are 80% and 20%. Inverse-volatility weights would be two-thirds and one-third, which solve a different allocation rule. With equal uncorrelated variances, GMV becomes equal weight.</p></details>
+<h3>5. A dominated exact target</h3>
+<p>The benchmark GMV mean is approximately 6.9937%. An unrestricted exact-target problem is solved for 5%. Is its solution efficient?</p>
+<details><summary>Solution</summary><p>It minimises variance at 5%, but lies on the lower branch. The symmetric upper-branch mean is approximately \(2(6.9937\%)-5\%=8.9875\%\), at the same minimum volatility. The upper point dominates it. A requirement of at least 5% would instead choose GMV.</p></details>
+<h3>6. A target outside the long-only range</h3>
+<p>Can a fully invested long-only benchmark portfolio have expected return 15%? What if short sales are allowed?</p>
+<details><summary>Solution</summary><p>Long-only means lie between 6% and 14%, so 15% is infeasible. With unrestricted shorts and distinct means, the target is algebraically attainable but can require gross exposure above one. Financing or leverage constraints may still rule it out.</p></details>
+<h3>7. Net and gross exposures</h3>
+<p>Weights are 120%, 30% and −50%. Calculate net and gross exposure. What does a gross limit of 150% imply?</p>
+<details><summary>Solution</summary><p>Net exposure is 100%, while gross exposure is 200%. The portfolio satisfies the net budget but violates a 150% gross limit. Removing the short and renormalising would create a different portfolio, rather than solve the original constrained problem.</p></details>
+<h3>8. Scaling investor risk aversion</h3>
+<p>Under unrestricted cash-inclusive mean–variance utility, what happens to risky holdings when \(\gamma\) doubles and all moments stay fixed?</p>
+<details><summary>Solution</summary><p>The risky vector \(x^\star=\Sigma^{-1}e/\gamma\) halves. The risky fund's composition remains unchanged when the conventional tangency exists; the cash fraction changes to keep total initial wealth at one. This conclusion can fail when borrowing or asset constraints bind.</p></details>
+<h3>9. Equal capital and risk</h3>
+<p>For two independent assets with volatilities 10% and 20%, what capital weights give equal risk contributions? Compare with the GMV allocation.</p>
+<details><summary>Solution</summary><p>Equality of variance contributions requires \(w_1^2(0.10^2)=w_2^2(0.20^2)\). For positive weights, \(w_1=2w_2\), giving two-thirds and one-third. GMV is 80% / 20%. Equal risk and minimum variance are different objectives.</p></details>
+<h3>10. An optimistic validation design</h3>
+<p>A researcher tries twenty shrinkage intensities, selects the one with lowest risk in a future test period, then reports that period as an untouched performance evaluation. What is wrong?</p>
+<details><summary>Solution</summary><p>The test period was used to choose the intensity and has become validation data. Its reported minimum benefits from selection on noise. Use a separate final evaluation period or an appropriately nested time-series design, and document the choices examined.</p></details>
+</section>
+
+<section id="references" data-title="References and further reading">
+<div class="section-label">30 / References</div><h2>References and further reading</h2>
+<p>These notes present original explanations, algebraic derivations and synthetic numerical experiments. The primary references below provide the historical framework and methodological developments. Captions specify the generating assumptions and seeds; no figure is presented as a market observation.</p>
+<ol class="references">
+<li id="ref-markowitz"><strong>Markowitz, H. (1952).</strong> <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1952.tb01525.x">Portfolio Selection</a>. <em>The Journal of Finance</em>, 7(1), 77–91. DOI: 10.1111/j.1540-6261.1952.tb01525.x.<p>The classical diversification and mean–variance portfolio-selection framework.</p></li>
+<li id="ref-tobin"><strong>Tobin, J. (1958).</strong> <a href="https://academic.oup.com/restud/article-abstract/25/2/65/1550009">Liquidity Preference as Behavior Towards Risk</a>. <em>The Review of Economic Studies</em>, 25(2), 65–86. DOI: 10.2307/2296205.<p>Risky-asset choice and the role of a risk-free opportunity under stated investor assumptions.</p></li>
+<li id="ref-sharpe"><strong>Sharpe, W. F. (1964).</strong> <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1964.tb02865.x">Capital Asset Prices: A Theory of Market Equilibrium Under Conditions of Risk</a>. <em>The Journal of Finance</em>, 19(3), 425–442.<p>Equilibrium interpretation and systematic risk, distinct from simply computing an investor's frontier.</p></li>
+<li id="ref-boyd"><strong>Boyd, S., and Vandenberghe, L. (2004).</strong> <a href="https://www.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf">Convex Optimization</a>. Cambridge University Press.<p>Convex quadratic programmes, duality, KKT conditions and numerical methods. Author-hosted full text.</p></li>
+<li id="ref-best"><strong>Best, M. J., and Grauer, R. R. (1991).</strong> <a href="https://academic.oup.com/rfs/article-abstract/4/2/315/1571031">On the Sensitivity of Mean-Variance-Efficient Portfolios to Changes in Asset Means: Some Analytical and Computational Results</a>. <em>The Review of Financial Studies</em>, 4(2), 315–342. DOI: 10.1093/rfs/4.2.315.<p>Analytical and computational treatment of sensitivity to expected-return inputs.</p></li>
+<li id="ref-ledoit"><strong>Ledoit, O., and Wolf, M. (2004).</strong> <a href="https://www.ledoit.net/Well-conditioned2004.pdf">A well-conditioned estimator for large-dimensional covariance matrices</a>. <em>Journal of Multivariate Analysis</em>, 88(2), 365–411. DOI: 10.1016/S0047-259X(03)00096-4.<p>A specific covariance shrinkage estimator with an explicit estimation criterion.</p></li>
+<li id="ref-jagannathan"><strong>Jagannathan, R., and Ma, T. (2003).</strong> <a href="https://onlinelibrary.wiley.com/doi/10.1111/1540-6261.00580">Risk Reduction in Large Portfolios: Why Imposing the Wrong Constraints Helps</a>. <em>The Journal of Finance</em>, 58(4), 1651–1683.<p>Why restrictions can improve estimated portfolio risk even when they restrict the population opportunity set.</p></li>
+<li id="ref-black-litterman"><strong>Black, F., and Litterman, R. (1992).</strong> <a href="https://rpc.cfainstitute.org/research/financial-analysts-journal/1992/faj-v48-n5-28">Global Portfolio Optimization</a>. <em>Financial Analysts Journal</em>, 48(5), 28–43. DOI: 10.2469/faj.v48.n5.28.<p>Combining equilibrium-based starting points with portfolio views; model conventions matter.</p></li>
+<li id="ref-demiguel"><strong>DeMiguel, V., Garlappi, L., and Uppal, R. (2009).</strong> <a href="https://doi.org/10.1093/rfs/hhm075">Optimal Versus Naive Diversification: How Inefficient is the 1/N Portfolio Strategy?</a> <em>The Review of Financial Studies</em>, 22(5), 1915–1953.<p>An empirical comparison that motivates explicit treatment of estimation error and simple policy benchmarks.</p></li>
+</ol>
+<div class="end-links"><a href="monte-carlo-option-pricing.html">← Monte Carlo Option Pricing</a><a href="#introduction">Back to the beginning ↑</a><a href="../index.html#quant-basics">Quant Basics ↗</a></div>
+</section>

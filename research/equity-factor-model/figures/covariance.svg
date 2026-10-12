@@ -1,0 +1,602 @@
+<svg role="img" aria-labelledby="covariance-title covariance-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="252pt" viewBox="0 0 792 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="covariance-title">Figure 17 · Covariance eigenvalues and shrinkage</title><desc id="covariance-desc">A separate synthetic 30-stock, 60-month panel is generated from five common factors and independent specific risk. Diagonal shrinkage is a declared 50% example, not an estimated optimal intensity.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-05T16:04:06.552949</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="covariance-figure_1">
+  <g id="covariance-patch_1">
+   <path d="M 0 252 
+L 792 252 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="covariance-axes_1">
+   <g id="covariance-patch_2">
+    <path d="M 55.707809 208.78 
+L 778.5 208.78 
+L 778.5 35.14 
+L 55.707809 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="covariance-matplotlib.axis_1">
+    <g id="covariance-xtick_1">
+     <g id="covariance-line2d_1">
+      <path d="M 65.903937 208.78 
+L 65.903937 35.14 
+" clip-path="url(#covariance-p56fa4718a1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="covariance-line2d_2">
+      <defs>
+       <path id="covariance-md866585497" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#covariance-md866585497" x="65.903937" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="covariance-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="65.903937" y="222.618594" transform="rotate(-0 65.903937 222.618594)">0</text>
+     </g>
+    </g>
+    <g id="covariance-xtick_2">
+     <g id="covariance-line2d_3">
+      <path d="M 179.194249 208.78 
+L 179.194249 35.14 
+" clip-path="url(#covariance-p56fa4718a1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="covariance-line2d_4">
+      <g>
+       <use href="#covariance-md866585497" x="179.194249" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="covariance-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="179.194249" y="222.618594" transform="rotate(-0 179.194249 222.618594)">5</text>
+     </g>
+    </g>
+    <g id="covariance-xtick_3">
+     <g id="covariance-line2d_5">
+      <path d="M 292.484561 208.78 
+L 292.484561 35.14 
+" clip-path="url(#covariance-p56fa4718a1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="covariance-line2d_6">
+      <g>
+       <use href="#covariance-md866585497" x="292.484561" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="covariance-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="292.484561" y="222.618594" transform="rotate(-0 292.484561 222.618594)">10</text>
+     </g>
+    </g>
+    <g id="covariance-xtick_4">
+     <g id="covariance-line2d_7">
+      <path d="M 405.774873 208.78 
+L 405.774873 35.14 
+" clip-path="url(#covariance-p56fa4718a1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="covariance-line2d_8">
+      <g>
+       <use href="#covariance-md866585497" x="405.774873" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="covariance-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="405.774873" y="222.618594" transform="rotate(-0 405.774873 222.618594)">15</text>
+     </g>
+    </g>
+    <g id="covariance-xtick_5">
+     <g id="covariance-line2d_9">
+      <path d="M 519.065185 208.78 
+L 519.065185 35.14 
+" clip-path="url(#covariance-p56fa4718a1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="covariance-line2d_10">
+      <g>
+       <use href="#covariance-md866585497" x="519.065185" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="covariance-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="519.065185" y="222.618594" transform="rotate(-0 519.065185 222.618594)">20</text>
+     </g>
+    </g>
+    <g id="covariance-xtick_6">
+     <g id="covariance-line2d_11">
+      <path d="M 632.355498 208.78 
+L 632.355498 35.14 
+" clip-path="url(#covariance-p56fa4718a1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="covariance-line2d_12">
+      <g>
+       <use href="#covariance-md866585497" x="632.355498" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="covariance-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="632.355498" y="222.618594" transform="rotate(-0 632.355498 222.618594)">25</text>
+     </g>
+    </g>
+    <g id="covariance-xtick_7">
+     <g id="covariance-line2d_13">
+      <path d="M 745.64581 208.78 
+L 745.64581 35.14 
+" clip-path="url(#covariance-p56fa4718a1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="covariance-line2d_14">
+      <g>
+       <use href="#covariance-md866585497" x="745.64581" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="covariance-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="745.64581" y="222.618594" transform="rotate(-0 745.64581 222.618594)">30</text>
+     </g>
+    </g>
+    <g id="covariance-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="417.103905" y="235.328906" transform="rotate(-0 417.103905 235.328906)">Eigenvalue index</text>
+    </g>
+   </g>
+   <g id="covariance-matplotlib.axis_2">
+    <g id="covariance-ytick_1">
+     <g id="covariance-line2d_15">
+      <path d="M 55.707809 191.28876 
+L 778.5 191.28876 
+" clip-path="url(#covariance-p56fa4718a1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="covariance-line2d_16">
+      <defs>
+       <path id="covariance-m3d73f530f8" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#covariance-m3d73f530f8" x="55.707809" y="191.28876" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="covariance-text_9">
+      <!-- $\mathdefault{10^{-4}}$ -->
+      <g style="fill: #939b94" transform="translate(27.557809 194.708057)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.40625">−4</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_2">
+     <g id="covariance-line2d_17">
+      <path d="M 55.707809 139.995365 
+L 778.5 139.995365 
+" clip-path="url(#covariance-p56fa4718a1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="covariance-line2d_18">
+      <g>
+       <use href="#covariance-m3d73f530f8" x="55.707809" y="139.995365" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="covariance-text_10">
+      <!-- $\mathdefault{10^{-3}}$ -->
+      <g style="fill: #939b94" transform="translate(27.557809 143.414662)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.318750000000001">−3</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_3">
+     <g id="covariance-line2d_19">
+      <path d="M 55.707809 88.701969 
+L 778.5 88.701969 
+" clip-path="url(#covariance-p56fa4718a1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="covariance-line2d_20">
+      <g>
+       <use href="#covariance-m3d73f530f8" x="55.707809" y="88.701969" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="covariance-text_11">
+      <!-- $\mathdefault{10^{-2}}$ -->
+      <g style="fill: #939b94" transform="translate(27.557809 92.121266)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.318750000000001">−2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_4">
+     <g id="covariance-line2d_21">
+      <path d="M 55.707809 37.408574 
+L 778.5 37.408574 
+" clip-path="url(#covariance-p56fa4718a1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="covariance-line2d_22">
+      <g>
+       <use href="#covariance-m3d73f530f8" x="55.707809" y="37.408574" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="covariance-text_12">
+      <!-- $\mathdefault{10^{-1}}$ -->
+      <g style="fill: #939b94" transform="translate(27.557809 40.827871)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.40625">−1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_5">
+     <g id="covariance-line2d_23">
+      <defs>
+       <path id="covariance-m33df57410c" d="M 0 0 
+L -2 0 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="206.729611" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_6">
+     <g id="covariance-line2d_24">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="202.668136" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_7">
+     <g id="covariance-line2d_25">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="199.234208" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_8">
+     <g id="covariance-line2d_26">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="196.259604" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_9">
+     <g id="covariance-line2d_27">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="193.635817" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_10">
+     <g id="covariance-line2d_28">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="175.84791" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_11">
+     <g id="covariance-line2d_29">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="166.815591" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_12">
+     <g id="covariance-line2d_30">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="160.407059" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_13">
+     <g id="covariance-line2d_31">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="155.436215" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_14">
+     <g id="covariance-line2d_32">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="151.37474" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_15">
+     <g id="covariance-line2d_33">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="147.940812" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_16">
+     <g id="covariance-line2d_34">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="144.966208" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_17">
+     <g id="covariance-line2d_35">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="142.342422" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_18">
+     <g id="covariance-line2d_36">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="124.554514" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_19">
+     <g id="covariance-line2d_37">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="115.522196" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_20">
+     <g id="covariance-line2d_38">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="109.113664" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_21">
+     <g id="covariance-line2d_39">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="104.14282" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_22">
+     <g id="covariance-line2d_40">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="100.081345" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_23">
+     <g id="covariance-line2d_41">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="96.647417" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_24">
+     <g id="covariance-line2d_42">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="93.672813" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_25">
+     <g id="covariance-line2d_43">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="91.049026" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_26">
+     <g id="covariance-line2d_44">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="73.261119" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_27">
+     <g id="covariance-line2d_45">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="64.2288" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_28">
+     <g id="covariance-line2d_46">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="57.820268" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_29">
+     <g id="covariance-line2d_47">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="52.849425" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_30">
+     <g id="covariance-line2d_48">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="48.78795" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_31">
+     <g id="covariance-line2d_49">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="45.354021" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_32">
+     <g id="covariance-line2d_50">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="42.379418" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-ytick_33">
+     <g id="covariance-line2d_51">
+      <g>
+       <use href="#covariance-m33df57410c" x="55.707809" y="39.755631" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="covariance-text_13">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.686091" y="121.96" transform="rotate(-90 21.686091 121.96)">Monthly variance eigenvalue</text>
+    </g>
+   </g>
+   <g id="covariance-line2d_52">
+    <path d="M 88.562 43.032727 
+L 111.220062 94.33027 
+L 133.878125 106.787089 
+L 156.536187 109.484977 
+L 179.194249 117.326406 
+L 201.852312 124.035492 
+L 224.510374 126.327546 
+L 247.168437 127.431792 
+L 269.826499 129.394574 
+L 292.484561 130.486448 
+L 315.142624 132.745246 
+L 337.800686 134.655655 
+L 360.458749 135.259516 
+L 383.116811 138.958511 
+L 405.774873 139.067587 
+L 428.432936 142.322603 
+L 451.090998 144.511647 
+L 473.749061 146.709884 
+L 496.407123 148.133523 
+L 519.065185 152.609331 
+L 541.723248 153.155584 
+L 564.38131 155.862243 
+L 587.039373 159.247949 
+L 609.697435 163.12173 
+L 632.355498 164.929773 
+L 655.01356 170.787658 
+L 677.671622 177.039204 
+L 700.329685 181.075672 
+L 722.987747 185.252969 
+L 745.64581 200.887273 
+" clip-path="url(#covariance-p56fa4718a1)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="covariance-line2d_53">
+    <path d="M 88.562 56.915637 
+L 111.220062 99.274279 
+L 133.878125 102.548001 
+L 156.536187 104.800214 
+L 179.194249 107.668711 
+L 201.852312 109.090433 
+L 224.510374 110.502638 
+L 247.168437 112.003816 
+L 269.826499 113.397627 
+L 292.484561 113.729396 
+L 315.142624 116.135186 
+L 337.800686 117.449362 
+L 360.458749 118.532959 
+L 383.116811 120.228101 
+L 405.774873 120.572245 
+L 428.432936 121.055364 
+L 451.090998 121.975402 
+L 473.749061 123.671229 
+L 496.407123 125.181245 
+L 519.065185 126.005249 
+L 541.723248 126.947809 
+L 564.38131 127.067305 
+L 587.039373 128.673618 
+L 609.697435 130.08437 
+L 632.355498 131.993609 
+L 655.01356 132.329532 
+L 677.671622 134.755816 
+L 700.329685 136.034921 
+L 722.987747 136.77173 
+L 745.64581 140.624243 
+" clip-path="url(#covariance-p56fa4718a1)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="covariance-line2d_54">
+    <path d="M 88.562 46.531777 
+L 111.220062 90.923128 
+L 133.878125 109.587964 
+L 156.536187 114.627862 
+L 179.194249 126.484425 
+L 201.852312 142.342422 
+L 224.510374 142.342422 
+L 247.168437 142.342422 
+L 269.826499 142.342422 
+L 292.484561 142.342422 
+L 315.142624 142.342422 
+L 337.800686 142.342422 
+L 360.458749 142.342422 
+L 383.116811 142.342422 
+L 405.774873 142.342422 
+L 428.432936 142.342422 
+L 451.090998 142.342422 
+L 473.749061 142.342422 
+L 496.407123 142.342422 
+L 519.065185 142.342422 
+L 541.723248 142.342422 
+L 564.38131 142.342422 
+L 587.039373 142.342422 
+L 609.697435 142.342422 
+L 632.355498 142.342422 
+L 655.01356 142.342422 
+L 677.671622 142.342422 
+L 700.329685 142.342422 
+L 722.987747 142.342422 
+L 745.64581 142.342422 
+" clip-path="url(#covariance-p56fa4718a1)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="covariance-patch_3">
+    <path d="M 55.707809 208.78 
+L 55.707809 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="covariance-patch_4">
+    <path d="M 55.707809 208.78 
+L 778.5 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="covariance-text_14">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="55.707809" y="22.14" transform="rotate(-0 55.707809 22.14)">Finite observations and covariance regularization</text>
+   </g>
+   <g id="covariance-legend_1">
+    <g id="covariance-line2d_55">
+     <path d="M 631.82875 45.61875 
+L 639.82875 45.61875 
+L 647.82875 45.61875 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="covariance-text_15">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="654.22875" y="48.41875" transform="rotate(-0 654.22875 48.41875)">Sample covariance</text>
+    </g>
+    <g id="covariance-line2d_56">
+     <path d="M 631.82875 57.36125 
+L 639.82875 57.36125 
+L 647.82875 57.36125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="covariance-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="654.22875" y="60.16125" transform="rotate(-0 654.22875 60.16125)">50% diagonal shrinkage</text>
+    </g>
+    <g id="covariance-line2d_57">
+     <path d="M 631.82875 69.10375 
+L 639.82875 69.10375 
+L 647.82875 69.10375 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="covariance-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="654.22875" y="71.90375" transform="rotate(-0 654.22875 71.90375)">Generating factor covariance</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="covariance-p56fa4718a1">
+   <rect x="55.707809" y="35.14" width="722.792191" height="173.64"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="696.515625pt" height="368.182625pt" viewBox="0 0 696.515625 368.182625" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 368.182625 
+L 696.515625 368.182625 
+L 696.515625 0 
+L 0 0 
+z
+" style="fill: #050505"/>
+  </g>
+  <g id="chart-axes">
+   <g id="patch_2">
+    <path d="M 152.015625 324.252938 
+L 682.115625 324.252938 
+L 682.115625 30.420938 
+L 152.015625 30.420938 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 152.015625 324.252938 
+L 152.015625 30.420938 
+" clip-path="url(#pe3f8ebe99e)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m6f2c4510d4" d="M 0 0 
+L 0 3.5 
+" style="stroke: #9a9a94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="152.015625" y="324.252938" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="152.015625" y="338.41075" transform="rotate(-0 152.015625 338.41075)">0.0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 237.72922 324.252938 
+L 237.72922 30.420938 
+" clip-path="url(#pe3f8ebe99e)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="237.72922" y="324.252938" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="237.72922" y="338.41075" transform="rotate(-0 237.72922 338.41075)">0.5</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 323.442816 324.252938 
+L 323.442816 30.420938 
+" clip-path="url(#pe3f8ebe99e)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="323.442816" y="324.252938" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="323.442816" y="338.41075" transform="rotate(-0 323.442816 338.41075)">1.0</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 409.156411 324.252938 
+L 409.156411 30.420938 
+" clip-path="url(#pe3f8ebe99e)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="409.156411" y="324.252938" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="409.156411" y="338.41075" transform="rotate(-0 409.156411 338.41075)">1.5</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 494.870007 324.252938 
+L 494.870007 30.420938 
+" clip-path="url(#pe3f8ebe99e)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="494.870007" y="324.252938" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="494.870007" y="338.41075" transform="rotate(-0 494.870007 338.41075)">2.0</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 580.583602 324.252938 
+L 580.583602 30.420938 
+" clip-path="url(#pe3f8ebe99e)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="580.583602" y="324.252938" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="580.583602" y="338.41075" transform="rotate(-0 580.583602 338.41075)">2.5</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 666.297198 324.252938 
+L 666.297198 30.420938 
+" clip-path="url(#pe3f8ebe99e)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="666.297198" y="324.252938" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="666.297198" y="338.41075" transform="rotate(-0 666.297198 338.41075)">3.0</text>
+     </g>
+    </g>
+    <g id="text_8">
+     <text style="fill: #f5f5f2; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="417.065625" y="351.677938" transform="rotate(-0 417.065625 351.677938)">Annual turnover (sum of absolute weight changes)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_15">
+      <defs>
+       <path id="me580be6b42" d="M 0 0 
+L -3.5 0 
+" style="stroke: #9a9a94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#me580be6b42" x="152.015625" y="62.199006" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="145.015625" y="65.777913" transform="rotate(-0 145.015625 65.777913)">Equal weight</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#me580be6b42" x="152.015625" y="108.254179" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="145.015625" y="111.894023" transform="rotate(-0 145.015625 111.894023)">GMV · sample</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#me580be6b42" x="152.015625" y="154.309351" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="145.015625" y="157.949195" transform="rotate(-0 145.015625 157.949195)">Max Sharpe · sample</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#me580be6b42" x="152.015625" y="200.364524" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="145.015625" y="203.94343" transform="rotate(-0 145.015625 203.94343)">GMV · Ledoit–Wolf</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#me580be6b42" x="152.015625" y="246.419696" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="145.015625" y="250.05954" transform="rotate(-0 145.015625 250.05954)">Max Sharpe · sample capped</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#me580be6b42" x="152.015625" y="292.474869" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="145.015625" y="296.114712" transform="rotate(-0 145.015625 296.114712)">Max Sharpe · LW capped</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 152.015625 43.776937 
+L 213.772472 43.776937 
+L 213.772472 80.621075 
+L 152.015625 80.621075 
+z
+" clip-path="url(#pe3f8ebe99e)" style="fill: #d3ad84"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 152.015625 89.83211 
+L 194.087755 89.83211 
+L 194.087755 126.676248 
+L 152.015625 126.676248 
+z
+" clip-path="url(#pe3f8ebe99e)" style="fill: #a7bdb3"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 152.015625 135.887282 
+L 656.872768 135.887282 
+L 656.872768 172.73142 
+L 152.015625 172.73142 
+z
+" clip-path="url(#pe3f8ebe99e)" style="fill: #6e9080"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 152.015625 181.942455 
+L 206.90161 181.942455 
+L 206.90161 218.786593 
+L 152.015625 218.786593 
+z
+" clip-path="url(#pe3f8ebe99e)" style="fill: #8ea599"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 152.015625 227.997627 
+L 384.804716 227.997627 
+L 384.804716 264.841765 
+L 152.015625 264.841765 
+z
+" clip-path="url(#pe3f8ebe99e)" style="fill: #bea282"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 152.015625 274.0528 
+L 394.637742 274.0528 
+L 394.637742 310.896937 
+L 152.015625 310.896937 
+z
+" clip-path="url(#pe3f8ebe99e)" style="fill: #d3ad84"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 152.015625 324.252938 
+L 152.015625 30.420938 
+" style="fill: none; stroke: #303030; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 682.115625 324.252938 
+L 682.115625 30.420938 
+" style="fill: none; stroke: #303030; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 152.015625 324.252938 
+L 682.115625 324.252938 
+" style="fill: none; stroke: #303030; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 152.015625 30.420938 
+L 682.115625 30.420938 
+" style="fill: none; stroke: #303030; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_15">
+    <text style="fill: #f5f5f2; font: 600 14px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="417.065625" y="24.420938" transform="rotate(-0 417.065625 24.420938)">Annual traded notional</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe3f8ebe99e">
+   <rect x="152.015625" y="30.420938" width="530.1" height="293.832"/>
+  </clipPath>
+ </defs>
+<metadata data-chart="true">{"mode":"points","context":"Net walk-forward · 2013-01-07–2026-09-25","points":[{"x":0.18012558806986775,"y":0.0,"title":"Equal weight","rows":[["Annual traded notional","0.360 × portfolio value"],["Annual CAGR cost drag","0.019 percentage points"]],"bounds":[0.0,-0.4,0.3602511761397355,0.4]},{"x":0.1227113661900563,"y":1.0,"title":"GMV · sample","rows":[["Annual traded notional","0.245 × portfolio value"],["Annual CAGR cost drag","0.013 percentage points"]],"bounds":[0.0,0.6,0.2454227323801126,1.4]},{"x":1.4725118578739198,"y":2.0,"title":"Max Sharpe · sample","rows":[["Annual traded notional","2.945 × portfolio value"],["Annual CAGR cost drag","0.158 percentage points"]],"bounds":[0.0,1.6,2.9450237157478396,2.4000000000000004]},{"x":0.16008541094206408,"y":3.0,"title":"GMV · Ledoit–Wolf","rows":[["Annual traded notional","0.320 × portfolio value"],["Annual CAGR cost drag","0.017 percentage points"]],"bounds":[0.0,2.6,0.32017082188412815,3.4000000000000004]},{"x":0.6789736495913409,"y":4.0,"title":"Max Sharpe · sample capped","rows":[["Annual traded notional","1.358 × portfolio value"],["Annual CAGR cost drag","0.073 percentage points"]],"bounds":[0.0,3.6,1.3579472991826818,4.4]},{"x":0.7076535402360943,"y":5.0,"title":"Max Sharpe · LW capped","rows":[["Annual traded notional","1.415 × portfolio value"],["Annual CAGR cost drag","0.076 percentage points"]],"bounds":[0.0,4.6,1.4153070804721886,5.3999999999999995]}],"box":[152.015625,30.420938,682.115625,324.252938],"xlim":[0.0,3.0922749015352315],"ylim":[5.6899999999999995,-0.69]}</metadata>
+</svg>

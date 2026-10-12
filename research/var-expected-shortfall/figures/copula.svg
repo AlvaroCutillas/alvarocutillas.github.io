@@ -1,0 +1,478 @@
+<svg role="img" aria-labelledby="copula-title copula-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="copula-title">Figure 13 · Asymptotic tail dependence</title><desc id="copula-desc">For a Student-t copula, λᵤ = 2 Tν₊₁(−√((ν+1)(1−ρ)/(1+ρ))). A nonsingular Gaussian copula has zero asymptotic tail dependence; this does not mean independence at finite thresholds.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T18:09:12.978556</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="copula-figure_1">
+  <g id="copula-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="copula-axes_1">
+   <g id="copula-patch_2">
+    <path d="M 54.02 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 54.02 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="copula-matplotlib.axis_1">
+    <g id="copula-xtick_1">
+     <g id="copula-line2d_1">
+      <path d="M 68.068612 244.78 
+L 68.068612 35.14 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_2">
+      <defs>
+       <path id="copula-m5149e9573e" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#copula-m5149e9573e" x="68.068612" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="68.068612" y="258.618594" transform="rotate(-0 68.068612 258.618594)">−1.00</text>
+     </g>
+    </g>
+    <g id="copula-xtick_2">
+     <g id="copula-line2d_3">
+      <path d="M 146.116459 244.78 
+L 146.116459 35.14 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_4">
+      <g>
+       <use href="#copula-m5149e9573e" x="146.116459" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="146.116459" y="258.618594" transform="rotate(-0 146.116459 258.618594)">−0.75</text>
+     </g>
+    </g>
+    <g id="copula-xtick_3">
+     <g id="copula-line2d_5">
+      <path d="M 224.164306 244.78 
+L 224.164306 35.14 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_6">
+      <g>
+       <use href="#copula-m5149e9573e" x="224.164306" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="224.164306" y="258.618594" transform="rotate(-0 224.164306 258.618594)">−0.50</text>
+     </g>
+    </g>
+    <g id="copula-xtick_4">
+     <g id="copula-line2d_7">
+      <path d="M 302.212153 244.78 
+L 302.212153 35.14 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_8">
+      <g>
+       <use href="#copula-m5149e9573e" x="302.212153" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="302.212153" y="258.618594" transform="rotate(-0 302.212153 258.618594)">−0.25</text>
+     </g>
+    </g>
+    <g id="copula-xtick_5">
+     <g id="copula-line2d_9">
+      <path d="M 380.26 244.78 
+L 380.26 35.14 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_10">
+      <g>
+       <use href="#copula-m5149e9573e" x="380.26" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="380.26" y="258.618594" transform="rotate(-0 380.26 258.618594)">0.00</text>
+     </g>
+    </g>
+    <g id="copula-xtick_6">
+     <g id="copula-line2d_11">
+      <path d="M 458.307847 244.78 
+L 458.307847 35.14 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_12">
+      <g>
+       <use href="#copula-m5149e9573e" x="458.307847" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="458.307847" y="258.618594" transform="rotate(-0 458.307847 258.618594)">0.25</text>
+     </g>
+    </g>
+    <g id="copula-xtick_7">
+     <g id="copula-line2d_13">
+      <path d="M 536.355694 244.78 
+L 536.355694 35.14 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_14">
+      <g>
+       <use href="#copula-m5149e9573e" x="536.355694" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="536.355694" y="258.618594" transform="rotate(-0 536.355694 258.618594)">0.50</text>
+     </g>
+    </g>
+    <g id="copula-xtick_8">
+     <g id="copula-line2d_15">
+      <path d="M 614.403541 244.78 
+L 614.403541 35.14 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_16">
+      <g>
+       <use href="#copula-m5149e9573e" x="614.403541" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="614.403541" y="258.618594" transform="rotate(-0 614.403541 258.618594)">0.75</text>
+     </g>
+    </g>
+    <g id="copula-xtick_9">
+     <g id="copula-line2d_17">
+      <path d="M 692.451388 244.78 
+L 692.451388 35.14 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_18">
+      <g>
+       <use href="#copula-m5149e9573e" x="692.451388" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="692.451388" y="258.618594" transform="rotate(-0 692.451388 258.618594)">1.00</text>
+     </g>
+    </g>
+    <g id="copula-text_10">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="380.26" y="271.328906" transform="rotate(-0 380.26 271.328906)">Copula correlation parameter</text>
+    </g>
+   </g>
+   <g id="copula-matplotlib.axis_2">
+    <g id="copula-ytick_1">
+     <g id="copula-line2d_19">
+      <path d="M 54.02 235.250909 
+L 706.5 235.250909 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_20">
+      <defs>
+       <path id="copula-m3eed55ec33" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#copula-m3eed55ec33" x="54.02" y="235.250909" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="238.670206" transform="rotate(-0 47.02 238.670206)">0%</text>
+     </g>
+    </g>
+    <g id="copula-ytick_2">
+     <g id="copula-line2d_21">
+      <path d="M 54.02 209.318594 
+L 706.5 209.318594 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_22">
+      <g>
+       <use href="#copula-m3eed55ec33" x="54.02" y="209.318594" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="212.737891" transform="rotate(-0 47.02 212.737891)">10%</text>
+     </g>
+    </g>
+    <g id="copula-ytick_3">
+     <g id="copula-line2d_23">
+      <path d="M 54.02 183.38628 
+L 706.5 183.38628 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_24">
+      <g>
+       <use href="#copula-m3eed55ec33" x="54.02" y="183.38628" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="186.805577" transform="rotate(-0 47.02 186.805577)">20%</text>
+     </g>
+    </g>
+    <g id="copula-ytick_4">
+     <g id="copula-line2d_25">
+      <path d="M 54.02 157.453965 
+L 706.5 157.453965 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_26">
+      <g>
+       <use href="#copula-m3eed55ec33" x="54.02" y="157.453965" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="160.873262" transform="rotate(-0 47.02 160.873262)">30%</text>
+     </g>
+    </g>
+    <g id="copula-ytick_5">
+     <g id="copula-line2d_27">
+      <path d="M 54.02 131.52165 
+L 706.5 131.52165 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_28">
+      <g>
+       <use href="#copula-m3eed55ec33" x="54.02" y="131.52165" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="134.940947" transform="rotate(-0 47.02 134.940947)">40%</text>
+     </g>
+    </g>
+    <g id="copula-ytick_6">
+     <g id="copula-line2d_29">
+      <path d="M 54.02 105.589336 
+L 706.5 105.589336 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_30">
+      <g>
+       <use href="#copula-m3eed55ec33" x="54.02" y="105.589336" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="109.008632" transform="rotate(-0 47.02 109.008632)">50%</text>
+     </g>
+    </g>
+    <g id="copula-ytick_7">
+     <g id="copula-line2d_31">
+      <path d="M 54.02 79.657021 
+L 706.5 79.657021 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_32">
+      <g>
+       <use href="#copula-m3eed55ec33" x="54.02" y="79.657021" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="83.076318" transform="rotate(-0 47.02 83.076318)">60%</text>
+     </g>
+    </g>
+    <g id="copula-ytick_8">
+     <g id="copula-line2d_33">
+      <path d="M 54.02 53.724706 
+L 706.5 53.724706 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="copula-line2d_34">
+      <g>
+       <use href="#copula-m3eed55ec33" x="54.02" y="53.724706" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="copula-text_18">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="57.144003" transform="rotate(-0 47.02 57.144003)">70%</text>
+     </g>
+    </g>
+    <g id="copula-text_19">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.144375" y="139.96" transform="rotate(-90 21.144375 139.96)">Upper-tail dependence</text>
+    </g>
+   </g>
+   <g id="copula-line2d_35">
+    <path d="M 83.678182 235.242129 
+L 119.446843 235.07461 
+L 146.273339 234.738444 
+L 170.119114 234.238549 
+L 193.964888 233.511935 
+L 214.829941 232.662078 
+L 235.694993 231.586822 
+L 253.579324 230.466552 
+L 271.463655 229.145269 
+L 289.347985 227.605277 
+L 307.232316 225.827741 
+L 325.116647 223.792448 
+L 340.020256 221.883751 
+L 354.923865 219.767207 
+L 369.827474 217.428 
+L 384.731083 214.85001 
+L 399.634692 212.015577 
+L 411.557579 209.550375 
+L 423.480466 206.897685 
+L 435.403353 204.045541 
+L 447.32624 200.980799 
+L 459.249127 197.688931 
+L 471.172015 194.153783 
+L 483.094902 190.35727 
+L 495.017789 186.278997 
+L 503.959954 183.021557 
+L 512.90212 179.58164 
+L 521.844285 175.946973 
+L 530.78645 172.103789 
+L 539.728616 168.036542 
+L 548.670781 163.727548 
+L 557.612947 159.156516 
+L 566.555112 154.299949 
+L 575.497277 149.130346 
+L 584.439443 143.61513 
+L 590.400886 139.727312 
+L 596.36233 135.655049 
+L 602.323773 131.382661 
+L 608.285217 126.891929 
+L 614.246661 122.161464 
+L 620.208104 117.165852 
+L 626.169548 111.87448 
+L 632.130991 106.249871 
+L 638.092435 100.245268 
+L 644.053878 93.800987 
+L 650.015322 86.838675 
+L 655.976766 79.251788 
+L 658.957487 75.179227 
+L 661.938209 70.888693 
+L 664.918931 66.34889 
+L 667.899653 61.519876 
+L 670.880375 56.349264 
+L 673.861096 50.765951 
+L 676.841818 44.669091 
+L 676.841818 44.669091 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="copula-line2d_36">
+    <path d="M 83.678182 235.250909 
+L 259.540767 235.144367 
+L 304.251594 234.897966 
+L 337.039534 234.503985 
+L 363.86603 233.952005 
+L 384.731083 233.31316 
+L 402.615413 232.569426 
+L 420.499744 231.593893 
+L 435.403353 230.561459 
+L 450.306962 229.285817 
+L 462.229849 228.057609 
+L 474.152736 226.613396 
+L 486.075624 224.919558 
+L 495.017789 223.462237 
+L 503.959954 221.824196 
+L 512.90212 219.984602 
+L 521.844285 217.92004 
+L 530.78645 215.604098 
+L 539.728616 213.006843 
+L 548.670781 210.094177 
+L 554.632225 207.958105 
+L 560.593668 205.651583 
+L 566.555112 203.160232 
+L 572.516556 200.468109 
+L 578.477999 197.557454 
+L 584.439443 194.408381 
+L 590.400886 190.9985 
+L 596.36233 187.302429 
+L 602.323773 183.291189 
+L 608.285217 178.931408 
+L 614.246661 174.184278 
+L 620.208104 169.004167 
+L 626.169548 163.336702 
+L 632.130991 157.116084 
+L 635.111713 153.773736 
+L 638.092435 150.261205 
+L 641.073157 146.565007 
+L 644.053878 142.66981 
+L 647.0346 138.55804 
+L 650.015322 134.209372 
+L 652.996044 129.600058 
+L 655.976766 124.702024 
+L 658.957487 119.481634 
+L 661.938209 113.897946 
+L 664.918931 107.900193 
+L 667.899653 101.424002 
+L 670.880375 94.385481 
+L 673.861096 86.671499 
+L 676.841818 78.122597 
+L 676.841818 78.122597 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="copula-line2d_37">
+    <path d="M 83.678182 235.250909 
+L 676.841818 235.250909 
+L 676.841818 235.250909 
+" clip-path="url(#copula-p60cd800b79)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="copula-patch_3">
+    <path d="M 54.02 244.78 
+L 54.02 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="copula-patch_4">
+    <path d="M 54.02 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="copula-text_20">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="54.02" y="22.14" transform="rotate(-0 54.02 22.14)">Same correlation need not mean the same co-extremes</text>
+   </g>
+   <g id="copula-legend_1">
+    <g id="copula-line2d_38">
+     <path d="M 62.12 46.928594 
+L 71.12 46.928594 
+L 80.12 46.928594 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="copula-text_21">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="87.32" y="50.078594" transform="rotate(-0 87.32 50.078594)">Student-t copula, ν = 4</text>
+    </g>
+    <g id="copula-line2d_39">
+     <path d="M 62.12 60.138906 
+L 71.12 60.138906 
+L 80.12 60.138906 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="copula-text_22">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="87.32" y="63.288906" transform="rotate(-0 87.32 63.288906)">Student-t copula, ν = 10</text>
+    </g>
+    <g id="copula-line2d_40">
+     <path d="M 62.12 73.388594 
+L 71.12 73.388594 
+L 80.12 73.388594 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="copula-text_23">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="87.32" y="76.538594" transform="rotate(-0 87.32 76.538594)">Gaussian copula, |ρ| &lt; 1</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="copula-p60cd800b79">
+   <rect x="54.02" y="35.14" width="652.48" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

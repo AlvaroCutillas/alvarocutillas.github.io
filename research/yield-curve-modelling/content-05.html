@@ -1,0 +1,132 @@
+<section id="duration-convexity" data-title="Duration and convexity under curve shifts">
+<div class="section-kicker">21 / Fixed-income risk</div><h2>Duration and convexity under curve shifts</h2>
+<p>A rate sensitivity must identify the rate being moved. Shifting every continuously compounded zero by the same amount is a different experiment from shifting one bond's nominal YTM or one market swap quote.</p>
+<h3>Parallel continuous-zero shifts</h3>
+<p>Let \(z_s(t)=z(t)+s\), so \(D_s(t)=D(t)e^{-st}\). For nonnegative fixed cash flows:</p>
+\[ P(s)=\sum_i C_iD(t_i)e^{-st_i},\qquad
+P'(0)=-\sum_i t_iC_iD(t_i),\qquad
+P''(0)=\sum_i t_i^2C_iD(t_i). \]
+\[ \mathcal D_z=-\frac{P'(0)}P=\frac{\sum_i t_iPV_i}{P},\qquad
+\mathcal C_z=\frac{P''(0)}P=\frac{\sum_i t_i^2PV_i}{P}. \]
+<p>Duration is the present-value-weighted average payment time, in years. Convexity is the corresponding second moment, in years squared. Both are positive for positive cash flows at positive future dates. A zero-coupon bond has duration \(T\) and convexity \(T^2\) under this continuous-zero shift.</p>
+<h3>Approximations and DV01</h3>
+\[ P(s)\approx P\left[1-\mathcal D_zs+\frac12\mathcal C_zs^2\right],\qquad
+\mathrm{DV01}_{\mathrm{linear}}=10^{-4}P\mathcal D_z. \]
+<p>This page reports DV01 as the positive first-order price loss for a +1 bp shift. The exact loss \(P(0)-P(0.0001)\) differs slightly because of convexity. Some systems report a signed derivative or a central-difference amount; identify the convention rather than assume every field called DV01 has the same sign.</p>
+<p>For the reference five-year 4% semiannual bond, duration is 4.588041 years, convexity 22.201609 years² and linear DV01 0.047560 per face 100. A +100 bp shift gives exact price 99.017346, compared with 98.904138 from duration alone and 99.019209 from duration plus convexity.</p>
+{{figure:convexity}}
+<h3>Nominal-YTM duration</h3>
+<p>For a regular bond valued with nominal YTM \(y\) compounded \(m\) times per year, differentiation of \((1+y/m)^{-mt_i}\) gives:</p>
+\[ \mathcal D_y=
+\frac{\sum_i t_iPV_i(y)}{P(y)(1+y/m)},\qquad
+\mathcal C_y=
+\frac{\sum_i t_i(t_i+1/m)PV_i(y)}{P(y)(1+y/m)^2}. \]
+<p>The numerator's weighted time is often called Macaulay duration in that yield representation. Dividing by \(1+y/m\) gives modified duration. These quantities use the single-yield present values, which can differ from the individual curve-discounted present values even when total price agrees.</p>
+<h3>Why the distinction matters</h3>
+<p>A curve-based risk report should use derivatives matching its shock definition. Combining a continuous-zero parallel shock with a nominal-YTM modified duration introduces a convention error. Bumping market quotes and recalibrating introduces another layer of dependence: the resulting zero changes are usually not parallel.</p>
+<p>The Taylor expansion is local. Large shifts, long maturities and instruments with negative or contingent cash flows can require exact repricing. Callable bonds and mortgage-like cash flows change with rates, so fixed-payment duration alone omits exercise or prepayment effects. The laboratory restricts itself to fixed cash flows and always shows an exact repricing alongside approximations.</p>
+<p>A portfolio's signed cash-flow sums can have a small net price and large offsetting sensitivities. Normalized duration can then become misleading or unstable. Dollar sensitivities and scenario changes remain informative even when dividing by net value does not.</p>
+</section>
+
+<section id="key-rate-risk" data-title="Key-rate sensitivities and calibration risk">
+<div class="section-kicker">22 / Distributed curve risk</div><h2>Key-rate sensitivities and calibration risk</h2>
+<p>Parallel duration compresses the curve's risk into one number. A portfolio can be insensitive to a parallel move yet highly sensitive to a steepening or a localized long-end change. Key-rate sensitivities distribute risk over maturity regions.</p>
+<h3>A defined bump basis</h3>
+<p>Choose functions \(w_k(t)\) and perturb the zero curve by \(z(t)\mapsto z(t)+s_kw_k(t)\). The sensitivity to a unit decimal bump is:</p>
+\[ \frac{\partial P}{\partial s_k}
+=-\sum_i t_iPV_iw_k(t_i),\qquad
+\mathrm{KRD}_k=-\frac1P\frac{\partial P}{\partial s_k}. \]
+<p>Triangular hat functions on a grid of maturities are one convenient choice. Each is one at its own node, zero at adjacent nodes and linear between. Different choices, including spline bumps or piecewise-constant forward bumps, generate different key-rate reports.</p>
+{{figure:keyrates}}
+<h3>The parallel-risk identity</h3>
+<p>If the bump functions form a partition of unity over all payment dates, \(\sum_kw_k(t)=1\), their normalized sensitivities sum to parallel zero duration:</p>
+\[ \sum_k\mathrm{KRD}_k=\mathcal D_z. \]
+<p>The endpoint functions are part of that partition. Omitting the shortest or longest hat can leave cash flows outside the covered risk basis. A failure of the sum test may therefore reveal an incomplete bump convention rather than a derivative error.</p>
+<h3>Parameter risk and quote risk</h3>
+<p>Nelson–Siegel factor sensitivities follow the corresponding loadings. Holding decay fixed, a bump to \(\beta_0\) is parallel; a bump to \(\beta_1\) uses \(A(T/\tau)\); a bump to \(\beta_2\) uses \(B(T/\tau)\). These parameter risks are useful for model interpretation but are not necessarily exposures to directly tradable instruments.</p>
+<p>A market hedge report usually bumps observable quotes and recalibrates. If the fitted parameters are \(p(q)\), the chain rule gives:</p>
+\[ \frac{dP}{dq_j}=\frac{\partial P}{\partial p}
+\frac{\partial p}{\partial q_j}. \]
+<p>The second factor contains the calibration response. It depends on instrument selection, interpolation, weights, bounds and whether other curves are rebuilt. A small quote change can cause large parameter movements near weak identification while leaving some prices nearly unchanged.</p>
+<h3>Numerical bump methodology</h3>
+<p>Use a specified bump amount, central or one-sided difference, recalibration tolerance and unit convention. Check several sensible bump sizes when numerical noise or constraint activation matters. A central difference can cross an active constraint and approximate a response that is not smooth at the reference quote.</p>
+<p>For a multicurve system, label the bumped curve and the dependencies rebuilt. A tenor-basis quote can affect projected coupons while an overnight quote affects discounting and potentially recalibrated projections. Freezing one component versus rebuilding the whole system answers different hedge questions.</p>
+<h3>Hedge interpretation</h3>
+<p>Matching key-rate DV01 can reduce first-order exposure to the selected bump basis. It does not eliminate convexity, basis, credit, liquidity or model risk. Hedge instruments also have their own curve and convention sensitivities. A clean maturity-bucket picture is useful only when the construction behind it is explicit.</p>
+<p>Compare risk maps across interpolation methods and plausible calibrations. If a hedge changes dramatically when a nearly equivalent curve is fitted, that instability is a material result even when both curves have small pricing residuals.</p>
+</section>
+
+<section id="carry-rolldown" data-title="Forward carry, roll-down and economic interpretation">
+<div class="section-kicker">23 / Holding-period valuation</div><h2>Forward carry, roll-down and economic interpretation</h2>
+<p>Carry and roll-down describe how value can evolve as time passes under specified assumptions. They are not automatically predictions of investment returns. Separate contractual coupon income, financing, the shortening of remaining maturity and changes in the future curve.</p>
+<h3>Forward bond prices</h3>
+<p>For a zero-coupon bond paying one unit at \(T\), its time-zero forward price for delivery at \(h&lt;T\) is:</p>
+\[ F_{0,h}^{\mathrm{bond}}(T)=\frac{D(T)}{D(h)}. \]
+<p>The ratio follows from financing a position to delivery in the simple single-curve setting. It is not the unconditional physical expected future bond price. Under the appropriate forward measure, a pricing expectation can reproduce this value; under the physical measure, risk premia and dynamics affect the expectation.</p>
+<p>For a coupon bond, subtract the time-zero present value of coupons paid before delivery from its current dirty price, then divide by \(D(h)\), with delivery-date coupon treatment specified. Convert the resulting delivery dirty value to a clean quote using accrued interest at that date if needed.</p>
+<h3>Static-curve roll-down</h3>
+<p>Under an unchanged maturity-indexed zero curve, a zero with remaining maturity \(T-h\) is valued at:</p>
+\[ P_h^{\mathrm{static}}(T)=e^{-(T-h)z_0(T-h)}. \]
+<p>This assumption reuses today's zero at the shorter remaining maturity. It differs from following today's forward-implied discount ratio. On a sloped curve, static roll-down changes the bond's applicable zero rate as it ages. On a flat deterministic curve, the static and forward assumptions coincide for the zero bond.</p>
+{{figure:rolldown}}
+<h3>Decomposing holding-period return</h3>
+<p>A realized return over a holding period includes sale value, coupon receipts and any reinvestment, compared with the initial cost and financing. A useful scenario analysis can compare an unchanged curve with parallel, twist and credit-spread scenarios. Each result should state the assumed future curve and reinvestment treatment.</p>
+<p>For a coupon bond, calling the entire return “roll-down” obscures coupon income and financing. A precise decomposition also needs a convention for separating the pure passage of time from the rate change implied by the shorter maturity. Different desk reports can use different decompositions while agreeing on total scenario value.</p>
+<h3>Term premia and expectations</h3>
+<p>A long zero rate reflects more than a simple average of future physical short-rate expectations. Risk compensation and convexity affect the relationship. The exact formula depends on the dynamic model and probability measure. Inferring an expected policy-rate path from forwards therefore requires an interpretation layer beyond curve construction.</p>
+<p>Similarly, an upward-sloping curve does not guarantee that borrowing short and investing long will earn a positive risk-adjusted return. Future rate changes, funding costs, leverage, liquidity and exposure to tail scenarios can dominate the initial spread. The curve supplies prices for dates; it does not remove the uncertainty between them.</p>
+<h3>Practical reporting</h3>
+<p>Report the initial dirty value, projected cash receipts, future dirty and clean values, funding assumption and curve-evolution scenario. This makes a carry estimate reproducible and comparable. For a risk-neutral forward valuation, identify the numeraire and distinguish the pricing relation from a real-world forecast.</p>
+<p>The figure uses a five-year zero bond to isolate the distinction. One path holds the maturity-indexed curve unchanged; the other uses today's implied forward bond price. Their difference is an assumption about evolution, rather than an arithmetic inconsistency.</p>
+</section>
+
+<section id="scenarios" data-title="Curve scenarios and principal-component risk">
+<div class="section-kicker">24 / Shape risk</div><h2>Curve scenarios and principal-component risk</h2>
+<p>A scenario is an explicit change to the curve. It can be motivated by history, a statistical model or a deterministic stress design. Define the shifted object and maturity function so the result can be reproduced.</p>
+<h3>Level, twist and belly shocks</h3>
+<p>A parallel continuous-zero shock adds a constant. A twist raises one end relative to another. A belly shock concentrates the move around intermediate maturities. On a thirty-year grid, illustrative functions are:</p>
+\[ s_{\mathrm{level}}(T)=0.01,\qquad
+s_{\mathrm{twist}}(T)=0.005\left(\frac{T}{15}-1\right),\qquad
+s_{\mathrm{belly}}(T)=0.005\exp\left[-\left(\frac{T-7}{4}\right)^2\right]. \]
+<p>The twist runs from −50 bp at zero to +50 bp at thirty years. The belly peaks at +50 bp near seven years. These definitions are chosen educational scenarios, rather than empirical estimates. Applying them to zero rates implies corresponding forward shocks:</p>
+\[ \Delta f(T)=s(T)+Ts'(T),\qquad
+D_{\mathrm{scenario}}(T)=D(T)e^{-Ts(T)}. \]
+<p>A smooth-looking zero twist can therefore create a larger long-end forward movement. Scenario labels should not substitute for checking the actual rate and discount transformations.</p>
+{{figure:scenarios}}
+<h3>Principal-component analysis</h3>
+<p>Given historical changes in rates at a fixed maturity grid, estimate a covariance matrix and diagonalize it. If \(\Sigma v_k=\lambda_kv_k\), the eigenvectors define orthogonal directions under the selected grid and normalization. A one-standard-deviation scenario for component \(k\) can be represented as \(\sqrt{\lambda_k}v_k\).</p>
+<p>Major components are often interpreted as level, slope and curvature when their shapes support those labels. They need not equal Nelson–Siegel loadings or the deterministic shocks above. Results depend on the sample window, change horizon, rate coordinate, maturity grid and whether the data are standardized.</p>
+<h3>Units and normalization</h3>
+<p>A covariance built from rates in percent differs numerically from one built from decimals. Multiplying all observations by 100 multiplies covariance by 10,000 and standard deviations by 100. Eigenvector signs are arbitrary, so a historical “positive slope factor” requires a reporting orientation convention.</p>
+<p>Using a correlation matrix standardizes maturity variances and emphasizes a different risk metric from covariance PCA. Adding densely spaced long-end maturities also changes the implicit weighting. Document those choices before interpreting explained variance as an intrinsic property of the market.</p>
+<h3>Portfolio application</h3>
+<p>Reprice the portfolio under each shape scenario, or project a sensitivity vector onto the scenario direction for a first-order approximation. Exact repricing matters when shifts are large or when options change cash flows. A portfolio hedged against the first component can retain significant second- or third-component exposure.</p>
+<p>Historical PCA is descriptive and sample dependent. It does not establish Gaussian tails, stationarity or that future stress follows the same eigenvectors. Complement it with explicit policy, liquidity, basis and long-end scenarios where those risks matter.</p>
+<p>The laboratory focuses on parallel zero shocks because their duration and convexity have transparent formulas. The static scenario figure extends the geometry to shape moves, while the key-rate framework provides the natural bridge to a fuller interactive scenario engine.</p>
+</section>
+
+<section id="research-pipeline" data-title="Reproducible construction and research workflow">
+<div class="section-kicker">25 / Implementation practice</div><h2>Reproducible construction and research workflow</h2>
+<p>A curve should be reproducible from a dated input snapshot, conventions and algorithm settings. A saved parameter vector alone cannot explain which instruments were selected, how their cash flows were generated or why particular residuals were accepted.</p>
+<h3>Separate the layers</h3>
+<p>Keep market observations, contract schedules, pricing equations, curve representation, optimization and reporting as distinct components. This separation allows a schedule correction to be tested without rewriting the optimizer, and an interpolation experiment to be compared using identical instruments.</p>
+<ol>
+<li><strong>Capture observations.</strong> Store source, timestamp, bid/ask or price, instrument identifier, settlement convention and eligibility decision.</li>
+<li><strong>Generate schedules.</strong> Preserve adjusted and unadjusted dates, accrual fractions, payment amounts and principal.</li>
+<li><strong>Choose the curve architecture.</strong> Identify discount and forecast roles, interpolation coordinate and tail rules.</li>
+<li><strong>Calibrate.</strong> Record objective, weights, parameter domains, starting points, convergence criteria and fit diagnostics.</li>
+<li><strong>Validate and report.</strong> Reprice instruments, check coordinate identities, evaluate relevant risk and export results with units.</li>
+</ol>
+<h3>Minimum numerical checks</h3>
+<p>Test \(D(0)=1\), positivity of discounts, stable zero-time limits and recovery of rate conversions. Compare analytical forwards with derivatives of integrated rates. Verify an annual par bootstrap against independently generated discounts. Compare bond duration and convexity with finite differences under the matching curve shift.</p>
+<p>For a synthetic exact model, calibration should recover prices or rates within the intended tolerance, but parameter recovery may be nonunique when columns are redundant. Judge output recovery separately from parameter recovery. A test that demands identical coefficients in a rank-deficient case asserts information that the data do not contain.</p>
+<h3>Audit optimization</h3>
+<p>Record unsuccessful starts as well as the best candidate, at least in the research audit. Repeat selected fits after small data perturbations and examine boundary solutions. Use a second numerical implementation for core formulas where an error would materially alter the interpretation.</p>
+<p>Version input data and conventions. A daily curve can change because market prices changed, the instrument universe changed, a calendar was corrected or the algorithm changed. Those causes have different implications for a factor time series. An undocumented construction revision can resemble an economic shock.</p>
+<h3>Reporting units and exports</h3>
+<p>A CSV column named <code>zero_continuous_decimal</code> is more informative than <code>rate</code>. Include maturity years, discount factors, curve family and parameter values. If a quote is stored in basis points, put that in its field name. Avoid exporting rounded displayed strings as computational inputs.</p>
+<p>The downloadable laboratory curve contains sampled continuous zeros, instantaneous forwards, base discounts and shocked discounts, together with model parameters and shock amount. The separate on-page cash-flow ledger supports the selected bond valuation. The export is a synthetic model result, not a market-data file.</p>
+<h3>Performance and model selection</h3>
+<p>Cache schedules and loading matrices where inputs permit. A low-dimensional parametric fit should be fast enough to inspect several starts and diagnostics; speed is not a reason to remove those checks. More complicated joint multicurve construction benefits from sparse dependencies and analytic Jacobians.</p>
+<p>Choose complexity for the task. Broad curve interpretation may favour a parsimonious family; precise pricing may require local construction; derivative valuation requires dynamics and volatility calibration. Reusing one curve representation across these tasks is possible, but its adequacy must be established in each role.</p>
+</section>

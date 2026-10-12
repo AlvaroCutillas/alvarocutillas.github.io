@@ -1,0 +1,98 @@
+<section id="introduction" data-title="Introduction and mathematical scope">
+<div class="section-kicker">01 / Introduction</div><h2>Introduction and mathematical scope</h2>
+<p class="section-lede">An implied volatility surface expresses a collection of European option prices in a common coordinate system. Its construction is an inverse problem, a statistical estimation problem and a problem of economic consistency.</p>
+<p>In <a href="black-scholes-basics.html">Black–Scholes Option Pricing</a>, volatility was an input and the option premium an output. Here the direction is reversed: a premium, a strike, an expiry and a financing convention determine an implied volatility. Repeating that inversion across contracts produces a smile for each expiry and a surface across expiries. A surface can be useful even when the constant-volatility assumptions behind the quoting formula are unrealistic.</p>
+<p>Three objects must remain distinct. A quoted implied volatility is a contract-level price coordinate. A fitted surface estimates missing prices between observations. A dynamic model specifies how prices and uncertainty evolve through time. Agreement with today's vanilla prices does not uniquely determine future smile behavior or the value of every path-dependent payoff.</p>
+<div class="callout"><strong>An analogy: converting a map to a common scale</strong><p>Different option premiums resemble measurements taken with different rulers. A short-dated out-of-the-money call and a long-dated at-the-money call cannot be compared by premium alone. Implied volatility translates each measurement using its contract specifications. A common map becomes easier to read, but a translation does not remove measurement error or explain how the landscape changes tomorrow.</p></div>
+<h3>Organization of the notes</h3>
+<p>Part I develops the price inversion, coordinates, term structure and market-data conventions. Part II establishes static-arbitrage restrictions, interpolation, SVI/SSVI parameterizations, calibration and extrapolation. Part III connects the surface to local volatility, stochastic models and risk management, then develops an interactive laboratory, numerical studies, an appendix and exercises.</p>
+<p>The core framework uses strictly positive forwards, deterministic discounting, European exercise and proportional carry. It permits negative interest rates provided discount factors remain positive. Discrete dividends, early exercise, negative forwards and event jumps require additional treatment; later chapters explain where the central framework stops applying.</p>
+<h3>Numerical conventions</h3>
+<p>Volatility is stored as an annualized decimal: 24% is 0.24. Time is measured in year fractions. A volatility percentage point is 0.01; a volatility basis point is 0.0001. Premiums are per unit of underlying, without a contract multiplier. All numerical option chains and surface experiments on this page are synthetic. They illustrate reproducible methods and do not represent live exchange quotes.</p>
+<p>The reference surface uses a short variance-rate scale of 24%, a long scale of 18%, a decay time of 1.2 years, asymmetry parameter −0.65 and shape scale 2.3. Its formulas and derivative checks are explicit. Static figures retain their numerical data, and the laboratory allows the parameters to be changed without a network connection.</p>
+<p>Elementary calculus, normal probabilities and European option pricing are the main prerequisites. A reader can follow the data and calibration discussion before studying the density and local-volatility derivations. The mathematical appendix supplies the derivatives needed to reproduce the diagnostics.</p>
+</section>
+
+<section id="forward-pricing" data-title="Forward-based European option valuation">
+<div class="section-kicker">02 / Pricing conventions</div><h2>Forward-based European option valuation</h2>
+<p>Let \(S_0\) denote spot, \(T&gt;0\) maturity, \(D(T)&gt;0\) the discount factor and \(F(T)&gt;0\) the forward price. With constant continuously compounded rate \(r\) and proportional dividend yield \(q\), \(D(T)=e^{-rT}\) and \(F(T)=S_0e^{(r-q)T}\). Separating the forward from discounting makes the same pricing formula applicable to many European spot and futures options, subject to their actual settlement conventions.</p>
+\[ C_{\mathrm{B}}=D(T)\left[F(T)\Phi(d_1)-K\Phi(d_2)\right],\qquad
+d_1=\frac{\ln(F(T)/K)+\frac{1}{2}\sigma^2T}{\sigma\sqrt T},\quad d_2=d_1-\sigma\sqrt T. \]
+<p>Here \(K&gt;0\) is strike and \(\Phi\) the standard normal distribution function. The corresponding put follows either from the direct formula or European put–call parity:</p>
+\[ P_{\mathrm{B}}=D(T)\left[K\Phi(-d_2)-F(T)\Phi(-d_1)\right],\qquad
+C_{\mathrm{B}}-P_{\mathrm{B}}=D(T)(F(T)-K). \]
+<h3>The forward as the center of the smile</h3>
+<p>Forward at-the-money means \(K=F(T)\). It need not mean \(K=S_0\), and neither definition necessarily coincides with a 50-delta contract. Rate and dividend differences make the center expiry dependent. Using spot moneyness for one expiry and forward moneyness for another introduces a coordinate shift that can resemble a change in skew.</p>
+<p>A premium can be normalized by \(D(T)F(T)\). Let \(k=\ln(K/F(T))\) and \(w=\sigma^2T\). The normalized call is a function of just these two variables:</p>
+\[ c(k,w)=\frac{C_{\mathrm{B}}}{D(T)F(T)}
+=\Phi\left(-\frac{k}{\sqrt w}+\frac{\sqrt w}{2}\right)
+-e^k\Phi\left(-\frac{k}{\sqrt w}-\frac{\sqrt w}{2}\right). \]
+<p>This reduction is helpful for inversion and surface analysis. Forward and discount inputs determine the translation into normalized prices; the smile describes the remaining strike-dependent variation. It does not make inaccurate carry inputs harmless.</p>
+<h3>Boundary cases and units</h3>
+<p>At zero variance, the call is \(D\max(F-K,0)\). At increasing variance, the call approaches \(DF\); the put approaches \(DK\). At expiry, the volatility coordinate ceases to identify a time distribution, and the payoff is determined by the terminal price. Handle these limits separately rather than dividing by zero in \(d_1\).</p>
+<p>Black vega, holding the forward and discount factor fixed, is \(DF\varphi(d_1)\sqrt T\), where \(\varphi\) is the normal density. It measures premium change per unit decimal volatility. A quoted vega of 38 per unit means approximately 0.38 premium units for a one-percentage-point volatility move. Contract multipliers scale both the premium and vega.</p>
+<p>For American exercise, the same inversion is generally inappropriate because the quoted premium may include early-exercise value. For a normal or shifted-lognormal quoting convention, the numerical implied-volatility value has a different meaning. A database field called “IV” is incomplete without its valuation model and conventions.</p>
+</section>
+
+<section id="iv-definition" data-title="Implied volatility: existence and uniqueness">
+<div class="section-kicker">03 / Inverse valuation</div><h2>Implied volatility: existence and uniqueness</h2>
+<p>For fixed positive \(F,K,D,T\), the implied volatility is the nonnegative parameter that reproduces the observed European premium in the Black formula. It is not an additional observation of future realized volatility; it is defined through the observed price and chosen inputs.</p>
+\[ C_{\mathrm{B}}(F,K,D,T,\sigma_{\mathrm{imp}})=C_{\mathrm{obs}},\qquad
+\frac{\partial C_{\mathrm{B}}}{\partial\sigma}=DF\varphi(d_1)\sqrt T&gt;0
+\quad\text{for }\sigma&gt;0. \]
+<p>Strict positive vega makes the mapping strictly increasing. Its lower and upper limits establish the finite-volatility domain:</p>
+\[ D\max(F-K,0)\le C_{\mathrm{obs}}&lt;DF,\qquad
+D\max(K-F,0)\le P_{\mathrm{obs}}&lt;DK. \]
+<h3>Interpreting the boundaries</h3>
+<p>A price equal to the lower bound has the limiting implied volatility zero. An interior price has a unique strictly positive finite value. The upper bound is approached only as volatility tends to infinity, so an exact price at that bound has no finite implied volatility. A quote outside the interval cannot be repaired by a better root solver: either its inputs, conventions or price are inconsistent.</p>
+<p>Near the intrinsic boundary, premium precision can be insufficient to resolve a small time value. A displayed quote may equal the lower bound because of rounding, even if its economic volatility is positive. A zero numerical IV in this situation describes the resolution of the input, not evidence that the underlying will be deterministic.</p>
+{{figure:inverse}}
+<h3>Calls and puts should agree under matched inputs</h3>
+<p>Under European parity, calls and puts with the same strike and expiry recover the same implied volatility. When they do not, investigate asynchronous quotes, different dividend assumptions, settlement differences, stale prices and exercise style. A separate call surface and put surface can conceal a common forward error.</p>
+<p>The out-of-the-money side often offers more useful numerical information because an in-the-money premium contains a large intrinsic component. For \(K&lt;F\), a put is out of the money; for \(K&gt;F\), a call is out of the money. Converting through parity removes the intrinsic component, but the carry inputs and quote uncertainty still matter.</p>
+<h3>Implied volatility and expectations</h3>
+<p>The option price is a discounted risk-neutral expectation of a nonlinear payoff. Implied volatility condenses that expectation into one Black parameter. Different distributions can generate the same premium for one contract. The volatility risk premium, nonlinear payoff weighting and smile shape prevent a general equality between this coordinate and the physical expected standard deviation of future returns.</p>
+<p>A full continuum of option prices reveals substantially more information than one implied volatility, but even a complete terminal distribution does not determine the joint distribution of prices at several future dates. This distinction will matter when moving from vanilla calibration to exotic pricing.</p>
+</section>
+
+<section id="numerical-inversion" data-title="Numerical inversion and conditioning">
+<div class="section-kicker">04 / Numerical analysis</div><h2>Numerical inversion and conditioning</h2>
+<p>Define the residual \(f(\sigma)=C_{\mathrm{B}}(\sigma)-C_{\mathrm{obs}}\). A dependable solver begins by checking the premium bounds, then finds a bracket with opposite residual signs. Because the price map is monotone, bisection gives a simple reliable reference implementation. Brent's method combines bracketing with interpolation and is useful in production implementations.</p>
+<h3>Bracketed and Newton iterations</h3>
+<p>Choose a positive upper volatility, increase it until the model price is above the observation, and retain zero or a small positive value as the lower endpoint. At each bisection step evaluate the midpoint and replace the endpoint with the same residual sign. The bracket width halves at each iteration, providing a direct volatility-error bound.</p>
+\[ \sigma_{n+1}=\sigma_n-
+\frac{C_{\mathrm{B}}(\sigma_n)-C_{\mathrm{obs}}}
+{DF\varphi(d_1(\sigma_n))\sqrt T}. \]
+<p>Newton's update is fast near a well-conditioned root. It may take a negative or excessively large step when vega is small. A safeguarded implementation keeps the bracket and replaces unsafe Newton steps with bisection. Use a finite iteration limit and return an explicit failure state if the bracket cannot be established within the chosen volatility cap.</p>
+<p>A very small price residual does not always imply an accurate volatility. Conversely, insisting on microscopic volatility error may be pointless when the quoted premium has a wide bid–ask interval. Report a solver tolerance separately from input uncertainty.</p>
+<h3>Local sensitivity of the inverse map</h3>
+<p>Differentiating the defining equation at fixed inputs gives:</p>
+\[ \frac{\partial\sigma_{\mathrm{imp}}}{\partial C}
+=\frac{1}{\operatorname{Vega}},\qquad
+\Delta\sigma_{\mathrm{imp}}\approx\frac{\Delta C}{\operatorname{Vega}}. \]
+<p>This explains why short-dated wings can display large IV changes from a single premium tick. The effect is mathematical conditioning, not necessarily a dramatic revision to the market's uncertainty assessment. A premium half-spread of 0.02 with vega 2 implies approximately one volatility percentage point of uncertainty; with vega 40 it implies 0.05 percentage points.</p>
+{{figure:vega}}
+<h3>Precision and validation</h3>
+<p>Deep in-the-money call formulas subtract substantial terms. Prefer parity-based out-of-the-money evaluation and numerically stable normal-tail functions. In extreme tails, underflow can turn a small positive option value into zero. Such cases should be marked unresolved at the working precision rather than assigned a supposedly exact root.</p>
+<p>Test inversion by generating premiums from known volatilities across strikes and expiries, then recovering those values. Also test invalid premiums, exact intrinsic limits, near-upper-bound prices, negative rates, and call–put parity. Round-trip errors measure implementation consistency; comparison with an independent pricing and root-solving library gives stronger evidence than using the same function twice.</p>
+<p>The laboratory uses a bracketed solver on synthetic prices and reports a root for its selected contract. Its static numerical studies use SciPy's normal distribution and Brent solver as an independent reference. The displayed surface itself is specified analytically, so inversion is an explicit demonstration of the price-to-coordinate conversion.</p>
+</section>
+
+<section id="coordinates" data-title="Moneyness, delta and total-variance coordinates">
+<div class="section-kicker">05 / Surface coordinates</div><h2>Moneyness, delta and total-variance coordinates</h2>
+<p>A surface may be expressed as \(\sigma(K,T)\), \(\sigma(K/F(T),T)\), \(\sigma(k,T)\) or a delta-based quotation. Each representation describes contracts differently. Make the coordinate choice explicit before comparing expiries or building interpolation rules.</p>
+\[ k=\ln\left(\frac{K}{F(T)}\right),\qquad
+w(k,T)=T\,\sigma_{\mathrm{imp}}(k,T)^2,\qquad
+\sigma_{\mathrm{imp}}(k,T)=\sqrt{\frac{w(k,T)}{T}}. \]
+<p>Total variance is dimensionless under the annualized-volatility convention. It measures the variance budget encoded by the Black quote, without asserting that every smile point is the expected realized quadratic variation of one process. It is especially useful because calendar restrictions concern accumulated variance rather than annualized volatility alone.</p>
+{{figure:coordinates}}
+<h3>Spot and forward moneyness</h3>
+<p>The logarithmic coordinates satisfy \(\ln(K/S_0)=k+\ln(F(T)/S_0)\). Carry therefore shifts a spot-moneyness plot horizontally by an expiry-dependent amount. A fixed \(k\) across expiries corresponds to a fixed strike-to-forward ratio, not necessarily a fixed absolute strike. This difference is central to the correct formulation of calendar-arbitrage checks with nonzero carry.</p>
+<p>Log-moneyness converts multiplicative strike changes into additive coordinates and treats reciprocal ratios symmetrically. A strike 20% above the forward has \(k=\ln(1.2)\), approximately 0.1823. A strike 20% below has \(\ln(0.8)\), approximately −0.2231; equal percentage deviations are not equal log deviations.</p>
+<h3>Delta quotations</h3>
+<p>Black forward call delta is \(\Phi(d_1)\); spot call delta under proportional yield is \(e^{-qT}\Phi(d_1)\). Futures, foreign-exchange and premium-adjusted conventions may use other definitions. A “25-delta put” cannot be translated into a strike without knowing the delta convention, forward, expiry and implied volatility used in the conversion.</p>
+<p>A delta coordinate depends on the volatility being solved for, making conversion implicit. At \(K=F\), \(d_1=\sigma\sqrt T/2&gt;0\), so the forward call delta exceeds 0.5. Under constant volatility, the forward 50-delta strike is \(F e^{w/2}\). With a smile, that relation uses the volatility at the unknown strike and requires a numerical solution.</p>
+<h3>Choice of display and choice of model</h3>
+<p>A plot in volatility units is intuitive, while fitting in total variance often makes consistency easier to control. A risk report may use delta buckets because those align with quoting practice. None of these displays grants arbitrage freedom. Validate the resulting option prices and the appropriate total-variance restrictions after conversion.</p>
+<p>The numerical plots use forward log-moneyness unless their axes explicitly say strike. The interactive heatmap reports the actual maturity and log-moneyness of each sampled cell. Its maturity slices retain all curves at a shared horizontal coordinate, so a reader can inspect cross-expiry values without comparing different strikes accidentally.</p>
+</section>

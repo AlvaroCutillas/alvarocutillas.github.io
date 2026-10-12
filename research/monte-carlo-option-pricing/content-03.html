@@ -1,0 +1,76 @@
+<section id="convergence" data-title="Convergence and computational complexity">
+<div class="section-label">09 / Convergence</div><h2>Convergence and computational complexity</h2>
+<p>Plain Monte Carlo's characteristic rate is \(N^{-1/2}\). If the one-payoff standard deviation is unchanged, multiplying the sample size by four approximately halves the standard error; multiplying it by one hundred improves the standard error by a factor of ten. The rate is slow, even though the method is flexible.</p>
+\[ \operatorname{SE}(\widehat V_{4N})=\frac{1}{2}\operatorname{SE}(\widehat V_N),\qquad N=\mathcal{O}(\varepsilon^{-2})\ \text{for a fixed-variance unbiased estimator}. \]
+<p>The sample-size exponent does not explicitly depend on the dimension of the random input. However, dimension can change payoff variance, the cost per path, correlation structures and the effectiveness of variance reduction. “Dimension independent convergence” should not be interpreted as constant computational cost for a thousand-factor contract.</p>
+<h3>Nested convergence traces</h3>
+<p>A running average uses increasingly long prefixes of one stream. Nearby estimates share most of their observations, so they are highly dependent. A smooth-looking running trace is not equivalent to many independent confirmations. Its apparent stability can also be misleading when a rare payoff region has not yet been visited.</p>
+{{figure:convergence}}
+<p>A legitimate validation experiment repeats the entire calculation with independent streams, calculates the error against known truth, and examines root mean squared error and interval coverage. Such experiments should use a range of strikes and maturities; an at-the-money call is not a comprehensive tail-sampling test.</p>
+{{figure:coverage}}
+<h3>Cost-adjusted precision</h3>
+<p>Suppose one independent estimator unit has variance \(v\) and average computational cost \(c\). With total budget \(B\), approximately \(B/c\) units are affordable and the estimator variance is \(vc/B\). The efficiency criterion is therefore variance multiplied by cost:</p>
+\[ \operatorname{Var}(\widehat V)\approx\frac{vc}{B},\qquad \text{efficiency comparison: }vc. \]
+<p>An antithetic pair costs two payoff evaluations but contributes one independent average. A control method may require a pilot fit and an extra simulated control. A conditional method can add arithmetic while removing much more variance. Comparing methods at equal independent-unit counts can consequently misstate the computational benefit.</p>
+<h3>Practical stopping and reporting</h3>
+<p>Choose a precision target and an estimator before production sampling. A pilot can estimate the necessary budget; independent production avoids tuning on the same noise that is later reported. If a production budget is changed adaptively after repeated interval checks, the nominal fixed-sample coverage requires reconsideration.</p>
+<p>Report the estimate, standard error, confidence construction, number of independent units, actual payoff evaluations and any pilot cost. Timing comparisons should include random-number generation, path construction, payoff evaluation and aggregation on the same hardware. A smaller standard error is useful, but a smaller standard error per second is the practical objective.</p>
+</section>
+
+<section id="discretisation" data-title="Time discretisation and numerical bias">
+<div class="section-label">10 / Numerical approximation</div><h2>Time discretisation and numerical bias</h2>
+<p>Exact transitions are not available for every stochastic model. For a diffusion \(dX_t=a(X_t,t)\,dt+b(X_t,t)\,dW_t\), Euler–Maruyama approximates a short transition by freezing coefficients at the start of the interval:</p>
+\[ X_{j+1}=X_j+a(X_j,t_j)h+b(X_j,t_j)\sqrt h\,Z_j. \]
+<p>For stock GBM this becomes \(S_{j+1}=S_j[1+(r-q)h+\sigma\sqrt h Z_j]\). It can produce a negative stock, whereas GBM itself stays positive. The exact exponential transition is therefore preferable whenever its assumptions hold. Euler is shown here to explain discretisation error, not as an improvement over the exact GBM simulator.</p>
+<h3>Strong and weak errors</h3>
+<p>Strong error measures differences between coupled approximate and exact paths. Weak error measures differences in expectations of functionals. Under suitable regularity conditions, Euler commonly has strong order one half and weak order one; discontinuous payoffs and boundary events may change relevant rates.</p>
+\[ \left(\mathbb{E}[|X_T^{h}-X_T|^2]\right)^{1/2}=\mathcal{O}(h^{1/2}),\qquad |\mathbb{E}[g(X_T^{h})]-\mathbb{E}[g(X_T)]|=\mathcal{O}(h). \]
+<p>These orders require assumptions; they are not universal warranties for any model, payoff or time step. A scheme can behave poorly if its coefficients grow rapidly, its states violate constraints or the contract is sensitive to crossings that the grid fails to resolve.</p>
+<h3>Milstein and path coupling</h3>
+<p>For a scalar diffusion, Milstein adds a correction involving the state derivative of the diffusion coefficient:</p>
+\[ X_{j+1}=X_j+a_jh+b_j\sqrt h Z_j+\tfrac{1}{2}b_j\,\partial_xb_j\,h(Z_j^2-1). \]
+<p>With appropriate scalar-model regularity it can improve strong order to one. In several dimensions, iterated stochastic integrals and noncommuting diffusion terms complicate the construction. Higher order is not automatically cheaper per unit of total pricing accuracy.</p>
+<p>To estimate numerical bias efficiently, simulate coarse and fine paths with common Brownian increments. A coarse increment is the sum of its corresponding fine increments. Independent grids waste the strong relationship between two approximations to the same underlying path and make their expected difference harder to estimate.</p>
+{{figure:bias}}
+<h3>Balancing sample size and mesh size</h3>
+<p>If bias is proportional to \(h^\alpha\), allocate part of a total error budget to bias and part to sampling variance. With ordinary path simulation, per-path cost often scales as \(h^{-1}\). Achieving RMSE \(\varepsilon\) can then cost on the order of \(\varepsilon^{-2-1/\alpha}\), rather than the terminal-only \(\varepsilon^{-2}\) rate.</p>
+<p>A finer grid does not change a contract's explicitly discrete monitoring schedule. For an Asian option monitored at twelve fixed dates, exact simulation at those dates directly represents the contract. Extra non-fixing dates are not extra terms in its average. For a continuous barrier, however, unobserved crossings are part of the requested payoff and require a crossing correction or an appropriate limiting argument.</p>
+</section>
+
+<section id="antithetic" data-title="Antithetic variates">
+<div class="section-label">11 / Variance reduction</div><h2>Antithetic variates</h2>
+<p>For symmetric normal inputs, simulate a payoff using \(Z\) and a companion using \(-Z\). Each marginal input has the correct distribution, so their average has the same expectation as either payoff. Repeat this construction using independent base shocks.</p>
+\[ A_i=\frac{Y(Z_i)+Y(-Z_i)}{2},\qquad \widehat V_{\mathrm{AV}}=\frac{1}{M}\sum_{i=1}^{M}A_i,\qquad N=2M. \]
+<p>The two members of one pair are deliberately dependent; the \(M\) pair averages are the independent statistical units. Their variance determines the standard error:</p>
+\[ \operatorname{Var}(A)=\tfrac{1}{2}\operatorname{Var}(Y)(1+\rho),\qquad \widehat{\operatorname{SE}}(\widehat V_{\mathrm{AV}})=\frac{s_A}{\sqrt M}. \]
+<p>Here \(\rho\) is the correlation between the paired payoffs and the equality assumes their identical marginal variance. At equal payoff-evaluation budget \(N=2M\), the estimator variance relative to plain Monte Carlo is \(1+\rho\). Negative correlation creates a benefit; zero correlation creates no variance benefit per payoff evaluation.</p>
+<h3>Why it often works for vanilla options</h3>
+<p>The European call payoff increases with a terminal normal shock. Reversing the shock tends to turn a favourable call scenario into an unfavourable one. A put decreases with that shock, and the same reversal again counterbalances outcomes. The resulting averages tend to fluctuate less than separate unpaired payoffs.</p>
+{{figure:antithetic}}
+<div class="callout"><p><strong>Analogy: balancing opposite perturbations.</strong> If a measurement is distorted by a small upward perturbation in one trial, repeat it with the opposite perturbation and average. The perturbation's effects partly cancel. A nonlinear payoff does not cancel perfectly, and the useful cancellation depends on how the payoff responds to the perturbation.</p></div>
+<h3>Limits and implementation</h3>
+<p>A symmetric but nonmonotone payoff can produce positive paired correlation. Barrier and early-exercise features can also make the response complicated. Antithetic sampling is therefore a design to measure, not a universally beneficial switch.</p>
+<p>For a multi-date GBM path, reverse the entire vector of Brownian shocks to construct the partner. Do not reverse independent shocks inconsistently across dates if the intended partner is a full sign reversal. For correlated assets, reverse the underlying independent normal vector; its correlated transformation is also reversed.</p>
+<p>Store or stream pair averages for statistics. Calculating a standard error from all \(2M\) dependent payoffs as if they were IID is incorrect. If an odd payoff budget is requested, specify how an unpaired observation is weighted; the live laboratory instead requires even budgets for antithetic methods to keep both cost and uncertainty transparent.</p>
+</section>
+
+<section id="control" data-title="Control variates">
+<div class="section-label">12 / Variance reduction</div><h2>Control variates</h2>
+<p>A control variate is a simulated quantity \(C\) with known expectation \(\mu_C\) that shares important variation with the target payoff \(Y\). Subtracting its centred deviation leaves the target mean unchanged for a fixed coefficient \(\beta\):</p>
+\[ Y^{\mathrm{CV}}=Y-\beta(C-\mu_C),\qquad \widehat V_{\mathrm{CV}}=\overline Y-\beta(\overline C-\mu_C). \]
+<p>Expanding the variance and differentiating with respect to \(\beta\) gives the population-optimal scalar coefficient and its residual variance:</p>
+\[ \beta^\star=\frac{\operatorname{Cov}(Y,C)}{\operatorname{Var}(C)},\qquad \operatorname{Var}(Y^{\mathrm{CV}})=\operatorname{Var}(Y)(1-\rho_{YC}^2). \]
+<p>A strong positive or negative correlation is useful; the sign of the optimal coefficient adjusts accordingly. A control with zero variance is not informative for this optimisation and must not trigger a division by zero. Multiple controls generalise the coefficient to a covariance linear system, which should be solved stably rather than explicitly inverted.</p>
+<h3>Discounted stock as a vanilla control</h3>
+<p>For terminal GBM equity options, choose \(C=e^{-rT}S_T\). Its known mean is \(S_0e^{-qT}\). A high stock outcome increases a call's discounted payoff and the discounted stock together, allowing their shared movement to be removed.</p>
+{{figure:control}}
+<p>The controlled observations need not be nonnegative even when the original option payoff is. Clipping negative observations or clipping a negative final estimate to zero changes the estimator and can introduce bias. No-arbitrage price bounds are population properties, not a licence to alter noisy observations without analysing the effect.</p>
+<div class="callout"><p><strong>Analogy: removing a known background signal.</strong> Suppose a sensor records the target plus a background fluctuation. A second sensor observes a closely related background whose average level is known. Subtract its deviation from that known level, rather than its entire value. The shared noise decreases while the target's average is preserved.</p></div>
+<h3>Estimating coefficients without hidden optimism</h3>
+<p>A fitted coefficient from the same sample is random and correlated with its sample control mean. The resulting estimator is generally not exactly unbiased in finite samples. Residual sample variance alone can also underrepresent fitting effects. A clean construction estimates \(\beta\) on an independent pilot, freezes it, and evaluates controlled payoffs on an independent production sample.</p>
+<p>Conditional on the pilot, the frozen-coefficient production estimator is unbiased for the target. Its production standard error is calculated from adjusted observations. Cross-fitting offers another construction: fit on separate folds and apply each fit to held-out observations, with uncertainty calculations that respect the design.</p>
+<h3>Combining controls and antithetics</h3>
+<p>For antithetic simulation, control the pair averages \(A_i\) with the corresponding stock pair averages. The optimal coefficient for these averages differs from the optimal coefficient for individual payoffs. Pilot and production units must both follow the actual paired design.</p>
+{{figure:efficiency}}
+<p>A geometric-average payoff is a strong control for an arithmetic Asian payoff. A geometric basket can control an arithmetic basket under a lognormal multivariate model. A known European payoff can help estimate an early-exercise premium. In every case, the control expectation must match the simulated quantity exactly, including yield, discounting, maturity and monitoring convention.</p>
+</section>

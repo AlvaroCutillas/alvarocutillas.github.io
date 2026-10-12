@@ -1,0 +1,864 @@
+<svg role="img" aria-labelledby="svensson-title svensson-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="266.4pt" viewBox="0 0 792 266.4" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="svensson-title">Figure 11 · Svensson extends the curvature basis</title><desc id="svensson-desc">τ₁ = 1.6 and τ₂ = 6.5 years. The extra component vanishes at both the short and long limits, allowing an additional hump or dip without changing those endpoint limits.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T20:19:13.532027</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="svensson-figure_1">
+  <g id="svensson-patch_1">
+   <path d="M 0 266.4 
+L 792 266.4 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="svensson-axes_1">
+   <g id="svensson-patch_2">
+    <path d="M 62.66 223.18 
+L 389.25 223.18 
+L 389.25 35.14 
+L 62.66 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="svensson-matplotlib.axis_1">
+    <g id="svensson-xtick_1">
+     <g id="svensson-line2d_1">
+      <path d="M 77.505 223.18 
+L 77.505 35.14 
+" clip-path="url(#svensson-pf06acf0216)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_2">
+      <defs>
+       <path id="svensson-mf931c23329" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#svensson-mf931c23329" x="77.505" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="77.505" y="237.018594" transform="rotate(-0 77.505 237.018594)">0</text>
+     </g>
+    </g>
+    <g id="svensson-xtick_2">
+     <g id="svensson-line2d_3">
+      <path d="M 126.988333 223.18 
+L 126.988333 35.14 
+" clip-path="url(#svensson-pf06acf0216)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_4">
+      <g>
+       <use href="#svensson-mf931c23329" x="126.988333" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="126.988333" y="237.018594" transform="rotate(-0 126.988333 237.018594)">5</text>
+     </g>
+    </g>
+    <g id="svensson-xtick_3">
+     <g id="svensson-line2d_5">
+      <path d="M 176.471667 223.18 
+L 176.471667 35.14 
+" clip-path="url(#svensson-pf06acf0216)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_6">
+      <g>
+       <use href="#svensson-mf931c23329" x="176.471667" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="176.471667" y="237.018594" transform="rotate(-0 176.471667 237.018594)">10</text>
+     </g>
+    </g>
+    <g id="svensson-xtick_4">
+     <g id="svensson-line2d_7">
+      <path d="M 225.955 223.18 
+L 225.955 35.14 
+" clip-path="url(#svensson-pf06acf0216)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_8">
+      <g>
+       <use href="#svensson-mf931c23329" x="225.955" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="225.955" y="237.018594" transform="rotate(-0 225.955 237.018594)">15</text>
+     </g>
+    </g>
+    <g id="svensson-xtick_5">
+     <g id="svensson-line2d_9">
+      <path d="M 275.438333 223.18 
+L 275.438333 35.14 
+" clip-path="url(#svensson-pf06acf0216)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_10">
+      <g>
+       <use href="#svensson-mf931c23329" x="275.438333" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="275.438333" y="237.018594" transform="rotate(-0 275.438333 237.018594)">20</text>
+     </g>
+    </g>
+    <g id="svensson-xtick_6">
+     <g id="svensson-line2d_11">
+      <path d="M 324.921667 223.18 
+L 324.921667 35.14 
+" clip-path="url(#svensson-pf06acf0216)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_12">
+      <g>
+       <use href="#svensson-mf931c23329" x="324.921667" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="324.921667" y="237.018594" transform="rotate(-0 324.921667 237.018594)">25</text>
+     </g>
+    </g>
+    <g id="svensson-xtick_7">
+     <g id="svensson-line2d_13">
+      <path d="M 374.405 223.18 
+L 374.405 35.14 
+" clip-path="url(#svensson-pf06acf0216)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_14">
+      <g>
+       <use href="#svensson-mf931c23329" x="374.405" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="374.405" y="237.018594" transform="rotate(-0 374.405 237.018594)">30</text>
+     </g>
+    </g>
+    <g id="svensson-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="225.955" y="249.728906" transform="rotate(-0 225.955 249.728906)">Maturity (years)</text>
+    </g>
+   </g>
+   <g id="svensson-matplotlib.axis_2">
+    <g id="svensson-ytick_1">
+     <g id="svensson-line2d_15">
+      <path d="M 62.66 214.632727 
+L 389.25 214.632727 
+" clip-path="url(#svensson-pf06acf0216)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_16">
+      <defs>
+       <path id="svensson-md94101f803" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#svensson-md94101f803" x="62.66" y="214.632727" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="218.052024" transform="rotate(-0 55.66 218.052024)">1.50%</text>
+     </g>
+    </g>
+    <g id="svensson-ytick_2">
+     <g id="svensson-line2d_17">
+      <path d="M 62.66 180.696407 
+L 389.25 180.696407 
+" clip-path="url(#svensson-pf06acf0216)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_18">
+      <g>
+       <use href="#svensson-md94101f803" x="62.66" y="180.696407" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="184.115704" transform="rotate(-0 55.66 184.115704)">2.00%</text>
+     </g>
+    </g>
+    <g id="svensson-ytick_3">
+     <g id="svensson-line2d_19">
+      <path d="M 62.66 146.760087 
+L 389.25 146.760087 
+" clip-path="url(#svensson-pf06acf0216)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_20">
+      <g>
+       <use href="#svensson-md94101f803" x="62.66" y="146.760087" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="150.179384" transform="rotate(-0 55.66 150.179384)">2.50%</text>
+     </g>
+    </g>
+    <g id="svensson-ytick_4">
+     <g id="svensson-line2d_21">
+      <path d="M 62.66 112.823767 
+L 389.25 112.823767 
+" clip-path="url(#svensson-pf06acf0216)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_22">
+      <g>
+       <use href="#svensson-md94101f803" x="62.66" y="112.823767" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="116.243064" transform="rotate(-0 55.66 116.243064)">3.00%</text>
+     </g>
+    </g>
+    <g id="svensson-ytick_5">
+     <g id="svensson-line2d_23">
+      <path d="M 62.66 78.887447 
+L 389.25 78.887447 
+" clip-path="url(#svensson-pf06acf0216)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_24">
+      <g>
+       <use href="#svensson-md94101f803" x="62.66" y="78.887447" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="82.306744" transform="rotate(-0 55.66 82.306744)">3.50%</text>
+     </g>
+    </g>
+    <g id="svensson-ytick_6">
+     <g id="svensson-line2d_25">
+      <path d="M 62.66 44.951127 
+L 389.25 44.951127 
+" clip-path="url(#svensson-pf06acf0216)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_26">
+      <g>
+       <use href="#svensson-md94101f803" x="62.66" y="44.951127" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="48.370424" transform="rotate(-0 55.66 48.370424)">4.00%</text>
+     </g>
+    </g>
+    <g id="svensson-text_15">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.197813" y="129.16" transform="rotate(-90 21.197813 129.16)">Continuous zero</text>
+    </g>
+   </g>
+   <g id="svensson-line2d_27">
+    <path d="M 77.505 214.632727 
+L 79.484333 198.264482 
+L 81.463667 184.015845 
+L 83.443 171.627937 
+L 85.422333 160.872806 
+L 87.401667 151.549766 
+L 89.381 143.48216 
+L 91.360333 136.514512 
+L 93.339667 130.51001 
+L 95.319 125.348289 
+L 97.298333 120.923482 
+L 99.277667 117.14249 
+L 101.257 113.923466 
+L 103.236333 111.194474 
+L 105.215667 108.892309 
+L 107.195 106.961456 
+L 109.174333 105.353171 
+L 111.153667 104.024673 
+L 113.133 102.93843 
+L 115.607167 101.871557 
+L 118.081333 101.076608 
+L 120.5555 100.506583 
+L 123.5245 100.063887 
+L 126.988333 99.809047 
+L 130.947 99.774929 
+L 135.4005 99.965235 
+L 141.3385 100.45111 
+L 151.73 101.567791 
+L 166.080167 103.063266 
+L 175.976833 103.868866 
+L 185.8735 104.450713 
+L 196.265 104.831137 
+L 207.151333 105.00659 
+L 219.522167 104.976343 
+L 233.3775 104.715641 
+L 250.201833 104.165729 
+L 271.479667 103.234444 
+L 304.6335 101.530839 
+L 374.405 97.910031 
+L 374.405 97.910031 
+" clip-path="url(#svensson-pf06acf0216)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="svensson-line2d_28">
+    <path d="M 77.505 214.632727 
+L 79.484333 196.729952 
+L 81.463667 181.00886 
+L 83.443 167.208455 
+L 85.422333 155.098737 
+L 87.401667 144.477036 
+L 89.381 135.164776 
+L 91.360333 127.004625 
+L 93.339667 119.857974 
+L 95.319 113.602721 
+L 97.298333 108.131318 
+L 99.277667 103.349038 
+L 101.257 99.17246 
+L 103.236333 95.528127 
+L 105.215667 92.351361 
+L 107.195 89.585221 
+L 109.174333 87.179585 
+L 111.153667 85.090339 
+L 113.133 83.278663 
+L 115.607167 81.352762 
+L 118.081333 79.749669 
+L 120.5555 78.420135 
+L 123.029667 77.322223 
+L 125.998667 76.26059 
+L 128.967667 75.42965 
+L 132.4315 74.695407 
+L 136.390167 74.100345 
+L 140.843667 73.666585 
+L 146.286833 73.380017 
+L 152.719667 73.272804 
+L 161.626667 73.367384 
+L 175.976833 73.77918 
+L 220.017 75.13815 
+L 249.212167 75.761247 
+L 285.829833 76.308297 
+L 333.828667 76.791011 
+L 374.405 77.077511 
+L 374.405 77.077511 
+" clip-path="url(#svensson-pf06acf0216)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="svensson-line2d_29">
+    <path d="M 77.505 214.632727 
+L 79.484333 195.195422 
+L 81.463667 178.001876 
+L 83.443 162.788974 
+L 85.422333 149.324668 
+L 87.401667 137.404305 
+L 89.381 126.847392 
+L 91.360333 117.494737 
+L 93.339667 109.205938 
+L 95.319 101.857154 
+L 97.298333 95.339154 
+L 99.277667 89.555586 
+L 101.257 84.421455 
+L 103.236333 79.861781 
+L 105.215667 75.810413 
+L 107.195 72.208986 
+L 109.174333 69.005999 
+L 111.153667 66.156006 
+L 113.627833 63.029263 
+L 116.102 60.323588 
+L 118.576167 57.980657 
+L 121.050333 55.950545 
+L 123.5245 54.190502 
+L 126.4935 52.383765 
+L 129.4625 50.860015 
+L 132.4315 49.574806 
+L 135.895333 48.327902 
+L 139.359167 47.307351 
+L 143.317833 46.36846 
+L 147.771333 45.547345 
+L 152.719667 44.86732 
+L 158.162833 44.340541 
+L 164.595667 43.947717 
+L 172.018167 43.727432 
+L 180.430333 43.700501 
+L 190.821833 43.902732 
+L 203.192667 44.381357 
+L 218.5325 45.214598 
+L 238.325833 46.528943 
+L 269.995167 48.888041 
+L 326.901 53.125422 
+L 360.054833 55.353035 
+L 374.405 56.244991 
+L 374.405 56.244991 
+" clip-path="url(#svensson-pf06acf0216)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="svensson-patch_3">
+    <path d="M 62.66 223.18 
+L 62.66 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="svensson-patch_4">
+    <path d="M 62.66 223.18 
+L 389.25 223.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="svensson-text_16">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="62.66" y="22.14" transform="rotate(-0 62.66 22.14)">An additional curvature component</text>
+   </g>
+   <g id="svensson-legend_1">
+    <g id="svensson-line2d_30">
+     <path d="M 312.52125 187.93125 
+L 320.52125 187.93125 
+L 328.52125 187.93125 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="svensson-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="334.92125" y="190.73125" transform="rotate(-0 334.92125 190.73125)">β₃ = -1.5%</text>
+    </g>
+    <g id="svensson-line2d_31">
+     <path d="M 312.52125 199.72375 
+L 320.52125 199.72375 
+L 328.52125 199.72375 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="svensson-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="334.92125" y="202.52375" transform="rotate(-0 334.92125 202.52375)">β₃ = +0%</text>
+    </g>
+    <g id="svensson-line2d_32">
+     <path d="M 312.52125 211.51625 
+L 320.52125 211.51625 
+L 328.52125 211.51625 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="svensson-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="334.92125" y="214.31625" transform="rotate(-0 334.92125 214.31625)">β₃ = +1.5%</text>
+    </g>
+   </g>
+  </g>
+  <g id="svensson-axes_2">
+   <g id="svensson-patch_5">
+    <path d="M 451.91 223.18 
+L 778.5 223.18 
+L 778.5 35.14 
+L 451.91 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="svensson-matplotlib.axis_3">
+    <g id="svensson-xtick_8">
+     <g id="svensson-line2d_33">
+      <path d="M 466.755 223.18 
+L 466.755 35.14 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_34">
+      <g>
+       <use href="#svensson-mf931c23329" x="466.755" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_20">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="466.755" y="237.018594" transform="rotate(-0 466.755 237.018594)">0</text>
+     </g>
+    </g>
+    <g id="svensson-xtick_9">
+     <g id="svensson-line2d_35">
+      <path d="M 516.238333 223.18 
+L 516.238333 35.14 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_36">
+      <g>
+       <use href="#svensson-mf931c23329" x="516.238333" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="516.238333" y="237.018594" transform="rotate(-0 516.238333 237.018594)">5</text>
+     </g>
+    </g>
+    <g id="svensson-xtick_10">
+     <g id="svensson-line2d_37">
+      <path d="M 565.721667 223.18 
+L 565.721667 35.14 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_38">
+      <g>
+       <use href="#svensson-mf931c23329" x="565.721667" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="565.721667" y="237.018594" transform="rotate(-0 565.721667 237.018594)">10</text>
+     </g>
+    </g>
+    <g id="svensson-xtick_11">
+     <g id="svensson-line2d_39">
+      <path d="M 615.205 223.18 
+L 615.205 35.14 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_40">
+      <g>
+       <use href="#svensson-mf931c23329" x="615.205" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="615.205" y="237.018594" transform="rotate(-0 615.205 237.018594)">15</text>
+     </g>
+    </g>
+    <g id="svensson-xtick_12">
+     <g id="svensson-line2d_41">
+      <path d="M 664.688333 223.18 
+L 664.688333 35.14 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_42">
+      <g>
+       <use href="#svensson-mf931c23329" x="664.688333" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="664.688333" y="237.018594" transform="rotate(-0 664.688333 237.018594)">20</text>
+     </g>
+    </g>
+    <g id="svensson-xtick_13">
+     <g id="svensson-line2d_43">
+      <path d="M 714.171667 223.18 
+L 714.171667 35.14 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_44">
+      <g>
+       <use href="#svensson-mf931c23329" x="714.171667" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="714.171667" y="237.018594" transform="rotate(-0 714.171667 237.018594)">25</text>
+     </g>
+    </g>
+    <g id="svensson-xtick_14">
+     <g id="svensson-line2d_45">
+      <path d="M 763.655 223.18 
+L 763.655 35.14 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_46">
+      <g>
+       <use href="#svensson-mf931c23329" x="763.655" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="763.655" y="237.018594" transform="rotate(-0 763.655 237.018594)">30</text>
+     </g>
+    </g>
+    <g id="svensson-text_27">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="615.205" y="249.728906" transform="rotate(-0 615.205 249.728906)">Maturity (years)</text>
+    </g>
+   </g>
+   <g id="svensson-matplotlib.axis_4">
+    <g id="svensson-ytick_7">
+     <g id="svensson-line2d_47">
+      <path d="M 451.91 214.632727 
+L 778.5 214.632727 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_48">
+      <g>
+       <use href="#svensson-md94101f803" x="451.91" y="214.632727" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="444.91" y="218.052024" transform="rotate(-0 444.91 218.052024)">1.50%</text>
+     </g>
+    </g>
+    <g id="svensson-ytick_8">
+     <g id="svensson-line2d_49">
+      <path d="M 451.91 184.755026 
+L 778.5 184.755026 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_50">
+      <g>
+       <use href="#svensson-md94101f803" x="451.91" y="184.755026" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="444.91" y="188.174323" transform="rotate(-0 444.91 188.174323)">2.00%</text>
+     </g>
+    </g>
+    <g id="svensson-ytick_9">
+     <g id="svensson-line2d_51">
+      <path d="M 451.91 154.877324 
+L 778.5 154.877324 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_52">
+      <g>
+       <use href="#svensson-md94101f803" x="451.91" y="154.877324" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="444.91" y="158.296621" transform="rotate(-0 444.91 158.296621)">2.50%</text>
+     </g>
+    </g>
+    <g id="svensson-ytick_10">
+     <g id="svensson-line2d_53">
+      <path d="M 451.91 124.999623 
+L 778.5 124.999623 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_54">
+      <g>
+       <use href="#svensson-md94101f803" x="451.91" y="124.999623" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="444.91" y="128.41892" transform="rotate(-0 444.91 128.41892)">3.00%</text>
+     </g>
+    </g>
+    <g id="svensson-ytick_11">
+     <g id="svensson-line2d_55">
+      <path d="M 451.91 95.121921 
+L 778.5 95.121921 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_56">
+      <g>
+       <use href="#svensson-md94101f803" x="451.91" y="95.121921" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="444.91" y="98.541218" transform="rotate(-0 444.91 98.541218)">3.50%</text>
+     </g>
+    </g>
+    <g id="svensson-ytick_12">
+     <g id="svensson-line2d_57">
+      <path d="M 451.91 65.24422 
+L 778.5 65.24422 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_58">
+      <g>
+       <use href="#svensson-md94101f803" x="451.91" y="65.24422" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="444.91" y="68.663517" transform="rotate(-0 444.91 68.663517)">4.00%</text>
+     </g>
+    </g>
+    <g id="svensson-ytick_13">
+     <g id="svensson-line2d_59">
+      <path d="M 451.91 35.366518 
+L 778.5 35.366518 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svensson-line2d_60">
+      <g>
+       <use href="#svensson-md94101f803" x="451.91" y="35.366518" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svensson-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="444.91" y="38.785815" transform="rotate(-0 444.91 38.785815)">4.50%</text>
+     </g>
+    </g>
+    <g id="svensson-text_35">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="410.447812" y="129.16" transform="rotate(-90 410.447812 129.16)">Instantaneous forward</text>
+    </g>
+   </g>
+   <g id="svensson-line2d_61">
+    <path d="M 466.755 214.632727 
+L 468.2395 193.207163 
+L 469.724 174.928785 
+L 471.2085 159.408734 
+L 472.693 146.302274 
+L 474.1775 135.304022 
+L 475.662 126.143674 
+L 477.1465 118.582184 
+L 478.631 112.408341 
+L 480.1155 107.435717 
+L 481.6 103.499924 
+L 482.589667 101.379842 
+L 483.579333 99.617352 
+L 484.569 98.177112 
+L 485.558667 97.026714 
+L 486.548333 96.136459 
+L 487.538 95.479146 
+L 488.527667 95.029884 
+L 489.517333 94.765908 
+L 490.507 94.666416 
+L 491.9915 94.784502 
+L 493.476 95.173137 
+L 494.9605 95.782595 
+L 496.939833 96.865017 
+L 499.414 98.53305 
+L 502.383 100.822586 
+L 515.248667 111.10893 
+L 518.7125 113.472008 
+L 522.176333 115.569181 
+L 525.640167 117.391281 
+L 529.104 118.941844 
+L 532.567833 120.232653 
+L 536.031667 121.28053 
+L 539.4955 122.105053 
+L 543.454167 122.800487 
+L 547.412833 123.262283 
+L 551.866333 123.539556 
+L 556.319833 123.598142 
+L 561.268167 123.449774 
+L 567.206167 123.032838 
+L 573.639 122.35482 
+L 581.556333 121.288875 
+L 591.947833 119.644696 
+L 609.267 116.637221 
+L 633.019 112.55553 
+L 648.853667 110.067584 
+L 663.698667 107.961941 
+L 678.543667 106.087264 
+L 693.388667 104.439015 
+L 708.7285 102.959662 
+L 725.058 101.613098 
+L 742.377167 100.413556 
+L 761.180833 99.341871 
+L 763.655 99.216773 
+L 763.655 99.216773 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="svensson-line2d_62">
+    <path d="M 466.755 214.632727 
+L 468.2395 191.185894 
+L 469.724 170.978468 
+L 471.2085 153.618434 
+L 472.693 138.757997 
+L 474.1775 126.088807 
+L 475.662 115.337685 
+L 477.1465 106.262796 
+L 478.631 98.650228 
+L 480.1155 92.310931 
+L 481.6 87.077982 
+L 483.0845 82.804133 
+L 484.569 79.359633 
+L 486.0535 76.630274 
+L 487.538 74.515644 
+L 489.0225 72.927577 
+L 490.507 71.788764 
+L 491.9915 71.031517 
+L 493.476 70.596662 
+L 494.9605 70.432562 
+L 496.445 70.494242 
+L 498.424333 70.860878 
+L 500.403667 71.481387 
+L 502.877833 72.51657 
+L 505.846833 74.009212 
+L 510.795167 76.782951 
+L 518.217667 80.93049 
+L 522.671167 83.179944 
+L 527.124667 85.1794 
+L 531.578167 86.916237 
+L 536.031667 88.399049 
+L 540.485167 89.647998 
+L 545.4335 90.792575 
+L 550.876667 91.798809 
+L 556.814667 92.648181 
+L 563.2475 93.337084 
+L 570.67 93.906098 
+L 579.577 94.361543 
+L 590.958167 94.709231 
+L 606.792833 94.948547 
+L 632.524167 95.080885 
+L 698.337 95.121002 
+L 763.655 95.121902 
+L 763.655 95.121902 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="svensson-line2d_63">
+    <path d="M 466.755 214.632727 
+L 468.2395 189.164624 
+L 469.724 167.02815 
+L 471.2085 147.828134 
+L 472.693 131.21372 
+L 474.1775 116.873593 
+L 475.662 104.531696 
+L 477.1465 93.943408 
+L 478.631 84.892115 
+L 480.1155 77.186146 
+L 481.6 70.656039 
+L 483.0845 65.152087 
+L 484.569 60.542155 
+L 486.0535 56.709723 
+L 487.538 53.552141 
+L 489.0225 50.979074 
+L 490.507 48.911113 
+L 491.9915 47.278532 
+L 493.476 46.020186 
+L 494.9605 45.08253 
+L 496.445 44.418736 
+L 497.9295 43.987918 
+L 499.414 43.754434 
+L 501.393333 43.697083 
+L 503.372667 43.873432 
+L 505.846833 44.344867 
+L 508.815833 45.174533 
+L 512.7745 46.560775 
+L 519.207333 49.112157 
+L 529.598833 53.211278 
+L 536.5265 55.686347 
+L 543.454167 57.925972 
+L 551.3715 60.237256 
+L 560.2785 62.595095 
+L 571.164833 65.23498 
+L 584.525333 68.234902 
+L 599.865167 71.446114 
+L 615.205 74.434077 
+L 630.05 77.102606 
+L 644.400167 79.458805 
+L 658.750333 81.587201 
+L 673.1005 83.487962 
+L 687.9455 85.222683 
+L 703.285333 86.782779 
+L 719.12 88.166211 
+L 735.944333 89.410079 
+L 753.758333 90.505188 
+L 763.655 91.027031 
+L 763.655 91.027031 
+" clip-path="url(#svensson-pdc1c468870)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="svensson-patch_6">
+    <path d="M 451.91 223.18 
+L 451.91 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="svensson-patch_7">
+    <path d="M 451.91 223.18 
+L 778.5 223.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="svensson-text_36">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="451.91" y="22.14" transform="rotate(-0 451.91 22.14)">A second time scale in forwards</text>
+   </g>
+   <g id="svensson-legend_2">
+    <g id="svensson-line2d_64">
+     <path d="M 701.77125 45.66875 
+L 709.77125 45.66875 
+L 717.77125 45.66875 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="svensson-text_37">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="724.17125" y="48.46875" transform="rotate(-0 724.17125 48.46875)">β₃ = -1.5%</text>
+    </g>
+    <g id="svensson-line2d_65">
+     <path d="M 701.77125 57.46125 
+L 709.77125 57.46125 
+L 717.77125 57.46125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="svensson-text_38">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="724.17125" y="60.26125" transform="rotate(-0 724.17125 60.26125)">β₃ = +0%</text>
+    </g>
+    <g id="svensson-line2d_66">
+     <path d="M 701.77125 69.25375 
+L 709.77125 69.25375 
+L 717.77125 69.25375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="svensson-text_39">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="724.17125" y="72.05375" transform="rotate(-0 724.17125 72.05375)">β₃ = +1.5%</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="svensson-pf06acf0216">
+   <rect x="62.66" y="35.14" width="326.59" height="188.04"/>
+  </clipPath>
+  <clipPath id="svensson-pdc1c468870">
+   <rect x="451.91" y="35.14" width="326.59" height="188.04"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,5 @@
+__pycache__/
+.venv/
+node_modules/
+browser-temp/
+package-lock.json

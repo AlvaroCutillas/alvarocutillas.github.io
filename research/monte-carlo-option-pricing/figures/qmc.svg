@@ -1,0 +1,686 @@
+<svg role="img" aria-labelledby="qmc-title qmc-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="qmc-title">Figure 10 · Randomized quasi-Monte Carlo on a one-dimensional payoff</title><desc id="qmc-desc">32 independent repetitions per method and N; IID seed 1005, separate Sobol scramble seeds. Each Sobol sample has 2^m points. The comparison uses exact BSM truth; this favourable one-dimensional result is not a universal convergence-rate guarantee.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T19:11:27.765477</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="qmc-figure_1">
+  <g id="qmc-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="qmc-axes_1">
+   <g id="qmc-patch_2">
+    <path d="M 55.629059 206.188 
+L 648.9 206.188 
+L 648.9 13.5 
+L 55.629059 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="qmc-matplotlib.axis_1">
+    <g id="qmc-xtick_1">
+     <g id="qmc-line2d_1">
+      <path d="M 311.104184 206.188 
+L 311.104184 13.5 
+" clip-path="url(#qmc-pa9b61f08f0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="qmc-line2d_2">
+      <defs>
+       <path id="qmc-mff9e6096a8" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#qmc-mff9e6096a8" x="311.104184" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="qmc-text_1">
+      <!-- $\mathdefault{10^{3}}$ -->
+      <g style="fill: #939b94" transform="translate(303.184184 220.026594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">3</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_2">
+     <g id="qmc-line2d_3">
+      <path d="M 567.052678 206.188 
+L 567.052678 13.5 
+" clip-path="url(#qmc-pa9b61f08f0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="qmc-line2d_4">
+      <g>
+       <use href="#qmc-mff9e6096a8" x="567.052678" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="qmc-text_2">
+      <!-- $\mathdefault{10^{4}}$ -->
+      <g style="fill: #939b94" transform="translate(559.132678 220.026594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.40625">4</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_3">
+     <g id="qmc-line2d_5">
+      <defs>
+       <path id="qmc-mf1ba4923af" d="M 0 0 
+L 0 2 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#qmc-mf1ba4923af" x="132.203864" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_4">
+     <g id="qmc-line2d_6">
+      <g>
+       <use href="#qmc-mf1ba4923af" x="177.274157" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_5">
+     <g id="qmc-line2d_7">
+      <g>
+       <use href="#qmc-mf1ba4923af" x="209.252038" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_6">
+     <g id="qmc-line2d_8">
+      <g>
+       <use href="#qmc-mf1ba4923af" x="234.05601" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_7">
+     <g id="qmc-line2d_9">
+      <g>
+       <use href="#qmc-mf1ba4923af" x="254.322331" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_8">
+     <g id="qmc-line2d_10">
+      <g>
+       <use href="#qmc-mf1ba4923af" x="271.457261" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_9">
+     <g id="qmc-line2d_11">
+      <g>
+       <use href="#qmc-mf1ba4923af" x="286.300212" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_10">
+     <g id="qmc-line2d_12">
+      <g>
+       <use href="#qmc-mf1ba4923af" x="299.392623" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_11">
+     <g id="qmc-line2d_13">
+      <g>
+       <use href="#qmc-mf1ba4923af" x="388.152358" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_12">
+     <g id="qmc-line2d_14">
+      <g>
+       <use href="#qmc-mf1ba4923af" x="433.222651" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_13">
+     <g id="qmc-line2d_15">
+      <g>
+       <use href="#qmc-mf1ba4923af" x="465.200532" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_14">
+     <g id="qmc-line2d_16">
+      <g>
+       <use href="#qmc-mf1ba4923af" x="490.004504" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_15">
+     <g id="qmc-line2d_17">
+      <g>
+       <use href="#qmc-mf1ba4923af" x="510.270825" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_16">
+     <g id="qmc-line2d_18">
+      <g>
+       <use href="#qmc-mf1ba4923af" x="527.405755" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_17">
+     <g id="qmc-line2d_19">
+      <g>
+       <use href="#qmc-mf1ba4923af" x="542.248707" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_18">
+     <g id="qmc-line2d_20">
+      <g>
+       <use href="#qmc-mf1ba4923af" x="555.341118" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-xtick_19">
+     <g id="qmc-line2d_21">
+      <g>
+       <use href="#qmc-mf1ba4923af" x="644.100853" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-text_3">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="352.26453" y="232.736906" transform="rotate(-0 352.26453 232.736906)">Payoff evaluations per repetition N</text>
+    </g>
+   </g>
+   <g id="qmc-matplotlib.axis_2">
+    <g id="qmc-ytick_1">
+     <g id="qmc-line2d_22">
+      <path d="M 55.629059 184.151059 
+L 648.9 184.151059 
+" clip-path="url(#qmc-pa9b61f08f0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="qmc-line2d_23">
+      <defs>
+       <path id="qmc-mf8290eb803" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#qmc-mf8290eb803" x="55.629059" y="184.151059" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="qmc-text_4">
+      <!-- $\mathdefault{10^{-3}}$ -->
+      <g style="fill: #939b94" transform="translate(27.479059 187.570356)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.318750000000001">−3</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_2">
+     <g id="qmc-line2d_24">
+      <path d="M 55.629059 132.594701 
+L 648.9 132.594701 
+" clip-path="url(#qmc-pa9b61f08f0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="qmc-line2d_25">
+      <g>
+       <use href="#qmc-mf8290eb803" x="55.629059" y="132.594701" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="qmc-text_5">
+      <!-- $\mathdefault{10^{-2}}$ -->
+      <g style="fill: #939b94" transform="translate(27.479059 136.013998)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.318750000000001">−2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_3">
+     <g id="qmc-line2d_26">
+      <path d="M 55.629059 81.038343 
+L 648.9 81.038343 
+" clip-path="url(#qmc-pa9b61f08f0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="qmc-line2d_27">
+      <g>
+       <use href="#qmc-mf8290eb803" x="55.629059" y="81.038343" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="qmc-text_6">
+      <!-- $\mathdefault{10^{-1}}$ -->
+      <g style="fill: #939b94" transform="translate(27.479059 84.457639)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.40625">−1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_4">
+     <g id="qmc-line2d_28">
+      <path d="M 55.629059 29.481985 
+L 648.9 29.481985 
+" clip-path="url(#qmc-pa9b61f08f0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="qmc-line2d_29">
+      <g>
+       <use href="#qmc-mf8290eb803" x="55.629059" y="29.481985" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="qmc-text_7">
+      <!-- $\mathdefault{10^{0}}$ -->
+      <g style="fill: #939b94" transform="translate(32.789059 32.901281)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_5">
+     <g id="qmc-line2d_30">
+      <defs>
+       <path id="qmc-m30ade05b1e" d="M 0 0 
+L -2 0 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="204.667396" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_6">
+     <g id="qmc-line2d_31">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="199.671069" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_7">
+     <g id="qmc-line2d_32">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="195.588772" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_8">
+     <g id="qmc-line2d_33">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="192.13724" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_9">
+     <g id="qmc-line2d_34">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="189.147386" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_10">
+     <g id="qmc-line2d_35">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="186.510148" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_11">
+     <g id="qmc-line2d_36">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="168.631048" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_12">
+     <g id="qmc-line2d_37">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="159.552424" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_13">
+     <g id="qmc-line2d_38">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="153.111038" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_14">
+     <g id="qmc-line2d_39">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="148.114711" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_15">
+     <g id="qmc-line2d_40">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="144.032414" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_16">
+     <g id="qmc-line2d_41">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="140.580882" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_17">
+     <g id="qmc-line2d_42">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="137.591028" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_18">
+     <g id="qmc-line2d_43">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="134.95379" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_19">
+     <g id="qmc-line2d_44">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="117.07469" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_20">
+     <g id="qmc-line2d_45">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="107.996066" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_21">
+     <g id="qmc-line2d_46">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="101.55468" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_22">
+     <g id="qmc-line2d_47">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="96.558353" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_23">
+     <g id="qmc-line2d_48">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="92.476056" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_24">
+     <g id="qmc-line2d_49">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="89.024524" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_25">
+     <g id="qmc-line2d_50">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="86.03467" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_26">
+     <g id="qmc-line2d_51">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="83.397432" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_27">
+     <g id="qmc-line2d_52">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="65.518332" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_28">
+     <g id="qmc-line2d_53">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="56.439708" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_29">
+     <g id="qmc-line2d_54">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="49.998322" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_30">
+     <g id="qmc-line2d_55">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="45.001995" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_31">
+     <g id="qmc-line2d_56">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="40.919698" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_32">
+     <g id="qmc-line2d_57">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="37.468165" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_33">
+     <g id="qmc-line2d_58">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="34.478312" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_34">
+     <g id="qmc-line2d_59">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="31.841074" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-ytick_35">
+     <g id="qmc-line2d_60">
+      <g>
+       <use href="#qmc-m30ade05b1e" x="55.629059" y="13.961974" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="qmc-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.607341" y="109.844" transform="rotate(-90 21.607341 109.844)">Empirical RMSE across 32 repetitions</text>
+    </g>
+   </g>
+   <g id="qmc-line2d_61">
+    <path d="M 82.59592 22.258545 
+L 159.644094 34.312951 
+L 236.692269 38.35287 
+L 313.740443 43.521367 
+L 390.788617 54.595021 
+L 467.836791 59.031565 
+L 544.884965 70.651861 
+L 621.933139 78.725011 
+" clip-path="url(#qmc-pa9b61f08f0)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="qmc-mc23209f162" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #7e8d86"/>
+    </defs>
+    <g clip-path="url(#qmc-pa9b61f08f0)">
+     <use href="#qmc-mc23209f162" x="82.59592" y="22.258545" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#qmc-mc23209f162" x="159.644094" y="34.312951" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#qmc-mc23209f162" x="236.692269" y="38.35287" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#qmc-mc23209f162" x="313.740443" y="43.521367" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#qmc-mc23209f162" x="390.788617" y="54.595021" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#qmc-mc23209f162" x="467.836791" y="59.031565" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#qmc-mc23209f162" x="544.884965" y="70.651861" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#qmc-mc23209f162" x="621.933139" y="78.725011" style="fill: #7e8d86; stroke: #7e8d86"/>
+    </g>
+   </g>
+   <g id="qmc-line2d_62">
+    <path d="M 82.59592 33.466167 
+L 159.644094 34.760511 
+L 236.692269 52.732207 
+L 313.740443 55.175337 
+L 390.788617 63.413554 
+L 467.836791 75.348599 
+L 544.884965 76.046118 
+L 621.933139 85.4788 
+" clip-path="url(#qmc-pa9b61f08f0)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="qmc-me6e02e2b75" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #d3ad84"/>
+    </defs>
+    <g clip-path="url(#qmc-pa9b61f08f0)">
+     <use href="#qmc-me6e02e2b75" x="82.59592" y="33.466167" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#qmc-me6e02e2b75" x="159.644094" y="34.760511" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#qmc-me6e02e2b75" x="236.692269" y="52.732207" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#qmc-me6e02e2b75" x="313.740443" y="55.175337" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#qmc-me6e02e2b75" x="390.788617" y="63.413554" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#qmc-me6e02e2b75" x="467.836791" y="75.348599" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#qmc-me6e02e2b75" x="544.884965" y="76.046118" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#qmc-me6e02e2b75" x="621.933139" y="85.4788" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="qmc-line2d_63">
+    <path d="M 82.59592 85.830312 
+L 159.644094 103.987217 
+L 236.692269 112.183115 
+L 313.740443 130.594491 
+L 390.788617 144.646437 
+L 467.836791 155.645606 
+L 544.884965 184.013204 
+L 621.933139 197.429455 
+" clip-path="url(#qmc-pa9b61f08f0)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="qmc-m67068676c4" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#qmc-pa9b61f08f0)">
+     <use href="#qmc-m67068676c4" x="82.59592" y="85.830312" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#qmc-m67068676c4" x="159.644094" y="103.987217" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#qmc-m67068676c4" x="236.692269" y="112.183115" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#qmc-m67068676c4" x="313.740443" y="130.594491" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#qmc-m67068676c4" x="390.788617" y="144.646437" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#qmc-m67068676c4" x="467.836791" y="155.645606" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#qmc-m67068676c4" x="544.884965" y="184.013204" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#qmc-m67068676c4" x="621.933139" y="197.429455" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="qmc-patch_3">
+    <path d="M 55.629059 206.188 
+L 55.629059 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="qmc-patch_4">
+    <path d="M 55.629059 206.188 
+L 648.9 206.188 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="qmc-legend_1">
+    <g id="qmc-line2d_64">
+     <path d="M 551.82375 23.97875 
+L 559.82375 23.97875 
+L 567.82375 23.97875 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#qmc-mc23209f162" x="559.82375" y="23.97875" style="fill: #7e8d86; stroke: #7e8d86"/>
+     </g>
+    </g>
+    <g id="qmc-text_9">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="574.22375" y="26.77875" transform="rotate(-0 574.22375 26.77875)">IID</text>
+    </g>
+    <g id="qmc-line2d_65">
+     <path d="M 551.82375 35.72125 
+L 559.82375 35.72125 
+L 567.82375 35.72125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#qmc-me6e02e2b75" x="559.82375" y="35.72125" style="fill: #d3ad84; stroke: #d3ad84"/>
+     </g>
+    </g>
+    <g id="qmc-text_10">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="574.22375" y="38.52125" transform="rotate(-0 574.22375 38.52125)">Antithetic</text>
+    </g>
+    <g id="qmc-line2d_66">
+     <path d="M 551.82375 47.46375 
+L 559.82375 47.46375 
+L 567.82375 47.46375 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#qmc-m67068676c4" x="559.82375" y="47.46375" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="qmc-text_11">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="574.22375" y="50.26375" transform="rotate(-0 574.22375 50.26375)">Scrambled Sobol</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="qmc-pa9b61f08f0">
+   <rect x="55.629059" y="13.5" width="593.270941" height="192.688"/>
+  </clipPath>
+ </defs>
+</svg>

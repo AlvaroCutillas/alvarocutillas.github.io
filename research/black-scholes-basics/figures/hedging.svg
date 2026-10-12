@@ -1,0 +1,732 @@
+<svg role="img" aria-labelledby="hedging-title hedging-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="262.8pt" viewBox="0 0 662.4 262.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="hedging-title">Figure 07 · Replication error under discrete rebalancing</title><desc id="hedging-desc">5,000 GBM paths for each schedule; S₀ = K = 100, r = 5%, q = 0, σ = 20%, T = 1, seed 42. Every rebalance is self-financing. No transaction costs or jumps; the histogram window is −5 to +5.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T17:24:10.119515</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="hedging-figure_1">
+  <g id="hedging-patch_1">
+   <path d="M 0 262.8 
+L 662.4 262.8 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="hedging-axes_1">
+   <g id="hedging-patch_2">
+    <path d="M 48.26 219.58 
+L 648.9 219.58 
+L 648.9 16.193477 
+L 48.26 16.193477 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="hedging-matplotlib.axis_1">
+    <g id="hedging-xtick_1">
+     <g id="hedging-line2d_1">
+      <path d="M 130.165455 219.58 
+L 130.165455 16.193477 
+" clip-path="url(#hedging-pda26953862)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedging-line2d_2">
+      <defs>
+       <path id="hedging-mc570b3abda" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#hedging-mc570b3abda" x="130.165455" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedging-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="130.165455" y="233.418594" transform="rotate(-0 130.165455 233.418594)">−4</text>
+     </g>
+    </g>
+    <g id="hedging-xtick_2">
+     <g id="hedging-line2d_3">
+      <path d="M 239.372727 219.58 
+L 239.372727 16.193477 
+" clip-path="url(#hedging-pda26953862)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedging-line2d_4">
+      <g>
+       <use href="#hedging-mc570b3abda" x="239.372727" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedging-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="239.372727" y="233.418594" transform="rotate(-0 239.372727 233.418594)">−2</text>
+     </g>
+    </g>
+    <g id="hedging-xtick_3">
+     <g id="hedging-line2d_5">
+      <path d="M 348.58 219.58 
+L 348.58 16.193477 
+" clip-path="url(#hedging-pda26953862)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedging-line2d_6">
+      <g>
+       <use href="#hedging-mc570b3abda" x="348.58" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedging-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="348.58" y="233.418594" transform="rotate(-0 348.58 233.418594)">0</text>
+     </g>
+    </g>
+    <g id="hedging-xtick_4">
+     <g id="hedging-line2d_7">
+      <path d="M 457.787273 219.58 
+L 457.787273 16.193477 
+" clip-path="url(#hedging-pda26953862)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedging-line2d_8">
+      <g>
+       <use href="#hedging-mc570b3abda" x="457.787273" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedging-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="457.787273" y="233.418594" transform="rotate(-0 457.787273 233.418594)">2</text>
+     </g>
+    </g>
+    <g id="hedging-xtick_5">
+     <g id="hedging-line2d_9">
+      <path d="M 566.994545 219.58 
+L 566.994545 16.193477 
+" clip-path="url(#hedging-pda26953862)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedging-line2d_10">
+      <g>
+       <use href="#hedging-mc570b3abda" x="566.994545" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedging-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="566.994545" y="233.418594" transform="rotate(-0 566.994545 233.418594)">4</text>
+     </g>
+    </g>
+    <g id="hedging-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="348.58" y="246.128906" transform="rotate(-0 348.58 246.128906)">Replication portfolio − terminal call payoff</text>
+    </g>
+   </g>
+   <g id="hedging-matplotlib.axis_2">
+    <g id="hedging-ytick_1">
+     <g id="hedging-line2d_11">
+      <path d="M 48.26 219.58 
+L 648.9 219.58 
+" clip-path="url(#hedging-pda26953862)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedging-line2d_12">
+      <defs>
+       <path id="hedging-md4f2bf0026" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#hedging-md4f2bf0026" x="48.26" y="219.58" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedging-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="222.999297" transform="rotate(-0 41.26 222.999297)">0.0</text>
+     </g>
+    </g>
+    <g id="hedging-ytick_2">
+     <g id="hedging-line2d_13">
+      <path d="M 48.26 185.834103 
+L 648.9 185.834103 
+" clip-path="url(#hedging-pda26953862)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedging-line2d_14">
+      <g>
+       <use href="#hedging-md4f2bf0026" x="48.26" y="185.834103" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedging-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="189.2534" transform="rotate(-0 41.26 189.2534)">0.2</text>
+     </g>
+    </g>
+    <g id="hedging-ytick_3">
+     <g id="hedging-line2d_15">
+      <path d="M 48.26 152.088206 
+L 648.9 152.088206 
+" clip-path="url(#hedging-pda26953862)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedging-line2d_16">
+      <g>
+       <use href="#hedging-md4f2bf0026" x="48.26" y="152.088206" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedging-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="155.507502" transform="rotate(-0 41.26 155.507502)">0.4</text>
+     </g>
+    </g>
+    <g id="hedging-ytick_4">
+     <g id="hedging-line2d_17">
+      <path d="M 48.26 118.342308 
+L 648.9 118.342308 
+" clip-path="url(#hedging-pda26953862)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedging-line2d_18">
+      <g>
+       <use href="#hedging-md4f2bf0026" x="48.26" y="118.342308" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedging-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="121.761605" transform="rotate(-0 41.26 121.761605)">0.6</text>
+     </g>
+    </g>
+    <g id="hedging-ytick_5">
+     <g id="hedging-line2d_19">
+      <path d="M 48.26 84.596411 
+L 648.9 84.596411 
+" clip-path="url(#hedging-pda26953862)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedging-line2d_20">
+      <g>
+       <use href="#hedging-md4f2bf0026" x="48.26" y="84.596411" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedging-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="88.015708" transform="rotate(-0 41.26 88.015708)">0.8</text>
+     </g>
+    </g>
+    <g id="hedging-ytick_6">
+     <g id="hedging-line2d_21">
+      <path d="M 48.26 50.850514 
+L 648.9 50.850514 
+" clip-path="url(#hedging-pda26953862)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedging-line2d_22">
+      <g>
+       <use href="#hedging-md4f2bf0026" x="48.26" y="50.850514" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedging-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="54.269811" transform="rotate(-0 41.26 54.269811)">1.0</text>
+     </g>
+    </g>
+    <g id="hedging-ytick_7">
+     <g id="hedging-line2d_23">
+      <path d="M 48.26 17.104617 
+L 648.9 17.104617 
+" clip-path="url(#hedging-pda26953862)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedging-line2d_24">
+      <g>
+       <use href="#hedging-md4f2bf0026" x="48.26" y="17.104617" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedging-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="20.523913" transform="rotate(-0 41.26 20.523913)">1.2</text>
+     </g>
+    </g>
+    <g id="hedging-text_14">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.075469" y="117.886739" transform="rotate(-90 21.075469 117.886739)">Empirical density</text>
+    </g>
+   </g>
+   <g id="hedging-patch_3">
+    <path d="M 75.561818 219.58 
+L 75.561818 217.520649 
+L 86.482545 217.520649 
+L 86.482545 217.177424 
+L 91.942909 217.177424 
+L 91.942909 217.520649 
+L 97.403273 217.520649 
+L 97.403273 216.147748 
+L 102.863636 216.147748 
+L 102.863636 218.207099 
+L 108.324 218.207099 
+L 108.324 217.520649 
+L 113.784364 217.520649 
+L 113.784364 217.177424 
+L 119.244727 217.177424 
+L 119.244727 216.834199 
+L 124.705091 216.834199 
+L 124.705091 216.147748 
+L 130.165455 216.147748 
+L 130.165455 215.461298 
+L 135.625818 215.461298 
+L 135.625818 217.177424 
+L 141.086182 217.177424 
+L 141.086182 215.118073 
+L 146.546545 215.118073 
+L 146.546545 213.745172 
+L 152.006909 213.745172 
+L 152.006909 213.401947 
+L 157.467273 213.401947 
+L 157.467273 216.147748 
+L 162.927636 216.147748 
+L 162.927636 215.804523 
+L 168.388 215.804523 
+L 168.388 214.774848 
+L 173.848364 214.774848 
+L 173.848364 213.058722 
+L 179.308727 213.058722 
+L 179.308727 210.999371 
+L 184.769091 210.999371 
+L 184.769091 211.685821 
+L 190.229455 211.685821 
+L 190.229455 209.283245 
+L 195.689818 209.283245 
+L 195.689818 210.312921 
+L 201.150182 210.312921 
+L 201.150182 208.596795 
+L 206.610545 208.596795 
+L 206.610545 209.626471 
+L 212.070909 209.626471 
+L 212.070909 206.880669 
+L 217.531273 206.880669 
+L 217.531273 206.537444 
+L 228.452 206.537444 
+L 228.452 204.478093 
+L 233.912364 204.478093 
+L 233.912364 202.075517 
+L 239.372727 202.075517 
+L 239.372727 203.105193 
+L 244.833091 203.105193 
+L 244.833091 197.270365 
+L 250.293455 197.270365 
+L 250.293455 196.92714 
+L 255.753818 196.92714 
+L 255.753818 198.643266 
+L 261.214182 198.643266 
+L 261.214182 185.943935 
+L 266.674545 185.943935 
+L 266.674545 186.97361 
+L 272.134909 186.97361 
+L 272.134909 195.554239 
+L 277.595273 195.554239 
+L 277.595273 192.808438 
+L 283.055636 192.808438 
+L 283.055636 193.494888 
+L 288.516 193.494888 
+L 288.516 189.376186 
+L 293.976364 189.376186 
+L 293.976364 181.482008 
+L 299.436727 181.482008 
+L 299.436727 184.227809 
+L 304.897091 184.227809 
+L 304.897091 188.689736 
+L 310.357455 188.689736 
+L 310.357455 182.511683 
+L 315.817818 182.511683 
+L 315.817818 178.736207 
+L 321.278182 178.736207 
+L 321.278182 182.854908 
+L 326.738545 182.854908 
+L 326.738545 184.571034 
+L 332.198909 184.571034 
+L 332.198909 181.482008 
+L 337.659273 181.482008 
+L 337.659273 181.138783 
+L 343.119636 181.138783 
+L 343.119636 174.96073 
+L 348.58 174.96073 
+L 348.58 173.244604 
+L 354.040364 173.244604 
+L 354.040364 176.33363 
+L 359.500727 176.33363 
+L 359.500727 179.422657 
+L 364.961091 179.422657 
+L 364.961091 176.676856 
+L 370.421455 176.676856 
+L 370.421455 179.765882 
+L 375.881818 179.765882 
+L 375.881818 182.168458 
+L 381.342182 182.168458 
+L 381.342182 185.943935 
+L 386.802545 185.943935 
+L 386.802545 178.049756 
+L 392.262909 178.049756 
+L 392.262909 189.032961 
+L 403.183636 189.032961 
+L 403.183636 188.689736 
+L 408.644 188.689736 
+L 408.644 191.778762 
+L 414.104364 191.778762 
+L 414.104364 190.405862 
+L 419.564727 190.405862 
+L 419.564727 190.749087 
+L 425.025091 190.749087 
+L 425.025091 193.494888 
+L 430.485455 193.494888 
+L 430.485455 195.554239 
+L 435.945818 195.554239 
+L 435.945818 197.956815 
+L 441.406182 197.956815 
+L 441.406182 198.30004 
+L 446.866545 198.30004 
+L 446.866545 196.583915 
+L 452.326909 196.583915 
+L 452.326909 199.672941 
+L 457.787273 199.672941 
+L 457.787273 202.418742 
+L 463.247636 202.418742 
+L 463.247636 202.761967 
+L 468.708 202.761967 
+L 468.708 203.448418 
+L 474.168364 203.448418 
+L 474.168364 206.194219 
+L 479.628727 206.194219 
+L 479.628727 203.791643 
+L 485.089091 203.791643 
+L 485.089091 207.910345 
+L 490.549455 207.910345 
+L 490.549455 206.194219 
+L 496.009818 206.194219 
+L 496.009818 207.223894 
+L 501.470182 207.223894 
+L 501.470182 210.312921 
+L 506.930545 210.312921 
+L 506.930545 209.969696 
+L 512.390909 209.969696 
+L 512.390909 212.029047 
+L 517.851273 212.029047 
+L 517.851273 208.94002 
+L 523.311636 208.94002 
+L 523.311636 211.685821 
+L 528.772 211.685821 
+L 528.772 212.029047 
+L 534.232364 212.029047 
+L 534.232364 215.461298 
+L 539.692727 215.461298 
+L 539.692727 216.490974 
+L 545.153091 216.490974 
+L 545.153091 213.745172 
+L 550.613455 213.745172 
+L 550.613455 215.461298 
+L 561.534182 215.461298 
+L 561.534182 213.745172 
+L 566.994545 213.745172 
+L 566.994545 215.804523 
+L 572.454909 215.804523 
+L 572.454909 215.118073 
+L 577.915273 215.118073 
+L 577.915273 216.834199 
+L 583.375636 216.834199 
+L 583.375636 215.461298 
+L 588.836 215.461298 
+L 588.836 217.177424 
+L 594.296364 217.177424 
+L 594.296364 217.520649 
+L 599.756727 217.520649 
+L 599.756727 217.863874 
+L 605.217091 217.863874 
+L 605.217091 218.550325 
+L 610.677455 218.550325 
+L 610.677455 217.177424 
+L 616.137818 217.177424 
+L 616.137818 216.834199 
+L 621.598182 216.834199 
+L 621.598182 219.58 
+L 621.598182 219.58 
+" clip-path="url(#hedging-pda26953862)" style="fill: none; stroke: #d3ad84; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="hedging-patch_4">
+    <path d="M 75.561818 219.58 
+L 86.482545 219.58 
+L 86.482545 218.905082 
+L 91.942909 218.905082 
+L 91.942909 219.58 
+L 108.324 219.58 
+L 108.324 219.242541 
+L 113.784364 219.242541 
+L 113.784364 219.58 
+L 119.244727 219.58 
+L 119.244727 219.242541 
+L 124.705091 219.242541 
+L 124.705091 219.58 
+L 141.086182 219.58 
+L 141.086182 219.242541 
+L 146.546545 219.242541 
+L 146.546545 218.905082 
+L 162.927636 218.905082 
+L 162.927636 217.892705 
+L 168.388 217.892705 
+L 168.388 218.905082 
+L 173.848364 218.905082 
+L 173.848364 218.230164 
+L 184.769091 218.230164 
+L 184.769091 219.242541 
+L 190.229455 219.242541 
+L 190.229455 217.892705 
+L 195.689818 217.892705 
+L 195.689818 216.880328 
+L 201.150182 216.880328 
+L 201.150182 217.217787 
+L 206.610545 217.217787 
+L 206.610545 216.542869 
+L 212.070909 216.542869 
+L 212.070909 215.193033 
+L 217.531273 215.193033 
+L 217.531273 215.530492 
+L 222.991636 215.530492 
+L 222.991636 214.855574 
+L 228.452 214.855574 
+L 228.452 212.830821 
+L 233.912364 212.830821 
+L 233.912364 212.155903 
+L 239.372727 212.155903 
+L 239.372727 211.480985 
+L 250.293455 211.480985 
+L 250.293455 211.143526 
+L 255.753818 211.143526 
+L 255.753818 209.79369 
+L 261.214182 209.79369 
+L 261.214182 206.4191 
+L 266.674545 206.4191 
+L 266.674545 204.394346 
+L 272.134909 204.394346 
+L 272.134909 198.320085 
+L 277.595273 198.320085 
+L 277.595273 195.282954 
+L 283.055636 195.282954 
+L 283.055636 192.583282 
+L 288.516 192.583282 
+L 288.516 186.171562 
+L 293.976364 186.171562 
+L 293.976364 187.183939 
+L 299.436727 187.183939 
+L 299.436727 180.772218 
+L 304.897091 180.772218 
+L 304.897091 171.998285 
+L 310.357455 171.998285 
+L 310.357455 163.561811 
+L 315.817818 163.561811 
+L 315.817818 163.224352 
+L 321.278182 163.224352 
+L 321.278182 153.7755 
+L 326.738545 153.7755 
+L 326.738545 146.688862 
+L 332.198909 146.688862 
+L 332.198909 139.602224 
+L 337.659273 139.602224 
+L 337.659273 140.952059 
+L 343.119636 140.952059 
+L 343.119636 121.379439 
+L 348.58 121.379439 
+L 348.58 135.552716 
+L 354.040364 135.552716 
+L 354.040364 141.626977 
+L 359.500727 141.626977 
+L 359.500727 130.82829 
+L 364.961091 130.82829 
+L 364.961091 147.36378 
+L 370.421455 147.36378 
+L 370.421455 156.812631 
+L 375.881818 156.812631 
+L 375.881818 154.450418 
+L 381.342182 154.450418 
+L 381.342182 167.273859 
+L 386.802545 167.273859 
+L 386.802545 164.574188 
+L 392.262909 164.574188 
+L 392.262909 176.385252 
+L 397.723273 176.385252 
+L 397.723273 178.410005 
+L 403.183636 178.410005 
+L 403.183636 186.171562 
+L 408.644 186.171562 
+L 408.644 189.88361 
+L 414.104364 189.88361 
+L 414.104364 194.270577 
+L 419.564727 194.270577 
+L 419.564727 204.394346 
+L 425.025091 204.394346 
+L 425.025091 203.04451 
+L 430.485455 203.04451 
+L 430.485455 204.731805 
+L 435.945818 204.731805 
+L 435.945818 209.118772 
+L 441.406182 209.118772 
+L 441.406182 207.768936 
+L 446.866545 207.768936 
+L 446.866545 208.443854 
+L 452.326909 208.443854 
+L 452.326909 213.843197 
+L 463.247636 213.843197 
+L 463.247636 217.217787 
+L 468.708 217.217787 
+L 468.708 216.20541 
+L 474.168364 216.20541 
+L 474.168364 217.555246 
+L 485.089091 217.555246 
+L 485.089091 217.217787 
+L 490.549455 217.217787 
+L 490.549455 217.555246 
+L 496.009818 217.555246 
+L 496.009818 217.217787 
+L 501.470182 217.217787 
+L 501.470182 218.230164 
+L 517.851273 218.230164 
+L 517.851273 218.905082 
+L 523.311636 218.905082 
+L 523.311636 219.242541 
+L 545.153091 219.242541 
+L 545.153091 219.58 
+L 550.613455 219.58 
+L 550.613455 219.242541 
+L 556.073818 219.242541 
+L 556.073818 219.58 
+L 577.915273 219.58 
+L 577.915273 219.242541 
+L 583.375636 219.242541 
+L 583.375636 219.58 
+L 621.598182 219.58 
+L 621.598182 219.58 
+" clip-path="url(#hedging-pda26953862)" style="fill: none; stroke: #91a9bd; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="hedging-patch_5">
+    <path d="M 75.561818 219.58 
+L 206.610545 219.58 
+L 206.610545 219.242541 
+L 212.070909 219.242541 
+L 212.070909 219.58 
+L 222.991636 219.58 
+L 222.991636 219.242541 
+L 228.452 219.242541 
+L 228.452 219.58 
+L 239.372727 219.58 
+L 239.372727 219.242541 
+L 250.293455 219.242541 
+L 250.293455 219.58 
+L 255.753818 219.58 
+L 255.753818 218.905082 
+L 261.214182 218.905082 
+L 261.214182 218.567623 
+L 266.674545 218.567623 
+L 266.674545 217.555246 
+L 272.134909 217.555246 
+L 272.134909 216.542869 
+L 277.595273 216.542869 
+L 277.595273 215.867951 
+L 283.055636 215.867951 
+L 283.055636 213.505738 
+L 288.516 213.505738 
+L 288.516 209.456231 
+L 293.976364 209.456231 
+L 293.976364 207.094018 
+L 299.436727 207.094018 
+L 299.436727 204.394346 
+L 304.897091 204.394346 
+L 304.897091 197.307708 
+L 310.357455 197.307708 
+L 310.357455 185.834103 
+L 315.817818 185.834103 
+L 315.817818 161.537057 
+L 321.278182 161.537057 
+L 321.278182 140.277141 
+L 326.738545 140.277141 
+L 326.738545 116.317554 
+L 332.198909 116.317554 
+L 332.198909 88.983378 
+L 337.659273 88.983378 
+L 337.659273 56.924775 
+L 343.119636 56.924775 
+L 343.119636 34.652483 
+L 348.58 34.652483 
+L 348.58 25.87855 
+L 354.040364 25.87855 
+L 354.040364 48.150842 
+L 359.500727 48.150842 
+L 359.500727 78.859609 
+L 364.961091 78.859609 
+L 364.961091 120.029603 
+L 370.421455 120.029603 
+L 370.421455 142.639354 
+L 375.881818 142.639354 
+L 375.881818 165.249105 
+L 381.342182 165.249105 
+L 381.342182 188.533775 
+L 386.802545 188.533775 
+L 386.802545 192.920741 
+L 392.262909 192.920741 
+L 392.262909 197.645167 
+L 397.723273 197.645167 
+L 397.723273 208.781313 
+L 403.183636 208.781313 
+L 403.183636 210.806067 
+L 408.644 210.806067 
+L 408.644 214.180656 
+L 414.104364 214.180656 
+L 414.104364 213.16828 
+L 419.564727 213.16828 
+L 419.564727 216.20541 
+L 425.025091 216.20541 
+L 425.025091 217.217787 
+L 430.485455 217.217787 
+L 430.485455 218.905082 
+L 452.326909 218.905082 
+L 452.326909 219.242541 
+L 463.247636 219.242541 
+L 463.247636 219.58 
+L 621.598182 219.58 
+L 621.598182 219.58 
+" clip-path="url(#hedging-pda26953862)" style="fill: none; stroke: #a7bdb3; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="hedging-patch_6">
+    <path d="M 48.26 219.58 
+L 48.26 16.193477 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="hedging-patch_7">
+    <path d="M 48.26 219.58 
+L 648.9 219.58 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="hedging-legend_1">
+    <g id="hedging-patch_8">
+     <path d="M 504.23375 29.472227 
+L 520.23375 29.472227 
+L 520.23375 23.872227 
+L 504.23375 23.872227 
+L 504.23375 29.472227 
+z
+" style="fill: none; stroke: #d3ad84; stroke-width: 1.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="hedging-text_15">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="526.63375" y="29.472227" transform="rotate(-0 526.63375 29.472227)">12 rebalances · SD = 1.942</text>
+    </g>
+    <g id="hedging-patch_9">
+     <path d="M 504.23375 41.214727 
+L 520.23375 41.214727 
+L 520.23375 35.614727 
+L 504.23375 35.614727 
+L 504.23375 41.214727 
+z
+" style="fill: none; stroke: #91a9bd; stroke-width: 1.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="hedging-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="526.63375" y="41.214727" transform="rotate(-0 526.63375 41.214727)">52 rebalances · SD = 0.941</text>
+    </g>
+    <g id="hedging-patch_10">
+     <path d="M 504.23375 52.957227 
+L 520.23375 52.957227 
+L 520.23375 47.357227 
+L 504.23375 47.357227 
+L 504.23375 52.957227 
+z
+" style="fill: none; stroke: #a7bdb3; stroke-width: 1.7; stroke-linejoin: miter"/>
+    </g>
+    <g id="hedging-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="526.63375" y="52.957227" transform="rotate(-0 526.63375 52.957227)">252 rebalances · SD = 0.429</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="hedging-pda26953862">
+   <rect x="48.26" y="16.193477" width="600.64" height="203.386523"/>
+  </clipPath>
+ </defs>
+</svg>

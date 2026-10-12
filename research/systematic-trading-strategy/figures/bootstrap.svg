@@ -1,0 +1,579 @@
+<svg role="img" aria-labelledby="bootstrap-title bootstrap-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="302.4pt" viewBox="0 0 720 302.4" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="bootstrap-title">Figure 17 · Block resampling of realized strategy returns</title><desc id="bootstrap-desc">600 circular moving-block resamples of the fixed strategy’s net return series, block length 20, NumPy seed 5107. This resamples returns without rerunning signals or refitting parameters; it is a conditional path diagnostic, not a complete strategy-research uncertainty analysis.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:05:15.520002</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="bootstrap-figure_1">
+  <g id="bootstrap-patch_1">
+   <path d="M 0 302.4 
+L 720 302.4 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="bootstrap-axes_1">
+   <g id="bootstrap-patch_2">
+    <path d="M 45.38 259.18 
+L 356.13 259.18 
+L 356.13 35.14 
+L 45.38 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="bootstrap-matplotlib.axis_1">
+    <g id="bootstrap-xtick_1">
+     <g id="bootstrap-line2d_1">
+      <path d="M 99.516752 259.18 
+L 99.516752 35.14 
+" clip-path="url(#bootstrap-paeaf890e4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_2">
+      <defs>
+       <path id="bootstrap-mf19d04c6a7" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#bootstrap-mf19d04c6a7" x="99.516752" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="99.516752" y="273.018594" transform="rotate(-0 99.516752 273.018594)">−5.0%</text>
+     </g>
+    </g>
+    <g id="bootstrap-xtick_2">
+     <g id="bootstrap-line2d_3">
+      <path d="M 155.629198 259.18 
+L 155.629198 35.14 
+" clip-path="url(#bootstrap-paeaf890e4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_4">
+      <g>
+       <use href="#bootstrap-mf19d04c6a7" x="155.629198" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="155.629198" y="273.018594" transform="rotate(-0 155.629198 273.018594)">0.0%</text>
+     </g>
+    </g>
+    <g id="bootstrap-xtick_3">
+     <g id="bootstrap-line2d_5">
+      <path d="M 211.741644 259.18 
+L 211.741644 35.14 
+" clip-path="url(#bootstrap-paeaf890e4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_6">
+      <g>
+       <use href="#bootstrap-mf19d04c6a7" x="211.741644" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="211.741644" y="273.018594" transform="rotate(-0 211.741644 273.018594)">5.0%</text>
+     </g>
+    </g>
+    <g id="bootstrap-xtick_4">
+     <g id="bootstrap-line2d_7">
+      <path d="M 267.854089 259.18 
+L 267.854089 35.14 
+" clip-path="url(#bootstrap-paeaf890e4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_8">
+      <g>
+       <use href="#bootstrap-mf19d04c6a7" x="267.854089" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="267.854089" y="273.018594" transform="rotate(-0 267.854089 273.018594)">10.0%</text>
+     </g>
+    </g>
+    <g id="bootstrap-xtick_5">
+     <g id="bootstrap-line2d_9">
+      <path d="M 323.966535 259.18 
+L 323.966535 35.14 
+" clip-path="url(#bootstrap-paeaf890e4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_10">
+      <g>
+       <use href="#bootstrap-mf19d04c6a7" x="323.966535" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="323.966535" y="273.018594" transform="rotate(-0 323.966535 273.018594)">15.0%</text>
+     </g>
+    </g>
+    <g id="bootstrap-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="200.755" y="285.728906" transform="rotate(-0 200.755 285.728906)">CAGR</text>
+    </g>
+   </g>
+   <g id="bootstrap-matplotlib.axis_2">
+    <g id="bootstrap-ytick_1">
+     <g id="bootstrap-line2d_11">
+      <path d="M 45.38 248.996364 
+L 356.13 248.996364 
+" clip-path="url(#bootstrap-paeaf890e4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_12">
+      <defs>
+       <path id="bootstrap-me1524e1769" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#bootstrap-me1524e1769" x="45.38" y="248.996364" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="252.415661" transform="rotate(-0 38.38 252.415661)">0</text>
+     </g>
+    </g>
+    <g id="bootstrap-ytick_2">
+     <g id="bootstrap-line2d_13">
+      <path d="M 45.38 210.495842 
+L 356.13 210.495842 
+" clip-path="url(#bootstrap-paeaf890e4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_14">
+      <g>
+       <use href="#bootstrap-me1524e1769" x="45.38" y="210.495842" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="213.915139" transform="rotate(-0 38.38 213.915139)">2</text>
+     </g>
+    </g>
+    <g id="bootstrap-ytick_3">
+     <g id="bootstrap-line2d_15">
+      <path d="M 45.38 171.995321 
+L 356.13 171.995321 
+" clip-path="url(#bootstrap-paeaf890e4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_16">
+      <g>
+       <use href="#bootstrap-me1524e1769" x="45.38" y="171.995321" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="175.414618" transform="rotate(-0 38.38 175.414618)">4</text>
+     </g>
+    </g>
+    <g id="bootstrap-ytick_4">
+     <g id="bootstrap-line2d_17">
+      <path d="M 45.38 133.4948 
+L 356.13 133.4948 
+" clip-path="url(#bootstrap-paeaf890e4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_18">
+      <g>
+       <use href="#bootstrap-me1524e1769" x="45.38" y="133.4948" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="136.914097" transform="rotate(-0 38.38 136.914097)">6</text>
+     </g>
+    </g>
+    <g id="bootstrap-ytick_5">
+     <g id="bootstrap-line2d_19">
+      <path d="M 45.38 94.994279 
+L 356.13 94.994279 
+" clip-path="url(#bootstrap-paeaf890e4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_20">
+      <g>
+       <use href="#bootstrap-me1524e1769" x="45.38" y="94.994279" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="98.413576" transform="rotate(-0 38.38 98.413576)">8</text>
+     </g>
+    </g>
+    <g id="bootstrap-ytick_6">
+     <g id="bootstrap-line2d_21">
+      <path d="M 45.38 56.493758 
+L 356.13 56.493758 
+" clip-path="url(#bootstrap-paeaf890e4a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_22">
+      <g>
+       <use href="#bootstrap-me1524e1769" x="45.38" y="56.493758" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="59.913055" transform="rotate(-0 38.38 59.913055)">10</text>
+     </g>
+    </g>
+    <g id="bootstrap-text_13">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.055781" y="147.16" transform="rotate(-90 21.055781 147.16)">Resample density</text>
+    </g>
+   </g>
+   <g id="bootstrap-line2d_23">
+    <path d="M 59.505 240.329439 
+L 67.813824 235.995977 
+L 76.122647 235.995977 
+L 84.431471 218.662128 
+L 92.740294 205.661741 
+L 101.049118 183.994429 
+L 109.357941 162.327118 
+L 117.666765 157.993656 
+L 125.975588 118.992495 
+L 134.284412 84.324797 
+L 142.593235 45.323636 
+L 150.902059 66.990948 
+L 159.210882 71.32441 
+L 167.519706 92.991721 
+L 175.828529 66.990948 
+L 184.137353 88.658259 
+L 192.446176 105.992108 
+L 200.755 123.325957 
+L 209.063824 140.659807 
+L 217.372647 170.994043 
+L 225.681471 127.65942 
+L 233.990294 170.994043 
+L 242.299118 179.660967 
+L 250.607941 183.994429 
+L 258.916765 227.329052 
+L 267.225588 227.329052 
+L 275.534412 218.662128 
+L 283.843235 244.662901 
+L 292.152059 240.329439 
+L 300.460882 244.662901 
+L 308.769706 240.329439 
+L 317.078529 248.996364 
+L 325.387353 248.996364 
+L 333.696176 248.996364 
+L 342.005 244.662901 
+" clip-path="url(#bootstrap-paeaf890e4a)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="bootstrap-patch_3">
+    <path d="M 45.38 259.18 
+L 45.38 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="bootstrap-patch_4">
+    <path d="M 45.38 259.18 
+L 356.13 259.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="bootstrap-text_14">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="45.38" y="22.14" transform="rotate(-0 45.38 22.14)">Conditional uncertainty in growth</text>
+   </g>
+  </g>
+  <g id="bootstrap-axes_2">
+   <g id="bootstrap-patch_5">
+    <path d="M 395.75 259.18 
+L 706.5 259.18 
+L 706.5 35.14 
+L 395.75 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="bootstrap-matplotlib.axis_3">
+    <g id="bootstrap-xtick_6">
+     <g id="bootstrap-line2d_24">
+      <path d="M 425.737267 259.18 
+L 425.737267 35.14 
+" clip-path="url(#bootstrap-pa93cc7fdac)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_25">
+      <g>
+       <use href="#bootstrap-mf19d04c6a7" x="425.737267" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="425.737267" y="273.018594" transform="rotate(-0 425.737267 273.018594)">−45.0%</text>
+     </g>
+    </g>
+    <g id="bootstrap-xtick_7">
+     <g id="bootstrap-line2d_26">
+      <path d="M 461.783333 259.18 
+L 461.783333 35.14 
+" clip-path="url(#bootstrap-pa93cc7fdac)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_27">
+      <g>
+       <use href="#bootstrap-mf19d04c6a7" x="461.783333" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="461.783333" y="273.018594" transform="rotate(-0 461.783333 273.018594)">−40.0%</text>
+     </g>
+    </g>
+    <g id="bootstrap-xtick_8">
+     <g id="bootstrap-line2d_28">
+      <path d="M 497.8294 259.18 
+L 497.8294 35.14 
+" clip-path="url(#bootstrap-pa93cc7fdac)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_29">
+      <g>
+       <use href="#bootstrap-mf19d04c6a7" x="497.8294" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="497.8294" y="273.018594" transform="rotate(-0 497.8294 273.018594)">−35.0%</text>
+     </g>
+    </g>
+    <g id="bootstrap-xtick_9">
+     <g id="bootstrap-line2d_30">
+      <path d="M 533.875466 259.18 
+L 533.875466 35.14 
+" clip-path="url(#bootstrap-pa93cc7fdac)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_31">
+      <g>
+       <use href="#bootstrap-mf19d04c6a7" x="533.875466" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_18">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="533.875466" y="273.018594" transform="rotate(-0 533.875466 273.018594)">−30.0%</text>
+     </g>
+    </g>
+    <g id="bootstrap-xtick_10">
+     <g id="bootstrap-line2d_32">
+      <path d="M 569.921533 259.18 
+L 569.921533 35.14 
+" clip-path="url(#bootstrap-pa93cc7fdac)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_33">
+      <g>
+       <use href="#bootstrap-mf19d04c6a7" x="569.921533" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_19">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="569.921533" y="273.018594" transform="rotate(-0 569.921533 273.018594)">−25.0%</text>
+     </g>
+    </g>
+    <g id="bootstrap-xtick_11">
+     <g id="bootstrap-line2d_34">
+      <path d="M 605.967599 259.18 
+L 605.967599 35.14 
+" clip-path="url(#bootstrap-pa93cc7fdac)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_35">
+      <g>
+       <use href="#bootstrap-mf19d04c6a7" x="605.967599" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_20">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="605.967599" y="273.018594" transform="rotate(-0 605.967599 273.018594)">−20.0%</text>
+     </g>
+    </g>
+    <g id="bootstrap-xtick_12">
+     <g id="bootstrap-line2d_36">
+      <path d="M 642.013665 259.18 
+L 642.013665 35.14 
+" clip-path="url(#bootstrap-pa93cc7fdac)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_37">
+      <g>
+       <use href="#bootstrap-mf19d04c6a7" x="642.013665" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="642.013665" y="273.018594" transform="rotate(-0 642.013665 273.018594)">−15.0%</text>
+     </g>
+    </g>
+    <g id="bootstrap-xtick_13">
+     <g id="bootstrap-line2d_38">
+      <path d="M 678.059732 259.18 
+L 678.059732 35.14 
+" clip-path="url(#bootstrap-pa93cc7fdac)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_39">
+      <g>
+       <use href="#bootstrap-mf19d04c6a7" x="678.059732" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="678.059732" y="273.018594" transform="rotate(-0 678.059732 273.018594)">−10.0%</text>
+     </g>
+    </g>
+    <g id="bootstrap-text_23">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="551.125" y="285.728906" transform="rotate(-0 551.125 285.728906)">Maximum signed drawdown</text>
+    </g>
+   </g>
+   <g id="bootstrap-matplotlib.axis_4">
+    <g id="bootstrap-ytick_7">
+     <g id="bootstrap-line2d_40">
+      <path d="M 395.75 248.996364 
+L 706.5 248.996364 
+" clip-path="url(#bootstrap-pa93cc7fdac)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_41">
+      <g>
+       <use href="#bootstrap-me1524e1769" x="395.75" y="248.996364" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="388.75" y="252.415661" transform="rotate(-0 388.75 252.415661)">0</text>
+     </g>
+    </g>
+    <g id="bootstrap-ytick_8">
+     <g id="bootstrap-line2d_42">
+      <path d="M 395.75 218.378283 
+L 706.5 218.378283 
+" clip-path="url(#bootstrap-pa93cc7fdac)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_43">
+      <g>
+       <use href="#bootstrap-me1524e1769" x="395.75" y="218.378283" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="388.75" y="221.79758" transform="rotate(-0 388.75 221.79758)">1</text>
+     </g>
+    </g>
+    <g id="bootstrap-ytick_9">
+     <g id="bootstrap-line2d_44">
+      <path d="M 395.75 187.760203 
+L 706.5 187.760203 
+" clip-path="url(#bootstrap-pa93cc7fdac)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_45">
+      <g>
+       <use href="#bootstrap-me1524e1769" x="395.75" y="187.760203" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="388.75" y="191.1795" transform="rotate(-0 388.75 191.1795)">2</text>
+     </g>
+    </g>
+    <g id="bootstrap-ytick_10">
+     <g id="bootstrap-line2d_46">
+      <path d="M 395.75 157.142123 
+L 706.5 157.142123 
+" clip-path="url(#bootstrap-pa93cc7fdac)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_47">
+      <g>
+       <use href="#bootstrap-me1524e1769" x="395.75" y="157.142123" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="388.75" y="160.56142" transform="rotate(-0 388.75 160.56142)">3</text>
+     </g>
+    </g>
+    <g id="bootstrap-ytick_11">
+     <g id="bootstrap-line2d_48">
+      <path d="M 395.75 126.524042 
+L 706.5 126.524042 
+" clip-path="url(#bootstrap-pa93cc7fdac)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_49">
+      <g>
+       <use href="#bootstrap-me1524e1769" x="395.75" y="126.524042" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="388.75" y="129.943339" transform="rotate(-0 388.75 129.943339)">4</text>
+     </g>
+    </g>
+    <g id="bootstrap-ytick_12">
+     <g id="bootstrap-line2d_50">
+      <path d="M 395.75 95.905962 
+L 706.5 95.905962 
+" clip-path="url(#bootstrap-pa93cc7fdac)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_51">
+      <g>
+       <use href="#bootstrap-me1524e1769" x="395.75" y="95.905962" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="388.75" y="99.325259" transform="rotate(-0 388.75 99.325259)">5</text>
+     </g>
+    </g>
+    <g id="bootstrap-ytick_13">
+     <g id="bootstrap-line2d_52">
+      <path d="M 395.75 65.287882 
+L 706.5 65.287882 
+" clip-path="url(#bootstrap-pa93cc7fdac)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="bootstrap-line2d_53">
+      <g>
+       <use href="#bootstrap-me1524e1769" x="395.75" y="65.287882" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="bootstrap-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="388.75" y="68.707179" transform="rotate(-0 388.75 68.707179)">6</text>
+     </g>
+    </g>
+    <g id="bootstrap-text_31">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="377.152031" y="147.16" transform="rotate(-90 377.152031 147.16)">Resample density</text>
+    </g>
+   </g>
+   <g id="bootstrap-line2d_54">
+    <path d="M 409.875 244.568696 
+L 418.183824 248.996364 
+L 426.492647 240.141028 
+L 434.801471 244.568696 
+L 443.110294 244.568696 
+L 451.419118 231.285692 
+L 459.727941 226.858024 
+L 468.036765 231.285692 
+L 476.345588 218.002688 
+L 484.654412 226.858024 
+L 492.963235 209.147352 
+L 501.272059 209.147352 
+L 509.580882 204.719684 
+L 517.889706 195.864348 
+L 526.198529 182.581344 
+L 534.507353 178.153676 
+L 542.816176 173.726008 
+L 551.125 160.443004 
+L 559.433824 129.449328 
+L 567.742647 164.870672 
+L 576.051471 147.16 
+L 584.360294 107.310988 
+L 592.669118 71.889644 
+L 600.977941 107.310988 
+L 609.286765 80.74498 
+L 617.595588 76.317312 
+L 625.904412 45.323636 
+L 634.213235 85.172648 
+L 642.522059 94.027984 
+L 650.830882 129.449328 
+L 659.139706 129.449328 
+L 667.448529 182.581344 
+L 675.757353 178.153676 
+L 684.066176 226.858024 
+L 692.375 231.285692 
+" clip-path="url(#bootstrap-pa93cc7fdac)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="bootstrap-patch_6">
+    <path d="M 395.75 259.18 
+L 395.75 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="bootstrap-patch_7">
+    <path d="M 395.75 259.18 
+L 706.5 259.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="bootstrap-text_32">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="395.75" y="22.14" transform="rotate(-0 395.75 22.14)">Conditional uncertainty in path losses</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="bootstrap-paeaf890e4a">
+   <rect x="45.38" y="35.14" width="310.75" height="224.04"/>
+  </clipPath>
+  <clipPath id="bootstrap-pa93cc7fdac">
+   <rect x="395.75" y="35.14" width="310.75" height="224.04"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,446 @@
+<svg role="img" aria-labelledby="coherence-title coherence-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="coherence-title">Figure 03 · Diversification and subadditivity</title><desc id="coherence-desc">Each independent exposure loses 100 with probability 4%, otherwise zero. At 95% confidence, standalone VaRs sum to 0 while portfolio VaR is 100; ES is 103.2 compared with a standalone sum of 160.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T18:09:09.221436</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="coherence-figure_1">
+  <g id="coherence-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="coherence-axes_1">
+   <g id="coherence-patch_2">
+    <path d="M 51.14 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 51.14 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="coherence-matplotlib.axis_1">
+    <g id="coherence-xtick_1">
+     <g id="coherence-line2d_1">
+      <path d="M 80.929091 244.78 
+L 80.929091 35.14 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coherence-line2d_2">
+      <defs>
+       <path id="coherence-m49f0c6cba2" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#coherence-m49f0c6cba2" x="80.929091" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coherence-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="80.929091" y="258.618594" transform="rotate(-0 80.929091 258.618594)">90.0%</text>
+     </g>
+    </g>
+    <g id="coherence-xtick_2">
+     <g id="coherence-line2d_3">
+      <path d="M 201.289054 244.78 
+L 201.289054 35.14 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coherence-line2d_4">
+      <g>
+       <use href="#coherence-m49f0c6cba2" x="201.289054" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coherence-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="201.289054" y="258.618594" transform="rotate(-0 201.289054 258.618594)">92.0%</text>
+     </g>
+    </g>
+    <g id="coherence-xtick_3">
+     <g id="coherence-line2d_5">
+      <path d="M 321.649017 244.78 
+L 321.649017 35.14 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coherence-line2d_6">
+      <g>
+       <use href="#coherence-m49f0c6cba2" x="321.649017" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coherence-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="321.649017" y="258.618594" transform="rotate(-0 321.649017 258.618594)">94.0%</text>
+     </g>
+    </g>
+    <g id="coherence-xtick_4">
+     <g id="coherence-line2d_7">
+      <path d="M 442.008981 244.78 
+L 442.008981 35.14 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coherence-line2d_8">
+      <g>
+       <use href="#coherence-m49f0c6cba2" x="442.008981" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coherence-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="442.008981" y="258.618594" transform="rotate(-0 442.008981 258.618594)">96.0%</text>
+     </g>
+    </g>
+    <g id="coherence-xtick_5">
+     <g id="coherence-line2d_9">
+      <path d="M 562.368944 244.78 
+L 562.368944 35.14 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coherence-line2d_10">
+      <g>
+       <use href="#coherence-m49f0c6cba2" x="562.368944" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coherence-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="562.368944" y="258.618594" transform="rotate(-0 562.368944 258.618594)">98.0%</text>
+     </g>
+    </g>
+    <g id="coherence-xtick_6">
+     <g id="coherence-line2d_11">
+      <path d="M 682.728907 244.78 
+L 682.728907 35.14 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coherence-line2d_12">
+      <g>
+       <use href="#coherence-m49f0c6cba2" x="682.728907" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coherence-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="682.728907" y="258.618594" transform="rotate(-0 682.728907 258.618594)">100.0%</text>
+     </g>
+    </g>
+    <g id="coherence-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="378.82" y="271.328906" transform="rotate(-0 378.82 271.328906)">Confidence level</text>
+    </g>
+   </g>
+   <g id="coherence-matplotlib.axis_2">
+    <g id="coherence-ytick_1">
+     <g id="coherence-line2d_13">
+      <path d="M 51.14 235.250909 
+L 706.5 235.250909 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coherence-line2d_14">
+      <defs>
+       <path id="coherence-m44f26eab16" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#coherence-m44f26eab16" x="51.14" y="235.250909" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coherence-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="238.670206" transform="rotate(-0 44.14 238.670206)">0</text>
+     </g>
+    </g>
+    <g id="coherence-ytick_2">
+     <g id="coherence-line2d_15">
+      <path d="M 51.14 211.428182 
+L 706.5 211.428182 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coherence-line2d_16">
+      <g>
+       <use href="#coherence-m44f26eab16" x="51.14" y="211.428182" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coherence-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="214.847479" transform="rotate(-0 44.14 214.847479)">25</text>
+     </g>
+    </g>
+    <g id="coherence-ytick_3">
+     <g id="coherence-line2d_17">
+      <path d="M 51.14 187.605455 
+L 706.5 187.605455 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coherence-line2d_18">
+      <g>
+       <use href="#coherence-m44f26eab16" x="51.14" y="187.605455" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coherence-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="191.024751" transform="rotate(-0 44.14 191.024751)">50</text>
+     </g>
+    </g>
+    <g id="coherence-ytick_4">
+     <g id="coherence-line2d_19">
+      <path d="M 51.14 163.782727 
+L 706.5 163.782727 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coherence-line2d_20">
+      <g>
+       <use href="#coherence-m44f26eab16" x="51.14" y="163.782727" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coherence-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="167.202024" transform="rotate(-0 44.14 167.202024)">75</text>
+     </g>
+    </g>
+    <g id="coherence-ytick_5">
+     <g id="coherence-line2d_21">
+      <path d="M 51.14 139.96 
+L 706.5 139.96 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coherence-line2d_22">
+      <g>
+       <use href="#coherence-m44f26eab16" x="51.14" y="139.96" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coherence-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="143.379297" transform="rotate(-0 44.14 143.379297)">100</text>
+     </g>
+    </g>
+    <g id="coherence-ytick_6">
+     <g id="coherence-line2d_23">
+      <path d="M 51.14 116.137273 
+L 706.5 116.137273 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coherence-line2d_24">
+      <g>
+       <use href="#coherence-m44f26eab16" x="51.14" y="116.137273" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coherence-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="119.55657" transform="rotate(-0 44.14 119.55657)">125</text>
+     </g>
+    </g>
+    <g id="coherence-ytick_7">
+     <g id="coherence-line2d_25">
+      <path d="M 51.14 92.314545 
+L 706.5 92.314545 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coherence-line2d_26">
+      <g>
+       <use href="#coherence-m44f26eab16" x="51.14" y="92.314545" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coherence-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="95.733842" transform="rotate(-0 44.14 95.733842)">150</text>
+     </g>
+    </g>
+    <g id="coherence-ytick_8">
+     <g id="coherence-line2d_27">
+      <path d="M 51.14 68.491818 
+L 706.5 68.491818 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coherence-line2d_28">
+      <g>
+       <use href="#coherence-m44f26eab16" x="51.14" y="68.491818" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coherence-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="71.911115" transform="rotate(-0 44.14 71.911115)">175</text>
+     </g>
+    </g>
+    <g id="coherence-ytick_9">
+     <g id="coherence-line2d_29">
+      <path d="M 51.14 44.669091 
+L 706.5 44.669091 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coherence-line2d_30">
+      <g>
+       <use href="#coherence-m44f26eab16" x="51.14" y="44.669091" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coherence-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="48.088388" transform="rotate(-0 44.14 48.088388)">200</text>
+     </g>
+    </g>
+    <g id="coherence-text_17">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.089531" y="139.96" transform="rotate(-90 21.089531 139.96)">Loss</text>
+    </g>
+   </g>
+   <g id="coherence-line2d_31">
+    <path d="M 80.929091 235.250909 
+L 442.370061 235.250909 
+L 442.370061 44.669091 
+L 676.710909 44.669091 
+L 676.710909 44.669091 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="coherence-line2d_32">
+    <path d="M 80.929091 235.250909 
+L 212.001091 235.250909 
+L 212.001091 139.96 
+L 674.72497 139.96 
+L 674.72497 44.669091 
+L 676.710909 44.669091 
+L 676.710909 44.669091 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="coherence-line2d_33">
+    <path d="M 80.929091 159.018182 
+L 102.774424 156.146699 
+L 124.619758 153.050427 
+L 144.479152 150.017538 
+L 164.338545 146.752271 
+L 182.212 143.591985 
+L 200.085455 140.197633 
+L 215.97297 136.962194 
+L 231.860485 133.498737 
+L 245.762061 130.261614 
+L 259.663636 126.811752 
+L 273.565212 123.127468 
+L 285.480848 119.764275 
+L 297.396485 116.193081 
+L 309.312121 112.393976 
+L 321.227758 108.344421 
+L 331.157455 104.760106 
+L 341.087152 100.967437 
+L 351.016848 96.947703 
+L 360.946545 92.679884 
+L 370.876242 88.140281 
+L 378.82 84.295014 
+L 386.763758 80.24333 
+L 394.707515 75.968153 
+L 402.651273 71.450464 
+L 410.59503 66.669027 
+L 418.538788 61.60005 
+L 426.482545 56.216791 
+L 434.426303 50.489088 
+L 442.370061 44.669091 
+L 676.710909 44.669091 
+L 676.710909 44.669091 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="coherence-line2d_34">
+    <path d="M 80.929091 159.018182 
+L 102.774424 156.146699 
+L 124.619758 153.050427 
+L 144.479152 150.017538 
+L 164.338545 146.752271 
+L 182.212 143.591985 
+L 200.085455 140.197633 
+L 210.015152 138.20097 
+L 212.001091 138.010812 
+L 311.298061 137.489724 
+L 382.791879 136.900902 
+L 434.426303 136.264764 
+L 474.145091 135.561112 
+L 503.934182 134.828211 
+L 527.765455 134.039011 
+L 547.624848 133.168666 
+L 563.512364 132.263612 
+L 577.413939 131.247688 
+L 589.329576 130.136195 
+L 599.259273 128.967538 
+L 607.20303 127.811358 
+L 613.160848 126.770947 
+L 619.118667 125.535643 
+L 625.076485 124.045026 
+L 629.048364 122.86746 
+L 633.020242 121.501713 
+L 636.992121 119.898756 
+L 640.964 117.990914 
+L 644.935879 115.682061 
+L 646.921818 114.335554 
+L 648.907758 112.830916 
+L 650.893697 111.138553 
+L 652.879636 109.220997 
+L 654.865576 107.030096 
+L 656.851515 104.502918 
+L 658.837455 101.555603 
+L 660.823394 98.073886 
+L 662.809333 93.897929 
+L 664.795273 88.797096 
+L 666.781212 82.425866 
+L 668.767152 74.242132 
+L 670.753091 63.344194 
+L 672.73903 48.113341 
+L 674.72497 44.669091 
+L 676.710909 44.669091 
+L 676.710909 44.669091 
+" clip-path="url(#coherence-p041ac1c312)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="coherence-patch_3">
+    <path d="M 51.14 244.78 
+L 51.14 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="coherence-patch_4">
+    <path d="M 51.14 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="coherence-text_18">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="51.14" y="22.14" transform="rotate(-0 51.14 22.14)">Two independent rare-loss exposures</text>
+   </g>
+   <g id="coherence-legend_1">
+    <g id="coherence-line2d_35">
+     <path d="M 58.34 45.61875 
+L 66.34 45.61875 
+L 66.34 45.61875 
+L 74.34 45.61875 
+L 74.34 45.61875 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="coherence-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="80.74" y="48.41875" transform="rotate(-0 80.74 48.41875)">Sum of standalone VaRs</text>
+    </g>
+    <g id="coherence-line2d_36">
+     <path d="M 58.34 57.36125 
+L 66.34 57.36125 
+L 66.34 57.36125 
+L 74.34 57.36125 
+L 74.34 57.36125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="coherence-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="80.74" y="60.16125" transform="rotate(-0 80.74 60.16125)">VaR of combined loss</text>
+    </g>
+    <g id="coherence-line2d_37">
+     <path d="M 193.86875 45.61875 
+L 201.86875 45.61875 
+L 209.86875 45.61875 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="coherence-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="216.26875" y="48.41875" transform="rotate(-0 216.26875 48.41875)">Sum of standalone ES</text>
+    </g>
+    <g id="coherence-line2d_38">
+     <path d="M 193.86875 57.36125 
+L 201.86875 57.36125 
+L 209.86875 57.36125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="coherence-text_22">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="216.26875" y="60.16125" transform="rotate(-0 216.26875 60.16125)">ES of combined loss</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="coherence-p041ac1c312">
+   <rect x="51.14" y="35.14" width="655.36" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

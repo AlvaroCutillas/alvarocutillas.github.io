@@ -1,0 +1,80 @@
+<section id="introduction" data-title="Introduction and scope">
+<div class="section-kicker">01 / Introduction</div><h2>Introduction and scope</h2>
+<p class="section-lede">Value at Risk locates a loss threshold. Expected Shortfall describes the severity of the tail beyond that threshold. Understanding both requires a probability model, a valuation rule and a precise definition of the loss being measured.</p>
+<p>The <a href="markowitz-portfolio-theory.html">Markowitz project</a> summarized portfolio uncertainty through means, variances and covariances. That is a natural language for diversification, but two portfolios with the same volatility can have very different extreme losses. A symmetric bell-shaped distribution, a distribution with occasional jumps and a short-option payoff need not have comparable tails. This guide moves from dispersion around the centre to the upper end of a loss distribution.</p>
+<p>A risk number is a statement about a specified experiment. Hold today's portfolio fixed, choose a horizon, describe the changes in market factors over that horizon, revalue the positions and ask how the resulting losses are distributed. Alter the positions, the horizon, the scenario probabilities or the valuation model and the number changes. A forecast of tomorrow's risk and a measurement of the last year's realized losses answer different questions even when they use the same formula.</p>
+<div class="callout"><strong>An analogy: the flood line and the water above it</strong><p>Imagine recording water levels beside a river. A high quantile identifies a level exceeded on a small fraction of days. It does not tell you how high the river rises on those days. VaR is the flood line; ES is the average water level in the specified upper tail. The analogy explains the distinction, while the mathematics handles probability masses and finite samples more carefully than an ordinary average of “flood days”.</p></div>
+<h3>Reading path</h3>
+<p>Part I establishes loss conventions, quantiles, the definition of ES, coherence and analytical distributions. Part II develops historical, weighted, parametric, Monte Carlo and extreme-value estimation, then connects risk to dependence, attribution and optimization. Part III treats validation, uncertainty and numerical practice. The laboratory compares analytical risk with empirical estimates from a reproducible synthetic sample.</p>
+<p>All figures on this page are computed from the stated synthetic assumptions. They illustrate mechanisms rather than report empirical findings about a particular market. Hover over a plotted line to inspect the underlying coordinates; a shared cross-section shows the values of other visible curves at the same horizontal position. The calculations and graphics remain inside this HTML file, and the static notes work without a network connection.</p>
+<h3>Prerequisites and boundaries</h3>
+<p>Basic probability, expectations, standard deviation, conditional distributions and differentiation are sufficient for the main chapters. Matrix notation appears in portfolio aggregation and risk contributions; likelihood ratios appear in backtesting. The <a href="monte-carlo-option-pricing.html">Monte Carlo notes</a> explain sampling and simulation error in more detail. The <a href="black-scholes-basics.html">Black–Scholes notes</a> provide the valuation model used in the option example.</p>
+<p>The focus is market-risk loss distributions. Credit migration, default, operational events, funding constraints and liquidation costs can also enter a loss model, but require additional structure. VaR and ES compress information into one number each. They should be read alongside scenarios, exposures and an account of model uncertainty, rather than as complete descriptions of every possible loss.</p>
+</section>
+
+<section id="loss-conventions" data-title="Profit, loss and the risk horizon">
+<div class="section-kicker">02 / Definitions</div><h2>Profit, loss and the risk horizon</h2>
+<p>Use a positive number for a loss and a negative number for a gain. Let \(V_t\) be current portfolio value and let \(V_{t+h}\) be the value at horizon \(h\), with cash flows handled consistently. A simple frozen-position convention is:</p>
+\[ \Pi_{t,h}=V_{t+h}-V_t,\qquad L_{t,h}=-\Pi_{t,h}=V_t-V_{t+h}. \]
+<p>If dividends, coupons, option exercise payments or funding costs occur inside the horizon, define whether they are included in total wealth or added separately to profit and loss. A bond price drop on a coupon date is not automatically an economic loss: the coupon may offset it. For a self-financing portfolio, the comparison must include the cash account. Document the convention before estimating the distribution.</p>
+<p>For wealth \(W&gt;0\) invested in assets with simple returns \(R_i\), fixed initial capital weights \(w_i\) and no additional cash-flow complication, the return-based approximation is:</p>
+\[ R_p=\sum_{i=1}^{d}w_iR_i,\qquad L=-W R_p. \]
+<p>The minus sign reverses the tail: bad portfolio returns become large positive losses. A 2% loss on €1,000,000 is €20,000. A reported “99% return VaR” may refer to the negative 1% return quantile, while a “99% loss VaR” is the positive 99% loss quantile. These conventions describe the same adverse region in a continuous distribution, but the displayed signs differ.</p>
+<h3>Horizon, confidence and units</h3>
+<p>The horizon determines how long positions are exposed. The confidence level determines how far into the loss distribution the measurement looks. A one-day 99% VaR and a ten-day 97.5% ES are different functionals of potentially different distributions; they cannot be compared by reading their currency values alone. State currency, horizon, confidence, position convention and model date together.</p>
+<p>Currency risk scales with wealth when losses are proportional to exposure. Percentage risk divides the currency result by the same positive wealth base. Log returns are additive over time, while simple returns compound; a log-return threshold cannot be substituted directly into a simple-return P&amp;L equation. For a single long asset with log return \(r\), exact loss is \(W(1-e^r)\), which differs from \(-Wr\) in large moves.</p>
+<h3>Physical scenarios and pricing probabilities</h3>
+<p>Risk forecasting generally describes market moves under a real-world, or physical, probability model \(\mathbb P\). A derivative may then be revalued in each scenario using a risk-neutral pricing model \(\mathbb Q\). The scenario probability and the option valuation rule have different jobs. A discounted risk-neutral expected payoff is an option price; it is not automatically a forecast of the distribution of tomorrow's trading losses.</p>
+<p>A frozen-position horizon measures changes in today's book. Actual future P&amp;L also reflects new trades, hedging, fees and position changes. Both are useful, but a backtest must identify which P&amp;L is being compared with which forecast. A forecast made before trading tomorrow should never use tomorrow's closing volatility estimate as an input.</p>
+</section>
+
+<section id="quantiles" data-title="Distribution functions and quantiles">
+<div class="section-kicker">03 / Probability</div><h2>Distribution functions and quantiles</h2>
+<p>The cumulative distribution function, or CDF, of loss \(L\) gives the probability that the loss does not exceed a specified value. It is nondecreasing and right-continuous, including when losses occur at a finite set of values.</p>
+\[ F_L(\ell)=\mathbb P(L\le\ell),\qquad q_\alpha(L)=\inf\{\ell:F_L(\ell)\ge\alpha\},\quad 0&lt;\alpha&lt;1. \]
+<p>The quantile is the first loss level whose accumulated probability reaches the target confidence. With a continuous, strictly increasing CDF, this is the familiar inverse \(F_L^{-1}(\alpha)\). With a discrete distribution, the CDF has jumps and the quantile lies at an atom. The inverse-CDF definition still works; a numerical interpolation between adjacent observations defines a different sample convention.</p>
+<p>Write \(F_L(q_\alpha-)\) for the probability strictly below the quantile. The defining inequalities are:</p>
+\[ F_L(q_\alpha-)\le\alpha\le F_L(q_\alpha),\qquad
+\mathbb P(L&gt;q_\alpha)\le1-\alpha. \]
+<p>For a continuous distribution with no mass at the quantile, equality holds in the exceedance probability. With an atom, strictly greater losses can occupy less than the specified upper-tail probability. This distinction is central to both ES estimation and exception counting. Counting losses equal to VaR as breaches changes the probability statement.</p>
+<h3>The quantile transformation</h3>
+<p>If \(U\) is uniform on \((0,1)\), the random variable \(q_U(L)\) has the same distribution as \(L\). Imagine the probability axis as a line of equally likely tickets. The quantile function assigns a loss to each ticket in increasing order. A flat section of the quantile curve assigns many tickets to the same loss; this is an atom in the loss distribution.</p>
+<p>This representation turns an average over part of the loss distribution into an integral over probability. The upper tail is simply the interval from \(\alpha\) to one. It also explains why an empirical distribution gives equal probability to observations before ties are aggregated, and why an ES estimator must sometimes use a fraction of one observation's probability mass.</p>
+<h3>Numerical conventions</h3>
+<p>For \(N\) observations ordered as \(L_{(1)}\le\cdots\le L_{(N)}\), the inverse empirical CDF uses index \(\lceil N\alpha\rceil\), with indices starting at one. Some software uses linear interpolation or another quantile rule by default. Neither choice should be hidden: a finite-sample discrepancy can be entirely due to conventions rather than a coding error. This page uses the inverse empirical CDF throughout.</p>
+<p>Quantiles need not vary smoothly. An empirical VaR can remain unchanged as confidence rises, then jump to the next observation. Differentiating such a curve as if it were a smooth population quantile is misleading. Smooth asymptotic results later in the guide require a positive, regular density near the target quantile.</p>
+</section>
+
+<section id="var" data-title="Value at Risk: definition and interpretation">
+<div class="section-kicker">04 / Risk measures</div><h2>Value at Risk: definition and interpretation</h2>
+<p>At confidence \(\alpha\), Value at Risk is the \(\alpha\)-quantile of the loss distribution:</p>
+\[ \operatorname{VaR}_\alpha(L)=q_\alpha(L). \]
+<p>For a continuous model, a one-day 99% VaR of €23,263 says that the model assigns a 1% probability to a one-day loss greater than €23,263. It does not say that €23,263 is the maximum possible loss. It also does not promise that precisely one day out of every hundred realized days will exceed the threshold. Even a correctly calibrated model produces random counts and runs of exceptions.</p>
+{{figure:tail}}
+<h3>A quantile is a location, not a severity average</h3>
+<p>VaR records where the upper tail begins. Moving losses that are already far above that boundary even further upward can leave VaR unchanged. The distribution may become much more dangerous while retaining the same threshold. This is why a VaR limit alone can fail to distinguish a moderately bad tail from one containing a small probability of catastrophic losses.</p>
+<p>Confidence is a model probability, not confidence in the model's accuracy. A 99% VaR computed from a badly specified distribution does not become reliable merely because the confidence level is high. A statistical confidence interval for an estimated VaR is a different object: it describes uncertainty in the quantile estimate across samples.</p>
+<h3>Signs, limits and aggregation</h3>
+<p>VaR may be negative. If a position has a sufficiently certain gain over the horizon, its upper loss quantile can still lie below zero. Clipping the result to zero changes the risk measure. An operational limit system may apply such a floor, but should label it as a reporting rule rather than the mathematical VaR.</p>
+<p>A portfolio VaR should be calculated from the distribution of the combined loss, with dependence respected. Adding standalone VaRs is not a general aggregation rule. The combined quantile depends on which individual losses occur together, and VaR does not always satisfy the diversification inequality introduced in Chapter 6.</p>
+<p>VaR remains useful as an interpretable threshold, a forecasting target and a reference for exception counts. Its limitations concern what is omitted and how aggregation behaves, rather than making every quantile estimate uninformative. The natural companion is a measure that describes the entire selected upper tail.</p>
+</section>
+
+<section id="expected-shortfall" data-title="Expected Shortfall and probability mass">
+<div class="section-kicker">05 / Risk measures</div><h2>Expected Shortfall and probability mass</h2>
+<p>Expected Shortfall averages the worst \(1-\alpha\) fraction of the loss distribution, counting probability mass rather than just counting observations strictly above a threshold. For integrable losses its general definition is:</p>
+\[ \operatorname{ES}_\alpha(L)=\frac{1}{1-\alpha}\int_\alpha^1 q_u(L)\,du. \]
+<p>The quantile-ticket analogy gives a direct interpretation: average the losses attached to the last \(1-\alpha\) fraction of tickets. ES is expressed in the same units as the loss. Since the quantile curve is nondecreasing, ES is at least VaR at the same confidence level. It can be equal when the entire selected tail has the same loss.</p>
+<h3>Continuous and discrete distributions</h3>
+<p>For a continuous distribution with a unique quantile and no atom at that point, ES equals the conditional mean of losses exceeding VaR. With discrete distributions, averaging all losses greater than or equal to VaR can include too much probability mass; averaging strictly greater losses can include too little. The general identity is:</p>
+\[ \operatorname{ES}_\alpha(L)=\frac{\mathbb E[L\mathbb 1_{\{L&gt;q_\alpha\}}]+q_\alpha(F_L(q_\alpha)-\alpha)}{1-\alpha}. \]
+<p>The first term includes all losses strictly above the quantile. The second adds only the portion of the boundary atom needed to complete the specified tail mass. An equivalent formula, convenient for computation, is:</p>
+\[ \operatorname{ES}_\alpha(L)=q_\alpha+\frac{\mathbb E[(L-q_\alpha)_+]}{1-\alpha},
+\qquad x_+=\max(x,0). \]
+<p>Consider losses of 0, 10 and 100 with probabilities 94%, 4% and 2%. At 95% confidence the quantile is 10. The worst 5% consists of all the 2% mass at 100 and 3% of the mass at 10, giving ES \(=(0.02\times100+0.03\times10)/0.05=46\). The conditional mean given loss at least 10 is 40; the conditional mean given loss greater than 10 is 100. Neither equals the required fractional-tail average.</p>
+{{figure:atoms}}
+<p>The distinction matters for rounded observations, credit losses, payoff atoms and every empirical distribution. The coherent definition follows the probability-mass treatment discussed by <a href="https://arxiv.org/abs/cond-mat/0104295">Acerbi and Tasche (2002)</a>. Terms such as CVaR, tail mean and conditional tail expectation are used with differing conventions in the literature; verify the actual definition when comparing results.</p>
+<h3>Existence and interpretation</h3>
+<p>A finite VaR can exist when ES is infinite. A tail distribution with sufficiently slow probability decay can have finite quantiles at every confidence below one and still have an infinite tail mean. Estimating a finite ES from a finite sample does not establish that the population ES exists: a sample has a largest observation, while the model may have no upper bound.</p>
+<p>ES is an average conditional on being in a selected probability tail, not the expected loss over all outcomes. It is also not a maximum. Losses beyond ES remain possible. Read it as a severity summary with explicit confidence and horizon, and inspect the tail model responsible for that summary.</p>
+</section>

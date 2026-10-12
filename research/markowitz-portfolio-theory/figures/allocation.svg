@@ -1,0 +1,327 @@
+<svg role="img" aria-labelledby="allocation-title allocation-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="259.2pt" viewBox="0 0 662.4 259.2" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="allocation-title">Figure 08 · The risk-free asset and the tangency portfolio</title><desc id="allocation-desc">Risk-free simple return 2%, benchmark risky moments, common borrowing/lending rate and unrestricted leverage. The line shown is the positive-risky-allocation ray. Negative allocations use |y|σT for volatility and form a different ray.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T17:14:58.765770</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="allocation-figure_1">
+  <g id="allocation-patch_1">
+   <path d="M 0 259.2 
+L 662.4 259.2 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="allocation-axes_1">
+   <g id="allocation-patch_2">
+    <path d="M 62.66 215.98 
+L 641.296886 215.98 
+L 641.296886 16.275273 
+L 62.66 16.275273 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="allocation-matplotlib.axis_1">
+    <g id="allocation-xtick_1">
+     <g id="allocation-line2d_1">
+      <path d="M 88.961677 215.98 
+L 88.961677 16.275273 
+" clip-path="url(#allocation-p57bdac4532)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_2">
+      <defs>
+       <path id="allocation-m1fac321ebb" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#allocation-m1fac321ebb" x="88.961677" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="88.961677" y="229.818594" transform="rotate(-0 88.961677 229.818594)">0%</text>
+     </g>
+    </g>
+    <g id="allocation-xtick_2">
+     <g id="allocation-line2d_3">
+      <path d="M 180.552239 215.98 
+L 180.552239 16.275273 
+" clip-path="url(#allocation-p57bdac4532)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_4">
+      <g>
+       <use href="#allocation-m1fac321ebb" x="180.552239" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="180.552239" y="229.818594" transform="rotate(-0 180.552239 229.818594)">10%</text>
+     </g>
+    </g>
+    <g id="allocation-xtick_3">
+     <g id="allocation-line2d_5">
+      <path d="M 272.142801 215.98 
+L 272.142801 16.275273 
+" clip-path="url(#allocation-p57bdac4532)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_6">
+      <g>
+       <use href="#allocation-m1fac321ebb" x="272.142801" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="272.142801" y="229.818594" transform="rotate(-0 272.142801 229.818594)">20%</text>
+     </g>
+    </g>
+    <g id="allocation-xtick_4">
+     <g id="allocation-line2d_7">
+      <path d="M 363.733363 215.98 
+L 363.733363 16.275273 
+" clip-path="url(#allocation-p57bdac4532)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_8">
+      <g>
+       <use href="#allocation-m1fac321ebb" x="363.733363" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="363.733363" y="229.818594" transform="rotate(-0 363.733363 229.818594)">30%</text>
+     </g>
+    </g>
+    <g id="allocation-xtick_5">
+     <g id="allocation-line2d_9">
+      <path d="M 455.323925 215.98 
+L 455.323925 16.275273 
+" clip-path="url(#allocation-p57bdac4532)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_10">
+      <g>
+       <use href="#allocation-m1fac321ebb" x="455.323925" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="455.323925" y="229.818594" transform="rotate(-0 455.323925 229.818594)">40%</text>
+     </g>
+    </g>
+    <g id="allocation-xtick_6">
+     <g id="allocation-line2d_11">
+      <path d="M 546.914487 215.98 
+L 546.914487 16.275273 
+" clip-path="url(#allocation-p57bdac4532)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_12">
+      <g>
+       <use href="#allocation-m1fac321ebb" x="546.914487" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="546.914487" y="229.818594" transform="rotate(-0 546.914487 229.818594)">50%</text>
+     </g>
+    </g>
+    <g id="allocation-xtick_7">
+     <g id="allocation-line2d_13">
+      <path d="M 638.505049 215.98 
+L 638.505049 16.275273 
+" clip-path="url(#allocation-p57bdac4532)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_14">
+      <g>
+       <use href="#allocation-m1fac321ebb" x="638.505049" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="638.505049" y="229.818594" transform="rotate(-0 638.505049 229.818594)">60%</text>
+     </g>
+    </g>
+    <g id="allocation-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="351.978443" y="242.528906" transform="rotate(-0 351.978443 242.528906)">Portfolio volatility</text>
+    </g>
+   </g>
+   <g id="allocation-matplotlib.axis_2">
+    <g id="allocation-ytick_1">
+     <g id="allocation-line2d_15">
+      <path d="M 62.66 182.145728 
+L 641.296886 182.145728 
+" clip-path="url(#allocation-p57bdac4532)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_16">
+      <defs>
+       <path id="allocation-mbbdd134779" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#allocation-mbbdd134779" x="62.66" y="182.145728" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="185.565025" transform="rotate(-0 55.66 185.565025)">5.0%</text>
+     </g>
+    </g>
+    <g id="allocation-ytick_2">
+     <g id="allocation-line2d_17">
+      <path d="M 62.66 140.884421 
+L 641.296886 140.884421 
+" clip-path="url(#allocation-p57bdac4532)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_18">
+      <g>
+       <use href="#allocation-mbbdd134779" x="62.66" y="140.884421" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="144.303718" transform="rotate(-0 55.66 144.303718)">10.0%</text>
+     </g>
+    </g>
+    <g id="allocation-ytick_3">
+     <g id="allocation-line2d_19">
+      <path d="M 62.66 99.623113 
+L 641.296886 99.623113 
+" clip-path="url(#allocation-p57bdac4532)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_20">
+      <g>
+       <use href="#allocation-mbbdd134779" x="62.66" y="99.623113" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="103.04241" transform="rotate(-0 55.66 103.04241)">15.0%</text>
+     </g>
+    </g>
+    <g id="allocation-ytick_4">
+     <g id="allocation-line2d_21">
+      <path d="M 62.66 58.361806 
+L 641.296886 58.361806 
+" clip-path="url(#allocation-p57bdac4532)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_22">
+      <g>
+       <use href="#allocation-mbbdd134779" x="62.66" y="58.361806" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="61.781103" transform="rotate(-0 55.66 61.781103)">20.0%</text>
+     </g>
+    </g>
+    <g id="allocation-ytick_5">
+     <g id="allocation-line2d_23">
+      <path d="M 62.66 17.100499 
+L 641.296886 17.100499 
+" clip-path="url(#allocation-p57bdac4532)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_24">
+      <g>
+       <use href="#allocation-mbbdd134779" x="62.66" y="17.100499" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="20.519796" transform="rotate(-0 55.66 20.519796)">25.0%</text>
+     </g>
+    </g>
+    <g id="allocation-text_14">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.197813" y="116.127636" transform="rotate(-90 21.197813 116.127636)">Expected return</text>
+    </g>
+   </g>
+   <g id="allocation-PathCollection_1">
+    <defs>
+     <path id="allocation-m4546c24455" d="M 0 2.645751 
+C 0.701661 2.645751 1.374679 2.366978 1.870829 1.870829 
+C 2.366978 1.374679 2.645751 0.701661 2.645751 0 
+C 2.645751 -0.701661 2.366978 -1.374679 1.870829 -1.870829 
+C 1.374679 -2.366978 0.701661 -2.645751 0 -2.645751 
+C -0.701661 -2.645751 -1.374679 -2.366978 -1.870829 -1.870829 
+C -2.366978 -1.374679 -2.645751 -0.701661 -2.645751 0 
+C -2.645751 0.701661 -2.366978 1.374679 -1.870829 1.870829 
+C -1.374679 2.366978 -0.701661 2.645751 0 2.645751 
+z
+" style="stroke: #d3ad84"/>
+    </defs>
+    <g clip-path="url(#allocation-p57bdac4532)">
+     <use href="#allocation-m4546c24455" x="186.736014" y="152.780883" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="allocation-line2d_25">
+    <path d="M 174.279325 165.692869 
+L 174.36101 164.683228 
+L 174.605598 163.673587 
+L 175.0117 162.663946 
+L 175.577044 161.654305 
+L 176.298537 160.644664 
+L 177.172349 159.635022 
+L 179.35849 157.61574 
+L 182.09387 155.596458 
+L 185.331731 153.577176 
+L 189.023306 151.557894 
+L 193.120364 149.538612 
+L 199.926814 146.509689 
+L 207.403654 143.480765 
+L 215.432041 140.451842 
+L 226.827127 136.413278 
+L 241.930859 131.365073 
+L 257.75004 126.316867 
+L 277.423379 120.259021 
+L 304.485984 112.181892 
+L 339.215502 102.085482 
+L 381.741403 89.969789 
+L 439.330058 73.815532 
+L 515.817297 52.613069 
+L 614.995209 25.35276 
+L 614.995209 25.35276 
+" clip-path="url(#allocation-p57bdac4532)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="allocation-line2d_26">
+    <path d="M 88.961677 206.902512 
+L 382.051475 44.666715 
+L 382.051475 44.666715 
+" clip-path="url(#allocation-p57bdac4532)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="allocation-patch_3">
+    <path d="M 62.66 215.98 
+L 62.66 16.275273 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="allocation-patch_4">
+    <path d="M 62.66 215.98 
+L 641.296886 215.98 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="allocation-legend_1">
+    <g id="allocation-line2d_27">
+     <path d="M 69.86 26.754023 
+L 77.86 26.754023 
+L 85.86 26.754023 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="allocation-text_15">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="92.26" y="29.554023" transform="rotate(-0 92.26 29.554023)">Risky efficient frontier</text>
+    </g>
+    <g id="allocation-line2d_28">
+     <path d="M 69.86 38.496523 
+L 77.86 38.496523 
+L 85.86 38.496523 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="allocation-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="92.26" y="41.296523" transform="rotate(-0 92.26 41.296523)">Capital allocation line</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="allocation-p57bdac4532">
+   <rect x="62.66" y="16.275273" width="578.636886" height="199.704727"/>
+  </clipPath>
+ </defs>
+</svg>

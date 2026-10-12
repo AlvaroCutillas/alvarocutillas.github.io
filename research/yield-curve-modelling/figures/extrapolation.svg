@@ -1,0 +1,513 @@
+<svg role="img" aria-labelledby="extrapolation-title extrapolation-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="259.2pt" viewBox="0 0 792 259.2" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="extrapolation-title">Figure 14 · Long-end extrapolation</title><desc id="extrapolation-desc">The last synthetic quote is at 30 years. Each parametric model converges to its fitted β₀; the extrapolated curves are not independently observed evidence about long-horizon rates.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T20:19:14.256010</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="extrapolation-figure_1">
+  <g id="extrapolation-patch_1">
+   <path d="M 0 259.2 
+L 792 259.2 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="extrapolation-axes_1">
+   <g id="extrapolation-patch_2">
+    <path d="M 62.66 215.98 
+L 778.5 215.98 
+L 778.5 35.14 
+L 62.66 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="extrapolation-matplotlib.axis_1">
+    <g id="extrapolation-xtick_1">
+     <g id="extrapolation-line2d_1">
+      <path d="M 95.198182 215.98 
+L 95.198182 35.14 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_2">
+      <defs>
+       <path id="extrapolation-m5cbddd7d45" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#extrapolation-m5cbddd7d45" x="95.198182" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="95.198182" y="229.818594" transform="rotate(-0 95.198182 229.818594)">0</text>
+     </g>
+    </g>
+    <g id="extrapolation-xtick_2">
+     <g id="extrapolation-line2d_3">
+      <path d="M 176.543636 215.98 
+L 176.543636 35.14 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_4">
+      <g>
+       <use href="#extrapolation-m5cbddd7d45" x="176.543636" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="176.543636" y="229.818594" transform="rotate(-0 176.543636 229.818594)">10</text>
+     </g>
+    </g>
+    <g id="extrapolation-xtick_3">
+     <g id="extrapolation-line2d_5">
+      <path d="M 257.889091 215.98 
+L 257.889091 35.14 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_6">
+      <g>
+       <use href="#extrapolation-m5cbddd7d45" x="257.889091" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="257.889091" y="229.818594" transform="rotate(-0 257.889091 229.818594)">20</text>
+     </g>
+    </g>
+    <g id="extrapolation-xtick_4">
+     <g id="extrapolation-line2d_7">
+      <path d="M 339.234545 215.98 
+L 339.234545 35.14 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_8">
+      <g>
+       <use href="#extrapolation-m5cbddd7d45" x="339.234545" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="339.234545" y="229.818594" transform="rotate(-0 339.234545 229.818594)">30</text>
+     </g>
+    </g>
+    <g id="extrapolation-xtick_5">
+     <g id="extrapolation-line2d_9">
+      <path d="M 420.58 215.98 
+L 420.58 35.14 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_10">
+      <g>
+       <use href="#extrapolation-m5cbddd7d45" x="420.58" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="420.58" y="229.818594" transform="rotate(-0 420.58 229.818594)">40</text>
+     </g>
+    </g>
+    <g id="extrapolation-xtick_6">
+     <g id="extrapolation-line2d_11">
+      <path d="M 501.925455 215.98 
+L 501.925455 35.14 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_12">
+      <g>
+       <use href="#extrapolation-m5cbddd7d45" x="501.925455" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="501.925455" y="229.818594" transform="rotate(-0 501.925455 229.818594)">50</text>
+     </g>
+    </g>
+    <g id="extrapolation-xtick_7">
+     <g id="extrapolation-line2d_13">
+      <path d="M 583.270909 215.98 
+L 583.270909 35.14 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_14">
+      <g>
+       <use href="#extrapolation-m5cbddd7d45" x="583.270909" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="583.270909" y="229.818594" transform="rotate(-0 583.270909 229.818594)">60</text>
+     </g>
+    </g>
+    <g id="extrapolation-xtick_8">
+     <g id="extrapolation-line2d_15">
+      <path d="M 664.616364 215.98 
+L 664.616364 35.14 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_16">
+      <g>
+       <use href="#extrapolation-m5cbddd7d45" x="664.616364" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="664.616364" y="229.818594" transform="rotate(-0 664.616364 229.818594)">70</text>
+     </g>
+    </g>
+    <g id="extrapolation-xtick_9">
+     <g id="extrapolation-line2d_17">
+      <path d="M 745.961818 215.98 
+L 745.961818 35.14 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_18">
+      <g>
+       <use href="#extrapolation-m5cbddd7d45" x="745.961818" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="745.961818" y="229.818594" transform="rotate(-0 745.961818 229.818594)">80</text>
+     </g>
+    </g>
+    <g id="extrapolation-text_10">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="420.58" y="242.528906" transform="rotate(-0 420.58 242.528906)">Maturity (years)</text>
+    </g>
+   </g>
+   <g id="extrapolation-matplotlib.axis_2">
+    <g id="extrapolation-ytick_1">
+     <g id="extrapolation-line2d_19">
+      <path d="M 62.66 204.482074 
+L 778.5 204.482074 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_20">
+      <defs>
+       <path id="extrapolation-m4ad79614bd" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#extrapolation-m4ad79614bd" x="62.66" y="204.482074" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="207.901371" transform="rotate(-0 55.66 207.901371)">1.50%</text>
+     </g>
+    </g>
+    <g id="extrapolation-ytick_2">
+     <g id="extrapolation-line2d_21">
+      <path d="M 62.66 183.148549 
+L 778.5 183.148549 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_22">
+      <g>
+       <use href="#extrapolation-m4ad79614bd" x="62.66" y="183.148549" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="186.567846" transform="rotate(-0 55.66 186.567846)">1.75%</text>
+     </g>
+    </g>
+    <g id="extrapolation-ytick_3">
+     <g id="extrapolation-line2d_23">
+      <path d="M 62.66 161.815024 
+L 778.5 161.815024 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_24">
+      <g>
+       <use href="#extrapolation-m4ad79614bd" x="62.66" y="161.815024" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="165.234321" transform="rotate(-0 55.66 165.234321)">2.00%</text>
+     </g>
+    </g>
+    <g id="extrapolation-ytick_4">
+     <g id="extrapolation-line2d_25">
+      <path d="M 62.66 140.481499 
+L 778.5 140.481499 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_26">
+      <g>
+       <use href="#extrapolation-m4ad79614bd" x="62.66" y="140.481499" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="143.900795" transform="rotate(-0 55.66 143.900795)">2.25%</text>
+     </g>
+    </g>
+    <g id="extrapolation-ytick_5">
+     <g id="extrapolation-line2d_27">
+      <path d="M 62.66 119.147973 
+L 778.5 119.147973 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_28">
+      <g>
+       <use href="#extrapolation-m4ad79614bd" x="62.66" y="119.147973" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="122.56727" transform="rotate(-0 55.66 122.56727)">2.50%</text>
+     </g>
+    </g>
+    <g id="extrapolation-ytick_6">
+     <g id="extrapolation-line2d_29">
+      <path d="M 62.66 97.814448 
+L 778.5 97.814448 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_30">
+      <g>
+       <use href="#extrapolation-m4ad79614bd" x="62.66" y="97.814448" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="101.233745" transform="rotate(-0 55.66 101.233745)">2.75%</text>
+     </g>
+    </g>
+    <g id="extrapolation-ytick_7">
+     <g id="extrapolation-line2d_31">
+      <path d="M 62.66 76.480923 
+L 778.5 76.480923 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_32">
+      <g>
+       <use href="#extrapolation-m4ad79614bd" x="62.66" y="76.480923" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="79.90022" transform="rotate(-0 55.66 79.90022)">3.00%</text>
+     </g>
+    </g>
+    <g id="extrapolation-ytick_8">
+     <g id="extrapolation-line2d_33">
+      <path d="M 62.66 55.147398 
+L 778.5 55.147398 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="extrapolation-line2d_34">
+      <g>
+       <use href="#extrapolation-m4ad79614bd" x="62.66" y="55.147398" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="extrapolation-text_18">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="58.566695" transform="rotate(-0 55.66 58.566695)">3.25%</text>
+     </g>
+    </g>
+    <g id="extrapolation-text_19">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.197813" y="125.56" transform="rotate(-90 21.197813 125.56)">Continuous zero</text>
+    </g>
+   </g>
+   <g id="extrapolation-line2d_35">
+    <path d="M 95.198182 204.482074 
+L 96.825091 183.902803 
+L 98.452 165.988447 
+L 100.078909 150.413526 
+L 101.705818 136.891443 
+L 103.332727 125.169883 
+L 104.959636 115.026741 
+L 106.586545 106.26654 
+L 108.213455 98.71727 
+L 109.840364 92.227605 
+L 111.467273 86.664436 
+L 113.094182 81.910716 
+L 114.721091 77.863539 
+L 116.348 74.432465 
+L 117.974909 71.538026 
+L 119.601818 69.110427 
+L 121.228727 67.088381 
+L 122.855636 65.418103 
+L 124.482545 64.052405 
+L 126.109455 62.949911 
+L 127.736364 62.074357 
+L 129.363273 61.39398 
+L 131.803636 60.679514 
+L 134.244 60.262864 
+L 136.684364 60.07903 
+L 139.938182 60.105976 
+L 143.192 60.354782 
+L 148.072727 60.985725 
+L 156.207273 62.329144 
+L 166.782182 64.034299 
+L 174.103273 64.995119 
+L 181.424364 65.729566 
+L 188.745455 66.239416 
+L 196.88 66.565148 
+L 205.014545 66.670833 
+L 213.962545 66.575865 
+L 224.537455 66.237192 
+L 236.739273 65.619337 
+L 252.194909 64.601873 
+L 274.158182 62.909827 
+L 344.928727 57.312887 
+L 373.399636 55.355279 
+L 401.870545 53.617887 
+L 431.968364 52.007941 
+L 463.693091 50.535839 
+L 498.671636 49.141603 
+L 536.904 47.845319 
+L 580.017091 46.613514 
+L 628.824364 45.45043 
+L 684.139273 44.360742 
+L 745.961818 43.36 
+L 745.961818 43.36 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="extrapolation-line2d_36">
+    <path d="M 95.198182 207.76 
+L 96.825091 184.903631 
+L 98.452 165.551787 
+L 100.078909 149.17134 
+L 101.705818 135.310008 
+L 103.332727 123.584116 
+L 104.959636 113.668206 
+L 106.586545 105.286219 
+L 108.213455 98.204014 
+L 109.840364 92.223015 
+L 111.467273 87.17482 
+L 113.094182 82.916632 
+L 114.721091 79.32737 
+L 116.348 76.304382 
+L 117.974909 73.760645 
+L 119.601818 71.622395 
+L 121.228727 69.827115 
+L 122.855636 68.321827 
+L 124.482545 67.06164 
+L 126.109455 66.008526 
+L 128.549818 64.748025 
+L 130.990182 63.793421 
+L 133.430545 63.075621 
+L 136.684364 62.395716 
+L 139.938182 61.946816 
+L 144.005455 61.60827 
+L 149.699636 61.394435 
+L 157.834182 61.361327 
+L 173.289818 61.582945 
+L 209.895273 62.11122 
+L 250.568 62.438706 
+L 314.830909 62.710164 
+L 426.274182 62.931106 
+L 641.839636 63.102816 
+L 745.961818 63.145012 
+L 745.961818 63.145012 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="extrapolation-line2d_37">
+    <path d="M 95.198182 204.639731 
+L 96.825091 183.678251 
+L 98.452 165.549403 
+L 100.078909 149.885096 
+L 101.705818 136.364515 
+L 103.332727 124.708066 
+L 104.959636 114.6721 
+L 106.586545 106.044308 
+L 108.213455 98.639704 
+L 109.840364 92.297129 
+L 111.467273 86.876195 
+L 113.094182 82.254623 
+L 114.721091 78.325921 
+L 116.348 74.997362 
+L 117.974909 72.188214 
+L 119.601818 69.828208 
+L 121.228727 67.856186 
+L 122.855636 66.218939 
+L 124.482545 64.870182 
+L 126.109455 63.769667 
+L 127.736364 62.882402 
+L 129.363273 62.177981 
+L 131.803636 61.407364 
+L 134.244 60.914584 
+L 136.684364 60.639069 
+L 139.938182 60.526595 
+L 144.005455 60.672947 
+L 148.886182 61.106576 
+L 157.020727 62.102919 
+L 170.849455 63.789112 
+L 179.797455 64.629822 
+L 188.745455 65.227381 
+L 197.693455 65.593816 
+L 207.454909 65.761534 
+L 218.029818 65.714418 
+L 230.231636 65.424481 
+L 244.060364 64.866016 
+L 261.142909 63.942942 
+L 283.919636 62.475578 
+L 392.109091 55.215916 
+L 425.460727 53.352295 
+L 459.625818 51.670807 
+L 495.417818 50.13576 
+L 533.650182 48.71984 
+L 575.949818 47.380579 
+L 622.316727 46.137444 
+L 675.191273 44.948882 
+L 734.573455 43.840844 
+L 745.961818 43.650964 
+L 745.961818 43.650964 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="extrapolation-line2d_38">
+    <path d="M 339.234545 215.98 
+L 339.234545 35.14 
+" clip-path="url(#extrapolation-pf31393a1bc)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #7e8d86"/>
+   </g>
+   <g id="extrapolation-patch_3">
+    <path d="M 62.66 215.98 
+L 62.66 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="extrapolation-patch_4">
+    <path d="M 62.66 215.98 
+L 778.5 215.98 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="extrapolation-text_20">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="62.66" y="22.14" transform="rotate(-0 62.66 22.14)">Beyond the last observation: a model assumption</text>
+   </g>
+   <g id="extrapolation-legend_1">
+    <g id="extrapolation-line2d_39">
+     <path d="M 667.96875 180.83125 
+L 675.96875 180.83125 
+L 683.96875 180.83125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="extrapolation-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="690.36875" y="183.63125" transform="rotate(-0 690.36875 183.63125)">Reference Svensson</text>
+    </g>
+    <g id="extrapolation-line2d_40">
+     <path d="M 667.96875 192.57375 
+L 675.96875 192.57375 
+L 683.96875 192.57375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="extrapolation-text_22">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="690.36875" y="195.37375" transform="rotate(-0 690.36875 195.37375)">Fitted Nelson–Siegel</text>
+    </g>
+    <g id="extrapolation-line2d_41">
+     <path d="M 667.96875 204.31625 
+L 675.96875 204.31625 
+L 683.96875 204.31625 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="extrapolation-text_23">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="690.36875" y="207.11625" transform="rotate(-0 690.36875 207.11625)">Fitted Svensson</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="extrapolation-pf31393a1bc">
+   <rect x="62.66" y="35.14" width="715.84" height="180.84"/>
+  </clipPath>
+ </defs>
+</svg>

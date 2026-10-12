@@ -1,0 +1,1089 @@
+<svg role="img" aria-labelledby="cross-section-title cross-section-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="259.2pt" viewBox="0 0 792 259.2" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="cross-section-title">Figure 07 · A cross-sectional regression</title><desc id="cross-section-desc">The realized next-month return is regressed on four standardized formation characteristics and three sector dummies plus an intercept. This is ex post attribution, not a portfolio selected using future returns.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-05T16:04:05.357251</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="cross-section-figure_1">
+  <g id="cross-section-patch_1">
+   <path d="M 0 259.2 
+L 792 259.2 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="cross-section-axes_1">
+   <g id="cross-section-patch_2">
+    <path d="M 70.22 215.98 
+L 392.13 215.98 
+L 392.13 35.14 
+L 70.22 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="cross-section-matplotlib.axis_1">
+    <g id="cross-section-xtick_1">
+     <g id="cross-section-line2d_1">
+      <path d="M 83.011735 215.98 
+L 83.011735 35.14 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_2">
+      <defs>
+       <path id="cross-section-m4b2d7556ad" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="83.011735" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="83.011735" y="229.818594" transform="rotate(-0 83.011735 229.818594)">0</text>
+     </g>
+    </g>
+    <g id="cross-section-xtick_2">
+     <g id="cross-section-line2d_3">
+      <path d="M 119.822484 215.98 
+L 119.822484 35.14 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_4">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="119.822484" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="119.822484" y="229.818594" transform="rotate(-0 119.822484 229.818594)">20</text>
+     </g>
+    </g>
+    <g id="cross-section-xtick_3">
+     <g id="cross-section-line2d_5">
+      <path d="M 156.633233 215.98 
+L 156.633233 35.14 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_6">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="156.633233" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="156.633233" y="229.818594" transform="rotate(-0 156.633233 229.818594)">40</text>
+     </g>
+    </g>
+    <g id="cross-section-xtick_4">
+     <g id="cross-section-line2d_7">
+      <path d="M 193.443982 215.98 
+L 193.443982 35.14 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_8">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="193.443982" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="193.443982" y="229.818594" transform="rotate(-0 193.443982 229.818594)">60</text>
+     </g>
+    </g>
+    <g id="cross-section-xtick_5">
+     <g id="cross-section-line2d_9">
+      <path d="M 230.254731 215.98 
+L 230.254731 35.14 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_10">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="230.254731" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="230.254731" y="229.818594" transform="rotate(-0 230.254731 229.818594)">80</text>
+     </g>
+    </g>
+    <g id="cross-section-xtick_6">
+     <g id="cross-section-line2d_11">
+      <path d="M 267.06548 215.98 
+L 267.06548 35.14 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_12">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="267.06548" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="267.06548" y="229.818594" transform="rotate(-0 267.06548 229.818594)">100</text>
+     </g>
+    </g>
+    <g id="cross-section-xtick_7">
+     <g id="cross-section-line2d_13">
+      <path d="M 303.876229 215.98 
+L 303.876229 35.14 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_14">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="303.876229" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="303.876229" y="229.818594" transform="rotate(-0 303.876229 229.818594)">120</text>
+     </g>
+    </g>
+    <g id="cross-section-xtick_8">
+     <g id="cross-section-line2d_15">
+      <path d="M 340.686978 215.98 
+L 340.686978 35.14 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_16">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="340.686978" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="340.686978" y="229.818594" transform="rotate(-0 340.686978 229.818594)">140</text>
+     </g>
+    </g>
+    <g id="cross-section-xtick_9">
+     <g id="cross-section-line2d_17">
+      <path d="M 377.497727 215.98 
+L 377.497727 35.14 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_18">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="377.497727" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="377.497727" y="229.818594" transform="rotate(-0 377.497727 229.818594)">160</text>
+     </g>
+    </g>
+    <g id="cross-section-text_10">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="231.175" y="242.528906" transform="rotate(-0 231.175 242.528906)">Stock rank by fitted return</text>
+    </g>
+   </g>
+   <g id="cross-section-matplotlib.axis_2">
+    <g id="cross-section-ytick_1">
+     <g id="cross-section-line2d_19">
+      <path d="M 70.22 212.70429 
+L 392.13 212.70429 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_20">
+      <defs>
+       <path id="cross-section-mab54d60f32" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#cross-section-mab54d60f32" x="70.22" y="212.70429" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="216.123587" transform="rotate(-0 63.22 216.123587)">−10.0%</text>
+     </g>
+    </g>
+    <g id="cross-section-ytick_2">
+     <g id="cross-section-line2d_21">
+      <path d="M 70.22 188.98504 
+L 392.13 188.98504 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_22">
+      <g>
+       <use href="#cross-section-mab54d60f32" x="70.22" y="188.98504" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="192.404337" transform="rotate(-0 63.22 192.404337)">−7.5%</text>
+     </g>
+    </g>
+    <g id="cross-section-ytick_3">
+     <g id="cross-section-line2d_23">
+      <path d="M 70.22 165.265791 
+L 392.13 165.265791 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_24">
+      <g>
+       <use href="#cross-section-mab54d60f32" x="70.22" y="165.265791" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="168.685088" transform="rotate(-0 63.22 168.685088)">−5.0%</text>
+     </g>
+    </g>
+    <g id="cross-section-ytick_4">
+     <g id="cross-section-line2d_25">
+      <path d="M 70.22 141.546541 
+L 392.13 141.546541 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_26">
+      <g>
+       <use href="#cross-section-mab54d60f32" x="70.22" y="141.546541" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="144.965838" transform="rotate(-0 63.22 144.965838)">−2.5%</text>
+     </g>
+    </g>
+    <g id="cross-section-ytick_5">
+     <g id="cross-section-line2d_27">
+      <path d="M 70.22 117.827292 
+L 392.13 117.827292 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_28">
+      <g>
+       <use href="#cross-section-mab54d60f32" x="70.22" y="117.827292" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="121.246589" transform="rotate(-0 63.22 121.246589)">0.0%</text>
+     </g>
+    </g>
+    <g id="cross-section-ytick_6">
+     <g id="cross-section-line2d_29">
+      <path d="M 70.22 94.108043 
+L 392.13 94.108043 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_30">
+      <g>
+       <use href="#cross-section-mab54d60f32" x="70.22" y="94.108043" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="97.527339" transform="rotate(-0 63.22 97.527339)">2.5%</text>
+     </g>
+    </g>
+    <g id="cross-section-ytick_7">
+     <g id="cross-section-line2d_31">
+      <path d="M 70.22 70.388793 
+L 392.13 70.388793 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_32">
+      <g>
+       <use href="#cross-section-mab54d60f32" x="70.22" y="70.388793" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="73.80809" transform="rotate(-0 63.22 73.80809)">5.0%</text>
+     </g>
+    </g>
+    <g id="cross-section-ytick_8">
+     <g id="cross-section-line2d_33">
+      <path d="M 70.22 46.669544 
+L 392.13 46.669544 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_34">
+      <g>
+       <use href="#cross-section-mab54d60f32" x="70.22" y="46.669544" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_18">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="50.088841" transform="rotate(-0 63.22 50.088841)">7.5%</text>
+     </g>
+    </g>
+    <g id="cross-section-text_19">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.216094" y="125.56" transform="rotate(-90 21.216094 125.56)">Next-month return</text>
+    </g>
+   </g>
+   <g id="cross-section-line2d_35">
+    <path d="M 84.852273 123.210304 
+L 86.69281 152.676138 
+L 88.533348 150.382149 
+L 90.373885 135.503472 
+L 92.214423 207.76 
+L 94.05496 142.100354 
+L 95.895497 136.863004 
+L 97.736035 102.79556 
+L 99.576572 160.396675 
+L 101.41711 162.175782 
+L 103.257647 132.776232 
+L 105.098185 142.109633 
+L 106.938722 122.970667 
+L 108.77926 115.023699 
+L 110.619797 137.303359 
+L 112.460334 123.798866 
+L 114.300872 159.485119 
+L 116.141409 148.844462 
+L 117.981947 128.412285 
+L 119.822484 128.022465 
+L 121.663022 119.126634 
+L 123.503559 154.193355 
+L 125.344097 150.134901 
+L 127.184634 99.305812 
+L 129.025172 170.471101 
+L 130.865709 154.950035 
+L 132.706246 155.589498 
+L 134.546784 115.650236 
+L 136.387321 112.635305 
+L 138.227859 130.575462 
+L 140.068396 161.283499 
+L 141.908934 103.741955 
+L 143.749471 123.325612 
+L 145.590009 108.437432 
+L 147.430546 125.326159 
+L 149.271083 137.94654 
+L 151.111621 101.409509 
+L 152.952158 122.001325 
+L 154.792696 137.898358 
+L 156.633233 116.929454 
+L 158.473771 100.412207 
+L 160.314308 125.965509 
+L 162.154846 133.574566 
+L 163.995383 89.551689 
+L 165.835921 142.290032 
+L 167.676458 139.680937 
+L 169.516995 158.504319 
+L 171.357533 152.674331 
+L 173.19807 134.427077 
+L 175.038608 91.6366 
+L 176.879145 105.398986 
+L 178.719683 114.855323 
+L 180.56022 102.739709 
+L 182.400758 121.619981 
+L 184.241295 87.108754 
+L 186.081832 104.527257 
+L 187.92237 99.829103 
+L 189.762907 112.824748 
+L 191.603445 142.367911 
+L 193.443982 105.253085 
+L 195.28452 133.011852 
+L 197.125057 74.63808 
+L 198.965595 87.713451 
+L 200.806132 120.03894 
+L 202.64667 142.863364 
+L 204.487207 105.471432 
+L 206.327744 122.500911 
+L 208.168282 126.90287 
+L 210.008819 106.712478 
+L 211.849357 143.567662 
+L 213.689894 119.743223 
+L 215.530432 120.651414 
+L 219.211507 116.222175 
+L 221.052044 96.198836 
+L 222.892581 127.865404 
+L 224.733119 121.2744 
+L 226.573656 113.897191 
+L 228.414194 111.878613 
+L 230.254731 133.117973 
+L 232.095269 69.62843 
+L 233.935806 125.290051 
+L 235.776344 102.526561 
+L 237.616881 127.578164 
+L 239.457419 93.364062 
+L 243.138493 118.547784 
+L 244.979031 83.927989 
+L 246.819568 106.556454 
+L 248.660106 98.67711 
+L 250.500643 146.483618 
+L 252.341181 136.084416 
+L 254.181718 97.327444 
+L 256.022256 88.142512 
+L 257.862793 108.862118 
+L 259.70333 113.350708 
+L 261.543868 84.296097 
+L 263.384405 123.50019 
+L 265.224943 78.867625 
+L 267.06548 106.426324 
+L 268.906018 79.814013 
+L 270.746555 102.270682 
+L 272.587093 137.223261 
+L 274.42763 134.852497 
+L 276.268168 139.238174 
+L 278.108705 104.082087 
+L 279.949242 105.580377 
+L 281.78978 78.471633 
+L 283.630317 105.40122 
+L 285.470855 94.971076 
+L 287.311392 100.710044 
+L 289.15193 72.80209 
+L 290.992467 102.768168 
+L 292.833005 87.370198 
+L 294.673542 85.970821 
+L 296.514079 120.79657 
+L 298.354617 115.994132 
+L 300.195154 55.89198 
+L 302.035692 65.266694 
+L 303.876229 77.466493 
+L 305.716767 47.129899 
+L 307.557304 97.389411 
+L 309.397842 98.70118 
+L 311.238379 100.918082 
+L 313.078917 119.687437 
+L 314.919454 101.501715 
+L 316.759991 90.098909 
+L 318.600529 126.186994 
+L 320.441066 82.954516 
+L 322.281604 97.31396 
+L 324.122141 62.062144 
+L 325.962679 55.41008 
+L 327.803216 69.094671 
+L 329.643754 149.839279 
+L 331.484291 64.425099 
+L 333.324828 108.444947 
+L 335.165366 98.507969 
+L 337.005903 85.66305 
+L 338.846441 75.611486 
+L 340.686978 51.312578 
+L 342.527516 43.36 
+L 344.368053 91.567972 
+L 346.208591 69.657907 
+L 348.049128 44.869569 
+L 349.889666 123.449308 
+L 351.730203 130.917881 
+L 353.57074 111.155364 
+L 355.411278 104.656323 
+L 357.251815 113.139091 
+L 359.092353 66.028256 
+L 360.93289 130.852025 
+L 362.773428 104.379337 
+L 364.613965 88.286199 
+L 366.454503 44.971094 
+L 368.29504 100.809727 
+L 370.135577 58.23103 
+L 371.976115 66.755001 
+L 373.816652 91.316906 
+L 375.65719 86.635221 
+L 377.497727 61.561834 
+L 377.497727 61.561834 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #7e8d86; stroke-linecap: square"/>
+   </g>
+   <g id="cross-section-line2d_36">
+    <path d="M 84.852273 149.792499 
+L 86.69281 148.886403 
+L 88.533348 148.588766 
+L 90.373885 146.98813 
+L 92.214423 143.427827 
+L 94.05496 142.246727 
+L 95.895497 141.621549 
+L 97.736035 141.554523 
+L 99.576572 140.685147 
+L 103.257647 139.113813 
+L 105.098185 137.408966 
+L 106.938722 137.222218 
+L 108.77926 137.209276 
+L 110.619797 135.030075 
+L 114.300872 133.542586 
+L 116.141409 132.601778 
+L 117.981947 132.099607 
+L 119.822484 131.197857 
+L 121.663022 131.113941 
+L 123.503559 130.375824 
+L 125.344097 129.818191 
+L 129.025172 129.711031 
+L 130.865709 129.073637 
+L 132.706246 128.858524 
+L 136.387321 128.026391 
+L 138.227859 127.179101 
+L 140.068396 127.024377 
+L 141.908934 126.322615 
+L 143.749471 126.321019 
+L 145.590009 126.091526 
+L 147.430546 126.033698 
+L 149.271083 125.651728 
+L 151.111621 125.580494 
+L 152.952158 124.743152 
+L 158.473771 124.645145 
+L 160.314308 124.551439 
+L 162.154846 124.296677 
+L 163.995383 124.237552 
+L 165.835921 122.778177 
+L 169.516995 122.449636 
+L 171.357533 122.182477 
+L 173.19807 122.148017 
+L 175.038608 121.663903 
+L 176.879145 121.505958 
+L 178.719683 120.60168 
+L 182.400758 120.004603 
+L 184.241295 119.167045 
+L 186.081832 119.054088 
+L 187.92237 118.78678 
+L 189.762907 118.65164 
+L 191.603445 118.262124 
+L 193.443982 118.248974 
+L 195.28452 117.767005 
+L 197.125057 117.071502 
+L 198.965595 116.920389 
+L 204.487207 116.812665 
+L 206.327744 115.967139 
+L 210.008819 115.528705 
+L 211.849357 115.227643 
+L 213.689894 115.146468 
+L 215.530432 114.838405 
+L 217.370969 114.709302 
+L 219.211507 114.229427 
+L 224.733119 113.638692 
+L 226.573656 113.610484 
+L 228.414194 113.153782 
+L 230.254731 113.110038 
+L 233.935806 112.709482 
+L 235.776344 112.246276 
+L 237.616881 111.520263 
+L 241.297956 111.131792 
+L 243.138493 110.67305 
+L 244.979031 109.141885 
+L 246.819568 108.253154 
+L 248.660106 107.122628 
+L 250.500643 107.035068 
+L 254.181718 106.454576 
+L 256.022256 106.389487 
+L 257.862793 106.03173 
+L 259.70333 105.966043 
+L 261.543868 105.67022 
+L 263.384405 104.806809 
+L 265.224943 104.542812 
+L 267.06548 104.493395 
+L 268.906018 103.832409 
+L 270.746555 103.675793 
+L 272.587093 103.086698 
+L 274.42763 103.035742 
+L 276.268168 102.044401 
+L 279.949242 101.913019 
+L 283.630317 101.631759 
+L 285.470855 101.614729 
+L 287.311392 99.346968 
+L 289.15193 99.256126 
+L 290.992467 98.883742 
+L 292.833005 98.685832 
+L 294.673542 98.606855 
+L 296.514079 97.37789 
+L 298.354617 97.23941 
+L 300.195154 97.215367 
+L 302.035692 96.365722 
+L 303.876229 95.84613 
+L 307.557304 95.728834 
+L 309.397842 95.31829 
+L 311.238379 95.064067 
+L 313.078917 94.403701 
+L 314.919454 94.177505 
+L 316.759991 93.433874 
+L 318.600529 93.358853 
+L 320.441066 92.339807 
+L 322.281604 92.075032 
+L 324.122141 92.042501 
+L 327.803216 91.481393 
+L 329.643754 90.338773 
+L 331.484291 89.593753 
+L 333.324828 89.40232 
+L 335.165366 88.78842 
+L 338.846441 88.569721 
+L 340.686978 87.932056 
+L 342.527516 87.814611 
+L 344.368053 87.343396 
+L 346.208591 87.245896 
+L 348.049128 86.022714 
+L 351.730203 85.950947 
+L 353.57074 85.531117 
+L 355.411278 84.904185 
+L 357.251815 84.602466 
+L 359.092353 83.316005 
+L 360.93289 81.585763 
+L 362.773428 81.520726 
+L 366.454503 79.923243 
+L 368.29504 78.527932 
+L 370.135577 78.377987 
+L 371.976115 77.980886 
+L 373.816652 75.761814 
+L 377.497727 69.521659 
+L 377.497727 69.521659 
+" clip-path="url(#cross-section-pb62052443d)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="cross-section-patch_3">
+    <path d="M 70.22 215.98 
+L 70.22 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="cross-section-patch_4">
+    <path d="M 70.22 215.98 
+L 392.13 215.98 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="cross-section-text_20">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="70.22" y="22.14" transform="rotate(-0 70.22 22.14)">Joint style and sector attribution</text>
+   </g>
+   <g id="cross-section-legend_1">
+    <g id="cross-section-line2d_37">
+     <path d="M 77.42 45.61875 
+L 85.42 45.61875 
+L 93.42 45.61875 
+" style="fill: none; stroke: #7e8d86; stroke-linecap: square"/>
+    </g>
+    <g id="cross-section-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="99.82" y="48.41875" transform="rotate(-0 99.82 48.41875)">Realized stock return</text>
+    </g>
+    <g id="cross-section-line2d_38">
+     <path d="M 77.42 57.36125 
+L 85.42 57.36125 
+L 93.42 57.36125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="cross-section-text_22">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="99.82" y="60.16125" transform="rotate(-0 99.82 60.16125)">Cross-sectional fit</text>
+    </g>
+   </g>
+  </g>
+  <g id="cross-section-axes_2">
+   <g id="cross-section-patch_5">
+    <path d="M 456.59 215.98 
+L 778.5 215.98 
+L 778.5 35.14 
+L 456.59 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="cross-section-matplotlib.axis_3">
+    <g id="cross-section-xtick_10">
+     <g id="cross-section-line2d_39">
+      <path d="M 469.381735 215.98 
+L 469.381735 35.14 
+" clip-path="url(#cross-section-p72b57b8ad6)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_40">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="469.381735" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="469.381735" y="229.818594" transform="rotate(-0 469.381735 229.818594)">0</text>
+     </g>
+    </g>
+    <g id="cross-section-xtick_11">
+     <g id="cross-section-line2d_41">
+      <path d="M 506.192484 215.98 
+L 506.192484 35.14 
+" clip-path="url(#cross-section-p72b57b8ad6)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_42">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="506.192484" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="506.192484" y="229.818594" transform="rotate(-0 506.192484 229.818594)">20</text>
+     </g>
+    </g>
+    <g id="cross-section-xtick_12">
+     <g id="cross-section-line2d_43">
+      <path d="M 543.003233 215.98 
+L 543.003233 35.14 
+" clip-path="url(#cross-section-p72b57b8ad6)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_44">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="543.003233" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="543.003233" y="229.818594" transform="rotate(-0 543.003233 229.818594)">40</text>
+     </g>
+    </g>
+    <g id="cross-section-xtick_13">
+     <g id="cross-section-line2d_45">
+      <path d="M 579.813982 215.98 
+L 579.813982 35.14 
+" clip-path="url(#cross-section-p72b57b8ad6)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_46">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="579.813982" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="579.813982" y="229.818594" transform="rotate(-0 579.813982 229.818594)">60</text>
+     </g>
+    </g>
+    <g id="cross-section-xtick_14">
+     <g id="cross-section-line2d_47">
+      <path d="M 616.624731 215.98 
+L 616.624731 35.14 
+" clip-path="url(#cross-section-p72b57b8ad6)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_48">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="616.624731" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="616.624731" y="229.818594" transform="rotate(-0 616.624731 229.818594)">80</text>
+     </g>
+    </g>
+    <g id="cross-section-xtick_15">
+     <g id="cross-section-line2d_49">
+      <path d="M 653.43548 215.98 
+L 653.43548 35.14 
+" clip-path="url(#cross-section-p72b57b8ad6)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_50">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="653.43548" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="653.43548" y="229.818594" transform="rotate(-0 653.43548 229.818594)">100</text>
+     </g>
+    </g>
+    <g id="cross-section-xtick_16">
+     <g id="cross-section-line2d_51">
+      <path d="M 690.246229 215.98 
+L 690.246229 35.14 
+" clip-path="url(#cross-section-p72b57b8ad6)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_52">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="690.246229" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="690.246229" y="229.818594" transform="rotate(-0 690.246229 229.818594)">120</text>
+     </g>
+    </g>
+    <g id="cross-section-xtick_17">
+     <g id="cross-section-line2d_53">
+      <path d="M 727.056978 215.98 
+L 727.056978 35.14 
+" clip-path="url(#cross-section-p72b57b8ad6)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_54">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="727.056978" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="727.056978" y="229.818594" transform="rotate(-0 727.056978 229.818594)">140</text>
+     </g>
+    </g>
+    <g id="cross-section-xtick_18">
+     <g id="cross-section-line2d_55">
+      <path d="M 763.867727 215.98 
+L 763.867727 35.14 
+" clip-path="url(#cross-section-p72b57b8ad6)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_56">
+      <g>
+       <use href="#cross-section-m4b2d7556ad" x="763.867727" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="763.867727" y="229.818594" transform="rotate(-0 763.867727 229.818594)">160</text>
+     </g>
+    </g>
+    <g id="cross-section-text_32">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="617.545" y="242.528906" transform="rotate(-0 617.545 242.528906)">Stock rank by fitted return</text>
+    </g>
+   </g>
+   <g id="cross-section-matplotlib.axis_4">
+    <g id="cross-section-ytick_9">
+     <g id="cross-section-line2d_57">
+      <path d="M 456.59 196.980822 
+L 778.5 196.980822 
+" clip-path="url(#cross-section-p72b57b8ad6)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_58">
+      <g>
+       <use href="#cross-section-mab54d60f32" x="456.59" y="196.980822" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="449.59" y="200.400119" transform="rotate(-0 449.59 200.400119)">−6.0%</text>
+     </g>
+    </g>
+    <g id="cross-section-ytick_10">
+     <g id="cross-section-line2d_59">
+      <path d="M 456.59 169.362684 
+L 778.5 169.362684 
+" clip-path="url(#cross-section-p72b57b8ad6)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_60">
+      <g>
+       <use href="#cross-section-mab54d60f32" x="456.59" y="169.362684" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="449.59" y="172.781981" transform="rotate(-0 449.59 172.781981)">−4.0%</text>
+     </g>
+    </g>
+    <g id="cross-section-ytick_11">
+     <g id="cross-section-line2d_61">
+      <path d="M 456.59 141.744547 
+L 778.5 141.744547 
+" clip-path="url(#cross-section-p72b57b8ad6)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_62">
+      <g>
+       <use href="#cross-section-mab54d60f32" x="456.59" y="141.744547" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_35">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="449.59" y="145.163843" transform="rotate(-0 449.59 145.163843)">−2.0%</text>
+     </g>
+    </g>
+    <g id="cross-section-ytick_12">
+     <g id="cross-section-line2d_63">
+      <path d="M 456.59 114.126409 
+L 778.5 114.126409 
+" clip-path="url(#cross-section-p72b57b8ad6)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_64">
+      <g>
+       <use href="#cross-section-mab54d60f32" x="456.59" y="114.126409" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_36">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="449.59" y="117.545706" transform="rotate(-0 449.59 117.545706)">0.0%</text>
+     </g>
+    </g>
+    <g id="cross-section-ytick_13">
+     <g id="cross-section-line2d_65">
+      <path d="M 456.59 86.508271 
+L 778.5 86.508271 
+" clip-path="url(#cross-section-p72b57b8ad6)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_66">
+      <g>
+       <use href="#cross-section-mab54d60f32" x="456.59" y="86.508271" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_37">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="449.59" y="89.927568" transform="rotate(-0 449.59 89.927568)">2.0%</text>
+     </g>
+    </g>
+    <g id="cross-section-ytick_14">
+     <g id="cross-section-line2d_67">
+      <path d="M 456.59 58.890133 
+L 778.5 58.890133 
+" clip-path="url(#cross-section-p72b57b8ad6)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="cross-section-line2d_68">
+      <g>
+       <use href="#cross-section-mab54d60f32" x="456.59" y="58.890133" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="cross-section-text_38">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="449.59" y="62.30943" transform="rotate(-0 449.59 62.30943)">4.0%</text>
+     </g>
+    </g>
+    <g id="cross-section-text_39">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="413.312344" y="125.56" transform="rotate(-90 413.312344 125.56)">Residual return</text>
+    </g>
+   </g>
+   <g id="cross-section-line2d_69">
+    <path d="M 471.222273 75.436803 
+L 473.06281 119.642257 
+L 474.903348 116.736626 
+L 476.743885 97.410825 
+L 478.584423 207.76 
+L 480.42496 113.913367 
+L 482.265497 107.200485 
+L 484.106035 57.713875 
+L 485.946572 142.81596 
+L 487.78711 146.465175 
+L 489.627647 104.902246 
+L 491.468185 120.968091 
+L 493.308722 93.383694 
+L 495.14926 81.835952 
+L 496.989797 117.435107 
+L 498.830334 98.862959 
+L 500.670872 151.885006 
+L 502.511409 137.767159 
+L 504.351947 108.75962 
+L 506.192484 109.504718 
+L 508.033022 96.679234 
+L 509.873559 148.792128 
+L 511.714097 143.696784 
+L 513.554634 69.726178 
+L 515.395172 173.451496 
+L 517.235709 151.788749 
+L 519.076246 153.032559 
+L 520.916784 95.526933 
+L 522.757321 91.725134 
+L 524.597859 119.069713 
+L 526.438396 163.989557 
+L 528.278934 81.260921 
+L 530.119471 109.766681 
+L 531.960009 88.431392 
+L 533.800546 113.096607 
+L 535.641083 132.021147 
+L 537.481621 78.946249 
+L 539.322158 110.13576 
+L 541.162696 133.289144 
+L 543.003233 102.813982 
+L 544.843771 78.856077 
+L 546.684308 116.184547 
+L 548.524846 127.630104 
+L 550.365383 63.642153 
+L 552.205921 142.525341 
+L 554.046458 138.922648 
+L 555.886995 166.602944 
+L 557.727533 158.506408 
+L 559.56807 131.99822 
+L 561.408608 70.42255 
+L 563.249145 90.683184 
+L 565.089683 105.762755 
+L 566.93022 88.495626 
+L 568.770758 116.477544 
+L 570.611295 67.466506 
+L 572.451832 92.983032 
+L 574.29237 86.534066 
+L 576.132907 105.645539 
+L 577.973445 149.211674 
+L 579.813982 95.211273 
+L 581.65452 136.314836 
+L 583.495057 52.365807 
+L 585.335595 71.616566 
+L 587.176132 118.690696 
+L 589.01667 152.01291 
+L 590.857207 97.619577 
+L 592.697744 123.636122 
+L 594.538282 130.344768 
+L 596.378819 101.294648 
+L 598.219357 155.374476 
+L 600.059894 120.81685 
+L 601.900432 122.587074 
+L 603.740969 119.587568 
+L 605.581507 117.026795 
+L 607.422044 88.160181 
+L 609.262581 134.645479 
+L 611.103119 125.239958 
+L 612.943656 114.543704 
+L 614.784194 112.270437 
+L 616.624731 143.247371 
+L 618.465269 51.112593 
+L 620.305806 132.437057 
+L 622.146344 99.979648 
+L 623.986881 137.498213 
+L 625.827419 87.953407 
+L 629.508493 125.587853 
+L 631.349031 77.428322 
+L 633.189568 111.656912 
+L 635.030106 101.834205 
+L 636.870643 171.542616 
+L 638.711181 156.800814 
+L 640.551718 100.842135 
+L 642.392256 87.568472 
+L 644.232793 118.245956 
+L 646.07333 124.874572 
+L 647.913868 83.017 
+L 649.754405 141.334076 
+L 651.594943 76.756927 
+L 653.43548 116.93973 
+L 655.276018 79.168337 
+L 657.116555 112.081311 
+L 658.957093 163.811175 
+L 660.79763 160.434763 
+L 662.638168 168.260855 
+L 664.478705 117.171419 
+L 666.319242 119.46414 
+L 668.15978 80.290996 
+L 670.000317 119.61275 
+L 671.840855 104.456767 
+L 673.681392 116.110325 
+L 675.52193 75.623335 
+L 677.362467 119.780077 
+L 679.203005 97.656836 
+L 681.043542 95.735031 
+L 682.884079 148.211611 
+L 684.724617 141.423356 
+L 686.565154 53.981431 
+L 688.405692 68.862686 
+L 690.246229 87.375386 
+L 692.086767 43.36 
+L 693.927304 116.54333 
+L 695.767842 119.050106 
+L 697.608379 122.646756 
+L 699.448917 150.926145 
+L 701.289454 124.786581 
+L 703.129991 109.272466 
+L 704.970529 161.906806 
+L 706.811066 100.466393 
+L 708.651604 121.751516 
+L 710.492141 70.490878 
+L 712.332679 61.255791 
+L 714.173216 81.543191 
+L 716.013754 200.72765 
+L 717.854291 77.49417 
+L 719.694828 141.842393 
+L 721.535366 128.272928 
+L 723.375903 109.719346 
+L 725.216441 95.266078 
+L 727.056978 60.827832 
+L 728.897516 49.424027 
+L 730.738053 120.275156 
+L 732.578591 88.527607 
+L 734.419128 54.229213 
+L 736.259666 168.633206 
+L 738.100203 179.574462 
+L 739.94074 151.421748 
+L 741.781278 142.875066 
+L 743.621815 155.66063 
+L 745.462353 88.964597 
+L 747.30289 185.83201 
+L 749.143428 147.396446 
+L 750.983965 125.129304 
+L 752.824503 63.254581 
+L 754.66504 146.556907 
+L 756.505577 84.803105 
+L 758.346115 97.787462 
+L 760.186652 136.766389 
+L 762.02719 134.410245 
+L 763.867727 102.541118 
+L 763.867727 102.541118 
+" clip-path="url(#cross-section-p72b57b8ad6)" style="fill: none; stroke: #d3ad84; stroke-linecap: square"/>
+   </g>
+   <g id="cross-section-patch_6">
+    <path d="M 456.59 215.98 
+L 456.59 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="cross-section-patch_7">
+    <path d="M 456.59 215.98 
+L 778.5 215.98 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="cross-section-text_40">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="456.59" y="22.14" transform="rotate(-0 456.59 22.14)">Realized minus fitted</text>
+   </g>
+   <g id="cross-section-legend_2">
+    <g id="cross-section-line2d_70">
+     <path d="M 463.79 45.61875 
+L 471.79 45.61875 
+L 479.79 45.61875 
+" style="fill: none; stroke: #d3ad84; stroke-linecap: square"/>
+    </g>
+    <g id="cross-section-text_41">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="486.19" y="48.41875" transform="rotate(-0 486.19 48.41875)">Residual</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="cross-section-pb62052443d">
+   <rect x="70.22" y="35.14" width="321.91" height="180.84"/>
+  </clipPath>
+  <clipPath id="cross-section-p72b57b8ad6">
+   <rect x="456.59" y="35.14" width="321.91" height="180.84"/>
+  </clipPath>
+ </defs>
+</svg>

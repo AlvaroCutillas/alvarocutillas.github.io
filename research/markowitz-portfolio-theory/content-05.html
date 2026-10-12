@@ -1,0 +1,95 @@
+<section id="estimation" data-title="Estimation of expected returns and covariances">
+<div class="section-label">21 / Statistical inputs</div><h2>Estimation of expected returns and covariances</h2>
+<p>Optimisation needs future conditional moments. A historical sample is one source of information, but estimating the inputs is a separate statistical problem. For \(T\) aligned return observations \(R_t\), the ordinary estimators are</p>
+\[ \widehat\mu=\frac1T\sum_{t=1}^{T}R_t,\qquad \widehat\Sigma=\frac1{T-1}\sum_{t=1}^{T}(R_t-\widehat\mu)(R_t-\widehat\mu)^\mathsf{T}. \]
+<p>The covariance denominator produces an unbiased sample covariance for IID observations with finite second moments. It does not correct stale prices, missing distributions, survivorship selection, changing regimes or inconsistent currencies. Those affect what the observations measure.</p>
+<h3>Means are difficult to estimate</h3>
+<p>Under IID sampling, the variance of a sample mean is \(\Sigma/T\). For one asset, the standard error is \(\sigma/\sqrt T\). An annual expected return difference of a few percentage points can be small relative to its estimation uncertainty.</p>
+\[ \operatorname{Var}(\widehat\mu)=\frac{\Sigma}{T},\qquad \widehat{\operatorname{SE}}(\widehat\mu_i)=\frac{\widehat\sigma_i}{\sqrt T}. \]
+<p>For an asset with 20% annual volatility, five independent annual observations give an expected-return standard error near 8.9 percentage points. Sixty IID monthly observations produce the same approximate standard error for an annualised arithmetic mean under square-root-of-time scaling; they are not sixty independent years of information.</p>
+<p>Longer histories increase sample size but may include older regimes that are less relevant to the next period. Short windows adapt more quickly but have noisier estimates. The trade-off is statistical and economic, rather than settled by always choosing the longest available sample.</p>
+<h3>Covariance dimensions and missing data</h3>
+<p>An \(n\)-asset symmetric covariance has \(n(n+1)/2\) distinct entries. A centred sample covariance has rank at most \(\min(n,T-1)\). If \(n\ge T\), it cannot be positive definite. Even below that threshold it can be poorly conditioned.</p>
+<p>Pairwise missing-data estimation can use different observation sets for different covariance entries and produce an indefinite matrix. A common aligned sample preserves the sample covariance's positive semidefiniteness, but can lose observations. A principled missing-data model can be preferable; silently filling missing returns with zero changes both means and dependence.</p>
+<h3>Serial dependence and annualisation</h3>
+<p>For a stationary sequence, covariance of a sum includes lagged dependence. Let \(\Gamma_k=\operatorname{Cov}(R_t,R_{t-k})\). Then</p>
+\[ \operatorname{Cov}\left(\sum_{t=1}^{H}R_t\right)=H\Gamma_0+\sum_{k=1}^{H-1}(H-k)(\Gamma_k+\Gamma_k^\mathsf{T}). \]
+<p>The IID scaling \(H\Sigma\) drops those lag terms. Serial correlation also changes uncertainty estimates for historical means and Sharpe ratios. Overlapping horizon returns are dependent even when their underlying one-period increments are independent.</p>
+<p>Bootstrapping independent rows assumes row independence. A block or time-series bootstrap can preserve some serial structure, provided block design matches the question. Resampling uncertainty does not capture every kind of regime change or model misspecification.</p>
+</section>
+
+<section id="shrinkage" data-title="Covariance shrinkage and numerical conditioning">
+<div class="section-label">22 / Covariance estimation</div><h2>Covariance shrinkage and numerical conditioning</h2>
+<p>A sample covariance estimates many quantities from limited data. Small noisy eigenvalues can make inverse-based portfolios extreme. Shrinkage blends the sample estimate with a structured target:</p>
+\[ \widetilde\Sigma=(1-\delta)\widehat\Sigma+\delta F,\qquad 0\le\delta\le1. \]
+<p>A diagonal target removes correlations while retaining estimated marginal variances. A scaled identity target imposes equal variances and zero covariance. A constant-correlation or factor target imposes a different structure. These assumptions should be stated, rather than treating every shrinkage construction as the same estimator.</p>
+{{figure:shrinkage}}
+<h3>The bias–variance trade-off</h3>
+<p>Shrinkage introduces structural bias but can reduce estimation variance and improve conditioning. If the sample and target are positive semidefinite, their convex combination is positive semidefinite. A positive-definite target with positive intensity makes the combination positive definite.</p>
+<p>The <a href="#ref-ledoit">Ledoit–Wolf paper</a> derives an estimator and intensity under a specified covariance-loss criterion and asymptotic framework. Choosing a convenient 30% diagonal blend is not automatically a Ledoit–Wolf estimator. Nor does minimising a covariance estimation loss guarantee the best portfolio under every objective.</p>
+<h3>Predicted risk and population risk</h3>
+<p>An optimiser selects weights that exploit the supplied covariance. Evaluating those weights with the same estimate can therefore look optimistic. In a synthetic experiment with known generating covariance, compare fitted predicted volatility with \(w^\mathsf{T}\Sigma_{\mathrm{true}}w\). In empirical work, a later evaluation period or another appropriate validation design supplies information about realised risk.</p>
+<p>The figure holds the population model fixed and repeatedly estimates covariance from short independent samples. Its shrinkage curve is a controlled illustration. Selecting the best intensity using those displayed test risks would turn them into training information; an honest empirical choice needs a separate tuning design.</p>
+<h3>Condition numbers and regularisation</h3>
+<p>For positive-definite covariance, the spectral condition number is \(\lambda_{\max}/\lambda_{\min}\). Large values warn that solving against the matrix can amplify input changes. Scaling to a correlation matrix helps separate numerical units from dependence but does not remove genuine near-collinearity.</p>
+<p>Adding a ridge \(\lambda I\) to covariance corresponds to adding a quadratic weight penalty when \(\lambda\) has compatible variance units. It changes the optimisation problem. Eigenvalue floors and nearest-correlation adjustments likewise modify inputs and should be documented. They are not merely invisible numerical housekeeping.</p>
+<div class="callout"><p><strong>Analogy: fitting a map from noisy distance measurements.</strong> If each distance is measured separately with error, an unconstrained fitted map can contain implausible distortions. A simple structural template can stabilise the map, at the price of not representing every real detail. Shrinkage uses this trade-off explicitly.</p></div>
+<p>A stable solve is necessary but not sufficient. A diagonal covariance can be well conditioned and economically misspecified. A highly accurate optimiser can then produce a precise solution to an inappropriate dependence model. Statistical validation must accompany numerical diagnostics.</p>
+</section>
+
+<section id="uncertain-means" data-title="Expected-return uncertainty and robust optimisation">
+<div class="section-label">23 / Input uncertainty</div><h2>Expected-return uncertainty and robust optimisation</h2>
+<p>Mean–variance optimisation acts on relative expected returns. In the cash-inclusive unrestricted problem, holding covariance fixed, a mean perturbation changes risky holdings by</p>
+\[ \Delta x=\frac1\gamma\Sigma^{-1}\Delta\mu. \]
+<p>Directions corresponding to small covariance eigenvalues can amplify forecast differences. An apparently small change in one annual mean can produce a large change in holdings, especially when risk aversion is low. <a href="#ref-best">Best and Grauer</a> analyse this sensitivity in mean–variance portfolios.</p>
+{{figure:sensitivity}}
+<h3>Shrinking or combining return forecasts</h3>
+<p>A mean forecast can be shrunk toward a common mean, factor forecast or economically motivated prior. This reduces the influence of noisy differences but introduces assumptions about the target. A historical average and a valuation forecast need a coherent horizon and uncertainty model before they are combined.</p>
+<p>The Black–Litterman framework combines an equilibrium-based prior with views and their uncertainty. In one Gaussian formulation, the posterior mean is</p>
+\[ \mu_{\mathrm{post}}=\left[V_0^{-1}+P^\mathsf{T}\Omega^{-1}P\right]^{-1}\left[V_0^{-1}\pi+P^\mathsf{T}\Omega^{-1}q\right]. \]
+<p>Here \(\pi\) is the prior mean, \(V_0\) its uncertainty covariance, \(P\mu=q+\varepsilon\) is the view model, and \(\Omega\) is view-error covariance. An often used prior form is \(V_0=\tau\Sigma\). In this equation \(q\) denotes view values, unrelated to the dividend yield in the earlier option guides. Inputs must identify whether means are total or excess returns.</p>
+<p>The posterior calculation does not establish that the prior or views are correct. It formalises how they are weighted under the assumed uncertainty model. Posterior-mean uncertainty and predictive asset-return covariance are different objects and should not be conflated when passing inputs to an optimiser.</p>
+<h3>Ellipsoidal uncertainty sets</h3>
+<p>An alternative asks for an allocation that performs acceptably over a set of plausible mean vectors. Suppose</p>
+\[ \mu=\widehat\mu+U^{1/2}u,\qquad \|u\|_2\le\kappa. \]
+<p>For fixed weights, minimising expected return over this ellipsoid yields</p>
+\[ \min_\mu w^\mathsf{T}\mu=w^\mathsf{T}\widehat\mu-\kappa\sqrt{w^\mathsf{T}Uw}. \]
+<p>The robust objective therefore penalises exposure to forecast uncertainty as well as return variance. The matrix \(U\) describes mean uncertainty, not necessarily asset-return covariance. The radius \(\kappa\) controls conservatism and needs a statistical or economic rationale.</p>
+<h3>Validation and interpretation</h3>
+<p>Robustness is always relative to a stated uncertainty set or alternative models. A narrow misspecified set can be confidently wrong; an excessively broad set can yield uninformative portfolios. Sensitivity analysis should vary means, covariance, constraints and financing separately to reveal which assumptions drive the result.</p>
+<p>Resampling and averaging optimised weights can stabilise allocations, but the average need not be optimal for the original moments or attain a particular target. Each proposed construction needs an identified objective and evaluation. The purpose of regularisation is improved decision reliability, rather than merely smoother-looking weights.</p>
+</section>
+
+<section id="evaluation" data-title="Rebalancing and evaluation over time">
+<div class="section-label">24 / Portfolio policies</div><h2>Rebalancing and evaluation over time</h2>
+<p>A single-period weight vector does not fully specify a multi-period investment strategy. After realised returns, a fully invested portfolio's pre-trade weights drift to</p>
+\[ w_{i,t}^{-}=\frac{w_{i,t-1}^{+}(1+R_{i,t})}{1+(w_{t-1}^{+})^\mathsf{T}R_t}. \]
+<p>The superscripts distinguish post-trade and pre-trade weights. The expression assumes no costs, external flows or insolvency. A policy must say when new target weights are estimated, when trades occur, and what happens if financing or weight limits are breached.</p>
+{{figure:rebalancing}}
+<h3>Buy and hold versus constant weights</h3>
+<p>A buy-and-hold policy retains asset units, allowing capital weights to drift. A constant-weight policy trades to restore a target. Both can start from the same allocation and later have different returns, exposures and costs. A rebalanced portfolio's compounded return depends on the sequence of asset returns and trades.</p>
+<p>The figure compares those policies on a synthetic return sequence. It is not a general demonstration that rebalancing beats buy and hold. Correlation, trend, dispersion, costs and the chosen target all affect the comparison.</p>
+<h3>Walk-forward evaluation</h3>
+<p>At each decision date, estimate inputs using information available by that date, form weights, and apply them to subsequent returns. Keep the estimation window, forecast timing, execution lag and rebalance schedule explicit. A return used to form a signal cannot also be earned before the portfolio could have been traded.</p>
+<p>Choose tuning parameters on training or validation periods and reserve an untouched test period. Repeatedly inspecting test results and modifying the strategy makes that period part of the research process. Nested time-series validation can help organise this separation when many choices are compared.</p>
+<h3>Costs, benchmarks and reporting</h3>
+<p>Calculate turnover from the actual drifted pre-trade weights. Include transaction costs, spreads, borrowing costs and any relevant market impact. Compare against transparent policies such as equal weight or a feasible minimum-variance allocation with the same dates, universe and accounting conventions.</p>
+<p>Report realised volatility, mean excess return, drawdowns, turnover, gross exposure and uncertainty rather than a single ratio. Annualised Sharpe scaling by \(\sqrt H\) assumes a suitable serial-dependence structure; autocorrelation and overlapping observations can invalidate that shortcut.</p>
+<p>The study by <a href="#ref-demiguel">DeMiguel, Garlappi and Uppal</a> motivates careful comparison with simple diversification in the presence of estimation error. Its empirical results concern tested strategies and datasets, not a theorem that equal weights are always optimal.</p>
+<h3>Single-period theory and dynamic choice</h3>
+<p>Repeatedly solving a one-period problem is a myopic policy. It does not automatically solve a dynamic investment problem with changing opportunities, liabilities, trading costs or intertemporal hedging demands. The classical model remains valuable as a clear baseline, provided its scope is not extended by implication.</p>
+</section>
+
+<section id="laboratory" data-title="Interactive efficient-frontier laboratory">
+<div class="section-label">25 / Interactive study</div><h2>Interactive efficient-frontier laboratory</h2>
+<p>Change the three assets' annual expected simple returns, volatilities and pairwise correlations. Choose unrestricted or long-only investment, an exact target return, a same-horizon risk-free return and a risk-aversion coefficient. The laboratory recomputes the opportunity set and the relevant portfolios from those inputs.</p>
+<p>Volatilities and means are entered as percentages; correlations are unitless. The covariance matrix is constructed as \(\Sigma_{ij}=\sigma_i\sigma_j\rho_{ij}\). Invalid or nearly singular correlation matrices are rejected. Unrestricted weights have no gross-exposure cap; long-only weights cannot be negative.</p>
+{{interactive}}
+<h3>Reading the results</h3>
+<p>The chart shows the selected feasible minimum-variance boundary, with upper and lower branches labelled separately. GMV, the exact-target portfolio and a conventional positive-Sharpe tangency portfolio are marked when available. The weights table identifies the same portfolios, and target risk shares decompose its forecast variance.</p>
+<p>A target below the selected GMV mean is feasible in some cases but dominated. An unavailable long-only target does not erase the rest of the opportunity set; its row is labelled infeasible. For unrestricted investment, conventional positive tangency requires \(r_f<\mu_{\mathrm{GMV}}\). Long-only tangency is searched on feasible faces and requires positive expected excess return.</p>
+<h3>Suggested experiments</h3>
+<p>Begin with the benchmark and reduce correlation AC while preserving matrix admissibility. Observe the changes in GMV volatility and weights. Then raise the target from 10% toward 14% and compare unrestricted with long-only weights. Beyond 14%, the long-only target becomes infeasible, while unrestricted extrapolation requires short positions.</p>
+<p>Increase A's expected return by one percentage point without changing covariance, and inspect the tangency weights. Then change only risk aversion: the tangency recipe stays fixed while the indicated cash allocation changes. These experiments isolate inputs; they do not estimate how real market parameters move together.</p>
+<p>Set all expected returns equal to inspect the degenerate frontier. Supply individually plausible but mutually incompatible correlations to see why pairwise bounds are insufficient. All calculations run offline. Hover, tap or use the chart's arrow keys to inspect the curves without changing the inputs.</p>
+</section>

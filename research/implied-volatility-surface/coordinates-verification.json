@@ -1,0 +1,9 @@
+{
+  "panels": 33,
+  "coordinateAccuracy": "passed",
+  "percentUnits": "passed",
+  "compactNeutralCard": "passed",
+  "observationsVersusInterpolation": "passed",
+  "surfaceMapCells": 6,
+  "allFiveLaboratorySeries": "passed"
+}

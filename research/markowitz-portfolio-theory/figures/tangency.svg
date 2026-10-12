@@ -1,0 +1,562 @@
+<svg role="img" aria-labelledby="tangency-title tangency-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="tangency-title">Figure 09 · Tangency weights depend on the risk-free rate</title><desc id="tangency-desc">All plotted rates are below the benchmark global minimum-variance return, so the conventional positive-budget tangency is well defined. Holding the risky mean vector fixed while changing financing is a comparative-static model experiment.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T17:14:58.829656</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="tangency-figure_1">
+  <g id="tangency-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="tangency-axes_1">
+   <g id="tangency-patch_2">
+    <path d="M 54.02 208.78 
+L 648.9 208.78 
+L 648.9 13.5 
+L 54.02 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="tangency-matplotlib.axis_1">
+    <g id="tangency-xtick_1">
+     <g id="tangency-line2d_1">
+      <path d="M 81.06 208.78 
+L 81.06 13.5 
+" clip-path="url(#tangency-p7c03b0d397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangency-line2d_2">
+      <defs>
+       <path id="tangency-m9894d10971" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#tangency-m9894d10971" x="81.06" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangency-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="81.06" y="222.618594" transform="rotate(-0 81.06 222.618594)">0.00%</text>
+     </g>
+    </g>
+    <g id="tangency-xtick_2">
+     <g id="tangency-line2d_3">
+      <path d="M 201.237778 208.78 
+L 201.237778 13.5 
+" clip-path="url(#tangency-p7c03b0d397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangency-line2d_4">
+      <g>
+       <use href="#tangency-m9894d10971" x="201.237778" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangency-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="201.237778" y="222.618594" transform="rotate(-0 201.237778 222.618594)">1.00%</text>
+     </g>
+    </g>
+    <g id="tangency-xtick_3">
+     <g id="tangency-line2d_5">
+      <path d="M 321.415556 208.78 
+L 321.415556 13.5 
+" clip-path="url(#tangency-p7c03b0d397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangency-line2d_6">
+      <g>
+       <use href="#tangency-m9894d10971" x="321.415556" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangency-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="321.415556" y="222.618594" transform="rotate(-0 321.415556 222.618594)">2.00%</text>
+     </g>
+    </g>
+    <g id="tangency-xtick_4">
+     <g id="tangency-line2d_7">
+      <path d="M 441.593333 208.78 
+L 441.593333 13.5 
+" clip-path="url(#tangency-p7c03b0d397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangency-line2d_8">
+      <g>
+       <use href="#tangency-m9894d10971" x="441.593333" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangency-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="441.593333" y="222.618594" transform="rotate(-0 441.593333 222.618594)">3.00%</text>
+     </g>
+    </g>
+    <g id="tangency-xtick_5">
+     <g id="tangency-line2d_9">
+      <path d="M 561.771111 208.78 
+L 561.771111 13.5 
+" clip-path="url(#tangency-p7c03b0d397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangency-line2d_10">
+      <g>
+       <use href="#tangency-m9894d10971" x="561.771111" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangency-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="561.771111" y="222.618594" transform="rotate(-0 561.771111 222.618594)">4.00%</text>
+     </g>
+    </g>
+    <g id="tangency-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="351.46" y="235.328906" transform="rotate(-0 351.46 235.328906)">Risk-free simple return</text>
+    </g>
+   </g>
+   <g id="tangency-matplotlib.axis_2">
+    <g id="tangency-ytick_1">
+     <g id="tangency-line2d_11">
+      <path d="M 54.02 179.881618 
+L 648.9 179.881618 
+" clip-path="url(#tangency-p7c03b0d397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangency-line2d_12">
+      <defs>
+       <path id="tangency-m065ffbb15d" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#tangency-m065ffbb15d" x="54.02" y="179.881618" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangency-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="183.300915" transform="rotate(-0 47.02 183.300915)">20%</text>
+     </g>
+    </g>
+    <g id="tangency-ytick_2">
+     <g id="tangency-line2d_13">
+      <path d="M 54.02 142.290738 
+L 648.9 142.290738 
+" clip-path="url(#tangency-p7c03b0d397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangency-line2d_14">
+      <g>
+       <use href="#tangency-m065ffbb15d" x="54.02" y="142.290738" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangency-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="145.710035" transform="rotate(-0 47.02 145.710035)">30%</text>
+     </g>
+    </g>
+    <g id="tangency-ytick_3">
+     <g id="tangency-line2d_15">
+      <path d="M 54.02 104.699858 
+L 648.9 104.699858 
+" clip-path="url(#tangency-p7c03b0d397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangency-line2d_16">
+      <g>
+       <use href="#tangency-m065ffbb15d" x="54.02" y="104.699858" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangency-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="108.119155" transform="rotate(-0 47.02 108.119155)">40%</text>
+     </g>
+    </g>
+    <g id="tangency-ytick_4">
+     <g id="tangency-line2d_17">
+      <path d="M 54.02 67.108978 
+L 648.9 67.108978 
+" clip-path="url(#tangency-p7c03b0d397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangency-line2d_18">
+      <g>
+       <use href="#tangency-m065ffbb15d" x="54.02" y="67.108978" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangency-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="70.528275" transform="rotate(-0 47.02 70.528275)">50%</text>
+     </g>
+    </g>
+    <g id="tangency-ytick_5">
+     <g id="tangency-line2d_19">
+      <path d="M 54.02 29.518099 
+L 648.9 29.518099 
+" clip-path="url(#tangency-p7c03b0d397)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="tangency-line2d_20">
+      <g>
+       <use href="#tangency-m065ffbb15d" x="54.02" y="29.518099" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="tangency-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="32.937395" transform="rotate(-0 47.02 32.937395)">60%</text>
+     </g>
+    </g>
+    <g id="tangency-text_12">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.144375" y="111.14" transform="rotate(-90 21.144375 111.14)">Tangency portfolio weight</text>
+    </g>
+   </g>
+   <g id="tangency-line2d_21">
+    <path d="M 81.06 22.376364 
+L 86.522626 22.819662 
+L 91.985253 23.268799 
+L 97.447879 23.723889 
+L 102.910505 24.185054 
+L 108.373131 24.652414 
+L 113.835758 25.126095 
+L 119.298384 25.606228 
+L 124.76101 26.092943 
+L 130.223636 26.586379 
+L 135.686263 27.086674 
+L 141.148889 27.593973 
+L 146.611515 28.108424 
+L 152.074141 28.63018 
+L 157.536768 29.159396 
+L 162.999394 29.696235 
+L 168.46202 30.240861 
+L 173.924646 30.793447 
+L 179.387273 31.354167 
+L 184.849899 31.923202 
+L 190.312525 32.500739 
+L 195.775152 33.08697 
+L 201.237778 33.682093 
+L 206.700404 34.286311 
+L 212.16303 34.899834 
+L 217.625657 35.522879 
+L 223.088283 36.155671 
+L 228.550909 36.798438 
+L 234.013535 37.451419 
+L 239.476162 38.114859 
+L 244.938788 38.789012 
+L 250.401414 39.474139 
+L 255.86404 40.17051 
+L 261.326667 40.878404 
+L 266.789293 41.598111 
+L 272.251919 42.329927 
+L 277.714545 43.074161 
+L 283.177172 43.831133 
+L 288.639798 44.601171 
+L 294.102424 45.384617 
+L 299.565051 46.181824 
+L 305.027677 46.993159 
+L 310.490303 47.818999 
+L 315.952929 48.659738 
+L 321.415556 49.515783 
+L 326.878182 50.387554 
+L 332.340808 51.27549 
+L 337.803434 52.180044 
+L 343.266061 53.101688 
+L 348.728687 54.04091 
+L 354.191313 54.998217 
+L 359.653939 55.974138 
+L 365.116566 56.969221 
+L 370.579192 57.984035 
+L 376.041818 59.019173 
+L 381.504444 60.075253 
+L 386.967071 61.152915 
+L 392.429697 62.252829 
+L 397.892323 63.37569 
+L 403.354949 64.522226 
+L 408.817576 65.693191 
+L 414.280202 66.889375 
+L 419.742828 68.111603 
+L 425.205455 69.360734 
+L 430.668081 70.637665 
+L 436.130707 71.943336 
+L 441.593333 73.278728 
+L 447.05596 74.644868 
+L 452.518586 76.042829 
+L 457.981212 77.473736 
+L 463.443838 78.938769 
+L 468.906465 80.439162 
+L 474.369091 81.976212 
+L 479.831717 83.551279 
+L 485.294343 85.16579 
+L 490.75697 86.821246 
+L 496.219596 88.519224 
+L 501.682222 90.261385 
+L 507.144848 92.049476 
+L 512.607475 93.885337 
+L 518.070101 95.770908 
+L 523.532727 97.708237 
+L 528.995354 99.699483 
+L 534.45798 101.746929 
+L 539.920606 103.85299 
+L 545.383232 106.020218 
+L 550.845859 108.251317 
+L 556.308485 110.549153 
+L 561.771111 112.916767 
+L 567.233737 115.357384 
+L 572.696364 117.874436 
+L 578.15899 120.471569 
+L 583.621616 123.152667 
+L 589.084242 125.921868 
+L 594.546869 128.783589 
+L 600.009495 131.742544 
+L 605.472121 134.803775 
+L 610.934747 137.972678 
+L 616.397374 141.255035 
+L 621.86 144.657051 
+" clip-path="url(#tangency-p7c03b0d397)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="tangency-line2d_22">
+    <path d="M 81.06 167.001335 
+L 86.522626 166.801583 
+L 91.985253 166.5992 
+L 97.447879 166.394135 
+L 102.910505 166.186333 
+L 108.373131 165.975738 
+L 113.835758 165.762296 
+L 119.298384 165.545947 
+L 124.76101 165.326631 
+L 130.223636 165.104287 
+L 135.686263 164.878852 
+L 141.148889 164.650261 
+L 146.611515 164.418448 
+L 152.074141 164.183343 
+L 157.536768 163.944876 
+L 162.999394 163.702975 
+L 168.46202 163.457564 
+L 173.924646 163.208567 
+L 179.387273 162.955905 
+L 184.849899 162.699496 
+L 190.312525 162.439256 
+L 195.775152 162.175098 
+L 201.237778 161.906934 
+L 206.700404 161.634671 
+L 212.16303 161.358215 
+L 217.625657 161.077469 
+L 223.088283 160.792331 
+L 228.550909 160.502698 
+L 234.013535 160.208462 
+L 239.476162 159.909514 
+L 244.938788 159.605738 
+L 250.401414 159.297017 
+L 255.86404 158.98323 
+L 261.326667 158.66425 
+L 266.789293 158.339948 
+L 272.251919 158.010189 
+L 277.714545 157.674835 
+L 283.177172 157.333741 
+L 288.639798 156.986759 
+L 294.102424 156.633735 
+L 299.565051 156.274511 
+L 305.027677 155.908921 
+L 310.490303 155.536794 
+L 315.952929 155.157954 
+L 321.415556 154.772218 
+L 326.878182 154.379394 
+L 332.340808 153.979287 
+L 337.803434 153.571692 
+L 343.266061 153.156396 
+L 348.728687 152.73318 
+L 354.191313 152.301814 
+L 359.653939 151.86206 
+L 365.116566 151.413672 
+L 370.579192 150.956394 
+L 376.041818 150.489957 
+L 381.504444 150.014084 
+L 386.967071 149.528485 
+L 392.429697 149.03286 
+L 397.892323 148.526895 
+L 403.354949 148.010262 
+L 408.817576 147.482621 
+L 414.280202 146.943616 
+L 419.742828 146.392876 
+L 425.205455 145.830014 
+L 430.668081 145.254624 
+L 436.130707 144.666284 
+L 441.593333 144.064552 
+L 447.05596 143.448964 
+L 452.518586 142.819038 
+L 457.981212 142.174266 
+L 463.443838 141.514118 
+L 468.906465 140.838035 
+L 474.369091 140.145435 
+L 479.831717 139.435705 
+L 485.294343 138.7082 
+L 490.75697 137.962246 
+L 496.219596 137.197131 
+L 501.682222 136.412107 
+L 507.144848 135.606387 
+L 512.607475 134.779142 
+L 518.070101 133.929497 
+L 523.532727 133.05653 
+L 528.995354 132.159267 
+L 534.45798 131.236681 
+L 539.920606 130.287683 
+L 545.383232 129.311122 
+L 550.845859 128.305781 
+L 556.308485 127.270368 
+L 561.771111 126.203513 
+L 567.233737 125.103762 
+L 572.696364 123.96957 
+L 578.15899 122.799293 
+L 583.621616 121.591181 
+L 589.084242 120.343369 
+L 594.546869 119.053868 
+L 600.009495 117.720552 
+L 605.472121 116.341151 
+L 610.934747 114.913232 
+L 616.397374 113.43419 
+L 621.86 111.901231 
+" clip-path="url(#tangency-p7c03b0d397)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="tangency-line2d_23">
+    <path d="M 81.06 199.903636 
+L 86.522626 199.66009 
+L 91.985253 199.413336 
+L 97.447879 199.16331 
+L 102.910505 198.909948 
+L 108.373131 198.653182 
+L 113.835758 198.392943 
+L 119.298384 198.12916 
+L 124.76101 197.86176 
+L 130.223636 197.590669 
+L 135.686263 197.315808 
+L 141.148889 197.0371 
+L 146.611515 196.754462 
+L 152.074141 196.467812 
+L 157.536768 196.177062 
+L 162.999394 195.882125 
+L 168.46202 195.582909 
+L 173.924646 195.27932 
+L 179.387273 194.971263 
+L 184.849899 194.658637 
+L 190.312525 194.34134 
+L 195.775152 194.019266 
+L 201.237778 193.692308 
+L 206.700404 193.360353 
+L 212.16303 193.023285 
+L 217.625657 192.680986 
+L 223.088283 192.333333 
+L 228.550909 191.980199 
+L 234.013535 191.621454 
+L 239.476162 191.256962 
+L 244.938788 190.886585 
+L 250.401414 190.510178 
+L 255.86404 190.127595 
+L 261.326667 189.73868 
+L 266.789293 189.343276 
+L 272.251919 188.941218 
+L 277.714545 188.532338 
+L 283.177172 188.116461 
+L 288.639798 187.693405 
+L 294.102424 187.262982 
+L 299.565051 186.824999 
+L 305.027677 186.379255 
+L 310.490303 185.925541 
+L 315.952929 185.463642 
+L 321.415556 184.993334 
+L 326.878182 184.514386 
+L 332.340808 184.026557 
+L 337.803434 183.529598 
+L 343.266061 183.02325 
+L 348.728687 182.507245 
+L 354.191313 181.981304 
+L 359.653939 181.445136 
+L 365.116566 180.898441 
+L 370.579192 180.340906 
+L 376.041818 179.772205 
+L 381.504444 179.191998 
+L 386.967071 178.599934 
+L 392.429697 177.995645 
+L 397.892323 177.378749 
+L 403.354949 176.748847 
+L 408.817576 176.105523 
+L 414.280202 175.448343 
+L 419.742828 174.776855 
+L 425.205455 174.090587 
+L 430.668081 173.389046 
+L 436.130707 172.671714 
+L 441.593333 171.938055 
+L 447.05596 171.187503 
+L 452.518586 170.419468 
+L 457.981212 169.633332 
+L 463.443838 168.828448 
+L 468.906465 168.004137 
+L 474.369091 167.159687 
+L 479.831717 166.294351 
+L 485.294343 165.407345 
+L 490.75697 164.497843 
+L 496.219596 163.564979 
+L 501.682222 162.607842 
+L 507.144848 161.625471 
+L 512.607475 160.616856 
+L 518.070101 159.580929 
+L 523.532727 158.516568 
+L 528.995354 157.422584 
+L 534.45798 156.297724 
+L 539.920606 155.140662 
+L 545.383232 153.949995 
+L 550.845859 152.724236 
+L 556.308485 151.461813 
+L 561.771111 150.161055 
+L 567.233737 148.820188 
+L 572.696364 147.437329 
+L 578.15899 146.010473 
+L 583.621616 144.537487 
+L 589.084242 143.016097 
+L 594.546869 141.443878 
+L 600.009495 139.818238 
+L 605.472121 138.136408 
+L 610.934747 136.395424 
+L 616.397374 134.592109 
+L 621.86 132.723053 
+" clip-path="url(#tangency-p7c03b0d397)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="tangency-patch_3">
+    <path d="M 54.02 208.78 
+L 54.02 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="tangency-patch_4">
+    <path d="M 54.02 208.78 
+L 648.9 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="tangency-legend_1">
+    <g id="tangency-line2d_24">
+     <path d="M 589.305 23.97875 
+L 597.305 23.97875 
+L 605.305 23.97875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="tangency-text_13">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="611.705" y="26.77875" transform="rotate(-0 611.705 26.77875)">Asset A</text>
+    </g>
+    <g id="tangency-line2d_25">
+     <path d="M 589.305 35.72125 
+L 597.305 35.72125 
+L 605.305 35.72125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="tangency-text_14">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="611.705" y="38.52125" transform="rotate(-0 611.705 38.52125)">Asset B</text>
+    </g>
+    <g id="tangency-line2d_26">
+     <path d="M 589.305 47.46375 
+L 597.305 47.46375 
+L 605.305 47.46375 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="tangency-text_15">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="611.705" y="50.26375" transform="rotate(-0 611.705 50.26375)">Asset C</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="tangency-p7c03b0d397">
+   <rect x="54.02" y="13.5" width="594.88" height="195.28"/>
+  </clipPath>
+ </defs>
+</svg>

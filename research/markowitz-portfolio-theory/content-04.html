@@ -1,0 +1,100 @@
+<section id="tangency" data-title="The tangency portfolio and the Sharpe ratio">
+<div class="section-label">16 / Risk-adjusted return</div><h2>The tangency portfolio and the Sharpe ratio</h2>
+<p>For a risky portfolio with positive volatility, define its prospective Sharpe ratio using a known same-horizon risk-free return:</p>
+\[ S(w)=\frac{w^\mathsf{T}\mu-r_f}{\sqrt{w^\mathsf{T}\Sigma w}},\qquad \mathbf{1}^\mathsf{T}w=1. \]
+<p>This is expected excess return per unit of volatility. A realised sample Sharpe ratio estimates a different, uncertain quantity from historical observations. It must use compatible sampling, horizon and financing conventions, and should not be treated as an input-free measure of strategy quality.</p>
+<h3>Covariance-adjusted excess returns</h3>
+<p>Let \(e=\mu-r_f\mathbf{1}\). Cauchy–Schwarz in the covariance metric bounds the positive excess-return-to-risk ratio by \(\sqrt{e^\mathsf{T}\Sigma^{-1}e}\). The direction attaining the bound is proportional to \(\Sigma^{-1}e\). When its budget sum is positive, normalisation gives</p>
+\[ w_T=\frac{\Sigma^{-1}(\mu-r_f\mathbf{1})}{\mathbf{1}^\mathsf{T}\Sigma^{-1}(\mu-r_f\mathbf{1})},\qquad S_T=\sqrt{C-2r_fB+r_f^2A}. \]
+<p>The positive-budget condition is \(B-Ar_f>0\), equivalently \(r_f<\mu_{\mathrm{GMV}}\). It ensures that the normalised fund has positive excess return and achieves the positive Sharpe bound. Under that condition it belongs to the upper risky frontier.</p>
+{{figure:tangency}}
+<h3>When the usual formula needs qualification</h3>
+<p>If \(B-Ar_f=0\), the excess-return direction has zero net budget and cannot be normalised to a fully invested risky fund. If it is negative, the normalised formula points in the opposite direction and has negative expected excess return; it is not the conventional positive-line tangency maximiser. A routine should not silently label that output as the best positive-Sharpe fund.</p>
+<p>Cash-inclusive mean–variance optimisation remains meaningful in these cases: risky holdings need not have total weight one. Constraints can also change the situation. A long-only positive-Sharpe optimum may exist on a feasible face even when the unrestricted positive-budget convention fails. The laboratory reports these cases separately.</p>
+<h3>Sharpe ratios and portfolio composition</h3>
+<p>An asset's individual Sharpe ratio is not enough to determine its weight. Covariance-adjusted excess returns can favour an asset with a modest standalone ratio because it hedges other exposures. Conversely, high standalone ratios can belong to overlapping exposures that provide little additional opportunity.</p>
+<p>With estimated means and covariance, maximising a fitted Sharpe ratio can amplify estimation error. The ratio is especially unstable when expected excess returns are close to zero or volatility is poorly estimated. Ranking a large collection of backtests by their sample ratios also introduces selection effects.</p>
+<h3>Capital allocation versus equilibrium pricing</h3>
+<p>Under the additional assumptions of the CAPM, the market portfolio is a common tangency portfolio and expected excess returns satisfy</p>
+\[ \mu_i-r_f=\beta_i(\mu_M-r_f),\qquad \beta_i=\frac{\operatorname{Cov}(R_i,R_M)}{\operatorname{Var}(R_M)}. \]
+<p>This is a separate equilibrium statement, developed in <a href="#ref-sharpe">Sharpe's paper</a>. The security market line uses beta; the capital allocation line uses total portfolio volatility. An arbitrary estimated efficient portfolio is not automatically the market portfolio, and the Markowitz optimisation calculation alone does not prove the CAPM.</p>
+</section>
+
+<section id="allocation" data-title="Risk aversion and optimal risky allocation">
+<div class="section-label">17 / Portfolio choice</div><h2>Risk aversion and optimal risky allocation</h2>
+<p>Let \(x\) be the vector of risky-asset wealth fractions, with the remaining fraction \(1-\mathbf{1}^\mathsf{T}x\) in cash. There is no separate requirement that risky weights sum to one. The objective becomes</p>
+\[ U(x)=r_f+x^\mathsf{T}(\mu-r_f\mathbf{1})-\frac\gamma2x^\mathsf{T}\Sigma x. \]
+<p>Stationarity gives the unrestricted cash-inclusive solution</p>
+\[ x^\star=\frac1\gamma\Sigma^{-1}(\mu-r_f\mathbf{1}). \]
+<p>This formula remains algebraically valid under positive definiteness even if the conventional fully invested tangency normalisation fails. The cash weight follows from the total risky budget, which can be positive, zero or negative. Economic financing permissions still determine whether the solution is implementable.</p>
+<h3>The amount of a tangency fund</h3>
+<p>When the conventional positive tangency fund exists, write \(x=yw_T\). The objective reduces to a scalar quadratic in the risky fraction. Its optimum is</p>
+\[ y^\star=\frac{\mu_T-r_f}{\gamma\sigma_T^2}=\frac{B-Ar_f}{\gamma}. \]
+<p>The asset composition of the risky fund is independent of \(\gamma\) when all moments and financing terms are held fixed. Risk aversion changes the amount invested in that fund. This is the separation associated with the idealised cash opportunity, not a universal rule for investors with different beliefs or constraints.</p>
+{{figure:aversion}}
+<h3>Borrowing restrictions</h3>
+<p>If the investor can hold only cash and nonnegative amounts of a chosen fund with no borrowing, impose \(0\le y\le1\). For this scalar problem, the solution is the unconstrained \(y^\star\) clipped to that interval. If asset-level constraints also apply, the optimal risky composition may itself change and a scalar repair is no longer sufficient.</p>
+<p>Different borrowing and lending rates create a piecewise opportunity set. A portfolio between the relevant tangencies can be fully invested in risky assets, while lending and borrowing regions use different supporting lines. A single Sharpe ratio calculated with the lending rate cannot represent every financing regime.</p>
+<h3>Horizon, wealth and units</h3>
+<p>If utility is expressed in terminal wealth rather than return, its risk coefficient must be converted consistently with initial wealth. A parameter fitted for a monthly return problem does not automatically express the same preference in an annual problem. Under assumptions that both mean and covariance scale linearly with the horizon, their common scaling can cancel in some allocation formulas, but compounded wealth and changing opportunities need not satisfy those assumptions.</p>
+<p>Large \(y^\star\) values can result from optimistic means, small estimated variance or low chosen risk aversion. The equation describes the response of the model; it does not establish that leverage is safe or that its apparent opportunity survives estimation uncertainty.</p>
+</section>
+
+<section id="long-only" data-title="Long-only constraints and optimality conditions">
+<div class="section-label">18 / Constrained optimisation</div><h2>Long-only constraints and optimality conditions</h2>
+<p>Long-only investment adds \(w_i\ge0\) to the budget and target constraints. The feasible weights lie on a simplex. Exact target means are restricted to the convex hull of the asset means, and the covariance objective remains convex.</p>
+\[ \min_w\frac12w^\mathsf{T}\Sigma w\quad\text{subject to }\mathbf{1}^\mathsf{T}w=1,\ \mu^\mathsf{T}w=m,\ w\ge0. \]
+<p>Introduce nonnegative multipliers \(\nu_i\) for \(-w_i\le0\). The Karush–Kuhn–Tucker conditions are</p>
+\[ \Sigma w-\lambda\mathbf{1}-\eta\mu-\nu=0,\qquad w_i\ge0,\quad \nu_i\ge0,\quad \nu_iw_i=0. \]
+<p>Include budget and return feasibility as well. Complementary slackness means an asset with positive weight has zero lower-bound multiplier. An excluded asset can have a nonzero multiplier reflecting the value of relaxing its restriction under the chosen sign convention.</p>
+{{figure:longonly}}
+<h3>Active sets and corner portfolios</h3>
+<p>Within an active set, solve the equality-constrained problem on the free assets while fixing bound assets at their limits. Check the resulting weights and all optimality conditions. As the target changes, constraints can enter or leave; the frontier consists of connected pieces with different active sets.</p>
+<p>For three assets, enumerating feasible faces is practical and transparent. For a large universe, a validated quadratic-programming solver is more appropriate. A face optimum that violates an inactive constraint is not a valid full-problem solution; neither is the cheapest solution among an incomplete selection of faces.</p>
+<h3>Constraint cost versus estimation benefit</h3>
+<p>With identical known moments and the same target, restricting the feasible set cannot reduce minimum variance. The unconstrained optimiser could already choose every constrained portfolio. This set-inclusion argument is a mathematical result, independent of any empirical study.</p>
+<p>With estimated moments, an unrestricted portfolio can overreact to errors and have higher population or realised risk than a constrained estimate. This is a different comparison. <a href="#ref-jagannathan">Jagannathan and Ma</a> study why weight constraints can help estimated portfolio risk. The existence of such a benefit does not mean constraints improve the exact population optimum.</p>
+<h3>Feasibility and duplicate means</h3>
+<p>A target at an extreme asset mean may force investment into the assets sharing that extreme. If several assets have the same mean, a feasible face can have a redundant target constraint. A numerical method must handle that rank issue rather than treating it as an invalid economic input.</p>
+<p>The laboratory solves long-only GMV, target and positive-Sharpe portfolios by enumerating the nonempty asset subsets. It reports targets outside the achievable range, and labels an exact-target allocation below the long-only GMV mean as dominated rather than efficient.</p>
+</section>
+
+<section id="exposure" data-title="Exposure, concentration and turnover constraints">
+<div class="section-label">19 / Investment restrictions</div><h2>Exposure, concentration and turnover constraints</h2>
+<p>The net budget and the size of positions measure different things. Define gross exposure as</p>
+\[ G(w)=\sum_i|w_i|. \]
+<p>A fully invested long-only portfolio has gross exposure one. A portfolio with weights 120%, 30% and −50% has net exposure one but gross exposure two. The net budget alone therefore does not impose a leverage limit.</p>
+<h3>Position and group limits</h3>
+<p>Bounds \(l_i\le w_i\le u_i\), group exposure constraints and a gross-exposure limit can be added while retaining convexity when stated in standard linear or norm form. For long-only caps, feasibility requires enough aggregate capacity: \(\sum_i u_i\ge1\). Lower bounds also require \(\sum_i l_i\le1\).</p>
+\[ l\le w\le u,\qquad a\le F^\mathsf{T}w\le b,\qquad \sum_i|w_i|\le L. \]
+<p>The matrix \(F\) can represent sector, duration or factor exposures, but the economic interpretation depends on how those exposures are estimated. A constraint on a model factor is only as stable as the model and measurement supplying it.</p>
+{{figure:caps}}
+<h3>Trading from an existing portfolio</h3>
+<p>If the current pre-trade weights are \(w^{-}\), the trade is \(\Delta w=w-w^{-}\). One common turnover convention is one-half of total absolute traded weight:</p>
+\[ \operatorname{TO}=\frac12\sum_i|w_i-w_i^{-}|. \]
+<p>The factor one-half counts the combined buy and sell sides once in a fully invested reallocation. Other reporting conventions use the full sum. State the convention, especially if cash changes or external flows are present. Pre-trade weights drift with returns and generally differ from the previous period's target weights.</p>
+<p>A cost-aware objective can subtract estimated trading and holding costs, for example \(\sum_i c_i|\Delta w_i|\) plus convex impact terms. A smooth variance penalty does not represent transaction costs by itself. Cost coefficients must reflect the return horizon and actual tradable size.</p>
+<h3>Limits of convex formulations</h3>
+<p>Cardinality constraints, such as allowing at most ten nonzero positions, are generally nonconvex. Minimum trade sizes, fixed fees and discrete lots can also require mixed-integer decisions. A convenient continuous relaxation solves a related problem and needs explicit rounding and feasibility checks before implementation.</p>
+<p>Constraints express real investment permissions and can regularise unstable estimates. They should be selected for an economic reason or validated statistical design, rather than adjusted repeatedly until a historical backtest looks attractive. A tighter constraint changes both the feasible set and the sensitivity of the resulting portfolio.</p>
+</section>
+
+<section id="risk-contributions" data-title="Marginal and component risk contributions">
+<div class="section-label">20 / Risk decomposition</div><h2>Marginal and component risk contributions</h2>
+<p>Portfolio weights allocate capital; they do not allocate risk in the same proportions. For positive portfolio volatility, differentiating \(\sigma_p=\sqrt{w^\mathsf{T}\Sigma w}\) gives the marginal volatility contribution:</p>
+\[ \operatorname{MRC}_i=\frac{\partial\sigma_p}{\partial w_i}=\frac{(\Sigma w)_i}{\sigma_p}. \]
+<p>The derivative changes one weight holding the others fixed, so it is not by itself a fully funded trade. Moving capital from asset \(j\) to \(i\) changes volatility locally at rate \(\operatorname{MRC}_i-\operatorname{MRC}_j\).</p>
+<h3>Euler decomposition</h3>
+<p>Volatility is positively homogeneous of degree one. Multiplying each marginal contribution by its capital weight gives component contributions that add to total volatility:</p>
+\[ \operatorname{RC}_i=w_i\frac{(\Sigma w)_i}{\sigma_p},\qquad \sum_i\operatorname{RC}_i=\sigma_p. \]
+<p>Variance contributions \(w_i(\Sigma w)_i\) instead sum to variance. Dividing either set by its corresponding total gives the same normalised risk shares. Keep the units clear: absolute volatility contributions are decimal volatility, while their normalised shares are fractions.</p>
+{{figure:risk}}
+<h3>Hedges and negative contributions</h3>
+<p>A hedging position can have a negative component contribution if its weighted covariance with the portfolio is negative. This does not mean the asset has negative standalone variance. It means that the signed position offsets part of the portfolio's aggregate variation. Component shares can consequently lie outside zero to one in a portfolio with hedges.</p>
+<p>At zero portfolio volatility the derivative expression divides by zero. Such singular cases need a separate analysis rather than a fabricated risk allocation. Small-volatility portfolios can also make normalised contributions highly sensitive to parameter changes.</p>
+<h3>Risk budgeting versus minimum variance</h3>
+<p>A risk-budgeting portfolio targets prescribed positive shares \(b_i\), with component contributions satisfying \(\operatorname{RC}_i=b_i\sigma_p\) and \(\sum_i b_i=1\). Equal risk contribution uses equal shares. These objectives differ from equal capital, inverse-volatility and minimum-variance allocations.</p>
+<p>For independent assets with positive weights, equal risk contribution is proportional to inverse volatility. GMV is instead proportional to inverse variance. Correlations change both results. A portfolio can look balanced in capital while being dominated by its most volatile or most correlated holdings.</p>
+<div class="callout"><p><strong>Analogy: people carrying a shared load.</strong> Giving each person the same number of items does not give each the same burden when the items have different weights and interact. Capital weights count the items; component risk measures how each position contributes to the total burden.</p></div>
+<p>Risk decomposition is a diagnostic, not an independent prediction of losses. It inherits the covariance model, horizon and state dependence of the portfolio variance. Scenario-based contributions can answer different questions when particular stresses matter more than average squared variation.</p>
+</section>

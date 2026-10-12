@@ -1,0 +1,36 @@
+<div class="notebook" id="simulation-notebook">
+<div class="notebook-head"><strong>European Monte Carlo laboratory</strong><span>Exact terminal GBM / seeded simulation</span></div>
+<form id="simulation-form">
+<div class="field"><label for="input-spot">Initial spot S₀</label><input id="input-spot" name="spot" type="number" value="100" min="0.000001" step="any" required></div>
+<div class="field"><label for="input-strike">Strike K</label><input id="input-strike" name="strike" type="number" value="100" min="0.000001" step="any" required></div>
+<div class="field"><label for="input-kind">Option type</label><select id="input-kind" name="kind"><option value="call">European call</option><option value="put">European put</option></select></div>
+<div class="field"><label for="input-tau">Time to maturity (years)</label><input id="input-tau" name="tau" type="number" value="1" min="0" step="any" required></div>
+<div class="field"><label for="input-vol">Volatility σ (%)</label><input id="input-vol" name="vol" type="number" value="20" min="0" step="any" required></div>
+<div class="field"><label for="input-rate">Interest rate r (%)</label><input id="input-rate" name="rate" type="number" value="5" step="any" required></div>
+<div class="field"><label for="input-yield">Dividend yield q (%)</label><input id="input-yield" name="yield" type="number" value="0" step="any" required></div>
+<div class="field"><label for="input-budget">Production payoff budget N</label><input id="input-budget" name="budget" type="number" value="20000" min="100" max="200000" step="1" required></div>
+<div class="field"><label for="input-seed">Random seed</label><input id="input-seed" name="seed" type="number" value="2026" min="0" max="4294967295" step="1" required></div>
+<div class="field field-method"><label for="input-method">Estimator</label><select id="input-method" name="method"><option value="plain">Plain Monte Carlo</option><option value="antithetic">Antithetic pairs</option><option value="control">Discounted-stock control · independent pilot</option><option value="combined">Antithetic pairs + stock control · independent pilot</option></select></div>
+<div class="notebook-action"><button id="calculate" type="submit">Run simulation</button><button id="reset-inputs" type="button">Reset benchmark</button><p>Paired methods require an even budget. Controlled methods add separate pilot work.</p></div>
+</form>
+<p class="calc-error" id="calc-error" role="alert"></p>
+<div class="notebook-results" aria-label="Simulation results">
+<div class="result"><small>Monte Carlo estimate</small><strong id="result-price">—</strong></div>
+<div class="result"><small>Estimated standard error</small><strong id="result-se">—</strong></div>
+<div class="result"><small>Black–Scholes reference</small><strong id="result-reference">—</strong></div>
+<div class="result"><small>Realised absolute error</small><strong id="result-error">—</strong></div>
+<div class="result"><small>95% lower endpoint</small><strong id="result-lower">—</strong></div>
+<div class="result"><small>95% upper endpoint</small><strong id="result-upper">—</strong></div>
+<div class="result"><small>Independent production units</small><strong id="result-units">—</strong></div>
+<div class="result"><small>Total payoff evaluations</small><strong id="result-work">—</strong></div>
+</div>
+<div class="notebook-legend"><span><i class="key-estimate"></i>Estimate</span><span><i class="key-interval"></i>Pointwise 95% interval</span><span><i class="key-reference"></i>BSM reference</span></div>
+<div class="notebook-plot" id="live-plot"></div>
+<div class="metric-grid">
+<div class="greek-result"><span>Frozen control coefficient</span><output id="result-beta">—</output></div>
+<div class="greek-result"><span>Pilot payoff evaluations</span><output id="result-pilot">—</output></div>
+<div class="greek-result"><span>Positive production payoffs</span><output id="result-hits">—</output></div>
+</div>
+<p class="notebook-note" id="notebook-note" role="status"></p>
+<noscript><p>Enable JavaScript to run the laboratory. The study notes, formulas and all computed figures remain available without it.</p></noscript>
+</div>

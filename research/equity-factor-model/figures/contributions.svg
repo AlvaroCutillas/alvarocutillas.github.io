@@ -1,0 +1,719 @@
+<svg role="img" aria-labelledby="contributions-title contributions-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="259.2pt" viewBox="0 0 792 259.2" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="contributions-title">Figure 15 · Exposure is different from risk contribution</title><desc id="contributions-desc">The theoretical factor covariance is fixed. A negative Euler contribution means the exposure offsets other risk at the current portfolio, not that its standalone variance is negative.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-05T16:04:06.301357</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="contributions-figure_1">
+  <g id="contributions-patch_1">
+   <path d="M 0 259.2 
+L 792 259.2 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="contributions-axes_1">
+   <g id="contributions-patch_2">
+    <path d="M 62.66 215.98 
+L 393.57 215.98 
+L 393.57 35.14 
+L 62.66 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="contributions-matplotlib.axis_1">
+    <g id="contributions-xtick_1">
+     <g id="contributions-line2d_1">
+      <path d="M 77.701364 215.98 
+L 77.701364 35.14 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_2">
+      <defs>
+       <path id="contributions-md9400fea4c" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#contributions-md9400fea4c" x="77.701364" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="77.701364" y="229.818594" transform="rotate(-0 77.701364 229.818594)">−1.5</text>
+     </g>
+    </g>
+    <g id="contributions-xtick_2">
+     <g id="contributions-line2d_3">
+      <path d="M 127.839242 215.98 
+L 127.839242 35.14 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_4">
+      <g>
+       <use href="#contributions-md9400fea4c" x="127.839242" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="127.839242" y="229.818594" transform="rotate(-0 127.839242 229.818594)">−1.0</text>
+     </g>
+    </g>
+    <g id="contributions-xtick_3">
+     <g id="contributions-line2d_5">
+      <path d="M 177.977121 215.98 
+L 177.977121 35.14 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_6">
+      <g>
+       <use href="#contributions-md9400fea4c" x="177.977121" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="177.977121" y="229.818594" transform="rotate(-0 177.977121 229.818594)">−0.5</text>
+     </g>
+    </g>
+    <g id="contributions-xtick_4">
+     <g id="contributions-line2d_7">
+      <path d="M 228.115 215.98 
+L 228.115 35.14 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_8">
+      <g>
+       <use href="#contributions-md9400fea4c" x="228.115" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="228.115" y="229.818594" transform="rotate(-0 228.115 229.818594)">0.0</text>
+     </g>
+    </g>
+    <g id="contributions-xtick_5">
+     <g id="contributions-line2d_9">
+      <path d="M 278.252879 215.98 
+L 278.252879 35.14 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_10">
+      <g>
+       <use href="#contributions-md9400fea4c" x="278.252879" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="278.252879" y="229.818594" transform="rotate(-0 278.252879 229.818594)">0.5</text>
+     </g>
+    </g>
+    <g id="contributions-xtick_6">
+     <g id="contributions-line2d_11">
+      <path d="M 328.390758 215.98 
+L 328.390758 35.14 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_12">
+      <g>
+       <use href="#contributions-md9400fea4c" x="328.390758" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="328.390758" y="229.818594" transform="rotate(-0 328.390758 229.818594)">1.0</text>
+     </g>
+    </g>
+    <g id="contributions-xtick_7">
+     <g id="contributions-line2d_13">
+      <path d="M 378.528636 215.98 
+L 378.528636 35.14 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_14">
+      <g>
+       <use href="#contributions-md9400fea4c" x="378.528636" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="378.528636" y="229.818594" transform="rotate(-0 378.528636 229.818594)">1.5</text>
+     </g>
+    </g>
+    <g id="contributions-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="228.115" y="242.528906" transform="rotate(-0 228.115 242.528906)">Low-volatility factor exposure</text>
+    </g>
+   </g>
+   <g id="contributions-matplotlib.axis_2">
+    <g id="contributions-ytick_1">
+     <g id="contributions-line2d_15">
+      <path d="M 62.66 210.17309 
+L 393.57 210.17309 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_16">
+      <defs>
+       <path id="contributions-m39c6781377" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#contributions-m39c6781377" x="62.66" y="210.17309" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="213.592387" transform="rotate(-0 55.66 213.592387)">5.60%</text>
+     </g>
+    </g>
+    <g id="contributions-ytick_2">
+     <g id="contributions-line2d_17">
+      <path d="M 62.66 189.249638 
+L 393.57 189.249638 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_18">
+      <g>
+       <use href="#contributions-m39c6781377" x="62.66" y="189.249638" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="192.668935" transform="rotate(-0 55.66 192.668935)">5.80%</text>
+     </g>
+    </g>
+    <g id="contributions-ytick_3">
+     <g id="contributions-line2d_19">
+      <path d="M 62.66 168.326187 
+L 393.57 168.326187 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_20">
+      <g>
+       <use href="#contributions-m39c6781377" x="62.66" y="168.326187" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="171.745483" transform="rotate(-0 55.66 171.745483)">6.00%</text>
+     </g>
+    </g>
+    <g id="contributions-ytick_4">
+     <g id="contributions-line2d_21">
+      <path d="M 62.66 147.402735 
+L 393.57 147.402735 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_22">
+      <g>
+       <use href="#contributions-m39c6781377" x="62.66" y="147.402735" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="150.822032" transform="rotate(-0 55.66 150.822032)">6.20%</text>
+     </g>
+    </g>
+    <g id="contributions-ytick_5">
+     <g id="contributions-line2d_23">
+      <path d="M 62.66 126.479283 
+L 393.57 126.479283 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_24">
+      <g>
+       <use href="#contributions-m39c6781377" x="62.66" y="126.479283" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="129.89858" transform="rotate(-0 55.66 129.89858)">6.40%</text>
+     </g>
+    </g>
+    <g id="contributions-ytick_6">
+     <g id="contributions-line2d_25">
+      <path d="M 62.66 105.555831 
+L 393.57 105.555831 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_26">
+      <g>
+       <use href="#contributions-m39c6781377" x="62.66" y="105.555831" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="108.975128" transform="rotate(-0 55.66 108.975128)">6.60%</text>
+     </g>
+    </g>
+    <g id="contributions-ytick_7">
+     <g id="contributions-line2d_27">
+      <path d="M 62.66 84.632379 
+L 393.57 84.632379 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_28">
+      <g>
+       <use href="#contributions-m39c6781377" x="62.66" y="84.632379" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="88.051676" transform="rotate(-0 55.66 88.051676)">6.80%</text>
+     </g>
+    </g>
+    <g id="contributions-ytick_8">
+     <g id="contributions-line2d_29">
+      <path d="M 62.66 63.708928 
+L 393.57 63.708928 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_30">
+      <g>
+       <use href="#contributions-m39c6781377" x="62.66" y="63.708928" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="67.128224" transform="rotate(-0 55.66 67.128224)">7.00%</text>
+     </g>
+    </g>
+    <g id="contributions-ytick_9">
+     <g id="contributions-line2d_31">
+      <path d="M 62.66 42.785476 
+L 393.57 42.785476 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_32">
+      <g>
+       <use href="#contributions-m39c6781377" x="62.66" y="42.785476" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="46.204773" transform="rotate(-0 55.66 46.204773)">7.20%</text>
+     </g>
+    </g>
+    <g id="contributions-text_18">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.197813" y="125.56" transform="rotate(-90 21.197813 125.56)">Monthly volatility</text>
+    </g>
+   </g>
+   <g id="contributions-line2d_33">
+    <path d="M 77.701364 43.36 
+L 87.728939 56.231473 
+L 97.756515 68.728705 
+L 106.781333 79.640038 
+L 115.806152 90.217557 
+L 124.83097 100.446036 
+L 133.855788 110.309853 
+L 141.877848 118.758662 
+L 149.899909 126.895348 
+L 157.92197 134.708389 
+L 165.94403 142.186184 
+L 172.963333 148.445105 
+L 179.982636 154.430676 
+L 187.001939 160.135179 
+L 194.021242 165.550984 
+L 201.040545 170.670591 
+L 208.059848 175.486668 
+L 214.076394 179.367747 
+L 220.092939 183.016254 
+L 226.109485 186.428016 
+L 232.12603 189.599034 
+L 238.142576 192.525516 
+L 244.159121 195.203887 
+L 250.175667 197.630816 
+L 256.192212 199.803233 
+L 262.208758 201.718346 
+L 268.225303 203.373661 
+L 274.241848 204.766996 
+L 280.258394 205.896496 
+L 286.274939 206.760643 
+L 292.291485 207.358269 
+L 297.305273 207.652101 
+L 302.319061 207.76 
+L 307.332848 207.681864 
+L 312.346636 207.417767 
+L 318.363182 206.855747 
+L 324.379727 206.027076 
+L 330.396273 204.932877 
+L 336.412818 203.574619 
+L 342.429364 201.954116 
+L 348.445909 200.073505 
+L 354.462455 197.935241 
+L 360.479 195.542075 
+L 366.495545 192.897043 
+L 372.512091 190.003441 
+L 378.528636 186.864813 
+L 378.528636 186.864813 
+" clip-path="url(#contributions-pf297386161)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="contributions-patch_3">
+    <path d="M 62.66 215.98 
+L 62.66 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="contributions-patch_4">
+    <path d="M 62.66 215.98 
+L 393.57 215.98 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="contributions-text_19">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="62.66" y="22.14" transform="rotate(-0 62.66 22.14)">A correlated exposure can hedge</text>
+   </g>
+   <g id="contributions-legend_1">
+    <g id="contributions-line2d_34">
+     <path d="M 272.85125 45.61875 
+L 280.85125 45.61875 
+L 288.85125 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="contributions-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="295.25125" y="48.41875" transform="rotate(-0 295.25125 48.41875)">Total monthly volatility</text>
+    </g>
+   </g>
+  </g>
+  <g id="contributions-axes_2">
+   <g id="contributions-patch_5">
+    <path d="M 447.59 215.98 
+L 778.5 215.98 
+L 778.5 35.14 
+L 447.59 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="contributions-matplotlib.axis_3">
+    <g id="contributions-xtick_8">
+     <g id="contributions-line2d_35">
+      <path d="M 462.631364 215.98 
+L 462.631364 35.14 
+" clip-path="url(#contributions-p24c775cb11)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_36">
+      <g>
+       <use href="#contributions-md9400fea4c" x="462.631364" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="462.631364" y="229.818594" transform="rotate(-0 462.631364 229.818594)">−1.5</text>
+     </g>
+    </g>
+    <g id="contributions-xtick_9">
+     <g id="contributions-line2d_37">
+      <path d="M 512.769242 215.98 
+L 512.769242 35.14 
+" clip-path="url(#contributions-p24c775cb11)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_38">
+      <g>
+       <use href="#contributions-md9400fea4c" x="512.769242" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="512.769242" y="229.818594" transform="rotate(-0 512.769242 229.818594)">−1.0</text>
+     </g>
+    </g>
+    <g id="contributions-xtick_10">
+     <g id="contributions-line2d_39">
+      <path d="M 562.907121 215.98 
+L 562.907121 35.14 
+" clip-path="url(#contributions-p24c775cb11)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_40">
+      <g>
+       <use href="#contributions-md9400fea4c" x="562.907121" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="562.907121" y="229.818594" transform="rotate(-0 562.907121 229.818594)">−0.5</text>
+     </g>
+    </g>
+    <g id="contributions-xtick_11">
+     <g id="contributions-line2d_41">
+      <path d="M 613.045 215.98 
+L 613.045 35.14 
+" clip-path="url(#contributions-p24c775cb11)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_42">
+      <g>
+       <use href="#contributions-md9400fea4c" x="613.045" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="613.045" y="229.818594" transform="rotate(-0 613.045 229.818594)">0.0</text>
+     </g>
+    </g>
+    <g id="contributions-xtick_12">
+     <g id="contributions-line2d_43">
+      <path d="M 663.182879 215.98 
+L 663.182879 35.14 
+" clip-path="url(#contributions-p24c775cb11)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_44">
+      <g>
+       <use href="#contributions-md9400fea4c" x="663.182879" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="663.182879" y="229.818594" transform="rotate(-0 663.182879 229.818594)">0.5</text>
+     </g>
+    </g>
+    <g id="contributions-xtick_13">
+     <g id="contributions-line2d_45">
+      <path d="M 713.320758 215.98 
+L 713.320758 35.14 
+" clip-path="url(#contributions-p24c775cb11)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_46">
+      <g>
+       <use href="#contributions-md9400fea4c" x="713.320758" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="713.320758" y="229.818594" transform="rotate(-0 713.320758 229.818594)">1.0</text>
+     </g>
+    </g>
+    <g id="contributions-xtick_14">
+     <g id="contributions-line2d_47">
+      <path d="M 763.458636 215.98 
+L 763.458636 35.14 
+" clip-path="url(#contributions-p24c775cb11)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_48">
+      <g>
+       <use href="#contributions-md9400fea4c" x="763.458636" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="763.458636" y="229.818594" transform="rotate(-0 763.458636 229.818594)">1.5</text>
+     </g>
+    </g>
+    <g id="contributions-text_28">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="613.045" y="242.528906" transform="rotate(-0 613.045 242.528906)">Low-volatility factor exposure</text>
+    </g>
+   </g>
+   <g id="contributions-matplotlib.axis_4">
+    <g id="contributions-ytick_10">
+     <g id="contributions-line2d_49">
+      <path d="M 447.59 203.583058 
+L 778.5 203.583058 
+" clip-path="url(#contributions-p24c775cb11)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_50">
+      <g>
+       <use href="#contributions-m39c6781377" x="447.59" y="203.583058" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="440.59" y="207.002355" transform="rotate(-0 440.59 207.002355)">0%</text>
+     </g>
+    </g>
+    <g id="contributions-ytick_11">
+     <g id="contributions-line2d_51">
+      <path d="M 447.59 179.312592 
+L 778.5 179.312592 
+" clip-path="url(#contributions-p24c775cb11)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_52">
+      <g>
+       <use href="#contributions-m39c6781377" x="447.59" y="179.312592" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="440.59" y="182.731888" transform="rotate(-0 440.59 182.731888)">10%</text>
+     </g>
+    </g>
+    <g id="contributions-ytick_12">
+     <g id="contributions-line2d_53">
+      <path d="M 447.59 155.042125 
+L 778.5 155.042125 
+" clip-path="url(#contributions-p24c775cb11)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_54">
+      <g>
+       <use href="#contributions-m39c6781377" x="447.59" y="155.042125" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="440.59" y="158.461422" transform="rotate(-0 440.59 158.461422)">20%</text>
+     </g>
+    </g>
+    <g id="contributions-ytick_13">
+     <g id="contributions-line2d_55">
+      <path d="M 447.59 130.771659 
+L 778.5 130.771659 
+" clip-path="url(#contributions-p24c775cb11)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_56">
+      <g>
+       <use href="#contributions-m39c6781377" x="447.59" y="130.771659" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="440.59" y="134.190956" transform="rotate(-0 440.59 134.190956)">30%</text>
+     </g>
+    </g>
+    <g id="contributions-ytick_14">
+     <g id="contributions-line2d_57">
+      <path d="M 447.59 106.501193 
+L 778.5 106.501193 
+" clip-path="url(#contributions-p24c775cb11)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_58">
+      <g>
+       <use href="#contributions-m39c6781377" x="447.59" y="106.501193" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="440.59" y="109.920489" transform="rotate(-0 440.59 109.920489)">40%</text>
+     </g>
+    </g>
+    <g id="contributions-ytick_15">
+     <g id="contributions-line2d_59">
+      <path d="M 447.59 82.230726 
+L 778.5 82.230726 
+" clip-path="url(#contributions-p24c775cb11)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_60">
+      <g>
+       <use href="#contributions-m39c6781377" x="447.59" y="82.230726" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="440.59" y="85.650023" transform="rotate(-0 440.59 85.650023)">50%</text>
+     </g>
+    </g>
+    <g id="contributions-ytick_16">
+     <g id="contributions-line2d_61">
+      <path d="M 447.59 57.96026 
+L 778.5 57.96026 
+" clip-path="url(#contributions-p24c775cb11)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="contributions-line2d_62">
+      <g>
+       <use href="#contributions-m39c6781377" x="447.59" y="57.96026" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="contributions-text_35">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="440.59" y="61.379557" transform="rotate(-0 440.59 61.379557)">60%</text>
+     </g>
+    </g>
+    <g id="contributions-text_36">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="414.714375" y="125.56" transform="rotate(-90 414.714375 125.56)">Variance contribution share</text>
+    </g>
+   </g>
+   <g id="contributions-line2d_63">
+    <path d="M 462.631364 140.450994 
+L 486.697545 152.173486 
+L 520.791303 168.772703 
+L 535.832667 175.835378 
+L 547.865758 181.252017 
+L 558.896091 185.96813 
+L 568.923667 189.997001 
+L 577.948485 193.372518 
+L 585.970545 196.144522 
+L 593.992606 198.675904 
+L 601.011909 200.674372 
+L 608.031212 202.454151 
+L 615.050515 204.000001 
+L 622.069818 205.297518 
+L 628.086364 206.201876 
+L 634.102909 206.906303 
+L 640.119455 207.403934 
+L 646.136 207.688792 
+L 652.152545 207.755876 
+L 658.169091 207.601238 
+L 664.185636 207.222046 
+L 670.202182 206.616645 
+L 676.218727 205.784588 
+L 682.235273 204.726661 
+L 688.251818 203.444891 
+L 694.268364 201.942535 
+L 700.284909 200.22405 
+L 706.301455 198.295052 
+L 713.320758 195.787507 
+L 720.340061 193.015029 
+L 727.359364 189.991747 
+L 734.378667 186.733285 
+L 742.400727 182.743072 
+L 750.422788 178.494595 
+L 759.447606 173.441324 
+L 763.458636 171.112626 
+L 763.458636 171.112626 
+" clip-path="url(#contributions-p24c775cb11)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="contributions-line2d_64">
+    <path d="M 462.631364 75.763576 
+L 499.733394 65.208796 
+L 517.78303 60.313281 
+L 531.821636 56.722883 
+L 543.854727 53.85413 
+L 554.885061 51.436442 
+L 564.912636 49.447868 
+L 574.940212 47.689342 
+L 583.96503 46.328066 
+L 592.989848 45.198809 
+L 601.011909 44.406574 
+L 609.03397 43.827785 
+L 617.05603 43.475137 
+L 625.078091 43.36 
+L 633.100152 43.492145 
+L 640.119455 43.816889 
+L 647.138758 44.341042 
+L 654.158061 45.067267 
+L 661.177364 45.996814 
+L 668.196667 47.129457 
+L 675.21597 48.463458 
+L 683.23803 50.230342 
+L 691.260091 52.248653 
+L 699.282152 54.508667 
+L 707.304212 56.998345 
+L 715.326273 59.703556 
+L 724.351091 62.984593 
+L 733.375909 66.493101 
+L 743.403485 70.625413 
+L 754.433818 75.410564 
+L 763.458636 79.476672 
+L 763.458636 79.476672 
+" clip-path="url(#contributions-p24c775cb11)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="contributions-patch_6">
+    <path d="M 447.59 215.98 
+L 447.59 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="contributions-patch_7">
+    <path d="M 447.59 215.98 
+L 778.5 215.98 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="contributions-text_37">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="447.59" y="22.14" transform="rotate(-0 447.59 22.14)">Negative contributions are possible</text>
+   </g>
+   <g id="contributions-legend_2">
+    <g id="contributions-line2d_65">
+     <path d="M 656.9175 119.09625 
+L 664.9175 119.09625 
+L 672.9175 119.09625 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="contributions-text_38">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="679.3175" y="121.89625" transform="rotate(-0 679.3175 121.89625)">Low-vol variance share</text>
+    </g>
+    <g id="contributions-line2d_66">
+     <path d="M 656.9175 130.83875 
+L 664.9175 130.83875 
+L 672.9175 130.83875 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="contributions-text_39">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="679.3175" y="133.63875" transform="rotate(-0 679.3175 133.63875)">Market variance share</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="contributions-pf297386161">
+   <rect x="62.66" y="35.14" width="330.91" height="180.84"/>
+  </clipPath>
+  <clipPath id="contributions-p24c775cb11">
+   <rect x="447.59" y="35.14" width="330.91" height="180.84"/>
+  </clipPath>
+ </defs>
+</svg>

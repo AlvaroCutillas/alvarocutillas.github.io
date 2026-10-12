@@ -1,0 +1,927 @@
+<svg role="img" aria-labelledby="vega-title vega-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="vega-title">Figure 02 · Quote uncertainty amplified by inversion</title><desc id="vega-desc">Forward 100, discount factor 1, volatility 20%; first-order IV half-width is 0.02 divided by vega. Values above 2.5 volatility points are clipped visually and excluded from the coordinate readout.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:54:52.754491</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="vega-figure_1">
+  <g id="vega-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="vega-axes_1">
+   <g id="vega-patch_2">
+    <path d="M 45.38 244.78 
+L 344.61 244.78 
+L 344.61 35.14 
+L 45.38 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="vega-matplotlib.axis_1">
+    <g id="vega-xtick_1">
+     <g id="vega-line2d_1">
+      <path d="M 74.09399 244.78 
+L 74.09399 35.14 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_2">
+      <defs>
+       <path id="vega-m93955c4643" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#vega-m93955c4643" x="74.09399" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="74.09399" y="258.618594" transform="rotate(-0 74.09399 258.618594)">60</text>
+     </g>
+    </g>
+    <g id="vega-xtick_2">
+     <g id="vega-line2d_3">
+      <path d="M 134.544495 244.78 
+L 134.544495 35.14 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_4">
+      <g>
+       <use href="#vega-m93955c4643" x="134.544495" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="134.544495" y="258.618594" transform="rotate(-0 134.544495 258.618594)">80</text>
+     </g>
+    </g>
+    <g id="vega-xtick_3">
+     <g id="vega-line2d_5">
+      <path d="M 194.995 244.78 
+L 194.995 35.14 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_6">
+      <g>
+       <use href="#vega-m93955c4643" x="194.995" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="194.995" y="258.618594" transform="rotate(-0 194.995 258.618594)">100</text>
+     </g>
+    </g>
+    <g id="vega-xtick_4">
+     <g id="vega-line2d_7">
+      <path d="M 255.445505 244.78 
+L 255.445505 35.14 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_8">
+      <g>
+       <use href="#vega-m93955c4643" x="255.445505" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="255.445505" y="258.618594" transform="rotate(-0 255.445505 258.618594)">120</text>
+     </g>
+    </g>
+    <g id="vega-xtick_5">
+     <g id="vega-line2d_9">
+      <path d="M 315.89601 244.78 
+L 315.89601 35.14 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_10">
+      <g>
+       <use href="#vega-m93955c4643" x="315.89601" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="315.89601" y="258.618594" transform="rotate(-0 315.89601 258.618594)">140</text>
+     </g>
+    </g>
+    <g id="vega-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="194.995" y="271.328906" transform="rotate(-0 194.995 271.328906)">Strike</text>
+    </g>
+   </g>
+   <g id="vega-matplotlib.axis_2">
+    <g id="vega-ytick_1">
+     <g id="vega-line2d_11">
+      <path d="M 45.38 235.250909 
+L 344.61 235.250909 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_12">
+      <defs>
+       <path id="vega-mabee082928" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#vega-mabee082928" x="45.38" y="235.250909" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="238.670206" transform="rotate(-0 38.38 238.670206)">0</text>
+     </g>
+    </g>
+    <g id="vega-ytick_2">
+     <g id="vega-line2d_13">
+      <path d="M 45.38 211.364415 
+L 344.61 211.364415 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_14">
+      <g>
+       <use href="#vega-mabee082928" x="45.38" y="211.364415" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="214.783712" transform="rotate(-0 38.38 214.783712)">5</text>
+     </g>
+    </g>
+    <g id="vega-ytick_3">
+     <g id="vega-line2d_15">
+      <path d="M 45.38 187.477921 
+L 344.61 187.477921 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_16">
+      <g>
+       <use href="#vega-mabee082928" x="45.38" y="187.477921" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="190.897218" transform="rotate(-0 38.38 190.897218)">10</text>
+     </g>
+    </g>
+    <g id="vega-ytick_4">
+     <g id="vega-line2d_17">
+      <path d="M 45.38 163.591428 
+L 344.61 163.591428 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_18">
+      <g>
+       <use href="#vega-mabee082928" x="45.38" y="163.591428" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="167.010724" transform="rotate(-0 38.38 167.010724)">15</text>
+     </g>
+    </g>
+    <g id="vega-ytick_5">
+     <g id="vega-line2d_19">
+      <path d="M 45.38 139.704934 
+L 344.61 139.704934 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_20">
+      <g>
+       <use href="#vega-mabee082928" x="45.38" y="139.704934" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="143.124231" transform="rotate(-0 38.38 143.124231)">20</text>
+     </g>
+    </g>
+    <g id="vega-ytick_6">
+     <g id="vega-line2d_21">
+      <path d="M 45.38 115.81844 
+L 344.61 115.81844 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_22">
+      <g>
+       <use href="#vega-mabee082928" x="45.38" y="115.81844" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="119.237737" transform="rotate(-0 38.38 119.237737)">25</text>
+     </g>
+    </g>
+    <g id="vega-ytick_7">
+     <g id="vega-line2d_23">
+      <path d="M 45.38 91.931946 
+L 344.61 91.931946 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_24">
+      <g>
+       <use href="#vega-mabee082928" x="45.38" y="91.931946" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="95.351243" transform="rotate(-0 38.38 95.351243)">30</text>
+     </g>
+    </g>
+    <g id="vega-ytick_8">
+     <g id="vega-line2d_25">
+      <path d="M 45.38 68.045452 
+L 344.61 68.045452 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_26">
+      <g>
+       <use href="#vega-mabee082928" x="45.38" y="68.045452" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="71.464749" transform="rotate(-0 38.38 71.464749)">35</text>
+     </g>
+    </g>
+    <g id="vega-ytick_9">
+     <g id="vega-line2d_27">
+      <path d="M 45.38 44.158958 
+L 344.61 44.158958 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_28">
+      <g>
+       <use href="#vega-mabee082928" x="45.38" y="44.158958" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="47.578255" transform="rotate(-0 38.38 47.578255)">40</text>
+     </g>
+    </g>
+    <g id="vega-text_16">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.055781" y="139.96" transform="rotate(-90 21.055781 139.96)">Vega per unit volatility</text>
+    </g>
+   </g>
+   <g id="vega-line2d_29">
+    <path d="M 58.981364 235.250909 
+L 151.924015 235.143748 
+L 156.457803 234.870665 
+L 158.724697 234.578756 
+L 160.991591 234.110479 
+L 163.258485 233.391847 
+L 165.525379 232.336417 
+L 167.792273 230.852647 
+L 170.059167 228.855882 
+L 172.326061 226.284282 
+L 174.592955 223.116683 
+L 176.859848 219.389141 
+L 179.126742 215.206303 
+L 185.927424 201.975443 
+L 188.194318 198.24261 
+L 189.327765 196.662213 
+L 190.461212 195.312901 
+L 191.594659 194.219674 
+L 192.728106 193.402325 
+L 193.861553 192.874856 
+L 194.995 192.645092 
+L 196.128447 192.714525 
+L 197.261894 193.07838 
+L 198.395341 193.725891 
+L 199.528788 194.640785 
+L 200.662235 195.801919 
+L 201.795682 197.184064 
+L 204.062576 200.495351 
+L 206.32947 204.325423 
+L 214.263598 218.338145 
+L 216.530492 221.758291 
+L 218.797386 224.729944 
+L 221.06428 227.228527 
+L 223.331174 229.266174 
+L 225.598068 230.880918 
+L 227.864962 232.126231 
+L 230.131856 233.062092 
+L 232.39875 233.748187 
+L 234.665644 234.239344 
+L 238.065985 234.712003 
+L 242.599773 235.032865 
+L 249.400455 235.201815 
+L 265.268712 235.250057 
+L 331.008636 235.250909 
+L 331.008636 235.250909 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="vega-line2d_30">
+    <path d="M 58.981364 235.250908 
+L 102.052348 235.158255 
+L 109.986477 234.90528 
+L 114.520265 234.574723 
+L 119.054053 233.998762 
+L 122.454394 233.330166 
+L 125.854735 232.386034 
+L 128.121629 231.566734 
+L 130.388523 230.567967 
+L 132.655417 229.36552 
+L 134.922311 227.935496 
+L 137.189205 226.255212 
+L 139.456098 224.304187 
+L 141.722992 222.065194 
+L 143.989886 219.525322 
+L 146.25678 216.677005 
+L 148.523674 213.518954 
+L 150.790568 210.056953 
+L 154.190909 204.325655 
+L 157.59125 198.021963 
+L 160.991591 191.265677 
+L 167.792273 177.054178 
+L 172.326061 167.703556 
+L 175.726402 161.121491 
+L 177.993295 157.058144 
+L 180.260189 153.323902 
+L 182.527083 149.972457 
+L 184.793977 147.050927 
+L 187.060871 144.598765 
+L 189.327765 142.646916 
+L 191.594659 141.217249 
+L 192.728106 140.702509 
+L 193.861553 140.322269 
+L 194.995 140.076628 
+L 196.128447 139.965114 
+L 197.261894 139.986698 
+L 198.395341 140.139809 
+L 199.528788 140.42236 
+L 200.662235 140.831766 
+L 202.929129 142.018495 
+L 205.196023 143.670481 
+L 207.462917 145.752205 
+L 209.729811 148.223241 
+L 211.996705 151.039411 
+L 214.263598 154.15395 
+L 217.663939 159.279568 
+L 222.197727 166.707392 
+L 236.932538 191.584904 
+L 240.332879 196.817747 
+L 243.73322 201.702467 
+L 247.133561 206.200569 
+L 250.533902 210.290721 
+L 253.934242 213.966397 
+L 257.334583 217.233321 
+L 260.734924 220.106887 
+L 264.135265 222.609699 
+L 267.535606 224.769322 
+L 270.935947 226.616322 
+L 274.336288 228.182618 
+L 277.736629 229.50015 
+L 281.13697 230.599862 
+L 285.670758 231.777483 
+L 290.204545 232.68246 
+L 294.738333 233.369638 
+L 300.405568 233.992412 
+L 307.20625 234.487889 
+L 315.140379 234.835149 
+L 326.474848 235.083231 
+L 331.008636 235.135755 
+L 331.008636 235.135755 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="vega-line2d_31">
+    <path d="M 58.981364 233.637136 
+L 63.515152 232.827597 
+L 66.915492 232.023939 
+L 70.315833 231.017633 
+L 73.716174 229.775984 
+L 77.116515 228.265329 
+L 80.516856 226.451911 
+L 83.917197 224.302875 
+L 87.317538 221.78732 
+L 90.717879 218.877399 
+L 94.11822 215.549403 
+L 97.518561 211.784784 
+L 100.918902 207.571092 
+L 104.319242 202.902761 
+L 107.719583 197.781734 
+L 111.119924 192.217883 
+L 114.520265 186.229221 
+L 117.920606 179.84189 
+L 122.454394 170.765194 
+L 126.988182 161.142051 
+L 132.655417 148.531502 
+L 142.856439 125.05231 
+L 150.790568 107.057941 
+L 155.324356 97.244341 
+L 159.858144 87.959513 
+L 163.258485 81.425461 
+L 166.658826 75.317699 
+L 170.059167 69.682469 
+L 173.459508 64.559896 
+L 176.859848 59.983623 
+L 179.126742 57.249862 
+L 181.393636 54.777327 
+L 183.66053 52.570988 
+L 185.927424 50.634486 
+L 188.194318 48.970162 
+L 190.461212 47.579083 
+L 192.728106 46.461084 
+L 194.995 45.614818 
+L 197.261894 45.037804 
+L 199.528788 44.726494 
+L 201.795682 44.676329 
+L 204.062576 44.881814 
+L 206.32947 45.336583 
+L 208.596364 46.033476 
+L 210.863258 46.964614 
+L 213.130152 48.121471 
+L 215.397045 49.494952 
+L 217.663939 51.075469 
+L 219.930833 52.853011 
+L 223.331174 55.86601 
+L 226.731515 59.262883 
+L 230.131856 63.006664 
+L 233.532197 67.059958 
+L 238.065985 72.881248 
+L 242.599773 79.099022 
+L 248.267008 87.300219 
+L 255.067689 97.565825 
+L 280.003523 135.643111 
+L 286.804205 145.387151 
+L 292.471439 153.129492 
+L 298.138674 160.48357 
+L 303.805909 167.420285 
+L 308.339697 172.656619 
+L 312.873485 177.609177 
+L 317.407273 182.276524 
+L 321.941061 186.6602 
+L 326.474848 190.764277 
+L 331.008636 194.594957 
+L 331.008636 194.594957 
+" clip-path="url(#vega-p261733e395)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="vega-patch_3">
+    <path d="M 45.38 244.78 
+L 45.38 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="vega-patch_4">
+    <path d="M 45.38 244.78 
+L 344.61 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="vega-text_17">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="45.38" y="22.14" transform="rotate(-0 45.38 22.14)">Short-dated wings contain little IV information</text>
+   </g>
+   <g id="vega-legend_1">
+    <g id="vega-line2d_32">
+     <path d="M 275.7875 45.61875 
+L 283.7875 45.61875 
+L 291.7875 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="vega-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="298.1875" y="48.41875" transform="rotate(-0 298.1875 48.41875)">T = 0.05y</text>
+    </g>
+    <g id="vega-line2d_33">
+     <path d="M 275.7875 57.36125 
+L 283.7875 57.36125 
+L 291.7875 57.36125 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="vega-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="298.1875" y="60.16125" transform="rotate(-0 298.1875 60.16125)">T = 0.25y</text>
+    </g>
+    <g id="vega-line2d_34">
+     <path d="M 275.7875 69.10375 
+L 283.7875 69.10375 
+L 291.7875 69.10375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="vega-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="298.1875" y="71.90375" transform="rotate(-0 298.1875 71.90375)">T = 1y</text>
+    </g>
+   </g>
+  </g>
+  <g id="vega-axes_2">
+   <g id="vega-patch_5">
+    <path d="M 407.27 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 407.27 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="vega-matplotlib.axis_3">
+    <g id="vega-xtick_6">
+     <g id="vega-line2d_35">
+      <path d="M 435.98399 244.78 
+L 435.98399 35.14 
+" clip-path="url(#vega-pb0897c39bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_36">
+      <g>
+       <use href="#vega-m93955c4643" x="435.98399" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="435.98399" y="258.618594" transform="rotate(-0 435.98399 258.618594)">60</text>
+     </g>
+    </g>
+    <g id="vega-xtick_7">
+     <g id="vega-line2d_37">
+      <path d="M 496.434495 244.78 
+L 496.434495 35.14 
+" clip-path="url(#vega-pb0897c39bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_38">
+      <g>
+       <use href="#vega-m93955c4643" x="496.434495" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="496.434495" y="258.618594" transform="rotate(-0 496.434495 258.618594)">80</text>
+     </g>
+    </g>
+    <g id="vega-xtick_8">
+     <g id="vega-line2d_39">
+      <path d="M 556.885 244.78 
+L 556.885 35.14 
+" clip-path="url(#vega-pb0897c39bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_40">
+      <g>
+       <use href="#vega-m93955c4643" x="556.885" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="556.885" y="258.618594" transform="rotate(-0 556.885 258.618594)">100</text>
+     </g>
+    </g>
+    <g id="vega-xtick_9">
+     <g id="vega-line2d_41">
+      <path d="M 617.335505 244.78 
+L 617.335505 35.14 
+" clip-path="url(#vega-pb0897c39bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_42">
+      <g>
+       <use href="#vega-m93955c4643" x="617.335505" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="617.335505" y="258.618594" transform="rotate(-0 617.335505 258.618594)">120</text>
+     </g>
+    </g>
+    <g id="vega-xtick_10">
+     <g id="vega-line2d_43">
+      <path d="M 677.78601 244.78 
+L 677.78601 35.14 
+" clip-path="url(#vega-pb0897c39bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_44">
+      <g>
+       <use href="#vega-m93955c4643" x="677.78601" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="677.78601" y="258.618594" transform="rotate(-0 677.78601 258.618594)">140</text>
+     </g>
+    </g>
+    <g id="vega-text_26">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="556.885" y="271.328906" transform="rotate(-0 556.885 271.328906)">Strike</text>
+    </g>
+   </g>
+   <g id="vega-matplotlib.axis_4">
+    <g id="vega-ytick_10">
+     <g id="vega-line2d_45">
+      <path d="M 407.27 244.78 
+L 706.5 244.78 
+" clip-path="url(#vega-pb0897c39bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_46">
+      <g>
+       <use href="#vega-mabee082928" x="407.27" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="400.27" y="248.199297" transform="rotate(-0 400.27 248.199297)">0.00%</text>
+     </g>
+    </g>
+    <g id="vega-ytick_11">
+     <g id="vega-line2d_47">
+      <path d="M 407.27 202.852 
+L 706.5 202.852 
+" clip-path="url(#vega-pb0897c39bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_48">
+      <g>
+       <use href="#vega-mabee082928" x="407.27" y="202.852" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="400.27" y="206.271297" transform="rotate(-0 400.27 206.271297)">0.50%</text>
+     </g>
+    </g>
+    <g id="vega-ytick_12">
+     <g id="vega-line2d_49">
+      <path d="M 407.27 160.924 
+L 706.5 160.924 
+" clip-path="url(#vega-pb0897c39bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_50">
+      <g>
+       <use href="#vega-mabee082928" x="407.27" y="160.924" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="400.27" y="164.343297" transform="rotate(-0 400.27 164.343297)">1.00%</text>
+     </g>
+    </g>
+    <g id="vega-ytick_13">
+     <g id="vega-line2d_51">
+      <path d="M 407.27 118.996 
+L 706.5 118.996 
+" clip-path="url(#vega-pb0897c39bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_52">
+      <g>
+       <use href="#vega-mabee082928" x="407.27" y="118.996" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="400.27" y="122.415297" transform="rotate(-0 400.27 122.415297)">1.50%</text>
+     </g>
+    </g>
+    <g id="vega-ytick_14">
+     <g id="vega-line2d_53">
+      <path d="M 407.27 77.068 
+L 706.5 77.068 
+" clip-path="url(#vega-pb0897c39bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_54">
+      <g>
+       <use href="#vega-mabee082928" x="407.27" y="77.068" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="400.27" y="80.487297" transform="rotate(-0 400.27 80.487297)">2.00%</text>
+     </g>
+    </g>
+    <g id="vega-ytick_15">
+     <g id="vega-line2d_55">
+      <path d="M 407.27 35.14 
+L 706.5 35.14 
+" clip-path="url(#vega-pb0897c39bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="vega-line2d_56">
+      <g>
+       <use href="#vega-mabee082928" x="407.27" y="35.14" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="vega-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="400.27" y="38.559297" transform="rotate(-0 400.27 38.559297)">2.50%</text>
+     </g>
+    </g>
+    <g id="vega-text_33">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="365.807812" y="139.96" transform="rotate(-90 365.807812 139.96)">Approximate IV half-width</text>
+    </g>
+   </g>
+   <g id="vega-line2d_57">
+    <path d="M 528.048107 -1 
+L 528.548826 22.049009 
+L 529.682273 62.614774 
+L 530.81572 94.400256 
+L 531.949167 119.493545 
+L 533.082614 139.447499 
+L 534.216061 155.425289 
+L 535.349508 168.304334 
+L 536.482955 178.751037 
+L 537.616402 187.274897 
+L 538.749848 194.267956 
+L 539.883295 200.033739 
+L 541.016742 204.808632 
+L 542.150189 208.777757 
+L 543.283636 212.086845 
+L 544.417083 214.851161 
+L 545.55053 217.162253 
+L 546.683977 219.093071 
+L 547.817424 220.70189 
+L 548.950871 222.035301 
+L 550.084318 223.130523 
+L 551.217765 224.017176 
+L 552.351212 224.718651 
+L 553.484659 225.253161 
+L 554.618106 225.634541 
+L 555.751553 225.872851 
+L 556.885 225.974814 
+L 558.018447 225.944117 
+L 559.151894 225.781606 
+L 560.285341 225.485359 
+L 561.418788 225.050675 
+L 562.552235 224.469966 
+L 563.685682 223.732542 
+L 564.819129 222.824297 
+L 565.952576 221.727275 
+L 567.086023 220.419097 
+L 568.21947 218.872231 
+L 569.352917 217.053059 
+L 570.486364 214.920716 
+L 571.619811 212.425636 
+L 572.753258 209.507735 
+L 573.886705 206.094149 
+L 575.020152 202.096405 
+L 576.153598 197.406884 
+L 577.287045 191.894398 
+L 578.420492 185.398618 
+L 579.553939 177.723074 
+L 580.687386 168.62631 
+L 581.820833 157.81068 
+L 582.95428 144.908132 
+L 584.087727 129.462097 
+L 585.221174 110.904351 
+L 586.354621 88.525382 
+L 587.488068 61.436291 
+L 588.621515 28.519701 
+L 589.454794 -1 
+L 589.454794 -1 
+" clip-path="url(#vega-pb0897c39bc)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="vega-line2d_58">
+    <path d="M 488.896842 -1 
+L 490.011629 27.306547 
+L 491.145076 52.163516 
+L 492.278523 73.688786 
+L 493.41197 92.377379 
+L 494.545417 108.644521 
+L 495.678864 122.839399 
+L 496.812311 135.256403 
+L 497.945758 146.144349 
+L 499.079205 155.714044 
+L 500.212652 164.144522 
+L 501.346098 171.588195 
+L 502.479545 178.175112 
+L 503.612992 184.016492 
+L 504.746439 189.207667 
+L 505.879886 193.830531 
+L 507.013333 197.955586 
+L 508.14678 201.643656 
+L 510.413674 207.912155 
+L 512.680568 212.978312 
+L 514.947462 217.100955 
+L 517.214356 220.477322 
+L 519.48125 223.258834 
+L 521.748144 225.56256 
+L 524.015038 227.479623 
+L 526.281932 229.081408 
+L 528.548826 230.424169 
+L 530.81572 231.552483 
+L 534.216061 232.918538 
+L 537.616402 233.971736 
+L 541.016742 234.777938 
+L 544.417083 235.384774 
+L 548.950871 235.941706 
+L 553.484659 236.259537 
+L 558.018447 236.371503 
+L 562.552235 236.294323 
+L 567.086023 236.031293 
+L 571.619811 235.573614 
+L 576.153598 234.900341 
+L 580.687386 233.977077 
+L 584.087727 233.090925 
+L 587.488068 232.007667 
+L 590.888409 230.691052 
+L 594.28875 229.095267 
+L 597.689091 227.162568 
+L 599.955985 225.65173 
+L 602.222879 223.933151 
+L 604.489773 221.976397 
+L 606.756667 219.745879 
+L 609.023561 217.199933 
+L 611.290455 214.289718 
+L 613.557348 210.957909 
+L 615.824242 207.13712 
+L 618.091136 202.748027 
+L 620.35803 197.697111 
+L 622.624924 191.873954 
+L 624.891818 185.147982 
+L 627.158712 177.364549 
+L 629.425606 168.340212 
+L 631.6925 157.857041 
+L 633.959394 145.655724 
+L 636.226288 131.427242 
+L 638.493182 114.802776 
+L 640.760076 95.341455 
+L 643.02697 72.515492 
+L 645.293864 45.692089 
+L 647.560758 14.111415 
+L 648.520148 -1 
+L 648.520148 -1 
+" clip-path="url(#vega-pb0897c39bc)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="vega-line2d_59">
+    <path d="M 428.935493 -1 
+L 429.938939 18.340828 
+L 431.072386 37.927077 
+L 432.205833 55.51514 
+L 433.33928 71.33379 
+L 435.606174 98.4382 
+L 437.873068 120.562244 
+L 440.139962 138.726314 
+L 442.406856 153.723001 
+L 444.67375 166.17169 
+L 446.940644 176.559255 
+L 449.207538 185.270584 
+L 451.474432 192.611611 
+L 453.741326 198.826808 
+L 456.00822 204.112534 
+L 458.275114 208.627293 
+L 460.542008 212.499644 
+L 462.808902 215.834349 
+L 465.075795 218.71716 
+L 467.342689 221.218579 
+L 469.609583 223.396814 
+L 471.876477 225.300122 
+L 474.143371 226.968665 
+L 476.410265 228.436003 
+L 479.810606 230.320074 
+L 483.210947 231.890721 
+L 486.611288 233.207859 
+L 490.011629 234.318448 
+L 494.545417 235.540888 
+L 499.079205 236.528814 
+L 504.746439 237.509396 
+L 510.413674 238.273181 
+L 517.214356 238.974404 
+L 525.148485 239.571432 
+L 534.216061 240.040307 
+L 545.55053 240.39413 
+L 558.018447 240.562172 
+L 572.753258 240.524723 
+L 587.488068 240.257494 
+L 601.089432 239.798867 
+L 613.557348 239.171699 
+L 624.891818 238.392401 
+L 635.092841 237.479868 
+L 644.160417 236.460905 
+L 652.094545 235.373229 
+L 660.028674 234.063953 
+L 666.829356 232.730844 
+L 673.630038 231.166276 
+L 679.297273 229.655514 
+L 684.964508 227.926141 
+L 690.631742 225.944646 
+L 692.898636 225.072914 
+L 692.898636 225.072914 
+" clip-path="url(#vega-pb0897c39bc)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="vega-patch_6">
+    <path d="M 407.27 244.78 
+L 407.27 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="vega-patch_7">
+    <path d="M 407.27 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="vega-text_34">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="407.27" y="22.14" transform="rotate(-0 407.27 22.14)">A premium half-spread of 0.02</text>
+   </g>
+   <g id="vega-legend_2">
+    <g id="vega-line2d_60">
+     <path d="M 414.47 45.61875 
+L 422.47 45.61875 
+L 430.47 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="vega-text_35">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="436.87" y="48.41875" transform="rotate(-0 436.87 48.41875)">T = 0.05y</text>
+    </g>
+    <g id="vega-line2d_61">
+     <path d="M 414.47 57.36125 
+L 422.47 57.36125 
+L 430.47 57.36125 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="vega-text_36">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="436.87" y="60.16125" transform="rotate(-0 436.87 60.16125)">T = 0.25y</text>
+    </g>
+    <g id="vega-line2d_62">
+     <path d="M 414.47 69.10375 
+L 422.47 69.10375 
+L 430.47 69.10375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="vega-text_37">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="436.87" y="71.90375" transform="rotate(-0 436.87 71.90375)">T = 1y</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="vega-p261733e395">
+   <rect x="45.38" y="35.14" width="299.23" height="209.64"/>
+  </clipPath>
+  <clipPath id="vega-pb0897c39bc">
+   <rect x="407.27" y="35.14" width="299.23" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

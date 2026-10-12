@@ -1,0 +1,1136 @@
+<svg role="img" aria-labelledby="evt-title evt-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="302.4pt" viewBox="0 0 720 302.4" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="evt-title">Figure 12 · Peaks-over-threshold models</title><desc id="evt-desc">Generalized Pareto survival curves use scale 1. ES extrapolation uses threshold 2, exceedance probability 5% and scale 0.8. Parameters are illustrative population inputs; no tail fit to market data is implied.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T18:09:12.723324</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="evt-figure_1">
+  <g id="evt-patch_1">
+   <path d="M 0 302.4 
+L 720 302.4 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="evt-axes_1">
+   <g id="evt-patch_2">
+    <path d="M 55.707809 259.18 
+L 351.142233 259.18 
+L 351.142233 35.14 
+L 55.707809 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="evt-matplotlib.axis_1">
+    <g id="evt-xtick_1">
+     <g id="evt-line2d_1">
+      <path d="M 69.136647 259.18 
+L 69.136647 35.14 
+" clip-path="url(#evt-pf074bd983f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_2">
+      <defs>
+       <path id="evt-m529f523bb2" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#evt-m529f523bb2" x="69.136647" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="69.136647" y="273.018594" transform="rotate(-0 69.136647 273.018594)">0</text>
+     </g>
+    </g>
+    <g id="evt-xtick_2">
+     <g id="evt-line2d_3">
+      <path d="M 113.899438 259.18 
+L 113.899438 35.14 
+" clip-path="url(#evt-pf074bd983f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_4">
+      <g>
+       <use href="#evt-m529f523bb2" x="113.899438" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="113.899438" y="273.018594" transform="rotate(-0 113.899438 273.018594)">2</text>
+     </g>
+    </g>
+    <g id="evt-xtick_3">
+     <g id="evt-line2d_5">
+      <path d="M 158.66223 259.18 
+L 158.66223 35.14 
+" clip-path="url(#evt-pf074bd983f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_6">
+      <g>
+       <use href="#evt-m529f523bb2" x="158.66223" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="158.66223" y="273.018594" transform="rotate(-0 158.66223 273.018594)">4</text>
+     </g>
+    </g>
+    <g id="evt-xtick_4">
+     <g id="evt-line2d_7">
+      <path d="M 203.425021 259.18 
+L 203.425021 35.14 
+" clip-path="url(#evt-pf074bd983f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_8">
+      <g>
+       <use href="#evt-m529f523bb2" x="203.425021" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="203.425021" y="273.018594" transform="rotate(-0 203.425021 273.018594)">6</text>
+     </g>
+    </g>
+    <g id="evt-xtick_5">
+     <g id="evt-line2d_9">
+      <path d="M 248.187812 259.18 
+L 248.187812 35.14 
+" clip-path="url(#evt-pf074bd983f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_10">
+      <g>
+       <use href="#evt-m529f523bb2" x="248.187812" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="248.187812" y="273.018594" transform="rotate(-0 248.187812 273.018594)">8</text>
+     </g>
+    </g>
+    <g id="evt-xtick_6">
+     <g id="evt-line2d_11">
+      <path d="M 292.950604 259.18 
+L 292.950604 35.14 
+" clip-path="url(#evt-pf074bd983f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_12">
+      <g>
+       <use href="#evt-m529f523bb2" x="292.950604" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="292.950604" y="273.018594" transform="rotate(-0 292.950604 273.018594)">10</text>
+     </g>
+    </g>
+    <g id="evt-xtick_7">
+     <g id="evt-line2d_13">
+      <path d="M 337.713395 259.18 
+L 337.713395 35.14 
+" clip-path="url(#evt-pf074bd983f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_14">
+      <g>
+       <use href="#evt-m529f523bb2" x="337.713395" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="337.713395" y="273.018594" transform="rotate(-0 337.713395 273.018594)">12</text>
+     </g>
+    </g>
+    <g id="evt-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="203.425021" y="285.728906" transform="rotate(-0 203.425021 285.728906)">Excess above threshold</text>
+    </g>
+   </g>
+   <g id="evt-matplotlib.axis_2">
+    <g id="evt-ytick_1">
+     <g id="evt-line2d_15">
+      <path d="M 55.707809 240.72938 
+L 351.142233 240.72938 
+" clip-path="url(#evt-pf074bd983f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_16">
+      <defs>
+       <path id="evt-m721650dd8e" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#evt-m721650dd8e" x="55.707809" y="240.72938" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_9">
+      <!-- $\mathdefault{10^{-5}}$ -->
+      <g style="fill: #939b94" transform="translate(27.557809 244.148677)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.40625">−5</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_2">
+     <g id="evt-line2d_17">
+      <path d="M 55.707809 201.648232 
+L 351.142233 201.648232 
+" clip-path="url(#evt-pf074bd983f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_18">
+      <g>
+       <use href="#evt-m721650dd8e" x="55.707809" y="201.648232" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_10">
+      <!-- $\mathdefault{10^{-4}}$ -->
+      <g style="fill: #939b94" transform="translate(27.557809 205.067528)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.40625">−4</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_3">
+     <g id="evt-line2d_19">
+      <path d="M 55.707809 162.567083 
+L 351.142233 162.567083 
+" clip-path="url(#evt-pf074bd983f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_20">
+      <g>
+       <use href="#evt-m721650dd8e" x="55.707809" y="162.567083" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_11">
+      <!-- $\mathdefault{10^{-3}}$ -->
+      <g style="fill: #939b94" transform="translate(27.557809 165.98638)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.318750000000001">−3</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_4">
+     <g id="evt-line2d_21">
+      <path d="M 55.707809 123.485934 
+L 351.142233 123.485934 
+" clip-path="url(#evt-pf074bd983f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_22">
+      <g>
+       <use href="#evt-m721650dd8e" x="55.707809" y="123.485934" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_12">
+      <!-- $\mathdefault{10^{-2}}$ -->
+      <g style="fill: #939b94" transform="translate(27.557809 126.905231)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.318750000000001">−2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_5">
+     <g id="evt-line2d_23">
+      <path d="M 55.707809 84.404785 
+L 351.142233 84.404785 
+" clip-path="url(#evt-pf074bd983f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_24">
+      <g>
+       <use href="#evt-m721650dd8e" x="55.707809" y="84.404785" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_13">
+      <!-- $\mathdefault{10^{-1}}$ -->
+      <g style="fill: #939b94" transform="translate(27.557809 87.824082)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.40625">−1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_6">
+     <g id="evt-line2d_25">
+      <path d="M 55.707809 45.323636 
+L 351.142233 45.323636 
+" clip-path="url(#evt-pf074bd983f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_26">
+      <g>
+       <use href="#evt-m721650dd8e" x="55.707809" y="45.323636" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_14">
+      <!-- $\mathdefault{10^{0}}$ -->
+      <g style="fill: #939b94" transform="translate(32.867809 48.742933)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_7">
+     <g id="evt-line2d_27">
+      <defs>
+       <path id="evt-mb73dbea0b1" d="M 0 0 
+L -2 0 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="256.281333" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_8">
+     <g id="evt-line2d_28">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="252.493978" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_9">
+     <g id="evt-line2d_29">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="249.399484" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_10">
+     <g id="evt-line2d_30">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="246.783127" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_11">
+     <g id="evt-line2d_31">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="244.516735" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_12">
+     <g id="evt-line2d_32">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="242.517636" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_13">
+     <g id="evt-line2d_33">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="228.964782" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_14">
+     <g id="evt-line2d_34">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="222.082934" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_15">
+     <g id="evt-line2d_35">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="217.200184" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_16">
+     <g id="evt-line2d_36">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="213.41283" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_17">
+     <g id="evt-line2d_37">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="210.318336" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_18">
+     <g id="evt-line2d_38">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="207.701978" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_19">
+     <g id="evt-line2d_39">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="205.435586" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_20">
+     <g id="evt-line2d_40">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="203.436487" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_21">
+     <g id="evt-line2d_41">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="189.883634" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_22">
+     <g id="evt-line2d_42">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="183.001785" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_23">
+     <g id="evt-line2d_43">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="178.119035" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_24">
+     <g id="evt-line2d_44">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="174.331681" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_25">
+     <g id="evt-line2d_45">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="171.237187" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_26">
+     <g id="evt-line2d_46">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="168.620829" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_27">
+     <g id="evt-line2d_47">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="166.354437" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_28">
+     <g id="evt-line2d_48">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="164.355338" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_29">
+     <g id="evt-line2d_49">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="150.802485" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_30">
+     <g id="evt-line2d_50">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="143.920636" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_31">
+     <g id="evt-line2d_51">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="139.037887" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_32">
+     <g id="evt-line2d_52">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="135.250532" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_33">
+     <g id="evt-line2d_53">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="132.156038" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_34">
+     <g id="evt-line2d_54">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="129.539681" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_35">
+     <g id="evt-line2d_55">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="127.273289" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_36">
+     <g id="evt-line2d_56">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="125.274189" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_37">
+     <g id="evt-line2d_57">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="111.721336" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_38">
+     <g id="evt-line2d_58">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="104.839487" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_39">
+     <g id="evt-line2d_59">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="99.956738" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_40">
+     <g id="evt-line2d_60">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="96.169383" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_41">
+     <g id="evt-line2d_61">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="93.074889" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_42">
+     <g id="evt-line2d_62">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="90.458532" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_43">
+     <g id="evt-line2d_63">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="88.19214" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_44">
+     <g id="evt-line2d_64">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="86.19304" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_45">
+     <g id="evt-line2d_65">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="72.640187" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_46">
+     <g id="evt-line2d_66">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="65.758338" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_47">
+     <g id="evt-line2d_67">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="60.875589" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_48">
+     <g id="evt-line2d_68">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="57.088234" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_49">
+     <g id="evt-line2d_69">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="53.99374" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_50">
+     <g id="evt-line2d_70">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="51.377383" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_51">
+     <g id="evt-line2d_71">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="49.110991" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-ytick_52">
+     <g id="evt-line2d_72">
+      <g>
+       <use href="#evt-mb73dbea0b1" x="55.707809" y="47.111892" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="evt-text_15">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.686091" y="147.16" transform="rotate(-90 21.686091 147.16)">Survival probability</text>
+    </g>
+   </g>
+   <g id="evt-line2d_73">
+    <path d="M 69.136647 45.323636 
+L 337.713395 248.996364 
+L 337.713395 248.996364 
+" clip-path="url(#evt-pf074bd983f)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="evt-line2d_74">
+    <path d="M 69.136647 45.323636 
+L 75.194769 49.768993 
+L 81.252891 53.941078 
+L 87.984138 58.29455 
+L 94.715385 62.385601 
+L 102.119756 66.618133 
+L 109.524128 70.602209 
+L 117.601624 74.697375 
+L 126.352245 78.871653 
+L 135.102866 82.804074 
+L 144.526611 86.798809 
+L 154.623482 90.833119 
+L 165.393476 94.887513 
+L 176.836596 98.94547 
+L 188.95284 102.993147 
+L 201.742209 107.01906 
+L 215.204703 111.013796 
+L 229.340321 114.969725 
+L 244.149064 118.880754 
+L 259.630932 122.742093 
+L 276.459049 126.70418 
+L 293.960291 130.593269 
+L 312.807782 134.546455 
+L 332.328398 138.411751 
+L 337.713395 139.440421 
+L 337.713395 139.440421 
+" clip-path="url(#evt-pf074bd983f)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="evt-line2d_75">
+    <path d="M 69.136647 45.323636 
+L 73.175395 48.231654 
+L 77.214143 50.868397 
+L 81.926016 53.66289 
+L 86.637889 56.205972 
+L 92.022886 58.857313 
+L 98.081008 61.570207 
+L 104.13913 64.045544 
+L 110.870377 66.563547 
+L 118.274749 69.096764 
+L 126.352245 71.623833 
+L 135.102866 74.128537 
+L 144.526611 76.598866 
+L 155.296606 79.180834 
+L 166.739726 81.688218 
+L 179.529095 84.250363 
+L 192.991588 86.717997 
+L 207.800331 89.204789 
+L 223.955324 91.689442 
+L 241.456566 94.155626 
+L 260.977181 96.674339 
+L 281.844047 99.139745 
+L 304.730286 101.617504 
+L 329.635899 104.088076 
+L 337.713395 104.845128 
+L 337.713395 104.845128 
+" clip-path="url(#evt-pf074bd983f)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="evt-patch_3">
+    <path d="M 55.707809 259.18 
+L 55.707809 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="evt-patch_4">
+    <path d="M 55.707809 259.18 
+L 351.142233 259.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="evt-text_16">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="55.707809" y="22.14" transform="rotate(-0 55.707809 22.14)">Generalized Pareto tails</text>
+   </g>
+   <g id="evt-legend_1">
+    <g id="evt-line2d_76">
+     <path d="M 279.52192 46.928594 
+L 288.52192 46.928594 
+L 297.52192 46.928594 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="evt-text_17">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="304.72192" y="50.078594" transform="rotate(-0 304.72192 50.078594)">ξ = 0</text>
+    </g>
+    <g id="evt-line2d_77">
+     <path d="M 279.52192 60.157188 
+L 288.52192 60.157188 
+L 297.52192 60.157188 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="evt-text_18">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="304.72192" y="63.307188" transform="rotate(-0 304.72192 63.307188)">ξ = 0.25</text>
+    </g>
+    <g id="evt-line2d_78">
+     <path d="M 279.52192 73.385781 
+L 288.52192 73.385781 
+L 297.52192 73.385781 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="evt-text_19">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="304.72192" y="76.535781" transform="rotate(-0 304.72192 76.535781)">ξ = 0.6</text>
+    </g>
+   </g>
+  </g>
+  <g id="evt-axes_2">
+   <g id="evt-patch_5">
+    <path d="M 396.522233 259.18 
+L 691.956656 259.18 
+L 691.956656 35.14 
+L 396.522233 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="evt-matplotlib.axis_3">
+    <g id="evt-xtick_8">
+     <g id="evt-line2d_79">
+      <path d="M 409.95107 259.18 
+L 409.95107 35.14 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_80">
+      <g>
+       <use href="#evt-m529f523bb2" x="409.95107" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_20">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="409.95107" y="273.018594" transform="rotate(-0 409.95107 273.018594)">96.00%</text>
+     </g>
+    </g>
+    <g id="evt-xtick_9">
+     <g id="evt-line2d_81">
+      <path d="M 444.383987 259.18 
+L 444.383987 35.14 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_82">
+      <g>
+       <use href="#evt-m529f523bb2" x="444.383987" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="444.383987" y="273.018594" transform="rotate(-0 444.383987 273.018594)">96.50%</text>
+     </g>
+    </g>
+    <g id="evt-xtick_10">
+     <g id="evt-line2d_83">
+      <path d="M 478.816903 259.18 
+L 478.816903 35.14 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_84">
+      <g>
+       <use href="#evt-m529f523bb2" x="478.816903" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="478.816903" y="273.018594" transform="rotate(-0 478.816903 273.018594)">97.00%</text>
+     </g>
+    </g>
+    <g id="evt-xtick_11">
+     <g id="evt-line2d_85">
+      <path d="M 513.24982 259.18 
+L 513.24982 35.14 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_86">
+      <g>
+       <use href="#evt-m529f523bb2" x="513.24982" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="513.24982" y="273.018594" transform="rotate(-0 513.24982 273.018594)">97.50%</text>
+     </g>
+    </g>
+    <g id="evt-xtick_12">
+     <g id="evt-line2d_87">
+      <path d="M 547.682736 259.18 
+L 547.682736 35.14 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_88">
+      <g>
+       <use href="#evt-m529f523bb2" x="547.682736" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="547.682736" y="273.018594" transform="rotate(-0 547.682736 273.018594)">98.00%</text>
+     </g>
+    </g>
+    <g id="evt-xtick_13">
+     <g id="evt-line2d_89">
+      <path d="M 582.115653 259.18 
+L 582.115653 35.14 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_90">
+      <g>
+       <use href="#evt-m529f523bb2" x="582.115653" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="582.115653" y="273.018594" transform="rotate(-0 582.115653 273.018594)">98.50%</text>
+     </g>
+    </g>
+    <g id="evt-xtick_14">
+     <g id="evt-line2d_91">
+      <path d="M 616.548569 259.18 
+L 616.548569 35.14 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_92">
+      <g>
+       <use href="#evt-m529f523bb2" x="616.548569" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="616.548569" y="273.018594" transform="rotate(-0 616.548569 273.018594)">99.00%</text>
+     </g>
+    </g>
+    <g id="evt-xtick_15">
+     <g id="evt-line2d_93">
+      <path d="M 650.981485 259.18 
+L 650.981485 35.14 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_94">
+      <g>
+       <use href="#evt-m529f523bb2" x="650.981485" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="650.981485" y="273.018594" transform="rotate(-0 650.981485 273.018594)">99.50%</text>
+     </g>
+    </g>
+    <g id="evt-xtick_16">
+     <g id="evt-line2d_95">
+      <path d="M 685.414402 259.18 
+L 685.414402 35.14 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_96">
+      <g>
+       <use href="#evt-m529f523bb2" x="685.414402" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="685.414402" y="273.018594" transform="rotate(-0 685.414402 273.018594)">100.00%</text>
+     </g>
+    </g>
+    <g id="evt-text_29">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="544.239444" y="285.728906" transform="rotate(-0 544.239444 285.728906)">Confidence level</text>
+    </g>
+   </g>
+   <g id="evt-matplotlib.axis_4">
+    <g id="evt-ytick_53">
+     <g id="evt-line2d_97">
+      <path d="M 396.522233 236.344676 
+L 691.956656 236.344676 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_98">
+      <g>
+       <use href="#evt-m721650dd8e" x="396.522233" y="236.344676" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="389.522233" y="239.763973" transform="rotate(-0 389.522233 239.763973)">5</text>
+     </g>
+    </g>
+    <g id="evt-ytick_54">
+     <g id="evt-line2d_99">
+      <path d="M 396.522233 205.051624 
+L 691.956656 205.051624 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_100">
+      <g>
+       <use href="#evt-m721650dd8e" x="396.522233" y="205.051624" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="389.522233" y="208.470921" transform="rotate(-0 389.522233 208.470921)">10</text>
+     </g>
+    </g>
+    <g id="evt-ytick_55">
+     <g id="evt-line2d_101">
+      <path d="M 396.522233 173.758572 
+L 691.956656 173.758572 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_102">
+      <g>
+       <use href="#evt-m721650dd8e" x="396.522233" y="173.758572" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="389.522233" y="177.177869" transform="rotate(-0 389.522233 177.177869)">15</text>
+     </g>
+    </g>
+    <g id="evt-ytick_56">
+     <g id="evt-line2d_103">
+      <path d="M 396.522233 142.46552 
+L 691.956656 142.46552 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_104">
+      <g>
+       <use href="#evt-m721650dd8e" x="396.522233" y="142.46552" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="389.522233" y="145.884817" transform="rotate(-0 389.522233 145.884817)">20</text>
+     </g>
+    </g>
+    <g id="evt-ytick_57">
+     <g id="evt-line2d_105">
+      <path d="M 396.522233 111.172469 
+L 691.956656 111.172469 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_106">
+      <g>
+       <use href="#evt-m721650dd8e" x="396.522233" y="111.172469" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="389.522233" y="114.591766" transform="rotate(-0 389.522233 114.591766)">25</text>
+     </g>
+    </g>
+    <g id="evt-ytick_58">
+     <g id="evt-line2d_107">
+      <path d="M 396.522233 79.879417 
+L 691.956656 79.879417 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_108">
+      <g>
+       <use href="#evt-m721650dd8e" x="396.522233" y="79.879417" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_35">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="389.522233" y="83.298714" transform="rotate(-0 389.522233 83.298714)">30</text>
+     </g>
+    </g>
+    <g id="evt-ytick_59">
+     <g id="evt-line2d_109">
+      <path d="M 396.522233 48.586365 
+L 691.956656 48.586365 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="evt-line2d_110">
+      <g>
+       <use href="#evt-m721650dd8e" x="396.522233" y="48.586365" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="evt-text_36">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="389.522233" y="52.005662" transform="rotate(-0 389.522233 52.005662)">35</text>
+     </g>
+    </g>
+    <g id="evt-text_37">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="372.198014" y="147.16" transform="rotate(-90 372.198014 147.16)">Loss</text>
+    </g>
+   </g>
+   <g id="evt-line2d_111">
+    <path d="M 409.95107 248.996364 
+L 463.936346 247.904206 
+L 507.124567 246.818147 
+L 542.214997 245.720775 
+L 570.557266 244.616511 
+L 593.501009 243.500764 
+L 611.046224 242.440212 
+L 625.892174 241.325287 
+L 638.038862 240.182496 
+L 647.486285 239.068897 
+L 654.234444 238.087961 
+L 659.632972 237.136046 
+L 665.0315 235.959638 
+L 669.080395 234.850876 
+L 671.779659 233.946492 
+L 674.478923 232.841929 
+L 677.178187 231.422618 
+L 678.527819 230.526556 
+L 678.527819 230.526556 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="evt-line2d_112">
+    <path d="M 409.95107 246.912648 
+L 450.440027 245.767846 
+L 484.180825 244.606939 
+L 512.523095 243.425605 
+L 536.816469 242.201742 
+L 557.060947 240.973086 
+L 574.606162 239.693911 
+L 589.452113 238.395725 
+L 601.5988 237.13097 
+L 612.395855 235.797421 
+L 621.843279 234.410491 
+L 629.94107 232.998891 
+L 636.68923 231.609733 
+L 642.087757 230.312632 
+L 647.486285 228.795923 
+L 651.535181 227.469105 
+L 655.584076 225.92761 
+L 659.632972 224.099519 
+L 662.332236 222.668409 
+L 665.0315 221.011136 
+L 667.730763 219.053961 
+L 670.430027 216.682458 
+L 671.779659 215.286457 
+L 673.129291 213.706065 
+L 674.478923 211.89222 
+L 675.828555 209.774452 
+L 677.178187 207.246749 
+L 678.527819 204.139757 
+L 678.527819 204.139757 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="evt-line2d_113">
+    <path d="M 409.95107 239.614536 
+L 435.594076 238.174421 
+L 458.537819 236.669495 
+L 478.782297 235.123858 
+L 496.327512 233.574069 
+L 512.523095 231.924205 
+L 527.369046 230.178532 
+L 539.515733 228.542433 
+L 551.66242 226.672693 
+L 562.459475 224.766887 
+L 571.906898 222.865305 
+L 580.00469 221.021686 
+L 588.102481 218.936487 
+L 594.850641 216.974386 
+L 601.5988 214.763407 
+L 606.997328 212.778557 
+L 612.395855 210.562231 
+L 617.794383 208.067105 
+L 621.843279 205.976286 
+L 625.892174 203.660879 
+L 629.94107 201.078853 
+L 633.989966 198.17644 
+L 636.68923 196.029769 
+L 639.388493 193.683945 
+L 642.087757 191.107095 
+L 644.787021 188.259812 
+L 647.486285 185.092735 
+L 650.185549 181.543076 
+L 652.884813 177.529586 
+L 655.584076 172.944986 
+L 658.28334 167.644283 
+L 660.982604 161.42597 
+L 662.332236 157.886937 
+L 663.681868 154.000462 
+L 665.0315 149.707482 
+L 666.381132 144.934062 
+L 667.730763 139.586242 
+L 669.080395 133.542539 
+L 670.430027 126.642742 
+L 671.779659 118.670584 
+L 673.129291 109.32598 
+L 674.478923 98.178488 
+L 675.828555 84.584966 
+L 677.178187 67.533789 
+L 678.527819 45.323636 
+L 678.527819 45.323636 
+" clip-path="url(#evt-pe3c33fb97d)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="evt-patch_6">
+    <path d="M 396.522233 259.18 
+L 396.522233 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="evt-patch_7">
+    <path d="M 396.522233 259.18 
+L 691.956656 259.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="evt-text_38">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="396.522233" y="22.14" transform="rotate(-0 396.522233 22.14)">Tail-shape sensitivity beyond the threshold</text>
+   </g>
+   <g id="evt-legend_2">
+    <g id="evt-line2d_114">
+     <path d="M 404.622233 46.928594 
+L 413.622233 46.928594 
+L 422.622233 46.928594 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="evt-text_39">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="429.822233" y="50.078594" transform="rotate(-0 429.822233 50.078594)">ES, ξ = 0</text>
+    </g>
+    <g id="evt-line2d_115">
+     <path d="M 404.622233 60.157188 
+L 413.622233 60.157188 
+L 422.622233 60.157188 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="evt-text_40">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="429.822233" y="63.307188" transform="rotate(-0 429.822233 63.307188)">ES, ξ = 0.25</text>
+    </g>
+    <g id="evt-line2d_116">
+     <path d="M 404.622233 73.385781 
+L 413.622233 73.385781 
+L 422.622233 73.385781 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="evt-text_41">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="429.822233" y="76.535781" transform="rotate(-0 429.822233 76.535781)">ES, ξ = 0.6</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="evt-pf074bd983f">
+   <rect x="55.707809" y="35.14" width="295.434423" height="224.04"/>
+  </clipPath>
+  <clipPath id="evt-pe3c33fb97d">
+   <rect x="396.522233" y="35.14" width="295.434423" height="224.04"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,533 @@
+<svg role="img" aria-labelledby="backtest-title backtest-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="345.6pt" viewBox="0 0 720 345.6" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="backtest-title">Figure 16 · Coverage and temporal independence</title><desc id="backtest-desc">Both artificial 500-day hit sequences have 10 exceedances, exactly 2% coverage. The second concentrates all breaches in ten consecutive days. Coverage alone does not diagnose clustering.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T18:09:13.392450</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="backtest-figure_1">
+  <g id="backtest-patch_1">
+   <path d="M 0 345.6 
+L 720 345.6 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="backtest-axes_1">
+   <g id="backtest-patch_2">
+    <path d="M 45.38 142.76 
+L 706.5 142.76 
+L 706.5 35.14 
+L 45.38 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="backtest-matplotlib.axis_1">
+    <g id="backtest-xtick_1">
+     <g id="backtest-line2d_1">
+      <path d="M 74.226464 142.76 
+L 74.226464 35.14 
+" clip-path="url(#backtest-pba468f6376)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_2">
+      <defs>
+       <path id="backtest-mf77116fd36" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#backtest-mf77116fd36" x="74.226464" y="142.76" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="backtest-xtick_2">
+     <g id="backtest-line2d_3">
+      <path d="M 194.670989 142.76 
+L 194.670989 35.14 
+" clip-path="url(#backtest-pba468f6376)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_4">
+      <g>
+       <use href="#backtest-mf77116fd36" x="194.670989" y="142.76" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="backtest-xtick_3">
+     <g id="backtest-line2d_5">
+      <path d="M 315.115515 142.76 
+L 315.115515 35.14 
+" clip-path="url(#backtest-pba468f6376)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_6">
+      <g>
+       <use href="#backtest-mf77116fd36" x="315.115515" y="142.76" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="backtest-xtick_4">
+     <g id="backtest-line2d_7">
+      <path d="M 435.56004 142.76 
+L 435.56004 35.14 
+" clip-path="url(#backtest-pba468f6376)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_8">
+      <g>
+       <use href="#backtest-mf77116fd36" x="435.56004" y="142.76" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="backtest-xtick_5">
+     <g id="backtest-line2d_9">
+      <path d="M 556.004565 142.76 
+L 556.004565 35.14 
+" clip-path="url(#backtest-pba468f6376)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_10">
+      <g>
+       <use href="#backtest-mf77116fd36" x="556.004565" y="142.76" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="backtest-xtick_6">
+     <g id="backtest-line2d_11">
+      <path d="M 676.449091 142.76 
+L 676.449091 35.14 
+" clip-path="url(#backtest-pba468f6376)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_12">
+      <g>
+       <use href="#backtest-mf77116fd36" x="676.449091" y="142.76" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="backtest-text_1">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="375.94" y="157.098594" transform="rotate(-0 375.94 157.098594)">Day</text>
+    </g>
+   </g>
+   <g id="backtest-matplotlib.axis_2">
+    <g id="backtest-ytick_1">
+     <g id="backtest-line2d_13">
+      <path d="M 45.38 137.868182 
+L 706.5 137.868182 
+" clip-path="url(#backtest-pba468f6376)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_14">
+      <defs>
+       <path id="backtest-m1055ba56c0" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#backtest-m1055ba56c0" x="45.38" y="137.868182" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="backtest-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="141.287479" transform="rotate(-0 38.38 141.287479)">0.0</text>
+     </g>
+    </g>
+    <g id="backtest-ytick_2">
+     <g id="backtest-line2d_15">
+      <path d="M 45.38 113.409091 
+L 706.5 113.409091 
+" clip-path="url(#backtest-pba468f6376)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_16">
+      <g>
+       <use href="#backtest-m1055ba56c0" x="45.38" y="113.409091" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="backtest-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="116.828388" transform="rotate(-0 38.38 116.828388)">2.5</text>
+     </g>
+    </g>
+    <g id="backtest-ytick_3">
+     <g id="backtest-line2d_17">
+      <path d="M 45.38 88.95 
+L 706.5 88.95 
+" clip-path="url(#backtest-pba468f6376)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_18">
+      <g>
+       <use href="#backtest-m1055ba56c0" x="45.38" y="88.95" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="backtest-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="92.369297" transform="rotate(-0 38.38 92.369297)">5.0</text>
+     </g>
+    </g>
+    <g id="backtest-ytick_4">
+     <g id="backtest-line2d_19">
+      <path d="M 45.38 64.490909 
+L 706.5 64.490909 
+" clip-path="url(#backtest-pba468f6376)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_20">
+      <g>
+       <use href="#backtest-m1055ba56c0" x="45.38" y="64.490909" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="backtest-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="67.910206" transform="rotate(-0 38.38 67.910206)">7.5</text>
+     </g>
+    </g>
+    <g id="backtest-ytick_5">
+     <g id="backtest-line2d_21">
+      <path d="M 45.38 40.031818 
+L 706.5 40.031818 
+" clip-path="url(#backtest-pba468f6376)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_22">
+      <g>
+       <use href="#backtest-m1055ba56c0" x="45.38" y="40.031818" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="backtest-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="43.451115" transform="rotate(-0 38.38 43.451115)">10.0</text>
+     </g>
+    </g>
+    <g id="backtest-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="12.469219" y="88.95" transform="rotate(-90 12.469219 88.95)">Cumulative breaches</text>
+    </g>
+   </g>
+   <g id="backtest-line2d_23">
+    <path d="M 75.430909 137.868182 
+L 98.315369 137.868182 
+L 98.315369 128.084545 
+L 160.946522 128.084545 
+L 160.946522 118.300909 
+L 223.577675 118.300909 
+L 223.577675 108.517273 
+L 288.617719 108.517273 
+L 288.617719 98.733636 
+L 339.20442 98.733636 
+L 339.20442 88.95 
+L 397.017792 88.95 
+L 397.017792 79.166364 
+L 462.057836 79.166364 
+L 462.057836 69.382727 
+L 524.688989 69.382727 
+L 524.688989 59.599091 
+L 582.502361 59.599091 
+L 582.502361 49.815455 
+L 649.951295 49.815455 
+L 649.951295 40.031818 
+L 676.449091 40.031818 
+L 676.449091 40.031818 
+" clip-path="url(#backtest-pba468f6376)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="backtest-line2d_24">
+    <path d="M 75.430909 137.672509 
+L 676.449091 40.031818 
+L 676.449091 40.031818 
+" clip-path="url(#backtest-pba468f6376)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+   </g>
+   <g id="backtest-patch_3">
+    <path d="M 45.38 142.76 
+L 45.38 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="backtest-patch_4">
+    <path d="M 45.38 142.76 
+L 706.5 142.76 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="backtest-text_8">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="45.38" y="22.14" transform="rotate(-0 45.38 22.14)">Dispersed exceedances</text>
+   </g>
+   <g id="backtest-legend_1">
+    <g id="backtest-line2d_25">
+     <path d="M 52.58 45.61875 
+L 60.58 45.61875 
+L 60.58 45.61875 
+L 68.58 45.61875 
+L 68.58 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="backtest-text_9">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="48.41875" transform="rotate(-0 74.98 48.41875)">Dispersed exceedances</text>
+    </g>
+    <g id="backtest-line2d_26">
+     <path d="M 52.58 57.36125 
+L 60.58 57.36125 
+L 68.58 57.36125 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+    </g>
+    <g id="backtest-text_10">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="60.16125" transform="rotate(-0 74.98 60.16125)">Expected cumulative count</text>
+    </g>
+   </g>
+  </g>
+  <g id="backtest-axes_2">
+   <g id="backtest-patch_5">
+    <path d="M 45.38 302.38 
+L 706.5 302.38 
+L 706.5 194.76 
+L 45.38 194.76 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="backtest-matplotlib.axis_3">
+    <g id="backtest-xtick_7">
+     <g id="backtest-line2d_27">
+      <path d="M 74.226464 302.38 
+L 74.226464 194.76 
+" clip-path="url(#backtest-p5e43a9fbe9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_28">
+      <g>
+       <use href="#backtest-mf77116fd36" x="74.226464" y="302.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="backtest-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="74.226464" y="316.218594" transform="rotate(-0 74.226464 316.218594)">0</text>
+     </g>
+    </g>
+    <g id="backtest-xtick_8">
+     <g id="backtest-line2d_29">
+      <path d="M 194.670989 302.38 
+L 194.670989 194.76 
+" clip-path="url(#backtest-p5e43a9fbe9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_30">
+      <g>
+       <use href="#backtest-mf77116fd36" x="194.670989" y="302.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="backtest-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="194.670989" y="316.218594" transform="rotate(-0 194.670989 316.218594)">100</text>
+     </g>
+    </g>
+    <g id="backtest-xtick_9">
+     <g id="backtest-line2d_31">
+      <path d="M 315.115515 302.38 
+L 315.115515 194.76 
+" clip-path="url(#backtest-p5e43a9fbe9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_32">
+      <g>
+       <use href="#backtest-mf77116fd36" x="315.115515" y="302.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="backtest-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="315.115515" y="316.218594" transform="rotate(-0 315.115515 316.218594)">200</text>
+     </g>
+    </g>
+    <g id="backtest-xtick_10">
+     <g id="backtest-line2d_33">
+      <path d="M 435.56004 302.38 
+L 435.56004 194.76 
+" clip-path="url(#backtest-p5e43a9fbe9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_34">
+      <g>
+       <use href="#backtest-mf77116fd36" x="435.56004" y="302.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="backtest-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="435.56004" y="316.218594" transform="rotate(-0 435.56004 316.218594)">300</text>
+     </g>
+    </g>
+    <g id="backtest-xtick_11">
+     <g id="backtest-line2d_35">
+      <path d="M 556.004565 302.38 
+L 556.004565 194.76 
+" clip-path="url(#backtest-p5e43a9fbe9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_36">
+      <g>
+       <use href="#backtest-mf77116fd36" x="556.004565" y="302.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="backtest-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="556.004565" y="316.218594" transform="rotate(-0 556.004565 316.218594)">400</text>
+     </g>
+    </g>
+    <g id="backtest-xtick_12">
+     <g id="backtest-line2d_37">
+      <path d="M 676.449091 302.38 
+L 676.449091 194.76 
+" clip-path="url(#backtest-p5e43a9fbe9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_38">
+      <g>
+       <use href="#backtest-mf77116fd36" x="676.449091" y="302.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="backtest-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="676.449091" y="316.218594" transform="rotate(-0 676.449091 316.218594)">500</text>
+     </g>
+    </g>
+    <g id="backtest-text_17">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="375.94" y="328.928906" transform="rotate(-0 375.94 328.928906)">Day</text>
+    </g>
+   </g>
+   <g id="backtest-matplotlib.axis_4">
+    <g id="backtest-ytick_6">
+     <g id="backtest-line2d_39">
+      <path d="M 45.38 297.488182 
+L 706.5 297.488182 
+" clip-path="url(#backtest-p5e43a9fbe9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_40">
+      <g>
+       <use href="#backtest-m1055ba56c0" x="45.38" y="297.488182" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="backtest-text_18">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="300.907479" transform="rotate(-0 38.38 300.907479)">0.0</text>
+     </g>
+    </g>
+    <g id="backtest-ytick_7">
+     <g id="backtest-line2d_41">
+      <path d="M 45.38 273.029091 
+L 706.5 273.029091 
+" clip-path="url(#backtest-p5e43a9fbe9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_42">
+      <g>
+       <use href="#backtest-m1055ba56c0" x="45.38" y="273.029091" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="backtest-text_19">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="276.448388" transform="rotate(-0 38.38 276.448388)">2.5</text>
+     </g>
+    </g>
+    <g id="backtest-ytick_8">
+     <g id="backtest-line2d_43">
+      <path d="M 45.38 248.57 
+L 706.5 248.57 
+" clip-path="url(#backtest-p5e43a9fbe9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_44">
+      <g>
+       <use href="#backtest-m1055ba56c0" x="45.38" y="248.57" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="backtest-text_20">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="251.989297" transform="rotate(-0 38.38 251.989297)">5.0</text>
+     </g>
+    </g>
+    <g id="backtest-ytick_9">
+     <g id="backtest-line2d_45">
+      <path d="M 45.38 224.110909 
+L 706.5 224.110909 
+" clip-path="url(#backtest-p5e43a9fbe9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_46">
+      <g>
+       <use href="#backtest-m1055ba56c0" x="45.38" y="224.110909" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="backtest-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="227.530206" transform="rotate(-0 38.38 227.530206)">7.5</text>
+     </g>
+    </g>
+    <g id="backtest-ytick_10">
+     <g id="backtest-line2d_47">
+      <path d="M 45.38 199.651818 
+L 706.5 199.651818 
+" clip-path="url(#backtest-p5e43a9fbe9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="backtest-line2d_48">
+      <g>
+       <use href="#backtest-m1055ba56c0" x="45.38" y="199.651818" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="backtest-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="203.071115" transform="rotate(-0 38.38 203.071115)">10.0</text>
+     </g>
+    </g>
+    <g id="backtest-text_23">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="12.469219" y="248.57" transform="rotate(-90 12.469219 248.57)">Cumulative breaches</text>
+    </g>
+   </g>
+   <g id="backtest-line2d_49">
+    <path d="M 75.430909 297.488182 
+L 364.49777 297.488182 
+L 364.49777 287.704545 
+L 365.702215 287.704545 
+L 365.702215 277.920909 
+L 366.906661 277.920909 
+L 366.906661 268.137273 
+L 368.111106 268.137273 
+L 368.111106 258.353636 
+L 369.315551 258.353636 
+L 369.315551 248.57 
+L 370.519996 248.57 
+L 370.519996 238.786364 
+L 371.724442 238.786364 
+L 371.724442 229.002727 
+L 372.928887 229.002727 
+L 372.928887 219.219091 
+L 374.133332 219.219091 
+L 374.133332 209.435455 
+L 375.337777 209.435455 
+L 375.337777 199.651818 
+L 676.449091 199.651818 
+L 676.449091 199.651818 
+" clip-path="url(#backtest-p5e43a9fbe9)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="backtest-line2d_50">
+    <path d="M 75.430909 297.292509 
+L 676.449091 199.651818 
+L 676.449091 199.651818 
+" clip-path="url(#backtest-p5e43a9fbe9)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+   </g>
+   <g id="backtest-patch_6">
+    <path d="M 45.38 302.38 
+L 45.38 194.76 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="backtest-patch_7">
+    <path d="M 45.38 302.38 
+L 706.5 302.38 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="backtest-text_24">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="45.38" y="181.76" transform="rotate(-0 45.38 181.76)">Clustered exceedances</text>
+   </g>
+   <g id="backtest-legend_2">
+    <g id="backtest-line2d_51">
+     <path d="M 52.58 205.23875 
+L 60.58 205.23875 
+L 60.58 205.23875 
+L 68.58 205.23875 
+L 68.58 205.23875 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="backtest-text_25">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="208.03875" transform="rotate(-0 74.98 208.03875)">Clustered exceedances</text>
+    </g>
+    <g id="backtest-line2d_52">
+     <path d="M 52.58 216.98125 
+L 60.58 216.98125 
+L 68.58 216.98125 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+    </g>
+    <g id="backtest-text_26">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="219.78125" transform="rotate(-0 74.98 219.78125)">Expected cumulative count</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="backtest-pba468f6376">
+   <rect x="45.38" y="35.14" width="661.12" height="107.62"/>
+  </clipPath>
+  <clipPath id="backtest-p5e43a9fbe9">
+   <rect x="45.38" y="194.76" width="661.12" height="107.62"/>
+  </clipPath>
+ </defs>
+</svg>

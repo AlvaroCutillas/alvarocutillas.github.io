@@ -1,0 +1,115 @@
+<section id="academic-models" data-title="Fama–French, Carhart and empirical factor benchmarks">
+<div class="section-kicker">06 / Empirical benchmarks</div><h2>Fama–French, Carhart and empirical factor benchmarks</h2>
+<p>Academic factor models define specific portfolios, not generic labels. Their construction rules determine both the factor-return scale and the exposures estimated from them.</p>
+<h3>Three-factor and momentum extensions</h3>
+<p>The Fama–French three-factor model augments the market excess return with size and value portfolio spreads:</p>
+\[ r_{i,t}=\alpha_i+\beta_{iM}M_t+\beta_{iS}SMB_t+\beta_{iH}HML_t+\varepsilon_{i,t}. \]
+<p>SMB is a small-minus-big construction and HML a high-minus-low book-to-market construction. Independent size and value sorts help separate their portfolio definitions. The Carhart four-factor benchmark adds a momentum portfolio spread, commonly denoted MOM or UMD:</p>
+\[ r_{i,t}=\alpha_i+\beta_{iM}M_t+\beta_{iS}SMB_t
++\beta_{iH}HML_t+\beta_{iU}MOM_t+\varepsilon_{i,t}. \]
+<p>Momentum is a return-history characteristic, while size and book-to-market use different information. Adding it changes the benchmark against which alpha is measured; an alpha from one model cannot be compared with another without identifying the factor sets.</p>
+<h3>The five-factor model</h3>
+<p>The Fama–French five-factor model adds profitability and investment:</p>
+\[ r_{i,t}=\alpha_i+\beta_{iM}M_t+\beta_{iS}SMB_t+\beta_{iH}HML_t
++\beta_{iR}RMW_t+\beta_{iC}CMA_t+\varepsilon_{i,t}. \]
+<p>RMW compares robust and weak operating profitability; CMA compares conservative and aggressive investment. Their definitions are specific accounting and portfolio constructions. Momentum is not part of this five-factor set. “Five factors” on its own therefore does not identify a model.</p>
+<p>The French Data Library documents size breakpoints, book equity, profitability, investment and portfolio eligibility. Its momentum definition supplies its own return-history window and breakpoint rules. Use those descriptions when replicating the factors. <a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_5_factors_2x3.html">Five-factor definitions</a>; <a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/det_mom_factor.html">momentum definition</a>.</p>
+<h3>Related styles are not identical factors</h3>
+<p>A quality composite can include profitability, balance-sheet safety and earnings stability; it is not automatically RMW. A low-volatility portfolio is not automatically the beta-balanced BAB construction. A value score based on several valuation ratios is not automatically HML. These distinctions matter for replication and for the interpretation of regression coefficients.</p>
+{{figure:factor-series}}
+<h3>What this page estimates</h3>
+<p>The synthetic model includes Market, Value, Momentum, Quality and Low volatility. It is an educational five-series specification, explicitly different from the Fama–French five-factor model. Its four style series have declared hypothetical means and covariance. Their labels do not assert that the data replicate any published portfolio.</p>
+<p>In empirical work, compare several economically motivated benchmarks without searching indefinitely for one that produces a preferred alpha. Document factor vintages, currency, frequency and construction. A model selected after viewing every return realization needs a different inference treatment from a benchmark fixed in advance.</p>
+</section>
+
+<section id="value" data-title="Value characteristics and valuation-based portfolios">
+<div class="section-kicker">07 / Value</div><h2>Value characteristics and valuation-based portfolios</h2>
+<p>Value characteristics compare a company's price with a measure of its fundamentals. High book-to-market or earnings yield can indicate a low price relative to the chosen accounting quantity. The economic interpretation depends on that quantity's quality and comparability.</p>
+<h3>Common descriptors</h3>
+\[ BM=\frac{\text{book equity}}{\text{market equity}},\qquad
+EY=\frac{\text{earnings}}{\text{market equity}},\qquad
+CFY=\frac{\text{cash flow}}{\text{market equity}}. \]
+<p>Enterprise-value ratios such as EBIT/EV use a different capital structure denominator. Combine them only after specifying debt, cash, minority interests and the numerator's definition. Price-to-book and book-to-price are inverses only when book equity is positive and the accounting treatment is matched.</p>
+<p>Negative book equity or earnings need an eligibility or transformation rule. Inverting a negative or near-zero denominator can create extreme scores with no sensible ordering. Accounting intangibles, financial firms and sector differences can make raw ratios incomparable across the universe.</p>
+<h3>Timing and interpretation</h3>
+<p>Use fundamentals as they were available at formation, after publication and any chosen reporting lag. A fiscal-year label is not a publication date. Later restatements cannot be treated as information known to an investor at the original date.</p>
+<p>A cheap ratio can reflect distress, declining future profitability, accounting differences or temporary mispricing. A value tilt therefore is not proof that a stock is undervalued in an absolute cash-flow sense. Discounted cash-flow valuation and a cross-sectional value score answer related but different questions.</p>
+<h3>Constructing a value portfolio</h3>
+<p>Rank eligible stocks using a declared descriptor or composite. A long–short sort buys the high-score tail and shorts the low-score tail. Equal weighting, capitalization weighting and score weighting create different portfolios. Size and sector controls can reduce unintended exposures, but they also change the economic trade being measured.</p>
+\[ F_{\mathrm{value},t+1}
+=\sum_{i\in H_t}w_{i,t}^{H}R_{i,t+1}
+-\sum_{i\in L_t}w_{i,t}^{L}R_{i,t+1}. \]
+<p>Leg weights each sum to one in this normalization. The resulting spread is a portfolio return, not the average book-to-market ratio. A regression beta on it measures sensitivity to that return series rather than the stock's raw valuation score.</p>
+<h3>Economic explanations and risk</h3>
+<p>Risk-based accounts emphasize exposure to adverse states or financial distress; behavioral accounts emphasize extrapolation and price correction. A fitted premium does not select between those explanations. Both can imply long drawdowns and sensitivity to changes in economic conditions.</p>
+<p>A value portfolio may carry sector, country, size and quality exposures. Those overlaps should be measured, not assumed away by its name. In the synthetic snapshot, the value score is correlated with other descriptors, so the univariate value spread differs from the partial value coefficient in a joint regression.</p>
+<p>Academic HML provides a specific value benchmark within a size-controlled construction. Its research motivation is distinct from an assertion that every cheap-ratio strategy earns positive future returns. <a href="https://doi.org/10.1016/0304-405X(93)90023-5">Fama and French, Common Risk Factors in the Returns on Stocks and Bonds</a>.</p>
+</section>
+
+<section id="momentum" data-title="Momentum, formation windows and reversal effects">
+<div class="section-kicker">08 / Momentum</div><h2>Momentum, formation windows and reversal effects</h2>
+<p>Cross-sectional momentum ranks assets by prior performance relative to other assets. Time-series momentum instead evaluates an asset against its own history. Their signals and portfolio exposures differ.</p>
+<h3>A precisely indexed signal</h3>
+<p>At the end of month \(t\), one common intermediate-horizon convention skips the latest month and compounds the eleven preceding monthly returns. The signal for the next month's sort can be written:</p>
+\[ MOM_{i,t}=\prod_{j=1}^{11}(1+R_{i,t-j})-1. \]
+<p>This uses months \(t-11\) through \(t-1\) and excludes month \(t\). Other studies use different horizons. Always state the actual index range rather than rely on an ambiguous “12–2” label. The French monthly momentum documentation defines its own prior-return window and eligible observations. <a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/det_mom_factor.html">Momentum factor construction</a>.</p>
+<h3>Why skip a recent month?</h3>
+<p>The skip can reduce contamination from short-horizon reversal, bid–ask effects and transient price pressure. It is a construction choice supported by the particular research setting, not a rule that removes all microstructure effects. A daily or intraday strategy needs its own timing and execution treatment.</p>
+<p>Use total returns where appropriate and preserve missing-history rules. Newly listed stocks may not have the full formation window. Forward-filling prices or treating missing returns as zero can alter ranks systematically. The return horizon used to construct the signal must finish before the return being evaluated begins.</p>
+<h3>Momentum portfolio formation</h3>
+<p>A winner-minus-loser spread buys the high prior-return tail and shorts the low tail. Rebalancing frequency, holding period, overlapping portfolios and position scaling affect both turnover and statistical dependence. Overlapping multi-month holding portfolios can make reported return observations serially correlated.</p>
+<p>Momentum often overlaps with industries and other styles. Industry-neutral formation can change its sector footprint and turnover. A long-only implementation that overweights winners differs from a fully financed long–short research factor; its market exposure and benchmark-relative risk must be measured separately.</p>
+<h3>Crash and implementation risk</h3>
+<p>A portfolio short prior losers can suffer when those stocks rebound sharply. The possibility of concentrated reversals and changing exposures means a positive average spread should not be read as a stable low-risk payoff. Financing, liquidity and crowded positions matter during stress.</p>
+<p>Frequent rank changes can generate substantial trading. Entry and exit dates, execution price assumptions, bid–ask spreads and market impact influence realized returns. A gross signal IC is not a net trading result. The implementation chapter distinguishes the information score from its feasible portfolio.</p>
+<h3>Research interpretation</h3>
+<p>Underreaction, gradual information diffusion and risk-based explanations can motivate momentum research. A return regression alone does not establish the mechanism. Empirical validation should separate formation choices, sample selection and economic interpretation.</p>
+<p>The laboratory's momentum descriptor is a synthetic formation score, rather than a computed history of 160 real stocks. Its portfolio experiment preserves the ordering of information and subsequent returns. It illustrates the cross-sectional machinery while leaving empirical replication to a properly timed total-return dataset.</p>
+</section>
+
+<section id="quality" data-title="Quality, profitability and composite characteristics">
+<div class="section-kicker">09 / Quality</div><h2>Quality, profitability and composite characteristics</h2>
+<p>Quality describes several related business characteristics, rather than one universal statistic. Profitability, earnings stability, balance-sheet strength and growth can all contribute, but their measurement and weighting must be explicit.</p>
+<h3>Candidate descriptors</h3>
+<p>Profitability can be measured using operating profit relative to book equity or assets, gross profitability, margins or return on invested capital. Safety can involve leverage, interest coverage, earnings variability or distress indicators. Growth can involve changes in profitability or fundamentals, and requires careful treatment of acquisitions and accounting changes.</p>
+<p>Each ratio has its own denominator and domain. A high return on equity caused by a very small or negative equity base is not automatically high-quality profitability. Debt ratios mean different things for financial firms and industrial companies. Sector-specific comparability can be more important than adding another descriptor.</p>
+<h3>A composite score</h3>
+<p>After choosing signs so that higher means the intended quality direction, standardize component descriptors and combine them:</p>
+\[ Q_{i,t}=\sum_{j=1}^{J}a_jz_{ij,t},\qquad
+\sum_j a_j=1. \]
+<p>A high-quality composite can be restandardized after combination. Component correlations determine its variance: averaging four correlated measures does not create four independent signals. Equal weights are transparent, while data-driven weights need chronological validation and protection against overfitting.</p>
+<p>Missing components require a declared policy. Reweighting available fields produces a different effective definition for different stocks; imputation can shrink missing observations toward the average. Neither should be hidden behind a single uniform-looking score.</p>
+<h3>Quality and price</h3>
+<p>A strong company can already be expensive. Quality describes business attributes; valuation determines the price paid for them. Combining quality and value can distinguish profitable cheap firms from distressed cheap firms, but it introduces another portfolio definition rather than a universally dominant trade.</p>
+<p>Quality-minus-junk research studies a broad composite and its cross-sectional pricing. Its quality factors are not interchangeable with the narrower profitability factor RMW. <a href="https://www.aqr.com/Insights/Research/Working-Paper/Quality-Minus-Junk">Asness, Frazzini and Pedersen, Quality Minus Junk</a>.</p>
+<h3>Attribution and exposures</h3>
+<p>A portfolio with high weighted quality scores can still have a modest time-series beta to a particular quality-return benchmark. Portfolio weights, benchmark construction, sector controls and sampling all matter. Report both descriptor exposures and return sensitivities when they serve different decisions.</p>
+<p>A quality tilt can correlate with size, low volatility and particular sectors. In a joint regression, its partial coefficient measures the contribution after the included controls. In a univariate sort, the spread includes any correlated effects. The two outputs need not agree and neither is an automatic estimate of causal business quality.</p>
+<h3>Data discipline</h3>
+<p>Use published statements and consistent accounting definitions at the formation date. Adjusting historical scores with later restatements can make a signal appear more accurate than an investor could have achieved. The need for point-in-time data is especially strong for slow-moving accounting descriptors whose revisions can be economically meaningful.</p>
+<p>The synthetic quality score here is standardized with the same process as the other descriptors. It makes portfolio and regression arithmetic reproducible, without pretending to reproduce a complete corporate-quality database.</p>
+</section>
+
+<section id="low-volatility" data-title="Low volatility, low beta and defensive portfolios">
+<div class="section-kicker">10 / Defensive equity styles</div><h2>Low volatility, low beta and defensive portfolios</h2>
+<p>Low volatility ranks stocks by return variability. Low beta ranks them by sensitivity to a market benchmark. They are related through correlation, but they are different signals.</p>
+\[ \beta_{iM}=\rho_{iM}\frac{\sigma_i}{\sigma_M},\qquad
+LV_{i,t}=-\operatorname{rank}\left(\sigma_{i,t}^{\mathrm{past}}\right)
+\quad\text{as one possible directional score}. \]
+<p>The volatility estimate must use only the past formation window and state its frequency, horizon and estimator. A low-vol score can also be the negative standardized log volatility. The sign convention should make “higher” mean more defensive if the score is used consistently with the other styles.</p>
+<h3>Portfolio definitions</h3>
+<p>A long-only low-vol portfolio can select or overweight low-volatility stocks while maintaining net investment. A minimum-variance portfolio optimizes a covariance objective and may differ from a simple volatility sort. A long–short low-vol spread buys safer stocks and shorts riskier ones, but can retain market beta and sector exposures.</p>
+<p>Betting against beta uses an explicit beta-balancing and leverage construction. In an idealized version, a low-beta leg is scaled up and a high-beta leg scaled down so that their market sensitivities offset. This differs from equal-dollar low-minus-high volatility:</p>
+\[ F_{\mathrm{BAB}}=
+\frac{r_L}{\beta_L}-\frac{r_H}{\beta_H}
+\quad\text{in a simplified beta-normalized representation}. \]
+<p>The scaling needs reliable positive leg betas and financing assumptions. Estimated beta uncertainty can make leverage fragile. Actual published construction involves further ranking, estimation and portfolio details. <a href="https://docs.lhpedersen.com/BettingAgainstBeta.pdf">Frazzini and Pedersen, Betting Against Beta</a>.</p>
+<h3>Economic interpretation</h3>
+<p>Leverage constraints and benchmark incentives can make investors prefer high-beta assets when they cannot scale a lower-risk portfolio. Behavioral demand for lottery-like payoffs offers another possible explanation of defensive-style results. Neither explanation guarantees a positive premium across future samples.</p>
+<p>Low-vol portfolios can concentrate in sectors with particular business models. Defensive construction may carry interest-rate sensitivity, quality exposure or expensive valuations. Reducing standalone volatility does not remove all systematic risk or prevent large absolute drawdowns.</p>
+<h3>Covariance is more than individual volatility</h3>
+<p>Portfolio risk depends on correlations as well as each stock's volatility. Two individually low-vol stocks can be highly correlated. Conversely, a higher-volatility asset can lower total risk if its covariance with the portfolio is sufficiently negative. This will explain negative factor risk contributions later.</p>
+<p>Volatility forecasts should be assessed for stability, missing observations, nonsynchronous trading and regime changes. Illiquid stocks can appear artificially quiet when prices update infrequently. A small historical variance is not automatically a reliable low-risk signal.</p>
+<h3>Scope of this study</h3>
+<p>The synthetic low-vol factor is a hypothetical style-return series and the stock-level low-vol descriptor is a directional standardized characteristic. They are separate objects. The page does not label either as an exact BAB replication, nor assume the portfolio is market neutral merely because its characteristic is defensive.</p>
+</section>

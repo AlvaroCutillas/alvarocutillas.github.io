@@ -1,0 +1,22 @@
+<div class="notebook" id="pricing-notebook">
+<div class="notebook-head"><span>BSM / European values · CRR / American comparison</span><button id="reset-inputs" type="button">Reset benchmark</button></div>
+<form id="pricing-form">
+<div class="field"><label for="input-spot">Spot S</label><input id="input-spot" name="spot" type="number" min="0.01" max="1000000" step="any" value="100" required></div>
+<div class="field"><label for="input-strike">Strike K</label><input id="input-strike" name="strike" type="number" min="0.01" max="1000000" step="any" value="100" required></div>
+<div class="field"><label for="input-tau">Time remaining (years)</label><input id="input-tau" name="tau" type="number" min="0" max="10" step="any" value="1" required></div>
+<div class="field"><label for="input-vol">Volatility σ (%)</label><input id="input-vol" name="vol" type="number" min="0" max="150" step="any" value="20" required></div>
+<div class="field"><label for="input-rate">Risk-free rate r (%)</label><input id="input-rate" name="rate" type="number" min="-10" max="30" step="any" value="5" required></div>
+<div class="field"><label for="input-yield">Continuous yield q (%)</label><input id="input-yield" name="yield" type="number" min="0" max="30" step="any" value="0" required></div>
+<div class="field"><label for="input-kind">Curve and European Greeks</label><select id="input-kind" name="kind"><option value="call">Call</option><option value="put">Put</option></select></div>
+<div class="notebook-action"><button id="calculate" type="submit">Recalculate</button><p>Change inputs, then recalculate. American prices use 400 time steps.</p></div>
+</form>
+<p id="calc-error" class="calc-error" role="alert"></p>
+<div class="notebook-results" aria-live="polite" aria-atomic="true">
+<div class="result"><small>European call</small><strong id="result-call">10.450584</strong></div><div class="result"><small>European put</small><strong id="result-put">5.573526</strong></div>
+<div class="result"><small>American call · tree</small><strong id="result-acall">10.445586</strong></div><div class="result"><small>American put · tree</small><strong id="result-aput">6.088406</strong></div>
+</div>
+<div class="metric-grid" aria-label="European sensitivities"><div class="greek-result"><span>Delta</span><output id="result-delta">0.636831</output></div><div class="greek-result"><span>Gamma</span><output id="result-gamma">0.018762</output></div><div class="greek-result"><span>Vega / vol point</span><output id="result-vega">0.375240</output></div><div class="greek-result"><span>Theta / 365-day year</span><output id="result-theta">−0.017573</output></div><div class="greek-result"><span>Rho / rate point</span><output id="result-rho">0.532325</output></div><div class="greek-result"><span>Q-probability of ITM</span><output id="result-prob">55.9618%</output></div></div>
+<div class="notebook-plot" id="live-plot"></div>
+<p id="notebook-note" class="notebook-note">European sensitivities for the selected curve. For q = 0 and r ≥ 0, American and European call values coincide within the same tree; that tree still differs slightly from the closed-form price.</p>
+<noscript><p>The default benchmark values above remain available. Enable JavaScript to change inputs and display the notebook's live curve. All notes, formulas and static figures work without JavaScript.</p></noscript>
+</div>

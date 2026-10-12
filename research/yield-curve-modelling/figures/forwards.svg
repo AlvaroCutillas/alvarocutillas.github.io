@@ -1,0 +1,457 @@
+<svg role="img" aria-labelledby="forwards-title forwards-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="259.2pt" viewBox="0 0 792 259.2" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="forwards-title">Figure 02 · Zero rates and instantaneous forwards</title><desc id="forwards-desc">Reference parameters: β₀ = 3.5%, β₁ = −2%, β₂ = 2.5%, β₃ = −1.5%, τ₁ = 1.6 years, τ₂ = 6.5 years. A rising zero curve implies its marginal forward exceeds its average.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T20:19:12.186421</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="forwards-figure_1">
+  <g id="forwards-patch_1">
+   <path d="M 0 259.2 
+L 792 259.2 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="forwards-axes_1">
+   <g id="forwards-patch_2">
+    <path d="M 62.66 215.98 
+L 778.5 215.98 
+L 778.5 35.14 
+L 62.66 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="forwards-matplotlib.axis_1">
+    <g id="forwards-xtick_1">
+     <g id="forwards-line2d_1">
+      <path d="M 95.198182 215.98 
+L 95.198182 35.14 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="forwards-line2d_2">
+      <defs>
+       <path id="forwards-md463f9712b" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#forwards-md463f9712b" x="95.198182" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="forwards-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="95.198182" y="229.818594" transform="rotate(-0 95.198182 229.818594)">0</text>
+     </g>
+    </g>
+    <g id="forwards-xtick_2">
+     <g id="forwards-line2d_3">
+      <path d="M 203.658788 215.98 
+L 203.658788 35.14 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="forwards-line2d_4">
+      <g>
+       <use href="#forwards-md463f9712b" x="203.658788" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="forwards-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="203.658788" y="229.818594" transform="rotate(-0 203.658788 229.818594)">5</text>
+     </g>
+    </g>
+    <g id="forwards-xtick_3">
+     <g id="forwards-line2d_5">
+      <path d="M 312.119394 215.98 
+L 312.119394 35.14 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="forwards-line2d_6">
+      <g>
+       <use href="#forwards-md463f9712b" x="312.119394" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="forwards-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="312.119394" y="229.818594" transform="rotate(-0 312.119394 229.818594)">10</text>
+     </g>
+    </g>
+    <g id="forwards-xtick_4">
+     <g id="forwards-line2d_7">
+      <path d="M 420.58 215.98 
+L 420.58 35.14 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="forwards-line2d_8">
+      <g>
+       <use href="#forwards-md463f9712b" x="420.58" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="forwards-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="420.58" y="229.818594" transform="rotate(-0 420.58 229.818594)">15</text>
+     </g>
+    </g>
+    <g id="forwards-xtick_5">
+     <g id="forwards-line2d_9">
+      <path d="M 529.040606 215.98 
+L 529.040606 35.14 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="forwards-line2d_10">
+      <g>
+       <use href="#forwards-md463f9712b" x="529.040606" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="forwards-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="529.040606" y="229.818594" transform="rotate(-0 529.040606 229.818594)">20</text>
+     </g>
+    </g>
+    <g id="forwards-xtick_6">
+     <g id="forwards-line2d_11">
+      <path d="M 637.501212 215.98 
+L 637.501212 35.14 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="forwards-line2d_12">
+      <g>
+       <use href="#forwards-md463f9712b" x="637.501212" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="forwards-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="637.501212" y="229.818594" transform="rotate(-0 637.501212 229.818594)">25</text>
+     </g>
+    </g>
+    <g id="forwards-xtick_7">
+     <g id="forwards-line2d_13">
+      <path d="M 745.961818 215.98 
+L 745.961818 35.14 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="forwards-line2d_14">
+      <g>
+       <use href="#forwards-md463f9712b" x="745.961818" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="forwards-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="745.961818" y="229.818594" transform="rotate(-0 745.961818 229.818594)">30</text>
+     </g>
+    </g>
+    <g id="forwards-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="420.58" y="242.528906" transform="rotate(-0 420.58 242.528906)">Maturity (years)</text>
+    </g>
+   </g>
+   <g id="forwards-matplotlib.axis_2">
+    <g id="forwards-ytick_1">
+     <g id="forwards-line2d_15">
+      <path d="M 62.66 207.76 
+L 778.5 207.76 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="forwards-line2d_16">
+      <defs>
+       <path id="forwards-m284037a8ca" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#forwards-m284037a8ca" x="62.66" y="207.76" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="forwards-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="211.179297" transform="rotate(-0 55.66 211.179297)">1.50%</text>
+     </g>
+    </g>
+    <g id="forwards-ytick_2">
+     <g id="forwards-line2d_17">
+      <path d="M 62.66 187.288027 
+L 778.5 187.288027 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="forwards-line2d_18">
+      <g>
+       <use href="#forwards-m284037a8ca" x="62.66" y="187.288027" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="forwards-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="190.707324" transform="rotate(-0 55.66 190.707324)">1.75%</text>
+     </g>
+    </g>
+    <g id="forwards-ytick_3">
+     <g id="forwards-line2d_19">
+      <path d="M 62.66 166.816055 
+L 778.5 166.816055 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="forwards-line2d_20">
+      <g>
+       <use href="#forwards-m284037a8ca" x="62.66" y="166.816055" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="forwards-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="170.235351" transform="rotate(-0 55.66 170.235351)">2.00%</text>
+     </g>
+    </g>
+    <g id="forwards-ytick_4">
+     <g id="forwards-line2d_21">
+      <path d="M 62.66 146.344082 
+L 778.5 146.344082 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="forwards-line2d_22">
+      <g>
+       <use href="#forwards-m284037a8ca" x="62.66" y="146.344082" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="forwards-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="149.763379" transform="rotate(-0 55.66 149.763379)">2.25%</text>
+     </g>
+    </g>
+    <g id="forwards-ytick_5">
+     <g id="forwards-line2d_23">
+      <path d="M 62.66 125.872109 
+L 778.5 125.872109 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="forwards-line2d_24">
+      <g>
+       <use href="#forwards-m284037a8ca" x="62.66" y="125.872109" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="forwards-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="129.291406" transform="rotate(-0 55.66 129.291406)">2.50%</text>
+     </g>
+    </g>
+    <g id="forwards-ytick_6">
+     <g id="forwards-line2d_25">
+      <path d="M 62.66 105.400136 
+L 778.5 105.400136 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="forwards-line2d_26">
+      <g>
+       <use href="#forwards-m284037a8ca" x="62.66" y="105.400136" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="forwards-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="108.819433" transform="rotate(-0 55.66 108.819433)">2.75%</text>
+     </g>
+    </g>
+    <g id="forwards-ytick_7">
+     <g id="forwards-line2d_27">
+      <path d="M 62.66 84.928164 
+L 778.5 84.928164 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="forwards-line2d_28">
+      <g>
+       <use href="#forwards-m284037a8ca" x="62.66" y="84.928164" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="forwards-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="88.34746" transform="rotate(-0 55.66 88.34746)">3.00%</text>
+     </g>
+    </g>
+    <g id="forwards-ytick_8">
+     <g id="forwards-line2d_29">
+      <path d="M 62.66 64.456191 
+L 778.5 64.456191 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="forwards-line2d_30">
+      <g>
+       <use href="#forwards-m284037a8ca" x="62.66" y="64.456191" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="forwards-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="67.875488" transform="rotate(-0 55.66 67.875488)">3.25%</text>
+     </g>
+    </g>
+    <g id="forwards-ytick_9">
+     <g id="forwards-line2d_31">
+      <path d="M 62.66 43.984218 
+L 778.5 43.984218 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="forwards-line2d_32">
+      <g>
+       <use href="#forwards-m284037a8ca" x="62.66" y="43.984218" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="forwards-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="47.403515" transform="rotate(-0 55.66 47.403515)">3.50%</text>
+     </g>
+    </g>
+    <g id="forwards-text_18">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.197813" y="125.56" transform="rotate(-90 21.197813 125.56)">Continuous annual rate</text>
+    </g>
+   </g>
+   <g id="forwards-line2d_33">
+    <path d="M 95.198182 207.76 
+L 98.452 192.69603 
+L 101.705818 179.117167 
+L 104.959636 166.885332 
+L 108.213455 155.875005 
+L 111.467273 145.972093 
+L 114.721091 137.0729 
+L 117.974909 129.083185 
+L 121.228727 121.917312 
+L 124.482545 115.497467 
+L 127.736364 109.752953 
+L 130.990182 104.619548 
+L 134.244 100.038917 
+L 137.497818 95.958078 
+L 140.751636 92.328921 
+L 144.005455 89.107761 
+L 147.259273 86.254943 
+L 150.513091 83.734471 
+L 153.766909 81.513678 
+L 157.020727 79.562925 
+L 160.274545 77.855324 
+L 163.528364 76.366487 
+L 166.782182 75.074301 
+L 171.120606 73.622912 
+L 175.45903 72.443296 
+L 179.797455 71.498281 
+L 184.135879 70.755294 
+L 189.558909 70.067562 
+L 194.981939 69.603207 
+L 201.489576 69.284169 
+L 209.081818 69.167956 
+L 217.758667 69.2834 
+L 228.604727 69.677946 
+L 243.789212 70.489792 
+L 295.850303 73.471431 
+L 315.373212 74.286185 
+L 334.896121 74.881698 
+L 355.503636 75.285109 
+L 377.195758 75.487757 
+L 401.057091 75.488192 
+L 428.172242 75.260615 
+L 459.625818 74.765642 
+L 497.58703 73.937433 
+L 548.563515 72.587631 
+L 658.108727 69.391894 
+L 745.961818 66.93484 
+L 745.961818 66.93484 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="forwards-line2d_34">
+    <path d="M 95.198182 207.76 
+L 97.367394 187.678423 
+L 99.536606 169.597694 
+L 101.705818 153.350324 
+L 103.87503 138.781698 
+L 106.044242 125.749131 
+L 108.213455 114.120991 
+L 110.382667 103.775888 
+L 112.551879 94.601917 
+L 114.721091 86.495954 
+L 116.890303 79.363007 
+L 119.059515 73.11561 
+L 121.228727 67.673264 
+L 123.397939 62.961911 
+L 125.567152 58.913453 
+L 127.736364 55.465306 
+L 129.905576 52.559977 
+L 132.074788 50.144687 
+L 134.244 48.171004 
+L 136.413212 46.594517 
+L 138.582424 45.374525 
+L 140.751636 44.473754 
+L 142.920848 43.858092 
+L 145.090061 43.496342 
+L 147.259273 43.36 
+L 149.428485 43.423039 
+L 151.597697 43.661719 
+L 154.851515 44.302271 
+L 158.105333 45.224784 
+L 161.359152 46.372929 
+L 165.697576 48.171626 
+L 171.120606 50.717286 
+L 178.712848 54.575899 
+L 192.812727 61.796209 
+L 200.40497 65.402038 
+L 206.912606 68.241734 
+L 213.420242 70.819049 
+L 219.927879 73.12116 
+L 226.435515 75.146346 
+L 232.943152 76.90069 
+L 239.450788 78.395581 
+L 245.958424 79.645825 
+L 252.466061 80.668245 
+L 258.973697 81.480651 
+L 266.565939 82.187093 
+L 274.158182 82.660361 
+L 281.750424 82.92731 
+L 290.427273 83.011914 
+L 300.188727 82.86681 
+L 311.034788 82.458026 
+L 322.965455 81.766914 
+L 335.980727 80.790449 
+L 352.249818 79.333957 
+L 372.857333 77.248125 
+L 407.564727 73.468456 
+L 454.202788 68.435366 
+L 484.571758 65.391464 
+L 512.771515 62.791778 
+L 539.886667 60.514389 
+L 567.001818 58.456686 
+L 595.201576 56.542786 
+L 624.485939 54.785727 
+L 654.854909 53.19269 
+L 686.308485 51.765669 
+L 719.931273 50.463515 
+L 745.961818 49.595741 
+L 745.961818 49.595741 
+" clip-path="url(#forwards-p6d801925ed)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="forwards-patch_3">
+    <path d="M 62.66 215.98 
+L 62.66 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="forwards-patch_4">
+    <path d="M 62.66 215.98 
+L 778.5 215.98 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="forwards-text_19">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="62.66" y="22.14" transform="rotate(-0 62.66 22.14)">A zero rate averages the forward curve</text>
+   </g>
+   <g id="forwards-legend_1">
+    <g id="forwards-line2d_35">
+     <path d="M 658.815 192.57375 
+L 666.815 192.57375 
+L 674.815 192.57375 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="forwards-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="681.215" y="195.37375" transform="rotate(-0 681.215 195.37375)">Zero rate</text>
+    </g>
+    <g id="forwards-line2d_36">
+     <path d="M 658.815 204.31625 
+L 666.815 204.31625 
+L 674.815 204.31625 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="forwards-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="681.215" y="207.11625" transform="rotate(-0 681.215 207.11625)">Instantaneous forward</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="forwards-p6d801925ed">
+   <rect x="62.66" y="35.14" width="715.84" height="180.84"/>
+  </clipPath>
+ </defs>
+</svg>

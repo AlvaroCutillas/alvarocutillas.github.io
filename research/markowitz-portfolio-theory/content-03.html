@@ -1,0 +1,93 @@
+<section id="lagrange" data-title="Lagrange multipliers and first-order conditions">
+<div class="section-label">11 / Analytical optimisation</div><h2>Lagrange multipliers and first-order conditions</h2>
+<p>For the unrestricted exact-target problem, attach multipliers \(\lambda\) and \(\eta\) to the budget and return constraints. Choose the following sign convention:</p>
+\[ \mathcal{L}(w,\lambda,\eta)=\frac12w^\mathsf{T}\Sigma w-\lambda(\mathbf{1}^\mathsf{T}w-1)-\eta(\mu^\mathsf{T}w-m). \]
+<p>Differentiating a symmetric quadratic gives \(\Sigma w\). Stationarity therefore requires</p>
+\[ \Sigma w=\lambda\mathbf{1}+\eta\mu,\qquad w=\Sigma^{-1}(\lambda\mathbf{1}+\eta\mu). \]
+<p>The inverse notation expresses the algebra. A numerical implementation solves the corresponding linear systems. Positive-definite covariance makes the objective strictly convex, so a feasible stationary point is the unique global minimum; it is not merely a candidate local minimum.</p>
+<h3>Reducing the constraints to two equations</h3>
+<p>Define three scalars from the covariance-adjusted budget and mean vectors:</p>
+\[ A=\mathbf{1}^\mathsf{T}\Sigma^{-1}\mathbf{1},\quad B=\mathbf{1}^\mathsf{T}\Sigma^{-1}\mu,\quad C=\mu^\mathsf{T}\Sigma^{-1}\mu,\quad D=AC-B^2. \]
+<p>Substituting the stationary weights into the constraints gives \(A\lambda+B\eta=1\) and \(B\lambda+C\eta=m\). Solving these equations yields</p>
+\[ \lambda=\frac{C-Bm}{D},\qquad \eta=\frac{Am-B}{D}. \]
+<p>These expressions require \(D>0\). Under positive definiteness, Cauchy–Schwarz ensures \(D\ge0\), and equality occurs when the asset means are all the same. In that case the expected-return constraint supplies no independent direction: only that common mean is feasible under the budget.</p>
+<h3>Multiplier interpretation</h3>
+<p>Let \(f(m)\) be the minimum objective value, including its one-half factor. The envelope theorem gives \(f'(m)=\eta\). A positive multiplier means a marginal increase in the target raises the minimum half-variance. On the lower branch \(\eta<0\), moving the target toward the GMV mean reduces variance.</p>
+<p>The sign depends on the chosen Lagrangian convention. A solver using a plus sign in front of equality residuals can report the opposite multiplier. Compare stationarity equations and objective scaling before interpreting software multipliers economically.</p>
+<p>In higher-dimensional constrained problems, this calculation becomes a linear Karush–Kuhn–Tucker system. The same principles remain: define constraint signs, verify feasibility, and distinguish equality multipliers from inequality multipliers. A closed-form expression is useful precisely because it exposes those conditions.</p>
+</section>
+
+<section id="minimum-variance" data-title="The global minimum-variance portfolio">
+<div class="section-label">12 / Minimum risk</div><h2>The global minimum-variance portfolio</h2>
+<p>The global minimum-variance portfolio minimises variance over the budget plane without imposing a return target. Its first-order condition is \(\Sigma w=\lambda\mathbf{1}\). Enforcing the budget gives</p>
+\[ w_{\mathrm{GMV}}=\frac{\Sigma^{-1}\mathbf{1}}{A},\qquad \sigma_{\mathrm{GMV}}^2=\frac1A,\qquad \mu_{\mathrm{GMV}}=\frac BA. \]
+<p>The weights depend on covariance but not the mean vector. The portfolio's expected return still depends on means when it is evaluated. This distinction helps explain why minimum-variance estimation can be more stable than an allocation that aggressively responds to noisy expected-return differences.</p>
+{{figure:gmv}}
+<h3>What the objective guarantees</h3>
+<p>GMV has the smallest model variance among portfolios satisfying the same budget and constraints. It need not have the smallest realised loss, drawdown, tail risk or tracking error. If cash is available, a deterministic cash return has zero variance, so “GMV” normally refers here to the risky-asset universe rather than an unrestricted cash-inclusive variance problem.</p>
+<p>The unconstrained GMV weights can be negative. A long-only GMV problem adds inequalities and may have a different answer. In this benchmark the unconstrained weights are all positive, so the two solutions coincide. That coincidence is a property of the inputs, not a general result.</p>
+<h3>Orthogonality on the budget plane</h3>
+<p>Any other fully invested portfolio can be written as \(w_{\mathrm{GMV}}+z\), where \(\mathbf{1}^\mathsf{T}z=0\). Since \(\Sigma w_{\mathrm{GMV}}=\mathbf{1}/A\), the covariance cross term vanishes:</p>
+\[ (w_{\mathrm{GMV}}+z)^\mathsf{T}\Sigma(w_{\mathrm{GMV}}+z)=\frac1A+z^\mathsf{T}\Sigma z. \]
+<p>This proves global minimality directly and explains the geometry: departures from GMV add variance through zero-budget positions. The expected-return impact of a departure is \(\mu^\mathsf{T}z\). Efficient directions obtain that change with the smallest possible additional quadratic risk.</p>
+<h3>Equal weights and inverse volatility</h3>
+<p>Equal weights ignore covariance. Inverse-volatility weights use marginal risk scales but do not generally solve the GMV problem. If covariance is diagonal, GMV weights are proportional to inverse <em>variance</em>, \(1/\sigma_i^2\), rather than inverse volatility. Correlations alter that simple rule.</p>
+<p>Equal-weight, inverse-volatility and risk-budgeting allocations are useful comparisons with different objectives or estimation demands. Their names should not be used interchangeably. A transparent benchmark is valuable even when its inputs are simpler than those of an optimised portfolio.</p>
+</section>
+
+<section id="frontier" data-title="The analytical efficient frontier">
+<div class="section-label">13 / Frontier geometry</div><h2>The analytical efficient frontier</h2>
+<p>Substituting the multipliers into the stationary weights yields the unrestricted target-return portfolio:</p>
+\[ w(m)=\Sigma^{-1}\left[\frac{C-Bm}{D}\mathbf{1}+\frac{Am-B}{D}\mu\right]. \]
+<p>To find its variance, multiply the stationarity equation by \(w^\mathsf{T}\) and use the constraints. This gives \(\sigma^2(m)=\lambda+\eta m\), hence</p>
+\[ \sigma^2(m)=\frac{Am^2-2Bm+C}{D}=\frac1A+\frac A D\left(m-\frac BA\right)^2. \]
+<p>The completed square makes the minimum and symmetry explicit. At \(m=B/A\), variance is \(1/A\). Moving the mean equally far above or below the GMV mean creates the same minimum variance, but the upper point dominates the lower one for mean–variance preferences.</p>
+{{figure:frontier}}
+<h3>The efficient branch</h3>
+<p>For \(m\ge\mu_{\mathrm{GMV}}\), the minimum-variance boundary is the efficient frontier. Inverting the completed square gives its mean as a function of volatility:</p>
+\[ m=\frac BA+\sqrt{\frac D A}\sqrt{\sigma^2-\frac1A},\qquad \sigma\ge\frac1{\sqrt A}. \]
+<p>The negative square-root branch is the lower boundary. Near GMV, the frontier's return-versus-volatility slope is steep; farther away it approaches a finite asymptotic slope. The axis choice matters when describing curvature or drawing a tangent.</p>
+<h3>Conditions and degenerate means</h3>
+<p>The formulas assume positive-definite covariance, unrestricted real weights, a net budget of one and means that are not all equal. No concentration, gross-exposure or turnover limit is included. Mathematical targets can consequently extend beyond the constituent return range by taking large long and short positions.</p>
+<p>If all means equal \(m_0\), every fully invested portfolio has expected return \(m_0\). The efficient choice is the feasible minimum-variance portfolio, and the two-constraint formula divides by zero because the second constraint is redundant. Numerically, nearly equal means make frontier constants sensitive; a solver should detect the degeneracy rather than draw a misleading curve.</p>
+<h3>Why the frontier is not a forecast of future winners</h3>
+<p>The curve maps supplied forecasts into optimal model trade-offs. Realised returns can place a portfolio far from its expected point. A frontier fitted to historical means is a transformation of uncertain estimates, not a demonstrated set of future attainable realised outcomes.</p>
+<p>Confidence regions for inputs, stress scenarios and out-of-sample evaluation answer different questions from this exact algebra. A precise closed-form calculation can coexist with broad economic uncertainty. The estimation chapters make that distinction quantitative.</p>
+</section>
+
+<section id="separation" data-title="Frontier weights and two-fund separation">
+<div class="section-label">14 / Portfolio structure</div><h2>Frontier weights and two-fund separation</h2>
+<p>The target portfolio is affine in expected return. Write it as a base portfolio and a zero-budget direction:</p>
+\[ w(m)=w_{\mathrm{GMV}}+(m-\mu_{\mathrm{GMV}})h,\quad h=\frac A D\Sigma^{-1}(\mu-\mu_{\mathrm{GMV}}\mathbf{1}). \]
+<p>The direction satisfies \(\mathbf{1}^\mathsf{T}h=0\) and \(\mu^\mathsf{T}h=1\). It changes expected return without changing the net budget. Its positive and negative positions describe a covariance-adjusted exposure to differences in asset means.</p>
+{{figure:weights}}
+<h3>Combining two efficient funds</h3>
+<p>Choose two distinct target portfolios \(w(m_1)\) and \(w(m_2)\). Their affine combination has target \(am_1+(1-a)m_2\) and equals the corresponding target portfolio:</p>
+\[ aw(m_1)+(1-a)w(m_2)=w(am_1+(1-a)m_2). \]
+<p>Thus any point on the unrestricted minimum-variance boundary can be generated from two such funds, allowing negative fund allocations when extrapolation is needed. This is an algebraic separation result under common moments and constraints. It does not imply that investors with different forecasts choose the same funds.</p>
+<h3>Risk aversion with a risky-only budget</h3>
+<p>For the penalised mean–variance objective and net risky budget one, the solution is</p>
+\[ w_\gamma=w_{\mathrm{GMV}}+\frac1\gamma\Sigma^{-1}(\mu-\mu_{\mathrm{GMV}}\mathbf{1}),\qquad \mu_\gamma=\mu_{\mathrm{GMV}}+\frac{D}{A\gamma}. \]
+<p>As risk aversion grows, the portfolio approaches GMV. As it decreases, zero-budget positions become larger, increasing expected mean and variance. This risky-only solution differs from choosing an amount of the tangency fund plus cash; the budget restrictions are different.</p>
+<h3>Constraints break global affine structure</h3>
+<p>When a long-only or position limit binds, the active set changes. Inside a fixed active set, weights can remain affine in the target, but the full constrained frontier is generally piecewise rather than described by one global two-fund line.</p>
+<p>A common mistake is to compute unrestricted weights, set negative entries to zero and renormalise. That changes the target and the covariance trade-off without solving the constrained problem. Two-fund separation is a consequence of a particular feasible geometry; it cannot justify arbitrary repairs to infeasible allocations.</p>
+</section>
+
+<section id="risk-free" data-title="The risk-free asset and capital allocation">
+<div class="section-label">15 / Cash and financing</div><h2>The risk-free asset and capital allocation</h2>
+<p>Add an asset whose return over the chosen horizon is known with certainty, \(r_f\). Put fraction \(y\) of initial wealth in a risky portfolio \(P\) and \(1-y\) in the risk-free asset. Then</p>
+\[ \mu_c=r_f+y(\mu_P-r_f),\qquad \sigma_c=|y|\sigma_P. \]
+<p>For \(y\ge0\), eliminating \(y\) gives a straight capital allocation line with slope equal to the risky fund's Sharpe ratio:</p>
+\[ \mu_c=r_f+\frac{\mu_P-r_f}{\sigma_P}\sigma_c. \]
+<p>A fraction between zero and one means lending some wealth at the risk-free rate. A fraction above one means borrowing to enlarge the risky position. A negative risky fraction has volatility \(|y|\sigma_P\) and creates a different ray; dropping the absolute value would incorrectly produce negative volatility.</p>
+{{figure:allocation}}
+<h3>What risk-free means</h3>
+<p>The asset must be risk-free in the relevant return unit and horizon. A bond with uncertain sale price before maturity is not generally a risk-free asset over that shorter holding period. A nominally fixed domestic payout is not fixed in foreign currency or inflation-adjusted purchasing power.</p>
+<p>Cash also need not be available at identical borrowing and lending rates. With a higher borrowing rate, the leveraged segment uses a different intercept and opportunity set; the lending tangency fund need not remain the appropriate borrowing fund. Margin and gross-exposure limits further restrict the attainable line.</p>
+<h3>Selection of the risky fund</h3>
+<p>Among feasible risky portfolios with a positive expected excess return, the highest Sharpe ratio supplies the steepest positive capital allocation line. Under the standard unrestricted model and the regularity condition discussed next, this fund is tangent to the risky frontier.</p>
+<p>The term “capital market line” adds an equilibrium interpretation in which that tangency fund is the market portfolio under shared assumptions. A capital allocation line for an arbitrary investor forecast is already a useful construction, but does not by itself establish market equilibrium or the CAPM.</p>
+<div class="callout"><p><strong>Analogy: choosing a recipe and then its portion size.</strong> The risky fund determines the recipe of asset exposures. Combining it with cash determines how much of that recipe is consumed. This separation is useful when all investors share the same inputs and financing opportunity; different recipes may be needed when those conditions differ.</p></div>
+<p>All plotted cash examples assume the same known simple return for borrowing and lending, with no financing costs or limits. Those conventions make the geometry transparent. An implemented leveraged strategy must explicitly replace them with its actual terms.</p>
+</section>

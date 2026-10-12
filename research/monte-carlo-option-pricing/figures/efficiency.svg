@@ -1,0 +1,511 @@
+<svg role="img" aria-labelledby="efficiency-title efficiency-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="efficiency-title">Figure 08 · Standard errors at equal production payoff budgets</title><desc id="efficiency-desc">Unit variances estimated from 250,000 independent normal draws, seed 1003. Antithetic methods use N/2 pairs. The combined control coefficient is estimated on this pilot sample; the curves project frozen-coefficient production errors and exclude pilot cost.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T19:11:27.191432</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="efficiency-figure_1">
+  <g id="efficiency-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="efficiency-axes_1">
+   <g id="efficiency-patch_2">
+    <path d="M 55.527809 206.188 
+L 648.9 206.188 
+L 648.9 13.5 
+L 55.527809 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="efficiency-matplotlib.axis_1">
+    <g id="efficiency-xtick_1">
+     <g id="efficiency-line2d_1">
+      <path d="M 82.499273 206.188 
+L 82.499273 13.5 
+" clip-path="url(#efficiency-p5d05bdff04)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="efficiency-line2d_2">
+      <defs>
+       <path id="efficiency-m9c58192179" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#efficiency-m9c58192179" x="82.499273" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="efficiency-text_1">
+      <!-- $\mathdefault{10^{3}}$ -->
+      <g style="fill: #939b94" transform="translate(74.579273 220.026594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">3</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-xtick_2">
+     <g id="efficiency-line2d_3">
+      <path d="M 381.156811 206.188 
+L 381.156811 13.5 
+" clip-path="url(#efficiency-p5d05bdff04)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="efficiency-line2d_4">
+      <g>
+       <use href="#efficiency-m9c58192179" x="381.156811" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="efficiency-text_2">
+      <!-- $\mathdefault{10^{4}}$ -->
+      <g style="fill: #939b94" transform="translate(373.236811 220.026594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.40625">4</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-xtick_3">
+     <g id="efficiency-line2d_5">
+      <defs>
+       <path id="efficiency-m0f2430026c" d="M 0 0 
+L 0 2 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#efficiency-m0f2430026c" x="68.833453" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-xtick_4">
+     <g id="efficiency-line2d_6">
+      <g>
+       <use href="#efficiency-m0f2430026c" x="172.40415" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-xtick_5">
+     <g id="efficiency-line2d_7">
+      <g>
+       <use href="#efficiency-m0f2430026c" x="224.995132" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-xtick_6">
+     <g id="efficiency-line2d_8">
+      <g>
+       <use href="#efficiency-m0f2430026c" x="262.309027" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-xtick_7">
+     <g id="efficiency-line2d_9">
+      <g>
+       <use href="#efficiency-m0f2430026c" x="291.251933" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-xtick_8">
+     <g id="efficiency-line2d_10">
+      <g>
+       <use href="#efficiency-m0f2430026c" x="314.900009" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-xtick_9">
+     <g id="efficiency-line2d_11">
+      <g>
+       <use href="#efficiency-m0f2430026c" x="334.894173" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-xtick_10">
+     <g id="efficiency-line2d_12">
+      <g>
+       <use href="#efficiency-m0f2430026c" x="352.213905" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-xtick_11">
+     <g id="efficiency-line2d_13">
+      <g>
+       <use href="#efficiency-m0f2430026c" x="367.490991" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-xtick_12">
+     <g id="efficiency-line2d_14">
+      <g>
+       <use href="#efficiency-m0f2430026c" x="471.061688" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-xtick_13">
+     <g id="efficiency-line2d_15">
+      <g>
+       <use href="#efficiency-m0f2430026c" x="523.65267" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-xtick_14">
+     <g id="efficiency-line2d_16">
+      <g>
+       <use href="#efficiency-m0f2430026c" x="560.966565" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-xtick_15">
+     <g id="efficiency-line2d_17">
+      <g>
+       <use href="#efficiency-m0f2430026c" x="589.909471" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-xtick_16">
+     <g id="efficiency-line2d_18">
+      <g>
+       <use href="#efficiency-m0f2430026c" x="613.557547" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-xtick_17">
+     <g id="efficiency-line2d_19">
+      <g>
+       <use href="#efficiency-m0f2430026c" x="633.551711" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-text_3">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="352.213905" y="232.736906" transform="rotate(-0 352.213905 232.736906)">Production payoff evaluations N</text>
+    </g>
+   </g>
+   <g id="efficiency-matplotlib.axis_2">
+    <g id="efficiency-ytick_1">
+     <g id="efficiency-line2d_20">
+      <path d="M 55.527809 201.476437 
+L 648.9 201.476437 
+" clip-path="url(#efficiency-p5d05bdff04)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="efficiency-line2d_21">
+      <defs>
+       <path id="efficiency-m45212a5eb3" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#efficiency-m45212a5eb3" x="55.527809" y="201.476437" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="efficiency-text_4">
+      <!-- $\mathdefault{10^{-2}}$ -->
+      <g style="fill: #939b94" transform="translate(27.377809 204.895734)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.318750000000001">−2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-ytick_2">
+     <g id="efficiency-line2d_22">
+      <path d="M 55.527809 94.010876 
+L 648.9 94.010876 
+" clip-path="url(#efficiency-p5d05bdff04)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="efficiency-line2d_23">
+      <g>
+       <use href="#efficiency-m45212a5eb3" x="55.527809" y="94.010876" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="efficiency-text_5">
+      <!-- $\mathdefault{10^{-1}}$ -->
+      <g style="fill: #939b94" transform="translate(27.377809 97.430173)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.40625">−1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-ytick_3">
+     <g id="efficiency-line2d_24">
+      <defs>
+       <path id="efficiency-m5bb1474b20" d="M 0 0 
+L -2 0 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#efficiency-m5bb1474b20" x="55.527809" y="169.12608" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-ytick_4">
+     <g id="efficiency-line2d_25">
+      <g>
+       <use href="#efficiency-m5bb1474b20" x="55.527809" y="150.202334" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-ytick_5">
+     <g id="efficiency-line2d_26">
+      <g>
+       <use href="#efficiency-m5bb1474b20" x="55.527809" y="136.775722" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-ytick_6">
+     <g id="efficiency-line2d_27">
+      <g>
+       <use href="#efficiency-m5bb1474b20" x="55.527809" y="126.361234" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-ytick_7">
+     <g id="efficiency-line2d_28">
+      <g>
+       <use href="#efficiency-m5bb1474b20" x="55.527809" y="117.851977" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-ytick_8">
+     <g id="efficiency-line2d_29">
+      <g>
+       <use href="#efficiency-m5bb1474b20" x="55.527809" y="110.657502" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-ytick_9">
+     <g id="efficiency-line2d_30">
+      <g>
+       <use href="#efficiency-m5bb1474b20" x="55.527809" y="104.425365" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-ytick_10">
+     <g id="efficiency-line2d_31">
+      <g>
+       <use href="#efficiency-m5bb1474b20" x="55.527809" y="98.928231" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-ytick_11">
+     <g id="efficiency-line2d_32">
+      <g>
+       <use href="#efficiency-m5bb1474b20" x="55.527809" y="61.660519" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-ytick_12">
+     <g id="efficiency-line2d_33">
+      <g>
+       <use href="#efficiency-m5bb1474b20" x="55.527809" y="42.736773" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-ytick_13">
+     <g id="efficiency-line2d_34">
+      <g>
+       <use href="#efficiency-m5bb1474b20" x="55.527809" y="29.310162" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-ytick_14">
+     <g id="efficiency-line2d_35">
+      <g>
+       <use href="#efficiency-m5bb1474b20" x="55.527809" y="18.895673" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="efficiency-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.506091" y="109.844" transform="rotate(-90 21.506091 109.844)">Projected price standard error</text>
+    </g>
+   </g>
+   <g id="efficiency-line2d_36">
+    <path d="M 82.499273 22.258545 
+L 262.309027 54.608903 
+L 442.118782 86.95926 
+L 621.928537 119.309617 
+" clip-path="url(#efficiency-p5d05bdff04)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="efficiency-m7dbc72a31e" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #7e8d86"/>
+    </defs>
+    <g clip-path="url(#efficiency-p5d05bdff04)">
+     <use href="#efficiency-m7dbc72a31e" x="82.499273" y="22.258545" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#efficiency-m7dbc72a31e" x="262.309027" y="54.608903" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#efficiency-m7dbc72a31e" x="442.118782" y="86.95926" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#efficiency-m7dbc72a31e" x="621.928537" y="119.309617" style="fill: #7e8d86; stroke: #7e8d86"/>
+    </g>
+   </g>
+   <g id="efficiency-line2d_37">
+    <path d="M 82.499273 38.427775 
+L 262.309027 70.778132 
+L 442.118782 103.128489 
+L 621.928537 135.478847 
+" clip-path="url(#efficiency-p5d05bdff04)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="efficiency-me37e06bd7d" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #d3ad84"/>
+    </defs>
+    <g clip-path="url(#efficiency-p5d05bdff04)">
+     <use href="#efficiency-me37e06bd7d" x="82.499273" y="38.427775" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#efficiency-me37e06bd7d" x="262.309027" y="70.778132" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#efficiency-me37e06bd7d" x="442.118782" y="103.128489" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#efficiency-me37e06bd7d" x="621.928537" y="135.478847" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="efficiency-line2d_38">
+    <path d="M 82.499273 67.205899 
+L 262.309027 99.556257 
+L 442.118782 131.906614 
+L 621.928537 164.256971 
+" clip-path="url(#efficiency-p5d05bdff04)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="efficiency-m5f08f70dbf" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#efficiency-p5d05bdff04)">
+     <use href="#efficiency-m5f08f70dbf" x="82.499273" y="67.205899" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#efficiency-m5f08f70dbf" x="262.309027" y="99.556257" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#efficiency-m5f08f70dbf" x="442.118782" y="131.906614" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#efficiency-m5f08f70dbf" x="621.928537" y="164.256971" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="efficiency-line2d_39">
+    <path d="M 82.499273 100.378383 
+L 262.309027 132.72874 
+L 442.118782 165.079097 
+L 621.928537 197.429455 
+" clip-path="url(#efficiency-p5d05bdff04)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="efficiency-ma7e69439cc" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #91a9bd"/>
+    </defs>
+    <g clip-path="url(#efficiency-p5d05bdff04)">
+     <use href="#efficiency-ma7e69439cc" x="82.499273" y="100.378383" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#efficiency-ma7e69439cc" x="262.309027" y="132.72874" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#efficiency-ma7e69439cc" x="442.118782" y="165.079097" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#efficiency-ma7e69439cc" x="621.928537" y="197.429455" style="fill: #91a9bd; stroke: #91a9bd"/>
+    </g>
+   </g>
+   <g id="efficiency-patch_3">
+    <path d="M 55.527809 206.188 
+L 55.527809 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="efficiency-patch_4">
+    <path d="M 55.527809 206.188 
+L 648.9 206.188 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="efficiency-legend_1">
+    <g id="efficiency-line2d_40">
+     <path d="M 540.9975 23.97875 
+L 548.9975 23.97875 
+L 556.9975 23.97875 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#efficiency-m7dbc72a31e" x="548.9975" y="23.97875" style="fill: #7e8d86; stroke: #7e8d86"/>
+     </g>
+    </g>
+    <g id="efficiency-text_7">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="563.3975" y="26.77875" transform="rotate(-0 563.3975 26.77875)">Plain</text>
+    </g>
+    <g id="efficiency-line2d_41">
+     <path d="M 540.9975 35.72125 
+L 548.9975 35.72125 
+L 556.9975 35.72125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#efficiency-me37e06bd7d" x="548.9975" y="35.72125" style="fill: #d3ad84; stroke: #d3ad84"/>
+     </g>
+    </g>
+    <g id="efficiency-text_8">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="563.3975" y="38.52125" transform="rotate(-0 563.3975 38.52125)">Antithetic</text>
+    </g>
+    <g id="efficiency-line2d_42">
+     <path d="M 540.9975 47.46375 
+L 548.9975 47.46375 
+L 556.9975 47.46375 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#efficiency-m5f08f70dbf" x="548.9975" y="47.46375" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="efficiency-text_9">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="563.3975" y="50.26375" transform="rotate(-0 563.3975 50.26375)">Stock control</text>
+    </g>
+    <g id="efficiency-line2d_43">
+     <path d="M 540.9975 59.20625 
+L 548.9975 59.20625 
+L 556.9975 59.20625 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#efficiency-ma7e69439cc" x="548.9975" y="59.20625" style="fill: #91a9bd; stroke: #91a9bd"/>
+     </g>
+    </g>
+    <g id="efficiency-text_10">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="563.3975" y="62.00625" transform="rotate(-0 563.3975 62.00625)">Antithetic + control</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="efficiency-p5d05bdff04">
+   <rect x="55.527809" y="13.5" width="593.372191" height="192.688"/>
+  </clipPath>
+ </defs>
+</svg>

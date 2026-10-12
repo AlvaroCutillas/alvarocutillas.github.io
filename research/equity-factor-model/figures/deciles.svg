@@ -1,0 +1,444 @@
+<svg role="img" aria-labelledby="deciles-title deciles-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="259.2pt" viewBox="0 0 792 259.2" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="deciles-title">Figure 05 · Univariate factor sorts</title><desc id="deciles-desc">Each decile contains 16 stocks. Lines join discrete decile means; the inspector snaps to a decile. Correlated descriptors and sector effects make these univariate returns different from partial regression coefficients.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-05T16:04:05.171940</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="deciles-figure_1">
+  <g id="deciles-patch_1">
+   <path d="M 0 259.2 
+L 792 259.2 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="deciles-axes_1">
+   <g id="deciles-patch_2">
+    <path d="M 64.46 215.98 
+L 778.5 215.98 
+L 778.5 35.14 
+L 64.46 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="deciles-matplotlib.axis_1">
+    <g id="deciles-xtick_1">
+     <g id="deciles-line2d_1">
+      <path d="M 169.041616 215.98 
+L 169.041616 35.14 
+" clip-path="url(#deciles-p065b2dc2e9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="deciles-line2d_2">
+      <defs>
+       <path id="deciles-m043d73767e" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#deciles-m043d73767e" x="169.041616" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="deciles-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="169.041616" y="229.818594" transform="rotate(-0 169.041616 229.818594)">2</text>
+     </g>
+    </g>
+    <g id="deciles-xtick_2">
+     <g id="deciles-line2d_3">
+      <path d="M 313.292121 215.98 
+L 313.292121 35.14 
+" clip-path="url(#deciles-p065b2dc2e9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="deciles-line2d_4">
+      <g>
+       <use href="#deciles-m043d73767e" x="313.292121" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="deciles-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="313.292121" y="229.818594" transform="rotate(-0 313.292121 229.818594)">4</text>
+     </g>
+    </g>
+    <g id="deciles-xtick_3">
+     <g id="deciles-line2d_5">
+      <path d="M 457.542626 215.98 
+L 457.542626 35.14 
+" clip-path="url(#deciles-p065b2dc2e9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="deciles-line2d_6">
+      <g>
+       <use href="#deciles-m043d73767e" x="457.542626" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="deciles-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="457.542626" y="229.818594" transform="rotate(-0 457.542626 229.818594)">6</text>
+     </g>
+    </g>
+    <g id="deciles-xtick_4">
+     <g id="deciles-line2d_7">
+      <path d="M 601.793131 215.98 
+L 601.793131 35.14 
+" clip-path="url(#deciles-p065b2dc2e9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="deciles-line2d_8">
+      <g>
+       <use href="#deciles-m043d73767e" x="601.793131" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="deciles-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="601.793131" y="229.818594" transform="rotate(-0 601.793131 229.818594)">8</text>
+     </g>
+    </g>
+    <g id="deciles-xtick_5">
+     <g id="deciles-line2d_9">
+      <path d="M 746.043636 215.98 
+L 746.043636 35.14 
+" clip-path="url(#deciles-p065b2dc2e9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="deciles-line2d_10">
+      <g>
+       <use href="#deciles-m043d73767e" x="746.043636" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="deciles-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="746.043636" y="229.818594" transform="rotate(-0 746.043636 229.818594)">10</text>
+     </g>
+    </g>
+    <g id="deciles-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="421.48" y="242.528906" transform="rotate(-0 421.48 242.528906)">Signal decile</text>
+    </g>
+   </g>
+   <g id="deciles-matplotlib.axis_2">
+    <g id="deciles-ytick_1">
+     <g id="deciles-line2d_11">
+      <path d="M 64.46 202.821307 
+L 778.5 202.821307 
+" clip-path="url(#deciles-p065b2dc2e9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="deciles-line2d_12">
+      <defs>
+       <path id="deciles-mf03852d2d7" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#deciles-mf03852d2d7" x="64.46" y="202.821307" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="deciles-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="206.240604" transform="rotate(-0 57.46 206.240604)">−2.0%</text>
+     </g>
+    </g>
+    <g id="deciles-ytick_2">
+     <g id="deciles-line2d_13">
+      <path d="M 64.46 172.68892 
+L 778.5 172.68892 
+" clip-path="url(#deciles-p065b2dc2e9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="deciles-line2d_14">
+      <g>
+       <use href="#deciles-mf03852d2d7" x="64.46" y="172.68892" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="deciles-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="176.108217" transform="rotate(-0 57.46 176.108217)">−1.0%</text>
+     </g>
+    </g>
+    <g id="deciles-ytick_3">
+     <g id="deciles-line2d_15">
+      <path d="M 64.46 142.556533 
+L 778.5 142.556533 
+" clip-path="url(#deciles-p065b2dc2e9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="deciles-line2d_16">
+      <g>
+       <use href="#deciles-mf03852d2d7" x="64.46" y="142.556533" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="deciles-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="145.97583" transform="rotate(-0 57.46 145.97583)">0.0%</text>
+     </g>
+    </g>
+    <g id="deciles-ytick_4">
+     <g id="deciles-line2d_17">
+      <path d="M 64.46 112.424147 
+L 778.5 112.424147 
+" clip-path="url(#deciles-p065b2dc2e9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="deciles-line2d_18">
+      <g>
+       <use href="#deciles-mf03852d2d7" x="64.46" y="112.424147" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="deciles-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="115.843443" transform="rotate(-0 57.46 115.843443)">1.0%</text>
+     </g>
+    </g>
+    <g id="deciles-ytick_5">
+     <g id="deciles-line2d_19">
+      <path d="M 64.46 82.29176 
+L 778.5 82.29176 
+" clip-path="url(#deciles-p065b2dc2e9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="deciles-line2d_20">
+      <g>
+       <use href="#deciles-mf03852d2d7" x="64.46" y="82.29176" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="deciles-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="85.711057" transform="rotate(-0 57.46 85.711057)">2.0%</text>
+     </g>
+    </g>
+    <g id="deciles-ytick_6">
+     <g id="deciles-line2d_21">
+      <path d="M 64.46 52.159373 
+L 778.5 52.159373 
+" clip-path="url(#deciles-p065b2dc2e9)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="deciles-line2d_22">
+      <g>
+       <use href="#deciles-mf03852d2d7" x="64.46" y="52.159373" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="deciles-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="55.57867" transform="rotate(-0 57.46 55.57867)">3.0%</text>
+     </g>
+    </g>
+    <g id="deciles-text_13">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.182344" y="125.56" transform="rotate(-90 21.182344 125.56)">Mean next-month return</text>
+    </g>
+   </g>
+   <g id="deciles-line2d_23">
+    <path d="M 96.916364 191.928001 
+L 169.041616 120.588758 
+L 241.166869 169.329347 
+L 313.292121 133.201472 
+L 385.417374 130.941848 
+L 457.542626 122.426932 
+L 529.667879 56.400285 
+L 601.793131 116.451276 
+L 673.918384 64.27398 
+L 746.043636 94.954491 
+" clip-path="url(#deciles-p065b2dc2e9)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="deciles-m32e013e25d" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#deciles-p065b2dc2e9)">
+     <use href="#deciles-m32e013e25d" x="96.916364" y="191.928001" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#deciles-m32e013e25d" x="169.041616" y="120.588758" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#deciles-m32e013e25d" x="241.166869" y="169.329347" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#deciles-m32e013e25d" x="313.292121" y="133.201472" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#deciles-m32e013e25d" x="385.417374" y="130.941848" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#deciles-m32e013e25d" x="457.542626" y="122.426932" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#deciles-m32e013e25d" x="529.667879" y="56.400285" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#deciles-m32e013e25d" x="601.793131" y="116.451276" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#deciles-m32e013e25d" x="673.918384" y="64.27398" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#deciles-m32e013e25d" x="746.043636" y="94.954491" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="deciles-line2d_24">
+    <path d="M 96.916364 207.76 
+L 169.041616 146.487898 
+L 241.166869 179.472321 
+L 313.292121 146.700474 
+L 385.417374 122.934832 
+L 457.542626 114.390243 
+L 529.667879 109.244189 
+L 601.793131 75.954448 
+L 673.918384 54.191986 
+L 746.043636 43.36 
+" clip-path="url(#deciles-p065b2dc2e9)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="deciles-mbfd2a48532" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #d3ad84"/>
+    </defs>
+    <g clip-path="url(#deciles-p065b2dc2e9)">
+     <use href="#deciles-mbfd2a48532" x="96.916364" y="207.76" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#deciles-mbfd2a48532" x="169.041616" y="146.487898" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#deciles-mbfd2a48532" x="241.166869" y="179.472321" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#deciles-mbfd2a48532" x="313.292121" y="146.700474" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#deciles-mbfd2a48532" x="385.417374" y="122.934832" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#deciles-mbfd2a48532" x="457.542626" y="114.390243" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#deciles-mbfd2a48532" x="529.667879" y="109.244189" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#deciles-mbfd2a48532" x="601.793131" y="75.954448" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#deciles-mbfd2a48532" x="673.918384" y="54.191986" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#deciles-mbfd2a48532" x="746.043636" y="43.36" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="deciles-line2d_25">
+    <path d="M 96.916364 138.021932 
+L 169.041616 138.719071 
+L 241.166869 101.909057 
+L 313.292121 104.918553 
+L 385.417374 166.672922 
+L 457.542626 112.932648 
+L 529.667879 116.361498 
+L 601.793131 130.545248 
+L 673.918384 103.285736 
+L 746.043636 87.129727 
+" clip-path="url(#deciles-p065b2dc2e9)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="deciles-mda2999dd98" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #91a9bd"/>
+    </defs>
+    <g clip-path="url(#deciles-p065b2dc2e9)">
+     <use href="#deciles-mda2999dd98" x="96.916364" y="138.021932" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#deciles-mda2999dd98" x="169.041616" y="138.719071" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#deciles-mda2999dd98" x="241.166869" y="101.909057" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#deciles-mda2999dd98" x="313.292121" y="104.918553" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#deciles-mda2999dd98" x="385.417374" y="166.672922" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#deciles-mda2999dd98" x="457.542626" y="112.932648" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#deciles-mda2999dd98" x="529.667879" y="116.361498" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#deciles-mda2999dd98" x="601.793131" y="130.545248" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#deciles-mda2999dd98" x="673.918384" y="103.285736" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#deciles-mda2999dd98" x="746.043636" y="87.129727" style="fill: #91a9bd; stroke: #91a9bd"/>
+    </g>
+   </g>
+   <g id="deciles-line2d_26">
+    <path d="M 96.916364 125.028434 
+L 169.041616 63.531159 
+L 241.166869 113.782143 
+L 313.292121 126.293602 
+L 385.417374 110.164943 
+L 457.542626 167.32635 
+L 529.667879 90.230998 
+L 601.793131 109.609109 
+L 673.918384 145.688076 
+L 746.043636 148.841576 
+" clip-path="url(#deciles-p065b2dc2e9)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="deciles-mf646befe3b" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #7e8d86"/>
+    </defs>
+    <g clip-path="url(#deciles-p065b2dc2e9)">
+     <use href="#deciles-mf646befe3b" x="96.916364" y="125.028434" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#deciles-mf646befe3b" x="169.041616" y="63.531159" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#deciles-mf646befe3b" x="241.166869" y="113.782143" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#deciles-mf646befe3b" x="313.292121" y="126.293602" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#deciles-mf646befe3b" x="385.417374" y="110.164943" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#deciles-mf646befe3b" x="457.542626" y="167.32635" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#deciles-mf646befe3b" x="529.667879" y="90.230998" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#deciles-mf646befe3b" x="601.793131" y="109.609109" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#deciles-mf646befe3b" x="673.918384" y="145.688076" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#deciles-mf646befe3b" x="746.043636" y="148.841576" style="fill: #7e8d86; stroke: #7e8d86"/>
+    </g>
+   </g>
+   <g id="deciles-patch_3">
+    <path d="M 64.46 215.98 
+L 64.46 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="deciles-patch_4">
+    <path d="M 64.46 215.98 
+L 778.5 215.98 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="deciles-text_14">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="64.46" y="22.14" transform="rotate(-0 64.46 22.14)">Realized returns within formation-score deciles</text>
+   </g>
+   <g id="deciles-legend_1">
+    <g id="deciles-line2d_27">
+     <path d="M 696.1725 169.08875 
+L 704.1725 169.08875 
+L 712.1725 169.08875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#deciles-m32e013e25d" x="704.1725" y="169.08875" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="deciles-text_15">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="718.5725" y="171.88875" transform="rotate(-0 718.5725 171.88875)">Value</text>
+    </g>
+    <g id="deciles-line2d_28">
+     <path d="M 696.1725 180.83125 
+L 704.1725 180.83125 
+L 712.1725 180.83125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#deciles-mbfd2a48532" x="704.1725" y="180.83125" style="fill: #d3ad84; stroke: #d3ad84"/>
+     </g>
+    </g>
+    <g id="deciles-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="718.5725" y="183.63125" transform="rotate(-0 718.5725 183.63125)">Momentum</text>
+    </g>
+    <g id="deciles-line2d_29">
+     <path d="M 696.1725 192.57375 
+L 704.1725 192.57375 
+L 712.1725 192.57375 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#deciles-mda2999dd98" x="704.1725" y="192.57375" style="fill: #91a9bd; stroke: #91a9bd"/>
+     </g>
+    </g>
+    <g id="deciles-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="718.5725" y="195.37375" transform="rotate(-0 718.5725 195.37375)">Quality</text>
+    </g>
+    <g id="deciles-line2d_30">
+     <path d="M 696.1725 204.31625 
+L 704.1725 204.31625 
+L 712.1725 204.31625 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#deciles-mf646befe3b" x="704.1725" y="204.31625" style="fill: #7e8d86; stroke: #7e8d86"/>
+     </g>
+    </g>
+    <g id="deciles-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="718.5725" y="207.11625" transform="rotate(-0 718.5725 207.11625)">Low volatility</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="deciles-p065b2dc2e9">
+   <rect x="64.46" y="35.14" width="714.04" height="180.84"/>
+  </clipPath>
+ </defs>
+</svg>

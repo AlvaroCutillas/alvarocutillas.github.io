@@ -1,0 +1,518 @@
+<svg role="img" aria-labelledby="convergence-title convergence-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="convergence-title">Figure 10 · Monte Carlo estimation error</title><desc id="convergence-desc">99% risk of standard normal losses. Each sample size uses 300 independent synthetic replications, NumPy seed 4106. RMSE includes finite-sample bias; the dashed line shows a rate reference, not a fitted guarantee.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T18:09:12.138653</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="convergence-figure_1">
+  <g id="convergence-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="convergence-axes_1">
+   <g id="convergence-patch_2">
+    <path d="M 55.527809 242.188 
+L 706.5 242.188 
+L 706.5 35.14 
+L 55.527809 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="convergence-matplotlib.axis_1">
+    <g id="convergence-xtick_1">
+     <g id="convergence-line2d_1">
+      <path d="M 263.264869 242.188 
+L 263.264869 35.14 
+" clip-path="url(#convergence-pd09ebbbf07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convergence-line2d_2">
+      <defs>
+       <path id="convergence-m15cfe663de" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#convergence-m15cfe663de" x="263.264869" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convergence-text_1">
+      <!-- $\mathdefault{10^{3}}$ -->
+      <g style="fill: #939b94" transform="translate(255.344869 256.026594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">3</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_2">
+     <g id="convergence-line2d_3">
+      <path d="M 559.161319 242.188 
+L 559.161319 35.14 
+" clip-path="url(#convergence-pd09ebbbf07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convergence-line2d_4">
+      <g>
+       <use href="#convergence-m15cfe663de" x="559.161319" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convergence-text_2">
+      <!-- $\mathdefault{10^{4}}$ -->
+      <g style="fill: #939b94" transform="translate(551.241319 256.026594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.40625">4</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_3">
+     <g id="convergence-line2d_5">
+      <defs>
+       <path id="convergence-m8ef57a89a3" d="M 0 0 
+L 0 2 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="56.442126" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_4">
+     <g id="convergence-line2d_6">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="108.546904" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_5">
+     <g id="convergence-line2d_7">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="145.515833" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_6">
+     <g id="convergence-line2d_8">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="174.191162" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_7">
+     <g id="convergence-line2d_9">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="197.620611" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_8">
+     <g id="convergence-line2d_10">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="217.429929" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_9">
+     <g id="convergence-line2d_11">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="234.58954" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_10">
+     <g id="convergence-line2d_12">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="249.72539" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_11">
+     <g id="convergence-line2d_13">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="352.338576" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_12">
+     <g id="convergence-line2d_14">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="404.443354" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_13">
+     <g id="convergence-line2d_15">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="441.412283" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_14">
+     <g id="convergence-line2d_16">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="470.087612" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_15">
+     <g id="convergence-line2d_17">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="493.517061" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_16">
+     <g id="convergence-line2d_18">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="513.326379" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_17">
+     <g id="convergence-line2d_19">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="530.48599" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_18">
+     <g id="convergence-line2d_20">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="545.62184" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_19">
+     <g id="convergence-line2d_21">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="648.235026" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_20">
+     <g id="convergence-line2d_22">
+      <g>
+       <use href="#convergence-m8ef57a89a3" x="700.339805" y="242.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-text_3">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="381.013905" y="268.736906" transform="rotate(-0 381.013905 268.736906)">Simulation paths</text>
+    </g>
+   </g>
+   <g id="convergence-matplotlib.axis_2">
+    <g id="convergence-ytick_1">
+     <g id="convergence-line2d_23">
+      <path d="M 55.527809 156.636103 
+L 706.5 156.636103 
+" clip-path="url(#convergence-pd09ebbbf07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convergence-line2d_24">
+      <defs>
+       <path id="convergence-m1b9ae67ba5" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#convergence-m1b9ae67ba5" x="55.527809" y="156.636103" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convergence-text_4">
+      <!-- $\mathdefault{10^{-1}}$ -->
+      <g style="fill: #939b94" transform="translate(27.377809 160.0554)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.40625">−1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_2">
+     <g id="convergence-line2d_25">
+      <path d="M 55.527809 39.176622 
+L 706.5 39.176622 
+" clip-path="url(#convergence-pd09ebbbf07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convergence-line2d_26">
+      <g>
+       <use href="#convergence-m1b9ae67ba5" x="55.527809" y="39.176622" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convergence-text_5">
+      <!-- $\mathdefault{10^{0}}$ -->
+      <g style="fill: #939b94" transform="translate(32.687809 42.595918)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_3">
+     <g id="convergence-line2d_27">
+      <defs>
+       <path id="convergence-m771f2fe3cf" d="M 0 0 
+L -2 0 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#convergence-m771f2fe3cf" x="55.527809" y="238.736758" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_4">
+     <g id="convergence-line2d_28">
+      <g>
+       <use href="#convergence-m771f2fe3cf" x="55.527809" y="218.05317" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_5">
+     <g id="convergence-line2d_29">
+      <g>
+       <use href="#convergence-m771f2fe3cf" x="55.527809" y="203.37793" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_6">
+     <g id="convergence-line2d_30">
+      <g>
+       <use href="#convergence-m771f2fe3cf" x="55.527809" y="191.99493" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_7">
+     <g id="convergence-line2d_31">
+      <g>
+       <use href="#convergence-m771f2fe3cf" x="55.527809" y="182.694342" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_8">
+     <g id="convergence-line2d_32">
+      <g>
+       <use href="#convergence-m771f2fe3cf" x="55.527809" y="174.830807" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_9">
+     <g id="convergence-line2d_33">
+      <g>
+       <use href="#convergence-m771f2fe3cf" x="55.527809" y="168.019103" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_10">
+     <g id="convergence-line2d_34">
+      <g>
+       <use href="#convergence-m771f2fe3cf" x="55.527809" y="162.010754" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_11">
+     <g id="convergence-line2d_35">
+      <g>
+       <use href="#convergence-m771f2fe3cf" x="55.527809" y="121.277276" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_12">
+     <g id="convergence-line2d_36">
+      <g>
+       <use href="#convergence-m771f2fe3cf" x="55.527809" y="100.593688" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_13">
+     <g id="convergence-line2d_37">
+      <g>
+       <use href="#convergence-m771f2fe3cf" x="55.527809" y="85.918449" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_14">
+     <g id="convergence-line2d_38">
+      <g>
+       <use href="#convergence-m771f2fe3cf" x="55.527809" y="74.535449" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_15">
+     <g id="convergence-line2d_39">
+      <g>
+       <use href="#convergence-m771f2fe3cf" x="55.527809" y="65.234861" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_16">
+     <g id="convergence-line2d_40">
+      <g>
+       <use href="#convergence-m771f2fe3cf" x="55.527809" y="57.371326" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_17">
+     <g id="convergence-line2d_41">
+      <g>
+       <use href="#convergence-m771f2fe3cf" x="55.527809" y="50.559621" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-ytick_18">
+     <g id="convergence-line2d_42">
+      <g>
+       <use href="#convergence-m771f2fe3cf" x="55.527809" y="44.551273" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.506091" y="138.664" transform="rotate(-90 21.506091 138.664)">Root mean squared error</text>
+    </g>
+   </g>
+   <g id="convergence-line2d_43">
+    <path d="M 85.117454 117.039428 
+L 174.191162 131.963283 
+L 263.264869 149.252792 
+L 352.338576 167.611016 
+L 470.087612 190.847827 
+L 559.161319 209.305157 
+L 676.910355 232.776727 
+" clip-path="url(#convergence-pd09ebbbf07)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="convergence-m75f6489786" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#convergence-pd09ebbbf07)">
+     <use href="#convergence-m75f6489786" x="85.117454" y="117.039428" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#convergence-m75f6489786" x="174.191162" y="131.963283" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#convergence-m75f6489786" x="263.264869" y="149.252792" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#convergence-m75f6489786" x="352.338576" y="167.611016" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#convergence-m75f6489786" x="470.087612" y="190.847827" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#convergence-m75f6489786" x="559.161319" y="209.305157" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#convergence-m75f6489786" x="676.910355" y="232.776727" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="convergence-line2d_44">
+    <path d="M 85.117454 107.392928 
+L 174.191162 124.364141 
+L 263.264869 136.225591 
+L 352.338576 156.555227 
+L 470.087612 183.479562 
+L 559.161319 196.120123 
+L 676.910355 223.019551 
+" clip-path="url(#convergence-pd09ebbbf07)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="convergence-md10541df43" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #d3ad84"/>
+    </defs>
+    <g clip-path="url(#convergence-pd09ebbbf07)">
+     <use href="#convergence-md10541df43" x="85.117454" y="107.392928" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#convergence-md10541df43" x="174.191162" y="124.364141" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#convergence-md10541df43" x="263.264869" y="136.225591" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#convergence-md10541df43" x="352.338576" y="156.555227" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#convergence-md10541df43" x="470.087612" y="183.479562" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#convergence-md10541df43" x="559.161319" y="196.120123" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#convergence-md10541df43" x="676.910355" y="223.019551" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="convergence-line2d_45">
+    <path d="M 85.117454 44.551273 
+L 174.191162 62.230686 
+L 263.264869 79.9101 
+L 352.338576 97.589514 
+L 470.087612 120.960427 
+L 559.161319 138.639841 
+L 676.910355 162.010754 
+" clip-path="url(#convergence-pd09ebbbf07)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+   </g>
+   <g id="convergence-patch_3">
+    <path d="M 55.527809 242.188 
+L 55.527809 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="convergence-patch_4">
+    <path d="M 55.527809 242.188 
+L 706.5 242.188 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="convergence-text_7">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="55.527809" y="22.14" transform="rotate(-0 55.527809 22.14)">Tail estimates need many scenarios</text>
+   </g>
+   <g id="convergence-legend_1">
+    <g id="convergence-line2d_46">
+     <path d="M 604.863281 46.928594 
+L 613.863281 46.928594 
+L 622.863281 46.928594 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#convergence-m75f6489786" x="613.863281" y="46.928594" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="convergence-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="630.063281" y="50.078594" transform="rotate(-0 630.063281 50.078594)">VaR RMSE</text>
+    </g>
+    <g id="convergence-line2d_47">
+     <path d="M 604.863281 60.138906 
+L 613.863281 60.138906 
+L 622.863281 60.138906 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#convergence-md10541df43" x="613.863281" y="60.138906" style="fill: #d3ad84; stroke: #d3ad84"/>
+     </g>
+    </g>
+    <g id="convergence-text_9">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="630.063281" y="63.288906" transform="rotate(-0 630.063281 63.288906)">ES RMSE</text>
+    </g>
+    <g id="convergence-line2d_48">
+     <path d="M 604.863281 73.349219 
+L 613.863281 73.349219 
+L 622.863281 73.349219 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+    </g>
+    <g id="convergence-text_10">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="630.063281" y="76.499219" transform="rotate(-0 630.063281 76.499219)">N⁻¹ᐟ² reference</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="convergence-pd09ebbbf07">
+   <rect x="55.527809" y="35.14" width="650.972191" height="207.048"/>
+  </clipPath>
+ </defs>
+</svg>

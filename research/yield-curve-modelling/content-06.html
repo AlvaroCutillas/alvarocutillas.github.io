@@ -1,0 +1,158 @@
+<section id="laboratory" data-title="Interactive term-structure and bond laboratory">
+<div class="section-kicker">26 / Numerical laboratory</div><h2>Interactive term-structure and bond laboratory</h2>
+<p>The laboratory computes a continuous Nelson–Siegel or Svensson curve, its analytical instantaneous forwards, discounts, semiannual par rates and a selected fixed-coupon bond. Every output is calculated locally. The static notes and plots remain readable without JavaScript.</p>
+<h3>Reading the rate and price panels</h3>
+<p>The first plot compares continuous zero and instantaneous forward rates with a continuous-equivalent semiannual par coupon. The second panel shows base and shifted discounts. The separate sensitivity plot compares exact bond prices under parallel continuous-zero shifts with first- and second-order approximations.</p>
+<p>Hover over a plot to inspect every represented curve at the same horizontal coordinate. The compact neutral inspector follows the pointer, flips near viewport edges and highlights the nearest line. Touch pins an inspection; a tap outside dismisses it. Keyboard arrows move through samples, up and down switch panels, and Escape dismisses the inspector. Values between samples describe the displayed line interpolation.</p>
+<h3>Suggested experiments</h3>
+<ol>
+<li>Raise the level coefficient by 0.5 percentage points. Observe the parallel zero shift, discount reduction and bond price change.</li>
+<li>Change a decay time while keeping rate coefficients fixed. Compare the movement of the zero hump with the forward hump.</li>
+<li>Select Nelson–Siegel and fit the synthetic quotes, then repeat with Svensson. Compare training and withheld RMSE, not just the fitted chart.</li>
+<li>Set a negative short-rate limit through the slope coefficient. Inspect discounts above one and read the stated negative-rate assumption.</li>
+<li>Increase bond maturity and apply a +100 bp shift. Compare exact repricing with duration and convexity, keeping their shock convention fixed.</li>
+</ol>
+<h3>Calibration controls and scope</h3>
+<p>“Fit synthetic quotes” uses only thirteen training maturities. The three withheld quotes remain visible for assessment. The audit describes the browser search and reports both errors. “Build curve” compares manually selected parameters with the same dataset. “Reset reference” restores the generating parameter set, rather than the fitted noisy-data parameters.</p>
+<p>Bond coupons are nonnegative, schedules use exact-year intervals and valuation occurs on a coupon date. The selected bond frequency controls its cash flows and nominal YTM. The plotted par curve always uses semiannual coupons, independently of the selected bond. A zero coupon is supported by setting the coupon rate to zero.</p>
+{{interactive}}
+<p class="source-note">All observations are synthetic. CSV rates are decimals and maturities are years. The tool is a static curve and fixed-cash-flow implementation; calendars, credit loss, multicurve swap pricing and interest-rate option dynamics are separate extensions.</p>
+</section>
+
+<section id="worked-study" data-title="Worked calibration and valuation studies">
+<div class="section-kicker">27 / Computed examples</div><h2>Worked calibration and valuation studies</h2>
+<h3>Study A: the reference Svensson curve</h3>
+<p>Use \(\beta_0=0.035\), \(\beta_1=-0.020\), \(\beta_2=0.025\), \(\beta_3=-0.015\), \(\tau_1=1.6\) and \(\tau_2=6.5\). The short rate is 1.5%, the asymptotic rate is 3.5%, and the medium-horizon shape reflects two curvature scales. Evaluate zeros and analytical forwards before exponentiating integrated rates to obtain discounts.</p>
+{{table:curve}}
+<p>The two-year forward exceeds the two-year zero because the zero curve is rising there. At ten years, the forward is below the zero because the zero curve is locally falling. These are local-average relationships from \(f=z+Tz'\), rather than independent rate assumptions. The continuous zero and nominal par rates in the table retain their stated conventions.</p>
+<h3>Study B: a five-year coupon bond</h3>
+<p>Face value is 100, annual coupon 4%, frequency two, maturity five years. Coupons of 2 occur every half year, with 100 principal added to the final coupon. Discounting these ten payments gives:</p>
+{{table:cashflows}}
+<p>The total is 103.660106. Since the coupon exceeds the relevant par coupon, price is above 100. Solving the nominal semiannual YTM equation gives 3.201986%. The terminal zero is 3.191752% continuous, while the five-year semiannual par coupon is 3.204782%. These numbers should not be equated without both structural and compounding distinctions.</p>
+<p>Approximately 83.88% of present value comes from the final combined coupon and principal. Earlier coupons reduce weighted payment time below maturity, giving continuous-zero duration 4.588041 rather than five. Convexity is 22.201609 rather than the zero-coupon value of 25.</p>
+<h3>Study C: a +100 bp parallel zero shock</h3>
+<p>Shift every continuous zero by 0.01, so each discount is multiplied by \(e^{-0.01t}\). The selected coupon and principal amounts remain fixed. This produces the following comparison:</p>
+{{table:shock}}
+<p>The quadratic approximation misses exact price by about 0.001863 per face 100. Duration alone understates the shocked price because positive convexity bends price upward relative to its tangent. Both are local approximations, and neither changes the bond's contractual payments.</p>
+<h3>Study D: fitting noisy synthetic zero observations</h3>
+<p>At the sixteen specified maturities, generate observations using the following rule, indexing \(i\) from zero:</p>
+\[ y_i=z_{\mathrm{ref}}(T_i)+0.00012\sin(7i)+0.00004\cos(3i). \]
+<p>Withhold indices whose remainder modulo five is two. Thus 0.75, 4 and 15 years are not used in either fit.</p>
+<p>The fitted Svensson decay times are approximately 1.462960 and 7.706554 years, rather than the generating 1.6 and 6.5. The fitting procedure targets the perturbed quotes, so exact recovery of generating parameters is not the objective. The withheld error remains below one basis point in this example.</p>
+<p>Nelson–Siegel cannot reproduce the same second-curvature feature as closely. Its fitted long level is approximately 3.153683%, compared with Svensson's 3.510110%. Both can look plausible over observed maturities while implying different far-horizon limits. This connects fit flexibility directly to extrapolation and long-liability valuation.</p>
+<h3>Study E: negative short rates</h3>
+<p>Select Nelson–Siegel coefficients \(\beta_0=0.005\), \(\beta_1=-0.020\), \(\beta_2=0.008\), with \(\tau=2\). The short-rate limit is −1.5%, while the long limit is 0.5%. Discounts initially rise above one and eventually decline as positive accumulated rates dominate. The representation remains positive everywhere; its economic use requires a framework allowing negative rates.</p>
+<p>The purpose of this example is to test the distinction between discount positivity and discount monotonicity. A diagnostic should identify negative forwards and the relevant assumption, rather than automatically replace them with zero and silently alter the fitted curve.</p>
+</section>
+
+<section id="mathematical-appendix" data-title="Mathematical appendix and reference implementation">
+<div class="section-kicker">28 / Mathematical appendix</div><h2>Mathematical appendix and reference implementation</h2>
+<h3>Integrating the Nelson–Siegel forward basis</h3>
+<p>For \(x=T/\tau\), the first exponential term integrates to \(\tau(1-e^{-x})\). The curvature-forward term integrates to \(\tau[1-(1+x)e^{-x}]\). Dividing by \(T\) gives the zero loadings:</p>
+\[ \frac1T\int_0^T e^{-u/\tau}\,du=A(x),\qquad
+\frac1T\int_0^T\frac{u}{\tau}e^{-u/\tau}\,du
+=\frac{1-(1+x)e^{-x}}x=B(x). \]
+<p>The second curvature term in Svensson integrates identically at its own time scale. This derivation verifies the analytical forward formula; forwards should not be fitted separately in a way that breaks the integration identity.</p>
+<h3>Small-argument expansions</h3>
+\[ A(x)=1-\frac{x}{2}+\frac{x^2}{6}-\frac{x^3}{24}
++\frac{x^4}{120}+O(x^5),\qquad
+B(x)=\frac{x}{2}-\frac{x^2}{3}+\frac{x^3}{8}
+-\frac{x^4}{30}+O(x^5). \]
+<p>Use these expansions near zero and an exponential-minus-one function elsewhere. The origin then evaluates to the analytical short limit. Switching thresholds can be checked by comparing both expressions near the switch, rather than assuming a threshold supplies continuity automatically.</p>
+<h3>Loading derivatives</h3>
+\[ A'(x)=\frac{(x+1)e^{-x}-1}{x^2},\qquad
+B'(x)=A'(x)+e^{-x}. \]
+<p>The zero curvature maximum solves \(e^x=x^2+x+1\), excluding the zero boundary, giving \(x\approx1.793282\). The forward curvature derivative is \(e^{-x}(1-x)\), so its maximum is at one. These loading maxima do not generally locate the maximum of the full zero or forward curve.</p>
+<h3>Parameter derivatives and price Jacobians</h3>
+<p>For fixed decay times, \(\partial z/\partial\beta_k\) is the corresponding loading. Since \(x=T/\tau\), \(\partial x/\partial\tau=-T/\tau^2\). For the first Svensson decay:</p>
+\[ \frac{\partial z}{\partial\tau_1}
+=-\frac{T}{\tau_1^2}
+\left[\beta_1A'(x_1)+\beta_2B'(x_1)\right],\qquad
+\frac{\partial z}{\partial\tau_2}
+=-\frac{T}{\tau_2^2}\beta_3B'(x_2). \]
+\[ \frac{\partial P}{\partial p_k}
+=-\sum_i t_iC_iD(t_i)\frac{\partial z(t_i)}{\partial p_k}. \]
+<p>These derivatives support efficient price-space calibration and parameter-risk reports. Near the origin, use series for the loading derivatives as well to avoid cancellation. A numerical check should perturb each parameter in its own units, especially when mixing rate coefficients and decay times.</p>
+<h3>A compact Python reference</h3>
+<p>The implementation below reproduces the curve and the reference bond. It uses decimals and exact-year schedules. It is intentionally separate from the browser implementation, providing a simple formula reference rather than a full market-calendar library.</p>
+<pre><code>import numpy as np
+from scipy.optimize import brentq
+
+def basis(T, tau):
+    x = np.asarray(T, dtype=float) / tau
+    small = np.abs(x) &lt; 1e-5
+    safe = np.where(small, 1.0, x)
+    A = -np.expm1(-x) / safe
+    A = np.where(small, 1-x/2+x*x/6-x**3/24+x**4/120, A)
+    return A, A - np.exp(-x)
+
+def nss(T, p):
+    b0, b1, b2, b3, tau1, tau2 = p
+    T = np.asarray(T, dtype=float)
+    A1, B1 = basis(T, tau1)
+    _, B2 = basis(T, tau2)
+    x1, x2 = T/tau1, T/tau2
+    z = b0 + b1*A1 + b2*B1 + b3*B2
+    f = (b0 + b1*np.exp(-x1) + b2*x1*np.exp(-x1)
+         + b3*x2*np.exp(-x2))
+    return z, f, np.exp(-T*z)
+
+p = [0.035, -0.020, 0.025, -0.015, 1.6, 6.5]
+t = np.arange(1, 11) / 2
+cf = np.full(10, 2.0)
+cf[-1] += 100.0
+pv = cf * nss(t, p)[2]
+price = pv.sum()
+duration = (t*pv).sum() / price
+convexity = (t*t*pv).sum() / price
+ytm = brentq(
+    lambda y: np.sum(cf/(1+y/2)**np.arange(1, 11)) - price,
+    -1.8, 2.0
+)
+print(price, ytm, duration, convexity)
+# 103.66010585  0.03201986  4.58804082  22.20160889</code></pre>
+<h3>Conditional least-squares reference</h3>
+<p>At a candidate pair of decay times, form columns \(1,A(T/\tau_1),B(T/\tau_1),B(T/\tau_2)\) and call <code>numpy.linalg.lstsq</code>. The residual is the design prediction minus observed zeros. Search over positive decay times using multiple starts, and assess rank and conditioning before interpreting coefficients.</p>
+<p>If bounds on coefficients are essential, solve a bounded linear subproblem at each decay candidate rather than rejecting an unconstrained solution and declaring the result an exact constrained optimum. The browser's rejection method is clearly labelled; a production implementation can replace it with a suitable constrained solver.</p>
+</section>
+
+<section id="exercises" data-title="Exercises and worked solutions">
+<div class="section-kicker">29 / Exercises</div><h2>Exercises and worked solutions</h2>
+<p>Work in decimals unless a question requests a displayed percentage. Specify the rate and payment convention before calculating. Solutions are expandable and can also be included when printing the notes.</p>
+<details><summary>Exercise 1 — Recover a zero rate from a price</summary><p>A default-free zero pays 100 in ten years and costs 85. Find its discount factor, continuous zero and effective annual yield.</p><p><strong>Solution.</strong> The discount is 0.85. The continuous zero is \(-\ln(0.85)/10\approx0.016251893\), or 1.625189%. The effective annual yield is \(e^{0.016251893}-1\approx1.638467\%\). Both reproduce price 85; using the same numerical rate under both conventions would not.</p></details>
+<details><summary>Exercise 2 — Convert nominal compounding</summary><p>A nominal semiannual zero rate is 4%. What is the continuous equivalent and the five-year discount?</p><p><strong>Solution.</strong> \(z=2\ln(1.02)\approx0.039605255\), or 3.960525%. The discount is \(1.02^{-10}\approx0.820348300\). Applying 4% continuous compounding would give \(e^{-0.2}\approx0.818730753\), which is a different price.</p></details>
+<details><summary>Exercise 3 — Compute a simple forward</summary><p>Discounts at 0.5 and one year are 0.99 and 0.97. With an accrual fraction of 0.5, find the simple forward and continuous interval forward.</p><p><strong>Solution.</strong> The simple forward is \((0.99/0.97-1)/0.5\approx4.123711\%\). The continuous forward is \(2\ln(0.99/0.97)\approx4.081774\%\). Their equivalent accumulation factors over the interval agree.</p></details>
+<details><summary>Exercise 4 — Derive a two-year par coupon</summary><p>Annual coupon dates have discounts 0.98 and 0.95. What annual coupon rate makes a two-year bond worth 100?</p><p><strong>Solution.</strong> \(c=\frac{1-0.95}{0.98+0.95}=0.025906736\), or 2.590674%. Coupons are 2.590674 per face 100. Their present value plus discounted principal is 100. The terminal continuous zero is \(-\ln(0.95)/2\), a different quantity.</p></details>
+<details><summary>Exercise 5 — Bootstrap an annual par node</summary><p>The one-year annual par quote is 2% and the two-year annual par quote is 2.5%. Express the recovered one- and two-year discounts.</p><p><strong>Solution.</strong> \(D(1)=1/1.02\). Then \(D(2)=[1-0.025D(1)]/1.025\). Reinsert both discounts into \(1=0.025[D(1)+D(2)]+D(2)\). The second quotation identifies the terminal discount only after the earlier coupon discount has been supplied.</p></details>
+<details><summary>Exercise 6 — Interpret Nelson–Siegel endpoints</summary><p>Let level be 3%, slope −1% and curvature 2%, with any positive finite decay time. What are the short and long limits?</p><p><strong>Solution.</strong> Both zero and forward short limits are \(3\%-1\%=2\%\). Both long limits are 3%. The curvature factor vanishes at the endpoints, so changing it affects intermediate maturities while preserving these limits. The shape in between also depends on decay time.</p></details>
+<details><summary>Exercise 7 — Recover the marginal forward</summary><p>At five years, the zero is 3% and its slope is 0.001 per additional year. Find the instantaneous forward.</p><p><strong>Solution.</strong> \(f=z+Tz'=0.03+5(0.001)=0.035\), or 3.5%. The derivative's units are rate per year. The forward exceeds the zero because the marginal addition to integrated rates is above the prior average.</p></details>
+<details><summary>Exercise 8 — Identify a log-linear forward segment</summary><p>Continuous zeros are 2% at two years and 3% at three years. Interpolate log discounts between those dates. What is the instantaneous forward inside the segment?</p><p><strong>Solution.</strong> Integrated rates are 0.04 and 0.09. Their linear slope is \((0.09-0.04)/(3-2)=0.05\), so the segment forward is 5%. Interpolating the zeros themselves would produce a different forward function despite matching the same endpoints.</p></details>
+<details><summary>Exercise 9 — Diagnose redundant Svensson factors</summary><p>Why is a Svensson fit with equal decay times unable to identify both curvature coefficients separately?</p><p><strong>Solution.</strong> The two curvature loading columns coincide. Replacing \(\beta_2\) by \(\beta_2+a\) and \(\beta_3\) by \(\beta_3-a\) leaves the curve unchanged. Only their sum is identified. A rank-aware solver should detect the redundancy rather than report two uniquely estimated factors.</p></details>
+<details><summary>Exercise 10 — Price and risk of a zero bond</summary><p>A seven-year zero is worth 80. Under a parallel continuous-zero shift, find duration, convexity and linear DV01.</p><p><strong>Solution.</strong> Duration is seven years and convexity is 49 years². Linear DV01 is \(80\times7\times0.0001=0.056\). Exact +1 bp loss is \(80[1-e^{-0.0007}]\), slightly below 0.056 because of positive convexity.</p></details>
+<details><summary>Exercise 11 — Apply duration and convexity</summary><p>A bond costs 105, has continuous-zero duration seven and convexity 55. Estimate price after a +50 bp parallel shift.</p><p><strong>Solution.</strong> Set \(s=0.005\). The approximation is \(105[1-7s+55s^2/2]=101.3971875\). Duration alone gives 101.325. The convexity correction is positive. The inputs must be derivatives of the same shift used in the scenario.</p></details>
+<details><summary>Exercise 12 — Audit key-rate coverage</summary><p>Four reported key-rate durations sum to 5.8 years, while parallel duration is 6.1. Give two possible explanations.</p><p><strong>Solution.</strong> The bump functions may not form a partition of unity over all cash flows, for example because endpoint hats are missing. Alternatively, the report may mix parameter or market-quote recalibration risks with direct zero-curve bumps. Compare definitions before assuming the difference is a numerical error.</p></details>
+<details><summary>Exercise 13 — Separate fitting from validation</summary><p>A model has 0.2 bp training RMSE and 4 bp withheld RMSE. Does the training fit establish a reliable curve? What should be investigated?</p><p><strong>Solution.</strong> No. Inspect maturity-specific residuals, observation noise, parameter conditioning, sparse regions and model flexibility. Check whether withheld data were inadvertently used in model selection. A small training residual can arise from overfitting, while the desired outputs may be especially sensitive in the poorly validated region.</p></details>
+<details><summary>Exercise 14 — Interpret an implied policy path</summary><p>A forward curve rises from 2% to 4%. Explain why this is insufficient to conclude that the market's physical expected short rate follows exactly that path.</p><p><strong>Solution.</strong> Forward rates are pricing coordinates. Their expectation interpretation depends on the probability measure, risk premia, payoff and curve family. Sovereign credit or liquidity effects may also enter. The curve can supply a precise discount ratio without uniquely identifying a real-world policy forecast.</p></details>
+</section>
+
+<section id="references" data-title="References and further reading">
+<div class="section-kicker">30 / References</div><h2>References and further reading</h2>
+<p>Primary research and institutional methodology underpin the model definitions and context. The explanations, synthetic dataset, numerical studies, figures and offline implementation on this page are developed for these notes. Source conventions should be checked before using institutional curve data.</p>
+<ol class="references">
+<li>Nelson, C. R. and Siegel, A. F. (1987). <em>Parsimonious Modeling of Yield Curves.</em> Journal of Business, 60(4), 473–489. <a href="https://doi.org/10.1086/296409">Published paper</a>; <a href="https://www.nber.org/papers/w1594">1985 NBER working-paper precursor</a>.<p>The three-factor exponential-loading representation and parsimonious estimation.</p></li>
+<li>Svensson, L. E. O. (1994). <em>Estimating and Interpreting Forward Interest Rates: Sweden 1992–1994.</em> NBER Working Paper 4871. <a href="https://www.nber.org/papers/w4871">Author working paper</a>.<p>The second curvature factor and interpretation of implied forward curves.</p></li>
+<li>Bank for International Settlements (2005). <em>Zero-Coupon Yield Curves: Technical Documentation.</em> BIS Papers No. 25. <a href="https://www.bis.org/publ/bppdf/bispap25.pdf">Technical documentation</a>.<p>A comparison of central-bank curve-construction approaches and conventions.</p></li>
+<li>Gürkaynak, R. S., Sack, B. and Wright, J. H. (2006). <em>The U.S. Treasury Yield Curve: 1961 to the Present.</em> FEDS 2006-28. <a href="https://www.federalreserve.gov/pubs/feds/2006/200628/index.html">Federal Reserve research paper</a>.<p>Smooth Treasury-curve estimation, instrument selection and empirical construction.</p></li>
+<li>Hagan, P. S. and West, G. (2006). <em>Interpolation Methods for Curve Construction.</em> Applied Mathematical Finance, 13(2), 89–129. <a href="https://bank.uni-hohenheim.de/uploads/media/Hagan_and_West__2006__-_Interpolation_Methods_for_Curve_Construction.pdf">Research paper</a>.<p>Interpolation properties, forward behavior and their interaction with bootstrapping.</p></li>
+<li>Diebold, F. X. and Li, C. (2003). <em>Forecasting the Term Structure of Government Bond Yields.</em> NBER Working Paper 10048. <a href="https://www.nber.org/papers/w10048">Working paper</a>; published in Journal of Econometrics, 130(2), 337–364 (2006).<p>Time-varying Nelson–Siegel factors and term-structure forecasting.</p></li>
+<li>Christensen, J. H. E., Diebold, F. X. and Rudebusch, G. D. (2010 revision). <em>The Affine Arbitrage-Free Class of Nelson–Siegel Term Structure Models.</em> Federal Reserve Bank of San Francisco Working Paper 2007-20. <a href="https://www.frbsf.org/wp-content/uploads/wp07-20bk.pdf">Author working paper</a>.<p>Affine no-arbitrage restrictions and Nelson–Siegel-like term structures.</p></li>
+<li>Heath, D., Jarrow, R. and Morton, A. (1992). <em>Bond Pricing and the Term Structure of Interest Rates: A New Methodology for Contingent Claims Valuation.</em> Econometrica, 60(1), 77–105. <a href="https://www.jstor.org/stable/2951677">Published paper</a>; <a href="https://ecommons.cornell.edu/entities/publication/681ba7c9-1a9d-465a-9a4b-fe5c2a9123b7">Cornell technical-report precursor</a>.<p>The connection between forward volatility and pricing-measure drift.</p></li>
+<li>Bianchetti, M. (2009; revised 2010). <em>Two Curves, One Price: Pricing &amp; Hedging Interest Rate Derivatives Decoupling Forwarding and Discounting Yield Curves.</em> <a href="https://arxiv.org/abs/0905.2770">Author preprint</a>.<p>Distinct discount and forecasting roles, tenor basis and multicurve valuation.</p></li>
+<li>European Central Bank. <em>Euro Area Yield Curves: General Description of Methodology.</em> <a href="https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/euro_area_yield_curves/html/index.en.html">Official methodology</a>.<p>Definitions, instrument universe and the Svensson approach for published government curves.</p></li>
+<li>Bank of England. <em>Yield Curves.</em> <a href="https://www.bankofengland.co.uk/statistics/yield-curves">Official data and methodology</a>.<p>Published curve families, continuous compounding, forward interpretation and practical conventions.</p></li>
+</ol>
+<h3>A reading path</h3>
+<p>Start with the discount, compounding and forward identities, then reproduce the bootstrap and reference bond. Read Nelson–Siegel and Svensson alongside the calibration audit. Study interpolation before evaluating market hedges, and move to dynamic factor or HJM research only after distinguishing cross-sectional fit from time evolution.</p>
+<p>For further implementation, extend the payment engine with real schedules and calibrate to quoted instrument prices. For a research project, compare model stability across dates and withheld maturities. For interest-rate options, add a dynamic pricing framework and volatility calibration rather than assuming the initial yield curve determines option values.</p>
+<div class="end-links"><a href="implied-volatility-surface.html">← Quant Basics 06 · Implied Volatility Surface</a><a href="../index.html#quant-basics">Return to Quant Basics ↗</a><a href="#introduction">Back to the introduction ↑</a></div>
+</section>

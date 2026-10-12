@@ -1,0 +1,412 @@
+<svg role="img" aria-labelledby="risk-title risk-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="risk-title">Figure 13 · Component risk differs from capital weights</title><desc id="risk-desc">Remaining capital is split equally between B and C. Variance contributions wi(Σw)i sum to total variance; dividing by total variance gives the displayed shares. These shares are also the normalised Euler volatility contributions.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T17:14:59.565438</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="risk-figure_1">
+  <g id="risk-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="risk-axes_1">
+   <g id="risk-patch_2">
+    <path d="M 59.78 208.78 
+L 648.9 208.78 
+L 648.9 13.5 
+L 59.78 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="risk-matplotlib.axis_1">
+    <g id="risk-xtick_1">
+     <g id="risk-line2d_1">
+      <path d="M 86.558182 208.78 
+L 86.558182 13.5 
+" clip-path="url(#risk-p150109a836)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="risk-line2d_2">
+      <defs>
+       <path id="risk-m99c42d9c88" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#risk-m99c42d9c88" x="86.558182" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="risk-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="86.558182" y="222.618594" transform="rotate(-0 86.558182 222.618594)">0%</text>
+     </g>
+    </g>
+    <g id="risk-xtick_2">
+     <g id="risk-line2d_3">
+      <path d="M 193.670909 208.78 
+L 193.670909 13.5 
+" clip-path="url(#risk-p150109a836)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="risk-line2d_4">
+      <g>
+       <use href="#risk-m99c42d9c88" x="193.670909" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="risk-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="193.670909" y="222.618594" transform="rotate(-0 193.670909 222.618594)">20%</text>
+     </g>
+    </g>
+    <g id="risk-xtick_3">
+     <g id="risk-line2d_5">
+      <path d="M 300.783636 208.78 
+L 300.783636 13.5 
+" clip-path="url(#risk-p150109a836)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="risk-line2d_6">
+      <g>
+       <use href="#risk-m99c42d9c88" x="300.783636" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="risk-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="300.783636" y="222.618594" transform="rotate(-0 300.783636 222.618594)">40%</text>
+     </g>
+    </g>
+    <g id="risk-xtick_4">
+     <g id="risk-line2d_7">
+      <path d="M 407.896364 208.78 
+L 407.896364 13.5 
+" clip-path="url(#risk-p150109a836)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="risk-line2d_8">
+      <g>
+       <use href="#risk-m99c42d9c88" x="407.896364" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="risk-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="407.896364" y="222.618594" transform="rotate(-0 407.896364 222.618594)">60%</text>
+     </g>
+    </g>
+    <g id="risk-xtick_5">
+     <g id="risk-line2d_9">
+      <path d="M 515.009091 208.78 
+L 515.009091 13.5 
+" clip-path="url(#risk-p150109a836)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="risk-line2d_10">
+      <g>
+       <use href="#risk-m99c42d9c88" x="515.009091" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="risk-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="515.009091" y="222.618594" transform="rotate(-0 515.009091 222.618594)">80%</text>
+     </g>
+    </g>
+    <g id="risk-xtick_6">
+     <g id="risk-line2d_11">
+      <path d="M 622.121818 208.78 
+L 622.121818 13.5 
+" clip-path="url(#risk-p150109a836)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="risk-line2d_12">
+      <g>
+       <use href="#risk-m99c42d9c88" x="622.121818" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="risk-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="622.121818" y="222.618594" transform="rotate(-0 622.121818 222.618594)">100%</text>
+     </g>
+    </g>
+    <g id="risk-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="354.34" y="235.328906" transform="rotate(-0 354.34 235.328906)">Capital weight in asset A</text>
+    </g>
+   </g>
+   <g id="risk-matplotlib.axis_2">
+    <g id="risk-ytick_1">
+     <g id="risk-line2d_13">
+      <path d="M 59.78 199.903636 
+L 648.9 199.903636 
+" clip-path="url(#risk-p150109a836)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="risk-line2d_14">
+      <defs>
+       <path id="risk-m5c53daf991" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#risk-m5c53daf991" x="59.78" y="199.903636" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="risk-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="203.322933" transform="rotate(-0 52.78 203.322933)">0%</text>
+     </g>
+    </g>
+    <g id="risk-ytick_2">
+     <g id="risk-line2d_15">
+      <path d="M 59.78 164.398182 
+L 648.9 164.398182 
+" clip-path="url(#risk-p150109a836)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="risk-line2d_16">
+      <g>
+       <use href="#risk-m5c53daf991" x="59.78" y="164.398182" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="risk-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="167.817479" transform="rotate(-0 52.78 167.817479)">20%</text>
+     </g>
+    </g>
+    <g id="risk-ytick_3">
+     <g id="risk-line2d_17">
+      <path d="M 59.78 128.892727 
+L 648.9 128.892727 
+" clip-path="url(#risk-p150109a836)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="risk-line2d_18">
+      <g>
+       <use href="#risk-m5c53daf991" x="59.78" y="128.892727" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="risk-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="132.312024" transform="rotate(-0 52.78 132.312024)">40%</text>
+     </g>
+    </g>
+    <g id="risk-ytick_4">
+     <g id="risk-line2d_19">
+      <path d="M 59.78 93.387273 
+L 648.9 93.387273 
+" clip-path="url(#risk-p150109a836)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="risk-line2d_20">
+      <g>
+       <use href="#risk-m5c53daf991" x="59.78" y="93.387273" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="risk-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="96.80657" transform="rotate(-0 52.78 96.80657)">60%</text>
+     </g>
+    </g>
+    <g id="risk-ytick_5">
+     <g id="risk-line2d_21">
+      <path d="M 59.78 57.881818 
+L 648.9 57.881818 
+" clip-path="url(#risk-p150109a836)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="risk-line2d_22">
+      <g>
+       <use href="#risk-m5c53daf991" x="59.78" y="57.881818" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="risk-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="61.301115" transform="rotate(-0 52.78 61.301115)">80%</text>
+     </g>
+    </g>
+    <g id="risk-ytick_6">
+     <g id="risk-line2d_23">
+      <path d="M 59.78 22.376364 
+L 648.9 22.376364 
+" clip-path="url(#risk-p150109a836)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="risk-line2d_24">
+      <g>
+       <use href="#risk-m5c53daf991" x="59.78" y="22.376364" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="risk-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="25.795661" transform="rotate(-0 52.78 25.795661)">100%</text>
+     </g>
+    </g>
+    <g id="risk-text_14">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.178125" y="111.14" transform="rotate(-90 21.178125 111.14)">Share of portfolio variance</text>
+    </g>
+   </g>
+   <g id="risk-line2d_25">
+    <path d="M 86.558182 199.903636 
+L 107.316462 199.202627 
+L 128.074743 198.280223 
+L 144.681367 197.354223 
+L 161.287992 196.233544 
+L 177.894616 194.889039 
+L 194.50124 193.287643 
+L 206.956209 191.895738 
+L 219.411177 190.32106 
+L 231.866145 188.544778 
+L 244.321113 186.546619 
+L 256.776082 184.304926 
+L 269.23105 181.796783 
+L 281.686018 178.998232 
+L 294.140987 175.884604 
+L 302.444299 173.621499 
+L 310.747611 171.19997 
+L 319.050923 168.612886 
+L 327.354235 165.853429 
+L 335.657548 162.915239 
+L 343.96086 159.792581 
+L 352.264172 156.48054 
+L 360.567484 152.975233 
+L 368.870796 149.274049 
+L 377.174109 145.375895 
+L 385.477421 141.281468 
+L 393.780733 136.993527 
+L 402.084045 132.517169 
+L 410.387357 127.860089 
+L 422.842326 120.559487 
+L 435.297294 112.925217 
+L 447.752262 105.022131 
+L 464.358887 94.209233 
+L 493.420479 75.214414 
+L 505.875447 67.350246 
+L 514.17876 62.291025 
+L 522.482072 57.420357 
+L 530.785384 52.772029 
+L 539.088696 48.377237 
+L 547.392008 44.263892 
+L 555.695321 40.456034 
+L 563.998633 36.973375 
+L 572.301945 33.830991 
+L 580.605257 31.039176 
+L 588.908569 28.603445 
+L 597.211882 26.524687 
+L 605.515194 24.799446 
+L 613.818506 23.420308 
+L 622.121818 22.376364 
+L 622.121818 22.376364 
+" clip-path="url(#risk-p150109a836)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="risk-line2d_26">
+    <path d="M 86.558182 139.091309 
+L 123.923087 139.324588 
+L 157.136335 139.742984 
+L 186.197928 140.329874 
+L 211.107865 141.045421 
+L 236.017801 142.007281 
+L 256.776082 143.037712 
+L 277.534362 144.316103 
+L 294.140987 145.544999 
+L 310.747611 146.981251 
+L 327.354235 148.647295 
+L 343.96086 150.564521 
+L 360.567484 152.751599 
+L 377.174109 155.222273 
+L 393.780733 157.982667 
+L 410.387357 161.0282 
+L 426.993982 164.340438 
+L 443.600606 167.884331 
+L 464.358887 172.556866 
+L 518.330416 184.873194 
+L 534.93704 188.331361 
+L 547.392008 190.717256 
+L 559.846977 192.888368 
+L 572.301945 194.819081 
+L 584.756913 196.491647 
+L 597.211882 197.896501 
+L 609.66685 199.031993 
+L 622.121818 199.903636 
+L 622.121818 199.903636 
+" clip-path="url(#risk-p150109a836)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="risk-line2d_27">
+    <path d="M 86.558182 83.188691 
+L 111.468118 83.923749 
+L 136.378055 84.889248 
+L 157.136335 85.907158 
+L 177.894616 87.157025 
+L 194.50124 88.351838 
+L 211.107865 89.746162 
+L 227.714489 91.367169 
+L 244.321113 93.24482 
+L 256.776082 94.840999 
+L 269.23105 96.614434 
+L 281.686018 98.580287 
+L 294.140987 100.754034 
+L 306.595955 103.151134 
+L 319.050923 105.78658 
+L 331.505891 108.674323 
+L 343.96086 111.826534 
+L 356.415828 115.252725 
+L 368.870796 118.958697 
+L 381.325765 122.94536 
+L 393.780733 127.207443 
+L 406.235701 131.732179 
+L 418.690669 136.498059 
+L 431.145638 141.473792 
+L 447.752262 148.36085 
+L 501.723791 171.060812 
+L 514.17876 175.924009 
+L 526.633728 180.479973 
+L 534.93704 183.311164 
+L 543.240352 185.955508 
+L 551.543665 188.396953 
+L 559.846977 190.622268 
+L 568.150289 192.62126 
+L 576.453601 194.386903 
+L 584.756913 195.91535 
+L 593.060226 197.205853 
+L 601.363538 198.260591 
+L 609.66685 199.084424 
+L 617.970162 199.684594 
+L 622.121818 199.903636 
+L 622.121818 199.903636 
+" clip-path="url(#risk-p150109a836)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="risk-patch_3">
+    <path d="M 59.78 208.78 
+L 59.78 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="risk-patch_4">
+    <path d="M 59.78 208.78 
+L 648.9 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="risk-legend_1">
+    <g id="risk-line2d_28">
+     <path d="M 66.98 23.97875 
+L 74.98 23.97875 
+L 82.98 23.97875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="risk-text_15">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="89.38" y="26.77875" transform="rotate(-0 89.38 26.77875)">Asset A</text>
+    </g>
+    <g id="risk-line2d_29">
+     <path d="M 66.98 35.72125 
+L 74.98 35.72125 
+L 82.98 35.72125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="risk-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="89.38" y="38.52125" transform="rotate(-0 89.38 38.52125)">Asset B</text>
+    </g>
+    <g id="risk-line2d_30">
+     <path d="M 66.98 47.46375 
+L 74.98 47.46375 
+L 82.98 47.46375 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="risk-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="89.38" y="50.26375" transform="rotate(-0 89.38 50.26375)">Asset C</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="risk-p150109a836">
+   <rect x="59.78" y="13.5" width="589.12" height="195.28"/>
+  </clipPath>
+ </defs>
+</svg>

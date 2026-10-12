@@ -1,0 +1,29 @@
+<div class="notebook" id="frontier-notebook">
+<div class="notebook-head"><strong>Mean–variance portfolio laboratory</strong><span>Three assets / annual simple-return moments</span></div>
+<form id="portfolio-form">
+<fieldset class="asset-inputs"><legend>Asset A</legend><div class="field"><label for="input-mu-a">Expected return (%)</label><input id="input-mu-a" name="mu-a" type="number" value="6" min="-99.99" step="any" required></div><div class="field"><label for="input-vol-a">Volatility (%)</label><input id="input-vol-a" name="vol-a" type="number" value="10" min="0.001" step="any" required></div></fieldset>
+<fieldset class="asset-inputs"><legend>Asset B</legend><div class="field"><label for="input-mu-b">Expected return (%)</label><input id="input-mu-b" name="mu-b" type="number" value="10" min="-99.99" step="any" required></div><div class="field"><label for="input-vol-b">Volatility (%)</label><input id="input-vol-b" name="vol-b" type="number" value="18" min="0.001" step="any" required></div></fieldset>
+<fieldset class="asset-inputs"><legend>Asset C</legend><div class="field"><label for="input-mu-c">Expected return (%)</label><input id="input-mu-c" name="mu-c" type="number" value="14" min="-99.99" step="any" required></div><div class="field"><label for="input-vol-c">Volatility (%)</label><input id="input-vol-c" name="vol-c" type="number" value="28" min="0.001" step="any" required></div></fieldset>
+<div class="field"><label for="input-rho-ab">Correlation A–B</label><input id="input-rho-ab" name="rho-ab" type="number" value="0.2" min="-0.999" max="0.999" step="any" required></div>
+<div class="field"><label for="input-rho-ac">Correlation A–C</label><input id="input-rho-ac" name="rho-ac" type="number" value="0.1" min="-0.999" max="0.999" step="any" required></div>
+<div class="field"><label for="input-rho-bc">Correlation B–C</label><input id="input-rho-bc" name="rho-bc" type="number" value="0.35" min="-0.999" max="0.999" step="any" required></div>
+<div class="field"><label for="input-target">Exact target return (%)</label><input id="input-target" name="target" type="number" value="10" step="any" required></div>
+<div class="field"><label for="input-rf">Risk-free simple return (%)</label><input id="input-rf" name="rf" type="number" value="2" min="-99.99" step="any" required></div>
+<div class="field"><label for="input-gamma">Risk aversion γ</label><input id="input-gamma" name="gamma" type="number" value="4" min="0.001" step="any" required></div>
+<div class="field field-mode"><label for="input-mode">Investment constraints</label><select id="input-mode" name="mode"><option value="unrestricted">Unrestricted shorts · net budget 100%</option><option value="longonly">Long-only · weights from 0% to 100%</option></select></div>
+<div class="notebook-action"><button id="calculate" type="submit">Compute portfolios</button><button id="reset-inputs" type="button">Reset benchmark</button><p>Inputs define a model opportunity set. No price data or return forecasts are fetched.</p></div>
+</form>
+<p id="calc-error" class="calc-error" role="alert"></p>
+<div class="notebook-results" aria-label="Portfolio results">
+<div class="result"><small>GMV expected return</small><strong id="result-gmv-mean">—</strong></div><div class="result"><small>GMV volatility</small><strong id="result-gmv-vol">—</strong></div>
+<div class="result"><small>Target expected return</small><strong id="result-target-mean">—</strong></div><div class="result"><small>Target volatility</small><strong id="result-target-vol">—</strong></div>
+<div class="result"><small>Tangency expected return</small><strong id="result-tan-mean">—</strong></div><div class="result"><small>Tangency volatility</small><strong id="result-tan-vol">—</strong></div>
+<div class="result"><small>Tangency Sharpe ratio</small><strong id="result-sharpe">—</strong></div><div class="result"><small>Target gross exposure</small><strong id="result-gross">—</strong></div>
+</div>
+<div class="notebook-legend"><span><i class="key-efficient"></i>Efficient branch</span><span><i class="key-lower"></i>Lower boundary</span><span><i class="key-cash"></i>Capital allocation line</span></div>
+<div class="notebook-plot" id="live-plot"></div>
+<div class="lab-weights table-wrap"><table><caption>Risky-asset weights · target variance shares in the final column</caption><thead><tr><th scope="col">Asset</th><th scope="col" class="num">GMV weight</th><th scope="col" class="num">Target weight</th><th scope="col" class="num">Tangency weight</th><th scope="col" class="num">Target risk share</th></tr></thead><tbody id="lab-weights"></tbody></table></div>
+<div class="metric-grid"><div class="greek-result"><span>Chosen-fund risky allocation at γ</span><output id="result-risky">—</output></div><div class="greek-result"><span>Corresponding cash allocation</span><output id="result-cash">—</output></div><div class="greek-result"><span>Exact-target classification</span><output id="result-classification">—</output></div></div>
+<p class="notebook-note" id="notebook-note" role="status"></p>
+<noscript><p>Enable JavaScript to use the laboratory. All notes, equations, computed figures and worked tables remain available without it.</p></noscript>
+</div>

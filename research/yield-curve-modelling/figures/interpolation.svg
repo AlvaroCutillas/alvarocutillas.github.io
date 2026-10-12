@@ -1,0 +1,741 @@
+<svg role="img" aria-labelledby="interpolation-title interpolation-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="273.6pt" viewBox="0 0 792 273.6" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="interpolation-title">Figure 06 · Interpolation is a modelling decision</title><desc id="interpolation-desc">Three interpolants pass through identical discount nodes. Forward jumps are sampled on a fine grid and connected for display; at a knot the one-sided derivative must be specified. The inspector interpolates the displayed samples, not an undefined derivative at the knot.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T20:19:12.750088</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="interpolation-figure_1">
+  <g id="interpolation-patch_1">
+   <path d="M 0 273.6 
+L 792 273.6 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="interpolation-axes_1">
+   <g id="interpolation-patch_2">
+    <path d="M 48.26 230.38 
+L 382.05 230.38 
+L 382.05 35.14 
+L 48.26 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="interpolation-matplotlib.axis_1">
+    <g id="interpolation-xtick_1">
+     <g id="interpolation-line2d_1">
+      <path d="M 63.331057 230.38 
+L 63.331057 35.14 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_2">
+      <defs>
+       <path id="interpolation-me511e5f89f" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#interpolation-me511e5f89f" x="63.331057" y="230.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="63.331057" y="244.218594" transform="rotate(-0 63.331057 244.218594)">0</text>
+     </g>
+    </g>
+    <g id="interpolation-xtick_2">
+     <g id="interpolation-line2d_3">
+      <path d="M 113.939038 230.38 
+L 113.939038 35.14 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_4">
+      <g>
+       <use href="#interpolation-me511e5f89f" x="113.939038" y="230.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="113.939038" y="244.218594" transform="rotate(-0 113.939038 244.218594)">5</text>
+     </g>
+    </g>
+    <g id="interpolation-xtick_3">
+     <g id="interpolation-line2d_5">
+      <path d="M 164.547019 230.38 
+L 164.547019 35.14 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_6">
+      <g>
+       <use href="#interpolation-me511e5f89f" x="164.547019" y="230.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="164.547019" y="244.218594" transform="rotate(-0 164.547019 244.218594)">10</text>
+     </g>
+    </g>
+    <g id="interpolation-xtick_4">
+     <g id="interpolation-line2d_7">
+      <path d="M 215.155 230.38 
+L 215.155 35.14 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_8">
+      <g>
+       <use href="#interpolation-me511e5f89f" x="215.155" y="230.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="215.155" y="244.218594" transform="rotate(-0 215.155 244.218594)">15</text>
+     </g>
+    </g>
+    <g id="interpolation-xtick_5">
+     <g id="interpolation-line2d_9">
+      <path d="M 265.762981 230.38 
+L 265.762981 35.14 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_10">
+      <g>
+       <use href="#interpolation-me511e5f89f" x="265.762981" y="230.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="265.762981" y="244.218594" transform="rotate(-0 265.762981 244.218594)">20</text>
+     </g>
+    </g>
+    <g id="interpolation-xtick_6">
+     <g id="interpolation-line2d_11">
+      <path d="M 316.370962 230.38 
+L 316.370962 35.14 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_12">
+      <g>
+       <use href="#interpolation-me511e5f89f" x="316.370962" y="230.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="316.370962" y="244.218594" transform="rotate(-0 316.370962 244.218594)">25</text>
+     </g>
+    </g>
+    <g id="interpolation-xtick_7">
+     <g id="interpolation-line2d_13">
+      <path d="M 366.978943 230.38 
+L 366.978943 35.14 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_14">
+      <g>
+       <use href="#interpolation-me511e5f89f" x="366.978943" y="230.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="366.978943" y="244.218594" transform="rotate(-0 366.978943 244.218594)">30</text>
+     </g>
+    </g>
+    <g id="interpolation-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="215.155" y="256.928906" transform="rotate(-0 215.155 256.928906)">Maturity (years)</text>
+    </g>
+   </g>
+   <g id="interpolation-matplotlib.axis_2">
+    <g id="interpolation-ytick_1">
+     <g id="interpolation-line2d_15">
+      <path d="M 48.26 215.989803 
+L 382.05 215.989803 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_16">
+      <defs>
+       <path id="interpolation-me610cd322e" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#interpolation-me610cd322e" x="48.26" y="215.989803" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="219.4091" transform="rotate(-0 41.26 219.4091)">0.4</text>
+     </g>
+    </g>
+    <g id="interpolation-ytick_2">
+     <g id="interpolation-line2d_17">
+      <path d="M 48.26 187.320041 
+L 382.05 187.320041 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_18">
+      <g>
+       <use href="#interpolation-me610cd322e" x="48.26" y="187.320041" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="190.739338" transform="rotate(-0 41.26 190.739338)">0.5</text>
+     </g>
+    </g>
+    <g id="interpolation-ytick_3">
+     <g id="interpolation-line2d_19">
+      <path d="M 48.26 158.650279 
+L 382.05 158.650279 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_20">
+      <g>
+       <use href="#interpolation-me610cd322e" x="48.26" y="158.650279" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="162.069576" transform="rotate(-0 41.26 162.069576)">0.6</text>
+     </g>
+    </g>
+    <g id="interpolation-ytick_4">
+     <g id="interpolation-line2d_21">
+      <path d="M 48.26 129.980517 
+L 382.05 129.980517 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_22">
+      <g>
+       <use href="#interpolation-me610cd322e" x="48.26" y="129.980517" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="133.399814" transform="rotate(-0 41.26 133.399814)">0.7</text>
+     </g>
+    </g>
+    <g id="interpolation-ytick_5">
+     <g id="interpolation-line2d_23">
+      <path d="M 48.26 101.310755 
+L 382.05 101.310755 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_24">
+      <g>
+       <use href="#interpolation-me610cd322e" x="48.26" y="101.310755" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="104.730052" transform="rotate(-0 41.26 104.730052)">0.8</text>
+     </g>
+    </g>
+    <g id="interpolation-ytick_6">
+     <g id="interpolation-line2d_25">
+      <path d="M 48.26 72.640993 
+L 382.05 72.640993 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_26">
+      <g>
+       <use href="#interpolation-me610cd322e" x="48.26" y="72.640993" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="76.06029" transform="rotate(-0 41.26 76.06029)">0.9</text>
+     </g>
+    </g>
+    <g id="interpolation-ytick_7">
+     <g id="interpolation-line2d_27">
+      <path d="M 48.26 43.971231 
+L 382.05 43.971231 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_28">
+      <g>
+       <use href="#interpolation-me610cd322e" x="48.26" y="43.971231" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="47.390528" transform="rotate(-0 41.26 47.390528)">1.0</text>
+     </g>
+    </g>
+    <g id="interpolation-text_16">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.075469" y="132.76" transform="rotate(-90 21.075469 132.76)">Discount factor</text>
+    </g>
+   </g>
+   <g id="interpolation-line2d_29">
+    <path d="M 63.432273 44.029871 
+L 68.995439 47.36426 
+L 74.558606 51.869289 
+L 86.190682 62.389707 
+L 96.30553 71.349781 
+L 106.420379 80.010604 
+L 114.512258 86.685206 
+L 125.638591 94.784525 
+L 137.017795 102.789889 
+L 148.397 110.52357 
+L 160.029076 118.157902 
+L 180.511644 131.232849 
+L 192.14372 138.33852 
+L 204.028667 145.337249 
+L 215.913614 152.0813 
+L 228.051432 158.71561 
+L 240.442121 165.233989 
+L 253.085682 171.630749 
+L 281.913 185.801602 
+L 294.303689 191.658131 
+L 306.94725 197.390191 
+L 319.843682 202.993462 
+L 332.992985 208.464123 
+L 346.395159 213.798843 
+L 360.050205 218.994771 
+L 366.877727 221.505455 
+L 366.877727 221.505455 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="interpolation-line2d_30">
+    <path d="M 63.432273 44.014545 
+L 65.455242 45.009649 
+L 67.478212 46.249343 
+L 70.512667 48.424628 
+L 73.29425 50.712911 
+L 80.121773 56.650782 
+L 85.684939 61.771398 
+L 96.052659 70.542465 
+L 107.431864 80.467759 
+L 115.270871 87.264972 
+L 125.132848 94.54499 
+L 135.247697 101.731076 
+L 145.362545 108.644971 
+L 155.730265 115.461261 
+L 175.201348 127.878023 
+L 187.086295 135.237836 
+L 198.971242 142.33713 
+L 211.109061 149.32791 
+L 223.49975 156.203307 
+L 235.890439 162.824411 
+L 248.534 169.328012 
+L 261.430432 175.708461 
+L 290.763492 189.811465 
+L 304.418538 196.022887 
+L 318.326455 202.104233 
+L 332.487242 208.050001 
+L 346.64803 213.755408 
+L 361.061689 219.324002 
+L 366.877727 221.50463 
+L 366.877727 221.50463 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="interpolation-line2d_31">
+    <path d="M 63.432273 44.029578 
+L 68.995439 47.361327 
+L 74.558606 51.854357 
+L 86.949295 62.938414 
+L 114.765129 86.828383 
+L 165.592242 121.637198 
+L 266.740727 178.218843 
+L 366.877727 221.498501 
+L 366.877727 221.498501 
+" clip-path="url(#interpolation-p90b4976174)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="interpolation-patch_3">
+    <path d="M 48.26 230.38 
+L 48.26 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="interpolation-patch_4">
+    <path d="M 48.26 230.38 
+L 382.05 230.38 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="interpolation-text_17">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="48.26" y="22.14" transform="rotate(-0 48.26 22.14)">Discount curves can look almost identical</text>
+   </g>
+   <g id="interpolation-legend_1">
+    <g id="interpolation-line2d_32">
+     <path d="M 276.0625 45.61875 
+L 284.0625 45.61875 
+L 292.0625 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="interpolation-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="298.4625" y="48.41875" transform="rotate(-0 298.4625 48.41875)">Log-linear discount</text>
+    </g>
+    <g id="interpolation-line2d_33">
+     <path d="M 276.0625 57.36125 
+L 284.0625 57.36125 
+L 292.0625 57.36125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="interpolation-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="298.4625" y="60.16125" transform="rotate(-0 298.4625 60.16125)">Linear zero</text>
+    </g>
+    <g id="interpolation-line2d_34">
+     <path d="M 276.0625 69.10375 
+L 284.0625 69.10375 
+L 292.0625 69.10375 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="interpolation-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="298.4625" y="71.90375" transform="rotate(-0 298.4625 71.90375)">Linear discount</text>
+    </g>
+   </g>
+  </g>
+  <g id="interpolation-axes_2">
+   <g id="interpolation-patch_5">
+    <path d="M 444.71 230.38 
+L 778.5 230.38 
+L 778.5 35.14 
+L 444.71 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="interpolation-matplotlib.axis_3">
+    <g id="interpolation-xtick_8">
+     <g id="interpolation-line2d_35">
+      <path d="M 459.781057 230.38 
+L 459.781057 35.14 
+" clip-path="url(#interpolation-pec3b9cf244)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_36">
+      <g>
+       <use href="#interpolation-me511e5f89f" x="459.781057" y="230.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="459.781057" y="244.218594" transform="rotate(-0 459.781057 244.218594)">0</text>
+     </g>
+    </g>
+    <g id="interpolation-xtick_9">
+     <g id="interpolation-line2d_37">
+      <path d="M 510.389038 230.38 
+L 510.389038 35.14 
+" clip-path="url(#interpolation-pec3b9cf244)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_38">
+      <g>
+       <use href="#interpolation-me511e5f89f" x="510.389038" y="230.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="510.389038" y="244.218594" transform="rotate(-0 510.389038 244.218594)">5</text>
+     </g>
+    </g>
+    <g id="interpolation-xtick_10">
+     <g id="interpolation-line2d_39">
+      <path d="M 560.997019 230.38 
+L 560.997019 35.14 
+" clip-path="url(#interpolation-pec3b9cf244)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_40">
+      <g>
+       <use href="#interpolation-me511e5f89f" x="560.997019" y="230.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="560.997019" y="244.218594" transform="rotate(-0 560.997019 244.218594)">10</text>
+     </g>
+    </g>
+    <g id="interpolation-xtick_11">
+     <g id="interpolation-line2d_41">
+      <path d="M 611.605 230.38 
+L 611.605 35.14 
+" clip-path="url(#interpolation-pec3b9cf244)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_42">
+      <g>
+       <use href="#interpolation-me511e5f89f" x="611.605" y="230.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="611.605" y="244.218594" transform="rotate(-0 611.605 244.218594)">15</text>
+     </g>
+    </g>
+    <g id="interpolation-xtick_12">
+     <g id="interpolation-line2d_43">
+      <path d="M 662.212981 230.38 
+L 662.212981 35.14 
+" clip-path="url(#interpolation-pec3b9cf244)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_44">
+      <g>
+       <use href="#interpolation-me511e5f89f" x="662.212981" y="230.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="662.212981" y="244.218594" transform="rotate(-0 662.212981 244.218594)">20</text>
+     </g>
+    </g>
+    <g id="interpolation-xtick_13">
+     <g id="interpolation-line2d_45">
+      <path d="M 712.820962 230.38 
+L 712.820962 35.14 
+" clip-path="url(#interpolation-pec3b9cf244)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_46">
+      <g>
+       <use href="#interpolation-me511e5f89f" x="712.820962" y="230.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="712.820962" y="244.218594" transform="rotate(-0 712.820962 244.218594)">25</text>
+     </g>
+    </g>
+    <g id="interpolation-xtick_14">
+     <g id="interpolation-line2d_47">
+      <path d="M 763.428943 230.38 
+L 763.428943 35.14 
+" clip-path="url(#interpolation-pec3b9cf244)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_48">
+      <g>
+       <use href="#interpolation-me511e5f89f" x="763.428943" y="230.38" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="763.428943" y="244.218594" transform="rotate(-0 763.428943 244.218594)">30</text>
+     </g>
+    </g>
+    <g id="interpolation-text_28">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="611.605" y="256.928906" transform="rotate(-0 611.605 256.928906)">Maturity (years)</text>
+    </g>
+   </g>
+   <g id="interpolation-matplotlib.axis_4">
+    <g id="interpolation-ytick_8">
+     <g id="interpolation-line2d_49">
+      <path d="M 444.71 223.06392 
+L 778.5 223.06392 
+" clip-path="url(#interpolation-pec3b9cf244)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_50">
+      <g>
+       <use href="#interpolation-me610cd322e" x="444.71" y="223.06392" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="226.483217" transform="rotate(-0 437.71 226.483217)">1.50%</text>
+     </g>
+    </g>
+    <g id="interpolation-ytick_9">
+     <g id="interpolation-line2d_51">
+      <path d="M 444.71 187.3559 
+L 778.5 187.3559 
+" clip-path="url(#interpolation-pec3b9cf244)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_52">
+      <g>
+       <use href="#interpolation-me610cd322e" x="444.71" y="187.3559" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="190.775197" transform="rotate(-0 437.71 190.775197)">2.00%</text>
+     </g>
+    </g>
+    <g id="interpolation-ytick_10">
+     <g id="interpolation-line2d_53">
+      <path d="M 444.71 151.64788 
+L 778.5 151.64788 
+" clip-path="url(#interpolation-pec3b9cf244)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_54">
+      <g>
+       <use href="#interpolation-me610cd322e" x="444.71" y="151.64788" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="155.067177" transform="rotate(-0 437.71 155.067177)">2.50%</text>
+     </g>
+    </g>
+    <g id="interpolation-ytick_11">
+     <g id="interpolation-line2d_55">
+      <path d="M 444.71 115.93986 
+L 778.5 115.93986 
+" clip-path="url(#interpolation-pec3b9cf244)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_56">
+      <g>
+       <use href="#interpolation-me610cd322e" x="444.71" y="115.93986" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="119.359157" transform="rotate(-0 437.71 119.359157)">3.00%</text>
+     </g>
+    </g>
+    <g id="interpolation-ytick_12">
+     <g id="interpolation-line2d_57">
+      <path d="M 444.71 80.23184 
+L 778.5 80.23184 
+" clip-path="url(#interpolation-pec3b9cf244)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_58">
+      <g>
+       <use href="#interpolation-me610cd322e" x="444.71" y="80.23184" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="83.651137" transform="rotate(-0 437.71 83.651137)">3.50%</text>
+     </g>
+    </g>
+    <g id="interpolation-ytick_13">
+     <g id="interpolation-line2d_59">
+      <path d="M 444.71 44.52382 
+L 778.5 44.52382 
+" clip-path="url(#interpolation-pec3b9cf244)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="interpolation-line2d_60">
+      <g>
+       <use href="#interpolation-me610cd322e" x="444.71" y="44.52382" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="interpolation-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="47.943117" transform="rotate(-0 437.71 47.943117)">4.00%</text>
+     </g>
+    </g>
+    <g id="interpolation-text_35">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="403.247812" y="132.76" transform="rotate(-90 403.247812 132.76)">Instantaneous forward</text>
+    </g>
+   </g>
+   <g id="interpolation-line2d_61">
+    <path d="M 459.882273 184.102287 
+L 464.686826 184.102287 
+L 464.939697 129.272936 
+L 469.74425 129.272936 
+L 469.997121 92.237256 
+L 479.859098 92.237256 
+L 480.11197 87.43452 
+L 510.203644 87.43452 
+L 510.456515 110.861674 
+L 560.777886 110.861674 
+L 561.030758 104.741645 
+L 662.179242 104.741645 
+L 662.432114 89.447262 
+L 763.327727 89.447262 
+L 763.327727 89.447262 
+" clip-path="url(#interpolation-pec3b9cf244)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="interpolation-line2d_62">
+    <path d="M 459.882273 221.505455 
+L 464.686826 147.527704 
+L 464.939697 155.627577 
+L 469.74425 103.574419 
+L 469.997121 123.860897 
+L 479.859098 61.063694 
+L 480.11197 109.522905 
+L 510.203644 65.489063 
+L 510.456515 106.565168 
+L 560.777886 115.132361 
+L 561.030758 105.647059 
+L 662.179242 103.836232 
+L 662.432114 94.824013 
+L 763.327727 84.057929 
+L 763.327727 84.057929 
+" clip-path="url(#interpolation-pec3b9cf244)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="interpolation-line2d_63">
+    <path d="M 459.882273 184.817229 
+L 464.686826 183.398893 
+L 464.939697 130.62553 
+L 469.74425 127.942873 
+L 469.997121 96.086127 
+L 477.330386 90.39103 
+L 479.859098 88.362411 
+L 480.11197 99.336966 
+L 487.698106 93.605169 
+L 495.031371 87.787221 
+L 502.111765 81.891775 
+L 509.192159 75.702413 
+L 510.203644 74.792939 
+L 510.456515 126.832615 
+L 519.307008 121.640023 
+L 527.904629 116.335407 
+L 536.249379 110.922209 
+L 544.341258 105.404747 
+L 552.180265 99.788294 
+L 559.766402 94.079164 
+L 560.777886 93.296498 
+L 561.030758 136.84203 
+L 570.386992 131.879154 
+L 579.490356 126.799603 
+L 588.340848 121.605303 
+L 596.93847 116.298898 
+L 605.28322 110.883829 
+L 613.375098 105.364411 
+L 621.214106 99.745917 
+L 628.800242 94.034661 
+L 636.133508 88.238077 
+L 643.213902 82.364806 
+L 650.294295 76.199297 
+L 657.121818 69.956303 
+L 662.179242 65.130328 
+L 662.432114 125.697296 
+L 671.282606 120.445814 
+L 679.880227 115.07949 
+L 687.972106 109.7718 
+L 696.063985 104.195553 
+L 703.902992 98.517749 
+L 711.489129 92.74469 
+L 718.822394 86.88382 
+L 725.902788 80.94381 
+L 732.730311 74.934635 
+L 739.557833 68.628544 
+L 746.132485 62.254346 
+L 752.454265 55.825294 
+L 758.776045 49.080128 
+L 763.327727 44.014545 
+L 763.327727 44.014545 
+" clip-path="url(#interpolation-pec3b9cf244)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="interpolation-patch_6">
+    <path d="M 444.71 230.38 
+L 444.71 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="interpolation-patch_7">
+    <path d="M 444.71 230.38 
+L 778.5 230.38 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="interpolation-text_36">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="444.71" y="22.14" transform="rotate(-0 444.71 22.14)">Their derivatives reveal the differences</text>
+   </g>
+   <g id="interpolation-legend_2">
+    <g id="interpolation-line2d_64">
+     <path d="M 672.5125 195.23125 
+L 680.5125 195.23125 
+L 688.5125 195.23125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="interpolation-text_37">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="694.9125" y="198.03125" transform="rotate(-0 694.9125 198.03125)">Log-linear discount</text>
+    </g>
+    <g id="interpolation-line2d_65">
+     <path d="M 672.5125 206.97375 
+L 680.5125 206.97375 
+L 688.5125 206.97375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="interpolation-text_38">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="694.9125" y="209.77375" transform="rotate(-0 694.9125 209.77375)">Linear zero</text>
+    </g>
+    <g id="interpolation-line2d_66">
+     <path d="M 672.5125 218.71625 
+L 680.5125 218.71625 
+L 688.5125 218.71625 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="interpolation-text_39">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="694.9125" y="221.51625" transform="rotate(-0 694.9125 221.51625)">Linear discount</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="interpolation-p90b4976174">
+   <rect x="48.26" y="35.14" width="333.79" height="195.24"/>
+  </clipPath>
+  <clipPath id="interpolation-pec3b9cf244">
+   <rect x="444.71" y="35.14" width="333.79" height="195.24"/>
+  </clipPath>
+ </defs>
+</svg>

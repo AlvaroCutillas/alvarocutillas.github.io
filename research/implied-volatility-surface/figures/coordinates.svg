@@ -1,0 +1,960 @@
+<svg role="img" aria-labelledby="coordinates-title coordinates-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="coordinates-title">Figure 03 · Volatility and total-variance coordinates</title><desc id="coordinates-desc">Synthetic SSVI reference surface; spot 100, continuous rate 3% and yield 1%. Maturities 0.25, 0.5, 1, 2 and 3 years; w = sigma squared times T.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:54:52.954905</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="coordinates-figure_1">
+  <g id="coordinates-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="coordinates-axes_1">
+   <g id="coordinates-patch_2">
+    <path d="M 62.66 244.78 
+L 353.579543 244.78 
+L 353.579543 35.14 
+L 62.66 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="coordinates-matplotlib.axis_1">
+    <g id="coordinates-xtick_1">
+     <g id="coordinates-line2d_1">
+      <path d="M 85.14481 244.78 
+L 85.14481 35.14 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_2">
+      <defs>
+       <path id="coordinates-m23157c3c5b" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#coordinates-m23157c3c5b" x="85.14481" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="85.14481" y="258.618594" transform="rotate(-0 85.14481 258.618594)">60</text>
+     </g>
+    </g>
+    <g id="coordinates-xtick_2">
+     <g id="coordinates-line2d_3">
+      <path d="M 123.384634 244.78 
+L 123.384634 35.14 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_4">
+      <g>
+       <use href="#coordinates-m23157c3c5b" x="123.384634" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="123.384634" y="258.618594" transform="rotate(-0 123.384634 258.618594)">80</text>
+     </g>
+    </g>
+    <g id="coordinates-xtick_3">
+     <g id="coordinates-line2d_5">
+      <path d="M 161.624457 244.78 
+L 161.624457 35.14 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_6">
+      <g>
+       <use href="#coordinates-m23157c3c5b" x="161.624457" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="161.624457" y="258.618594" transform="rotate(-0 161.624457 258.618594)">100</text>
+     </g>
+    </g>
+    <g id="coordinates-xtick_4">
+     <g id="coordinates-line2d_7">
+      <path d="M 199.864281 244.78 
+L 199.864281 35.14 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_8">
+      <g>
+       <use href="#coordinates-m23157c3c5b" x="199.864281" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="199.864281" y="258.618594" transform="rotate(-0 199.864281 258.618594)">120</text>
+     </g>
+    </g>
+    <g id="coordinates-xtick_5">
+     <g id="coordinates-line2d_9">
+      <path d="M 238.104105 244.78 
+L 238.104105 35.14 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_10">
+      <g>
+       <use href="#coordinates-m23157c3c5b" x="238.104105" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="238.104105" y="258.618594" transform="rotate(-0 238.104105 258.618594)">140</text>
+     </g>
+    </g>
+    <g id="coordinates-xtick_6">
+     <g id="coordinates-line2d_11">
+      <path d="M 276.343928 244.78 
+L 276.343928 35.14 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_12">
+      <g>
+       <use href="#coordinates-m23157c3c5b" x="276.343928" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="276.343928" y="258.618594" transform="rotate(-0 276.343928 258.618594)">160</text>
+     </g>
+    </g>
+    <g id="coordinates-xtick_7">
+     <g id="coordinates-line2d_13">
+      <path d="M 314.583752 244.78 
+L 314.583752 35.14 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_14">
+      <g>
+       <use href="#coordinates-m23157c3c5b" x="314.583752" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="314.583752" y="258.618594" transform="rotate(-0 314.583752 258.618594)">180</text>
+     </g>
+    </g>
+    <g id="coordinates-xtick_8">
+     <g id="coordinates-line2d_15">
+      <path d="M 352.823575 244.78 
+L 352.823575 35.14 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_16">
+      <g>
+       <use href="#coordinates-m23157c3c5b" x="352.823575" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="352.823575" y="258.618594" transform="rotate(-0 352.823575 258.618594)">200</text>
+     </g>
+    </g>
+    <g id="coordinates-text_9">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="208.119771" y="271.328906" transform="rotate(-0 208.119771 271.328906)">Strike</text>
+    </g>
+   </g>
+   <g id="coordinates-matplotlib.axis_2">
+    <g id="coordinates-ytick_1">
+     <g id="coordinates-line2d_17">
+      <path d="M 62.66 240.811804 
+L 353.579543 240.811804 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_18">
+      <defs>
+       <path id="coordinates-m9c6a1d20b2" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#coordinates-m9c6a1d20b2" x="62.66" y="240.811804" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="244.231101" transform="rotate(-0 55.66 244.231101)">15.0%</text>
+     </g>
+    </g>
+    <g id="coordinates-ytick_2">
+     <g id="coordinates-line2d_19">
+      <path d="M 62.66 214.096802 
+L 353.579543 214.096802 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_20">
+      <g>
+       <use href="#coordinates-m9c6a1d20b2" x="62.66" y="214.096802" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="217.516099" transform="rotate(-0 55.66 217.516099)">17.5%</text>
+     </g>
+    </g>
+    <g id="coordinates-ytick_3">
+     <g id="coordinates-line2d_21">
+      <path d="M 62.66 187.381801 
+L 353.579543 187.381801 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_22">
+      <g>
+       <use href="#coordinates-m9c6a1d20b2" x="62.66" y="187.381801" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="190.801098" transform="rotate(-0 55.66 190.801098)">20.0%</text>
+     </g>
+    </g>
+    <g id="coordinates-ytick_4">
+     <g id="coordinates-line2d_23">
+      <path d="M 62.66 160.666799 
+L 353.579543 160.666799 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_24">
+      <g>
+       <use href="#coordinates-m9c6a1d20b2" x="62.66" y="160.666799" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="164.086096" transform="rotate(-0 55.66 164.086096)">22.5%</text>
+     </g>
+    </g>
+    <g id="coordinates-ytick_5">
+     <g id="coordinates-line2d_25">
+      <path d="M 62.66 133.951798 
+L 353.579543 133.951798 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_26">
+      <g>
+       <use href="#coordinates-m9c6a1d20b2" x="62.66" y="133.951798" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="137.371095" transform="rotate(-0 55.66 137.371095)">25.0%</text>
+     </g>
+    </g>
+    <g id="coordinates-ytick_6">
+     <g id="coordinates-line2d_27">
+      <path d="M 62.66 107.236796 
+L 353.579543 107.236796 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_28">
+      <g>
+       <use href="#coordinates-m9c6a1d20b2" x="62.66" y="107.236796" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="110.656093" transform="rotate(-0 55.66 110.656093)">27.5%</text>
+     </g>
+    </g>
+    <g id="coordinates-ytick_7">
+     <g id="coordinates-line2d_29">
+      <path d="M 62.66 80.521795 
+L 353.579543 80.521795 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_30">
+      <g>
+       <use href="#coordinates-m9c6a1d20b2" x="62.66" y="80.521795" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="83.941092" transform="rotate(-0 55.66 83.941092)">30.0%</text>
+     </g>
+    </g>
+    <g id="coordinates-ytick_8">
+     <g id="coordinates-line2d_31">
+      <path d="M 62.66 53.806793 
+L 353.579543 53.806793 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_32">
+      <g>
+       <use href="#coordinates-m9c6a1d20b2" x="62.66" y="53.806793" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="57.22609" transform="rotate(-0 55.66 57.22609)">32.5%</text>
+     </g>
+    </g>
+    <g id="coordinates-text_18">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.197813" y="139.96" transform="rotate(-90 21.197813 139.96)">Implied volatility</text>
+    </g>
+   </g>
+   <g id="coordinates-line2d_33">
+    <path d="M 75.883616 44.669091 
+L 82.404791 54.306668 
+L 89.329214 64.159245 
+L 96.681819 74.23301 
+L 104.489083 84.531484 
+L 112.06913 94.168437 
+L 120.077757 103.987419 
+L 127.7506 113.060165 
+L 135.816839 122.252983 
+L 143.429456 130.604118 
+L 151.392465 138.994165 
+L 158.777873 146.446092 
+L 165.486936 152.92482 
+L 172.434973 159.323439 
+L 178.587082 164.707478 
+L 184.926551 169.96066 
+L 190.356675 174.208805 
+L 195.924263 178.311681 
+L 201.632796 182.242208 
+L 207.485841 185.973114 
+L 212.27478 188.796416 
+L 217.160463 191.462755 
+L 222.144843 193.961216 
+L 227.229915 196.282771 
+L 232.417711 198.420612 
+L 237.710308 200.370387 
+L 243.109823 202.13029 
+L 248.618415 203.701009 
+L 254.238287 205.085558 
+L 259.971689 206.288995 
+L 265.820914 207.31808 
+L 271.7883 208.180898 
+L 279.41734 209.039432 
+L 287.239509 209.671203 
+L 295.259698 210.095626 
+L 303.482919 210.331936 
+L 313.626033 210.393207 
+L 320.559146 210.313246 
+L 320.559146 210.313246 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="coordinates-line2d_34">
+    <path d="M 76.412227 52.809432 
+L 82.966091 62.165318 
+L 89.925222 71.727552 
+L 97.314682 81.501778 
+L 105.161081 91.491017 
+L 112.779122 100.835657 
+L 120.827893 110.353742 
+L 128.539196 119.145664 
+L 136.645867 128.051273 
+L 144.296642 136.139389 
+L 152.299566 144.263626 
+L 159.721994 151.478795 
+L 166.464686 157.751929 
+L 173.447551 163.948699 
+L 179.630497 169.164822 
+L 186.001743 174.257044 
+L 192.567022 179.186685 
+L 198.190565 183.140074 
+L 203.956469 186.925555 
+L 209.868338 190.517418 
+L 215.929867 193.891057 
+L 220.889387 196.417806 
+L 225.949096 198.780868 
+L 231.111019 200.972381 
+L 236.377219 202.986643 
+L 241.749803 204.820279 
+L 247.230921 206.47229 
+L 252.822764 207.943972 
+L 258.527571 209.238722 
+L 264.347622 210.361769 
+L 270.285246 211.319837 
+L 277.876236 212.297506 
+L 285.659392 213.046835 
+L 293.63958 213.585929 
+L 301.821788 213.933134 
+L 311.914312 214.121759 
+L 322.314199 214.089445 
+L 322.314199 214.089445 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="coordinates-line2d_35">
+    <path d="M 77.477413 66.506664 
+L 84.097144 75.389358 
+L 91.126216 84.463977 
+L 98.589941 93.73528 
+L 106.515197 103.205485 
+L 114.209802 112.059676 
+L 122.339463 121.073119 
+L 130.128267 129.39427 
+L 138.316411 137.818626 
+L 146.044078 145.466217 
+L 154.127433 153.145412 
+L 161.624457 159.964267 
+L 168.434914 165.893246 
+L 175.487958 171.75202 
+L 181.733044 176.686773 
+L 188.168322 181.508967 
+L 194.799583 186.18389 
+L 200.479644 189.939804 
+L 206.303496 193.543955 
+L 212.27478 196.973034 
+L 218.397228 200.204525 
+L 224.674666 203.217811 
+L 229.810843 205.459377 
+L 235.050778 207.542747 
+L 240.396567 209.462613 
+L 245.850347 211.215721 
+L 251.414301 212.800919 
+L 257.090655 214.219097 
+L 262.881678 215.473041 
+L 270.285246 216.816426 
+L 277.876236 217.921888 
+L 285.659392 218.803538 
+L 293.63958 219.477055 
+L 301.821788 219.958895 
+L 311.914312 220.307401 
+L 322.314199 220.431586 
+L 325.850741 220.427722 
+L 325.850741 220.427722 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="coordinates-line2d_36">
+    <path d="M 79.640009 86.327631 
+L 86.393467 94.517358 
+L 93.564535 102.877882 
+L 101.179038 111.412697 
+L 109.264395 120.122896 
+L 117.11444 128.259056 
+L 125.408332 136.533867 
+L 133.35448 144.166175 
+L 141.708036 151.886607 
+L 149.591812 158.890095 
+L 157.838461 165.918815 
+L 165.486936 172.158552 
+L 173.447551 178.355538 
+L 180.679143 183.708819 
+L 188.168322 188.960287 
+L 194.799583 193.348619 
+L 201.632796 197.601038 
+L 208.674111 201.684861 
+L 214.705408 204.934672 
+L 220.889387 208.024036 
+L 227.229915 210.934175 
+L 233.730953 213.64811 
+L 240.396567 216.151529 
+L 247.230921 218.433531 
+L 254.238287 220.487154 
+L 261.423046 222.30961 
+L 268.789688 223.902209 
+L 276.342818 225.270009 
+L 284.087156 226.421249 
+L 292.027542 227.366657 
+L 300.168941 228.118725 
+L 308.51644 228.691028 
+L 318.812847 229.160291 
+L 329.422826 229.415126 
+L 333.030811 229.456488 
+L 333.030811 229.456488 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="coordinates-line2d_37">
+    <path d="M 81.846291 99.612393 
+L 88.736178 107.318314 
+L 96.052112 115.179964 
+L 103.820438 123.199947 
+L 112.06913 131.378563 
+L 120.077757 139.012247 
+L 128.539196 146.769958 
+L 136.645867 153.919888 
+L 145.168176 161.147305 
+L 153.211215 167.699662 
+L 161.624457 174.272822 
+L 169.427441 180.107027 
+L 177.548871 185.90201 
+L 184.926551 190.910624 
+L 192.567022 195.828833 
+L 199.332243 199.944791 
+L 206.303496 203.941295 
+L 213.487056 207.789947 
+L 219.640192 210.862746 
+L 225.949096 213.79484 
+L 232.417711 216.569462 
+L 239.05008 219.17115 
+L 245.850347 221.586477 
+L 252.822764 223.804706 
+L 259.971689 225.818301 
+L 267.30159 227.62322 
+L 274.817048 229.218967 
+L 282.522761 230.608398 
+L 290.423545 231.797336 
+L 298.524338 232.794046 
+L 306.830204 233.608648 
+L 317.075257 234.361869 
+L 327.632319 234.890233 
+L 338.510891 235.215077 
+L 340.355927 235.250909 
+L 340.355927 235.250909 
+" clip-path="url(#coordinates-p5cdf1f2f2e)" style="fill: none; stroke: #bbbac7; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="coordinates-patch_3">
+    <path d="M 62.66 244.78 
+L 62.66 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="coordinates-patch_4">
+    <path d="M 62.66 244.78 
+L 353.579543 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="coordinates-text_19">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="62.66" y="22.14" transform="rotate(-0 62.66 22.14)">Strike coordinates depend on the forward</text>
+   </g>
+   <g id="coordinates-legend_1">
+    <g id="coordinates-line2d_38">
+     <path d="M 301.432043 45.61875 
+L 309.432043 45.61875 
+L 317.432043 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="coordinates-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="323.832043" y="48.41875" transform="rotate(-0 323.832043 48.41875)">0.25y</text>
+    </g>
+    <g id="coordinates-line2d_39">
+     <path d="M 301.432043 57.36125 
+L 309.432043 57.36125 
+L 317.432043 57.36125 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="coordinates-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="323.832043" y="60.16125" transform="rotate(-0 323.832043 60.16125)">0.5y</text>
+    </g>
+    <g id="coordinates-line2d_40">
+     <path d="M 301.432043 69.10375 
+L 309.432043 69.10375 
+L 317.432043 69.10375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="coordinates-text_22">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="323.832043" y="71.90375" transform="rotate(-0 323.832043 71.90375)">1y</text>
+    </g>
+    <g id="coordinates-line2d_41">
+     <path d="M 301.432043 80.84625 
+L 309.432043 80.84625 
+L 317.432043 80.84625 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="coordinates-text_23">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="323.832043" y="83.64625" transform="rotate(-0 323.832043 83.64625)">2y</text>
+    </g>
+    <g id="coordinates-line2d_42">
+     <path d="M 301.432043 92.58875 
+L 309.432043 92.58875 
+L 317.432043 92.58875 
+" style="fill: none; stroke: #bbbac7; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="coordinates-text_24">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="323.832043" y="95.38875" transform="rotate(-0 323.832043 95.38875)">3y</text>
+    </g>
+   </g>
+  </g>
+  <g id="coordinates-axes_2">
+   <g id="coordinates-patch_5">
+    <path d="M 415.580457 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 415.580457 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="coordinates-matplotlib.axis_3">
+    <g id="coordinates-xtick_9">
+     <g id="coordinates-line2d_43">
+      <path d="M 428.804073 244.78 
+L 428.804073 35.14 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_44">
+      <g>
+       <use href="#coordinates-m23157c3c5b" x="428.804073" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="428.804073" y="258.618594" transform="rotate(-0 428.804073 258.618594)">−0.6</text>
+     </g>
+    </g>
+    <g id="coordinates-xtick_10">
+     <g id="coordinates-line2d_45">
+      <path d="M 472.882791 244.78 
+L 472.882791 35.14 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_46">
+      <g>
+       <use href="#coordinates-m23157c3c5b" x="472.882791" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="472.882791" y="258.618594" transform="rotate(-0 472.882791 258.618594)">−0.4</text>
+     </g>
+    </g>
+    <g id="coordinates-xtick_11">
+     <g id="coordinates-line2d_47">
+      <path d="M 516.96151 244.78 
+L 516.96151 35.14 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_48">
+      <g>
+       <use href="#coordinates-m23157c3c5b" x="516.96151" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="516.96151" y="258.618594" transform="rotate(-0 516.96151 258.618594)">−0.2</text>
+     </g>
+    </g>
+    <g id="coordinates-xtick_12">
+     <g id="coordinates-line2d_49">
+      <path d="M 561.040229 244.78 
+L 561.040229 35.14 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_50">
+      <g>
+       <use href="#coordinates-m23157c3c5b" x="561.040229" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="561.040229" y="258.618594" transform="rotate(-0 561.040229 258.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="coordinates-xtick_13">
+     <g id="coordinates-line2d_51">
+      <path d="M 605.118947 244.78 
+L 605.118947 35.14 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_52">
+      <g>
+       <use href="#coordinates-m23157c3c5b" x="605.118947" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="605.118947" y="258.618594" transform="rotate(-0 605.118947 258.618594)">0.2</text>
+     </g>
+    </g>
+    <g id="coordinates-xtick_14">
+     <g id="coordinates-line2d_53">
+      <path d="M 649.197666 244.78 
+L 649.197666 35.14 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_54">
+      <g>
+       <use href="#coordinates-m23157c3c5b" x="649.197666" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="649.197666" y="258.618594" transform="rotate(-0 649.197666 258.618594)">0.4</text>
+     </g>
+    </g>
+    <g id="coordinates-xtick_15">
+     <g id="coordinates-line2d_55">
+      <path d="M 693.276384 244.78 
+L 693.276384 35.14 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_56">
+      <g>
+       <use href="#coordinates-m23157c3c5b" x="693.276384" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="693.276384" y="258.618594" transform="rotate(-0 693.276384 258.618594)">0.6</text>
+     </g>
+    </g>
+    <g id="coordinates-text_32">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="561.040229" y="271.328906" transform="rotate(-0 561.040229 271.328906)">Log-forward moneyness k</text>
+    </g>
+   </g>
+   <g id="coordinates-matplotlib.axis_4">
+    <g id="coordinates-ytick_9">
+     <g id="coordinates-line2d_57">
+      <path d="M 415.580457 241.824443 
+L 706.5 241.824443 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_58">
+      <g>
+       <use href="#coordinates-m9c6a1d20b2" x="415.580457" y="241.824443" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="408.580457" y="245.24374" transform="rotate(-0 408.580457 245.24374)">0.00</text>
+     </g>
+    </g>
+    <g id="coordinates-ytick_10">
+     <g id="coordinates-line2d_59">
+      <path d="M 415.580457 200.544076 
+L 706.5 200.544076 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_60">
+      <g>
+       <use href="#coordinates-m9c6a1d20b2" x="415.580457" y="200.544076" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="408.580457" y="203.963373" transform="rotate(-0 408.580457 203.963373)">0.05</text>
+     </g>
+    </g>
+    <g id="coordinates-ytick_11">
+     <g id="coordinates-line2d_61">
+      <path d="M 415.580457 159.263708 
+L 706.5 159.263708 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_62">
+      <g>
+       <use href="#coordinates-m9c6a1d20b2" x="415.580457" y="159.263708" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_35">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="408.580457" y="162.683005" transform="rotate(-0 408.580457 162.683005)">0.10</text>
+     </g>
+    </g>
+    <g id="coordinates-ytick_12">
+     <g id="coordinates-line2d_63">
+      <path d="M 415.580457 117.98334 
+L 706.5 117.98334 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_64">
+      <g>
+       <use href="#coordinates-m9c6a1d20b2" x="415.580457" y="117.98334" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_36">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="408.580457" y="121.402637" transform="rotate(-0 408.580457 121.402637)">0.15</text>
+     </g>
+    </g>
+    <g id="coordinates-ytick_13">
+     <g id="coordinates-line2d_65">
+      <path d="M 415.580457 76.702972 
+L 706.5 76.702972 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_66">
+      <g>
+       <use href="#coordinates-m9c6a1d20b2" x="415.580457" y="76.702972" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_37">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="408.580457" y="80.122269" transform="rotate(-0 408.580457 80.122269)">0.20</text>
+     </g>
+    </g>
+    <g id="coordinates-ytick_14">
+     <g id="coordinates-line2d_67">
+      <path d="M 415.580457 35.422604 
+L 706.5 35.422604 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="coordinates-line2d_68">
+      <g>
+       <use href="#coordinates-m9c6a1d20b2" x="415.580457" y="35.422604" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="coordinates-text_38">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="408.580457" y="38.841901" transform="rotate(-0 408.580457 38.841901)">0.25</text>
+     </g>
+    </g>
+    <g id="coordinates-text_39">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="382.669676" y="139.96" transform="rotate(-90 382.669676 139.96)">Total variance w</text>
+    </g>
+   </g>
+   <g id="coordinates-line2d_69">
+    <path d="M 428.804073 218.860931 
+L 496.024119 224.99219 
+L 537.898901 228.598998 
+L 566.550068 230.855914 
+L 588.589428 232.380668 
+L 607.322883 233.459175 
+L 623.852403 234.199972 
+L 640.381922 234.726594 
+L 658.01341 235.068421 
+L 678.950801 235.238012 
+L 693.276384 235.24502 
+L 693.276384 235.24502 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="coordinates-line2d_70">
+    <path d="M 428.804073 197.971261 
+L 479.494599 206.794034 
+L 514.757574 212.723545 
+L 541.204805 216.960764 
+L 562.142197 220.101029 
+L 579.773684 222.521081 
+L 594.099268 224.277463 
+L 607.322883 225.686251 
+L 619.444531 226.76865 
+L 631.566178 227.635547 
+L 643.687826 228.287658 
+L 656.911442 228.773262 
+L 671.237025 229.072559 
+L 687.766545 229.186947 
+L 693.276384 229.181336 
+L 693.276384 229.181336 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="coordinates-line2d_71">
+    <path d="M 428.804073 160.880857 
+L 468.47492 173.518842 
+L 498.228055 182.775219 
+L 521.369382 189.75981 
+L 541.204805 195.51703 
+L 557.734325 200.079303 
+L 572.059908 203.793257 
+L 584.181556 206.707533 
+L 595.201236 209.130778 
+L 605.118947 211.094022 
+L 615.036659 212.824082 
+L 623.852403 214.150612 
+L 632.668146 215.271549 
+L 641.48389 216.188581 
+L 651.401602 216.98833 
+L 661.319313 217.56399 
+L 672.338993 217.974176 
+L 684.460641 218.191753 
+L 693.276384 218.223198 
+L 693.276384 218.223198 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="coordinates-line2d_72">
+    <path d="M 428.804073 98.54913 
+L 459.659176 115.644696 
+L 485.004439 129.447235 
+L 505.94183 140.608806 
+L 523.573318 149.76867 
+L 539.000869 157.537412 
+L 552.224485 163.953724 
+L 564.346133 169.581582 
+L 574.263844 173.96146 
+L 584.181556 178.096224 
+L 592.9973 181.529742 
+L 600.711075 184.320542 
+L 608.424851 186.889823 
+L 616.138627 189.218892 
+L 623.852403 191.29343 
+L 631.566178 193.105176 
+L 639.279954 194.653002 
+L 646.99373 195.943061 
+L 654.707506 196.987977 
+L 662.421281 197.805305 
+L 670.135057 198.415658 
+L 678.950801 198.887838 
+L 688.868513 199.170129 
+L 693.276384 199.221744 
+L 693.276384 199.221744 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="coordinates-line2d_73">
+    <path d="M 428.804073 44.669091 
+L 456.353272 65.32436 
+L 479.494599 82.414739 
+L 499.330023 96.797732 
+L 515.859542 108.527576 
+L 530.185126 118.443847 
+L 543.408741 127.331253 
+L 554.428421 134.491507 
+L 564.346133 140.700635 
+L 574.263844 146.641551 
+L 583.079588 151.656188 
+L 590.793364 155.80619 
+L 598.507139 159.705152 
+L 605.118947 162.826364 
+L 611.730755 165.726607 
+L 618.342563 168.39178 
+L 624.954371 170.810963 
+L 631.566178 172.977328 
+L 638.177986 174.888757 
+L 644.789794 176.548043 
+L 651.401602 177.962624 
+L 658.01341 179.143922 
+L 664.625217 180.106395 
+L 671.237025 180.866495 
+L 678.950801 181.520776 
+L 686.664577 181.951155 
+L 693.276384 182.162128 
+L 693.276384 182.162128 
+" clip-path="url(#coordinates-pee58e5c16c)" style="fill: none; stroke: #bbbac7; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="coordinates-patch_6">
+    <path d="M 415.580457 244.78 
+L 415.580457 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="coordinates-patch_7">
+    <path d="M 415.580457 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="coordinates-text_40">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="415.580457" y="22.14" transform="rotate(-0 415.580457 22.14)">A common coordinate for every expiry</text>
+   </g>
+   <g id="coordinates-legend_2">
+    <g id="coordinates-line2d_74">
+     <path d="M 654.3525 45.61875 
+L 662.3525 45.61875 
+L 670.3525 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="coordinates-text_41">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="676.7525" y="48.41875" transform="rotate(-0 676.7525 48.41875)">0.25y</text>
+    </g>
+    <g id="coordinates-line2d_75">
+     <path d="M 654.3525 57.36125 
+L 662.3525 57.36125 
+L 670.3525 57.36125 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="coordinates-text_42">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="676.7525" y="60.16125" transform="rotate(-0 676.7525 60.16125)">0.5y</text>
+    </g>
+    <g id="coordinates-line2d_76">
+     <path d="M 654.3525 69.10375 
+L 662.3525 69.10375 
+L 670.3525 69.10375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="coordinates-text_43">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="676.7525" y="71.90375" transform="rotate(-0 676.7525 71.90375)">1y</text>
+    </g>
+    <g id="coordinates-line2d_77">
+     <path d="M 654.3525 80.84625 
+L 662.3525 80.84625 
+L 670.3525 80.84625 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="coordinates-text_44">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="676.7525" y="83.64625" transform="rotate(-0 676.7525 83.64625)">2y</text>
+    </g>
+    <g id="coordinates-line2d_78">
+     <path d="M 654.3525 92.58875 
+L 662.3525 92.58875 
+L 670.3525 92.58875 
+" style="fill: none; stroke: #bbbac7; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="coordinates-text_45">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="676.7525" y="95.38875" transform="rotate(-0 676.7525 95.38875)">3y</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="coordinates-p5cdf1f2f2e">
+   <rect x="62.66" y="35.14" width="290.919543" height="209.64"/>
+  </clipPath>
+  <clipPath id="coordinates-pee58e5c16c">
+   <rect x="415.580457" y="35.14" width="290.919543" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

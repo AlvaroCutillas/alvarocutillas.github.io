@@ -1,0 +1,525 @@
+<svg role="img" aria-labelledby="aversion-title aversion-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="aversion-title">Figure 10 · Risk aversion and borrowing or lending</title><desc id="aversion-desc">Objective μ − γσ²/2 with decimal returns and risk-free return 2%. Negative cash weights denote borrowing. The example assumes the same borrowing and lending rate, and ignores margin and financing limits.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T17:14:58.910920</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="aversion-figure_1">
+  <g id="aversion-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="aversion-axes_1">
+   <g id="aversion-patch_2">
+    <path d="M 67.34 208.78 
+L 648.9 208.78 
+L 648.9 13.5 
+L 67.34 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="aversion-matplotlib.axis_1">
+    <g id="aversion-xtick_1">
+     <g id="aversion-line2d_1">
+      <path d="M 141.837355 208.78 
+L 141.837355 13.5 
+" clip-path="url(#aversion-p6f4b681b16)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="aversion-line2d_2">
+      <defs>
+       <path id="aversion-m081aab491c" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#aversion-m081aab491c" x="141.837355" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="aversion-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="141.837355" y="222.618594" transform="rotate(-0 141.837355 222.618594)">2</text>
+     </g>
+    </g>
+    <g id="aversion-xtick_2">
+     <g id="aversion-line2d_3">
+      <path d="M 237.962975 208.78 
+L 237.962975 13.5 
+" clip-path="url(#aversion-p6f4b681b16)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="aversion-line2d_4">
+      <g>
+       <use href="#aversion-m081aab491c" x="237.962975" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="aversion-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="237.962975" y="222.618594" transform="rotate(-0 237.962975 222.618594)">4</text>
+     </g>
+    </g>
+    <g id="aversion-xtick_3">
+     <g id="aversion-line2d_5">
+      <path d="M 334.088595 208.78 
+L 334.088595 13.5 
+" clip-path="url(#aversion-p6f4b681b16)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="aversion-line2d_6">
+      <g>
+       <use href="#aversion-m081aab491c" x="334.088595" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="aversion-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="334.088595" y="222.618594" transform="rotate(-0 334.088595 222.618594)">6</text>
+     </g>
+    </g>
+    <g id="aversion-xtick_4">
+     <g id="aversion-line2d_7">
+      <path d="M 430.214215 208.78 
+L 430.214215 13.5 
+" clip-path="url(#aversion-p6f4b681b16)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="aversion-line2d_8">
+      <g>
+       <use href="#aversion-m081aab491c" x="430.214215" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="aversion-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="430.214215" y="222.618594" transform="rotate(-0 430.214215 222.618594)">8</text>
+     </g>
+    </g>
+    <g id="aversion-xtick_5">
+     <g id="aversion-line2d_9">
+      <path d="M 526.339835 208.78 
+L 526.339835 13.5 
+" clip-path="url(#aversion-p6f4b681b16)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="aversion-line2d_10">
+      <g>
+       <use href="#aversion-m081aab491c" x="526.339835" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="aversion-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="526.339835" y="222.618594" transform="rotate(-0 526.339835 222.618594)">10</text>
+     </g>
+    </g>
+    <g id="aversion-xtick_6">
+     <g id="aversion-line2d_11">
+      <path d="M 622.465455 208.78 
+L 622.465455 13.5 
+" clip-path="url(#aversion-p6f4b681b16)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="aversion-line2d_12">
+      <g>
+       <use href="#aversion-m081aab491c" x="622.465455" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="aversion-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="622.465455" y="222.618594" transform="rotate(-0 622.465455 222.618594)">12</text>
+     </g>
+    </g>
+    <g id="aversion-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="358.12" y="235.328906" transform="rotate(-0 358.12 235.328906)">Risk aversion γ</text>
+    </g>
+   </g>
+   <g id="aversion-matplotlib.axis_2">
+    <g id="aversion-ytick_1">
+     <g id="aversion-line2d_13">
+      <path d="M 67.34 187.149912 
+L 648.9 187.149912 
+" clip-path="url(#aversion-p6f4b681b16)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="aversion-line2d_14">
+      <defs>
+       <path id="aversion-mea1b8e5b53" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#aversion-mea1b8e5b53" x="67.34" y="187.149912" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="aversion-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="60.34" y="190.569209" transform="rotate(-0 60.34 190.569209)">−400%</text>
+     </g>
+    </g>
+    <g id="aversion-ytick_2">
+     <g id="aversion-line2d_15">
+      <path d="M 67.34 153.367729 
+L 648.9 153.367729 
+" clip-path="url(#aversion-p6f4b681b16)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="aversion-line2d_16">
+      <g>
+       <use href="#aversion-mea1b8e5b53" x="67.34" y="153.367729" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="aversion-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="60.34" y="156.787026" transform="rotate(-0 60.34 156.787026)">−200%</text>
+     </g>
+    </g>
+    <g id="aversion-ytick_3">
+     <g id="aversion-line2d_17">
+      <path d="M 67.34 119.585546 
+L 648.9 119.585546 
+" clip-path="url(#aversion-p6f4b681b16)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="aversion-line2d_18">
+      <g>
+       <use href="#aversion-mea1b8e5b53" x="67.34" y="119.585546" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="aversion-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="60.34" y="123.004843" transform="rotate(-0 60.34 123.004843)">0%</text>
+     </g>
+    </g>
+    <g id="aversion-ytick_4">
+     <g id="aversion-line2d_19">
+      <path d="M 67.34 85.803363 
+L 648.9 85.803363 
+" clip-path="url(#aversion-p6f4b681b16)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="aversion-line2d_20">
+      <g>
+       <use href="#aversion-mea1b8e5b53" x="67.34" y="85.803363" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="aversion-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="60.34" y="89.222659" transform="rotate(-0 60.34 89.222659)">200%</text>
+     </g>
+    </g>
+    <g id="aversion-ytick_5">
+     <g id="aversion-line2d_21">
+      <path d="M 67.34 52.021179 
+L 648.9 52.021179 
+" clip-path="url(#aversion-p6f4b681b16)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="aversion-line2d_22">
+      <g>
+       <use href="#aversion-mea1b8e5b53" x="67.34" y="52.021179" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="aversion-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="60.34" y="55.440476" transform="rotate(-0 60.34 55.440476)">400%</text>
+     </g>
+    </g>
+    <g id="aversion-ytick_6">
+     <g id="aversion-line2d_23">
+      <path d="M 67.34 18.238996 
+L 648.9 18.238996 
+" clip-path="url(#aversion-p6f4b681b16)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="aversion-line2d_24">
+      <g>
+       <use href="#aversion-mea1b8e5b53" x="67.34" y="18.238996" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="aversion-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="60.34" y="21.658293" transform="rotate(-0 60.34 21.658293)">600%</text>
+     </g>
+    </g>
+    <g id="aversion-text_14">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.196406" y="111.14" transform="rotate(-90 21.196406 111.14)">Fraction of initial wealth</text>
+    </g>
+   </g>
+   <g id="aversion-line2d_25">
+    <path d="M 93.774545 22.376364 
+L 98.217326 30.601756 
+L 102.660107 37.543754 
+L 107.102888 43.480989 
+L 111.545668 48.616879 
+L 115.988449 53.103404 
+L 120.43123 57.056396 
+L 124.874011 60.565685 
+L 129.316791 63.702006 
+L 133.759572 66.521818 
+L 138.202353 69.070731 
+L 142.645134 71.385993 
+L 147.087914 73.498324 
+L 151.530695 75.433284 
+L 155.973476 77.212313 
+L 160.416257 78.853529 
+L 164.859037 80.37235 
+L 169.301818 81.781975 
+L 173.744599 83.093771 
+L 178.18738 84.31758 
+L 182.63016 85.461969 
+L 187.072941 86.534424 
+L 191.515722 87.541522 
+L 195.958503 88.48906 
+L 200.401283 89.382171 
+L 204.844064 90.225412 
+L 209.286845 91.022848 
+L 213.729626 91.778111 
+L 218.172406 92.494462 
+L 222.615187 93.174832 
+L 227.057968 93.821865 
+L 231.500749 94.437953 
+L 235.943529 95.025264 
+L 240.38631 95.585768 
+L 244.829091 96.12126 
+L 249.271872 96.633378 
+L 253.714652 97.123618 
+L 258.157433 97.593354 
+L 262.600214 98.043846 
+L 267.042995 98.476253 
+L 271.485775 98.891641 
+L 275.928556 99.290997 
+L 280.371337 99.675231 
+L 284.814118 100.045187 
+L 289.256898 100.401644 
+L 293.699679 100.74533 
+L 298.14246 101.076918 
+L 302.585241 101.397035 
+L 307.028021 101.706268 
+L 311.470802 102.005162 
+L 315.913583 102.294226 
+L 320.356364 102.573939 
+L 324.799144 102.844746 
+L 329.241925 103.107066 
+L 333.684706 103.361292 
+L 338.127487 103.607793 
+L 342.570267 103.846916 
+L 347.013048 104.078987 
+L 351.455829 104.304314 
+L 355.89861 104.523186 
+L 360.34139 104.735876 
+L 364.784171 104.942644 
+L 369.226952 105.143732 
+L 373.669733 105.339373 
+L 378.112513 105.529783 
+L 382.555294 105.715171 
+L 386.998075 105.895732 
+L 391.440856 106.071653 
+L 395.883636 106.243109 
+L 400.326417 106.410269 
+L 404.769198 106.573293 
+L 409.211979 106.732332 
+L 413.654759 106.88753 
+L 418.09754 107.039024 
+L 422.540321 107.186947 
+L 426.983102 107.331422 
+L 431.425882 107.472569 
+L 435.868663 107.610502 
+L 440.311444 107.745328 
+L 444.754225 107.877152 
+L 449.197005 108.006074 
+L 453.639786 108.132187 
+L 458.082567 108.255582 
+L 462.525348 108.376347 
+L 466.968128 108.494565 
+L 471.410909 108.610316 
+L 475.85369 108.723675 
+L 480.296471 108.834716 
+L 484.739251 108.94351 
+L 489.182032 109.050124 
+L 493.624813 109.154624 
+L 498.067594 109.25707 
+L 502.510374 109.357524 
+L 506.953155 109.456043 
+L 511.395936 109.552681 
+L 515.838717 109.647494 
+L 520.281497 109.740531 
+L 524.724278 109.831842 
+L 529.167059 109.921475 
+L 533.60984 110.009476 
+L 538.05262 110.095888 
+L 542.495401 110.180755 
+L 546.938182 110.264117 
+L 551.380963 110.346015 
+L 555.823743 110.426486 
+L 560.266524 110.505567 
+L 564.709305 110.583295 
+L 569.152086 110.659703 
+L 573.594866 110.734825 
+L 578.037647 110.808692 
+L 582.480428 110.881338 
+L 586.923209 110.95279 
+L 591.365989 111.023079 
+L 595.80877 111.092233 
+L 600.251551 111.160278 
+L 604.694332 111.227242 
+L 609.137112 111.29315 
+L 613.579893 111.358026 
+L 618.022674 111.421895 
+L 622.465455 111.484781 
+" clip-path="url(#aversion-p6f4b681b16)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="aversion-line2d_26">
+    <path d="M 93.774545 199.903636 
+L 98.217326 191.678244 
+L 102.660107 184.736246 
+L 107.102888 178.799011 
+L 111.545668 173.663121 
+L 115.988449 169.176596 
+L 120.43123 165.223604 
+L 124.874011 161.714315 
+L 129.316791 158.577994 
+L 133.759572 155.758182 
+L 138.202353 153.209269 
+L 142.645134 150.894007 
+L 147.087914 148.781676 
+L 151.530695 146.846716 
+L 155.973476 145.067687 
+L 160.416257 143.426471 
+L 164.859037 141.90765 
+L 169.301818 140.498025 
+L 173.744599 139.186229 
+L 178.18738 137.96242 
+L 182.63016 136.818031 
+L 187.072941 135.745576 
+L 191.515722 134.738478 
+L 195.958503 133.79094 
+L 200.401283 132.897829 
+L 204.844064 132.054588 
+L 209.286845 131.257152 
+L 213.729626 130.501889 
+L 218.172406 129.785538 
+L 222.615187 129.105168 
+L 227.057968 128.458135 
+L 231.500749 127.842047 
+L 235.943529 127.254736 
+L 240.38631 126.694232 
+L 244.829091 126.15874 
+L 249.271872 125.646622 
+L 253.714652 125.156382 
+L 258.157433 124.686646 
+L 262.600214 124.236154 
+L 267.042995 123.803747 
+L 271.485775 123.388359 
+L 275.928556 122.989003 
+L 280.371337 122.604769 
+L 284.814118 122.234813 
+L 289.256898 121.878356 
+L 293.699679 121.53467 
+L 298.14246 121.203082 
+L 302.585241 120.882965 
+L 307.028021 120.573732 
+L 311.470802 120.274838 
+L 315.913583 119.985774 
+L 320.356364 119.706061 
+L 324.799144 119.435254 
+L 329.241925 119.172934 
+L 333.684706 118.918708 
+L 338.127487 118.672207 
+L 342.570267 118.433084 
+L 347.013048 118.201013 
+L 351.455829 117.975686 
+L 355.89861 117.756814 
+L 360.34139 117.544124 
+L 364.784171 117.337356 
+L 369.226952 117.136268 
+L 373.669733 116.940627 
+L 378.112513 116.750217 
+L 382.555294 116.564829 
+L 386.998075 116.384268 
+L 391.440856 116.208347 
+L 395.883636 116.036891 
+L 400.326417 115.869731 
+L 404.769198 115.706707 
+L 409.211979 115.547668 
+L 413.654759 115.39247 
+L 418.09754 115.240976 
+L 422.540321 115.093053 
+L 426.983102 114.948578 
+L 431.425882 114.807431 
+L 435.868663 114.669498 
+L 440.311444 114.534672 
+L 444.754225 114.402848 
+L 449.197005 114.273926 
+L 453.639786 114.147813 
+L 458.082567 114.024418 
+L 462.525348 113.903653 
+L 466.968128 113.785435 
+L 471.410909 113.669684 
+L 475.85369 113.556325 
+L 480.296471 113.445284 
+L 484.739251 113.33649 
+L 489.182032 113.229876 
+L 493.624813 113.125376 
+L 498.067594 113.02293 
+L 502.510374 112.922476 
+L 506.953155 112.823957 
+L 511.395936 112.727319 
+L 515.838717 112.632506 
+L 520.281497 112.539469 
+L 524.724278 112.448158 
+L 529.167059 112.358525 
+L 533.60984 112.270524 
+L 538.05262 112.184112 
+L 542.495401 112.099245 
+L 546.938182 112.015883 
+L 551.380963 111.933985 
+L 555.823743 111.853514 
+L 560.266524 111.774433 
+L 564.709305 111.696705 
+L 569.152086 111.620297 
+L 573.594866 111.545175 
+L 578.037647 111.471308 
+L 582.480428 111.398662 
+L 586.923209 111.32721 
+L 591.365989 111.256921 
+L 595.80877 111.187767 
+L 600.251551 111.119722 
+L 604.694332 111.052758 
+L 609.137112 110.98685 
+L 613.579893 110.921974 
+L 618.022674 110.858105 
+L 622.465455 110.795219 
+" clip-path="url(#aversion-p6f4b681b16)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="aversion-line2d_27">
+    <path d="M 67.34 119.585546 
+L 648.9 119.585546 
+" clip-path="url(#aversion-p6f4b681b16)" style="fill: none; stroke: #7e8d86; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="aversion-patch_3">
+    <path d="M 67.34 208.78 
+L 67.34 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="aversion-patch_4">
+    <path d="M 67.34 208.78 
+L 648.9 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="aversion-legend_1">
+    <g id="aversion-line2d_28">
+     <path d="M 509.73 23.97875 
+L 517.73 23.97875 
+L 525.73 23.97875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="aversion-text_15">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="532.13" y="26.77875" transform="rotate(-0 532.13 26.77875)">Risky tangency allocation y</text>
+    </g>
+    <g id="aversion-line2d_29">
+     <path d="M 509.73 35.72125 
+L 517.73 35.72125 
+L 525.73 35.72125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="aversion-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="532.13" y="38.52125" transform="rotate(-0 532.13 38.52125)">Risk-free allocation 1 − y</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="aversion-p6f4b681b16">
+   <rect x="67.34" y="13.5" width="581.56" height="195.28"/>
+  </clipPath>
+ </defs>
+</svg>

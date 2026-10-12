@@ -1,0 +1,44 @@
+{
+  "stats": {
+    "sections": 26,
+    "eq": 84,
+    "math": 301,
+    "figures": 13,
+    "width": 1440,
+    "viewport": 1440,
+    "brokenFragments": [],
+    "uniqueIds": 1740
+  },
+  "mobile": {
+    "width": 390,
+    "viewport": 390,
+    "wide": [
+      "CODE."
+    ]
+  },
+  "responsive": [
+    {
+      "viewport": 320,
+      "contentWidth": 320
+    },
+    {
+      "viewport": 360,
+      "contentWidth": 360
+    },
+    {
+      "viewport": 768,
+      "contentWidth": 768
+    },
+    {
+      "viewport": 1024,
+      "contentWidth": 1024
+    },
+    {
+      "viewport": 1920,
+      "contentWidth": 1920
+    }
+  ],
+  "browserErrors": [],
+  "externalRuntimeRequests": [],
+  "checks": "Benchmark, dividend pricing, put Greeks, expiry, zero volatility, invalid CRR probability, negative rates, reset, offline rendering and mobile containment passed."
+}

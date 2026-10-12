@@ -1,0 +1,610 @@
+<svg role="img" aria-labelledby="mlmc-title mlmc-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="mlmc-title">Figure 11 · Coupling makes fine-minus-coarse corrections inexpensive</title><desc id="mlmc-desc">50,000 independent coupled paths per level; seed 1011. Coarse Brownian increments are sums of adjacent fine increments. The independent comparison is Var(fine) + Var(coarse). These Euler levels illustrate MLMC mechanics; exact terminal GBM sampling is preferable for this European benchmark.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T19:11:31.080312</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="mlmc-figure_1">
+  <g id="mlmc-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="mlmc-axes_1">
+   <g id="mlmc-patch_2">
+    <path d="M 55.527809 208.78 
+L 648.9 208.78 
+L 648.9 13.5 
+L 55.527809 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="mlmc-matplotlib.axis_1">
+    <g id="mlmc-xtick_1">
+     <g id="mlmc-line2d_1">
+      <path d="M 82.499273 208.78 
+L 82.499273 13.5 
+" clip-path="url(#mlmc-p6517e737b7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="mlmc-line2d_2">
+      <defs>
+       <path id="mlmc-mca09b61125" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#mlmc-mca09b61125" x="82.499273" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="mlmc-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="82.499273" y="222.618594" transform="rotate(-0 82.499273 222.618594)">1</text>
+     </g>
+    </g>
+    <g id="mlmc-xtick_2">
+     <g id="mlmc-line2d_3">
+      <path d="M 172.40415 208.78 
+L 172.40415 13.5 
+" clip-path="url(#mlmc-p6517e737b7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="mlmc-line2d_4">
+      <g>
+       <use href="#mlmc-mca09b61125" x="172.40415" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="mlmc-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="172.40415" y="222.618594" transform="rotate(-0 172.40415 222.618594)">2</text>
+     </g>
+    </g>
+    <g id="mlmc-xtick_3">
+     <g id="mlmc-line2d_5">
+      <path d="M 262.309027 208.78 
+L 262.309027 13.5 
+" clip-path="url(#mlmc-p6517e737b7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="mlmc-line2d_6">
+      <g>
+       <use href="#mlmc-mca09b61125" x="262.309027" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="mlmc-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="262.309027" y="222.618594" transform="rotate(-0 262.309027 222.618594)">3</text>
+     </g>
+    </g>
+    <g id="mlmc-xtick_4">
+     <g id="mlmc-line2d_7">
+      <path d="M 352.213905 208.78 
+L 352.213905 13.5 
+" clip-path="url(#mlmc-p6517e737b7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="mlmc-line2d_8">
+      <g>
+       <use href="#mlmc-mca09b61125" x="352.213905" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="mlmc-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="352.213905" y="222.618594" transform="rotate(-0 352.213905 222.618594)">4</text>
+     </g>
+    </g>
+    <g id="mlmc-xtick_5">
+     <g id="mlmc-line2d_9">
+      <path d="M 442.118782 208.78 
+L 442.118782 13.5 
+" clip-path="url(#mlmc-p6517e737b7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="mlmc-line2d_10">
+      <g>
+       <use href="#mlmc-mca09b61125" x="442.118782" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="mlmc-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="442.118782" y="222.618594" transform="rotate(-0 442.118782 222.618594)">5</text>
+     </g>
+    </g>
+    <g id="mlmc-xtick_6">
+     <g id="mlmc-line2d_11">
+      <path d="M 532.023659 208.78 
+L 532.023659 13.5 
+" clip-path="url(#mlmc-p6517e737b7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="mlmc-line2d_12">
+      <g>
+       <use href="#mlmc-mca09b61125" x="532.023659" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="mlmc-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="532.023659" y="222.618594" transform="rotate(-0 532.023659 222.618594)">6</text>
+     </g>
+    </g>
+    <g id="mlmc-xtick_7">
+     <g id="mlmc-line2d_13">
+      <path d="M 621.928537 208.78 
+L 621.928537 13.5 
+" clip-path="url(#mlmc-p6517e737b7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="mlmc-line2d_14">
+      <g>
+       <use href="#mlmc-mca09b61125" x="621.928537" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="mlmc-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="621.928537" y="222.618594" transform="rotate(-0 621.928537 222.618594)">7</text>
+     </g>
+    </g>
+    <g id="mlmc-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="352.213905" y="235.328906" transform="rotate(-0 352.213905 235.328906)">Level ℓ (fine steps = 2^ℓ)</text>
+    </g>
+   </g>
+   <g id="mlmc-matplotlib.axis_2">
+    <g id="mlmc-ytick_1">
+     <g id="mlmc-line2d_15">
+      <path d="M 55.527809 184.721828 
+L 648.9 184.721828 
+" clip-path="url(#mlmc-p6517e737b7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="mlmc-line2d_16">
+      <defs>
+       <path id="mlmc-meea4114477" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#mlmc-meea4114477" x="55.527809" y="184.721828" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="mlmc-text_9">
+      <!-- $\mathdefault{10^{-1}}$ -->
+      <g style="fill: #939b94" transform="translate(27.377809 188.141125)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.40625">−1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_2">
+     <g id="mlmc-line2d_17">
+      <path d="M 55.527809 140.131047 
+L 648.9 140.131047 
+" clip-path="url(#mlmc-p6517e737b7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="mlmc-line2d_18">
+      <g>
+       <use href="#mlmc-meea4114477" x="55.527809" y="140.131047" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="mlmc-text_10">
+      <!-- $\mathdefault{10^{0}}$ -->
+      <g style="fill: #939b94" transform="translate(32.687809 143.550344)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_3">
+     <g id="mlmc-line2d_19">
+      <path d="M 55.527809 95.540266 
+L 648.9 95.540266 
+" clip-path="url(#mlmc-p6517e737b7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="mlmc-line2d_20">
+      <g>
+       <use href="#mlmc-meea4114477" x="55.527809" y="95.540266" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="mlmc-text_11">
+      <!-- $\mathdefault{10^{1}}$ -->
+      <g style="fill: #939b94" transform="translate(32.687809 98.959563)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.40625">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_4">
+     <g id="mlmc-line2d_21">
+      <path d="M 55.527809 50.949485 
+L 648.9 50.949485 
+" clip-path="url(#mlmc-p6517e737b7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="mlmc-line2d_22">
+      <g>
+       <use href="#mlmc-meea4114477" x="55.527809" y="50.949485" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="mlmc-text_12">
+      <!-- $\mathdefault{10^{2}}$ -->
+      <g style="fill: #939b94" transform="translate(32.687809 54.368782)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_5">
+     <g id="mlmc-line2d_23">
+      <defs>
+       <path id="mlmc-md96242a4ac" d="M 0 0 
+L -2 0 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="208.037399" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_6">
+     <g id="mlmc-line2d_24">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="202.466283" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_7">
+     <g id="mlmc-line2d_25">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="198.14499" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_8">
+     <g id="mlmc-line2d_26">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="194.614237" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_9">
+     <g id="mlmc-line2d_27">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="191.629027" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_10">
+     <g id="mlmc-line2d_28">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="189.043121" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_11">
+     <g id="mlmc-line2d_29">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="186.76219" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_12">
+     <g id="mlmc-line2d_30">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="171.298665" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_13">
+     <g id="mlmc-line2d_31">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="163.446618" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_14">
+     <g id="mlmc-line2d_32">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="157.875502" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_15">
+     <g id="mlmc-line2d_33">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="153.554209" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_16">
+     <g id="mlmc-line2d_34">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="150.023456" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_17">
+     <g id="mlmc-line2d_35">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="147.038246" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_18">
+     <g id="mlmc-line2d_36">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="144.45234" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_19">
+     <g id="mlmc-line2d_37">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="142.171409" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_20">
+     <g id="mlmc-line2d_38">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="126.707884" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_21">
+     <g id="mlmc-line2d_39">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="118.855837" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_22">
+     <g id="mlmc-line2d_40">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="113.284721" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_23">
+     <g id="mlmc-line2d_41">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="108.963428" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_24">
+     <g id="mlmc-line2d_42">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="105.432675" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_25">
+     <g id="mlmc-line2d_43">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="102.447465" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_26">
+     <g id="mlmc-line2d_44">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="99.861559" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_27">
+     <g id="mlmc-line2d_45">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="97.580628" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_28">
+     <g id="mlmc-line2d_46">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="82.117103" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_29">
+     <g id="mlmc-line2d_47">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="74.265056" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_30">
+     <g id="mlmc-line2d_48">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="68.69394" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_31">
+     <g id="mlmc-line2d_49">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="64.372647" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_32">
+     <g id="mlmc-line2d_50">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="60.841894" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_33">
+     <g id="mlmc-line2d_51">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="57.856684" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_34">
+     <g id="mlmc-line2d_52">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="55.270778" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_35">
+     <g id="mlmc-line2d_53">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="52.989847" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_36">
+     <g id="mlmc-line2d_54">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="37.526322" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_37">
+     <g id="mlmc-line2d_55">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="29.674275" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_38">
+     <g id="mlmc-line2d_56">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="24.103159" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_39">
+     <g id="mlmc-line2d_57">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="19.781866" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-ytick_40">
+     <g id="mlmc-line2d_58">
+      <g>
+       <use href="#mlmc-md96242a4ac" x="55.527809" y="16.251113" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="mlmc-text_13">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.506091" y="111.14" transform="rotate(-90 21.506091 111.14)">Variance of fine − coarse payoff</text>
+    </g>
+   </g>
+   <g id="mlmc-line2d_59">
+    <path d="M 82.499273 123.695475 
+L 172.40415 135.823991 
+L 262.309027 148.055422 
+L 352.213905 160.325487 
+L 442.118782 173.164172 
+L 532.023659 186.541575 
+L 621.928537 199.903636 
+" clip-path="url(#mlmc-p6517e737b7)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="mlmc-m8b03d3fc2b" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#mlmc-p6517e737b7)">
+     <use href="#mlmc-m8b03d3fc2b" x="82.499273" y="123.695475" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#mlmc-m8b03d3fc2b" x="172.40415" y="135.823991" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#mlmc-m8b03d3fc2b" x="262.309027" y="148.055422" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#mlmc-m8b03d3fc2b" x="352.213905" y="160.325487" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#mlmc-m8b03d3fc2b" x="442.118782" y="173.164172" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#mlmc-m8b03d3fc2b" x="532.023659" y="186.541575" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#mlmc-m8b03d3fc2b" x="621.928537" y="199.903636" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="mlmc-line2d_60">
+    <path d="M 82.499273 26.898931 
+L 172.40415 25.113426 
+L 262.309027 23.839905 
+L 352.213905 23.304572 
+L 442.118782 23.389688 
+L 532.023659 22.376364 
+L 621.928537 22.809427 
+" clip-path="url(#mlmc-p6517e737b7)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="mlmc-m24afb9dd46" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #d3ad84"/>
+    </defs>
+    <g clip-path="url(#mlmc-p6517e737b7)">
+     <use href="#mlmc-m24afb9dd46" x="82.499273" y="26.898931" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#mlmc-m24afb9dd46" x="172.40415" y="25.113426" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#mlmc-m24afb9dd46" x="262.309027" y="23.839905" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#mlmc-m24afb9dd46" x="352.213905" y="23.304572" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#mlmc-m24afb9dd46" x="442.118782" y="23.389688" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#mlmc-m24afb9dd46" x="532.023659" y="22.376364" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#mlmc-m24afb9dd46" x="621.928537" y="22.809427" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="mlmc-patch_3">
+    <path d="M 55.527809 208.78 
+L 55.527809 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="mlmc-patch_4">
+    <path d="M 55.527809 208.78 
+L 648.9 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="mlmc-legend_1">
+    <g id="mlmc-line2d_61">
+     <path d="M 62.727809 185.37375 
+L 70.727809 185.37375 
+L 78.727809 185.37375 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#mlmc-m8b03d3fc2b" x="70.727809" y="185.37375" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="mlmc-text_14">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="85.127809" y="188.17375" transform="rotate(-0 85.127809 188.17375)">Coupled level correction</text>
+    </g>
+    <g id="mlmc-line2d_62">
+     <path d="M 62.727809 197.11625 
+L 70.727809 197.11625 
+L 78.727809 197.11625 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#mlmc-m24afb9dd46" x="70.727809" y="197.11625" style="fill: #d3ad84; stroke: #d3ad84"/>
+     </g>
+    </g>
+    <g id="mlmc-text_15">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="85.127809" y="199.91625" transform="rotate(-0 85.127809 199.91625)">Independent level difference</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="mlmc-p6517e737b7">
+   <rect x="55.527809" y="13.5" width="593.372191" height="195.28"/>
+  </clipPath>
+ </defs>
+</svg>

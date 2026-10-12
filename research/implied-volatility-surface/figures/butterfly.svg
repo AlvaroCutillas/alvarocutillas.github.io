@@ -1,0 +1,753 @@
+<svg role="img" aria-labelledby="butterfly-title butterfly-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="butterfly-title">Figure 10 · Positive volatility does not guarantee convex option prices</title><desc id="butterfly-desc">Three-year slices with the same ATM term structure and rho -0.65; only eta changes. The eta 12 example is intentionally invalid. Analytic derivatives of total variance are used in g.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:54:53.810983</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="butterfly-figure_1">
+  <g id="butterfly-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="butterfly-axes_1">
+   <g id="butterfly-patch_2">
+    <path d="M 62.66 244.78 
+L 364.77 244.78 
+L 364.77 35.14 
+L 62.66 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="butterfly-matplotlib.axis_1">
+    <g id="butterfly-xtick_1">
+     <g id="butterfly-line2d_1">
+      <path d="M 76.392273 244.78 
+L 76.392273 35.14 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_2">
+      <defs>
+       <path id="butterfly-m8c2358ea38" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#butterfly-m8c2358ea38" x="76.392273" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="76.392273" y="258.618594" transform="rotate(-0 76.392273 258.618594)">−0.6</text>
+     </g>
+    </g>
+    <g id="butterfly-xtick_2">
+     <g id="butterfly-line2d_3">
+      <path d="M 122.166515 244.78 
+L 122.166515 35.14 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_4">
+      <g>
+       <use href="#butterfly-m8c2358ea38" x="122.166515" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="122.166515" y="258.618594" transform="rotate(-0 122.166515 258.618594)">−0.4</text>
+     </g>
+    </g>
+    <g id="butterfly-xtick_3">
+     <g id="butterfly-line2d_5">
+      <path d="M 167.940758 244.78 
+L 167.940758 35.14 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_6">
+      <g>
+       <use href="#butterfly-m8c2358ea38" x="167.940758" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="167.940758" y="258.618594" transform="rotate(-0 167.940758 258.618594)">−0.2</text>
+     </g>
+    </g>
+    <g id="butterfly-xtick_4">
+     <g id="butterfly-line2d_7">
+      <path d="M 213.715 244.78 
+L 213.715 35.14 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_8">
+      <g>
+       <use href="#butterfly-m8c2358ea38" x="213.715" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="213.715" y="258.618594" transform="rotate(-0 213.715 258.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="butterfly-xtick_5">
+     <g id="butterfly-line2d_9">
+      <path d="M 259.489242 244.78 
+L 259.489242 35.14 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_10">
+      <g>
+       <use href="#butterfly-m8c2358ea38" x="259.489242" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="259.489242" y="258.618594" transform="rotate(-0 259.489242 258.618594)">0.2</text>
+     </g>
+    </g>
+    <g id="butterfly-xtick_6">
+     <g id="butterfly-line2d_11">
+      <path d="M 305.263485 244.78 
+L 305.263485 35.14 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_12">
+      <g>
+       <use href="#butterfly-m8c2358ea38" x="305.263485" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="305.263485" y="258.618594" transform="rotate(-0 305.263485 258.618594)">0.4</text>
+     </g>
+    </g>
+    <g id="butterfly-xtick_7">
+     <g id="butterfly-line2d_13">
+      <path d="M 351.037727 244.78 
+L 351.037727 35.14 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_14">
+      <g>
+       <use href="#butterfly-m8c2358ea38" x="351.037727" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="351.037727" y="258.618594" transform="rotate(-0 351.037727 258.618594)">0.6</text>
+     </g>
+    </g>
+    <g id="butterfly-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="213.715" y="271.328906" transform="rotate(-0 213.715 271.328906)">Log-forward moneyness k</text>
+    </g>
+   </g>
+   <g id="butterfly-matplotlib.axis_2">
+    <g id="butterfly-ytick_1">
+     <g id="butterfly-line2d_15">
+      <path d="M 62.66 238.02918 
+L 364.77 238.02918 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_16">
+      <defs>
+       <path id="butterfly-m6f1fcf6da1" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#butterfly-m6f1fcf6da1" x="62.66" y="238.02918" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="241.448477" transform="rotate(-0 55.66 241.448477)">15.0%</text>
+     </g>
+    </g>
+    <g id="butterfly-ytick_2">
+     <g id="butterfly-line2d_17">
+      <path d="M 62.66 210.804686 
+L 364.77 210.804686 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_18">
+      <g>
+       <use href="#butterfly-m6f1fcf6da1" x="62.66" y="210.804686" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="214.223983" transform="rotate(-0 55.66 214.223983)">20.0%</text>
+     </g>
+    </g>
+    <g id="butterfly-ytick_3">
+     <g id="butterfly-line2d_19">
+      <path d="M 62.66 183.580192 
+L 364.77 183.580192 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_20">
+      <g>
+       <use href="#butterfly-m6f1fcf6da1" x="62.66" y="183.580192" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="186.999489" transform="rotate(-0 55.66 186.999489)">25.0%</text>
+     </g>
+    </g>
+    <g id="butterfly-ytick_4">
+     <g id="butterfly-line2d_21">
+      <path d="M 62.66 156.355698 
+L 364.77 156.355698 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_22">
+      <g>
+       <use href="#butterfly-m6f1fcf6da1" x="62.66" y="156.355698" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="159.774995" transform="rotate(-0 55.66 159.774995)">30.0%</text>
+     </g>
+    </g>
+    <g id="butterfly-ytick_5">
+     <g id="butterfly-line2d_23">
+      <path d="M 62.66 129.131204 
+L 364.77 129.131204 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_24">
+      <g>
+       <use href="#butterfly-m6f1fcf6da1" x="62.66" y="129.131204" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="132.550501" transform="rotate(-0 55.66 132.550501)">35.0%</text>
+     </g>
+    </g>
+    <g id="butterfly-ytick_6">
+     <g id="butterfly-line2d_25">
+      <path d="M 62.66 101.906711 
+L 364.77 101.906711 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_26">
+      <g>
+       <use href="#butterfly-m6f1fcf6da1" x="62.66" y="101.906711" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="105.326007" transform="rotate(-0 55.66 105.326007)">40.0%</text>
+     </g>
+    </g>
+    <g id="butterfly-ytick_7">
+     <g id="butterfly-line2d_27">
+      <path d="M 62.66 74.682217 
+L 364.77 74.682217 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_28">
+      <g>
+       <use href="#butterfly-m6f1fcf6da1" x="62.66" y="74.682217" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="78.101514" transform="rotate(-0 55.66 78.101514)">45.0%</text>
+     </g>
+    </g>
+    <g id="butterfly-ytick_8">
+     <g id="butterfly-line2d_29">
+      <path d="M 62.66 47.457723 
+L 364.77 47.457723 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_30">
+      <g>
+       <use href="#butterfly-m6f1fcf6da1" x="62.66" y="47.457723" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="50.87702" transform="rotate(-0 55.66 50.87702)">50.0%</text>
+     </g>
+    </g>
+    <g id="butterfly-text_17">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.197813" y="139.96" transform="rotate(-90 21.197813 139.96)">Implied volatility</text>
+    </g>
+   </g>
+   <g id="butterfly-line2d_31">
+    <path d="M 76.392273 166.08304 
+L 100.42375 173.006298 
+L 123.310871 179.828337 
+L 147.342348 187.23065 
+L 172.518182 195.223506 
+L 241.179545 217.205978 
+L 253.767462 220.882398 
+L 264.066667 223.674631 
+L 273.221515 225.949258 
+L 282.376364 227.994932 
+L 290.386856 229.57709 
+L 298.397348 230.954073 
+L 306.407841 232.122216 
+L 314.418333 233.084551 
+L 323.573182 233.943846 
+L 332.72803 234.565811 
+L 341.882879 234.974552 
+L 351.037727 235.195706 
+L 351.037727 235.195706 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="butterfly-line2d_32">
+    <path d="M 76.392273 44.669091 
+L 86.691477 53.673535 
+L 96.990682 62.988069 
+L 106.14553 71.555015 
+L 115.300379 80.421186 
+L 124.455227 89.61919 
+L 132.46572 97.969879 
+L 140.476212 106.634749 
+L 148.486705 115.649887 
+L 155.352841 123.688152 
+L 162.218977 132.046675 
+L 169.085114 140.762108 
+L 175.95125 149.876553 
+L 181.67303 157.810604 
+L 187.394811 166.08304 
+L 193.116591 174.720145 
+L 198.838371 183.737242 
+L 205.704508 195.031577 
+L 219.43678 217.921898 
+L 222.869848 222.994646 
+L 225.158561 225.99627 
+L 227.447273 228.608018 
+L 229.735985 230.778223 
+L 232.024697 232.486107 
+L 234.313409 233.743466 
+L 236.602121 234.587832 
+L 238.890833 235.071445 
+L 241.179545 235.250909 
+L 243.468258 235.180126 
+L 245.75697 234.906665 
+L 249.190038 234.202163 
+L 252.623106 233.235956 
+L 257.20053 231.669365 
+L 262.922311 229.428165 
+L 270.932803 226.008203 
+L 288.098144 218.3386 
+L 306.407841 210.260127 
+L 321.28447 203.940438 
+L 336.161098 197.865388 
+L 351.037727 192.028065 
+L 351.037727 192.028065 
+" clip-path="url(#butterfly-pde3d3684de)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="butterfly-patch_3">
+    <path d="M 62.66 244.78 
+L 62.66 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="butterfly-patch_4">
+    <path d="M 62.66 244.78 
+L 364.77 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="butterfly-text_18">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="62.66" y="22.14" transform="rotate(-0 62.66 22.14)">A positive smile can be inconsistent</text>
+   </g>
+   <g id="butterfly-legend_1">
+    <g id="butterfly-line2d_33">
+     <path d="M 248.86625 45.61875 
+L 256.86625 45.61875 
+L 264.86625 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="butterfly-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="271.26625" y="48.41875" transform="rotate(-0 271.26625 48.41875)">Reference eta 2.3</text>
+    </g>
+    <g id="butterfly-line2d_34">
+     <path d="M 248.86625 57.36125 
+L 256.86625 57.36125 
+L 264.86625 57.36125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="butterfly-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="271.26625" y="60.16125" transform="rotate(-0 271.26625 60.16125)">Unconstrained eta 12</text>
+    </g>
+   </g>
+  </g>
+  <g id="butterfly-axes_2">
+   <g id="butterfly-patch_5">
+    <path d="M 404.39 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 404.39 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="butterfly-matplotlib.axis_3">
+    <g id="butterfly-xtick_8">
+     <g id="butterfly-line2d_35">
+      <path d="M 418.122273 244.78 
+L 418.122273 35.14 
+" clip-path="url(#butterfly-p76c2324dcc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_36">
+      <g>
+       <use href="#butterfly-m8c2358ea38" x="418.122273" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="418.122273" y="258.618594" transform="rotate(-0 418.122273 258.618594)">−0.6</text>
+     </g>
+    </g>
+    <g id="butterfly-xtick_9">
+     <g id="butterfly-line2d_37">
+      <path d="M 463.896515 244.78 
+L 463.896515 35.14 
+" clip-path="url(#butterfly-p76c2324dcc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_38">
+      <g>
+       <use href="#butterfly-m8c2358ea38" x="463.896515" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="463.896515" y="258.618594" transform="rotate(-0 463.896515 258.618594)">−0.4</text>
+     </g>
+    </g>
+    <g id="butterfly-xtick_10">
+     <g id="butterfly-line2d_39">
+      <path d="M 509.670758 244.78 
+L 509.670758 35.14 
+" clip-path="url(#butterfly-p76c2324dcc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_40">
+      <g>
+       <use href="#butterfly-m8c2358ea38" x="509.670758" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="509.670758" y="258.618594" transform="rotate(-0 509.670758 258.618594)">−0.2</text>
+     </g>
+    </g>
+    <g id="butterfly-xtick_11">
+     <g id="butterfly-line2d_41">
+      <path d="M 555.445 244.78 
+L 555.445 35.14 
+" clip-path="url(#butterfly-p76c2324dcc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_42">
+      <g>
+       <use href="#butterfly-m8c2358ea38" x="555.445" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="555.445" y="258.618594" transform="rotate(-0 555.445 258.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="butterfly-xtick_12">
+     <g id="butterfly-line2d_43">
+      <path d="M 601.219242 244.78 
+L 601.219242 35.14 
+" clip-path="url(#butterfly-p76c2324dcc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_44">
+      <g>
+       <use href="#butterfly-m8c2358ea38" x="601.219242" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="601.219242" y="258.618594" transform="rotate(-0 601.219242 258.618594)">0.2</text>
+     </g>
+    </g>
+    <g id="butterfly-xtick_13">
+     <g id="butterfly-line2d_45">
+      <path d="M 646.993485 244.78 
+L 646.993485 35.14 
+" clip-path="url(#butterfly-p76c2324dcc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_46">
+      <g>
+       <use href="#butterfly-m8c2358ea38" x="646.993485" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="646.993485" y="258.618594" transform="rotate(-0 646.993485 258.618594)">0.4</text>
+     </g>
+    </g>
+    <g id="butterfly-xtick_14">
+     <g id="butterfly-line2d_47">
+      <path d="M 692.767727 244.78 
+L 692.767727 35.14 
+" clip-path="url(#butterfly-p76c2324dcc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_48">
+      <g>
+       <use href="#butterfly-m8c2358ea38" x="692.767727" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="692.767727" y="258.618594" transform="rotate(-0 692.767727 258.618594)">0.6</text>
+     </g>
+    </g>
+    <g id="butterfly-text_28">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="555.445" y="271.328906" transform="rotate(-0 555.445 271.328906)">Log-forward moneyness k</text>
+    </g>
+   </g>
+   <g id="butterfly-matplotlib.axis_4">
+    <g id="butterfly-ytick_9">
+     <g id="butterfly-line2d_49">
+      <path d="M 404.39 221.145038 
+L 706.5 221.145038 
+" clip-path="url(#butterfly-p76c2324dcc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_50">
+      <g>
+       <use href="#butterfly-m6f1fcf6da1" x="404.39" y="221.145038" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="397.39" y="224.564335" transform="rotate(-0 397.39 224.564335)">0</text>
+     </g>
+    </g>
+    <g id="butterfly-ytick_10">
+     <g id="butterfly-line2d_51">
+      <path d="M 404.39 189.096699 
+L 706.5 189.096699 
+" clip-path="url(#butterfly-p76c2324dcc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_52">
+      <g>
+       <use href="#butterfly-m6f1fcf6da1" x="404.39" y="189.096699" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="397.39" y="192.515996" transform="rotate(-0 397.39 192.515996)">1</text>
+     </g>
+    </g>
+    <g id="butterfly-ytick_11">
+     <g id="butterfly-line2d_53">
+      <path d="M 404.39 157.04836 
+L 706.5 157.04836 
+" clip-path="url(#butterfly-p76c2324dcc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_54">
+      <g>
+       <use href="#butterfly-m6f1fcf6da1" x="404.39" y="157.04836" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="397.39" y="160.467657" transform="rotate(-0 397.39 160.467657)">2</text>
+     </g>
+    </g>
+    <g id="butterfly-ytick_12">
+     <g id="butterfly-line2d_55">
+      <path d="M 404.39 125.000021 
+L 706.5 125.000021 
+" clip-path="url(#butterfly-p76c2324dcc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_56">
+      <g>
+       <use href="#butterfly-m6f1fcf6da1" x="404.39" y="125.000021" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="397.39" y="128.419318" transform="rotate(-0 397.39 128.419318)">3</text>
+     </g>
+    </g>
+    <g id="butterfly-ytick_13">
+     <g id="butterfly-line2d_57">
+      <path d="M 404.39 92.951683 
+L 706.5 92.951683 
+" clip-path="url(#butterfly-p76c2324dcc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_58">
+      <g>
+       <use href="#butterfly-m6f1fcf6da1" x="404.39" y="92.951683" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="397.39" y="96.370979" transform="rotate(-0 397.39 96.370979)">4</text>
+     </g>
+    </g>
+    <g id="butterfly-ytick_14">
+     <g id="butterfly-line2d_59">
+      <path d="M 404.39 60.903344 
+L 706.5 60.903344 
+" clip-path="url(#butterfly-p76c2324dcc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="butterfly-line2d_60">
+      <g>
+       <use href="#butterfly-m6f1fcf6da1" x="404.39" y="60.903344" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="butterfly-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="397.39" y="64.322641" transform="rotate(-0 397.39 64.322641)">5</text>
+     </g>
+    </g>
+    <g id="butterfly-text_35">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="385.792031" y="139.96" transform="rotate(-90 385.792031 139.96)">Butterfly diagnostic g(k)</text>
+    </g>
+   </g>
+   <g id="butterfly-line2d_61">
+    <path d="M 418.122273 204.415806 
+L 438.720682 203.316423 
+L 457.030379 202.117834 
+L 473.051364 200.847713 
+L 486.783636 199.55175 
+L 499.371553 198.157539 
+L 510.815114 196.68553 
+L 522.258674 194.985662 
+L 532.557879 193.234262 
+L 542.857083 191.252227 
+L 553.156288 189.02947 
+L 563.455492 186.57583 
+L 576.043409 183.332049 
+L 596.641818 177.989582 
+L 604.652311 176.194279 
+L 610.374091 175.116597 
+L 616.095871 174.260806 
+L 621.817652 173.665245 
+L 626.395076 173.394993 
+L 630.9725 173.316554 
+L 635.549924 173.430923 
+L 640.127348 173.732559 
+L 645.849129 174.354846 
+L 651.570909 175.218062 
+L 658.437045 176.513324 
+L 666.447538 178.283357 
+L 677.891098 181.072106 
+L 692.767727 184.75259 
+L 692.767727 184.75259 
+" clip-path="url(#butterfly-p76c2324dcc)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="butterfly-line2d_62">
+    <path d="M 418.122273 225.504217 
+L 436.43197 226.656408 
+L 452.452955 227.883977 
+L 467.329583 229.254684 
+L 481.061856 230.751218 
+L 495.938485 232.614195 
+L 511.95947 234.619387 
+L 517.68125 235.110689 
+L 522.258674 235.250909 
+L 525.691742 235.100913 
+L 527.980455 234.819545 
+L 530.269167 234.339761 
+L 532.557879 233.599714 
+L 534.846591 232.517958 
+L 537.135303 230.986973 
+L 538.279659 230.010242 
+L 539.424015 228.86465 
+L 540.568371 227.525243 
+L 541.712727 225.963408 
+L 542.857083 224.146406 
+L 544.001439 222.036896 
+L 545.145795 219.592468 
+L 546.290152 216.765233 
+L 547.434508 213.501546 
+L 548.578864 209.741944 
+L 549.72322 205.421463 
+L 550.867576 200.470528 
+L 552.011932 194.816678 
+L 553.156288 188.387486 
+L 554.300644 181.115083 
+L 555.445 172.942735 
+L 556.589356 163.833905 
+L 558.878068 142.834862 
+L 561.16678 118.733009 
+L 564.599848 81.170909 
+L 565.744205 69.970387 
+L 566.888561 60.290449 
+L 568.032917 52.618028 
+L 569.177273 47.336449 
+L 570.321629 44.673019 
+L 571.465985 44.669091 
+L 572.610341 47.180165 
+L 573.754697 51.905135 
+L 574.899053 58.43591 
+L 576.043409 66.314539 
+L 578.332121 84.335819 
+L 581.765189 111.862326 
+L 584.053902 128.172499 
+L 586.342614 142.155932 
+L 588.631326 153.822263 
+L 590.920038 163.41541 
+L 593.20875 171.254043 
+L 595.497462 177.65184 
+L 597.786174 182.884828 
+L 600.074886 187.182835 
+L 602.363598 190.731717 
+L 604.652311 193.679511 
+L 606.941023 196.14331 
+L 609.229735 198.215546 
+L 611.518447 199.969262 
+L 613.807159 201.46236 
+L 616.095871 202.740936 
+L 619.528939 204.335232 
+L 622.962008 205.623833 
+L 626.395076 206.67663 
+L 630.9725 207.80098 
+L 635.549924 208.68496 
+L 641.271705 209.543613 
+L 648.137841 210.316743 
+L 656.148333 210.975898 
+L 666.447538 211.571931 
+L 679.035455 212.060759 
+L 692.767727 212.413031 
+L 692.767727 212.413031 
+" clip-path="url(#butterfly-p76c2324dcc)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="butterfly-line2d_63">
+    <path d="M 404.39 221.145038 
+L 706.5 221.145038 
+" clip-path="url(#butterfly-p76c2324dcc)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+   </g>
+   <g id="butterfly-patch_6">
+    <path d="M 404.39 244.78 
+L 404.39 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="butterfly-patch_7">
+    <path d="M 404.39 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="butterfly-text_36">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="404.39" y="22.14" transform="rotate(-0 404.39 22.14)">Negative g implies negative strike density</text>
+   </g>
+   <g id="butterfly-legend_2">
+    <g id="butterfly-line2d_64">
+     <path d="M 590.59625 45.61875 
+L 598.59625 45.61875 
+L 606.59625 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="butterfly-text_37">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="612.99625" y="48.41875" transform="rotate(-0 612.99625 48.41875)">Reference eta 2.3</text>
+    </g>
+    <g id="butterfly-line2d_65">
+     <path d="M 590.59625 57.36125 
+L 598.59625 57.36125 
+L 606.59625 57.36125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="butterfly-text_38">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="612.99625" y="60.16125" transform="rotate(-0 612.99625 60.16125)">Unconstrained eta 12</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="butterfly-pde3d3684de">
+   <rect x="62.66" y="35.14" width="302.11" height="209.64"/>
+  </clipPath>
+  <clipPath id="butterfly-p76c2324dcc">
+   <rect x="404.39" y="35.14" width="302.11" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

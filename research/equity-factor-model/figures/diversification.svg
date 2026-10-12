@@ -1,0 +1,408 @@
+<svg role="img" aria-labelledby="diversification-title diversification-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="252pt" viewBox="0 0 792 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="diversification-title">Figure 16 · Diversification and the common-risk floor</title><desc id="diversification-desc">All stocks have the same factor exposures, independent 3% specific volatility and equal weights. Total variance is βΣfβ + σ²ε/N; volatility components do not add linearly.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-05T16:04:06.183918</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="diversification-figure_1">
+  <g id="diversification-patch_1">
+   <path d="M 0 252 
+L 792 252 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="diversification-axes_1">
+   <g id="diversification-patch_2">
+    <path d="M 56.9 208.78 
+L 778.5 208.78 
+L 778.5 35.14 
+L 56.9 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="diversification-matplotlib.axis_1">
+    <g id="diversification-xtick_1">
+     <g id="diversification-line2d_1">
+      <path d="M 86.403518 208.78 
+L 86.403518 35.14 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="diversification-line2d_2">
+      <defs>
+       <path id="diversification-mb0c7efae94" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#diversification-mb0c7efae94" x="86.403518" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="diversification-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="86.403518" y="222.618594" transform="rotate(-0 86.403518 222.618594)">0</text>
+     </g>
+    </g>
+    <g id="diversification-xtick_2">
+     <g id="diversification-line2d_3">
+      <path d="M 168.815578 208.78 
+L 168.815578 35.14 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="diversification-line2d_4">
+      <g>
+       <use href="#diversification-mb0c7efae94" x="168.815578" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="diversification-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="168.815578" y="222.618594" transform="rotate(-0 168.815578 222.618594)">25</text>
+     </g>
+    </g>
+    <g id="diversification-xtick_3">
+     <g id="diversification-line2d_5">
+      <path d="M 251.227638 208.78 
+L 251.227638 35.14 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="diversification-line2d_6">
+      <g>
+       <use href="#diversification-mb0c7efae94" x="251.227638" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="diversification-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="251.227638" y="222.618594" transform="rotate(-0 251.227638 222.618594)">50</text>
+     </g>
+    </g>
+    <g id="diversification-xtick_4">
+     <g id="diversification-line2d_7">
+      <path d="M 333.639698 208.78 
+L 333.639698 35.14 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="diversification-line2d_8">
+      <g>
+       <use href="#diversification-mb0c7efae94" x="333.639698" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="diversification-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="333.639698" y="222.618594" transform="rotate(-0 333.639698 222.618594)">75</text>
+     </g>
+    </g>
+    <g id="diversification-xtick_5">
+     <g id="diversification-line2d_9">
+      <path d="M 416.051759 208.78 
+L 416.051759 35.14 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="diversification-line2d_10">
+      <g>
+       <use href="#diversification-mb0c7efae94" x="416.051759" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="diversification-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="416.051759" y="222.618594" transform="rotate(-0 416.051759 222.618594)">100</text>
+     </g>
+    </g>
+    <g id="diversification-xtick_6">
+     <g id="diversification-line2d_11">
+      <path d="M 498.463819 208.78 
+L 498.463819 35.14 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="diversification-line2d_12">
+      <g>
+       <use href="#diversification-mb0c7efae94" x="498.463819" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="diversification-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="498.463819" y="222.618594" transform="rotate(-0 498.463819 222.618594)">125</text>
+     </g>
+    </g>
+    <g id="diversification-xtick_7">
+     <g id="diversification-line2d_13">
+      <path d="M 580.875879 208.78 
+L 580.875879 35.14 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="diversification-line2d_14">
+      <g>
+       <use href="#diversification-mb0c7efae94" x="580.875879" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="diversification-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="580.875879" y="222.618594" transform="rotate(-0 580.875879 222.618594)">150</text>
+     </g>
+    </g>
+    <g id="diversification-xtick_8">
+     <g id="diversification-line2d_15">
+      <path d="M 663.28794 208.78 
+L 663.28794 35.14 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="diversification-line2d_16">
+      <g>
+       <use href="#diversification-mb0c7efae94" x="663.28794" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="diversification-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="663.28794" y="222.618594" transform="rotate(-0 663.28794 222.618594)">175</text>
+     </g>
+    </g>
+    <g id="diversification-xtick_9">
+     <g id="diversification-line2d_17">
+      <path d="M 745.7 208.78 
+L 745.7 35.14 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="diversification-line2d_18">
+      <g>
+       <use href="#diversification-mb0c7efae94" x="745.7" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="diversification-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="745.7" y="222.618594" transform="rotate(-0 745.7 222.618594)">200</text>
+     </g>
+    </g>
+    <g id="diversification-text_10">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="417.7" y="235.328906" transform="rotate(-0 417.7 235.328906)">Number of equal-weight stocks</text>
+    </g>
+   </g>
+   <g id="diversification-matplotlib.axis_2">
+    <g id="diversification-ytick_1">
+     <g id="diversification-line2d_19">
+      <path d="M 56.9 206.958837 
+L 778.5 206.958837 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="diversification-line2d_20">
+      <defs>
+       <path id="diversification-mca83ac4ca2" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#diversification-mca83ac4ca2" x="56.9" y="206.958837" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="diversification-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="49.9" y="210.378134" transform="rotate(-0 49.9 210.378134)">0.0%</text>
+     </g>
+    </g>
+    <g id="diversification-ytick_2">
+     <g id="diversification-line2d_21">
+      <path d="M 56.9 178.337209 
+L 778.5 178.337209 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="diversification-line2d_22">
+      <g>
+       <use href="#diversification-mca83ac4ca2" x="56.9" y="178.337209" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="diversification-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="49.9" y="181.756506" transform="rotate(-0 49.9 181.756506)">1.0%</text>
+     </g>
+    </g>
+    <g id="diversification-ytick_3">
+     <g id="diversification-line2d_23">
+      <path d="M 56.9 149.715581 
+L 778.5 149.715581 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="diversification-line2d_24">
+      <g>
+       <use href="#diversification-mca83ac4ca2" x="56.9" y="149.715581" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="diversification-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="49.9" y="153.134878" transform="rotate(-0 49.9 153.134878)">2.0%</text>
+     </g>
+    </g>
+    <g id="diversification-ytick_4">
+     <g id="diversification-line2d_25">
+      <path d="M 56.9 121.093954 
+L 778.5 121.093954 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="diversification-line2d_26">
+      <g>
+       <use href="#diversification-mca83ac4ca2" x="56.9" y="121.093954" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="diversification-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="49.9" y="124.51325" transform="rotate(-0 49.9 124.51325)">3.0%</text>
+     </g>
+    </g>
+    <g id="diversification-ytick_5">
+     <g id="diversification-line2d_27">
+      <path d="M 56.9 92.472326 
+L 778.5 92.472326 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="diversification-line2d_28">
+      <g>
+       <use href="#diversification-mca83ac4ca2" x="56.9" y="92.472326" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="diversification-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="49.9" y="95.891623" transform="rotate(-0 49.9 95.891623)">4.0%</text>
+     </g>
+    </g>
+    <g id="diversification-ytick_6">
+     <g id="diversification-line2d_29">
+      <path d="M 56.9 63.850698 
+L 778.5 63.850698 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="diversification-line2d_30">
+      <g>
+       <use href="#diversification-mca83ac4ca2" x="56.9" y="63.850698" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="diversification-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="49.9" y="67.269995" transform="rotate(-0 49.9 67.269995)">5.0%</text>
+     </g>
+    </g>
+    <g id="diversification-ytick_7">
+     <g id="diversification-line2d_31">
+      <path d="M 56.9 35.22907 
+L 778.5 35.22907 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="diversification-line2d_32">
+      <g>
+       <use href="#diversification-mca83ac4ca2" x="56.9" y="35.22907" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="diversification-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="49.9" y="38.648367" transform="rotate(-0 49.9 38.648367)">6.0%</text>
+     </g>
+    </g>
+    <g id="diversification-text_18">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.164063" y="121.96" transform="rotate(-90 21.164063 121.96)">Monthly volatility</text>
+    </g>
+   </g>
+   <g id="diversification-line2d_33">
+    <path d="M 89.7 43.032727 
+L 92.996482 54.691374 
+L 96.292965 58.781295 
+L 99.589447 60.869187 
+L 102.88593 62.13637 
+L 106.182412 62.987355 
+L 109.478894 63.598294 
+L 116.071859 64.416952 
+L 122.664824 64.940374 
+L 132.554271 65.446935 
+L 145.740201 65.861034 
+L 165.519095 66.224369 
+L 195.187437 66.522343 
+L 244.634673 66.771138 
+L 336.936181 66.973118 
+L 528.132161 67.123176 
+L 745.7 67.188113 
+L 745.7 67.188113 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="diversification-line2d_34">
+    <path d="M 89.7 121.093954 
+L 92.996482 146.243196 
+L 96.292965 157.384723 
+L 99.589447 164.026395 
+L 102.88593 168.558894 
+L 106.182412 171.904645 
+L 109.478894 174.504962 
+L 112.775377 176.601016 
+L 116.071859 178.337209 
+L 119.368342 179.805977 
+L 122.664824 181.0696 
+L 125.961307 182.17178 
+L 132.554271 184.010482 
+L 139.147236 185.492616 
+L 145.740201 186.72029 
+L 152.333166 187.758865 
+L 162.222613 189.054771 
+L 172.11206 190.119348 
+L 185.29799 191.282126 
+L 198.48392 192.233131 
+L 214.966332 193.209452 
+L 234.745226 194.158856 
+L 257.820603 195.05152 
+L 287.488945 195.964965 
+L 323.750251 196.839563 
+L 366.604523 197.645483 
+L 419.348241 198.414962 
+L 485.277889 199.152938 
+L 570.986432 199.876821 
+L 679.770352 200.558846 
+L 745.7 200.887273 
+L 745.7 200.887273 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="diversification-line2d_35">
+    <path d="M 89.7 67.320048 
+L 745.7 67.320048 
+L 745.7 67.320048 
+" clip-path="url(#diversification-p5db0d89ffc)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="diversification-patch_3">
+    <path d="M 56.9 208.78 
+L 56.9 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="diversification-patch_4">
+    <path d="M 56.9 208.78 
+L 778.5 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="diversification-text_19">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="56.9" y="22.14" transform="rotate(-0 56.9 22.14)">Independent specific risk diversifies</text>
+   </g>
+   <g id="diversification-legend_1">
+    <g id="diversification-line2d_36">
+     <path d="M 665.885 109.625 
+L 673.885 109.625 
+L 681.885 109.625 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="diversification-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="688.285" y="112.425" transform="rotate(-0 688.285 112.425)">Total volatility</text>
+    </g>
+    <g id="diversification-line2d_37">
+     <path d="M 665.885 121.3675 
+L 673.885 121.3675 
+L 681.885 121.3675 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="diversification-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="688.285" y="124.1675" transform="rotate(-0 688.285 124.1675)">Specific volatility</text>
+    </g>
+    <g id="diversification-line2d_38">
+     <path d="M 665.885 133.11 
+L 673.885 133.11 
+L 681.885 133.11 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="diversification-text_22">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="688.285" y="135.91" transform="rotate(-0 688.285 135.91)">Common-factor floor</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="diversification-p5db0d89ffc">
+   <rect x="56.9" y="35.14" width="721.6" height="173.64"/>
+  </clipPath>
+ </defs>
+</svg>

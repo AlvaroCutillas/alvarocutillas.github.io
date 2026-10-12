@@ -1,0 +1,382 @@
+<svg role="img" aria-labelledby="control-title control-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="control-title">Figure 07 · Removing known stock variation with a control variate</title><desc id="control-desc">The control is e^(−rT)S_T, with known expectation 100. Its population-optimal coefficient is 0.673615, derived from truncated lognormal moments. Adjusted observations can be negative; clipping them would introduce bias.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T19:11:26.997721</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="control-figure_1">
+  <g id="control-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="control-axes_1">
+   <g id="control-patch_2">
+    <path d="M 52.94 208.78 
+L 648.9 208.78 
+L 648.9 13.5 
+L 52.94 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="control-matplotlib.axis_1">
+    <g id="control-xtick_1">
+     <g id="control-line2d_1">
+      <path d="M 61.346959 208.78 
+L 61.346959 13.5 
+" clip-path="url(#control-pc89608a7eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="control-line2d_2">
+      <defs>
+       <path id="control-m98b03e6e1f" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#control-m98b03e6e1f" x="61.346959" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="control-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="61.346959" y="222.618594" transform="rotate(-0 61.346959 222.618594)">−3</text>
+     </g>
+    </g>
+    <g id="control-xtick_2">
+     <g id="control-line2d_3">
+      <path d="M 154.757618 208.78 
+L 154.757618 13.5 
+" clip-path="url(#control-pc89608a7eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="control-line2d_4">
+      <g>
+       <use href="#control-m98b03e6e1f" x="154.757618" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="control-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="154.757618" y="222.618594" transform="rotate(-0 154.757618 222.618594)">−2</text>
+     </g>
+    </g>
+    <g id="control-xtick_3">
+     <g id="control-line2d_5">
+      <path d="M 248.168276 208.78 
+L 248.168276 13.5 
+" clip-path="url(#control-pc89608a7eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="control-line2d_6">
+      <g>
+       <use href="#control-m98b03e6e1f" x="248.168276" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="control-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="248.168276" y="222.618594" transform="rotate(-0 248.168276 222.618594)">−1</text>
+     </g>
+    </g>
+    <g id="control-xtick_4">
+     <g id="control-line2d_7">
+      <path d="M 341.578934 208.78 
+L 341.578934 13.5 
+" clip-path="url(#control-pc89608a7eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="control-line2d_8">
+      <g>
+       <use href="#control-m98b03e6e1f" x="341.578934" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="control-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="341.578934" y="222.618594" transform="rotate(-0 341.578934 222.618594)">0</text>
+     </g>
+    </g>
+    <g id="control-xtick_5">
+     <g id="control-line2d_9">
+      <path d="M 434.989592 208.78 
+L 434.989592 13.5 
+" clip-path="url(#control-pc89608a7eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="control-line2d_10">
+      <g>
+       <use href="#control-m98b03e6e1f" x="434.989592" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="control-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="434.989592" y="222.618594" transform="rotate(-0 434.989592 222.618594)">1</text>
+     </g>
+    </g>
+    <g id="control-xtick_6">
+     <g id="control-line2d_11">
+      <path d="M 528.400251 208.78 
+L 528.400251 13.5 
+" clip-path="url(#control-pc89608a7eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="control-line2d_12">
+      <g>
+       <use href="#control-m98b03e6e1f" x="528.400251" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="control-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="528.400251" y="222.618594" transform="rotate(-0 528.400251 222.618594)">2</text>
+     </g>
+    </g>
+    <g id="control-xtick_7">
+     <g id="control-line2d_13">
+      <path d="M 621.810909 208.78 
+L 621.810909 13.5 
+" clip-path="url(#control-pc89608a7eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="control-line2d_14">
+      <g>
+       <use href="#control-m98b03e6e1f" x="621.810909" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="control-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="621.810909" y="222.618594" transform="rotate(-0 621.810909 222.618594)">3</text>
+     </g>
+    </g>
+    <g id="control-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="350.92" y="235.328906" transform="rotate(-0 350.92 235.328906)">Normal shock Z</text>
+    </g>
+   </g>
+   <g id="control-matplotlib.axis_2">
+    <g id="control-ytick_1">
+     <g id="control-line2d_15">
+      <path d="M 52.94 184.766546 
+L 648.9 184.766546 
+" clip-path="url(#control-pc89608a7eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="control-line2d_16">
+      <defs>
+       <path id="control-m124cd4c546" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#control-m124cd4c546" x="52.94" y="184.766546" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="control-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="188.185843" transform="rotate(-0 45.94 188.185843)">−20</text>
+     </g>
+    </g>
+    <g id="control-ytick_2">
+     <g id="control-line2d_17">
+      <path d="M 52.94 153.381009 
+L 648.9 153.381009 
+" clip-path="url(#control-pc89608a7eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="control-line2d_18">
+      <g>
+       <use href="#control-m124cd4c546" x="52.94" y="153.381009" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="control-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="156.800306" transform="rotate(-0 45.94 156.800306)">0</text>
+     </g>
+    </g>
+    <g id="control-ytick_3">
+     <g id="control-line2d_19">
+      <path d="M 52.94 121.995472 
+L 648.9 121.995472 
+" clip-path="url(#control-pc89608a7eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="control-line2d_20">
+      <g>
+       <use href="#control-m124cd4c546" x="52.94" y="121.995472" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="control-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="125.414769" transform="rotate(-0 45.94 125.414769)">20</text>
+     </g>
+    </g>
+    <g id="control-ytick_4">
+     <g id="control-line2d_21">
+      <path d="M 52.94 90.609935 
+L 648.9 90.609935 
+" clip-path="url(#control-pc89608a7eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="control-line2d_22">
+      <g>
+       <use href="#control-m124cd4c546" x="52.94" y="90.609935" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="control-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="94.029231" transform="rotate(-0 45.94 94.029231)">40</text>
+     </g>
+    </g>
+    <g id="control-ytick_5">
+     <g id="control-line2d_23">
+      <path d="M 52.94 59.224398 
+L 648.9 59.224398 
+" clip-path="url(#control-pc89608a7eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="control-line2d_24">
+      <g>
+       <use href="#control-m124cd4c546" x="52.94" y="59.224398" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="control-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="62.643694" transform="rotate(-0 45.94 62.643694)">60</text>
+     </g>
+    </g>
+    <g id="control-ytick_6">
+     <g id="control-line2d_25">
+      <path d="M 52.94 27.83886 
+L 648.9 27.83886 
+" clip-path="url(#control-pc89608a7eb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="control-line2d_26">
+      <g>
+       <use href="#control-m124cd4c546" x="52.94" y="27.83886" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="control-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="31.258157" transform="rotate(-0 45.94 31.258157)">80</text>
+     </g>
+    </g>
+    <g id="control-text_15">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.074063" y="111.14" transform="rotate(-90 21.074063 111.14)">Discounted currency units</text>
+    </g>
+   </g>
+   <g id="control-line2d_27">
+    <path d="M 80.029091 153.381009 
+L 327.15764 153.381009 
+L 328.515489 153.077663 
+L 346.167528 147.316267 
+L 363.819567 141.332954 
+L 381.471606 135.119177 
+L 399.123645 128.66606 
+L 416.775685 121.964383 
+L 433.069875 115.54933 
+L 449.364065 108.906525 
+L 465.658255 102.027881 
+L 481.952445 94.905024 
+L 498.246635 87.529286 
+L 514.540825 79.891687 
+L 529.477166 72.652584 
+L 544.413506 65.178232 
+L 559.349847 57.460989 
+L 574.286188 49.492959 
+L 589.222529 41.265995 
+L 604.15887 32.77168 
+L 619.095211 24.001327 
+L 621.810909 22.376364 
+L 621.810909 22.376364 
+" clip-path="url(#control-pc89608a7eb)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="control-line2d_28">
+    <path d="M 80.029091 199.903636 
+L 108.543923 196.177578 
+L 135.700907 192.41108 
+L 162.85789 188.419087 
+L 188.657024 184.405539 
+L 214.456159 180.164053 
+L 238.897444 175.923822 
+L 263.338729 171.455787 
+L 286.422165 167.015784 
+L 309.5056 162.350827 
+L 332.589036 157.449519 
+L 354.314623 152.6099 
+L 376.04021 147.539843 
+L 396.407947 142.567628 
+L 416.775685 137.373782 
+L 437.143422 131.948426 
+L 457.51116 126.281241 
+L 476.521048 120.764183 
+L 495.530936 115.017939 
+L 514.540825 109.032987 
+L 532.192864 103.25313 
+L 549.844903 97.250646 
+L 567.496942 91.016959 
+L 585.148982 84.543165 
+L 602.801021 77.820015 
+L 619.095211 71.384407 
+L 621.810909 70.289808 
+L 621.810909 70.289808 
+" clip-path="url(#control-pc89608a7eb)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="control-line2d_29">
+    <path d="M 80.029091 106.858381 
+L 108.543923 110.58444 
+L 135.700907 114.350937 
+L 162.85789 118.342931 
+L 188.657024 122.356478 
+L 214.456159 126.597964 
+L 238.897444 130.838195 
+L 263.338729 135.30623 
+L 286.422165 139.746233 
+L 309.5056 144.41119 
+L 327.15764 148.137362 
+L 328.515489 148.126521 
+L 359.74602 144.750457 
+L 389.618701 141.302932 
+L 419.491383 137.6277 
+L 448.006216 133.893299 
+L 475.163199 130.118369 
+L 502.320182 126.117437 
+L 528.119316 122.094903 
+L 553.918451 117.843921 
+L 578.359736 113.594197 
+L 602.801021 109.116158 
+L 621.810909 105.467564 
+L 621.810909 105.467564 
+" clip-path="url(#control-pc89608a7eb)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="control-patch_3">
+    <path d="M 52.94 208.78 
+L 52.94 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="control-patch_4">
+    <path d="M 52.94 208.78 
+L 648.9 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="control-legend_1">
+    <g id="control-line2d_30">
+     <path d="M 60.14 23.97875 
+L 68.14 23.97875 
+L 76.14 23.97875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="control-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="82.54" y="26.77875" transform="rotate(-0 82.54 26.77875)">Raw payoff Y</text>
+    </g>
+    <g id="control-line2d_31">
+     <path d="M 60.14 35.72125 
+L 68.14 35.72125 
+L 76.14 35.72125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="control-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="82.54" y="38.52125" transform="rotate(-0 82.54 38.52125)">Centred stock control</text>
+    </g>
+    <g id="control-line2d_32">
+     <path d="M 60.14 47.46375 
+L 68.14 47.46375 
+L 76.14 47.46375 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="control-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="82.54" y="50.26375" transform="rotate(-0 82.54 50.26375)">Adjusted payoff</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="control-pc89608a7eb">
+   <rect x="52.94" y="13.5" width="595.96" height="195.28"/>
+  </clipPath>
+ </defs>
+</svg>

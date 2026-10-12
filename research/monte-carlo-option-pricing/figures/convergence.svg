@@ -1,0 +1,1130 @@
+<svg role="img" aria-labelledby="convergence-title convergence-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="262.8pt" viewBox="0 0 662.4 262.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="convergence-title">Figure 03 · Running estimates and pointwise confidence intervals</title><desc id="convergence-desc">Exact terminal sampling; seed 1001. The shaded intervals are normal approximations at each displayed fixed sample size. They are not a simultaneous confidence band, and the nested estimates are strongly dependent.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T19:11:26.021994</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="convergence-figure_1">
+  <g id="convergence-patch_1">
+   <path d="M 0 262.8 
+L 662.4 262.8 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="convergence-axes_1">
+   <g id="convergence-patch_2">
+    <path d="M 45.38 216.988 
+L 648.9 216.988 
+L 648.9 15.178804 
+L 45.38 15.178804 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="convergence-matplotlib.axis_1">
+    <g id="convergence-xtick_1">
+     <g id="convergence-line2d_1">
+      <path d="M 72.812727 216.988 
+L 72.812727 15.178804 
+" clip-path="url(#convergence-pb25c692a4e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convergence-line2d_2">
+      <defs>
+       <path id="convergence-mbdccd00e9f" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#convergence-mbdccd00e9f" x="72.812727" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convergence-text_1">
+      <!-- $\mathdefault{10^{2}}$ -->
+      <g style="fill: #939b94" transform="translate(64.892727 230.826594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_2">
+     <g id="convergence-line2d_3">
+      <path d="M 255.697576 216.988 
+L 255.697576 15.178804 
+" clip-path="url(#convergence-pb25c692a4e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convergence-line2d_4">
+      <g>
+       <use href="#convergence-mbdccd00e9f" x="255.697576" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convergence-text_2">
+      <!-- $\mathdefault{10^{3}}$ -->
+      <g style="fill: #939b94" transform="translate(247.777576 230.826594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">3</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_3">
+     <g id="convergence-line2d_5">
+      <path d="M 438.582424 216.988 
+L 438.582424 15.178804 
+" clip-path="url(#convergence-pb25c692a4e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convergence-line2d_6">
+      <g>
+       <use href="#convergence-mbdccd00e9f" x="438.582424" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convergence-text_3">
+      <!-- $\mathdefault{10^{4}}$ -->
+      <g style="fill: #939b94" transform="translate(430.662424 230.826594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.40625">4</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_4">
+     <g id="convergence-line2d_7">
+      <path d="M 621.467273 216.988 
+L 621.467273 15.178804 
+" clip-path="url(#convergence-pb25c692a4e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convergence-line2d_8">
+      <g>
+       <use href="#convergence-mbdccd00e9f" x="621.467273" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convergence-text_4">
+      <!-- $\mathdefault{10^{5}}$ -->
+      <g style="fill: #939b94" transform="translate(613.547273 230.826594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.40625">5</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_5">
+     <g id="convergence-line2d_9">
+      <defs>
+       <path id="convergence-m3806aa30b6" d="M 0 0 
+L 0 2 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#convergence-m3806aa30b6" x="55.089354" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_6">
+     <g id="convergence-line2d_10">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="64.444376" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_7">
+     <g id="convergence-line2d_11">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="127.866552" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_8">
+     <g id="convergence-line2d_12">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="160.070976" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_9">
+     <g id="convergence-line2d_13">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="182.920378" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_10">
+     <g id="convergence-line2d_14">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="200.643751" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_11">
+     <g id="convergence-line2d_15">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="215.124801" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_12">
+     <g id="convergence-line2d_16">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="227.368354" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_13">
+     <g id="convergence-line2d_17">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="237.974203" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_14">
+     <g id="convergence-line2d_18">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="247.329224" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_15">
+     <g id="convergence-line2d_19">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="310.751401" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_16">
+     <g id="convergence-line2d_20">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="342.955824" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_17">
+     <g id="convergence-line2d_21">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="365.805226" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_18">
+     <g id="convergence-line2d_22">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="383.528599" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_19">
+     <g id="convergence-line2d_23">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="398.009649" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_20">
+     <g id="convergence-line2d_24">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="410.253203" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_21">
+     <g id="convergence-line2d_25">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="420.859051" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_22">
+     <g id="convergence-line2d_26">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="430.214073" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_23">
+     <g id="convergence-line2d_27">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="493.636249" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_24">
+     <g id="convergence-line2d_28">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="525.840673" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_25">
+     <g id="convergence-line2d_29">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="548.690075" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_26">
+     <g id="convergence-line2d_30">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="566.413448" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_27">
+     <g id="convergence-line2d_31">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="580.894498" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_28">
+     <g id="convergence-line2d_32">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="593.138051" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_29">
+     <g id="convergence-line2d_33">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="603.7439" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-xtick_30">
+     <g id="convergence-line2d_34">
+      <g>
+       <use href="#convergence-m3806aa30b6" x="613.098921" y="216.988" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="convergence-text_5">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="347.14" y="243.536906" transform="rotate(-0 347.14 243.536906)">Payoff evaluations N</text>
+    </g>
+   </g>
+   <g id="convergence-matplotlib.axis_2">
+    <g id="convergence-ytick_1">
+     <g id="convergence-line2d_35">
+      <path d="M 45.38 197.772664 
+L 648.9 197.772664 
+" clip-path="url(#convergence-pb25c692a4e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convergence-line2d_36">
+      <defs>
+       <path id="convergence-mb397a55e66" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#convergence-mb397a55e66" x="45.38" y="197.772664" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convergence-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="201.19196" transform="rotate(-0 38.38 201.19196)">8</text>
+     </g>
+    </g>
+    <g id="convergence-ytick_2">
+     <g id="convergence-line2d_37">
+      <path d="M 45.38 167.659688 
+L 648.9 167.659688 
+" clip-path="url(#convergence-pb25c692a4e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convergence-line2d_38">
+      <g>
+       <use href="#convergence-mb397a55e66" x="45.38" y="167.659688" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convergence-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="171.078985" transform="rotate(-0 38.38 171.078985)">9</text>
+     </g>
+    </g>
+    <g id="convergence-ytick_3">
+     <g id="convergence-line2d_39">
+      <path d="M 45.38 137.546712 
+L 648.9 137.546712 
+" clip-path="url(#convergence-pb25c692a4e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convergence-line2d_40">
+      <g>
+       <use href="#convergence-mb397a55e66" x="45.38" y="137.546712" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convergence-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="140.966009" transform="rotate(-0 38.38 140.966009)">10</text>
+     </g>
+    </g>
+    <g id="convergence-ytick_4">
+     <g id="convergence-line2d_41">
+      <path d="M 45.38 107.433736 
+L 648.9 107.433736 
+" clip-path="url(#convergence-pb25c692a4e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convergence-line2d_42">
+      <g>
+       <use href="#convergence-mb397a55e66" x="45.38" y="107.433736" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convergence-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="110.853033" transform="rotate(-0 38.38 110.853033)">11</text>
+     </g>
+    </g>
+    <g id="convergence-ytick_5">
+     <g id="convergence-line2d_43">
+      <path d="M 45.38 77.32076 
+L 648.9 77.32076 
+" clip-path="url(#convergence-pb25c692a4e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convergence-line2d_44">
+      <g>
+       <use href="#convergence-mb397a55e66" x="45.38" y="77.32076" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convergence-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="80.740057" transform="rotate(-0 38.38 80.740057)">12</text>
+     </g>
+    </g>
+    <g id="convergence-ytick_6">
+     <g id="convergence-line2d_45">
+      <path d="M 45.38 47.207784 
+L 648.9 47.207784 
+" clip-path="url(#convergence-pb25c692a4e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convergence-line2d_46">
+      <g>
+       <use href="#convergence-mb397a55e66" x="45.38" y="47.207784" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convergence-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="50.627081" transform="rotate(-0 38.38 50.627081)">13</text>
+     </g>
+    </g>
+    <g id="convergence-ytick_7">
+     <g id="convergence-line2d_47">
+      <path d="M 45.38 17.094809 
+L 648.9 17.094809 
+" clip-path="url(#convergence-pb25c692a4e)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="convergence-line2d_48">
+      <g>
+       <use href="#convergence-mb397a55e66" x="45.38" y="17.094809" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="convergence-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="20.514105" transform="rotate(-0 38.38 20.514105)">14</text>
+     </g>
+    </g>
+    <g id="convergence-text_13">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.055781" y="116.083402" transform="rotate(-90 21.055781 116.083402)">Call value</text>
+    </g>
+   </g>
+   <g id="convergence-PolyCollection_1">
+    <defs>
+     <path id="convergence-m80a474cd91" d="M 72.812727 -216.175067 
+L 72.812727 -54.985145 
+L 76.687929 -56.570163 
+L 81.101613 -74.397414 
+L 85.282888 -79.71416 
+L 89.25501 -78.731041 
+L 93.65124 -81.851133 
+L 97.816847 -80.207323 
+L 102.32449 -88.818848 
+L 106.589992 -82.900769 
+L 110.638046 -93.927297 
+L 114.958343 -97.212615 
+L 119.498201 -97.158186 
+L 123.792537 -90.117773 
+L 127.866552 -92.458168 
+L 132.119075 -87.23291 
+L 136.512409 -86.415361 
+L 140.675417 -92.495881 
+L 144.951963 -89.62103 
+L 149.313696 -84.706518 
+L 153.448318 -85.400915 
+L 157.651726 -88.313129 
+L 161.902955 -89.448331 
+L 166.183674 -86.809865 
+L 170.478011 -90.239281 
+L 174.772347 -89.138712 
+L 179.055103 -88.800517 
+L 183.316517 -83.054111 
+L 187.548437 -85.146248 
+L 191.74412 -86.031713 
+L 196.066508 -91.879017 
+L 200.32541 -98.619321 
+L 204.518952 -97.908032 
+L 208.789398 -95.598867 
+L 213.113912 -97.535992 
+L 217.34391 -98.650668 
+L 221.604363 -95.936306 
+L 225.879433 -92.454477 
+L 230.155513 -99.238637 
+L 234.421015 -98.578227 
+L 238.666156 -94.33685 
+L 242.882754 -99.88601 
+L 247.152526 -104.219649 
+L 251.372345 -105.47722 
+L 255.697576 -99.713461 
+L 259.950098 -99.126457 
+L 264.200837 -103.472459 
+L 268.438815 -106.673444 
+L 272.654777 -109.9574 
+L 276.962619 -108.316699 
+L 281.164148 -111.060783 
+L 285.428143 -107.916648 
+L 289.682218 -112.215037 
+L 293.965654 -115.975368 
+L 298.216084 -114.636183 
+L 302.471251 -114.087472 
+L 306.719178 -116.183807 
+L 310.949718 -115.822009 
+L 315.229459 -115.918702 
+L 319.46846 -113.897074 
+L 323.729077 -119.237455 
+L 327.996783 -117.057368 
+L 332.228853 -116.781637 
+L 336.505644 -116.946615 
+L 340.754628 -121.558236 
+L 344.994508 -120.63294 
+L 349.264394 -119.784637 
+L 353.502081 -121.074663 
+L 357.767128 -123.5271 
+L 362.023295 -124.107574 
+L 366.260617 -126.84643 
+L 370.526893 -130.682449 
+L 374.770991 -130.592593 
+L 379.035449 -131.735493 
+L 383.289963 -133.582188 
+L 387.539843 -132.742831 
+L 391.788858 -133.779431 
+L 396.039481 -132.199672 
+L 400.293097 -133.144061 
+L 404.550191 -133.051054 
+L 408.798958 -134.739972 
+L 413.062269 -136.416043 
+L 417.316245 -137.691338 
+L 421.560846 -135.861535 
+L 425.814255 -135.780543 
+L 430.072745 -135.64354 
+L 434.324262 -134.35229 
+L 438.582424 -132.582104 
+L 442.834947 -131.944455 
+L 447.085685 -132.136995 
+L 451.337193 -133.929107 
+L 455.590934 -133.815898 
+L 459.847467 -133.485884 
+L 464.100854 -134.141081 
+L 468.35122 -133.737552 
+L 472.603303 -132.832282 
+L 476.860314 -132.811683 
+L 481.110232 -132.681056 
+L 485.364914 -133.799733 
+L 489.61656 -133.234235 
+L 493.870211 -133.287212 
+L 498.125567 -133.412755 
+L 502.378214 -134.697286 
+L 506.630787 -134.113489 
+L 510.884828 -133.932254 
+L 515.137941 -134.418926 
+L 519.390492 -134.033303 
+L 523.64492 -133.195907 
+L 527.897417 -134.235335 
+L 532.149243 -134.912793 
+L 536.403156 -135.825078 
+L 540.656371 -136.416612 
+L 544.910226 -136.9599 
+L 549.163232 -137.651876 
+L 553.415483 -138.131405 
+L 557.670028 -138.215703 
+L 561.921979 -138.683509 
+L 566.176405 -138.165361 
+L 570.429222 -137.536118 
+L 574.682296 -137.51592 
+L 578.935185 -137.393472 
+L 583.188235 -137.891374 
+L 587.441135 -137.868974 
+L 591.694206 -138.076851 
+L 595.948213 -138.227636 
+L 600.201094 -138.362803 
+L 604.454551 -138.241358 
+L 608.707498 -138.832117 
+L 612.960246 -138.530126 
+L 617.213301 -138.336387 
+L 621.467273 -138.034527 
+L 621.467273 -143.510692 
+L 621.467273 -143.510692 
+L 617.213301 -143.969846 
+L 612.960246 -144.318391 
+L 608.707498 -144.779911 
+L 604.454551 -144.347178 
+L 600.201094 -144.639336 
+L 595.948213 -144.675763 
+L 591.694206 -144.700262 
+L 587.441135 -144.669585 
+L 583.188235 -144.887848 
+L 578.935185 -144.568886 
+L 574.682296 -144.893853 
+L 570.429222 -145.111935 
+L 566.176405 -145.952299 
+L 561.921979 -146.684959 
+L 557.670028 -146.421677 
+L 553.415483 -146.558821 
+L 549.163232 -146.300915 
+L 544.910226 -145.824916 
+L 540.656371 -145.507388 
+L 536.403156 -145.160295 
+L 532.149243 -144.493463 
+L 527.897417 -144.063727 
+L 523.64492 -143.254646 
+L 519.390492 -144.393455 
+L 515.137941 -145.068713 
+L 510.884828 -144.86634 
+L 506.630787 -145.358707 
+L 502.378214 -146.282163 
+L 498.125567 -145.306612 
+L 493.870211 -145.493839 
+L 489.61656 -145.775079 
+L 485.364914 -146.712375 
+L 481.110232 -145.936155 
+L 476.860314 -146.428535 
+L 472.603303 -146.834292 
+L 468.35122 -148.139772 
+L 464.100854 -148.923235 
+L 459.847467 -148.66107 
+L 455.590934 -149.4581 
+L 451.337193 -150.014463 
+L 447.085685 -148.643294 
+L 442.834947 -148.899046 
+L 438.582424 -150.1026 
+L 434.324262 -152.428972 
+L 430.072745 -154.298357 
+L 425.814255 -154.952839 
+L 421.560846 -155.482264 
+L 417.316245 -157.887394 
+L 413.062269 -157.151259 
+L 408.798958 -155.992523 
+L 404.550191 -154.722304 
+L 400.293097 -155.348935 
+L 396.039481 -155.072574 
+L 391.788858 -157.332154 
+L 387.539843 -157.011596 
+L 383.289963 -158.516993 
+L 379.035449 -157.321834 
+L 374.770991 -156.909286 
+L 370.526893 -157.829044 
+L 366.260617 -154.608507 
+L 362.023295 -152.474699 
+L 357.767128 -152.614039 
+L 353.502081 -150.665884 
+L 349.264394 -150.182611 
+L 344.994508 -151.858129 
+L 340.754628 -153.672924 
+L 336.505644 -149.731913 
+L 332.228853 -150.453864 
+L 327.996783 -151.70769 
+L 323.729077 -155.001364 
+L 319.46846 -150.488839 
+L 315.229459 -153.883972 
+L 310.949718 -154.894094 
+L 306.719178 -156.527519 
+L 302.471251 -155.402309 
+L 298.216084 -157.199106 
+L 293.965654 -159.587793 
+L 289.682218 -156.478075 
+L 285.428143 -152.812742 
+L 281.164148 -157.549465 
+L 276.962619 -155.940276 
+L 272.654777 -159.03933 
+L 268.438815 -156.399747 
+L 264.200837 -154.093864 
+L 259.950098 -150.896598 
+L 255.697576 -153.027341 
+L 251.372345 -160.491125 
+L 247.152526 -160.988921 
+L 242.882754 -157.277363 
+L 238.666156 -152.768604 
+L 234.421015 -159.408517 
+L 230.155513 -162.25371 
+L 225.879433 -155.771173 
+L 221.604363 -161.170537 
+L 217.34391 -166.312356 
+L 213.113912 -167.777165 
+L 208.789398 -166.676678 
+L 204.518952 -171.217721 
+L 200.32541 -174.483923 
+L 196.066508 -168.71677 
+L 191.74412 -164.012917 
+L 187.548437 -165.319493 
+L 183.316517 -166.673524 
+L 179.055103 -176.120405 
+L 174.772347 -177.673967 
+L 170.478011 -180.339399 
+L 166.183674 -178.532283 
+L 161.902955 -184.079208 
+L 157.651726 -186.959301 
+L 153.448318 -183.136027 
+L 149.313696 -186.302832 
+L 144.951963 -194.416949 
+L 140.675417 -201.064885 
+L 136.512409 -197.926687 
+L 132.119075 -203.037924 
+L 127.866552 -213.535679 
+L 123.792537 -212.995324 
+L 119.498201 -225.538972 
+L 114.958343 -230.410098 
+L 110.638046 -232.440537 
+L 106.589992 -221.845767 
+L 102.32449 -233.873766 
+L 97.816847 -227.512992 
+L 93.65124 -230.652024 
+L 89.25501 -233.104161 
+L 85.282888 -238.448051 
+L 81.101613 -228.497834 
+L 76.687929 -211.414051 
+L 72.812727 -216.175067 
+z
+" style="stroke: #a7bdb3; stroke-opacity: 0.1"/>
+    </defs>
+    <g clip-path="url(#convergence-pb25c692a4e)">
+     <use href="#convergence-m80a474cd91" x="0" y="262.8" style="fill: #a7bdb3; fill-opacity: 0.1; stroke: #a7bdb3; stroke-opacity: 0.1"/>
+    </g>
+   </g>
+   <g id="convergence-line2d_49">
+    <path d="M 72.812727 127.219894 
+L 76.687929 128.807893 
+L 81.101613 111.352376 
+L 85.282888 103.718894 
+L 89.25501 106.882399 
+L 93.65124 106.548422 
+L 97.816847 108.939843 
+L 102.32449 101.453693 
+L 106.589992 110.426732 
+L 110.638046 99.616083 
+L 114.958343 98.988643 
+L 119.498201 101.451421 
+L 123.792537 111.243451 
+L 127.866552 109.803077 
+L 132.119075 117.664583 
+L 136.512409 120.628976 
+L 140.675417 116.019617 
+L 144.951963 120.78101 
+L 149.313696 127.295325 
+L 153.448318 128.531529 
+L 157.651726 125.163785 
+L 161.902955 126.03623 
+L 166.183674 130.128926 
+L 170.478011 127.51066 
+L 174.772347 129.39366 
+L 179.055103 130.339539 
+L 183.316517 137.936183 
+L 187.548437 137.567129 
+L 191.74412 137.777685 
+L 196.066508 132.502106 
+L 200.32541 126.248378 
+L 204.518952 128.237123 
+L 208.789398 131.662228 
+L 213.113912 130.143421 
+L 217.34391 130.318488 
+L 221.604363 134.246578 
+L 225.879433 138.687175 
+L 230.155513 132.053826 
+L 234.421015 133.806628 
+L 238.666156 139.247273 
+L 242.882754 134.218314 
+L 247.152526 130.195715 
+L 251.372345 129.815828 
+L 255.697576 136.429599 
+L 259.950098 137.788472 
+L 264.200837 134.016838 
+L 268.438815 131.263404 
+L 272.654777 128.301635 
+L 276.962619 130.671512 
+L 281.164148 128.494876 
+L 285.428143 132.435305 
+L 289.682218 128.453444 
+L 293.965654 125.018419 
+L 298.216084 126.882356 
+L 302.471251 128.05511 
+L 306.719178 126.444337 
+L 310.949718 127.441948 
+L 315.229459 127.898663 
+L 319.46846 130.607044 
+L 323.729077 125.680591 
+L 327.996783 128.417471 
+L 332.228853 129.18225 
+L 336.505644 129.460736 
+L 340.754628 125.18442 
+L 344.994508 126.554465 
+L 349.264394 127.816376 
+L 353.502081 126.929726 
+L 357.767128 124.729431 
+L 362.023295 124.508864 
+L 366.260617 122.072532 
+L 370.526893 118.544253 
+L 374.770991 119.04906 
+L 379.035449 118.271336 
+L 383.289963 116.75041 
+L 387.539843 117.922786 
+L 391.788858 117.244207 
+L 396.039481 119.163877 
+L 400.293097 118.553502 
+L 404.550191 118.913321 
+L 413.062269 116.016349 
+L 417.316245 115.010634 
+L 421.560846 117.128101 
+L 430.072745 117.829052 
+L 434.324262 119.409369 
+L 438.582424 121.457648 
+L 442.834947 122.378249 
+L 447.085685 122.409856 
+L 451.337193 120.828215 
+L 455.590934 121.163001 
+L 459.847467 121.726523 
+L 464.100854 121.267842 
+L 468.35122 121.861338 
+L 472.603303 122.966713 
+L 481.110232 123.491395 
+L 485.364914 122.543946 
+L 489.61656 123.295343 
+L 498.125567 123.440317 
+L 502.378214 122.310275 
+L 506.630787 123.063902 
+L 510.884828 123.400703 
+L 515.137941 123.056181 
+L 519.390492 123.586621 
+L 523.64492 124.574723 
+L 527.897417 123.650469 
+L 532.149243 123.096872 
+L 536.403156 122.307314 
+L 553.415483 120.454887 
+L 557.670028 120.48131 
+L 561.921979 120.115766 
+L 570.429222 121.475973 
+L 578.935185 121.818821 
+L 583.188235 121.410389 
+L 587.441135 121.53072 
+L 595.948213 121.348301 
+L 600.201094 121.29893 
+L 604.454551 121.505732 
+L 608.707498 120.993986 
+L 617.213301 121.646883 
+L 621.467273 122.02739 
+L 621.467273 122.02739 
+" clip-path="url(#convergence-pb25c692a4e)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="convergence-line2d_50">
+    <path d="M 72.812727 207.814855 
+L 76.687929 206.229837 
+L 81.101613 188.402586 
+L 85.282888 183.08584 
+L 89.25501 184.068959 
+L 93.65124 180.948867 
+L 97.816847 182.592677 
+L 102.32449 173.981152 
+L 106.589992 179.899231 
+L 110.638046 168.872703 
+L 114.958343 165.587385 
+L 119.498201 165.641814 
+L 123.792537 172.682227 
+L 127.866552 170.341832 
+L 132.119075 175.56709 
+L 136.512409 176.384639 
+L 140.675417 170.304119 
+L 144.951963 173.17897 
+L 149.313696 178.093482 
+L 153.448318 177.399085 
+L 157.651726 174.486871 
+L 161.902955 173.351669 
+L 166.183674 175.990135 
+L 170.478011 172.560719 
+L 174.772347 173.661288 
+L 179.055103 173.999483 
+L 183.316517 179.745889 
+L 187.548437 177.653752 
+L 191.74412 176.768287 
+L 196.066508 170.920983 
+L 200.32541 164.180679 
+L 204.518952 164.891968 
+L 208.789398 167.201133 
+L 213.113912 165.264008 
+L 217.34391 164.149332 
+L 221.604363 166.863694 
+L 225.879433 170.345523 
+L 230.155513 163.561363 
+L 234.421015 164.221773 
+L 238.666156 168.46315 
+L 242.882754 162.91399 
+L 247.152526 158.580351 
+L 251.372345 157.32278 
+L 255.697576 163.086539 
+L 259.950098 163.673543 
+L 264.200837 159.327541 
+L 272.654777 152.8426 
+L 276.962619 154.483301 
+L 281.164148 151.739217 
+L 285.428143 154.883352 
+L 289.682218 150.584963 
+L 293.965654 146.824632 
+L 298.216084 148.163817 
+L 302.471251 148.712528 
+L 306.719178 146.616193 
+L 310.949718 146.977991 
+L 315.229459 146.881298 
+L 319.46846 148.902926 
+L 323.729077 143.562545 
+L 327.996783 145.742632 
+L 332.228853 146.018363 
+L 336.505644 145.853385 
+L 340.754628 141.241764 
+L 349.264394 143.015363 
+L 353.502081 141.725337 
+L 357.767128 139.2729 
+L 362.023295 138.692426 
+L 366.260617 135.95357 
+L 370.526893 132.117551 
+L 374.770991 132.207407 
+L 379.035449 131.064507 
+L 383.289963 129.217812 
+L 387.539843 130.057169 
+L 391.788858 129.020569 
+L 396.039481 130.600328 
+L 400.293097 129.655939 
+L 404.550191 129.748946 
+L 413.062269 126.383957 
+L 417.316245 125.108662 
+L 421.560846 126.938465 
+L 430.072745 127.15646 
+L 434.324262 128.44771 
+L 438.582424 130.217896 
+L 442.834947 130.855545 
+L 447.085685 130.663005 
+L 451.337193 128.870893 
+L 455.590934 128.984102 
+L 459.847467 129.314116 
+L 464.100854 128.658919 
+L 468.35122 129.062448 
+L 472.603303 129.967718 
+L 481.110232 130.118944 
+L 485.364914 129.000267 
+L 489.61656 129.565765 
+L 498.125567 129.387245 
+L 502.378214 128.102714 
+L 506.630787 128.686511 
+L 510.884828 128.867746 
+L 515.137941 128.381074 
+L 519.390492 128.766697 
+L 523.64492 129.604093 
+L 527.897417 128.564665 
+L 532.149243 127.887207 
+L 536.403156 126.974922 
+L 553.415483 124.668595 
+L 557.670028 124.584297 
+L 561.921979 124.116491 
+L 570.429222 125.263882 
+L 578.935185 125.406528 
+L 583.188235 124.908626 
+L 587.441135 124.931026 
+L 595.948213 124.572364 
+L 600.201094 124.437197 
+L 604.454551 124.558642 
+L 608.707498 123.967883 
+L 621.467273 124.765473 
+L 621.467273 124.765473 
+" clip-path="url(#convergence-pb25c692a4e)" style="fill: none; stroke-dasharray: 0.75,1.2375; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 0.75"/>
+   </g>
+   <g id="convergence-line2d_51">
+    <path d="M 72.812727 46.624933 
+L 76.687929 51.385949 
+L 81.101613 34.302166 
+L 85.282888 24.351949 
+L 89.25501 29.695839 
+L 93.65124 32.147976 
+L 97.816847 35.287008 
+L 102.32449 28.926234 
+L 106.589992 40.954233 
+L 110.638046 30.359463 
+L 114.958343 32.389902 
+L 119.498201 37.261028 
+L 123.792537 49.804676 
+L 127.866552 49.264321 
+L 132.119075 59.762076 
+L 136.512409 64.873313 
+L 140.675417 61.735115 
+L 144.951963 68.383051 
+L 149.313696 76.497168 
+L 153.448318 79.663973 
+L 157.651726 75.840699 
+L 161.902955 78.720792 
+L 166.183674 84.267717 
+L 170.478011 82.460601 
+L 174.772347 85.126033 
+L 179.055103 86.679595 
+L 183.316517 96.126476 
+L 191.74412 98.787083 
+L 196.066508 94.08323 
+L 200.32541 88.316077 
+L 204.518952 91.582279 
+L 208.789398 96.123322 
+L 213.113912 95.022835 
+L 217.34391 96.487644 
+L 221.604363 101.629463 
+L 225.879433 107.028827 
+L 230.155513 100.54629 
+L 234.421015 103.391483 
+L 238.666156 110.031396 
+L 242.882754 105.522637 
+L 247.152526 101.811079 
+L 251.372345 102.308875 
+L 255.697576 109.772659 
+L 259.950098 111.903402 
+L 264.200837 108.706136 
+L 268.438815 106.400253 
+L 272.654777 103.76067 
+L 276.962619 106.859724 
+L 281.164148 105.250535 
+L 285.428143 109.987258 
+L 289.682218 106.321925 
+L 293.965654 103.212207 
+L 298.216084 105.600894 
+L 302.471251 107.397691 
+L 306.719178 106.272481 
+L 310.949718 107.905906 
+L 315.229459 108.916028 
+L 319.46846 112.311161 
+L 323.729077 107.798636 
+L 327.996783 111.09231 
+L 332.228853 112.346136 
+L 336.505644 113.068087 
+L 340.754628 109.127076 
+L 344.994508 110.941871 
+L 349.264394 112.617389 
+L 353.502081 112.134116 
+L 357.767128 110.185961 
+L 362.023295 110.325301 
+L 366.260617 108.191493 
+L 370.526893 104.970956 
+L 374.770991 105.890714 
+L 379.035449 105.478166 
+L 383.289963 104.283007 
+L 387.539843 105.788404 
+L 391.788858 105.467846 
+L 396.039481 107.727426 
+L 400.293097 107.451065 
+L 404.550191 108.077696 
+L 413.062269 105.648741 
+L 417.316245 104.912606 
+L 421.560846 107.317736 
+L 425.814255 107.847161 
+L 430.072745 108.501643 
+L 434.324262 110.371028 
+L 438.582424 112.6974 
+L 442.834947 113.900954 
+L 447.085685 114.156706 
+L 451.337193 112.785537 
+L 455.590934 113.3419 
+L 459.847467 114.13893 
+L 464.100854 113.876765 
+L 468.35122 114.660228 
+L 472.603303 115.965708 
+L 481.110232 116.863845 
+L 485.364914 116.087625 
+L 489.61656 117.024921 
+L 498.125567 117.493388 
+L 502.378214 116.517837 
+L 506.630787 117.441293 
+L 510.884828 117.93366 
+L 515.137941 117.731287 
+L 519.390492 118.406545 
+L 523.64492 119.545354 
+L 527.897417 118.736273 
+L 532.149243 118.306537 
+L 536.403156 117.639705 
+L 553.415483 116.241179 
+L 557.670028 116.378323 
+L 561.921979 116.115041 
+L 570.429222 117.688065 
+L 578.935185 118.231114 
+L 583.188235 117.912152 
+L 587.441135 118.130415 
+L 595.948213 118.124237 
+L 600.201094 118.160664 
+L 604.454551 118.452822 
+L 608.707498 118.020089 
+L 612.960246 118.481609 
+L 621.467273 119.289308 
+L 621.467273 119.289308 
+" clip-path="url(#convergence-pb25c692a4e)" style="fill: none; stroke-dasharray: 0.75,1.2375; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 0.75"/>
+   </g>
+   <g id="convergence-line2d_52">
+    <path d="M 45.38 123.9783 
+L 648.9 123.9783 
+" clip-path="url(#convergence-pb25c692a4e)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+   </g>
+   <g id="convergence-patch_3">
+    <path d="M 45.38 216.988 
+L 45.38 15.178804 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="convergence-patch_4">
+    <path d="M 45.38 216.988 
+L 648.9 216.988 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="convergence-legend_1">
+    <g id="convergence-line2d_53">
+     <path d="M 418.887891 25.002632 
+L 426.387891 25.002632 
+L 433.887891 25.002632 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="convergence-text_14">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="439.887891" y="27.627632" transform="rotate(-0 439.887891 27.627632)">Running estimate</text>
+    </g>
+    <g id="convergence-line2d_54">
+     <path d="M 418.887891 36.011226 
+L 426.387891 36.011226 
+L 433.887891 36.011226 
+" style="fill: none; stroke-dasharray: 0.75,1.2375; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 0.75"/>
+    </g>
+    <g id="convergence-text_15">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="439.887891" y="38.636226" transform="rotate(-0 439.887891 38.636226)">95% lower endpoint</text>
+    </g>
+    <g id="convergence-line2d_55">
+     <path d="M 530.085938 25.002632 
+L 537.585938 25.002632 
+L 545.085938 25.002632 
+" style="fill: none; stroke-dasharray: 0.75,1.2375; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 0.75"/>
+    </g>
+    <g id="convergence-text_16">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="551.085938" y="27.627632" transform="rotate(-0 551.085938 27.627632)">95% upper endpoint</text>
+    </g>
+    <g id="convergence-line2d_56">
+     <path d="M 530.085938 36.011226 
+L 537.585938 36.011226 
+L 545.085938 36.011226 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+    </g>
+    <g id="convergence-text_17">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="551.085938" y="38.636226" transform="rotate(-0 551.085938 38.636226)">Black–Scholes reference</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="convergence-pb25c692a4e">
+   <rect x="45.38" y="15.178804" width="603.52" height="201.809196"/>
+  </clipPath>
+ </defs>
+</svg>

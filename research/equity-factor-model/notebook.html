@@ -1,0 +1,57 @@
+<div class="notebook" id="factor-notebook">
+<div class="notebook-head"><strong>Equity factor laboratory</strong><span>240 synthetic months / 160-stock snapshot</span></div>
+<form id="factor-form">
+<div class="field"><label for="input-model">Attribution model</label><select id="input-model" name="model"><option value="style">Market + four styles</option><option value="capm">Market only (CAPM regression)</option></select></div>
+<div class="field"><label for="input-train">Training months</label><input id="input-train" name="train" type="number" min="60" max="228" step="1" value="180" required></div>
+<div class="field"><label for="input-lags">HAC lag count</label><input id="input-lags" name="lags" type="number" min="0" max="12" step="1" value="6" required></div>
+<div class="field"><label for="input-market">Generating market exposure</label><input id="input-market" name="market" type="number" min="-2" max="3" step="any" value="1.05" required></div>
+<div class="field"><label for="input-value">Generating value exposure</label><input id="input-value" name="value" type="number" min="-2" max="2" step="any" value=".35" required></div>
+<div class="field"><label for="input-momentum">Generating momentum exposure</label><input id="input-momentum" name="momentum" type="number" min="-2" max="2" step="any" value=".25" required></div>
+<div class="field"><label for="input-quality">Generating quality exposure</label><input id="input-quality" name="quality" type="number" min="-2" max="2" step="any" value=".45" required></div>
+<div class="field"><label for="input-lowvol">Generating low-vol exposure</label><input id="input-lowvol" name="lowvol" type="number" min="-2" max="2" step="any" value=".20" required></div>
+<div class="field"><label for="input-alpha">Generating monthly alpha (bps)</label><input id="input-alpha" name="alpha" type="number" min="-100" max="100" step="any" value="4" required></div>
+<div class="field"><label for="input-noise">Innovation base scale (%)</label><input id="input-noise" name="noise" type="number" min="0" max="10" step="any" value="2" required><small>Serial coefficient 0.25; innovation variance depends on the market state.</small></div>
+<div class="notebook-action"><button id="calculate" type="submit">Estimate model</button><button id="reset-inputs" type="button">Reset reference</button><button id="download-returns" type="button">Download monthly CSV</button><p>Generating exposures change the synthetic portfolio, including omitted styles in the market-only model.</p></div>
+</form>
+<p class="calc-error" id="calc-error" role="alert"></p>
+<div class="notebook-results">
+<div class="result"><small>Estimated monthly alpha</small><strong id="result-alpha">—</strong></div>
+<div class="result"><small>Alpha HAC t-statistic</small><strong id="result-t">—</strong></div>
+<div class="result"><small>Training R²</small><strong id="result-r2">—</strong></div>
+<div class="result"><small>Withheld monthly RMSE</small><strong id="result-rmse">—</strong></div>
+</div>
+<div class="metric-grid">
+<div class="greek-result"><span>Training monthly volatility</span><output id="result-vol">—</output></div>
+<div class="greek-result"><span>Systematic variance share</span><output id="result-share">—</output></div>
+<div class="greek-result"><span>Withheld mean residual</span><output id="result-mean">—</output></div>
+</div>
+<p class="lab-status" id="model-status" role="status"></p>
+<div class="table-wrap lab-table"><table id="coefficient-table"><caption>OLS exposures and inference; alpha is displayed in basis points per month</caption><thead><tr><th scope="col">Term</th><th scope="col">Estimate</th><th scope="col">Classical SE</th><th scope="col">HAC SE</th><th scope="col">HAC t</th></tr></thead><tbody></tbody></table></div>
+<div class="lab-section-label">Chronological holdout <span>Coefficients estimated only on the training prefix</span></div>
+<div class="notebook-legend"><span><i style="background:#a7bdb3"></i>Observed excess return</span><span><i style="background:#d3ad84"></i>Model attribution</span></div>
+<div class="notebook-plot" id="live-plot"></div>
+<div class="table-wrap lab-table"><table id="risk-table"><caption>Matched training-sample variance attribution; signed contributions can be negative</caption><thead><tr><th scope="col">Component</th><th scope="col">Variance contribution</th><th scope="col">Share of total</th></tr></thead><tbody></tbody></table></div>
+<div class="inversion-panel">
+<div class="lab-section-label">Cross-sectional portfolio experiment <span>Formation scores first; realized next-month returns afterward</span></div>
+<form id="sort-form">
+<div class="field"><label for="input-signal">Formation characteristic</label><select id="input-signal" name="signal"><option value="0">Value</option><option value="1">Momentum</option><option value="2">Quality</option><option value="3">Low volatility</option></select></div>
+<div class="field"><label for="input-tail">Tail size (%)</label><select id="input-tail" name="tail"><option value="10">10%</option><option value="20" selected>20%</option><option value="30">30%</option></select></div>
+<div class="field"><label for="input-neutral">Sector construction</label><select id="input-neutral" name="neutral"><option value="balanced">Sector-balanced tails</option><option value="unrestricted">Unrestricted tails</option></select></div>
+<div class="field"><label for="input-cost">One-way entry cost (bps)</label><input id="input-cost" name="cost" type="number" min="0" max="100" step="any" value="10" required></div>
+<div class="notebook-action"><button id="build-sort" type="submit">Construct portfolio</button><button id="download-stocks" type="button">Download stock CSV</button><p>Long weights sum to +1, short weights to −1; entry turnover from cash is two.</p></div>
+</form>
+<p class="calc-error" id="sort-error" role="alert"></p>
+<div class="notebook-results">
+<div class="result"><small>Gross next-month return</small><strong id="sort-gross">—</strong></div>
+<div class="result"><small>After entry cost</small><strong id="sort-net">—</strong></div>
+<div class="result"><small>Pearson information coefficient</small><strong id="sort-ic">—</strong></div>
+<div class="result"><small>Rank information coefficient</small><strong id="sort-rank">—</strong></div>
+</div>
+<p class="lab-status" id="sort-status" role="status"></p>
+<div class="notebook-plot" id="sort-plot"></div>
+<div class="table-wrap lab-table"><table id="sort-exposure"><caption>Signed characteristic and sector weights; these are not time-series factor betas</caption><thead><tr><th scope="col">Exposure</th><th scope="col">Long–short value</th></tr></thead><tbody></tbody></table></div>
+</div>
+<p class="notebook-note">All data are synthetic and embedded. HAC uses Bartlett weights and T/(T−p) adjustment. Variance attribution uses centered factor covariance and residual sum of squares, both divided by T−1, to match training sample variance. The cross-sectional experiment charges entry cost only; it omits borrow, financing, later trading and market impact. Portfolio returns are normalized to a declared capital unit.</p>
+<noscript><p>Enable JavaScript for the two experiments. Static notes, equations, computed graphs and worked tables remain readable offline.</p></noscript>
+</div>
+<script type="application/json" id="factor-dataset">{{dataset}}</script>

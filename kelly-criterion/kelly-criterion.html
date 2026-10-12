@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Álvaro Cutillas — an interactive simulator of the Kelly criterion: how the fraction staked on a favourable bet decides between ruin and growth. Synthetic, reproducible and educational." />
+  <meta name="theme-color" content="#050505" />
+  <title>Kelly Criterion: Ruin &amp; Growth Simulator — Álvaro Cutillas</title>
+  <style>
+    :root{
+      --bg:#050505;--panel:#0d0d0d;--panel2:#111111;--text:#f5f5f2;
+      --muted:#9a9a94;--line:#262626;--line-2:#303030;
+      --accent:#a7bdb3;--accent-deep:#778e84;--warm:#d3ad84;
+      --max:1280px;--radius:10px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:78px}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    a:hover{color:var(--accent)}
+    a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+    .skip{position:absolute;left:-9999px;top:10px;background:var(--text);color:var(--bg);padding:10px;z-index:99}
+    .skip:focus{left:10px}
+    .wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+    nav{border-bottom:1px solid var(--line);background:rgba(5,5,5,.93);backdrop-filter:blur(12px);position:sticky;top:0;z-index:20}
+    .nav-inner{min-height:58px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+    .nav-links{display:flex;gap:22px;color:var(--muted);font-size:12px;align-items:center}
+    .nav-links a:hover{color:var(--text)}
+    .hero{padding:86px 0 62px;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+    .hero::before{content:"";pointer-events:none;position:absolute;inset:-25% -15% auto auto;width:670px;height:560px;background:radial-gradient(circle,rgba(167,189,179,.085),transparent 64%)}
+    .eyebrow,.section-label,.micro{color:var(--accent);font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:650}
+    .hero h1{font-size:clamp(43px,5.5vw,75px);line-height:1.02;letter-spacing:-.055em;font-weight:630;max-width:1060px;margin:17px 0 0}
+    .hero h1 span{color:var(--accent)}
+    .hero .lede{font-size:clamp(17px,2vw,22px);line-height:1.45;letter-spacing:-.018em;color:#c9cec9;max-width:790px;margin:25px 0 0}
+    .hero .context{max-width:840px;color:var(--muted);font-size:13px;line-height:1.7;margin:18px 0 0}
+    .tag-row{display:flex;gap:7px;flex-wrap:wrap;margin-top:26px}
+    .tag{font-size:10px;color:#bcbcb6;border:1px solid var(--line-2);border-radius:5px;padding:6px 9px;background:#0a0a0a}
+    .hero-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:47px}
+    .stat{padding:21px 20px 22px 0;border-right:1px solid var(--line);margin-right:20px}
+    .stat:last-child{border-right:0;margin-right:0}
+    .stat strong{display:block;font-size:clamp(23px,2.6vw,34px);font-weight:580;letter-spacing:-.045em;font-variant-numeric:tabular-nums}
+    .stat small{display:block;color:var(--muted);font-size:10px;letter-spacing:.09em;text-transform:uppercase;margin-top:6px;line-height:1.5}
+    .stat .accent{color:var(--accent)}
+    .document{display:grid;grid-template-columns:205px minmax(0,1fr);gap:65px;align-items:start;padding:0 0 100px}
+    .toc{position:sticky;top:82px;padding-top:54px;max-height:calc(100vh - 82px);overflow:auto}
+    .toc-title{font-size:10px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;margin-bottom:17px}
+    .toc a{display:block;border-left:1px solid var(--line);padding:8px 0 8px 14px;font-size:11px;line-height:1.35;color:#aaa9a3}
+    .toc a:hover{border-color:var(--accent);color:var(--text)}
+    .article{min-width:0}
+    .article section{border-top:1px solid var(--line);padding:55px 0 62px}
+    .article section:first-child{border-top:0}
+    .article h2{font-size:clamp(28px,3.3vw,42px);line-height:1.1;letter-spacing:-.04em;font-weight:620;margin:11px 0 20px}
+    .article h3{font-size:20px;letter-spacing:-.025em;font-weight:620;margin:32px 0 12px}
+    .article p,.article li{font-size:14px;line-height:1.72;color:#c8c8c2}
+    .article p{margin:0 0 16px}
+    .article strong{color:var(--text);font-weight:620}
+    .article ul,.article ol{padding-left:20px;margin:11px 0 21px}
+    .article li{padding-left:3px;margin:5px 0}
+    .lead{font-size:18px!important;line-height:1.55!important;letter-spacing:-.015em;color:#e4e7e2!important;max-width:850px}
+    .narrow{max-width:850px}
+    .two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:24px 0}
+    .three-col{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0}
+    .panel{background:radial-gradient(circle at 100% 0,rgba(167,189,179,.035),transparent 45%),linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:var(--radius);padding:21px 22px}
+    .panel h3{font-size:16px;margin:0 0 10px;letter-spacing:-.012em}
+    .panel p:last-child{margin-bottom:0}
+    .panel .micro{display:block;margin-bottom:10px}
+    .callout{border-left:2px solid var(--accent);background:#0c100e;padding:20px 23px;margin:23px 0;border-radius:0 8px 8px 0}
+    .callout.warm{border-color:var(--warm);background:#110f0c}
+    .callout p:last-child{margin-bottom:0}
+    .formula{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:15px;line-height:1.8;overflow-x:auto;color:#e3ebe5;background:#0b0f0d;border:1px solid #26332d;padding:17px 19px;border-radius:7px;margin:16px 0 20px}
+    .formula em{color:var(--accent);font-style:normal}
+    .formula > div + div{margin-top:10px}
+    .fraction{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;line-height:1.22;margin:0 .18em;white-space:nowrap;font-size:.94em}
+    .fraction .numerator{display:block;border-bottom:1px solid currentColor;padding:0 .22em .13em}
+    .fraction .denominator{display:block;padding:.13em .22em 0}
+    .math-cell{font-size:13px;line-height:1.55}
+    .greek-table table{min-width:680px}
+    .formula-label{display:block;color:var(--accent);font-family:Inter,ui-sans-serif,system-ui,sans-serif;font-size:10px;font-weight:650;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+    .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:9px;margin:23px 0}
+    table{border-collapse:collapse;width:100%;min-width:680px;font-size:12px;font-variant-numeric:tabular-nums}
+    thead{background:#111713}
+    th{color:#e3e9e3;text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:650}
+    th,td{padding:12px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+    tr:last-child td{border-bottom:0}
+    td{color:#c7c7c1}
+    td.num,th.num{text-align:right;white-space:nowrap}
+    tbody tr:nth-child(2n){background:#0b0b0b}
+    .table-note,.source-note{font-size:11px!important;color:var(--muted)!important;line-height:1.65!important}
+    .chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:23px 0}
+    figure{margin:0;min-width:0}
+    .figure-card{background:linear-gradient(180deg,#0d0d0d,#0a0a0a);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+    .figure-card .plot{padding:10px 10px 0;min-width:0}
+    .figure-card .plot svg{display:block;width:100%;height:auto}
+    figcaption{padding:15px 19px 18px;border-top:1px solid var(--line);font-size:11px;line-height:1.6;color:var(--muted)}
+    figcaption strong{display:block;font-size:12px;color:var(--text);margin-bottom:4px;font-weight:620}
+    .figure-wide{margin:23px 0}
+    .figure-wide .plot{max-width:900px;margin:auto}
+    .figure-wide figcaption{padding-left:23px}
+    .mini-metric{font-size:25px;font-weight:620;letter-spacing:-.04em;color:var(--accent);margin-bottom:6px;font-variant-numeric:tabular-nums}
+    .mini-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.09em}
+    .method-grid .panel{min-height:208px}
+    .legend-key{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--accent);margin-right:7px}
+    .legend-key.warm{background:var(--warm)}
+    code{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:.92em;color:#dce9e0}
+    pre{overflow-x:auto;border:1px solid var(--line);background:#0c0e0d;border-radius:8px;padding:18px 20px;color:#dce9e0;line-height:1.55;font-size:12px}
+    details{border:1px solid var(--line);border-radius:8px;background:var(--panel);margin:12px 0;padding:0 19px}
+    summary{cursor:pointer;padding:16px 2px;color:var(--text);font-size:13px;font-weight:600}
+    details[open] summary{border-bottom:1px solid var(--line);margin-bottom:17px}
+    footer{border-top:1px solid var(--line);color:var(--muted);font-size:11px;display:flex;justify-content:space-between;gap:20px;padding:27px 0 35px}
+    @media(max-width:1050px){.document{grid-template-columns:1fr;gap:0}.toc{position:static;max-height:none;display:flex;flex-wrap:wrap;gap:0;padding:21px 0 10px;border-bottom:1px solid var(--line)}.toc-title{width:100%;margin-bottom:8px}.toc a{border-left:0;border-bottom:1px solid var(--line);padding:9px 13px}.article section:first-child{border-top:0}}
+    @media(max-width:760px){.hero-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.stat{padding:17px 10px 17px 0;margin-right:10px}.two-col,.three-col,.chart-grid{grid-template-columns:1fr}.nav-links{gap:13px}.nav-links a:nth-child(2){display:none}.hero{padding:58px 0 43px}}
+    @media(max-width:520px){.wrap{width:min(var(--max),calc(100% - 26px))}.nav-links a:nth-child(3){display:none}.hero h1{font-size:41px}.hero .lede{font-size:17px}.article section{padding:43px 0 50px}.panel{padding:18px}.stat strong{font-size:26px}.formula{font-size:14px;padding:15px}footer{display:block}footer span{display:block;margin-top:7px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{body{background:#fff;color:#111}nav,.toc{display:none}.document{display:block}.article section{break-inside:avoid}.panel,.figure-card{break-inside:avoid;background:#fff;color:#111;border-color:#ccc}.article p,.article li,td{color:#222}.article strong,.article h2,.article h3{color:#111}.hero{padding:30px 0}.hero-stats{margin-top:25px}}
+    /* ---- Componentes propios de este proyecto (mismos tokens que la referencia) ---- */
+    .notice{display:inline-block;margin:18px 0 0;padding:9px 13px;border:1px solid #3a3128;border-left:2px solid var(--warm);border-radius:0 7px 7px 0;background:#110f0c;color:#e0cdb6;font-size:12px;line-height:1.55}
+    .sym{text-transform:none;letter-spacing:.02em}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+    .controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 26px}
+    .controls.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .control label{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:10px;color:var(--muted);letter-spacing:.09em;text-transform:uppercase;font-weight:650;margin-bottom:9px}
+    .control output{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-size:13px;color:var(--text);letter-spacing:0;text-transform:none;font-weight:500}
+    .control input[type=range]{width:100%;margin:0;height:22px;accent-color:var(--accent);background:transparent;cursor:pointer}
+    .control .hint{display:block;font-size:11px;color:var(--muted);margin-top:5px;line-height:1.5;min-height:16px}
+    .status-line{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;font-size:12px;color:#c8c8c2;padding-top:17px;margin-top:20px;border-top:1px solid var(--line)}
+    .status-line b{font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;font-weight:500;color:var(--text)}
+    .badge{display:inline-block;font-size:11px;line-height:1.45;padding:6px 10px;border-radius:6px;border:1px solid #2c3a33;background:#0c100e;color:var(--accent)}
+    .badge.warm{border-color:#4a3c2c;background:#110f0c;color:var(--warm)}
+    .badge.muted{border-color:var(--line-2);background:#0b0b0b;color:#bcbcb6}
+    .sim-toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;margin:26px 0 16px}
+    .mode-tabs{display:inline-flex;gap:3px;padding:3px;border:1px solid var(--line-2);border-radius:9px;background:#0a0a0a}
+    .mode-tabs button{appearance:none;border:0;background:transparent;color:var(--muted);font:600 12px/1 Inter,ui-sans-serif,system-ui,sans-serif;padding:10px 15px;border-radius:6px;cursor:pointer}
+    .mode-tabs button:hover{color:var(--text)}
+    .mode-tabs button[aria-selected="true"]{background:#141a17;color:var(--text);box-shadow:inset 0 0 0 1px #2e3d36}
+    .btn-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+    .btn{appearance:none;border:1px solid var(--line-2);background:#0c0c0c;color:var(--text);font:600 12px/1 Inter,ui-sans-serif,system-ui,sans-serif;padding:11px 15px;border-radius:7px;cursor:pointer}
+    .btn:hover{border-color:var(--accent-deep)}
+    .btn.primary{background:#121815;border-color:#3a4c44}
+    .btn:disabled{opacity:.4;cursor:not-allowed}
+    .run-state{font-size:11px;color:var(--muted);display:flex;align-items:center;gap:10px;min-height:20px}
+    .progress{width:120px;height:2px;background:var(--line);border-radius:2px;overflow:hidden}
+    .progress span{display:block;height:100%;width:0;background:var(--accent);transition:width .15s linear}
+    .readouts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:18px 0}
+    .readout{padding:15px 14px 15px 0;margin-right:14px;border-right:1px solid var(--line)}
+    .readout:last-child{border-right:0;margin-right:0}
+    .readout strong{display:block;font-size:21px;font-weight:580;letter-spacing:-.035em;font-variant-numeric:tabular-nums}
+    .readout small{display:block;color:var(--muted);font-size:10px;letter-spacing:.09em;text-transform:uppercase;margin-top:5px}
+    .figure-card .plot.chart{padding:14px 12px 6px;min-height:200px}
+    .chart svg text{font-family:Inter,ui-sans-serif,system-ui,sans-serif;font-size:11px;fill:#8f8f89}
+    .chart svg .lbl{fill:#d6d6d0}
+    .legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:11px;color:var(--muted);padding:2px 19px 12px}
+    .legend i{display:inline-block;width:16px;height:0;border-top:2px solid currentColor;vertical-align:middle;margin-right:7px}
+    .legend i.band{height:9px;border:0;border-radius:2px;opacity:.55}
+    .legend i.dash{border-top-style:dashed}
+    .k-you{color:#ecebe6}.k-kelly{color:var(--accent)}.k-warm{color:var(--warm)}.k-deep{color:var(--accent-deep)}
+    .is-busy{opacity:.5;transition:opacity .2s}
+    .val-warm{color:var(--warm)!important}.val-accent{color:var(--accent)!important}
+    td.check-ok{color:var(--accent)}td.check-bad{color:var(--warm)}
+    .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;vertical-align:middle;background:currentColor}
+    .summary-line{font-size:13px!important;color:#dcdcd6!important;margin:14px 0 0!important}
+    .scope-label{display:inline-block;font-size:9px;letter-spacing:.14em;text-transform:uppercase;font-weight:650;color:var(--muted);border:1px solid var(--line-2);border-radius:4px;padding:3px 6px;margin-bottom:9px}
+    @media(max-width:1050px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:760px){.readouts{grid-template-columns:repeat(2,minmax(0,1fr))}.readout:nth-child(2){border-right:0}.readout:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+    @media(max-width:520px){.controls,.controls.two{grid-template-columns:1fr}.sim-toolbar{align-items:flex-start}.mode-tabs{width:100%}.mode-tabs button{flex:1}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+    @media print{.controls,.sim-toolbar .btn-row,.mode-tabs,.btn-row,.run-state,.notice{border-color:#ccc}.btn-row,.mode-tabs,.progress{display:none!important}.figure-card .plot.chart{background:#0a0a0a;-webkit-print-color-adjust:exact;print-color-adjust:exact}[role="tabpanel"][hidden]{display:block!important}.notice{color:#5a4630;background:#fff}}
+  </style>
+
+<!-- portfolio-language-css --><style>.language-switch{display:inline-flex;align-items:center;flex:0 0 auto;position:relative;line-height:1}
+.language-switch select{appearance:none;cursor:pointer;color:#dedee0;background:#0c0c0e;border:1px solid #303034;border-radius:7px;font:500 11px/1.2 Inter,ui-sans-serif,system-ui,sans-serif;padding:10px 30px 10px 12px;min-height:36px;min-width:102px;color-scheme:dark}
+.language-switch::after{content:"";position:absolute;right:13px;top:14px;width:5px;height:5px;border-right:1.5px solid #96969f;border-bottom:1.5px solid #96969f;transform:rotate(45deg);pointer-events:none}
+.language-switch select:hover{border-color:#55555c;color:#fff}
+.language-switch select:focus-visible{outline:2px solid #a7bdb3;outline-offset:3px}
+.nav-inner>.nav-links{margin-left:auto}
+.nav-inner>.language-switch{margin-left:2px}
+html{scroll-padding-top:calc(var(--portfolio-nav-height,58px) + 20px)}
+html[lang="es"] .profile::after{content:"FOTO"}
+html[lang="es"] .hero h1{hyphens:none}
+@media(max-width:650px){
+ .nav-inner{height:auto;min-height:58px;display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:10px;row-gap:0;padding-top:11px;padding-bottom:11px}
+ .nav-inner>.brand{grid-column:1;grid-row:1;font-size:11px}
+ .nav-inner>.language-switch{grid-column:2;grid-row:1;margin:0}
+ .nav-inner>.nav-links{grid-column:1/-1;grid-row:2;display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-start;gap:10px 18px;margin:10px 0 0}
+ .nav-inner>.nav-links>a{display:block!important;font-size:11px}
+ .nav-inner>.nav-links>.print-button{font-size:11px;padding:7px 10px}
+}
+@media print{.language-switch{display:none!important}}
+</style><!-- /portfolio-language-css --></head>
+<body>
+<a class="skip" href="#content">Skip to research</a>
+<nav aria-label="Primary navigation">
+  <div class="wrap nav-inner">
+    <a class="brand" href="https://alvarocutillas.github.io/">Álvaro Cutillas</a>
+    <div class="nav-links"><a href="#overview">Overview</a><a href="#model">Model</a><a href="#simulator">Simulator</a><a href="#reliability">Reliability</a></div>
+  <!-- portfolio-language-control --><div class="language-switch"><select id="page-language" aria-label="Page language"><option value="en" lang="en" selected>English</option><option value="es" lang="es">Español</option></select></div><!-- /portfolio-language-control --></div>
+</nav>
+<main id="content">
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Project 04 / Quantitative research / Position sizing</div>
+      <h1>Kelly criterion,<br><span>ruin &amp; growth.</span></h1>
+      <p class="lede">Betting with an edge is not enough: the fraction you stake decides whether you go broke or grow. This page lets you find the point where a winning bet becomes a losing strategy.</p>
+      <p class="context">A synthetic simulation of repeated binary bets with known odds, computed live in your browser and checked against an independent Python implementation. It is a teaching model, not a trading strategy.</p>
+      <p class="notice"><strong>Educational content.</strong> Nothing on this page is investment advice or a recommendation to bet or trade.</p>
+      <div class="tag-row"><span class="tag">JavaScript</span><span class="tag">SVG</span><span class="tag">Monte Carlo</span><span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">pytest</span><span class="tag">Binary bets</span></div>
+      <div class="hero-stats" id="hero-stats" aria-label="Live results for the current simulator settings">
+        <div class="stat"><strong id="hs-kelly" class="accent" translate="no">0.100</strong><small>Kelly fraction <span class="sym">f*</span></small></div>
+        <div class="stat"><strong id="hs-growth" translate="no">+0.501%</strong><small id="hs-growth-label" translate="no">Expected log-growth <span class="sym">g(f)</span> per bet</small></div>
+        <div class="stat"><strong id="hs-ruin" translate="no">…</strong><small id="hs-ruin-label" translate="no">P(capital &lt; 10% of start) · 200 bets</small></div>
+        <div class="stat"><strong id="hs-median" translate="no">…</strong><small id="hs-median-label" translate="no">Median final capital · 5,000 paths</small></div>
+      </div>
+    </div>
+  </header>
+  <div class="wrap document">
+    <aside class="toc" aria-label="On this page">
+      <div class="toc-title">Research sections</div>
+      <a href="#overview">01 / Question &amp; findings</a>
+      <a href="#model">02 / Model &amp; conventions</a>
+      <a href="#simulator">03 / Interactive simulator</a>
+      <a href="#misestimated">04 / Misestimated edge</a>
+      <a href="#checks">05 / Numerical checks</a>
+      <a href="#reliability">06 / Reliability &amp; limits</a>
+      <a href="#reproduce">07 / Reproduce the work</a>
+      <a href="#conclusion">08 / Conclusion</a>
+    </aside>
+    <article class="article">
+      <section id="overview">
+        <div class="section-label">01 / Research question</div>
+        <h2>When does a winning bet become a losing strategy?</h2>
+        <p class="lead">The project asks how the fraction of capital staked on a favourable, repeated bet changes long-run growth and the risk of deep losses, and whether simulation reproduces the analytical answer given by the Kelly criterion.</p>
+        <div class="two-col">
+          <div class="panel"><span class="micro">What I built</span><p>A closed-form model of expected log-growth; an in-browser simulator with a one-bet-per-click mode and a seeded Monte Carlo mode (up to 10,000 paths of 1,000 bets); an experiment in which the bettor overestimates the edge; and an independent NumPy implementation, with pytest checks, that reproduces the page's precomputed figures from the same seed.</p></div>
+          <div class="panel"><span class="micro">What the evidence establishes</span><p>Inside this model, the simulated mean log-growth matches the analytical value, growth peaks at the Kelly fraction and turns negative near twice that fraction, and the browser and Python produce the same seeded results. This establishes numerical self-consistency of a stylised betting model, not a profitable strategy or the behaviour of real markets.</p></div>
+        </div>
+        <p>The baseline uses a win probability of 0.55, even-money odds, 200 bets per path, 5,000 paths and seed 42. Capital is normalised to 1, so wealth is reported as a multiple of the starting stake: 2.72× means 2.72 times the initial capital.</p>
+      </section>
+
+      <section id="model">
+        <div class="section-label">02 / Mathematical framework</div>
+        <h2>One bet, repeated: the model</h2>
+        <p>Each round the bettor stakes a constant fraction of current wealth. With probability p the bet wins and pays b per unit staked (net odds of b to 1); with probability q = 1 − p the stake is lost. Outcomes are independent across rounds.</p>
+        <div class="formula"><div>W<sub>t+1</sub> = W<sub>t</sub> (1 + b·f) &nbsp; with probability p</div><div>W<sub>t+1</sub> = W<sub>t</sub> (1 − f) &nbsp;&nbsp;&nbsp; with probability q = 1 − p</div></div>
+        <p>Because wealth compounds multiplicatively, the quantity that governs the long run is the expected logarithm of the growth factor, not expected wealth. By the law of large numbers, the average log-return per bet converges to:</p>
+        <div class="formula"><div><span class="fraction"><span class="numerator">1</span><span class="denominator">N</span></span> ln <span class="fraction"><span class="numerator">W<sub>N</sub></span><span class="denominator">W<sub>0</sub></span></span> &nbsp;→&nbsp; <em>g(f)</em> = p·ln(1 + b·f) + (1 − p)·ln(1 − f)</div></div>
+        <p>Setting the first derivative to zero gives the growth-optimal stake, the Kelly fraction:</p>
+        <div class="formula"><div>g′(f) = <span class="fraction"><span class="numerator">p·b</span><span class="denominator">1 + b·f</span></span> − <span class="fraction"><span class="numerator">q</span><span class="denominator">1 − f</span></span> = 0 &nbsp; ⇒ &nbsp; <em>f*</em> = <span class="fraction"><span class="numerator">b·p − q</span><span class="denominator">b</span></span></div></div>
+        <div class="callout"><p><strong>No edge, no bet.</strong> If the edge b·p − q is zero or negative, g decreases for every positive stake and the optimum is f* = 0. The simulator then flags that there is no positive edge, and the Kelly path stays flat.</p></div>
+        <h3>Why overbetting turns growth negative</h3>
+        <p>The function g is strictly concave: it is zero at f = 0, rises to its maximum at f*, then falls and crosses zero again at a fraction f₀. For small edges, a second-order expansion makes the symmetry visible:</p>
+        <div class="formula"><div>g(f) ≈ (b·p − q)·f − <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>(b²p + q)·f²</div><div>f₀ ≈ <span class="fraction"><span class="numerator">2(b·p − q)</span><span class="denominator">b²p + q</span></span> &nbsp; (≈ 2f* when b = 1)</div></div>
+        <p>With even money, b²p + q = 1, so the quadratic approximation returns f* exactly and places f₀ at about 2f*. In the baseline, f* = 0.100 and the exact root, found by bisection, is f₀ = 0.1987. Staking 20% of wealth on a 55% coin flip therefore has a slightly negative expected log-growth, even though every single bet has positive expected value.</p>
+        <p>Expected wealth tells a different story: E[W<sub>N</sub>] = W<sub>0</sub>(1 + f(b·p − q))<sup>N</sup> grows for any positive stake when the edge is positive. The mean is carried by a few very lucky paths; the typical, median path follows approximately W<sub>0</sub>·exp(N·g(f)). That gap is the whole problem.</p>
+        <h3>Symbols and conventions</h3>
+        <div class="table-wrap"><table><thead><tr><th>Symbol</th><th>Meaning</th><th>Convention in this project</th></tr></thead><tbody>
+          <tr><td><code>p</code></td><td>Probability of winning one bet</td><td>True probability used to generate outcomes; 0 &lt; p &lt; 1</td></tr>
+          <tr><td><code>q</code></td><td>Probability of losing one bet</td><td>q = 1 − p</td></tr>
+          <tr><td><code>b</code></td><td>Net odds</td><td>Profit per unit staked on a win; b = 1 is even money</td></tr>
+          <tr><td><code>f</code></td><td>Fraction of current wealth staked</td><td>Constant across rounds; 0 ≤ f ≤ 0.99, no leverage and no short bets</td></tr>
+          <tr><td><code>f*</code></td><td>Kelly fraction</td><td>max((b·p − q) / b, 0)</td></tr>
+          <tr><td><code>g(f)</code></td><td>Expected log-growth per bet</td><td>Natural logarithm; shown as a percentage per bet</td></tr>
+          <tr><td><code>f₀</code></td><td>Positive root of g</td><td>Stake above which expected log-growth is negative; exists only if f* &gt; 0</td></tr>
+          <tr><td><code>W<sub>t</sub></code></td><td>Wealth after t bets</td><td>W₀ = 1; reported as a multiple of initial capital</td></tr>
+          <tr><td>Ruin</td><td>Falling below 10% of initial capital</td><td>W<sub>t</sub> &lt; 0.1 at any time within the N bets</td></tr>
+          <tr><td>Drawdown</td><td>Fall from the running peak</td><td>1 − W<sub>t</sub> / max<sub>s≤t</sub> W<sub>s</sub>, with W₀ included in the peak; event: above 50%</td></tr>
+        </tbody></table></div>
+        <p class="table-note">Fractional staking never reaches exactly zero, so ruin is a convention here: wealth dropping below 10% of the starting capital at any point. Percentiles of final wealth are computed on log-wealth with linear interpolation (the NumPy default) and then exponentiated.</p>
+      </section>
+
+      <section id="simulator">
+        <div class="section-label">03 / Interactive simulator</div>
+        <h2>Find the fraction that breaks a winning bet</h2>
+        <p>Move the sliders. Every number in this section, and in the four figures at the top of the page, is recomputed in your browser. Start at the Kelly fraction, then push the stake towards and beyond twice that value.</p>
+        <div class="panel">
+          <div class="controls">
+            <div class="control"><label for="in-p"><span>Win probability <span class="sym">p</span></span> <output id="out-p" for="in-p" translate="no">0.55</output></label><input id="in-p" type="range" min="0.01" max="0.99" step="0.01" value="0.55" aria-describedby="hint-p" /><span class="hint" id="hint-p" translate="no"></span></div>
+            <div class="control"><label for="in-b"><span>Net odds <span class="sym">b</span></span> <output id="out-b" for="in-b" translate="no">1.00</output></label><input id="in-b" type="range" min="0.1" max="5" step="0.05" value="1" aria-describedby="hint-b" /><span class="hint" id="hint-b" translate="no"></span></div>
+            <div class="control"><label for="in-f"><span>Staked fraction <span class="sym">f</span></span> <output id="out-f" for="in-f" translate="no">0.10</output></label><input id="in-f" type="range" min="0" max="0.99" step="0.01" value="0.1" aria-describedby="hint-f" /><span class="hint" id="hint-f" translate="no"></span></div>
+            <div class="control"><label for="in-n"><span>Bets per path <span class="sym">N</span></span> <output id="out-n" for="in-n" translate="no">200</output></label><input id="in-n" type="range" min="10" max="1000" step="10" value="200" /></div>
+            <div class="control"><label for="in-m"><span>Simulated paths</span> <output id="out-m" for="in-m" translate="no">5,000</output></label><input id="in-m" type="range" min="100" max="10000" step="100" value="5000" /></div>
+            <div class="control"><label for="in-seed"><span>Random seed</span> <output id="out-seed" for="in-seed" translate="no">42</output></label><input id="in-seed" type="range" min="1" max="1000" step="1" value="42" aria-describedby="hint-seed" /><span class="hint" id="hint-seed">Same seed, same outcomes.</span></div>
+          </div>
+          <div class="status-line" id="status-line" translate="no"></div>
+        </div>
+
+        <div class="sim-toolbar">
+          <div class="mode-tabs" role="tablist" aria-label="Simulator mode">
+            <button type="button" role="tab" id="tab-play" aria-controls="panel-play" aria-selected="true">Play it yourself</button>
+            <button type="button" role="tab" id="tab-mc" aria-controls="panel-mc" aria-selected="false" tabindex="-1">Monte Carlo</button>
+          </div>
+          <div class="run-state" aria-hidden="true"><div class="progress"><span id="mc-progress"></span></div><span id="mc-state" translate="no"></span></div>
+        </div>
+
+        <div id="panel-play" role="tabpanel" aria-labelledby="tab-play">
+          <p>One click, one bet. Your path stakes the fraction f that is set at the moment of each bet, so you can change it mid-game. The Kelly path stakes f* on exactly the same sequence of outcomes, which is also Monte Carlo path 1 for the current seed.</p>
+          <div class="btn-row">
+            <button type="button" class="btn primary" id="btn-bet1">Bet once</button>
+            <button type="button" class="btn" id="btn-bet10">Bet 10 times</button>
+            <button type="button" class="btn" id="btn-reset">Reset</button>
+          </div>
+          <div class="readouts" translate="no">
+            <div class="readout"><strong id="pl-round">0 / 200</strong><small id="pl-round-label">Bets placed</small></div>
+            <div class="readout"><strong id="pl-last">—</strong><small id="pl-last-label">Last outcome</small></div>
+            <div class="readout"><strong id="pl-you">1.00×</strong><small id="pl-you-label">Your capital</small></div>
+            <div class="readout"><strong id="pl-kelly" class="accent">1.00×</strong><small id="pl-kelly-label">Kelly capital</small></div>
+          </div>
+          <p class="sr-only" id="pl-live" aria-live="polite" translate="no"></p>
+          <figure class="figure-card">
+            <div class="plot chart" id="chart-play" role="img" translate="no"></div>
+            <div class="legend" translate="no" id="legend-play"></div>
+            <figcaption><strong>Your path against Kelly, same outcomes</strong>Capital on a logarithmic scale. Dashed lines mark the initial capital (1×) and the ruin threshold (0.1×).</figcaption>
+          </figure>
+        </div>
+
+        <div id="panel-mc" role="tabpanel" aria-labelledby="tab-mc" hidden>
+          <div class="chart-grid">
+            <figure class="figure-card">
+              <div class="plot chart" id="chart-fan" role="img" translate="no"></div>
+              <div class="legend" translate="no" id="legend-fan"></div>
+              <figcaption><strong>Capital paths: median and percentile bands</strong>Bands are the 5th–95th and 25th–75th percentiles across paths at each point; faint lines are 30 individual paths. Logarithmic scale. The percentile lines move in steps because, after n bets, capital can take only n + 1 distinct values.</figcaption>
+            </figure>
+            <figure class="figure-card">
+              <div class="plot chart" id="chart-hist" role="img" translate="no"></div>
+              <div class="legend" translate="no" id="legend-hist"></div>
+              <figcaption><strong>Distribution of final capital</strong>Share of paths by final capital, on a logarithmic axis. The Kelly distribution is drawn as an outline on the same outcomes.</figcaption>
+            </figure>
+          </div>
+          <div class="table-wrap"><table><thead><tr><th>Statistic</th><th class="num">Your stake</th><th class="num">Kelly</th></tr></thead><tbody id="mc-table" translate="no"></tbody></table></div>
+          <p class="summary-line" id="mc-summary" aria-live="polite" translate="no"></p>
+        </div>
+
+        <figure class="figure-card figure-wide">
+          <div class="plot chart" id="chart-growth" role="img" translate="no"></div>
+          <div class="legend" translate="no" id="legend-growth"></div>
+          <figcaption><strong>Expected log-growth per bet, g(f)</strong>Analytical curve for the current p and b. Markers show f*, f*/2, the root f₀ where growth turns negative again, and your current stake. The shaded region is f &gt; f₀.</figcaption>
+        </figure>
+        <div class="callout"><p><strong>What to try.</strong> Keep p = 0.55 and b = 1, and open the Monte Carlo tab. At f = 0.05 and f = 0.15 the median final capital is almost identical (g is nearly symmetric around f*), but the risk is not: the higher stake falls below 10% of its capital far more often. At f = 0.20 the median path no longer grows; at f = 0.30 it collapses.</p></div>
+      </section>
+
+      <section id="misestimated">
+        <div class="section-label">04 / Model risk</div>
+        <h2>When your edge is smaller than you think</h2>
+        <p>Kelly needs the true probability. A bettor who believes p = 0.60 when the true value is 0.53 computes a stake of 0.20 instead of 0.06: more than three times the growth-optimal fraction. This experiment generates outcomes with the true p and compares three rules on the same outcomes. It reuses the odds, number of bets, number of paths and seed from the simulator above.</p>
+        <div class="panel">
+          <div class="controls two">
+            <div class="control"><label for="in-ptrue"><span>True win probability</span> <output id="out-ptrue" for="in-ptrue" translate="no">0.53</output></label><input id="in-ptrue" type="range" min="0.30" max="0.85" step="0.01" value="0.53" /></div>
+            <div class="control"><label for="in-pbel"><span>Probability the bettor believes</span> <output id="out-pbel" for="in-pbel" translate="no">0.60</output></label><input id="in-pbel" type="range" min="0.30" max="0.95" step="0.01" value="0.6" /></div>
+          </div>
+          <div class="status-line" id="mis-status" translate="no"></div>
+        </div>
+        <div class="chart-grid">
+          <figure class="figure-card">
+            <div class="plot chart" id="chart-mis-growth" role="img" translate="no"></div>
+            <div class="legend" translate="no" id="legend-mis-growth"></div>
+            <figcaption><strong>Growth under the true probability</strong>The curve is g(f) with the true p. Each marker is the stake chosen by one rule.</figcaption>
+          </figure>
+          <figure class="figure-card">
+            <div class="plot chart" id="chart-mis-paths" role="img" translate="no"></div>
+            <div class="legend" translate="no" id="legend-mis-paths"></div>
+            <figcaption><strong>Median capital of each rule</strong>Median across paths, with the 5th–95th percentile band of the full-Kelly rule on the believed edge. Logarithmic scale.</figcaption>
+          </figure>
+        </div>
+        <div class="table-wrap"><table><thead><tr><th>Rule</th><th class="num">Stake <span class="sym">f</span></th><th class="num"><span class="sym">g(f)</span> at true probability</th><th class="num">Median final capital</th><th class="num">P(capital &lt; 10%)</th><th class="num">P(drawdown &gt; 50%)</th></tr></thead><tbody id="mis-table" translate="no"></tbody></table></div>
+        <div class="callout warm"><p><strong>Why practitioners use fractional Kelly.</strong> Overestimating p pushes the full-Kelly stake past the true root f₀, where expected log-growth is negative. Half Kelly gives up about a quarter of the growth rate (in the quadratic approximation, g(f*/2) ≈ ¾·g(f*)), but with even money it can absorb an edge overestimated by a factor of up to about four before growth turns negative, against a factor of about two for full Kelly.</p></div>
+        <p><span class="scope-label">Additional background</span><br>In a continuous-time approximation, the probability that wealth ever falls to a fraction x of its initial value is x for full Kelly and x<sup>2/c − 1</sup> for a constant fraction c of Kelly (Thorp, 2006). At x = 0.1 that is 10% for full Kelly and 0.1% for half Kelly. These are infinite-horizon approximations; the tables on this page report simulated frequencies over a finite number of discrete bets.</p>
+      </section>
+
+      <section id="checks">
+        <div class="section-label">05 / Numerical validation</div>
+        <h2>Precomputed in Python, recomputed here</h2>
+        <p>The figures in the two tables below are static: they were produced by kelly_sim.py (Python and NumPy) and copied into this page. Only the last column is computed in your browser. When the page loads, it reruns each scenario with the same generator and seed and compares every statistic with the Python value.</p>
+        <h3>Baseline: p = 0.55, b = 1, N = 200, 5,000 paths, seed 42</h3>
+        <div class="table-wrap"><table><thead><tr><th class="num"><span class="sym">f</span></th><th class="num"><span class="sym">g(f)</span> exact</th><th class="num">Mean log-growth, simulated (±1.96 SE)</th><th class="num">Median <span class="sym">W<sub>N</sub></span></th><th class="num">5th–95th pct.</th><th class="num">P(W &lt; 0.1)</th><th class="num">P(DD &gt; 50%)</th><th>Browser recomputation</th></tr></thead><tbody>
+          <tr><td class="num">0.05</td><td class="num">0.003753</td><td class="num">0.003772 ± 0.000098</td><td class="num">2.1181×</td><td class="num">0.704× – 7.04×</td><td class="num">0.00%</td><td class="num">27.14%</td><td id="chk-b-0" translate="no">…</td></tr>
+          <tr><td class="num">0.10</td><td class="num">0.005008</td><td class="num">0.005046 ± 0.000196</td><td class="num">2.7228×</td><td class="num">0.299× – 30.3×</td><td class="num">2.20%</td><td class="num">93.10%</td><td id="chk-b-1" translate="no">…</td></tr>
+          <tr><td class="num">0.15</td><td class="num">0.003736</td><td class="num">0.003793 ± 0.000295</td><td class="num">2.1109×</td><td class="num">0.0759× – 79.4×</td><td class="num">16.56%</td><td class="num">99.96%</td><td id="chk-b-2" translate="no">…</td></tr>
+          <tr><td class="num">0.20</td><td class="num">−0.000138</td><td class="num">−0.000061 ± 0.000395</td><td class="num">0.9728×</td><td class="num">0.0112× – 126×</td><td class="num">40.78%</td><td class="num">100.00%</td><td id="chk-b-3" translate="no">…</td></tr>
+          <tr><td class="num">0.30</td><td class="num">−0.016203</td><td class="num">−0.016086 ± 0.000604</td><td class="num">0.0391×</td><td class="num">4.32e-05× – 65.9×</td><td class="num">80.02%</td><td class="num">100.00%</td><td id="chk-b-4" translate="no">…</td></tr>
+        </tbody></table></div>
+        <h3>Misestimated edge: true p = 0.53, believed p = 0.60, b = 1</h3>
+        <div class="table-wrap"><table><thead><tr><th>Rule</th><th class="num"><span class="sym">f</span></th><th class="num"><span class="sym">g(f)</span> exact</th><th class="num">Mean log-growth, simulated (±1.96 SE)</th><th class="num">Median <span class="sym">W<sub>N</sub></span></th><th class="num">P(W &lt; 0.1)</th><th class="num">P(DD &gt; 50%)</th><th>Browser recomputation</th></tr></thead><tbody>
+          <tr><td>True Kelly (f* at p = 0.53)</td><td class="num">0.060</td><td class="num">0.001801</td><td class="num">0.001863 ± 0.000118</td><td class="num">1.4336×</td><td class="num">0.12%</td><td class="num">63.04%</td><td id="chk-m-0" translate="no">…</td></tr>
+          <tr><td>Full Kelly on believed p = 0.60</td><td class="num">0.200</td><td class="num">−0.008247</td><td class="num">−0.008038 ± 0.000397</td><td class="num">0.1922×</td><td class="num">60.28%</td><td class="num">100.00%</td><td id="chk-m-1" translate="no">…</td></tr>
+          <tr><td>Half Kelly on believed p = 0.60</td><td class="num">0.100</td><td class="num">0.000995</td><td class="num">0.001098 ± 0.000196</td><td class="num">1.2202×</td><td class="num">7.16%</td><td class="num">96.94%</td><td id="chk-m-2" translate="no">…</td></tr>
+        </tbody></table></div>
+        <p class="table-note">Static values: kelly_sim.py, executed with Python 3.10.9 and NumPy 2.2.6. The browser column reports the largest difference between the two implementations across all statistics in the row. Small differences in the last digits can come from the logarithm and exponential routines of each platform.</p>
+        <p>The simulated mean log-growth sits within two standard errors of g(f) in every row. That is what the law of large numbers predicts. It is not an independent confirmation of the formula, because both quantities come from the same model.</p>
+        <h3>Automated tests</h3>
+        <ul>
+          <li><strong>Maximum of g.</strong> A dense grid search and a golden-section search locate the maximum of g at the analytical f* for six combinations of p and b, and the first-order condition is zero at f*.</li>
+          <li><strong>Convergence.</strong> For four combinations of p, b and f, the simulated mean log-growth lies within four standard errors of g(f) at three sample sizes, and the standard error shrinks as one over the square root of the number of bets.</li>
+          <li><strong>Limiting cases.</strong> A fair even-money bet (p = 0.5, b = 1) gives f* = 0 and negative growth for any stake; negative edges give f* = 0; a zero stake keeps capital exactly constant on every path.</li>
+          <li><strong>Generator and page.</strong> The vectorised NumPy generator matches a literal transcription of the JavaScript generator, the root f₀ is a zero of g, and the static figures embedded in this page match a fresh run of the Python code.</li>
+        </ul>
+        <div class="two-col">
+          <div class="panel"><span class="micro">Automated tests</span><div class="mini-metric">29 passed</div><div class="mini-label">pytest 7.1.2 · Python 3.10.9 · NumPy 2.2.6</div><p>Executed in the author's environment. Statistical tests use fixed seeds, so they are deterministic; their tolerances are expressed in standard errors.</p></div>
+          <div class="panel"><span class="micro">Result provenance</span><p>The two tables are generated by kelly_sim.py with the seeds shown. The browser and Python share one pseudo-random generator (mulberry32), so the same seed yields the same sequence of wins and losses in both implementations.</p></div>
+        </div>
+      </section>
+
+      <section id="reliability">
+        <div class="section-label">06 / What the results can and cannot say</div>
+        <h2>Reliability, assumptions and limits</h2>
+        <p class="lead">The simulation validates the mathematics of a stylised bet under its own assumptions. Its precision measures Monte Carlo noise conditional on those assumptions; it says nothing about how far real bets or markets are from them.</p>
+        <div class="table-wrap"><table><thead><tr><th>Assumption</th><th>What it enables here</th><th>Where reality differs</th></tr></thead><tbody>
+          <tr><td>Independent, identically distributed bets</td><td>The law of large numbers, and g(f) as the long-run growth rate</td><td>Real returns show dependence, changing regimes and fat tails.</td></tr>
+          <tr><td>p and b known exactly</td><td>f* computed without error</td><td>p must be estimated; section 04 shows the cost of overestimating it.</td></tr>
+          <tr><td>No costs, taxes or spreads</td><td>Growth factors of exactly 1 + b·f or 1 − f</td><td>Frictions lower the effective odds and the optimal stake.</td></tr>
+          <tr><td>No liquidity limits or maximum stake</td><td>Stakes scale with wealth indefinitely</td><td>Markets and bookmakers cap size, and large positions move prices.</td></tr>
+          <tr><td>No minimum bet; stakes infinitely divisible</td><td>Wealth never reaches exactly zero</td><td>Minimum sizes create genuine ruin at low wealth, hence the 10% convention.</td></tr>
+          <tr><td>One binary bet per round</td><td>A closed-form f*</td><td>Several simultaneous or correlated positions need a multivariate version.</td></tr>
+        </tbody></table></div>
+        <div class="three-col">
+          <div class="panel"><h3>What it shows</h3><p>For a known, repeated edge, the stake decides the typical outcome; growth is maximised at f*; staking beyond about 2f* makes the typical path shrink; and full Kelly still carries deep drawdowns.</p></div>
+          <div class="panel"><h3>What it does not show</h3><p>That any real bet or asset has a known edge, that Kelly sizing is suitable for a particular person, or that the simulated frequencies apply to markets. Kelly ignores risk preferences other than log utility.</p></div>
+          <div class="panel"><h3>Simulation noise</h3><p>Probabilities from 5,000 paths have a standard error of at most about 0.7 percentage points. The generator, mulberry32, is fast and adequate for visualisation, but it is not a research-grade or cryptographic generator.</p></div>
+        </div>
+      </section>
+
+      <section id="reproduce">
+        <div class="section-label">07 / Reproducibility</div>
+        <h2>How to inspect and rerun the work</h2>
+        <p>The page is a single HTML file with no external libraries, fonts or network requests; open it directly in a browser. The Python files are independent of it: kelly_sim.py reimplements the model and the generator in NumPy and writes the figures of section 05, and test_kelly.py checks both the mathematics and the figures embedded in the page.</p>
+        <pre><code>kelly-criterion/
+├── kelly-criterion.html   # standalone interactive page (no dependencies)
+├── kelly_sim.py           # NumPy reference implementation and reproduction script
+├── test_kelly.py          # pytest suite: maximum of g, convergence, limiting cases
+├── requirements.txt       # numpy, pytest
+└── results.json           # output of kelly_sim.py (seed 42)</code></pre>
+        <pre><code>python -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python kelly_sim.py --json results.json
+python -m pytest -q</code></pre>
+        <p class="source-note">Run these commands in Windows PowerShell from the kelly-criterion folder. Python 3.10 or newer is required. Fixed seeds reproduce the figures under the tested versions; bitwise agreement across future library versions is not guaranteed.</p>
+        <div class="three-col">
+          <div class="panel"><span class="micro">Reproduced figure 1</span><div class="mini-metric">2.7228×</div><div class="mini-label">Median final capital at <span class="sym">f = f* = 0.10</span></div></div>
+          <div class="panel"><span class="micro">Reproduced figure 2</span><div class="mini-metric">80.02%</div><div class="mini-label">P(capital &lt; 10%) at <span class="sym">f = 0.30</span></div></div>
+          <div class="panel"><span class="micro">Reproduced figure 3</span><div class="mini-metric">60.28%</div><div class="mini-label">P(capital &lt; 10%), full Kelly on a believed <span class="sym">p</span> of 0.60</div></div>
+        </div>
+      </section>
+
+      <section id="conclusion">
+        <div class="section-label">08 / Conclusion</div>
+        <h2>The edge sets the ceiling; the stake decides the outcome</h2>
+        <p class="lead">With the same 55% even-money bet and the same outcomes, staking 10% of wealth took the median path to 2.72× in 200 bets, staking 20% left it at 0.97×, and staking 30% took it to 0.04×, with 80% of paths falling below a tenth of their capital.</p>
+        <p>Kelly maximises long-run growth, but it is aggressive: 93% of baseline paths staking f* suffered a drawdown of more than 50% within 200 bets. When the edge itself is uncertain, overestimating it is far more costly than underestimating it, which is why fractional Kelly is the defensible default. In the misestimated scenario, full Kelly on the believed edge fell below 10% of its capital in 60% of paths; half Kelly did so in 7%.</p>
+        <p>Natural extensions would estimate p with explicit uncertainty, add transaction costs and minimum stakes, and size several correlated bets at once. Those require new assumptions and are not claimed by this project.</p>
+      </section>
+    </article>
+  </div>
+</main>
+<footer class="wrap"><div>© Álvaro Cutillas · Quantitative Finance Portfolio · Educational content, not investment advice</div><span>Project 04 / Kelly criterion research</span></footer>
+<script id="kelly-reference-data" type="application/json">{"baseline":{"p":0.55,"b":1.0,"n_rounds":200,"n_paths":5000,"seed":42,"kelly":0.10000000000000009,"growth_root":0.19866844788313107,"strategies":[{"f":0.05,"g_theory":0.0037526078187898604,"mean_log_growth":0.0037715235924571317,"se_log_growth":4.9788987226880883e-05,"p_ruin":0.0,"p_drawdown":0.2714,"percentiles":{"5":0.7044087501049827,"25":1.2841593102478566,"50":2.1181044550894716,"75":3.4936214275500808,"95":7.03940089524689}},{"f":0.1,"g_theory":0.005008366846356846,"mean_log_growth":0.005046293607799184,"se_log_growth":9.982859142988011e-05,"p_ruin":0.022,"p_drawdown":0.931,"percentiles":{"5":0.2994810064962764,"25":0.9983213025520306,"50":2.722834325683868,"75":7.4262932646735695,"95":30.256823062169502}},{"f":0.15,"g_theory":0.0037355500323385943,"mean_log_growth":0.0037926811171225708,"se_log_growth":0.00015037708214332983,"p_ruin":0.1656,"p_drawdown":0.9996,"percentiles":{"5":0.07592725378475536,"25":0.46566240839559636,"50":2.1108907324048385,"75":9.568862772292393,"95":79.39857880749025}},{"f":0.2,"g_theory":-0.00013774185471931988,"mean_log_growth":-6.110894928690687e-05,"se_log_growth":0.00020170862777538212,"p_ruin":0.4078,"p_drawdown":1.0,"percentiles":{"5":0.011246879572566388,"25":0.12810898763126505,"50":0.9728276248249196,"75":7.387409776014189,"95":126.22082171986753}},{"f":0.3,"g_theory":-0.01620337931530949,"mean_log_growth":-0.016086380904920747,"se_log_growth":0.0003079563364881898,"p_ruin":0.8002,"p_drawdown":1.0,"percentiles":{"5":4.318112171642458e-05,"25":0.001771600497504719,"50":0.03913743461176949,"75":0.8646073367827498,"95":65.87734723072973}}]},"misestimated":{"p_true":0.53,"p_believed":0.6,"b":1.0,"n_rounds":200,"n_paths":5000,"seed":42,"labels":["true_kelly","full_kelly_believed","half_kelly_believed"],"strategies":[{"f":0.06000000000000005,"g_theory":0.0018010815582060503,"mean_log_growth":0.0018630760231165514,"se_log_growth":5.996017000181352e-05,"p_ruin":0.0012,"p_drawdown":0.6304,"percentiles":{"5":0.339081281988757,"25":0.7862305196383061,"50":1.4336394939340784,"75":2.6141470564041147,"95":6.061443989219372}},{"f":0.19999999999999996,"g_theory":-0.00824704401688263,"mean_log_growth":-0.008037824021098814,"se_log_growth":0.0002023546220309492,"p_ruin":0.6028,"p_drawdown":1.0,"percentiles":{"5":0.001481070560996432,"25":0.025305479038274556,"50":0.19216348144689716,"75":1.459241437237372,"95":24.932507994047697}},{"f":0.09999999999999998,"g_theory":0.0009949529371138174,"mean_log_growth":0.00109849901597228,"se_log_growth":0.00010014830356771127,"p_ruin":0.0716,"p_drawdown":0.9694,"percentiles":{"5":0.10980406177297071,"25":0.44737286155616934,"50":1.220170480896926,"75":3.327908620280277,"95":13.55884270957545}}]}}</script>
+
+<script>
+/* =========================================================================
+   Simulador del criterio de Kelly: lógica de la página (sin dependencias).
+   - Todo el texto generado dinámicamente pasa por PortfolioI18n.t.
+   - Las cifras no se traducen: formato numérico fijo en ambos idiomas.
+   - Generador compartido con kelly_sim.py (mulberry32 como contador).
+   ========================================================================= */
+(() => {
+  'use strict';
+
+  // ---------------------------------------------------------------- idioma
+  const tr = (key, vars) => {
+    let s = window.PortfolioI18n ? window.PortfolioI18n.t(key) : key;
+    if (vars) s = s.replace(/\{(\w+)\}/g, (m, k) => (k in vars ? String(vars[k]) : m));
+    return s;
+  };
+
+  // ------------------------------------------------------------- formatos
+  const MINUS = '−';
+  const fix = (x, d) => {                       // evita "−0.000"
+    const r = x.toFixed(d);
+    return Number(r) === 0 ? (0).toFixed(d) : r.replace('-', MINUS);
+  };
+  const signed = (x, d) => (Number(x.toFixed(d)) > 0 ? '+' : '') + fix(x, d);
+  const pct = (x, d = 1) => fix(x * 100, d) + '%';
+  const gPct = g => (isFinite(g) ? signed(g * 100, 3) + '%' : MINUS + '∞');
+  const int = n => Math.round(n).toLocaleString('en-US');
+  function mult(v) {
+    if (!isFinite(v)) return v > 0 ? '∞' : '—';
+    if (v === 0) return '0×';
+    if (v >= 1e4 || v < 1e-3) {
+      const [m, e] = v.toExponential(1).split('e');
+      return m + 'e' + e.replace('+', '').replace('-', MINUS) + '×';
+    }
+    const d = v >= 100 ? 0 : v >= 10 ? 1 : v >= 0.1 ? 2 : 3;
+    return v.toFixed(d) + '×';
+  }
+  const SUP = { '-': '⁻', 0: '⁰', 1: '¹', 2: '²', 3: '³', 4: '⁴', 5: '⁵', 6: '⁶', 7: '⁷', 8: '⁸', 9: '⁹' };
+  function tickMult(log10v) {                    // etiqueta de eje para 10^x
+    const k = Math.round(log10v * 1e6) / 1e6;
+    if (Number.isInteger(k) && (k < -3 || k > 4)) return '10' + String(k).split('').map(c => SUP[c]).join('') + '×';
+    return String(Number(Math.pow(10, k).toPrecision(3))) + '×';
+  }
+
+  // ------------------------------------------------------------ matemática
+  const kellyFraction = (p, b) => { const e = b * p - (1 - p); return e > 0 ? e / b : 0; };
+  const growth = (f, p, b) => p * Math.log1p(b * f) + (1 - p) * Math.log1p(-f);
+  function growthRoot(p, b) {                     // raíz positiva de g en (f*, 1)
+    const fs = kellyFraction(p, b);
+    if (fs <= 0 || p >= 1) return null;
+    let lo = fs, hi = 1 - 1e-15;
+    for (let i = 0; i < 200 && hi - lo >= 1e-14; i++) {
+      const mid = 0.5 * (lo + hi);
+      if (growth(mid, p, b) > 0) lo = mid; else hi = mid;
+    }
+    return 0.5 * (lo + hi);
+  }
+
+  // ------------------------------------------- generador (igual que Python)
+  // Salida k-ésima de mulberry32(seed): depende solo de seed + (k+1)·0x6D2B79F5.
+  function u01(seed, k) {
+    const a = (seed + Math.imul(k + 1, 0x6D2B79F5)) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  }
+
+  // Percentil con interpolación lineal, misma fórmula de índice que NumPy.
+  function percentileSorted(a, pc) {
+    const n = a.length, q = pc / 100;
+    const h = Math.min(Math.max(n * q + (1 - q) - 1, 0), n - 1);
+    const lo = Math.floor(h), hi = Math.min(lo + 1, n - 1), g = h - lo;
+    const d = a[hi] - a[lo];
+    return g >= 0.5 ? a[hi] - d * (1 - g) : a[lo] + d * g;
+  }
+
+  // ------------------------------------------------- Monte Carlo por lotes
+  // Se reparte el trabajo en fragmentos de ~10 ms con requestAnimationFrame,
+  // de modo que la interfaz no se congela y funciona abriendo el archivo en local.
+  // Si la pestaña se oculta, rAF queda en pausa: un setTimeout de respaldo continúa el
+  // trabajo (se ejecuta lo que llegue antes) y los lotes pasan a ser mayores.
+  const nextFrame = fn => {
+    let done = false;
+    const go = () => { if (!done) { done = true; fn(); } };
+    requestAnimationFrame(go);
+    setTimeout(go, 100);
+  };
+  const LOG_RUIN = Math.log(0.10), LOG_DD = Math.log(0.5), PCTS = [5, 25, 50, 75, 95];
+  function createRunner() {
+    let token = 0;
+    return function run(cfg, onProgress, onDone) {
+      const my = ++token;
+      const { p, b, fractions, N, M, seed } = cfg;
+      const S = fractions.length, K = Math.min(N, 100) + 1;
+      const cps = new Int32Array(K);
+      for (let c = 0; c < K; c++) cps[c] = Math.round(c * N / (K - 1));
+      const lw = fractions.map(f => Math.log1p(b * f)), ll = fractions.map(f => Math.log1p(-f));
+      const grid = new Float32Array(S * M * K);          // log-capital en puntos de control
+      const finals = fractions.map(() => new Float64Array(M));
+      const ruin = new Uint32Array(S), dd = new Uint32Array(S);
+      const logW = new Float64Array(S), peak = new Float64Array(S), minL = new Float64Array(S), hit = new Uint8Array(S);
+      // Bandas de percentiles por punto de control (solo para los gráficos).
+      const bands = fractions.map(() => { const o = {}; for (const pc of PCTS) o[pc] = new Float64Array(K); return o; });
+      const col = new Float32Array(M);
+      let wins = 0, i = 0, sc = 0;          // sc recorre los pares (estrategia, punto de control)
+
+      function step() {
+        if (my !== token) return;                         // ejecución obsoleta
+        const t0 = performance.now(), budget = document.hidden ? 200 : 10;   // ms por lote
+        // Fase 1: simulación de trayectorias.
+        while (i < M && performance.now() - t0 < budget) {
+          const end = Math.min(M, i + 25);
+          for (; i < end; i++) {
+            logW.fill(0); peak.fill(0); minL.fill(0); hit.fill(0);
+            const base = i * N;
+            let c = 1;
+            for (let j = 0; j < N; j++) {
+              const win = u01(seed, base + j) < p;
+              if (win) wins++;
+              for (let s = 0; s < S; s++) {
+                const v = logW[s] + (win ? lw[s] : ll[s]);
+                logW[s] = v;
+                if (v > peak[s]) peak[s] = v; else if (v - peak[s] < LOG_DD) hit[s] = 1;
+                if (v < minL[s]) minL[s] = v;
+              }
+              if (j + 1 === cps[c]) { for (let s = 0; s < S; s++) grid[(s * M + i) * K + c] = logW[s]; c++; }
+            }
+            for (let s = 0; s < S; s++) {
+              finals[s][i] = logW[s];
+              if (minL[s] < LOG_RUIN) ruin[s]++;
+              if (hit[s]) dd[s]++;
+            }
+          }
+        }
+        if (i < M) { if (onProgress) onProgress(0.9 * i / M); nextFrame(step); return; }
+        // Fase 2: percentiles por punto de control, también repartidos en lotes.
+        while (sc < S * K && performance.now() - t0 < budget) {
+          const s = Math.floor(sc / K), c = sc % K;
+          for (let m = 0; m < M; m++) col[m] = grid[(s * M + m) * K + c];
+          col.sort();
+          for (const pc of PCTS) bands[s][pc][c] = percentileSorted(col, pc);
+          sc++;
+        }
+        if (sc < S * K) { if (onProgress) onProgress(0.9 + 0.1 * sc / (S * K)); nextFrame(step); return; }
+        onDone(summarise());
+      }
+
+      function summarise() {
+        const T = M * N, ph = wins / T;
+        const strategies = fractions.map((f, s) => {
+          const sorted = finals[s].slice().sort();
+          const q = {};
+          for (const pc of PCTS) q[pc] = Math.exp(percentileSorted(sorted, pc));
+          return {
+            f, g: growth(f, p, b),
+            meanLog: (wins * lw[s] + (T - wins) * ll[s]) / T,
+            se: Math.abs(lw[s] - ll[s]) * Math.sqrt(ph * (1 - ph) / T),
+            pRuin: ruin[s] / M, pDD: dd[s] / M, q, finals: finals[s], bands: bands[s]
+          };
+        });
+        const samples = [];                                // 30 trayectorias de la estrategia 0
+        for (let m = 0; m < Math.min(30, M); m++) samples.push(grid.subarray(m * K, m * K + K));
+        return { cfg, cps, K, strategies, samples };
+      }
+      nextFrame(step);
+    };
+  }
+
+  // --------------------------------------------------------- gráficos SVG
+  const NS = 'http://www.w3.org/2000/svg';
+  const C = { you: '#ecebe6', kelly: '#a7bdb3', deep: '#778e84', warm: '#d3ad84', grid: '#222222', axis: '#3a3a3a' };
+  let clipId = 0;
+  function svg(tag, attrs, parent) {
+    const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  }
+  function niceTicks(a, b, count) {
+    const span = b - a || 1, raw = span / count, mag = Math.pow(10, Math.floor(Math.log10(raw)));
+    const step = [1, 2, 2.5, 5, 10].map(x => x * mag).find(x => span / x <= count) || 10 * mag;
+    const out = [];
+    for (let v = Math.ceil(a / step) * step; v <= b + 1e-12; v += step) out.push(Math.round(v / step) * step);
+    return out;
+  }
+  function logTicks(lo, hi) {                          // en log10
+    const out = [], span = hi - lo;
+    if (span <= 2.5) {
+      for (let d = Math.floor(lo) - 1; d <= Math.ceil(hi); d++)
+        for (const m of [1, 2, 5]) { const v = d + Math.log10(m); if (v >= lo - 1e-9 && v <= hi + 1e-9) out.push(v); }
+    } else {
+      const step = Math.max(1, Math.ceil(span / 6));
+      for (let d = Math.ceil(lo / step) * step; d <= hi + 1e-9; d += step) out.push(d);
+    }
+    return out;
+  }
+  // Marco común: escalas, rejilla, ejes y zona de dibujo recortada.
+  function chart(host, o) {
+    host.textContent = '';
+    const W = Math.max(300, Math.round(host.clientWidth - 24 || 600));
+    const H = Math.round(Math.min(Math.max(W * (o.aspect || 0.58), 230), o.maxH || 380));
+    const m = { l: o.ml || 54, r: 14, t: 14, b: 40 };
+    const root = svg('svg', { viewBox: `0 0 ${W} ${H}`, width: W, height: H, 'aria-hidden': 'true', focusable: 'false' }, host);
+    const [xa, xb] = o.x, [ya, yb] = o.y;
+    const sx = v => m.l + (v - xa) / (xb - xa) * (W - m.l - m.r);
+    const sy = v => H - m.b - (v - ya) / (yb - ya) * (H - m.t - m.b);
+    const g = svg('g', {}, root);
+    for (const t of o.yTicks) {
+      svg('line', { x1: m.l, x2: W - m.r, y1: sy(t.v), y2: sy(t.v), stroke: C.grid }, g);
+      svg('text', { x: m.l - 7, y: sy(t.v) + 4, 'text-anchor': 'end' }, g).textContent = t.label;
+    }
+    for (const t of o.xTicks) {
+      svg('line', { x1: sx(t.v), x2: sx(t.v), y1: H - m.b, y2: H - m.b + 4, stroke: C.axis }, g);
+      svg('text', { x: sx(t.v), y: H - m.b + 17, 'text-anchor': 'middle' }, g).textContent = t.label;
+    }
+    svg('line', { x1: m.l, x2: W - m.r, y1: H - m.b, y2: H - m.b, stroke: C.axis }, g);
+    svg('text', { x: (m.l + W - m.r) / 2, y: H - 5, 'text-anchor': 'middle', class: 'lbl' }, g).textContent = o.xLabel;
+    svg('text', { transform: `translate(13 ${(m.t + H - m.b) / 2}) rotate(-90)`, 'text-anchor': 'middle', class: 'lbl' }, g).textContent = o.yLabel;
+    const id = 'kc' + (++clipId);
+    svg('rect', { x: m.l, y: m.t, width: W - m.l - m.r, height: H - m.t - m.b }, svg('clipPath', { id }, svg('defs', {}, root)));
+    const plot = svg('g', { 'clip-path': `url(#${id})` }, root);
+    return { root, plot, sx, sy, W, H, m };
+  }
+  const pathD = (xs, ys, sx, sy) => {
+    let d = '', pen = false;
+    for (let k = 0; k < xs.length; k++) {
+      if (!isFinite(ys[k])) { pen = false; continue; }
+      d += (pen ? 'L' : 'M') + sx(xs[k]).toFixed(1) + ',' + sy(ys[k]).toFixed(1); pen = true;
+    }
+    return d;
+  };
+  const bandD = (xs, lo, hi, sx, sy) => {
+    let d = '';
+    for (let k = 0; k < xs.length; k++) d += (k ? 'L' : 'M') + sx(xs[k]).toFixed(1) + ',' + sy(hi[k]).toFixed(1);
+    for (let k = xs.length - 1; k >= 0; k--) d += 'L' + sx(xs[k]).toFixed(1) + ',' + sy(lo[k]).toFixed(1);
+    return d + 'Z';
+  };
+  const hline = (c, y, color, dash, label) => {
+    if (y < c.sy.domain0) return;
+    svg('line', { x1: c.m.l, x2: c.W - c.m.r, y1: c.sy(y), y2: c.sy(y), stroke: color, 'stroke-dasharray': dash, 'stroke-opacity': 0.75 }, c.plot);
+    if (label) svg('text', { x: c.W - c.m.r - 4, y: c.sy(y) - 5, 'text-anchor': 'end', fill: color }, c.plot).textContent = label;
+  };
+  const legend = (el, items) => {
+    el.innerHTML = items.map(it => `<span class="${it.cls}"><i class="${it.kind || ''}"${it.kind === 'band' ? ' style="background:currentColor"' : ''}></i>${it.label}</span>`).join('');
+  };
+  const LN10 = Math.LN10;
+
+  // ------------------------------------------------------------ estado
+  const $ = id => document.getElementById(id);
+  const P = {};                                     // parámetros actuales
+  const inputs = { p: 'in-p', b: 'in-b', f: 'in-f', N: 'in-n', M: 'in-m', seed: 'in-seed', pTrue: 'in-ptrue', pBel: 'in-pbel' };
+  function readParams() {
+    for (const k in inputs) P[k] = Number($(inputs[k]).value);
+    P.fk = kellyFraction(P.p, P.b);
+    P.f0 = growthRoot(P.p, P.b);
+  }
+  const state = { main: null, mis: null, checks: null, mode: 'play' };
+  const runMainMC = createRunner(), runMisMC = createRunner(), runCheckMC = createRunner();
+  const play = { key: '', j: 0, you: [0], kel: [0], last: null };
+
+  // ------------------------------------------------- textos de estado
+  function renderOutputs() {
+    $('out-p').textContent = P.p.toFixed(2);
+    $('out-b').textContent = P.b.toFixed(2);
+    $('out-f').textContent = P.f.toFixed(2);
+    $('out-n').textContent = int(P.N);
+    $('out-m').textContent = int(P.M);
+    $('out-seed').textContent = String(P.seed);
+    $('out-ptrue').textContent = P.pTrue.toFixed(2);
+    $('out-pbel').textContent = P.pBel.toFixed(2);
+    $('hint-p').textContent = tr('q = 1 − p = {q}', { q: (1 - P.p).toFixed(2) });
+    $('hint-b').textContent = tr('Edge b·p − q = {e}', { e: fix(P.b * P.p - (1 - P.p), 3) });
+    $('hint-f').textContent = P.fk > 0
+      ? tr('f* = {k} · f₀ = {r}', { k: P.fk.toFixed(3), r: P.f0.toFixed(3) })
+      : tr('f* = 0: no positive edge');
+  }
+  function stakeBadge() {
+    const { f, fk, f0 } = P;
+    if (fk <= 0) return ['warm', tr('No positive edge: f* = 0. The growth-optimal choice is not to bet.')];
+    if (f === 0) return ['muted', tr('No stake: capital stays constant.')];
+    if (Math.abs(f - fk) < 0.005) return ['', tr('At the Kelly fraction: maximum expected log-growth.')];
+    if (f >= f0) return ['warm', tr('Overbetting beyond f₀: g(f) < 0, so the typical path shrinks despite the edge.')];
+    if (f > fk) return ['warm', tr('Above Kelly: more risk and less growth than f*.')];
+    return ['muted', tr('Below Kelly: less growth, less risk.')];
+  }
+  function renderStatus() {
+    const g = growth(P.f, P.p, P.b), [cls, text] = stakeBadge();
+    const parts = [
+      tr('Edge {v}', { v: `<b>${fix(P.b * P.p - (1 - P.p), 3)}</b>` }),
+      `f* <b>${P.fk.toFixed(3)}</b>`,
+      P.f0 ? `f₀ <b>${P.f0.toFixed(3)}</b>` : `f₀ <b>—</b>`,
+      tr('g(f) at f = {f}: {g} per bet', { f: P.f.toFixed(2), g: `<b>${gPct(g)}</b>` }),
+      `<span class="badge ${cls}">${text}</span>`
+    ];
+    $('status-line').innerHTML = parts.map(s => `<span>${s}</span>`).join('');
+    // Estadísticas del hero que no requieren simulación.
+    $('hs-kelly').textContent = P.fk.toFixed(3);
+    const hg = $('hs-growth');
+    hg.textContent = gPct(g);
+    hg.classList.toggle('val-warm', g < 0);
+    // Los símbolos van en <span class="sym"> para que la etiqueta en mayúsculas no los altere.
+    $('hs-growth-label').innerHTML = tr('Expected log-growth {g} per bet · {fv}', { g: '<span class="sym">g(f)</span>', fv: `<span class="sym">f = ${P.f.toFixed(2)}</span>` });
+    $('hs-ruin-label').textContent = tr('P(capital < 10% of start) · {n} bets', { n: int(P.N) });
+    $('hs-median-label').textContent = tr('Median final capital · {m} paths', { m: int(P.M) });
+  }
+
+  // ---------------------------------------------------------- g(f)
+  function growthChart(host, p, b, marks, fCur) {
+    const fk = kellyFraction(p, b), f0 = growthRoot(p, b);
+    let xmax = Math.max(0.3, (f0 || 0) * 1.35, ...marks.map(mk => mk.f * 1.15), fCur * 1.15);
+    xmax = Math.min(0.99, xmax);
+    const xs = [], ys = [];
+    for (let k = 0; k <= 300; k++) { const f = xmax * k / 300; xs.push(f); ys.push(growth(f, p, b)); }
+    const gmax = growth(fk, p, b);
+    const curveMin = Math.min(...ys.filter(isFinite));
+    // Escala vertical: con ventaja, relativa al máximo g(f*); sin ventaja, a la propia curva.
+    const scale = fk > 0 ? Math.max(gmax, 1e-6) : Math.max(Math.abs(curveMin) / 3, 1e-6);
+    const markG = [...marks.map(mk => growth(mk.f, p, b)), fCur !== null ? growth(fCur, p, b) : 0].filter(isFinite);
+    const floor = Math.max(Math.min(-3 * scale, Math.min(...markG) * 1.15), -20 * scale);
+    let ymin = Math.max(curveMin, floor);
+    if (ymin > -0.6 * scale) ymin = -0.6 * scale;
+    const ymax = Math.max(gmax, 0) + 0.25 * (Math.max(gmax, 0) - ymin);
+    const yt = niceTicks(ymin, ymax, 5);
+    const yd = Math.min(4, Math.max(0, -Math.floor(Math.log10((yt[1] - yt[0]) * 100) + 1e-9)));
+    const c = chart(host, {
+      x: [0, xmax], y: [ymin, ymax], ml: 62,
+      xTicks: niceTicks(0, xmax, 6).map(v => ({ v, label: String(Number(v.toFixed(3))) })),
+      yTicks: yt.map(v => ({ v, label: signed(v * 100, yd) + '%' })),
+      xLabel: tr('Staked fraction f'), yLabel: tr('g(f) per bet')
+    });
+    if (f0) svg('rect', { x: c.sx(f0), y: c.m.t, width: Math.max(0, c.sx(xmax) - c.sx(f0)), height: c.H - c.m.t - c.m.b, fill: C.warm, 'fill-opacity': 0.06 }, c.plot);
+    svg('line', { x1: c.m.l, x2: c.W - c.m.r, y1: c.sy(0), y2: c.sy(0), stroke: '#4a4a4a' }, c.plot);
+    svg('path', { d: pathD(xs, ys, c.sx, c.sy), fill: 'none', stroke: '#cfcfc9', 'stroke-width': 2 }, c.plot);
+    for (const mk of marks) {
+      // Los marcadores por debajo del rango se fijan al borde inferior con un triángulo.
+      const yTrue = growth(mk.f, p, b), y = Math.max(yTrue, ymin);
+      if (yTrue < ymin) {
+        svg('path', { d: `M${c.sx(mk.f) - 6},${c.sy(ymin) - 12}L${c.sx(mk.f) + 6},${c.sy(ymin) - 12}L${c.sx(mk.f)},${c.sy(ymin) - 2}Z`, fill: mk.color }, c.plot);
+        svg('text', { x: c.sx(mk.f), y: c.sy(ymin) - 17, 'text-anchor': 'middle', fill: mk.color }, c.plot).textContent = gPct(yTrue);
+        continue;
+      }
+      svg('line', { x1: c.sx(mk.f), x2: c.sx(mk.f), y1: c.sy(y), y2: c.H - c.m.b, stroke: mk.color, 'stroke-dasharray': '3 4', 'stroke-opacity': 0.6 }, c.plot);
+      svg('circle', { cx: c.sx(mk.f), cy: c.sy(y), r: mk.r || 4.5, fill: mk.hollow ? 'none' : mk.color, stroke: mk.color, 'stroke-width': mk.hollow ? 2 : 1 }, c.plot);
+      if (mk.label) svg('text', { x: c.sx(mk.f) + (mk.dx || 0), y: c.sy(y) - 10, 'text-anchor': 'middle', fill: mk.color }, c.plot).textContent = mk.label;
+    }
+    return c;
+  }
+  function renderGrowth() {
+    const host = $('chart-growth'), marks = [];
+    const gCur = growth(P.f, P.p, P.b);
+    if (P.fk > 0) {
+      marks.push({ f: P.fk / 2, color: C.deep, label: '½f*' });
+      marks.push({ f: P.fk, color: C.kelly, label: 'f*' });
+      marks.push({ f: P.f0, color: C.warm, label: 'f₀' });
+    } else {
+      marks.push({ f: 0, color: C.kelly, label: 'f* = 0', dx: 22 });
+    }
+    marks.push({ f: P.f, color: gCur < 0 ? C.warm : C.you, hollow: true, r: 7 });
+    growthChart(host, P.p, P.b, marks, P.f);
+    host.setAttribute('aria-label', P.fk > 0
+      ? tr('Curve of expected log-growth g(f). Maximum {gk} per bet at f* = {k}; growth turns negative at f₀ = {r}. Current stake f = {f}: {g} per bet.', { gk: gPct(growth(P.fk, P.p, P.b)), k: P.fk.toFixed(3), r: P.f0.toFixed(3), f: P.f.toFixed(2), g: gPct(gCur) })
+      : tr('Curve of expected log-growth g(f). With no positive edge, g is negative for every stake above zero. Current stake f = {f}: {g} per bet.', { f: P.f.toFixed(2), g: gPct(gCur) }));
+    legend($('legend-growth'), [
+      { cls: 'k-you', label: tr('g(f)') },
+      { cls: 'k-kelly', label: tr('Kelly f*') },
+      ...(P.fk > 0 ? [{ cls: 'k-deep', label: tr('Half Kelly f*/2') }, { cls: 'k-warm', label: tr('Root f₀, where g turns negative') }] : []),
+      { cls: gCur < 0 ? 'k-warm' : 'k-you', label: tr('Your stake (ring)') }
+    ]);
+  }
+
+  // ------------------------------------------------------- modo jugar
+  function resetPlay() {
+    play.key = [P.p, P.b, P.N, P.seed].join('|');
+    play.j = 0; play.you = [0]; play.kel = [0]; play.last = null; play.fk = P.fk;
+  }
+  function bet(n) {
+    for (let k = 0; k < n && play.j < P.N; k++) {
+      const win = u01(P.seed, play.j) < P.p;            // trayectoria 0: índice k = ronda
+      const y = play.you[play.j], kl = play.kel[play.j];
+      play.you.push(y + (win ? Math.log1p(P.b * P.f) : Math.log1p(-P.f)));
+      play.kel.push(kl + (win ? Math.log1p(P.b * play.fk) : Math.log1p(-play.fk)));
+      play.last = win; play.j++;
+    }
+    renderPlay(true);
+  }
+  function renderPlay(announce) {
+    const j = play.j, you = Math.exp(play.you[j]), kel = Math.exp(play.kel[j]);
+    $('pl-round').textContent = `${int(j)} / ${int(P.N)}`;
+    $('pl-last').textContent = play.last === null ? '—' : play.last ? tr('Win') : tr('Loss');
+    $('pl-last').className = play.last === null ? '' : play.last ? 'val-accent' : 'val-warm';
+    $('pl-you').textContent = mult(you);
+    $('pl-you').classList.toggle('val-warm', you < 0.1);
+    $('pl-kelly').textContent = mult(kel);
+    $('pl-round-label').textContent = tr('Bets placed');
+    $('pl-last-label').textContent = tr('Last outcome');
+    $('pl-you-label').textContent = tr('Your capital');
+    $('pl-kelly-label').innerHTML = tr('Kelly capital ({k})', { k: `<span class="sym">f* = ${play.fk.toFixed(3)}</span>` });
+    $('btn-bet1').disabled = $('btn-bet10').disabled = j >= P.N;
+    if (announce) $('pl-live').textContent = tr('Bet {j}: {o}. Your capital {y}; Kelly {k}.', { j, o: play.last ? tr('win') : tr('loss'), y: mult(you), k: mult(kel) });
+    // Gráfico
+    const host = $('chart-play'), xs = [];
+    for (let k = 0; k <= j; k++) xs.push(k);
+    const yl = play.you.map(v => v / LN10), kl = play.kel.map(v => v / LN10);
+    const lo = Math.min(-1.15, ...yl, ...kl), hi = Math.max(0.35, ...yl, ...kl) + 0.1;
+    const c = chart(host, {
+      x: [0, P.N], y: [lo, hi], aspect: 0.42, maxH: 340,
+      xTicks: niceTicks(0, P.N, 8).map(v => ({ v, label: int(v) })),
+      yTicks: logTicks(lo, hi).map(v => ({ v, label: tickMult(v) })),
+      xLabel: tr('Bets'), yLabel: tr('Capital (× initial)')
+    });
+    c.sy.domain0 = lo;
+    hline(c, 0, '#6a6a66', '4 4', '1×');
+    hline(c, -1, C.warm, '4 4', tr('ruin 0.1×'));
+    svg('path', { d: pathD(xs, kl, c.sx, c.sy), fill: 'none', stroke: C.kelly, 'stroke-width': 2 }, c.plot);
+    // Tu trayectoria se colorea en cálido cuando la fracción actual tiene g(f) < 0.
+    const youColor = growth(P.f, P.p, P.b) < 0 ? C.warm : C.you;
+    svg('path', { d: pathD(xs, yl, c.sx, c.sy), fill: 'none', stroke: youColor, 'stroke-width': 2 }, c.plot);
+    if (j > 0) svg('circle', { cx: c.sx(j), cy: c.sy(yl[j]), r: 4, fill: play.last ? C.kelly : C.warm, stroke: '#050505' }, c.plot);
+    host.setAttribute('aria-label', tr('Play chart after {j} of {n} bets: your capital {y}, Kelly capital {k}.', { j, n: P.N, y: mult(you), k: mult(kel) }));
+    legend($('legend-play'), [
+      { cls: youColor === C.warm ? 'k-warm' : 'k-you', label: tr('Your path (f set at each bet)') },
+      { cls: 'k-kelly', label: tr('Kelly path (f* = {k})', { k: play.fk.toFixed(3) }) },
+      { cls: 'k-warm', kind: 'dash', label: tr('Ruin threshold (0.1×)') }
+    ]);
+  }
+
+  // -------------------------------------------------- modo Monte Carlo
+  function renderMC() {
+    const r = state.main;
+    if (!r) return;
+    const [you, kel] = r.strategies, { N, M } = r.cfg;
+    const xs = Array.from(r.cps);
+    const toL = arr => Array.from(arr, v => v / LN10);
+    // Abanico
+    const y5 = toL(you.bands[5]), y95 = toL(you.bands[95]), k5 = toL(kel.bands[5]), k95 = toL(kel.bands[95]);
+    const lo = Math.max(-12, Math.min(-1.15, ...y5, ...k5)), hi = Math.max(0.35, ...y95, ...k95) + 0.1;
+    const youColor = you.g < 0 ? C.warm : C.you;
+    let c = chart($('chart-fan'), {
+      x: [0, N], y: [lo, hi], aspect: 0.66,
+      xTicks: niceTicks(0, N, 5).map(v => ({ v, label: int(v) })),
+      yTicks: logTicks(lo, hi).map(v => ({ v, label: tickMult(v) })),
+      xLabel: tr('Bets'), yLabel: tr('Capital (× initial)')
+    });
+    c.sy.domain0 = lo;
+    for (const s of r.samples) svg('path', { d: pathD(xs, toL(s), c.sx, c.sy), fill: 'none', stroke: youColor, 'stroke-opacity': 0.13, 'stroke-width': 1 }, c.plot);
+    svg('path', { d: bandD(xs, y5, y95, c.sx, c.sy), fill: youColor, 'fill-opacity': 0.09 }, c.plot);
+    svg('path', { d: bandD(xs, toL(you.bands[25]), toL(you.bands[75]), c.sx, c.sy), fill: youColor, 'fill-opacity': 0.16 }, c.plot);
+    hline(c, 0, '#6a6a66', '4 4', '1×');
+    hline(c, -1, C.warm, '4 4', tr('ruin 0.1×'));
+    svg('path', { d: pathD(xs, k5, c.sx, c.sy), fill: 'none', stroke: C.kelly, 'stroke-width': 1, 'stroke-dasharray': '2 3' }, c.plot);
+    svg('path', { d: pathD(xs, k95, c.sx, c.sy), fill: 'none', stroke: C.kelly, 'stroke-width': 1, 'stroke-dasharray': '2 3' }, c.plot);
+    svg('path', { d: pathD(xs, toL(kel.bands[50]), c.sx, c.sy), fill: 'none', stroke: C.kelly, 'stroke-width': 2 }, c.plot);
+    svg('path', { d: pathD(xs, toL(you.bands[50]), c.sx, c.sy), fill: 'none', stroke: youColor, 'stroke-width': 2.2 }, c.plot);
+    $('chart-fan').setAttribute('aria-label', tr('Fan chart of {m} simulated paths over {n} bets. Median final capital {y} for f = {f} and {k} for Kelly.', { m: int(M), n: int(N), y: mult(you.q[50]), f: you.f.toFixed(2), k: mult(kel.q[50]) }));
+    legend($('legend-fan'), [
+      { cls: you.g < 0 ? 'k-warm' : 'k-you', label: tr('Median, f = {f}', { f: you.f.toFixed(2) }) },
+      { cls: you.g < 0 ? 'k-warm' : 'k-you', kind: 'band', label: tr('25–75% and 5–95% bands') },
+      { cls: 'k-kelly', label: tr('Kelly median') },
+      { cls: 'k-kelly', kind: 'dash', label: tr('Kelly 5% and 95%') }
+    ]);
+    // Histograma del capital final (log10), con los extremos acumulados en los bordes.
+    const a = you.finals, bk = kel.finals, BINS = 40;
+    const sa = a.slice().sort(), sb = bk.slice().sort();
+    let hlo = Math.min(percentileSorted(sa, 0.5), percentileSorted(sb, 0.5)) / LN10;
+    let hhi = Math.max(percentileSorted(sa, 99.5), percentileSorted(sb, 99.5)) / LN10;
+    if (hhi - hlo < 0.2) { hlo -= 0.1; hhi += 0.1; }
+    hlo = Math.min(hlo, -1.1); hhi = Math.max(hhi, 0.2);
+    const width = (hhi - hlo) / BINS;
+    const count = arr => {
+      const h = new Float64Array(BINS);
+      for (let k = 0; k < arr.length; k++) h[Math.min(BINS - 1, Math.max(0, Math.floor((arr[k] / LN10 - hlo) / width)))]++;
+      return h.map(v => v / arr.length);
+    };
+    const ha = count(a), hb = count(bk), top = Math.max(...ha, ...hb) * 1.12;
+    c = chart($('chart-hist'), {
+      x: [hlo, hhi], y: [0, top], aspect: 0.66, ml: 48,
+      xTicks: logTicks(hlo, hhi).map(v => ({ v, label: tickMult(v) })),
+      yTicks: niceTicks(0, top, 4).map(v => ({ v, label: (v * 100).toFixed(top < 0.05 ? 1 : 0) + '%' })),
+      xLabel: tr('Final capital (× initial, log scale)'), yLabel: tr('Share of paths')
+    });
+    for (let k = 0; k < BINS; k++) {
+      const x0 = c.sx(hlo + k * width), x1 = c.sx(hlo + (k + 1) * width);
+      if (ha[k] > 0) svg('rect', { x: x0 + 0.5, y: c.sy(ha[k]), width: Math.max(0.5, x1 - x0 - 1), height: c.sy(0) - c.sy(ha[k]), fill: youColor, 'fill-opacity': 0.55 }, c.plot);
+    }
+    let d = `M${c.sx(hlo).toFixed(1)},${c.sy(0).toFixed(1)}`;
+    for (let k = 0; k < BINS; k++) d += `L${c.sx(hlo + k * width).toFixed(1)},${c.sy(hb[k]).toFixed(1)}L${c.sx(hlo + (k + 1) * width).toFixed(1)},${c.sy(hb[k]).toFixed(1)}`;
+    svg('path', { d: d + `L${c.sx(hhi).toFixed(1)},${c.sy(0).toFixed(1)}`, fill: 'none', stroke: C.kelly, 'stroke-width': 1.6 }, c.plot);
+    for (const [x, col, lab] of [[0, '#8a8a84', '1×'], [-1, C.warm, tr('ruin')]]) {
+      svg('line', { x1: c.sx(x), x2: c.sx(x), y1: c.m.t, y2: c.sy(0), stroke: col, 'stroke-dasharray': '4 4' }, c.plot);
+      svg('text', { x: c.sx(x) + 4, y: c.m.t + 11, fill: col }, c.plot).textContent = lab;
+    }
+    $('chart-hist').setAttribute('aria-label', tr('Histogram of final capital. {r} of paths with f = {f} fell below 10% of initial capital at some point; Kelly: {kr}.', { r: pct(you.pRuin), f: you.f.toFixed(2), kr: pct(kel.pRuin) }));
+    legend($('legend-hist'), [
+      { cls: you.g < 0 ? 'k-warm' : 'k-you', kind: 'band', label: tr('Your stake, f = {f}', { f: you.f.toFixed(2) }) },
+      { cls: 'k-kelly', label: tr('Kelly (outline)') }
+    ]);
+    // Tabla de resultados
+    const rows = [
+      [tr('Stake f'), you.f.toFixed(2), kel.f.toFixed(3)],
+      [tr('g(f), analytical'), gPct(you.g), gPct(kel.g)],
+      [tr('Mean log-growth per bet, simulated (±1.96 SE)'), `${gPct(you.meanLog)} ± ${fix(196 * you.se, 3)}%`, `${gPct(kel.meanLog)} ± ${fix(196 * kel.se, 3)}%`],
+      [tr('Median final capital'), mult(you.q[50]), mult(kel.q[50])],
+      [tr('5th – 95th percentile of final capital'), `${mult(you.q[5])} – ${mult(you.q[95])}`, `${mult(kel.q[5])} – ${mult(kel.q[95])}`],
+      [tr('P(capital ever < 10% of start)'), pct(you.pRuin), pct(kel.pRuin)],
+      [tr('P(drawdown > 50%)'), pct(you.pDD), pct(kel.pDD)]
+    ];
+    $('mc-table').innerHTML = rows.map((rw, k) => `<tr><td>${rw[0]}</td><td class="num${k > 0 && you.g < 0 && (k === 1 || k === 3) ? ' val-warm' : ''}">${rw[1]}</td><td class="num">${rw[2]}</td></tr>`).join('');
+    $('mc-summary').textContent = tr('With f = {f}, the median path ends at {y} after {n} bets (Kelly: {k}), and {r} of the {m} paths fell below 10% of their starting capital at some point (Kelly: {kr}).', { f: you.f.toFixed(2), y: mult(you.q[50]), n: int(N), k: mult(kel.q[50]), r: pct(you.pRuin), m: int(M), kr: pct(kel.pRuin) });
+  }
+  function renderHeroMC() {
+    const r = state.main;
+    if (!r) return;
+    const you = r.strategies[0];
+    $('hs-ruin').textContent = pct(you.pRuin);
+    $('hs-ruin').classList.toggle('val-warm', you.pRuin >= 0.1);
+    $('hs-median').textContent = mult(you.q[50]);
+    $('hs-median').classList.toggle('val-warm', you.q[50] < 1);
+  }
+  function setBusy(busy, frac) {
+    state.busy = busy; state.frac = frac || 0;          // se conserva para redibujar al cambiar de idioma
+    $('hero-stats').classList.toggle('is-busy', busy);
+    $('mc-progress').style.width = (busy ? Math.round((frac || 0) * 100) : 100) + '%';
+    $('mc-state').textContent = busy ? tr('Simulating… {p}%', { p: Math.round((frac || 0) * 100) }) : (state.main ? tr('{m} paths × {n} bets · seed {s}', { m: int(state.main.cfg.M), n: int(state.main.cfg.N), s: state.main.cfg.seed }) : '');
+  }
+  function startMain() {
+    setBusy(true, 0);
+    runMainMC({ p: P.p, b: P.b, fractions: [P.f, P.fk], N: P.N, M: P.M, seed: P.seed },
+      frac => setBusy(true, frac),
+      res => { state.main = res; setBusy(false); renderHeroMC(); renderMC(); startChecksOnce(); });
+  }
+
+  // -------------------------------------------- ventaja mal estimada
+  function misFractions() {
+    const fT = kellyFraction(P.pTrue, P.b), fF = kellyFraction(P.pBel, P.b);
+    return { fT, fF, fH: fF / 2, f0: growthRoot(P.pTrue, P.b) };
+  }
+  function renderMisStatus() {
+    const { fT, fF, fH, f0 } = misFractions();
+    const eT = P.b * P.pTrue - (1 - P.pTrue), eB = P.b * P.pBel - (1 - P.pBel);
+    const parts = [
+      tr('True edge {e} → true f* {k}', { e: `<b>${fix(eT, 3)}</b>`, k: `<b>${fT.toFixed(3)}</b>` }),
+      tr('Believed edge {e} → full Kelly {fF}, half Kelly {fH}', { e: `<b>${fix(eB, 3)}</b>`, fF: `<b>${fF.toFixed(3)}</b>`, fH: `<b>${fH.toFixed(3)}</b>` }),
+      tr('b = {b} (from the simulator)', { b: `<b>${P.b.toFixed(2)}</b>` })
+    ];
+    let badge;
+    if (fT <= 0) badge = ['warm', tr('The true edge is not positive: any stake has negative expected log-growth.')];
+    else if (fF >= f0) badge = ['warm', tr('Full Kelly on the believed edge exceeds the true f₀: negative expected log-growth.')];
+    else if (fF > fT) badge = ['muted', tr('Overestimated edge: full Kelly overbets, but stays below the true f₀.')];
+    else if (fF < fT) badge = ['muted', tr('Underestimated edge: slower growth and lower risk than true Kelly.')];
+    else badge = ['', tr('Belief equals the true probability.')];
+    parts.push(`<span class="badge ${badge[0]}">${badge[1]}</span>`);
+    $('mis-status').innerHTML = parts.map(s => `<span>${s}</span>`).join('');
+    return { fT, fF, fH, f0 };
+  }
+  const MIS_RULES = () => [
+    { name: tr('True Kelly (benchmark)'), color: C.kelly, cls: 'k-kelly' },
+    { name: tr('Full Kelly on believed p'), color: C.warm, cls: 'k-warm' },
+    { name: tr('Half Kelly on believed p'), color: C.deep, cls: 'k-deep' }
+  ];
+  function renderMis() {
+    const { fT, fF, fH } = renderMisStatus(), rules = MIS_RULES();
+    growthChart($('chart-mis-growth'), P.pTrue, P.b, [
+      { f: fT, color: C.kelly, label: 'f*' },
+      { f: fH, color: C.deep, label: '½' },
+      { f: fF, color: C.warm, label: tr('full') }
+    ], null);
+    $('chart-mis-growth').setAttribute('aria-label', tr('Expected log-growth under the true probability {p}: true Kelly {a}, full Kelly on the believed edge {b}, half Kelly {c}, all per bet.', { p: P.pTrue.toFixed(2), a: gPct(growth(fT, P.pTrue, P.b)), b: gPct(growth(fF, P.pTrue, P.b)), c: gPct(growth(fH, P.pTrue, P.b)) }));
+    legend($('legend-mis-growth'), rules.map((r, k) => ({ cls: r.cls, label: `${r.name}: f = ${[fT, fF, fH][k].toFixed(3)}` })));
+    const r = state.mis;
+    if (!r) return;
+    const xs = Array.from(r.cps), toL = arr => Array.from(arr, v => v / LN10);
+    const meds = r.strategies.map(s => toL(s.bands[50]));
+    const b5 = toL(r.strategies[1].bands[5]), b95 = toL(r.strategies[1].bands[95]);
+    const lo = Math.max(-12, Math.min(-1.15, ...b5, ...meds.flat())), hi = Math.max(0.35, ...b95, ...meds.flat()) + 0.1;
+    const c = chart($('chart-mis-paths'), {
+      x: [0, r.cfg.N], y: [lo, hi], aspect: 0.66,
+      xTicks: niceTicks(0, r.cfg.N, 5).map(v => ({ v, label: int(v) })),
+      yTicks: logTicks(lo, hi).map(v => ({ v, label: tickMult(v) })),
+      xLabel: tr('Bets'), yLabel: tr('Capital (× initial)')
+    });
+    c.sy.domain0 = lo;
+    svg('path', { d: bandD(xs, b5, b95, c.sx, c.sy), fill: C.warm, 'fill-opacity': 0.1 }, c.plot);
+    hline(c, 0, '#6a6a66', '4 4', '1×');
+    hline(c, -1, C.warm, '4 4', tr('ruin 0.1×'));
+    [0, 2, 1].forEach(k => svg('path', { d: pathD(xs, meds[k], c.sx, c.sy), fill: 'none', stroke: rules[k].color, 'stroke-width': 2.2 }, c.plot));
+    const st = r.strategies;
+    $('chart-mis-paths').setAttribute('aria-label', tr('Median capital after {n} bets: true Kelly {a}, full Kelly on the believed edge {b}, half Kelly {c}.', { n: int(r.cfg.N), a: mult(st[0].q[50]), b: mult(st[1].q[50]), c: mult(st[2].q[50]) }));
+    legend($('legend-mis-paths'), [
+      ...rules.map(rr => ({ cls: rr.cls, label: rr.name })),
+      { cls: 'k-warm', kind: 'band', label: tr('5–95% band, full Kelly on believed p') }
+    ]);
+    $('mis-table').innerHTML = st.map((s, k) => `<tr><td><span class="dot ${rules[k].cls}"></span>${rules[k].name}</td><td class="num">${s.f.toFixed(3)}</td><td class="num${s.g < 0 ? ' val-warm' : ''}">${gPct(s.g)}</td><td class="num">${mult(s.q[50])}</td><td class="num">${pct(s.pRuin)}</td><td class="num">${pct(s.pDD)}</td></tr>`).join('');
+  }
+  function startMis() {
+    const { fT, fF, fH } = misFractions();
+    $('mis-table').classList.add('is-busy');
+    runMisMC({ p: P.pTrue, b: P.b, fractions: [fT, fF, fH], N: P.N, M: P.M, seed: P.seed }, null,
+      res => { state.mis = res; $('mis-table').classList.remove('is-busy'); renderMis(); });
+  }
+
+  // ------------------------------------- comprobación frente a Python
+  const REF = JSON.parse($('kelly-reference-data').textContent);
+  let checksStarted = false;
+  function compare(js, py) {
+    // Mayor diferencia (absoluta para probabilidades y log-crecimiento, relativa para capital).
+    let worst = Math.abs(js.g - py.g_theory);
+    worst = Math.max(worst, Math.abs(js.meanLog - py.mean_log_growth), Math.abs(js.pRuin - py.p_ruin), Math.abs(js.pDD - py.p_drawdown));
+    for (const q of ['5', '50', '95']) worst = Math.max(worst, Math.abs(js.q[q] / py.percentiles[q] - 1));
+    return worst;
+  }
+  function renderChecks() {
+    if (!state.checks) return;
+    const cell = (id, worst) => {
+      const el = $(id);
+      if (!el) return;
+      const ok = worst < 1e-9;
+      el.className = ok ? 'check-ok' : 'check-bad';
+      el.textContent = (ok ? '✓ ' : '✗ ') + tr(ok ? 'matches (max |Δ| = {d})' : 'differs (max |Δ| = {d})', { d: worst === 0 ? '0' : worst.toExponential(1) });
+    };
+    state.checks.base.strategies.forEach((s, k) => cell('chk-b-' + k, compare(s, REF.baseline.strategies[k])));
+    state.checks.mis.strategies.forEach((s, k) => cell('chk-m-' + k, compare(s, REF.misestimated.strategies[k])));
+  }
+  function startChecksOnce() {
+    if (checksStarted) return;
+    checksStarted = true;
+    const B = REF.baseline, Mi = REF.misestimated;
+    runCheckMC({ p: B.p, b: B.b, fractions: B.strategies.map(s => s.f), N: B.n_rounds, M: B.n_paths, seed: B.seed }, null, base => {
+      runCheckMC({ p: Mi.p_true, b: Mi.b, fractions: Mi.strategies.map(s => s.f), N: Mi.n_rounds, M: Mi.n_paths, seed: Mi.seed }, null, mis => {
+        state.checks = { base, mis };
+        renderChecks();
+      });
+    });
+  }
+
+  // ------------------------------------------------------------ eventos
+  let mainTimer = 0, misTimer = 0;
+  function onInput(e) {
+    readParams();
+    renderOutputs();
+    renderStatus();
+    renderGrowth();
+    const id = e ? e.target.id : '';
+    if (play.key !== [P.p, P.b, P.N, P.seed].join('|')) resetPlay();
+    renderPlay(false);
+    if (id !== 'in-ptrue' && id !== 'in-pbel') {
+      clearTimeout(mainTimer);
+      mainTimer = setTimeout(startMain, 140);
+    }
+    if (id !== 'in-f' && id !== 'in-p') {
+      renderMisStatus();
+      clearTimeout(misTimer);
+      misTimer = setTimeout(startMis, 160);
+    }
+  }
+  for (const k in inputs) $(inputs[k]).addEventListener('input', onInput);
+  $('btn-bet1').addEventListener('click', () => bet(1));
+  $('btn-bet10').addEventListener('click', () => bet(10));
+  $('btn-reset').addEventListener('click', () => { resetPlay(); renderPlay(false); $('pl-live').textContent = tr('Game reset.'); });
+
+  // Pestañas accesibles (patrón ARIA tabs: flechas izquierda/derecha).
+  const tabs = [$('tab-play'), $('tab-mc')];
+  function selectTab(tab, focus) {
+    for (const t of tabs) {
+      const on = t === tab;
+      t.setAttribute('aria-selected', on);
+      t.tabIndex = on ? 0 : -1;
+      $(t.getAttribute('aria-controls')).hidden = !on;
+    }
+    state.mode = tab === tabs[0] ? 'play' : 'mc';
+    if (focus) tab.focus();
+    rerenderCharts();
+  }
+  tabs.forEach((t, k) => {
+    t.addEventListener('click', () => selectTab(t));
+    t.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); selectTab(tabs[(k + 1) % 2], true); }
+    });
+  });
+
+  // Se regeneran ambos paneles (también el oculto) para que su texto siga el idioma activo;
+  // el panel oculto se redibuja a su ancho real al seleccionar su pestaña.
+  function rerenderCharts() {
+    renderGrowth();
+    renderPlay(false);
+    renderMC();
+    renderMis();
+  }
+  function rerenderAll() {
+    $('pl-live').textContent = '';
+    renderOutputs(); renderStatus(); renderHeroMC(); setBusy(!!state.busy, state.frac); rerenderCharts(); renderChecks();
+  }
+  // Redibujo al cambiar el ancho (los gráficos se generan a tamaño real para que el texto sea legible).
+  let lastWidth = 0, resizeFrame = 0;
+  new ResizeObserver(entries => {
+    const w = Math.round(entries[0].contentRect.width);
+    if (w === lastWidth) return;
+    lastWidth = w;
+    cancelAnimationFrame(resizeFrame);
+    resizeFrame = requestAnimationFrame(rerenderCharts);
+  }).observe(document.querySelector('.article'));
+  // El texto dinámico se regenera en el idioma activo.
+  window.addEventListener('portfolio:languagechange', rerenderAll);
+
+  // Arranque
+  readParams();
+  resetPlay();
+  renderOutputs(); renderStatus(); renderGrowth(); renderPlay(false); renderMisStatus(); renderMis();
+  startMain();
+  startMis();
+})();
+</script>
+<!-- portfolio-language-runtime --><script id="portfolio-language-data" type="application/json">{"es":{"Kelly Criterion: Ruin & Growth Simulator — Álvaro Cutillas":"Criterio de Kelly: simulador de ruina y crecimiento — Álvaro Cutillas","Álvaro Cutillas — an interactive simulator of the Kelly criterion: how the fraction staked on a favourable bet decides between ruin and growth. Synthetic, reproducible and educational.":"Álvaro Cutillas — simulador interactivo del criterio de Kelly: cómo la fracción apostada en una apuesta favorable decide entre la ruina y el crecimiento. Sintético, reproducible y formativo.","Skip to research":"Saltar a la investigación","Primary navigation":"Navegación principal","Overview":"Resumen","Model":"Modelo","Simulator":"Simulador","Reliability":"Fiabilidad","Project 04 / Quantitative research / Position sizing":"Proyecto 04 / Investigación cuantitativa / Dimensionamiento de posiciones","Kelly criterion,":"Criterio de Kelly,","ruin & growth.":"ruina y crecimiento.","Betting with an edge is not enough: the fraction you stake decides whether you go broke or grow. This page lets you find the point where a winning bet becomes a losing strategy.":"Apostar con ventaja no basta: la fracción que arriesgas decide si te arruinas o creces. Esta página te permite encontrar el punto en el que una apuesta ganadora se convierte en una estrategia perdedora.","A synthetic simulation of repeated binary bets with known odds, computed live in your browser and checked against an independent Python implementation. It is a teaching model, not a trading strategy.":"Una simulación sintética de apuestas binarias repetidas con cuotas conocidas, calculada en directo en tu navegador y contrastada con una implementación independiente en Python. Es un modelo docente, no una estrategia de trading.","Educational content.":"Contenido formativo.","Nothing on this page is investment advice or a recommendation to bet or trade.":"Nada de lo que contiene esta página constituye asesoramiento de inversión ni una recomendación de apostar u operar.","JavaScript":"JavaScript","SVG":"SVG","Monte Carlo":"Monte Carlo","Python":"Python","NumPy":"NumPy","pytest":"pytest","Kelly":"Kelly","Binary bets":"Apuestas binarias","Live results for the current simulator settings":"Resultados en directo para la configuración actual del simulador","Kelly fraction f*":"Fracción de Kelly f*","On this page":"En esta página","Research sections":"Secciones de la investigación","01 / Question & findings":"01 / Pregunta y hallazgos","02 / Model & conventions":"02 / Modelo y convenciones","03 / Interactive simulator":"03 / Simulador interactivo","04 / Misestimated edge":"04 / Ventaja mal estimada","05 / Numerical checks":"05 / Comprobaciones numéricas","06 / Reliability & limits":"06 / Fiabilidad y límites","07 / Reproduce the work":"07 / Reproducir el trabajo","08 / Conclusion":"08 / Conclusión","01 / Research question":"01 / Pregunta de investigación","When does a winning bet become a losing strategy?":"¿Cuándo se convierte una apuesta ganadora en una estrategia perdedora?","The project asks how the fraction of capital staked on a favourable, repeated bet changes long-run growth and the risk of deep losses, and whether simulation reproduces the analytical answer given by the Kelly criterion.":"El proyecto estudia cómo la fracción de capital arriesgada en una apuesta favorable y repetida modifica el crecimiento a largo plazo y el riesgo de pérdidas profundas, y si la simulación reproduce la respuesta analítica que proporciona el criterio de Kelly.","What I built":"Qué he construido","A closed-form model of expected log-growth; an in-browser simulator with a one-bet-per-click mode and a seeded Monte Carlo mode (up to 10,000 paths of 1,000 bets); an experiment in which the bettor overestimates the edge; and an independent NumPy implementation, with pytest checks, that reproduces the page's precomputed figures from the same seed.":"Un modelo analítico del crecimiento logarítmico esperado; un simulador en el navegador con un modo de una apuesta por clic y un modo Monte Carlo con semilla (hasta 10,000 trayectorias de 1,000 apuestas); un experimento en el que el apostador sobreestima su ventaja; y una implementación independiente en NumPy, con pruebas pytest, que reproduce las cifras precalculadas de la página con la misma semilla.","What the evidence establishes":"Qué establece la evidencia","Inside this model, the simulated mean log-growth matches the analytical value, growth peaks at the Kelly fraction and turns negative near twice that fraction, and the browser and Python produce the same seeded results. This establishes numerical self-consistency of a stylised betting model, not a profitable strategy or the behaviour of real markets.":"Dentro de este modelo, el crecimiento logarítmico medio simulado coincide con el valor analítico, el crecimiento alcanza su máximo en la fracción de Kelly y se vuelve negativo cerca del doble de esa fracción, y el navegador y Python producen los mismos resultados con la misma semilla. Esto establece la autoconsistencia numérica de un modelo de apuestas estilizado, no una estrategia rentable ni el comportamiento de los mercados reales.","The baseline uses a win probability of 0.55, even-money odds, 200 bets per path, 5,000 paths and seed 42. Capital is normalised to 1, so wealth is reported as a multiple of the starting stake: 2.72× means 2.72 times the initial capital.":"El escenario base utiliza una probabilidad de ganar de 0.55, cuota a la par, 200 apuestas por trayectoria, 5,000 trayectorias y semilla 42. El capital se normaliza a 1, de modo que la riqueza se expresa como múltiplo del capital inicial: 2.72× significa 2.72 veces el capital inicial.","02 / Mathematical framework":"02 / Marco matemático","One bet, repeated: the model":"Una apuesta, repetida: el modelo","Each round the bettor stakes a constant fraction of current wealth. With probability p the bet wins and pays b per unit staked (net odds of b to 1); with probability q = 1 − p the stake is lost. Outcomes are independent across rounds.":"En cada ronda, el apostador arriesga una fracción constante de su riqueza actual. Con probabilidad p la apuesta gana y paga b por unidad apostada (cuota neta de b a 1); con probabilidad q = 1 − p se pierde lo apostado. Los resultados son independientes entre rondas.","Because wealth compounds multiplicatively, the quantity that governs the long run is the expected logarithm of the growth factor, not expected wealth. By the law of large numbers, the average log-return per bet converges to:":"Como la riqueza se capitaliza de forma multiplicativa, la magnitud que gobierna el largo plazo es el logaritmo esperado del factor de crecimiento, no la riqueza esperada. Por la ley de los grandes números, el rendimiento logarítmico medio por apuesta converge a:","Setting the first derivative to zero gives the growth-optimal stake, the Kelly fraction:":"Igualando a cero la primera derivada se obtiene la fracción que maximiza el crecimiento, la fracción de Kelly:","No edge, no bet.":"Sin ventaja, no se apuesta.","If the edge b·p − q is zero or negative, g decreases for every positive stake and the optimum is f* = 0. The simulator then flags that there is no positive edge, and the Kelly path stays flat.":"Si la ventaja b·p − q es nula o negativa, g decrece para cualquier fracción positiva y el óptimo es f* = 0. El simulador indica entonces que no hay ventaja positiva y la trayectoria de Kelly permanece plana.","Why overbetting turns growth negative":"Por qué sobreapostar vuelve negativo el crecimiento","The function g is strictly concave: it is zero at f = 0, rises to its maximum at f*, then falls and crosses zero again at a fraction f₀. For small edges, a second-order expansion makes the symmetry visible:":"La función g es estrictamente cóncava: vale cero en f = 0, sube hasta su máximo en f*, después cae y vuelve a cruzar el cero en una fracción f₀. Para ventajas pequeñas, un desarrollo de segundo orden hace visible la simetría:","With even money, b²p + q = 1, so the quadratic approximation returns f* exactly and places f₀ at about 2f*. In the baseline, f* = 0.100 and the exact root, found by bisection, is f₀ = 0.1987. Staking 20% of wealth on a 55% coin flip therefore has a slightly negative expected log-growth, even though every single bet has positive expected value.":"Con cuota a la par, b²p + q = 1, por lo que la aproximación cuadrática devuelve f* exactamente y sitúa f₀ en torno a 2f*. En el escenario base, f* = 0.100 y la raíz exacta, obtenida por bisección, es f₀ = 0.1987. Arriesgar el 20% de la riqueza en una moneda que sale cara el 55% de las veces tiene, por tanto, un crecimiento logarítmico esperado ligeramente negativo, aunque cada apuesta individual tenga valor esperado positivo.","Expected wealth tells a different story: E[W":"La riqueza esperada cuenta otra historia: E[W","grows for any positive stake when the edge is positive. The mean is carried by a few very lucky paths; the typical, median path follows approximately W":"crece con cualquier fracción positiva cuando la ventaja es positiva. La media la sostienen unas pocas trayectorias muy afortunadas; la trayectoria típica, la mediana, sigue aproximadamente W","·exp(N·g(f)). That gap is the whole problem.":"·exp(N·g(f)). Esa diferencia es todo el problema.","Symbols and conventions":"Símbolos y convenciones","Symbol":"Símbolo","Meaning":"Significado","Convention in this project":"Convención en este proyecto","Probability of winning one bet":"Probabilidad de ganar una apuesta","True probability used to generate outcomes; 0 \u003c p \u003c 1":"Probabilidad real con la que se generan los resultados; 0 \u003c p \u003c 1","Probability of losing one bet":"Probabilidad de perder una apuesta","Net odds":"Cuota neta","Profit per unit staked on a win; b = 1 is even money":"Beneficio por unidad apostada si se gana; b = 1 es cuota a la par","Fraction of current wealth staked":"Fracción de la riqueza actual que se apuesta","Constant across rounds; 0 ≤ f ≤ 0.99, no leverage and no short bets":"Constante entre rondas; 0 ≤ f ≤ 0.99, sin apalancamiento ni apuestas en contra","Kelly fraction":"Fracción de Kelly","max((b·p − q) / b, 0)":"max((b·p − q) / b, 0)","Expected log-growth per bet":"Crecimiento logarítmico esperado por apuesta","Natural logarithm; shown as a percentage per bet":"Logaritmo natural; se muestra como porcentaje por apuesta","Positive root of g":"Raíz positiva de g","Stake above which expected log-growth is negative; exists only if f* > 0":"Fracción a partir de la cual el crecimiento logarítmico esperado es negativo; solo existe si f* > 0","Wealth after t bets":"Riqueza tras t apuestas","W₀ = 1; reported as a multiple of initial capital":"W₀ = 1; se expresa como múltiplo del capital inicial","Ruin":"Ruina","Falling below 10% of initial capital":"Caer por debajo del 10% del capital inicial","\u003c 0.1 at any time within the N bets":"\u003c 0.1 en algún momento de las N apuestas","Drawdown":"Drawdown","Fall from the running peak":"Caída desde el máximo acumulado","/ max":"/ max",", with W₀ included in the peak; event: above 50%":", con W₀ incluido en el máximo; evento: superior al 50%","Fractional staking never reaches exactly zero, so ruin is a convention here: wealth dropping below 10% of the starting capital at any point. Percentiles of final wealth are computed on log-wealth with linear interpolation (the NumPy default) and then exponentiated.":"Con apuestas fraccionarias la riqueza nunca llega exactamente a cero, así que aquí la ruina es una convención: que la riqueza caiga por debajo del 10% del capital inicial en algún momento. Los percentiles de la riqueza final se calculan sobre el logaritmo de la riqueza con interpolación lineal (la opción por defecto de NumPy) y después se exponencian.","Find the fraction that breaks a winning bet":"Encuentra la fracción que arruina una apuesta ganadora","Move the sliders. Every number in this section, and in the four figures at the top of the page, is recomputed in your browser. Start at the Kelly fraction, then push the stake towards and beyond twice that value.":"Mueve los controles. Todas las cifras de esta sección, y las cuatro de la cabecera de la página, se recalculan en tu navegador. Empieza en la fracción de Kelly y después lleva la apuesta hasta el doble de ese valor y más allá.","Staked fraction f":"Fracción apostada f","Simulated paths":"Trayectorias simuladas","Random seed":"Semilla aleatoria","Same seed, same outcomes.":"Misma semilla, mismos resultados.","Simulator mode":"Modo del simulador","Play it yourself":"Juega tú","One click, one bet. Your path stakes the fraction f that is set at the moment of each bet, so you can change it mid-game. The Kelly path stakes f* on exactly the same sequence of outcomes, which is also Monte Carlo path 1 for the current seed.":"Un clic, una apuesta. Tu trayectoria arriesga la fracción f fijada en el momento de cada apuesta, así que puedes cambiarla a mitad de partida. La trayectoria de Kelly arriesga f* sobre exactamente la misma secuencia de resultados, que es también la trayectoria 1 del Monte Carlo para la semilla actual.","Bet once":"Apostar una vez","Bet 10 times":"Apostar 10 veces","Reset":"Reiniciar","Your path against Kelly, same outcomes":"Tu trayectoria frente a Kelly, mismos resultados","Capital on a logarithmic scale. Dashed lines mark the initial capital (1×) and the ruin threshold (0.1×).":"Capital en escala logarítmica. Las líneas discontinuas marcan el capital inicial (1×) y el umbral de ruina (0.1×).","Capital paths: median and percentile bands":"Trayectorias del capital: mediana y bandas de percentiles","Bands are the 5th–95th and 25th–75th percentiles across paths at each point; faint lines are 30 individual paths. Logarithmic scale. The percentile lines move in steps because, after n bets, capital can take only n + 1 distinct values.":"Las bandas son los percentiles 5–95 y 25–75 entre trayectorias en cada punto; las líneas tenues son 30 trayectorias individuales. Escala logarítmica. Las líneas de percentiles avanzan a escalones porque, tras n apuestas, el capital solo puede tomar n + 1 valores distintos.","Distribution of final capital":"Distribución del capital final","Share of paths by final capital, on a logarithmic axis. The Kelly distribution is drawn as an outline on the same outcomes.":"Proporción de trayectorias según el capital final, en eje logarítmico. La distribución de Kelly se dibuja como contorno sobre los mismos resultados.","Statistic":"Estadístico","Your stake":"Tu fracción","Expected log-growth per bet, g(f)":"Crecimiento logarítmico esperado por apuesta, g(f)","Analytical curve for the current p and b. Markers show f*, f*/2, the root f₀ where growth turns negative again, and your current stake. The shaded region is f > f₀.":"Curva analítica para los valores actuales de p y b. Los marcadores señalan f*, f*/2, la raíz f₀ en la que el crecimiento vuelve a ser negativo y tu fracción actual. La zona sombreada es f > f₀.","What to try.":"Qué probar.","Keep p = 0.55 and b = 1, and open the Monte Carlo tab. At f = 0.05 and f = 0.15 the median final capital is almost identical (g is nearly symmetric around f*), but the risk is not: the higher stake falls below 10% of its capital far more often. At f = 0.20 the median path no longer grows; at f = 0.30 it collapses.":"Mantén p = 0.55 y b = 1 y abre la pestaña Monte Carlo. Con f = 0.05 y f = 0.15 la mediana del capital final es casi idéntica (g es casi simétrica alrededor de f*), pero el riesgo no: la fracción mayor cae por debajo del 10% de su capital con mucha más frecuencia. Con f = 0.20 la trayectoria mediana deja de crecer; con f = 0.30 se desploma.","04 / Model risk":"04 / Riesgo de modelo","When your edge is smaller than you think":"Cuando tu ventaja es menor de lo que crees","Kelly needs the true probability. A bettor who believes p = 0.60 when the true value is 0.53 computes a stake of 0.20 instead of 0.06: more than three times the growth-optimal fraction. This experiment generates outcomes with the true p and compares three rules on the same outcomes. It reuses the odds, number of bets, number of paths and seed from the simulator above.":"Kelly necesita la probabilidad real. Un apostador que cree que p = 0.60 cuando el valor real es 0.53 calcula una fracción de 0.20 en lugar de 0.06: más del triple de la fracción que maximiza el crecimiento. Este experimento genera los resultados con la p real y compara tres reglas sobre los mismos resultados. Reutiliza la cuota, el número de apuestas, el número de trayectorias y la semilla del simulador anterior.","True win probability":"Probabilidad real de ganar","Probability the bettor believes":"Probabilidad que cree el apostador","Growth under the true probability":"Crecimiento con la probabilidad real","The curve is g(f) with the true p. Each marker is the stake chosen by one rule.":"La curva es g(f) con la p real. Cada marcador es la fracción elegida por una regla.","Median capital of each rule":"Capital mediano de cada regla","Median across paths, with the 5th–95th percentile band of the full-Kelly rule on the believed edge. Logarithmic scale.":"Mediana entre trayectorias, con la banda de percentiles 5–95 de la regla de Kelly completo sobre la ventaja creída. Escala logarítmica.","Rule":"Regla","Median final capital":"Mediana del capital final","P(capital \u003c 10%)":"P(capital \u003c 10%)","P(drawdown > 50%)":"P(drawdown > 50%)","Why practitioners use fractional Kelly.":"Por qué los profesionales usan Kelly fraccional.","Overestimating p pushes the full-Kelly stake past the true root f₀, where expected log-growth is negative. Half Kelly gives up about a quarter of the growth rate (in the quadratic approximation, g(f*/2) ≈ ¾·g(f*)), but with even money it can absorb an edge overestimated by a factor of up to about four before growth turns negative, against a factor of about two for full Kelly.":"Sobreestimar p lleva la fracción de Kelly completo más allá de la raíz real f₀, donde el crecimiento logarítmico esperado es negativo. Medio Kelly renuncia a cerca de una cuarta parte de la tasa de crecimiento (en la aproximación cuadrática, g(f*/2) ≈ ¾·g(f*)), pero con cuota a la par puede absorber una ventaja sobreestimada hasta en un factor de cuatro, aproximadamente, antes de que el crecimiento sea negativo, frente a un factor de dos para Kelly completo.","Additional background":"Contexto adicional","In a continuous-time approximation, the probability that wealth ever falls to a fraction x of its initial value is x for full Kelly and x":"En una aproximación en tiempo continuo, la probabilidad de que la riqueza llegue a caer alguna vez hasta una fracción x de su valor inicial es x con Kelly completo y x","for a constant fraction c of Kelly (Thorp, 2006). At x = 0.1 that is 10% for full Kelly and 0.1% for half Kelly. These are infinite-horizon approximations; the tables on this page report simulated frequencies over a finite number of discrete bets.":"con una fracción constante c de Kelly (Thorp, 2006). Para x = 0.1 eso supone un 10% con Kelly completo y un 0.1% con medio Kelly. Son aproximaciones con horizonte infinito; las tablas de esta página recogen frecuencias simuladas sobre un número finito de apuestas discretas.","05 / Numerical validation":"05 / Validación numérica","Precomputed in Python, recomputed here":"Precalculado en Python, recalculado aquí","The figures in the two tables below are static: they were produced by kelly_sim.py (Python and NumPy) and copied into this page. Only the last column is computed in your browser. When the page loads, it reruns each scenario with the same generator and seed and compares every statistic with the Python value.":"Las cifras de las dos tablas siguientes son estáticas: las generó kelly_sim.py (Python y NumPy) y se copiaron en esta página. Solo la última columna se calcula en tu navegador. Al cargar la página, se vuelve a ejecutar cada escenario con el mismo generador y la misma semilla, y se compara cada estadístico con el valor de Python.","Baseline: p = 0.55, b = 1, N = 200, 5,000 paths, seed 42":"Escenario base: p = 0.55, b = 1, N = 200, 5,000 trayectorias, semilla 42","Mean log-growth, simulated (±1.96 SE)":"Crecimiento logarítmico medio, simulado (±1.96 EE)","5th–95th pct.":"Pct. 5–95","P(DD > 50%)":"P(DD > 50%)","Browser recomputation":"Recálculo en el navegador","Misestimated edge: true p = 0.53, believed p = 0.60, b = 1":"Ventaja mal estimada: p real = 0.53, p creída = 0.60, b = 1","True Kelly (f* at p = 0.53)":"Kelly real (f* con p = 0.53)","Full Kelly on believed p = 0.60":"Kelly completo con p creída = 0.60","Half Kelly on believed p = 0.60":"Medio Kelly con p creída = 0.60","Static values: kelly_sim.py, executed with Python 3.10.9 and NumPy 2.2.6. The browser column reports the largest difference between the two implementations across all statistics in the row. Small differences in the last digits can come from the logarithm and exponential routines of each platform.":"Valores estáticos: kelly_sim.py, ejecutado con Python 3.10.9 y NumPy 2.2.6. La columna del navegador indica la mayor diferencia entre ambas implementaciones en todos los estadísticos de la fila. Las pequeñas diferencias en los últimos dígitos pueden proceder de las rutinas de logaritmo y exponencial de cada plataforma.","The simulated mean log-growth sits within two standard errors of g(f) in every row. That is what the law of large numbers predicts. It is not an independent confirmation of the formula, because both quantities come from the same model.":"El crecimiento logarítmico medio simulado queda a menos de dos errores estándar de g(f) en todas las filas. Es lo que predice la ley de los grandes números. No es una confirmación independiente de la fórmula, porque ambas magnitudes proceden del mismo modelo.","Automated tests":"Pruebas automatizadas","Maximum of g.":"Máximo de g.","A dense grid search and a golden-section search locate the maximum of g at the analytical f* for six combinations of p and b, and the first-order condition is zero at f*.":"Una búsqueda en rejilla densa y una búsqueda por sección áurea sitúan el máximo de g en el f* analítico para seis combinaciones de p y b, y la condición de primer orden se anula en f*.","Convergence.":"Convergencia.","For four combinations of p, b and f, the simulated mean log-growth lies within four standard errors of g(f) at three sample sizes, and the standard error shrinks as one over the square root of the number of bets.":"Para cuatro combinaciones de p, b y f, el crecimiento logarítmico medio simulado queda a menos de cuatro errores estándar de g(f) con tres tamaños muestrales, y el error estándar decrece como uno entre la raíz cuadrada del número de apuestas.","Limiting cases.":"Casos límite.","A fair even-money bet (p = 0.5, b = 1) gives f* = 0 and negative growth for any stake; negative edges give f* = 0; a zero stake keeps capital exactly constant on every path.":"Una apuesta justa a la par (p = 0.5, b = 1) da f* = 0 y crecimiento negativo con cualquier fracción; las ventajas negativas dan f* = 0; una fracción nula mantiene el capital exactamente constante en todas las trayectorias.","Generator and page.":"Generador y página.","The vectorised NumPy generator matches a literal transcription of the JavaScript generator, the root f₀ is a zero of g, and the static figures embedded in this page match a fresh run of the Python code.":"El generador vectorizado de NumPy coincide con una transcripción literal del generador de JavaScript, la raíz f₀ es un cero de g y las cifras estáticas incrustadas en esta página coinciden con una ejecución nueva del código Python.","29 passed":"29 superadas","pytest 7.1.2 · Python 3.10.9 · NumPy 2.2.6":"pytest 7.1.2 · Python 3.10.9 · NumPy 2.2.6","Executed in the author's environment. Statistical tests use fixed seeds, so they are deterministic; their tolerances are expressed in standard errors.":"Ejecutadas en el entorno del autor. Las pruebas estadísticas usan semillas fijas, por lo que son deterministas; sus tolerancias se expresan en errores estándar.","Result provenance":"Procedencia de los resultados","The two tables are generated by kelly_sim.py with the seeds shown. The browser and Python share one pseudo-random generator (mulberry32), so the same seed yields the same sequence of wins and losses in both implementations.":"Las dos tablas las genera kelly_sim.py con las semillas indicadas. El navegador y Python comparten un mismo generador pseudoaleatorio (mulberry32), de modo que la misma semilla produce la misma secuencia de aciertos y fallos en ambas implementaciones.","06 / What the results can and cannot say":"06 / Qué pueden y qué no pueden decir los resultados","Reliability, assumptions and limits":"Fiabilidad, supuestos y límites","The simulation validates the mathematics of a stylised bet under its own assumptions. Its precision measures Monte Carlo noise conditional on those assumptions; it says nothing about how far real bets or markets are from them.":"La simulación valida las matemáticas de una apuesta estilizada bajo sus propios supuestos. Su precisión mide el ruido Monte Carlo condicionado a esos supuestos; no dice nada sobre lo lejos que están de ellos las apuestas o los mercados reales.","Assumption":"Supuesto","What it enables here":"Qué permite aquí","Where reality differs":"Dónde difiere la realidad","Independent, identically distributed bets":"Apuestas independientes e idénticamente distribuidas","The law of large numbers, and g(f) as the long-run growth rate":"La ley de los grandes números, y g(f) como tasa de crecimiento a largo plazo","Real returns show dependence, changing regimes and fat tails.":"Los rendimientos reales muestran dependencia, cambios de régimen y colas gruesas.","p and b known exactly":"p y b conocidas con exactitud","f* computed without error":"f* calculada sin error","p must be estimated; section 04 shows the cost of overestimating it.":"p debe estimarse; la sección 04 muestra el coste de sobreestimarla.","No costs, taxes or spreads":"Sin costes, impuestos ni horquillas","Growth factors of exactly 1 + b·f or 1 − f":"Factores de crecimiento exactamente iguales a 1 + b·f o 1 − f","Frictions lower the effective odds and the optimal stake.":"Las fricciones reducen la cuota efectiva y la fracción óptima.","No liquidity limits or maximum stake":"Sin límites de liquidez ni apuesta máxima","Stakes scale with wealth indefinitely":"Las apuestas crecen con la riqueza sin límite","Markets and bookmakers cap size, and large positions move prices.":"Los mercados y las casas de apuestas limitan el tamaño, y las posiciones grandes mueven los precios.","No minimum bet; stakes infinitely divisible":"Sin apuesta mínima; apuestas infinitamente divisibles","Wealth never reaches exactly zero":"La riqueza nunca llega exactamente a cero","Minimum sizes create genuine ruin at low wealth, hence the 10% convention.":"Los tamaños mínimos generan una ruina real con riqueza baja; de ahí la convención del 10%.","One binary bet per round":"Una apuesta binaria por ronda","A closed-form f*":"Una f* con expresión analítica","Several simultaneous or correlated positions need a multivariate version.":"Varias posiciones simultáneas o correlacionadas requieren una versión multivariante.","What it shows":"Qué muestra","For a known, repeated edge, the stake decides the typical outcome; growth is maximised at f*; staking beyond about 2f* makes the typical path shrink; and full Kelly still carries deep drawdowns.":"Con una ventaja conocida y repetida, la fracción apostada decide el resultado típico; el crecimiento se maximiza en f*; apostar más de 2f*, aproximadamente, hace que la trayectoria típica se reduzca; y Kelly completo sigue implicando drawdowns profundos.","What it does not show":"Qué no muestra","That any real bet or asset has a known edge, that Kelly sizing is suitable for a particular person, or that the simulated frequencies apply to markets. Kelly ignores risk preferences other than log utility.":"Que una apuesta o un activo real tenga una ventaja conocida, que dimensionar con Kelly sea adecuado para una persona concreta o que las frecuencias simuladas sean aplicables a los mercados. Kelly ignora preferencias de riesgo distintas de la utilidad logarítmica.","Simulation noise":"Ruido de simulación","Probabilities from 5,000 paths have a standard error of at most about 0.7 percentage points. The generator, mulberry32, is fast and adequate for visualisation, but it is not a research-grade or cryptographic generator.":"Las probabilidades estimadas con 5,000 trayectorias tienen un error estándar de, como máximo, unos 0.7 puntos porcentuales. El generador, mulberry32, es rápido y adecuado para visualización, pero no es un generador de calidad investigadora ni criptográfica.","07 / Reproducibility":"07 / Reproducibilidad","How to inspect and rerun the work":"Cómo revisar y volver a ejecutar el trabajo","The page is a single HTML file with no external libraries, fonts or network requests; open it directly in a browser. The Python files are independent of it: kelly_sim.py reimplements the model and the generator in NumPy and writes the figures of section 05, and test_kelly.py checks both the mathematics and the figures embedded in the page.":"La página es un único archivo HTML sin librerías, fuentes ni peticiones de red externas; se abre directamente en un navegador. Los archivos de Python son independientes de ella: kelly_sim.py reimplementa el modelo y el generador en NumPy y produce las cifras de la sección 05, y test_kelly.py comprueba tanto las matemáticas como las cifras incrustadas en la página.","Run these commands in Windows PowerShell from the kelly-criterion folder. Python 3.10 or newer is required. Fixed seeds reproduce the figures under the tested versions; bitwise agreement across future library versions is not guaranteed.":"Ejecuta estos comandos en Windows PowerShell desde la carpeta kelly-criterion. Se requiere Python 3.10 o posterior. Las semillas fijas reproducen las cifras con las versiones probadas; no se garantiza la coincidencia bit a bit con versiones futuras de las librerías.","Reproduced figure 1":"Cifra reproducida 1","Reproduced figure 2":"Cifra reproducida 2","Reproduced figure 3":"Cifra reproducida 3","The edge sets the ceiling; the stake decides the outcome":"La ventaja fija el techo; la fracción apostada decide el resultado","With the same 55% even-money bet and the same outcomes, staking 10% of wealth took the median path to 2.72× in 200 bets, staking 20% left it at 0.97×, and staking 30% took it to 0.04×, with 80% of paths falling below a tenth of their capital.":"Con la misma apuesta a la par con un 55% de acierto y los mismos resultados, arriesgar el 10% de la riqueza llevó la trayectoria mediana a 2.72× en 200 apuestas, arriesgar el 20% la dejó en 0.97× y arriesgar el 30% la redujo a 0.04×, con un 80% de las trayectorias por debajo de la décima parte de su capital.","Kelly maximises long-run growth, but it is aggressive: 93% of baseline paths staking f* suffered a drawdown of more than 50% within 200 bets. When the edge itself is uncertain, overestimating it is far more costly than underestimating it, which is why fractional Kelly is the defensible default. In the misestimated scenario, full Kelly on the believed edge fell below 10% of its capital in 60% of paths; half Kelly did so in 7%.":"Kelly maximiza el crecimiento a largo plazo, pero es agresivo: el 93% de las trayectorias del escenario base que apostaban f* sufrió un drawdown superior al 50% en 200 apuestas. Cuando la propia ventaja es incierta, sobreestimarla es mucho más costoso que infraestimarla, y por eso Kelly fraccional es la opción por defecto defendible. En el escenario de ventaja mal estimada, Kelly completo sobre la ventaja creída cayó por debajo del 10% de su capital en el 60% de las trayectorias; medio Kelly, en el 7%.","Natural extensions would estimate p with explicit uncertainty, add transaction costs and minimum stakes, and size several correlated bets at once. Those require new assumptions and are not claimed by this project.":"Las extensiones naturales serían estimar p con incertidumbre explícita, añadir costes de transacción y apuestas mínimas, y dimensionar a la vez varias apuestas correlacionadas. Requieren supuestos nuevos y este proyecto no las afirma.","© Álvaro Cutillas · Quantitative Finance Portfolio · Educational content, not investment advice":"© Álvaro Cutillas · Portfolio de Finanzas Cuantitativas · Contenido formativo, no constituye asesoramiento de inversión","Project 04 / Kelly criterion research":"Proyecto 04 / Investigación sobre el criterio de Kelly","q = 1 − p = {q}":"q = 1 − p = {q}","Edge b·p − q = {e}":"Ventaja b·p − q = {e}","f* = {k} · f₀ = {r}":"f* = {k} · f₀ = {r}","f* = 0: no positive edge":"f* = 0: sin ventaja positiva","No positive edge: f* = 0. The growth-optimal choice is not to bet.":"Sin ventaja positiva: f* = 0. La opción que maximiza el crecimiento es no apostar.","No stake: capital stays constant.":"Sin apuesta: el capital permanece constante.","At the Kelly fraction: maximum expected log-growth.":"En la fracción de Kelly: máximo crecimiento logarítmico esperado.","Overbetting beyond f₀: g(f) \u003c 0, so the typical path shrinks despite the edge.":"Sobreapuesta más allá de f₀: g(f) \u003c 0, así que la trayectoria típica se reduce pese a la ventaja.","Above Kelly: more risk and less growth than f*.":"Por encima de Kelly: más riesgo y menos crecimiento que con f*.","Below Kelly: less growth, less risk.":"Por debajo de Kelly: menos crecimiento, menos riesgo.","Edge {v}":"Ventaja {v}","g(f) at f = {f}: {g} per bet":"g(f) con f = {f}: {g} por apuesta","g(f) per bet":"g(f) por apuesta","Curve of expected log-growth g(f). Maximum {gk} per bet at f* = {k}; growth turns negative at f₀ = {r}. Current stake f = {f}: {g} per bet.":"Curva del crecimiento logarítmico esperado g(f). Máximo de {gk} por apuesta en f* = {k}; el crecimiento se vuelve negativo en f₀ = {r}. Fracción actual f = {f}: {g} por apuesta.","Curve of expected log-growth g(f). With no positive edge, g is negative for every stake above zero. Current stake f = {f}: {g} per bet.":"Curva del crecimiento logarítmico esperado g(f). Sin ventaja positiva, g es negativa para cualquier fracción mayor que cero. Fracción actual f = {f}: {g} por apuesta.","g(f)":"g(f)","Kelly f*":"Kelly f*","Half Kelly f*/2":"Medio Kelly f*/2","Root f₀, where g turns negative":"Raíz f₀, donde g se vuelve negativa","Your stake (ring)":"Tu fracción (anillo)","Win":"Gana","Loss":"Pierde","Bets placed":"Apuestas realizadas","Last outcome":"Último resultado","Your capital":"Tu capital","Bet {j}: {o}. Your capital {y}; Kelly {k}.":"Apuesta {j}: {o}. Tu capital {y}; Kelly {k}.","win":"gana","loss":"pierde","Bets":"Apuestas","Capital (× initial)":"Capital (× inicial)","ruin 0.1×":"ruina 0.1×","Play chart after {j} of {n} bets: your capital {y}, Kelly capital {k}.":"Gráfico del juego tras {j} de {n} apuestas: tu capital {y}, capital de Kelly {k}.","Your path (f set at each bet)":"Tu trayectoria (f fijada en cada apuesta)","Kelly path (f* = {k})":"Trayectoria de Kelly (f* = {k})","Ruin threshold (0.1×)":"Umbral de ruina (0.1×)","Fan chart of {m} simulated paths over {n} bets. Median final capital {y} for f = {f} and {k} for Kelly.":"Gráfico de abanico de {m} trayectorias simuladas durante {n} apuestas. Mediana del capital final {y} con f = {f} y {k} con Kelly.","Median, f = {f}":"Mediana, f = {f}","25–75% and 5–95% bands":"Bandas 25–75% y 5–95%","Kelly median":"Mediana de Kelly","Kelly 5% and 95%":"Kelly 5% y 95%","Final capital (× initial, log scale)":"Capital final (× inicial, escala logarítmica)","Share of paths":"Proporción de trayectorias","ruin":"ruina","Histogram of final capital. {r} of paths with f = {f} fell below 10% of initial capital at some point; Kelly: {kr}.":"Histograma del capital final. El {r} de las trayectorias con f = {f} cayó por debajo del 10% del capital inicial en algún momento; Kelly: {kr}.","Your stake, f = {f}":"Tu fracción, f = {f}","Kelly (outline)":"Kelly (contorno)","g(f), analytical":"g(f), analítico","Mean log-growth per bet, simulated (±1.96 SE)":"Crecimiento logarítmico medio por apuesta, simulado (±1.96 EE)","5th – 95th percentile of final capital":"Percentiles 5 – 95 del capital final","P(capital ever \u003c 10% of start)":"P(capital alguna vez \u003c 10% del inicial)","With f = {f}, the median path ends at {y} after {n} bets (Kelly: {k}), and {r} of the {m} paths fell below 10% of their starting capital at some point (Kelly: {kr}).":"Con f = {f}, la trayectoria mediana termina en {y} tras {n} apuestas (Kelly: {k}), y el {r} de las {m} trayectorias cayó por debajo del 10% de su capital inicial en algún momento (Kelly: {kr}).","P(capital \u003c 10% of start) · {n} bets":"P(capital \u003c 10% del inicial) · {n} apuestas","Median final capital · {m} paths":"Mediana del capital final · {m} trayectorias","Simulating… {p}%":"Simulando… {p}%","{m} paths × {n} bets · seed {s}":"{m} trayectorias × {n} apuestas · semilla {s}","True edge {e} → true f* {k}":"Ventaja real {e} → f* real {k}","Believed edge {e} → full Kelly {fF}, half Kelly {fH}":"Ventaja creída {e} → Kelly completo {fF}, medio Kelly {fH}","b = {b} (from the simulator)":"b = {b} (del simulador)","The true edge is not positive: any stake has negative expected log-growth.":"La ventaja real no es positiva: cualquier fracción tiene crecimiento logarítmico esperado negativo.","Full Kelly on the believed edge exceeds the true f₀: negative expected log-growth.":"Kelly completo sobre la ventaja creída supera la f₀ real: crecimiento logarítmico esperado negativo.","Overestimated edge: full Kelly overbets, but stays below the true f₀.":"Ventaja sobreestimada: Kelly completo sobreapuesta, pero se mantiene por debajo de la f₀ real.","Underestimated edge: slower growth and lower risk than true Kelly.":"Ventaja infraestimada: crecimiento más lento y menor riesgo que con el Kelly real.","Belief equals the true probability.":"La creencia coincide con la probabilidad real.","True Kelly (benchmark)":"Kelly real (referencia)","Full Kelly on believed p":"Kelly completo con la p creída","Half Kelly on believed p":"Medio Kelly con la p creída","full":"completo","Expected log-growth under the true probability {p}: true Kelly {a}, full Kelly on the believed edge {b}, half Kelly {c}, all per bet.":"Crecimiento logarítmico esperado con la probabilidad real {p}: Kelly real {a}, Kelly completo sobre la ventaja creída {b}, medio Kelly {c}, todos por apuesta.","Median capital after {n} bets: true Kelly {a}, full Kelly on the believed edge {b}, half Kelly {c}.":"Capital mediano tras {n} apuestas: Kelly real {a}, Kelly completo sobre la ventaja creída {b}, medio Kelly {c}.","5–95% band, full Kelly on believed p":"Banda 5–95%, Kelly completo con la p creída","Game reset.":"Partida reiniciada.","matches (max |Δ| = {d})":"coincide (máx. |Δ| = {d})","differs (max |Δ| = {d})":"difiere (máx. |Δ| = {d})","Page language":"Idioma de la página","Win probability":"Probabilidad de ganar","Staked fraction":"Fracción apostada","Bets per path":"Apuestas por trayectoria","Stake":"Fracción","at true probability":"con la probabilidad real","exact":"exacto","Median":"Mediana","Median final capital at":"Mediana del capital final con","P(capital \u003c 10%) at":"P(capital \u003c 10%) con","P(capital \u003c 10%), full Kelly on a believed":"P(capital \u003c 10%), Kelly completo con una","of 0.60":"creída de 0.60","Expected log-growth {g} per bet · {fv}":"Crecimiento logarítmico esperado {g} por apuesta · {fv}","Kelly capital ({k})":"Capital de Kelly ({k})","Expected log-growth":"Crecimiento logarítmico esperado","per bet":"por apuesta","Stake f":"Fracción f"},"fragments":{},"heading":["Criterio de Kelly,","ruina y crecimiento."]}</script><script>/* Offline EN/ES text rendering. Equations, code and numerical data stay intact. */
+(() => {
+ 'use strict';
+ const payload=JSON.parse(document.getElementById('portfolio-language-data').textContent);
+ const catalogue=payload.es||{},fragments=payload.fragments||{};
+ const normalize=value=>value.replace(/\s+/g,' ').trim();
+ const escape=value=>value.replace(/[.*+?^{}$()|[\]\\]/g,'\\$&');
+ const fragmentKeys=Object.keys(fragments).sort((a,b)=>b.length-a.length);
+ const fragmentLookup=new Map(fragmentKeys.map(k=>[k.toLowerCase(),fragments[k]]));
+ const pattern=fragmentKeys.length?new RegExp('(?<![A-Za-z])(?:'+fragmentKeys.map(escape).join('|')+')(?![A-Za-z])','gi'):null;
+ const textRecords=new WeakMap(),attributeRecords=new WeakMap(),linkRecords=new WeakMap(),svgRecords=new WeakMap();
+ const missing=new Set();
+ let language='en',observer=null,active=false,explicit=false;
+ function translate(value){
+  if(language==='en'||!value)return value;
+  const key=normalize(value),exact=catalogue[key];
+  if(exact!==undefined)return value.match(/^\s*/)[0]+exact+value.match(/\s*$/)[0];
+  if(!/[a-zA-Z]{2}/.test(key))return value;
+  const translated=pattern?value.replace(pattern,m=>fragmentLookup.get(m.toLowerCase())):value;
+  if(translated===value)missing.add(key);
+  return translated;
+ }
+ function excluded(element){
+  return !element||element.closest('script,style,pre,code,kbd,samp,.brand,.references li,.formula,.language-switch,[translate="no"]')||
+   element.closest('math')||element.closest('svg metadata');
+ }
+ function renderText(node){
+  if(excluded(node.parentElement))return;
+  let record=textRecords.get(node);
+  if(!record){record={english:node.data,last:node.data};textRecords.set(node,record);}
+  else if(node.data!==record.last){record.english=node.data;}
+  let result=translate(record.english);
+  if(language==='es'&&node.parentElement.closest('h1')&&payload.heading){
+   const h1=document.querySelector('h1'),nodes=[...h1.childNodes].flatMap(n=>n.nodeType===3?[n]:n.nodeType===1?[...n.childNodes].filter(c=>c.nodeType===3):[]).filter(n=>normalize(n.data));
+   const index=nodes.indexOf(node);if(index>=0&&payload.heading[index])result=payload.heading[index];
+  }
+  record.last=result;if(node.data!==result)node.data=result;
+ }
+ function renderAttributes(element){
+  if(excluded(element))return;
+  let record=attributeRecords.get(element);if(!record){record=new Map();attributeRecords.set(element,record);}
+  for(const attr of ['aria-label','title','placeholder','alt',...(element.matches('meta[name="description"]')?['content']:[])]){
+   const value=element.getAttribute(attr);if(value===null)continue;
+   let item=record.get(attr);
+   if(!item){item={english:value,last:value};record.set(attr,item);}else if(value!==item.last){item.english=value;}
+   item.last=translate(item.english);if(value!==item.last)element.setAttribute(attr,item.last);
+  }
+ }
+ function fitSVG(root){
+  const texts=root.matches?.('svg text')?[root]:[...(root.querySelectorAll?.('svg text')||[])];
+  for(const text of texts){
+   if(!text.isConnected||!text.getComputedTextLength)continue;
+   let record=svgRecords.get(text);
+   if(!record){const size=parseFloat(getComputedStyle(text).fontSize);record={size,length:text.getComputedTextLength()};svgRecords.set(text,record);}
+   text.style.fontSize=record.size+'px';
+   if(language==='es'&&record.length>65){
+    const translated=text.getComputedTextLength();if(translated>record.length*1.12)text.style.fontSize=(record.size*Math.max(.78,record.length*1.12/translated))+'px';
+   }
+  }
+ }
+ function walk(root){
+  if(root.nodeType===3){renderText(root);return;}
+  if(root.nodeType!==1&&root.nodeType!==9)return;
+  if(root.nodeType===1&&excluded(root))return;
+  if(root.nodeType===1)renderAttributes(root);
+  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+  while(walker.nextNode())renderText(walker.currentNode);
+  for(const element of root.querySelectorAll?.('[aria-label],[title],[placeholder],[alt],meta[name="description"]')||[])renderAttributes(element);
+ }
+ function links(root=document){
+  if(!explicit&&language==='en')return;
+  for(const anchor of root.querySelectorAll?.('a[href]')||[]){
+   let original=linkRecords.get(anchor);if(original===undefined){original=anchor.getAttribute('href');linkRecords.set(anchor,original);}
+   if(!original||original.startsWith('#')||/^(mailto:|tel:|javascript:)/i.test(original))continue;
+   try{
+    const url=new URL(original,location.href);
+    if(url.protocol!==location.protocol||url.host!==location.host||!/(?:\.html|\/)$/i.test(url.pathname))continue;
+    url.searchParams.set('lang',language);
+    anchor.setAttribute('href',url.href);
+   }catch(_){}
+  }
+ }
+ function updateControls(){
+  const select=document.querySelector('.language-switch select');if(!select)return;
+  select.value=language;
+  select.setAttribute('aria-label',language==='es'?'Idioma de la página':'Page language');
+ }
+ function observe(){observer?.observe(document.documentElement,{subtree:true,childList:true,characterData:true});}
+ function change(next,{persist=true}={}){
+  if(next!=='en'&&next!=='es')return;
+  observer?.disconnect();language=next;document.documentElement.lang=next;
+  if(persist){
+   explicit=true;
+   try{const url=new URL(location.href);url.searchParams.set('lang',next);history.replaceState(history.state,'',url);}catch(_){}
+  }
+  walk(document.documentElement);fitSVG(document);links();updateControls();
+  window.ChartCoordinates?.hide();
+  observe();window.dispatchEvent(new CustomEvent('portfolio:languagechange',{detail:{language:next}}));
+ }
+ const select=document.querySelector('.language-switch select');
+ select?.addEventListener('change',()=>change(select.value));
+ observer=new MutationObserver(records=>{
+  if(active)return;active=true;observer.disconnect();
+  const roots=new Set();
+  for(const record of records){
+   if(record.type==='characterData')roots.add(record.target);
+   else for(const node of record.addedNodes)if(node.nodeType===1||node.nodeType===3)roots.add(node);
+  }
+  for(const root of roots)if(root.isConnected){if(root.nodeType===1)fitSVG(root);walk(root);if(root.nodeType===1){fitSVG(root);links(root);}}
+  active=false;observe();
+ });
+ let chosen=new URL(location.href).searchParams.get('lang');
+ if(chosen==='en'||chosen==='es')explicit=true;
+ // Bare URLs always open in English; explicit language links retain the reader's choice.
+ const nav=document.querySelector('nav');
+ if(nav&&window.ResizeObserver)new ResizeObserver(()=>document.documentElement.style.setProperty('--portfolio-nav-height',nav.getBoundingClientRect().height+'px')).observe(nav);
+ window.PortfolioI18n={setLanguage:change,t:translate,get language(){return language;},get missing(){return [...missing];},locale:()=>language==='es'?'es-ES':'en-US'};
+ fitSVG(document);change(chosen==='es'?'es':'en',{persist:false});
+})();
+</script><!-- /portfolio-language-runtime --></body>
+</html>

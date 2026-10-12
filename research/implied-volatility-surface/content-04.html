@@ -1,0 +1,109 @@
+<section id="ssvi" data-title="SSVI and a coherent maturity parameterization">
+<div class="section-kicker">16 / Surface construction</div><h2>SSVI and a coherent maturity parameterization</h2>
+<p>Surface SVI links smiles through ATM total variance \(\theta(T)\), an asymmetry parameter \(\rho\) and a positive shape function \(\phi\). Its mathematical definition is:</p>
+\[ w(k,T)=\frac{\theta(T)}{2}
+\left[1+\rho\phi(\theta(T))k+
+\sqrt{(\phi(\theta(T))k+\rho)^2+1-\rho^2}\right]. \]
+<p>At \(k=0\), the square root is one, so \(w(0,T)=\theta(T)\). Fixing \(\rho\) links the shape across expiries. More general maturity-dependent extensions exist, but they need their own calendar conditions.</p>
+<p><a href="https://arxiv.org/abs/1204.0646">Gatheral and Jacquier's SSVI analysis</a> supplies analytical conditions for static consistency. For constant \(\rho\), a useful sufficient calendar condition is increasing \(\theta\) and \(0\le\partial_\theta(\theta\phi)\le\phi\). Sufficient butterfly bounds are:</p>
+\[ \theta\phi(\theta)(1+|\rho|)&lt;4,\qquad
+\theta\phi(\theta)^2(1+|\rho|)\le4. \]
+<p>These bounds are sufficient; failing them alone does not prove a finite-strike butterfly violation. Correct wing behavior and calendar assumptions are part of the complete analysis.</p>
+<h3>The specific family used here</h3>
+<p>Choose \(\phi(\theta)=\eta/(1+\theta)\), with \(\eta\ge0\), and integrate a positive exponentially relaxing variance rate:</p>
+\[ \theta(T)=v_l^2T+(v_s^2-v_l^2)b(1-e^{-T/b}),
+\qquad v_s&gt;0,\quad v_l&gt;0,\quad b&gt;0. \]
+<p>The symbols \(v_s,v_l\) are short and long volatility scales; \(b\) is a decay time in years. Differentiation gives \(\theta'(T)=v_l^2+(v_s^2-v_l^2)e^{-T/b}&gt;0\). Thus total variance is increasing whether the volatility term structure slopes up or down.</p>
+<p>Also \(\partial_\theta(\theta\phi)=\eta/(1+\theta)^2\), between zero and \(\phi\). The calendar sufficient condition follows directly. The two butterfly expressions reduce to elementary functions whose maxima can be checked without a grid.</p>
+\[ \sup_{\theta&gt;0}\theta\phi(\theta)(1+|\rho|)=\eta(1+|\rho|),\qquad
+\sup_{\theta&gt;0}\theta\phi(\theta)^2(1+|\rho|)
+=\frac{\eta^2(1+|\rho|)}{4}. \]
+<p>The first supremum is a long-maturity limit; the second occurs at \(\theta=1\). Requiring the first expression strictly below four and the second at most four provides a global sufficient certificate for this family. It is deliberately conservative at a limiting equality.</p>
+{{figure:ssvi}}
+<h3>What the parameters control</h3>
+<p>The ATM skew satisfies \(w_k(0,T)=\theta\rho\phi\), giving \(\sigma_k(0,T)=\rho\phi\sqrt{\theta/T}/2\). The reference parameters produce a negative skew. Raising \(\eta\) steepens wings and increases curvature without changing ATM variance. Changing \(\rho\) changes both asymmetry and the consistency bounds.</p>
+<p>For a finite horizon \(H\), use \(0&lt;\theta\le\theta(H)\) when evaluating maxima. A surface can pass sufficient bounds over the displayed horizon while failing the stronger all-maturity bounds. The laboratory distinguishes these outcomes and reports sampled \(g\) separately. It never treats a favorable plot on a limited grid as a universal proof.</p>
+</section>
+
+<section id="calibration-objectives" data-title="Calibration objectives and statistical weighting">
+<div class="section-kicker">17 / Parameter estimation</div><h2>Calibration objectives and statistical weighting</h2>
+<p>Calibration chooses parameters to represent observed prices or their derived coordinates. The objective determines which contracts dominate the fit. Minimizing premium errors, IV errors and total-variance errors are different problems even when they describe the same observation table.</p>
+\[ L_C(p)=\sum_i\omega_i(C_i(p)-C_i^{\mathrm{obs}})^2,\qquad
+L_\sigma(p)=\sum_i\nu_i(\sigma_i(p)-\sigma_i^{\mathrm{obs}})^2. \]
+<p>For small residuals, \(C_i(p)-C_i^{\mathrm{obs}}\approx\operatorname{Vega}_i(\sigma_i(p)-\sigma_i^{\mathrm{obs}})\). An unweighted premium loss emphasizes large-vega contracts. An unweighted IV loss gives a low-vega wing quote similar numerical influence to an informative ATM quote, despite its much wider price-derived IV uncertainty.</p>
+<h3>Total-variance fitting</h3>
+<p>Total-variance residuals are natural for SVI. Since \(dw/d\sigma=2T\sigma\), equal variance weights imply different IV weights at different maturities and levels. To compare fitting policies, translate residuals back into premiums and quote intervals rather than reporting only the optimizer's internal loss.</p>
+\[ L_w(p)=\sum_i\alpha_i(w_i(p)-w_i^{\mathrm{obs}})^2. \]
+<p>A scale can be chosen from the estimated variance uncertainty \(2T\sigma\,\Delta C/\operatorname{Vega}\), with floors that avoid extreme weights. Such a scale is a first-order approximation. Wide spreads or near-intrinsic quotes may require fitting premium intervals directly.</p>
+<h3>Constraints and penalties</h3>
+<p>The calibration should impose the intended domain restrictions: positive variance, permitted parameter ranges, price bounds, calendar ordering and butterfly conditions. Penalties discourage violations but may leave small negative regions. Hard constraints or analytically admissible parameter transforms give different guarantees.</p>
+<p>A model can be too restrictive to pass exactly through every midpoint while respecting consistency. If the observations themselves contain conflicts, an exact midpoint fit may be undesirable. Report whether fitted prices lie within spreads and which observations are responsible for the remaining error.</p>
+<h3>Interpolation and held-out contracts</h3>
+<p>Withholding some strikes tests interpolation within an expiry. Withholding an expiry tests maturity interpolation. Neither is a temporal forecast test: all contracts may belong to the same snapshot. A forward-looking validation of smile dynamics needs later snapshots and a specified prediction or hedging task.</p>
+{{figure:calibration}}
+<p>The numerical example generates seventeen one-year IV observations by adding small deterministic perturbations to the reference surface. Four strikes are withheld, leaving thirteen for an equal-weight total-variance fit. This establishes a reproducible fitting problem and reveals residuals in actual IV units, without attributing random market significance to a synthetic error.</p>
+<p>Calibration quality should include at least price or IV residuals, comparison with quote uncertainty, stability across starts and consistency diagnostics. A tiny numerical loss is only one piece of evidence. It cannot validate an unobserved wing or a dynamic hedging assumption.</p>
+</section>
+
+<section id="calibration-algorithm" data-title="Optimization, identifiability and parameter stability">
+<div class="section-kicker">18 / Numerical calibration</div><h2>Optimization, identifiability and parameter stability</h2>
+<p>Surface fitting is often a nonlinear constrained problem with correlated parameters. A robust procedure makes initialization, bounds, scaling, stopping rules and failure states explicit. Save the objective value and diagnostics from every start, including unsuccessful candidates.</p>
+<h3>A practical sequence</h3>
+<ol>
+<li>Build synchronized European quote rows and fix the forward, discount and maturity inputs.</li>
+<li>Compute premium bounds, valid IV intervals and coordinate values; retain quality flags.</li>
+<li>Choose a fitting representation and a loss matched to quote uncertainty and intended use.</li>
+<li>Initialize parameters from ATM level, skew and wing behavior, then run several admissible starts.</li>
+<li>Select a converged candidate using the stated loss, and perform independent price and arbitrage checks.</li>
+<li>Evaluate held-out contracts, perturb inputs and record output sensitivity.</li>
+</ol>
+<p>This sequence prevents the optimizer from compensating silently for a forward error or a unit mistake. Carry estimation and data repair should be visible upstream operations.</p>
+<h3>Transforms and numerical scaling</h3>
+<p>Positive parameters may be represented by exponentials and \(\rho\) by a bounded transform. Extremely large transformed values can overflow or produce flat gradients, so bounded optimization may be preferable in a teaching implementation. Express loss components in comparable numerical scales to prevent a large maturity or premium bucket from dominating unintentionally.</p>
+<p>For raw SVI, the positivity condition depends jointly on \(a,b,\rho,s\); bounding \(a\) positive is sufficient for positive variance when \(b\ge0\), but can exclude valid representations with negative \(a\). The worked example uses a positive-\(a\) box suitable for its synthetic data. It does not present those bounds as a complete general SVI calibration policy.</p>
+<h3>Local identifiability</h3>
+<p>Let \(J_{ij}\) be the derivative of residual \(i\) with respect to parameter \(j\). Small singular values of \(J\) indicate directions in parameter space that the observations identify weakly. A local covariance estimate based on \(J^\mathsf TJ\) requires statistical error assumptions and can be unreliable near constraints or multiple optima.</p>
+<p>Compare prices and Greeks from different near-optimal fits. If parameters vary substantially while premiums remain stable, the problem may be adequate for vanilla pricing but weak for extrapolation. If density or local volatility also varies substantially, the intended derivative use needs more data or regularization.</p>
+<h3>Warm starts and monitoring</h3>
+<p>A previous snapshot supplies a useful warm start. It can also lock the algorithm into an old solution when the market changes, so periodically compare with fresh starts. Temporal regularization can improve stability, but it should not suppress real event-driven changes or conceal a data break.</p>
+<p>Define explicit success criteria beyond the optimizer's flag: bounded loss, valid prices, acceptable residuals versus spreads, nonnegative tested density and calendar increments, and reproducible results. Convergence means a numerical termination condition was met; it does not mean the fitted surface is economically valid.</p>
+</section>
+
+<section id="validation" data-title="Static-arbitrage validation and certification">
+<div class="section-kicker">19 / Validation</div><h2>Static-arbitrage validation and certification</h2>
+<p>Validation should operate at several levels. Check raw quote relationships, fitted prices at observed contracts, a dense interpolation domain, and analytical tails or sufficient conditions where available. Each level answers a different question.</p>
+<h3>A price-based audit</h3>
+<p>Reprice calls and puts using the fitted IVs and independent carry inputs. Confirm parity, bounds, vertical slopes and irregular-strike butterfly inequalities. Compare repriced premiums with bid–ask intervals. Testing only the IV table misses errors in coordinate conversion and discounting.</p>
+<p>For cross-expiry tests, reconstruct common \(k\) values, calculate normalized premiums, and check increasing total variance under the stated assumptions. A chain on fixed absolute strikes should be converted carefully rather than compared row by row by strike label.</p>
+<h3>An analytic derivative audit</h3>
+<p>For smooth slices, calculate \(w_k,w_{kk}\) and \(g(k)\). For smooth maturity behavior, calculate \(\partial_Tw\) at fixed \(k\). Compare analytic derivatives with finite differences at representative points. If the two disagree, investigate implementation and step size before interpreting the sign economically.</p>
+<p>Finite differences have truncation error for large steps and cancellation error for extremely small steps. Test several moderate steps and look for a stable region. An apparent negative value of order machine precision needs a different interpretation from a broad negative-density interval.</p>
+<h3>What a grid can establish</h3>
+<p>A dense grid can find a violation. Passing the grid establishes that none was found at those points and tolerances. It cannot prove positivity over every real strike or all future maturities. Expand the domain, inspect potential extrema and evaluate tail slopes separately.</p>
+<p>A valid analytical sufficient certificate is stronger. The laboratory reports global or finite-horizon SSVI bounds when they pass. If both certificates fail but sampled \(g\) remains positive, the output says that the surface is not certified by those bounds. If sampled \(g&lt;0\), the negative value is direct evidence of a butterfly inconsistency.</p>
+<h3>Global interpretation</h3>
+<p>Static absence of arbitrage supplies consistency of the current vanilla price collection within the model assumptions. It does not certify a particular future smile law, eliminate transaction costs, validate a stochastic-rate extension or prove an American-exercise surface is appropriate.</p>
+<p>Store the validation domain, tolerances, implementation version, parameter set and input snapshot with each result. A label such as “arbitrage free” without its conditions and scope is less informative than a reproducible certificate accompanied by a numerical report.</p>
+<p>The reference example has an analytical sufficient certificate and numerical checks of the density and moments. The intentionally extreme-shape example fails numerical density checks. These two examples help distinguish a certificate, a sampled test and an observed violation.</p>
+</section>
+
+<section id="wings" data-title="Wing asymptotics and extrapolation risk">
+<div class="section-kicker">20 / Tail behavior</div><h2>Wing asymptotics and extrapolation risk</h2>
+<p>Quoted strikes cover only a finite region. Any price for a deeper wing uses an extrapolation assumption. A curve-fitting model can make those assumptions explicit, but it cannot turn missing tail observations into measured information.</p>
+<h3>Total-variance growth</h3>
+<p><a href="https://www.math.uchicago.edu/~rl/moment.pdf">Lee's moment formula</a> connects extreme-strike total-variance slopes with finite moments of the terminal distribution. For a positive underlying, the right and left limiting upper slopes lie in the interval from zero to two. Using \(p^*=\sup\{p\ge0:\mathbb E[S_T^{1+p}]&lt;\infty\}\), the right-wing relation is:</p>
+\[ \limsup_{k\to\infty}\frac{w(k,T)}{k}
+=\psi(p^*),\qquad
+\psi(p)=2-4\left(\sqrt{p^2+p}-p\right). \]
+<p>The analogous left relation uses negative moments of \(S_T\). This is an asymptotic statement. It is not a pointwise finite-strike restriction \(w(k,T)\le2|k|\), which would incorrectly force ATM variance to zero.</p>
+{{figure:wings}}
+<h3>Why the coordinate matters</h3>
+<p>A volatility polynomial that grows quadratically in \(|k|\) eventually produces total variance growing faster than linearly. Its far tail may therefore become inadmissible even if the observed range looks reasonable. A model with controlled linear total-variance wings is easier to audit.</p>
+<p>For raw SVI, the left and right slopes are \(b(1-\rho)\) and \(b(1+\rho)\). For the reference SSVI family, they are \(\theta\phi(1-\rho)/2\) and \(\theta\phi(1+\rho)/2\). Keeping them below two addresses a tail requirement; central butterfly and maturity conditions remain necessary parts of the audit.</p>
+<h3>Boundary and transition choices</h3>
+<p>Fit an interior region and attach wings with an explicit matching policy. Value continuity is the minimum requirement. Smooth first derivatives reduce artificial delta and digital discontinuities; second-derivative continuity can matter for local-volatility use. A smooth attachment may still violate \(g\), so inspect the transition as well as the distant asymptote.</p>
+<p>Near zero maturity, the surface should approach an appropriate payoff limit. With continuous diffusion assumptions, \(\theta(T)\to0\). A scheduled jump can create a discontinuity in the maturity variance budget and needs a different treatment. Long-maturity extrapolation similarly requires stated ATM growth and smile behavior.</p>
+<h3>Valuation sensitivity</h3>
+<p>Deep-wing options, digitals, barriers and variance-related products can be sensitive to an extrapolation that barely affects ATM premiums. Revalue them under several admissible tail policies. The dispersion is a measure of modeling dependence, not a statistical confidence interval unless a probability model for those policies is supplied.</p>
+<p>A helpful report separates observed-domain fit, interpolated-domain diagnostics and extrapolated-domain assumptions. The reference surface permits calculations on wide domains because its functional form is explicit. The worked calibration still treats far-wing behavior as a consequence of a chosen model, rather than evidence from withheld nonexistent quotes.</p>
+</section>

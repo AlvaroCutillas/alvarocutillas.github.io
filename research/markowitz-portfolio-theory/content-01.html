@@ -1,0 +1,85 @@
+<section id="introduction" data-title="Introduction and scope">
+<div class="section-label">01 / Introduction</div><h2>Introduction and scope</h2>
+<p class="lead">Markowitz portfolio theory turns diversification into an explicit optimisation problem: combine assets to achieve a desired expected return with the smallest attainable variance, or select an efficient trade-off between those two quantities.</p>
+<p>The central insight is that an asset's contribution to portfolio risk depends on how its return moves with the other holdings. A portfolio is not evaluated by simply averaging its constituent volatilities. Its weights interact with a covariance matrix, and those interactions determine which combinations are efficient.</p>
+<p>This guide develops the mathematics of the classical single-period model, explains its economic interpretation, and examines what changes when short selling, financing, concentration and uncertain inputs matter. The original <a href="#ref-markowitz">Markowitz paper</a> supplies the historical starting point. The derivations and computed examples here form a self-contained study path, with a live laboratory and worked exercises.</p>
+<h3>Three levels of analysis</h3>
+<p>A <strong>population problem</strong> assumes that expected returns and covariances are known. An <strong>estimated problem</strong> replaces them with forecasts or sample estimates. An <strong>implemented strategy</strong> adds dates, trading rules, costs and financing. A beautiful solution to the first problem is not evidence that the third will perform well. Moving between these levels requires additional assumptions and validation.</p>
+<p>The model is prospective. The expected return of a portfolio is a conditional forecast for a specified future horizon, not the historical return printed next to a fund. Its variance is a measure of the forecast distribution's spread, not a guarantee against loss. An efficient portfolio is efficient relative to the supplied universe, constraints and moments; it need not dominate assets or risks absent from that specification.</p>
+<div class="callout"><p><strong>Analogy: designing a team rather than ranking individuals.</strong> A team made entirely of people with the same strengths may also share the same weaknesses. Another member can improve the team by performing differently when the others struggle. Covariance measures this interaction. Diversification concerns the composition of the team, not just how impressive each member looks alone.</p></div>
+<h3>Notation and reading structure</h3>
+<p>There are \(n\) risky assets with simple-return vector \(R\), mean vector \(\mu\), covariance matrix \(\Sigma\), and initial capital weights \(w\). Unless cash is explicitly included, weights sum to one. The portfolio mean is \(\mu_p\), its variance is \(\sigma_p^2\), and its volatility is \(\sigma_p\). The symbol \(r_f\) denotes a known simple return over exactly the same horizon.</p>
+<p>Part I establishes returns, dependence, preferences and the optimisation problem. Part II derives portfolio solutions and studies cash, constraints and risk contributions. Part III addresses estimation, evaluation, numerical implementation and exercises. Linear algebra and elementary probability are assumed; the key equations are derived and their conditions stated.</p>
+<p>The benchmark is deliberately synthetic: annual expected simple returns of 6%, 10% and 14%, annual volatilities of 10%, 18% and 28%, and correlations 0.20, 0.10 and 0.35. The risk-free return is 2%. These inputs are educational assumptions, not current market estimates. Monetary conventions and return units remain consistent throughout.</p>
+</section>
+
+<section id="returns" data-title="Investment returns and portfolio accounting">
+<div class="section-label">02 / Return measurement</div><h2>Investment returns and portfolio accounting</h2>
+<p>Begin with the cash-flow definition of an asset return. If an initial investment costs \(P_0\), ends with price \(P_1\), and pays a distribution \(D_1\) at the end of the period, its simple total return is</p>
+\[ R=\frac{P_1+D_1-P_0}{P_0}. \]
+<p>The numerator is the investment gain and the denominator is initial capital. Interim distributions require a reinvestment or cash-account convention. Price-only series omit distributions; adjusted series must be checked for the adjustments they actually implement. A return model cannot repair an accounting definition that excludes part of the investor's cash flow.</p>
+<h3>Simple versus logarithmic returns</h3>
+<p>For a strictly positive gross return, the log return is \(\ell=\ln(1+R)\). Log returns add across consecutive periods for one compounded investment. Simple returns aggregate across simultaneously held assets using their initial capital weights. These are different aggregation operations:</p>
+\[ 1+R_{0:H}=\prod_{t=1}^{H}(1+R_t),\qquad \ell_{0:H}=\sum_{t=1}^{H}\ell_t. \]
+<p>A portfolio log return is generally \(\ln(1+w^\mathsf{T}R)\), not \(w^\mathsf{T}\ell\). Using a covariance matrix of log returns with a linear simple-return portfolio identity is an approximation whose accuracy depends on the return scale. The classical formulas below use simple returns consistently.</p>
+<h3>Initial weights and self-financing positions</h3>
+<p>Suppose initial wealth is \(W_0\) and asset \(i\) receives capital \(w_iW_0\). Ignoring costs and external flows, its terminal contribution is \(w_iW_0(1+R_i)\). A fully invested risky portfolio therefore has</p>
+\[ \sum_iw_i=1,\qquad W_1=W_0(1+w^\mathsf{T}R),\qquad R_p=w^\mathsf{T}R. \]
+<p>A negative weight represents a short position in the idealised accounting model. Short-sale proceeds finance other positions when the net budget is one. The model has not yet accounted for collateral, borrowing charges, margin, stock availability or possible loss beyond initial wealth. Those are economically relevant restrictions, rather than consequences of the covariance formula.</p>
+<h3>Time horizons and currency</h3>
+<p>Expected return, volatility and the risk-free return must refer to the same horizon and numeraire. A monthly mean with an annual covariance matrix does not define a coherent objective. For a foreign asset measured in a domestic currency, the gross return combines the asset's local gross return with the exchange-rate gross return. Currency hedges change that exposure and its covariance.</p>
+<p>For IID period returns, a sum of returns has mean \(H\mu\) and covariance \(H\Sigma\). A compounded simple return is a product and does not generally have those exact moments. The familiar annualisation rules are useful conventions for short-period arithmetic statistics; they should not be silently presented as exact moments of compounded annual wealth.</p>
+</section>
+
+<section id="expected-return" data-title="Expected return and linear aggregation">
+<div class="section-label">03 / Portfolio expectation</div><h2>Expected return and linear aggregation</h2>
+<p>Expected return averages possible outcomes using the forecast probability distribution. Because expectation is linear, a portfolio with fixed initial weights has</p>
+\[ \mu_p=\mathbb{E}[R_p]=w^\mathsf{T}\mu=\sum_iw_i\mu_i. \]
+<p>Independence is not required for this identity. Covariance affects risk, while the weighted mean uses only the marginal means. The weights must be known when the holding period starts. A rule that changes positions using information within the period requires an account of the trading strategy and its conditional returns.</p>
+<h3>Forecasts, realised outcomes and historical estimates</h3>
+<p>A mean is a forecast parameter. A realised return is one observation drawn from the distribution. A historical average estimates a mean only under assumptions about how past observations relate to the future. Changing investment conditions, sample selection or return definitions can make that relationship weak.</p>
+<p>A 10% expected return does not mean that most one-year outcomes will be near 10%, or that the investment earns 10% almost every year. A distribution with rare large gains can have a positive mean and many negative outcomes. Mean–variance analysis retains a limited description of that distribution; its usefulness depends on the investor's objective and the relevance of the omitted features.</p>
+<h3>Arithmetic expectations and growth</h3>
+<p>For positive wealth, expected log growth is \(\mathbb{E}[\ln(1+R_p)]\). It is not the logarithm of the expected gross return. Concavity gives</p>
+\[ \mathbb{E}[\ln(1+R_p)]\le\ln(1+\mu_p). \]
+<p>For sufficiently small returns, a second-order expansion gives \(\mathbb{E}[\ln(1+R_p)]\approx\mu_p-\frac12(\sigma_p^2+\mu_p^2)\). Dropping the squared mean yields the commonly used small-return expression \(\mu_p-\sigma_p^2/2\). Neither approximation is a universal substitute for a distribution-aware growth objective.</p>
+<div class="callout"><p><strong>Analogy: average speed and journey time.</strong> An average summary can conceal the sequence and spread of the underlying experiences. Averaging investment gains answers a different question from measuring compounded wealth growth. A gain of 50% followed by a loss of 50% has a zero arithmetic average but leaves only 75% of initial wealth.</p></div>
+<h3>A portfolio example</h3>
+<p>With benchmark weights 50%, 30% and 20%, expected return is \(0.5(0.06)+0.3(0.10)+0.2(0.14)=0.088\), or 8.8%. That arithmetic calculation uses initial weights and the same annual horizon for all three means. It says nothing yet about volatility, loss probability or how often the portfolio must be traded to restore those weights.</p>
+<p>If all feasible weights are nonnegative and sum to one, the portfolio mean lies between the smallest and largest asset means. Allowing shorts removes that convex-combination bound: the model can extrapolate expected return by financing additional long positions with shorts. The additional expected return then comes with different risk and gross exposure.</p>
+</section>
+
+<section id="covariance" data-title="Variance, covariance and correlation">
+<div class="section-label">04 / Dependence</div><h2>Variance, covariance and correlation</h2>
+<p>Variance measures dispersion around an expected return. Covariance measures whether two assets tend to deviate from their own means in the same direction. Define</p>
+\[ \sigma_i^2=\mathbb{E}[(R_i-\mu_i)^2],\qquad \Sigma_{ij}=\mathbb{E}[(R_i-\mu_i)(R_j-\mu_j)]. \]
+<p>Covariance has squared-return units. Correlation removes the marginal scales when both volatilities are positive:</p>
+\[ \rho_{ij}=\frac{\Sigma_{ij}}{\sigma_i\sigma_j},\qquad -1\le\rho_{ij}\le1. \]
+<p>Correlation of zero does not generally mean independence. Nonlinear dependence, shared tail events and changing regimes can remain. Under a jointly Gaussian model zero covariance implies independence for the relevant components; outside that assumption it need not.</p>
+<h3>Expanding portfolio variance</h3>
+<p>Subtract the portfolio mean and square the weighted sum. The diagonal terms contribute individual variances; the off-diagonal terms contribute covariances:</p>
+\[ \sigma_p^2=\sum_iw_i^2\sigma_i^2+2\sum_{i<j}w_iw_j\sigma_i\sigma_j\rho_{ij}. \]
+<p>Each pair appears twice in the full double sum, which explains the factor of two when the sum only includes \(i<j\). Forgetting it understates or misstates risk. Volatility is the nonnegative square root of this variance, not an average of individual square roots.</p>
+<h3>Interpreting risk reduction</h3>
+<p>For positive weights, lower covariance typically lowers the combined variance holding marginal scales fixed. Negative weights reverse some covariance contributions. An asset with high standalone volatility can still hedge another exposure if its covariance with the current portfolio is sufficiently negative.</p>
+<p>Low correlation is not the same as low covariance. If volatilities rise together, a small correlation can still create a large covariance. Correlations also need not remain constant in stressed conditions. A covariance estimate captures dependence over a stated sample and horizon, rather than a permanent structural guarantee.</p>
+<p>Variance treats positive and negative deviations symmetrically. For a distribution with asymmetric losses or nonlinear payoffs, two portfolios with identical mean and variance can have different tail risk. Mean–variance optimisation does not eliminate the need to inspect loss distributions, drawdowns, liquidity and liabilities when those determine the actual decision.</p>
+</section>
+
+<section id="matrix" data-title="Matrix representation and admissibility">
+<div class="section-label">05 / Linear algebra</div><h2>Matrix representation and admissibility</h2>
+<p>Collect covariances in the symmetric matrix \(\Sigma\). The portfolio variance becomes a quadratic form:</p>
+\[ \mu_p=w^\mathsf{T}\mu,\qquad \sigma_p^2=w^\mathsf{T}\Sigma w,\qquad \mathbf{1}^\mathsf{T}w=1. \]
+<p>Here \(\mathbf{1}\) is the vector of ones, and the transpose converts a column vector into a row. The matrix product reproduces every diagonal and cross term. Matrix notation is more than shorthand: it reveals convexity, supports stable numerical solvers, and makes extensions to many assets explicit.</p>
+<h3>Positive semidefiniteness</h3>
+<p>A covariance matrix must be positive semidefinite because the variance of every linear combination is nonnegative:</p>
+\[ x^\mathsf{T}\Sigma x\ge0\quad\text{for every }x. \]
+<p>Positive definiteness makes the inequality strict for every nonzero vector. It gives a strictly convex quadratic objective and an invertible covariance matrix. Positive semidefiniteness allows singularity: redundant assets or exact linear relations can create directions with zero variance.</p>
+<p>A symmetric correlation matrix with diagonal ones and entries in \([-1,1]\) is not automatically admissible. For three correlations \(a,b,c\), its determinant is \(1+2abc-a^2-b^2-c^2\). A negative determinant rules out a valid covariance structure even when every pairwise entry looks individually plausible.</p>
+<h3>Scale, conditioning and factorisation</h3>
+<p>If \(D_\sigma\) is diagonal with the asset volatilities, then \(\Sigma=D_\sigma C D_\sigma\), where \(C\) is the correlation matrix. This separates units from dependence and helps validate inputs. A Cholesky factorisation \(\Sigma=LL^\mathsf{T}\) establishes positive definiteness in ordinary numerical use and enables correlated simulation.</p>
+<p>Very small eigenvalues create poor conditioning: small changes in inputs can produce large changes in solutions involving the inverse. Forming a matrix inverse explicitly is usually less desirable than solving linear systems. A solver can return a numerically accurate answer to a poorly estimated problem; numerical conditioning and economic input uncertainty are related but distinct concerns.</p>
+<h3>Singular cases</h3>
+<p>When covariance is singular, minimisers may not be unique. A zero-variance, zero-budget direction can change expected return without changing risk if it has nonzero mean exposure. That degeneracy is economically significant, not merely an inconvenient exception. Pseudoinverses require feasibility and null-space analysis; they should not be substituted mechanically into formulas derived under positive definiteness.</p>
+<p>The live laboratory requires a well-conditioned positive-definite correlation matrix. It rejects invalid or nearly singular inputs with an explanation. The idealised perfect negative-correlation example remains useful analytically, but falls outside those inverse-based numerical assumptions.</p>
+</section>

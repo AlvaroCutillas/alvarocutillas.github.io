@@ -1,0 +1,138 @@
+<section id="laboratory" data-title="Interactive tail-risk laboratory">
+<div class="section-kicker">26 / Numerical study</div><h2>Interactive tail-risk laboratory</h2>
+<p>The laboratory generates losses under a known normal or Student-t distribution, computes its analytical VaR and ES, and estimates both from the same finite sample. Mean and standard deviation are horizon loss parameters expressed as percentages of portfolio wealth. Positive mean denotes expected loss. There is no automatic annual-to-daily conversion or implicit price-history calibration.</p>
+{{interactive}}
+<h3>Suggested experiments</h3>
+<ol>
+<li><strong>Begin with the benchmark.</strong> Wealth €1,000,000, mean loss zero, standard deviation 1%, confidence 99%, 25,000 normal scenarios. Analytical VaR is €23,263.48 and ES is €26,652.14. The empirical values differ because they use one finite sample.</li>
+<li><strong>Change only the seed.</strong> Analytical values remain fixed, while empirical estimates vary. This isolates sampling variation. The generator, rather than market information, determines the particular observations.</li>
+<li><strong>Increase confidence to 99.9%.</strong> The same 25,000 scenarios now represent 25 observations' worth of tail mass instead of 250. Compare how far the empirical curves depart from the population curves near their upper end.</li>
+<li><strong>Switch to Student t with five degrees of freedom.</strong> Wealth, mean and standard deviation stay fixed. The change in risk therefore reflects distributional shape rather than a hidden volatility increase.</li>
+<li><strong>Reduce degrees of freedom toward 2.05.</strong> The scale contracts to preserve finite variance, while rare losses become much more extreme. One sample can miss those events, making its observed dispersion much smaller than the population standard deviation.</li>
+<li><strong>Double wealth.</strong> Keep the percentage parameters and seed fixed. Every loss and each risk measure doubles. This checks homogeneity of the location-scale model.</li>
+<li><strong>Set standard deviation to zero.</strong> Every loss equals the specified mean, and analytical and empirical VaR and ES coincide. Strict breaches are zero because losses equal their quantile.</li>
+</ol>
+<p>“Tail mass in scenario units” means \(N(1-\alpha)\), which can be fractional. It is not always the count of observations strictly exceeding sample VaR. The empirical ES fills the missing probability with a fraction of the boundary observation. The maximum sample loss is a useful diagnostic, but is not a forecast of the worst possible loss.</p>
+<p>The analytical curves describe known model parameters. The empirical curves describe one synthetic sample and are drawn through evaluated confidence levels; they are not statistical confidence bands. A low sample estimate can result from an unrepresentative draw even when the generating distribution is known. The static convergence experiment repeats samples to show how error behaves across repetitions.</p>
+<p>The normal and t location-scale models have unbounded loss support. They are useful mathematical benchmarks, rather than exact wealth models with limited liability or a complete simulation of any trading strategy. To analyze an actual option book, replace the direct loss sampler with joint market scenarios and instrument revaluation, preserving the risk-estimation conventions demonstrated here.</p>
+</section>
+
+<section id="examples" data-title="Worked valuation and risk examples">
+<div class="section-kicker">27 / Worked examples</div><h2>Worked valuation and risk examples</h2>
+<h3>Example 1: matched-volatility distribution comparison</h3>
+<p>Consider wealth €1,000,000, zero mean loss and loss standard deviation €10,000. Compare normal losses with a Student-t model having five degrees of freedom. The t scale is €10,000 multiplied by \(\sqrt{3/5}\); its standard deviation remains €10,000. The table is calculated from analytical population formulas, rather than estimated from a sample.</p>
+{{table:normal}}
+<p>At 95% confidence, t VaR is below normal VaR even though t ES is higher. At 99.9%, both t measures substantially exceed their normal equivalents. This shows why “heavy tails always increase every quantile at matched variance” is too broad. Distributional shape redistributes probability between the centre, moderate deviations and the extreme tail.</p>
+<h3>Example 2: portfolio aggregation and attribution</h3>
+<p>Use capital weights 50%, 30% and 20%; daily volatilities 1%, 1.6% and 2.2%; and correlations 0.2 for A–B, 0.1 for A–C and 0.4 for B–C. Assume jointly normal, zero-mean returns. Form covariance entries as \(\Sigma_{ij}=\sigma_i\sigma_j\rho_{ij}\), compute \(w^{\mathsf T}\Sigma w\), then apply the 99% normal multiplier.</p>
+{{table:portfolio}}
+<p>Asset A holds half the capital but contributes less ES than asset B. Asset C has the smallest capital weight yet contributes a substantial risk share because its volatility and dependence differ. Adding the component contributions reproduces portfolio ES. Adding standalone ES values would give a different, larger quantity because it omits the portfolio diversification calculation.</p>
+<h3>Example 3: a short European call</h3>
+<p>Use the model in Chapter 14 and 150,000 physical spot scenarios from NumPy seed 4105. Revalue the short call after one trading day at remaining maturity \(0.5-1/252\). The table compares first-order spot plus time loss, second-order spot plus time loss and full Black–Scholes revaluation on the same scenarios. Values are currency units per option with contract multiplier one.</p>
+{{table:options}}
+<p>The delta approximation understates upper-tail loss for this short call. Delta–gamma moves close to full revaluation because the example has smooth payoff pricing and a short horizon, although it is still approximate. The differences are produced by the P&amp;L map, since all three methods use exactly the same underlying spot observations.</p>
+<p>Changing the spot model, implied-volatility response, strike, maturity or position sign changes the conclusion's magnitude. A long call has a different loss region from a short call. This is why checking approximation quality in the relevant portfolio tail is more informative than judging it solely by local fit around spot 100.</p>
+<h3>Example 4: a discrete tail and an optimization check</h3>
+<p>For losses 0, 10 and 100 with probabilities 94%, 4% and 2%, the 95% quantile is 10. Inserting \(\theta=10\) into the auxiliary objective gives \(10+(0.02\times90)/0.05=46\). This agrees with the fractional-tail calculation. The naive conditional mean of all losses at least 10 gives 40 and fails the check.</p>
+<p>The example is a useful unit test for both risk estimation and a scenario-optimization engine. It includes an atom at VaR, a nontrivial fractional boundary and a tail severity far from the quantile. A test using only smooth normal data would not expose an incorrect discrete ES convention.</p>
+</section>
+
+<section id="implementation" data-title="Implementation and mathematical appendix">
+<div class="section-kicker">28 / Appendix</div><h2>Implementation and mathematical appendix</h2>
+<h3>A reference empirical implementation</h3>
+<p>The following Python routine uses an inverse empirical CDF and the excess-loss identity. It accepts optional scenario probabilities and removes zero-probability observations. A tiny cumulative-probability tolerance addresses floating-point sums at exact probability boundaries; it does not interpolate the quantile.</p>
+<pre><code>import numpy as np
+
+def empirical_risk(losses, alpha, probabilities=None):
+    x = np.asarray(losses, dtype=float)
+    if x.ndim != 1 or len(x) == 0 or not np.isfinite(x).all():
+        raise ValueError("A finite, nonempty loss vector is required")
+    if not 0 &lt; alpha &lt; 1:
+        raise ValueError("Confidence must lie strictly between 0 and 1")
+    p = (np.ones(len(x)) if probabilities is None
+         else np.asarray(probabilities, dtype=float))
+    if (p.shape != x.shape or not np.isfinite(p).all()
+            or np.any(p &lt; 0) or p.sum() &lt;= 0):
+        raise ValueError("Invalid scenario probabilities")
+    active = p &gt; 0
+    x, p = x[active], p[active]
+    p = p / p.sum()
+    order = np.argsort(x)
+    x, p = x[order], p[order]
+    cumulative = np.cumsum(p)
+    cumulative[-1] = 1.0
+    index = np.searchsorted(cumulative, alpha - 1e-14, side="left")
+    q = x[min(index, len(x) - 1)]
+    es = q + np.dot(p, np.maximum(x - q, 0)) / (1 - alpha)
+    return float(q), float(es)
+
+assert np.allclose(
+    empirical_risk([0, 10, 100], .95, [.94, .04, .02]),
+    [10, 46]
+)</code></pre>
+<h3>Deriving the excess-loss identity</h3>
+<p>Let \(q=q_\alpha\). The quantile integral splits into the part assigned to the quantile atom and the part above it. Subtracting \(q\) from every selected tail loss leaves zero contribution at the boundary and the positive excess above it. Adding the quantile back gives:</p>
+\[ \frac{1}{1-\alpha}\int_\alpha^1 q_u\,du
+=q+\frac{1}{1-\alpha}\int_\alpha^1(q_u-q)\,du
+=q+\frac{\mathbb E[(L-q)_+]}{1-\alpha}. \]
+<p>This proof explains why the boundary correction is automatic in the excess-loss formula. It also explains why a threshold other than an appropriate quantile gives an auxiliary objective at least as large as ES, rather than the same value in general.</p>
+<h3>Confidence sensitivity</h3>
+<p>Where the population quantile is differentiable with positive density and the tail integral is finite, differentiate the definitions:</p>
+\[ \frac{d q_\alpha}{d\alpha}=\frac{1}{f(q_\alpha)},\qquad
+\frac{d\,\operatorname{ES}_\alpha}{d\alpha}
+=\frac{\operatorname{ES}_\alpha-q_\alpha}{1-\alpha}. \]
+<p>The first derivative grows when density at the boundary is small. The second grows when the tail mean lies far above the quantile and the remaining probability is tiny. These identities help interpret the laboratory's increasing curves. They are population results and do not turn empirical quantile jumps into smooth derivatives.</p>
+<h3>A distributionally robust interpretation</h3>
+<p>For integrable losses on an appropriate probability space, ES also has a worst-reweighted-expectation representation:</p>
+\[ \operatorname{ES}_\alpha(L)=
+\sup\left\{\mathbb E[ZL]:0\le Z\le\frac{1}{1-\alpha},\quad
+\mathbb E[Z]=1\right\}. \]
+<p>The weight \(Z\) concentrates probability on adverse outcomes while limiting the probability amplification. At an optimum it fills the upper tail, including fractional weight at a boundary atom if needed. A supremum of linear expectation functionals is subadditive and convex, giving another route to ES coherence. This is a mathematical representation relative to the original distribution, rather than an unlimited worst case over every possible market model.</p>
+<h3>Spectral measures and related quantities</h3>
+<p>A spectral risk measure weights quantiles using a nonnegative, normalized, nondecreasing weight function \(\varphi\) under the loss convention:</p>
+\[ \rho_\varphi(L)=\int_0^1 q_u(L)\varphi(u)\,du,\qquad
+\int_0^1\varphi(u)\,du=1. \]
+<p>ES uses zero weight below \(\alpha\) and constant weight \(1/(1-\alpha)\) above it. More general weights express how strongly progressively worse losses are emphasized. VaR behaves like evaluation at a single probability point and does not share all the coherent spectral-average properties.</p>
+<p>Expectiles instead arise from asymmetric squared-error minimization. They are different from quantiles and tail means, with different calibration and interpretation. Maximum drawdown measures a path's peak-to-trough decline rather than a single-horizon loss quantile. A comprehensive risk analysis can use several quantities, provided their distinct experiments and units remain explicit.</p>
+<h3>Implementation checks</h3>
+<p>Verify deterministic losses, exact integer tail counts, fractional tail counts, repeated values, zero scenario weights, negative risk values, homogeneity and translation. Check that ES is at least VaR. Compare normal and t analytical formulas with numerical integration. Test option revaluation at horizon zero and at expiry, and use common scenarios when comparing approximation methods.</p>
+<p>For backtests, check zero and all breaches, zero transition cells, unobserved transition rows and the exact \(T-1\) transition count. For simulations, verify the seed and random-generator convention. For market data, check alignment and adjustments before focusing on the tail estimator. These checks protect different layers of the calculation and should not be collapsed into one generic “model validated” label.</p>
+</section>
+
+<section id="exercises" data-title="Exercises and worked solutions">
+<div class="section-kicker">29 / Exercises</div><h2>Exercises and worked solutions</h2>
+<p>Work through each question before opening its solution. Unless stated otherwise, losses are positive for adverse outcomes and confidence uses the inverse-CDF convention.</p>
+<details><summary>1. Convert return parameters into currency risk</summary><p>A portfolio has wealth €2,000,000, expected daily simple return 0.04% and daily volatility 1.2%. Assuming normal returns, calculate one-day 99% VaR and ES.</p><div class="solution"><strong>Solution</strong><p>Mean loss is −€800 and loss standard deviation is €24,000. VaR \(=-800+24000\times2.326347874=€55,032.35\). ES \(=-800+24000\times2.665214220=€63,165.14\). The positive expected return shifts both risk values down by €800.</p></div></details>
+<details><summary>2. Correct a discrete ES calculation</summary><p>Losses 0, 10 and 100 have probabilities 94%, 4% and 2%. Someone reports 95% ES as 100, the mean of losses strictly greater than VaR. Find the correct result.</p><div class="solution"><strong>Solution</strong><p>VaR is 10. Strictly larger losses occupy only 2% probability, while the requested tail is 5%. Add 3% boundary probability at 10: ES \(=(2+0.3)/0.05=46\). Averaging all losses at least 10 gives 40 and includes too much mass.</p></div></details>
+<details><summary>3. Calculate a fractional empirical tail</summary><p>Ten equally weighted losses are 0 through 9. Calculate 85% VaR and ES.</p><div class="solution"><strong>Solution</strong><p>Quantile index is \(\lceil8.5\rceil=9\), whose loss is 8. The tail contains one full observation at 9 and half an observation at 8. ES is \(13/1.5=8.66667\). The denominator is the specified fractional tail mass.</p></div></details>
+<details><summary>4. Test VaR subadditivity</summary><p>Two independent exposures each lose 100 with probability 4%. Find their 95% standalone VaRs, combined VaR and combined ES.</p><div class="solution"><strong>Solution</strong><p>Each VaR is zero. Combined probabilities are 0.9216 at 0, 0.0768 at 100 and 0.0016 at 200, so portfolio VaR is 100. Combined ES is \((0.0016\times200+0.0484\times100)/0.05=103.2\). Standalone ES values sum to 160. VaR fails subadditivity here; ES satisfies it.</p></div></details>
+<details><summary>5. Distinguish Student-t scale from volatility</summary><p>A t model has five degrees of freedom and target loss standard deviation 2. What scale parameter is required? What if degrees of freedom are 1.5?</p><div class="solution"><strong>Solution</strong><p>Use \(a=2\sqrt{3/5}\approx1.54919\). With \(\nu=1.5\), population variance is infinite, so a finite target standard deviation cannot be matched. A positive scale model can still have finite ES because \(\nu&gt;1\).</p></div></details>
+<details><summary>6. Scale a nonzero-mean daily loss</summary><p>IID daily normal loss has mean 100 and standard deviation 1,000. Calculate ten-day 99% VaR and compare with square-root scaling of the entire one-day VaR.</p><div class="solution"><strong>Solution</strong><p>Correct VaR is \(1000+\sqrt{10}\times1000\times2.326347874\approx8356.56\). Scaling the whole daily VaR gives approximately 7672.79. The difference is \(100(10-\sqrt{10})\approx683.77\), due entirely to the mean term.</p></div></details>
+<details><summary>7. Interpret zero exceptions</summary><p>A calibrated IID 99% model is evaluated over 250 days. What is the probability of observing zero breaches? Does zero prove the model is too conservative?</p><div class="solution"><strong>Solution</strong><p>The probability is \(0.99^{250}\approx0.08106\). Zero exceptions is quite possible under the null. It does not establish overconservatism, and a sequence with no breaches cannot identify the transition probability after a breach.</p></div></details>
+<details><summary>8. Extrapolate a generalized Pareto tail</summary><p>A threshold is 2, its exceedance probability is 5%, scale is 0.8 and shape is 0.25. Calculate approximate 99% VaR and ES.</p><div class="solution"><strong>Solution</strong><p>VaR is \(2+3.2(5^{0.25}-1)\approx3.58512\). Excess scale at this quantile is \(0.8+0.25(3.58512-2)\approx1.19628\). ES is VaR plus excess scale divided by 0.75, approximately 5.18015. These are population-model calculations, not fitted-data confidence statements.</p></div></details>
+<details><summary>9. Explain a short call's physical and pricing models</summary><p>Why can the short-call example use a 6% physical spot drift and a 2% risk-free rate in option valuation without contradiction?</p><div class="solution"><strong>Solution</strong><p>The physical model assigns probabilities to future spot scenarios. The risk-neutral model assigns an option value conditional on each future state. They answer different questions. Pricing all scenarios with the physical drift would change the valuation rule, while generating risk scenarios with the risk-free drift would change the forecast distribution.</p></div></details>
+<details><summary>10. Validate ES beyond VaR coverage</summary><p>Two models forecast identical, correctly calibrated VaRs, but one systematically predicts a smaller ES. Can exception counts distinguish them? Which additional information is needed?</p><div class="solution"><strong>Solution</strong><p>Exception counts are identical because the thresholds are identical. Examine excess-loss severity relative to each ES forecast, using joint calibration moments or an appropriate joint VaR–ES score. Inference must account for sparse tails and dependence. Correct threshold frequency does not determine the conditional tail mean.</p></div></details>
+<details><summary>11. Interpret an Euler hedging contribution</summary><p>A portfolio's ES is 100, with component contributions 120 and −20. Is the negative contribution necessarily an error?</p><div class="solution"><strong>Solution</strong><p>No. A hedge can reduce losses in the portfolio's tail and therefore have a negative component. The components still sum to 100. The hedge can have positive standalone risk, and its finite removal effect need not equal its local Euler contribution.</p></div></details>
+<details><summary>12. Diagnose an extreme-confidence sample estimate</summary><p>At 99.99% confidence, you use 1,000 equally weighted scenarios. What does empirical ES become, and what does that imply?</p><div class="solution"><strong>Solution</strong><p>Tail mass is \(1000\times0.0001=0.1\) observation units. Fractional-tail ES equals the maximum sample loss. The result provides almost no direct information about the population beyond that maximum. More displayed decimals do not solve the information shortage.</p></div></details>
+</section>
+
+<section id="references" data-title="References and further reading">
+<div class="section-kicker">30 / References</div><h2>References and further reading</h2>
+<p>The sources below provide the primary theoretical and validation foundations. Equations on this page use a positive-loss convention; some papers use future wealth or the lower tail of returns, which changes signs and confidence notation. The numerical examples are independently computed synthetic illustrations.</p>
+<ol class="references">
+<li>Artzner, P., Delbaen, F., Eber, J.-M. and Heath, D. (1999). <a href="https://onlinelibrary.wiley.com/doi/10.1111/1467-9965.00068">Coherent Measures of Risk</a>. <em>Mathematical Finance</em>, 9(3), 203–228. Foundational axioms for monetary risk measures.</li>
+<li>Acerbi, C. and Tasche, D. (2002). <a href="https://arxiv.org/abs/cond-mat/0104295">On the Coherence of Expected Shortfall</a>. <em>Journal of Banking &amp; Finance</em>, 26, 1487–1503. General-distribution definitions and the treatment of discontinuities.</li>
+<li>Rockafellar, R. T. and Uryasev, S. (2000). <a href="https://doi.org/10.21314/JOR.2000.038">Optimization of Conditional Value-at-Risk</a>. <em>Journal of Risk</em>, 2(3), 21–41. Auxiliary-threshold optimization formulation.</li>
+<li>Rockafellar, R. T. and Uryasev, S. (2002). <a href="https://www.sciencedirect.com/science/article/pii/S0378426602002716">Conditional Value-at-Risk for General Loss Distributions</a>. <em>Journal of Banking &amp; Finance</em>, 26, 1443–1471. Extension to general and discrete loss distributions.</li>
+<li>Kupiec, P. H. (1995). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6697">Techniques for Verifying the Accuracy of Risk Measurement Models</a>. <em>Journal of Derivatives</em>, 3(2), 73–84. Coverage testing and finite-sample verification difficulties.</li>
+<li>Christoffersen, P. F. (1998). <a href="https://users.ssc.wisc.edu/~behansen/718/Christoffersen1998.pdf">Evaluating Interval Forecasts</a>. <em>International Economic Review</em>, 39(4), 841–862. Conditional coverage and hit-sequence dependence.</li>
+<li>Fissler, T. and Ziegel, J. F. (2016). <a href="https://arxiv.org/abs/1503.08123">Higher Order Elicitability and Osband's Principle</a>. <em>Annals of Statistics</em>, 44(4), 1680–1707. Joint elicitability, including the VaR–ES pair.</li>
+<li>McNeil, A. J. and Frey, R. (2000). <a href="https://doi.org/10.1016/S0927-5398(00)00012-8">Estimation of Tail-Related Risk Measures for Heteroscedastic Financial Time Series: An Extreme Value Approach</a>. <em>Journal of Empirical Finance</em>, 7, 271–300. Conditional scale and residual-tail modeling.</li>
+<li>Acerbi, C. (2002). <a href="https://arxiv.org/abs/cond-mat/0107190">Spectral Measures of Risk: A Coherent Representation of Subjective Risk Aversion</a>. <em>Journal of Banking &amp; Finance</em>, 26, 1505–1518. Weighted quantile averages and coherence.</li>
+<li>Norton, M., Khokhlov, V. and Uryasev, S. <a href="https://arxiv.org/abs/1811.11301">Calculating CVaR and bPOE for Common Probability Distributions</a>. Author preprint. Additional analytical distribution formulas.</li>
+<li>Basel Committee on Banking Supervision. <a href="https://www.bis.org/committees/bcbs/basel-framework/standard/mar?allChapters=true">Basel Framework: market risk, MAR32–MAR33</a>. Official framework for model validation and internal-model risk measurement. Consult the applicable version and jurisdiction for regulatory implementation.</li>
+<li>McNeil, A. J., Frey, R. and Embrechts, P. (2015). <em>Quantitative Risk Management: Concepts, Techniques and Tools</em>, revised edition. Princeton University Press. A broad textbook treatment of dependence, tail models and risk measurement.</li>
+</ol>
+<div class="callout"><strong>Continuing the Quant Basics sequence</strong><p>Read <a href="black-scholes-basics.html">Black–Scholes Option Pricing</a> for the valuation model, <a href="monte-carlo-option-pricing.html">Monte Carlo Option Pricing</a> for simulation design and <a href="markowitz-portfolio-theory.html">Markowitz Portfolio Theory</a> for covariance, diversification and portfolio construction. Together, the projects connect instrument value, sampling, allocation and tail-risk measurement.</p></div>
+<div class="end-links"><a href="#introduction">Return to the beginning ↑</a><a href="../index.html#quant-basics">Back to Quant Basics ↗</a></div>
+</section>

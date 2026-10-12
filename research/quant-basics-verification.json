@@ -1,0 +1,103 @@
+{
+  "homepageCards": 8,
+  "otherHomepageSectionsUnchanged": true,
+  "studies": [
+    {
+      "page": "black-scholes-basics.html",
+      "rebuildIdentical": true,
+      "chapters": 26,
+      "figures": 13,
+      "localLinks": "passed"
+    },
+    {
+      "page": "monte-carlo-option-pricing.html",
+      "rebuildIdentical": true,
+      "chapters": 28,
+      "figures": 16,
+      "localLinks": "passed"
+    },
+    {
+      "page": "markowitz-portfolio-theory.html",
+      "rebuildIdentical": true,
+      "chapters": 30,
+      "figures": 16,
+      "localLinks": "passed"
+    },
+    {
+      "page": "var-expected-shortfall.html",
+      "rebuildIdentical": true,
+      "chapters": 30,
+      "figures": 17,
+      "localLinks": "passed"
+    },
+    {
+      "page": "systematic-trading-strategy.html",
+      "rebuildIdentical": true,
+      "chapters": 30,
+      "figures": 19,
+      "localLinks": "passed"
+    },
+    {
+      "page": "implied-volatility-surface.html",
+      "rebuildIdentical": true,
+      "chapters": 30,
+      "figures": 19,
+      "localLinks": "passed"
+    },
+    {
+      "page": "yield-curve-modelling.html",
+      "rebuildIdentical": true,
+      "chapters": 30,
+      "figures": 19,
+      "localLinks": "passed"
+    },
+    {
+      "page": "equity-factor-model.html",
+      "rebuildIdentical": true,
+      "chapters": 30,
+      "figures": 19,
+      "localLinks": "passed"
+    }
+  ],
+  "temporaryBrowserCachesExcluded": true,
+  "browser": {
+    "cards": [
+      {
+        "title": "Black\u00e2\u20ac\u201cScholes Option Pricing",
+        "page": "projects/black-scholes-basics.html"
+      },
+      {
+        "title": "Monte Carlo Option Pricing",
+        "page": "projects/monte-carlo-option-pricing.html"
+      },
+      {
+        "title": "Markowitz Portfolio Theory",
+        "page": "projects/markowitz-portfolio-theory.html"
+      },
+      {
+        "title": "VaR & Expected Shortfall",
+        "page": "projects/var-expected-shortfall.html"
+      },
+      {
+        "title": "Systematic Trading Strategy",
+        "page": "projects/systematic-trading-strategy.html"
+      },
+      {
+        "title": "Implied Volatility Surface",
+        "page": "projects/implied-volatility-surface.html"
+      },
+      {
+        "title": "Yield Curve Modelling",
+        "page": "projects/yield-curve-modelling.html"
+      },
+      {
+        "title": "Equity Factor Model",
+        "page": "projects/equity-factor-model.html"
+      }
+    ],
+    "roundTripNavigation": "passed",
+    "eightMobilePages": "passed",
+    "factorLaboratory": "passed",
+    "errors": []
+  }
+}

@@ -1,0 +1,72 @@
+<section id="introduction" data-title="Introduction and scope">
+<div class="section-label">01 / Introduction</div><h2>Introduction and scope</h2>
+<p class="lead">Monte Carlo option pricing replaces an expectation that is difficult to evaluate with an average of simulated, discounted cash flows. Its usefulness comes from the contracts it can represent; its credibility comes from a careful account of uncertainty.</p>
+<p>This guide develops simulation pricing from its probability foundations to practical estimators, variance reduction, path-dependent contracts and early exercise. The starting point is the risk-neutral pricing identity established in the <a href="black-scholes-basics.html">Black–Scholes study guide</a>. There, an analytical formula evaluates a particular expectation. Here, simulation evaluates that expectation numerically and then extends the calculation to payoffs for which an elementary formula is unavailable.</p>
+<h3>Three distinct objects</h3>
+<p>A <strong>model</strong> specifies the distribution of market variables. A <strong>contract</strong> specifies cash flows and the information available when decisions are made. An <strong>estimator</strong> specifies how simulated outcomes are combined into a price and an uncertainty estimate. Confusing these objects causes many implementation errors: an accurate simulation of the wrong measure prices the wrong expectation; an accurate simulation on the wrong monitoring schedule prices the wrong contract.</p>
+<p>Under a specified model, the value \(V_0\) is a number. A Monte Carlo estimate \(\widehat V_N\) is a random variable whose realised value depends on the sample. The difference between these two is computational error. The difference between the model value and a traded price may also reflect calibration, liquidity, conventions and model inadequacy; it is not generally a Monte Carlo error.</p>
+<div class="callout"><p><strong>Analogy: pricing a collection of lottery tickets.</strong> Imagine an option as a ticket with a payout determined by a future scenario. Simulate many correctly weighted scenarios, calculate what the ticket pays in each, and average the payouts after bringing them back to today. The simulated average estimates the ticket's value. The crucial qualification is “correctly weighted”: pricing weights are risk-neutral weights, not necessarily the frequencies an investor forecasts for the real world.</p></div>
+<h3>Reading structure and notation</h3>
+<p>Part I establishes expectations, estimators, uncertainty and simulation. Part II develops efficiency methods and contract-specific applications. Part III supplies a live laboratory, computed examples, implementation guidance, mathematical derivations and exercises with solutions. Basic probability, calculus and the idea of no-arbitrage pricing are assumed; the important formulas are derived rather than used as unexplained instructions.</p>
+<p>Time starts at zero and maturity is \(T\), measured in years. Initial spot is \(S_0\), strike is \(K\), continuously compounded interest rate is \(r\), continuous dividend yield is \(q\), and annualised volatility is \(\sigma\). The symbol \(N\) normally counts payoff evaluations; \(M\) counts independent statistical units when these differ, as with antithetic pairs. The symbol \(m\) counts time intervals or monitoring dates. All monetary values use one consistent currency unit.</p>
+<p>Unless a caption specifies otherwise, examples use \(S_0=K=100\), \(r=5%\), \(q=0\), \(\sigma=20%\) and \(T=1\). Figures are computed examples under stated models, not market observations. Hover over a plot to inspect values; multi-path plots display every path at the selected horizontal coordinate. The laboratory uses exact terminal GBM simulation and works offline.</p>
+</section>
+
+<section id="risk-neutral" data-title="Risk-neutral valuation and simulation">
+<div class="section-label">02 / Valuation framework</div><h2>Risk-neutral valuation and simulation</h2>
+<p>For a European terminal payoff \(H\), no-arbitrage valuation under a suitable risk-neutral measure \(\mathbb{Q}\) gives an expectation of discounted cash flows. With deterministic interest rates, the discount factor is known before any simulation is run:</p>
+\[ V_0=\mathbb{E}^{\mathbb{Q}}[D(0,T)H],\qquad D(0,T)=\exp\left(-\int_0^T r_s\,ds\right). \]
+<p>For constant \(r\), write \(Y=e^{-rT}H\); pricing is the problem of estimating \(\mathbb{E}^{\mathbb{Q}}[Y]\). With several payments, add their separately discounted values within each scenario, then average the resulting scenario totals. This preserves the dependence between payments driven by the same market path.</p>
+\[ Y=\sum_{j=1}^{J}D(0,t_j)H_j,\qquad V_0=\mathbb{E}^{\mathbb{Q}}[Y]. \]
+<h3>Physical and pricing probabilities</h3>
+<p>Under the physical measure \(\mathbb{P}\), the drift of an equity may reflect an expected return \(\mu\). Under the money-market risk-neutral measure, a continuously dividend-paying stock with constant volatility instead follows</p>
+\[ dS_t=(r-q)S_t\,dt+\sigma S_t\,dW_t^{\mathbb{Q}}. \]
+<p>Substituting a bullish forecast for \(r-q\) produces a forecast of an option's future payout under that forecast distribution. Discounting the result at \(r\) does not turn it into the no-arbitrage price. Risk-neutral pricing does not assert that investors are actually indifferent to risk; it expresses the effect of replication and state prices in the chosen model.</p>
+<p>A different numeraire changes both the pricing measure and the normalisation of the payoff. If \(A_t\) is a strictly positive tradable numeraire and \(\mathbb{Q}^{A}\) is its corresponding measure, the general identity is</p>
+\[ V_0=A_0\mathbb{E}^{\mathbb{Q}^{A}}\left[\frac{H}{A_T}\right]. \]
+<p>One cannot change a simulated drift while leaving the measure, discounting and payoff normalisation conceptually untouched. This becomes important in interest-rate models and forward-measure simulations. These notes use the money-market measure for the equity examples, with constant deterministic rates.</p>
+<h3>Terminal values, paths and exercise policies</h3>
+<p>A vanilla European payoff only needs \(S_T\). An Asian payoff also needs monitored averages. A barrier payoff needs a specified crossing event. A Bermudan payoff needs a stopping rule based on information available at its exercise dates. Simulation cost therefore depends on the information the contract requires, not on the visual appeal of drawing many paths.</p>
+<p>With stochastic rates, \(D(0,T)=\exp(-\int_0^T r_s\,ds)\) is itself random and belongs inside the simulated cash flow. Replacing it by the exponential of an average rate generally changes the expectation. Correlation between rates and the payoff also matters: a product of separate sample means does not estimate the expectation of their product.</p>
+<p>The risk-neutral measure may not be uniquely determined by no-arbitrage in an incomplete market. A stochastic-volatility or jump model consequently requires additional choices and calibration. Monte Carlo is a numerical integration method once those choices are made; it does not resolve the underlying model-selection problem.</p>
+</section>
+
+<section id="probability" data-title="Probability and statistical foundations">
+<div class="section-label">03 / Probability</div><h2>Probability and statistical foundations</h2>
+<p>An expectation is a weighted average over a distribution, not an arithmetic average of arbitrarily selected scenarios. For a variable \(X\) with density \(f\), a payoff transformation \(g\) has expectation</p>
+\[ \mathbb{E}[g(X)]=\int_{-\infty}^{\infty}g(x)f(x)\,dx. \]
+<p>Monte Carlo implements this weighting by drawing \(X_i\) from \(f\). A region with higher probability is visited more often. Uniformly spacing terminal stock prices and giving each one the same weight would instead approximate an integral against a uniform distribution over the selected range.</p>
+<h3>Independence, moments and covariance</h3>
+<p>The standard formulas below assume independent, identically distributed observations with finite variance. Independence means that knowing one observation does not change the distribution of another. Different simulated dates on one path are not independent; neither are two antithetic payoffs built from the same shock. Independent units must be identified before their uncertainty can be computed.</p>
+\[ \operatorname{Var}(Y)=\mathbb{E}[(Y-\mathbb{E}[Y])^2],\qquad \operatorname{Cov}(Y,C)=\mathbb{E}[(Y-\mathbb{E}[Y])(C-\mathbb{E}[C])]. \]
+<p>Variance measures the spread of one discounted payoff. It has squared currency units. Standard deviation has currency units. Standard error measures the spread of a price estimator built from many observations. An option can have very volatile payoffs and still have a precisely estimated model price if enough appropriate simulations are available.</p>
+<h3>The law of large numbers</h3>
+<p>If the observations are IID and integrable, their average converges almost surely to the expectation. The theorem establishes the destination of the average; it does not promise a monotone approach, a particular error in one finite run, or a useful answer from a poorly sampled rare event.</p>
+\[ \frac{1}{N}\sum_{i=1}^{N}Y_i\longrightarrow\mathbb{E}[Y]\quad\text{almost surely}. \]
+<div class="callout"><p><strong>Analogy: tasting a well-mixed soup.</strong> A spoonful samples the mixture; several spoonfuls give a better estimate of its average saltiness. Repeatedly sampling only the surface does not improve an estimate of the entire pot. In simulation, the sampling law and coverage of important payoff regions are the equivalent of correct mixing. Even correct sampling can miss a rare but consequential ingredient in a small sample.</p></div>
+<h3>The central limit theorem</h3>
+<p>With finite, nonzero variance \(\sigma_Y^2\), the centred sample average becomes approximately normal after the appropriate scaling:</p>
+\[ \sqrt{N}(\widehat V_N-V_0)\Longrightarrow\mathcal{N}(0,\sigma_Y^2). \]
+<p>This is an asymptotic statement about repeated samples. A severely skewed payoff, rare exercise or heavy-tailed likelihood weight may require far more observations before the approximation is useful. If a weighted estimator has infinite variance, the usual standard-error and normal-interval arguments are unavailable even when its expectation exists.</p>
+<p>For GBM with fixed finite parameters, ordinary European call and put payoffs have finite moments of every positive order. That favourable property does not automatically carry over to every proposed importance-sampling scheme or every richer market model. The statistical assumptions belong to the resulting estimator, not simply to its method's name.</p>
+</section>
+
+<section id="estimators" data-title="Monte Carlo estimators">
+<div class="section-label">04 / Estimation</div><h2>Monte Carlo estimators</h2>
+<p>Draw \(N\) independent scenarios under the required measure, calculate their discounted payoffs \(Y_i\), and average them. The plain Monte Carlo estimator is</p>
+\[ \widehat V_N=\frac{1}{N}\sum_{i=1}^{N}Y_i. \]
+<p>Linearity of expectation makes this estimator unbiased when each payoff is sampled from the correct distribution and evaluated exactly. Independence is needed for the familiar variance formula, although unbiasedness itself only requires the correct marginal expectations.</p>
+\[ \mathbb{E}[\widehat V_N]=V_0,\qquad \operatorname{Var}(\widehat V_N)=\frac{\sigma_Y^2}{N}. \]
+<h3>What unbiasedness does and does not imply</h3>
+<p>Unbiasedness says that the average of estimates over repeated experiments equals the target. It does not say that a particular estimate equals the target, that most estimates lie on the same side, or that its distribution is symmetric at small sample sizes. A zero-payoff sample from a far out-of-the-money option can produce a zero estimate while the estimator remains unbiased across all possible samples.</p>
+<p>A statistically unbiased estimator can still target the wrong model or contract. Exact simulation of monthly nodes, followed by node-only knock-out checks, is unbiased for a monthly-monitored barrier payoff. It generally overvalues the corresponding continuously monitored knock-out contract because crossings between nodes are omitted.</p>
+<h3>Online estimation and stable arithmetic</h3>
+<p>Storing every payoff is unnecessary for a price and sample variance. Welford's update accumulates the mean and a centred sum of squares without subtracting two nearly equal large totals. After observing \(Y_n\), let the current mean be \(a_n\) and the centred sum be \(M_{2,n}\):</p>
+\[ a_n=a_{n-1}+\frac{Y_n-a_{n-1}}{n},\qquad M_{2,n}=M_{2,n-1}+(Y_n-a_{n-1})(Y_n-a_n). \]
+<p>Start with zero count, mean and centred sum; after at least two observations, the sample variance is \(M_{2,n}/(n-1)\). Chunked processing can merge independent batches through their counts, means and centred sums. This keeps memory bounded and makes parallel aggregation explicit.</p>
+<h3>Conditional Monte Carlo</h3>
+<p>Sometimes one can integrate part of the randomness analytically. If \(\mathcal{G}\) contains a subset of the simulated information, replacing a payoff by its conditional expectation preserves its mean:</p>
+\[ \mathbb{E}[\mathbb{E}[Y\mid\mathcal{G}]]=\mathbb{E}[Y],\qquad \operatorname{Var}(\mathbb{E}[Y\mid\mathcal{G}])\le\operatorname{Var}(Y). \]
+<p>The variance inequality follows from the law of total variance. Conditional averaging removes randomness that does not need to be sampled. Brownian-bridge survival weighting for barriers is an important example: conditional on monitored endpoints, average over the unresolved crossing event instead of drawing an additional crossing indicator.</p>
+<p>Simulation should therefore be reserved for what remains difficult to integrate. Using an exact terminal distribution instead of Euler stepping, an analytical geometric-Asian control, or a conditional crossing probability is mathematical simplification before computational acceleration.</p>
+</section>

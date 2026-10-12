@@ -1,0 +1,30 @@
+<div class="notebook" id="risk-notebook">
+<div class="notebook-head"><strong>Tail-risk laboratory</strong><span>One specified horizon / synthetic losses</span></div>
+<form id="risk-form">
+<div class="field"><label for="input-wealth">Portfolio wealth (€)</label><input id="input-wealth" name="wealth" type="number" min="1" max="1000000000" value="1000000" step="any" required></div>
+<div class="field"><label for="input-mean">Mean loss (% of wealth)</label><input id="input-mean" name="mean" type="number" min="-100" max="100" value="0" step="any" required></div>
+<div class="field"><label for="input-sd">Loss standard deviation (%)</label><input id="input-sd" name="sd" type="number" min="0" max="100" value="1" step="any" required></div>
+<div class="field"><label for="input-alpha">Confidence level (%)</label><input id="input-alpha" name="alpha" type="number" min="80" max="99.99" value="99" step="any" required></div>
+<div class="field"><label for="input-distribution">Generating loss distribution</label><select id="input-distribution" name="distribution"><option value="normal">Normal</option><option value="student">Student t · matched standard deviation</option></select></div>
+<div class="field"><label for="input-nu">Student-t degrees of freedom ν</label><input id="input-nu" name="nu" type="number" min="2.05" max="100" value="5" step="any" required aria-describedby="nu-help"><small id="nu-help">Used only for Student t; ν &gt; 2.</small></div>
+<div class="field"><label for="input-paths">Simulation scenarios</label><input id="input-paths" name="paths" type="number" min="100" max="200000" value="25000" step="1" required></div>
+<div class="field"><label for="input-seed">Random seed</label><input id="input-seed" name="seed" type="number" min="0" max="4294967295" value="4104" step="1" required></div>
+<div class="notebook-action"><button id="calculate" type="submit">Compute tail risk</button><button id="reset-inputs" type="button">Reset benchmark</button><p>Mean and standard deviation apply to your chosen horizon. No market data are fetched.</p></div>
+</form>
+<p id="calc-error" class="calc-error" role="alert"></p>
+<div class="notebook-results" aria-label="Risk results">
+<div class="result"><small>Analytical VaR</small><strong id="result-var">—</strong></div>
+<div class="result"><small>Analytical ES</small><strong id="result-es">—</strong></div>
+<div class="result"><small>Empirical VaR</small><strong id="result-sample-var">—</strong></div>
+<div class="result"><small>Empirical ES</small><strong id="result-sample-es">—</strong></div>
+</div>
+<div class="metric-grid">
+<div class="greek-result"><span>Tail mass in scenario units</span><output id="result-tail">—</output></div>
+<div class="greek-result"><span>Strict sample VaR breaches</span><output id="result-breaches">—</output></div>
+<div class="greek-result"><span>Sample maximum loss</span><output id="result-max">—</output></div>
+</div>
+<div class="notebook-legend"><span><i class="key-var"></i>Analytical VaR</span><span><i class="key-es"></i>Analytical ES</span><span><i class="key-svar"></i>Empirical VaR</span><span><i class="key-ses"></i>Empirical ES</span></div>
+<div class="notebook-plot" id="live-plot"></div>
+<p class="notebook-note" id="notebook-note" role="status"></p>
+<noscript><p>Enable JavaScript for this laboratory. All notes, equations, computed figures and worked examples remain readable without it.</p></noscript>
+</div>

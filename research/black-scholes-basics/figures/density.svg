@@ -1,0 +1,618 @@
+<svg role="img" aria-labelledby="density-title density-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="density-title">Figure 02 · Strike derivatives and the risk-neutral density</title><desc id="density-desc">S₀ = 100, r = 5%, q = 0, σ = 20%, τ = 1. For a smooth European call price function, its second strike derivative equals e^(−rτ) times the risk-neutral terminal density.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T17:24:13.384573</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="density-figure_1">
+  <g id="density-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="density-axes_1">
+   <g id="density-patch_2">
+    <path d="M 45.38 208.78 
+L 314.37 208.78 
+L 314.37 35.14 
+L 45.38 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="density-matplotlib.axis_1">
+    <g id="density-xtick_1">
+     <g id="density-line2d_1">
+      <path d="M 79.837397 208.78 
+L 79.837397 35.14 
+" clip-path="url(#density-pad9e85f78f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_2">
+      <defs>
+       <path id="density-m188dfad2fb" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#density-m188dfad2fb" x="79.837397" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="79.837397" y="222.618594" transform="rotate(-0 79.837397 222.618594)">60</text>
+     </g>
+    </g>
+    <g id="density-xtick_2">
+     <g id="density-line2d_3">
+      <path d="M 124.298554 208.78 
+L 124.298554 35.14 
+" clip-path="url(#density-pad9e85f78f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_4">
+      <g>
+       <use href="#density-m188dfad2fb" x="124.298554" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="124.298554" y="222.618594" transform="rotate(-0 124.298554 222.618594)">80</text>
+     </g>
+    </g>
+    <g id="density-xtick_3">
+     <g id="density-line2d_5">
+      <path d="M 168.759711 208.78 
+L 168.759711 35.14 
+" clip-path="url(#density-pad9e85f78f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_6">
+      <g>
+       <use href="#density-m188dfad2fb" x="168.759711" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="168.759711" y="222.618594" transform="rotate(-0 168.759711 222.618594)">100</text>
+     </g>
+    </g>
+    <g id="density-xtick_4">
+     <g id="density-line2d_7">
+      <path d="M 213.220868 208.78 
+L 213.220868 35.14 
+" clip-path="url(#density-pad9e85f78f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_8">
+      <g>
+       <use href="#density-m188dfad2fb" x="213.220868" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="213.220868" y="222.618594" transform="rotate(-0 213.220868 222.618594)">120</text>
+     </g>
+    </g>
+    <g id="density-xtick_5">
+     <g id="density-line2d_9">
+      <path d="M 257.682025 208.78 
+L 257.682025 35.14 
+" clip-path="url(#density-pad9e85f78f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_10">
+      <g>
+       <use href="#density-m188dfad2fb" x="257.682025" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="257.682025" y="222.618594" transform="rotate(-0 257.682025 222.618594)">140</text>
+     </g>
+    </g>
+    <g id="density-xtick_6">
+     <g id="density-line2d_11">
+      <path d="M 302.143182 208.78 
+L 302.143182 35.14 
+" clip-path="url(#density-pad9e85f78f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_12">
+      <g>
+       <use href="#density-m188dfad2fb" x="302.143182" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="302.143182" y="222.618594" transform="rotate(-0 302.143182 222.618594)">160</text>
+     </g>
+    </g>
+    <g id="density-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="179.875" y="235.328906" transform="rotate(-0 179.875 235.328906)">Strike K</text>
+    </g>
+   </g>
+   <g id="density-matplotlib.axis_2">
+    <g id="density-ytick_1">
+     <g id="density-line2d_13">
+      <path d="M 45.38 201.367221 
+L 314.37 201.367221 
+" clip-path="url(#density-pad9e85f78f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_14">
+      <defs>
+       <path id="density-md9a617c98b" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#density-md9a617c98b" x="45.38" y="201.367221" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="204.786518" transform="rotate(-0 38.38 204.786518)">0</text>
+     </g>
+    </g>
+    <g id="density-ytick_2">
+     <g id="density-line2d_15">
+      <path d="M 45.38 171.173108 
+L 314.37 171.173108 
+" clip-path="url(#density-pad9e85f78f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_16">
+      <g>
+       <use href="#density-md9a617c98b" x="45.38" y="171.173108" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="174.592405" transform="rotate(-0 38.38 174.592405)">10</text>
+     </g>
+    </g>
+    <g id="density-ytick_3">
+     <g id="density-line2d_17">
+      <path d="M 45.38 140.978995 
+L 314.37 140.978995 
+" clip-path="url(#density-pad9e85f78f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_18">
+      <g>
+       <use href="#density-md9a617c98b" x="45.38" y="140.978995" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="144.398292" transform="rotate(-0 38.38 144.398292)">20</text>
+     </g>
+    </g>
+    <g id="density-ytick_4">
+     <g id="density-line2d_19">
+      <path d="M 45.38 110.784881 
+L 314.37 110.784881 
+" clip-path="url(#density-pad9e85f78f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_20">
+      <g>
+       <use href="#density-md9a617c98b" x="45.38" y="110.784881" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="114.204178" transform="rotate(-0 38.38 114.204178)">30</text>
+     </g>
+    </g>
+    <g id="density-ytick_5">
+     <g id="density-line2d_21">
+      <path d="M 45.38 80.590768 
+L 314.37 80.590768 
+" clip-path="url(#density-pad9e85f78f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_22">
+      <g>
+       <use href="#density-md9a617c98b" x="45.38" y="80.590768" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="84.010065" transform="rotate(-0 38.38 84.010065)">40</text>
+     </g>
+    </g>
+    <g id="density-ytick_6">
+     <g id="density-line2d_23">
+      <path d="M 45.38 50.396655 
+L 314.37 50.396655 
+" clip-path="url(#density-pad9e85f78f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_24">
+      <g>
+       <use href="#density-md9a617c98b" x="45.38" y="50.396655" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="53.815952" transform="rotate(-0 38.38 53.815952)">50</text>
+     </g>
+    </g>
+    <g id="density-text_14">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.055781" y="121.96" transform="rotate(-90 21.055781 121.96)">European call value</text>
+    </g>
+   </g>
+   <g id="density-line2d_25">
+    <path d="M 57.606818 43.032727 
+L 94.360781 90.337438 
+L 107.102154 106.391449 
+L 116.413158 117.796687 
+L 124.254003 127.071766 
+L 131.114743 134.863136 
+L 137.48543 141.770498 
+L 143.366064 147.826164 
+L 148.756645 153.079629 
+L 154.147226 158.028329 
+L 159.537807 162.657681 
+L 164.438336 166.581064 
+L 169.338864 170.229426 
+L 174.239392 173.602975 
+L 179.139921 176.705174 
+L 184.040449 179.542414 
+L 188.940977 182.123632 
+L 193.841506 184.459879 
+L 198.742034 186.56388 
+L 204.132615 188.62673 
+L 209.523196 190.445188 
+L 214.913778 192.039568 
+L 220.794412 193.547285 
+L 227.165098 194.937172 
+L 233.535785 196.104589 
+L 240.396525 197.146845 
+L 248.23737 198.107115 
+L 256.568268 198.905237 
+L 266.369325 199.611848 
+L 277.64054 200.189085 
+L 290.871967 200.638231 
+L 302.143182 200.887273 
+L 302.143182 200.887273 
+" clip-path="url(#density-pad9e85f78f)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="density-patch_3">
+    <path d="M 45.38 208.78 
+L 45.38 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="density-patch_4">
+    <path d="M 45.38 208.78 
+L 314.37 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="density-text_15">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="45.38" y="22.14" transform="rotate(-0 45.38 22.14)">Decreasing and convex in strike</text>
+   </g>
+  </g>
+  <g id="density-axes_2">
+   <g id="density-patch_5">
+    <path d="M 379.91 208.78 
+L 648.9 208.78 
+L 648.9 35.14 
+L 379.91 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="density-matplotlib.axis_3">
+    <g id="density-xtick_7">
+     <g id="density-line2d_26">
+      <path d="M 414.367397 208.78 
+L 414.367397 35.14 
+" clip-path="url(#density-p06b5acb978)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_27">
+      <g>
+       <use href="#density-m188dfad2fb" x="414.367397" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="414.367397" y="222.618594" transform="rotate(-0 414.367397 222.618594)">60</text>
+     </g>
+    </g>
+    <g id="density-xtick_8">
+     <g id="density-line2d_28">
+      <path d="M 458.828554 208.78 
+L 458.828554 35.14 
+" clip-path="url(#density-p06b5acb978)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_29">
+      <g>
+       <use href="#density-m188dfad2fb" x="458.828554" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="458.828554" y="222.618594" transform="rotate(-0 458.828554 222.618594)">80</text>
+     </g>
+    </g>
+    <g id="density-xtick_9">
+     <g id="density-line2d_30">
+      <path d="M 503.289711 208.78 
+L 503.289711 35.14 
+" clip-path="url(#density-p06b5acb978)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_31">
+      <g>
+       <use href="#density-m188dfad2fb" x="503.289711" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_18">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="503.289711" y="222.618594" transform="rotate(-0 503.289711 222.618594)">100</text>
+     </g>
+    </g>
+    <g id="density-xtick_10">
+     <g id="density-line2d_32">
+      <path d="M 547.750868 208.78 
+L 547.750868 35.14 
+" clip-path="url(#density-p06b5acb978)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_33">
+      <g>
+       <use href="#density-m188dfad2fb" x="547.750868" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_19">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="547.750868" y="222.618594" transform="rotate(-0 547.750868 222.618594)">120</text>
+     </g>
+    </g>
+    <g id="density-xtick_11">
+     <g id="density-line2d_34">
+      <path d="M 592.212025 208.78 
+L 592.212025 35.14 
+" clip-path="url(#density-p06b5acb978)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_35">
+      <g>
+       <use href="#density-m188dfad2fb" x="592.212025" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_20">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="592.212025" y="222.618594" transform="rotate(-0 592.212025 222.618594)">140</text>
+     </g>
+    </g>
+    <g id="density-xtick_12">
+     <g id="density-line2d_36">
+      <path d="M 636.673182 208.78 
+L 636.673182 35.14 
+" clip-path="url(#density-p06b5acb978)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_37">
+      <g>
+       <use href="#density-m188dfad2fb" x="636.673182" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="636.673182" y="222.618594" transform="rotate(-0 636.673182 222.618594)">160</text>
+     </g>
+    </g>
+    <g id="density-text_22">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="514.405" y="235.328906" transform="rotate(-0 514.405 235.328906)">Strike K</text>
+    </g>
+   </g>
+   <g id="density-matplotlib.axis_4">
+    <g id="density-ytick_7">
+     <g id="density-line2d_38">
+      <path d="M 379.91 201.350742 
+L 648.9 201.350742 
+" clip-path="url(#density-p06b5acb978)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_39">
+      <g>
+       <use href="#density-md9a617c98b" x="379.91" y="201.350742" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="372.91" y="204.770039" transform="rotate(-0 372.91 204.770039)">0.0000</text>
+     </g>
+    </g>
+    <g id="density-ytick_8">
+     <g id="density-line2d_40">
+      <path d="M 379.91 180.281426 
+L 648.9 180.281426 
+" clip-path="url(#density-p06b5acb978)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_41">
+      <g>
+       <use href="#density-md9a617c98b" x="379.91" y="180.281426" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="372.91" y="183.700723" transform="rotate(-0 372.91 183.700723)">0.0025</text>
+     </g>
+    </g>
+    <g id="density-ytick_9">
+     <g id="density-line2d_42">
+      <path d="M 379.91 159.21211 
+L 648.9 159.21211 
+" clip-path="url(#density-p06b5acb978)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_43">
+      <g>
+       <use href="#density-md9a617c98b" x="379.91" y="159.21211" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="372.91" y="162.631407" transform="rotate(-0 372.91 162.631407)">0.0050</text>
+     </g>
+    </g>
+    <g id="density-ytick_10">
+     <g id="density-line2d_44">
+      <path d="M 379.91 138.142794 
+L 648.9 138.142794 
+" clip-path="url(#density-p06b5acb978)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_45">
+      <g>
+       <use href="#density-md9a617c98b" x="379.91" y="138.142794" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="372.91" y="141.562091" transform="rotate(-0 372.91 141.562091)">0.0075</text>
+     </g>
+    </g>
+    <g id="density-ytick_11">
+     <g id="density-line2d_46">
+      <path d="M 379.91 117.073478 
+L 648.9 117.073478 
+" clip-path="url(#density-p06b5acb978)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_47">
+      <g>
+       <use href="#density-md9a617c98b" x="379.91" y="117.073478" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="372.91" y="120.492775" transform="rotate(-0 372.91 120.492775)">0.0100</text>
+     </g>
+    </g>
+    <g id="density-ytick_12">
+     <g id="density-line2d_48">
+      <path d="M 379.91 96.004162 
+L 648.9 96.004162 
+" clip-path="url(#density-p06b5acb978)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_49">
+      <g>
+       <use href="#density-md9a617c98b" x="379.91" y="96.004162" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="372.91" y="99.423459" transform="rotate(-0 372.91 99.423459)">0.0125</text>
+     </g>
+    </g>
+    <g id="density-ytick_13">
+     <g id="density-line2d_50">
+      <path d="M 379.91 74.934846 
+L 648.9 74.934846 
+" clip-path="url(#density-p06b5acb978)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_51">
+      <g>
+       <use href="#density-md9a617c98b" x="379.91" y="74.934846" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="372.91" y="78.354142" transform="rotate(-0 372.91 78.354142)">0.0150</text>
+     </g>
+    </g>
+    <g id="density-ytick_14">
+     <g id="density-line2d_52">
+      <path d="M 379.91 53.865529 
+L 648.9 53.865529 
+" clip-path="url(#density-p06b5acb978)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="density-line2d_53">
+      <g>
+       <use href="#density-md9a617c98b" x="379.91" y="53.865529" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="density-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="372.91" y="57.284826" transform="rotate(-0 372.91 57.284826)">0.0175</text>
+     </g>
+    </g>
+    <g id="density-text_31">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="335.546719" y="121.96" transform="rotate(-90 335.546719 121.96)">∂²C / ∂K²</text>
+    </g>
+   </g>
+   <g id="density-line2d_54">
+    <path d="M 392.136818 200.887273 
+L 396.547294 200.466806 
+L 400.467716 199.858863 
+L 403.898086 199.075017 
+L 406.838403 198.162048 
+L 409.288667 197.195403 
+L 411.738931 196.011227 
+L 414.189196 194.580604 
+L 416.63946 192.875088 
+L 419.089724 190.867608 
+L 421.539988 188.533415 
+L 423.990252 185.851036 
+L 426.440516 182.803187 
+L 428.890781 179.377613 
+L 431.341045 175.567818 
+L 433.791309 171.373649 
+L 436.731626 165.843071 
+L 439.671943 159.793611 
+L 442.61226 153.26452 
+L 446.04263 145.1128 
+L 449.963052 135.224117 
+L 455.353634 120.97432 
+L 465.644743 93.638521 
+L 469.565166 83.886142 
+L 472.995536 75.924837 
+L 475.935853 69.629509 
+L 478.87617 63.897679 
+L 481.326434 59.595517 
+L 483.776698 55.755653 
+L 485.736909 53.032308 
+L 487.697121 50.628813 
+L 489.657332 48.551882 
+L 491.617543 46.805874 
+L 493.577755 45.39285 
+L 495.537966 44.312657 
+L 497.008124 43.719645 
+L 498.478283 43.310918 
+L 499.948441 43.084177 
+L 501.4186 43.036557 
+L 502.888758 43.164659 
+L 504.358917 43.46459 
+L 506.319128 44.124207 
+L 508.27934 45.070056 
+L 510.239551 46.289519 
+L 512.199762 47.768975 
+L 514.159974 49.493966 
+L 516.610238 51.972375 
+L 519.060502 54.780064 
+L 522.000819 58.539527 
+L 524.941136 62.672556 
+L 528.371506 67.893074 
+L 532.291928 74.280166 
+L 537.192457 82.716204 
+L 545.033302 96.746189 
+L 554.834359 114.196533 
+L 560.714993 124.184511 
+L 565.615521 132.075516 
+L 570.025997 138.780927 
+L 574.436472 145.07616 
+L 578.356895 150.311188 
+L 582.277317 155.199645 
+L 586.19774 159.740911 
+L 590.118163 163.939339 
+L 594.038585 167.803344 
+L 597.959008 171.344565 
+L 601.879431 174.577112 
+L 605.799853 177.516893 
+L 609.720276 180.181035 
+L 613.640699 182.587378 
+L 617.561121 184.754058 
+L 621.971597 186.92761 
+L 626.382072 188.845952 
+L 630.792548 190.533401 
+L 635.693076 192.165622 
+L 636.673182 192.463934 
+L 636.673182 192.463934 
+" clip-path="url(#density-p06b5acb978)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="density-patch_6">
+    <path d="M 379.91 208.78 
+L 379.91 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="density-patch_7">
+    <path d="M 379.91 208.78 
+L 648.9 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="density-text_32">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="379.91" y="22.14" transform="rotate(-0 379.91 22.14)">Discounted risk-neutral density</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="density-pad9e85f78f">
+   <rect x="45.38" y="35.14" width="268.99" height="173.64"/>
+  </clipPath>
+  <clipPath id="density-p06b5acb978">
+   <rect x="379.91" y="35.14" width="268.99" height="173.64"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,424 @@
+<svg role="img" aria-labelledby="ledger-title ledger-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="ledger-title">Figure 09 · Position and cash accounting</title><desc id="ledger-desc">Initial wealth 100; toy prices 100, 110, 99, 103.95, 98.7525. Formation targets alternate long/cash; one-session execution delay, 10 bps one-way cost, zero cash return. The first formation-day signal enters at the following close.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:05:12.618741</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="ledger-figure_1">
+  <g id="ledger-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="ledger-axes_1">
+   <g id="ledger-patch_2">
+    <path d="M 51.14 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 51.14 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="ledger-matplotlib.axis_1">
+    <g id="ledger-xtick_1">
+     <g id="ledger-line2d_1">
+      <path d="M 80.929091 244.78 
+L 80.929091 35.14 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ledger-line2d_2">
+      <defs>
+       <path id="ledger-mfb71e7a609" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#ledger-mfb71e7a609" x="80.929091" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ledger-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="80.929091" y="258.618594" transform="rotate(-0 80.929091 258.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="ledger-xtick_2">
+     <g id="ledger-line2d_3">
+      <path d="M 155.401818 244.78 
+L 155.401818 35.14 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ledger-line2d_4">
+      <g>
+       <use href="#ledger-mfb71e7a609" x="155.401818" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ledger-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="155.401818" y="258.618594" transform="rotate(-0 155.401818 258.618594)">0.5</text>
+     </g>
+    </g>
+    <g id="ledger-xtick_3">
+     <g id="ledger-line2d_5">
+      <path d="M 229.874545 244.78 
+L 229.874545 35.14 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ledger-line2d_6">
+      <g>
+       <use href="#ledger-mfb71e7a609" x="229.874545" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ledger-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="229.874545" y="258.618594" transform="rotate(-0 229.874545 258.618594)">1.0</text>
+     </g>
+    </g>
+    <g id="ledger-xtick_4">
+     <g id="ledger-line2d_7">
+      <path d="M 304.347273 244.78 
+L 304.347273 35.14 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ledger-line2d_8">
+      <g>
+       <use href="#ledger-mfb71e7a609" x="304.347273" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ledger-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="304.347273" y="258.618594" transform="rotate(-0 304.347273 258.618594)">1.5</text>
+     </g>
+    </g>
+    <g id="ledger-xtick_5">
+     <g id="ledger-line2d_9">
+      <path d="M 378.82 244.78 
+L 378.82 35.14 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ledger-line2d_10">
+      <g>
+       <use href="#ledger-mfb71e7a609" x="378.82" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ledger-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="378.82" y="258.618594" transform="rotate(-0 378.82 258.618594)">2.0</text>
+     </g>
+    </g>
+    <g id="ledger-xtick_6">
+     <g id="ledger-line2d_11">
+      <path d="M 453.292727 244.78 
+L 453.292727 35.14 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ledger-line2d_12">
+      <g>
+       <use href="#ledger-mfb71e7a609" x="453.292727" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ledger-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="453.292727" y="258.618594" transform="rotate(-0 453.292727 258.618594)">2.5</text>
+     </g>
+    </g>
+    <g id="ledger-xtick_7">
+     <g id="ledger-line2d_13">
+      <path d="M 527.765455 244.78 
+L 527.765455 35.14 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ledger-line2d_14">
+      <g>
+       <use href="#ledger-mfb71e7a609" x="527.765455" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ledger-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="527.765455" y="258.618594" transform="rotate(-0 527.765455 258.618594)">3.0</text>
+     </g>
+    </g>
+    <g id="ledger-xtick_8">
+     <g id="ledger-line2d_15">
+      <path d="M 602.238182 244.78 
+L 602.238182 35.14 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ledger-line2d_16">
+      <g>
+       <use href="#ledger-mfb71e7a609" x="602.238182" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ledger-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="602.238182" y="258.618594" transform="rotate(-0 602.238182 258.618594)">3.5</text>
+     </g>
+    </g>
+    <g id="ledger-xtick_9">
+     <g id="ledger-line2d_17">
+      <path d="M 676.710909 244.78 
+L 676.710909 35.14 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ledger-line2d_18">
+      <g>
+       <use href="#ledger-mfb71e7a609" x="676.710909" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ledger-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="676.710909" y="258.618594" transform="rotate(-0 676.710909 258.618594)">4.0</text>
+     </g>
+    </g>
+    <g id="ledger-text_10">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="378.82" y="271.328906" transform="rotate(-0 378.82 271.328906)">Trading day</text>
+    </g>
+   </g>
+   <g id="ledger-matplotlib.axis_2">
+    <g id="ledger-ytick_1">
+     <g id="ledger-line2d_19">
+      <path d="M 51.14 235.250909 
+L 706.5 235.250909 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ledger-line2d_20">
+      <defs>
+       <path id="ledger-m7b8baf0287" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#ledger-m7b8baf0287" x="51.14" y="235.250909" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ledger-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="238.670206" transform="rotate(-0 44.14 238.670206)">0</text>
+     </g>
+    </g>
+    <g id="ledger-ytick_2">
+     <g id="ledger-line2d_21">
+      <path d="M 51.14 197.134545 
+L 706.5 197.134545 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ledger-line2d_22">
+      <g>
+       <use href="#ledger-m7b8baf0287" x="51.14" y="197.134545" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ledger-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="200.553842" transform="rotate(-0 44.14 200.553842)">20</text>
+     </g>
+    </g>
+    <g id="ledger-ytick_3">
+     <g id="ledger-line2d_23">
+      <path d="M 51.14 159.018182 
+L 706.5 159.018182 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ledger-line2d_24">
+      <g>
+       <use href="#ledger-m7b8baf0287" x="51.14" y="159.018182" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ledger-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="162.437479" transform="rotate(-0 44.14 162.437479)">40</text>
+     </g>
+    </g>
+    <g id="ledger-ytick_4">
+     <g id="ledger-line2d_25">
+      <path d="M 51.14 120.901818 
+L 706.5 120.901818 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ledger-line2d_26">
+      <g>
+       <use href="#ledger-m7b8baf0287" x="51.14" y="120.901818" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ledger-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="124.321115" transform="rotate(-0 44.14 124.321115)">60</text>
+     </g>
+    </g>
+    <g id="ledger-ytick_5">
+     <g id="ledger-line2d_27">
+      <path d="M 51.14 82.785455 
+L 706.5 82.785455 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ledger-line2d_28">
+      <g>
+       <use href="#ledger-m7b8baf0287" x="51.14" y="82.785455" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ledger-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="86.204751" transform="rotate(-0 44.14 86.204751)">80</text>
+     </g>
+    </g>
+    <g id="ledger-ytick_6">
+     <g id="ledger-line2d_29">
+      <path d="M 51.14 44.669091 
+L 706.5 44.669091 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ledger-line2d_30">
+      <g>
+       <use href="#ledger-m7b8baf0287" x="51.14" y="44.669091" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ledger-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="44.14" y="48.088388" transform="rotate(-0 44.14 48.088388)">100</text>
+     </g>
+    </g>
+    <g id="ledger-text_17">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.089531" y="139.96" transform="rotate(-90 21.089531 139.96)">Currency units</text>
+    </g>
+   </g>
+   <g id="ledger-line2d_31">
+    <path d="M 80.929091 44.669091 
+L 229.874545 44.669091 
+L 378.82 63.898625 
+L 527.765455 64.069977 
+L 676.710909 72.791483 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="ledger-m5256d7f6cb" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#ledger-p50b7227a9d)">
+     <use href="#ledger-m5256d7f6cb" x="80.929091" y="44.669091" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#ledger-m5256d7f6cb" x="229.874545" y="44.669091" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#ledger-m5256d7f6cb" x="378.82" y="63.898625" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#ledger-m5256d7f6cb" x="527.765455" y="64.069977" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#ledger-m5256d7f6cb" x="676.710909" y="72.791483" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="ledger-line2d_32">
+    <path d="M 80.929091 235.250909 
+L 229.874545 235.250909 
+L 378.82 63.898625 
+L 527.765455 235.250909 
+L 676.710909 72.791483 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="ledger-med7e0af212" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #d3ad84"/>
+    </defs>
+    <g clip-path="url(#ledger-p50b7227a9d)">
+     <use href="#ledger-med7e0af212" x="80.929091" y="235.250909" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#ledger-med7e0af212" x="229.874545" y="235.250909" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#ledger-med7e0af212" x="378.82" y="63.898625" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#ledger-med7e0af212" x="527.765455" y="235.250909" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#ledger-med7e0af212" x="676.710909" y="72.791483" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="ledger-line2d_33">
+    <path d="M 80.929091 44.669091 
+L 229.874545 44.669091 
+L 378.82 235.250909 
+L 527.765455 64.069977 
+L 676.710909 235.250909 
+" clip-path="url(#ledger-p50b7227a9d)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="ledger-m8bfba8329d" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #91a9bd"/>
+    </defs>
+    <g clip-path="url(#ledger-p50b7227a9d)">
+     <use href="#ledger-m8bfba8329d" x="80.929091" y="44.669091" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#ledger-m8bfba8329d" x="229.874545" y="44.669091" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#ledger-m8bfba8329d" x="378.82" y="235.250909" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#ledger-m8bfba8329d" x="527.765455" y="64.069977" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#ledger-m8bfba8329d" x="676.710909" y="235.250909" style="fill: #91a9bd; stroke: #91a9bd"/>
+    </g>
+   </g>
+   <g id="ledger-patch_3">
+    <path d="M 51.14 244.78 
+L 51.14 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ledger-patch_4">
+    <path d="M 51.14 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ledger-text_18">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="51.14" y="22.14" transform="rotate(-0 51.14 22.14)">A cash-and-shares ledger reconciles wealth</text>
+   </g>
+   <g id="ledger-legend_1">
+    <g id="ledger-line2d_34">
+     <path d="M 58.34 127.625 
+L 66.34 127.625 
+L 74.34 127.625 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#ledger-m5256d7f6cb" x="66.34" y="127.625" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="ledger-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="80.74" y="130.425" transform="rotate(-0 80.74 130.425)">Total wealth</text>
+    </g>
+    <g id="ledger-line2d_35">
+     <path d="M 58.34 139.3675 
+L 66.34 139.3675 
+L 74.34 139.3675 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#ledger-med7e0af212" x="66.34" y="139.3675" style="fill: #d3ad84; stroke: #d3ad84"/>
+     </g>
+    </g>
+    <g id="ledger-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="80.74" y="142.1675" transform="rotate(-0 80.74 142.1675)">Stock value</text>
+    </g>
+    <g id="ledger-line2d_36">
+     <path d="M 58.34 151.11 
+L 66.34 151.11 
+L 74.34 151.11 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#ledger-m8bfba8329d" x="66.34" y="151.11" style="fill: #91a9bd; stroke: #91a9bd"/>
+     </g>
+    </g>
+    <g id="ledger-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="80.74" y="153.91" transform="rotate(-0 80.74 153.91)">Cash balance</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="ledger-p50b7227a9d">
+   <rect x="51.14" y="35.14" width="655.36" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

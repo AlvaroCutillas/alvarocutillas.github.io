@@ -1,0 +1,419 @@
+<svg role="img" aria-labelledby="betas-title betas-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="252pt" viewBox="0 0 792 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="betas-title">Figure 09 · Estimated factor exposures and HAC uncertainty</title><desc id="betas-desc">OLS uses 180 monthly observations. Intervals use asymptotic normal critical value 1.959964 and Newey–West covariance with six lags, Bartlett weights and T/(T−p) adjustment; they are not exact small-sample t intervals.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-05T16:04:05.557560</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="betas-figure_1">
+  <g id="betas-patch_1">
+   <path d="M 0 252 
+L 792 252 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="betas-axes_1">
+   <g id="betas-patch_2">
+    <path d="M 48.26 208.78 
+L 776.7 208.78 
+L 776.7 35.14 
+L 48.26 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="betas-matplotlib.axis_1">
+    <g id="betas-xtick_1">
+     <g id="betas-line2d_1">
+      <path d="M 81.370909 208.78 
+L 81.370909 35.14 
+" clip-path="url(#betas-p153a10561d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="betas-line2d_2">
+      <defs>
+       <path id="betas-m70a8c57950" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#betas-m70a8c57950" x="81.370909" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="betas-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="81.370909" y="222.618594" transform="rotate(-0 81.370909 222.618594)">Market</text>
+     </g>
+    </g>
+    <g id="betas-xtick_2">
+     <g id="betas-line2d_3">
+      <path d="M 246.925455 208.78 
+L 246.925455 35.14 
+" clip-path="url(#betas-p153a10561d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="betas-line2d_4">
+      <g>
+       <use href="#betas-m70a8c57950" x="246.925455" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="betas-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="246.925455" y="222.618594" transform="rotate(-0 246.925455 222.618594)">Value</text>
+     </g>
+    </g>
+    <g id="betas-xtick_3">
+     <g id="betas-line2d_5">
+      <path d="M 412.48 208.78 
+L 412.48 35.14 
+" clip-path="url(#betas-p153a10561d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="betas-line2d_6">
+      <g>
+       <use href="#betas-m70a8c57950" x="412.48" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="betas-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="412.48" y="222.618594" transform="rotate(-0 412.48 222.618594)">Momentum</text>
+     </g>
+    </g>
+    <g id="betas-xtick_4">
+     <g id="betas-line2d_7">
+      <path d="M 578.034545 208.78 
+L 578.034545 35.14 
+" clip-path="url(#betas-p153a10561d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="betas-line2d_8">
+      <g>
+       <use href="#betas-m70a8c57950" x="578.034545" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="betas-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="578.034545" y="222.618594" transform="rotate(-0 578.034545 222.618594)">Quality</text>
+     </g>
+    </g>
+    <g id="betas-xtick_5">
+     <g id="betas-line2d_9">
+      <path d="M 743.589091 208.78 
+L 743.589091 35.14 
+" clip-path="url(#betas-p153a10561d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="betas-line2d_10">
+      <g>
+       <use href="#betas-m70a8c57950" x="743.589091" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="betas-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="743.589091" y="222.618594" transform="rotate(-0 743.589091 222.618594)">Low volatility</text>
+     </g>
+    </g>
+    <g id="betas-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="412.48" y="235.328906" transform="rotate(-0 412.48 235.328906)">Factor index</text>
+    </g>
+   </g>
+   <g id="betas-matplotlib.axis_2">
+    <g id="betas-ytick_1">
+     <g id="betas-line2d_11">
+      <path d="M 48.26 198.562386 
+L 776.7 198.562386 
+" clip-path="url(#betas-p153a10561d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="betas-line2d_12">
+      <defs>
+       <path id="betas-m5eaf426868" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#betas-m5eaf426868" x="48.26" y="198.562386" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="betas-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="201.981683" transform="rotate(-0 41.26 201.981683)">0.0</text>
+     </g>
+    </g>
+    <g id="betas-ytick_2">
+     <g id="betas-line2d_13">
+      <path d="M 48.26 171.482915 
+L 776.7 171.482915 
+" clip-path="url(#betas-p153a10561d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="betas-line2d_14">
+      <g>
+       <use href="#betas-m5eaf426868" x="48.26" y="171.482915" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="betas-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="174.902212" transform="rotate(-0 41.26 174.902212)">0.2</text>
+     </g>
+    </g>
+    <g id="betas-ytick_3">
+     <g id="betas-line2d_15">
+      <path d="M 48.26 144.403444 
+L 776.7 144.403444 
+" clip-path="url(#betas-p153a10561d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="betas-line2d_16">
+      <g>
+       <use href="#betas-m5eaf426868" x="48.26" y="144.403444" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="betas-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="147.822741" transform="rotate(-0 41.26 147.822741)">0.4</text>
+     </g>
+    </g>
+    <g id="betas-ytick_4">
+     <g id="betas-line2d_17">
+      <path d="M 48.26 117.323973 
+L 776.7 117.323973 
+" clip-path="url(#betas-p153a10561d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="betas-line2d_18">
+      <g>
+       <use href="#betas-m5eaf426868" x="48.26" y="117.323973" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="betas-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="120.74327" transform="rotate(-0 41.26 120.74327)">0.6</text>
+     </g>
+    </g>
+    <g id="betas-ytick_5">
+     <g id="betas-line2d_19">
+      <path d="M 48.26 90.244503 
+L 776.7 90.244503 
+" clip-path="url(#betas-p153a10561d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="betas-line2d_20">
+      <g>
+       <use href="#betas-m5eaf426868" x="48.26" y="90.244503" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="betas-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="93.663799" transform="rotate(-0 41.26 93.663799)">0.8</text>
+     </g>
+    </g>
+    <g id="betas-ytick_6">
+     <g id="betas-line2d_21">
+      <path d="M 48.26 63.165032 
+L 776.7 63.165032 
+" clip-path="url(#betas-p153a10561d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="betas-line2d_22">
+      <g>
+       <use href="#betas-m5eaf426868" x="48.26" y="63.165032" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="betas-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="66.584329" transform="rotate(-0 41.26 66.584329)">1.0</text>
+     </g>
+    </g>
+    <g id="betas-ytick_7">
+     <g id="betas-line2d_23">
+      <path d="M 48.26 36.085561 
+L 776.7 36.085561 
+" clip-path="url(#betas-p153a10561d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="betas-line2d_24">
+      <g>
+       <use href="#betas-m5eaf426868" x="48.26" y="36.085561" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="betas-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="39.504858" transform="rotate(-0 41.26 39.504858)">1.2</text>
+     </g>
+    </g>
+    <g id="betas-text_14">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.075469" y="121.96" transform="rotate(-90 21.075469 121.96)">Exposure</text>
+    </g>
+   </g>
+   <g id="betas-line2d_25">
+    <path d="M 81.370909 56.960706 
+L 246.925455 130.108222 
+L 412.48 158.91293 
+L 578.034545 153.842652 
+L 743.589091 168.878005 
+" clip-path="url(#betas-p153a10561d)" style="fill: none; stroke: #a7bdb3; stroke-width: 1.5; stroke-linecap: square"/>
+    <defs>
+     <path id="betas-m2db529ad19" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#betas-p153a10561d)">
+     <use href="#betas-m2db529ad19" x="81.370909" y="56.960706" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#betas-m2db529ad19" x="246.925455" y="130.108222" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#betas-m2db529ad19" x="412.48" y="158.91293" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#betas-m2db529ad19" x="578.034545" y="153.842652" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#betas-m2db529ad19" x="743.589091" y="168.878005" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="betas-line2d_26">
+    <path d="M 81.370909 70.888685 
+L 246.925455 153.591342 
+L 412.48 171.392792 
+L 578.034545 183.475062 
+L 743.589091 200.887273 
+" clip-path="url(#betas-p153a10561d)" style="fill: none; stroke: #7e8d86; stroke-width: 1.5; stroke-linecap: square"/>
+    <defs>
+     <path id="betas-md11333a917" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #7e8d86"/>
+    </defs>
+    <g clip-path="url(#betas-p153a10561d)">
+     <use href="#betas-md11333a917" x="81.370909" y="70.888685" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#betas-md11333a917" x="246.925455" y="153.591342" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#betas-md11333a917" x="412.48" y="171.392792" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#betas-md11333a917" x="578.034545" y="183.475062" style="fill: #7e8d86; stroke: #7e8d86"/>
+     <use href="#betas-md11333a917" x="743.589091" y="200.887273" style="fill: #7e8d86; stroke: #7e8d86"/>
+    </g>
+   </g>
+   <g id="betas-line2d_27">
+    <path d="M 81.370909 43.032727 
+L 246.925455 106.625101 
+L 412.48 146.433067 
+L 578.034545 124.210242 
+L 743.589091 136.868738 
+" clip-path="url(#betas-p153a10561d)" style="fill: none; stroke: #d3ad84; stroke-width: 1.5; stroke-linecap: square"/>
+    <defs>
+     <path id="betas-mf754df189d" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #d3ad84"/>
+    </defs>
+    <g clip-path="url(#betas-p153a10561d)">
+     <use href="#betas-mf754df189d" x="81.370909" y="43.032727" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#betas-mf754df189d" x="246.925455" y="106.625101" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#betas-mf754df189d" x="412.48" y="146.433067" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#betas-mf754df189d" x="578.034545" y="124.210242" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#betas-mf754df189d" x="743.589091" y="136.868738" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="betas-line2d_28">
+    <path d="M 81.370909 56.395164 
+L 246.925455 151.173312 
+L 412.48 164.713047 
+L 578.034545 137.633577 
+L 743.589091 171.482915 
+" clip-path="url(#betas-p153a10561d)" style="fill: none; stroke: #91a9bd; stroke-width: 1.5; stroke-linecap: square"/>
+    <defs>
+     <path id="betas-m3369a98cc2" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #91a9bd"/>
+    </defs>
+    <g clip-path="url(#betas-p153a10561d)">
+     <use href="#betas-m3369a98cc2" x="81.370909" y="56.395164" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#betas-m3369a98cc2" x="246.925455" y="151.173312" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#betas-m3369a98cc2" x="412.48" y="164.713047" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#betas-m3369a98cc2" x="578.034545" y="137.633577" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#betas-m3369a98cc2" x="743.589091" y="171.482915" style="fill: #91a9bd; stroke: #91a9bd"/>
+    </g>
+   </g>
+   <g id="betas-patch_3">
+    <path d="M 48.26 208.78 
+L 48.26 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="betas-patch_4">
+    <path d="M 48.26 208.78 
+L 776.7 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="betas-text_15">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="48.26" y="22.14" transform="rotate(-0 48.26 22.14)">Finite samples do not recover every coefficient exactly</text>
+   </g>
+   <g id="betas-legend_1">
+    <g id="betas-line2d_29">
+     <path d="M 681.705 45.61875 
+L 689.705 45.61875 
+L 697.705 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 1.5; stroke-linecap: square"/>
+     <g>
+      <use href="#betas-m2db529ad19" x="689.705" y="45.61875" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="betas-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="704.105" y="48.41875" transform="rotate(-0 704.105 48.41875)">Estimated beta</text>
+    </g>
+    <g id="betas-line2d_30">
+     <path d="M 681.705 57.36125 
+L 689.705 57.36125 
+L 697.705 57.36125 
+" style="fill: none; stroke: #7e8d86; stroke-width: 1.5; stroke-linecap: square"/>
+     <g>
+      <use href="#betas-md11333a917" x="689.705" y="57.36125" style="fill: #7e8d86; stroke: #7e8d86"/>
+     </g>
+    </g>
+    <g id="betas-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="704.105" y="60.16125" transform="rotate(-0 704.105 60.16125)">95% lower</text>
+    </g>
+    <g id="betas-line2d_31">
+     <path d="M 681.705 69.10375 
+L 689.705 69.10375 
+L 697.705 69.10375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 1.5; stroke-linecap: square"/>
+     <g>
+      <use href="#betas-mf754df189d" x="689.705" y="69.10375" style="fill: #d3ad84; stroke: #d3ad84"/>
+     </g>
+    </g>
+    <g id="betas-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="704.105" y="71.90375" transform="rotate(-0 704.105 71.90375)">95% upper</text>
+    </g>
+    <g id="betas-line2d_32">
+     <path d="M 681.705 80.84625 
+L 689.705 80.84625 
+L 697.705 80.84625 
+" style="fill: none; stroke: #91a9bd; stroke-width: 1.5; stroke-linecap: square"/>
+     <g>
+      <use href="#betas-m3369a98cc2" x="689.705" y="80.84625" style="fill: #91a9bd; stroke: #91a9bd"/>
+     </g>
+    </g>
+    <g id="betas-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="704.105" y="83.64625" transform="rotate(-0 704.105 83.64625)">Generating beta</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="betas-p153a10561d">
+   <rect x="48.26" y="35.14" width="728.44" height="173.64"/>
+  </clipPath>
+ </defs>
+</svg>

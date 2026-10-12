@@ -1,0 +1,649 @@
+<svg role="img" aria-labelledby="calendar-title calendar-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="calendar-title">Figure 09 · An intentionally inconsistent expiry pair</title><desc id="calendar-desc">Toy smiles are constructed directly in volatility units. At k = 0, six-month total variance is 0.045 and one-year total variance is 0.0324. Under the deterministic proportional-carry framework, this violates calendar ordering.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:54:53.955551</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="calendar-figure_1">
+  <g id="calendar-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="calendar-axes_1">
+   <g id="calendar-patch_2">
+    <path d="M 62.66 244.78 
+L 354.69 244.78 
+L 354.69 35.14 
+L 62.66 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="calendar-matplotlib.axis_1">
+    <g id="calendar-xtick_1">
+     <g id="calendar-line2d_1">
+      <path d="M 75.934091 244.78 
+L 75.934091 35.14 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_2">
+      <defs>
+       <path id="calendar-mf103d31240" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#calendar-mf103d31240" x="75.934091" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="75.934091" y="258.618594" transform="rotate(-0 75.934091 258.618594)">−0.6</text>
+     </g>
+    </g>
+    <g id="calendar-xtick_2">
+     <g id="calendar-line2d_3">
+      <path d="M 120.181061 244.78 
+L 120.181061 35.14 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_4">
+      <g>
+       <use href="#calendar-mf103d31240" x="120.181061" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="120.181061" y="258.618594" transform="rotate(-0 120.181061 258.618594)">−0.4</text>
+     </g>
+    </g>
+    <g id="calendar-xtick_3">
+     <g id="calendar-line2d_5">
+      <path d="M 164.42803 244.78 
+L 164.42803 35.14 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_6">
+      <g>
+       <use href="#calendar-mf103d31240" x="164.42803" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="164.42803" y="258.618594" transform="rotate(-0 164.42803 258.618594)">−0.2</text>
+     </g>
+    </g>
+    <g id="calendar-xtick_4">
+     <g id="calendar-line2d_7">
+      <path d="M 208.675 244.78 
+L 208.675 35.14 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_8">
+      <g>
+       <use href="#calendar-mf103d31240" x="208.675" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="208.675" y="258.618594" transform="rotate(-0 208.675 258.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="calendar-xtick_5">
+     <g id="calendar-line2d_9">
+      <path d="M 252.92197 244.78 
+L 252.92197 35.14 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_10">
+      <g>
+       <use href="#calendar-mf103d31240" x="252.92197" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="252.92197" y="258.618594" transform="rotate(-0 252.92197 258.618594)">0.2</text>
+     </g>
+    </g>
+    <g id="calendar-xtick_6">
+     <g id="calendar-line2d_11">
+      <path d="M 297.168939 244.78 
+L 297.168939 35.14 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_12">
+      <g>
+       <use href="#calendar-mf103d31240" x="297.168939" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="297.168939" y="258.618594" transform="rotate(-0 297.168939 258.618594)">0.4</text>
+     </g>
+    </g>
+    <g id="calendar-xtick_7">
+     <g id="calendar-line2d_13">
+      <path d="M 341.415909 244.78 
+L 341.415909 35.14 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_14">
+      <g>
+       <use href="#calendar-mf103d31240" x="341.415909" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="341.415909" y="258.618594" transform="rotate(-0 341.415909 258.618594)">0.6</text>
+     </g>
+    </g>
+    <g id="calendar-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="208.675" y="271.328906" transform="rotate(-0 208.675 271.328906)">Log-forward moneyness k</text>
+    </g>
+   </g>
+   <g id="calendar-matplotlib.axis_2">
+    <g id="calendar-ytick_1">
+     <g id="calendar-line2d_15">
+      <path d="M 62.66 222.346932 
+L 354.69 222.346932 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_16">
+      <defs>
+       <path id="calendar-m5408b39c71" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#calendar-m5408b39c71" x="62.66" y="222.346932" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="225.766229" transform="rotate(-0 55.66 225.766229)">17.5%</text>
+     </g>
+    </g>
+    <g id="calendar-ytick_2">
+     <g id="calendar-line2d_17">
+      <path d="M 62.66 197.531591 
+L 354.69 197.531591 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_18">
+      <g>
+       <use href="#calendar-m5408b39c71" x="62.66" y="197.531591" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="200.950888" transform="rotate(-0 55.66 200.950888)">20.0%</text>
+     </g>
+    </g>
+    <g id="calendar-ytick_3">
+     <g id="calendar-line2d_19">
+      <path d="M 62.66 172.71625 
+L 354.69 172.71625 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_20">
+      <g>
+       <use href="#calendar-m5408b39c71" x="62.66" y="172.71625" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="176.135547" transform="rotate(-0 55.66 176.135547)">22.5%</text>
+     </g>
+    </g>
+    <g id="calendar-ytick_4">
+     <g id="calendar-line2d_21">
+      <path d="M 62.66 147.900909 
+L 354.69 147.900909 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_22">
+      <g>
+       <use href="#calendar-m5408b39c71" x="62.66" y="147.900909" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="151.320206" transform="rotate(-0 55.66 151.320206)">25.0%</text>
+     </g>
+    </g>
+    <g id="calendar-ytick_5">
+     <g id="calendar-line2d_23">
+      <path d="M 62.66 123.085568 
+L 354.69 123.085568 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_24">
+      <g>
+       <use href="#calendar-m5408b39c71" x="62.66" y="123.085568" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="126.504865" transform="rotate(-0 55.66 126.504865)">27.5%</text>
+     </g>
+    </g>
+    <g id="calendar-ytick_6">
+     <g id="calendar-line2d_25">
+      <path d="M 62.66 98.270227 
+L 354.69 98.270227 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_26">
+      <g>
+       <use href="#calendar-m5408b39c71" x="62.66" y="98.270227" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="101.689524" transform="rotate(-0 55.66 101.689524)">30.0%</text>
+     </g>
+    </g>
+    <g id="calendar-ytick_7">
+     <g id="calendar-line2d_27">
+      <path d="M 62.66 73.454886 
+L 354.69 73.454886 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_28">
+      <g>
+       <use href="#calendar-m5408b39c71" x="62.66" y="73.454886" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="76.874183" transform="rotate(-0 55.66 76.874183)">32.5%</text>
+     </g>
+    </g>
+    <g id="calendar-ytick_8">
+     <g id="calendar-line2d_29">
+      <path d="M 62.66 48.639545 
+L 354.69 48.639545 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_30">
+      <g>
+       <use href="#calendar-m5408b39c71" x="62.66" y="48.639545" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="52.058842" transform="rotate(-0 55.66 52.058842)">35.0%</text>
+     </g>
+    </g>
+    <g id="calendar-text_17">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.197813" y="139.96" transform="rotate(-90 21.197813 139.96)">Implied volatility</text>
+    </g>
+   </g>
+   <g id="calendar-line2d_31">
+    <path d="M 75.934091 44.669091 
+L 341.415909 151.871364 
+L 341.415909 151.871364 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="calendar-line2d_32">
+    <path d="M 75.934091 199.516818 
+L 341.415909 235.250909 
+L 341.415909 235.250909 
+" clip-path="url(#calendar-p0ada30f8bc)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="calendar-patch_3">
+    <path d="M 62.66 244.78 
+L 62.66 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="calendar-patch_4">
+    <path d="M 62.66 244.78 
+L 354.69 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="calendar-text_18">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="62.66" y="22.14" transform="rotate(-0 62.66 22.14)">Two individually positive smiles</text>
+   </g>
+   <g id="calendar-legend_1">
+    <g id="calendar-line2d_33">
+     <path d="M 272.03625 45.61875 
+L 280.03625 45.61875 
+L 288.03625 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="calendar-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="294.43625" y="48.41875" transform="rotate(-0 294.43625 48.41875)">0.5y / high IV</text>
+    </g>
+    <g id="calendar-line2d_34">
+     <path d="M 272.03625 57.36125 
+L 280.03625 57.36125 
+L 288.03625 57.36125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="calendar-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="294.43625" y="60.16125" transform="rotate(-0 294.43625 60.16125)">1y / low IV</text>
+    </g>
+   </g>
+  </g>
+  <g id="calendar-axes_2">
+   <g id="calendar-patch_5">
+    <path d="M 414.47 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 414.47 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="calendar-matplotlib.axis_3">
+    <g id="calendar-xtick_8">
+     <g id="calendar-line2d_35">
+      <path d="M 427.744091 244.78 
+L 427.744091 35.14 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_36">
+      <g>
+       <use href="#calendar-mf103d31240" x="427.744091" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="427.744091" y="258.618594" transform="rotate(-0 427.744091 258.618594)">−0.6</text>
+     </g>
+    </g>
+    <g id="calendar-xtick_9">
+     <g id="calendar-line2d_37">
+      <path d="M 471.991061 244.78 
+L 471.991061 35.14 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_38">
+      <g>
+       <use href="#calendar-mf103d31240" x="471.991061" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="471.991061" y="258.618594" transform="rotate(-0 471.991061 258.618594)">−0.4</text>
+     </g>
+    </g>
+    <g id="calendar-xtick_10">
+     <g id="calendar-line2d_39">
+      <path d="M 516.23803 244.78 
+L 516.23803 35.14 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_40">
+      <g>
+       <use href="#calendar-mf103d31240" x="516.23803" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="516.23803" y="258.618594" transform="rotate(-0 516.23803 258.618594)">−0.2</text>
+     </g>
+    </g>
+    <g id="calendar-xtick_11">
+     <g id="calendar-line2d_41">
+      <path d="M 560.485 244.78 
+L 560.485 35.14 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_42">
+      <g>
+       <use href="#calendar-mf103d31240" x="560.485" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="560.485" y="258.618594" transform="rotate(-0 560.485 258.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="calendar-xtick_12">
+     <g id="calendar-line2d_43">
+      <path d="M 604.73197 244.78 
+L 604.73197 35.14 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_44">
+      <g>
+       <use href="#calendar-mf103d31240" x="604.73197" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="604.73197" y="258.618594" transform="rotate(-0 604.73197 258.618594)">0.2</text>
+     </g>
+    </g>
+    <g id="calendar-xtick_13">
+     <g id="calendar-line2d_45">
+      <path d="M 648.978939 244.78 
+L 648.978939 35.14 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_46">
+      <g>
+       <use href="#calendar-mf103d31240" x="648.978939" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="648.978939" y="258.618594" transform="rotate(-0 648.978939 258.618594)">0.4</text>
+     </g>
+    </g>
+    <g id="calendar-xtick_14">
+     <g id="calendar-line2d_47">
+      <path d="M 693.225909 244.78 
+L 693.225909 35.14 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_48">
+      <g>
+       <use href="#calendar-mf103d31240" x="693.225909" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="693.225909" y="258.618594" transform="rotate(-0 693.225909 258.618594)">0.6</text>
+     </g>
+    </g>
+    <g id="calendar-text_28">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="560.485" y="271.328906" transform="rotate(-0 560.485 271.328906)">Log-forward moneyness k</text>
+    </g>
+   </g>
+   <g id="calendar-matplotlib.axis_4">
+    <g id="calendar-ytick_9">
+     <g id="calendar-line2d_49">
+      <path d="M 414.47 241.761696 
+L 706.5 241.761696 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_50">
+      <g>
+       <use href="#calendar-m5408b39c71" x="414.47" y="241.761696" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="407.47" y="245.180993" transform="rotate(-0 407.47 245.180993)">0.025</text>
+     </g>
+    </g>
+    <g id="calendar-ytick_10">
+     <g id="calendar-line2d_51">
+      <path d="M 414.47 215.592939 
+L 706.5 215.592939 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_52">
+      <g>
+       <use href="#calendar-m5408b39c71" x="414.47" y="215.592939" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="407.47" y="219.012236" transform="rotate(-0 407.47 219.012236)">0.030</text>
+     </g>
+    </g>
+    <g id="calendar-ytick_11">
+     <g id="calendar-line2d_53">
+      <path d="M 414.47 189.424183 
+L 706.5 189.424183 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_54">
+      <g>
+       <use href="#calendar-m5408b39c71" x="414.47" y="189.424183" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="407.47" y="192.84348" transform="rotate(-0 407.47 192.84348)">0.035</text>
+     </g>
+    </g>
+    <g id="calendar-ytick_12">
+     <g id="calendar-line2d_55">
+      <path d="M 414.47 163.255427 
+L 706.5 163.255427 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_56">
+      <g>
+       <use href="#calendar-m5408b39c71" x="414.47" y="163.255427" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="407.47" y="166.674724" transform="rotate(-0 407.47 166.674724)">0.040</text>
+     </g>
+    </g>
+    <g id="calendar-ytick_13">
+     <g id="calendar-line2d_57">
+      <path d="M 414.47 137.086671 
+L 706.5 137.086671 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_58">
+      <g>
+       <use href="#calendar-m5408b39c71" x="414.47" y="137.086671" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="407.47" y="140.505967" transform="rotate(-0 407.47 140.505967)">0.045</text>
+     </g>
+    </g>
+    <g id="calendar-ytick_14">
+     <g id="calendar-line2d_59">
+      <path d="M 414.47 110.917914 
+L 706.5 110.917914 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_60">
+      <g>
+       <use href="#calendar-m5408b39c71" x="414.47" y="110.917914" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="407.47" y="114.337211" transform="rotate(-0 407.47 114.337211)">0.050</text>
+     </g>
+    </g>
+    <g id="calendar-ytick_15">
+     <g id="calendar-line2d_61">
+      <path d="M 414.47 84.749158 
+L 706.5 84.749158 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_62">
+      <g>
+       <use href="#calendar-m5408b39c71" x="414.47" y="84.749158" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_35">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="407.47" y="88.168455" transform="rotate(-0 407.47 88.168455)">0.055</text>
+     </g>
+    </g>
+    <g id="calendar-ytick_16">
+     <g id="calendar-line2d_63">
+      <path d="M 414.47 58.580402 
+L 706.5 58.580402 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calendar-line2d_64">
+      <g>
+       <use href="#calendar-m5408b39c71" x="414.47" y="58.580402" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calendar-text_36">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="407.47" y="61.999699" transform="rotate(-0 407.47 61.999699)">0.060</text>
+     </g>
+    </g>
+    <g id="calendar-text_37">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="375.832969" y="139.96" transform="rotate(-90 375.832969 139.96)">Total variance</text>
+    </g>
+   </g>
+   <g id="calendar-line2d_65">
+    <path d="M 427.744091 44.669091 
+L 445.442879 57.873217 
+L 463.141667 70.806026 
+L 480.840455 83.467517 
+L 498.539242 95.85769 
+L 516.23803 107.976546 
+L 533.936818 119.824084 
+L 551.635606 131.400304 
+L 569.334394 142.705207 
+L 587.033182 153.738792 
+L 604.73197 164.50106 
+L 622.430758 174.992009 
+L 640.129545 185.211641 
+L 657.828333 195.159956 
+L 674.420947 204.240089 
+L 691.013561 213.081759 
+L 693.225909 214.242632 
+L 693.225909 214.242632 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="calendar-line2d_66">
+    <path d="M 427.744091 167.421493 
+L 462.035492 176.945756 
+L 496.326894 186.243685 
+L 530.618295 195.31528 
+L 564.909697 204.160542 
+L 599.201098 212.779471 
+L 633.4925 221.172066 
+L 667.783902 229.338327 
+L 693.225909 235.250909 
+L 693.225909 235.250909 
+" clip-path="url(#calendar-pa547025124)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="calendar-patch_6">
+    <path d="M 414.47 244.78 
+L 414.47 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="calendar-patch_7">
+    <path d="M 414.47 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="calendar-text_38">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="414.47" y="22.14" transform="rotate(-0 414.47 22.14)">The later variance falls below the earlier</text>
+   </g>
+   <g id="calendar-legend_2">
+    <g id="calendar-line2d_67">
+     <path d="M 623.84625 45.61875 
+L 631.84625 45.61875 
+L 639.84625 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="calendar-text_39">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="646.24625" y="48.41875" transform="rotate(-0 646.24625 48.41875)">0.5y / high IV</text>
+    </g>
+    <g id="calendar-line2d_68">
+     <path d="M 623.84625 57.36125 
+L 631.84625 57.36125 
+L 639.84625 57.36125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="calendar-text_40">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="646.24625" y="60.16125" transform="rotate(-0 646.24625 60.16125)">1y / low IV</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="calendar-p0ada30f8bc">
+   <rect x="62.66" y="35.14" width="292.03" height="209.64"/>
+  </clipPath>
+  <clipPath id="calendar-pa547025124">
+   <rect x="414.47" y="35.14" width="292.03" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

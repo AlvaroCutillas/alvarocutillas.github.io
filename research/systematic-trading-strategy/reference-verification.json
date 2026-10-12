@@ -1,0 +1,8 @@
+{
+  "independentAccountCases": 11,
+  "rootSolvedRebalances": 150,
+  "passiveIdentity": "passed",
+  "cashIdentity": "passed",
+  "suffixCausality": "passed",
+  "returnFactorReconciliation": "passed"
+}

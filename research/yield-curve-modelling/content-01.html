@@ -1,0 +1,108 @@
+<section id="introduction" data-title="Introduction and mathematical scope">
+<div class="section-kicker">01 / Introduction</div><h2>Introduction and mathematical scope</h2>
+<p class="section-lede">A yield curve describes how the value of a future unit of money depends on its payment date. Constructing that curve is an inverse valuation problem: infer discount factors from a finite collection of instruments, then supply a defensible rule between and beyond their maturities.</p>
+<p>In the option-pricing projects, discount factors and financing rates were inputs. Here they become the objects to estimate. A single constant rate can be useful for a first derivation, but a coupon bond, an interest-rate swap and a long-dated option all expose why different payment dates need different discounts. The central object is a function, rather than one number called “the interest rate”.</p>
+<p>Three tasks should remain distinct. <strong>Construction</strong> translates instrument prices and contractual conventions into a curve. <strong>Calibration</strong> estimates parameters under a chosen loss function and constraints. <strong>Dynamics</strong> specifies how the curve evolves and under which probability measure. A smooth fit to today's observations completes neither a forecasting model nor an arbitrage-free dynamic pricing model.</p>
+<div class="callout"><strong>An analogy: exchange rates between today and payment dates</strong><p>A discount factor is the exchange rate between one unit paid at a future date and money today. Each payment date has its own exchange rate. A zero rate is a convenient annualized label for that exchange rate; a forward rate describes the exchange between two future dates. Changing the label's compounding convention should never change the underlying value.</p></div>
+<h3>Organization and prerequisites</h3>
+<p>Part I develops discount factors, rate conventions, instruments and bootstrapping. Part II studies interpolation, economic consistency, Nelson–Siegel and Svensson parameterizations, fitting and identification. Part III connects the curve to bond risk, scenarios and dynamic models, then supplies a laboratory, reproducible examples, a mathematical appendix and solved exercises.</p>
+<p>The working framework uses a valuation date at time zero, positive discount factors and deterministic contractual cash flows. Curve rates may be negative. Default, collateral, liquidity and indexation are discussed explicitly; a government curve is not silently substituted for a collateral discount curve. The laboratory uses a simplified single-curve setting to make the mathematics transparent.</p>
+<h3>Conventions for every numerical example</h3>
+<p>Rates are annualized decimals internally: 3.5% means 0.035. One basis point is 0.0001, and one percentage point is 0.01. Time is measured in exact year fractions. Unless stated otherwise, zero and instantaneous forward rates use continuous compounding. A bond YTM or par coupon rate retains its stated payment frequency. Price amounts are per face value 100 unless a different face value is selected.</p>
+<p>All fitted quotes, bond valuations, factor paths and scenarios on this page are synthetic. They were generated for this study and are not live market observations. The reference Svensson parameters are level 3.5%, slope −2%, first curvature 2.5%, second curvature −1.5%, and decay times 1.6 and 6.5 years. Static figures embed their numerical observations; the interactive laboratory computes its own curves offline.</p>
+<p>Elementary calculus, present-value arithmetic and linear algebra are sufficient for the construction chapters. The dynamic-model discussion assumes some familiarity with stochastic processes and makes its probability-measure assumptions explicit. For readers arriving from <a href="implied-volatility-surface.html">Implied Volatility Surface</a>, the same discipline applies: units, conventions and economic constraints are part of the model, rather than metadata added after calibration.</p>
+</section>
+
+<section id="discount-factors" data-title="Discount factors and present-value representation">
+<div class="section-kicker">02 / Valuation coordinates</div><h2>Discount factors and present-value representation</h2>
+<p>Let \(D(T)\) denote the time-zero price of a claim paying one unit at time \(T\), within a specified currency and discounting framework. Normalize \(D(0)=1\). For deterministic payments \(C_i\) at dates \(t_i\), linear valuation gives:</p>
+\[ P=\sum_{i=1}^{n} C_iD(t_i),\qquad D(0)=1,\qquad D(T)&gt;0. \]
+<p>This representation separates the instrument from the curve. The contract determines payment amounts and dates; the discounting model determines their present values. A fixed coupon bond contains a series of coupon claims and a principal claim. A zero-coupon bond contains only the terminal principal. The sum of present values is a dirty price, before any clean-price quotation adjustment.</p>
+<h3>What a discount factor contains</h3>
+<p>The relevant discount factor depends on the claim. A default-free unit in one currency, a collateralized derivative payment and an unsecured bank liability need not have the same present value. Differences in default exposure, collateral remuneration, funding and liquidity prevent their quotations from being pooled without a model of those differences.</p>
+<p>For a deterministic short-rate path \(r(u)\), the value of a future unit is obtained by continuously discounting along the path. In a stochastic short-rate model under a suitable risk-neutral measure \(\mathbb Q\), the default-free zero price is an expectation:</p>
+\[ D(T)=\exp\left(-\int_0^T r(u)\,du\right)
+\quad\text{if rates are deterministic},\qquad
+D(T)=\mathbb E^{\mathbb Q}\left[\exp\left(-\int_0^T r_u\,du\right)\right]
+\quad\text{in a short-rate model}. \]
+<p>The stochastic expectation cannot generally be replaced by discounting at the expected short rate. The exponential is nonlinear. Jensen's inequality already explains why the distribution of accumulated rates matters, even before discussing correlations or risk premia.</p>
+<h3>Positive discounts and negative rates</h3>
+<p>Positive discount factors are essential to the usual logarithmic rate coordinates. They do not automatically imply \(D(T)\le1\) or that \(D(T)\) decreases with maturity. A negative-rate curve can price one future unit above one present unit. Whether this is compatible with an economic model depends on feasible funding and cash-storage alternatives. An assumption of freely accessible, costless zero-yield cash storage is stronger than the mathematical condition of positive discounts.</p>
+<p>When all instantaneous forwards are nonnegative, discounts are decreasing. That implication is useful when the intended model prohibits negative rates, but it should not be imposed as a universal definition of arbitrage freedom. Later examples deliberately allow negative short-end rates.</p>
+{{figure:discount}}
+<h3>A useful valuation check</h3>
+<p>In a flat 3% continuous curve, a payment of 100 in five years is worth \(100e^{-0.03\times5}=86.0708\). Two payments of 50 at years two and five are worth \(50e^{-0.06}+50e^{-0.15}=90.1236\). Moving part of the payment earlier increases value when the relevant discounts decrease. Under a sufficiently negative curve, the ordering can reverse; the mechanism is still the same present-value sum.</p>
+<p>A production implementation should make this payment ledger visible. It catches missing principal, incorrect coupon frequency, duplicate payments and settlement-date mistakes before those errors are mistaken for unusual fitted rates. The laboratory below provides such a ledger for its selected bond.</p>
+</section>
+
+<section id="zero-rates" data-title="Zero-coupon rates and compounding conventions">
+<div class="section-kicker">03 / Rate conventions</div><h2>Zero-coupon rates and compounding conventions</h2>
+<p>A zero rate annualizes the return between today and one payment date. Different compounding conventions give different numerical rates for the same discount factor. The continuously compounded zero rate \(z(T)\), a nominal rate \(y_m(T)\) compounded \(m\) times per year, and a simple rate \(L(T)\) satisfy:</p>
+\[ D(T)=e^{-Tz(T)}=\left(1+\frac{y_m(T)}m\right)^{-mT}
+=\frac{1}{1+TL(T)}. \]
+\[ z(T)=-\frac{\ln D(T)}T,\qquad
+y_m(T)=m\left(e^{z(T)/m}-1\right),\qquad
+L(T)=\frac{e^{Tz(T)}-1}{T}. \]
+<p>The periodic formula requires \(1+y_m/m&gt;0\), while the simple formula requires \(1+TL&gt;0\). Continuous rates can be any finite real value because their discounts remain positive. These are domains of quotation formulas; an economic model can impose further restrictions.</p>
+<h3>Equivalent rates are not interchangeable inputs</h3>
+<p>A continuous rate of 4% is equivalent to a nominal semiannual rate of approximately 4.0403% and an effective annual rate of approximately 4.0811%. Discounting a five-year payment with 4% nominal semiannual compounding instead of 4% continuous compounding changes its present value. The numerical similarity of the rates does not justify mixing their formulas.</p>
+\[ z=m\ln\left(1+\frac{y_m}{m}\right),\qquad
+y_{\mathrm{eff}}=e^z-1,\qquad
+z=\ln(1+y_{\mathrm{eff}}). \]
+<p>The simple rate depends on the interval length. A simple one-year rate equivalent to 4% continuous is about 4.0811%, but the equivalent simple five-year annualized rate is about 4.4281%. “Simple annualized” does not mean one maturity-independent simple rate reproduces a flat continuous curve.</p>
+<h3>The short-maturity limit</h3>
+<p>The expression \(-\ln D(T)/T\) is undefined at exactly zero. If the discount curve is differentiable there, use its limit. The instantaneous short-rate coordinate is \(-D'(0)\) because \(D(0)=1\). Parametric models should implement this limit directly rather than evaluate a quotient of two small quantities.</p>
+\[ z(0)=\lim_{T\downarrow0}-\frac{\ln D(T)}T=f(0)
+\quad\text{when the limit exists}. \]
+<p>Rates should carry four pieces of identifying information: currency, curve family, compounding convention and maturity or accrual period. A database column labelled “5Y yield” is incomplete if it does not distinguish a zero yield, a par swap rate, a coupon-bond YTM or a credit-spread-adjusted yield.</p>
+<h3>Numerical precision and reporting</h3>
+<p>Keep rates as decimals until display. A fitted residual of 0.000025 is 0.25 basis points, rather than 0.0025 basis points or 0.25 percentage points. Round the reporting layer, not the discount inputs. Rounding each zero rate before repricing can produce a meaningful price error on a large or long-duration portfolio.</p>
+<p>The Bank of England explicitly identifies its published spot and forward curves as continuously compounded annual rates. That is a useful example of why a source's convention must be recorded before comparing it with another dataset. <a href="https://www.bankofengland.co.uk/statistics/yield-curves">Bank of England yield-curve methodology</a>.</p>
+<p>Convention conversion is invertible within its domain. A practical test converts a discount to a quoted rate and back, then checks that the original discount is recovered to numerical precision. This checks both the rate formula and its unit handling without relying on a market price comparison.</p>
+</section>
+
+<section id="forward-rates" data-title="Forward rates and the integrated term structure">
+<div class="section-kicker">04 / Forward representation</div><h2>Forward rates and the integrated term structure</h2>
+<p>A forward rate describes an interval between future dates. In a deterministic single-curve framework, the discount ratio defines the time-zero forward value of a unit delivered over that interval. For \(0\le t_1&lt;t_2\), the continuously compounded interval forward is:</p>
+\[ F_{\mathrm{cc}}(t_1,t_2)=\frac{\ln D(t_1)-\ln D(t_2)}{t_2-t_1}
+=\frac{t_2z(t_2)-t_1z(t_1)}{t_2-t_1}. \]
+<p>The corresponding simple forward uses the contract's accrual fraction \(\alpha\). The curve times and accrual fraction need not be numerically identical when their day-count conventions differ:</p>
+\[ L(t_1,t_2)=\frac{D(t_1)/D(t_2)-1}{\alpha}. \]
+<p>For example, if \(D(1)=0.98\), \(D(2)=0.95\) and \(\alpha=1\), the simple forward is 3.1579%, while the continuous forward is approximately 3.1091%. Both reproduce the same discount ratio. They are different coordinates for the same interval value.</p>
+<h3>Instantaneous forwards</h3>
+<p>Taking the interval length to zero gives the instantaneous forward \(f(T)\). It is the local slope of accumulated discounting, rather than the slope of the zero-rate curve alone:</p>
+\[ f(T)=-\frac{d}{dT}\ln D(T)=\frac{d}{dT}\left[Tz(T)\right]
+=z(T)+Tz'(T). \]
+\[ D(T)=\exp\left(-\int_0^T f(u)\,du\right),\qquad
+z(T)=\frac1T\int_0^T f(u)\,du. \]
+<p>These identities explain the geometry. A zero rate is an average of forwards from zero to maturity. If the zero curve rises at a given maturity, its marginal forward exceeds its average there. If it falls, its marginal forward is below the average. A flat zero curve has an equal constant forward curve.</p>
+<div class="callout"><strong>An analogy: average speed and current speed</strong><p>The zero rate resembles average speed over a journey from today to maturity. The instantaneous forward resembles speed at the journey's current endpoint. A higher current speed pulls the average upward, but the two need not coincide. Differentiating noisy average measurements can produce an even noisier estimate of current speed.</p></div>
+{{figure:forwards}}
+<h3>Forwards are not unconditional forecasts</h3>
+<p>A market-implied forward incorporates pricing, risk premia and the curve's construction assumptions. In a stochastic model, the expectation interpretation depends on the payoff, numeraire and probability measure. A simple forward associated with a traded rate can be a martingale under its appropriate forward measure; this does not make it the physical expected future policy rate.</p>
+<p>Forwards extracted from a sovereign curve can also contain liquidity and credit effects. Interpreting an observed hump as an expected sequence of central-bank decisions requires assumptions that the discount-ratio calculation itself does not supply. The arithmetic is precise; its macroeconomic interpretation is conditional.</p>
+<h3>Internal consistency checks</h3>
+<p>For a differentiable parametric curve, compute forwards analytically and compare them with a numerical derivative of \(Tz(T)\). Then integrate the forward back to the zero rate. A disagreement identifies an implementation error or an inconsistent interpolation choice. At an interpolation knot with a derivative jump, compare the appropriate one-sided derivatives rather than demand a unique value that the model has not defined.</p>
+</section>
+
+<section id="par-and-ytm" data-title="Par yields and yields to maturity">
+<div class="section-kicker">05 / Coupon instruments</div><h2>Par yields and yields to maturity</h2>
+<p>Three rates can coexist at the same maturity: the zero rate of a single payment, the coupon rate that makes a bond worth par, and the yield to maturity of a particular coupon bond. Their differences are structural, even when all instruments use one curve.</p>
+<h3>The par coupon rate</h3>
+<p>For face value \(N\), a regular bond with \(m\) coupons per year, maturity \(T=n/m\), annual coupon rate \(c\), and no accrued interest has price \(N\) when:</p>
+\[ 1=\frac{c_{\mathrm{par}}(T)}m\sum_{j=1}^{n}D(j/m)+D(T),\qquad
+c_{\mathrm{par}}(T)=\frac{m[1-D(T)]}{\sum_{j=1}^{n}D(j/m)}. \]
+<p>For an irregular coupon schedule with accrual fractions \(\alpha_j\), replace the denominator by \(\sum_j\alpha_jD(t_j)\). The terminal principal remains separate. The par rate therefore uses all coupon-date discounts, not just the terminal discount. On a nonflat curve it generally differs from the terminal zero rate, even after aligning compounding conventions.</p>
+<p>A par swap rate has a related annuity denominator, but the floating-leg numerator depends on the forecasting and discounting curves. The expression \(1-D(T)\) is the familiar single-curve, spot-starting case. It should not be carried into a multicurve valuation unchanged.</p>
+<h3>The bond's single internal rate</h3>
+<p>For a regular bond priced on a coupon date, nominal YTM \(y\), compounded at the coupon frequency, solves:</p>
+\[ P=\sum_{j=1}^{n}\frac{Nc/m}{(1+y/m)^j}
++\frac{N}{(1+y/m)^n},\qquad y&gt;-m. \]
+<p>With nonnegative coupons and positive principal, price is strictly decreasing in \(y\), so a positive observed price has a unique root in the admissible domain. A bracketing root solver is preferable to unconstrained Newton steps near the lower boundary. At irregular settlement dates, exponents and conventions must match the bond's actual quotation rules.</p>
+<p>YTM compresses multiple curve discounts into one internal rate. Two bonds with identical maturity but different coupon amounts usually have different YTMs when the curve is nonflat. This does not establish an arbitrage between them: their payment timing differs. A high-coupon bond puts more weight on early-date discounts.</p>
+{{figure:par}}
+<h3>Yield is not a guaranteed holding-period return</h3>
+<p>A bond's YTM becomes the realized compound return through maturity only under suitable assumptions about payment, purchase price and coupon reinvestment at that yield. Selling before maturity adds exposure to the future curve and any change in credit or liquidity. Even a default-free bond can generate a holding-period return different from its initial YTM.</p>
+<p>The reference five-year bond pays a 4% annual coupon semiannually. Its curve price is 103.660106 and its nominal semiannual YTM is 3.201986%. Its terminal continuous zero rate is 3.191752%. The coupon, terminal zero and YTM each answer a different question. The small numerical difference between the latter two is specific to this example.</p>
+<p>When graphing par and zero rates together, identify whether conventions have been aligned. This page converts its semiannual par coupon to a continuous equivalent \(2\ln(1+c_{\mathrm{par}}/2)\) in comparison plots, while explicitly retaining nominal conventions in YTM tables. Conversion aligns the rate scale; it does not turn a coupon-weighted rate into a zero rate.</p>
+</section>

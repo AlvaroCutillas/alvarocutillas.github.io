@@ -1,0 +1,52 @@
+{
+  "structure": {
+    "sections": 30,
+    "figures": 19,
+    "equations": 43,
+    "math": 316,
+    "duplicateIds": [],
+    "badAnchors": [],
+    "chartReaders": 19,
+    "eqColor": "rgba(11, 16, 13, 0.75)",
+    "badPaths": 0
+  },
+  "numerics": {
+    "cdfError": 1.1102230246251565e-16,
+    "priceError": 4.263256414560601e-14,
+    "ivError": 1.0867140520787189e-12,
+    "surfaceError": 4.440892098500626e-16,
+    "vegaError": 1.4210854715202004e-14
+  },
+  "downloadedSurfaceRows": 1225,
+  "invalidShapeAndQuoteDetection": "passed",
+  "keyboardAndTouch": "passed",
+  "sizes": [
+    {
+      "width": 320,
+      "documentWidth": 320,
+      "tocColumns": 1
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "tocColumns": 1
+    },
+    {
+      "width": 768,
+      "documentWidth": 768,
+      "tocColumns": 3
+    },
+    {
+      "width": 978,
+      "documentWidth": 978,
+      "tocColumns": 3
+    },
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "tocColumns": 3
+    }
+  ],
+  "errors": [],
+  "externalRuntimeRequests": []
+}

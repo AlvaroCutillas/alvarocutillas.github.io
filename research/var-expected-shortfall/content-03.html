@@ -1,0 +1,99 @@
+<section id="historical-simulation" data-title="Historical simulation and empirical tails">
+<div class="section-kicker">11 / Estimation methods</div><h2>Historical simulation and empirical tails</h2>
+<p>Historical simulation applies recorded market-factor changes to today's positions, revalues the portfolio and gives the resulting loss scenarios empirical probabilities. For a fixed linear portfolio, applying past return vectors to today's weights may be sufficient. For a derivative book, historical factor shocks generally need to be passed through today's valuation models.</p>
+<p>Using past realized portfolio P&amp;L instead answers a different question if positions changed. Today's short option and last year's long stock are different exposures. A historical scenario engine should preserve same-date factor moves, transform them consistently and calculate what today's book would lose under those moves.</p>
+<h3>Exact empirical VaR and ES</h3>
+<p>For equally weighted losses, order the observations and use the inverse empirical CDF:</p>
+\[ \widehat q_\alpha=L_{(\lceil N\alpha\rceil)},\qquad
+\widehat{\operatorname{ES}}_\alpha
+=\widehat q_\alpha+\frac{1}{N(1-\alpha)}
+\sum_{i=1}^{N}(L_i-\widehat q_\alpha)_+. \]
+<p>Let \(b=N(1-\alpha)\), \(k=\lfloor b\rfloor\) and \(r=b-k\). ES can equivalently be calculated by summing the \(k\) largest observations, adding fraction \(r\) of the next-largest observation and dividing by \(b\). When \(r=0\), no fractional observation is needed. When \(b&lt;1\), empirical ES equals the largest observed loss.</p>
+<p>For ten losses \(0,1,\ldots,9\) at 85% confidence, VaR is 8. Tail mass in observation units is 1.5, so ES \(=(9+0.5\times8)/1.5=8.66667\). An average of only losses strictly above VaR gives 9 and omits the required boundary mass. This is a finite-sample definition issue, not a subtle asymptotic adjustment.</p>
+{{figure:history}}
+<h3>What the method assumes</h3>
+<p>An empirical distribution assumes that its observations, possibly after filtering, are representative of the forecast distribution. A long window offers more tail observations but can mix old regimes with current conditions. A short window adapts faster but leaves fewer rare outcomes. At 99% confidence, 250 observations supply only 2.5 observations' worth of tail mass, regardless of how smooth the histogram looks.</p>
+<p>Historical simulation does not impose a normal density, but it is still a model. It selects a window, a weighting rule, shock transformations and a repricing convention. Plain empirical risk cannot infer losses beyond the largest observed scenario. A missing crisis is not assigned positive probability merely because the method is described as nonparametric.</p>
+<h3>Practical data choices</h3>
+<p>Align calendars and timestamps across markets. Treat stock splits, coupon dates and missing prices deliberately. A stale price may look like a zero return followed by an oversized move when trading resumes. Pooling unaligned returns can distort dependence and tail attribution. Using total-return data is appropriate for a return-based wealth model, while derivatives may require separate spot, rate, volatility and dividend shocks.</p>
+<p>Record how scenarios are mapped to current levels. Absolute rate changes and relative equity moves behave differently, and a historical negative rate move must not create an invalid input through an arbitrary transformation. Historical simulation gains credibility from a well-defined scenario pipeline, rather than from avoiding a named parametric distribution.</p>
+</section>
+
+<section id="weighted-history" data-title="Weighted historical simulation">
+<div class="section-kicker">12 / Estimation methods</div><h2>Weighted historical simulation</h2>
+<p>Assign each historical scenario probability \(p_i\ge0\), with probabilities summing to one. The weighted empirical CDF accumulates probabilities rather than observation counts:</p>
+\[ \widehat F(\ell)=\sum_{i=1}^{N}p_i\mathbb 1_{\{L_i\le\ell\}},\qquad
+\widehat{\operatorname{ES}}_\alpha
+=\widehat q_\alpha+\frac{\sum_i p_i(L_i-\widehat q_\alpha)_+}{1-\alpha}. \]
+<p>Sort losses while keeping each observation attached to its own probability. The weighted quantile is the first loss whose cumulative weight reaches \(\alpha\). The tail then takes full probability from larger losses and the required fraction of probability at the quantile. Averaging the largest fixed number of observations is wrong once probabilities differ.</p>
+<h3>Exponential recency weights</h3>
+<p>A common rule gives observation age \(j=0\) to the newest scenario and uses a decay factor \(0&lt;\lambda&lt;1\):</p>
+\[ p_j=\frac{(1-\lambda)\lambda^j}{1-\lambda^N},\qquad
+N_{\mathrm{eff}}=\frac{1}{\sum_{j=0}^{N-1}p_j^2}. \]
+<p>The normalization is important for a finite window. The effective sample size equals \(N\) under equal weights and falls as probability becomes concentrated in a small set of observations. It is a useful measure of weighting concentration, not a universal replacement for the sample size in all confidence intervals. Temporal dependence further reduces information.</p>
+{{figure:weighted}}
+<p>Recency weighting resembles listening more closely to the latest weather reports while still remembering older days. It responds to recent conditions, but an old extreme event can gradually lose almost all of its weight. Whether that is sensible depends on the intended forecast. A separate stress scenario may preserve information about events that a rapidly decaying estimation window would largely forget.</p>
+<h3>Weighted estimation is not volatility filtering</h3>
+<p>Weighting changes scenario probabilities. Filtering rescales shocks according to estimated market conditions. The methods can be combined, but their effects differ. An old 3% move may receive low recency probability under weighting; under filtering it may instead be standardized by old volatility and rescaled to a current volatility forecast.</p>
+<p>Observe the largest individual scenario weight. If one scenario has more probability than the selected tail, ES can consist entirely of that scenario's loss. A large nominal database does not guarantee a well-supported 99.9% tail when a few recent dates dominate its probability distribution.</p>
+<p>For weighted portfolios, attach probabilities to whole scenario rows. Using different date weights for different assets and then combining their marginal quantiles generally does not define the same joint empirical distribution. The scenario model must remain internally consistent.</p>
+</section>
+
+<section id="parametric-models" data-title="Parametric and delta-normal models">
+<div class="section-kicker">13 / Estimation methods</div><h2>Parametric and delta-normal models</h2>
+<p>A parametric model specifies a distribution family and estimates its parameters. The delta-normal method adds a first-order approximation to portfolio revaluation. Let \(X\) be a vector of market factors, \(d\) a vector of position sensitivities and \(c\) a deterministic approximation to carry and passage of time.</p>
+\[ \Delta V\approx c+d^{\mathsf T}\Delta X,\qquad
+L\approx-c-d^{\mathsf T}\Delta X. \]
+<p>If factor changes are multivariate normal with mean \(\mu_X\) and covariance \(\Sigma_X\), the approximate loss parameters are:</p>
+\[ m_L=-c-d^{\mathsf T}\mu_X,\qquad
+s_L^2=d^{\mathsf T}\Sigma_X d. \]
+<p>Apply the normal VaR and ES formulas to these parameters. Sensitivities must match factor units. Equity delta per unit of spot is not the same object as sensitivity per percentage return. A rate duration expressed per one percentage point must be converted if rate changes are stored as decimals. Unit errors can produce risk values wrong by factors of 100 or 10,000.</p>
+<h3>Factor mapping</h3>
+<p>A large book can contain many instruments but relatively few core risk drivers. Mapping bonds to curve nodes, options to spot and volatility factors, and foreign positions to FX exposures can reduce dimensionality. The mapping itself creates approximation error if instruments are represented by inappropriate proxy factors or if relevant basis risk is omitted.</p>
+<p>Estimate a covariance matrix on a horizon and calendar consistent with the forecast. A daily covariance combined with weekly sensitivities or mismatched close times can misrepresent exposure. Covariance shrinkage, factor structure and robust estimation can improve conditioning, but should be evaluated in relation to the risk forecast rather than chosen solely for numerical convenience.</p>
+<h3>Alternative parametric families</h3>
+<p>A multivariate Student-t model can retain analytical linear-portfolio risk if it is specified as a common-scale elliptical model. If \(S\) is its scale matrix, the covariance is \(\nu S/(\nu-2)\) for \(\nu&gt;2\). A linear combination has scale \(\sqrt{d^{\mathsf T}S d}\). Confusing the scale matrix with covariance reproduces the univariate scale error from Chapter 8.</p>
+<p>Assigning independent univariate t variables to correlated factors is not the same as a multivariate t model with a shared random scale. Dependence assumptions determine aggregate tails. Skewed distributions, mixtures and jump models can be useful, but generally require numerical quantiles and tail integration rather than a single normal multiplier.</p>
+<p>Delta-normal risk is fast and transparent, making it useful for explanations and routine diagnostics. Its two main approximations—linear P&amp;L and normal factor moves—should be evaluated separately. Better modeling of one does not automatically repair the other.</p>
+</section>
+
+<section id="nonlinear-revaluation" data-title="Delta–gamma and full revaluation">
+<div class="section-kicker">14 / Nonlinear positions</div><h2>Delta–gamma and full revaluation</h2>
+<p>Options and other nonlinear instruments respond differently to small and large factor moves. A second-order expansion adds curvature to the first-order sensitivity:</p>
+\[ \Delta V\approx c+d^{\mathsf T}\Delta X+
+\frac12\Delta X^{\mathsf T}G\Delta X,\qquad L=-\Delta V. \]
+<p>The matrix \(G\) contains second derivatives with respect to the chosen factors. Even with normal factor changes, a quadratic P&amp;L is not generally normal. Applying the normal formula to its fitted mean and variance may miss skewness and tail shape. Quadratic-form methods or direct simulation can instead calculate the approximate loss distribution.</p>
+<h3>Short option example</h3>
+<p>A long call's value is convex in spot; a short call loses that increasing value when spot rises. Gamma amplifies short-call loss under a large upward move. Delta alone extrapolates the local slope and can understate this effect. Time decay contributes separately: for a short option it may offset some losses, but it does not remove the nonlinear exposure.</p>
+{{figure:nonlinear}}
+<p>The figure uses physical spot scenarios for the horizon and Black–Scholes valuation inside each scenario. Spot starts at 100, strike is 100, annual volatility is 25%, the risk-free rate is 2%, initial maturity is half a year and physical drift is 6%. Future maturity is reduced by one trading day. The short position's loss is the future call price minus the current price. Rates and implied volatility are held constant to isolate spot curvature and time.</p>
+<h3>Full revaluation</h3>
+<p>Full revaluation evaluates the pricing function at each scenario's future factors and remaining maturity. It captures the nonlinearity of that function, but only for risk factors actually simulated. Holding implied volatility fixed is still a model assumption; changing volatility surfaces, correlations, dividends or exercise behavior can matter substantially.</p>
+<p>Large scenario moves may enter a region where a local Taylor expansion is inaccurate. Third and higher derivatives, barriers, digital payoffs and exercise discontinuities can make even delta–gamma unreliable. Compare approximations with full revaluation over the tail region, not just around the current spot where the expansion was fitted.</p>
+<h3>Simulation cost and pricing noise</h3>
+<p>A book with complex derivatives may need expensive pricing in every market scenario. Nested Monte Carlo uses outer physical scenarios and inner pricing simulations. Inner pricing noise can contaminate the outer tail ordering, changing both VaR and ES. Increasing outer paths alone does not remove that error. Variance reduction, common random numbers, surrogate models and adaptive allocation can help, provided their approximation error is validated.</p>
+<p>Separate the scenario model from the valuation model in reports. A correctly implemented risk-neutral option pricer cannot establish that the physical market scenarios are realistic. Conversely, a realistic scenario distribution cannot repair an inaccurate instrument valuation.</p>
+</section>
+
+<section id="monte-carlo" data-title="Monte Carlo risk estimation">
+<div class="section-kicker">15 / Simulation</div><h2>Monte Carlo risk estimation</h2>
+<p>Monte Carlo draws scenarios from a specified probability model, revalues the portfolio and estimates the resulting loss quantile and tail mean. The steps are: define the forecast information set, simulate jointly distributed market changes, compute horizon values, form losses and apply a documented empirical risk estimator.</p>
+<p>The empirical VaR and ES formulas are the same as in historical simulation when simulations have equal probability. What changes is where the scenarios come from. Historical estimation uses recorded shocks; Monte Carlo samples a model that may create unobserved combinations and more extreme values. Additional simulated paths reduce sampling noise within that model, rather than establish the model's truth.</p>
+<h3>Quantile precision</h3>
+<p>Under IID sampling, a continuous distribution and a positive regular density \(f(q_\alpha)\), the sample quantile has the first-order standard error:</p>
+\[ \operatorname{SE}(\widehat q_\alpha)\approx
+\frac{\sqrt{\alpha(1-\alpha)}}{\sqrt N\,f(q_\alpha)}. \]
+<p>Low density around the quantile means that a small probability error translates into a large loss error. This explains why extreme quantiles are difficult to estimate. For standard normal loss at 99%, the standard error multiplier is about \(3.73/\sqrt N\); its size comes from the thin density at the boundary.</p>
+<h3>Expected Shortfall precision</h3>
+<p>For a smooth distribution and sufficiently many moments, the ES influence function can be written as:</p>
+\[ \operatorname{IF}_{\mathrm{ES}}(\ell)
+=\frac{(\ell-q_\alpha)_+}{1-\alpha}
+-(\operatorname{ES}_\alpha-q_\alpha). \]
+<p>Its variance divided by \(N\) gives the first-order sampling variance of the plug-in ES estimator. The first-order derivative associated with estimating the boundary cancels in this representation. Simply calculating the ordinary standard error of observed tail losses and ignoring the random boundary is not a general derivation of ES uncertainty.</p>
+<p>Finite ES does not guarantee a finite asymptotic ES variance. A heavy-tailed model can have a finite first moment and infinite second moment, so the usual square-root-\(N\) normal approximation may fail. The laboratory uses finite-variance Student-t models with \(\nu&gt;2\); small samples can still depart materially from asymptotic approximations.</p>
+{{figure:convergence}}
+<h3>Tail counts and reproducibility</h3>
+<p>The expected tail count is \(N(1-\alpha)\). At 99.9%, even 10,000 scenarios represent only ten observations' worth of empirical tail mass. More scenarios or specialized rare-event methods may be needed. Reporting many decimal places does not compensate for a small tail sample.</p>
+<p>Save the random seed, generator, model parameters and valuation version. Repeating a fixed seed helps compare code changes; changing seeds helps reveal simulation variability. Importance sampling and weighted scenarios can improve rare-event efficiency, but then the estimator must use the likelihood weights correctly and its uncertainty calculation must match the sampling design.</p>
+<p>For uncertainty attributable only to simulation, compare with an analytical benchmark whenever one exists. For uncertainty in fitted parameters, refit or perturb the model. For model uncertainty, compare justified alternative distributions and stress scenarios. These are separate questions and require separate experiments.</p>
+</section>

@@ -1,0 +1,319 @@
+<svg role="img" aria-labelledby="accrual-title accrual-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="252pt" viewBox="0 0 792 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="accrual-title">Figure 04 · Clean and dirty price conventions</title><desc id="accrual-desc">Illustrative regular semiannual coupons: accrued interest equals the coupon amount times the elapsed fraction of its accrual period. Actual schedules, day-count definitions and ex-coupon rules require contract-specific treatment.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T20:19:12.479475</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="accrual-figure_1">
+  <g id="accrual-patch_1">
+   <path d="M 0 252 
+L 792 252 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="accrual-axes_1">
+   <g id="accrual-patch_2">
+    <path d="M 48.26 208.78 
+L 778.5 208.78 
+L 778.5 35.14 
+L 48.26 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="accrual-matplotlib.axis_1">
+    <g id="accrual-xtick_1">
+     <g id="accrual-line2d_1">
+      <path d="M 81.452727 208.78 
+L 81.452727 35.14 
+" clip-path="url(#accrual-p0d5b502ff7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="accrual-line2d_2">
+      <defs>
+       <path id="accrual-m95d617d594" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#accrual-m95d617d594" x="81.452727" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="accrual-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="81.452727" y="222.618594" transform="rotate(-0 81.452727 222.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="accrual-xtick_2">
+     <g id="accrual-line2d_3">
+      <path d="M 214.35654 208.78 
+L 214.35654 35.14 
+" clip-path="url(#accrual-p0d5b502ff7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="accrual-line2d_4">
+      <g>
+       <use href="#accrual-m95d617d594" x="214.35654" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="accrual-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="214.35654" y="222.618594" transform="rotate(-0 214.35654 222.618594)">0.2</text>
+     </g>
+    </g>
+    <g id="accrual-xtick_3">
+     <g id="accrual-line2d_5">
+      <path d="M 347.260353 208.78 
+L 347.260353 35.14 
+" clip-path="url(#accrual-p0d5b502ff7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="accrual-line2d_6">
+      <g>
+       <use href="#accrual-m95d617d594" x="347.260353" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="accrual-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="347.260353" y="222.618594" transform="rotate(-0 347.260353 222.618594)">0.4</text>
+     </g>
+    </g>
+    <g id="accrual-xtick_4">
+     <g id="accrual-line2d_7">
+      <path d="M 480.164166 208.78 
+L 480.164166 35.14 
+" clip-path="url(#accrual-p0d5b502ff7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="accrual-line2d_8">
+      <g>
+       <use href="#accrual-m95d617d594" x="480.164166" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="accrual-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="480.164166" y="222.618594" transform="rotate(-0 480.164166 222.618594)">0.6</text>
+     </g>
+    </g>
+    <g id="accrual-xtick_5">
+     <g id="accrual-line2d_9">
+      <path d="M 613.067979 208.78 
+L 613.067979 35.14 
+" clip-path="url(#accrual-p0d5b502ff7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="accrual-line2d_10">
+      <g>
+       <use href="#accrual-m95d617d594" x="613.067979" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="accrual-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="613.067979" y="222.618594" transform="rotate(-0 613.067979 222.618594)">0.8</text>
+     </g>
+    </g>
+    <g id="accrual-xtick_6">
+     <g id="accrual-line2d_11">
+      <path d="M 745.971792 208.78 
+L 745.971792 35.14 
+" clip-path="url(#accrual-p0d5b502ff7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="accrual-line2d_12">
+      <g>
+       <use href="#accrual-m95d617d594" x="745.971792" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="accrual-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="745.971792" y="222.618594" transform="rotate(-0 745.971792 222.618594)">1.0</text>
+     </g>
+    </g>
+    <g id="accrual-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="413.38" y="235.328906" transform="rotate(-0 413.38 235.328906)">Fraction of coupon period elapsed</text>
+    </g>
+   </g>
+   <g id="accrual-matplotlib.axis_2">
+    <g id="accrual-ytick_1">
+     <g id="accrual-line2d_13">
+      <path d="M 48.26 200.887273 
+L 778.5 200.887273 
+" clip-path="url(#accrual-p0d5b502ff7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="accrual-line2d_14">
+      <defs>
+       <path id="accrual-mbb03a2d628" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#accrual-mbb03a2d628" x="48.26" y="200.887273" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="accrual-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="204.30657" transform="rotate(-0 41.26 204.30657)">0.0</text>
+     </g>
+    </g>
+    <g id="accrual-ytick_2">
+     <g id="accrual-line2d_15">
+      <path d="M 48.26 174.551846 
+L 778.5 174.551846 
+" clip-path="url(#accrual-p0d5b502ff7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="accrual-line2d_16">
+      <g>
+       <use href="#accrual-mbb03a2d628" x="48.26" y="174.551846" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="accrual-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="177.971143" transform="rotate(-0 41.26 177.971143)">0.5</text>
+     </g>
+    </g>
+    <g id="accrual-ytick_3">
+     <g id="accrual-line2d_17">
+      <path d="M 48.26 148.21642 
+L 778.5 148.21642 
+" clip-path="url(#accrual-p0d5b502ff7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="accrual-line2d_18">
+      <g>
+       <use href="#accrual-mbb03a2d628" x="48.26" y="148.21642" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="accrual-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="151.635717" transform="rotate(-0 41.26 151.635717)">1.0</text>
+     </g>
+    </g>
+    <g id="accrual-ytick_4">
+     <g id="accrual-line2d_19">
+      <path d="M 48.26 121.880994 
+L 778.5 121.880994 
+" clip-path="url(#accrual-p0d5b502ff7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="accrual-line2d_20">
+      <g>
+       <use href="#accrual-mbb03a2d628" x="48.26" y="121.880994" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="accrual-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="125.300291" transform="rotate(-0 41.26 125.300291)">1.5</text>
+     </g>
+    </g>
+    <g id="accrual-ytick_5">
+     <g id="accrual-line2d_21">
+      <path d="M 48.26 95.545567 
+L 778.5 95.545567 
+" clip-path="url(#accrual-p0d5b502ff7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="accrual-line2d_22">
+      <g>
+       <use href="#accrual-mbb03a2d628" x="48.26" y="95.545567" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="accrual-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="98.964864" transform="rotate(-0 41.26 98.964864)">2.0</text>
+     </g>
+    </g>
+    <g id="accrual-ytick_6">
+     <g id="accrual-line2d_23">
+      <path d="M 48.26 69.210141 
+L 778.5 69.210141 
+" clip-path="url(#accrual-p0d5b502ff7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="accrual-line2d_24">
+      <g>
+       <use href="#accrual-mbb03a2d628" x="48.26" y="69.210141" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="accrual-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="72.629438" transform="rotate(-0 41.26 72.629438)">2.5</text>
+     </g>
+    </g>
+    <g id="accrual-ytick_7">
+     <g id="accrual-line2d_25">
+      <path d="M 48.26 42.874715 
+L 778.5 42.874715 
+" clip-path="url(#accrual-p0d5b502ff7)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="accrual-line2d_26">
+      <g>
+       <use href="#accrual-mbb03a2d628" x="48.26" y="42.874715" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="accrual-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="46.294012" transform="rotate(-0 41.26 46.294012)">3.0</text>
+     </g>
+    </g>
+    <g id="accrual-text_15">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.075469" y="121.96" transform="rotate(-90 21.075469 121.96)">Accrued interest per 100</text>
+    </g>
+   </g>
+   <g id="accrual-line2d_27">
+    <path d="M 81.452727 200.887273 
+L 745.307273 148.269091 
+L 745.307273 148.269091 
+" clip-path="url(#accrual-p0d5b502ff7)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="accrual-line2d_28">
+    <path d="M 81.452727 200.887273 
+L 745.307273 95.650909 
+L 745.307273 95.650909 
+" clip-path="url(#accrual-p0d5b502ff7)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="accrual-line2d_29">
+    <path d="M 81.452727 200.887273 
+L 745.307273 43.032727 
+L 745.307273 43.032727 
+" clip-path="url(#accrual-p0d5b502ff7)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="accrual-patch_3">
+    <path d="M 48.26 208.78 
+L 48.26 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="accrual-patch_4">
+    <path d="M 48.26 208.78 
+L 778.5 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="accrual-text_16">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="48.26" y="22.14" transform="rotate(-0 48.26 22.14)">Accrual under a proportional-period convention</text>
+   </g>
+   <g id="accrual-legend_1">
+    <g id="accrual-line2d_30">
+     <path d="M 55.46 45.61875 
+L 63.46 45.61875 
+L 71.46 45.61875 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="accrual-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="77.86" y="48.41875" transform="rotate(-0 77.86 48.41875)">2% annual coupon</text>
+    </g>
+    <g id="accrual-line2d_31">
+     <path d="M 55.46 57.36125 
+L 63.46 57.36125 
+L 71.46 57.36125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="accrual-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="77.86" y="60.16125" transform="rotate(-0 77.86 60.16125)">4% annual coupon</text>
+    </g>
+    <g id="accrual-line2d_32">
+     <path d="M 55.46 69.10375 
+L 63.46 69.10375 
+L 71.46 69.10375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="accrual-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="77.86" y="71.90375" transform="rotate(-0 77.86 71.90375)">6% annual coupon</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="accrual-p0d5b502ff7">
+   <rect x="48.26" y="35.14" width="730.24" height="173.64"/>
+  </clipPath>
+ </defs>
+</svg>

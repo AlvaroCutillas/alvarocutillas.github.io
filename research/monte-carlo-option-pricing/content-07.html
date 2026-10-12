@@ -1,0 +1,133 @@
+<section id="implementation" data-title="Implementation and numerical verification">
+<div class="section-label">25 / Implementation</div><h2>Implementation and numerical verification</h2>
+<p>A pricing engine should keep model transitions, contract state updates and statistical aggregation separate. This makes it possible to test an exact transition without an option payoff, or a payoff on a hand-constructed path without a random-number generator. Optimisation becomes safer when each component has a clear responsibility.</p>
+<h3>A reference terminal-only implementation</h3>
+<p>The following Python example deliberately implements only an IID European GBM estimator. Its normal interval has the assumptions discussed above. Degenerate maturity and volatility return deterministic cash flows rather than dividing by a zero scale.</p>
+<pre><code>import numpy as np
+
+def european_mc(S0, K, r, q, sigma, T, N, seed, put=False):
+    inputs = np.array([S0, K, r, q, sigma, T], dtype=float)
+    if not np.all(np.isfinite(inputs)):
+        raise ValueError("Inputs must be finite")
+    if S0 &lt;= 0 or K &lt;= 0 or sigma &lt; 0 or T &lt; 0:
+        raise ValueError("Invalid spot, strike, volatility or maturity")
+    if isinstance(N, bool) or int(N) != N or N &lt; 2:
+        raise ValueError("At least two integer observations are required")
+    N = int(N)
+    discount = np.exp(-r * T)
+    if T == 0 or sigma == 0:
+        terminal = S0 * np.exp((r - q) * T)
+        payoff = max(K - terminal, 0) if put else max(terminal - K, 0)
+        value = discount * payoff
+        if not np.isfinite(value):
+            raise FloatingPointError("Parameters produce a nonfinite payoff")
+        return {"value": value, "se": 0.0, "ci95": (value, value)}
+    rng = np.random.default_rng(seed)
+    z = rng.standard_normal(N)
+    terminal = S0 * np.exp((r - q - 0.5*sigma**2)*T
+                           + sigma*np.sqrt(T)*z)
+    payoff = np.maximum(K-terminal, 0) if put else np.maximum(terminal-K, 0)
+    y = discount * payoff
+    if not np.all(np.isfinite(y)):
+        raise FloatingPointError("Parameters produce nonfinite payoffs")
+    value = y.mean()
+    se = y.std(ddof=1) / np.sqrt(N)
+    return {"value": value, "se": se,
+            "ci95": (value-1.96*se, value+1.96*se)}
+</code></pre>
+<p>For a call with no positive payoffs observed, add an explicit diagnostic rather than interpreting the returned zero-width interval as reliable. For antithetics, replace observations by pair averages. For controls, freeze a separately fitted coefficient and aggregate adjusted production observations. Those changes modify the statistical unit; they should not be hidden inside an unchanged IID standard-error formula.</p>
+<h3>Memory, arithmetic and performance</h3>
+<p>For vanilla pricing, stream terminal payoffs in chunks or use vectorised arrays. For an Asian payoff, retain a running sum; for a discrete barrier, a survival flag; for a lookback, a running extremum. LSM training usually needs more path state because regression proceeds backward across dates. Its independent policy evaluation can instead proceed forward with only currently alive contracts and their states.</p>
+<p>Use log-space calculations where products or likelihood weights might underflow or overflow. Product survival weights can be accumulated with \(\sum_j\log(1-p_j)\) using a stable <code>log1p</code> operation, with barrier-breaching endpoints handled separately. This preserves tiny survival probabilities more robustly than repeatedly multiplying rounded near-one factors.</p>
+<p>Record actual computation time only after the estimator is correct. Streaming, vectorisation and parallel execution affect rounding and draw order; reproducibility means documenting these choices, not assuming that all implementations share one seed's results.</p>
+<h3>Verification cases</h3>
+<p>Deterministic cases check payoff and discounting without statistical noise. Known analytical moments check the transition law. Coupled call–put calculations check pathwise parity. Repeated independent experiments check interval calibration. Variance-reduction tests compare variance–cost products, and contract tests compare monitored payoffs on small hand-built paths.</p>
+<p>A statistical comparison should use a stated tolerance tied to the expected sampling distribution. An exact match to all displayed decimals is inappropriate for a stochastic estimate. Conversely, a loose tolerance that any implementation can satisfy is not meaningful validation. Fixed-seed regression values detect unexpected changes; independent-run statistical tests investigate calibration.</p>
+<h3>Extensions to richer dynamics</h3>
+<p>Under local volatility, replace constant \(\sigma\) with a state-dependent function and analyse the numerical scheme. Under stochastic volatility, simulate its variance state jointly and preserve correlation with the stock. A common square-root variance process can approach zero; a naive Euler step may become negative, so state constraints, discretisation bias and an appropriate variance scheme require explicit treatment.</p>
+<p>For a finite-activity jump model, simulate jump counts and sizes under the pricing measure and include the compensator required by the martingale condition. Historical jump intensities are not automatically pricing intensities. With stochastic rates, simulate the discount factor jointly with payoffs. The expectation–estimator framework remains the same, but transition correctness and bias must be established anew.</p>
+</section>
+
+<section id="appendix" data-title="Mathematical appendix">
+<div class="section-label">26 / Derivations</div><h2>Mathematical appendix</h2>
+<h3>Variance of an independent sample mean</h3>
+<p>Expand the variance of the sum. For independent observations the off-diagonal covariance terms vanish, leaving \(N\) equal marginal variances divided by \(N^2\):</p>
+\[ \operatorname{Var}\left(\frac{1}{N}\sum_iY_i\right)=\frac{1}{N^2}\sum_i\sum_j\operatorname{Cov}(Y_i,Y_j)=\frac{\sigma_Y^2}{N}. \]
+<p>For dependent observations, retain those off-diagonal terms. This is the mathematical reason antithetic members, Latin-hypercube points and values in one QMC scramble cannot automatically be counted as IID observations.</p>
+<h3>Conditional variance decomposition</h3>
+<p>Subtract and add the conditional mean inside \(Y-\mathbb{E}[Y]\), square, and condition on \(\mathcal{G}\). The cross term has zero expectation because the conditional residual is centred:</p>
+\[ \operatorname{Var}(Y)=\operatorname{Var}(\mathbb{E}[Y\mid\mathcal{G}])+\mathbb{E}[\operatorname{Var}(Y\mid\mathcal{G})]. \]
+<p>The second term is nonnegative. Integrating unresolved randomness conditionally therefore cannot increase variance relative to drawing that randomness as an additional indicator. This argument concerns the same payoff and conditioning structure; adding more state information can increase the variance of its conditional mean.</p>
+<h3>Truncated lognormal moments</h3>
+<p>Write \(S_T=S_0e^{a+bZ}\), with \(a=(r-q-\sigma^2/2)T\) and \(b=\sigma\sqrt T\). The exercise threshold is \(z_K=(\ln(K/S_0)-a)/b=-d_2\). Completing the square in the normal density gives</p>
+\[ e^{kbz}\phi(z)=e^{k^2b^2/2}\phi(z-kb). \]
+\[ F_k^+=\mathbb{E}[S_T^k\mathbb{1}_{S_T>K}]=S_0^k e^{k(r-q)T+\frac{1}{2}k(k-1)\sigma^2T}\Phi(d_2+k\sigma\sqrt T). \]
+<p>Replacing the last CDF by \(\Phi(-d_2-k\sigma\sqrt T)\) gives \(F_k^-\), the lower-tail moment. In particular, the call's first moment is \(e^{-rT}(F_1^+-KF_0^+)\). Its discounted-payoff second moment is</p>
+\[ \mathbb{E}[Y^2]=e^{-2rT}(F_2^+-2KF_1^++K^2F_0^+). \]
+<p>Subtract the squared exact price to obtain the population payoff variance and thus a theoretical plain-Monte-Carlo standard error. This provides a distribution-level check independent of the realised sample variance.</p>
+<h3>The population stock-control coefficient</h3>
+<p>For \(C=e^{-rT}S_T\), the known mean and variance are</p>
+\[ \mu_C=S_0e^{-qT},\qquad \operatorname{Var}(C)=S_0^2e^{-2qT}(e^{\sigma^2T}-1). \]
+<p>A call satisfies \(\mathbb{E}[YC]=e^{-2rT}(F_2^+-KF_1^+)\). A put instead satisfies \(\mathbb{E}[YC]=e^{-2rT}(KF_1^--F_2^-)\). Subtract \(V\mu_C\) and divide by the control variance to obtain \(\beta^\star\). These are coefficients for individual terminal observations, not automatically for antithetic pair averages.</p>
+<h3>Covariance of a geometric average</h3>
+<p>Brownian covariance is \(\operatorname{Cov}(W_{t_i},W_{t_j})=\min(t_i,t_j)\). Averaging log prices therefore yields \(v_G=\sigma^2m^{-2}\sum_{i,j}\min(t_i,t_j)\). For \(t_j=jT/m\), count how many index pairs contribute each increment to obtain</p>
+\[ \sum_{i=1}^{m}\sum_{j=1}^{m}\min(i,j)=\frac{m(m+1)(2m+1)}{6}. \]
+<p>Multiplying by \(T/m\) and by \(\sigma^2/m^2\) produces the discrete geometric-average variance in the Asian chapter. Weighted or irregular fixings use the corresponding covariance quadratic form directly.</p>
+<h3>The lognormal likelihood score</h3>
+<p>At a fixed terminal stock \(s\), the standardised lognormal coordinate is \(z=[\ln(s/S_0)-a]/(\sigma\sqrt T)\). Only its normal exponent depends on \(S_0\), since the density's \(1/s\) factor treats terminal \(s\) as fixed. Differentiating gives</p>
+\[ \partial_{S_0}\ln f(s;S_0)=\frac{z}{S_0\sigma\sqrt T}. \]
+<p>Multiplying the discounted payoff by this score yields the likelihood-ratio delta estimator when interchange of differentiation and integration is justified. At zero maturity or volatility the density representation degenerates; use the relevant deterministic limit rather than this formula.</p>
+</section>
+
+<section id="exercises" data-title="Exercises and solutions">
+<div class="section-label">27 / Self-assessment</div><h2>Exercises and solutions</h2>
+<p>Try each exercise before opening its solution. Numerical exercises use currency units and annualised inputs consistently; questions about bias concern the stated target, not just the simulator's apparent stability.</p>
+<h3>1. A precision budget</h3>
+<p>A pilot estimates a discounted-payoff standard deviation of 15. How many independent IID observations are approximately needed for a 95% interval half-width of 0.10? What happens if the requested half-width is 0.05?</p>
+<details><summary>Solution</summary><p>Use \(N\approx(1.96\times15/0.10)^2=86{,}436\), then round up and allow for pilot uncertainty. Halving the half-width requires four times the observations: approximately 345,744. This is a sampling target; numerical or model bias is not included.</p></details>
+<h3>2. Antithetic accounting</h3>
+<p>One payoff has variance 200. Paired payoff correlation is −0.6. Compare plain and antithetic estimator variances using 20,000 payoff evaluations.</p>
+<details><summary>Solution</summary><p>Plain variance is \(200/20{,}000=0.01\). Pair variance is \(200(1-0.6)/2=40\). There are 10,000 independent pairs, so estimator variance is \(40/10{,}000=0.004\). The variance ratio is 0.4, and the standard-error ratio is \(\sqrt{0.4}\), approximately 0.632. Counting 20,000 independent pair observations would be incorrect.</p></details>
+<h3>3. Control efficiency</h3>
+<p>A control has correlation 0.95 with the target. What residual variance fraction does the population-optimal coefficient achieve, before including control or pilot cost?</p>
+<details><summary>Solution</summary><p>The fraction is \(1-0.95^2=0.0975\). Standard error is multiplied by \(\sqrt{0.0975}\), approximately 0.312. Matching the original precision would require roughly 9.75% as many production units if their costs were equal. Pilot, control-evaluation and coefficient-fitting costs must be added to an actual efficiency comparison.</p></details>
+<h3>4. A biased monitoring rule</h3>
+<p>An up-and-out call is monitored continuously, but the simulator checks only month-end values. Increasing paths from ten thousand to a million makes its interval very narrow. Has the continuous-contract price necessarily become accurate?</p>
+<details><summary>Solution</summary><p>No. The estimator accurately targets a monthly-monitored payoff while missing crossings between month ends. The contract mismatch remains. Under constant-volatility GBM with a fixed upper barrier and terminal payoff, use conditional Brownian-bridge survival weights or another justified continuous-monitoring method.</p></details>
+<h3>5. A missing likelihood weight</h3>
+<p>A rare-event simulation samples \(Z\sim\mathcal{N}(2,1)\) but averages the usual GBM call payoff without adjustment. What quantity does it estimate, and what weight is needed to target the original normal distribution?</p>
+<details><summary>Solution</summary><p>It estimates the payoff expectation under the shifted proposal, not the original risk-neutral normal law. Multiply each discounted payoff by \(e^{-2Z+2}\). The mean of those weighted observations targets the original price, and their sample variance—not the unweighted payoff variance—determines the standard error.</p></details>
+<h3>6. A misleading QMC interval</h3>
+<p>A deterministic Sobol calculation uses 16,384 points and divides its sample payoff standard deviation by 128. Why is this not an ordinary Monte Carlo confidence interval?</p>
+<details><summary>Solution</summary><p>The points are a dependent deterministic integration design, not IID observations. Introduce a suitable randomisation and use independent scramble means as statistical units, or analyse a justified deterministic error bound. The square root of the point count does not by itself justify IID variance scaling.</p></details>
+<h3>7. A pathwise digital delta</h3>
+<p>A digital call pays one if \(S_T>K\). Its indicator derivative is zero almost everywhere along a fixed simulated shock. Does that imply zero model delta?</p>
+<details><summary>Solution</summary><p>No. The discontinuity moves as spot changes, and the exercise probability changes. Naive interchange of differentiation and expectation fails for this indicator. A likelihood-ratio observation \(e^{-rT}\mathbb{1}_{S_T>K}Z/(S_0\sigma\sqrt T)\), or a properly smoothed construction, can capture the derivative.</p></details>
+<h3>8. Perfect foresight versus exercise</h3>
+<p>A simulated put is exercised at whichever date produces the largest realised discounted payoff on that complete path. Is this an American-option exercise policy?</p>
+<details><summary>Solution</summary><p>No. The selected date depends on future information. Its average is a perfect-foresight upper bound rather than the value of an admissible policy. A trained continuation rule evaluated using only the currently observed state defines an admissible policy; evaluate it on independent paths and analyse its remaining suboptimality.</p></details>
+<h3>9. A zero-payoff sample</h3>
+<p>A far out-of-the-money call produces no positive payoffs in 1,000 trials. The sample standard error is zero. Can the price be reported as zero with certainty?</p>
+<details><summary>Solution</summary><p>No. The sample has not resolved its contributing tail. The zero-success binomial upper bound is approximately \(3/1000\) for the exercise probability, but does not bound a call's unbounded positive payoff by itself. More suitable sampling and payoff-tail analysis are needed.</p></details>
+<h3>10. A control with the wrong calendar</h3>
+<p>An arithmetic Asian option has twelve fixings excluding the initial spot. Its control uses the same simulated geometric average, but the known control mean is taken from a continuously averaged formula. What goes wrong?</p>
+<details><summary>Solution</summary><p>The substituted expectation is not the mean of the simulated control. The adjusted estimate shifts by \(\beta(\mu_{\mathrm{used}}-\mu_{\mathrm{true}})\). A highly effective variance reduction can then produce a very narrow interval around a biased price. Match the analytical control mean to the exact fixing calendar.</p></details>
+</section>
+
+<section id="references" data-title="References and further reading">
+<div class="section-label">28 / References</div><h2>References and further reading</h2>
+<p>The explanations and derivations in these notes are written as a coherent study guide. The following primary papers, author-hosted material and official documentation provide the methodological references. The numerical figures are original computations with their models, sample sizes and seeds stated in the captions.</p>
+<ol class="references">
+<li><strong>Boyle, P. P. (1977).</strong> <a href="https://www.sciencedirect.com/science/article/pii/0304405X77900058">Options: A Monte Carlo approach</a>. <em>Journal of Financial Economics</em>, 4(3), 323–338. DOI: 10.1016/0304-405X(77)90005-8.<p>An early option-pricing simulation paper linking risk-neutral valuation and computational efficiency.</p></li>
+<li><strong>Glasserman, P. (2003).</strong> <a href="https://link.springer.com/book/10.1007/978-0-387-21617-1">Monte Carlo Methods in Financial Engineering</a>. Springer, Stochastic Modelling and Applied Probability, volume 53.<p>A comprehensive reference covering transitions, variance reduction, QMC, sensitivities, American options and financial applications. Publisher metadata lists the first edition in 2003.</p></li>
+<li><strong>Owen, A. B.</strong> <a href="https://artowen.su.domains/mc/Ch-var-basic.pdf">Monte Carlo theory, methods and examples: variance reduction</a>, online book chapter.<p>Probability-based treatment of stratification, antithetics and controls. Chapter revision dates are stated in the source.</p></li>
+<li><strong>Owen, A. B.</strong> <a href="https://artowen.su.domains/mc/practicalqmc.pdf">Practical quasi-Monte Carlo integration</a>, author-hosted chapters.<p>QMC and randomised QMC viewed as integration designs with explicit uncertainty questions.</p></li>
+<li><strong>Giles, M. B. (2008).</strong> <a href="https://people.maths.ox.ac.uk/~gilesm/files/opre.pdf">Multilevel Monte Carlo Path Simulation</a>. <em>Operations Research</em>, 56(3), 607–617. DOI: 10.1287/opre.1070.0496.<p>The multilevel coupling, work allocation and complexity framework. The author also maintains related software and later papers.</p></li>
+<li><strong>Broadie, M., and Glasserman, P. (1996).</strong> <a href="https://www.columbia.edu/~mnb2/broadie/Assets/bg_ms_1996.pdf">Estimating Security Price Derivatives Using Simulation</a>. <em>Management Science</em>, 42(2), 269–285. DOI: 10.1287/mnsc.42.2.269.<p>Primary treatment of pathwise and likelihood-ratio sensitivity estimators in financial simulation.</p></li>
+<li><strong>Broadie, M., Glasserman, P., and Kou, S. G. (1997).</strong> <a href="https://www.columbia.edu/~sk75/mfBGK.pdf">A Continuity Correction for Discrete Barrier Options</a>. <em>Mathematical Finance</em>, 7(4), 325–348.<p>The relation between discrete and continuous barrier conventions. Its continuity correction is distinct from the exact conditional GBM crossing weights derived here.</p></li>
+<li><strong>Longstaff, F. A., and Schwartz, E. S. (2001).</strong> <a href="https://academic.oup.com/rfs/article-abstract/14/1/113/1587472">Valuing American Options by Simulation: A Simple Least-Squares Approach</a>. <em>The Review of Financial Studies</em>, 14(1), 113–147.<p>The original least-squares continuation-value approach to simulation-based exercise decisions.</p></li>
+<li><strong>Andersen, L., and Broadie, M. (2004).</strong> <a href="https://business.columbia.edu/sites/default/files-efs/pubfiles/1234/1234.pdf">Primal-Dual Simulation Algorithm for Pricing Multidimensional American Options</a>. <em>Management Science</em>, 50(9), 1222–1234. DOI: 10.1287/mnsc.1040.0258.<p>Simulation-based lower and upper bounds for Bermudan valuation, extending beyond a single fitted-policy estimate.</p></li>
+<li><strong>SciPy documentation.</strong> <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.qmc.Sobol.html">scipy.stats.qmc.Sobol</a>.<p>Official implementation details for the scrambled Sobol designs used in the computed QMC experiment, including powers-of-two sample conventions.</p></li>
+</ol>
+<div class="end-links"><a href="black-scholes-basics.html">← Black–Scholes Option Pricing</a><a href="#introduction">Back to the beginning ↑</a><a href="../index.html#quant-basics">Quant Basics ↗</a></div>
+</section>

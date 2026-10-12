@@ -1,0 +1,90 @@
+<section id="evaluation-design" data-title="Training, validation and evaluation samples">
+<div class="section-kicker">16 / Evaluation design</div><h2>Training, validation and evaluation samples</h2>
+<p>Divide the research process into fitting, model selection and final evaluation. Training estimates coefficients or constructs a rule. Validation compares permitted choices. A final evaluation assesses the selected procedure on observations not used to choose it. In time-series applications, these roles usually need a chronological information boundary.</p>
+\[ \text{training}\ \longrightarrow\ \text{validation}\ \longrightarrow\ \text{evaluation}. \]
+<p>The arrows represent availability, not a universal ratio of sample sizes. A five-year dataset and a five-decade dataset support different choices. The strategy horizon, regime variability and number of variants determine how much evidence each stage can provide.</p>
+<h3>Chronological separation</h3>
+<p>Randomly shuffling dated rows can put future regimes and overlapping return labels into training before they are evaluated. A chronological split better represents a prospective forecasting problem. Temporal separation alone is insufficient if preprocessing, universe membership or labels still contain future information.</p>
+<p>Use earlier observations to initialize rolling features at the beginning of an evaluation block. Those historical observations are not leakage simply because they precede the block. What must remain unavailable is the block's later outcomes when fitting the decision that acts at its start.</p>
+<h3>Nested model selection</h3>
+<p>If hyperparameters are tuned, use an inner training/validation process inside each outer training period. Score the selected process on the outer evaluation block. Training a model repeatedly on one validation period eventually adapts it to that period, even if the model never directly includes those labels in its fitting objective.</p>
+<p>The complete selection procedure is the object being evaluated. Choosing the best rule once using all history and then drawing chronological folds does not undo that earlier selection. Define candidate lists and selection criteria before the folds' outcomes are examined.</p>
+<h3>Benchmarks and costs belong inside selection</h3>
+<p>A parameter chosen using gross returns can favor a high-turnover rule that fails after costs. If implementable net performance is the stated objective, apply the cost model during selection. Likewise, a risk-adjusted selection metric must use the same cash and return conventions as evaluation.</p>
+<p>Sample dependence and small counts can make validation rankings unstable. Preserve alternative near-ties and examine stability rather than treating an estimated maximum as a known optimum. A simple rule with a broad robust neighborhood can be more credible than a complex winner whose ranking changes after one observation.</p>
+<h3>Evaluation is consumed by feedback</h3>
+<p>Once a final period's result drives changes to features or parameters, that period becomes part of development. Keeping its label “test” does not restore independence. Obtain genuinely new observations or report that evaluation is exploratory. The synthetic examples here remain demonstrations even when their event timing is causal.</p>
+</section>
+
+<section id="walk-forward" data-title="Walk-forward selection and stitched returns">
+<div class="section-kicker">17 / Prospective simulation</div><h2>Walk-forward selection and stitched returns</h2>
+<p>A walk-forward procedure repeatedly fits or selects a rule from past observations and deploys it on subsequent intervals. A rolling window keeps a fixed-length history; an expanding window retains all eligible past data. Each design changes the trade-off between adaptation and sample size.</p>
+\[ \widehat\theta_k=\arg\max_{\theta\in\Theta}
+J(\theta;\mathcal D_{\mathrm{train},k}),\qquad
+R_{\mathrm{eval},k}=\mathcal B(\widehat\theta_k;\mathcal D_{\mathrm{future},k}). \]
+<p>The objective \(J\), candidate set \(\Theta\) and fitting schedule must be specified in advance. The backtest operator \(\mathcal B\) includes execution and account state, not merely the future returns multiplied by an ideal target.</p>
+{{figure:walkforward}}
+<h3>The computed example</h3>
+<p>The study compares lookbacks 21, 42, 63, 126 and 252 sessions. It selects the highest net training Sharpe using up to 504 earlier sessions and refits every 126 sessions. Every candidate is evaluated over the same eligible training interval, beginning no earlier than close 253. There is no volatility scaling in this example, so selection concerns the directional lookback.</p>
+<p>The first fit is completed after close 504. Because the selected signal is formed then and executed one session later, it first affects return 506. Return 505 is still earned under the predeployment cash state. At later refits, the previous deployed rule continues until the new target becomes executable; there is no artificial block-boundary cash reset.</p>
+<h3>Stitching an account</h3>
+<p>Continue shares and cash across evaluation blocks, including the costs of changing selected rules. Concatenating independently normalized block equity curves can hide entry, exit and transition costs. Concatenating valid block return series is acceptable only if their initial holdings and transitions represent the continuous trading policy.</p>
+<p>A portfolio already holding stock at a parameter switch may need to sell part or all of it. That trade is part of the walk-forward outcome. The training simulations begin from a common account convention for scoring, while the deployed evaluation ledger carries its actual state forward.</p>
+<h3>What walk-forward establishes</h3>
+<p>Past-only fitting avoids one class of look-ahead and approximates a prospective decision process. It does not eliminate a researcher's selection among several walk-forward schedules, cost assumptions or candidate sets. Testing many procedures and reporting the best still creates selection bias.</p>
+<p>Regime coverage also matters. A procedure that succeeds during one long trend may fail in a different market structure. Evaluate distributions of block outcomes, selected-parameter stability, exposure and turnover. A stitched line can look smooth while hiding that nearly all performance came from one block.</p>
+<p>The plotted synthetic result should be interpreted as a demonstration of the procedure and its timing. It supplies no independent empirical evidence about real assets. That evidence would require a point-in-time dataset and a research process whose choices were fixed before evaluation.</p>
+</section>
+
+<section id="overlapping-labels" data-title="Overlapping labels, purging and embargoes">
+<div class="section-kicker">18 / Validation mechanics</div><h2>Overlapping labels, purging and embargoes</h2>
+<p>Many prediction labels cover an interval. A feature at close \(t\) might predict the return through close \(t+5\). Adjacent labels then share price observations. A validation boundary at date \(t\) does not imply that every training label whose feature date is earlier than \(t\) has already finished.</p>
+\[ Y_t=\frac{P_{t+h}}{P_t}-1,\qquad
+\text{label interval }[t,t+h]. \]
+<p>When fitting after close \(b\), include this label only if its endpoint is no later than \(b\). In a simple chronological split, dropping unfinished training labels at the boundary is necessary to avoid future outcomes entering the fit.</p>
+<h3>Purging interval overlap</h3>
+<p>Purging removes training examples whose outcome intervals overlap the evaluation outcome intervals under the chosen validation design. Event-based labels can have varying endpoints, so purging should use actual intervals rather than an arbitrary fixed number of rows. Feature windows can introduce additional dependence that needs separate consideration.</p>
+<p>For example, a label starting on day 98 and ending on day 103 overlaps an evaluation interval beginning on day 100. It must not be treated as a completed past label at the day-100 boundary. The earlier feature timestamp alone does not make it available.</p>
+<h3>Embargoes and dependence</h3>
+<p>An embargo leaves a gap around or after evaluation regions to reduce information spillover in a specified resampling scheme. Its length should reflect label horizons, feature memory and dependence. It is not a magic fixed percentage that makes any dataset independent. A gap that is too short leaves overlap; one that is too long discards useful information without necessarily addressing the real leakage mechanism.</p>
+<p>In pure walk-forward testing, future training rows are excluded by construction. Purging unfinished labels at each fit still matters. In folds that train on observations both before and after a held-out block, additional overlap and temporal-information questions arise. Such cross-validation estimates are not automatically equivalent to a real-time trading deployment.</p>
+<h3>Boundaries in the teaching study</h3>
+<p>The walk-forward example scores completed one-session account returns and selects only after the training close. It adds execution latency before deployment. It does not train on multi-session predictive labels, so it does not implement a generalized purged machine-learning pipeline. This distinction keeps the numerical experiment aligned with its claims.</p>
+<p>When extending it to a forecast model, save feature timestamps, label start and endpoint, fitting timestamps and the exact split membership. Check availability of every fitted target. A statement that “cross-validation was used” is too broad to establish valid temporal information flow.</p>
+</section>
+
+<section id="research-biases" data-title="Research biases and misleading backtests">
+<div class="section-kicker">19 / Research integrity</div><h2>Research biases and misleading backtests</h2>
+<p>Backtest credibility depends on how observations and choices entered the experiment. Common biases are not merely statistical technicalities: they can change the direction and magnitude of apparent performance.</p>
+<h3>Look-ahead and survivorship</h3>
+<p>Look-ahead uses future information in earlier decisions. Survivorship uses a future-conditioned universe, such as current index members, at past dates. Delisting omissions, revised fundamentals and retrospective instrument selection can combine the two. A causally indexed signal cannot repair a biased universe.</p>
+<h3>Data snooping and selective reporting</h3>
+<p>Trying many indicators, windows, markets, subperiods and exits increases the chance of finding a favorable sample result. Reporting only the successful variants hides the relevant trial count. Choosing the date range after observing where the curve rises is another strategy-selection step, even if the trading rule itself remains unchanged.</p>
+<p>Outlier removal can be legitimate when correcting a documented data error, but excluding extreme losses because they look inconvenient changes the economic sample. Distinguish vendor errors from real adverse events. A crisis observation is often exactly the event that should inform a risk assessment.</p>
+<h3>Accounting and benchmark distortions</h3>
+<p>Zero cash return can understate a cash benchmark while making low-exposure strategies easier to compare favorably. Ignoring financing can exaggerate leveraged returns. Omitting initial trades reduces costs. Summing returns instead of compounding misstates wealth. Comparing different sample intervals confounds rule differences with market-period differences.</p>
+<p>A high win rate can coexist with poor returns. A smooth curve can come from stale pricing. A high Sharpe can come from short optionality or omitted tail events. A low drawdown can come from lower exposure rather than useful timing. Each metric needs a mechanism-aware interpretation.</p>
+<h3>Execution assumptions</h3>
+<p>Perfect limit fills, favorable intrabar order, trading at stale marks and ignoring size can create gains that disappear in realistic execution. An asset's closing price does not prove that an arbitrarily large order could have filled at that price. A research model should expose the assumptions, then test sensitivity where they matter.</p>
+<h3>A bias audit as part of research</h3>
+<p>Trace a representative trade from raw timestamped data to feature, target, order, fill, cash movement and attributed return. Record every sample exclusion and parameter choice. Preserve negative results and compare an independently implemented engine. This makes the analysis inspectable without substituting a generic checklist for actual evidence.</p>
+<p>A backtest can be useful even when imperfect, if its limitations and experiment are stated precisely. The problem is interpreting a simulation under favorable assumptions as stronger evidence than it actually provides.</p>
+</section>
+
+<section id="multiple-testing" data-title="Multiple testing and backtest overfitting">
+<div class="section-kicker">20 / Statistical selection</div><h2>Multiple testing and backtest overfitting</h2>
+<p>If each independent null strategy has a false-positive probability \(p\), testing \(M\) strategies gives probability of at least one false positive:</p>
+\[ \mathbb P(\text{at least one false positive})=1-(1-p)^M. \]
+<p>At \(p=5\%\) and \(M=20\), the probability is about 64.15%. Real strategy trials are often correlated, so this independent formula is an illustration rather than a universal calibration. The basic issue remains: choosing a sample maximum changes the distribution of the reported statistic.</p>
+{{figure:selection}}
+<h3>The winner's advantage can be noise</h3>
+<p>The figure simulates candidate return series with zero true mean. The best in-sample Sharpe grows as more candidates are searched, while independently evaluated performance remains centered near zero. No candidate acquires predictive ability because it won the training competition. The gap is selection optimism under the toy null.</p>
+<p>Parameter neighborhoods, feature transformations and research restarts are all trials when they can influence the reported winner. Correlated candidates reduce the amount of independent variation, but counting only the final number of published rules severely understates the search in many workflows.</p>
+<h3>Statistical approaches</h3>
+<p>Multiple-testing procedures control different error criteria. Family-wise methods target the probability of any false rejection in a family; false-discovery-rate methods target the expected proportion of false discoveries among rejections under their assumptions. Bootstrap reality-check methods can account for searching a strategy family relative to a benchmark. <a href="https://onlinelibrary.wiley.com/doi/10.1111/1468-0262.00152">White (2000)</a> develops a data-snooping reality check.</p>
+<p><a href="https://www.nber.org/papers/w20592">Harvey, Liu and Zhu (2016)</a> study multiple testing in the cross-section of expected returns. Their setting differs from this daily strategy laboratory, but the lesson about ordinary significance thresholds after broad searches is directly relevant. A threshold derived for one experiment should not be transplanted mechanically to another.</p>
+<h3>PBO and deflated performance</h3>
+<p>The probability-of-backtest-overfitting framework of <a href="https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf">Bailey, Borwein, López de Prado and Zhu</a> examines how in-sample selection can translate into poor relative out-of-sample ranking across structured splits. A PBO estimate depends on the strategy family, statistic and resampling scheme; it is not the probability that a particular live account will lose money.</p>
+<p>The deflated Sharpe ratio adjusts a performance assessment for selection and non-normality under a stated approximation. Its inputs include information about trials and their dependence. It cannot recover an unrecorded research history or make unreliable prices tradable.</p>
+<p>Keep a complete experiment log, reserve genuinely new evaluation data and use economically motivated, limited candidate sets. Statistical corrections help quantify a search's consequences; they complement research discipline rather than replace it.</p>
+</section>

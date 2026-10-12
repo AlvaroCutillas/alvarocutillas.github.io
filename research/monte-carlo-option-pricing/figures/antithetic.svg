@@ -1,0 +1,378 @@
+<svg role="img" aria-labelledby="antithetic-title antithetic-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="antithetic-title">Figure 06 · Antithetic payoffs and the independent pair average</title><desc id="antithetic-desc">Each Z is accompanied by −Z. Both marginal shocks have the required normal distribution. Standard errors must use the variance of pair averages; treating the two members as independent understates or misstates uncertainty.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T19:11:26.926674</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="antithetic-figure_1">
+  <g id="antithetic-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="antithetic-axes_1">
+   <g id="antithetic-patch_2">
+    <path d="M 45.38 208.78 
+L 648.9 208.78 
+L 648.9 13.5 
+L 45.38 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="antithetic-matplotlib.axis_1">
+    <g id="antithetic-xtick_1">
+     <g id="antithetic-line2d_1">
+      <path d="M 72.812727 208.78 
+L 72.812727 13.5 
+" clip-path="url(#antithetic-pb1b28d053f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="antithetic-line2d_2">
+      <defs>
+       <path id="antithetic-md259dcc6cf" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#antithetic-md259dcc6cf" x="72.812727" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="antithetic-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="72.812727" y="222.618594" transform="rotate(-0 72.812727 222.618594)">−3</text>
+     </g>
+    </g>
+    <g id="antithetic-xtick_2">
+     <g id="antithetic-line2d_3">
+      <path d="M 164.255152 208.78 
+L 164.255152 13.5 
+" clip-path="url(#antithetic-pb1b28d053f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="antithetic-line2d_4">
+      <g>
+       <use href="#antithetic-md259dcc6cf" x="164.255152" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="antithetic-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="164.255152" y="222.618594" transform="rotate(-0 164.255152 222.618594)">−2</text>
+     </g>
+    </g>
+    <g id="antithetic-xtick_3">
+     <g id="antithetic-line2d_5">
+      <path d="M 255.697576 208.78 
+L 255.697576 13.5 
+" clip-path="url(#antithetic-pb1b28d053f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="antithetic-line2d_6">
+      <g>
+       <use href="#antithetic-md259dcc6cf" x="255.697576" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="antithetic-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="255.697576" y="222.618594" transform="rotate(-0 255.697576 222.618594)">−1</text>
+     </g>
+    </g>
+    <g id="antithetic-xtick_4">
+     <g id="antithetic-line2d_7">
+      <path d="M 347.14 208.78 
+L 347.14 13.5 
+" clip-path="url(#antithetic-pb1b28d053f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="antithetic-line2d_8">
+      <g>
+       <use href="#antithetic-md259dcc6cf" x="347.14" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="antithetic-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="347.14" y="222.618594" transform="rotate(-0 347.14 222.618594)">0</text>
+     </g>
+    </g>
+    <g id="antithetic-xtick_5">
+     <g id="antithetic-line2d_9">
+      <path d="M 438.582424 208.78 
+L 438.582424 13.5 
+" clip-path="url(#antithetic-pb1b28d053f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="antithetic-line2d_10">
+      <g>
+       <use href="#antithetic-md259dcc6cf" x="438.582424" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="antithetic-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="438.582424" y="222.618594" transform="rotate(-0 438.582424 222.618594)">1</text>
+     </g>
+    </g>
+    <g id="antithetic-xtick_6">
+     <g id="antithetic-line2d_11">
+      <path d="M 530.024848 208.78 
+L 530.024848 13.5 
+" clip-path="url(#antithetic-pb1b28d053f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="antithetic-line2d_12">
+      <g>
+       <use href="#antithetic-md259dcc6cf" x="530.024848" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="antithetic-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="530.024848" y="222.618594" transform="rotate(-0 530.024848 222.618594)">2</text>
+     </g>
+    </g>
+    <g id="antithetic-xtick_7">
+     <g id="antithetic-line2d_13">
+      <path d="M 621.467273 208.78 
+L 621.467273 13.5 
+" clip-path="url(#antithetic-pb1b28d053f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="antithetic-line2d_14">
+      <g>
+       <use href="#antithetic-md259dcc6cf" x="621.467273" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="antithetic-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="621.467273" y="222.618594" transform="rotate(-0 621.467273 222.618594)">3</text>
+     </g>
+    </g>
+    <g id="antithetic-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="347.14" y="235.328906" transform="rotate(-0 347.14 235.328906)">Normal shock Z</text>
+    </g>
+   </g>
+   <g id="antithetic-matplotlib.axis_2">
+    <g id="antithetic-ytick_1">
+     <g id="antithetic-line2d_15">
+      <path d="M 45.38 199.903636 
+L 648.9 199.903636 
+" clip-path="url(#antithetic-pb1b28d053f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="antithetic-line2d_16">
+      <defs>
+       <path id="antithetic-m87b7878987" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#antithetic-m87b7878987" x="45.38" y="199.903636" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="antithetic-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="203.322933" transform="rotate(-0 38.38 203.322933)">0</text>
+     </g>
+    </g>
+    <g id="antithetic-ytick_2">
+     <g id="antithetic-line2d_17">
+      <path d="M 45.38 157.372406 
+L 648.9 157.372406 
+" clip-path="url(#antithetic-pb1b28d053f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="antithetic-line2d_18">
+      <g>
+       <use href="#antithetic-m87b7878987" x="45.38" y="157.372406" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="antithetic-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="160.791702" transform="rotate(-0 38.38 160.791702)">20</text>
+     </g>
+    </g>
+    <g id="antithetic-ytick_3">
+     <g id="antithetic-line2d_19">
+      <path d="M 45.38 114.841175 
+L 648.9 114.841175 
+" clip-path="url(#antithetic-pb1b28d053f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="antithetic-line2d_20">
+      <g>
+       <use href="#antithetic-m87b7878987" x="45.38" y="114.841175" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="antithetic-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="118.260472" transform="rotate(-0 38.38 118.260472)">40</text>
+     </g>
+    </g>
+    <g id="antithetic-ytick_4">
+     <g id="antithetic-line2d_21">
+      <path d="M 45.38 72.309944 
+L 648.9 72.309944 
+" clip-path="url(#antithetic-pb1b28d053f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="antithetic-line2d_22">
+      <g>
+       <use href="#antithetic-m87b7878987" x="45.38" y="72.309944" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="antithetic-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="75.729241" transform="rotate(-0 38.38 75.729241)">60</text>
+     </g>
+    </g>
+    <g id="antithetic-ytick_5">
+     <g id="antithetic-line2d_23">
+      <path d="M 45.38 29.778713 
+L 648.9 29.778713 
+" clip-path="url(#antithetic-pb1b28d053f)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="antithetic-line2d_24">
+      <g>
+       <use href="#antithetic-m87b7878987" x="45.38" y="29.778713" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="antithetic-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="33.19801" transform="rotate(-0 38.38 33.19801)">80</text>
+     </g>
+    </g>
+    <g id="antithetic-text_14">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.055781" y="111.14" transform="rotate(-90 21.055781 111.14)">Discounted payoff</text>
+    </g>
+   </g>
+   <g id="antithetic-line2d_25">
+    <path d="M 72.812727 199.903636 
+L 332.701722 199.903636 
+L 334.076797 199.614452 
+L 349.202611 192.800668 
+L 364.328426 185.757697 
+L 379.45424 178.477827 
+L 394.580055 170.953092 
+L 409.705869 163.175255 
+L 424.831684 155.135802 
+L 439.957498 146.825934 
+L 453.708239 139.029202 
+L 467.458979 130.994421 
+L 481.20972 122.714321 
+L 494.96046 114.181414 
+L 508.711201 105.38798 
+L 522.461941 96.326064 
+L 536.212682 86.98747 
+L 549.963422 77.36375 
+L 563.714163 67.446198 
+L 577.464903 57.225843 
+L 589.84057 47.760992 
+L 602.216236 38.036451 
+L 614.591902 28.045094 
+L 621.467273 22.376364 
+L 621.467273 22.376364 
+" clip-path="url(#antithetic-pb1b28d053f)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="antithetic-line2d_26">
+    <path d="M 72.812727 22.376364 
+L 85.188394 32.519102 
+L 97.56406 42.390981 
+L 109.939727 51.999237 
+L 122.315393 61.350907 
+L 136.066134 71.449046 
+L 149.816874 81.248004 
+L 163.567614 90.756644 
+L 177.318355 99.983567 
+L 191.069095 108.93712 
+L 204.819836 117.625403 
+L 218.570576 126.056274 
+L 232.321317 134.23736 
+L 246.072057 142.176061 
+L 259.822798 149.879559 
+L 274.948612 158.090058 
+L 290.074427 166.033375 
+L 305.200242 173.718205 
+L 320.326056 181.152959 
+L 335.451871 188.345776 
+L 350.577685 195.304528 
+L 360.203203 199.614452 
+L 361.578278 199.903636 
+L 621.467273 199.903636 
+L 621.467273 199.903636 
+" clip-path="url(#antithetic-pb1b28d053f)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="antithetic-line2d_27">
+    <path d="M 72.812727 111.14 
+L 89.313616 117.871549 
+L 105.814504 124.364487 
+L 122.315393 130.627272 
+L 138.816282 136.668061 
+L 156.692244 142.970853 
+L 174.568207 149.031976 
+L 192.44417 154.860695 
+L 210.320132 160.465922 
+L 229.571169 166.262202 
+L 248.822206 171.819494 
+L 268.073242 177.147652 
+L 287.324279 182.256125 
+L 307.95039 187.495987 
+L 328.5765 192.504717 
+L 332.701722 193.479632 
+L 334.076797 193.658062 
+L 349.202611 193.741026 
+L 360.203203 193.658062 
+L 361.578278 193.479632 
+L 382.204388 188.51589 
+L 402.830499 183.323093 
+L 423.45661 177.890669 
+L 442.707646 172.594463 
+L 461.958683 167.070498 
+L 481.20972 161.308979 
+L 499.085682 155.737366 
+L 516.961645 149.943602 
+L 534.837608 143.918827 
+L 552.71357 137.653833 
+L 570.589533 131.139039 
+L 587.090422 124.895062 
+L 603.59131 118.421622 
+L 620.092199 111.710288 
+L 621.467273 111.14 
+L 621.467273 111.14 
+" clip-path="url(#antithetic-pb1b28d053f)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="antithetic-patch_3">
+    <path d="M 45.38 208.78 
+L 45.38 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="antithetic-patch_4">
+    <path d="M 45.38 208.78 
+L 648.9 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="antithetic-legend_1">
+    <g id="antithetic-line2d_28">
+     <path d="M 310.85375 23.97875 
+L 318.85375 23.97875 
+L 326.85375 23.97875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="antithetic-text_15">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="333.25375" y="26.77875" transform="rotate(-0 333.25375 26.77875)">Y(Z)</text>
+    </g>
+    <g id="antithetic-line2d_29">
+     <path d="M 310.85375 35.72125 
+L 318.85375 35.72125 
+L 326.85375 35.72125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="antithetic-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="333.25375" y="38.52125" transform="rotate(-0 333.25375 38.52125)">Y(−Z)</text>
+    </g>
+    <g id="antithetic-line2d_30">
+     <path d="M 310.85375 47.46375 
+L 318.85375 47.46375 
+L 326.85375 47.46375 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="antithetic-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="333.25375" y="50.26375" transform="rotate(-0 333.25375 50.26375)">Pair average</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="antithetic-pb1b28d053f">
+   <rect x="45.38" y="13.5" width="603.52" height="195.28"/>
+  </clipPath>
+ </defs>
+</svg>

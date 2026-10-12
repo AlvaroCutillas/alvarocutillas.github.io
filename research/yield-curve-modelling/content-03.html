@@ -1,0 +1,105 @@
+<section id="interpolation" data-title="Interpolation of discounts, zeros and forwards">
+<div class="section-kicker">11 / Continuous construction</div><h2>Interpolation of discounts, zeros and forwards</h2>
+<p>Observed nodes do not determine a unique continuous curve. Choosing the quantity to interpolate changes intermediate discounts, forwards and hedges, even when every node is fitted exactly. It is often useful to work with integrated rates \(h(T)=-\ln D(T)=Tz(T)\), because discount positivity then follows automatically.</p>
+<h3>Log-linear discount interpolation</h3>
+<p>Between nodes \(t_i\) and \(t_{i+1}\), set \(w=(T-t_i)/(t_{i+1}-t_i)\). Linear interpolation of the log discount is:</p>
+\[ \ln D(T)=(1-w)\ln D(t_i)+w\ln D(t_{i+1}),\qquad
+f(T)=-\frac{\ln D(t_{i+1})-\ln D(t_i)}{t_{i+1}-t_i}. \]
+<p>Discount factors remain positive and the instantaneous forward is constant within each interval. Forwards typically jump at knots. The zero curve is continuous away from the origin, but its derivative can jump. This is a simple, local and interpretable construction; it is not a smooth-forward construction.</p>
+<h3>Linear zero-rate interpolation</h3>
+<p>If \(z(T)=z_i+s_i(T-t_i)\), then \(f(T)=z(T)+Ts_i\). The forward is linear inside the interval and can jump at the next knot when the zero slope changes. A straight zero segment therefore does not imply a constant forward segment. Including a zero-time limit requires a deliberate short-end node or boundary rule.</p>
+<h3>Linear discount interpolation</h3>
+<p>Directly interpolating positive discount nodes produces positive discounts between them. If \(D(T)=D_i+s_i(T-t_i)\), its instantaneous forward is \(-s_i/D(T)\). That is generally curved inside each interval. Extrapolating the same linear formula indefinitely can cross zero, even when interpolation inside the observed interval is safe.</p>
+{{figure:interpolation}}
+<h3>Locality and numerical derivatives</h3>
+<p>Local interpolation uses nearby nodes, which often makes sensitivities easier to interpret. A change to one node affects neighboring intervals rather than the whole curve. Global interpolants can create distant changes when one input is bumped. The smoother result may be desirable, but the resulting risk footprint should be understood.</p>
+<p>At a discontinuous forward knot there is no unique two-sided derivative of \(\ln D\). A software implementation can choose a left or right convention for reporting, while valuation uses the continuous discount itself. A finite difference that straddles the knot averages two sides and should not be presented as the model's unique instantaneous forward.</p>
+<h3>Interpolation and repricing</h3>
+<p>If an input instrument pays between nodes, its price depends on the interpolation choice. Replacing an interpolator after calibration can therefore destroy exact repricing. Rebuild or recalibrate under the new interpolation rule and record the change in residuals and sensitivities.</p>
+<p>Hagan and West analyze the joint problem of interpolation and construction and discuss methods designed around forward-rate behavior. Their work is useful precisely because a visually smooth zero curve is not enough to characterize a satisfactory pricing curve. <a href="https://bank.uni-hohenheim.de/uploads/media/Hagan_and_West__2006__-_Interpolation_Methods_for_Curve_Construction.pdf">Interpolation Methods for Curve Construction</a>.</p>
+</section>
+
+<section id="smoothing" data-title="Splines, smoothing and regularization">
+<div class="section-kicker">12 / Nonparametric estimation</div><h2>Splines, smoothing and regularization</h2>
+<p>A spline joins low-degree polynomial segments while enforcing selected continuity conditions at knots. It supplies more flexibility than a small parametric family, but that flexibility must be controlled. A curve can interpolate every noisy quote and still produce unstable forwards.</p>
+<h3>The interpolated coordinate matters</h3>
+<p>A cubic spline on zero rates is different from a cubic spline on discounts or integrated rates. Splining \(h(T)=Tz(T)\) makes \(f(T)=h'(T)\) directly available and guarantees positive discounts through \(D=e^{-h}\). It does not by itself guarantee positive forwards, monotonicity or a sensible extrapolation.</p>
+<p>A natural cubic spline imposes zero second derivatives at its boundary knots. That is a mathematical boundary condition, rather than a universal economic fact about the curve's short or long end. A shape-preserving piecewise cubic method such as PCHIP can preserve monotonicity of the interpolated coordinate when its node data are monotone, but generally sacrifices continuity of higher derivatives.</p>
+{{figure:spline}}
+<h3>Fitting rather than exact interpolation</h3>
+<p>A smoothing formulation combines a data loss with a roughness penalty. For observed zero rates \(y_i\), one illustrative objective is:</p>
+\[ \min_h\left\{\sum_i w_i\left[\frac{h(T_i)}{T_i}-y_i\right]^2
++\lambda\int_a^b [h''(u)]^2\,du\right\},\qquad h(0)=0. \]
+<p>The first term measures zero-rate fit; the second penalizes changes in the forward curve because \(h''=f'\). A different penalty, such as an integral of \(f''\) squared, controls a different notion of smoothness. The penalty's units and normalization matter when comparing \(\lambda\) across datasets or maturity ranges.</p>
+<p>At \(\lambda=0\), a sufficiently flexible representation can track every observation. Larger \(\lambda\) suppresses local variation and increases residuals. Choose the trade-off using the intended pricing and risk task, quote uncertainty and validation, rather than the smoothest-looking chart alone.</p>
+<h3>Constraints and shape preservation</h3>
+<p>If the modelling framework requires nonnegative forwards, impose \(h'\ge0\) explicitly or use a construction that enforces it. If negative rates are economically admissible, an unconditional monotonicity constraint on \(h\) can erase valid market structure. Bounds on forwards can be helpful numerical regularizers but should be named as modelling assumptions.</p>
+<p>Exact interpolation through noisy observations can create forward oscillations because differentiation amplifies local errors. Increasing spline smoothness is not always enough: a highly smooth function can still oscillate between sparse points. Knot placement, penalties, constraints and the coordinate being fitted must be evaluated together.</p>
+<h3>Complexity and reproducibility</h3>
+<p>Record knot locations, degree, boundary conditions, objective weights and penalty settings with the fitted curve. A label such as “cubic spline” does not identify a reproducible model. Examine quote residuals, forward shape, bump sensitivities and extrapolation separately.</p>
+<p>The figure uses a natural cubic spline and PCHIP on the same synthetic integrated-rate nodes. It illustrates derivative behavior, without claiming that either is a universal market standard or that the PCHIP example implements monotone convex interpolation. The parametric chapters next make a different trade-off: fewer degrees of freedom, clearer broad-shape interpretation, and less ability to reproduce local detail.</p>
+</section>
+
+<section id="consistency" data-title="Economic consistency and admissible rate curves">
+<div class="section-kicker">13 / Model constraints</div><h2>Economic consistency and admissible rate curves</h2>
+<p>Consistency begins with correct valuation identities and a clearly stated economic framework. There is no single curve-shape checklist that replaces those assumptions. In particular, negative rates and increasing discounts must be treated differently from negative discount factors.</p>
+<h3>Basic coordinate requirements</h3>
+<p>For finite logarithmic rates, require positive discounts and \(D(0)=1\). A differentiable discount curve determines a consistent instantaneous forward through \(-D'/D\). Integrating that forward must recover the same discount curve. Positive cash flows valued with positive discounts have positive present values.</p>
+\[ D(T)=e^{-h(T)},\qquad h(0)=0,\qquad f(T)=h'(T). \]
+<p>This representation guarantees positive \(D\) for every finite real \(h\). It does not constrain the sign of \(f\). Nonnegative forwards imply \(h\) is nondecreasing and \(D\) is nonincreasing; permitting negative forwards relaxes that condition.</p>
+{{figure:negative}}
+<h3>The role of cash storage and funding</h3>
+<p>In an idealized world with costless, unlimited storage of zero-yield cash and unrestricted borrowing against future receipts, a default-free claim priced above its payoff can create a dominance argument. Actual negative-rate modelling allows frictions or institutional constraints that invalidate the costless-storage alternative. The appropriate admissibility restriction follows from that framework.</p>
+<p>A smooth finite forward curve, including negative values, can serve as the deterministic rate path of a consistent deterministic-rate model when the funding assumptions permit it. Therefore negative forwards alone do not establish an implementation error. They should still trigger a check of quotation units, curve identity and intended rate regime.</p>
+<h3>Static fit versus dynamic no arbitrage</h3>
+<p>A fitted cross-section describes prices at one date. An arbitrary stochastic evolution of its parameters can generate inconsistent bond-price drifts, even if the curve remains positive and smooth at every date. Dynamic no-arbitrage conditions link drift and volatility under the pricing measure. They are additional restrictions on time evolution.</p>
+<p>Conversely, a theoretically arbitrage-free dynamic model can fit observed bond prices poorly because the selected instruments contain liquidity, credit or convention effects outside the model. Economic consistency and empirical accuracy are related but distinct criteria.</p>
+<h3>Instrument-level checks</h3>
+<p>Reprice the actual calibration instruments, use matched clean/dirty conventions, and compare residuals with quotation resolution or bid–ask widths. Check that the predicted prices respond correctly to controlled shocks. A curve that yields a small zero-rate RMSE can still produce material long-bond price errors because duration amplifies yield differences.</p>
+<p>In a multicurve architecture, pseudo-discounts should not be treated as freely tradable discount claims. Basis relationships must be checked through the relevant instrument equations. Arbitrage tests that combine unrelated sovereign, collateral and tenor curves as if they priced identical claims can diagnose an inconsistency that the market never asserted.</p>
+<p>Useful diagnostics are explicit: positivity, endpoint normalization, repricing, forward-integral recovery, interpolation continuity and sensitivity stability. The conclusion should state what each check establishes. “No negative forwards” is a rate-regime test; “prices recover to tolerance” is a calibration test; neither alone proves a fully specified stochastic model has no arbitrage.</p>
+</section>
+
+<section id="nelson-siegel" data-title="The Nelson–Siegel term-structure model">
+<div class="section-kicker">14 / Parametric representation</div><h2>The Nelson–Siegel term-structure model</h2>
+<p>Nelson–Siegel represents broad curve shapes using three rate coefficients and one positive decay time. Its forward-rate form makes the interpretation especially clear. Let \(\tau&gt;0\) and \(x=T/\tau\):</p>
+\[ f_{\mathrm{NS}}(T)=\beta_0+\beta_1e^{-x}+\beta_2xe^{-x}. \]
+<p>The first loading is constant, the second decays from one to zero, and the third starts at zero, rises and then decays. Integrating from zero to \(T\) gives the continuous zero-rate representation:</p>
+\[ z_{\mathrm{NS}}(T)=\beta_0+\beta_1A(x)+\beta_2B(x),\qquad
+A(x)=\frac{1-e^{-x}}x,\qquad B(x)=A(x)-e^{-x}. \]
+<p>The coefficients have rate units and the loadings are dimensionless. The decay time has units of years. Some publications use a decay speed \(\lambda=1/\tau\) instead; increasing a speed compresses the maturity scale, while increasing a time stretches it. Mixing those conventions reverses the parameter's interpretation.</p>
+<h3>Endpoint limits</h3>
+\[ z(0)=f(0)=\beta_0+\beta_1,\qquad
+\lim_{T\to\infty}z(T)=\lim_{T\to\infty}f(T)=\beta_0. \]
+<p>Thus \(\beta_0\) controls the asymptotic level and \(\beta_1\) controls the short-minus-long difference. A negative slope coefficient makes the short limit lower than the long limit. \(\beta_2\) adds medium-horizon curvature without changing either endpoint limit.</p>
+{{figure:loadings}}
+<h3>Where curvature appears</h3>
+<p>The forward curvature loading \(xe^{-x}\) reaches its maximum at \(x=1\), or \(T=\tau\). The zero curvature loading \(B(x)\) reaches its maximum at approximately \(x=1.793\). The maximum of the complete fitted curve need not occur at either location because the slope loading also contributes. A decay parameter is therefore not generally the maturity of the curve's peak.</p>
+<p>Holding other coefficients fixed, increasing \(\beta_0\) shifts the entire zero curve by a constant. Increasing \(\beta_1\) predominantly raises short maturities. Increasing \(\beta_2\) raises the middle of the curve. Changing \(\tau\) alters both slope and curvature loadings, moving their maturity scale while preserving the endpoint limits.</p>
+{{figure:parameters}}
+<h3>Parsimony and limitations</h3>
+<p>The family can describe upward, downward and hump-shaped curves with few parameters. This makes it useful for broad economic summaries and factor modelling. It cannot reproduce every combination of local policy-date features, liquidity effects and multiple humps. A residual pattern can reflect limited model flexibility rather than a failed optimizer.</p>
+<p>Conditional on \(\tau\), the zero model is linear in the three coefficients. This separability is computationally valuable: estimate the coefficients by linear least squares inside a one-dimensional nonlinear search for decay. The original author research develops this parsimonious representation and its estimation. <a href="https://www.nber.org/papers/w1594">Nelson and Siegel, NBER working paper</a>.</p>
+<h3>Stable evaluation near zero</h3>
+<p>Direct subtraction of \(1-e^{-x}\) loses precision for tiny \(x\). Use an exponential-minus-one function or a Taylor series. Define \(A(0)=1\) and \(B(0)=0\) explicitly. These limits preserve the short rate and prevent a spurious hole at the origin in plots, calibration and CSV exports.</p>
+</section>
+
+<section id="svensson" data-title="The Svensson extension and a second curvature factor">
+<div class="section-kicker">15 / Parametric flexibility</div><h2>The Svensson extension and a second curvature factor</h2>
+<p>Svensson adds a second curvature component at a separate positive decay time. Let \(x_1=T/\tau_1\) and \(x_2=T/\tau_2\). The continuous zero and instantaneous forward rates are:</p>
+\[ z_{\mathrm{NSS}}(T)=\beta_0+\beta_1A(x_1)+\beta_2B(x_1)+\beta_3B(x_2). \]
+\[ f_{\mathrm{NSS}}(T)=\beta_0+\beta_1e^{-x_1}
++\beta_2x_1e^{-x_1}+\beta_3x_2e^{-x_2}. \]
+<p>There are four rate coefficients and two decay times. The extra loading vanishes at both endpoints, so the short and long limits remain \(\beta_0+\beta_1\) and \(\beta_0\). It allows an additional hump or dip across maturities. When \(\beta_3=0\), the model reduces to Nelson–Siegel and \(\tau_2\) becomes unidentifiable from prices.</p>
+{{figure:svensson}}
+<h3>Additional flexibility has an identification cost</h3>
+<p>If \(\tau_1=\tau_2\), the two curvature columns are identical. Only their sum \(\beta_2+\beta_3\) is identified. When the decay times are merely close, the columns are nearly dependent; large opposite coefficients can produce a moderate fitted curve. A small residual can therefore coexist with unstable parameters.</p>
+<p>Sparse long-end observations can make the long level and second curvature partially compensate for one another. Different combinations may price observed maturities almost equally well but imply different extrapolated rates. Report the curve and its out-of-sample consequences, rather than interpret each coefficient as a uniquely measured economic quantity.</p>
+<h3>Parameter domains and conventions</h3>
+<p>Positive decay times are essential to the standard decaying basis. Rate coefficients may have either sign. Additional coefficient bounds, decay bounds or ordering rules are numerical and modelling choices. Ordering \(\tau_1&lt;\tau_2\) can simplify a particular implementation, but it restricts how the slope-associated first scale and the second curvature scale are assigned.</p>
+<p>The browser fit imposes positive bounded decay times and coefficient magnitudes at most 15%. It does not impose an ordering between the two decay times. Rank-deficient candidates are rejected. These safeguards keep the educational search finite and reproducible; they do not establish that the selected solution is the unique global optimum.</p>
+<h3>Reference shape and sources</h3>
+<p>The reference curve combines a short-end rise with a modest long-middle dip. Its second curvature coefficient is negative. The extra term lowers medium-to-long rates without altering the limiting level. At 30 years the zero is still about 3.219731%, below its 3.5% asymptote because the curvature and slope contributions have not vanished completely.</p>
+<p>Svensson introduced the extension for estimating and interpreting forward rates. Its use in institutional curve fitting makes it a natural companion to Nelson–Siegel, but institutional implementations differ in objectives, instrument selection and numerical details. <a href="https://www.nber.org/papers/w4871">Svensson, Estimating and Interpreting Forward Interest Rates</a>. A cross-country methodological survey is available in <a href="https://www.bis.org/publ/bppdf/bispap25.pdf">BIS Papers No. 25</a>.</p>
+<p>Choosing Svensson because it fits better in-sample is only the beginning. Test residuals, withheld maturities, parameter stability and extrapolation. If the extra factor reduces training error but substantially increases uncertainty where risk is concentrated, the simpler model may remain more useful for the intended application.</p>
+</section>

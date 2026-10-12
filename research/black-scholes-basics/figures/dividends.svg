@@ -1,0 +1,417 @@
+<svg role="img" aria-labelledby="dividends-title dividends-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="259.2pt" viewBox="0 0 662.4 259.2" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="dividends-title">Figure 09 · European and American call values under continuous dividends</title><desc id="dividends-desc">S₀ = K = 100, r = 5%, σ = 20%, τ = 1. Continuous yield q varies; this graph does not model discrete cash dividends. With q = 0 and non-negative rates, both exercise styles have the same continuous-time value.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T17:24:12.998316</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="dividends-figure_1">
+  <g id="dividends-patch_1">
+   <path d="M 0 259.2 
+L 662.4 259.2 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="dividends-axes_1">
+   <g id="dividends-patch_2">
+    <path d="M 45.38 215.98 
+L 648.9 215.98 
+L 648.9 13.5 
+L 45.38 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="dividends-matplotlib.axis_1">
+    <g id="dividends-xtick_1">
+     <g id="dividends-line2d_1">
+      <path d="M 72.812727 215.98 
+L 72.812727 13.5 
+" clip-path="url(#dividends-p5606570eaf)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dividends-line2d_2">
+      <defs>
+       <path id="dividends-m63a89f7957" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#dividends-m63a89f7957" x="72.812727" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dividends-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="72.812727" y="229.818594" transform="rotate(-0 72.812727 229.818594)">0</text>
+     </g>
+    </g>
+    <g id="dividends-xtick_2">
+     <g id="dividends-line2d_3">
+      <path d="M 164.255152 215.98 
+L 164.255152 13.5 
+" clip-path="url(#dividends-p5606570eaf)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dividends-line2d_4">
+      <g>
+       <use href="#dividends-m63a89f7957" x="164.255152" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dividends-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="164.255152" y="229.818594" transform="rotate(-0 164.255152 229.818594)">2</text>
+     </g>
+    </g>
+    <g id="dividends-xtick_3">
+     <g id="dividends-line2d_5">
+      <path d="M 255.697576 215.98 
+L 255.697576 13.5 
+" clip-path="url(#dividends-p5606570eaf)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dividends-line2d_6">
+      <g>
+       <use href="#dividends-m63a89f7957" x="255.697576" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dividends-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="255.697576" y="229.818594" transform="rotate(-0 255.697576 229.818594)">4</text>
+     </g>
+    </g>
+    <g id="dividends-xtick_4">
+     <g id="dividends-line2d_7">
+      <path d="M 347.14 215.98 
+L 347.14 13.5 
+" clip-path="url(#dividends-p5606570eaf)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dividends-line2d_8">
+      <g>
+       <use href="#dividends-m63a89f7957" x="347.14" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dividends-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="347.14" y="229.818594" transform="rotate(-0 347.14 229.818594)">6</text>
+     </g>
+    </g>
+    <g id="dividends-xtick_5">
+     <g id="dividends-line2d_9">
+      <path d="M 438.582424 215.98 
+L 438.582424 13.5 
+" clip-path="url(#dividends-p5606570eaf)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dividends-line2d_10">
+      <g>
+       <use href="#dividends-m63a89f7957" x="438.582424" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dividends-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="438.582424" y="229.818594" transform="rotate(-0 438.582424 229.818594)">8</text>
+     </g>
+    </g>
+    <g id="dividends-xtick_6">
+     <g id="dividends-line2d_11">
+      <path d="M 530.024848 215.98 
+L 530.024848 13.5 
+" clip-path="url(#dividends-p5606570eaf)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dividends-line2d_12">
+      <g>
+       <use href="#dividends-m63a89f7957" x="530.024848" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dividends-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="530.024848" y="229.818594" transform="rotate(-0 530.024848 229.818594)">10</text>
+     </g>
+    </g>
+    <g id="dividends-xtick_7">
+     <g id="dividends-line2d_13">
+      <path d="M 621.467273 215.98 
+L 621.467273 13.5 
+" clip-path="url(#dividends-p5606570eaf)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dividends-line2d_14">
+      <g>
+       <use href="#dividends-m63a89f7957" x="621.467273" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dividends-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="621.467273" y="229.818594" transform="rotate(-0 621.467273 229.818594)">12</text>
+     </g>
+    </g>
+    <g id="dividends-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="347.14" y="242.528906" transform="rotate(-0 347.14 242.528906)">Continuous dividend yield q (%)</text>
+    </g>
+   </g>
+   <g id="dividends-matplotlib.axis_2">
+    <g id="dividends-ytick_1">
+     <g id="dividends-line2d_15">
+      <path d="M 45.38 192.671687 
+L 648.9 192.671687 
+" clip-path="url(#dividends-p5606570eaf)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dividends-line2d_16">
+      <defs>
+       <path id="dividends-md96b1fa8d9" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#dividends-md96b1fa8d9" x="45.38" y="192.671687" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dividends-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="196.090984" transform="rotate(-0 38.38 196.090984)">5</text>
+     </g>
+    </g>
+    <g id="dividends-ytick_2">
+     <g id="dividends-line2d_17">
+      <path d="M 45.38 161.488228 
+L 648.9 161.488228 
+" clip-path="url(#dividends-p5606570eaf)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dividends-line2d_18">
+      <g>
+       <use href="#dividends-md96b1fa8d9" x="45.38" y="161.488228" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dividends-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="164.907525" transform="rotate(-0 38.38 164.907525)">6</text>
+     </g>
+    </g>
+    <g id="dividends-ytick_3">
+     <g id="dividends-line2d_19">
+      <path d="M 45.38 130.304769 
+L 648.9 130.304769 
+" clip-path="url(#dividends-p5606570eaf)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dividends-line2d_20">
+      <g>
+       <use href="#dividends-md96b1fa8d9" x="45.38" y="130.304769" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dividends-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="133.724066" transform="rotate(-0 38.38 133.724066)">7</text>
+     </g>
+    </g>
+    <g id="dividends-ytick_4">
+     <g id="dividends-line2d_21">
+      <path d="M 45.38 99.121309 
+L 648.9 99.121309 
+" clip-path="url(#dividends-p5606570eaf)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dividends-line2d_22">
+      <g>
+       <use href="#dividends-md96b1fa8d9" x="45.38" y="99.121309" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dividends-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="102.540606" transform="rotate(-0 38.38 102.540606)">8</text>
+     </g>
+    </g>
+    <g id="dividends-ytick_5">
+     <g id="dividends-line2d_23">
+      <path d="M 45.38 67.93785 
+L 648.9 67.93785 
+" clip-path="url(#dividends-p5606570eaf)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dividends-line2d_24">
+      <g>
+       <use href="#dividends-md96b1fa8d9" x="45.38" y="67.93785" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dividends-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="71.357147" transform="rotate(-0 38.38 71.357147)">9</text>
+     </g>
+    </g>
+    <g id="dividends-ytick_6">
+     <g id="dividends-line2d_25">
+      <path d="M 45.38 36.754391 
+L 648.9 36.754391 
+" clip-path="url(#dividends-p5606570eaf)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="dividends-line2d_26">
+      <g>
+       <use href="#dividends-md96b1fa8d9" x="45.38" y="36.754391" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="dividends-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="40.173688" transform="rotate(-0 38.38 40.173688)">10</text>
+     </g>
+    </g>
+    <g id="dividends-text_15">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.055781" y="114.74" transform="rotate(-90 21.055781 114.74)">Call value</text>
+    </g>
+   </g>
+   <g id="dividends-line2d_27">
+    <path d="M 72.812727 22.703636 
+L 81.95697 26.659685 
+L 91.101212 30.584416 
+L 100.245455 34.477861 
+L 109.389697 38.340053 
+L 118.533939 42.171027 
+L 127.678182 45.970821 
+L 136.822424 49.739476 
+L 145.966667 53.477033 
+L 155.110909 57.183536 
+L 164.255152 60.859033 
+L 173.399394 64.503572 
+L 182.543636 68.117205 
+L 191.687879 71.699985 
+L 200.832121 75.251968 
+L 209.976364 78.773212 
+L 219.120606 82.263777 
+L 228.264848 85.723725 
+L 237.409091 89.153121 
+L 246.553333 92.552033 
+L 255.697576 95.920529 
+L 264.841818 99.258681 
+L 273.986061 102.566562 
+L 283.130303 105.844248 
+L 292.274545 109.091818 
+L 301.418788 112.309351 
+L 310.56303 115.49693 
+L 319.707273 118.654639 
+L 328.851515 121.782565 
+L 337.995758 124.880797 
+L 347.14 127.949426 
+L 356.284242 130.988545 
+L 365.428485 133.998249 
+L 374.572727 136.978635 
+L 383.71697 139.929802 
+L 392.861212 142.851853 
+L 402.005455 145.74489 
+L 411.149697 148.609019 
+L 420.293939 151.444347 
+L 429.438182 154.250984 
+L 438.582424 157.029041 
+L 447.726667 159.778631 
+L 456.870909 162.49987 
+L 466.015152 165.192875 
+L 475.159394 167.857764 
+L 484.303636 170.494659 
+L 493.447879 173.103683 
+L 502.592121 175.684959 
+L 511.736364 178.238614 
+L 520.880606 180.764777 
+L 530.024848 183.263577 
+L 539.169091 185.735145 
+L 548.313333 188.179615 
+L 557.457576 190.597122 
+L 566.601818 192.987802 
+L 575.746061 195.351794 
+L 584.890303 197.689236 
+L 594.034545 200.000271 
+L 603.178788 202.28504 
+L 612.32303 204.543689 
+L 621.467273 206.776364 
+" clip-path="url(#dividends-p5606570eaf)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="dividends-line2d_28">
+    <path d="M 72.812727 22.781572 
+L 81.95697 26.737374 
+L 91.101212 30.661866 
+L 100.245455 34.555077 
+L 109.389697 38.417042 
+L 118.533939 42.247795 
+L 127.678182 46.047376 
+L 136.822424 49.815823 
+L 145.966667 53.553178 
+L 155.110909 57.259488 
+L 164.255152 60.934797 
+L 173.399394 64.579146 
+L 182.543636 68.192534 
+L 191.687879 71.774773 
+L 200.832121 75.325075 
+L 209.976364 78.841126 
+L 219.120606 82.317436 
+L 228.264848 85.742972 
+L 237.409091 89.099055 
+L 246.553333 92.361177 
+L 255.697576 95.508674 
+L 264.841818 98.535743 
+L 273.986061 101.452249 
+L 283.130303 104.275601 
+L 292.274545 107.022505 
+L 301.418788 109.705069 
+L 310.56303 112.331548 
+L 319.707273 114.906457 
+L 328.851515 117.432737 
+L 337.995758 119.913075 
+L 347.14 122.349465 
+L 356.284242 124.743617 
+L 365.428485 127.097375 
+L 374.572727 129.412044 
+L 383.71697 131.689099 
+L 392.861212 133.929593 
+L 402.005455 136.134559 
+L 411.149697 138.305065 
+L 420.293939 140.442059 
+L 429.438182 142.546474 
+L 438.582424 144.619294 
+L 447.726667 146.66105 
+L 456.870909 148.672547 
+L 466.015152 150.654613 
+L 475.159394 152.607826 
+L 484.303636 154.532845 
+L 493.447879 156.430196 
+L 502.592121 158.300576 
+L 511.736364 160.144436 
+L 520.880606 161.962399 
+L 530.024848 163.754972 
+L 539.169091 165.522708 
+L 548.313333 167.266074 
+L 557.457576 168.98532 
+L 566.601818 170.681345 
+L 575.746061 172.354222 
+L 584.890303 174.00441 
+L 594.034545 175.6327 
+L 603.178788 177.23888 
+L 612.32303 178.823654 
+L 621.467273 180.387825 
+" clip-path="url(#dividends-p5606570eaf)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="dividends-patch_3">
+    <path d="M 45.38 215.98 
+L 45.38 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="dividends-patch_4">
+    <path d="M 45.38 215.98 
+L 648.9 215.98 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="dividends-legend_1">
+    <g id="dividends-line2d_29">
+     <path d="M 522.7975 23.97875 
+L 530.7975 23.97875 
+L 538.7975 23.97875 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="dividends-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="545.1975" y="26.77875" transform="rotate(-0 545.1975 26.77875)">European call · BSM</text>
+    </g>
+    <g id="dividends-line2d_30">
+     <path d="M 522.7975 35.72125 
+L 530.7975 35.72125 
+L 538.7975 35.72125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="dividends-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="545.1975" y="38.52125" transform="rotate(-0 545.1975 38.52125)">American call · CRR 800</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="dividends-p5606570eaf">
+   <rect x="45.38" y="13.5" width="603.52" height="202.48"/>
+  </clipPath>
+ </defs>
+</svg>

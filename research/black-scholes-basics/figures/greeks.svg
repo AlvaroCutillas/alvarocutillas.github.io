@@ -1,0 +1,1657 @@
+<svg role="img" aria-labelledby="greeks-title greeks-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="432pt" viewBox="0 0 662.4 432" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="greeks-title">Figure 05 · European call sensitivities across maturities</title><desc id="greeks-desc">K = 100, r = 5%, q = 0, σ = 20%. Gamma concentrates near the strike as expiry approaches; vega tends to zero. Theta uses calendar time, ∂V/∂t, and is shown per year.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T17:24:09.536837</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="greeks-figure_1">
+  <g id="greeks-patch_1">
+   <path d="M 0 432 
+L 662.4 432 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="greeks-axes_1">
+   <g id="greeks-patch_2">
+    <path d="M 48.26 179.53 
+L 321.57 179.53 
+L 321.57 13.5 
+L 48.26 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="greeks-matplotlib.axis_1">
+    <g id="greeks-xtick_1">
+     <g id="greeks-line2d_1">
+      <path d="M 85.529545 179.53 
+L 85.529545 13.5 
+" clip-path="url(#greeks-p0f5040b844)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_2">
+      <defs>
+       <path id="greeks-m8e29eb55e9" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="85.529545" y="179.53" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="85.529545" y="193.368594" transform="rotate(-0 85.529545 193.368594)">60</text>
+     </g>
+    </g>
+    <g id="greeks-xtick_2">
+     <g id="greeks-line2d_3">
+      <path d="M 135.222273 179.53 
+L 135.222273 13.5 
+" clip-path="url(#greeks-p0f5040b844)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_4">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="135.222273" y="179.53" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="135.222273" y="193.368594" transform="rotate(-0 135.222273 193.368594)">80</text>
+     </g>
+    </g>
+    <g id="greeks-xtick_3">
+     <g id="greeks-line2d_5">
+      <path d="M 184.915 179.53 
+L 184.915 13.5 
+" clip-path="url(#greeks-p0f5040b844)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_6">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="184.915" y="179.53" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="184.915" y="193.368594" transform="rotate(-0 184.915 193.368594)">100</text>
+     </g>
+    </g>
+    <g id="greeks-xtick_4">
+     <g id="greeks-line2d_7">
+      <path d="M 234.607727 179.53 
+L 234.607727 13.5 
+" clip-path="url(#greeks-p0f5040b844)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_8">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="234.607727" y="179.53" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="234.607727" y="193.368594" transform="rotate(-0 234.607727 193.368594)">120</text>
+     </g>
+    </g>
+    <g id="greeks-xtick_5">
+     <g id="greeks-line2d_9">
+      <path d="M 284.300455 179.53 
+L 284.300455 13.5 
+" clip-path="url(#greeks-p0f5040b844)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_10">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="284.300455" y="179.53" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="284.300455" y="193.368594" transform="rotate(-0 284.300455 193.368594)">140</text>
+     </g>
+    </g>
+    <g id="greeks-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="184.915" y="206.078906" transform="rotate(-0 184.915 206.078906)">Spot S</text>
+    </g>
+   </g>
+   <g id="greeks-matplotlib.axis_2">
+    <g id="greeks-ytick_1">
+     <g id="greeks-line2d_11">
+      <path d="M 48.26 171.983182 
+L 321.57 171.983182 
+" clip-path="url(#greeks-p0f5040b844)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_12">
+      <defs>
+       <path id="greeks-m2957c52620" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#greeks-m2957c52620" x="48.26" y="171.983182" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="175.402479" transform="rotate(-0 41.26 175.402479)">0.0</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_2">
+     <g id="greeks-line2d_13">
+      <path d="M 48.26 141.795909 
+L 321.57 141.795909 
+" clip-path="url(#greeks-p0f5040b844)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_14">
+      <g>
+       <use href="#greeks-m2957c52620" x="48.26" y="141.795909" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="145.215206" transform="rotate(-0 41.26 145.215206)">0.2</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_3">
+     <g id="greeks-line2d_15">
+      <path d="M 48.26 111.608636 
+L 321.57 111.608636 
+" clip-path="url(#greeks-p0f5040b844)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_16">
+      <g>
+       <use href="#greeks-m2957c52620" x="48.26" y="111.608636" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="115.027933" transform="rotate(-0 41.26 115.027933)">0.4</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_4">
+     <g id="greeks-line2d_17">
+      <path d="M 48.26 81.421364 
+L 321.57 81.421364 
+" clip-path="url(#greeks-p0f5040b844)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_18">
+      <g>
+       <use href="#greeks-m2957c52620" x="48.26" y="81.421364" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="84.840661" transform="rotate(-0 41.26 84.840661)">0.6</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_5">
+     <g id="greeks-line2d_19">
+      <path d="M 48.26 51.234091 
+L 321.57 51.234091 
+" clip-path="url(#greeks-p0f5040b844)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_20">
+      <g>
+       <use href="#greeks-m2957c52620" x="48.26" y="51.234091" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="54.653388" transform="rotate(-0 41.26 54.653388)">0.8</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_6">
+     <g id="greeks-line2d_21">
+      <path d="M 48.26 21.046818 
+L 321.57 21.046818 
+" clip-path="url(#greeks-p0f5040b844)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_22">
+      <g>
+       <use href="#greeks-m2957c52620" x="48.26" y="21.046818" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="24.466115" transform="rotate(-0 41.26 24.466115)">1.0</text>
+     </g>
+    </g>
+    <g id="greeks-text_13">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.075469" y="96.515" transform="rotate(-90 21.075469 96.515)">Call delta (shares)</text>
+    </g>
+   </g>
+   <g id="greeks-line2d_23">
+    <path d="M 60.683182 171.844708 
+L 69.379409 171.569703 
+L 75.591 171.168098 
+L 80.560273 170.653892 
+L 85.529545 169.90665 
+L 89.877659 169.012594 
+L 93.604614 168.033623 
+L 97.331568 166.830534 
+L 101.058523 165.378854 
+L 104.785477 163.657063 
+L 108.512432 161.64761 
+L 112.239386 159.337773 
+L 115.966341 156.720327 
+L 119.693295 153.793987 
+L 123.42025 150.563597 
+L 127.147205 147.040076 
+L 131.495318 142.581394 
+L 135.843432 137.782197 
+L 140.812705 131.936975 
+L 146.403136 124.99266 
+L 153.857045 115.32581 
+L 173.112977 90.103789 
+L 179.324568 82.422509 
+L 184.915 75.862279 
+L 189.884273 70.359402 
+L 194.853545 65.195308 
+L 199.201659 60.969244 
+L 203.549773 57.02329 
+L 207.897886 53.359318 
+L 212.246 49.975089 
+L 216.594114 46.864872 
+L 220.942227 44.020053 
+L 225.290341 41.429725 
+L 229.638455 39.081238 
+L 233.986568 36.960697 
+L 238.955841 34.797464 
+L 243.925114 32.890182 
+L 248.894386 31.2162 
+L 254.484818 29.584185 
+L 260.07525 28.188921 
+L 266.286841 26.881574 
+L 272.498432 25.795092 
+L 279.331182 24.816228 
+L 286.785091 23.963276 
+L 295.481318 23.196501 
+L 305.419864 22.553264 
+L 309.146818 22.362884 
+L 309.146818 22.362884 
+" clip-path="url(#greeks-p0f5040b844)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-line2d_24">
+    <path d="M 60.683182 171.983182 
+L 113.481705 171.884653 
+L 120.314455 171.63848 
+L 124.662568 171.284376 
+L 128.389523 170.766786 
+L 131.495318 170.11744 
+L 133.979955 169.411276 
+L 136.464591 168.501242 
+L 138.949227 167.350144 
+L 141.433864 165.920097 
+L 143.9185 164.174115 
+L 146.403136 162.077898 
+L 148.887773 159.601697 
+L 151.372409 156.722154 
+L 153.857045 153.42397 
+L 156.341682 149.701286 
+L 158.826318 145.558668 
+L 161.310955 141.011616 
+L 164.41675 134.800304 
+L 167.522545 128.073183 
+L 171.2495 119.45609 
+L 176.218773 107.370777 
+L 186.157318 83.087414 
+L 189.884273 74.563486 
+L 193.611227 66.610793 
+L 196.717023 60.500186 
+L 199.822818 54.904647 
+L 202.928614 49.84664 
+L 205.41325 46.191181 
+L 207.897886 42.878801 
+L 210.382523 39.899764 
+L 212.867159 37.24001 
+L 215.351795 34.882108 
+L 217.836432 32.806167 
+L 220.321068 30.990684 
+L 222.805705 29.413299 
+L 225.9115 27.742042 
+L 229.017295 26.364384 
+L 232.123091 25.239232 
+L 235.228886 24.328506 
+L 238.955841 23.470361 
+L 243.303955 22.727589 
+L 248.273227 22.135888 
+L 253.863659 21.702568 
+L 261.317568 21.370416 
+L 271.256114 21.166905 
+L 288.648568 21.065561 
+L 309.146818 21.048585 
+L 309.146818 21.048585 
+" clip-path="url(#greeks-p0f5040b844)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-line2d_25">
+    <path d="M 60.683182 171.983182 
+L 163.174432 171.875025 
+L 165.659068 171.600548 
+L 166.901386 171.302733 
+L 168.143705 170.81622 
+L 169.386023 170.051482 
+L 170.628341 168.894155 
+L 171.870659 167.206893 
+L 173.112977 164.835845 
+L 174.355295 161.622363 
+L 175.597614 157.419655 
+L 176.839932 152.112809 
+L 178.08225 145.639451 
+L 179.324568 138.007492 
+L 181.188045 124.605576 
+L 183.672682 104.184947 
+L 187.399636 72.984254 
+L 189.263114 59.340684 
+L 190.505432 51.464744 
+L 191.74775 44.679451 
+L 192.990068 39.000192 
+L 194.232386 34.380058 
+L 195.474705 30.725486 
+L 196.717023 27.913493 
+L 197.959341 25.807968 
+L 199.201659 24.273188 
+L 200.443977 23.18366 
+L 201.686295 22.430129 
+L 202.928614 21.922207 
+L 204.792091 21.46924 
+L 207.276727 21.19468 
+L 211.003682 21.072792 
+L 222.805705 21.046849 
+L 309.146818 21.046818 
+L 309.146818 21.046818 
+" clip-path="url(#greeks-p0f5040b844)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-line2d_26">
+    <path d="M 184.915 179.53 
+L 184.915 13.5 
+" clip-path="url(#greeks-p0f5040b844)" style="fill: none; stroke-dasharray: 0.7,1.155; stroke-dashoffset: 0; stroke: #565e57; stroke-width: 0.7"/>
+   </g>
+   <g id="greeks-patch_3">
+    <path d="M 48.26 179.53 
+L 48.26 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-patch_4">
+    <path d="M 48.26 179.53 
+L 321.57 179.53 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-legend_1">
+    <g id="greeks-line2d_27">
+     <path d="M 54.56 22.668906 
+L 61.56 22.668906 
+L 68.56 22.668906 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="greeks-text_14">
+     <text style="fill: #c8cec8; font: 7px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.16" y="25.118906" transform="rotate(-0 74.16 25.118906)">τ = 1</text>
+    </g>
+    <g id="greeks-line2d_28">
+     <path d="M 54.56 32.943594 
+L 61.56 32.943594 
+L 68.56 32.943594 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="greeks-text_15">
+     <text style="fill: #c8cec8; font: 7px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.16" y="35.393594" transform="rotate(-0 74.16 35.393594)">τ = 0.25</text>
+    </g>
+    <g id="greeks-line2d_29">
+     <path d="M 54.56 43.218281 
+L 61.56 43.218281 
+L 68.56 43.218281 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="greeks-text_16">
+     <text style="fill: #c8cec8; font: 7px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.16" y="45.668281" transform="rotate(-0 74.16 45.668281)">τ = 0.02</text>
+    </g>
+   </g>
+  </g>
+  <g id="greeks-axes_2">
+   <g id="greeks-patch_5">
+    <path d="M 375.59 179.53 
+L 648.9 179.53 
+L 648.9 13.5 
+L 375.59 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="greeks-matplotlib.axis_3">
+    <g id="greeks-xtick_6">
+     <g id="greeks-line2d_30">
+      <path d="M 412.859545 179.53 
+L 412.859545 13.5 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_31">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="412.859545" y="179.53" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="412.859545" y="193.368594" transform="rotate(-0 412.859545 193.368594)">60</text>
+     </g>
+    </g>
+    <g id="greeks-xtick_7">
+     <g id="greeks-line2d_32">
+      <path d="M 462.552273 179.53 
+L 462.552273 13.5 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_33">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="462.552273" y="179.53" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_18">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="462.552273" y="193.368594" transform="rotate(-0 462.552273 193.368594)">80</text>
+     </g>
+    </g>
+    <g id="greeks-xtick_8">
+     <g id="greeks-line2d_34">
+      <path d="M 512.245 179.53 
+L 512.245 13.5 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_35">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="512.245" y="179.53" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_19">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="512.245" y="193.368594" transform="rotate(-0 512.245 193.368594)">100</text>
+     </g>
+    </g>
+    <g id="greeks-xtick_9">
+     <g id="greeks-line2d_36">
+      <path d="M 561.937727 179.53 
+L 561.937727 13.5 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_37">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="561.937727" y="179.53" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_20">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="561.937727" y="193.368594" transform="rotate(-0 561.937727 193.368594)">120</text>
+     </g>
+    </g>
+    <g id="greeks-xtick_10">
+     <g id="greeks-line2d_38">
+      <path d="M 611.630455 179.53 
+L 611.630455 13.5 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_39">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="611.630455" y="179.53" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="611.630455" y="193.368594" transform="rotate(-0 611.630455 193.368594)">140</text>
+     </g>
+    </g>
+    <g id="greeks-text_22">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="512.245" y="206.078906" transform="rotate(-0 512.245 206.078906)">Spot S</text>
+    </g>
+   </g>
+   <g id="greeks-matplotlib.axis_4">
+    <g id="greeks-ytick_7">
+     <g id="greeks-line2d_40">
+      <path d="M 375.59 171.983182 
+L 648.9 171.983182 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_41">
+      <g>
+       <use href="#greeks-m2957c52620" x="375.59" y="171.983182" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="368.59" y="175.402479" transform="rotate(-0 368.59 175.402479)">0.00</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_8">
+     <g id="greeks-line2d_42">
+      <path d="M 375.59 150.618225 
+L 648.9 150.618225 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_43">
+      <g>
+       <use href="#greeks-m2957c52620" x="375.59" y="150.618225" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="368.59" y="154.037522" transform="rotate(-0 368.59 154.037522)">0.02</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_9">
+     <g id="greeks-line2d_44">
+      <path d="M 375.59 129.253268 
+L 648.9 129.253268 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_45">
+      <g>
+       <use href="#greeks-m2957c52620" x="375.59" y="129.253268" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="368.59" y="132.672565" transform="rotate(-0 368.59 132.672565)">0.04</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_10">
+     <g id="greeks-line2d_46">
+      <path d="M 375.59 107.888312 
+L 648.9 107.888312 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_47">
+      <g>
+       <use href="#greeks-m2957c52620" x="375.59" y="107.888312" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="368.59" y="111.307609" transform="rotate(-0 368.59 111.307609)">0.06</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_11">
+     <g id="greeks-line2d_48">
+      <path d="M 375.59 86.523355 
+L 648.9 86.523355 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_49">
+      <g>
+       <use href="#greeks-m2957c52620" x="375.59" y="86.523355" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="368.59" y="89.942652" transform="rotate(-0 368.59 89.942652)">0.08</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_12">
+     <g id="greeks-line2d_50">
+      <path d="M 375.59 65.158398 
+L 648.9 65.158398 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_51">
+      <g>
+       <use href="#greeks-m2957c52620" x="375.59" y="65.158398" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="368.59" y="68.577695" transform="rotate(-0 368.59 68.577695)">0.10</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_13">
+     <g id="greeks-line2d_52">
+      <path d="M 375.59 43.793441 
+L 648.9 43.793441 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_53">
+      <g>
+       <use href="#greeks-m2957c52620" x="375.59" y="43.793441" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="368.59" y="47.212738" transform="rotate(-0 368.59 47.212738)">0.12</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_14">
+     <g id="greeks-line2d_54">
+      <path d="M 375.59 22.428485 
+L 648.9 22.428485 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_55">
+      <g>
+       <use href="#greeks-m2957c52620" x="375.59" y="22.428485" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="368.59" y="25.847782" transform="rotate(-0 368.59 25.847782)">0.14</text>
+     </g>
+    </g>
+    <g id="greeks-text_31">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="342.679219" y="96.515" transform="rotate(-90 342.679219 96.515)">Gamma (per spot unit)</text>
+    </g>
+   </g>
+   <g id="greeks-line2d_56">
+    <path d="M 388.013182 171.650861 
+L 394.845932 171.283362 
+L 401.057523 170.725405 
+L 406.647955 169.986027 
+L 411.617227 169.10802 
+L 416.5865 168.005681 
+L 421.555773 166.677472 
+L 427.146205 164.932024 
+L 433.357795 162.735679 
+L 442.054023 159.390041 
+L 452.613727 155.354803 
+L 458.204159 153.434313 
+L 463.173432 151.941989 
+L 467.521545 150.840166 
+L 471.869659 149.952615 
+L 476.217773 149.293801 
+L 480.565886 148.870138 
+L 484.914 148.68045 
+L 489.262114 148.716747 
+L 493.610227 148.965252 
+L 498.5795 149.485323 
+L 503.548773 150.225589 
+L 509.139205 151.276259 
+L 515.971955 152.797972 
+L 525.289341 155.132114 
+L 548.272227 161.000592 
+L 557.589614 163.087035 
+L 566.285841 164.794344 
+L 574.360909 166.160293 
+L 583.057136 167.400572 
+L 591.753364 168.419213 
+L 601.07075 169.293032 
+L 611.630455 170.05344 
+L 623.432477 170.671843 
+L 636.476818 171.14137 
+L 636.476818 171.14137 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-line2d_57">
+    <path d="M 388.013182 171.983182 
+L 434.600114 171.878037 
+L 440.811705 171.642257 
+L 445.159818 171.278317 
+L 448.886773 170.744877 
+L 451.992568 170.079185 
+L 455.098364 169.153639 
+L 457.583 168.188672 
+L 460.067636 166.995734 
+L 462.552273 165.553459 
+L 465.036909 163.847544 
+L 467.521545 161.873028 
+L 470.006182 159.636224 
+L 473.111977 156.501532 
+L 476.217773 153.053785 
+L 481.187045 147.139124 
+L 486.777477 140.495591 
+L 489.883273 137.115231 
+L 492.367909 134.697339 
+L 494.852545 132.606136 
+L 496.716023 131.286001 
+L 498.5795 130.199864 
+L 500.442977 129.361921 
+L 502.306455 128.781577 
+L 504.169932 128.463342 
+L 506.033409 128.406886 
+L 507.896886 128.607231 
+L 509.760364 129.055071 
+L 511.623841 129.7372 
+L 513.487318 130.637028 
+L 515.971955 132.141578 
+L 518.456591 133.946615 
+L 521.562386 136.539782 
+L 525.289341 139.996601 
+L 540.197159 154.249241 
+L 543.924114 157.297137 
+L 547.029909 159.577049 
+L 550.135705 161.608525 
+L 553.2415 163.391716 
+L 556.347295 164.935251 
+L 559.453091 166.25396 
+L 563.180045 167.5665 
+L 566.907 168.619568 
+L 570.633955 169.451343 
+L 574.982068 170.191126 
+L 579.951341 170.797186 
+L 585.541773 171.253652 
+L 592.995682 171.614047 
+L 602.934227 171.842266 
+L 619.084364 171.957014 
+L 636.476818 171.979477 
+L 636.476818 171.979477 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-line2d_58">
+    <path d="M 388.013182 171.983182 
+L 486.156318 171.889905 
+L 488.019795 171.705562 
+L 489.262114 171.438362 
+L 490.504432 170.957501 
+L 491.74675 170.129588 
+L 492.367909 169.528782 
+L 492.989068 168.765509 
+L 493.610227 167.80643 
+L 494.231386 166.614478 
+L 494.852545 165.149291 
+L 495.473705 163.367937 
+L 496.094864 161.225934 
+L 497.337182 155.682701 
+L 498.5795 148.191612 
+L 499.821818 138.515809 
+L 501.064136 126.584462 
+L 502.306455 112.563281 
+L 504.169932 88.680531 
+L 506.654568 56.075136 
+L 507.896886 41.970584 
+L 509.139205 30.865905 
+L 509.760364 26.741607 
+L 510.381523 23.692898 
+L 511.002682 21.782579 
+L 511.623841 21.046818 
+L 512.245 21.494068 
+L 512.866159 23.105087 
+L 513.487318 25.834017 
+L 514.108477 29.610473 
+L 515.350795 39.920135 
+L 516.593114 53.108189 
+L 518.456591 75.929438 
+L 520.941227 106.641805 
+L 522.804705 126.529048 
+L 524.047023 137.505798 
+L 525.289341 146.53086 
+L 526.531659 153.688595 
+L 527.773977 159.175021 
+L 529.016295 163.245746 
+L 530.258614 166.17319 
+L 531.500932 168.215973 
+L 532.74325 169.600465 
+L 533.985568 170.512609 
+L 535.227886 171.097225 
+L 536.470205 171.461988 
+L 538.333682 171.758117 
+L 541.439477 171.933658 
+L 548.272227 171.982087 
+L 636.476818 171.983182 
+L 636.476818 171.983182 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-line2d_59">
+    <path d="M 512.245 179.53 
+L 512.245 13.5 
+" clip-path="url(#greeks-pd966f8fdd0)" style="fill: none; stroke-dasharray: 0.7,1.155; stroke-dashoffset: 0; stroke: #565e57; stroke-width: 0.7"/>
+   </g>
+   <g id="greeks-patch_6">
+    <path d="M 375.59 179.53 
+L 375.59 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-patch_7">
+    <path d="M 375.59 179.53 
+L 648.9 179.53 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-legend_2">
+    <g id="greeks-line2d_60">
+     <path d="M 592.884687 22.668906 
+L 599.884687 22.668906 
+L 606.884687 22.668906 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="greeks-text_32">
+     <text style="fill: #c8cec8; font: 7px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="612.484687" y="25.118906" transform="rotate(-0 612.484687 25.118906)">τ = 1</text>
+    </g>
+    <g id="greeks-line2d_61">
+     <path d="M 592.884687 32.943594 
+L 599.884687 32.943594 
+L 606.884687 32.943594 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="greeks-text_33">
+     <text style="fill: #c8cec8; font: 7px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="612.484687" y="35.393594" transform="rotate(-0 612.484687 35.393594)">τ = 0.25</text>
+    </g>
+    <g id="greeks-line2d_62">
+     <path d="M 592.884687 43.218281 
+L 599.884687 43.218281 
+L 606.884687 43.218281 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="greeks-text_34">
+     <text style="fill: #c8cec8; font: 7px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="612.484687" y="45.668281" transform="rotate(-0 612.484687 45.668281)">τ = 0.02</text>
+    </g>
+   </g>
+  </g>
+  <g id="greeks-axes_3">
+   <g id="greeks-patch_8">
+    <path d="M 48.26 388.78 
+L 321.57 388.78 
+L 321.57 222.75 
+L 48.26 222.75 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="greeks-matplotlib.axis_5">
+    <g id="greeks-xtick_11">
+     <g id="greeks-line2d_63">
+      <path d="M 85.529545 388.78 
+L 85.529545 222.75 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_64">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="85.529545" y="388.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_35">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="85.529545" y="402.618594" transform="rotate(-0 85.529545 402.618594)">60</text>
+     </g>
+    </g>
+    <g id="greeks-xtick_12">
+     <g id="greeks-line2d_65">
+      <path d="M 135.222273 388.78 
+L 135.222273 222.75 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_66">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="135.222273" y="388.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_36">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="135.222273" y="402.618594" transform="rotate(-0 135.222273 402.618594)">80</text>
+     </g>
+    </g>
+    <g id="greeks-xtick_13">
+     <g id="greeks-line2d_67">
+      <path d="M 184.915 388.78 
+L 184.915 222.75 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_68">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="184.915" y="388.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_37">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="184.915" y="402.618594" transform="rotate(-0 184.915 402.618594)">100</text>
+     </g>
+    </g>
+    <g id="greeks-xtick_14">
+     <g id="greeks-line2d_69">
+      <path d="M 234.607727 388.78 
+L 234.607727 222.75 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_70">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="234.607727" y="388.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_38">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="234.607727" y="402.618594" transform="rotate(-0 234.607727 402.618594)">120</text>
+     </g>
+    </g>
+    <g id="greeks-xtick_15">
+     <g id="greeks-line2d_71">
+      <path d="M 284.300455 388.78 
+L 284.300455 222.75 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_72">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="284.300455" y="388.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_39">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="284.300455" y="402.618594" transform="rotate(-0 284.300455 402.618594)">140</text>
+     </g>
+    </g>
+    <g id="greeks-text_40">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="184.915" y="415.328906" transform="rotate(-0 184.915 415.328906)">Spot S</text>
+    </g>
+   </g>
+   <g id="greeks-matplotlib.axis_6">
+    <g id="greeks-ytick_15">
+     <g id="greeks-line2d_73">
+      <path d="M 48.26 381.233182 
+L 321.57 381.233182 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_74">
+      <g>
+       <use href="#greeks-m2957c52620" x="48.26" y="381.233182" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_41">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="384.652479" transform="rotate(-0 41.26 384.652479)">0.00</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_16">
+     <g id="greeks-line2d_75">
+      <path d="M 48.26 361.346163 
+L 321.57 361.346163 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_76">
+      <g>
+       <use href="#greeks-m2957c52620" x="48.26" y="361.346163" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_42">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="364.76546" transform="rotate(-0 41.26 364.76546)">0.05</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_17">
+     <g id="greeks-line2d_77">
+      <path d="M 48.26 341.459144 
+L 321.57 341.459144 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_78">
+      <g>
+       <use href="#greeks-m2957c52620" x="48.26" y="341.459144" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_43">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="344.878441" transform="rotate(-0 41.26 344.878441)">0.10</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_18">
+     <g id="greeks-line2d_79">
+      <path d="M 48.26 321.572125 
+L 321.57 321.572125 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_80">
+      <g>
+       <use href="#greeks-m2957c52620" x="48.26" y="321.572125" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_44">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="324.991421" transform="rotate(-0 41.26 324.991421)">0.15</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_19">
+     <g id="greeks-line2d_81">
+      <path d="M 48.26 301.685106 
+L 321.57 301.685106 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_82">
+      <g>
+       <use href="#greeks-m2957c52620" x="48.26" y="301.685106" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_45">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="305.104402" transform="rotate(-0 41.26 305.104402)">0.20</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_20">
+     <g id="greeks-line2d_83">
+      <path d="M 48.26 281.798086 
+L 321.57 281.798086 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_84">
+      <g>
+       <use href="#greeks-m2957c52620" x="48.26" y="281.798086" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_46">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="285.217383" transform="rotate(-0 41.26 285.217383)">0.25</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_21">
+     <g id="greeks-line2d_85">
+      <path d="M 48.26 261.911067 
+L 321.57 261.911067 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_86">
+      <g>
+       <use href="#greeks-m2957c52620" x="48.26" y="261.911067" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_47">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="265.330364" transform="rotate(-0 41.26 265.330364)">0.30</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_22">
+     <g id="greeks-line2d_87">
+      <path d="M 48.26 242.024048 
+L 321.57 242.024048 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_88">
+      <g>
+       <use href="#greeks-m2957c52620" x="48.26" y="242.024048" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_48">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="245.443345" transform="rotate(-0 41.26 245.443345)">0.35</text>
+     </g>
+    </g>
+    <g id="greeks-text_49">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="15.349219" y="305.765" transform="rotate(-90 15.349219 305.765)">Vega (per 1 vol point)</text>
+    </g>
+   </g>
+   <g id="greeks-line2d_89">
+    <path d="M 60.683182 380.614517 
+L 65.031295 380.154925 
+L 68.75825 379.560757 
+L 72.485205 378.720271 
+L 75.591 377.784106 
+L 78.696795 376.589728 
+L 81.181432 375.419721 
+L 83.666068 374.035478 
+L 86.150705 372.415925 
+L 88.635341 370.54127 
+L 91.119977 368.393614 
+L 93.604614 365.957567 
+L 96.08925 363.220827 
+L 98.573886 360.174712 
+L 101.058523 356.814622 
+L 103.543159 353.140408 
+L 106.648955 348.113342 
+L 109.75475 342.622659 
+L 112.860545 336.700046 
+L 116.5875 329.08453 
+L 120.935614 319.621412 
+L 126.526045 306.827815 
+L 138.949227 278.108397 
+L 143.297341 268.726199 
+L 147.024295 261.234798 
+L 150.130091 255.472114 
+L 153.235886 250.210747 
+L 155.720523 246.397511 
+L 158.205159 242.960233 
+L 160.689795 239.916861 
+L 163.174432 237.281247 
+L 165.037909 235.578155 
+L 166.901386 234.112635 
+L 168.764864 232.88608 
+L 170.628341 231.898673 
+L 172.491818 231.149443 
+L 174.355295 230.636311 
+L 176.218773 230.356151 
+L 178.08225 230.304858 
+L 179.945727 230.477411 
+L 181.809205 230.86795 
+L 183.672682 231.469846 
+L 185.536159 232.275782 
+L 187.399636 233.277824 
+L 189.884273 234.90423 
+L 192.368909 236.842844 
+L 194.853545 239.071202 
+L 197.338182 241.565999 
+L 200.443977 245.022792 
+L 203.549773 248.811422 
+L 207.276727 253.729501 
+L 211.624841 259.878978 
+L 216.594114 267.30133 
+L 224.048023 278.872256 
+L 235.850045 297.212043 
+L 242.061636 306.444655 
+L 247.652068 314.336739 
+L 252.621341 320.955589 
+L 256.969455 326.410937 
+L 261.317568 331.536421 
+L 265.665682 336.324126 
+L 270.013795 340.772299 
+L 274.361909 344.884355 
+L 278.710023 348.667949 
+L 283.058136 352.134104 
+L 287.40625 355.296436 
+L 291.754364 358.170461 
+L 296.102477 360.772986 
+L 300.450591 363.121599 
+L 304.798705 365.234224 
+L 309.146818 367.128769 
+L 309.146818 367.128769 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-line2d_90">
+    <path d="M 60.683182 381.233182 
+L 107.891273 381.127541 
+L 114.102864 380.871537 
+L 118.450977 380.456918 
+L 121.556773 379.953689 
+L 124.662568 379.199284 
+L 127.147205 378.359019 
+L 129.631841 377.257388 
+L 132.116477 375.845566 
+L 133.979955 374.554363 
+L 135.843432 373.043267 
+L 137.706909 371.29609 
+L 139.570386 369.299929 
+L 141.433864 367.046084 
+L 143.9185 363.634663 
+L 146.403136 359.76712 
+L 148.887773 355.471947 
+L 151.993568 349.580578 
+L 155.720523 341.944263 
+L 165.037909 322.481908 
+L 167.522545 317.830636 
+L 170.007182 313.648623 
+L 171.870659 310.886598 
+L 173.734136 308.490231 
+L 175.597614 306.492532 
+L 177.461091 304.919098 
+L 178.703409 304.114924 
+L 179.945727 303.510601 
+L 181.188045 303.107769 
+L 182.430364 302.90648 
+L 183.672682 302.90524 
+L 184.915 303.101059 
+L 186.157318 303.489535 
+L 187.399636 304.064935 
+L 188.641955 304.820302 
+L 190.505432 306.272867 
+L 192.368909 308.080702 
+L 194.232386 310.208506 
+L 196.717023 313.476782 
+L 199.201659 317.149652 
+L 202.307455 322.16026 
+L 207.276727 330.709699 
+L 214.109477 342.450013 
+L 217.836432 348.415434 
+L 220.942227 353.010471 
+L 224.048023 357.208821 
+L 227.153818 360.983489 
+L 229.638455 363.692656 
+L 232.123091 366.129348 
+L 234.607727 368.302504 
+L 237.092364 370.225098 
+L 239.577 371.913021 
+L 242.682795 373.720181 
+L 245.788591 375.22555 
+L 248.894386 376.4666 
+L 252.000182 377.479697 
+L 255.727136 378.442362 
+L 259.454091 379.179 
+L 263.802205 379.813998 
+L 268.771477 380.317418 
+L 274.983068 380.715074 
+L 283.058136 380.9944 
+L 294.860159 381.16096 
+L 309.146818 381.217664 
+L 309.146818 381.217664 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-line2d_91">
+    <path d="M 60.683182 381.233182 
+L 162.553273 381.140512 
+L 165.037909 380.92379 
+L 166.901386 380.545346 
+L 168.143705 380.117468 
+L 169.386023 379.491649 
+L 170.628341 378.615717 
+L 171.870659 377.443036 
+L 173.112977 375.942556 
+L 174.355295 374.109907 
+L 176.218773 370.820391 
+L 180.566886 362.541938 
+L 181.809205 360.738459 
+L 183.051523 359.478067 
+L 183.672682 359.086662 
+L 184.293841 358.866202 
+L 184.915 358.820556 
+L 185.536159 358.949486 
+L 186.157318 359.248706 
+L 186.778477 359.710097 
+L 188.020795 361.070002 
+L 189.263114 362.903835 
+L 191.126591 366.203504 
+L 194.232386 371.88697 
+L 196.095864 374.772836 
+L 197.338182 376.35276 
+L 198.5805 377.644319 
+L 199.822818 378.663244 
+L 201.065136 379.440429 
+L 202.307455 380.014436 
+L 204.170932 380.581791 
+L 206.034409 380.903992 
+L 208.519045 381.111478 
+L 212.867159 381.21617 
+L 230.259614 381.233181 
+L 309.146818 381.233182 
+L 309.146818 381.233182 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-line2d_92">
+    <path d="M 184.915 388.78 
+L 184.915 222.75 
+" clip-path="url(#greeks-paaa1214c9b)" style="fill: none; stroke-dasharray: 0.7,1.155; stroke-dashoffset: 0; stroke: #565e57; stroke-width: 0.7"/>
+   </g>
+   <g id="greeks-patch_9">
+    <path d="M 48.26 388.78 
+L 48.26 222.75 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-patch_10">
+    <path d="M 48.26 388.78 
+L 321.57 388.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-legend_3">
+    <g id="greeks-line2d_93">
+     <path d="M 265.554687 231.918906 
+L 272.554687 231.918906 
+L 279.554687 231.918906 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="greeks-text_50">
+     <text style="fill: #c8cec8; font: 7px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="285.154687" y="234.368906" transform="rotate(-0 285.154687 234.368906)">τ = 1</text>
+    </g>
+    <g id="greeks-line2d_94">
+     <path d="M 265.554687 242.193594 
+L 272.554687 242.193594 
+L 279.554687 242.193594 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="greeks-text_51">
+     <text style="fill: #c8cec8; font: 7px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="285.154687" y="244.643594" transform="rotate(-0 285.154687 244.643594)">τ = 0.25</text>
+    </g>
+    <g id="greeks-line2d_95">
+     <path d="M 265.554687 252.468281 
+L 272.554687 252.468281 
+L 279.554687 252.468281 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="greeks-text_52">
+     <text style="fill: #c8cec8; font: 7px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="285.154687" y="254.918281" transform="rotate(-0 285.154687 254.918281)">τ = 0.02</text>
+    </g>
+   </g>
+  </g>
+  <g id="greeks-axes_4">
+   <g id="greeks-patch_11">
+    <path d="M 375.59 388.78 
+L 648.9 388.78 
+L 648.9 222.75 
+L 375.59 222.75 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="greeks-matplotlib.axis_7">
+    <g id="greeks-xtick_16">
+     <g id="greeks-line2d_96">
+      <path d="M 412.859545 388.78 
+L 412.859545 222.75 
+" clip-path="url(#greeks-p093e13f669)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_97">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="412.859545" y="388.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_53">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="412.859545" y="402.618594" transform="rotate(-0 412.859545 402.618594)">60</text>
+     </g>
+    </g>
+    <g id="greeks-xtick_17">
+     <g id="greeks-line2d_98">
+      <path d="M 462.552273 388.78 
+L 462.552273 222.75 
+" clip-path="url(#greeks-p093e13f669)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_99">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="462.552273" y="388.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_54">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="462.552273" y="402.618594" transform="rotate(-0 462.552273 402.618594)">80</text>
+     </g>
+    </g>
+    <g id="greeks-xtick_18">
+     <g id="greeks-line2d_100">
+      <path d="M 512.245 388.78 
+L 512.245 222.75 
+" clip-path="url(#greeks-p093e13f669)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_101">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="512.245" y="388.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_55">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="512.245" y="402.618594" transform="rotate(-0 512.245 402.618594)">100</text>
+     </g>
+    </g>
+    <g id="greeks-xtick_19">
+     <g id="greeks-line2d_102">
+      <path d="M 561.937727 388.78 
+L 561.937727 222.75 
+" clip-path="url(#greeks-p093e13f669)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_103">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="561.937727" y="388.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_56">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="561.937727" y="402.618594" transform="rotate(-0 561.937727 402.618594)">120</text>
+     </g>
+    </g>
+    <g id="greeks-xtick_20">
+     <g id="greeks-line2d_104">
+      <path d="M 611.630455 388.78 
+L 611.630455 222.75 
+" clip-path="url(#greeks-p093e13f669)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_105">
+      <g>
+       <use href="#greeks-m8e29eb55e9" x="611.630455" y="388.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_57">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="611.630455" y="402.618594" transform="rotate(-0 611.630455 402.618594)">140</text>
+     </g>
+    </g>
+    <g id="greeks-text_58">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="512.245" y="415.328906" transform="rotate(-0 512.245 415.328906)">Spot S</text>
+    </g>
+   </g>
+   <g id="greeks-matplotlib.axis_8">
+    <g id="greeks-ytick_23">
+     <g id="greeks-line2d_106">
+      <path d="M 375.59 377.656675 
+L 648.9 377.656675 
+" clip-path="url(#greeks-p093e13f669)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_107">
+      <g>
+       <use href="#greeks-m2957c52620" x="375.59" y="377.656675" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_59">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="368.59" y="381.075972" transform="rotate(-0 368.59 381.075972)">−30</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_24">
+     <g id="greeks-line2d_108">
+      <path d="M 375.59 353.096699 
+L 648.9 353.096699 
+" clip-path="url(#greeks-p093e13f669)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_109">
+      <g>
+       <use href="#greeks-m2957c52620" x="375.59" y="353.096699" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_60">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="368.59" y="356.515995" transform="rotate(-0 368.59 356.515995)">−25</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_25">
+     <g id="greeks-line2d_110">
+      <path d="M 375.59 328.536723 
+L 648.9 328.536723 
+" clip-path="url(#greeks-p093e13f669)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_111">
+      <g>
+       <use href="#greeks-m2957c52620" x="375.59" y="328.536723" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_61">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="368.59" y="331.956019" transform="rotate(-0 368.59 331.956019)">−20</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_26">
+     <g id="greeks-line2d_112">
+      <path d="M 375.59 303.976746 
+L 648.9 303.976746 
+" clip-path="url(#greeks-p093e13f669)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_113">
+      <g>
+       <use href="#greeks-m2957c52620" x="375.59" y="303.976746" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_62">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="368.59" y="307.396043" transform="rotate(-0 368.59 307.396043)">−15</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_27">
+     <g id="greeks-line2d_114">
+      <path d="M 375.59 279.41677 
+L 648.9 279.41677 
+" clip-path="url(#greeks-p093e13f669)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_115">
+      <g>
+       <use href="#greeks-m2957c52620" x="375.59" y="279.41677" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_63">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="368.59" y="282.836067" transform="rotate(-0 368.59 282.836067)">−10</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_28">
+     <g id="greeks-line2d_116">
+      <path d="M 375.59 254.856794 
+L 648.9 254.856794 
+" clip-path="url(#greeks-p093e13f669)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_117">
+      <g>
+       <use href="#greeks-m2957c52620" x="375.59" y="254.856794" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_64">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="368.59" y="258.276091" transform="rotate(-0 368.59 258.276091)">−5</text>
+     </g>
+    </g>
+    <g id="greeks-ytick_29">
+     <g id="greeks-line2d_118">
+      <path d="M 375.59 230.296818 
+L 648.9 230.296818 
+" clip-path="url(#greeks-p093e13f669)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_119">
+      <g>
+       <use href="#greeks-m2957c52620" x="375.59" y="230.296818" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_65">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="368.59" y="233.716115" transform="rotate(-0 368.59 233.716115)">0</text>
+     </g>
+    </g>
+    <g id="greeks-text_66">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="343.724062" y="305.765" transform="rotate(-90 343.724062 305.765)">Call theta (per year)</text>
+    </g>
+   </g>
+   <g id="greeks-line2d_120">
+    <path d="M 388.013182 230.383899 
+L 398.572886 230.611201 
+L 406.647955 231.007703 
+L 412.859545 231.522227 
+L 418.449977 232.191027 
+L 424.040409 233.09182 
+L 429.009682 234.108869 
+L 433.978955 235.339793 
+L 438.948227 236.783863 
+L 444.538659 238.648001 
+L 450.75025 240.976457 
+L 458.204159 244.033278 
+L 481.187045 253.663233 
+L 487.398636 255.910323 
+L 492.989068 257.693392 
+L 497.958341 259.063529 
+L 502.927614 260.219472 
+L 507.896886 261.157669 
+L 512.866159 261.881517 
+L 517.835432 262.400325 
+L 523.425864 262.756537 
+L 529.016295 262.896365 
+L 535.227886 262.833033 
+L 542.060636 262.545768 
+L 550.135705 261.985454 
+L 561.316568 260.96216 
+L 599.828432 257.22799 
+L 613.493932 256.233876 
+L 627.159432 255.464664 
+L 636.476818 255.056769 
+L 636.476818 255.056769 
+" clip-path="url(#greeks-p093e13f669)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-line2d_121">
+    <path d="M 388.013182 230.296818 
+L 438.327068 230.402099 
+L 444.538659 230.630485 
+L 448.886773 230.978858 
+L 452.613727 231.486672 
+L 455.719523 232.119066 
+L 458.825318 232.998521 
+L 461.309955 233.917196 
+L 463.794591 235.056541 
+L 466.279227 236.440405 
+L 468.763864 238.087305 
+L 471.2485 240.008362 
+L 473.733136 242.205456 
+L 476.217773 244.669766 
+L 479.323568 248.09369 
+L 483.050523 252.615847 
+L 488.019795 259.06885 
+L 494.231386 267.101665 
+L 497.337182 270.79701 
+L 499.821818 273.484389 
+L 502.306455 275.873548 
+L 504.791091 277.920426 
+L 506.654568 279.210987 
+L 508.518045 280.281435 
+L 510.381523 281.126725 
+L 512.245 281.745799 
+L 514.108477 282.141416 
+L 515.971955 282.319894 
+L 517.835432 282.290764 
+L 519.698909 282.066368 
+L 521.562386 281.6614 
+L 524.047023 280.869409 
+L 526.531659 279.828923 
+L 529.637455 278.247904 
+L 533.364409 276.056737 
+L 539.576 272.062707 
+L 546.40875 267.737814 
+L 550.756864 265.247094 
+L 554.483818 263.342568 
+L 558.210773 261.672488 
+L 561.937727 260.23997 
+L 565.664682 259.035657 
+L 569.391636 258.041708 
+L 573.73975 257.117351 
+L 578.087864 256.408387 
+L 583.057136 255.811418 
+L 589.268727 255.307575 
+L 596.722636 254.946939 
+L 606.661182 254.709239 
+L 622.811318 254.583048 
+L 636.476818 254.55893 
+L 636.476818 254.55893 
+" clip-path="url(#greeks-p093e13f669)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-line2d_122">
+    <path d="M 388.013182 230.296818 
+L 486.777477 230.399039 
+L 488.640955 230.596826 
+L 489.883273 230.880362 
+L 491.125591 231.386068 
+L 492.367909 232.24929 
+L 492.989068 232.871976 
+L 493.610227 233.659844 
+L 494.231386 234.645913 
+L 494.852545 235.86668 
+L 495.473705 237.361645 
+L 496.094864 239.172555 
+L 497.337182 243.913893 
+L 498.5795 250.42263 
+L 499.821818 258.970407 
+L 501.064136 269.700554 
+L 502.306455 282.558945 
+L 504.169932 305.090589 
+L 507.896886 352.417488 
+L 509.139205 365.092121 
+L 510.381523 374.5258 
+L 511.002682 377.795692 
+L 511.623841 380.019752 
+L 512.245 381.167345 
+L 512.866159 381.233182 
+L 513.487318 380.237102 
+L 514.108477 378.222902 
+L 514.729636 375.256282 
+L 515.350795 371.422039 
+L 516.593114 361.56453 
+L 517.835432 349.572676 
+L 522.804705 298.599838 
+L 524.047023 288.438382 
+L 525.289341 279.936872 
+L 526.531659 273.085988 
+L 527.773977 267.756311 
+L 529.016295 263.746293 
+L 530.258614 260.823989 
+L 531.500932 258.758721 
+L 532.74325 257.341751 
+L 533.985568 256.397085 
+L 535.227886 255.784612 
+L 536.470205 255.398151 
+L 538.333682 255.080269 
+L 540.818318 254.908422 
+L 546.40875 254.836114 
+L 607.282341 254.832247 
+L 636.476818 254.832247 
+L 636.476818 254.832247 
+" clip-path="url(#greeks-p093e13f669)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-line2d_123">
+    <path d="M 512.245 388.78 
+L 512.245 222.75 
+" clip-path="url(#greeks-p093e13f669)" style="fill: none; stroke-dasharray: 0.7,1.155; stroke-dashoffset: 0; stroke: #565e57; stroke-width: 0.7"/>
+   </g>
+   <g id="greeks-patch_12">
+    <path d="M 375.59 388.78 
+L 375.59 222.75 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-patch_13">
+    <path d="M 375.59 388.78 
+L 648.9 388.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-legend_4">
+    <g id="greeks-line2d_124">
+     <path d="M 381.89 358.024844 
+L 388.89 358.024844 
+L 395.89 358.024844 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="greeks-text_67">
+     <text style="fill: #c8cec8; font: 7px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="401.49" y="360.474844" transform="rotate(-0 401.49 360.474844)">τ = 1</text>
+    </g>
+    <g id="greeks-line2d_125">
+     <path d="M 381.89 368.299531 
+L 388.89 368.299531 
+L 395.89 368.299531 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="greeks-text_68">
+     <text style="fill: #c8cec8; font: 7px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="401.49" y="370.749531" transform="rotate(-0 401.49 370.749531)">τ = 0.25</text>
+    </g>
+    <g id="greeks-line2d_126">
+     <path d="M 381.89 378.574219 
+L 388.89 378.574219 
+L 395.89 378.574219 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="greeks-text_69">
+     <text style="fill: #c8cec8; font: 7px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="401.49" y="381.024219" transform="rotate(-0 401.49 381.024219)">τ = 0.02</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="greeks-p0f5040b844">
+   <rect x="48.26" y="13.5" width="273.31" height="166.03"/>
+  </clipPath>
+  <clipPath id="greeks-pd966f8fdd0">
+   <rect x="375.59" y="13.5" width="273.31" height="166.03"/>
+  </clipPath>
+  <clipPath id="greeks-paaa1214c9b">
+   <rect x="48.26" y="222.75" width="273.31" height="166.03"/>
+  </clipPath>
+  <clipPath id="greeks-p093e13f669">
+   <rect x="375.59" y="222.75" width="273.31" height="166.03"/>
+  </clipPath>
+ </defs>
+</svg>

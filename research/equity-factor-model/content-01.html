@@ -1,0 +1,113 @@
+<section id="introduction" data-title="Introduction and mathematical scope">
+<div class="section-kicker">01 / Introduction</div><h2>Introduction and mathematical scope</h2>
+<p class="section-lede">An equity factor model organizes many stock returns around a smaller collection of common influences. It can describe risk, attribute performance, test asset-pricing restrictions or guide portfolio construction. Those uses share mathematical tools, but they are different questions.</p>
+<p>The <a href="markowitz-portfolio-theory.html">Markowitz project</a> treated expected returns and covariance as portfolio inputs. A factor model provides structure for those quantities. The <a href="systematic-trading-strategy.html">systematic trading project</a> turned lagged signals into positions; here the emphasis is on what a signal measures, how exposures are estimated, and whether a reported premium survives controls and implementation.</p>
+<p>Four equity characteristics are central: value, momentum, quality and low volatility. A stock's characteristic score, its sensitivity to a factor-return portfolio and the average return associated with that factor are not interchangeable. A company can have a high value score without having the same numerical value-factor beta. A high exposure can be risky without guaranteeing a positive future premium.</p>
+<div class="callout"><strong>An analogy: weather, sensitivity and construction material</strong><p>A building's material resembles a characteristic: something observed about the building. Its sensitivity to wind resembles a beta: how its measured behavior changes with a common influence. The wind itself resembles a factor realization. Material helps predict sensitivity, but they are different measurements. A stock's accounting ratio, regression beta and factor return play similarly distinct roles.</p></div>
+<h3>Organization and prerequisites</h3>
+<p>Part I establishes return conventions, linear models, CAPM and multifactor pricing, then develops the four styles. Part II builds the research pipeline: information timing, signal engineering, portfolio sorts, cross-sectional regressions, time-series attribution, inference and validation. Part III studies covariance, risk contributions, regularization and implementation, followed by an interactive laboratory, worked studies, an appendix and solved exercises.</p>
+<p>The prerequisites are return arithmetic, covariance, elementary linear algebra and ordinary least squares. Matrix formulas are accompanied by their economic interpretation. Pricing theory is presented as a set of assumptions and restrictions, rather than as proof that any selected style must earn a premium.</p>
+<h3>Numerical conventions</h3>
+<p>All observations on this page are synthetic. There is a 240-month panel with five factor series and a portfolio generated from known coefficients. A separate 160-stock formation snapshot supports cross-sectional experiments. No series is a downloaded Fama–French, QMJ, BAB or exchange dataset. Names describe the educational roles of the series, not their provenance.</p>
+<p>Returns are stored as decimals: 2% is 0.02. One basis point is 0.0001. Characteristic scores are dimensionless standardized descriptors. Betas are sensitivities to factor returns in the stated return units. Monthly alpha is reported in basis points per month. Risk is primarily reported at monthly frequency so that annualization assumptions remain visible.</p>
+<p>The synthetic factors have specified means and covariance; the disturbance has serial dependence and changing innovation variance. These choices expose inference and attribution issues deliberately. They are not estimates of historical market behavior. The laboratory freezes fitted coefficients before evaluating its withheld chronological block.</p>
+<p>This is the eighth and final Quant Basics study. It connects valuation, simulation, portfolio theory, risk and systematic implementation through a common discipline: distinguish observations from assumptions, and assess results in the units and framework that generated them.</p>
+</section>
+
+<section id="return-conventions" data-title="Returns, excess returns and factor units">
+<div class="section-kicker">02 / Observation coordinates</div><h2>Returns, excess returns and factor units</h2>
+<p>A simple total return includes price change and distributions over the holding interval. For a stock with initial price \(P_t\), ending price \(P_{t+1}\) and a distribution \(D_{t+1}\), ignoring taxes and transaction costs:</p>
+\[ R_{t+1}=\frac{P_{t+1}+D_{t+1}}{P_t}-1,\qquad
+r_{t+1}=R_{t+1}-R_{f,t+1}. \]
+<p>The risk-free return must refer to the same interval and currency. Subtracting an annualized yield directly from a monthly stock return introduces a unit error. A foreign-equity study also needs a consistent currency treatment; local-currency stock returns and dollar factor returns can mix equity and exchange-rate exposure.</p>
+<h3>Simple and logarithmic returns</h3>
+<p>For positive gross returns, a log return is \(g=\ln(1+R)\). Logs add over time, while simple returns compound. Simple stock returns combine linearly across beginning-of-period portfolio weights, which is why linear portfolio and factor models usually use them:</p>
+\[ R_{p,t}=\sum_i w_{i,t-1}R_{i,t},\qquad
+1+R_{\mathrm{cum}}=\prod_t(1+R_t),\qquad
+g_{\mathrm{cum}}=\sum_t g_t. \]
+<p>For a fully invested portfolio, weights sum to one before financing adjustments. A long–short portfolio can have net weight zero and gross exposure greater than one. Its return needs a declared capital normalization. “One dollar long and one dollar short” does not mean there is a nonzero net investment denominator to divide by.</p>
+<h3>Factor-return conventions</h3>
+<p>The market factor is commonly an excess return relative to a matched risk-free asset. A zero-investment style factor is a difference between long- and short-leg returns. Subtracting the risk-free return again from that spread is generally inappropriate: the common cash return cancels between matched legs, although actual financing and short costs can remain.</p>
+<p>Factor definitions specify portfolio weights, rebalance dates, universe, breakpoint rules and capital scaling. Doubling the numerical return of a factor while halving its beta leaves attribution unchanged. A beta of one has meaning only relative to the scale of that factor series.</p>
+\[ r_t=\alpha+\beta f_t+\varepsilon_t
+=\alpha+\left(\frac{\beta}{c}\right)(cf_t)+\varepsilon_t. \]
+<h3>Aggregation and annualization</h3>
+<p>Arithmetic mean monthly alpha multiplied by twelve is an annualized arithmetic rate, not a guaranteed compound excess return. Under independent identically distributed returns, annual variance is twelve times monthly variance. With autocorrelation, cross-month covariances enter:</p>
+\[ \operatorname{Var}\left(\sum_{t=1}^{12}r_t\right)
+=12\gamma_0+2\sum_{\ell=1}^{11}(12-\ell)\gamma_\ell. \]
+<p>Here \(\gamma_\ell\) is the lag-\(\ell\) covariance under stationarity. The square-root-of-twelve shortcut assumes the off-diagonal terms vanish and concerns the sum approximation. Compounded return distributions add further nonlinearities.</p>
+<h3>Attribution arithmetic</h3>
+<p>Monthly factor contributions add exactly in a linear model. Cumulative arithmetic contributions also add. Separately compounding the alpha, factor and residual components generally does not reproduce the compounded total because interaction terms appear. The figures and laboratory therefore label additive cumulative attribution explicitly.</p>
+<p>For market research, include dividends, splits, delistings and corporate actions through a consistent total-return source. Adjusted-price histories can contain later revisions. Keeping source version, currency and timestamp with returns is as important as choosing the regression method.</p>
+</section>
+
+<section id="linear-models" data-title="Linear factor representations and their distinct purposes">
+<div class="section-kicker">03 / Model representation</div><h2>Linear factor representations and their distinct purposes</h2>
+<p>For \(N\) assets and \(K\) factors, a return model can be written:</p>
+\[ r_t=\alpha+Bf_t+\varepsilon_t,\qquad
+\operatorname{Cov}(f_t,\varepsilon_t)=0. \]
+<p>The vector \(r_t\) contains excess returns, \(B\) is an \(N\times K\) loading matrix, and \(\varepsilon_t\) is the component not captured by the included factors. Orthogonality is a model assumption or a projection property; it does not imply that residuals are mutually independent across stocks or independent over time.</p>
+<h3>Statistical explanation</h3>
+<p>A regression estimates coefficients that summarize observed covariation. Its residual is “unexplained by this specification”, not automatically pure company-specific news. Omitted industries, currency exposure, nonlinear payoffs and measurement error can all remain in it. Adding factors usually improves in-sample fit, even if some are not economically meaningful.</p>
+<h3>Risk representation</h3>
+<p>If factor and residual covariance are uncorrelated at the stated horizon, the return covariance decomposes as:</p>
+\[ \Sigma_r=B\Sigma_fB^{\mathsf T}+\Sigma_\varepsilon. \]
+<p>A diagonal residual covariance is a further simplification. It can reduce estimation dimensionality dramatically, but omitted common effects can make that simplification inaccurate. The covariance model may be useful without asserting that the factors price expected returns.</p>
+<h3>Expected-return restrictions</h3>
+<p>Taking expectations gives \(E[r]=\alpha+B E[f]\) for traded-factor regressions with mean-zero disturbances. An asset-pricing model often imposes a restriction such as \(E[r]=B\lambda\), where \(\lambda\) is a vector of prices of risk. For nontraded factors, \(\lambda\) need not equal the sample average factor realization.</p>
+\[ \mathbb E[r_i]=\sum_{k=1}^{K}\beta_{ik}\lambda_k
+\quad\text{under the specified pricing restriction}. \]
+<p>A significant regression intercept challenges a particular benchmark and its maintained assumptions. It does not, by itself, identify manager skill, an investable arbitrage or the true model of expected returns.</p>
+<h3>Characteristic-based cross sections</h3>
+<p>A fundamental risk model can instead write each period's stock returns as \(R_{t+1}=X_tg_{t+1}+u_{t+1}\), where \(X_t\) contains formation-date characteristics and \(g_{t+1}\) is estimated from the realized cross-section. These are exposures and returns under a cross-sectional model, not the same objects as time-series betas on independently constructed traded factors.</p>
+<div class="callout"><strong>An analogy: coordinates on the same landscape</strong><p>Two maps can describe the same terrain using different axes. Characteristic scores describe where stocks sit in a chosen feature space. Time-series betas describe how their returns move with chosen factor portfolios. Either map can be useful, but numerical coordinates from one cannot be copied into the other without a transformation.</p></div>
+{{figure:decomposition}}
+<p>Throughout the notes, the purpose is stated before the equation is interpreted. Risk forecasting, performance attribution, expected-return prediction and formal pricing tests need different validation criteria. A high regression \(R^2\) establishes none of those applications automatically.</p>
+</section>
+
+<section id="capm" data-title="Market beta and the capital asset pricing model">
+<div class="section-kicker">04 / Single-factor benchmark</div><h2>Market beta and the capital asset pricing model</h2>
+<p>The CAPM links expected excess return to covariance with the market portfolio under its equilibrium assumptions. A population beta is:</p>
+\[ \beta_i=\frac{\operatorname{Cov}(r_i,r_M)}
+{\operatorname{Var}(r_M)},\qquad
+\mathbb E[r_i]=\beta_i\mathbb E[r_M]. \]
+<p>Its classic setting includes mean–variance investors, a common investment horizon, homogeneous expectations and access to a risk-free borrowing/lending asset under idealized conditions. The theoretical market portfolio contains all relevant invested wealth; an equity index used empirically is a proxy.</p>
+<h3>Beta versus volatility</h3>
+<p>A stock's volatility includes common and residual variation. Beta measures its covariance sensitivity to the market. The relationship is \(\beta_i=\rho_{iM}\sigma_i/\sigma_M\). A high-volatility stock can have a modest beta when its market correlation is low. A low-volatility stock can still have meaningful market exposure.</p>
+\[ \sigma_i^2=\beta_i^2\sigma_M^2+\sigma_{\varepsilon_i}^2
+\quad\text{in an orthogonal market model}. \]
+<p>Diversifying independent residual components lowers their portfolio contribution, while a common market exposure remains. Under CAPM assumptions, market covariance rather than standalone volatility receives the pricing reward.</p>
+<h3>The empirical market regression</h3>
+\[ r_{i,t}=\alpha_i+\beta_i r_{M,t}+\varepsilon_{i,t}. \]
+<p>OLS estimates the projection on the selected market proxy. A nonzero intercept is commonly called Jensen's alpha, but its interpretation is conditional on the benchmark, observation quality and inference. Missing styles or nonlinear exposure can appear as alpha. An estimated beta is not an intrinsic immutable property of a stock.</p>
+{{figure:capm}}
+<h3>Portfolio betas</h3>
+<p>For fixed beginning-of-period weights and matched return conventions, portfolio beta is the weighted sum of asset betas. A net-dollar-neutral portfolio can retain positive market beta if its long leg is more market sensitive than its short leg. Dollar neutrality and beta neutrality are different constraints.</p>
+<p>With dynamic weights, the beta of the resulting return time series need not equal a single average of static asset betas. Timing, leverage and changing covariances matter. A manager can change market exposure deliberately; attribution should consider whether a constant-beta model describes that behavior adequately.</p>
+<h3>Interpreting the benchmark</h3>
+<p>The CAPM offers a disciplined baseline and a clear distinction between covariance risk and total risk. Empirical failure of a market-only specification motivates richer models but does not make every proposed additional factor valid. It also tests a joint hypothesis involving the selected market proxy and maintained assumptions. <a href="https://doi.org/10.1111/j.1540-6261.1964.tb02865.x">Sharpe, Capital Asset Prices</a>.</p>
+<p>In the laboratory, selecting market only changes the regression benchmark while leaving the portfolio's generating style exposures intact. This makes omitted-factor effects observable: the residual absorbs style variation that the selected benchmark cannot describe.</p>
+</section>
+
+<section id="pricing-theory" data-title="Multifactor pricing, APT and stochastic discount factors">
+<div class="section-kicker">05 / Pricing restrictions</div><h2>Multifactor pricing, APT and stochastic discount factors</h2>
+<p>Multifactor models extend the market-only benchmark, but the existence of a return factorization does not automatically impose a linear expected-return relation. Pricing theory needs additional assumptions.</p>
+<h3>Arbitrage pricing intuition</h3>
+<p>In an APT setting, many assets share a finite set of common risks and sufficiently diversifiable residual components. Portfolios that eliminate common exposures and diversify residual risk constrain expected returns under no-arbitrage conditions. This motivates approximately linear pricing in factor sensitivities across a broad asset universe.</p>
+\[ \mu_i=\beta_i^{\mathsf T}\lambda
+\quad\text{for excess returns under a maintained factor-pricing model}. \]
+<p>The factors need not be traded portfolios. Their prices of risk must then be estimated or connected to a pricing kernel. The argument relies on diversification and economic assumptions; a small finite dataset with correlated residuals does not mechanically satisfy it.</p>
+<h3>Stochastic discount factors</h3>
+<p>A stochastic discount factor \(m_{t+1}\) prices gross returns through \(E[mR^{\mathrm{gross}}]=1\). For excess returns relative to a traded risk-free asset, \(E[mr]=0\). A linear factor specification is one possible representation:</p>
+\[ m=a-b^{\mathsf T}f,\qquad
+0=\mathbb E[mr_i]=\mathbb E[m]\mathbb E[r_i]
+-b^{\mathsf T}\operatorname{Cov}(f,r_i). \]
+<p>If factor covariance is invertible and \(\beta_i=\Sigma_f^{-1}\operatorname{Cov}(f,r_i)\), then a corresponding risk-price vector is \(\lambda=\Sigma_fb/E[m]\). This connects covariances to expected excess returns. It also shows why the mean of a nontraded factor is not generally its price of risk.</p>
+<h3>Traded factors and intercepts</h3>
+<p>When factors are returns on traded portfolios and the model prices them as well as the test assets, their expected excess returns can serve as risk premia under the model's normalization. In a time-series regression, testing that intercepts are zero evaluates that benchmark's pricing restriction.</p>
+<p>An intercept can reflect omitted priced risk, mismeasured returns, transaction costs, model misspecification or sampling noise. Calling it skill requires a stronger economic argument. Calling it arbitrage requires a feasible strategy with its financing, shorting and risk restrictions specified.</p>
+<h3>Joint tests and limitations</h3>
+<p>Testing many alphas separately produces a multiple-testing problem. Joint pricing tests account for their residual covariance and factor uncertainty under specified assumptions. Classical exact tests usually require stronger distributional and independence conditions than a descriptive OLS fit.</p>
+<p>A model may fit time-series variation well but fail to price average returns; it may explain average returns while leaving much high-frequency variance unexplained. Expected-return estimation is intrinsically difficult because mean signals are small relative to return noise. The distinction is central to the later validation chapters.</p>
+<p>The following style chapters introduce research-motivated characteristics and portfolio definitions. They do not presume that every reported historical anomaly is a universally positive, independent price of risk.</p>
+</section>

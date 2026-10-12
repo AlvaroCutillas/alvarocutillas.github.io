@@ -1,0 +1,120 @@
+<section id="point-in-time" data-title="Point-in-time data, universe design and research biases">
+<div class="section-kicker">11 / Information sets</div><h2>Point-in-time data, universe design and research biases</h2>
+<p>A factor study needs a universe and information set that could have existed at each formation date. A sophisticated regression cannot repair a dataset containing future knowledge.</p>
+<h3>Three different dates</h3>
+<p>A fundamental record has an economic period, a publication date and a database availability or revision date. Its fiscal-year label alone does not establish when an investor could use it. Store the date on which the chosen data version became available and apply any intentional processing lag.</p>
+<p>Universe membership should also be historical. Selecting today's surviving stocks and replaying them through the past excludes failures, mergers and delistings. Delisting proceeds and distributions need a consistent total-return treatment. Requiring long future histories for inclusion introduces another survival screen.</p>
+<h3>Formation and execution</h3>
+<p>Specify when the signal is observable and when positions can be traded. A signal calculated from a finalized close cannot automatically be executed at that same close with certainty. A feasible next-session or pre-close decision rule belongs in the research design.</p>
+\[ w_t=\mathcal W(\mathcal I_t),\qquad
+R_{p,t+1}=\sum_i w_{i,t}R_{i,t+1},
+\quad\mathcal I_t\text{ contains only information available at formation}. \]
+<p>The notation identifies information timing but does not supply an execution model. Corporate announcements, time zones, holidays and reporting delays can shift availability within a nominal month. Preserve actual timestamps when the application requires that precision.</p>
+<h3>Eligibility and missing observations</h3>
+<p>Set rules for minimum price, liquidity, market capitalization, trading history and accounting fields. Decide how negative or missing fundamental values are treated. Excluding a stock after discovering that its future return is awkward invalidates the formation universe.</p>
+<p>Historical sector classifications, exchange listings and identifier mappings matter. A current sector label can embed a later business change. A ticker is not a stable security identifier across mergers and relistings. The data pipeline should connect prices, fundamentals and corporate actions using dated identifiers.</p>
+<h3>Researcher choices as sources of bias</h3>
+<p>Trying many lookbacks, breakpoints, exclusions and composites creates selection effects even if every individual signal uses lagged inputs. Report the scope of the search, including discarded variants where relevant. A final winning strategy's conventional t-statistic does not account for that search.</p>
+<p>Repeatedly checking a holdout and revising the model turns it into development data. Maintain a genuinely untouched evaluation stage or use a nested chronological procedure. Publication bias further complicates interpretation of a literature containing many successful reported factors and fewer unsuccessful experiments.</p>
+<h3>Reproducible records</h3>
+<p>Save universe snapshots, raw and transformed descriptors, eligibility decisions, source releases, weights and return observations. Record every transformation so a stock's score can be reconstructed. A spreadsheet of final factor returns without construction records can be useful for attribution but is insufficient for replication.</p>
+<p>The synthetic snapshot here has a fixed formation information set and a separately generated next-month return. Its realized returns are used for ex post analysis after selection. The time-series panel is separately split chronologically. Neither setup attempts to simulate a real corporate-data release calendar, and that limitation is stated explicitly.</p>
+</section>
+
+<section id="signal-engineering" data-title="Descriptor transforms, winsorization and standardization">
+<div class="section-kicker">12 / Characteristic engineering</div><h2>Descriptor transforms, winsorization and standardization</h2>
+<p>Raw descriptors have different scales, tail behavior and economic domains. A transformation pipeline establishes the ordering and units used by portfolio sorts and cross-sectional models.</p>
+<h3>Direction and domain</h3>
+<p>Choose signs so that higher scores consistently indicate the intended style. Value may use a high yield; low volatility may use negative volatility. A logarithm can stabilize a positive ratio's range but cannot be applied unchanged to zero or negative values. Missing and inadmissible values need an explicit policy.</p>
+<h3>Winsorization</h3>
+<p>Clipping at declared lower and upper thresholds reduces the influence of extreme observations:</p>
+\[ x_i^{\mathrm{clip}}=\min\left(q_H,\max(q_L,x_i)\right). \]
+<p>The thresholds can be cross-sectional quantiles or robust scale limits. Winsorization keeps observations but changes their values; trimming removes them. Both can change the factor being studied. A distress-related extreme may contain economic information, so clipping is a trade-off rather than a universal correction.</p>
+<h3>Standardization</h3>
+\[ z_i=\frac{x_i^{\mathrm{clip}}-\bar x}{s_x},\qquad
+\bar x=\frac1N\sum_i x_i^{\mathrm{clip}},\qquad
+s_x^2=\frac1N\sum_i(x_i^{\mathrm{clip}}-\bar x)^2. \]
+<p>The laboratory uses population cross-sectional scaling with denominator \(N\), giving mean zero and average squared score one. A sample-standard-deviation convention with \(N-1\) is also possible, but its scores differ slightly. Weighted standardization introduces a further convention, commonly related to capitalization or risk-model weights.</p>
+{{figure:engineering}}
+<h3>Ranks and robust alternatives</h3>
+<p>Ranks reduce sensitivity to the magnitudes of extreme values. Ties should receive average ranks or another declared rule. A normal-score transform maps percentile ranks through an inverse normal function, with clipping away from zero and one. This changes the scale of distances between stocks even if the ordering remains similar.</p>
+<p>Median and median-absolute-deviation scaling can be useful for heavy tails. The chosen normalizing constant and zero-scale handling should be explicit. A feature with nearly no variation cannot be turned into informative cross-sectional dispersion by dividing by an arbitrarily tiny number.</p>
+<h3>Composites and correlated descriptors</h3>
+<p>After standardizing each component, combine them with declared weights and optionally restandardize the composite. Several correlated components can amplify the same economic exposure. Orthogonalizing one feature against another changes its interpretation to a residual characteristic; the order of sequential orthogonalization matters.</p>
+<p>Cross-sectional transforms at date \(t\) use the eligible formation universe at \(t\). Time-series predictive preprocessing should be estimated only on training data and applied unchanged to validation. These are different operations: using the current formation cross-section is legitimate, while using future time observations to choose a predictive scale is leakage.</p>
+<h3>Audit the transformed object</h3>
+<p>Check means, standard deviations, clipping counts, missingness and extreme ranks. Compare across sectors and sizes. Keep raw descriptors as well as transformed scores so unexpected exposures can be traced to their source.</p>
+<p>The snapshot clips each of four raw synthetic descriptors at its 2.5th and 97.5th percentiles and then standardizes it. The same values enter both the sorts and cross-sectional regression. This common preprocessing makes differences in their results attributable to portfolio and regression definitions rather than a hidden change in scores.</p>
+</section>
+
+<section id="portfolio-sorts" data-title="Portfolio sorts, weighting and neutrality constraints">
+<div class="section-kicker">13 / Factor construction</div><h2>Portfolio sorts, weighting and neutrality constraints</h2>
+<p>A portfolio sort translates a characteristic ordering into weights. Define the eligible universe, breakpoint population, tail size, leg normalization and rebalance rule before calculating returns.</p>
+<h3>Tail portfolios</h3>
+<p>For high-score set \(H\) and low-score set \(L\), an equal-weight long–short portfolio can use:</p>
+\[ w_i=\frac{\mathbf{1}_{\{i\in H\}}}{|H|}
+-\frac{\mathbf{1}_{\{i\in L\}}}{|L|},\qquad
+\sum_iw_i=0,\qquad\sum_i|w_i|=2. \]
+<p>The capital normalization is declared as one unit for the return calculation. The long and short legs each carry one unit of gross exposure. A half-long, half-short convention produces half the numerical factor return and correspondingly changes regression betas.</p>
+<p>Capitalization weighting can make large stocks dominate and reduce exposure to microcaps. Equal weighting gives every eligible stock the same leg weight. Score weighting can spread exposure more continuously but needs a rule for signs and normalization. Different choices are different factors.</p>
+{{figure:deciles}}
+<h3>Univariate and independent double sorts</h3>
+<p>A univariate value sort can inherit size or sector exposure. Independent sorts first classify stocks along two dimensions, such as size and value, then combine cell portfolios. Conditional sorts rank the second characteristic within the first grouping. Breakpoint samples and empty-cell rules influence the result.</p>
+<p>Choosing a narrow tail increases score separation but can increase concentration, turnover and measurement sensitivity. Broad tails diversify names but dilute characteristic exposure. A larger gross spread does not automatically imply better risk-adjusted or net performance.</p>
+<h3>Dollar, sector and beta neutrality</h3>
+<p>Net weight zero gives dollar neutrality under the chosen normalization. Sector neutrality requires each sector's net weight to be zero. Market-beta neutrality requires \(\sum_iw_i\beta_{iM}=0\). These are different constraints and can conflict with maintaining equal weights or fixed gross exposure.</p>
+\[ \sum_{i\in s}w_i=0\quad\text{for each sector }s,\qquad
+\sum_iw_i\beta_{iM}=0\quad\text{for beta neutrality}. \]
+{{figure:neutrality}}
+<p>Centering scores within sectors is not enough to guarantee sector-neutral portfolio weights when a global tail is then selected. The laboratory instead forms equal tails within each sector and assigns each sector equal gross capital. That construction directly balances sector weights.</p>
+<h3>Changing the economic question</h3>
+<p>An unrestricted sort measures the combined return of the characteristic and its associated sector allocation. A sector-neutral sort measures within-sector selection under its weighting rule. Neither is universally the correct answer; choose the construction for the research question and report the difference.</p>
+<p>Descriptor exposure is \(w^{\mathsf T}z\). It is measured in standardized characteristic units. A factor beta is estimated from a return series. The portfolio table below labels descriptor exposures explicitly to preserve that distinction.</p>
+<p>Real implementation adds trade timing, borrow availability, financing, impact and weight drift. A formation snapshot supplies intended weights; it is the beginning of a trading process rather than a full net-return history.</p>
+</section>
+
+<section id="cross-sectional-regression" data-title="Cross-sectional regression and factor-return estimation">
+<div class="section-kicker">14 / Cross-sectional estimation</div><h2>Cross-sectional regression and factor-return estimation</h2>
+<p>A cross-sectional model uses characteristics known at formation to explain realized returns across stocks in the following period. Let \(X_t\) contain an intercept, style scores and sector exposures:</p>
+\[ R_{t+1}=X_tg_{t+1}+u_{t+1},\qquad
+g_{t+1}^{\mathrm{WLS}}=\arg\min_g
+(R_{t+1}-X_tg)^{\mathsf T}W_t(R_{t+1}-X_tg). \]
+<p>The estimated \(g_{t+1}\) is an ex post cross-sectional factor realization. It was not available when the portfolio was formed. Estimating it using realized returns is appropriate for attribution; using the same realization to select earlier positions would be look-ahead.</p>
+<h3>Partial coefficients</h3>
+<p>The value coefficient measures the fitted return change per value-score unit holding the included momentum, quality, low-volatility and sector columns fixed. A univariate value sort does not hold those other exposures fixed. Correlated descriptors explain why their numerical results can differ.</p>
+<p>A standardized score unit is one formation-universe standard deviation under the chosen transform. Changing the standardization changes the coefficient's units. Comparing coefficients across dates requires attention to how the raw characteristic's dispersion changed.</p>
+{{figure:cross-section}}
+<h3>Sector coding and identification</h3>
+<p>An intercept plus a dummy for every sector is rank deficient because sector dummies sum to the intercept. One solution omits a reference sector. Another imposes a weighted zero-sum restriction on sector effects. These conventions produce different displayed intercept and sector coefficients but can represent the same fitted returns.</p>
+<p>The snapshot uses an intercept and indicators for sectors B, C and D, with A as the reference. Style coefficients are partial effects after those controls. The intercept is the fitted return for the reference sector at zero style scores, not a market premium or a time-series alpha.</p>
+<h3>Weights and inference</h3>
+<p>Equal-weight OLS gives every stock equal influence. Market-cap or other weights emphasize a different cross-section. Inverse residual-variance weights can improve efficiency if the variance model is correct. Practical risk-model weights may deliberately limit microcap influence rather than claim statistical optimality.</p>
+<p>Cross-sectional heteroskedasticity and residual dependence require appropriate uncertainty estimates. Sector clustering can be useful when enough independent clusters exist, but four sectors do not provide a large-cluster asymptotic setting. The laboratory does not present those four clusters as a reliable generic significance test.</p>
+<h3>From fitted coefficients to portfolios</h3>
+<p>In an unconstrained full-rank WLS model, estimated coefficients are linear functions of stock returns. This defines factor-mimicking weights mathematically. Those weights can include large short positions or exposures to illiquid names; the algebra does not establish tradability.</p>
+<p>A characteristic forecast model would estimate a rule for future \(g\) using prior periods, then form \(X_tE_t[g_{t+1}]\). That is a further time-series estimation and validation problem. The current-period cross-sectional fit alone supplies no known next-period premium.</p>
+</section>
+
+<section id="information-coefficients" data-title="Information coefficients and cross-sectional validation">
+<div class="section-kicker">15 / Signal assessment</div><h2>Information coefficients and cross-sectional validation</h2>
+<p>The information coefficient measures a cross-sectional association between a formation signal and a subsequently observed target. Its definition must identify the universe, timing, return horizon and target adjustment.</p>
+\[ IC_t=\operatorname{Corr}_i(z_{i,t},R_{i,t+1}),\qquad
+IC_t^{\mathrm{rank}}=\operatorname{Corr}_i
+(\operatorname{rank}z_{i,t},\operatorname{rank}R_{i,t+1}). \]
+<p>Pearson IC uses magnitudes and linear association. Rank IC uses ordering and is less sensitive to some extreme values. Average ranks handle ties. Neither establishes causality, an investable return or a positive net premium after costs.</p>
+<h3>Raw and adjusted targets</h3>
+<p>Raw returns can reward a signal that merely tilts toward a strong sector or market exposure. Residual or sector-adjusted targets answer a more conditional question. Report which adjustment was used and how its parameters were estimated, especially if an adjustment itself could use future information.</p>
+<p>A single date's IC can be noisy. A time series of ICs permits assessment of average association, variation and persistence. Cross-stock dependence means 160 stocks need not provide 160 independent observations. Time dependence means twelve overlapping horizon ICs need not provide twelve independent dates.</p>
+{{figure:ic}}
+<h3>Signal strength and noise</h3>
+<p>For one standardized signal \(z\) with \(y=\theta z+\varepsilon\), independent noise and variance \(\sigma_\varepsilon^2\), population IC is:</p>
+\[ IC=\frac{\theta}{\sqrt{\theta^2+\sigma_\varepsilon^2}}. \]
+<p>This simple result explains why a small per-stock relation can be difficult to observe even when many names are available. With several correlated signals, a univariate IC combines partial effects and overlaps. A partial regression coefficient and a raw IC therefore answer different questions.</p>
+<h3>From information to implementation</h3>
+<p>The sometimes-used relation between information ratio, IC and breadth requires strong assumptions about independent opportunities, forecasts and portfolio transfer. Correlated stocks, overlapping holding periods, constraints and turnover can reduce effective breadth. Treat such relations as conditional approximations rather than a mechanical formula for profit.</p>
+<p>Evaluate portfolio spreads and costs alongside IC. A useful ranking can be untradeable when its opportunities are small or costly. A high IC driven by a few inaccessible stocks may not transfer to the portfolio actually held.</p>
+<h3>Multiple tests</h3>
+<p>Testing many descriptors, horizons and universes inflates the chance of a favourable IC or t-statistic by luck. Correct for the research process, reserve evaluation data and document selection. A conventional threshold for one prespecified test does not become valid after a broad factor search.</p>
+<p>Harvey, Liu and Zhu study the consequences of extensive factor discovery and multiple testing. Their work motivates greater evidential discipline, rather than one universal numerical cutoff that fits every research design. <a href="https://people.duke.edu/~charvey/Research/Published_Papers/P118_and_the_cross.PDF">… and the Cross-Section of Expected Returns</a>.</p>
+<p>The laboratory reports Pearson and rank IC for its entire 160-stock synthetic snapshot. That is one realized cross-sectional outcome. It is clearly separated from the long–short tail portfolio and from any claim about a persistent historical signal.</p>
+</section>

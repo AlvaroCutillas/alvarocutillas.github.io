@@ -1,0 +1,340 @@
+<svg role="img" aria-labelledby="inference-title inference-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="252pt" viewBox="0 0 792 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="inference-title">Figure 11 · Inference with dependent disturbances</title><desc id="inference-desc">Lag zero is heteroskedasticity-robust with the stated finite-sample adjustment. HAC does not change OLS coefficients, and its standard error need not increase monotonically with bandwidth.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-05T16:04:05.774947</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="inference-figure_1">
+  <g id="inference-patch_1">
+   <path d="M 0 252 
+L 792 252 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="inference-axes_1">
+   <g id="inference-patch_2">
+    <path d="M 68.42 208.78 
+L 778.5 208.78 
+L 778.5 35.14 
+L 68.42 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="inference-matplotlib.axis_1">
+    <g id="inference-xtick_1">
+     <g id="inference-line2d_1">
+      <path d="M 100.696364 208.78 
+L 100.696364 35.14 
+" clip-path="url(#inference-p86ae37c1ab)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inference-line2d_2">
+      <defs>
+       <path id="inference-m32d2b8ad1e" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#inference-m32d2b8ad1e" x="100.696364" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inference-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="100.696364" y="222.618594" transform="rotate(-0 100.696364 222.618594)">0</text>
+     </g>
+    </g>
+    <g id="inference-xtick_2">
+     <g id="inference-line2d_3">
+      <path d="M 208.284242 208.78 
+L 208.284242 35.14 
+" clip-path="url(#inference-p86ae37c1ab)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inference-line2d_4">
+      <g>
+       <use href="#inference-m32d2b8ad1e" x="208.284242" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inference-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="208.284242" y="222.618594" transform="rotate(-0 208.284242 222.618594)">2</text>
+     </g>
+    </g>
+    <g id="inference-xtick_3">
+     <g id="inference-line2d_5">
+      <path d="M 315.872121 208.78 
+L 315.872121 35.14 
+" clip-path="url(#inference-p86ae37c1ab)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inference-line2d_6">
+      <g>
+       <use href="#inference-m32d2b8ad1e" x="315.872121" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inference-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="315.872121" y="222.618594" transform="rotate(-0 315.872121 222.618594)">4</text>
+     </g>
+    </g>
+    <g id="inference-xtick_4">
+     <g id="inference-line2d_7">
+      <path d="M 423.46 208.78 
+L 423.46 35.14 
+" clip-path="url(#inference-p86ae37c1ab)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inference-line2d_8">
+      <g>
+       <use href="#inference-m32d2b8ad1e" x="423.46" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inference-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="423.46" y="222.618594" transform="rotate(-0 423.46 222.618594)">6</text>
+     </g>
+    </g>
+    <g id="inference-xtick_5">
+     <g id="inference-line2d_9">
+      <path d="M 531.047879 208.78 
+L 531.047879 35.14 
+" clip-path="url(#inference-p86ae37c1ab)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inference-line2d_10">
+      <g>
+       <use href="#inference-m32d2b8ad1e" x="531.047879" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inference-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="531.047879" y="222.618594" transform="rotate(-0 531.047879 222.618594)">8</text>
+     </g>
+    </g>
+    <g id="inference-xtick_6">
+     <g id="inference-line2d_11">
+      <path d="M 638.635758 208.78 
+L 638.635758 35.14 
+" clip-path="url(#inference-p86ae37c1ab)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inference-line2d_12">
+      <g>
+       <use href="#inference-m32d2b8ad1e" x="638.635758" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inference-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="638.635758" y="222.618594" transform="rotate(-0 638.635758 222.618594)">10</text>
+     </g>
+    </g>
+    <g id="inference-xtick_7">
+     <g id="inference-line2d_13">
+      <path d="M 746.223636 208.78 
+L 746.223636 35.14 
+" clip-path="url(#inference-p86ae37c1ab)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inference-line2d_14">
+      <g>
+       <use href="#inference-m32d2b8ad1e" x="746.223636" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inference-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="746.223636" y="222.618594" transform="rotate(-0 746.223636 222.618594)">12</text>
+     </g>
+    </g>
+    <g id="inference-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="423.46" y="235.328906" transform="rotate(-0 423.46 235.328906)">HAC lag count</text>
+    </g>
+   </g>
+   <g id="inference-matplotlib.axis_2">
+    <g id="inference-ytick_1">
+     <g id="inference-line2d_15">
+      <path d="M 68.42 196.294923 
+L 778.5 196.294923 
+" clip-path="url(#inference-p86ae37c1ab)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inference-line2d_16">
+      <defs>
+       <path id="inference-m862efcae44" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#inference-m862efcae44" x="68.42" y="196.294923" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inference-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="61.42" y="199.71422" transform="rotate(-0 61.42 199.71422)">0.220%</text>
+     </g>
+    </g>
+    <g id="inference-ytick_2">
+     <g id="inference-line2d_17">
+      <path d="M 68.42 158.344931 
+L 778.5 158.344931 
+" clip-path="url(#inference-p86ae37c1ab)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inference-line2d_18">
+      <g>
+       <use href="#inference-m862efcae44" x="68.42" y="158.344931" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inference-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="61.42" y="161.764228" transform="rotate(-0 61.42 161.764228)">0.240%</text>
+     </g>
+    </g>
+    <g id="inference-ytick_3">
+     <g id="inference-line2d_19">
+      <path d="M 68.42 120.394939 
+L 778.5 120.394939 
+" clip-path="url(#inference-p86ae37c1ab)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inference-line2d_20">
+      <g>
+       <use href="#inference-m862efcae44" x="68.42" y="120.394939" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inference-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="61.42" y="123.814236" transform="rotate(-0 61.42 123.814236)">0.260%</text>
+     </g>
+    </g>
+    <g id="inference-ytick_4">
+     <g id="inference-line2d_21">
+      <path d="M 68.42 82.444946 
+L 778.5 82.444946 
+" clip-path="url(#inference-p86ae37c1ab)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inference-line2d_22">
+      <g>
+       <use href="#inference-m862efcae44" x="68.42" y="82.444946" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inference-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="61.42" y="85.864243" transform="rotate(-0 61.42 85.864243)">0.280%</text>
+     </g>
+    </g>
+    <g id="inference-ytick_5">
+     <g id="inference-line2d_23">
+      <path d="M 68.42 44.494954 
+L 778.5 44.494954 
+" clip-path="url(#inference-p86ae37c1ab)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="inference-line2d_24">
+      <g>
+       <use href="#inference-m862efcae44" x="68.42" y="44.494954" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="inference-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="61.42" y="47.914251" transform="rotate(-0 61.42 47.914251)">0.300%</text>
+     </g>
+    </g>
+    <g id="inference-text_14">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.231563" y="121.96" transform="rotate(-90 21.231563 121.96)">Monthly alpha standard error</text>
+    </g>
+   </g>
+   <g id="inference-line2d_25">
+    <path d="M 100.696364 199.327632 
+L 154.490303 154.056783 
+L 208.284242 131.653885 
+L 262.078182 118.670542 
+L 315.872121 100.762285 
+L 369.666061 84.944549 
+L 423.46 75.923285 
+L 477.253939 68.187022 
+L 531.047879 61.090257 
+L 584.841818 53.718447 
+L 638.635758 46.969865 
+L 692.429697 43.032727 
+L 746.223636 43.719978 
+" clip-path="url(#inference-p86ae37c1ab)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="inference-mcc6ed13ce9" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#inference-p86ae37c1ab)">
+     <use href="#inference-mcc6ed13ce9" x="100.696364" y="199.327632" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#inference-mcc6ed13ce9" x="154.490303" y="154.056783" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#inference-mcc6ed13ce9" x="208.284242" y="131.653885" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#inference-mcc6ed13ce9" x="262.078182" y="118.670542" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#inference-mcc6ed13ce9" x="315.872121" y="100.762285" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#inference-mcc6ed13ce9" x="369.666061" y="84.944549" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#inference-mcc6ed13ce9" x="423.46" y="75.923285" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#inference-mcc6ed13ce9" x="477.253939" y="68.187022" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#inference-mcc6ed13ce9" x="531.047879" y="61.090257" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#inference-mcc6ed13ce9" x="584.841818" y="53.718447" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#inference-mcc6ed13ce9" x="638.635758" y="46.969865" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#inference-mcc6ed13ce9" x="692.429697" y="43.032727" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#inference-mcc6ed13ce9" x="746.223636" y="43.719978" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="inference-line2d_26">
+    <path d="M 100.696364 200.887273 
+L 154.490303 200.887273 
+L 208.284242 200.887273 
+L 262.078182 200.887273 
+L 315.872121 200.887273 
+L 369.666061 200.887273 
+L 423.46 200.887273 
+L 477.253939 200.887273 
+L 531.047879 200.887273 
+L 584.841818 200.887273 
+L 638.635758 200.887273 
+L 692.429697 200.887273 
+L 746.223636 200.887273 
+" clip-path="url(#inference-p86ae37c1ab)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="inference-patch_3">
+    <path d="M 68.42 208.78 
+L 68.42 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="inference-patch_4">
+    <path d="M 68.42 208.78 
+L 778.5 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="inference-text_15">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="68.42" y="22.14" transform="rotate(-0 68.42 22.14)">Bandwidth changes the covariance estimate</text>
+   </g>
+   <g id="inference-legend_1">
+    <g id="inference-line2d_27">
+     <path d="M 75.62 45.61875 
+L 83.62 45.61875 
+L 91.62 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#inference-mcc6ed13ce9" x="83.62" y="45.61875" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="inference-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="98.02" y="48.41875" transform="rotate(-0 98.02 48.41875)">HAC intercept SE</text>
+    </g>
+    <g id="inference-line2d_28">
+     <path d="M 75.62 57.36125 
+L 83.62 57.36125 
+L 91.62 57.36125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="inference-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="98.02" y="60.16125" transform="rotate(-0 98.02 60.16125)">Classical intercept SE</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="inference-p86ae37c1ab">
+   <rect x="68.42" y="35.14" width="710.08" height="173.64"/>
+  </clipPath>
+ </defs>
+</svg>

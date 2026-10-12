@@ -1,0 +1,569 @@
+<svg role="img" aria-labelledby="capm-title capm-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="259.2pt" viewBox="0 0 792 259.2" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="capm-title">Figure 02 · Market beta in a return regression</title><desc id="capm-desc">The line uses the first 180 months; the scatter includes all 240 synthetic observations. Marker inspection shows actual observations only at their plotted x-coordinates.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-05T16:04:04.837740</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="capm-figure_1">
+  <g id="capm-patch_1">
+   <path d="M 0 259.2 
+L 792 259.2 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="capm-axes_1">
+   <g id="capm-patch_2">
+    <path d="M 70.22 215.98 
+L 778.5 215.98 
+L 778.5 35.14 
+L 70.22 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="capm-matplotlib.axis_1">
+    <g id="capm-xtick_1">
+     <g id="capm-line2d_1">
+      <path d="M 74.912594 215.98 
+L 74.912594 35.14 
+" clip-path="url(#capm-p28a62d8bf4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capm-line2d_2">
+      <defs>
+       <path id="capm-mad0338fcce" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#capm-mad0338fcce" x="74.912594" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capm-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="74.912594" y="229.818594" transform="rotate(-0 74.912594 229.818594)">−15.0%</text>
+     </g>
+    </g>
+    <g id="capm-xtick_2">
+     <g id="capm-line2d_3">
+      <path d="M 204.468735 215.98 
+L 204.468735 35.14 
+" clip-path="url(#capm-p28a62d8bf4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capm-line2d_4">
+      <g>
+       <use href="#capm-mad0338fcce" x="204.468735" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capm-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="204.468735" y="229.818594" transform="rotate(-0 204.468735 229.818594)">−10.0%</text>
+     </g>
+    </g>
+    <g id="capm-xtick_3">
+     <g id="capm-line2d_5">
+      <path d="M 334.024876 215.98 
+L 334.024876 35.14 
+" clip-path="url(#capm-p28a62d8bf4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capm-line2d_6">
+      <g>
+       <use href="#capm-mad0338fcce" x="334.024876" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capm-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="334.024876" y="229.818594" transform="rotate(-0 334.024876 229.818594)">−5.0%</text>
+     </g>
+    </g>
+    <g id="capm-xtick_4">
+     <g id="capm-line2d_7">
+      <path d="M 463.581017 215.98 
+L 463.581017 35.14 
+" clip-path="url(#capm-p28a62d8bf4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capm-line2d_8">
+      <g>
+       <use href="#capm-mad0338fcce" x="463.581017" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capm-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="463.581017" y="229.818594" transform="rotate(-0 463.581017 229.818594)">0.0%</text>
+     </g>
+    </g>
+    <g id="capm-xtick_5">
+     <g id="capm-line2d_9">
+      <path d="M 593.137158 215.98 
+L 593.137158 35.14 
+" clip-path="url(#capm-p28a62d8bf4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capm-line2d_10">
+      <g>
+       <use href="#capm-mad0338fcce" x="593.137158" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capm-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="593.137158" y="229.818594" transform="rotate(-0 593.137158 229.818594)">5.0%</text>
+     </g>
+    </g>
+    <g id="capm-xtick_6">
+     <g id="capm-line2d_11">
+      <path d="M 722.693299 215.98 
+L 722.693299 35.14 
+" clip-path="url(#capm-p28a62d8bf4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capm-line2d_12">
+      <g>
+       <use href="#capm-mad0338fcce" x="722.693299" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capm-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="722.693299" y="229.818594" transform="rotate(-0 722.693299 229.818594)">10.0%</text>
+     </g>
+    </g>
+    <g id="capm-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="424.36" y="242.528906" transform="rotate(-0 424.36 242.528906)">Market excess return</text>
+    </g>
+   </g>
+   <g id="capm-matplotlib.axis_2">
+    <g id="capm-ytick_1">
+     <g id="capm-line2d_13">
+      <path d="M 70.22 202.915192 
+L 778.5 202.915192 
+" clip-path="url(#capm-p28a62d8bf4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capm-line2d_14">
+      <defs>
+       <path id="capm-mf97af1211d" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#capm-mf97af1211d" x="70.22" y="202.915192" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capm-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="206.334489" transform="rotate(-0 63.22 206.334489)">−15.0%</text>
+     </g>
+    </g>
+    <g id="capm-ytick_2">
+     <g id="capm-line2d_15">
+      <path d="M 70.22 179.216079 
+L 778.5 179.216079 
+" clip-path="url(#capm-p28a62d8bf4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capm-line2d_16">
+      <g>
+       <use href="#capm-mf97af1211d" x="70.22" y="179.216079" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capm-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="182.635376" transform="rotate(-0 63.22 182.635376)">−10.0%</text>
+     </g>
+    </g>
+    <g id="capm-ytick_3">
+     <g id="capm-line2d_17">
+      <path d="M 70.22 155.516967 
+L 778.5 155.516967 
+" clip-path="url(#capm-p28a62d8bf4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capm-line2d_18">
+      <g>
+       <use href="#capm-mf97af1211d" x="70.22" y="155.516967" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capm-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="158.936264" transform="rotate(-0 63.22 158.936264)">−5.0%</text>
+     </g>
+    </g>
+    <g id="capm-ytick_4">
+     <g id="capm-line2d_19">
+      <path d="M 70.22 131.817854 
+L 778.5 131.817854 
+" clip-path="url(#capm-p28a62d8bf4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capm-line2d_20">
+      <g>
+       <use href="#capm-mf97af1211d" x="70.22" y="131.817854" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capm-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="135.237151" transform="rotate(-0 63.22 135.237151)">0.0%</text>
+     </g>
+    </g>
+    <g id="capm-ytick_5">
+     <g id="capm-line2d_21">
+      <path d="M 70.22 108.118742 
+L 778.5 108.118742 
+" clip-path="url(#capm-p28a62d8bf4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capm-line2d_22">
+      <g>
+       <use href="#capm-mf97af1211d" x="70.22" y="108.118742" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capm-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="111.538039" transform="rotate(-0 63.22 111.538039)">5.0%</text>
+     </g>
+    </g>
+    <g id="capm-ytick_6">
+     <g id="capm-line2d_23">
+      <path d="M 70.22 84.419629 
+L 778.5 84.419629 
+" clip-path="url(#capm-p28a62d8bf4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capm-line2d_24">
+      <g>
+       <use href="#capm-mf97af1211d" x="70.22" y="84.419629" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capm-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="87.838926" transform="rotate(-0 63.22 87.838926)">10.0%</text>
+     </g>
+    </g>
+    <g id="capm-ytick_7">
+     <g id="capm-line2d_25">
+      <path d="M 70.22 60.720517 
+L 778.5 60.720517 
+" clip-path="url(#capm-p28a62d8bf4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capm-line2d_26">
+      <g>
+       <use href="#capm-mf97af1211d" x="70.22" y="60.720517" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capm-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="64.139814" transform="rotate(-0 63.22 64.139814)">15.0%</text>
+     </g>
+    </g>
+    <g id="capm-ytick_8">
+     <g id="capm-line2d_27">
+      <path d="M 70.22 37.021404 
+L 778.5 37.021404 
+" clip-path="url(#capm-p28a62d8bf4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="capm-line2d_28">
+      <g>
+       <use href="#capm-mf97af1211d" x="70.22" y="37.021404" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="capm-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="40.440701" transform="rotate(-0 63.22 40.440701)">20.0%</text>
+     </g>
+    </g>
+    <g id="capm-text_16">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.216094" y="125.56" transform="rotate(-90 21.216094 125.56)">Portfolio excess return</text>
+    </g>
+   </g>
+   <g id="capm-line2d_29">
+    <defs>
+     <path id="capm-ma9b4f38fbf" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #7e8d86; stroke-opacity: 0.6"/>
+    </defs>
+    <g clip-path="url(#capm-p28a62d8bf4)">
+     <use href="#capm-ma9b4f38fbf" x="389.653202" y="167.672431" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="558.538874" y="97.148657" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="244.598103" y="140.21282" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="677.193194" y="89.908512" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="600.275381" y="92.793789" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="677.884911" y="67.56508" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="486.616082" y="128.208981" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="560.806802" y="128.470285" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="447.402373" y="145.714685" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="360.59326" y="168.305314" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="448.123059" y="107.186915" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="382.558453" y="134.939911" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="628.67018" y="91.499754" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="343.603714" y="164.878144" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="549.597629" y="129.861858" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="518.093793" y="119.355122" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="442.759025" y="142.526363" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="537.316986" y="134.615131" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="519.25886" y="127.943789" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="578.966525" y="118.799791" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="430.343501" y="133.548692" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="346.503063" y="178.936102" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="437.383541" y="144.44353" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="542.596852" y="116.602055" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="586.070794" y="101.019049" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="482.908169" y="117.872328" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="665.698552" y="108.171555" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="309.783031" y="167.455713" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="397.148727" y="133.808723" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="387.012371" y="144.597709" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="393.754206" y="141.413741" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="458.017217" y="163.111866" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="312.347888" y="154.053194" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="522.358142" y="103.785722" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="556.140371" y="112.347494" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="571.431956" y="130.256044" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="485.524473" y="136.212142" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="422.050023" y="140.100429" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="434.41196" y="161.238981" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="345.822039" y="148.090514" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="579.151255" y="115.083577" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="329.671541" y="133.820792" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="403.449591" y="125.967822" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="354.233903" y="148.47993" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="508.865265" y="114.638399" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="583.207896" y="104.623079" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="503.822056" y="121.236888" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="414.765513" y="115.811121" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="363.226394" y="148.521991" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="427.099334" y="118.672464" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="511.802642" y="115.503739" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="410.514906" y="157.685168" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="631.618624" y="95.717906" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="532.807639" y="129.704046" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="431.670928" y="155.74542" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="397.022698" y="122.264558" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="516.146935" y="106.308166" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="330.16898" y="155.247063" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="545.015964" y="120.972404" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="539.477792" y="107.656037" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="594.641578" y="87.949026" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="297.408181" y="187.728344" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="446.665154" y="163.574547" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="413.504041" y="140.469247" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="329.869421" y="155.679537" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="384.576841" y="171.320078" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="439.841905" y="147.492448" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="262.373316" y="188.777591" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="384.011653" y="163.147601" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="532.693479" y="107.522912" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="581.403017" y="90.324439" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="500.718874" y="101.363842" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="432.036504" y="148.093237" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="468.416859" y="127.555605" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="534.161153" y="125.711943" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="563.69868" y="109.012083" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="306.643867" y="148.774224" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="624.09124" y="111.919685" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="626.915295" y="84.310035" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="725.970424" y="75.369668" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="144.189697" y="191.608683" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="145.22648" y="140.729994" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="470.322004" y="139.786657" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="444.786955" y="111.407523" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="332.839078" y="159.239001" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="402.949389" y="145.595909" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="424.71459" y="134.836693" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="421.628261" y="136.322677" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="436.409946" y="142.448196" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="451.267049" y="114.022626" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="440.64933" y="137.545921" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="406.326168" y="161.282676" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="421.859748" y="129.855195" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="653.800367" y="87.066156" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="334.661685" y="204.084919" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="330.227591" y="177.809662" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="536.528106" y="132.078098" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="433.411852" y="129.263569" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="493.628638" y="131.758244" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="444.993503" y="159.867777" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="357.2288" y="146.978822" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="546.54415" y="133.511642" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="335.88662" y="156.558268" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="563.608865" y="120.356659" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="442.838641" y="144.880232" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="488.877096" y="136.82491" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="435.372365" y="138.551918" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="567.144782" y="98.296284" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="314.212276" y="127.759555" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="401.300563" y="141.481033" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="629.850857" y="116.902386" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="102.414545" y="207.76" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="677.999848" y="83.390873" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="378.129499" y="161.308528" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="420.120972" y="156.037566" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="569.265023" y="111.95855" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="666.551809" y="87.2689" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="656.915849" y="90.707535" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="419.35474" y="143.9221" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="485.210409" y="128.34908" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="482.832551" y="134.116394" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="746.305455" y="77.329995" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="434.871866" y="142.765124" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="356.090201" y="116.837327" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="462.604597" y="154.414555" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="338.575478" y="141.979162" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="443.214676" y="112.062464" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="515.333045" y="86.602841" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="621.294174" y="96.090581" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="268.523698" y="179.941455" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="619.958083" y="83.207743" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="425.237842" y="139.622318" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="687.055115" y="94.838516" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="553.425891" y="110.810548" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="563.657185" y="117.833486" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="522.220163" y="135.139823" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="191.037867" y="195.057238" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="485.351963" y="96.485346" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="577.530246" y="115.635373" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="381.549764" y="128.427447" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="704.291081" y="83.811443" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="641.038852" y="43.36" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="331.360907" y="145.868317" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="637.024192" y="107.645724" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="322.861318" y="174.414633" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="488.565221" y="129.158291" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="377.53062" y="148.958833" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="569.20801" y="123.528862" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="446.83663" y="129.900202" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="471.041574" y="134.337295" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="538.123785" y="115.202129" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="492.520211" y="135.187785" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="267.322973" y="154.004832" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="532.967106" y="146.748938" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="576.690102" y="136.602495" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="520.75747" y="105.051877" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="513.854468" y="112.544186" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="521.288623" y="114.073693" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="607.592996" y="110.319474" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="588.5714" y="95.067183" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="460.688607" y="120.793468" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="535.103663" y="94.985188" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="522.105427" y="151.397578" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="304.589879" y="173.180728" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="577.854435" y="145.424129" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="474.385267" y="121.574338" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="255.104401" y="157.591447" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="639.550374" y="85.78368" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="501.364181" y="144.260566" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="620.7795" y="72.549754" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="567.070226" y="106.609939" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="517.454224" y="136.543933" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="597.280581" y="123.506414" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="609.874281" y="130.621913" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="490.031636" y="137.8495" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="524.401691" y="129.814897" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="524.832048" y="129.18067" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="370.291899" y="145.223571" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="399.906864" y="131.24243" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="414.669536" y="131.46077" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="490.434936" y="135.810823" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="385.996625" y="180.746829" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="384.183859" y="128.313579" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="397.098001" y="147.046458" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="350.384293" y="156.450167" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="418.338694" y="121.271424" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="599.34993" y="92.17312" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="375.636186" y="163.32772" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="423.477036" y="130.821234" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="302.889346" y="173.538478" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="557.642792" y="128.680188" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="334.330752" y="138.453787" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="539.280388" y="127.835769" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="521.644795" y="139.944988" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="601.728317" y="124.690775" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="573.948272" y="100.410598" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="452.463226" y="124.685752" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="375.887807" y="139.536919" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="561.384807" y="126.231207" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="518.639263" y="128.987532" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="681.137417" y="69.826704" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="535.219932" y="135.625792" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="511.791281" y="103.605337" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="466.277714" y="136.452352" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="505.827393" y="133.385053" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="697.523325" y="88.424373" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="448.647477" y="142.315403" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="511.447756" y="128.915823" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="529.150278" y="119.324348" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="481.974998" y="142.731835" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="376.213119" y="147.203001" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="566.915914" y="106.397218" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="587.142457" y="102.631981" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="470.321779" y="124.302835" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="435.714143" y="126.299065" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="371.744185" y="171.181998" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="500.725295" y="123.969548" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="386.7686" y="153.563222" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="557.335234" y="70.068666" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="563.047782" y="89.419347" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="373.507811" y="139.364296" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="497.285448" y="112.236996" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="486.203287" y="102.138847" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="555.943126" y="121.385537" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="558.762525" y="103.767567" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="405.173378" y="148.225108" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="357.545551" y="141.767858" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="537.887131" y="101.016698" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="471.875382" y="119.592572" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="336.69381" y="138.02858" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="235.417102" y="181.982113" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="503.466316" y="119.769185" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="397.989807" y="147.310576" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="226.869224" y="169.141789" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="656.686197" y="122.307745" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="389.927105" y="169.270988" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="524.104505" y="112.296056" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="535.69677" y="139.967491" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="474.021154" y="150.858112" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     <use href="#capm-ma9b4f38fbf" x="455.701942" y="121.171009" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+    </g>
+   </g>
+   <g id="capm-line2d_30">
+    <path d="M 102.414545 200.428249 
+L 746.305455 77.705743 
+L 746.305455 77.705743 
+" clip-path="url(#capm-p28a62d8bf4)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="capm-patch_3">
+    <path d="M 70.22 215.98 
+L 70.22 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="capm-patch_4">
+    <path d="M 70.22 215.98 
+L 778.5 215.98 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="capm-text_17">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="70.22" y="22.14" transform="rotate(-0 70.22 22.14)">Covariation identifies beta, not a characteristic score</text>
+   </g>
+   <g id="capm-legend_1">
+    <g id="capm-line2d_31">
+     <g>
+      <use href="#capm-ma9b4f38fbf" x="85.42" y="45.61875" style="fill: #7e8d86; fill-opacity: 0.6; stroke: #7e8d86; stroke-opacity: 0.6"/>
+     </g>
+    </g>
+    <g id="capm-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="99.82" y="48.41875" transform="rotate(-0 99.82 48.41875)">Observed months</text>
+    </g>
+    <g id="capm-line2d_32">
+     <path d="M 77.42 57.36125 
+L 85.42 57.36125 
+L 93.42 57.36125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="capm-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="99.82" y="60.16125" transform="rotate(-0 99.82 60.16125)">Training CAPM line</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="capm-p28a62d8bf4">
+   <rect x="70.22" y="35.14" width="708.28" height="180.84"/>
+  </clipPath>
+ </defs>
+</svg>

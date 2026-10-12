@@ -1,0 +1,818 @@
+<svg role="img" aria-labelledby="greeks-title greeks-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="greeks-title">Figure 15 · Finite differences: a smaller bump can amplify noise</title><desc id="greeks-desc">80 repetitions, 4,096 paths per bump; seed 1010. The common-random-number version reuses each normal shock at both spots. This graph measures standard deviation, not total error: finite-difference bias must also be checked.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T19:11:30.486679</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="greeks-figure_1">
+  <g id="greeks-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="greeks-axes_1">
+   <g id="greeks-patch_2">
+    <path d="M 55.527809 206.188 
+L 648.9 206.188 
+L 648.9 13.5 
+L 55.527809 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="greeks-matplotlib.axis_1">
+    <g id="greeks-xtick_1">
+     <g id="greeks-line2d_1">
+      <path d="M 82.499273 206.188 
+L 82.499273 13.5 
+" clip-path="url(#greeks-p680974aafe)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_2">
+      <defs>
+       <path id="greeks-m27f373223a" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#greeks-m27f373223a" x="82.499273" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_1">
+      <!-- $\mathdefault{10^{-3}}$ -->
+      <g style="fill: #939b94" transform="translate(71.924273 220.026594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.318750000000001">−3</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_2">
+     <g id="greeks-line2d_3">
+      <path d="M 237.636015 206.188 
+L 237.636015 13.5 
+" clip-path="url(#greeks-p680974aafe)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_4">
+      <g>
+       <use href="#greeks-m27f373223a" x="237.636015" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_2">
+      <!-- $\mathdefault{10^{-2}}$ -->
+      <g style="fill: #939b94" transform="translate(227.061015 220.026594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.318750000000001">−2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_3">
+     <g id="greeks-line2d_5">
+      <path d="M 392.772757 206.188 
+L 392.772757 13.5 
+" clip-path="url(#greeks-p680974aafe)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_6">
+      <g>
+       <use href="#greeks-m27f373223a" x="392.772757" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_3">
+      <!-- $\mathdefault{10^{-1}}$ -->
+      <g style="fill: #939b94" transform="translate(382.197757 220.026594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.40625">−1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_4">
+     <g id="greeks-line2d_7">
+      <path d="M 547.9095 206.188 
+L 547.9095 13.5 
+" clip-path="url(#greeks-p680974aafe)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_8">
+      <g>
+       <use href="#greeks-m27f373223a" x="547.9095" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_4">
+      <!-- $\mathdefault{10^{0}}$ -->
+      <g style="fill: #939b94" transform="translate(539.9895 220.026594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_5">
+     <g id="greeks-line2d_9">
+      <defs>
+       <path id="greeks-m0552daa562" d="M 0 0 
+L 0 2 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#greeks-m0552daa562" x="58.468287" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_6">
+     <g id="greeks-line2d_10">
+      <g>
+       <use href="#greeks-m0552daa562" x="67.464969" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_7">
+     <g id="greeks-line2d_11">
+      <g>
+       <use href="#greeks-m0552daa562" x="75.400605" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_8">
+     <g id="greeks-line2d_12">
+      <g>
+       <use href="#greeks-m0552daa562" x="129.200085" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_9">
+     <g id="greeks-line2d_13">
+      <g>
+       <use href="#greeks-m0552daa562" x="156.51831" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_10">
+     <g id="greeks-line2d_14">
+      <g>
+       <use href="#greeks-m0552daa562" x="175.900898" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_11">
+     <g id="greeks-line2d_15">
+      <g>
+       <use href="#greeks-m0552daa562" x="190.935202" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_12">
+     <g id="greeks-line2d_16">
+      <g>
+       <use href="#greeks-m0552daa562" x="203.219123" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_13">
+     <g id="greeks-line2d_17">
+      <g>
+       <use href="#greeks-m0552daa562" x="213.605029" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_14">
+     <g id="greeks-line2d_18">
+      <g>
+       <use href="#greeks-m0552daa562" x="222.601711" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_15">
+     <g id="greeks-line2d_19">
+      <g>
+       <use href="#greeks-m0552daa562" x="230.537347" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_16">
+     <g id="greeks-line2d_20">
+      <g>
+       <use href="#greeks-m0552daa562" x="284.336828" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_17">
+     <g id="greeks-line2d_21">
+      <g>
+       <use href="#greeks-m0552daa562" x="311.655052" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_18">
+     <g id="greeks-line2d_22">
+      <g>
+       <use href="#greeks-m0552daa562" x="331.037641" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_19">
+     <g id="greeks-line2d_23">
+      <g>
+       <use href="#greeks-m0552daa562" x="346.071944" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_20">
+     <g id="greeks-line2d_24">
+      <g>
+       <use href="#greeks-m0552daa562" x="358.355865" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_21">
+     <g id="greeks-line2d_25">
+      <g>
+       <use href="#greeks-m0552daa562" x="368.741772" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_22">
+     <g id="greeks-line2d_26">
+      <g>
+       <use href="#greeks-m0552daa562" x="377.738454" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_23">
+     <g id="greeks-line2d_27">
+      <g>
+       <use href="#greeks-m0552daa562" x="385.674089" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_24">
+     <g id="greeks-line2d_28">
+      <g>
+       <use href="#greeks-m0552daa562" x="439.47357" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_25">
+     <g id="greeks-line2d_29">
+      <g>
+       <use href="#greeks-m0552daa562" x="466.791794" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_26">
+     <g id="greeks-line2d_30">
+      <g>
+       <use href="#greeks-m0552daa562" x="486.174383" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_27">
+     <g id="greeks-line2d_31">
+      <g>
+       <use href="#greeks-m0552daa562" x="501.208687" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_28">
+     <g id="greeks-line2d_32">
+      <g>
+       <use href="#greeks-m0552daa562" x="513.492607" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_29">
+     <g id="greeks-line2d_33">
+      <g>
+       <use href="#greeks-m0552daa562" x="523.878514" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_30">
+     <g id="greeks-line2d_34">
+      <g>
+       <use href="#greeks-m0552daa562" x="532.875196" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_31">
+     <g id="greeks-line2d_35">
+      <g>
+       <use href="#greeks-m0552daa562" x="540.810832" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_32">
+     <g id="greeks-line2d_36">
+      <g>
+       <use href="#greeks-m0552daa562" x="594.610313" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_33">
+     <g id="greeks-line2d_37">
+      <g>
+       <use href="#greeks-m0552daa562" x="621.928537" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-xtick_34">
+     <g id="greeks-line2d_38">
+      <g>
+       <use href="#greeks-m0552daa562" x="641.311125" y="206.188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-text_5">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="352.213905" y="232.736906" transform="rotate(-0 352.213905 232.736906)">Spot bump h</text>
+    </g>
+   </g>
+   <g id="greeks-matplotlib.axis_2">
+    <g id="greeks-ytick_1">
+     <g id="greeks-line2d_39">
+      <path d="M 55.527809 195.847517 
+L 648.9 195.847517 
+" clip-path="url(#greeks-p680974aafe)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_40">
+      <defs>
+       <path id="greeks-m6d66a15d65" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#greeks-m6d66a15d65" x="55.527809" y="195.847517" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_6">
+      <!-- $\mathdefault{10^{-2}}$ -->
+      <g style="fill: #939b94" transform="translate(27.377809 199.266814)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.318750000000001">−2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_2">
+     <g id="greeks-line2d_41">
+      <path d="M 55.527809 154.734097 
+L 648.9 154.734097 
+" clip-path="url(#greeks-p680974aafe)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_42">
+      <g>
+       <use href="#greeks-m6d66a15d65" x="55.527809" y="154.734097" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_7">
+      <!-- $\mathdefault{10^{-1}}$ -->
+      <g style="fill: #939b94" transform="translate(27.377809 158.153394)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.40625">−1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_3">
+     <g id="greeks-line2d_43">
+      <path d="M 55.527809 113.620677 
+L 648.9 113.620677 
+" clip-path="url(#greeks-p680974aafe)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_44">
+      <g>
+       <use href="#greeks-m6d66a15d65" x="55.527809" y="113.620677" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_8">
+      <!-- $\mathdefault{10^{0}}$ -->
+      <g style="fill: #939b94" transform="translate(32.687809 117.039974)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_4">
+     <g id="greeks-line2d_45">
+      <path d="M 55.527809 72.507257 
+L 648.9 72.507257 
+" clip-path="url(#greeks-p680974aafe)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_46">
+      <g>
+       <use href="#greeks-m6d66a15d65" x="55.527809" y="72.507257" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_9">
+      <!-- $\mathdefault{10^{1}}$ -->
+      <g style="fill: #939b94" transform="translate(32.687809 75.926554)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.40625">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_5">
+     <g id="greeks-line2d_47">
+      <path d="M 55.527809 31.393837 
+L 648.9 31.393837 
+" clip-path="url(#greeks-p680974aafe)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="greeks-line2d_48">
+      <g>
+       <use href="#greeks-m6d66a15d65" x="55.527809" y="31.393837" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="greeks-text_10">
+      <!-- $\mathdefault{10^{2}}$ -->
+      <g style="fill: #939b94" transform="translate(32.687809 34.813134)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_6">
+     <g id="greeks-line2d_49">
+      <defs>
+       <path id="greeks-mf71cba744b" d="M 0 0 
+L -2 0 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="204.968477" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_7">
+     <g id="greeks-line2d_50">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="202.216066" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_8">
+     <g id="greeks-line2d_51">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="199.831819" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_9">
+     <g id="greeks-line2d_52">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="197.728764" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_10">
+     <g id="greeks-line2d_53">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="183.471144" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_11">
+     <g id="greeks-line2d_54">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="176.23143" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_12">
+     <g id="greeks-line2d_55">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="171.094771" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_13">
+     <g id="greeks-line2d_56">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="167.110469" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_14">
+     <g id="greeks-line2d_57">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="163.855058" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_15">
+     <g id="greeks-line2d_58">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="161.102646" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_16">
+     <g id="greeks-line2d_59">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="158.718399" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_17">
+     <g id="greeks-line2d_60">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="156.615344" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_18">
+     <g id="greeks-line2d_61">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="142.357724" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_19">
+     <g id="greeks-line2d_62">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="135.11801" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_20">
+     <g id="greeks-line2d_63">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="129.981352" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_21">
+     <g id="greeks-line2d_64">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="125.997049" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_22">
+     <g id="greeks-line2d_65">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="122.741638" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_23">
+     <g id="greeks-line2d_66">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="119.989226" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_24">
+     <g id="greeks-line2d_67">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="117.604979" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_25">
+     <g id="greeks-line2d_68">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="115.501924" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_26">
+     <g id="greeks-line2d_69">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="101.244304" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_27">
+     <g id="greeks-line2d_70">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="94.00459" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_28">
+     <g id="greeks-line2d_71">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="88.867932" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_29">
+     <g id="greeks-line2d_72">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="84.88363" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_30">
+     <g id="greeks-line2d_73">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="81.628218" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_31">
+     <g id="greeks-line2d_74">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="78.875806" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_32">
+     <g id="greeks-line2d_75">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="76.491559" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_33">
+     <g id="greeks-line2d_76">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="74.388504" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_34">
+     <g id="greeks-line2d_77">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="60.130884" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_35">
+     <g id="greeks-line2d_78">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="52.89117" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_36">
+     <g id="greeks-line2d_79">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="47.754512" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_37">
+     <g id="greeks-line2d_80">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="43.77021" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_38">
+     <g id="greeks-line2d_81">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="40.514798" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_39">
+     <g id="greeks-line2d_82">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="37.762386" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_40">
+     <g id="greeks-line2d_83">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="35.378139" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_41">
+     <g id="greeks-line2d_84">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="33.275084" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-ytick_42">
+     <g id="greeks-line2d_85">
+      <g>
+       <use href="#greeks-mf71cba744b" x="55.527809" y="19.017464" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="greeks-text_11">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.506091" y="109.844" transform="rotate(-90 21.506091 109.844)">SD of delta estimates across 80 runs</text>
+    </g>
+   </g>
+   <g id="greeks-line2d_86">
+    <path d="M 82.499273 22.258545 
+L 104.975492 28.215063 
+L 127.451711 34.171582 
+L 149.927931 40.128102 
+L 172.40415 46.084624 
+L 194.880369 52.041149 
+L 217.356589 57.997678 
+L 239.832808 63.95421 
+L 262.309027 69.91075 
+L 284.785247 75.867312 
+L 307.261466 81.823899 
+L 329.737685 87.780508 
+L 352.213905 93.737143 
+L 374.690124 99.693783 
+L 397.166343 105.650513 
+L 419.642563 111.6073 
+L 442.118782 117.564095 
+L 464.595001 123.5209 
+L 487.071221 129.47795 
+L 509.54744 135.435123 
+L 532.023659 141.392721 
+L 554.499879 147.347919 
+L 576.976098 153.301173 
+L 599.452317 159.245254 
+L 621.928537 165.18816 
+" clip-path="url(#greeks-p680974aafe)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-line2d_87">
+    <path d="M 82.499273 196.691108 
+L 104.975492 196.690188 
+L 127.451711 196.690759 
+L 149.927931 196.689107 
+L 172.40415 196.686384 
+L 194.880369 196.685238 
+L 217.356589 196.681706 
+L 239.832808 196.676495 
+L 262.309027 196.672483 
+L 284.785247 196.672611 
+L 307.261466 196.675076 
+L 329.737685 196.673457 
+L 352.213905 196.67181 
+L 374.690124 196.668623 
+L 397.166343 196.654704 
+L 419.642563 196.650608 
+L 442.118782 196.640116 
+L 464.595001 196.645592 
+L 487.071221 196.687148 
+L 509.54744 196.795822 
+L 532.023659 196.881174 
+L 554.499879 196.989185 
+L 576.976098 197.123638 
+L 599.452317 197.278267 
+L 621.928537 197.429455 
+" clip-path="url(#greeks-p680974aafe)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-patch_3">
+    <path d="M 55.527809 206.188 
+L 55.527809 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-patch_4">
+    <path d="M 55.527809 206.188 
+L 648.9 206.188 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="greeks-legend_1">
+    <g id="greeks-line2d_88">
+     <path d="M 494.61625 23.97875 
+L 502.61625 23.97875 
+L 510.61625 23.97875 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="greeks-text_12">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="517.01625" y="26.77875" transform="rotate(-0 517.01625 26.77875)">Independent bump simulations</text>
+    </g>
+    <g id="greeks-line2d_89">
+     <path d="M 494.61625 35.72125 
+L 502.61625 35.72125 
+L 510.61625 35.72125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="greeks-text_13">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="517.01625" y="38.52125" transform="rotate(-0 517.01625 38.52125)">Common random numbers</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="greeks-p680974aafe">
+   <rect x="55.527809" y="13.5" width="593.372191" height="192.688"/>
+  </clipPath>
+ </defs>
+</svg>

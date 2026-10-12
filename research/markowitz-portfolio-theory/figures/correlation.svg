@@ -1,0 +1,472 @@
+<svg role="img" aria-labelledby="correlation-title correlation-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="259.2pt" viewBox="0 0 662.4 259.2" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="correlation-title">Figure 01 · Correlation and two-asset diversification</title><desc id="correlation-desc">Asset volatilities 10% and 20%; fully invested, nonnegative weights. At correlation −1, weight 2/3 in A gives zero variance in this idealised singular model. The positive-definite assumption and inverse-based formulas do not apply to that singular endpoint.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T17:14:57.987055</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="correlation-figure_1">
+  <g id="correlation-patch_1">
+   <path d="M 0 259.2 
+L 662.4 259.2 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="correlation-axes_1">
+   <g id="correlation-patch_2">
+    <path d="M 62.66 215.98 
+L 648.9 215.98 
+L 648.9 13.5 
+L 62.66 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="correlation-matplotlib.axis_1">
+    <g id="correlation-xtick_1">
+     <g id="correlation-line2d_1">
+      <path d="M 89.307273 215.98 
+L 89.307273 13.5 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="correlation-line2d_2">
+      <defs>
+       <path id="correlation-me6b857b28e" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#correlation-me6b857b28e" x="89.307273" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="correlation-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="89.307273" y="229.818594" transform="rotate(-0 89.307273 229.818594)">0%</text>
+     </g>
+    </g>
+    <g id="correlation-xtick_2">
+     <g id="correlation-line2d_3">
+      <path d="M 195.896364 215.98 
+L 195.896364 13.5 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="correlation-line2d_4">
+      <g>
+       <use href="#correlation-me6b857b28e" x="195.896364" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="correlation-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="195.896364" y="229.818594" transform="rotate(-0 195.896364 229.818594)">20%</text>
+     </g>
+    </g>
+    <g id="correlation-xtick_3">
+     <g id="correlation-line2d_5">
+      <path d="M 302.485455 215.98 
+L 302.485455 13.5 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="correlation-line2d_6">
+      <g>
+       <use href="#correlation-me6b857b28e" x="302.485455" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="correlation-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="302.485455" y="229.818594" transform="rotate(-0 302.485455 229.818594)">40%</text>
+     </g>
+    </g>
+    <g id="correlation-xtick_4">
+     <g id="correlation-line2d_7">
+      <path d="M 409.074545 215.98 
+L 409.074545 13.5 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="correlation-line2d_8">
+      <g>
+       <use href="#correlation-me6b857b28e" x="409.074545" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="correlation-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="409.074545" y="229.818594" transform="rotate(-0 409.074545 229.818594)">60%</text>
+     </g>
+    </g>
+    <g id="correlation-xtick_5">
+     <g id="correlation-line2d_9">
+      <path d="M 515.663636 215.98 
+L 515.663636 13.5 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="correlation-line2d_10">
+      <g>
+       <use href="#correlation-me6b857b28e" x="515.663636" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="correlation-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="515.663636" y="229.818594" transform="rotate(-0 515.663636 229.818594)">80%</text>
+     </g>
+    </g>
+    <g id="correlation-xtick_6">
+     <g id="correlation-line2d_11">
+      <path d="M 622.252727 215.98 
+L 622.252727 13.5 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="correlation-line2d_12">
+      <g>
+       <use href="#correlation-me6b857b28e" x="622.252727" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="correlation-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="622.252727" y="229.818594" transform="rotate(-0 622.252727 229.818594)">100%</text>
+     </g>
+    </g>
+    <g id="correlation-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="355.78" y="242.528906" transform="rotate(-0 355.78 242.528906)">Weight in asset A</text>
+    </g>
+   </g>
+   <g id="correlation-matplotlib.axis_2">
+    <g id="correlation-ytick_1">
+     <g id="correlation-line2d_13">
+      <path d="M 62.66 207.237699 
+L 648.9 207.237699 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="correlation-line2d_14">
+      <defs>
+       <path id="correlation-m70346544c9" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#correlation-m70346544c9" x="62.66" y="207.237699" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="correlation-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="210.656996" transform="rotate(-0 55.66 210.656996)">0.0%</text>
+     </g>
+    </g>
+    <g id="correlation-ytick_2">
+     <g id="correlation-line2d_15">
+      <path d="M 62.66 184.170941 
+L 648.9 184.170941 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="correlation-line2d_16">
+      <g>
+       <use href="#correlation-m70346544c9" x="62.66" y="184.170941" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="correlation-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="187.590238" transform="rotate(-0 55.66 187.590238)">2.5%</text>
+     </g>
+    </g>
+    <g id="correlation-ytick_3">
+     <g id="correlation-line2d_17">
+      <path d="M 62.66 161.104183 
+L 648.9 161.104183 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="correlation-line2d_18">
+      <g>
+       <use href="#correlation-m70346544c9" x="62.66" y="161.104183" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="correlation-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="164.52348" transform="rotate(-0 55.66 164.52348)">5.0%</text>
+     </g>
+    </g>
+    <g id="correlation-ytick_4">
+     <g id="correlation-line2d_19">
+      <path d="M 62.66 138.037425 
+L 648.9 138.037425 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="correlation-line2d_20">
+      <g>
+       <use href="#correlation-m70346544c9" x="62.66" y="138.037425" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="correlation-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="141.456722" transform="rotate(-0 55.66 141.456722)">7.5%</text>
+     </g>
+    </g>
+    <g id="correlation-ytick_5">
+     <g id="correlation-line2d_21">
+      <path d="M 62.66 114.970668 
+L 648.9 114.970668 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="correlation-line2d_22">
+      <g>
+       <use href="#correlation-m70346544c9" x="62.66" y="114.970668" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="correlation-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="118.389964" transform="rotate(-0 55.66 118.389964)">10.0%</text>
+     </g>
+    </g>
+    <g id="correlation-ytick_6">
+     <g id="correlation-line2d_23">
+      <path d="M 62.66 91.90391 
+L 648.9 91.90391 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="correlation-line2d_24">
+      <g>
+       <use href="#correlation-m70346544c9" x="62.66" y="91.90391" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="correlation-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="95.323207" transform="rotate(-0 55.66 95.323207)">12.5%</text>
+     </g>
+    </g>
+    <g id="correlation-ytick_7">
+     <g id="correlation-line2d_25">
+      <path d="M 62.66 68.837152 
+L 648.9 68.837152 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="correlation-line2d_26">
+      <g>
+       <use href="#correlation-m70346544c9" x="62.66" y="68.837152" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="correlation-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="72.256449" transform="rotate(-0 55.66 72.256449)">15.0%</text>
+     </g>
+    </g>
+    <g id="correlation-ytick_8">
+     <g id="correlation-line2d_27">
+      <path d="M 62.66 45.770394 
+L 648.9 45.770394 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="correlation-line2d_28">
+      <g>
+       <use href="#correlation-m70346544c9" x="62.66" y="45.770394" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="correlation-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="49.189691" transform="rotate(-0 55.66 49.189691)">17.5%</text>
+     </g>
+    </g>
+    <g id="correlation-ytick_9">
+     <g id="correlation-line2d_29">
+      <path d="M 62.66 22.703636 
+L 648.9 22.703636 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="correlation-line2d_30">
+      <g>
+       <use href="#correlation-m70346544c9" x="62.66" y="22.703636" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="correlation-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="26.122933" transform="rotate(-0 55.66 26.122933)">20.0%</text>
+     </g>
+    </g>
+    <g id="correlation-text_17">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.197813" y="114.74" transform="rotate(-90 21.197813 114.74)">Portfolio volatility</text>
+    </g>
+   </g>
+   <g id="correlation-line2d_31">
+    <path d="M 89.307273 22.703636 
+L 443.716 206.776364 
+L 446.380727 206.315028 
+L 622.252727 114.970668 
+L 622.252727 114.970668 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="correlation-line2d_32">
+    <path d="M 89.307273 22.703636 
+L 131.942909 41.034065 
+L 169.249091 56.825457 
+L 201.225818 70.113244 
+L 227.873091 80.956522 
+L 251.855636 90.485264 
+L 273.173455 98.723864 
+L 291.826545 105.710418 
+L 310.479636 112.441462 
+L 326.468 117.963684 
+L 339.791636 122.357045 
+L 353.115273 126.527776 
+L 366.438909 130.439597 
+L 377.097818 133.354906 
+L 387.756727 136.054417 
+L 398.415636 138.512695 
+L 409.074545 140.702996 
+L 417.068727 142.153461 
+L 425.062909 143.426524 
+L 433.057091 144.511384 
+L 441.051273 145.398135 
+L 449.045455 146.078158 
+L 457.039636 146.544505 
+L 465.033818 146.792229 
+L 473.028 146.818643 
+L 481.022182 146.623456 
+L 489.016364 146.208794 
+L 497.010545 145.579086 
+L 505.004727 144.740831 
+L 512.998909 143.702283 
+L 520.993091 142.473078 
+L 528.987273 141.063838 
+L 539.646182 138.924258 
+L 550.305091 136.511845 
+L 560.964 133.8535 
+L 571.622909 130.974937 
+L 582.281818 127.900123 
+L 595.605455 123.813811 
+L 608.929091 119.493013 
+L 622.252727 114.970668 
+L 622.252727 114.970668 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="correlation-line2d_33">
+    <path d="M 89.307273 22.703636 
+L 126.613455 35.499529 
+L 158.590182 46.24561 
+L 187.902182 55.876875 
+L 214.549455 64.413669 
+L 238.532 71.884763 
+L 262.514545 79.118522 
+L 283.832364 85.3151 
+L 302.485455 90.52811 
+L 321.138545 95.517411 
+L 339.791636 100.251699 
+L 355.78 104.080022 
+L 371.768364 107.670499 
+L 385.092 110.461722 
+L 398.415636 113.052988 
+L 411.739273 115.427366 
+L 425.062909 117.567625 
+L 438.386545 119.456638 
+L 451.710182 121.077878 
+L 462.369091 122.171699 
+L 473.028 123.077218 
+L 483.686909 123.788303 
+L 494.345818 124.299953 
+L 505.004727 124.608464 
+L 515.663636 124.711557 
+L 526.322545 124.608464 
+L 536.981455 124.299953 
+L 547.640364 123.788303 
+L 558.299273 123.077218 
+L 568.958182 122.171699 
+L 579.617091 121.077878 
+L 592.940727 119.456638 
+L 606.264364 117.567625 
+L 619.588 115.427366 
+L 622.252727 114.970668 
+L 622.252727 114.970668 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="correlation-line2d_34">
+    <path d="M 89.307273 22.703636 
+L 131.942909 33.657932 
+L 169.249091 43.025711 
+L 203.890545 51.509235 
+L 235.867273 59.124684 
+L 265.179273 65.894364 
+L 294.491273 72.430703 
+L 321.138545 78.140492 
+L 345.121091 83.063962 
+L 369.103636 87.757237 
+L 390.421455 91.713075 
+L 411.739273 95.443139 
+L 430.392364 98.503439 
+L 449.045455 101.356506 
+L 467.698545 103.98516 
+L 486.351636 106.371855 
+L 502.34 108.211702 
+L 518.328364 109.850077 
+L 534.316727 111.276659 
+L 550.305091 112.481883 
+L 566.293455 113.457214 
+L 582.281818 114.195421 
+L 598.270182 114.690831 
+L 614.258545 114.939533 
+L 622.252727 114.970668 
+L 622.252727 114.970668 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="correlation-line2d_35">
+    <path d="M 89.307273 22.703636 
+L 622.252727 114.970668 
+L 622.252727 114.970668 
+" clip-path="url(#correlation-p78041b48aa)" style="fill: none; stroke: #b7bdba; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="correlation-patch_3">
+    <path d="M 62.66 215.98 
+L 62.66 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="correlation-patch_4">
+    <path d="M 62.66 215.98 
+L 648.9 215.98 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="correlation-legend_1">
+    <g id="correlation-line2d_36">
+     <path d="M 348.08125 23.97875 
+L 356.08125 23.97875 
+L 364.08125 23.97875 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="correlation-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="370.48125" y="26.77875" transform="rotate(-0 370.48125 26.77875)">Correlation -1.0</text>
+    </g>
+    <g id="correlation-line2d_37">
+     <path d="M 348.08125 35.72125 
+L 356.08125 35.72125 
+L 364.08125 35.72125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="correlation-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="370.48125" y="38.52125" transform="rotate(-0 370.48125 38.52125)">Correlation -0.5</text>
+    </g>
+    <g id="correlation-line2d_38">
+     <path d="M 448.7425 23.97875 
+L 456.7425 23.97875 
+L 464.7425 23.97875 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="correlation-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="471.1425" y="26.77875" transform="rotate(-0 471.1425 26.77875)">Correlation +0.0</text>
+    </g>
+    <g id="correlation-line2d_39">
+     <path d="M 448.7425 35.72125 
+L 456.7425 35.72125 
+L 464.7425 35.72125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="correlation-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="471.1425" y="38.52125" transform="rotate(-0 471.1425 38.52125)">Correlation +0.5</text>
+    </g>
+    <g id="correlation-line2d_40">
+     <path d="M 553.22125 23.97875 
+L 561.22125 23.97875 
+L 569.22125 23.97875 
+" style="fill: none; stroke: #b7bdba; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="correlation-text_22">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="575.62125" y="26.77875" transform="rotate(-0 575.62125 26.77875)">Correlation +1.0</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="correlation-p78041b48aa">
+   <rect x="62.66" y="13.5" width="586.24" height="202.48"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,4 @@
+numpy>=1.23.5,<2
+scipy>=1.10,<2
+matplotlib>=3.7,<4
+beautifulsoup4>=4.12,<5

@@ -1,0 +1,121 @@
+<section id="calibration-objectives" data-title="Calibration objectives and observation weights">
+<div class="section-kicker">16 / Statistical estimation</div><h2>Calibration objectives and observation weights</h2>
+<p>A calibration is defined by its observations, residual coordinate, weights and admissible parameter set. “Best-fitting curve” is incomplete without those choices. Fitting bond prices, bond yields and extracted zero rates generally produces different parameter estimates.</p>
+<h3>Zero-rate least squares</h3>
+<p>When continuous zero-rate observations \(y_i\) are available at maturities \(T_i\), a common loss is:</p>
+\[ J_z(p)=\sum_{i\in\mathcal I}w_i[z(T_i;p)-y_i]^2,\qquad w_i&gt;0. \]
+<p>Equal weights make one basis point at a short maturity as costly as one basis point at a long maturity. Weights proportional to inverse measurement variance can be appropriate if those variances are defensibly estimated. Dense clusters of similar maturities can otherwise dominate the fit simply because more observations are available there.</p>
+<h3>Price-space calibration</h3>
+<p>For coupon bonds with dirty price observations \(P_i^{\mathrm{obs}}\), fit their full cash-flow sums:</p>
+\[ P_i(p)=\sum_j C_{ij}e^{-t_{ij}z(t_{ij};p)},\qquad
+J_P(p)=\sum_i w_i[P_i(p)-P_i^{\mathrm{obs}}]^2. \]
+<p>Price fitting avoids treating an extracted zero curve as error-free raw data. It also preserves contract information. Equal price weights can give long-duration bonds more influence over rate fit because a given yield error creates a larger price residual there. Normalize by face value when instruments have different notionals.</p>
+<h3>Duration normalization</h3>
+<p>For a small approximately parallel yield discrepancy, \(\Delta P_i\approx-P_i\mathcal D_i\Delta y_i\), where \(\mathcal D_i\) is duration under the chosen yield convention. Dividing a price residual by \(P_i\mathcal D_i\) approximately converts it to a yield residual:</p>
+\[ J_{\mathrm{scaled}}(p)=\sum_i
+\left[\frac{P_i(p)-P_i^{\mathrm{obs}}}{P_i^{\mathrm{obs}}\mathcal D_i}\right]^2. \]
+<p>This scaling is an approximation, and its duration must match the intended rate coordinate. One can use fixed observation-based durations to avoid changing weights during optimization. If weights are recomputed from fitted prices, the objective itself changes with parameters and the implementation must account for that.</p>
+<h3>Quote uncertainty and robust losses</h3>
+<p>Weights based on bid–ask widths can reduce the influence of poorly measured quotes, but a near-zero spread should not imply infinite weight. Apply a defensible floor and examine whether spreads genuinely measure observation uncertainty. A robust loss can reduce sensitivity to isolated outliers; it does not eliminate the need to investigate stale quotes or incorrect schedules.</p>
+<p>Fitting inside bid–ask bands rather than targeting every mid quote exactly is another approach. A model price within a band can incur little or no residual penalty, while a price outside it is penalized by distance to the band. This changes the identification problem: several parameter sets may be equally acceptable within market precision.</p>
+<h3>The dataset used here</h3>
+<p>The synthetic study starts from sixteen continuous zero observations. Thirteen enter an equal-weight zero-rate loss, and three are withheld. Small deterministic perturbations are added to the reference curve. The observations already use matched conventions; no coupon-bond inversion or bootstrap uncertainty is hidden in the inputs.</p>
+<p>The figure compares Nelson–Siegel and Svensson on that dataset. A more flexible model reduces residual structure, but the difference in training fit should be assessed together with validation and conditioning. The browser's calibration audit reports both training and withheld RMSE in basis points.</p>
+{{figure:calibration}}
+</section>
+
+<section id="optimization" data-title="Variable projection and numerical identification">
+<div class="section-kicker">17 / Numerical calibration</div><h2>Variable projection and numerical identification</h2>
+<p>For fixed decay times, Nelson–Siegel and Svensson zero rates are linear in their rate coefficients. Exploit that structure instead of asking a generic optimizer to estimate every parameter simultaneously.</p>
+<h3>Conditional linear estimation</h3>
+<p>Let \(X(\tau)\) contain the loading rows at observed maturities, \(\beta\) the coefficient vector, \(y\) observed zero rates and \(W\) a positive diagonal weight matrix. The profiled problem is:</p>
+\[ \beta^*(\tau)=\arg\min_\beta
+\left\|W^{1/2}[X(\tau)\beta-y]\right\|^2,\qquad
+J_{\mathrm{prof}}(\tau)=J_z(\beta^*(\tau),\tau). \]
+<p>Search one nonlinear decay parameter for Nelson–Siegel or two for Svensson. At every candidate, solve the small linear least-squares problem. This is variable projection: the linear unknowns are eliminated conditionally, leaving a lower-dimensional nonlinear objective.</p>
+<p>Use QR or singular-value decomposition rather than explicitly inverting \(X^{\mathsf T}WX\). Normal equations square the design matrix's condition number and can lose precision when loading columns are similar. A rank threshold should detect cases where separate coefficients cannot be reliably identified.</p>
+{{figure:profile}}
+<h3>Searching over positive scales</h3>
+<p>Parameterize \(\tau_k=e^{u_k}\) and search in log time. This guarantees positivity and treats multiplicative changes naturally. A coarse bounded grid supplies starting regions; local refinement improves candidates. Several starting points reduce the risk of selecting an inferior local optimum.</p>
+<p>Bounds are not innocuous. An optimum at a decay bound suggests that the data prefer a scale outside the admissible region or do not identify it strongly. Widening the bounds may reduce residuals while making coefficients or extrapolation unstable. Report the boundary behavior instead of quietly accepting it as a measured maturity scale.</p>
+<h3>What the browser actually computes</h3>
+<p>The laboratory performs linear least squares with modified Gram–Schmidt QR and a second orthogonalization pass. It searches a logarithmic grid, retains eight candidates and refines them by bounded pattern search. Nearly rank-deficient designs are rejected. Coefficients outside ±15% are rejected rather than solved by a fully constrained linear optimizer.</p>
+<p>This is a practical educational search over an admissible candidate set. Rejection of an unconstrained coefficient solution is not equivalent to solving the bounded linear subproblem at that decay. Consequently the browser does not claim an exact constrained global minimum. Its numerical method and limits are stated in the audit panel.</p>
+<p>The static study uses multistart SciPy least squares on the profiled decay objective, with SVD-based linear estimation. It provides an independently implemented comparison. Both methods use the same training observations; neither uses withheld observations to tune its coefficients.</p>
+<h3>Curve stability versus coefficient stability</h3>
+<p>A parameter vector can be unstable while the fitted curve remains stable over observed maturities. Nearly redundant columns allow large coefficient movements that cancel in \(X\beta\). Conversely, stable-looking coefficients can still imply risky extrapolation if the data do not cover the relevant payment dates.</p>
+<p>Inspect design conditioning, multiple-start solutions, objective profiles and the effect of small quote perturbations. Report economically relevant outputs such as bond prices and key-rate risk alongside parameter estimates. A six-decimal coefficient is not evidence that the corresponding economic factor is identified to six decimals.</p>
+<h3>Price fitting is less separable</h3>
+<p>The variable-projection simplification applies directly to zero-rate least squares. In price space, discounts contain exponentials of the coefficients, so bond prices are nonlinear even when decay times are fixed. A price-space optimizer can still use analytical Jacobians and sensible starts, but it cannot simply reuse the same linear solve and claim to minimize price residuals.</p>
+</section>
+
+<section id="validation" data-title="Residual analysis, validation and uncertainty">
+<div class="section-kicker">18 / Model assessment</div><h2>Residual analysis, validation and uncertainty</h2>
+<p>A calibration residual is the difference between a model output and an observation in the chosen coordinate. A validation residual uses observations excluded from fitting. Both are valuable, but they answer different questions.</p>
+\[ \mathrm{RMSE}_{\mathcal A}
+=\sqrt{\frac1{|\mathcal A|}\sum_{i\in\mathcal A}
+[z(T_i;p)-y_i]^2},\qquad
+\mathrm{RMSE}_{\mathrm{bp}}=10^4\mathrm{RMSE}. \]
+<h3>Patterns matter beyond one average</h3>
+<p>A low overall RMSE can conceal a persistent long-end error or an isolated maturity with a large discrepancy. Plot residuals against maturity, duration, liquidity and instrument type. A systematic hump in residuals may indicate missing model flexibility. A bond-specific outlier may indicate a quote or schedule problem rather than a term-structure feature.</p>
+<p>Compare price residuals with bid–ask widths or reporting resolution where those are available. A tiny yield residual on a thirty-year bond can matter more financially than a larger short-bill yield residual. Validation should therefore include the portfolio's relevant price and risk coordinates.</p>
+<h3>Withheld maturities</h3>
+<p>The synthetic fit withholds 0.75, 4 and 15 years. Its training and validation sets are fixed before fitting. Nelson–Siegel gives training RMSE 2.321190 bp and withheld RMSE 2.755916 bp. Svensson gives 0.242440 bp and 0.598699 bp respectively in the static calculation. These numbers describe this deliberately constructed dataset, not a general ranking on real markets.</p>
+{{table:fit}}
+{{table:residuals}}
+<p>The Svensson fit has more flexibility and the generating curve itself belongs to that family. Its better validation result is therefore unsurprising. A broader comparison would test many dates, different noise patterns and curve regimes. One favourable synthetic example does not establish a universally preferred market model.</p>
+<h3>Cross-sectional and time-series validation</h3>
+<p>Withholding maturities assesses interpolation across the current cross-section. Withholding future dates assesses forecasting. These should not be confused. A curve can interpolate a date's instruments accurately while its factors are poor predictors of tomorrow's rates.</p>
+<p>For time-series research, fit on the information available at each historical date. Do not use revised curves, future instrument eligibility or a decay selected using the complete future sample without acknowledging that information. A smooth parameter time series can be a result of hindsight choices rather than stable real-time estimation.</p>
+<h3>Parameter and output uncertainty</h3>
+<p>Locally, if the residual Jacobian \(J\) is well conditioned and the observation-error model is appropriate, an approximate coefficient covariance can be related to \((J^{\mathsf T}WJ)^{-1}\). This approximation can fail near bounds, rank deficiency or multiple minima. It also omits model misspecification unless specifically extended.</p>
+<p>A perturbation study often communicates uncertainty more directly: shift quotes within defensible error ranges, recalibrate and observe changes in discounts, forwards, bond values and hedges. Bootstrapping observations can be useful when its sampling assumptions fit the data, but maturity observations are not necessarily independent identically distributed draws.</p>
+<p>Validation tolerances should reflect the application. A macroeconomic chart may tolerate several basis points of smoothing error; a hedging engine may require much tighter instrument repricing and stable sensitivities. State the acceptable error in the coordinates that matter to the task.</p>
+</section>
+
+<section id="extrapolation" data-title="Boundary behavior and long-horizon extrapolation">
+<div class="section-kicker">19 / Unobserved maturities</div><h2>Boundary behavior and long-horizon extrapolation</h2>
+<p>Extrapolation begins where reliable observations end. A formula continuing smoothly beyond the last quote is still a modelling assumption. The issue is especially important when a liability's cash flows extend much further than the instruments used to estimate the curve.</p>
+<h3>Parametric asymptotes</h3>
+<p>Nelson–Siegel and Svensson converge to \(\beta_0\) in zero and instantaneous forward rates. Their zero loadings decay partly at inverse maturity speed, so the asymptotic regime may be reached slowly. A thirty-year fitted zero need not equal the model's long-run level.</p>
+\[ \lim_{T\to\infty}z(T)=\beta_0,\qquad
+\lim_{T\to\infty}f(T)=\beta_0. \]
+<p>When \(\beta_0&gt;0\), discounts tend to zero. When \(\beta_0&lt;0\), discounts grow at long horizons within the mathematical representation. A finite negative-rate model can be useful over observed maturities without making its infinite-horizon extrapolation economically suitable.</p>
+{{figure:extrapolation}}
+<h3>Alternative tail rules</h3>
+<p>A flat-zero tail sets \(z(T)=z(T_*)\) beyond the last maturity \(T_*\). It makes the tail forward equal that fixed zero rate and can create a forward jump at the boundary. A flat-forward tail instead continues the integrated rate linearly:</p>
+\[ h(T)=h(T_*)+f_*[T-T_*],\qquad
+D(T)=D(T_*)e^{-f_*(T-T_*)}. \]
+<p>These tails generally differ. A gradual convergence to an assumed ultimate forward rate supplies another rule, but the ultimate rate and convergence speed then become explicit external assumptions. Such conventions can be useful for an application with prescribed valuation rules; they are not observations extracted from absent long-end quotes.</p>
+<h3>Boundary smoothness</h3>
+<p>Matching the discount level ensures price continuity at the splice. Matching the forward also ensures first-derivative continuity of the log discount. Matching higher derivatives can produce a smoother chart, but additional smoothness is not an economic requirement for every task. Choose boundary conditions for their consequences, rather than aesthetics alone.</p>
+<p>The short end also requires assumptions. A curve fitted only to bonds beyond one year may estimate a short limit with substantial uncertainty. Policy-meeting jumps, known overnight fixings and settlement effects can make a smooth parametric extrapolation inappropriate for short-dated derivatives.</p>
+<h3>Price sensitivity to tail assumptions</h3>
+<p>A small long-end zero difference is multiplied by maturity in the discount exponent. For a zero-coupon payment at fifty years, a 20 bp continuous-zero difference changes its price ratio by \(e^{-50\times0.002}\approx0.904837\), about a 9.52% reduction. The rate discrepancy looks small, while its present-value effect can be material.</p>
+<p>Compare several defensible tail specifications, identify cash flows beyond the observed region and report their contribution to total value. If the portfolio's main risk lies in extrapolated maturities, in-sample quote RMSE is a weak description of valuation reliability.</p>
+</section>
+
+<section id="dynamic-models" data-title="Dynamic factors, affine models and HJM consistency">
+<div class="section-kicker">20 / Time evolution</div><h2>Dynamic factors, affine models and HJM consistency</h2>
+<p>A cross-sectional curve can be fitted anew each day, producing a time series of level, slope and curvature factors. A dynamic model adds a transition law and a probability measure. Forecasting under the physical measure and derivative valuation under a pricing measure require different assumptions.</p>
+<h3>Dynamic Nelson–Siegel</h3>
+<p>With a fixed decay time, let \(b_t\) collect time-varying Nelson–Siegel coefficients. A simple statistical specification is a vector autoregression:</p>
+\[ z_t(\theta)=X(\theta;\tau)b_t,\qquad
+b_{t+1}=a+Ab_t+\varepsilon_{t+1}. \]
+<p>Here \(\theta\) is remaining maturity, not a fixed calendar payment date. One can estimate factor transitions and forecast future curve shapes under the physical measure. Fixing decay improves comparability of the factors across dates, but can limit fit when the curve's characteristic scale changes.</p>
+<p>Diebold and Li develop forecasting with a dynamic factor interpretation of Nelson–Siegel. That statistical framework is useful for predictions; an additional restriction is needed to obtain a fully specified no-arbitrage pricing model. <a href="https://www.nber.org/papers/w10048">Forecasting the Term Structure of Government Bond Yields</a>.</p>
+{{figure:dynamics}}
+<h3>Affine short-rate models</h3>
+<p>An affine model represents bond prices through exponential-affine functions of state variables. A schematic form is:</p>
+\[ D_t(T)=\exp\left[A(T-t)-B(T-t)^{\mathsf T}x_t\right]. \]
+<p>The functions \(A,B\) are determined by the state dynamics and pricing assumptions, rather than chosen independently for each maturity. Mean-reverting Gaussian short-rate models permit negative rates; square-root models have different positivity properties under their admissible parameter conditions. Model choice affects option prices and transition behavior even when today's curve is matched.</p>
+<p>Arbitrage-free Nelson–Siegel models reconcile Nelson–Siegel-like loadings with affine pricing restrictions and typically include a yield adjustment. Simply adding an arbitrary stochastic process to today's fitted coefficients is not the same construction. <a href="https://www.frbsf.org/wp-content/uploads/wp07-20bk.pdf">Christensen, Diebold and Rudebusch, The Affine Arbitrage-Free Class of Nelson–Siegel Term Structure Models</a>.</p>
+<h3>Heath–Jarrow–Morton drift restriction</h3>
+<p>In a standard HJM setting under the money-market risk-neutral measure, with Brownian drivers \(W^{\mathbb Q,k}\) and absolute maturity \(T\), instantaneous forwards satisfy:</p>
+\[ df(t,T)=\alpha(t,T)\,dt+\sum_{k=1}^{d}\sigma_k(t,T)\,dW_t^{\mathbb Q,k},\qquad
+\alpha(t,T)=\sum_{k=1}^{d}\sigma_k(t,T)\int_t^T\sigma_k(t,u)\,du. \]
+<p>Under the required regularity and tradability assumptions, specifying forward volatility fixes its pricing-measure drift. Under the physical measure, market prices of risk alter the drift. This illustrates the distinction between matching one initial curve and specifying consistent stochastic evolution across all bond maturities. <a href="https://ecommons.cornell.edu/entities/publication/681ba7c9-1a9d-465a-9a4b-fe5c2a9123b7">Heath, Jarrow and Morton, technical-report precursor</a>.</p>
+<h3>Choosing a dynamic model for a task</h3>
+<p>For a forecasting exercise, assess out-of-time errors and economic interpretation. For an interest-rate option model, assess derivative calibration, volatility structure and pricing-measure consistency. For a stress test, deterministic scenarios may be sufficient without asserting probabilities. These are different uses of the same initial curve.</p>
+<p>The laboratory on this page is a static construction and fixed-cash-flow valuation tool. Its synthetic factor figure illustrates time-varying shapes without claiming a fitted VAR, stochastic simulation or derivative model. The curve is the starting condition for those extensions, rather than their complete solution.</p>
+</section>

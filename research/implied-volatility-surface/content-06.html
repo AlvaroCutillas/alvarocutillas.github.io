@@ -1,0 +1,168 @@
+<section id="laboratory" data-title="Interactive surface and inversion laboratory">
+<div class="section-kicker">26 / Interactive study</div><h2>Interactive surface and inversion laboratory</h2>
+<p>Build the reference SSVI family, inspect maturity slices and invert a selected European premium. The map samples 25 maturities and 49 log-moneyness points. Its cell inspector reports the actual sampled coordinates, volatility, total variance and strike. The maturity-slice inspector reports all five curves at a shared \(k\).</p>
+<p>The selected option uses \(K=F(T)e^k\). Its rate and dividend inputs affect forwards, discounting and premiums; they do not change the analytically specified surface in \(k,T\) coordinates. The local-volatility output uses the derivative ratio at that point and is unavailable if its point diagnostic is invalid.</p>
+<p>The certificate distinguishes all-maturity sufficient bounds, displayed-horizon sufficient bounds and an uncertified parameter set. A separate grid searches for negative density over \(k\in[-3,3]\) and maturities from 0.05 years to the selected horizon. This wider diagnostic domain is deliberate: a smile can look harmless in the displayed interval while failing farther into a wing.</p>
+{{interactive}}
+<h3>Experiments to try</h3>
+<ol>
+<li>Set \(\eta=0\). Every expiry becomes flat in strike, while the ATM term structure remains. Verify that calls and puts agree at forward ATM.</li>
+<li>Keep the reference parameters and move \(k\) from −0.2 to +0.2. Compare IV, premiums and vega, then invert each generated premium.</li>
+<li>Swap the short and long scales. Volatility can rise with expiry while accumulated variance continues to increase.</li>
+<li>Raise \(\eta\) gradually, then try 12. Observe the distinction between a failed sufficient certificate and an actual negative sampled \(g\).</li>
+<li>Change the interest rate while holding \(k\) fixed. The selected absolute strike changes with the forward; the specified IV does not.</li>
+<li>Enter a premium below the selected option's discounted intrinsic bound. The inversion reports the invalid interval instead of fabricating an IV.</li>
+</ol>
+<p>The CSV export contains the sampled map in decimal units, including both premiums, the butterfly diagnostic and local volatility where defined. The model is synthetic and deliberately exposes its assumptions. Altering its parameters explores a family; it does not fit a live option chain.</p>
+</section>
+
+<section id="worked-study" data-title="Numerical studies and calibration results">
+<div class="section-kicker">27 / Worked examples</div><h2>Numerical studies and calibration results</h2>
+<h3>Study 1: a reproducible European option chain</h3>
+<p>Set spot 100, rate 3% and proportional dividend yield 1%. For each expiry, construct the forward and discount factor, choose \(k=-0.2,0,+0.2\), calculate the reference IV, and price calls and puts. Inverting each call premium recovers the original IV. Premiums in the table are rounded only for display; the calculations retain full precision.</p>
+{{table:chain}}
+<p>At one-year forward ATM, \(F=K\approx102.020134\), \(D\approx0.9704455\), \(w\approx0.0494977502\) and IV approximately 22.248090%. Both call and put premiums are approximately 8.769299. Their equality follows directly from parity at \(F=K\), without requiring spot ATM.</p>
+<p>If a bid and ask surround that premium, invert the endpoints separately for an exact IV interval. The first-order width estimate uses vega, approximately 39.25365 per unit volatility at this contract. Thus a premium half-spread of 0.04 is around 0.1019 volatility percentage points. The approximation is local; exact endpoint inversion is preferable when the interval is wide.</p>
+<h3>Study 2: fitting a raw SVI slice</h3>
+<p>Generate 17 observations at \(k=-0.4,-0.35,\ldots,0.4\). Add deterministic IV perturbations \(0.0007\sin(9i)+0.0003\cos(5i)\), where \(i\) starts at zero. Withhold rows with \(i\bmod4=2\). Minimize equal-weight squared total-variance errors on the remaining thirteen observations, using four initial values for the horizontal-shift parameter.</p>
+{{table:fit}}
+{{table:residuals}}
+<p>The fitted \(\rho\) reaches its lower calibration bound of −0.98. This is an identification and constraint signal, despite the small observed-domain residuals. The fit need not recover the reference surface's raw-parameter equivalent after noise is added. Prices near the data can remain stable while the unobserved wings differ.</p>
+<p>Training IV RMSE is approximately 4.095 IV basis points; withheld-strike RMSE is approximately 8.773 basis points. The minimum sampled \(g\) over 10,001 points on \(k\in[-5,5]\) is approximately 0.29326. These are separate findings: fit accuracy, interpolation performance and a sampled consistency diagnostic. The last is not a global raw-SVI certificate.</p>
+<h3>Study 3: analytical bounds and density moments</h3>
+<p>With \(\eta=2.3\) and \(\rho=-0.65\), the all-maturity wing expression is 3.795, strictly below four. The global curvature expression is 2.182125, below four. Positive scales and the chosen shape function satisfy the sufficient calendar condition. The reference family is therefore certified within the stated European deterministic-carry framework.</p>
+{{table:bounds}}
+<p>At \(T=1\), quadrature of the strike density over \(K\in[e^{-12},e^{12}]\) produces total mass approximately 1.000000 and mean approximately 102.020134, matching the forward. The integration variable is log strike, so the density is multiplied by the Jacobian \(K\); the first moment uses a further factor of \(K\).</p>
+<p>A density calculation that forgets this Jacobian integrates a different function and will not normalize correctly. A very short strike range also loses mass and tail mean. The broad numerical check supports the example, while the analytical restrictions control its unrestricted tails.</p>
+<h3>Study 4: an intentionally invalid shape</h3>
+<p>Keep the reference ATM term structure and \(\rho\), but set \(\eta=12\). ATM IV is unchanged because \(\theta\) is unchanged. The wings steepen and the \(g\) diagnostic becomes negative in part of the domain. The example demonstrates why checking positive IV or exact ATM calibration alone misses butterfly inconsistencies.</p>
+<p>Restore the reference parameters before interpreting local volatility. In an invalid region, negative density or derivative ratios cannot be converted into a meaningful diffusion coefficient merely by taking an absolute value.</p>
+</section>
+
+<section id="mathematical-appendix" data-title="Mathematical appendix and reference implementation">
+<div class="section-kicker">28 / Appendix</div><h2>Mathematical appendix and reference implementation</h2>
+<h3>SSVI derivatives for the reference family</h3>
+<p>Set \(\theta=\theta(T)\), \(p=\eta/(1+\theta)\), \(u=pk+\rho\) and \(z=\sqrt{u^2+1-\rho^2}\). The total variance and its strike derivatives are:</p>
+\[ w=\frac{\theta}{2}(1+\rho pk+z),\qquad
+w_k=\frac{\theta p}{2}\left(\rho+\frac{u}{z}\right),\qquad
+w_{kk}=\frac{\theta p^2(1-\rho^2)}{2z^3}. \]
+<p>For the time derivative, hold \(k\) fixed and first differentiate in \(\theta\):</p>
+\[ w_\theta=\frac{1+\rho pk+z}{2}
+-\frac{\theta\eta k}{2(1+\theta)^2}\left(\rho+\frac{u}{z}\right),
+\qquad w_T=w_\theta\theta'(T). \]
+<p>These formulas avoid finite-difference noise. Independent differences of the original \(w\) can check them. At \(k=0\), they reduce to \(w=\theta\), \(w_k=\theta p\rho\), \(w_{kk}=\theta p^2(1-\rho^2)/2\) and \(w_T=\theta'(T)\).</p>
+<h3>Relation to raw SVI</h3>
+<p>At a fixed expiry and positive \(p\), a reference SSVI slice can be represented exactly as raw SVI with:</p>
+\[ a=\frac{\theta(1-\rho^2)}{2},\quad
+b_{\mathrm{SVI}}=\frac{\theta p}{2},\quad
+m=-\frac{\rho}{p},\quad s=\frac{\sqrt{1-\rho^2}}{p}. \]
+<p>Substitution into the raw formula recovers the same \(w\). This equivalence explains why a raw SVI optimizer can fit a noise-free reference slice exactly. It does not imply that all raw SVI parameter sets satisfy the cross-expiry structure or certificates used by this family. At \(\eta=0\), the smile is constant and the formulas involving \(1/p\) should be replaced by that flat limit.</p>
+<h3>Finite-horizon sufficient expressions</h3>
+<p>Let \(\Theta=\theta(H)\) and \(a_*=\min(\Theta,1)\). The maximal butterfly expressions over \(0&lt;T\le H\) are:</p>
+\[ B_1(H)=\frac{\eta\Theta}{1+\Theta}(1+|\rho|),\qquad
+B_2(H)=\frac{\eta^2a_*}{(1+a_*)^2}(1+|\rho|). \]
+<p>The second expression uses \(a_*\) because \(x/(1+x)^2\) rises until one and then falls. Testing only the last expiry for this condition would be incorrect once \(\theta(H)&gt;1\). The laboratory checks the true interval maximum.</p>
+<h3>A compact Python reference</h3>
+<p>The following implementation uses standard-library functions for central-region prices and a bracketed inverse. It is intended as a transparent reference, not a replacement for stable special-function implementations in extreme tails. Premiums, forwards and volatilities use the same units as the laboratory.</p>
+<pre><code>from math import erf, exp, expm1, log, sqrt, pi
+
+def normal_cdf(x):
+    return 0.5 * (1.0 + erf(x / sqrt(2.0)))
+
+def black_price(F, K, D, T, sigma, put=False):
+    if sigma == 0:
+        return D * max(K-F if put else F-K, 0.0)
+    root = sigma * sqrt(T)
+    d1 = log(F/K) / root + root/2
+    d2 = d1 - root
+    if K &gt;= F:
+        c = D * (F*normal_cdf(d1) - K*normal_cdf(d2))
+        return c + D*(K-F) if put else c
+    p = D * (K*normal_cdf(-d2) - F*normal_cdf(-d1))
+    return p if put else p + D*(F-K)
+
+def implied_vol(price, F, K, D, T, put=False):
+    assert min(F, K, D, T) &gt; 0
+    low = D * max(K-F if put else F-K, 0.0)
+    high = D * (K if put else F)
+    if not low &lt;= price &lt; high:
+        raise ValueError("Outside the finite-IV domain")
+    if price == low:
+        return 0.0
+    a, b = 0.0, 0.5
+    while black_price(F, K, D, T, b, put) &lt; price and b &lt; 16:
+        b *= 2
+    if black_price(F, K, D, T, b, put) &lt; price:
+        raise ValueError("Root exceeds volatility cap")
+    for _ in range(90):
+        m = (a+b)/2
+        if black_price(F, K, D, T, m, put) &lt; price:
+            a = m
+        else:
+            b = m
+    return (a+b)/2
+
+def reference_sample(k, T, vs=.24, vl=.18,
+                     decay=1.2, rho=-.65, eta=2.3):
+    theta = vl*vl*T + (vs*vs-vl*vl)*decay*(-expm1(-T/decay))
+    p = eta/(1+theta)
+    u = p*k + rho
+    z = sqrt(u*u + 1-rho*rho)
+    w = theta/2*(1+rho*p*k+z)
+    wk = theta*p/2*(rho+u/z)
+    wkk = theta*p*p*(1-rho*rho)/(2*z**3)
+    wt = ((1+rho*p*k+z)/2
+          - theta*eta*k*(rho+u/z)/(2*(1+theta)**2))
+    wt *= vl*vl + (vs*vs-vl*vl)*exp(-T/decay)
+    g = (1-k*wk/(2*w))**2 - wk*wk/4*(1/w+.25) + wkk/2
+    return {"w": w, "iv": sqrt(w/T), "g": g,
+            "local": sqrt(wt/g) if g &gt; 0 and wt &gt; 0 else None}
+
+T = 1.0
+F, D = 100*exp(.02*T), exp(-.03*T)
+s = reference_sample(0.0, T)
+premium = black_price(F, F, D, T, s["iv"])
+assert abs(implied_vol(premium, F, F, D, T)-s["iv"]) &lt; 1e-10
+print(s, premium)</code></pre>
+<h3>Suggested independent checks</h3>
+<p>Compare premiums and inversions with a different normal-CDF and root-solving implementation. Check parity at varied strikes, analytic derivatives against central differences, density against a finite-difference call curvature, and local variance against the fixed-strike Dupire formula including carry. Verify that changing spot at fixed \(k\) changes strike proportionally without changing the specified IV.</p>
+<p>Finally, inspect both ordinary and limiting cases: flat smiles, extreme skew, very short expiries, negative rates, exact intrinsic values and selected maturities outside the declared horizon. A transparent failure state is part of a correct implementation.</p>
+</section>
+
+<section id="exercises" data-title="Exercises and worked solutions">
+<div class="section-kicker">29 / Exercises</div><h2>Exercises and worked solutions</h2>
+<p>Use decimal volatility in calculations and distinguish a volatility point from a variance unit. The solutions make the conventions and intermediate steps explicit.</p>
+<details><summary>Exercise 1 — Finite-IV price bounds</summary><p>For \(F=100\), \(K=110\), \(D=0.98\) and \(T=0.5\), identify the finite-IV domains of call and put premiums. Does a call premium of 99 admit a finite Black IV?</p><p><strong>Solution.</strong> The call domain is \(\text{[0,98)}\). The put domain is \(\text{[9.8,107.8)}\). A call at 99 is above the upper bound and has no finite implied volatility. A call at exactly 98 also lacks a finite root, while zero is the intrinsic-limit case.</p></details>
+<details><summary>Exercise 2 — Premium error and vega</summary><p>A premium has half-spread 0.05 and vega 25 per unit decimal volatility. Estimate its IV half-width in percentage points and basis points.</p><p><strong>Solution.</strong> \(0.05/25=0.002\) decimal volatility. This is 0.2 volatility percentage points or 20 IV basis points. The calculation is a local first-order approximation.</p></details>
+<details><summary>Exercise 3 — Log-forward moneyness</summary><p>With spot 100, \(r=3\%\), \(q=1\%\), \(T=1\) and strike 110, calculate the forward and \(k\).</p><p><strong>Solution.</strong> \(F=100e^{0.02}\approx102.020134\). Then \(k=\ln(110/102.020134)=\ln(1.1)-0.02\approx0.0753102\). Using \(\ln(110/100)\) would ignore the forward carry shift.</p></details>
+<details><summary>Exercise 4 — Falling volatility and positive forward variance</summary><p>Six-month ATM IV is 30%; one-year ATM IV is 25%. Find both total variances and the incremental variance rate in the flat-smile deterministic-volatility interpretation.</p><p><strong>Solution.</strong> \(w_1=0.5(0.30)^2=0.045\), \(w_2=(0.25)^2=0.0625\). Incremental variance is \(0.0175/0.5=0.035\); its volatility scale is \(\sqrt{0.035}\approx18.7083\%\). Annualized IV falls while accumulated variance increases.</p></details>
+<details><summary>Exercise 5 — A calendar inconsistency</summary><p>Replace the one-year IV in Exercise 4 with 18%. Does the pair pass ATM total-variance ordering under the framework in Chapter 12?</p><p><strong>Solution.</strong> One-year variance is 0.0324, below the six-month 0.045. The incremental difference is negative, so the pair violates the required calendar ordering at \(k=0\). Positive IV at both maturities is insufficient.</p></details>
+<details><summary>Exercise 6 — Forward inference from parity</summary><p>At strike 100, \(C=8\), \(P=6\) and \(D=0.98\). Infer the forward. If each premium has a bid–ask half-width of 0.10, find the parity interval.</p><p><strong>Solution.</strong> The midpoint forward is \(100+2/0.98\approx102.040816\). The lower uses call bid 7.9 and put ask 6.1: \(100+1.8/0.98\approx101.836735\). The upper uses call ask 8.1 and put bid 5.9: \(100+2.2/0.98\approx102.244898\).</p></details>
+<details><summary>Exercise 7 — Irregular-strike butterfly test</summary><p>Call premiums are 12, 8 and 6 at strikes 90, 100 and 120. Check consecutive slopes. What changes if the last premium is 1?</p><p><strong>Solution.</strong> Slopes are −0.4 and −0.1, so they increase and satisfy discrete convexity. With the last price 1, the second slope is −0.35, still above −0.4 and therefore still convex. The unequal strike spacing must be used; a symmetric unweighted second difference would mischaracterize the geometry.</p></details>
+<details><summary>Exercise 8 — Raw SVI minimum</summary><p>For \(a=0.01,b=0.05,\rho=-0.6,m=0.02,s=0.2\), calculate the location and value of minimum total variance.</p><p><strong>Solution.</strong> \(\sqrt{1-\rho^2}=0.8\). The minimum is at \(0.02-(-0.6)(0.2)/0.8=0.17\). Its value is \(0.01+0.05(0.2)(0.8)=0.018\). The minimum does not occur at \(m=0.02\).</p></details>
+<details><summary>Exercise 9 — Raw SVI wing slopes</summary><p>Use Exercise 8's parameters to find the left and right slopes. Does passing a slope bound of two prove butterfly freedom?</p><p><strong>Solution.</strong> Left slope is \(0.05(1.6)=0.08\); right slope is \(0.05(0.4)=0.02\). Both are below two. This passes a tail-related restriction but does not prove that \(g(k)\) is nonnegative in the center or that another expiry is calendar consistent.</p></details>
+<details><summary>Exercise 10 — Global sufficient SSVI bounds</summary><p>With \(\eta=2.3,\rho=-0.65\), calculate the two global expressions for the reference shape function. Repeat with \(\eta=4\).</p><p><strong>Solution.</strong> The expressions are \(2.3(1.65)=3.795\) and \(2.3^2(1.65)/4=2.182125\), both passing. For eta 4 they are 6.6 and 6.6, both failing. Failure means this sufficient certificate is unavailable; direct negative-density evidence requires evaluating the surface.</p></details>
+<details><summary>Exercise 11 — A maximum before the last expiry</summary><p>For \(\theta(H)=2\), at which total variance does the curvature expression \(\eta^2\theta(1+|\rho|)/(1+\theta)^2\) attain its maximum over the horizon?</p><p><strong>Solution.</strong> Differentiating \(\theta/(1+\theta)^2\) gives \((1-\theta)/(1+\theta)^3\). The maximum occurs at \(\theta=1\), not at the terminal value two. Its value is \(\eta^2(1+|\rho|)/4\). Checking only the last expiry would understate it.</p></details>
+<details><summary>Exercise 12 — Surface-aware delta</summary><p>At spot 100, Black delta is 0.55, vega is 40 per unit volatility and \(\sigma_k=-0.10\). Calculate sticky log-moneyness delta when the forward is proportional to spot.</p><p><strong>Solution.</strong> Delta is \(0.55-(40/100)(-0.10)=0.59\). Sticky strike would retain 0.55. The difference comes from the assumed smile response, not from a change in the initial contract.</p></details>
+<details><summary>Exercise 13 — Density and local volatility</summary><p>At a surface point, \(g=-0.02\) and \(w_T=0.04\). Can the ratio \(w_T/g\) be interpreted as local variance? What does the sign reveal?</p><p><strong>Solution.</strong> The ratio is negative and is not a valid diffusion variance. The same negative \(g\) implies a negative risk-neutral strike density, exposing a butterfly inconsistency. Taking an absolute value would change the model and conceal the error.</p></details>
+<details><summary>Exercise 14 — Interpolation evidence versus a forecast</summary><p>A model fits 13 strikes and prices four withheld strikes from the same snapshot accurately. What has been tested, and what remains untested?</p><p><strong>Solution.</strong> The experiment tests interpolation across strikes under the chosen data and inputs. It does not test future smile dynamics, realized volatility forecasting, execution profit or path-dependent pricing. Additional later snapshots, dynamic assumptions and application-specific experiments are needed for those claims.</p></details>
+</section>
+
+<section id="references" data-title="References and further reading">
+<div class="section-kicker">30 / References</div><h2>References and further reading</h2>
+<p>These primary papers, author materials and institutional methods support the theoretical framework. The explanations, synthetic examples, calculations and interactive implementation on this page are developed for this study guide.</p>
+<ol class="references">
+<li>Black, F. and Scholes, M. (1973). <em>The Pricing of Options and Corporate Liabilities.</em> Journal of Political Economy, 81(3), 637–654. <a href="https://doi.org/10.1086/260062">Published paper</a>.<p>The European constant-volatility valuation underlying the inverse quoting convention.</p></li>
+<li>Breeden, D. T. and Litzenberger, R. H. (1978). <em>Prices of State-Contingent Claims Implicit in Option Prices.</em> Journal of Business, 51(4), 621–651. <a href="https://www.gsb.stanford.edu/faculty-research/working-papers/prices-state-contingent-claims-implicit-option-prices">Stanford research record</a>.<p>Strike curvature and state-contingent pricing.</p></li>
+<li>Gatheral, J. and Jacquier, A. (2014). <em>Arbitrage-Free SVI Volatility Surfaces.</em> Quantitative Finance, 14(1), 59–71. <a href="https://arxiv.org/abs/1204.0646">Author preprint and revision history</a>.<p>SVI/SSVI static consistency; consult the paper for full conditions and proofs.</p></li>
+<li>Lee, R. W. (2004). <em>The Moment Formula for Implied Volatility at Extreme Strikes.</em> Mathematical Finance, 14(3), 469–480. <a href="https://www.math.uchicago.edu/~rl/moment.pdf">Author manuscript</a>.<p>Model-independent connection between extreme-strike behavior and terminal moments.</p></li>
+<li>Dupire, B. (1994). <em>Pricing with a Smile.</em> Risk, 7(1), 18–20. See also <a href="https://columbia.edu/~mh2078/QRM/ModelRisk_MasterSlides.pdf">Columbia model-risk lecture material</a>.<p>The local-diffusion reconstruction and its model-risk interpretation.</p></li>
+<li>Heston, S. L. (1993). <em>A Closed-Form Solution for Options with Stochastic Volatility with Applications to Bond and Currency Options.</em> Review of Financial Studies, 6(2), 327–343. <a href="https://doi.org/10.1093/rfs/6.2.327">Published paper</a>.<p>A stochastic variance model distinct from a static smile parameterization.</p></li>
+<li>Hagan, P. S., Kumar, D., Lesniewski, A. S. and Woodward, D. E. (2002). <em>Managing Smile Risk.</em> Wilmott Magazine, September, 84–108. <a href="https://lesniewski.us/papers/published/ManagingSmileRisk.pdf">Author-hosted paper</a>.<p>SABR and asymptotic smile pricing.</p></li>
+<li>Derman, E. (2008). <em>Patterns of Volatility Change.</em> E4718, Lecture 9. <a href="https://emanuelderman.com/wp-content/uploads/2013/09/smile-lecture9.pdf">Author lecture</a>.<p>Smile-motion conventions and their implications for hedge ratios.</p></li>
+<li>Cboe Global Indices. <em>Volatility Index Mathematics Methodology.</em> <a href="https://cdn.cboe.com/resources/indices/Cboe_Volatility_Index_Mathematics_Methodology.pdf">Official methodology</a>.<p>An explicitly defined discrete variance-related index calculation; its operational rules differ from an idealized continuum replication.</p></li>
+<li>Gatheral, J. (2006). <em>The Volatility Surface: A Practitioner's Guide.</em> Wiley.<p>Further study of smile representations, dynamics and derivative pricing.</p></li>
+<li>Derman, E. and Miller, M. B. (2016). <em>The Volatility Smile.</em> Wiley.<p>A detailed treatment of the relationship between observed smile geometry and models of uncertainty.</p></li>
+</ol>
+<div class="end-links"><a href="systematic-trading-strategy.html">← Quant Basics 05 · Systematic Trading Strategy</a><a href="../index.html#quant-basics">Return to Quant Basics ↗</a><a href="#introduction">Back to the introduction ↑</a></div>
+</section>

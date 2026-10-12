@@ -1,0 +1,464 @@
+[
+  {
+    "distribution": "student",
+    "nu": 2.05,
+    "alpha": 0.8,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      1646.5481563857177,
+      4305.532441053089
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 2.05,
+    "alpha": 0.95,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      4485.297359185346,
+      9264.721554792503
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 2.05,
+    "alpha": 0.99,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      10523.132461699865,
+      20771.697218741298
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 2.05,
+    "alpha": 0.999,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      32841.910071636135,
+      64193.22756733105
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 2.05,
+    "alpha": 0.9999,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      101136.94538141719,
+      197481.67535099387
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 2.5,
+    "alpha": 0.8,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      4517.590184587014,
+      10430.87906677318
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 2.5,
+    "alpha": 0.95,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      11440.701445026809,
+      20560.79925147263
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 2.5,
+    "alpha": 0.99,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      23939.840948021334,
+      40657.7757350527
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 2.5,
+    "alpha": 0.999,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      61814.72678790964,
+      103323.19340091647
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 2.5,
+    "alpha": 0.9999,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      155934.29927878652,
+      260009.198882422
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 3,
+    "alpha": 0.8,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      5649.212529375493,
+      12065.089606765228
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 3,
+    "alpha": 0.95,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      13587.150125838567,
+      22368.093942678563
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 3,
+    "alpha": 0.99,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      26215.76017648556,
+      40432.31298931825
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 3,
+    "alpha": 0.999,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      58973.627146322244,
+      88965.84354095018
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 3,
+    "alpha": 0.9999,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      128193.36578451979,
+      192523.74557186506
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 5,
+    "alpha": 0.8,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      7122.755493927805,
+      13445.505974441683
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 5,
+    "alpha": 0.95,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      15608.497583442291,
+      22386.842554615196
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 5,
+    "alpha": 0.99,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      26064.63569384323,
+      34488.36760047854
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 5,
+    "alpha": 0.999,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      45650.30885397761,
+      58205.961226926614
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 5,
+    "alpha": 0.9999,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      74962.10623030308,
+      94410.16432413597
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 10,
+    "alpha": 0.8,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      7862.532243169846,
+      13831.675481634682
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 10,
+    "alpha": 0.95,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      16211.14510872158,
+      21541.39378660357
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 10,
+    "alpha": 0.99,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      24719.90552991098,
+      30081.835694235975
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 10,
+    "alpha": 0.999,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      37062.38393235085,
+      43047.84795873978
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 10,
+    "alpha": 0.9999,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      50927.075194540805,
+      57986.126016282054
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 30,
+    "alpha": 0.8,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      8248.175359695335,
+      13958.088697428564
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 30,
+    "alpha": 0.95,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      16397.09796280303,
+      20925.565609507394
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 30,
+    "alpha": 0.99,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      23739.40184989947,
+      27684.59113577857
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 30,
+    "alpha": 0.999,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      32703.99284037459,
+      36286.58825414608
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 30,
+    "alpha": 0.9999,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      40904.190429936636,
+      44353.263809397016
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 100,
+    "alpha": 0.8,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      8367.354307480337,
+      13987.380905679183
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 100,
+    "alpha": 0.95,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      16435.481304476772,
+      20715.584580739298
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 100,
+    "alpha": 0.99,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      23404.55784612722,
+      26950.762271305346
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 100,
+    "alpha": 0.999,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      31418.418048391548,
+      34409.32753717504
+    ]
+  },
+  {
+    "distribution": "student",
+    "nu": 100,
+    "alpha": 0.9999,
+    "mean": 0.0,
+    "sd": 10000.0,
+    "reference": [
+      38227.887577731024,
+      40900.11350767729
+    ]
+  },
+  {
+    "distribution": "normal",
+    "nu": 5,
+    "alpha": 0.8,
+    "mean": -500,
+    "sd": 10000,
+    "reference": [
+      7916.212335729142,
+      13498.09602039042
+    ]
+  },
+  {
+    "distribution": "normal",
+    "nu": 5,
+    "alpha": 0.9,
+    "mean": -500,
+    "sd": 10000,
+    "reference": [
+      12315.515655446005,
+      17049.833193248687
+    ]
+  },
+  {
+    "distribution": "normal",
+    "nu": 5,
+    "alpha": 0.95,
+    "mean": -500,
+    "sd": 10000,
+    "reference": [
+      15948.536269514723,
+      20127.12807507426
+    ]
+  },
+  {
+    "distribution": "normal",
+    "nu": 5,
+    "alpha": 0.975,
+    "mean": -500,
+    "sd": 10000,
+    "reference": [
+      19099.63984540054,
+      22878.02792201413
+    ]
+  },
+  {
+    "distribution": "normal",
+    "nu": 5,
+    "alpha": 0.99,
+    "mean": -500,
+    "sd": 10000,
+    "reference": [
+      22763.47874040841,
+      26152.142203458054
+    ]
+  },
+  {
+    "distribution": "normal",
+    "nu": 5,
+    "alpha": 0.999,
+    "mean": -500,
+    "sd": 10000,
+    "reference": [
+      30402.323061678133,
+      33170.90077063993
+    ]
+  },
+  {
+    "distribution": "normal",
+    "nu": 5,
+    "alpha": 0.9999,
+    "mean": -500,
+    "sd": 10000,
+    "reference": [
+      36690.164854557086,
+      39084.7966759937
+    ]
+  }
+]

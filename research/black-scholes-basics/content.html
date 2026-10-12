@@ -1,0 +1,455 @@
+<section id="overview" data-title="Introduction and scope">
+<div class="section-label">01 / Introduction</div>
+<h2>Introduction and scope</h2>
+<p class="lead">Black–Scholes–Merton connects an option's price to the cost of replicating its payoff. European options lead to an explicit formula. American options add an optimal stopping decision: when is exercising worth more than keeping the right alive?</p>
+<p>These notes develop that connection from contracts and arbitrage to stochastic calculus, pricing, hedging and numerical methods. The objective is to make every main formula interpretable: what its inputs mean, why its terms appear, which assumptions justify it, and what changes when those assumptions fail. “European” and “American” describe exercise rules, not the market or country in which a contract trades.</p>
+<p>The original contributions of <a href="#ref-bs">Black and Scholes [1]</a> and <a href="#ref-merton">Merton [2]</a> established the continuous-time replication framework. The treatment here is an original pedagogical synthesis, with independently calculated examples and figures. It is a study of the model rather than an empirical test of market prices.</p>
+<div class="two-col"><div class="panel"><span class="micro">Part I / European options</span><h3>European valuation by replication</h3><p>Specify a diffusion, eliminate the local random exposure with delta, and value the terminal payoff under a risk-neutral measure. The resulting formula also gives sensitivities and a quoting convention for implied volatility.</p></div><div class="panel"><span class="micro">Part II / American options</span><h3>American valuation by optimal stopping</h3><p>Keep the same underlying model, but allow the holder to choose a stopping time. The exercise region and its boundary become unknowns. A tree, an obstacle solver or simulation estimates the solution.</p></div></div>
+<h3>Reading sequence and prerequisites</h3>
+<p>For a first pass, read contracts, arbitrage, the model, the closed-form formula and the worked European example. Then return to the two derivations. Study Greeks together with the hedging chapter; memorising derivatives without their units hides most implementation mistakes. Read American options in order: stopping problem, exercise economics, boundary, and numerical methods.</p>
+<p>The prerequisites are elementary probability, derivatives, integrals and basic linear algebra. Brownian motion and Itô's lemma are introduced where they are used. The page keeps the distinction between a rigorous mathematical statement, a numerical approximation and a practical convention explicit. Mathematical finance can go much further than vanilla options; the final chapters mark that boundary rather than claim to cover every derivative.</p>
+<div class="callout"><p><strong>Central distinction.</strong> The Black–Scholes <em>model</em> can describe both European and American vanilla options. The familiar Black–Scholes <em>closed-form formula</em> is a European valuation formula. It gives an American call's price only in cases where early exercise is never optimal.</p></div>
+</section>
+
+<section id="contracts" data-title="Contracts and notation">
+<div class="section-label">02 / Option contracts</div><h2>Option contracts, payoffs and notation</h2>
+<p>A call gives its holder the right to buy the underlying at strike \(K\); a put gives the right to sell it at \(K\). The holder pays a premium for that right. The writer receives the premium and must honour exercise according to the contract. A European contract is exercisable only at maturity \(T\). An American contract is exercisable at any admissible time up to \(T\); a Bermudan contract allows exercise on a specified set of dates.</p>
+<div class="table-wrap"><table><caption>Notation and units used throughout</caption><thead><tr><th>Symbol</th><th>Meaning</th><th>Convention</th></tr></thead><tbody>
+<tr><td>\(S=S_t\)</td><td>Current ex-dividend spot price</td><td>Currency units per underlying unit</td></tr><tr><td>\(K\)</td><td>Strike price</td><td>Same units as S; positive</td></tr><tr><td>\(t,T,\tau=T-t\)</td><td>Current time, maturity, time remaining</td><td>Years; all rates use the same clock</td></tr><tr><td>\(r,q\)</td><td>Risk-free rate and continuous dividend yield</td><td>Annual, continuously compounded decimals</td></tr><tr><td>\(\sigma\)</td><td>Volatility of instantaneous log returns</td><td>Annualised; 20% means 0.20</td></tr><tr><td>\(\mu\)</td><td>Physical expected total return of the underlying</td><td>Annual drift, including dividend income</td></tr><tr><td>\(C_E,P_E,C_A,P_A\)</td><td>European / American call and put values</td><td>One underlying unit, before a contract multiplier</td></tr><tr><td>\(\Phi,\phi\)</td><td>Standard normal CDF and density</td><td>Φ(z) = probability that a standard normal is ≤ z</td></tr><tr><td>\(\mathbb{P},\mathbb{Q}\)</td><td>Physical and risk-neutral probability measures</td><td>Forecasting versus pricing measures</td></tr></tbody></table></div>
+<h3>Payoff, intrinsic value and profit</h3><p>Write \(x^+=\max(x,0)\). A long option's terminal payoff is non-negative because exercise is a right. This does not imply the investment is profitable: the premium and funding cost have already been paid. For a premium financed at the model's constant rate, terminal profit is payoff minus the future value of the premium.</p>
+\[h_C(S_T)=(S_T-K)^+,\qquad h_P(S_T)=(K-S_T)^+\]
+\[\operatorname{P\&L}_C=(S_T-K)^+-C_0 e^{rT},\qquad \operatorname{P\&L}_P=(K-S_T)^+-P_0 e^{rT}\]
+<p>Thus the financed break-even spots for a long call and a long put are \(K+C_0e^{rT}\) and \(K-P_0e^{rT}\), respectively, provided the put's break-even is non-negative. Ignoring financing produces the common quotation \(K\pm\text{premium}\), but mixes prices at different dates. Short-option payoffs and profits have the opposite signs.</p>
+{{figure:payoffs}}
+<p>Current intrinsic value means \((S-K)^+\) or \((K-S)^+\). The difference between premium and current intrinsic value is often called time value. For an American contract this difference cannot be negative, since immediate exercise is available. A European option may trade below current intrinsic value: a deep in-the-money put with positive rates, for instance, pays its strike only at maturity.</p>
+<h3>Moneyness and settlement</h3><p>A call is in the money if \(S>K\), a put if \(S<K\); at the money commonly means \(S\approx K\). Forward moneyness is often more useful because it includes carry: \(F_{t,T}=Se^{(r-q)\tau}\). Spot-ATM and forward-ATM differ when \(r\ne q\). “Out of the money” means zero exercise payoff now, not zero probability of a positive future payoff.</p>
+<p>Physical settlement exchanges the underlying and strike; cash settlement pays an amount based on the specified fixing. A contract multiplier scales values and Greeks: an option quoted per share with multiplier 100 represents 100 times the per-share exposures. Actual exercise windows, expiry fixings, calendars and assignment procedures are contract details; the idealised continuous-time exercise rule does not replace them.</p>
+</section>
+
+<section id="arbitrage" data-title="Bounds and put–call parity">
+<div class="section-label">03 / No-arbitrage valuation</div><h2>No-arbitrage bounds and put–call parity</h2>
+<p>An arbitrage is a self-financing strategy with no initial cost, no possible terminal loss, and a strictly positive gain with positive probability, under the admissibility conditions of the model. Replicating portfolios with the same future cash flows must have the same price. This restriction determines many properties of vanilla options before any volatility model is chosen.</p>
+<h3>Prepaid forwards and European put–call parity</h3><p>With deterministic continuous yield \(q\), buying \(e^{-q\tau}\) shares and reinvesting dividends produces one share at maturity. Its current cost is \(Se^{-q\tau}\), the prepaid forward value. A zero-coupon payment of \(K\) at maturity costs \(Ke^{-r\tau}\). The terminal identity between a call and a put then gives:</p>
+\[(S_T-K)^+-(K-S_T)^+=S_T-K\]
+\[C_E-P_E=Se^{-q\tau}-Ke^{-r\tau}=e^{-r\tau}(F_{t,T}-K)\]
+<p>The option side is long call and short put; the other side is long the prepaid forward and short the strike bond. For known cash dividends, replace the prepaid forward by spot minus the present value of those dividends, within the idealised dividend model. Do not replace the right-hand side by \(S-K\) unless both discounting and dividend effects disappear.</p>
+<h3>European price bounds</h3><p>A call cannot exceed the cost of delivering a share at maturity, while a put cannot exceed the cost of its maximum possible cash payoff. Non-negativity and parity supply the lower bounds. These expressions remain valid for negative deterministic rates and yields, although their relationship to current intrinsic value changes.</p>
+\[\max(Se^{-q\tau}-Ke^{-r\tau},0)\le C_E\le Se^{-q\tau}\]
+\[\max(Ke^{-r\tau}-Se^{-q\tau},0)\le P_E\le Ke^{-r\tau}\]
+<p>A violated bound is a problem with the quote, contract comparison or conventions before it is a problem with Black–Scholes. Bid–ask spreads, asynchronous spot and option quotes, transaction costs and different funding rates can make a theoretical arbitrage impossible to execute. A consistent model comparison still starts by checking the bounds.</p>
+<h3>Monotonicity, convexity and vertical spreads</h3><p>Increasing strike reduces a call's payoff and increases a put's payoff. A call spread's maximum payoff equals the strike difference; discounting gives the corresponding spread bound. Convexity in strike follows because the payoff is convex in \(K\), and expectation preserves convexity. These are European static-arbitrage constraints, independent of the lognormal assumption.</p>
+\[0\le C_E(K_1)-C_E(K_2)\le e^{-r\tau}(K_2-K_1),\qquad K_1<K_2\]
+\[\frac{\partial C_E}{\partial K}=-e^{-r\tau}\mathbb{Q}(S_T>K),\qquad \frac{\partial^2 C_E}{\partial K^2}=e^{-r\tau}f_{S_T}^{\mathbb{Q}}(K)\ge0\]
+<p>The derivative statements assume a sufficiently smooth terminal distribution; without a density, the same relationships can be expressed through measures. A butterfly spread probes this curvature. Later, an implied volatility surface must reproduce these price constraints; an attractive looking volatility curve is not enough.</p>
+{{figure:density}}
+<div class="callout"><p><strong>Useful separation.</strong> European parity is a payoff identity. American call and put holders may exercise at different times, so replacing both European values by American values does not preserve the equality.</p></div>
+</section>
+
+<section id="model" data-title="Black–Scholes–Merton model">
+<div class="section-label">04 / Model specification</div><h2>The Black–Scholes–Merton model</h2>
+<p>The baseline market has a tradable underlying, a cash account and a continuous proportional dividend yield. Its dynamics under the physical measure are written with \(\mu\) as the expected <em>total</em> return, so the ex-dividend price drift is \(\mu-q\). The cash account earns the continuously compounded rate.</p>
+\[dS_t=(\mu-q)S_t\,dt+\sigma S_t\,dW_t^{\mathbb{P}},\qquad dB_t=rB_t\,dt\]
+<p>Brownian increments over an interval of length \(h\) are independent of the past, normally distributed with mean zero and variance \(h\). A typical random price move is therefore of order \(\sqrt{h}\), larger than the drift's order \(h\) as the interval shrinks. Brownian paths are continuous but not ordinarily differentiable.</p>
+<h3>Market and modelling assumptions</h3><ul>
+<li><strong>Frictionless continuous trading.</strong> Positions are divisible, buying and selling have no spread or fees, and rebalancing is available continuously.</li>
+<li><strong>Symmetric funding and shorting.</strong> Borrowing and lending use the same risk-free rate; the underlying can be sold short and dividend obligations are honoured.</li>
+<li><strong>Known coefficients.</strong> The baseline \(r,q,\sigma\) are constant and volatility is positive. Deterministic time-dependent coefficients admit a closely related European formula.</li>
+<li><strong>Continuous one-factor price risk.</strong> Prices follow geometric Brownian motion, stay positive and have no jumps. There is no additional unhedgeable volatility shock.</li>
+<li><strong>No default or market restrictions.</strong> The derivative and financing counterparties perform; admissible trading strategies rule out pathological doubling schemes.</li></ul>
+<p>Normal log returns are a consequence of this diffusion, not an additional forecast extracted from the formula. A realised path can move sharply over a finite interval despite being mathematically continuous. What the model excludes is an instantaneous discontinuous jump.</p>
+<h3>Itô's lemma and the log-price process</h3><p>For a smooth function \(f(S,t)\), ordinary calculus misses the contribution from squared random increments. Brownian quadratic variation gives \((dW)^2=dt\) in the Itô shorthand. Hence:</p>
+\[df=\left(f_t+(\mu-q)Sf_S+\frac12\sigma^2S^2f_{SS}\right)dt+\sigma Sf_S\,dW^{\mathbb{P}}\]
+\[d\ln S_t=\left(\mu-q-\frac12\sigma^2\right)dt+\sigma\,dW_t^{\mathbb{P}}\]
+\[S_T=S_t\exp\left[\left(\mu-q-\frac12\sigma^2\right)\tau+\sigma\sqrt{\tau}Z\right],\qquad Z\sim N(0,1)\]
+<p>The correction \(-\sigma^2/2\) reconciles average compound growth with the expected level of a random price. The conditional expected price under \(\mathbb{P}\) is \(Se^{(\mu-q)\tau}\), while the median is lower by the volatility correction. The standard deviation of log returns is \(\sigma\sqrt{\tau}\), not \(\sigma\tau\).</p>
+{{figure:gbm}}
+<p>Historical volatility is commonly estimated from log returns as a sample standard deviation multiplied by the square root of the number of observations per year. That estimator describes realised fluctuations under a chosen sampling convention. It does not automatically equal the volatility implied by a market option price.</p>
+</section>
+
+<section id="replication" data-title="Derivation of the pricing PDE">
+<div class="section-label">05 / Replication argument</div><h2>Derivation of the Black–Scholes–Merton equation</h2>
+<p>Let \(V(S,t)\) be a European derivative value with payoff \(h(S_T)\). Replicate it with \(\Delta_t\) shares and a cash position \(M_t\). The portfolio value is \(X_t=\Delta_t S_t+M_t\). A self-financing strategy pays for changes in holdings using its own assets; no outside cash is injected after initiation.</p>
+\[dX_t=\Delta_t(dS_t+qS_t\,dt)+rM_t\,dt,\qquad M_t=X_t-\Delta_t S_t\]
+<p>The term \(q\Delta S\,dt\) is the dividend income of the stock position. Matching the portfolio to \(V\), apply Itô's lemma and compare the coefficients of the random shock. There is only one Brownian risk, and one traded risky asset is sufficient to cancel it:</p>
+\[\sigma S V_S=\Delta\sigma S,\qquad \Delta=V_S\]
+<p>Next compare the drift. The derivative's drift is \(V_t+(\mu-q)SV_S+\frac12\sigma^2S^2V_{SS}\); the portfolio's drift is \(\mu S\Delta+r(V-S\Delta)\). Substituting the same delta on both sides eliminates \(\mu\).</p>
+\[V_t+\frac12\sigma^2S^2V_{SS}+(r-q)SV_S-rV=0\]
+<p>This is the Black–Scholes–Merton partial differential equation. Its terminal condition is \(V(S,T)=h(S)\). The physical drift disappears because the risk exposure has been hedged, not because investors are assumed indifferent to risk. Two investors can disagree about expected returns and still agree on the replication price within the same complete market model.</p>
+<h3>Self-financing trading strategies</h3><p>It is tempting to set \(\Pi=V-\Delta S\), differentiate it as if delta were constant, and call the result a riskless portfolio. A changing delta generates rebalancing flows. The correct argument is a gains equation for a financed trading strategy, as above, or an explicit treatment of those flows. Equality of instantaneous random coefficients alone is not a complete replication proof.</p>
+<p>In the baseline diffusion, regular European claims can be replicated by continuously adjusting delta and investing the remainder in the cash account. The initial replication cost is unique under no arbitrage. A payoff with a kink is not smooth at expiry, but the value function is smooth for positive remaining time away from degeneracies.</p>
+<h3>Terminal and boundary conditions</h3>
+\[C_E(S,T)=(S-K)^+,\qquad P_E(S,T)=(K-S)^+\]
+\[C_E(0,t)=0,\qquad P_E(0,t)=Ke^{-r\tau}\]
+\[C_E(S,t)\sim Se^{-q\tau}-Ke^{-r\tau},\qquad P_E(S,t)\to0\quad(S\to\infty)\]
+<p>The PDE alone does not identify the contract. The terminal payoff and economically appropriate boundary or growth conditions select its solution. On a truncated numerical grid, the large-spot asymptote is an approximation that must be tested by moving the truncation farther out.</p>
+<p class="source-note">For the replication framework and treatment of dividends, see <a href="#ref-bs">[1]</a>, <a href="#ref-merton">[2]</a> and the further reading in <a href="#references">the bibliography</a>.</p>
+</section>
+
+<section id="risk-neutral" data-title="Risk-neutral valuation">
+<div class="section-label">06 / Martingale pricing</div><h2>Risk-neutral valuation and the Feynman–Kac representation</h2>
+<p>The same valuation can be expressed as an expectation under a probability measure in which the discounted <em>total gains</em> of traded assets are martingales. With dividends, it is the reinvested gain process, rather than the ex-dividend discounted spot alone, that has zero expected excess return.</p>
+\[dS_t=(r-q)S_t\,dt+\sigma S_t\,dW_t^{\mathbb{Q}}\]
+\[V(S,t)=e^{-r\tau}\mathbb{E}^{\mathbb{Q}}[h(S_T)\mid S_t=S]\]
+<p>Risk-neutral pricing is a no-arbitrage valuation device. It is not a claim that the stock's actual expected return is \(r-q\), nor that pricing probabilities are statistical forecasts. The option payoff is unchanged; probabilities are reweighted so that financing and replication are consistent.</p>
+<h3>Change of measure and Girsanov's theorem</h3><p>For constant coefficients, let \(\lambda=(\mu-r)/\sigma\), the market price of Brownian risk. Under the usual integrability assumptions, Girsanov's theorem defines an equivalent measure using the exponential density process:</p>
+\[Z_t=\exp\left(-\lambda W_t^{\mathbb{P}}-\frac12\lambda^2t\right),\qquad dW_t^{\mathbb{Q}}=dW_t^{\mathbb{P}}+\lambda\,dt\]
+<p>Substituting this relation into the physical diffusion turns its drift into \(r-q\). The two measures agree on which events have zero probability but weight outcomes differently. In this one-factor complete market the relevant risk-neutral measure is unique. With extra untraded risks, no arbitrage alone may allow multiple measures and no longer selects a unique derivative price.</p>
+<h3>The Feynman–Kac representation</h3><p>The infinitesimal generator under \(\mathbb{Q}\) is \(\mathcal{L}f=(r-q)Sf_S+\frac12\sigma^2S^2f_{SS}\). Feynman–Kac connects the discounted expectation to \(V_t+\mathcal{L}V-rV=0\), with terminal condition \(h\). The stochastic and PDE approaches are two descriptions of the same solution, subject to their regularity and integrability conditions.</p>
+\[S_T=S\exp\left[\left(r-q-\frac12\sigma^2\right)\tau+\sigma\sqrt{\tau}Z\right]\]
+\[V=e^{-r\tau}\int_{-\infty}^{\infty}h\!\left(Se^{(r-q-\sigma^2/2)\tau+\sigma\sqrt{\tau}z}\right)\phi(z)\,dz\]
+<p>This integral is already a pricing formula for any integrable European payoff on the terminal spot. Calls and puts have a special payoff structure that lets the integral simplify. Path-dependent claims require the path distribution, not just this terminal density. An American claim additionally requires a stopping rule.</p>
+<div class="callout"><p><strong>Three clocks to keep separate.</strong> Physical drift controls a real-world forecast; risk-neutral drift controls the pricing distribution; the risk-free rate discounts the payoff. Using a historical mean in the risk-neutral simulation while discounting at the risk-free rate breaks the replication argument.</p></div>
+</section>
+
+<section id="formula" data-title="European pricing formulas">
+<div class="section-label">07 / European options</div><h2>European call and put pricing formulas</h2>
+<p>For \(S,K,\sigma,\tau>0\), define the two standardised distances:</p>
+\[d_1=\frac{\ln(S/K)+(r-q+\sigma^2/2)\tau}{\sigma\sqrt{\tau}},\qquad d_2=d_1-\sigma\sqrt{\tau}\]
+\[C_E=Se^{-q\tau}\Phi(d_1)-Ke^{-r\tau}\Phi(d_2)\]
+\[P_E=Ke^{-r\tau}\Phi(-d_2)-Se^{-q\tau}\Phi(-d_1)\]
+<p>The first call term values the underlying delivered in states where the option is exercised. The second values the strike paid in those states. Both are expectations under the pricing model; subtracting them leaves the net payoff. The put reverses the event and the cash flows.</p>
+<h3>Evaluation of the truncated lognormal expectation</h3><p>Set \(m=(r-q-\sigma^2/2)\tau\) and \(v=\sigma\sqrt{\tau}\). Exercise occurs when \(Z>-d_2\), so its risk-neutral probability is \(\Phi(d_2)\). Expanding the call payoff into an asset component and a cash component gives:</p>
+\[C_E=e^{-r\tau}\left(\mathbb{E}^{\mathbb{Q}}[S_T\mathbb{1}_{S_T>K}]-K\mathbb{Q}(S_T>K)\right)\]
+\[e^{vz}\phi(z)=e^{v^2/2}\phi(z-v)\]
+\[\mathbb{E}^{\mathbb{Q}}[S_T\mathbb{1}_{S_T>K}]=Se^{(r-q)\tau}\Phi(d_1),\qquad \mathbb{Q}(S_T>K)=\Phi(d_2)\]
+<p>Completing the square shifts the normal tail by \(v\); that shift is precisely the difference between \(d_1\) and \(d_2\). The put formula follows either by the same integration over the left tail or by European parity and \(\Phi(-x)=1-\Phi(x)\).</p>
+<h3>Delta and risk-neutral exercise probabilities</h3><p>For a no-dividend call, delta is \(\Phi(d_1)\), while the probability of terminal exercise under \(\mathbb{Q}\) is \(\Phi(d_2)\). They differ because the asset term weights high-price states more heavily. In a stock total-return numeraire measure, \(\Phi(d_1)\) has a probability interpretation; under the money-market pricing measure it is not the exercise probability. With yield, delta additionally contains \(e^{-q\tau}\).</p>
+<h3>Cash-or-nothing and asset-or-nothing options</h3><p>A cash-or-nothing call pays one currency unit if \(S_T>K\). An asset-or-nothing call pays \(S_T\) in the same event. Their European values are:</p>
+\[D_C=e^{-r\tau}\Phi(d_2),\qquad A_C=Se^{-q\tau}\Phi(d_1),\qquad C_E=A_C-KD_C\]
+<p>These contracts expose the meaning of the two terms without treating either as an independent hedge held statically. Their sensitivities can be more singular near expiry than a vanilla's. A binary option with a discontinuous payoff needs particular care in numerical differentiation and simulation.</p>
+{{figure:smoothing}}
+</section>
+
+<section id="limits" data-title="Limits and comparative statics">
+<div class="section-label">08 / Analytical properties</div><h2>Limiting cases and comparative statics</h2>
+<h3>Expiry and zero-volatility limits</h3><p>As remaining time goes to zero, a European price approaches its payoff. At the strike, value still converges, but delta does not have an ordinary unique payoff derivative; gamma concentrates into the strike kink. Evaluating \(d_1\) at exactly zero time is a numerical division by zero, not a meaningful implementation.</p>
+\[\lim_{\tau\downarrow0}C_E=(S-K)^+,\qquad \lim_{\tau\downarrow0}P_E=(K-S)^+\]
+<p>If volatility is zero while time remains positive, the risk-neutral terminal price is deterministic. The correct value is the discounted deterministic payoff, equivalently the positive part of the difference between the prepaid asset and strike.</p>
+\[C_E(\sigma=0)=\left(Se^{-q\tau}-Ke^{-r\tau}\right)^+,\qquad P_E(\sigma=0)=\left(Ke^{-r\tau}-Se^{-q\tau}\right)^+\]
+<p>A branch for zero volatility avoids dividing by zero. It also reveals why substituting current intrinsic value at \(\sigma=0\) would be wrong unless carry disappears. At zero spot, use the boundary values directly; do not take the logarithm of zero.</p>
+<h3>Volatility and strike asymptotics</h3>
+\[\lim_{\sigma\to\infty}C_E=Se^{-q\tau},\qquad \lim_{\sigma\to\infty}P_E=Ke^{-r\tau}\]
+<p>At fixed positive time, increasing volatility spreads the pricing distribution while leaving its forward mean unchanged. Convex call and put payoffs benefit from that spread. The high-volatility limits reach the upper bounds; they do not imply the price can grow without limit. As strike goes to infinity, a call goes to zero; as strike goes to zero, it approaches the prepaid asset value.</p>
+<h3>Parameter sensitivities</h3><p>Both European vanilla options have positive gamma and vega in the non-degenerate BSM model. Calls increase with spot and decrease with strike; puts do the reverse. Holding all other model inputs fixed, raising \(r\) increases a call and decreases a put. Raising \(q\) decreases a call and increases a put. These partial derivatives are statements about the model, not about joint market movements.</p>
+<p>Maturity is subtler. A no-dividend European call is non-decreasing in maturity when rates are non-negative. A European put can lose value when maturity increases because the strike is discounted for longer. Dividend-paying calls can also have non-standard calendar behaviour. American values with a fixed time-homogeneous environment and the same payoff cannot decrease when the available exercise horizon expands, because the old exercise strategies remain feasible.</p>
+<div class="callout warm"><p><strong>Do not hard-code universal signs.</strong> “Theta is always negative” is false for European options. Deep in-the-money puts can have positive calendar theta at positive rates; dividend-paying calls can too. The familiar statement that an American no-dividend call never benefits from early exercise requires non-negative rates.</p></div>
+<h3>Homogeneity and scale invariance</h3><p>Multiplying spot and strike by the same positive factor scales a vanilla value by that factor. Delta is unchanged, gamma scales inversely, and vega scales with the factor. This homogeneity is a useful implementation check and supports dimensionless graphs of value divided by strike against spot divided by strike.</p>
+\[V(aS,aK;r,q,\sigma,\tau)=aV(S,K;r,q,\sigma,\tau),\qquad a>0\]
+</section>
+
+<section id="greeks" data-title="Option sensitivities and Greeks">
+<div class="section-label">09 / Sensitivity analysis</div><h2>Option sensitivities and the Greeks</h2>
+<p>A Greek is a partial derivative holding the other inputs fixed. These derivatives provide hedge ratios and a local approximation to price changes. Market movements can alter several inputs at once, and a desk's convention for changing the volatility surface can produce an effective delta different from the fixed-volatility delta below.</p>
+<p>Let \(A=Se^{-q\tau}\phi(d_1)\). All formulas in the table are for one long European option. Theta uses current calendar time \(t\), so \(\Theta=\partial V/\partial t=-\partial V/\partial\tau\). Vega and rate derivatives use a change of 1.00 in a decimal input; quote scaling comes afterwards.</p>
+<div class="table-wrap greek-table"><table><caption>European Black–Scholes–Merton Greeks with continuous yield</caption><thead><tr><th>Greek / definition</th><th>Call</th><th>Put</th></tr></thead><tbody>
+<tr><td>Delta<br>\(\Delta=V_S\)</td><td>\(e^{-q\tau}\Phi(d_1)\)</td><td>\(-e^{-q\tau}\Phi(-d_1)\)</td></tr>
+<tr><td>Gamma<br>\(\Gamma=V_{SS}\)</td><td colspan="2">\(\frac{e^{-q\tau}\phi(d_1)}{S\sigma\sqrt{\tau}}\)</td></tr>
+<tr><td>Vega<br>\(\nu=V_\sigma\)</td><td colspan="2">\(A\sqrt{\tau}\)</td></tr>
+<tr><td>Theta<br>\(\Theta=V_t\)</td><td>\(-\frac{A\sigma}{2\sqrt{\tau}}-rKe^{-r\tau}\Phi(d_2)+qSe^{-q\tau}\Phi(d_1)\)</td><td>\(-\frac{A\sigma}{2\sqrt{\tau}}+rKe^{-r\tau}\Phi(-d_2)-qSe^{-q\tau}\Phi(-d_1)\)</td></tr>
+<tr><td>Rho<br>\(\rho=V_r\)</td><td>\(K\tau e^{-r\tau}\Phi(d_2)\)</td><td>\(-K\tau e^{-r\tau}\Phi(-d_2)\)</td></tr>
+<tr><td>Yield sensitivity<br>\(\psi=V_q\)</td><td>\(-\tau Se^{-q\tau}\Phi(d_1)\)</td><td>\(\tau Se^{-q\tau}\Phi(-d_1)\)</td></tr>
+</tbody></table></div>
+<h3>Greek units and quotation conventions</h3><p>Delta is underlying units per option unit; gamma is delta change per spot unit. Vega is currency per unit of decimal volatility. A one percentage point volatility change is \(\Delta\sigma=0.01\), so divide raw vega by 100 for a price change per vol point. Rho per one percentage point is similarly raw rho divided by 100; per basis point it is divided by 10,000.</p>
+<p>Theta above is currency per year. An approximate daily theta divides by a stated day-count basis, often 365 calendar days. The volatility annualisation clock and the time-to-expiry clock must be deliberate and consistent; a trading-day volatility estimate does not make every calendar convention interchangeable. Multiply all exposures by position size and contract multiplier before aggregating portfolio risk.</p>
+<h3>Relationships between gamma, vega and theta</h3>
+\[\nu=S^2\sigma\tau\Gamma\]
+\[\Theta+\frac12\sigma^2S^2\Gamma+(r-q)S\Delta-rV=0\]
+<p>The first identity follows directly from the European formulas. The second is the pricing PDE written in terms of Greeks. Curvature earns value when realised price variation occurs, while time decay and financing offset it in the correctly specified model. Long gamma and negative theta often coexist, but carry prevents a universal sign rule.</p>
+{{figure:greeks}}
+<h3>Higher-order sensitivities</h3><p>Vanna measures how delta changes with volatility, or equivalently how vega changes with spot. Volga, also called vomma, measures how vega changes with volatility. For both vanilla exercise directions:</p>
+\[\operatorname{Vanna}=V_{S\sigma}=-e^{-q\tau}\phi(d_1)\frac{d_2}{\sigma}\]
+\[\operatorname{Volga}=V_{\sigma\sigma}=\nu\frac{d_1d_2}{\sigma}\]
+<p>Charm is the change of delta with time; speed is the spot derivative of gamma. Such Greeks are useful when the hedge or the volatility exposure changes rapidly, but their names are not universally sufficient to identify units or time-sign conventions. State the derivative explicitly.</p>
+<h3>Second-order price expansion</h3>
+\[\Delta V\approx\Delta\,\Delta S+\frac12\Gamma(\Delta S)^2+\Theta\,\Delta t+\nu\,\Delta\sigma+\rho\,\Delta r+\psi\,\Delta q\]
+<p>A larger move may also need mixed and higher-order terms, especially vanna and volga. The expansion is not a substitute for repricing a large scenario. At an American exercise frontier, European formulas do not supply the correct sensitivities; numerical Greeks may be sensitive to grid movement and branch changes.</p>
+{{figure:tangent}}
+</section>
+
+<section id="hedging" data-title="Hedging and replication error">
+<div class="section-label">10 / Dynamic replication</div><h2>Delta hedging and replication error</h2>
+<p>A writer of one call begins with the received premium, buys \(\Delta\) shares and finances the remainder. When delta changes, the stock holding is adjusted using cash from the portfolio. The benchmark's initial hedge buys 0.636831 shares and borrows 53.232482 currency units, because the shares cost 63.683065 while the option premium is only 10.450584.</p>
+<h3>Discrete self-financing hedging</h3><p>For zero dividends, suppose the cash balance immediately after time \(t_i\)'s rebalance is \(M_i\). Accrue financing over the interval, observe the new spot, compute the next delta, and pay for the stock adjustment:</p>
+\[M_{i+1}=M_i e^{r\Delta t}-(\Delta_{i+1}-\Delta_i)S_{i+1}\]
+\[X_T=\Delta_{n-1}S_T+M_{n-1}e^{r\Delta t},\qquad \varepsilon=X_T-h(S_T)\]
+<p>Dividend income must be credited when \(q\ne0\); a cash-dividend model must credit the actual payments and update spot accordingly. Setting the cash account afresh to \(V-\Delta S\) at every date would inject or withdraw money and hide the hedge error.</p>
+{{figure:hedging}}
+<h3>Leading-order discretisation error</h3><p>Between rebalances, the hedge follows a tangent while the option price has curvature. In a short interval with zero yield, the leading error of a replicating portfolio against one short option is approximately:</p>
+\[\varepsilon_{\text{short}}\approx\frac12\Gamma\left(\sigma_{\text{model}}^2S^2\Delta t-(\Delta S)^2\right)\]
+<p>This is a local expansion after financing, with terms beyond the approximation suppressed. A long option hedged by short stock has the opposite sign. A realised squared move larger than the model's local variance tends to benefit the long gamma position. When model and actual diffusion volatility coincide, the leading term has approximately zero conditional mean; its realised value is still random at a finite hedge frequency.</p>
+<h3>Transaction costs and additional hedging instruments</h3><p>More frequent rebalancing reduces diffusion discretisation error but raises costs. A proportional cost rate \(c\) on each stock adjustment gives a trading expense of approximately \(cS_i|\Delta_i-\Delta_{i-1}|\), plus any spread or slippage details. A continuously rebalanced Brownian hedge is not a costless limit once such frictions are introduced.</p>
+<p>Stock can neutralise delta but has no gamma or vega. To hedge a portfolio's gamma with a second option \(H\), choose \(n_H=-\Gamma_{\text{portfolio}}/\Gamma_H\), then offset the resulting delta with stock. One option generally cannot neutralise both gamma and vega independently across multiple maturities. Hedge ratios change as prices and time change.</p>
+<p>In the ideal BSM world, volatility is a known coefficient rather than a separately traded shock, so stock replication suffices. In markets, implied volatility moves, jumps occur, borrowing costs vary and liquidity can disappear. Greek neutrality at one instant does not eliminate those risks or guarantee a profitable strategy.</p>
+</section>
+
+<section id="european-example" data-title="European valuation example">
+<div class="section-label">11 / Numerical example</div><h2>European option valuation: a numerical example</h2>
+<p>Use a synthetic benchmark that can be reproduced without market data: \(S=100\), \(K=100\), \(r=0.05\), \(q=0\), \(\sigma=0.20\), \(\tau=1\). Rates are continuously compounded, and each price is per underlying unit.</p>
+\[d_1=\frac{\ln(100/100)+(0.05+0.20^2/2)}{0.20}=0.35,\qquad d_2=0.15\]
+\[\Phi(d_1)=0.6368306512,\quad\Phi(d_2)=0.5596176924,\quad e^{-0.05}=0.9512294245\]
+\[C_E=100(0.6368306512)-100e^{-0.05}(0.5596176924)=10.45058357\]
+\[P_E=100e^{-0.05}\Phi(-0.15)-100\Phi(-0.35)=5.57352602\]
+<p>The forward is 105.127110 and the prepaid forward is 100. European parity gives \(C_E-P_E=4.87705755\), equal to \(100-100e^{-0.05}\). The risk-neutral probability that the call ends in the money is 55.9618%; its delta is 63.6831%. Confusing those numbers changes a hedge by almost eight shares per 100 option units.</p>
+{{table:benchmark}}
+<h3>Local sensitivity approximations</h3><p>For a spot increase from 100 to 101 with time and all other inputs fixed, delta alone predicts a call increase of 0.636831. Including gamma adds \(0.5\times0.018762=0.009381\), for a predicted increase of 0.646212. The exact repricing is close for this small move; a ten-unit move should be repriced rather than assumed linear.</p>
+<p>A one vol point increase means moving sigma from 0.20 to 0.21, not to 1.20. First-order vega predicts an increase of 0.375240. One calendar day of time passing predicts approximately −0.017573 for the call using theta/365, before any spot, volatility or rate movement.</p>
+<h3>Valuation with a 2% continuous dividend yield</h3><p>Changing only \(q\) to 0.02 gives \(d_1=0.25\), \(d_2=0.05\), call 9.227006 and put 6.330081. The call's delta becomes 0.586851 and the put's becomes −0.393348. Their difference is \(e^{-0.02}\), not one. The call falls because its holder does not receive dividends before exercise; the put benefits from the lower forward.</p>
+<div class="callout"><p><strong>Replication check.</strong> For the no-dividend call, 63.683065 of stock value minus 53.232482 of borrowing gives \(\Delta S+M=10.450584\). Stock exposure and financing are two pieces of the same replication cost.</p></div>
+</section>
+
+<section id="implied-volatility" data-title="Implied volatility estimation">
+<div class="section-label">12 / Volatility estimation</div><h2>Implied volatility: definition and estimation</h2>
+<p>Given a European quote \(V_{\text{mkt}}\) and fixed spot, strike, carry and maturity, implied volatility is the non-negative input that reproduces that quote. It is a parameter extracted through a pricing convention, not a direct observation of a future standard deviation.</p>
+\[f(\sigma)=V_{\text{BSM}}(\sigma)-V_{\text{mkt}}=0\]
+<p>For positive spot, strike and time, the European price is strictly increasing in positive volatility. A quote strictly between the zero-volatility lower limit and high-volatility upper limit therefore has a unique finite positive implied volatility. At the lower limit the solution can be zero; the upper limit requires volatility tending to infinity. Outside the bounds there is no solution in this model.</p>
+<h3>Bisection and safeguarded Newton iteration</h3><p>Bisection starts with a bracket whose endpoint prices straddle the quote, evaluates the midpoint and retains the half containing the root. It is slower than a well-behaved Newton step, but preserves the bracket. Newton uses vega as the derivative:</p>
+\[\sigma_{n+1}=\sigma_n-\frac{V_{\text{BSM}}(\sigma_n)-V_{\text{mkt}}}{\nu(\sigma_n)}\]
+<p>A practical hybrid maintains a bracket, accepts Newton only if the proposed value stays inside it and vega is usable, and otherwise bisects. Short maturities and deep moneyness can make vega tiny. Small numerical price errors then produce large changes in the inferred volatility. Stop on both a price residual and a volatility bracket tolerance, and report failure rather than return an arbitrary last iterate.</p>
+{{figure:iv}}
+<h3>Bid–ask uncertainty and implied volatility</h3><p>Invert bid and ask separately when comparing a model with a market. First-order uncertainty is \(\Delta\sigma\approx\Delta V/\nu\); wide spreads or small vega create uncertain implied volatilities even if the root solver is exact. Matching a mid-price to many decimals does not create information absent from the quote.</p>
+<p>Use a carry curve consistent with the contract, a verified time to the actual fixing, and synchronised underlying inputs. A wrong dividend forecast can appear as an odd implied volatility. For an American option, a European inversion generally absorbs the early-exercise premium into the inferred sigma. Use an American pricing engine if the exercise feature is material.</p>
+<h3>Volatility smiles, skews and surfaces</h3><p>Constant-volatility BSM predicts the same sigma for every strike and maturity on the same underlying in the baseline environment. A smile or skew means that a single sigma cannot reproduce all observed prices. A volatility surface records \(\sigma_{\text{imp}}(K,T)\); total implied variance \(w=\sigma_{\text{imp}}^2\tau\) is often a useful alternative coordinate.</p>
+<p>A quote surface is not automatically a model of future volatility dynamics. Interpolation must respect price positivity, vertical spread and butterfly bounds, and calendar consistency after carry has been handled. Hedging a smile also requires a convention for how it moves with spot, such as fixed-strike or fixed-delta quoting; those conventions change the effective sensitivities.</p>
+</section>
+
+<section id="extensions" data-title="European model extensions">
+<div class="section-label">13 / Model extensions</div><h2>Extensions of the European pricing framework</h2>
+<h3>Forward-price representation</h3><p>Writing the European formula in terms of the forward and discount factor makes the two carry components visible. Let \(D=e^{-r\tau}\), \(F=Se^{(r-q)\tau}\), and \(w=\sigma^2\tau\).</p>
+\[C_E=D[F\Phi(d_1)-K\Phi(d_2)],\qquad d_1=\frac{\ln(F/K)+w/2}{\sqrt{w}},\quad d_2=d_1-\sqrt{w}\]
+<p>This form is particularly useful when forwards and discount factors are market inputs. A derivative with respect to forward holding \(D\) fixed is \(D\Phi(d_1)\); a spot derivative also differentiates the forward's spot dependence. A rho computed holding forward fixed is not the same rho as one computed holding spot and yield fixed.</p>
+<h3>Deterministic time-dependent coefficients</h3><p>If rates, yield and volatility are deterministic functions of time, define their cumulative quantities. The terminal log price remains normal; integrated variance replaces \(\sigma^2\tau\).</p>
+\[R=\int_t^T r(u)\,du,\qquad Q=\int_t^T q(u)\,du,\qquad w=\int_t^T\sigma^2(u)\,du\]
+\[d_1=\frac{\ln(S/K)+R-Q+w/2}{\sqrt{w}},\qquad C_E=Se^{-Q}\Phi(d_1)-Ke^{-R}\Phi(d_1-\sqrt{w})\]
+<p>Discount curves and integrated variance fit naturally here. Stochastic rates or volatility generally require more than this substitution because they change the joint distribution and hedging problem.</p>
+<h3>Foreign exchange and futures options</h3><p>For a foreign exchange rate quoted as domestic currency per foreign unit, the foreign interest rate acts like yield: use domestic \(r_d\) and \(q=r_f\). The foreign currency holding earns its own interest. The payoff currency, quotation direction and collateral convention must be consistent.</p>
+<p>Black's lognormal formula for a European option on a forward or suitably modelled futures price uses its own forward-price distribution and discounting:</p>
+\[C_{\text{Black}}=e^{-r\tau}[F\Phi(d_1)-K\Phi(d_2)],\quad d_1=\frac{\ln(F/K)+\sigma_F^2\tau/2}{\sigma_F\sqrt{\tau}}\]
+<p>The expression resembles the BSM forward form, but its interpretation is an assumption about the forward or futures dynamics. With stochastic rates, forward and futures prices can differ. A lognormal model cannot take a negative underlying forward as input; a normal-price model may be appropriate in settings where negative values are feasible.</p>
+<h3>Discrete cash dividends and spot adjustments</h3><p>A deterministic cash dividend \(D_i\) at an ex-dividend date produces a modelled spot jump \(S^+=S^- -D_i\). A common European approximation replaces spot by \(S-\sum_i D_i e^{-r(t_i-t)}\), then uses a no-yield BSM formula. It is not exact for an underlying that follows GBM between fixed cash jumps; the resulting terminal distribution is not simply the same lognormal distribution on an adjusted spot.</p>
+<p>A PDE or a dividend-aware tree can apply a jump condition at each date. Large dividends can require a carefully specified positive-price dividend model. For American calls, dates matter because exercise just before a dividend can be valuable. An equivalent annual yield loses that timing information.</p>
+</section>
+
+<section id="american" data-title="American optimal stopping">
+<div class="section-label">14 / Optimal stopping</div><h2>American options and optimal stopping</h2>
+<p>An American option grants the holder a choice that the writer cannot withdraw. At each admissible time, the holder compares exercise payoff with continuation value. Exercise removes all later optionality. This decision must use information available at that time; selecting the best point on a fully observed future path would create an impossible foresight payoff.</p>
+<p>Let \(\mathcal{T}_{t,T}\) be the set of stopping times between now and maturity. Use \(\eta\) for exercise time to avoid confusing it with remaining maturity \(\tau\). Under the same BSM dynamics:</p>
+\[V_A(S,t)=\sup_{\eta\in\mathcal{T}_{t,T}}\mathbb{E}^{\mathbb{Q}}[e^{-r(\eta-t)}h(S_\eta)\mid S_t=S]\]
+<p>Immediate exercise and waiting to maturity are both feasible strategies. Therefore:</p>
+\[V_A\ge h(S),\qquad V_A\ge V_E,\qquad \operatorname{EEP}=V_A-V_E\ge0\]
+<p>The early-exercise premium is the value of additional exercise flexibility, not the current intrinsic value. It can be zero even though the option is American and in the money. The correct comparison is exercise versus the optimally valued continuation strategy, not exercise versus the original premium paid.</p>
+<h3>The Snell envelope and dynamic programming</h3><p>On a set of exercise dates, the discounted option value is the smallest supermartingale that dominates the discounted exercise payoff. This is the Snell envelope. Operationally, work backwards from the terminal payoff: at each node or state, take the maximum of current exercise and the discounted conditional expectation of the future optimally managed value.</p>
+\[V_i(S)=\max\left(h(S),e^{-r\Delta t}\mathbb{E}^{\mathbb{Q}}[V_{i+1}(S_{i+1})\mid S_i=S]\right)\]
+<p>For a finite exercise grid this prices a Bermudan approximation. As admissible exercise dates become dense, it approximates the continuous exercise problem under suitable convergence conditions. A coarse grid can miss valuable exercise opportunities.</p>
+<h3>The obstacle problem</h3><p>Define \(\mathcal{A}V=V_t+\frac12\sigma^2S^2V_{SS}+(r-q)SV_S-rV\). In the continuation region the ordinary pricing PDE applies. In the exercise region value equals payoff. Together these statements become a variational inequality:</p>
+\[\max(\mathcal{A}V_A,h-V_A)=0,\qquad V_A(S,T)=h(S)\]
+\[V_A\ge h,\qquad \mathcal{A}V_A\le0,\qquad (V_A-h)\mathcal{A}V_A=0\]
+<p>The exercise payoff is the obstacle: value cannot go below it. The PDE holds where that obstacle is inactive. Trying to enforce the European PDE everywhere would undervalue states where immediate exercise is best. For vanilla American options under GBM there is generally no finite-maturity elementary closed-form formula comparable with BSM; approximations and numerical solutions are the standard route.</p>
+</section>
+
+<section id="early-exercise" data-title="Early exercise conditions">
+<div class="section-label">15 / Exercise conditions</div><h2>Conditions for early exercise</h2>
+<h3>American calls without dividends under non-negative rates</h3><p>For \(q=0\) and \(r\ge0\), European call bounds imply \(C_E\ge(S-Ke^{-r\tau})^+\ge(S-K)^+\). Keeping the right alive is at least as valuable as exercising. Before expiry, exercise pays the strike earlier and surrenders downside protection without earning any dividends that would compensate for it.</p>
+\[q=0,\ r\ge0\quad\Longrightarrow\quad C_A=C_E\]
+<p>For an in-the-money call, European parity makes the two costs of early exercise visible: the corresponding put's protection and the interest saved by delaying the strike payment.</p>
+\[C_E-(S-K)=P_E+K(1-e^{-r\tau})\ge0\]
+<p>This expression applies to the stated no-dividend, non-negative-rate setting. If rates are negative, delaying the strike is no longer necessarily beneficial, and the no-early-exercise theorem does not apply unchanged.</p>
+<h3>Dividend effects on call exercise</h3><p>A call holder receives no dividends while holding the option. Exercising converts the option into stock and can obtain future dividend income. At high spot, the exercise-region operator applied to the call payoff is:</p>
+\[\mathcal{A}(S-K)=rK-qS\]
+<p>A necessary local condition for a regular call exercise region is therefore \(qS\ge rK\). It is not a complete rule for deciding exercise: optionality may still make continuation better. With positive yield, sufficiently deep in-the-money calls can exercise early.</p>
+<p>For a known cash dividend at date \(t_d\), compare the call's value just before the dividend with the optimally managed value just after the price drop. The exact idealised exercise decision at that date is:</p>
+\[C_A(S,t_d^-)=\max\left(S-K,C_A(S-D,t_d^+)\right)\]
+<p>The comparison concerns the dividend's benefit, strike financing and lost optionality together. “Exercise whenever the dividend exceeds a quoted time value” is too crude unless the quote and comparison already encode those components consistently. If the contract can be sold above intrinsic value, selling realises more value than exercising it at the same instant.</p>
+{{figure:dividends}}
+<h3>Early exercise of American puts</h3><p>Exercising an in-the-money put receives the strike now and relinquishes the option to wait for a still lower price. Positive interest rates favour receiving cash earlier, especially when spot is very low and little further downside payoff remains. The local operator in the put exercise region is:</p>
+\[\mathcal{A}(K-S)=qS-rK\]
+<p>The corresponding necessary condition is \(rK\ge qS\). For \(r>0,q=0\), early exercise is optimal for sufficiently low spot. At zero spot, the American put receives \(K\) immediately, whereas the European put is worth \(Ke^{-r\tau}\). Higher volatility typically makes waiting more valuable, but the full boundary reflects all inputs.</p>
+<h3>American put–call parity inequalities</h3><p>For a non-dividend underlying with \(r\ge0\), the European equality becomes bounds on the difference between American values:</p>
+\[S-K\le C_A-P_A\le S-Ke^{-r\tau}\]
+<p>These particular bounds must not be used unchanged with dividends or negative rates. American pricing preserves the comparison with the corresponding European value and immediate payoff, but not the European call–put equality.</p>
+</section>
+
+<section id="boundary" data-title="Free boundary and perpetual put">
+<div class="section-label">16 / Free-boundary formulation</div><h2>The free-boundary problem and the perpetual American put</h2>
+<p>For the standard American put with positive rates and zero dividends, exercise is optimal at low spot. Write its boundary as \(b(t)\): exercise when \(S\le b(t)\), continue when \(S>b(t)\). The boundary is not a contractual strike; it is part of the solution and changes with remaining time and parameters.</p>
+<h3>Value matching and smooth pasting</h3><p>At a regular diffusion boundary, continuation value joins intrinsic value and its first spot derivative agrees with the payoff derivative. For a put:</p>
+\[P_A(b(t),t)=K-b(t),\qquad \frac{\partial P_A}{\partial S}(b(t),t)=-1\]
+<p>The first relation is value matching. The second is smooth pasting. A call exercise boundary has matching value \(S-K\) and derivative +1. Smooth pasting does not generally impose matching gamma: in the exercise region the vanilla payoff is linear, while gamma on the continuation side can differ.</p>
+<p>The usual regularity conditions matter. Discrete exercise opportunities, jumps and dividend dates can change how boundaries join. A lattice represents the frontier through discrete nodes; its finite differences need not visibly satisfy smooth pasting at a finite step count.</p>
+{{figure:boundary}}
+<h3>The exercise boundary near expiry</h3><p>For positive \(r\) and non-negative continuous yield, the American put's pre-expiry boundary limit is \(\min(K,rK/q)\) when \(q>0\), and \(K\) when \(q=0\). If yield exceeds rates, there can be in-the-money states where it is better to wait until the final instant. At expiry itself, every positive payoff is exercised. The pre-expiry limit and the expiry exercise threshold need not be the same.</p>
+<p>The benchmark's no-yield boundary tends to strike as maturity approaches. In the displayed lattice graph it oscillates slightly between adjacent levels; that is discretisation, not economic oscillation of an exact solution.</p>
+<h3>The perpetual American put</h3><p>With no finite maturity, \(r>0\), constant coefficients and a stationary exercise frontier, the continuation ODE has power solutions. Let \(\beta<0\) be the negative root of:</p>
+\[\frac12\sigma^2\beta(\beta-1)+(r-q)\beta-r=0\]
+<p>Discard the growing solution at large spot. Value matching and smooth pasting determine the constant exercise threshold and continuation value:</p>
+\[b_\infty=\frac{\beta}{\beta-1}K\]
+\[P_\infty(S)=K-S\quad(S\le b_\infty),\qquad P_\infty(S)=(K-b_\infty)\left(\frac{S}{b_\infty}\right)^\beta\quad(S>b_\infty)\]
+<p>For \(r=5\%\), \(q=0\), \(\sigma=20\%\), the negative root is −2.5 and the threshold is 71.4286. This is a useful analytical benchmark and an upper bound on a finite-horizon put under the same environment, because a perpetual holder has a larger set of exercise choices. It is not a formula for the one-year American put.</p>
+</section>
+
+<section id="tree" data-title="Cox–Ross–Rubinstein model">
+<div class="section-label">17 / Binomial valuation</div><h2>The Cox–Ross–Rubinstein binomial model</h2>
+<p>The Cox–Ross–Rubinstein construction <a href="#ref-crr">[3]</a> replaces each short time interval by an up or down move. Choosing jump sizes proportional to the square root of the time step gives the diffusion limit. With \(N\) steps, \(\Delta t=\tau/N\), define:</p>
+\[u=e^{\sigma\sqrt{\Delta t}},\qquad d=u^{-1},\qquad p=\frac{e^{(r-q)\Delta t}-d}{u-d}\]
+\[S_{i,j}=S_0u^jd^{i-j},\qquad j=0,\ldots,i\]
+<p>The probability \(p\) is selected so that the ex-dividend expected stock growth matches \(r-q\). The discounted expected <em>option</em> continuation value uses \(r\), not \(r-q\). No-arbitrage requires \(d<e^{(r-q)\Delta t}<u\), equivalently \(0<p<1\). A coarse grid, low volatility or extreme carry can violate that condition; increase the step count or choose a suitable alternative scheme.</p>
+<h3>Backward induction</h3><p>Set terminal values to payoff. At each earlier node compute continuation from the two successor values. European pricing keeps continuation; American pricing takes the greater of continuation and immediate exercise.</p>
+\[H_{i,j}=e^{-r\Delta t}\left[pV_{i+1,j+1}+(1-p)V_{i+1,j}\right]\]
+\[V^E_{i,j}=H_{i,j},\qquad V^A_{i,j}=\max(h(S_{i,j}),H_{i,j})\]
+<p>The terminal level requires \(N+1\) values. Reusing one array for the backward recursion needs O(N) storage and O(N²) arithmetic. Cash dividends can destroy simple multiplicative recombination; a dividend-aware construction or interpolation at the jump must account for them explicitly.</p>
+<h3>Three-step American put valuation</h3><p>Use the one-year benchmark with only three steps to make the decision visible. Then \(u=1.1224009\), \(d=0.8909473\), and \(p\approx0.543777\). At the lower node two steps into the tree, spot is 79.378701 and exercise pays 20.621299. Its discounted continuation is approximately 18.968445, so exercise is selected.</p>
+{{table:tree3}}
+<p>At the lower one-step node, intrinsic value is 10.905275 but continuation is 11.869146, so the holder waits. The root has zero intrinsic value and a tree value of 6.499560. This coarse value is noticeably above the converged result; the calculation illustrates the decision rule, not an accurate final quote.</p>
+<h3>Lattice convergence and Greek estimation</h3><p>A lattice introduces both distribution error and an exercise-date approximation. Odd/even placement of the strike can cause oscillatory convergence. Compare several step counts, including different parities where appropriate. The no-dividend American call should equal its European value within the same valid tree when rates are non-negative; both tree prices still differ from the analytical continuous-time price.</p>
+<p>Tree delta can be estimated from the first up/down values, and gamma from nearby deltas at the next level. Theta needs a consistent same-spot time comparison. Finite-difference Greeks obtained by repricing can fluctuate when a bump changes strike alignment or exercise branches. Report sensitivity to the bump and step count.</p>
+{{figure:convergence}}
+</section>
+
+<section id="finite-difference" data-title="Finite-difference methods">
+<div class="section-label">18 / PDE discretisation</div><h2>Finite-difference methods for option valuation</h2>
+<p>Finite differences approximate spot derivatives on a spatial grid and step backwards from the terminal payoff. In remaining time, the European PDE becomes \(V_\tau=\mathcal{L}V-rV\). On a uniform spot grid \(S_j=j\Delta S\), use centred differences:</p>
+\[V_S(S_j)\approx\frac{V_{j+1}-V_{j-1}}{2\Delta S},\qquad V_{SS}(S_j)\approx\frac{V_{j+1}-2V_j+V_{j-1}}{(\Delta S)^2}\]
+<p>The discrete differential operator is tridiagonal: each node couples to its two neighbours. Let \(L_h\) include diffusion, drift and discounting. A theta time scheme writes, with boundary terms understood:</p>
+\[(I-\theta\Delta\tau L_h)V^{n+1}=(I+(1-\theta)\Delta\tau L_h)V^n\]
+<h3>Explicit, implicit and Crank–Nicolson schemes</h3><ul><li><strong>Explicit Euler, θ = 0.</strong> Cheap per step but conditionally stable. Too large a time step can create negative or exploding values.</li><li><strong>Implicit Euler, θ = 1.</strong> Requires a tridiagonal solve and damps irregularities. It is first-order accurate in time; monotonicity still depends on the spatial operator.</li><li><strong>Crank–Nicolson, θ = 1/2.</strong> Second-order time accuracy for sufficiently smooth solutions, but the payoff kink can cause oscillations. Initial implicit substeps, often called Rannacher smoothing, help.</li></ul>
+<p>A log-price grid gives a constant-coefficient diffusion operator in the baseline model and can better resolve relative price changes. Non-uniform grids can cluster nodes near the strike and exercise frontier. Large drift relative to diffusion may require a monotone drift discretisation instead of a naive centred stencil.</p>
+<h3>Linear complementarity formulation for American options</h3><p>For an implicit American step, write \(A V\) for the left-hand matrix and \(b\) for the right-hand side including boundaries. The discrete problem is:</p>
+\[V\ge h,\qquad AV-b\ge0,\qquad (V-h)_j(AV-b)_j=0\quad\text{for each }j\]
+<p>Projected successive over-relaxation updates a node, then projects it above payoff, iterating until both residual and obstacle conditions meet tolerance. Policy iteration alternates an exercise/continuation choice with the corresponding linear solve. Penalty methods approximate the obstacle through a large penalty parameter and introduce an extra approximation to control.</p>
+<p>Solving the unconstrained European system once and clipping its final vector above payoff is generally not the exact solution of the coupled American complementarity system. It can serve as part of a splitting approximation with its own error analysis. Clipping does not replace convergence and residual checks.</p>
+<h3>Boundary conditions and dividend jump conditions</h3><p>For the standard put with \(r>0,q=0\), use \(P_A(0,t)=K\) and a near-zero value at sufficiently high spot. A cash dividend imposes \(V(S,t_d^-)=V(S-D,t_d^+)\) for European continuation; an American solver must also compare with exercise. Interpolation at the shifted grid points adds error.</p>
+<p>Refine time and spot grids separately, extend the spot domain, check the obstacle residual, and recover European analytical values when exercise is disabled. A price that stops changing at one grid resolution is not enough if truncation or boundary errors remain.</p>
+</section>
+
+<section id="simulation" data-title="Monte Carlo and least squares">
+<div class="section-label">19 / Simulation methods</div><h2>Monte Carlo valuation and the Longstaff–Schwartz method</h2>
+<h3>Monte Carlo estimation for European options</h3><p>A European vanilla payoff can be sampled directly from the exact terminal GBM distribution. There is no time discretisation error in this sampling step when the coefficients are constant. With \(M\) independent standard normal draws, average discounted payoffs:</p>
+\[Y_m=e^{-r\tau}h\left(Se^{(r-q-\sigma^2/2)\tau+\sigma\sqrt{\tau}Z_m}\right),\qquad \widehat V=\frac1M\sum_{m=1}^M Y_m\]
+\[\widehat{\operatorname{SE}}=\frac{s_Y}{\sqrt M},\qquad \widehat V\pm1.96\widehat{\operatorname{SE}}\]
+<p>The interval is an approximate large-sample confidence interval under independent sampling and finite variance. It quantifies sampling error, not model error. The 100,000-path benchmark simulation on this page gives 10.474395 with estimated standard error 0.046634; the analytical price lies within its approximate interval.</p>
+<p>Antithetic sampling averages payoffs from \(Z\) and \(-Z\), estimating uncertainty from the pair averages. Control variates can use discounted stock gains or a related analytically valued payoff. Common random numbers help reduce noise when estimating differences or Greeks. These techniques improve variance; none validates the assumed dynamics.</p>
+{{figure:mc}}
+<h3>Continuation values and admissible stopping rules</h3><p>Taking the largest discounted exercise payoff along every simulated path uses future information and overstates the achievable value. The holder needs a conditional expectation of future value using only the current state. This is the quantity that Longstaff–Schwartz least-squares Monte Carlo approximates <a href="#ref-lsm">[4]</a>.</p>
+<h3>The Longstaff–Schwartz algorithm</h3><ol>
+<li>Simulate risk-neutral paths on a set of potential exercise dates and initialise each path's cash flow to terminal payoff.</li>
+<li>Work backwards. At a date, select in-the-money paths and construct state features, such as scaled \(1,S,S^2\), or other suitable basis functions.</li>
+<li>Regress the discounted future cash flows implied by already selected later decisions on those current-state features. The fitted value estimates continuation.</li>
+<li>Exercise where current intrinsic value exceeds fitted continuation, replacing the later cash flow by the current payoff on those paths.</li>
+<li>Apply the trained stopping rule to independent evaluation paths, then average their discounted exercise cash flows.</li></ol>
+<p>Features must contain the state needed for the payoff and dynamics; spot alone is inadequate for some path-dependent or multifactor claims. Scaling, basis complexity and enough in-the-money training data matter. A high polynomial degree can overfit and make exercise decisions unstable.</p>
+<h3>Estimation bias and out-of-sample validation</h3><p>Restricting exercise dates and using an approximate stopping rule generally loses value relative to optimal continuous exercise. The expected payoff of a feasible out-of-sample rule is a lower bound on the true optimum, although a finite-sample estimate can lie above it through sampling error. Reusing paths for both regression and valuation can introduce an upward look-ahead effect that obscures the policy error.</p>
+<p>Use independent evaluation, compare to a tree or PDE in one dimension, vary dates and basis, and report Monte Carlo uncertainty separately from exercise-policy bias. Dual martingale methods can produce upper estimates and a useful lower–upper gap. Standard errors alone do not show that the stopping rule is close to optimal.</p>
+</section>
+
+<section id="american-example" data-title="American valuation examples">
+<div class="section-label">20 / Numerical examples</div><h2>American option valuation: numerical examples</h2>
+<p>Return to the same one-year benchmark. The European values are analytical. American values below come from the CRR recursion, with the same model inputs and explicit comparisons at every exercise node. This isolates exercise flexibility from changes in volatility, dividends or funding.</p>
+{{table:convergence}}
+<p>At 1,600 steps the American put is 6.089893, compared with the exact European put of 5.573526. The estimated premium is 0.516367, about 9.26% of the European value. The 800-to-1,600-step American difference is about 0.000491; the result is still a numerical approximation, not an exact closed-form number.</p>
+<p>The no-dividend American call equals the European call in each of these trees. Its 1,600-step price is 10.449334, and the analytical continuous-time call is 10.450584. The discrepancy is the tree approximation, not a negative exercise premium.</p>
+{{figure:american}}
+<h3>American call valuation with continuous dividends</h3><p>Set \(q=8\%\) while holding \(S=K=100\), \(r=5\%\), \(\sigma=20\%\) and \(\tau=1\). The European call is 6.142998. The 1,600-step American call is approximately 6.541528, giving a premium of 0.398529. Dividends lower both call values relative to the no-yield case, but create an additional reason to exercise.</p>
+<p>An American put is never below its current payoff. For example, at spot 50, immediate put exercise pays 50. A one-year European put can be worth less because its strike payment is delayed. The graph's low-spot exercise region captures that financing advantage, while the continuation region retains optionality.</p>
+<h3>Numerical consistency and discretisation error</h3><p>Within a common valid tree, an American value below the corresponding European tree value or below intrinsic value violates the recursion. Comparing an American tree value with an exact European formula can create a small apparent discrepancy solely through tree error, so use both within-engine and cross-engine checks.</p>
+<p>Changing the tree size can change the apparent exercise boundary because reachable states move. A convergence table for value and a boundary graph answer different questions. For a serious boundary estimate, assess spatial resolution and the way the frontier is extracted rather than simply interpolating a visually smooth curve.</p>
+</section>
+
+<section id="explorer" data-title="Valuation and sensitivity analysis">
+<div class="section-label">21 / Valuation calculator</div><h2>Interactive valuation and sensitivity analysis</h2>
+<p>The notebook below reprices European calls and puts with BSM, and American contracts with a 400-step CRR tree. The curve shows how the selected European value changes with spot. All calculations use continuous yield, annual rates, time in years and values per underlying unit.</p>
+{{interactive}}
+<p class="source-note">The American estimate has tree discretisation error. European Greeks hold the other inputs fixed and are not American Greeks. The plotted curve is analytical European valuation; static figures elsewhere retain their stated benchmark inputs.</p>
+</section>
+
+<section id="implementation" data-title="Implementation and verification">
+<div class="section-label">22 / Numerical verification</div><h2>Numerical implementation and verification</h2>
+<h3>Input validation and limiting cases</h3><p>Reject negative maturity or volatility. Treat zero time, zero volatility and zero spot through their limiting formulas before computing a logarithm or denominator. A negative rate is not automatically invalid. A negative stock spot is invalid for GBM. Use a consistent currency and a specific year fraction for the actual expiry.</p>
+<p>Extreme moneyness can create cancellation when subtracting nearly equal terms. A reliable normal CDF implementation uses accurate tail evaluations; a survival function or log-CDF can improve deep-tail calculations. Recovering one exercise direction from parity can be useful, but subtracting nearly equal quantities can also lose precision. Price bounds are valuable diagnostics, not a licence to silently clip every wrong result.</p>
+<h3>European and American valuation algorithms</h3><pre><code>European value:
+  handle expiry and deterministic limits
+  d1 = (log(S / K) + (r - q + sigma² / 2) * tau) / (sigma * sqrt(tau))
+  d2 = d1 - sigma * sqrt(tau)
+  call = S * exp(-q * tau) * Phi(d1) - K * exp(-r * tau) * Phi(d2)
+  put  = K * exp(-r * tau) * Phi(-d2) - S * exp(-q * tau) * Phi(-d1)
+
+American CRR value:
+  build u, d and p; require 0 &lt; p &lt; 1
+  initialise terminal values to payoff
+  for each preceding time level:
+      continuation = exp(-r * dt) * (p * up_value + (1 - p) * down_value)
+      value = max(intrinsic, continuation)
+  return value at the root</code></pre>
+<h3>Analytical and numerical verification criteria</h3><ul>
+<li><strong>Payoff and deterministic limits.</strong> Confirm expiry, zero volatility, zero spot and the high/low spot asymptotes.</li>
+<li><strong>European parity and bounds.</strong> Check prices under the same yield, rate and time convention.</li>
+<li><strong>Greeks against finite differences.</strong> Use several bump sizes; verify that truncation error decreases before round-off grows.</li>
+<li><strong>Structural identities.</strong> Check call–put delta difference, equal gamma and vega, homogeneity and the PDE's Greek balance.</li>
+<li><strong>American consistency.</strong> Compare with intrinsic and European values within the same engine; verify the no-yield call theorem under its assumptions.</li>
+<li><strong>Independent methods and resolution.</strong> Compare trees, analytical European prices and, where used, PDE or simulation estimates.</li></ul>
+<p>A central-difference delta uses \([V(S+h)-V(S-h)]/(2h)\); gamma uses \([V(S+h)-2V(S)+V(S-h)]/h^2\). Gamma is particularly sensitive to cancellation. Vega bumps should be expressed in decimal volatility, and theta bumps must distinguish increasing current time from increasing remaining maturity.</p>
+<p>Reproducibility means documenting inputs, units, model, solver size, tolerances and random seeds. Every static figure on this page states its parameters. The 400-step notebook is an educational calculator; the American study uses a deeper lattice and a displayed convergence table.</p>
+</section>
+
+<section id="limitations" data-title="Limitations and alternative models">
+<div class="section-label">23 / Model assessment</div><h2>Model limitations and alternative specifications</h2>
+<p>Black–Scholes remains useful because it gives a transparent benchmark, a replication argument and a common way to quote option prices. Its assumptions are deliberately strong. Pricing a single quote exactly through its implied volatility does not establish that the model describes the dynamics or hedges all future risks.</p>
+<h3>Volatility dynamics and jumps</h3><p>A stochastic volatility model adds a separate evolving variance state, often correlated with spot. A local volatility model lets volatility depend on spot and time and can fit a European price surface under appropriate regularity conditions. A jump model introduces discontinuous moves that cannot generally be hedged perfectly by continuous stock rebalancing.</p>
+<p>These models address different observations and create different hedge risks. Matching today's vanilla cross-section does not identify how tomorrow's smile will move. Calibration can be ill-conditioned, and different parameter sets may fit similar prices. Model selection should consider the payoff being valued and the hedge instruments available, not only the fit error.</p>
+<h3>Funding, dividends, liquidity and market structure</h3><p>Borrowing and lending may use different rates, stock borrow can be costly or unavailable, and dividends can be uncertain. Collateral, margin, settlement rules and counterparty exposure affect the cash flows that need financing. Exercise decisions may change when those effects are material; a frictionless theorem must be translated into the relevant environment.</p>
+<p>Bid–ask spreads limit what a fair-value difference means operationally. A model can be internally consistent and still produce a value outside a tradable quote interval. Sensitivity to uncertain inputs may exceed numerical solver error. More decimal places improve neither contract interpretation nor economic realism.</p>
+<h3>Distributional and contract extensions</h3><p>GBM has normal log returns at every horizon, independent increments and a single volatility parameter. Real return distributions can exhibit changing volatility and heavier tails. The baseline price process also cannot cross zero. Barrier, Asian and lookback claims depend on a path; baskets depend on joint distributions; interest-rate options need a term-structure model.</p>
+<p>American exercise adds a stopping problem even before richer dynamics are introduced. Bermudan exercise can be handled by restricting dates, while callable or convertible instruments can add coupons, credit and multiple contractual decisions. The European formula remains a valuable component and benchmark, but cannot replace those additional state variables and cash flows.</p>
+<div class="two-col"><div class="panel"><span class="micro">What survives</span><h3>Model-independent valuation principles</h3><p>Cash-flow comparison, discounting, conditional expectation, exercise versus continuation, and clear units remain central even when the diffusion changes.</p></div><div class="panel"><span class="micro">What must be revisited</span><h3>Model-dependent valuation and hedging</h3><p>Uniqueness, replicability, probability dynamics, exercise boundaries, Greeks and numerical convergence depend on the new model's risks and contract details.</p></div></div>
+</section>
+
+<section id="appendix" data-title="Mathematical appendix">
+<div class="section-label">24 / Mathematical appendix</div><h2>Appendix: mathematical derivations and identities</h2>
+<h3>Transformation to the heat equation</h3><p>Set \(x=\ln(S/K)\), remaining time \(\tau=T-t\), and write \(V=Kv(x,\tau)\). The spot derivatives transform as \(SV_S=Kv_x\) and \(S^2V_{SS}=K(v_{xx}-v_x)\). The remaining-time PDE becomes:</p>
+\[v_\tau=\frac12\sigma^2v_{xx}+\left(r-q-\frac12\sigma^2\right)v_x-rv\]
+<p>Let \(a=\sigma^2/2\), \(b=r-q-\sigma^2/2\), and define a shifted coordinate \(y=x+b\tau\). Writing \(v(x,\tau)=e^{-r\tau}u(y,\tau)\) eliminates both drift and discounting:</p>
+\[u_\tau=a u_{yy}\]
+<p>The initial condition at \(\tau=0\) is the payoff expressed in log coordinates and divided by strike. For a call, \(u(y,0)=(e^y-1)^+\). The heat kernel convolves this initial function with a Gaussian:</p>
+\[u(y,\tau)=\frac{1}{\sqrt{4\pi a\tau}}\int_{-\infty}^{\infty}u(z,0)\exp\left(-\frac{(y-z)^2}{4a\tau}\right)dz\]
+<p>The Gaussian convolution is the PDE version of averaging over the terminal normal shock. Reintroducing the shifted coordinate and discounting reproduces the risk-neutral expectation. Integrating the call's payoff again yields the two normal-tail terms of BSM. This view explains why positive-time valuation smooths a terminal kink.</p>
+<h3>The normal-density identity</h3>
+\[Se^{-q\tau}\phi(d_1)=Ke^{-r\tau}\phi(d_2)\]
+<p>Differentiate the call formula with respect to spot. The derivatives of both normal terms cancel through this identity, leaving \(e^{-q\tau}\Phi(d_1)\). A similar cancellation produces vega. Remembering the identity often makes the Greek derivations much shorter than differentiating every component independently.</p>
+<h3>Greek identities derived from put–call parity</h3>
+\[\Delta_C-\Delta_P=e^{-q\tau},\qquad \Gamma_C=\Gamma_P,\qquad \nu_C=\nu_P\]
+\[\Theta_C-\Theta_P=qSe^{-q\tau}-rKe^{-r\tau}\]
+\[\rho_C-\rho_P=K\tau e^{-r\tau},\qquad \psi_C-\psi_P=-S\tau e^{-q\tau}\]
+<p>These relationships check both sign conventions and dividend handling. If call and put gammas differ for otherwise identical European inputs, something is wrong with the calculation. If the theta difference uses the opposite sign, the implementation may be differentiating remaining time rather than current time.</p>
+<h3>Standard normal density and distribution functions</h3>
+\[\phi(z)=\frac{1}{\sqrt{2\pi}}e^{-z^2/2},\qquad \Phi(z)=\int_{-\infty}^{z}\phi(u)\,du\]
+<p>Phi is dimensionless and lies between zero and one; phi is a density, not a probability at an exact point. Both arguments \(d_1,d_2\) must be dimensionless. A price formula containing mismatched currencies, years or percent scaling can fail this basic dimensional test.</p>
+</section>
+
+<section id="exercises" data-title="Exercises and solutions">
+<div class="section-label">25 / Exercises</div><h2>Exercises and solutions</h2>
+<p>Work through each question before opening the answer. The aim is to connect contracts, formulas and implementation decisions.</p>
+<details><summary>01 · A call quote violates European parity. What should be checked first?</summary><p>Check that call and put have identical strike, maturity, underlying, settlement and exercise style; use synchronised spot and option quotes, the same discount curve and the correct dividends. Compare feasible bid/ask combinations before treating a mid-price discrepancy as an executable arbitrage. European equality does not apply directly to a pair of American contracts.</p></details>
+<details><summary>02 · Is 0.636831 the benchmark call's probability of exercise?</summary><p>No. It is the no-yield call delta, Φ(d₁). Its risk-neutral terminal exercise probability is Φ(d₂) = 0.559618. The physical exercise probability would use the physical drift and is not supplied by a pricing formula without specifying that drift.</p></details>
+<details><summary>03 · What is the zero-volatility call value with S = K = 100, r = 5%, q = 0, τ = 1?</summary><p>It is the discounted deterministic payoff: \(100-100e^{-0.05}=4.877058\). Current intrinsic value is zero, but the deterministic risk-neutral terminal spot exceeds strike because of carry. The European put's deterministic value is zero.</p></details>
+<details><summary>04 · Why can a European put be worth less than intrinsic value?</summary><p>It pays strike only at maturity. When rates are positive and spot is very low, the value approaches \(Ke^{-r\tau}\), while current intrinsic approaches K. An American holder can receive K immediately by exercising at zero spot and avoids that discount.</p></details>
+<details><summary>05 · How much is the first-order benchmark call effect of a 50 basis point volatility rise?</summary><p>A 50 bp change is 0.005 in decimal volatility. Raw vega is 37.524035, so the estimated change is \(37.524035\times0.005=0.187620\). This is half a vol point, not 50 vol points. Repricing includes higher-order effects.</p></details>
+<details><summary>06 · Can one short stock position remove both delta and gamma?</summary><p>No. Stock has delta one and gamma zero. It can offset delta but cannot cancel an option's curvature. A second option can provide gamma; its delta must then be included in the stock adjustment.</p></details>
+<details><summary>07 · What is wrong with taking each path's maximum American exercise payoff?</summary><p>The selected exercise time depends on future observations. It is not generally a stopping time, so the result values perfect foresight rather than an attainable exercise strategy. A valid policy compares current payoff with a continuation estimate based on current information.</p></details>
+<details><summary>08 · Why is the 1,600-step American call slightly below the analytical European call at q = 0?</summary><p>The two values use different numerical representations of the diffusion. The American and European calls are identical within the same tree. The tree's approximation error explains the small difference from the continuous-time BSM formula; it is not an economically negative early-exercise premium.</p></details>
+<details><summary>09 · Why can a European implied volatility solver fail on a valid American quote?</summary><p>European bounds and the European pricing function describe a different exercise contract. Early-exercise value may be absorbed into a misleading implied volatility or can put the quote outside European admissible limits. Invert a pricing engine with the correct exercise rule.</p></details>
+<details><summary>10 · What changes if rates become negative?</summary><p>European BSM formulas and their discounted bounds still apply with consistent inputs. The usual no-dividend American call theorem requires r ≥ 0 and must be reconsidered. American put exercise economics and parity inequalities also need assumptions that match the rate and yield regime.</p></details>
+</section>
+
+<section id="references" data-title="References and further reading">
+<div class="section-label">26 / Bibliography</div><h2>References and further reading</h2>
+<p>The sources below identify the foundational papers and useful university treatments. Equations are restated in a consistent notation; explanations, numerical examples and charts were prepared for these notes. No market dataset is used.</p>
+<ol class="references">
+<li id="ref-bs"><strong>Black, F. &amp; Scholes, M. (1973).</strong> <a href="https://www.journals.uchicago.edu/doi/10.1086/260062" target="_blank" rel="noopener">The Pricing of Options and Corporate Liabilities.</a> <em>Journal of Political Economy</em>, 81(3), 637–654. <a href="https://www.cs.princeton.edu/courses/archive/fall09/cos323/papers/black_scholes73.pdf" target="_blank" rel="noopener">Paper hosted by Princeton ↗</a><p>Primary source for the continuous-time pricing and replication framework.</p></li>
+<li id="ref-merton"><strong>Merton, R. C. (1973).</strong> <a href="https://doi.org/10.2307/3003143" target="_blank" rel="noopener">Theory of Rational Option Pricing.</a> <em>Bell Journal of Economics and Management Science</em>, 4(1), 141–183. <a href="https://dspace.mit.edu/entities/publication/6e05a2fa-478f-41e6-9e69-a06532002236" target="_blank" rel="noopener">MIT working-paper version ↗</a><p>Extends and organises no-arbitrage reasoning, including dividends and exercise features. The MIT item is an earlier working-paper version, not the journal's publication year.</p></li>
+<li id="ref-crr"><strong>Cox, J. C., Ross, S. A. &amp; Rubinstein, M. (1979).</strong> <a href="https://doi.org/10.1016/0304-405X(79)90015-1" target="_blank" rel="noopener">Option Pricing: A Simplified Approach.</a> <em>Journal of Financial Economics</em>, 7(3), 229–263. <a href="https://bpb-us-w2.wpmucdn.com/u.osu.edu/dist/7/36891/files/2017/07/CRR79-1yy8av8.pdf" target="_blank" rel="noopener">Author paper via Ohio State ↗</a><p>The discrete replication construction and its continuous-time limit.</p></li>
+<li id="ref-lsm"><strong>Longstaff, F. A. &amp; Schwartz, E. S. (2001).</strong> <a href="https://doi.org/10.1093/rfs/14.1.113" target="_blank" rel="noopener">Valuing American Options by Simulation: A Simple Least-Squares Approach.</a> <em>Review of Financial Studies</em>, 14(1), 113–147. <a href="https://escholarship.org/uc/item/43n1k4jb" target="_blank" rel="noopener">UCLA repository ↗</a><p>The regression approach to conditional continuation value.</p></li>
+<li><strong>Cohen, S. (2021).</strong> <a href="https://courses.maths.ox.ac.uk/course/section.php?id=260" target="_blank" rel="noopener">B8.3 Mathematical Models of Financial Derivatives.</a> University of Oxford, Mathematical Institute.<p>University course material on replication, dividends, Greeks, implied volatility and the American free-boundary formulation.</p></li>
+<li><strong>Wallace, C. (2022–23).</strong> <a href="https://www.maths.dur.ac.uk/users/clare.wallace/Teaching/Old-MF-notes/22-23/the-blackscholes-formula.html" target="_blank" rel="noopener">Mathematical Finance Lecture Notes: The Black–Scholes Formula.</a> Durham University.<p>A complementary derivation and discussion of the continuous-time model.</p></li>
+<li><strong>Lawler, G. F. (2023 revision).</strong> <a href="https://www.math.uchicago.edu/~lawler/finbook.pdf" target="_blank" rel="noopener">Stochastic Calculus: An Introduction with Applications.</a> University of Chicago manuscript, especially the option-pricing chapters.<p>Further mathematical background for Brownian motion, Itô calculus and pricing.</p></li>
+</ol>
+<h3>Further study</h3><p>Rebuild the European benchmark and Greeks, then price the American put by two independent methods. Study why a smile changes hedge assumptions, and test a richer volatility model against the same European and American contracts. The essential progression is from a replicable payoff to a correctly specified cash-flow model, then to a numerical result whose uncertainty can be measured.</p>
+<div class="end-links"><a href="../index.html#quant-basics">← Back to Quant Basics</a><a href="black-scholes.html">Explore the Black–Scholes Pricing Lab ↗</a><a href="#content">Back to top ↑</a></div>
+</section>

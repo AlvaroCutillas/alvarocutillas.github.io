@@ -1,0 +1,378 @@
+<svg role="img" aria-labelledby="rolldown-title rolldown-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="252pt" viewBox="0 0 792 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="rolldown-title">Figure 18 · Roll-down and forward carry</title><desc id="rolldown-desc">Static-curve roll-down reuses today’s zero rate at the shorter remaining maturity. The forward price uses D(5)/D(h). Neither path is an unconditional real-world prediction; their difference reflects the assumed curve evolution.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T20:19:14.820620</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="rolldown-figure_1">
+  <g id="rolldown-patch_1">
+   <path d="M 0 252 
+L 792 252 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="rolldown-axes_1">
+   <g id="rolldown-patch_2">
+    <path d="M 45.38 208.78 
+L 778.5 208.78 
+L 778.5 35.14 
+L 45.38 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="rolldown-matplotlib.axis_1">
+    <g id="rolldown-xtick_1">
+     <g id="rolldown-line2d_1">
+      <path d="M 78.703636 208.78 
+L 78.703636 35.14 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rolldown-line2d_2">
+      <defs>
+       <path id="rolldown-m7df511175e" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#rolldown-m7df511175e" x="78.703636" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rolldown-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="78.703636" y="222.618594" transform="rotate(-0 78.703636 222.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="rolldown-xtick_2">
+     <g id="rolldown-line2d_3">
+      <path d="M 162.012727 208.78 
+L 162.012727 35.14 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rolldown-line2d_4">
+      <g>
+       <use href="#rolldown-m7df511175e" x="162.012727" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rolldown-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="162.012727" y="222.618594" transform="rotate(-0 162.012727 222.618594)">0.5</text>
+     </g>
+    </g>
+    <g id="rolldown-xtick_3">
+     <g id="rolldown-line2d_5">
+      <path d="M 245.321818 208.78 
+L 245.321818 35.14 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rolldown-line2d_6">
+      <g>
+       <use href="#rolldown-m7df511175e" x="245.321818" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rolldown-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="245.321818" y="222.618594" transform="rotate(-0 245.321818 222.618594)">1.0</text>
+     </g>
+    </g>
+    <g id="rolldown-xtick_4">
+     <g id="rolldown-line2d_7">
+      <path d="M 328.630909 208.78 
+L 328.630909 35.14 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rolldown-line2d_8">
+      <g>
+       <use href="#rolldown-m7df511175e" x="328.630909" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rolldown-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="328.630909" y="222.618594" transform="rotate(-0 328.630909 222.618594)">1.5</text>
+     </g>
+    </g>
+    <g id="rolldown-xtick_5">
+     <g id="rolldown-line2d_9">
+      <path d="M 411.94 208.78 
+L 411.94 35.14 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rolldown-line2d_10">
+      <g>
+       <use href="#rolldown-m7df511175e" x="411.94" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rolldown-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="411.94" y="222.618594" transform="rotate(-0 411.94 222.618594)">2.0</text>
+     </g>
+    </g>
+    <g id="rolldown-xtick_6">
+     <g id="rolldown-line2d_11">
+      <path d="M 495.249091 208.78 
+L 495.249091 35.14 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rolldown-line2d_12">
+      <g>
+       <use href="#rolldown-m7df511175e" x="495.249091" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rolldown-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="495.249091" y="222.618594" transform="rotate(-0 495.249091 222.618594)">2.5</text>
+     </g>
+    </g>
+    <g id="rolldown-xtick_7">
+     <g id="rolldown-line2d_13">
+      <path d="M 578.558182 208.78 
+L 578.558182 35.14 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rolldown-line2d_14">
+      <g>
+       <use href="#rolldown-m7df511175e" x="578.558182" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rolldown-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="578.558182" y="222.618594" transform="rotate(-0 578.558182 222.618594)">3.0</text>
+     </g>
+    </g>
+    <g id="rolldown-xtick_8">
+     <g id="rolldown-line2d_15">
+      <path d="M 661.867273 208.78 
+L 661.867273 35.14 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rolldown-line2d_16">
+      <g>
+       <use href="#rolldown-m7df511175e" x="661.867273" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rolldown-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="661.867273" y="222.618594" transform="rotate(-0 661.867273 222.618594)">3.5</text>
+     </g>
+    </g>
+    <g id="rolldown-xtick_9">
+     <g id="rolldown-line2d_17">
+      <path d="M 745.176364 208.78 
+L 745.176364 35.14 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rolldown-line2d_18">
+      <g>
+       <use href="#rolldown-m7df511175e" x="745.176364" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rolldown-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="745.176364" y="222.618594" transform="rotate(-0 745.176364 222.618594)">4.0</text>
+     </g>
+    </g>
+    <g id="rolldown-text_10">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="411.94" y="235.328906" transform="rotate(-0 411.94 235.328906)">Holding period (years)</text>
+    </g>
+   </g>
+   <g id="rolldown-matplotlib.axis_2">
+    <g id="rolldown-ytick_1">
+     <g id="rolldown-line2d_19">
+      <path d="M 45.38 191.295178 
+L 778.5 191.295178 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rolldown-line2d_20">
+      <defs>
+       <path id="rolldown-mb0023681ea" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#rolldown-mb0023681ea" x="45.38" y="191.295178" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rolldown-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="194.714474" transform="rotate(-0 38.38 194.714474)">86</text>
+     </g>
+    </g>
+    <g id="rolldown-ytick_2">
+     <g id="rolldown-line2d_21">
+      <path d="M 45.38 165.732337 
+L 778.5 165.732337 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rolldown-line2d_22">
+      <g>
+       <use href="#rolldown-mb0023681ea" x="45.38" y="165.732337" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rolldown-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="169.151634" transform="rotate(-0 38.38 169.151634)">88</text>
+     </g>
+    </g>
+    <g id="rolldown-ytick_3">
+     <g id="rolldown-line2d_23">
+      <path d="M 45.38 140.169497 
+L 778.5 140.169497 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rolldown-line2d_24">
+      <g>
+       <use href="#rolldown-mb0023681ea" x="45.38" y="140.169497" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rolldown-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="143.588794" transform="rotate(-0 38.38 143.588794)">90</text>
+     </g>
+    </g>
+    <g id="rolldown-ytick_4">
+     <g id="rolldown-line2d_25">
+      <path d="M 45.38 114.606657 
+L 778.5 114.606657 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rolldown-line2d_26">
+      <g>
+       <use href="#rolldown-mb0023681ea" x="45.38" y="114.606657" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rolldown-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="118.025954" transform="rotate(-0 38.38 118.025954)">92</text>
+     </g>
+    </g>
+    <g id="rolldown-ytick_5">
+     <g id="rolldown-line2d_27">
+      <path d="M 45.38 89.043817 
+L 778.5 89.043817 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rolldown-line2d_28">
+      <g>
+       <use href="#rolldown-mb0023681ea" x="45.38" y="89.043817" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rolldown-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="92.463114" transform="rotate(-0 38.38 92.463114)">94</text>
+     </g>
+    </g>
+    <g id="rolldown-ytick_6">
+     <g id="rolldown-line2d_29">
+      <path d="M 45.38 63.480977 
+L 778.5 63.480977 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rolldown-line2d_30">
+      <g>
+       <use href="#rolldown-mb0023681ea" x="45.38" y="63.480977" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rolldown-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="66.900274" transform="rotate(-0 38.38 66.900274)">96</text>
+     </g>
+    </g>
+    <g id="rolldown-ytick_7">
+     <g id="rolldown-line2d_31">
+      <path d="M 45.38 37.918137 
+L 778.5 37.918137 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rolldown-line2d_32">
+      <g>
+       <use href="#rolldown-mb0023681ea" x="45.38" y="37.918137" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rolldown-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="41.337434" transform="rotate(-0 38.38 41.337434)">98</text>
+     </g>
+    </g>
+    <g id="rolldown-text_18">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.055781" y="121.96" transform="rotate(-90 21.055781 121.96)">Zero-coupon bond price per 100</text>
+    </g>
+   </g>
+   <g id="rolldown-line2d_33">
+    <path d="M 78.703636 200.887273 
+L 128.689091 190.249346 
+L 178.674545 179.382526 
+L 225.88303 168.898154 
+L 273.091515 158.190564 
+L 320.3 147.255181 
+L 367.508485 136.092647 
+L 417.493939 124.035091 
+L 470.256364 111.066575 
+L 531.349697 95.806258 
+L 675.752121 59.603532 
+L 711.852727 50.84874 
+L 742.399394 43.671828 
+L 745.176364 43.032727 
+L 745.176364 43.032727 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="rolldown-line2d_34">
+    <path d="M 78.703636 200.887273 
+L 92.588485 199.429359 
+L 109.250303 197.44131 
+L 125.912121 195.216151 
+L 142.573939 192.776323 
+L 162.012727 189.685781 
+L 181.451515 186.360391 
+L 200.890303 182.826718 
+L 223.106061 178.563751 
+L 248.098788 173.519524 
+L 273.091515 168.250602 
+L 300.861212 162.174907 
+L 331.407879 155.269858 
+L 367.508485 146.87107 
+L 409.16303 136.937317 
+L 459.148485 124.776378 
+L 525.795758 108.314675 
+L 650.759394 77.165065 
+L 745.176364 53.641052 
+L 745.176364 53.641052 
+" clip-path="url(#rolldown-pdaa0e08518)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="rolldown-patch_3">
+    <path d="M 45.38 208.78 
+L 45.38 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="rolldown-patch_4">
+    <path d="M 45.38 208.78 
+L 778.5 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="rolldown-text_19">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="45.38" y="22.14" transform="rotate(-0 45.38 22.14)">A five-year zero under two different assumptions</text>
+   </g>
+   <g id="rolldown-legend_1">
+    <g id="rolldown-line2d_35">
+     <path d="M 52.58 45.61875 
+L 60.58 45.61875 
+L 68.58 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="rolldown-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="48.41875" transform="rotate(-0 74.98 48.41875)">Unchanged maturity-indexed curve</text>
+    </g>
+    <g id="rolldown-line2d_36">
+     <path d="M 52.58 57.36125 
+L 60.58 57.36125 
+L 68.58 57.36125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="rolldown-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="60.16125" transform="rotate(-0 74.98 60.16125)">Today-implied forward bond price</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="rolldown-pdaa0e08518">
+   <rect x="45.38" y="35.14" width="733.12" height="173.64"/>
+  </clipPath>
+ </defs>
+</svg>

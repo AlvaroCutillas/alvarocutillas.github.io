@@ -1,0 +1,10 @@
+{
+  "figures": 16,
+  "panels": 16,
+  "percentageUnits": "passed",
+  "mouseCoordinates": "passed",
+  "keyboard": "passed",
+  "liveRecalculation": "passed",
+  "mobileTouch": "passed",
+  "errors": []
+}

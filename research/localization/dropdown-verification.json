@@ -1,0 +1,86 @@
+{
+  "pages": [
+    {
+      "name": "index.html",
+      "defaultEnglish": true,
+      "switching": true,
+      "mobile": true,
+      "mathPreserved": true
+    },
+    {
+      "name": "black-scholes-basics.html",
+      "defaultEnglish": true,
+      "switching": true,
+      "mobile": true,
+      "mathPreserved": true
+    },
+    {
+      "name": "black-scholes.html",
+      "defaultEnglish": true,
+      "switching": true,
+      "mobile": true,
+      "mathPreserved": true
+    },
+    {
+      "name": "equity-factor-model.html",
+      "defaultEnglish": true,
+      "switching": true,
+      "mobile": true,
+      "mathPreserved": true
+    },
+    {
+      "name": "implied-volatility-surface.html",
+      "defaultEnglish": true,
+      "switching": true,
+      "mobile": true,
+      "mathPreserved": true
+    },
+    {
+      "name": "markowitz-portfolio-theory.html",
+      "defaultEnglish": true,
+      "switching": true,
+      "mobile": true,
+      "mathPreserved": true
+    },
+    {
+      "name": "monte-carlo-option-pricing.html",
+      "defaultEnglish": true,
+      "switching": true,
+      "mobile": true,
+      "mathPreserved": true
+    },
+    {
+      "name": "portfolio-optimization.html",
+      "defaultEnglish": true,
+      "switching": true,
+      "mobile": true,
+      "mathPreserved": true
+    },
+    {
+      "name": "systematic-trading-strategy.html",
+      "defaultEnglish": true,
+      "switching": true,
+      "mobile": true,
+      "mathPreserved": true
+    },
+    {
+      "name": "var-expected-shortfall.html",
+      "defaultEnglish": true,
+      "switching": true,
+      "mobile": true,
+      "mathPreserved": true
+    },
+    {
+      "name": "yield-curve-modelling.html",
+      "defaultEnglish": true,
+      "switching": true,
+      "mobile": true,
+      "mathPreserved": true
+    }
+  ],
+  "errors": [],
+  "navigation": true,
+  "dynamicLaboratory": true,
+  "keyboard": true,
+  "print": true
+}

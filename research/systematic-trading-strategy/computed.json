@@ -1,0 +1,242 @@
+{
+  "metrics": {
+    "Strategy, gross": {
+      "total_return": 0.14666911409622996,
+      "cagr": 0.024104329817507875,
+      "volatility": 0.09806890500219828,
+      "sharpe": 0.08995150384832964,
+      "sortino": 0.12786799976991672,
+      "max_drawdown": -0.12760784609471476,
+      "annual_turnover": 10.986729075875779,
+      "orders": 807,
+      "total_fees": 0.0,
+      "average_exposure": 0.4255857523148036
+    },
+    "Strategy, net": {
+      "total_return": 0.07651741514156707,
+      "cagr": 0.012914354790388938,
+      "volatility": 0.09813479860352081,
+      "sharpe": -0.022004614475956072,
+      "sortino": -0.031136301720395453,
+      "max_drawdown": -0.14798978739604884,
+      "annual_turnover": 10.98333793201638,
+      "orders": 807,
+      "total_fees": 6756.715485239892,
+      "average_exposure": 0.4255857523148036
+    },
+    "Buy and hold": {
+      "total_return": 0.6756703859938646,
+      "cagr": 0.09399729231721965,
+      "volatility": 0.18845273854340594,
+      "sharpe": 0.46573934278894,
+      "sortino": 0.6864393714506297,
+      "max_drawdown": -0.3334739027985504,
+      "annual_turnover": 0.1738592898813894,
+      "orders": 1,
+      "total_fees": 99.90009990009995,
+      "average_exposure": 1.0
+    },
+    "Cash": {
+      "total_return": 0.1205128979701684,
+      "cagr": 0.019999999999983586,
+      "volatility": 0.0,
+      "sharpe": null,
+      "sortino": null,
+      "max_drawdown": 0.0,
+      "annual_turnover": 0.0,
+      "orders": 0,
+      "total_fees": 0.0,
+      "average_exposure": 0.0
+    }
+  },
+  "start": 64,
+  "periods": 1448,
+  "ledger": [
+    {
+      "day": 1,
+      "asof": -1,
+      "price_start": 100.0,
+      "price_end": 110.0,
+      "wealth_start": 100.0,
+      "target": 0.0,
+      "turnover": 0.0,
+      "fee": 0.0,
+      "stock_after": 0.0,
+      "cash_after": 100.0,
+      "wealth_after_cost": 100.0,
+      "wealth_end": 100.0,
+      "net_return": 0.0
+    },
+    {
+      "day": 2,
+      "asof": 0,
+      "price_start": 110.0,
+      "price_end": 99.0,
+      "wealth_start": 100.0,
+      "target": 1.0,
+      "turnover": 0.9990009990009991,
+      "fee": 0.09990009990009992,
+      "stock_after": 99.90009990009992,
+      "cash_after": -1.4210854715202004e-14,
+      "wealth_after_cost": 99.9000999000999,
+      "wealth_end": 89.91008991008991,
+      "net_return": -0.10089910089910092
+    },
+    {
+      "day": 3,
+      "asof": 1,
+      "price_start": 99.0,
+      "price_end": 103.95,
+      "wealth_start": 89.91008991008991,
+      "target": 0.0,
+      "turnover": 1.0000000000000002,
+      "fee": 0.08991008991008992,
+      "stock_after": 0.0,
+      "cash_after": 89.82017982017982,
+      "wealth_after_cost": 89.82017982017982,
+      "wealth_end": 89.82017982017982,
+      "net_return": -0.0010000000000000009
+    },
+    {
+      "day": 4,
+      "asof": 2,
+      "price_start": 103.95,
+      "price_end": 98.7525,
+      "wealth_start": 89.82017982017982,
+      "target": 1.0,
+      "turnover": 0.9990009990009991,
+      "fee": 0.08973044937080901,
+      "stock_after": 89.73044937080903,
+      "cash_after": -1.4210854715202004e-14,
+      "wealth_after_cost": 89.73044937080901,
+      "wealth_end": 85.24392690226856,
+      "net_return": -0.050949050949051
+    }
+  ],
+  "walk": [
+    {
+      "fit_close": 504,
+      "training_start": 253,
+      "lookback": 21,
+      "training_sharpe": 1.1835730407027547,
+      "first_affected_return": 506,
+      "last_formation_day": 629
+    },
+    {
+      "fit_close": 630,
+      "training_start": 253,
+      "lookback": 21,
+      "training_sharpe": 1.3495983863577987,
+      "first_affected_return": 632,
+      "last_formation_day": 755
+    },
+    {
+      "fit_close": 756,
+      "training_start": 253,
+      "lookback": 42,
+      "training_sharpe": 1.1724667281880536,
+      "first_affected_return": 758,
+      "last_formation_day": 881
+    },
+    {
+      "fit_close": 882,
+      "training_start": 378,
+      "lookback": 21,
+      "training_sharpe": 0.8226133022843877,
+      "first_affected_return": 884,
+      "last_formation_day": 1007
+    },
+    {
+      "fit_close": 1008,
+      "training_start": 504,
+      "lookback": 63,
+      "training_sharpe": 0.6419721434321853,
+      "first_affected_return": 1010,
+      "last_formation_day": 1133
+    },
+    {
+      "fit_close": 1134,
+      "training_start": 630,
+      "lookback": 42,
+      "training_sharpe": 0.3049974467314153,
+      "first_affected_return": 1136,
+      "last_formation_day": 1259
+    },
+    {
+      "fit_close": 1260,
+      "training_start": 756,
+      "lookback": 21,
+      "training_sharpe": 0.3259877154023658,
+      "first_affected_return": 1262,
+      "last_formation_day": 1385
+    },
+    {
+      "fit_close": 1386,
+      "training_start": 882,
+      "lookback": 252,
+      "training_sharpe": 0.5193393454021025,
+      "first_affected_return": 1388,
+      "last_formation_day": 1511
+    }
+  ],
+  "walk_metrics": {
+    "total_return": -0.06001196819863952,
+    "cagr": -0.015352956975728582,
+    "volatility": 0.14443759774359374,
+    "sharpe": -0.17226541372832607,
+    "sortino": -0.25180049053448716,
+    "max_drawdown": -0.26149254056689775,
+    "annual_turnover": 19.490259740259745,
+    "orders": 78,
+    "total_fees": 8382.605329805107,
+    "average_exposure": 0.5942460317460317
+  },
+  "fixed_walk_metrics": {
+    "total_return": 0.08174062494987022,
+    "cagr": 0.01983704872474079,
+    "volatility": 0.13621865100182828,
+    "sharpe": 0.06679362058571937,
+    "sortino": 0.0965053091485742,
+    "max_drawdown": -0.21360320936825927,
+    "annual_turnover": 8.495754245754249,
+    "orders": 34,
+    "total_fees": 4000.3671532326025,
+    "average_exposure": 0.5873015873015873
+  },
+  "bootstrap": {
+    "cagr": [
+      -0.0592428545293436,
+      0.10138249617068673
+    ],
+    "drawdown": [
+      -0.39114812390977843,
+      -0.10252373721871605
+    ]
+  },
+  "selection": {
+    "trials": [
+      1,
+      5,
+      10,
+      20,
+      50,
+      100
+    ],
+    "train": [
+      0.05634179516820069,
+      0.8549259320151795,
+      1.1010007283773768,
+      1.3485178223077998,
+      1.6111444859132957,
+      1.8098917798344698
+    ],
+    "test": [
+      0.03602817665944211,
+      0.04540777701067438,
+      0.12562564086411931,
+      0.0918884972071017,
+      -0.06932273641332318,
+      0.025132487412447457
+    ]
+  }
+}

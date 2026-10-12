@@ -1,0 +1,10 @@
+{
+  "surfaceDerivativeCases": 80,
+  "priceInversionCases": 120,
+  "maxSecondDerivativeAbsoluteError": 2.890440766734059e-07,
+  "maxIndependentDupireRelativeError": 4.125489234934269e-07,
+  "rawSVIEquivalence": "passed",
+  "densityMoments": "passed",
+  "invalidShapeDetection": "passed",
+  "embeddedPython": "passed"
+}

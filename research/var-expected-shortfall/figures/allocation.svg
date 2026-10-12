@@ -1,0 +1,236 @@
+<svg role="img" aria-labelledby="allocation-title allocation-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="allocation-title">Figure 14 · Euler allocation of normal Expected Shortfall</title><desc id="allocation-desc">Wealth €1,000,000; weights 50%, 30%, 20%; daily volatilities 1%, 1.6%, 2.2%; correlations AB = 0.2, AC = 0.1, BC = 0.4; zero means. Contributions sum to portfolio ES.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T18:09:13.083138</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="allocation-figure_1">
+  <g id="allocation-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="allocation-axes_1">
+   <g id="allocation-patch_2">
+    <path d="M 62.66 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 62.66 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="allocation-matplotlib.axis_1">
+    <g id="allocation-xtick_1">
+     <g id="allocation-line2d_1">
+      <path d="M 155.047023 244.78 
+L 155.047023 35.14 
+" clip-path="url(#allocation-pcb9bfa0913)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_2">
+      <defs>
+       <path id="allocation-mf3a19934ba" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#allocation-mf3a19934ba" x="155.047023" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="155.047023" y="258.618594" transform="rotate(-0 155.047023 258.618594)">Asset A</text>
+     </g>
+    </g>
+    <g id="allocation-xtick_2">
+     <g id="allocation-line2d_3">
+      <path d="M 384.58 244.78 
+L 384.58 35.14 
+" clip-path="url(#allocation-pcb9bfa0913)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_4">
+      <g>
+       <use href="#allocation-mf3a19934ba" x="384.58" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="384.58" y="258.618594" transform="rotate(-0 384.58 258.618594)">Asset B</text>
+     </g>
+    </g>
+    <g id="allocation-xtick_3">
+     <g id="allocation-line2d_5">
+      <path d="M 614.112977 244.78 
+L 614.112977 35.14 
+" clip-path="url(#allocation-pcb9bfa0913)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_6">
+      <g>
+       <use href="#allocation-mf3a19934ba" x="614.112977" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="614.112977" y="258.618594" transform="rotate(-0 614.112977 258.618594)">Asset C</text>
+     </g>
+    </g>
+    <g id="allocation-text_4">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="384.58" y="271.328906" transform="rotate(-0 384.58 271.328906)">Asset index</text>
+    </g>
+   </g>
+   <g id="allocation-matplotlib.axis_2">
+    <g id="allocation-ytick_1">
+     <g id="allocation-line2d_7">
+      <path d="M 62.66 244.78 
+L 706.5 244.78 
+" clip-path="url(#allocation-pcb9bfa0913)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_8">
+      <defs>
+       <path id="allocation-mccde3204ac" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#allocation-mccde3204ac" x="62.66" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="248.199297" transform="rotate(-0 55.66 248.199297)">0</text>
+     </g>
+    </g>
+    <g id="allocation-ytick_2">
+     <g id="allocation-line2d_9">
+      <path d="M 62.66 203.845677 
+L 706.5 203.845677 
+" clip-path="url(#allocation-pcb9bfa0913)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_10">
+      <g>
+       <use href="#allocation-mccde3204ac" x="62.66" y="203.845677" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="207.264974" transform="rotate(-0 55.66 207.264974)">2000</text>
+     </g>
+    </g>
+    <g id="allocation-ytick_3">
+     <g id="allocation-line2d_11">
+      <path d="M 62.66 162.911353 
+L 706.5 162.911353 
+" clip-path="url(#allocation-pcb9bfa0913)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_12">
+      <g>
+       <use href="#allocation-mccde3204ac" x="62.66" y="162.911353" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="166.33065" transform="rotate(-0 55.66 166.33065)">4000</text>
+     </g>
+    </g>
+    <g id="allocation-ytick_4">
+     <g id="allocation-line2d_13">
+      <path d="M 62.66 121.97703 
+L 706.5 121.97703 
+" clip-path="url(#allocation-pcb9bfa0913)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_14">
+      <g>
+       <use href="#allocation-mccde3204ac" x="62.66" y="121.97703" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="125.396327" transform="rotate(-0 55.66 125.396327)">6000</text>
+     </g>
+    </g>
+    <g id="allocation-ytick_5">
+     <g id="allocation-line2d_15">
+      <path d="M 62.66 81.042707 
+L 706.5 81.042707 
+" clip-path="url(#allocation-pcb9bfa0913)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_16">
+      <g>
+       <use href="#allocation-mccde3204ac" x="62.66" y="81.042707" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="84.462004" transform="rotate(-0 55.66 84.462004)">8000</text>
+     </g>
+    </g>
+    <g id="allocation-ytick_6">
+     <g id="allocation-line2d_17">
+      <path d="M 62.66 40.108383 
+L 706.5 40.108383 
+" clip-path="url(#allocation-pcb9bfa0913)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="allocation-line2d_18">
+      <g>
+       <use href="#allocation-mccde3204ac" x="62.66" y="40.108383" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="allocation-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="43.52768" transform="rotate(-0 55.66 43.52768)">10000</text>
+     </g>
+    </g>
+    <g id="allocation-text_11">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.157031" y="139.96" transform="rotate(-90 21.157031 139.96)">99% ES contribution (€)</text>
+    </g>
+   </g>
+   <g id="allocation-patch_3">
+    <path d="M 91.925455 244.78 
+L 218.168592 244.78 
+L 218.168592 68.7155 
+L 91.925455 68.7155 
+z
+" clip-path="url(#allocation-pcb9bfa0913)" style="fill: #a7bdb3"/>
+   </g>
+   <g id="allocation-patch_4">
+    <path d="M 321.458431 244.78 
+L 447.701569 244.78 
+L 447.701569 45.122857 
+L 321.458431 45.122857 
+z
+" clip-path="url(#allocation-pcb9bfa0913)" style="fill: #d3ad84"/>
+   </g>
+   <g id="allocation-patch_5">
+    <path d="M 550.991408 244.78 
+L 677.234545 244.78 
+L 677.234545 79.675515 
+L 550.991408 79.675515 
+z
+" clip-path="url(#allocation-pcb9bfa0913)" style="fill: #91a9bd"/>
+   </g>
+   <g id="allocation-patch_6">
+    <path d="M 62.66 244.78 
+L 62.66 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="allocation-patch_7">
+    <path d="M 62.66 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="allocation-text_12">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="62.66" y="22.14" transform="rotate(-0 62.66 22.14)">Capital weights and risk shares differ</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="allocation-pcb9bfa0913">
+   <rect x="62.66" y="35.14" width="643.84" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,1833 @@
+<svg role="img" aria-labelledby="ridge-title ridge-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="266.4pt" viewBox="0 0 792 266.4" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="ridge-title">Figure 18 · Ridge regularization and predictive sensitivity</title><desc id="ridge-desc">The objective is sum of squared errors plus λ times squared standardized slopes; the intercept is unpenalized. The holdout is shown for explanation and is not used to recommend a selected penalty.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-05T16:04:06.947940</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="ridge-figure_1">
+  <g id="ridge-patch_1">
+   <path d="M 0 266.4 
+L 792 266.4 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="ridge-axes_1">
+   <g id="ridge-patch_2">
+    <path d="M 48.26 220.588 
+L 382.05 220.588 
+L 382.05 35.14 
+L 48.26 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="ridge-matplotlib.axis_1">
+    <g id="ridge-xtick_1">
+     <g id="ridge-line2d_1">
+      <path d="M 63.432273 220.588 
+L 63.432273 35.14 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_2">
+      <defs>
+       <path id="ridge-mbaf2e8ab17" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#ridge-mbaf2e8ab17" x="63.432273" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_1">
+      <!-- $\mathdefault{10^{-2}}$ -->
+      <g style="fill: #939b94" transform="translate(52.857273 234.426594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.318750000000001">−2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_2">
+     <g id="ridge-line2d_3">
+      <path d="M 124.121364 220.588 
+L 124.121364 35.14 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_4">
+      <g>
+       <use href="#ridge-mbaf2e8ab17" x="124.121364" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_2">
+      <!-- $\mathdefault{10^{-1}}$ -->
+      <g style="fill: #939b94" transform="translate(113.546364 234.426594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.40625">−1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_3">
+     <g id="ridge-line2d_5">
+      <path d="M 184.810455 220.588 
+L 184.810455 35.14 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_6">
+      <g>
+       <use href="#ridge-mbaf2e8ab17" x="184.810455" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_3">
+      <!-- $\mathdefault{10^{0}}$ -->
+      <g style="fill: #939b94" transform="translate(176.890455 234.426594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_4">
+     <g id="ridge-line2d_7">
+      <path d="M 245.499545 220.588 
+L 245.499545 35.14 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_8">
+      <g>
+       <use href="#ridge-mbaf2e8ab17" x="245.499545" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_4">
+      <!-- $\mathdefault{10^{1}}$ -->
+      <g style="fill: #939b94" transform="translate(237.579545 234.426594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.40625">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_5">
+     <g id="ridge-line2d_9">
+      <path d="M 306.188636 220.588 
+L 306.188636 35.14 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_10">
+      <g>
+       <use href="#ridge-mbaf2e8ab17" x="306.188636" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_5">
+      <!-- $\mathdefault{10^{2}}$ -->
+      <g style="fill: #939b94" transform="translate(298.268636 234.426594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_6">
+     <g id="ridge-line2d_11">
+      <path d="M 366.877727 220.588 
+L 366.877727 35.14 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_12">
+      <g>
+       <use href="#ridge-mbaf2e8ab17" x="366.877727" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_6">
+      <!-- $\mathdefault{10^{3}}$ -->
+      <g style="fill: #939b94" transform="translate(358.957727 234.426594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">3</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_7">
+     <g id="ridge-line2d_13">
+      <defs>
+       <path id="ridge-m934e2ac24a" d="M 0 0 
+L 0 2 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#ridge-m934e2ac24a" x="49.968474" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_8">
+     <g id="ridge-line2d_14">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="54.031414" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_9">
+     <g id="ridge-line2d_15">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="57.550892" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_10">
+     <g id="ridge-line2d_16">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="60.655292" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_11">
+     <g id="ridge-line2d_17">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="81.70151" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_12">
+     <g id="ridge-line2d_18">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="92.388328" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_13">
+     <g id="ridge-line2d_19">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="99.970746" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_14">
+     <g id="ridge-line2d_20">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="105.852127" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_15">
+     <g id="ridge-line2d_21">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="110.657565" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_16">
+     <g id="ridge-line2d_22">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="114.720505" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_17">
+     <g id="ridge-line2d_23">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="118.239983" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_18">
+     <g id="ridge-line2d_24">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="121.344383" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_19">
+     <g id="ridge-line2d_25">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="142.3906" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_20">
+     <g id="ridge-line2d_26">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="153.077419" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_21">
+     <g id="ridge-line2d_27">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="160.659837" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_22">
+     <g id="ridge-line2d_28">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="166.541218" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_23">
+     <g id="ridge-line2d_29">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="171.346656" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_24">
+     <g id="ridge-line2d_30">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="175.409595" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_25">
+     <g id="ridge-line2d_31">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="178.929074" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_26">
+     <g id="ridge-line2d_32">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="182.033474" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_27">
+     <g id="ridge-line2d_33">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="203.079691" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_28">
+     <g id="ridge-line2d_34">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="213.76651" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_29">
+     <g id="ridge-line2d_35">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="221.348928" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_30">
+     <g id="ridge-line2d_36">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="227.230309" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_31">
+     <g id="ridge-line2d_37">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="232.035747" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_32">
+     <g id="ridge-line2d_38">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="236.098686" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_33">
+     <g id="ridge-line2d_39">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="239.618165" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_34">
+     <g id="ridge-line2d_40">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="242.722565" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_35">
+     <g id="ridge-line2d_41">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="263.768782" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_36">
+     <g id="ridge-line2d_42">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="274.455601" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_37">
+     <g id="ridge-line2d_43">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="282.038019" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_38">
+     <g id="ridge-line2d_44">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="287.9194" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_39">
+     <g id="ridge-line2d_45">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="292.724837" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_40">
+     <g id="ridge-line2d_46">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="296.787777" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_41">
+     <g id="ridge-line2d_47">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="300.307256" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_42">
+     <g id="ridge-line2d_48">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="303.411656" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_43">
+     <g id="ridge-line2d_49">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="324.457873" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_44">
+     <g id="ridge-line2d_50">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="335.144692" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_45">
+     <g id="ridge-line2d_51">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="342.72711" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_46">
+     <g id="ridge-line2d_52">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="348.60849" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_47">
+     <g id="ridge-line2d_53">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="353.413928" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_48">
+     <g id="ridge-line2d_54">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="357.476868" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_49">
+     <g id="ridge-line2d_55">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="360.996347" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_50">
+     <g id="ridge-line2d_56">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="364.100747" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="215.155" y="247.136906" transform="rotate(-0 215.155 247.136906)">Ridge penalty λ</text>
+    </g>
+   </g>
+   <g id="ridge-matplotlib.axis_2">
+    <g id="ridge-ytick_1">
+     <g id="ridge-line2d_57">
+      <path d="M 48.26 194.135226 
+L 382.05 194.135226 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_58">
+      <defs>
+       <path id="ridge-m5ae8cbb269" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#ridge-m5ae8cbb269" x="48.26" y="194.135226" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="197.554522" transform="rotate(-0 41.26 197.554522)">0.0</text>
+     </g>
+    </g>
+    <g id="ridge-ytick_2">
+     <g id="ridge-line2d_59">
+      <path d="M 48.26 165.339499 
+L 382.05 165.339499 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_60">
+      <g>
+       <use href="#ridge-m5ae8cbb269" x="48.26" y="165.339499" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="168.758796" transform="rotate(-0 41.26 168.758796)">0.2</text>
+     </g>
+    </g>
+    <g id="ridge-ytick_3">
+     <g id="ridge-line2d_61">
+      <path d="M 48.26 136.543772 
+L 382.05 136.543772 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_62">
+      <g>
+       <use href="#ridge-m5ae8cbb269" x="48.26" y="136.543772" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="139.963069" transform="rotate(-0 41.26 139.963069)">0.4</text>
+     </g>
+    </g>
+    <g id="ridge-ytick_4">
+     <g id="ridge-line2d_63">
+      <path d="M 48.26 107.748046 
+L 382.05 107.748046 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_64">
+      <g>
+       <use href="#ridge-m5ae8cbb269" x="48.26" y="107.748046" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="111.167342" transform="rotate(-0 41.26 111.167342)">0.6</text>
+     </g>
+    </g>
+    <g id="ridge-ytick_5">
+     <g id="ridge-line2d_65">
+      <path d="M 48.26 78.952319 
+L 382.05 78.952319 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_66">
+      <g>
+       <use href="#ridge-m5ae8cbb269" x="48.26" y="78.952319" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="82.371616" transform="rotate(-0 41.26 82.371616)">0.8</text>
+     </g>
+    </g>
+    <g id="ridge-ytick_6">
+     <g id="ridge-line2d_67">
+      <path d="M 48.26 50.156592 
+L 382.05 50.156592 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_68">
+      <g>
+       <use href="#ridge-m5ae8cbb269" x="48.26" y="50.156592" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="53.575889" transform="rotate(-0 41.26 53.575889)">1.0</text>
+     </g>
+    </g>
+    <g id="ridge-text_14">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.075469" y="127.864" transform="rotate(-90 21.075469 127.864)">Exposure in original factor units</text>
+    </g>
+   </g>
+   <g id="ridge-line2d_69">
+    <path d="M 63.432273 43.569455 
+L 66.466727 43.570724 
+L 69.501182 43.572149 
+L 72.535636 43.573748 
+L 75.570091 43.575542 
+L 78.604545 43.577554 
+L 81.639 43.579812 
+L 84.673455 43.582346 
+L 87.707909 43.585188 
+L 90.742364 43.588377 
+L 93.776818 43.591955 
+L 96.811273 43.595969 
+L 99.845727 43.600473 
+L 102.880182 43.605526 
+L 105.914636 43.611195 
+L 108.949091 43.617555 
+L 111.983545 43.62469 
+L 115.018 43.632695 
+L 118.052455 43.641675 
+L 121.086909 43.65175 
+L 124.121364 43.663052 
+L 127.155818 43.67573 
+L 130.190273 43.689953 
+L 133.224727 43.705906 
+L 136.259182 43.723802 
+L 139.293636 43.743874 
+L 142.328091 43.766388 
+L 145.362545 43.791639 
+L 148.397 43.819958 
+L 151.431455 43.851717 
+L 154.465909 43.887331 
+L 157.500364 43.927266 
+L 160.534818 43.972042 
+L 163.569273 44.022242 
+L 166.603727 44.078518 
+L 169.638182 44.141598 
+L 172.672636 44.212296 
+L 175.707091 44.291523 
+L 178.741545 44.380292 
+L 181.776 44.479737 
+L 184.810455 44.591121 
+L 187.844909 44.715851 
+L 190.879364 44.855493 
+L 193.913818 45.011788 
+L 196.948273 45.186671 
+L 199.982727 45.382288 
+L 203.017182 45.601017 
+L 206.051636 45.845487 
+L 209.086091 46.118604 
+L 212.120545 46.423568 
+L 215.155 46.763899 
+L 218.189455 47.143458 
+L 221.223909 47.566469 
+L 224.258364 48.037538 
+L 227.292818 48.56167 
+L 230.327273 49.144283 
+L 233.361727 49.791213 
+L 236.396182 50.508718 
+L 239.430636 51.303468 
+L 242.465091 52.182527 
+L 245.499545 53.153316 
+L 248.534 54.223573 
+L 251.568455 55.401279 
+L 254.602909 56.694575 
+L 257.637364 58.111653 
+L 260.671818 59.660626 
+L 263.706273 61.349368 
+L 266.740727 63.185336 
+L 269.775182 65.175371 
+L 272.809636 67.325477 
+L 275.844091 69.640586 
+L 278.878545 72.124322 
+L 281.913 74.778759 
+L 284.947455 77.604195 
+L 287.981909 80.598942 
+L 291.016364 83.759153 
+L 294.050818 87.078683 
+L 297.085273 90.549009 
+L 300.119727 94.159202 
+L 303.154182 97.89597 
+L 306.188636 101.743767 
+L 309.223091 105.684976 
+L 312.257545 109.700154 
+L 315.292 113.768353 
+L 318.326455 117.867484 
+L 321.360909 121.974742 
+L 324.395364 126.067057 
+L 327.429818 130.121559 
+L 330.464273 134.116053 
+L 333.498727 138.029469 
+L 336.533182 141.842271 
+L 339.567636 145.536824 
+L 342.602091 149.097679 
+L 345.636545 152.511787 
+L 348.671 155.768629 
+L 351.705455 158.860256 
+L 354.739909 161.781254 
+L 357.774364 164.528632 
+L 360.808818 167.101652 
+L 363.843273 169.501613 
+L 366.877727 171.731604 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="ridge-line2d_70">
+    <path d="M 63.432273 121.344311 
+L 66.466727 121.344527 
+L 69.501182 121.34477 
+L 72.535636 121.345042 
+L 75.570091 121.345347 
+L 78.604545 121.34569 
+L 81.639 121.346074 
+L 84.673455 121.346505 
+L 87.707909 121.346989 
+L 90.742364 121.347532 
+L 93.776818 121.348141 
+L 96.811273 121.348824 
+L 99.845727 121.349591 
+L 102.880182 121.350452 
+L 105.914636 121.351417 
+L 108.949091 121.3525 
+L 111.983545 121.353716 
+L 115.018 121.355079 
+L 118.052455 121.356609 
+L 121.086909 121.358326 
+L 124.121364 121.360253 
+L 127.155818 121.362414 
+L 130.190273 121.36484 
+L 133.224727 121.367561 
+L 136.259182 121.370614 
+L 139.293636 121.374041 
+L 142.328091 121.377885 
+L 145.362545 121.382199 
+L 148.397 121.387039 
+L 151.431455 121.392471 
+L 154.465909 121.398565 
+L 157.500364 121.405404 
+L 160.534818 121.413078 
+L 163.569273 121.421689 
+L 166.603727 121.431351 
+L 169.638182 121.442195 
+L 172.672636 121.454362 
+L 175.707091 121.468017 
+L 178.741545 121.48334 
+L 181.776 121.500536 
+L 184.810455 121.519834 
+L 187.844909 121.541492 
+L 190.879364 121.565799 
+L 193.913818 121.59308 
+L 196.948273 121.623698 
+L 199.982727 121.658065 
+L 203.017182 121.696639 
+L 206.051636 121.739937 
+L 209.086091 121.788541 
+L 212.120545 121.843102 
+L 215.155 121.904352 
+L 218.189455 121.973115 
+L 221.223909 122.050315 
+L 224.258364 122.13699 
+L 227.292818 122.234307 
+L 230.327273 122.343574 
+L 233.361727 122.46626 
+L 236.396182 122.604013 
+L 239.430636 122.75868 
+L 242.465091 122.932329 
+L 245.499545 123.127272 
+L 248.534 123.346092 
+L 251.568455 123.591666 
+L 254.602909 123.867193 
+L 257.637364 124.176214 
+L 260.671818 124.522643 
+L 263.706273 124.910773 
+L 266.740727 125.345294 
+L 269.775182 125.831292 
+L 272.809636 126.374229 
+L 275.844091 126.979916 
+L 278.878545 127.654452 
+L 281.913 128.404136 
+L 284.947455 129.235352 
+L 287.981909 130.154409 
+L 291.016364 131.167342 
+L 294.050818 132.279684 
+L 297.085273 133.496195 
+L 300.119727 134.820568 
+L 303.154182 136.255131 
+L 306.188636 137.800546 
+L 309.223091 139.455545 
+L 312.257545 141.216714 
+L 315.292 143.078354 
+L 318.326455 145.032433 
+L 321.360909 147.068654 
+L 324.395364 149.174629 
+L 327.429818 151.336172 
+L 330.464273 153.537681 
+L 333.498727 155.7626 
+L 336.533182 157.993925 
+L 339.567636 160.214724 
+L 342.602091 162.408633 
+L 345.636545 164.560311 
+L 348.671 166.655819 
+L 351.705455 168.682909 
+L 354.739909 170.631227 
+L 357.774364 172.492409 
+L 360.808818 174.2601 
+L 363.843273 175.92989 
+L 366.877727 177.49919 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="ridge-line2d_71">
+    <path d="M 63.432273 151.97854 
+L 66.466727 151.979234 
+L 69.501182 151.980014 
+L 72.535636 151.980888 
+L 75.570091 151.981869 
+L 78.604545 151.982969 
+L 81.639 151.984204 
+L 84.673455 151.98559 
+L 87.707909 151.987144 
+L 90.742364 151.988888 
+L 93.776818 151.990844 
+L 96.811273 151.99304 
+L 99.845727 151.995502 
+L 102.880182 151.998265 
+L 105.914636 152.001364 
+L 108.949091 152.004841 
+L 111.983545 152.008742 
+L 115.018 152.013118 
+L 118.052455 152.018027 
+L 121.086909 152.023533 
+L 124.121364 152.02971 
+L 127.155818 152.036638 
+L 130.190273 152.044409 
+L 133.224727 152.053124 
+L 136.259182 152.0629 
+L 139.293636 152.073862 
+L 142.328091 152.086156 
+L 145.362545 152.099941 
+L 148.397 152.115398 
+L 151.431455 152.132728 
+L 154.465909 152.152157 
+L 157.500364 152.173935 
+L 160.534818 152.198344 
+L 163.569273 152.225699 
+L 166.603727 152.256351 
+L 169.638182 152.290692 
+L 172.672636 152.329157 
+L 175.707091 152.372235 
+L 178.741545 152.420467 
+L 181.776 152.474456 
+L 184.810455 152.534872 
+L 187.844909 152.602458 
+L 190.879364 152.678038 
+L 193.913818 152.762524 
+L 196.948273 152.856924 
+L 199.982727 152.962346 
+L 203.017182 153.080014 
+L 206.051636 153.211266 
+L 209.086091 153.357571 
+L 212.120545 153.520526 
+L 215.155 153.701871 
+L 218.189455 153.903487 
+L 221.223909 154.1274 
+L 224.258364 154.375781 
+L 227.292818 154.650938 
+L 230.327273 154.955316 
+L 233.361727 155.291472 
+L 236.396182 155.662061 
+L 239.430636 156.069806 
+L 242.465091 156.517461 
+L 245.499545 157.007762 
+L 248.534 157.543371 
+L 251.568455 158.126809 
+L 254.602909 158.760373 
+L 257.637364 159.446046 
+L 260.671818 160.185404 
+L 263.706273 160.979505 
+L 266.740727 161.828787 
+L 269.775182 162.732962 
+L 272.809636 163.690922 
+L 275.844091 164.70066 
+L 278.878545 165.759211 
+L 281.913 166.862624 
+L 284.947455 168.00597 
+L 287.981909 169.183388 
+L 291.016364 170.388176 
+L 294.050818 171.612912 
+L 297.085273 172.849629 
+L 300.119727 174.090003 
+L 303.154182 175.325568 
+L 306.188636 176.547943 
+L 309.223091 177.749048 
+L 312.257545 178.921308 
+L 315.292 180.057834 
+L 318.326455 181.152566 
+L 321.360909 182.200382 
+L 324.395364 183.197159 
+L 327.429818 184.139805 
+L 330.464273 185.026239 
+L 333.498727 185.855347 
+L 336.533182 186.626912 
+L 339.567636 187.341511 
+L 342.602091 188.000417 
+L 345.636545 188.605474 
+L 348.671 189.158987 
+L 351.705455 189.663602 
+L 354.739909 190.122205 
+L 357.774364 190.537826 
+L 360.808818 190.913553 
+L 363.843273 191.252469 
+L 366.877727 191.557589 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="ridge-line2d_72">
+    <path d="M 63.432273 146.580704 
+L 66.466727 146.580641 
+L 69.501182 146.58057 
+L 72.535636 146.58049 
+L 75.570091 146.580401 
+L 78.604545 146.580301 
+L 81.639 146.580189 
+L 84.673455 146.580063 
+L 87.707909 146.579922 
+L 90.742364 146.579764 
+L 93.776818 146.579586 
+L 96.811273 146.579387 
+L 99.845727 146.579164 
+L 102.880182 146.578914 
+L 105.914636 146.578634 
+L 108.949091 146.57832 
+L 111.983545 146.577968 
+L 115.018 146.577573 
+L 118.052455 146.577132 
+L 121.086909 146.576637 
+L 124.121364 146.576083 
+L 127.155818 146.575463 
+L 130.190273 146.574769 
+L 133.224727 146.573992 
+L 136.259182 146.573124 
+L 139.293636 146.572153 
+L 142.328091 146.571068 
+L 145.362545 146.569857 
+L 148.397 146.568505 
+L 151.431455 146.566997 
+L 154.465909 146.565317 
+L 157.500364 146.563445 
+L 160.534818 146.561363 
+L 163.569273 146.559049 
+L 166.603727 146.556481 
+L 169.638182 146.553634 
+L 172.672636 146.550485 
+L 175.707091 146.547007 
+L 178.741545 146.543173 
+L 181.776 146.53896 
+L 184.810455 146.534341 
+L 187.844909 146.529294 
+L 190.879364 146.523803 
+L 193.913818 146.517855 
+L 196.948273 146.511447 
+L 199.982727 146.504589 
+L 203.017182 146.497308 
+L 206.051636 146.489652 
+L 209.086091 146.481702 
+L 212.120545 146.473574 
+L 215.155 146.465434 
+L 218.189455 146.457514 
+L 221.223909 146.450122 
+L 224.258364 146.443664 
+L 227.292818 146.438671 
+L 230.327273 146.435822 
+L 233.361727 146.435977 
+L 236.396182 146.440218 
+L 239.430636 146.449885 
+L 242.465091 146.466631 
+L 245.499545 146.492468 
+L 248.534 146.529821 
+L 251.568455 146.581591 
+L 254.602909 146.651202 
+L 257.637364 146.742658 
+L 260.671818 146.860579 
+L 263.706273 147.010228 
+L 266.740727 147.197512 
+L 269.775182 147.428958 
+L 272.809636 147.711645 
+L 275.844091 148.053094 
+L 278.878545 148.461107 
+L 281.913 148.943553 
+L 284.947455 149.508096 
+L 287.981909 150.161878 
+L 291.016364 150.911161 
+L 294.050818 151.760955 
+L 297.085273 152.71464 
+L 300.119727 153.773627 
+L 303.154182 154.937067 
+L 306.188636 156.201655 
+L 309.223091 157.561543 
+L 312.257545 159.008375 
+L 315.292 160.531465 
+L 318.326455 162.118096 
+L 321.360909 163.753937 
+L 324.395364 165.423539 
+L 327.429818 167.110893 
+L 330.464273 168.799986 
+L 333.498727 170.475343 
+L 336.533182 172.122504 
+L 339.567636 173.728419 
+L 342.602091 175.28174 
+L 345.636545 176.773007 
+L 348.671 178.194723 
+L 351.705455 179.541341 
+L 354.739909 180.809172 
+L 357.774364 181.996222 
+L 360.808818 183.102008 
+L 363.843273 184.127328 
+L 366.877727 185.074045 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="ridge-line2d_73">
+    <path d="M 63.432273 162.581541 
+L 66.466727 162.583011 
+L 69.501182 162.58466 
+L 72.535636 162.586511 
+L 75.570091 162.588586 
+L 78.604545 162.590915 
+L 81.639 162.593529 
+L 84.673455 162.59646 
+L 87.707909 162.599749 
+L 90.742364 162.60344 
+L 93.776818 162.60758 
+L 96.811273 162.612224 
+L 99.845727 162.617435 
+L 102.880182 162.623281 
+L 105.914636 162.629839 
+L 108.949091 162.637196 
+L 111.983545 162.645449 
+L 115.018 162.654708 
+L 118.052455 162.665093 
+L 121.086909 162.676742 
+L 124.121364 162.689809 
+L 127.155818 162.704466 
+L 130.190273 162.720904 
+L 133.224727 162.73934 
+L 136.259182 162.760015 
+L 139.293636 162.783201 
+L 142.328091 162.8092 
+L 145.362545 162.838352 
+L 148.397 162.871035 
+L 151.431455 162.907675 
+L 154.465909 162.948746 
+L 157.500364 162.994778 
+L 160.534818 163.046364 
+L 163.569273 163.104167 
+L 166.603727 163.168923 
+L 169.638182 163.241456 
+L 172.672636 163.322683 
+L 175.707091 163.413626 
+L 178.741545 163.515419 
+L 181.776 163.629324 
+L 184.810455 163.75674 
+L 187.844909 163.899218 
+L 190.879364 164.058472 
+L 193.913818 164.236396 
+L 196.948273 164.435077 
+L 199.982727 164.656808 
+L 203.017182 164.904104 
+L 206.051636 165.179715 
+L 209.086091 165.486634 
+L 212.120545 165.828113 
+L 215.155 166.207661 
+L 218.189455 166.629052 
+L 221.223909 167.096313 
+L 224.258364 167.613721 
+L 227.292818 168.185769 
+L 230.327273 168.817141 
+L 233.361727 169.512658 
+L 236.396182 170.277212 
+L 239.430636 171.115679 
+L 242.465091 172.03281 
+L 245.499545 173.033096 
+L 248.534 174.120607 
+L 251.568455 175.298802 
+L 254.602909 176.570311 
+L 257.637364 177.936699 
+L 260.671818 179.398204 
+L 263.706273 180.953466 
+L 266.740727 182.599257 
+L 269.775182 184.330225 
+L 272.809636 186.138669 
+L 275.844091 188.014369 
+L 278.878545 189.944491 
+L 281.913 191.913582 
+L 284.947455 193.90369 
+L 287.981909 195.894604 
+L 291.016364 197.86424 
+L 294.050818 199.789158 
+L 297.085273 201.645205 
+L 300.119727 203.408259 
+L 303.154182 205.055033 
+L 306.188636 206.563911 
+L 309.223091 207.915748 
+L 312.257545 209.094593 
+L 315.292 210.088296 
+L 318.326455 210.888942 
+L 321.360909 211.493088 
+L 324.395364 211.901805 
+L 327.429818 212.120498 
+L 330.464273 212.158545 
+L 333.498727 212.028774 
+L 336.533182 211.746809 
+L 339.567636 211.330355 
+L 342.602091 210.798443 
+L 345.636545 210.170698 
+L 348.671 209.466665 
+L 351.705455 208.705212 
+L 354.739909 207.904054 
+L 357.774364 207.079379 
+L 360.808818 206.245602 
+L 363.843273 205.415224 
+L 366.877727 204.598789 
+" clip-path="url(#ridge-paee1bcaa50)" style="fill: none; stroke: #bbbac7; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="ridge-patch_3">
+    <path d="M 48.26 220.588 
+L 48.26 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ridge-patch_4">
+    <path d="M 48.26 220.588 
+L 382.05 220.588 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ridge-text_15">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="48.26" y="22.14" transform="rotate(-0 48.26 22.14)">Factors standardized on training data</text>
+   </g>
+   <g id="ridge-legend_1">
+    <g id="ridge-line2d_74">
+     <path d="M 299.7225 45.61875 
+L 307.7225 45.61875 
+L 315.7225 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="ridge-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="322.1225" y="48.41875" transform="rotate(-0 322.1225 48.41875)">Market</text>
+    </g>
+    <g id="ridge-line2d_75">
+     <path d="M 299.7225 57.36125 
+L 307.7225 57.36125 
+L 315.7225 57.36125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="ridge-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="322.1225" y="60.16125" transform="rotate(-0 322.1225 60.16125)">Value</text>
+    </g>
+    <g id="ridge-line2d_76">
+     <path d="M 299.7225 69.10375 
+L 307.7225 69.10375 
+L 315.7225 69.10375 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="ridge-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="322.1225" y="71.90375" transform="rotate(-0 322.1225 71.90375)">Momentum</text>
+    </g>
+    <g id="ridge-line2d_77">
+     <path d="M 299.7225 80.84625 
+L 307.7225 80.84625 
+L 315.7225 80.84625 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="ridge-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="322.1225" y="83.64625" transform="rotate(-0 322.1225 83.64625)">Quality</text>
+    </g>
+    <g id="ridge-line2d_78">
+     <path d="M 299.7225 92.58875 
+L 307.7225 92.58875 
+L 315.7225 92.58875 
+" style="fill: none; stroke: #bbbac7; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="ridge-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="322.1225" y="95.38875" transform="rotate(-0 322.1225 95.38875)">Low volatility</text>
+    </g>
+   </g>
+  </g>
+  <g id="ridge-axes_2">
+   <g id="ridge-patch_5">
+    <path d="M 444.71 220.588 
+L 778.5 220.588 
+L 778.5 35.14 
+L 444.71 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="ridge-matplotlib.axis_3">
+    <g id="ridge-xtick_51">
+     <g id="ridge-line2d_79">
+      <path d="M 459.882273 220.588 
+L 459.882273 35.14 
+" clip-path="url(#ridge-pb5dd613c26)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_80">
+      <g>
+       <use href="#ridge-mbaf2e8ab17" x="459.882273" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_21">
+      <!-- $\mathdefault{10^{-2}}$ -->
+      <g style="fill: #939b94" transform="translate(449.307273 234.426594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.318750000000001">−2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_52">
+     <g id="ridge-line2d_81">
+      <path d="M 520.571364 220.588 
+L 520.571364 35.14 
+" clip-path="url(#ridge-pb5dd613c26)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_82">
+      <g>
+       <use href="#ridge-mbaf2e8ab17" x="520.571364" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_22">
+      <!-- $\mathdefault{10^{-1}}$ -->
+      <g style="fill: #939b94" transform="translate(509.996364 234.426594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.40625">−1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_53">
+     <g id="ridge-line2d_83">
+      <path d="M 581.260455 220.588 
+L 581.260455 35.14 
+" clip-path="url(#ridge-pb5dd613c26)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_84">
+      <g>
+       <use href="#ridge-mbaf2e8ab17" x="581.260455" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_23">
+      <!-- $\mathdefault{10^{0}}$ -->
+      <g style="fill: #939b94" transform="translate(573.340455 234.426594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_54">
+     <g id="ridge-line2d_85">
+      <path d="M 641.949545 220.588 
+L 641.949545 35.14 
+" clip-path="url(#ridge-pb5dd613c26)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_86">
+      <g>
+       <use href="#ridge-mbaf2e8ab17" x="641.949545" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_24">
+      <!-- $\mathdefault{10^{1}}$ -->
+      <g style="fill: #939b94" transform="translate(634.029545 234.426594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.9609375">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.40625">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_55">
+     <g id="ridge-line2d_87">
+      <path d="M 702.638636 220.588 
+L 702.638636 35.14 
+" clip-path="url(#ridge-pb5dd613c26)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_88">
+      <g>
+       <use href="#ridge-mbaf2e8ab17" x="702.638636" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_25">
+      <!-- $\mathdefault{10^{2}}$ -->
+      <g style="fill: #939b94" transform="translate(694.718636 234.426594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_56">
+     <g id="ridge-line2d_89">
+      <path d="M 763.327727 220.588 
+L 763.327727 35.14 
+" clip-path="url(#ridge-pb5dd613c26)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_90">
+      <g>
+       <use href="#ridge-mbaf2e8ab17" x="763.327727" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_26">
+      <!-- $\mathdefault{10^{3}}$ -->
+      <g style="fill: #939b94" transform="translate(755.407727 234.426594)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281" y="-4.318750000000001">3</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_57">
+     <g id="ridge-line2d_91">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="446.418474" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_58">
+     <g id="ridge-line2d_92">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="450.481414" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_59">
+     <g id="ridge-line2d_93">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="454.000892" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_60">
+     <g id="ridge-line2d_94">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="457.105292" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_61">
+     <g id="ridge-line2d_95">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="478.15151" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_62">
+     <g id="ridge-line2d_96">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="488.838328" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_63">
+     <g id="ridge-line2d_97">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="496.420746" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_64">
+     <g id="ridge-line2d_98">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="502.302127" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_65">
+     <g id="ridge-line2d_99">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="507.107565" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_66">
+     <g id="ridge-line2d_100">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="511.170505" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_67">
+     <g id="ridge-line2d_101">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="514.689983" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_68">
+     <g id="ridge-line2d_102">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="517.794383" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_69">
+     <g id="ridge-line2d_103">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="538.8406" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_70">
+     <g id="ridge-line2d_104">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="549.527419" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_71">
+     <g id="ridge-line2d_105">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="557.109837" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_72">
+     <g id="ridge-line2d_106">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="562.991218" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_73">
+     <g id="ridge-line2d_107">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="567.796656" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_74">
+     <g id="ridge-line2d_108">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="571.859595" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_75">
+     <g id="ridge-line2d_109">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="575.379074" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_76">
+     <g id="ridge-line2d_110">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="578.483474" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_77">
+     <g id="ridge-line2d_111">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="599.529691" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_78">
+     <g id="ridge-line2d_112">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="610.21651" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_79">
+     <g id="ridge-line2d_113">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="617.798928" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_80">
+     <g id="ridge-line2d_114">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="623.680309" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_81">
+     <g id="ridge-line2d_115">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="628.485747" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_82">
+     <g id="ridge-line2d_116">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="632.548686" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_83">
+     <g id="ridge-line2d_117">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="636.068165" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_84">
+     <g id="ridge-line2d_118">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="639.172565" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_85">
+     <g id="ridge-line2d_119">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="660.218782" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_86">
+     <g id="ridge-line2d_120">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="670.905601" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_87">
+     <g id="ridge-line2d_121">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="678.488019" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_88">
+     <g id="ridge-line2d_122">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="684.3694" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_89">
+     <g id="ridge-line2d_123">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="689.174837" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_90">
+     <g id="ridge-line2d_124">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="693.237777" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_91">
+     <g id="ridge-line2d_125">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="696.757256" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_92">
+     <g id="ridge-line2d_126">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="699.861656" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_93">
+     <g id="ridge-line2d_127">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="720.907873" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_94">
+     <g id="ridge-line2d_128">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="731.594692" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_95">
+     <g id="ridge-line2d_129">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="739.17711" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_96">
+     <g id="ridge-line2d_130">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="745.05849" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_97">
+     <g id="ridge-line2d_131">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="749.863928" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_98">
+     <g id="ridge-line2d_132">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="753.926868" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_99">
+     <g id="ridge-line2d_133">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="757.446347" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-xtick_100">
+     <g id="ridge-line2d_134">
+      <g>
+       <use href="#ridge-m934e2ac24a" x="760.550747" y="220.588" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ridge-text_27">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="611.605" y="247.136906" transform="rotate(-0 611.605 247.136906)">Ridge penalty λ</text>
+    </g>
+   </g>
+   <g id="ridge-matplotlib.axis_4">
+    <g id="ridge-ytick_7">
+     <g id="ridge-line2d_135">
+      <path d="M 444.71 197.260286 
+L 778.5 197.260286 
+" clip-path="url(#ridge-pb5dd613c26)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_136">
+      <g>
+       <use href="#ridge-m5ae8cbb269" x="444.71" y="197.260286" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="200.679583" transform="rotate(-0 437.71 200.679583)">2.50%</text>
+     </g>
+    </g>
+    <g id="ridge-ytick_8">
+     <g id="ridge-line2d_137">
+      <path d="M 444.71 159.178767 
+L 778.5 159.178767 
+" clip-path="url(#ridge-pb5dd613c26)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_138">
+      <g>
+       <use href="#ridge-m5ae8cbb269" x="444.71" y="159.178767" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="162.598064" transform="rotate(-0 437.71 162.598064)">3.00%</text>
+     </g>
+    </g>
+    <g id="ridge-ytick_9">
+     <g id="ridge-line2d_139">
+      <path d="M 444.71 121.097249 
+L 778.5 121.097249 
+" clip-path="url(#ridge-pb5dd613c26)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_140">
+      <g>
+       <use href="#ridge-m5ae8cbb269" x="444.71" y="121.097249" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="124.516546" transform="rotate(-0 437.71 124.516546)">3.50%</text>
+     </g>
+    </g>
+    <g id="ridge-ytick_10">
+     <g id="ridge-line2d_141">
+      <path d="M 444.71 83.015731 
+L 778.5 83.015731 
+" clip-path="url(#ridge-pb5dd613c26)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_142">
+      <g>
+       <use href="#ridge-m5ae8cbb269" x="444.71" y="83.015731" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="86.435028" transform="rotate(-0 437.71 86.435028)">4.00%</text>
+     </g>
+    </g>
+    <g id="ridge-ytick_11">
+     <g id="ridge-line2d_143">
+      <path d="M 444.71 44.934213 
+L 778.5 44.934213 
+" clip-path="url(#ridge-pb5dd613c26)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="ridge-line2d_144">
+      <g>
+       <use href="#ridge-m5ae8cbb269" x="444.71" y="44.934213" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="ridge-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.71" y="48.353509" transform="rotate(-0 437.71 48.353509)">4.50%</text>
+     </g>
+    </g>
+    <g id="ridge-text_33">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="403.247812" y="127.864" transform="rotate(-90 403.247812 127.864)">Monthly error</text>
+    </g>
+   </g>
+   <g id="ridge-line2d_145">
+    <path d="M 459.882273 212.158545 
+L 462.916727 212.158125 
+L 465.951182 212.157654 
+L 468.985636 212.157125 
+L 472.020091 212.156531 
+L 475.054545 212.155865 
+L 478.089 212.155118 
+L 481.123455 212.154279 
+L 484.157909 212.153338 
+L 487.192364 212.152282 
+L 490.226818 212.151097 
+L 493.261273 212.149767 
+L 496.295727 212.148274 
+L 499.330182 212.146599 
+L 502.364636 212.144719 
+L 505.399091 212.142608 
+L 508.433545 212.14024 
+L 511.468 212.137582 
+L 514.502455 212.134598 
+L 517.536909 212.131248 
+L 520.571364 212.127488 
+L 523.605818 212.123267 
+L 526.640273 212.118527 
+L 529.674727 212.113205 
+L 532.709182 212.107229 
+L 535.743636 212.100518 
+L 538.778091 212.092981 
+L 541.812545 212.084513 
+L 544.847 212.075001 
+L 547.881455 212.064313 
+L 550.915909 212.052302 
+L 553.950364 212.038801 
+L 556.984818 212.023623 
+L 560.019273 212.006555 
+L 563.053727 211.987357 
+L 566.088182 211.965758 
+L 569.122636 211.941448 
+L 572.157091 211.91408 
+L 575.191545 211.883255 
+L 578.226 211.848523 
+L 581.260455 211.80937 
+L 584.294909 211.765213 
+L 587.329364 211.715383 
+L 590.363818 211.659119 
+L 593.398273 211.595547 
+L 596.432727 211.523671 
+L 599.467182 211.442342 
+L 602.501636 211.350245 
+L 605.536091 211.245866 
+L 608.570545 211.127461 
+L 611.605 210.99302 
+L 614.639455 210.840225 
+L 617.673909 210.666398 
+L 620.708364 210.468449 
+L 623.742818 210.242808 
+L 626.777273 209.985355 
+L 629.811727 209.691337 
+L 632.846182 209.35528 
+L 635.880636 208.970893 
+L 638.915091 208.530963 
+L 641.949545 208.027251 
+L 644.984 207.450384 
+L 648.018455 206.789752 
+L 651.052909 206.033424 
+L 654.087364 205.168078 
+L 657.121818 204.178967 
+L 660.156273 203.049926 
+L 663.190727 201.763437 
+L 666.225182 200.300769 
+L 669.259636 198.642193 
+L 672.294091 196.767297 
+L 675.328545 194.655392 
+L 678.363 192.286025 
+L 681.397455 189.639581 
+L 684.431909 186.697959 
+L 687.466364 183.445316 
+L 690.500818 179.868829 
+L 693.535273 175.959461 
+L 696.569727 171.712678 
+L 699.604182 167.129096 
+L 702.638636 162.214993 
+L 705.673091 156.98268 
+L 708.707545 151.450668 
+L 711.742 145.64363 
+L 714.776455 139.592123 
+L 717.810909 133.332075 
+L 720.845364 126.904036 
+L 723.879818 120.352229 
+L 726.914273 113.723423 
+L 729.948727 107.065705 
+L 732.983182 100.427183 
+L 736.017636 93.854726 
+L 739.052091 87.392768 
+L 742.086545 81.082272 
+L 745.121 74.959866 
+L 748.155455 69.057218 
+L 751.189909 63.400631 
+L 754.224364 58.010876 
+L 757.258818 52.903231 
+L 760.293273 48.087715 
+L 763.327727 43.569455 
+" clip-path="url(#ridge-pb5dd613c26)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="ridge-patch_6">
+    <path d="M 444.71 220.588 
+L 444.71 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ridge-patch_7">
+    <path d="M 444.71 220.588 
+L 778.5 220.588 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="ridge-text_34">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="444.71" y="22.14" transform="rotate(-0 444.71 22.14)">Sensitivity, not a selected optimum</text>
+   </g>
+   <g id="ridge-legend_2">
+    <g id="ridge-line2d_146">
+     <path d="M 451.91 45.61875 
+L 459.91 45.61875 
+L 467.91 45.61875 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="ridge-text_35">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="474.31" y="48.41875" transform="rotate(-0 474.31 48.41875)">Withheld RMSE</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="ridge-paee1bcaa50">
+   <rect x="48.26" y="35.14" width="333.79" height="185.448"/>
+  </clipPath>
+  <clipPath id="ridge-pb5dd613c26">
+   <rect x="444.71" y="35.14" width="333.79" height="185.448"/>
+  </clipPath>
+ </defs>
+</svg>

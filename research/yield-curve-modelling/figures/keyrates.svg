@@ -1,0 +1,344 @@
+<svg role="img" aria-labelledby="keyrates-title keyrates-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="252pt" viewBox="0 0 792 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="keyrates-title">Figure 17 · Key-rate bump functions</title><desc id="keyrates-desc">Linear hat functions are one possible key-rate convention. The omitted 0- and 30-year endpoint hats complete a partition of unity; risk depends on the chosen nodes and bump interpolation.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T20:19:14.587295</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="keyrates-figure_1">
+  <g id="keyrates-patch_1">
+   <path d="M 0 252 
+L 792 252 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="keyrates-axes_1">
+   <g id="keyrates-patch_2">
+    <path d="M 48.26 208.78 
+L 778.5 208.78 
+L 778.5 35.14 
+L 48.26 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="keyrates-matplotlib.axis_1">
+    <g id="keyrates-xtick_1">
+     <g id="keyrates-line2d_1">
+      <path d="M 81.452727 208.78 
+L 81.452727 35.14 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="keyrates-line2d_2">
+      <defs>
+       <path id="keyrates-mb33e4c28dd" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#keyrates-mb33e4c28dd" x="81.452727" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="keyrates-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="81.452727" y="222.618594" transform="rotate(-0 81.452727 222.618594)">0</text>
+     </g>
+    </g>
+    <g id="keyrates-xtick_2">
+     <g id="keyrates-line2d_3">
+      <path d="M 192.095152 208.78 
+L 192.095152 35.14 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="keyrates-line2d_4">
+      <g>
+       <use href="#keyrates-mb33e4c28dd" x="192.095152" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="keyrates-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="192.095152" y="222.618594" transform="rotate(-0 192.095152 222.618594)">5</text>
+     </g>
+    </g>
+    <g id="keyrates-xtick_3">
+     <g id="keyrates-line2d_5">
+      <path d="M 302.737576 208.78 
+L 302.737576 35.14 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="keyrates-line2d_6">
+      <g>
+       <use href="#keyrates-mb33e4c28dd" x="302.737576" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="keyrates-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="302.737576" y="222.618594" transform="rotate(-0 302.737576 222.618594)">10</text>
+     </g>
+    </g>
+    <g id="keyrates-xtick_4">
+     <g id="keyrates-line2d_7">
+      <path d="M 413.38 208.78 
+L 413.38 35.14 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="keyrates-line2d_8">
+      <g>
+       <use href="#keyrates-mb33e4c28dd" x="413.38" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="keyrates-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="413.38" y="222.618594" transform="rotate(-0 413.38 222.618594)">15</text>
+     </g>
+    </g>
+    <g id="keyrates-xtick_5">
+     <g id="keyrates-line2d_9">
+      <path d="M 524.022424 208.78 
+L 524.022424 35.14 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="keyrates-line2d_10">
+      <g>
+       <use href="#keyrates-mb33e4c28dd" x="524.022424" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="keyrates-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="524.022424" y="222.618594" transform="rotate(-0 524.022424 222.618594)">20</text>
+     </g>
+    </g>
+    <g id="keyrates-xtick_6">
+     <g id="keyrates-line2d_11">
+      <path d="M 634.664848 208.78 
+L 634.664848 35.14 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="keyrates-line2d_12">
+      <g>
+       <use href="#keyrates-mb33e4c28dd" x="634.664848" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="keyrates-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="634.664848" y="222.618594" transform="rotate(-0 634.664848 222.618594)">25</text>
+     </g>
+    </g>
+    <g id="keyrates-xtick_7">
+     <g id="keyrates-line2d_13">
+      <path d="M 745.307273 208.78 
+L 745.307273 35.14 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="keyrates-line2d_14">
+      <g>
+       <use href="#keyrates-mb33e4c28dd" x="745.307273" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="keyrates-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="745.307273" y="222.618594" transform="rotate(-0 745.307273 222.618594)">30</text>
+     </g>
+    </g>
+    <g id="keyrates-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="413.38" y="235.328906" transform="rotate(-0 413.38 235.328906)">Cash-flow maturity (years)</text>
+    </g>
+   </g>
+   <g id="keyrates-matplotlib.axis_2">
+    <g id="keyrates-ytick_1">
+     <g id="keyrates-line2d_15">
+      <path d="M 48.26 200.887273 
+L 778.5 200.887273 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="keyrates-line2d_16">
+      <defs>
+       <path id="keyrates-mf184e8433f" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#keyrates-mf184e8433f" x="48.26" y="200.887273" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="keyrates-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="204.30657" transform="rotate(-0 41.26 204.30657)">0.0</text>
+     </g>
+    </g>
+    <g id="keyrates-ytick_2">
+     <g id="keyrates-line2d_17">
+      <path d="M 48.26 169.316364 
+L 778.5 169.316364 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="keyrates-line2d_18">
+      <g>
+       <use href="#keyrates-mf184e8433f" x="48.26" y="169.316364" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="keyrates-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="172.735661" transform="rotate(-0 41.26 172.735661)">0.2</text>
+     </g>
+    </g>
+    <g id="keyrates-ytick_3">
+     <g id="keyrates-line2d_19">
+      <path d="M 48.26 137.745455 
+L 778.5 137.745455 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="keyrates-line2d_20">
+      <g>
+       <use href="#keyrates-mf184e8433f" x="48.26" y="137.745455" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="keyrates-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="141.164751" transform="rotate(-0 41.26 141.164751)">0.4</text>
+     </g>
+    </g>
+    <g id="keyrates-ytick_4">
+     <g id="keyrates-line2d_21">
+      <path d="M 48.26 106.174545 
+L 778.5 106.174545 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="keyrates-line2d_22">
+      <g>
+       <use href="#keyrates-mf184e8433f" x="48.26" y="106.174545" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="keyrates-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="109.593842" transform="rotate(-0 41.26 109.593842)">0.6</text>
+     </g>
+    </g>
+    <g id="keyrates-ytick_5">
+     <g id="keyrates-line2d_23">
+      <path d="M 48.26 74.603636 
+L 778.5 74.603636 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="keyrates-line2d_24">
+      <g>
+       <use href="#keyrates-mf184e8433f" x="48.26" y="74.603636" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="keyrates-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="78.022933" transform="rotate(-0 41.26 78.022933)">0.8</text>
+     </g>
+    </g>
+    <g id="keyrates-ytick_6">
+     <g id="keyrates-line2d_25">
+      <path d="M 48.26 43.032727 
+L 778.5 43.032727 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="keyrates-line2d_26">
+      <g>
+       <use href="#keyrates-mf184e8433f" x="48.26" y="43.032727" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="keyrates-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="46.452024" transform="rotate(-0 41.26 46.452024)">1.0</text>
+     </g>
+    </g>
+    <g id="keyrates-text_15">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.075469" y="121.96" transform="rotate(-90 21.075469 121.96)">Bump weight</text>
+    </g>
+   </g>
+   <g id="keyrates-line2d_27">
+    <path d="M 81.452727 200.887273 
+L 125.709697 43.032727 
+L 192.095152 200.887273 
+L 745.307273 200.887273 
+L 745.307273 200.887273 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="keyrates-line2d_28">
+    <path d="M 81.452727 200.887273 
+L 125.709697 200.887273 
+L 192.095152 43.032727 
+L 302.737576 200.887273 
+L 745.307273 200.887273 
+L 745.307273 200.887273 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="keyrates-line2d_29">
+    <path d="M 81.452727 200.887273 
+L 192.095152 200.887273 
+L 302.737576 43.032727 
+L 524.022424 200.887273 
+L 745.307273 200.887273 
+L 745.307273 200.887273 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="keyrates-line2d_30">
+    <path d="M 81.452727 200.887273 
+L 302.737576 200.887273 
+L 524.022424 43.032727 
+L 745.307273 200.887273 
+L 745.307273 200.887273 
+" clip-path="url(#keyrates-pa401c713e1)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="keyrates-patch_3">
+    <path d="M 48.26 208.78 
+L 48.26 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="keyrates-patch_4">
+    <path d="M 48.26 208.78 
+L 778.5 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="keyrates-text_16">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="48.26" y="22.14" transform="rotate(-0 48.26 22.14)">Local triangular zero-rate shocks</text>
+   </g>
+   <g id="keyrates-legend_1">
+    <g id="keyrates-line2d_31">
+     <path d="M 701.5825 45.61875 
+L 709.5825 45.61875 
+L 717.5825 45.61875 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="keyrates-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="723.9825" y="48.41875" transform="rotate(-0 723.9825 48.41875)">2-year key</text>
+    </g>
+    <g id="keyrates-line2d_32">
+     <path d="M 701.5825 57.36125 
+L 709.5825 57.36125 
+L 717.5825 57.36125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="keyrates-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="723.9825" y="60.16125" transform="rotate(-0 723.9825 60.16125)">5-year key</text>
+    </g>
+    <g id="keyrates-line2d_33">
+     <path d="M 701.5825 69.10375 
+L 709.5825 69.10375 
+L 717.5825 69.10375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="keyrates-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="723.9825" y="71.90375" transform="rotate(-0 723.9825 71.90375)">10-year key</text>
+    </g>
+    <g id="keyrates-line2d_34">
+     <path d="M 701.5825 80.84625 
+L 709.5825 80.84625 
+L 717.5825 80.84625 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="keyrates-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="723.9825" y="83.64625" transform="rotate(-0 723.9825 83.64625)">20-year key</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="keyrates-pa401c713e1">
+   <rect x="48.26" y="35.14" width="730.24" height="173.64"/>
+  </clipPath>
+ </defs>
+</svg>

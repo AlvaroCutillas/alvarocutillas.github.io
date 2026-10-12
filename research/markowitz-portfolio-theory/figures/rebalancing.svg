@@ -1,0 +1,537 @@
+<svg role="img" aria-labelledby="rebalancing-title rebalancing-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="rebalancing-title">Figure 16 · Fixed initial weights are not a complete trading policy</title><desc id="rebalancing-desc">Synthetic monthly simple returns with mean μ/12 and covariance Σ/12, seed 3003; starting weights 50%, 30%, 20%. Annualisation is an IID moment approximation; these monthly inputs do not imply exact compounded annual simple-return moments. No costs, no external flows, and no claim of one policy’s general superiority.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T17:15:00.129347</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="rebalancing-figure_1">
+  <g id="rebalancing-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="rebalancing-axes_1">
+   <g id="rebalancing-patch_2">
+    <path d="M 54.02 208.78 
+L 648.9 208.78 
+L 648.9 13.5 
+L 54.02 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="rebalancing-matplotlib.axis_1">
+    <g id="rebalancing-xtick_1">
+     <g id="rebalancing-line2d_1">
+      <path d="M 81.06 208.78 
+L 81.06 13.5 
+" clip-path="url(#rebalancing-p0f688027a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rebalancing-line2d_2">
+      <defs>
+       <path id="rebalancing-mf7c2aba916" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#rebalancing-mf7c2aba916" x="81.06" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rebalancing-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="81.06" y="222.618594" transform="rotate(-0 81.06 222.618594)">0</text>
+     </g>
+    </g>
+    <g id="rebalancing-xtick_2">
+     <g id="rebalancing-line2d_3">
+      <path d="M 189.22 208.78 
+L 189.22 13.5 
+" clip-path="url(#rebalancing-p0f688027a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rebalancing-line2d_4">
+      <g>
+       <use href="#rebalancing-mf7c2aba916" x="189.22" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rebalancing-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="189.22" y="222.618594" transform="rotate(-0 189.22 222.618594)">2</text>
+     </g>
+    </g>
+    <g id="rebalancing-xtick_3">
+     <g id="rebalancing-line2d_5">
+      <path d="M 297.38 208.78 
+L 297.38 13.5 
+" clip-path="url(#rebalancing-p0f688027a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rebalancing-line2d_6">
+      <g>
+       <use href="#rebalancing-mf7c2aba916" x="297.38" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rebalancing-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="297.38" y="222.618594" transform="rotate(-0 297.38 222.618594)">4</text>
+     </g>
+    </g>
+    <g id="rebalancing-xtick_4">
+     <g id="rebalancing-line2d_7">
+      <path d="M 405.54 208.78 
+L 405.54 13.5 
+" clip-path="url(#rebalancing-p0f688027a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rebalancing-line2d_8">
+      <g>
+       <use href="#rebalancing-mf7c2aba916" x="405.54" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rebalancing-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="405.54" y="222.618594" transform="rotate(-0 405.54 222.618594)">6</text>
+     </g>
+    </g>
+    <g id="rebalancing-xtick_5">
+     <g id="rebalancing-line2d_9">
+      <path d="M 513.7 208.78 
+L 513.7 13.5 
+" clip-path="url(#rebalancing-p0f688027a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rebalancing-line2d_10">
+      <g>
+       <use href="#rebalancing-mf7c2aba916" x="513.7" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rebalancing-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="513.7" y="222.618594" transform="rotate(-0 513.7 222.618594)">8</text>
+     </g>
+    </g>
+    <g id="rebalancing-xtick_6">
+     <g id="rebalancing-line2d_11">
+      <path d="M 621.86 208.78 
+L 621.86 13.5 
+" clip-path="url(#rebalancing-p0f688027a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rebalancing-line2d_12">
+      <g>
+       <use href="#rebalancing-mf7c2aba916" x="621.86" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rebalancing-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="621.86" y="222.618594" transform="rotate(-0 621.86 222.618594)">10</text>
+     </g>
+    </g>
+    <g id="rebalancing-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="351.46" y="235.328906" transform="rotate(-0 351.46 235.328906)">Time (years)</text>
+    </g>
+   </g>
+   <g id="rebalancing-matplotlib.axis_2">
+    <g id="rebalancing-ytick_1">
+     <g id="rebalancing-line2d_13">
+      <path d="M 54.02 197.451797 
+L 648.9 197.451797 
+" clip-path="url(#rebalancing-p0f688027a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rebalancing-line2d_14">
+      <defs>
+       <path id="rebalancing-m88f4310827" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#rebalancing-m88f4310827" x="54.02" y="197.451797" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rebalancing-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="200.871094" transform="rotate(-0 47.02 200.871094)">1.00</text>
+     </g>
+    </g>
+    <g id="rebalancing-ytick_2">
+     <g id="rebalancing-line2d_15">
+      <path d="M 54.02 171.033136 
+L 648.9 171.033136 
+" clip-path="url(#rebalancing-p0f688027a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rebalancing-line2d_16">
+      <g>
+       <use href="#rebalancing-m88f4310827" x="54.02" y="171.033136" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rebalancing-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="174.452433" transform="rotate(-0 47.02 174.452433)">1.25</text>
+     </g>
+    </g>
+    <g id="rebalancing-ytick_3">
+     <g id="rebalancing-line2d_17">
+      <path d="M 54.02 144.614475 
+L 648.9 144.614475 
+" clip-path="url(#rebalancing-p0f688027a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rebalancing-line2d_18">
+      <g>
+       <use href="#rebalancing-m88f4310827" x="54.02" y="144.614475" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rebalancing-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="148.033772" transform="rotate(-0 47.02 148.033772)">1.50</text>
+     </g>
+    </g>
+    <g id="rebalancing-ytick_4">
+     <g id="rebalancing-line2d_19">
+      <path d="M 54.02 118.195814 
+L 648.9 118.195814 
+" clip-path="url(#rebalancing-p0f688027a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rebalancing-line2d_20">
+      <g>
+       <use href="#rebalancing-m88f4310827" x="54.02" y="118.195814" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rebalancing-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="121.615111" transform="rotate(-0 47.02 121.615111)">1.75</text>
+     </g>
+    </g>
+    <g id="rebalancing-ytick_5">
+     <g id="rebalancing-line2d_21">
+      <path d="M 54.02 91.777153 
+L 648.9 91.777153 
+" clip-path="url(#rebalancing-p0f688027a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rebalancing-line2d_22">
+      <g>
+       <use href="#rebalancing-m88f4310827" x="54.02" y="91.777153" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rebalancing-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="95.19645" transform="rotate(-0 47.02 95.19645)">2.00</text>
+     </g>
+    </g>
+    <g id="rebalancing-ytick_6">
+     <g id="rebalancing-line2d_23">
+      <path d="M 54.02 65.358492 
+L 648.9 65.358492 
+" clip-path="url(#rebalancing-p0f688027a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rebalancing-line2d_24">
+      <g>
+       <use href="#rebalancing-m88f4310827" x="54.02" y="65.358492" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rebalancing-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="68.777788" transform="rotate(-0 47.02 68.777788)">2.25</text>
+     </g>
+    </g>
+    <g id="rebalancing-ytick_7">
+     <g id="rebalancing-line2d_25">
+      <path d="M 54.02 38.93983 
+L 648.9 38.93983 
+" clip-path="url(#rebalancing-p0f688027a3)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="rebalancing-line2d_26">
+      <g>
+       <use href="#rebalancing-m88f4310827" x="54.02" y="38.93983" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="rebalancing-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="42.359127" transform="rotate(-0 47.02 42.359127)">2.50</text>
+     </g>
+    </g>
+    <g id="rebalancing-text_15">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.109219" y="111.14" transform="rotate(-90 21.109219 111.14)">Wealth / initial wealth</text>
+    </g>
+   </g>
+   <g id="rebalancing-line2d_27">
+    <path d="M 81.06 197.451797 
+L 85.566667 199.903636 
+L 90.073333 195.455419 
+L 94.58 189.988467 
+L 99.086667 185.735082 
+L 103.593333 187.960277 
+L 108.1 184.135597 
+L 112.606667 179.647171 
+L 117.113333 178.192767 
+L 121.62 177.293043 
+L 126.126667 177.178975 
+L 130.633333 175.315712 
+L 135.14 168.771794 
+L 139.646667 157.770921 
+L 144.153333 161.711722 
+L 148.66 158.777819 
+L 153.166667 163.568719 
+L 157.673333 166.789481 
+L 162.18 160.319597 
+L 166.686667 161.192925 
+L 171.193333 154.338977 
+L 175.7 162.802172 
+L 180.206667 161.382693 
+L 184.713333 161.513618 
+L 189.22 158.926285 
+L 193.726667 160.49126 
+L 198.233333 160.282294 
+L 202.74 157.857418 
+L 207.246667 162.53461 
+L 211.753333 167.952272 
+L 216.26 171.437445 
+L 220.766667 175.012962 
+L 225.273333 165.72842 
+L 229.78 173.107255 
+L 234.286667 169.529041 
+L 238.793333 174.088642 
+L 243.3 173.911009 
+L 247.806667 167.348907 
+L 252.313333 167.524066 
+L 256.82 168.036194 
+L 261.326667 166.085112 
+L 265.833333 154.461886 
+L 270.34 154.659644 
+L 274.846667 156.923275 
+L 279.353333 155.08975 
+L 283.86 155.097031 
+L 288.366667 155.134505 
+L 292.873333 150.436277 
+L 297.38 150.951387 
+L 301.886667 145.51432 
+L 306.393333 146.351922 
+L 310.9 143.312383 
+L 315.406667 140.492083 
+L 319.913333 150.107846 
+L 324.42 154.481693 
+L 328.926667 157.731557 
+L 333.433333 155.127352 
+L 337.94 160.986708 
+L 342.446667 167.697931 
+L 346.953333 165.236861 
+L 351.46 164.639844 
+L 355.966667 158.532228 
+L 360.473333 156.060494 
+L 364.98 153.445664 
+L 369.486667 156.553623 
+L 373.993333 158.657362 
+L 378.5 154.575269 
+L 383.006667 149.719082 
+L 387.513333 150.856832 
+L 392.02 149.566021 
+L 396.526667 137.833444 
+L 401.033333 143.337026 
+L 405.54 137.937654 
+L 410.046667 135.304046 
+L 414.553333 136.807994 
+L 419.06 127.092859 
+L 423.566667 129.336306 
+L 428.073333 124.459829 
+L 432.58 114.323241 
+L 437.086667 108.162541 
+L 441.593333 100.369484 
+L 446.1 81.840126 
+L 450.606667 88.926374 
+L 455.113333 86.056755 
+L 459.62 90.68045 
+L 464.126667 88.659464 
+L 468.633333 85.350119 
+L 473.14 79.76214 
+L 477.646667 67.206481 
+L 482.153333 55.015155 
+L 486.66 60.02391 
+L 491.166667 71.347067 
+L 495.673333 77.750075 
+L 500.18 78.066942 
+L 504.686667 78.21725 
+L 509.193333 78.182811 
+L 513.7 78.182669 
+L 518.206667 70.506595 
+L 522.713333 86.536397 
+L 527.22 86.371499 
+L 531.726667 65.118205 
+L 536.233333 61.463372 
+L 540.74 63.218131 
+L 545.246667 71.069098 
+L 549.753333 70.751642 
+L 554.26 69.528323 
+L 558.766667 60.122708 
+L 563.273333 75.011386 
+L 567.78 70.184046 
+L 572.286667 74.858283 
+L 576.793333 68.645096 
+L 581.3 71.723701 
+L 585.806667 72.597697 
+L 590.313333 75.301795 
+L 594.82 58.014959 
+L 599.326667 64.336739 
+L 603.833333 48.210241 
+L 608.34 41.825585 
+L 612.846667 43.225065 
+L 617.353333 31.68065 
+L 621.86 22.376364 
+" clip-path="url(#rebalancing-p0f688027a3)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="rebalancing-line2d_28">
+    <path d="M 81.06 197.451797 
+L 85.566667 199.903636 
+L 90.073333 195.419332 
+L 94.58 189.963815 
+L 99.086667 186.045608 
+L 103.593333 188.033624 
+L 108.1 184.519546 
+L 112.606667 180.371998 
+L 117.113333 178.863646 
+L 121.62 177.731302 
+L 126.126667 177.389112 
+L 130.633333 176.219624 
+L 135.14 170.321327 
+L 139.646667 161.377951 
+L 144.153333 164.348535 
+L 148.66 161.644107 
+L 153.166667 164.567643 
+L 157.673333 166.643044 
+L 162.18 161.668612 
+L 166.686667 161.367409 
+L 171.193333 155.490027 
+L 175.7 160.903081 
+L 180.206667 159.747407 
+L 184.713333 159.261345 
+L 189.22 155.942929 
+L 193.726667 156.542549 
+L 198.233333 156.540174 
+L 202.74 154.27268 
+L 207.246667 158.733443 
+L 211.753333 164.163477 
+L 216.26 168.144707 
+L 220.766667 171.948884 
+L 225.273333 162.550973 
+L 229.78 170.158556 
+L 234.286667 165.561782 
+L 238.793333 170.028615 
+L 243.3 170.038584 
+L 247.806667 163.57218 
+L 252.313333 163.910255 
+L 256.82 164.255563 
+L 261.326667 162.53626 
+L 265.833333 150.623165 
+L 270.34 150.431528 
+L 274.846667 151.943278 
+L 279.353333 149.824287 
+L 283.86 149.389105 
+L 288.366667 149.359288 
+L 292.873333 144.465682 
+L 297.38 145.136992 
+L 301.886667 139.945197 
+L 306.393333 140.656608 
+L 310.9 137.70324 
+L 315.406667 134.804411 
+L 319.913333 144.351372 
+L 324.42 148.940417 
+L 328.926667 151.950593 
+L 333.433333 148.892695 
+L 337.94 154.747437 
+L 342.446667 161.570053 
+L 346.953333 159.123692 
+L 351.46 158.355477 
+L 355.966667 151.94271 
+L 360.473333 149.39472 
+L 364.98 146.374893 
+L 369.486667 149.712825 
+L 373.993333 151.826918 
+L 378.5 147.90436 
+L 383.006667 142.852341 
+L 387.513333 143.17248 
+L 392.02 142.083048 
+L 396.526667 130.988196 
+L 401.033333 135.852321 
+L 405.54 131.342961 
+L 410.046667 128.899645 
+L 414.553333 128.853598 
+L 419.06 120.109403 
+L 423.566667 122.259971 
+L 428.073333 116.473152 
+L 432.58 107.190989 
+L 437.086667 100.933774 
+L 441.593333 94.469588 
+L 446.1 75.710389 
+L 450.606667 83.49117 
+L 455.113333 81.416789 
+L 459.62 84.194326 
+L 464.126667 81.851152 
+L 468.633333 77.822995 
+L 473.14 73.449491 
+L 477.646667 60.220859 
+L 482.153333 49.632235 
+L 486.66 54.799998 
+L 491.166667 68.278 
+L 495.673333 75.363865 
+L 500.18 80.230509 
+L 504.686667 83.882142 
+L 509.193333 84.147867 
+L 513.7 83.252031 
+L 518.206667 76.609818 
+L 522.713333 86.250879 
+L 527.22 85.208257 
+L 531.726667 67.888273 
+L 536.233333 64.188796 
+L 540.74 62.440377 
+L 545.246667 70.238497 
+L 549.753333 72.267863 
+L 554.26 69.679248 
+L 558.766667 63.040712 
+L 563.273333 75.126406 
+L 567.78 74.414328 
+L 572.286667 77.615633 
+L 576.793333 71.361465 
+L 581.3 74.1038 
+L 585.806667 76.915949 
+L 590.313333 75.557679 
+L 594.82 59.666114 
+L 599.326667 65.649835 
+L 603.833333 52.457317 
+L 608.34 47.592233 
+L 612.846667 49.651181 
+L 617.353333 42.693607 
+L 621.86 37.45383 
+" clip-path="url(#rebalancing-p0f688027a3)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="rebalancing-patch_3">
+    <path d="M 54.02 208.78 
+L 54.02 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="rebalancing-patch_4">
+    <path d="M 54.02 208.78 
+L 648.9 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="rebalancing-legend_1">
+    <g id="rebalancing-line2d_29">
+     <path d="M 61.22 23.97875 
+L 69.22 23.97875 
+L 77.22 23.97875 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="rebalancing-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="83.62" y="26.77875" transform="rotate(-0 83.62 26.77875)">Buy and hold</text>
+    </g>
+    <g id="rebalancing-line2d_30">
+     <path d="M 61.22 35.72125 
+L 69.22 35.72125 
+L 77.22 35.72125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="rebalancing-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="83.62" y="38.52125" transform="rotate(-0 83.62 38.52125)">Monthly reset to initial weights</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="rebalancing-p0f688027a3">
+   <rect x="54.02" y="13.5" width="594.88" height="195.28"/>
+  </clipPath>
+ </defs>
+</svg>

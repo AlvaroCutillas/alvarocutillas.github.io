@@ -1,0 +1,923 @@
+<svg role="img" aria-labelledby="svi-title svi-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="svi-title">Figure 13 · Raw SVI parameter changes</title><desc id="svi-desc">Baseline (a,b,rho,m,s) = (0.015,0.05,-0.6,0.04,0.25). The second curve raises b to 0.08; the third lowers rho to -0.85. Positivity conditions alone do not establish no arbitrage.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:54:54.378529</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="svi-figure_1">
+  <g id="svi-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="svi-axes_1">
+   <g id="svi-patch_2">
+    <path d="M 54.02 244.78 
+L 356.13 244.78 
+L 356.13 35.14 
+L 54.02 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="svi-matplotlib.axis_1">
+    <g id="svi-xtick_1">
+     <g id="svi-line2d_1">
+      <path d="M 67.752273 244.78 
+L 67.752273 35.14 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_2">
+      <defs>
+       <path id="svi-mb8a0b80676" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#svi-mb8a0b80676" x="67.752273" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="67.752273" y="258.618594" transform="rotate(-0 67.752273 258.618594)">−0.6</text>
+     </g>
+    </g>
+    <g id="svi-xtick_2">
+     <g id="svi-line2d_3">
+      <path d="M 113.526515 244.78 
+L 113.526515 35.14 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_4">
+      <g>
+       <use href="#svi-mb8a0b80676" x="113.526515" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="113.526515" y="258.618594" transform="rotate(-0 113.526515 258.618594)">−0.4</text>
+     </g>
+    </g>
+    <g id="svi-xtick_3">
+     <g id="svi-line2d_5">
+      <path d="M 159.300758 244.78 
+L 159.300758 35.14 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_6">
+      <g>
+       <use href="#svi-mb8a0b80676" x="159.300758" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="159.300758" y="258.618594" transform="rotate(-0 159.300758 258.618594)">−0.2</text>
+     </g>
+    </g>
+    <g id="svi-xtick_4">
+     <g id="svi-line2d_7">
+      <path d="M 205.075 244.78 
+L 205.075 35.14 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_8">
+      <g>
+       <use href="#svi-mb8a0b80676" x="205.075" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="205.075" y="258.618594" transform="rotate(-0 205.075 258.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="svi-xtick_5">
+     <g id="svi-line2d_9">
+      <path d="M 250.849242 244.78 
+L 250.849242 35.14 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_10">
+      <g>
+       <use href="#svi-mb8a0b80676" x="250.849242" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="250.849242" y="258.618594" transform="rotate(-0 250.849242 258.618594)">0.2</text>
+     </g>
+    </g>
+    <g id="svi-xtick_6">
+     <g id="svi-line2d_11">
+      <path d="M 296.623485 244.78 
+L 296.623485 35.14 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_12">
+      <g>
+       <use href="#svi-mb8a0b80676" x="296.623485" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="296.623485" y="258.618594" transform="rotate(-0 296.623485 258.618594)">0.4</text>
+     </g>
+    </g>
+    <g id="svi-xtick_7">
+     <g id="svi-line2d_13">
+      <path d="M 342.397727 244.78 
+L 342.397727 35.14 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_14">
+      <g>
+       <use href="#svi-mb8a0b80676" x="342.397727" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="342.397727" y="258.618594" transform="rotate(-0 342.397727 258.618594)">0.6</text>
+     </g>
+    </g>
+    <g id="svi-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="205.075" y="271.328906" transform="rotate(-0 205.075 271.328906)">Log-forward moneyness k</text>
+    </g>
+   </g>
+   <g id="svi-matplotlib.axis_2">
+    <g id="svi-ytick_1">
+     <g id="svi-line2d_15">
+      <path d="M 54.02 239.069208 
+L 356.13 239.069208 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_16">
+      <defs>
+       <path id="svi-m810bb4b0ac" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#svi-m810bb4b0ac" x="54.02" y="239.069208" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="242.488504" transform="rotate(-0 47.02 242.488504)">0.02</text>
+     </g>
+    </g>
+    <g id="svi-ytick_2">
+     <g id="svi-line2d_17">
+      <path d="M 54.02 214.97628 
+L 356.13 214.97628 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_18">
+      <g>
+       <use href="#svi-m810bb4b0ac" x="54.02" y="214.97628" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="218.395577" transform="rotate(-0 47.02 218.395577)">0.03</text>
+     </g>
+    </g>
+    <g id="svi-ytick_3">
+     <g id="svi-line2d_19">
+      <path d="M 54.02 190.883352 
+L 356.13 190.883352 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_20">
+      <g>
+       <use href="#svi-m810bb4b0ac" x="54.02" y="190.883352" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="194.302649" transform="rotate(-0 47.02 194.302649)">0.04</text>
+     </g>
+    </g>
+    <g id="svi-ytick_4">
+     <g id="svi-line2d_21">
+      <path d="M 54.02 166.790424 
+L 356.13 166.790424 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_22">
+      <g>
+       <use href="#svi-m810bb4b0ac" x="54.02" y="166.790424" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="170.209721" transform="rotate(-0 47.02 170.209721)">0.05</text>
+     </g>
+    </g>
+    <g id="svi-ytick_5">
+     <g id="svi-line2d_23">
+      <path d="M 54.02 142.697496 
+L 356.13 142.697496 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_24">
+      <g>
+       <use href="#svi-m810bb4b0ac" x="54.02" y="142.697496" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="146.116793" transform="rotate(-0 47.02 146.116793)">0.06</text>
+     </g>
+    </g>
+    <g id="svi-ytick_6">
+     <g id="svi-line2d_25">
+      <path d="M 54.02 118.604569 
+L 356.13 118.604569 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_26">
+      <g>
+       <use href="#svi-m810bb4b0ac" x="54.02" y="118.604569" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="122.023866" transform="rotate(-0 47.02 122.023866)">0.07</text>
+     </g>
+    </g>
+    <g id="svi-ytick_7">
+     <g id="svi-line2d_27">
+      <path d="M 54.02 94.511641 
+L 356.13 94.511641 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_28">
+      <g>
+       <use href="#svi-m810bb4b0ac" x="54.02" y="94.511641" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="97.930938" transform="rotate(-0 47.02 97.930938)">0.08</text>
+     </g>
+    </g>
+    <g id="svi-ytick_8">
+     <g id="svi-line2d_29">
+      <path d="M 54.02 70.418713 
+L 356.13 70.418713 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_30">
+      <g>
+       <use href="#svi-m810bb4b0ac" x="54.02" y="70.418713" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="73.83801" transform="rotate(-0 47.02 73.83801)">0.09</text>
+     </g>
+    </g>
+    <g id="svi-ytick_9">
+     <g id="svi-line2d_31">
+      <path d="M 54.02 46.325785 
+L 356.13 46.325785 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_32">
+      <g>
+       <use href="#svi-m810bb4b0ac" x="54.02" y="46.325785" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="47.02" y="49.745082" transform="rotate(-0 47.02 49.745082)">0.10</text>
+     </g>
+    </g>
+    <g id="svi-text_18">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.109219" y="139.96" transform="rotate(-90 21.109219 139.96)">Total variance</text>
+    </g>
+   </g>
+   <g id="svi-line2d_33">
+    <path d="M 67.752273 122.086559 
+L 90.639394 140.401076 
+L 110.093447 155.688647 
+L 126.114432 167.989297 
+L 138.702348 177.39073 
+L 150.145909 185.659224 
+L 159.300758 192.021204 
+L 167.31125 197.35191 
+L 175.321742 202.408887 
+L 182.187879 206.479791 
+L 189.054015 210.262498 
+L 194.775795 213.162694 
+L 200.497576 215.807582 
+L 206.219356 218.176048 
+L 211.941136 220.252641 
+L 216.518561 221.698216 
+L 221.095985 222.951814 
+L 225.673409 224.017033 
+L 231.395189 225.094386 
+L 237.11697 225.907453 
+L 242.83875 226.479629 
+L 248.56053 226.836313 
+L 255.426667 227.015704 
+L 262.292803 226.962926 
+L 270.303295 226.657048 
+L 278.313788 226.135342 
+L 287.468636 225.326745 
+L 297.767841 224.202885 
+L 310.355758 222.59278 
+L 325.232386 220.440336 
+L 342.397727 217.71445 
+L 342.397727 217.71445 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="svi-line2d_34">
+    <path d="M 67.752273 44.669091 
+L 88.350682 71.06396 
+L 105.516023 92.724377 
+L 120.392652 111.143801 
+L 132.980568 126.373158 
+L 143.279773 138.506068 
+L 152.434621 148.967943 
+L 160.445114 157.806505 
+L 167.31125 165.093653 
+L 174.177386 172.05928 
+L 179.899167 177.574882 
+L 185.620947 182.78649 
+L 191.342727 187.653311 
+L 195.920152 191.271133 
+L 200.497576 194.622728 
+L 205.075 197.691092 
+L 209.652424 200.462946 
+L 214.229848 202.929816 
+L 218.807273 205.088788 
+L 223.384697 206.942777 
+L 227.962121 208.500254 
+L 232.539545 209.774502 
+L 237.11697 210.782522 
+L 241.694394 211.54381 
+L 246.271818 212.079158 
+L 250.849242 212.409623 
+L 256.571023 212.565747 
+L 262.292803 212.471279 
+L 268.014583 212.16015 
+L 274.88072 211.542667 
+L 281.746856 210.700339 
+L 289.757348 209.482161 
+L 298.912197 207.836626 
+L 309.211402 205.727629 
+L 320.654962 203.133329 
+L 333.242879 200.043508 
+L 342.397727 197.673717 
+L 342.397727 197.673717 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="svi-line2d_35">
+    <path d="M 67.752273 102.812216 
+L 91.78375 125.196463 
+L 111.237803 143.024979 
+L 127.258788 157.410732 
+L 139.846705 168.44314 
+L 151.290265 178.186172 
+L 160.445114 185.720145 
+L 168.455606 192.06918 
+L 176.466098 198.136369 
+L 183.332235 203.065766 
+L 190.198371 207.699621 
+L 195.920152 211.303542 
+L 201.641932 214.64759 
+L 207.363712 217.711602 
+L 213.085492 220.481514 
+L 218.807273 222.951193 
+L 224.529053 225.123291 
+L 230.250833 227.008878 
+L 235.972614 228.625937 
+L 241.694394 229.997197 
+L 247.416174 231.147824 
+L 254.282311 232.273329 
+L 261.148447 233.160024 
+L 269.158939 233.942899 
+L 277.169432 234.503391 
+L 286.32428 234.925167 
+L 296.623485 235.179147 
+L 309.211402 235.246351 
+L 322.943674 235.091132 
+L 338.964659 234.689832 
+L 342.397727 234.5795 
+L 342.397727 234.5795 
+" clip-path="url(#svi-pd067c65ff0)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="svi-patch_3">
+    <path d="M 54.02 244.78 
+L 54.02 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="svi-patch_4">
+    <path d="M 54.02 244.78 
+L 356.13 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="svi-text_19">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="54.02" y="22.14" transform="rotate(-0 54.02 22.14)">Five parameters act jointly</text>
+   </g>
+   <g id="svi-legend_1">
+    <g id="svi-line2d_36">
+     <path d="M 286.9075 45.61875 
+L 294.9075 45.61875 
+L 302.9075 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="svi-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="309.3075" y="48.41875" transform="rotate(-0 309.3075 48.41875)">Baseline</text>
+    </g>
+    <g id="svi-line2d_37">
+     <path d="M 286.9075 57.36125 
+L 294.9075 57.36125 
+L 302.9075 57.36125 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="svi-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="309.3075" y="60.16125" transform="rotate(-0 309.3075 60.16125)">Higher b</text>
+    </g>
+    <g id="svi-line2d_38">
+     <path d="M 286.9075 69.10375 
+L 294.9075 69.10375 
+L 302.9075 69.10375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="svi-text_22">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="309.3075" y="71.90375" transform="rotate(-0 309.3075 71.90375)">Lower rho</text>
+    </g>
+   </g>
+  </g>
+  <g id="svi-axes_2">
+   <g id="svi-patch_5">
+    <path d="M 404.39 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 404.39 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="svi-matplotlib.axis_3">
+    <g id="svi-xtick_8">
+     <g id="svi-line2d_39">
+      <path d="M 418.122273 244.78 
+L 418.122273 35.14 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_40">
+      <g>
+       <use href="#svi-mb8a0b80676" x="418.122273" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="418.122273" y="258.618594" transform="rotate(-0 418.122273 258.618594)">−0.6</text>
+     </g>
+    </g>
+    <g id="svi-xtick_9">
+     <g id="svi-line2d_41">
+      <path d="M 463.896515 244.78 
+L 463.896515 35.14 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_42">
+      <g>
+       <use href="#svi-mb8a0b80676" x="463.896515" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="463.896515" y="258.618594" transform="rotate(-0 463.896515 258.618594)">−0.4</text>
+     </g>
+    </g>
+    <g id="svi-xtick_10">
+     <g id="svi-line2d_43">
+      <path d="M 509.670758 244.78 
+L 509.670758 35.14 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_44">
+      <g>
+       <use href="#svi-mb8a0b80676" x="509.670758" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="509.670758" y="258.618594" transform="rotate(-0 509.670758 258.618594)">−0.2</text>
+     </g>
+    </g>
+    <g id="svi-xtick_11">
+     <g id="svi-line2d_45">
+      <path d="M 555.445 244.78 
+L 555.445 35.14 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_46">
+      <g>
+       <use href="#svi-mb8a0b80676" x="555.445" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="555.445" y="258.618594" transform="rotate(-0 555.445 258.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="svi-xtick_12">
+     <g id="svi-line2d_47">
+      <path d="M 601.219242 244.78 
+L 601.219242 35.14 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_48">
+      <g>
+       <use href="#svi-mb8a0b80676" x="601.219242" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="601.219242" y="258.618594" transform="rotate(-0 601.219242 258.618594)">0.2</text>
+     </g>
+    </g>
+    <g id="svi-xtick_13">
+     <g id="svi-line2d_49">
+      <path d="M 646.993485 244.78 
+L 646.993485 35.14 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_50">
+      <g>
+       <use href="#svi-mb8a0b80676" x="646.993485" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="646.993485" y="258.618594" transform="rotate(-0 646.993485 258.618594)">0.4</text>
+     </g>
+    </g>
+    <g id="svi-xtick_14">
+     <g id="svi-line2d_51">
+      <path d="M 692.767727 244.78 
+L 692.767727 35.14 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_52">
+      <g>
+       <use href="#svi-mb8a0b80676" x="692.767727" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="692.767727" y="258.618594" transform="rotate(-0 692.767727 258.618594)">0.6</text>
+     </g>
+    </g>
+    <g id="svi-text_30">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="555.445" y="271.328906" transform="rotate(-0 555.445 271.328906)">Log-forward moneyness k</text>
+    </g>
+   </g>
+   <g id="svi-matplotlib.axis_4">
+    <g id="svi-ytick_10">
+     <g id="svi-line2d_53">
+      <path d="M 404.39 235.250909 
+L 706.5 235.250909 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_54">
+      <g>
+       <use href="#svi-m810bb4b0ac" x="404.39" y="235.250909" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="397.39" y="238.670206" transform="rotate(-0 397.39 238.670206)">0.0</text>
+     </g>
+    </g>
+    <g id="svi-ytick_11">
+     <g id="svi-line2d_55">
+      <path d="M 404.39 204.336285 
+L 706.5 204.336285 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_56">
+      <g>
+       <use href="#svi-m810bb4b0ac" x="404.39" y="204.336285" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="397.39" y="207.755582" transform="rotate(-0 397.39 207.755582)">0.2</text>
+     </g>
+    </g>
+    <g id="svi-ytick_12">
+     <g id="svi-line2d_57">
+      <path d="M 404.39 173.421661 
+L 706.5 173.421661 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_58">
+      <g>
+       <use href="#svi-m810bb4b0ac" x="404.39" y="173.421661" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="397.39" y="176.840958" transform="rotate(-0 397.39 176.840958)">0.4</text>
+     </g>
+    </g>
+    <g id="svi-ytick_13">
+     <g id="svi-line2d_59">
+      <path d="M 404.39 142.507038 
+L 706.5 142.507038 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_60">
+      <g>
+       <use href="#svi-m810bb4b0ac" x="404.39" y="142.507038" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="397.39" y="145.926334" transform="rotate(-0 397.39 145.926334)">0.6</text>
+     </g>
+    </g>
+    <g id="svi-ytick_14">
+     <g id="svi-line2d_61">
+      <path d="M 404.39 111.592414 
+L 706.5 111.592414 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_62">
+      <g>
+       <use href="#svi-m810bb4b0ac" x="404.39" y="111.592414" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_35">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="397.39" y="115.011711" transform="rotate(-0 397.39 115.011711)">0.8</text>
+     </g>
+    </g>
+    <g id="svi-ytick_15">
+     <g id="svi-line2d_63">
+      <path d="M 404.39 80.67779 
+L 706.5 80.67779 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_64">
+      <g>
+       <use href="#svi-m810bb4b0ac" x="404.39" y="80.67779" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_36">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="397.39" y="84.097087" transform="rotate(-0 397.39 84.097087)">1.0</text>
+     </g>
+    </g>
+    <g id="svi-ytick_16">
+     <g id="svi-line2d_65">
+      <path d="M 404.39 49.763166 
+L 706.5 49.763166 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="svi-line2d_66">
+      <g>
+       <use href="#svi-m810bb4b0ac" x="404.39" y="49.763166" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="svi-text_37">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="397.39" y="53.182463" transform="rotate(-0 397.39 53.182463)">1.2</text>
+     </g>
+    </g>
+    <g id="svi-text_38">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="377.205469" y="139.96" transform="rotate(-90 377.205469 139.96)">Butterfly diagnostic g(k)</text>
+    </g>
+   </g>
+   <g id="svi-line2d_67">
+    <path d="M 418.122273 169.530035 
+L 427.277121 167.534899 
+L 435.287614 165.555823 
+L 442.15375 163.655362 
+L 449.019886 161.535397 
+L 455.886023 159.16072 
+L 461.607803 156.957333 
+L 467.329583 154.51999 
+L 473.051364 151.816372 
+L 477.628788 149.437192 
+L 482.206212 146.843165 
+L 486.783636 144.011467 
+L 491.361061 140.917631 
+L 495.938485 137.536006 
+L 500.515909 133.840564 
+L 505.093333 129.806242 
+L 509.670758 125.410972 
+L 514.248182 120.638656 
+L 518.825606 115.483275 
+L 523.40303 109.95427 
+L 527.980455 104.083117 
+L 533.702235 96.359055 
+L 548.578864 75.952524 
+L 552.011932 71.663907 
+L 555.445 67.732832 
+L 557.733712 65.357607 
+L 560.022424 63.208742 
+L 562.311136 61.308511 
+L 564.599848 59.675271 
+L 566.888561 58.322818 
+L 569.177273 57.259954 
+L 571.465985 56.490284 
+L 573.754697 56.01226 
+L 576.043409 55.819455 
+L 578.332121 55.901035 
+L 580.620833 56.242394 
+L 582.909545 56.82588 
+L 585.198258 57.631574 
+L 587.48697 58.638064 
+L 590.920038 60.475724 
+L 594.353106 62.640464 
+L 597.786174 65.060755 
+L 602.363598 68.573148 
+L 609.229735 74.190871 
+L 624.106364 86.490176 
+L 630.9725 91.845344 
+L 637.838636 96.8874 
+L 643.560417 100.832554 
+L 649.282197 104.543425 
+L 655.003977 108.026465 
+L 661.870114 111.920325 
+L 668.73625 115.523271 
+L 675.602386 118.858732 
+L 682.468523 121.949899 
+L 689.334659 124.818795 
+L 692.767727 126.176339 
+L 692.767727 126.176339 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="svi-line2d_68">
+    <path d="M 418.122273 177.645518 
+L 426.132765 176.127912 
+L 434.143258 174.389909 
+L 441.009394 172.691192 
+L 447.87553 170.763402 
+L 453.597311 168.951998 
+L 459.319091 166.923735 
+L 465.040871 164.644667 
+L 469.618295 162.614284 
+L 474.19572 160.374561 
+L 478.773144 157.899022 
+L 483.350568 155.157968 
+L 487.927992 152.118379 
+L 492.505417 148.744013 
+L 495.938485 145.970138 
+L 499.371553 142.968797 
+L 502.804621 139.722507 
+L 506.237689 136.214069 
+L 509.670758 132.427317 
+L 513.103826 128.348144 
+L 516.536894 123.965844 
+L 519.969962 119.274821 
+L 523.40303 114.276676 
+L 527.980455 107.155895 
+L 532.557879 99.5726 
+L 538.279659 89.620005 
+L 548.578864 71.554986 
+L 552.011932 65.927759 
+L 555.445 60.724218 
+L 557.733712 57.55867 
+L 560.022424 54.680444 
+L 562.311136 52.123456 
+L 564.599848 49.916452 
+L 566.888561 48.081962 
+L 569.177273 46.635538 
+L 571.465985 45.585332 
+L 573.754697 44.93202 
+L 576.043409 44.669091 
+L 578.332121 44.78344 
+L 580.620833 45.256214 
+L 582.909545 46.06383 
+L 585.198258 47.179089 
+L 587.48697 48.572304 
+L 589.775682 50.212379 
+L 592.064394 52.067783 
+L 595.497462 55.186833 
+L 598.93053 58.620735 
+L 603.507955 63.533758 
+L 611.518447 72.562005 
+L 620.673295 82.813875 
+L 626.395076 88.923935 
+L 632.116856 94.710145 
+L 637.838636 100.137659 
+L 643.560417 105.196456 
+L 649.282197 109.89242 
+L 655.003977 114.241019 
+L 660.725758 118.262995 
+L 666.447538 121.981518 
+L 672.169318 125.420367 
+L 677.891098 128.602818 
+L 683.612879 131.550998 
+L 690.479015 134.808524 
+L 692.767727 135.831713 
+L 692.767727 135.831713 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="svi-line2d_69">
+    <path d="M 418.122273 173.090822 
+L 427.277121 171.284439 
+L 435.287614 169.484178 
+L 443.298106 167.438808 
+L 450.164242 165.454863 
+L 457.030379 163.21984 
+L 462.752159 161.134343 
+L 468.473939 158.814648 
+L 474.19572 156.226267 
+L 478.773144 153.935553 
+L 483.350568 151.424513 
+L 487.927992 148.667729 
+L 492.505417 145.637458 
+L 497.082841 142.30394 
+L 501.660265 138.636044 
+L 506.237689 134.602433 
+L 509.670758 131.319235 
+L 513.103826 127.802502 
+L 516.536894 124.043495 
+L 521.114318 118.646144 
+L 525.691742 112.810865 
+L 530.269167 106.561694 
+L 534.846591 99.952761 
+L 541.712727 89.576109 
+L 550.867576 75.682136 
+L 555.445 69.163516 
+L 558.878068 64.644602 
+L 562.311136 60.540812 
+L 564.599848 58.072985 
+L 566.888561 55.840663 
+L 569.177273 53.857219 
+L 571.465985 52.131483 
+L 573.754697 50.667638 
+L 576.043409 49.465335 
+L 578.332121 48.519995 
+L 580.620833 47.823275 
+L 582.909545 47.363643 
+L 585.198258 47.12702 
+L 587.48697 47.097443 
+L 589.775682 47.257703 
+L 592.064394 47.589942 
+L 595.497462 48.37147 
+L 598.93053 49.440426 
+L 602.363598 50.74157 
+L 606.941023 52.752327 
+L 612.662803 55.570427 
+L 620.673295 59.818634 
+L 638.982992 69.636386 
+L 648.137841 74.253057 
+L 656.148333 78.061065 
+L 664.158826 81.645087 
+L 672.169318 85.010607 
+L 681.324167 88.604456 
+L 690.479015 91.949648 
+L 692.767727 92.749724 
+L 692.767727 92.749724 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="svi-line2d_70">
+    <path d="M 404.39 235.250909 
+L 706.5 235.250909 
+" clip-path="url(#svi-pb235fbdc05)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+   </g>
+   <g id="svi-patch_6">
+    <path d="M 404.39 244.78 
+L 404.39 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="svi-patch_7">
+    <path d="M 404.39 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="svi-text_39">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="404.39" y="22.14" transform="rotate(-0 404.39 22.14)">Validate each candidate after changing shape</text>
+   </g>
+   <g id="svi-legend_2">
+    <g id="svi-line2d_71">
+     <path d="M 411.59 45.61875 
+L 419.59 45.61875 
+L 427.59 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="svi-text_40">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="433.99" y="48.41875" transform="rotate(-0 433.99 48.41875)">Baseline</text>
+    </g>
+    <g id="svi-line2d_72">
+     <path d="M 411.59 57.36125 
+L 419.59 57.36125 
+L 427.59 57.36125 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="svi-text_41">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="433.99" y="60.16125" transform="rotate(-0 433.99 60.16125)">Higher b</text>
+    </g>
+    <g id="svi-line2d_73">
+     <path d="M 411.59 69.10375 
+L 419.59 69.10375 
+L 427.59 69.10375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="svi-text_42">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="433.99" y="71.90375" transform="rotate(-0 433.99 71.90375)">Lower rho</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="svi-pd067c65ff0">
+   <rect x="54.02" y="35.14" width="302.11" height="209.64"/>
+  </clipPath>
+  <clipPath id="svi-pb235fbdc05">
+   <rect x="404.39" y="35.14" width="302.11" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

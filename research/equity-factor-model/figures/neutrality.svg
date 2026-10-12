@@ -1,0 +1,290 @@
+<svg role="img" aria-labelledby="neutrality-title neutrality-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="252pt" viewBox="0 0 792 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="neutrality-title">Figure 06 · Sector exposures of long–short portfolios</title><desc id="neutrality-desc">Both portfolios are long one unit and short one unit of capital-normalized weights. The balanced construction selects equal tails inside each of four equal-sized sectors, producing zero net weight in every sector.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-05T16:04:05.250177</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="neutrality-figure_1">
+  <g id="neutrality-patch_1">
+   <path d="M 0 252 
+L 792 252 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="neutrality-axes_1">
+   <g id="neutrality-patch_2">
+    <path d="M 61.58 208.78 
+L 778.5 208.78 
+L 778.5 35.14 
+L 61.58 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="neutrality-matplotlib.axis_1">
+    <g id="neutrality-xtick_1">
+     <g id="neutrality-line2d_1">
+      <path d="M 94.167273 208.78 
+L 94.167273 35.14 
+" clip-path="url(#neutrality-p1ae23dbf0d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="neutrality-line2d_2">
+      <defs>
+       <path id="neutrality-mc31c1b61dc" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#neutrality-mc31c1b61dc" x="94.167273" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="neutrality-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="94.167273" y="222.618594" transform="rotate(-0 94.167273 222.618594)">A</text>
+     </g>
+    </g>
+    <g id="neutrality-xtick_2">
+     <g id="neutrality-line2d_3">
+      <path d="M 311.415758 208.78 
+L 311.415758 35.14 
+" clip-path="url(#neutrality-p1ae23dbf0d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="neutrality-line2d_4">
+      <g>
+       <use href="#neutrality-mc31c1b61dc" x="311.415758" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="neutrality-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="311.415758" y="222.618594" transform="rotate(-0 311.415758 222.618594)">B</text>
+     </g>
+    </g>
+    <g id="neutrality-xtick_3">
+     <g id="neutrality-line2d_5">
+      <path d="M 528.664242 208.78 
+L 528.664242 35.14 
+" clip-path="url(#neutrality-p1ae23dbf0d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="neutrality-line2d_6">
+      <g>
+       <use href="#neutrality-mc31c1b61dc" x="528.664242" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="neutrality-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="528.664242" y="222.618594" transform="rotate(-0 528.664242 222.618594)">C</text>
+     </g>
+    </g>
+    <g id="neutrality-xtick_4">
+     <g id="neutrality-line2d_7">
+      <path d="M 745.912727 208.78 
+L 745.912727 35.14 
+" clip-path="url(#neutrality-p1ae23dbf0d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="neutrality-line2d_8">
+      <g>
+       <use href="#neutrality-mc31c1b61dc" x="745.912727" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="neutrality-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="745.912727" y="222.618594" transform="rotate(-0 745.912727 222.618594)">D</text>
+     </g>
+    </g>
+    <g id="neutrality-text_5">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="420.04" y="235.328906" transform="rotate(-0 420.04 235.328906)">Sector index</text>
+    </g>
+   </g>
+   <g id="neutrality-matplotlib.axis_2">
+    <g id="neutrality-ytick_1">
+     <g id="neutrality-line2d_9">
+      <path d="M 61.58 193.871515 
+L 778.5 193.871515 
+" clip-path="url(#neutrality-p1ae23dbf0d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="neutrality-line2d_10">
+      <defs>
+       <path id="neutrality-me93cd8be90" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#neutrality-me93cd8be90" x="61.58" y="193.871515" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="neutrality-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="54.58" y="197.290812" transform="rotate(-0 54.58 197.290812)">−40%</text>
+     </g>
+    </g>
+    <g id="neutrality-ytick_2">
+     <g id="neutrality-line2d_11">
+      <path d="M 61.58 156.454141 
+L 778.5 156.454141 
+" clip-path="url(#neutrality-p1ae23dbf0d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="neutrality-line2d_12">
+      <g>
+       <use href="#neutrality-me93cd8be90" x="61.58" y="156.454141" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="neutrality-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="54.58" y="159.873438" transform="rotate(-0 54.58 159.873438)">−20%</text>
+     </g>
+    </g>
+    <g id="neutrality-ytick_3">
+     <g id="neutrality-line2d_13">
+      <path d="M 61.58 119.036768 
+L 778.5 119.036768 
+" clip-path="url(#neutrality-p1ae23dbf0d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="neutrality-line2d_14">
+      <g>
+       <use href="#neutrality-me93cd8be90" x="61.58" y="119.036768" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="neutrality-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="54.58" y="122.456065" transform="rotate(-0 54.58 122.456065)">0%</text>
+     </g>
+    </g>
+    <g id="neutrality-ytick_4">
+     <g id="neutrality-line2d_15">
+      <path d="M 61.58 81.619394 
+L 778.5 81.619394 
+" clip-path="url(#neutrality-p1ae23dbf0d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="neutrality-line2d_16">
+      <g>
+       <use href="#neutrality-me93cd8be90" x="61.58" y="81.619394" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="neutrality-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="54.58" y="85.038691" transform="rotate(-0 54.58 85.038691)">20%</text>
+     </g>
+    </g>
+    <g id="neutrality-ytick_5">
+     <g id="neutrality-line2d_17">
+      <path d="M 61.58 44.20202 
+L 778.5 44.20202 
+" clip-path="url(#neutrality-p1ae23dbf0d)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="neutrality-line2d_18">
+      <g>
+       <use href="#neutrality-me93cd8be90" x="61.58" y="44.20202" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="neutrality-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="54.58" y="47.621317" transform="rotate(-0 54.58 47.621317)">40%</text>
+     </g>
+    </g>
+    <g id="neutrality-text_11">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.162656" y="121.96" transform="rotate(-90 21.162656 121.96)">Net portfolio weight</text>
+    </g>
+   </g>
+   <g id="neutrality-line2d_19">
+    <path d="M 94.167273 43.032727 
+L 311.415758 200.887273 
+L 528.664242 43.032727 
+L 745.912727 189.194343 
+" clip-path="url(#neutrality-p1ae23dbf0d)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="neutrality-me5d799e409" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #d3ad84"/>
+    </defs>
+    <g clip-path="url(#neutrality-p1ae23dbf0d)">
+     <use href="#neutrality-me5d799e409" x="94.167273" y="43.032727" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#neutrality-me5d799e409" x="311.415758" y="200.887273" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#neutrality-me5d799e409" x="528.664242" y="43.032727" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#neutrality-me5d799e409" x="745.912727" y="189.194343" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="neutrality-line2d_20">
+    <path d="M 94.167273 119.036768 
+L 311.415758 119.036768 
+L 528.664242 119.036768 
+L 745.912727 119.036768 
+" clip-path="url(#neutrality-p1ae23dbf0d)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="neutrality-m23e3c4cdbb" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#neutrality-p1ae23dbf0d)">
+     <use href="#neutrality-m23e3c4cdbb" x="94.167273" y="119.036768" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#neutrality-m23e3c4cdbb" x="311.415758" y="119.036768" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#neutrality-m23e3c4cdbb" x="528.664242" y="119.036768" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#neutrality-m23e3c4cdbb" x="745.912727" y="119.036768" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="neutrality-patch_3">
+    <path d="M 61.58 208.78 
+L 61.58 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="neutrality-patch_4">
+    <path d="M 61.58 208.78 
+L 778.5 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="neutrality-text_12">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="61.58" y="22.14" transform="rotate(-0 61.58 22.14)">Dollar neutrality does not imply sector neutrality</text>
+   </g>
+   <g id="neutrality-legend_1">
+    <g id="neutrality-line2d_21">
+     <path d="M 665.03375 45.61875 
+L 673.03375 45.61875 
+L 681.03375 45.61875 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#neutrality-me5d799e409" x="673.03375" y="45.61875" style="fill: #d3ad84; stroke: #d3ad84"/>
+     </g>
+    </g>
+    <g id="neutrality-text_13">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="687.43375" y="48.41875" transform="rotate(-0 687.43375 48.41875)">Unrestricted tails</text>
+    </g>
+    <g id="neutrality-line2d_22">
+     <path d="M 665.03375 57.36125 
+L 673.03375 57.36125 
+L 681.03375 57.36125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#neutrality-m23e3c4cdbb" x="673.03375" y="57.36125" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="neutrality-text_14">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="687.43375" y="60.16125" transform="rotate(-0 687.43375 60.16125)">Sector-balanced tails</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="neutrality-p1ae23dbf0d">
+   <rect x="61.58" y="35.14" width="716.92" height="173.64"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,117 @@
+<section id="performance" data-title="Performance statistics and benchmark comparisons">
+<div class="section-kicker">21 / Performance</div><h2>Performance statistics and benchmark comparisons</h2>
+<p>Performance evaluation should use a collection of interpretable statistics on a reconciled net return series. No single ratio describes growth, risk, tails, timing and implementation. State the sample length and annualization convention alongside the metrics.</p>
+<h3>Growth and dispersion</h3>
+<p>For \(T\) observed return periods and \(A\) periods per modeled year, total return and compound annual growth rate are:</p>
+\[ R_{\mathrm{total}}=\frac{E_T}{E_0}-1,\qquad
+\operatorname{CAGR}=\left(\frac{E_T}{E_0}\right)^{A/T}-1. \]
+<p>CAGR is the constant compound annual rate that reaches the same endpoint under the stated time convention. It does not describe the path between endpoints. For real dates, a calendar-year exponent can be preferable to an assumed count of trading sessions.</p>
+\[ \widehat\sigma_{\mathrm{ann}}=\sqrt A
+\sqrt{\frac{1}{T-1}\sum_{t=1}^{T}(R_{p,t}-\overline R_p)^2}. \]
+<p>This is a conventional volatility annualization. Its exact aggregation interpretation depends on return dependence and the approximation being used. The daily sample standard deviation remains a valid descriptive statistic even when the square-root annualization is not an exact model of yearly returns.</p>
+{{figure:metrics}}
+<h3>Risk-adjusted and active performance</h3>
+<p>The Sharpe ratio compares differential returns with their variability. With cash as the benchmark, define excess returns \(x_t=R_{p,t}-r_{f,t}\). The conventional annualized estimate is:</p>
+\[ \widehat S_{\mathrm{ann}}=
+\sqrt A\,\frac{\overline x}{s_x}. \]
+<p>Use the standard deviation of differential returns, not automatically the strategy's own return standard deviation when the benchmark changes over time. <a href="https://web.stanford.edu/~wfsharpe/art/sr/SR.htm">Sharpe (1994)</a> discusses differential-return measurement. A zero-volatility cash account has no defined excess-return Sharpe in this convention; report it as unavailable rather than zero or infinity.</p>
+<p>For an active strategy versus a risky benchmark, the information ratio uses mean active return divided by tracking error. It answers a different question from cash-excess Sharpe. A strategy's regression alpha depends on the factor benchmark and estimation assumptions; a positive raw return does not establish positive alpha.</p>
+<h3>Downside and trade-level statistics</h3>
+<p>The laboratory computes a Sortino-style quantity in its engine using all-period downside semideviation relative to cash:</p>
+\[ \operatorname{Sortino}_{\mathrm{ann}}=
+\sqrt A\,\frac{\overline x}
+{\sqrt{T^{-1}\sum_t\min(x_t,0)^2}}. \]
+<p>Some definitions divide by only the number of downside observations; that changes the result. State the target and denominator. A denominator of zero means the ratio is unavailable under this definition, not evidence of risklessness.</p>
+<p>Win rate, average win, average loss, trade duration and profit factor can illuminate a trading mechanism, but trade definitions matter. Frequent partial rebalances do not correspond to independent round trips. The laboratory reports nonzero rebalance orders and actual notional turnover, without calling each order a new completed trade.</p>
+<p>Compare net growth, exposure, drawdown and turnover with the benchmark. An account can have a positive total return and still have a negative estimated excess-return Sharpe when cash earns more. The metrics summarize different aspects of the same observations.</p>
+</section>
+
+<section id="sharpe-inference" data-title="Sharpe ratios, dependence and inference">
+<div class="section-kicker">22 / Statistical inference</div><h2>Sharpe ratios, dependence and inference</h2>
+<p>An estimated Sharpe ratio is uncertain. It is a ratio of an estimated mean and standard deviation, both affected by the return-generating process. Serial dependence, skewness, heavy tails and model selection influence how much evidence a high sample value provides.</p>
+<h3>Why square-root scaling needs assumptions</h3>
+<p>For stationary additive differential returns with lag-\(k\) autocorrelation \(\rho_k\), the standard deviation of a \(q\)-period sum depends on all relevant autocorrelations. Its Sharpe ratio is related to the one-period ratio by:</p>
+\[ S_q=S_1\sqrt{\frac{q}
+{1+2\sum_{k=1}^{q-1}(1-k/q)\rho_k}}. \]
+<p>The expression assumes a stationary mean and covariance structure and refers to additive differential returns. It is not an exact formula for compounding a leveraged trading account. Under zero autocorrelation it reduces to \(\sqrt q\); positive dependence can make the naive multiplier too large. <a href="https://alo.mit.edu/publications/page/18/">Lo (2002)</a> develops Sharpe-ratio statistics and aggregation under several return-process assumptions.</p>
+{{figure:sharpe}}
+<h3>Mean-return inference</h3>
+<p>Under IID returns with finite variance, the usual mean-return t-statistic is \(\overline x/(s_x/\sqrt T)\), equal to the sample daily Sharpe times \(\sqrt T\). Serial dependence requires a different standard error. A heteroskedasticity-and-autocorrelation-consistent estimate can use:</p>
+\[ \widehat\Omega=
+\widehat\gamma_0+2\sum_{k=1}^{b}
+\left(1-\frac{k}{b+1}\right)\widehat\gamma_k,\qquad
+\operatorname{SE}(\overline x)\approx\sqrt{\widehat\Omega/T}. \]
+<p>The autocovariances and bandwidth \(b\) are estimation choices. This Bartlett-weighted form addresses dependence under regularity conditions. It does not repair a selected winner's distribution or make a heavy-tailed infinite-variance process obey ordinary asymptotics.</p>
+<h3>A probabilistic Sharpe approximation</h3>
+<p>A commonly used moment-based approximation evaluates whether a per-period Sharpe exceeds a reference \(S^*\):</p>
+\[ \operatorname{PSR}(S^*)\approx\Phi\!\left(
+\frac{(\widehat S-S^*)\sqrt{T-1}}
+{\sqrt{1-\widehat\gamma_3\widehat S+
+\frac{\widehat\gamma_4-1}{4}\widehat S^2}}\right). \]
+<p>Here \(\widehat\gamma_3\) is skewness and \(\widehat\gamma_4\) is ordinary kurtosis, so a normal distribution has kurtosis three. The Sharpe inputs use per-period units. Substituting an annualized Sharpe while retaining the same daily \(T\) is a unit error. This asymptotic approximation also needs appropriate moment and sampling assumptions.</p>
+<p><a href="https://www.davidhbailey.com/dhbpapers/deflated-sharpe.pdf">Bailey and López de Prado (2014)</a> develop deflated assessment using a selection-adjusted reference. The reference, trial dependence and non-normality assumptions matter. A high unadjusted probabilistic statistic for the winner of a large search is not automatically a valid post-selection result.</p>
+<h3>Interpretation</h3>
+<p>A p-value is a probability of data or a statistic under a specified null, not the probability that the strategy is false. A confidence interval describes repeated-sample coverage under assumptions; it does not include every possible market-model change. Report effect size, sampling support and selection history together.</p>
+<p>The laboratory displays the conventional annualized sample Sharpe as a descriptive quantity and explicitly labels its IID scaling convention. It does not issue a trading recommendation or a significance verdict from that ratio.</p>
+</section>
+
+<section id="drawdowns" data-title="Drawdowns, tail losses and path risk">
+<div class="section-kicker">23 / Risk assessment</div><h2>Drawdowns, tail losses and path risk</h2>
+<p>Drawdown measures wealth relative to its own earlier high-water mark. It captures path risk that the final return and volatility can miss:</p>
+\[ H_t=\max_{0\le u\le t}E_u,\qquad
+D_t=\frac{E_t}{H_t}-1\le0,\qquad
+\operatorname{MDD}_{\mathrm{signed}}=\min_tD_t. \]
+<p>Some reports display maximum drawdown as the positive magnitude \(-\min_tD_t\). This guide's curves and tables use the signed convention. Including initial wealth ensures that an entry fee or immediate first-period loss is not omitted from the drawdown calculation.</p>
+{{figure:drawdown}}
+<h3>Depth, duration and recovery</h3>
+<p>A drawdown can be shallow but persist for a long time, or deep and recover quickly. Duration measures time below a previous peak; recovery time measures the interval until that peak is exceeded or regained under a stated convention. An unrecovered drawdown at sample end is censored, rather than evidence of a completed recovery.</p>
+<p>A 20% drawdown requires a 25% gain to return to the peak, because \(1/(1-0.20)-1=0.25\). Equal percentage losses and gains do not offset. Exposure changes after a loss can also slow recovery even if they reduce subsequent risk.</p>
+<h3>Tail risk and optionality</h3>
+<p>Historical VaR and ES of net period losses describe a specified one-period tail. Maximum drawdown instead depends on the sequence of returns and the sample length. Rearranging the same return observations can preserve their empirical distribution while changing drawdown substantially.</p>
+<p>Short-option strategies can have many small gains and occasional large losses. A high hit rate and smooth short sample may conceal that asymmetry. Inspect skewness, tail scenarios, nonlinear exposure and margin requirements. The <a href="var-expected-shortfall.html">tail-risk notes</a> explain why a quantile alone cannot describe loss severity beyond its boundary.</p>
+<h3>Risk controls and their consequences</h3>
+<p>A drawdown limit or stop changes the strategy policy. It can reduce some adverse paths and also lock in losses or miss a rebound. Evaluate the rule prospectively with executable fill assumptions. A stop threshold is a decision point, not a guaranteed loss cap.</p>
+<p>Stress paths should include gaps, volatility increases, liquidity deterioration and operational delay where relevant. A strategy that reduces exposure after volatility rises can still experience the initial shock at its previous exposure. Backward-looking risk estimates cannot anticipate every discontinuity.</p>
+<h3>Comparability</h3>
+<p>Maximum drawdown generally changes with sample length and the regimes observed. Comparing a ten-year drawdown with a one-year drawdown without context is misleading. Use aligned intervals and examine multiple paths or blocks when assessing uncertainty. A observed maximum is a sample outcome, not a bound on future losses.</p>
+</section>
+
+<section id="robustness" data-title="Robustness, resampling and stress experiments">
+<div class="section-kicker">24 / Robustness</div><h2>Robustness, resampling and stress experiments</h2>
+<p>A robust strategy result survives relevant perturbations without depending entirely on one arbitrary setting or unusual episode. Examine nearby lookbacks, signal thresholds, execution delays, costs, risk targets, instruments and periods. The goal is to understand sensitivity, not to search until another favorable peak appears.</p>
+{{figure:robustness}}
+<h3>Parameter neighborhoods</h3>
+<p>A broad region with similar behavior is easier to reconcile with a stable mechanism than a single isolated winning parameter. But a smooth surface can still result from a shared biased dataset or a common market exposure. Sensitivity is evidence about the implementation and sample, not proof of a persistent real-market premium.</p>
+<p>The figure compares several costs over a common start after the longest lookback warm-up. Without a common start, longer windows omit more early returns and can appear better because they were evaluated in a different market period. This seemingly simple sample-alignment issue affects many parameter searches.</p>
+<h3>Resampling returns</h3>
+<p>An IID bootstrap reshuffles individual return observations. A block bootstrap preserves some local dependence by resampling contiguous groups. The computed example uses circular blocks of 20 sessions from the realized net strategy return series.</p>
+{{figure:bootstrap}}
+<p>This experiment conditions on the realized strategy returns. It does not regenerate prices, rerun signals or repeat the researcher's parameter search. It therefore describes uncertainty in resampled paths under that return-resampling model, rather than the full uncertainty of strategy discovery and deployment.</p>
+<h3>Rerunning a decision policy</h3>
+<p>To study how a strategy responds to new market paths, simulate or resample appropriate market inputs and rerun the entire decision process. Re-estimate features and parameters according to the stated schedule. Respect multivariate dependence and corporate actions. A synthetic path must remain consistent with the strategy's required data fields.</p>
+<p>For research-selection uncertainty, repeat selection inside each resampling or simulation experiment. Holding the winning parameter fixed understates the variation associated with choosing it. Conversely, always re-optimizing on the resampled evaluation outcome introduces hindsight rather than representing prospective selection.</p>
+<h3>Stress experiments and falsification</h3>
+<p>Increase costs, delay fills, remove a dominant profitable episode, perturb signals and compare alternative market regimes. Removing an episode is a diagnostic, not permission to delete it from the final reported sample. If a mechanism depends on a particular market condition, identify that condition before observing which exclusions improve the result.</p>
+<p>Negative-control signals, randomized timing and simple passive baselines can reveal coding errors or ordinary exposure masquerading as predictability. A useful robustness report explains why a result changes, including unfavorable changes, rather than displaying only variants that remain profitable.</p>
+</section>
+
+<section id="attribution-capacity" data-title="Attribution, capacity and forward monitoring">
+<div class="section-kicker">25 / Economic implementation</div><h2>Attribution, capacity and forward monitoring</h2>
+<p>Attribute returns to their sources before interpreting the total. For a long/cash strategy, risky returns, cash carry, execution costs and changing exposure all contribute. An account can reduce losses mainly by holding less stock, rather than by accurately forecasting adverse days.</p>
+<h3>Exposure and timing</h3>
+<p>Compare average risky exposure with realized market exposure and performance during rising and falling periods. A regression can summarize covariance with market returns, but a dynamic strategy's conditional exposure need not be constant. Report turnover and the risk-scaling contribution beside any estimated alpha.</p>
+<p>Separate directional selection from volatility scaling by rerunning an otherwise identical unscaled account on a common interval. Separate costs by rerunning a zero-cost account. These controlled comparisons change one component at a time; they are more interpretable than changing several rules and attributing all improvement to the signal.</p>
+{{figure:attribution}}
+<p>Cumulative nominal fees do not equal the gross-minus-net wealth gap. Lost capital would have participated in later gains and losses. The gap also reflects that different capital bases create different currency trades under the same target fractions. Save period-by-period fees and account returns to keep the economic decomposition clear.</p>
+<h3>Capacity and market impact</h3>
+<p>Proportional-cost laboratory results scale linearly with initial capital: doubling capital doubles holdings, fees and wealth while preserving return percentages. Real costs may grow with trade size, available liquidity and participation. A strategy's capacity is the capital range over which implementation remains acceptable under a calibrated execution model.</p>
+\[ \operatorname{impact}(Q)\approx\eta\,\sigma
+\sqrt{\frac{|Q|}{V}}, \]
+<p>This square-root form is an illustrative model, with trade size \(Q\), compatible traded volume \(V\), volatility \(\sigma\) and coefficient \(\eta\). The volume horizon and units must match. It is not a universal law or a substitute for measured execution outcomes.</p>
+{{figure:capacity}}
+<p>Capacity can also be constrained by borrow, contract limits, crowding, inventory or signal decay. A slow execution schedule may reduce impact while losing the forecast opportunity. The trade-off belongs to the strategy's economic design.</p>
+<h3>Forward monitoring</h3>
+<p>Paper trading and a controlled forward process compare forecast assumptions with new observations. Monitor data integrity, missing inputs, exposure, turnover, actual fills, costs, risk and performance. Reconcile intended positions with actual holdings and define how stale data or rejected orders are handled.</p>
+<p>Set review criteria before observing a disappointing month. A statistical model can experience normal variation, while a market change can also invalidate its premise. Diagnostics should distinguish execution failures, data problems, exposure changes and forecast degradation. Updating a model creates a new version whose subsequent evidence should remain traceable.</p>
+<p>A strategy is a continuing decision system. Its research case, account mechanics and operational monitoring should tell the same story about what it does and under which assumptions it is expected to be useful.</p>
+</section>

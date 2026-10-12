@@ -1,0 +1,46 @@
+<div class="notebook" id="surface-notebook">
+<div class="notebook-head"><strong>Implied volatility surface laboratory</strong><span>Synthetic SSVI / European options / analytic diagnostics</span></div>
+<form id="surface-form">
+<div class="field"><label for="input-short">Short volatility scale (%)</label><input id="input-short" name="short" type="number" min="5" max="80" step="any" value="24" required></div>
+<div class="field"><label for="input-long">Long volatility scale (%)</label><input id="input-long" name="long" type="number" min="5" max="80" step="any" value="18" required></div>
+<div class="field"><label for="input-decay">Variance-rate decay (years)</label><input id="input-decay" name="decay" type="number" min=".05" max="10" step="any" value="1.2" required></div>
+<div class="field"><label for="input-rho">Smile asymmetry ρ</label><input id="input-rho" name="rho" type="number" min="-.95" max=".95" step="any" value="-.65" required></div>
+<div class="field"><label for="input-eta">Smile shape scale η</label><input id="input-eta" name="eta" type="number" min="0" max="12" step="any" value="2.3" required><small>Large values can create butterfly inconsistencies.</small></div>
+<div class="field"><label for="input-horizon">Surface horizon (years)</label><input id="input-horizon" name="horizon" type="number" min=".25" max="10" step="any" value="3" required></div>
+<div class="field"><label for="input-spot">Spot price</label><input id="input-spot" name="spot" type="number" min="1" max="100000" step="any" value="100" required></div>
+<div class="field"><label for="input-rate">Continuous interest rate (%)</label><input id="input-rate" name="rate" type="number" min="-5" max="20" step="any" value="3" required></div>
+<div class="field"><label for="input-yield">Continuous dividend yield (%)</label><input id="input-yield" name="yield" type="number" min="0" max="20" step="any" value="1" required></div>
+<div class="field"><label for="input-maturity">Selected option maturity (years)</label><input id="input-maturity" name="maturity" type="number" min=".05" max="10" step="any" value="1" required><small>Must be within the surface horizon.</small></div>
+<div class="field"><label for="input-k">Selected log-forward moneyness k</label><input id="input-k" name="k" type="number" min="-.6" max=".6" step="any" value="0" required></div>
+<div class="notebook-action"><button id="calculate" type="submit">Build surface</button><button id="reset-inputs" type="button">Reset reference</button><button id="download-surface" type="button">Download surface CSV</button><p>European premiums per underlying unit; no contract multiplier.</p></div>
+</form>
+<p class="calc-error" id="calc-error" role="alert"></p>
+<div class="notebook-results" aria-label="Selected European option">
+<div class="result"><small>Selected implied volatility</small><strong id="result-iv">—</strong></div>
+<div class="result"><small>European call premium</small><strong id="result-call">—</strong></div>
+<div class="result"><small>European put premium</small><strong id="result-put">—</strong></div>
+<div class="result"><small>Selected local volatility</small><strong id="result-local">—</strong></div>
+</div>
+<div class="metric-grid">
+<div class="greek-result"><span>Forward / strike</span><output id="result-forward">—</output></div>
+<div class="greek-result"><span>Total variance</span><output id="result-variance">—</output></div>
+<div class="greek-result"><span>Vega per volatility point</span><output id="result-vega">—</output></div>
+</div>
+<div class="surface-status" id="surface-status" role="status"></div>
+<div class="lab-section-label">Surface map <span>Hover or tap a cell · arrows inspect adjacent cells</span></div>
+<div class="notebook-plot" id="surface-map"></div>
+<div class="lab-section-label">Maturity slices <span>All five curves are shown at the inspected coordinate</span></div>
+<div class="notebook-legend" id="slice-legend"></div>
+<div class="notebook-plot" id="live-plot"></div>
+<div class="inversion-panel">
+<div class="lab-section-label">Price-to-volatility inversion <span>Uses the selected maturity, forward and strike above</span></div>
+<form id="iv-form">
+<div class="field"><label for="input-kind">European option type</label><select id="input-kind" name="kind"><option value="call">Call</option><option value="put">Put</option></select></div>
+<div class="field"><label for="input-premium">Premium to invert</label><input id="input-premium" name="premium" type="number" min="0" step="any" value="0" required></div>
+<div class="notebook-action"><button id="recover-iv" type="submit">Recover implied volatility</button><button id="use-surface-price" type="button">Use surface premium</button></div>
+</form>
+<p id="inversion-result" role="status"></p>
+</div>
+<p class="notebook-note" id="notebook-note" role="status"></p>
+<noscript><p>Enable JavaScript to explore the surface. Static notes, formulas, computed graphs and worked tables remain readable offline without it.</p></noscript>
+</div>

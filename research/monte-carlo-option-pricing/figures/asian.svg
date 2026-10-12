@@ -1,0 +1,608 @@
+<svg role="img" aria-labelledby="asian-title asian-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="asian-title">Figure 13 · Arithmetic Asian pricing with a geometric-average control</title><desc id="asian-desc">Fixings at jT/m, j = 1,…,m; S₀ is excluded from the average. Seed 1008; 40,000 pilot and 40,000 production paths. The analytical geometric price uses exactly the same monitoring schedule as its simulated control.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T19:11:29.186675</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="asian-figure_1">
+  <g id="asian-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="asian-axes_1">
+   <g id="asian-patch_2">
+    <path d="M 48.26 208.78 
+L 312.630547 208.78 
+L 312.630547 13.5 
+L 48.26 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="asian-matplotlib.axis_1">
+    <g id="asian-xtick_1">
+     <g id="asian-line2d_1">
+      <path d="M 83.166068 208.78 
+L 83.166068 13.5 
+" clip-path="url(#asian-p5dbaaeb2b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_2">
+      <defs>
+       <path id="asian-m42fcefd633" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#asian-m42fcefd633" x="83.166068" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="83.166068" y="222.618594" transform="rotate(-0 83.166068 222.618594)">20</text>
+     </g>
+    </g>
+    <g id="asian-xtick_2">
+     <g id="asian-line2d_3">
+      <path d="M 140.38913 208.78 
+L 140.38913 13.5 
+" clip-path="url(#asian-p5dbaaeb2b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_4">
+      <g>
+       <use href="#asian-m42fcefd633" x="140.38913" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="140.38913" y="222.618594" transform="rotate(-0 140.38913 222.618594)">40</text>
+     </g>
+    </g>
+    <g id="asian-xtick_3">
+     <g id="asian-line2d_5">
+      <path d="M 197.612192 208.78 
+L 197.612192 13.5 
+" clip-path="url(#asian-p5dbaaeb2b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_6">
+      <g>
+       <use href="#asian-m42fcefd633" x="197.612192" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="197.612192" y="222.618594" transform="rotate(-0 197.612192 222.618594)">60</text>
+     </g>
+    </g>
+    <g id="asian-xtick_4">
+     <g id="asian-line2d_7">
+      <path d="M 254.835254 208.78 
+L 254.835254 13.5 
+" clip-path="url(#asian-p5dbaaeb2b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_8">
+      <g>
+       <use href="#asian-m42fcefd633" x="254.835254" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="254.835254" y="222.618594" transform="rotate(-0 254.835254 222.618594)">80</text>
+     </g>
+    </g>
+    <g id="asian-xtick_5">
+     <g id="asian-line2d_9">
+      <path d="M 312.058316 208.78 
+L 312.058316 13.5 
+" clip-path="url(#asian-p5dbaaeb2b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_10">
+      <g>
+       <use href="#asian-m42fcefd633" x="312.058316" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="312.058316" y="222.618594" transform="rotate(-0 312.058316 222.618594)">100</text>
+     </g>
+    </g>
+    <g id="asian-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="180.445274" y="235.328906" transform="rotate(-0 180.445274 235.328906)">Monitoring dates m</text>
+    </g>
+   </g>
+   <g id="asian-matplotlib.axis_2">
+    <g id="asian-ytick_1">
+     <g id="asian-line2d_11">
+      <path d="M 48.26 198.599276 
+L 312.630547 198.599276 
+" clip-path="url(#asian-p5dbaaeb2b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_12">
+      <defs>
+       <path id="asian-m6d64839a3d" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#asian-m6d64839a3d" x="48.26" y="198.599276" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="202.018573" transform="rotate(-0 41.26 202.018573)">5.6</text>
+     </g>
+    </g>
+    <g id="asian-ytick_2">
+     <g id="asian-line2d_13">
+      <path d="M 48.26 166.871516 
+L 312.630547 166.871516 
+" clip-path="url(#asian-p5dbaaeb2b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_14">
+      <g>
+       <use href="#asian-m6d64839a3d" x="48.26" y="166.871516" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="170.290813" transform="rotate(-0 41.26 170.290813)">5.7</text>
+     </g>
+    </g>
+    <g id="asian-ytick_3">
+     <g id="asian-line2d_15">
+      <path d="M 48.26 135.143757 
+L 312.630547 135.143757 
+" clip-path="url(#asian-p5dbaaeb2b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_16">
+      <g>
+       <use href="#asian-m6d64839a3d" x="48.26" y="135.143757" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="138.563053" transform="rotate(-0 41.26 138.563053)">5.8</text>
+     </g>
+    </g>
+    <g id="asian-ytick_4">
+     <g id="asian-line2d_17">
+      <path d="M 48.26 103.415997 
+L 312.630547 103.415997 
+" clip-path="url(#asian-p5dbaaeb2b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_18">
+      <g>
+       <use href="#asian-m6d64839a3d" x="48.26" y="103.415997" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="106.835294" transform="rotate(-0 41.26 106.835294)">5.9</text>
+     </g>
+    </g>
+    <g id="asian-ytick_5">
+     <g id="asian-line2d_19">
+      <path d="M 48.26 71.688237 
+L 312.630547 71.688237 
+" clip-path="url(#asian-p5dbaaeb2b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_20">
+      <g>
+       <use href="#asian-m6d64839a3d" x="48.26" y="71.688237" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="75.107534" transform="rotate(-0 41.26 75.107534)">6.0</text>
+     </g>
+    </g>
+    <g id="asian-ytick_6">
+     <g id="asian-line2d_21">
+      <path d="M 48.26 39.960477 
+L 312.630547 39.960477 
+" clip-path="url(#asian-p5dbaaeb2b4)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_22">
+      <g>
+       <use href="#asian-m6d64839a3d" x="48.26" y="39.960477" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="43.379774" transform="rotate(-0 41.26 43.379774)">6.1</text>
+     </g>
+    </g>
+    <g id="asian-text_13">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.075469" y="111.14" transform="rotate(-90 21.075469 111.14)">Asian call value</text>
+    </g>
+   </g>
+   <g id="asian-line2d_23">
+    <path d="M 60.276843 22.376364 
+L 94.61068 84.677146 
+L 163.278355 115.851155 
+L 300.613704 131.430913 
+" clip-path="url(#asian-p5dbaaeb2b4)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="asian-m820c48f9cb" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#asian-p5dbaaeb2b4)">
+     <use href="#asian-m820c48f9cb" x="60.276843" y="22.376364" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#asian-m820c48f9cb" x="94.61068" y="84.677146" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#asian-m820c48f9cb" x="163.278355" y="115.851155" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#asian-m820c48f9cb" x="300.613704" y="131.430913" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="asian-line2d_24">
+    <path d="M 60.276843 90.661367 
+L 94.61068 153.143002 
+L 163.278355 184.325903 
+L 300.613704 199.903636 
+" clip-path="url(#asian-p5dbaaeb2b4)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="asian-m5c626f161a" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: #d3ad84"/>
+    </defs>
+    <g clip-path="url(#asian-p5dbaaeb2b4)">
+     <use href="#asian-m5c626f161a" x="60.276843" y="90.661367" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#asian-m5c626f161a" x="94.61068" y="153.143002" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#asian-m5c626f161a" x="163.278355" y="184.325903" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#asian-m5c626f161a" x="300.613704" y="199.903636" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="asian-patch_3">
+    <path d="M 48.26 208.78 
+L 48.26 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="asian-patch_4">
+    <path d="M 48.26 208.78 
+L 312.630547 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="asian-legend_1">
+    <g id="asian-line2d_25">
+     <path d="M 175.73211 23.323828 
+L 183.23211 23.323828 
+L 190.73211 23.323828 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#asian-m820c48f9cb" x="183.23211" y="23.323828" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="asian-text_14">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="196.73211" y="25.948828" transform="rotate(-0 196.73211 25.948828)">Arithmetic Asian · control MC</text>
+    </g>
+    <g id="asian-line2d_26">
+     <path d="M 175.73211 34.332422 
+L 183.23211 34.332422 
+L 190.73211 34.332422 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#asian-m5c626f161a" x="183.23211" y="34.332422" style="fill: #d3ad84; stroke: #d3ad84"/>
+     </g>
+    </g>
+    <g id="asian-text_15">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="196.73211" y="36.957422" transform="rotate(-0 196.73211 36.957422)">Geometric Asian · exact</text>
+    </g>
+   </g>
+  </g>
+  <g id="asian-axes_2">
+   <g id="asian-patch_5">
+    <path d="M 376.39453 208.78 
+L 640.765077 208.78 
+L 640.765077 13.5 
+L 376.39453 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="asian-matplotlib.axis_3">
+    <g id="asian-xtick_6">
+     <g id="asian-line2d_27">
+      <path d="M 411.300598 208.78 
+L 411.300598 13.5 
+" clip-path="url(#asian-pc95f7790af)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_28">
+      <g>
+       <use href="#asian-m42fcefd633" x="411.300598" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="411.300598" y="222.618594" transform="rotate(-0 411.300598 222.618594)">20</text>
+     </g>
+    </g>
+    <g id="asian-xtick_7">
+     <g id="asian-line2d_29">
+      <path d="M 468.52366 208.78 
+L 468.52366 13.5 
+" clip-path="url(#asian-pc95f7790af)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_30">
+      <g>
+       <use href="#asian-m42fcefd633" x="468.52366" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="468.52366" y="222.618594" transform="rotate(-0 468.52366 222.618594)">40</text>
+     </g>
+    </g>
+    <g id="asian-xtick_8">
+     <g id="asian-line2d_31">
+      <path d="M 525.746722 208.78 
+L 525.746722 13.5 
+" clip-path="url(#asian-pc95f7790af)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_32">
+      <g>
+       <use href="#asian-m42fcefd633" x="525.746722" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_18">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="525.746722" y="222.618594" transform="rotate(-0 525.746722 222.618594)">60</text>
+     </g>
+    </g>
+    <g id="asian-xtick_9">
+     <g id="asian-line2d_33">
+      <path d="M 582.969784 208.78 
+L 582.969784 13.5 
+" clip-path="url(#asian-pc95f7790af)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_34">
+      <g>
+       <use href="#asian-m42fcefd633" x="582.969784" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_19">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="582.969784" y="222.618594" transform="rotate(-0 582.969784 222.618594)">80</text>
+     </g>
+    </g>
+    <g id="asian-xtick_10">
+     <g id="asian-line2d_35">
+      <path d="M 640.192846 208.78 
+L 640.192846 13.5 
+" clip-path="url(#asian-pc95f7790af)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_36">
+      <g>
+       <use href="#asian-m42fcefd633" x="640.192846" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_20">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="640.192846" y="222.618594" transform="rotate(-0 640.192846 222.618594)">100</text>
+     </g>
+    </g>
+    <g id="asian-text_21">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="508.579803" y="235.328906" transform="rotate(-0 508.579803 235.328906)">Monitoring dates m</text>
+    </g>
+   </g>
+   <g id="asian-matplotlib.axis_4">
+    <g id="asian-ytick_7">
+     <g id="asian-line2d_37">
+      <path d="M 376.39453 204.271833 
+L 640.765077 204.271833 
+" clip-path="url(#asian-pc95f7790af)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_38">
+      <g>
+       <use href="#asian-m6d64839a3d" x="376.39453" y="204.271833" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_22">
+      <!-- $\mathdefault{10^{-3}}$ -->
+      <g style="fill: #939b94" transform="translate(348.24453 207.691129)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.318750000000001">−3</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="asian-ytick_8">
+     <g id="asian-line2d_39">
+      <path d="M 376.39453 92.492927 
+L 640.765077 92.492927 
+" clip-path="url(#asian-pc95f7790af)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="asian-line2d_40">
+      <g>
+       <use href="#asian-m6d64839a3d" x="376.39453" y="92.492927" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="asian-text_23">
+      <!-- $\mathdefault{10^{-2}}$ -->
+      <g style="fill: #939b94" transform="translate(348.24453 95.912224)">
+       <text>
+        <tspan style="font: 9px 'DejaVu Sans', Arial, sans-serif" x="0 5.726074" y="-0.8734375000000014">10</tspan>
+        <tspan style="font: 6.3px 'DejaVu Sans', Arial, sans-serif" x="11.538281 16.816992" y="-4.318750000000001">−2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="asian-ytick_9">
+     <g id="asian-line2d_41">
+      <defs>
+       <path id="asian-m58480d48c9" d="M 0 0 
+L -2 0 
+" style="stroke: #939b94; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use href="#asian-m58480d48c9" x="376.39453" y="170.623029" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="asian-ytick_10">
+     <g id="asian-line2d_42">
+      <g>
+       <use href="#asian-m58480d48c9" x="376.39453" y="150.939741" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="asian-ytick_11">
+     <g id="asian-line2d_43">
+      <g>
+       <use href="#asian-m58480d48c9" x="376.39453" y="136.974225" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="asian-ytick_12">
+     <g id="asian-line2d_44">
+      <g>
+       <use href="#asian-m58480d48c9" x="376.39453" y="126.14173" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="asian-ytick_13">
+     <g id="asian-line2d_45">
+      <g>
+       <use href="#asian-m58480d48c9" x="376.39453" y="117.290937" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="asian-ytick_14">
+     <g id="asian-line2d_46">
+      <g>
+       <use href="#asian-m58480d48c9" x="376.39453" y="109.807698" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="asian-ytick_15">
+     <g id="asian-line2d_47">
+      <g>
+       <use href="#asian-m58480d48c9" x="376.39453" y="103.325422" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="asian-ytick_16">
+     <g id="asian-line2d_48">
+      <g>
+       <use href="#asian-m58480d48c9" x="376.39453" y="97.607649" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="asian-ytick_17">
+     <g id="asian-line2d_49">
+      <g>
+       <use href="#asian-m58480d48c9" x="376.39453" y="58.844123" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="asian-ytick_18">
+     <g id="asian-line2d_50">
+      <g>
+       <use href="#asian-m58480d48c9" x="376.39453" y="39.160835" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="asian-ytick_19">
+     <g id="asian-line2d_51">
+      <g>
+       <use href="#asian-m58480d48c9" x="376.39453" y="25.19532" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="asian-ytick_20">
+     <g id="asian-line2d_52">
+      <g>
+       <use href="#asian-m58480d48c9" x="376.39453" y="14.362824" style="fill: #939b94; stroke: #939b94; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="asian-text_24">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="342.372811" y="111.14" transform="rotate(-90 342.372811 111.14)">Standard error, 40,000 production paths</text>
+    </g>
+   </g>
+   <g id="asian-line2d_53">
+    <path d="M 388.411373 22.376364 
+L 422.74521 23.933665 
+L 491.412885 24.731114 
+L 628.748234 25.137646 
+" clip-path="url(#asian-pc95f7790af)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    <g clip-path="url(#asian-pc95f7790af)">
+     <use href="#asian-m5c626f161a" x="388.411373" y="22.376364" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#asian-m5c626f161a" x="422.74521" y="23.933665" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#asian-m5c626f161a" x="491.412885" y="24.731114" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#asian-m5c626f161a" x="628.748234" y="25.137646" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="asian-line2d_54">
+    <path d="M 388.411373 196.581413 
+L 422.74521 198.468453 
+L 491.412885 199.433592 
+L 628.748234 199.903636 
+" clip-path="url(#asian-pc95f7790af)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <g clip-path="url(#asian-pc95f7790af)">
+     <use href="#asian-m820c48f9cb" x="388.411373" y="196.581413" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#asian-m820c48f9cb" x="422.74521" y="198.468453" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#asian-m820c48f9cb" x="491.412885" y="199.433592" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#asian-m820c48f9cb" x="628.748234" y="199.903636" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="asian-patch_6">
+    <path d="M 376.39453 208.78 
+L 376.39453 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="asian-patch_7">
+    <path d="M 376.39453 208.78 
+L 640.765077 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="asian-legend_2">
+    <g id="asian-line2d_55">
+     <path d="M 530.285389 105.080234 
+L 537.785389 105.080234 
+L 545.285389 105.080234 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#asian-m5c626f161a" x="537.785389" y="105.080234" style="fill: #d3ad84; stroke: #d3ad84"/>
+     </g>
+    </g>
+    <g id="asian-text_25">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="551.285389" y="107.705234" transform="rotate(-0 551.285389 107.705234)">Raw arithmetic payoff</text>
+    </g>
+    <g id="asian-line2d_56">
+     <path d="M 530.285389 116.088828 
+L 537.785389 116.088828 
+L 545.285389 116.088828 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#asian-m820c48f9cb" x="537.785389" y="116.088828" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="asian-text_26">
+     <text style="fill: #c8cec8; font: 7.5px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="551.285389" y="118.713828" transform="rotate(-0 551.285389 118.713828)">Geometric control</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="asian-p5dbaaeb2b4">
+   <rect x="48.26" y="13.5" width="264.370547" height="195.28"/>
+  </clipPath>
+  <clipPath id="asian-pc95f7790af">
+   <rect x="376.39453" y="13.5" width="264.370547" height="195.28"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,862 @@
+<svg role="img" aria-labelledby="scenarios-title scenarios-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="266.4pt" viewBox="0 0 792 266.4" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="scenarios-title">Figure 19 · Level, twist and belly scenarios</title><desc id="scenarios-desc">These deterministic shocks illustrate curve geometry. They are not estimated PCA components, probability forecasts or historically calibrated stress scenarios.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T20:19:14.722448</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="scenarios-figure_1">
+  <g id="scenarios-patch_1">
+   <path d="M 0 266.4 
+L 792 266.4 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="scenarios-axes_1">
+   <g id="scenarios-patch_2">
+    <path d="M 52.94 223.18 
+L 384.39 223.18 
+L 384.39 35.14 
+L 52.94 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="scenarios-matplotlib.axis_1">
+    <g id="scenarios-xtick_1">
+     <g id="scenarios-line2d_1">
+      <path d="M 68.005909 223.18 
+L 68.005909 35.14 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_2">
+      <defs>
+       <path id="scenarios-m5730a2e535" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#scenarios-m5730a2e535" x="68.005909" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="68.005909" y="237.018594" transform="rotate(-0 68.005909 237.018594)">0</text>
+     </g>
+    </g>
+    <g id="scenarios-xtick_2">
+     <g id="scenarios-line2d_3">
+      <path d="M 118.225606 223.18 
+L 118.225606 35.14 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_4">
+      <g>
+       <use href="#scenarios-m5730a2e535" x="118.225606" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="118.225606" y="237.018594" transform="rotate(-0 118.225606 237.018594)">5</text>
+     </g>
+    </g>
+    <g id="scenarios-xtick_3">
+     <g id="scenarios-line2d_5">
+      <path d="M 168.445303 223.18 
+L 168.445303 35.14 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_6">
+      <g>
+       <use href="#scenarios-m5730a2e535" x="168.445303" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="168.445303" y="237.018594" transform="rotate(-0 168.445303 237.018594)">10</text>
+     </g>
+    </g>
+    <g id="scenarios-xtick_4">
+     <g id="scenarios-line2d_7">
+      <path d="M 218.665 223.18 
+L 218.665 35.14 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_8">
+      <g>
+       <use href="#scenarios-m5730a2e535" x="218.665" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="218.665" y="237.018594" transform="rotate(-0 218.665 237.018594)">15</text>
+     </g>
+    </g>
+    <g id="scenarios-xtick_5">
+     <g id="scenarios-line2d_9">
+      <path d="M 268.884697 223.18 
+L 268.884697 35.14 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_10">
+      <g>
+       <use href="#scenarios-m5730a2e535" x="268.884697" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="268.884697" y="237.018594" transform="rotate(-0 268.884697 237.018594)">20</text>
+     </g>
+    </g>
+    <g id="scenarios-xtick_6">
+     <g id="scenarios-line2d_11">
+      <path d="M 319.104394 223.18 
+L 319.104394 35.14 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_12">
+      <g>
+       <use href="#scenarios-m5730a2e535" x="319.104394" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="319.104394" y="237.018594" transform="rotate(-0 319.104394 237.018594)">25</text>
+     </g>
+    </g>
+    <g id="scenarios-xtick_7">
+     <g id="scenarios-line2d_13">
+      <path d="M 369.324091 223.18 
+L 369.324091 35.14 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_14">
+      <g>
+       <use href="#scenarios-m5730a2e535" x="369.324091" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="369.324091" y="237.018594" transform="rotate(-0 369.324091 237.018594)">30</text>
+     </g>
+    </g>
+    <g id="scenarios-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="218.665" y="249.728906" transform="rotate(-0 218.665 249.728906)">Maturity (years)</text>
+    </g>
+   </g>
+   <g id="scenarios-matplotlib.axis_2">
+    <g id="scenarios-ytick_1">
+     <g id="scenarios-line2d_15">
+      <path d="M 52.94 203.236364 
+L 384.39 203.236364 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_16">
+      <defs>
+       <path id="scenarios-m5244e5cd8c" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#scenarios-m5244e5cd8c" x="52.94" y="203.236364" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="206.655661" transform="rotate(-0 45.94 206.655661)">−40</text>
+     </g>
+    </g>
+    <g id="scenarios-ytick_2">
+     <g id="scenarios-line2d_17">
+      <path d="M 52.94 180.443636 
+L 384.39 180.443636 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_18">
+      <g>
+       <use href="#scenarios-m5244e5cd8c" x="52.94" y="180.443636" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="183.862933" transform="rotate(-0 45.94 183.862933)">−20</text>
+     </g>
+    </g>
+    <g id="scenarios-ytick_3">
+     <g id="scenarios-line2d_19">
+      <path d="M 52.94 157.650909 
+L 384.39 157.650909 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_20">
+      <g>
+       <use href="#scenarios-m5244e5cd8c" x="52.94" y="157.650909" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="161.070206" transform="rotate(-0 45.94 161.070206)">0</text>
+     </g>
+    </g>
+    <g id="scenarios-ytick_4">
+     <g id="scenarios-line2d_21">
+      <path d="M 52.94 134.858182 
+L 384.39 134.858182 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_22">
+      <g>
+       <use href="#scenarios-m5244e5cd8c" x="52.94" y="134.858182" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="138.277479" transform="rotate(-0 45.94 138.277479)">20</text>
+     </g>
+    </g>
+    <g id="scenarios-ytick_5">
+     <g id="scenarios-line2d_23">
+      <path d="M 52.94 112.065455 
+L 384.39 112.065455 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_24">
+      <g>
+       <use href="#scenarios-m5244e5cd8c" x="52.94" y="112.065455" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="115.484751" transform="rotate(-0 45.94 115.484751)">40</text>
+     </g>
+    </g>
+    <g id="scenarios-ytick_6">
+     <g id="scenarios-line2d_25">
+      <path d="M 52.94 89.272727 
+L 384.39 89.272727 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_26">
+      <g>
+       <use href="#scenarios-m5244e5cd8c" x="52.94" y="89.272727" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="92.692024" transform="rotate(-0 45.94 92.692024)">60</text>
+     </g>
+    </g>
+    <g id="scenarios-ytick_7">
+     <g id="scenarios-line2d_27">
+      <path d="M 52.94 66.48 
+L 384.39 66.48 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_28">
+      <g>
+       <use href="#scenarios-m5244e5cd8c" x="52.94" y="66.48" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="69.899297" transform="rotate(-0 45.94 69.899297)">80</text>
+     </g>
+    </g>
+    <g id="scenarios-ytick_8">
+     <g id="scenarios-line2d_29">
+      <path d="M 52.94 43.687273 
+L 384.39 43.687273 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_30">
+      <g>
+       <use href="#scenarios-m5244e5cd8c" x="52.94" y="43.687273" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="45.94" y="47.10657" transform="rotate(-0 45.94 47.10657)">100</text>
+     </g>
+    </g>
+    <g id="scenarios-text_17">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.074063" y="129.16" transform="rotate(-90 21.074063 129.16)">Zero-rate shock (basis points)</text>
+    </g>
+   </g>
+   <g id="scenarios-line2d_31">
+    <path d="M 68.005909 43.687273 
+L 369.324091 43.687273 
+L 369.324091 43.687273 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="scenarios-line2d_32">
+    <path d="M 68.005909 214.632727 
+L 369.324091 100.669091 
+L 369.324091 100.669091 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="scenarios-line2d_33">
+    <path d="M 68.005909 154.985834 
+L 71.521288 154.058489 
+L 75.036667 152.882049 
+L 78.049848 151.64507 
+L 81.06303 150.171848 
+L 84.076212 148.44144 
+L 87.089394 146.437534 
+L 90.102576 144.150335 
+L 93.115758 141.578449 
+L 96.128939 138.730669 
+L 99.644318 135.08758 
+L 103.661894 130.570082 
+L 109.186061 123.96407 
+L 116.719015 114.96683 
+L 120.234394 111.114628 
+L 123.247576 108.144248 
+L 125.758561 105.970644 
+L 128.269545 104.121445 
+L 130.278333 102.90338 
+L 132.287121 101.936866 
+L 134.295909 101.236069 
+L 136.304697 100.811368 
+L 138.313485 100.669091 
+L 140.322273 100.811368 
+L 142.331061 101.236069 
+L 144.339848 101.936866 
+L 146.348636 102.90338 
+L 148.357424 104.121445 
+L 150.366212 105.573448 
+L 152.877197 107.685748 
+L 155.388182 110.085431 
+L 158.401364 113.273424 
+L 162.418939 117.896044 
+L 176.982652 135.08758 
+L 180.49803 138.730669 
+L 184.013409 142.026631 
+L 187.026591 144.551384 
+L 190.039773 146.791021 
+L 193.052955 148.748464 
+L 196.066136 150.434727 
+L 199.079318 151.867022 
+L 202.0925 153.066891 
+L 205.607879 154.205277 
+L 209.123258 155.100316 
+L 213.140833 155.875864 
+L 217.660606 156.498209 
+L 222.682576 156.958285 
+L 229.211136 157.310012 
+L 237.748485 157.52634 
+L 252.312197 157.632752 
+L 304.038485 157.650907 
+L 369.324091 157.650909 
+L 369.324091 157.650909 
+" clip-path="url(#scenarios-p1ad873a9a0)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="scenarios-patch_3">
+    <path d="M 52.94 223.18 
+L 52.94 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="scenarios-patch_4">
+    <path d="M 52.94 223.18 
+L 384.39 223.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="scenarios-text_18">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="52.94" y="22.14" transform="rotate(-0 52.94 22.14)">Explicit scenario functions</text>
+   </g>
+   <g id="scenarios-legend_1">
+    <g id="scenarios-line2d_34">
+     <path d="M 273.02875 188.03125 
+L 281.02875 188.03125 
+L 289.02875 188.03125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="scenarios-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="295.42875" y="190.83125" transform="rotate(-0 295.42875 190.83125)">Level +100 bp</text>
+    </g>
+    <g id="scenarios-line2d_35">
+     <path d="M 273.02875 199.77375 
+L 281.02875 199.77375 
+L 289.02875 199.77375 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="scenarios-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="295.42875" y="202.57375" transform="rotate(-0 295.42875 202.57375)">Twist −50 to +50 bp</text>
+    </g>
+    <g id="scenarios-line2d_36">
+     <path d="M 273.02875 211.51625 
+L 281.02875 211.51625 
+L 289.02875 211.51625 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="scenarios-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="295.42875" y="214.31625" transform="rotate(-0 295.42875 214.31625)">Belly +50 bp</text>
+    </g>
+   </g>
+  </g>
+  <g id="scenarios-axes_2">
+   <g id="scenarios-patch_5">
+    <path d="M 447.05 223.18 
+L 778.5 223.18 
+L 778.5 35.14 
+L 447.05 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="scenarios-matplotlib.axis_3">
+    <g id="scenarios-xtick_8">
+     <g id="scenarios-line2d_37">
+      <path d="M 462.115909 223.18 
+L 462.115909 35.14 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_38">
+      <g>
+       <use href="#scenarios-m5730a2e535" x="462.115909" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="462.115909" y="237.018594" transform="rotate(-0 462.115909 237.018594)">0</text>
+     </g>
+    </g>
+    <g id="scenarios-xtick_9">
+     <g id="scenarios-line2d_39">
+      <path d="M 512.335606 223.18 
+L 512.335606 35.14 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_40">
+      <g>
+       <use href="#scenarios-m5730a2e535" x="512.335606" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="512.335606" y="237.018594" transform="rotate(-0 512.335606 237.018594)">5</text>
+     </g>
+    </g>
+    <g id="scenarios-xtick_10">
+     <g id="scenarios-line2d_41">
+      <path d="M 562.555303 223.18 
+L 562.555303 35.14 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_42">
+      <g>
+       <use href="#scenarios-m5730a2e535" x="562.555303" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="562.555303" y="237.018594" transform="rotate(-0 562.555303 237.018594)">10</text>
+     </g>
+    </g>
+    <g id="scenarios-xtick_11">
+     <g id="scenarios-line2d_43">
+      <path d="M 612.775 223.18 
+L 612.775 35.14 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_44">
+      <g>
+       <use href="#scenarios-m5730a2e535" x="612.775" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="612.775" y="237.018594" transform="rotate(-0 612.775 237.018594)">15</text>
+     </g>
+    </g>
+    <g id="scenarios-xtick_12">
+     <g id="scenarios-line2d_45">
+      <path d="M 662.994697 223.18 
+L 662.994697 35.14 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_46">
+      <g>
+       <use href="#scenarios-m5730a2e535" x="662.994697" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="662.994697" y="237.018594" transform="rotate(-0 662.994697 237.018594)">20</text>
+     </g>
+    </g>
+    <g id="scenarios-xtick_13">
+     <g id="scenarios-line2d_47">
+      <path d="M 713.214394 223.18 
+L 713.214394 35.14 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_48">
+      <g>
+       <use href="#scenarios-m5730a2e535" x="713.214394" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="713.214394" y="237.018594" transform="rotate(-0 713.214394 237.018594)">25</text>
+     </g>
+    </g>
+    <g id="scenarios-xtick_14">
+     <g id="scenarios-line2d_49">
+      <path d="M 763.434091 223.18 
+L 763.434091 35.14 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_50">
+      <g>
+       <use href="#scenarios-m5730a2e535" x="763.434091" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="763.434091" y="237.018594" transform="rotate(-0 763.434091 237.018594)">30</text>
+     </g>
+    </g>
+    <g id="scenarios-text_29">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="612.775" y="249.728906" transform="rotate(-0 612.775 249.728906)">Maturity (years)</text>
+    </g>
+   </g>
+   <g id="scenarios-matplotlib.axis_4">
+    <g id="scenarios-ytick_9">
+     <g id="scenarios-line2d_51">
+      <path d="M 447.05 214.632727 
+L 778.5 214.632727 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_52">
+      <g>
+       <use href="#scenarios-m5244e5cd8c" x="447.05" y="214.632727" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="440.05" y="218.052024" transform="rotate(-0 440.05 218.052024)">1.00%</text>
+     </g>
+    </g>
+    <g id="scenarios-ytick_10">
+     <g id="scenarios-line2d_53">
+      <path d="M 447.05 188.086186 
+L 778.5 188.086186 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_54">
+      <g>
+       <use href="#scenarios-m5244e5cd8c" x="447.05" y="188.086186" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="440.05" y="191.505483" transform="rotate(-0 440.05 191.505483)">1.50%</text>
+     </g>
+    </g>
+    <g id="scenarios-ytick_11">
+     <g id="scenarios-line2d_55">
+      <path d="M 447.05 161.539644 
+L 778.5 161.539644 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_56">
+      <g>
+       <use href="#scenarios-m5244e5cd8c" x="447.05" y="161.539644" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="440.05" y="164.958941" transform="rotate(-0 440.05 164.958941)">2.00%</text>
+     </g>
+    </g>
+    <g id="scenarios-ytick_12">
+     <g id="scenarios-line2d_57">
+      <path d="M 447.05 134.993103 
+L 778.5 134.993103 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_58">
+      <g>
+       <use href="#scenarios-m5244e5cd8c" x="447.05" y="134.993103" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="440.05" y="138.4124" transform="rotate(-0 440.05 138.4124)">2.50%</text>
+     </g>
+    </g>
+    <g id="scenarios-ytick_13">
+     <g id="scenarios-line2d_59">
+      <path d="M 447.05 108.446562 
+L 778.5 108.446562 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_60">
+      <g>
+       <use href="#scenarios-m5244e5cd8c" x="447.05" y="108.446562" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="440.05" y="111.865858" transform="rotate(-0 440.05 111.865858)">3.00%</text>
+     </g>
+    </g>
+    <g id="scenarios-ytick_14">
+     <g id="scenarios-line2d_61">
+      <path d="M 447.05 81.90002 
+L 778.5 81.90002 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_62">
+      <g>
+       <use href="#scenarios-m5244e5cd8c" x="447.05" y="81.90002" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_35">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="440.05" y="85.319317" transform="rotate(-0 440.05 85.319317)">3.50%</text>
+     </g>
+    </g>
+    <g id="scenarios-ytick_15">
+     <g id="scenarios-line2d_63">
+      <path d="M 447.05 55.353479 
+L 778.5 55.353479 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="scenarios-line2d_64">
+      <g>
+       <use href="#scenarios-m5244e5cd8c" x="447.05" y="55.353479" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="scenarios-text_36">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="440.05" y="58.772776" transform="rotate(-0 440.05 58.772776)">4.00%</text>
+     </g>
+    </g>
+    <g id="scenarios-text_37">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="405.587812" y="129.16" transform="rotate(-90 405.587812 129.16)">Continuous zero</text>
+    </g>
+   </g>
+   <g id="scenarios-line2d_65">
+    <path d="M 462.115909 134.993103 
+L 464.124697 122.189113 
+L 466.133485 111.043178 
+L 468.142273 101.352789 
+L 470.151061 92.939634 
+L 472.159848 85.646726 
+L 474.168636 79.335876 
+L 476.177424 73.885463 
+L 478.186212 69.188466 
+L 480.195 65.150733 
+L 482.203788 61.689446 
+L 484.212576 58.731782 
+L 486.221364 56.213714 
+L 488.230152 54.078971 
+L 490.238939 52.278112 
+L 492.247727 50.767711 
+L 494.256515 49.509637 
+L 496.265303 48.470425 
+L 498.776288 47.434809 
+L 501.287273 46.646039 
+L 504.300455 45.9667 
+L 507.313636 45.522174 
+L 510.829015 45.234796 
+L 514.846591 45.135142 
+L 519.868561 45.249143 
+L 526.397121 45.638058 
+L 538.449848 46.634975 
+L 553.515758 47.823711 
+L 565.066288 48.503491 
+L 576.616818 48.952778 
+L 588.669545 49.196455 
+L 602.228864 49.240778 
+L 617.79697 49.058862 
+L 636.378258 48.610375 
+L 660.985909 47.777533 
+L 702.668258 46.10545 
+L 763.434091 43.687273 
+L 763.434091 43.687273 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="scenarios-line2d_66">
+    <path d="M 462.115909 214.632727 
+L 464.124697 201.474784 
+L 466.133485 189.974894 
+L 468.142273 179.930552 
+L 470.151061 171.163443 
+L 472.159848 163.516581 
+L 474.168636 156.851777 
+L 476.177424 151.04741 
+L 478.186212 145.99646 
+L 480.195 141.604772 
+L 482.203788 137.789532 
+L 484.212576 134.477913 
+L 486.221364 131.605891 
+L 488.230152 129.117195 
+L 490.238939 126.962382 
+L 492.247727 125.098027 
+L 494.256515 123.485999 
+L 496.7675 121.775215 
+L 499.278485 120.350229 
+L 501.78947 119.163127 
+L 504.802652 117.995872 
+L 507.815833 117.05447 
+L 511.331212 116.178244 
+L 515.348788 115.396091 
+L 520.370758 114.646218 
+L 527.401515 113.848816 
+L 541.965227 112.503839 
+L 555.524545 111.139168 
+L 567.075076 109.743492 
+L 578.625606 108.11879 
+L 591.18053 106.119608 
+L 605.242045 103.643249 
+L 621.312348 100.579292 
+L 640.89803 96.611342 
+L 667.51447 90.976705 
+L 725.267121 78.450006 
+L 763.434091 70.233814 
+L 763.434091 70.233814 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="scenarios-line2d_67">
+    <path d="M 462.115909 186.844588 
+L 464.124697 173.80684 
+L 466.133485 162.39188 
+L 468.142273 152.393699 
+L 470.151061 143.630482 
+L 472.159848 135.941824 
+L 474.168636 129.186281 
+L 476.177424 123.239242 
+L 478.186212 117.991066 
+L 480.195 113.34546 
+L 482.203788 109.218072 
+L 484.212576 105.535252 
+L 486.723561 101.460217 
+L 489.234545 97.874273 
+L 491.74553 94.690016 
+L 494.256515 91.83665 
+L 497.269697 88.771366 
+L 500.282879 86.03006 
+L 503.296061 83.56346 
+L 506.811439 80.994215 
+L 510.326818 78.738969 
+L 513.34 77.057049 
+L 516.353182 75.617693 
+L 519.366364 74.436206 
+L 522.379545 73.529589 
+L 524.89053 72.995564 
+L 527.401515 72.6708 
+L 529.9125 72.559993 
+L 532.423485 72.664566 
+L 534.93447 72.982214 
+L 537.445455 73.506647 
+L 540.458636 74.39414 
+L 543.471818 75.539292 
+L 546.485 76.909968 
+L 550.000379 78.743403 
+L 554.520152 81.367917 
+L 571.594848 91.617908 
+L 575.612424 93.657141 
+L 579.63 95.452702 
+L 583.647576 96.989741 
+L 587.665152 98.269247 
+L 591.682727 99.304619 
+L 595.700303 100.117941 
+L 600.220076 100.801453 
+L 605.242045 101.322159 
+L 610.766212 101.668051 
+L 617.294773 101.854853 
+L 625.832121 101.864208 
+L 637.884848 101.631867 
+L 656.968333 101.017366 
+L 692.624318 99.612714 
+L 763.434091 96.780356 
+L 763.434091 96.780356 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="scenarios-line2d_68">
+    <path d="M 462.115909 188.086186 
+L 464.124697 175.282196 
+L 466.133485 164.136261 
+L 468.142273 154.445872 
+L 470.151061 146.032717 
+L 472.159848 138.739809 
+L 474.168636 132.428959 
+L 476.177424 126.978546 
+L 478.186212 122.281549 
+L 480.195 118.243816 
+L 482.203788 114.782529 
+L 484.212576 111.824864 
+L 486.221364 109.306796 
+L 488.230152 107.172054 
+L 490.238939 105.371195 
+L 492.247727 103.860794 
+L 494.256515 102.60272 
+L 496.265303 101.563508 
+L 498.776288 100.527892 
+L 501.287273 99.739122 
+L 504.300455 99.059783 
+L 507.313636 98.615257 
+L 510.829015 98.327879 
+L 514.846591 98.228225 
+L 519.868561 98.342226 
+L 526.397121 98.731141 
+L 538.449848 99.728058 
+L 553.515758 100.916794 
+L 565.066288 101.596574 
+L 576.616818 102.045861 
+L 588.669545 102.289538 
+L 602.228864 102.33386 
+L 617.79697 102.151945 
+L 636.378258 101.703458 
+L 660.985909 100.870616 
+L 702.668258 99.198533 
+L 763.434091 96.780356 
+L 763.434091 96.780356 
+" clip-path="url(#scenarios-p3753c218d5)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="scenarios-patch_6">
+    <path d="M 447.05 223.18 
+L 447.05 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="scenarios-patch_7">
+    <path d="M 447.05 223.18 
+L 778.5 223.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="scenarios-text_38">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="447.05" y="22.14" transform="rotate(-0 447.05 22.14)">Applying shape shocks to the reference curve</text>
+   </g>
+   <g id="scenarios-legend_2">
+    <g id="scenarios-line2d_69">
+     <path d="M 667.13875 176.28875 
+L 675.13875 176.28875 
+L 683.13875 176.28875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="scenarios-text_39">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="689.53875" y="179.08875" transform="rotate(-0 689.53875 179.08875)">Level +100 bp</text>
+    </g>
+    <g id="scenarios-line2d_70">
+     <path d="M 667.13875 188.03125 
+L 675.13875 188.03125 
+L 683.13875 188.03125 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="scenarios-text_40">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="689.53875" y="190.83125" transform="rotate(-0 689.53875 190.83125)">Twist −50 to +50 bp</text>
+    </g>
+    <g id="scenarios-line2d_71">
+     <path d="M 667.13875 199.77375 
+L 675.13875 199.77375 
+L 683.13875 199.77375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="scenarios-text_41">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="689.53875" y="202.57375" transform="rotate(-0 689.53875 202.57375)">Belly +50 bp</text>
+    </g>
+    <g id="scenarios-line2d_72">
+     <path d="M 667.13875 211.51625 
+L 675.13875 211.51625 
+L 683.13875 211.51625 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="scenarios-text_42">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="689.53875" y="214.31625" transform="rotate(-0 689.53875 214.31625)">Base zero</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="scenarios-p1ad873a9a0">
+   <rect x="52.94" y="35.14" width="331.45" height="188.04"/>
+  </clipPath>
+  <clipPath id="scenarios-p3753c218d5">
+   <rect x="447.05" y="35.14" width="331.45" height="188.04"/>
+  </clipPath>
+ </defs>
+</svg>

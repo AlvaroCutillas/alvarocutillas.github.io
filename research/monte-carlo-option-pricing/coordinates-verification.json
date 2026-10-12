@@ -1,0 +1,11 @@
+{
+  "figures": 16,
+  "panels": 20,
+  "inspectedSeries": 55,
+  "coordinates": "passed",
+  "histogram": "passed",
+  "liveRecalculation": "passed",
+  "keyboard": "passed",
+  "mobileTouch": "passed",
+  "errors": []
+}

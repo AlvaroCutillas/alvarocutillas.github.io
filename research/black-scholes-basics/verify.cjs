@@ -1,0 +1,38 @@
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const fs=require('fs');const path=require('path');
+const root=__dirname; const html=path.resolve(root,'../../projects/black-scholes-basics.html');
+const check=(ok,message)=>{if(!ok)throw new Error(message);};
+(async()=>{
+ const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'});
+ const page=await browser.newPage({viewport:{width:1440,height:1000},deviceScaleFactor:1}); const errors=[]; const requests=[];
+ page.on('pageerror',error=>errors.push(String(error)));page.on('request',r=>requests.push(r.url()));
+ await page.goto('file:///'+html.replace(/\\/g,'/'));await page.waitForSelector('#live-plot svg');
+ const stats=await page.evaluate(()=>({sections:document.querySelectorAll('.article > section').length,eq:document.querySelectorAll('.eq').length,math:document.querySelectorAll('math').length,figures:document.querySelectorAll('figure').length,width:document.documentElement.scrollWidth,viewport:innerWidth,brokenFragments:[...document.querySelectorAll('a[href^="#"]')].filter(a=>!document.getElementById(a.hash.slice(1))).map(a=>a.hash),ids:[...document.querySelectorAll('[id]')].map(e=>e.id)}));
+ check(stats.sections===26,'section count');check(stats.eq===84,'equation count');check(stats.figures===13,'figure count');check(stats.width<=stats.viewport,'desktop overflow');check(stats.brokenFragments.length===0,'broken fragment');check(new Set(stats.ids).size===stats.ids.length,'duplicate IDs');
+ await page.screenshot({path:path.join(root,'desktop-hero.png')});
+ await page.locator('#formula').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(root,'desktop-formulas.png')});
+ await page.locator('#greeks').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(root,'desktop-greeks.png')});
+ await page.locator('#american').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(root,'desktop-american.png')});
+ const outputs=async()=>page.evaluate(()=>Object.fromEntries(['call','put','acall','aput','delta','gamma','vega','theta','rho','prob'].map(k=>[k,document.getElementById('result-'+k).textContent])));
+ const asNumber=x=>Number(x.replaceAll(',','').replace('−','-'));
+ let v=await outputs();check(Math.abs(asNumber(v.call)-10.450583572)<1e-6,'benchmark call');check(Math.abs(asNumber(v.put)-5.573526022)<1e-6,'benchmark put');check(Math.abs(asNumber(v.aput)-6.088405897)<1e-6,'American benchmark');
+ await page.locator('#input-yield').fill('2');await page.locator('#calculate').click();v=await outputs();check(Math.abs(asNumber(v.call)-9.227005508)<1e-6,'q=2 call');check(Math.abs(asNumber(v.put)-6.330080628)<1e-6,'q=2 put');
+ await page.locator('#input-kind').selectOption('put');await page.locator('#calculate').click();v=await outputs();check(Math.abs(asNumber(v.delta)+.393347527)<1e-6,'q=2 put delta');check(asNumber(v.prob.slice(0,-1))>0,'probability');
+ await page.locator('#input-tau').fill('0');await page.locator('#calculate').click();v=await outputs();check(v.call==='0.000000'&&v.put==='0.000000','expiry');check(v.delta==='—','expiry Greeks');
+ await page.locator('#reset-inputs').click();await page.locator('#input-vol').fill('0');await page.locator('#calculate').click();v=await outputs();check(Math.abs(asNumber(v.call)-4.87705755)<1e-6,'sigma=0 call');check(v.delta==='—','sigma=0 Greeks');
+ await page.locator('#reset-inputs').click();await page.locator('#input-vol').fill('0.1');await page.locator('#input-yield').fill('30');await page.locator('#calculate').click();v=await outputs();check(v.acall==='Unavailable','invalid p handled');check((await page.locator('#calc-error').textContent()).includes('outside'),'invalid p explained');
+ await page.locator('#reset-inputs').click();await page.locator('#input-rate').fill('-5');await page.locator('#calculate').click();v=await outputs();check(asNumber(v.acall)>asNumber(v.call),'negative rate call exercise');
+ await page.locator('#reset-inputs').click();await page.locator('#explorer').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(root,'desktop-notebook.png')});
+ const mobile=await browser.newPage({viewport:{width:390,height:844},deviceScaleFactor:1}); await mobile.goto('file:///'+html.replace(/\\/g,'/')); await mobile.waitForSelector('#live-plot svg');
+ await mobile.screenshot({path:path.join(root,'mobile-hero.png')});
+ const over=await mobile.evaluate(()=>({width:document.documentElement.scrollWidth,viewport:innerWidth,wide:[...document.querySelectorAll('body *')].filter(e=>{const rect=e.getBoundingClientRect();return rect.right>innerWidth+1&&!e.closest('.eq-scroll,.plot,.table-wrap,.notebook-plot')&&!e.closest('svg')}).slice(0,10).map(e=>e.tagName+'.'+e.className)}));check(over.width<=over.viewport,'mobile document overflow');
+ await mobile.locator('#formula').scrollIntoViewIfNeeded();await mobile.screenshot({path:path.join(root,'mobile-formulas.png')});
+ await mobile.locator('#pricing-notebook').scrollIntoViewIfNeeded();await mobile.screenshot({path:path.join(root,'mobile-notebook.png')});
+ const responsive=[];
+ for(const w of [320,360,768,1024,1920]) {await mobile.setViewportSize({width:w,height:900});const contentWidth=await mobile.evaluate(()=>document.documentElement.scrollWidth);check(contentWidth<=w,`overflow at ${w}px`);responsive.push({viewport:w,contentWidth});}
+ const nojs=await browser.newPage({javaScriptEnabled:false,viewport:{width:1440,height:900}});await nojs.goto('file:///'+html.replace(/\\/g,'/'));check(await nojs.locator('figure svg').count()===13,'static figures without JS');check(await nojs.locator('math').count()>150,'math without JS');
+ check(errors.length===0,'browser errors: '+errors.join(';'));check(requests.filter(x=>!x.startsWith('file:')).length===0,'external runtime dependencies');
+ const compactStats={...stats,uniqueIds:stats.ids.length};delete compactStats.ids;
+ fs.writeFileSync(path.join(root,'verification.json'),JSON.stringify({stats:compactStats,mobile:over,responsive,browserErrors:errors,externalRuntimeRequests:requests.filter(x=>!x.startsWith('file:')),checks:'Benchmark, dividend pricing, put Greeks, expiry, zero volatility, invalid CRR probability, negative rates, reset, offline rendering and mobile containment passed.'},null,2));
+ console.log(fs.readFileSync(path.join(root,'verification.json'),'utf8'));await browser.close();
+})().catch(e=>{console.error(e);process.exit(1);});

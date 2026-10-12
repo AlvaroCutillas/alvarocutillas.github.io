@@ -1,0 +1,705 @@
+<svg role="img" aria-labelledby="uncertainty-title uncertainty-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="302.4pt" viewBox="0 0 720 302.4" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="uncertainty-title">Figure 17 · Sampling uncertainty in the tail</title><desc id="uncertainty-desc">An IID nonparametric bootstrap of one 1,000-observation synthetic normal sample: 1,200 resamples, seed 4108. The bootstrap is conditional on the observed empirical distribution and cannot generate an unseen crisis.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T18:09:13.747400</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="uncertainty-figure_1">
+  <g id="uncertainty-patch_1">
+   <path d="M 0 302.4 
+L 720 302.4 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="uncertainty-axes_1">
+   <g id="uncertainty-patch_2">
+    <path d="M 39.62 259.18 
+L 347.638595 259.18 
+L 347.638595 35.14 
+L 39.62 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="uncertainty-matplotlib.axis_1">
+    <g id="uncertainty-xtick_1">
+     <g id="uncertainty-line2d_1">
+      <path d="M 63.823435 259.18 
+L 63.823435 35.14 
+" clip-path="url(#uncertainty-p9ff6df7824)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_2">
+      <defs>
+       <path id="uncertainty-m7d52f94e3d" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#uncertainty-m7d52f94e3d" x="63.823435" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="63.823435" y="273.018594" transform="rotate(-0 63.823435 273.018594)">2.0</text>
+     </g>
+    </g>
+    <g id="uncertainty-xtick_2">
+     <g id="uncertainty-line2d_3">
+      <path d="M 104.549319 259.18 
+L 104.549319 35.14 
+" clip-path="url(#uncertainty-p9ff6df7824)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_4">
+      <g>
+       <use href="#uncertainty-m7d52f94e3d" x="104.549319" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="104.549319" y="273.018594" transform="rotate(-0 104.549319 273.018594)">2.2</text>
+     </g>
+    </g>
+    <g id="uncertainty-xtick_3">
+     <g id="uncertainty-line2d_5">
+      <path d="M 145.275204 259.18 
+L 145.275204 35.14 
+" clip-path="url(#uncertainty-p9ff6df7824)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_6">
+      <g>
+       <use href="#uncertainty-m7d52f94e3d" x="145.275204" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="145.275204" y="273.018594" transform="rotate(-0 145.275204 273.018594)">2.4</text>
+     </g>
+    </g>
+    <g id="uncertainty-xtick_4">
+     <g id="uncertainty-line2d_7">
+      <path d="M 186.001088 259.18 
+L 186.001088 35.14 
+" clip-path="url(#uncertainty-p9ff6df7824)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_8">
+      <g>
+       <use href="#uncertainty-m7d52f94e3d" x="186.001088" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="186.001088" y="273.018594" transform="rotate(-0 186.001088 273.018594)">2.6</text>
+     </g>
+    </g>
+    <g id="uncertainty-xtick_5">
+     <g id="uncertainty-line2d_9">
+      <path d="M 226.726972 259.18 
+L 226.726972 35.14 
+" clip-path="url(#uncertainty-p9ff6df7824)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_10">
+      <g>
+       <use href="#uncertainty-m7d52f94e3d" x="226.726972" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="226.726972" y="273.018594" transform="rotate(-0 226.726972 273.018594)">2.8</text>
+     </g>
+    </g>
+    <g id="uncertainty-xtick_6">
+     <g id="uncertainty-line2d_11">
+      <path d="M 267.452856 259.18 
+L 267.452856 35.14 
+" clip-path="url(#uncertainty-p9ff6df7824)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_12">
+      <g>
+       <use href="#uncertainty-m7d52f94e3d" x="267.452856" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="267.452856" y="273.018594" transform="rotate(-0 267.452856 273.018594)">3.0</text>
+     </g>
+    </g>
+    <g id="uncertainty-xtick_7">
+     <g id="uncertainty-line2d_13">
+      <path d="M 308.178741 259.18 
+L 308.178741 35.14 
+" clip-path="url(#uncertainty-p9ff6df7824)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_14">
+      <g>
+       <use href="#uncertainty-m7d52f94e3d" x="308.178741" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="308.178741" y="273.018594" transform="rotate(-0 308.178741 273.018594)">3.2</text>
+     </g>
+    </g>
+    <g id="uncertainty-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="193.629298" y="285.728906" transform="rotate(-0 193.629298 285.728906)">Estimated loss threshold</text>
+    </g>
+   </g>
+   <g id="uncertainty-matplotlib.axis_2">
+    <g id="uncertainty-ytick_1">
+     <g id="uncertainty-line2d_15">
+      <path d="M 39.62 248.996364 
+L 347.638595 248.996364 
+" clip-path="url(#uncertainty-p9ff6df7824)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_16">
+      <defs>
+       <path id="uncertainty-m1844f298a6" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#uncertainty-m1844f298a6" x="39.62" y="248.996364" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="32.62" y="252.415661" transform="rotate(-0 32.62 252.415661)">0</text>
+     </g>
+    </g>
+    <g id="uncertainty-ytick_2">
+     <g id="uncertainty-line2d_17">
+      <path d="M 39.62 214.433247 
+L 347.638595 214.433247 
+" clip-path="url(#uncertainty-p9ff6df7824)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_18">
+      <g>
+       <use href="#uncertainty-m1844f298a6" x="39.62" y="214.433247" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="32.62" y="217.852544" transform="rotate(-0 32.62 217.852544)">1</text>
+     </g>
+    </g>
+    <g id="uncertainty-ytick_3">
+     <g id="uncertainty-line2d_19">
+      <path d="M 39.62 179.87013 
+L 347.638595 179.87013 
+" clip-path="url(#uncertainty-p9ff6df7824)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_20">
+      <g>
+       <use href="#uncertainty-m1844f298a6" x="39.62" y="179.87013" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="32.62" y="183.289427" transform="rotate(-0 32.62 183.289427)">2</text>
+     </g>
+    </g>
+    <g id="uncertainty-ytick_4">
+     <g id="uncertainty-line2d_21">
+      <path d="M 39.62 145.307013 
+L 347.638595 145.307013 
+" clip-path="url(#uncertainty-p9ff6df7824)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_22">
+      <g>
+       <use href="#uncertainty-m1844f298a6" x="39.62" y="145.307013" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="32.62" y="148.72631" transform="rotate(-0 32.62 148.72631)">3</text>
+     </g>
+    </g>
+    <g id="uncertainty-ytick_5">
+     <g id="uncertainty-line2d_23">
+      <path d="M 39.62 110.743897 
+L 347.638595 110.743897 
+" clip-path="url(#uncertainty-p9ff6df7824)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_24">
+      <g>
+       <use href="#uncertainty-m1844f298a6" x="39.62" y="110.743897" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="32.62" y="114.163194" transform="rotate(-0 32.62 114.163194)">4</text>
+     </g>
+    </g>
+    <g id="uncertainty-ytick_6">
+     <g id="uncertainty-line2d_25">
+      <path d="M 39.62 76.18078 
+L 347.638595 76.18078 
+" clip-path="url(#uncertainty-p9ff6df7824)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_26">
+      <g>
+       <use href="#uncertainty-m1844f298a6" x="39.62" y="76.18078" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="32.62" y="79.600077" transform="rotate(-0 32.62 79.600077)">5</text>
+     </g>
+    </g>
+    <g id="uncertainty-ytick_7">
+     <g id="uncertainty-line2d_27">
+      <path d="M 39.62 41.617663 
+L 347.638595 41.617663 
+" clip-path="url(#uncertainty-p9ff6df7824)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_28">
+      <g>
+       <use href="#uncertainty-m1844f298a6" x="39.62" y="41.617663" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="32.62" y="45.03696" transform="rotate(-0 32.62 45.03696)">6</text>
+     </g>
+    </g>
+    <g id="uncertainty-text_16">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.022031" y="147.16" transform="rotate(-90 21.022031 147.16)">Bootstrap density</text>
+    </g>
+   </g>
+   <g id="uncertainty-line2d_29">
+    <path d="M 53.620845 248.284221 
+L 57.738741 248.284221 
+L 57.738741 248.996364 
+L 65.974532 248.996364 
+L 65.974532 248.996364 
+L 74.210324 248.996364 
+L 74.210324 248.284221 
+L 82.446115 248.284221 
+L 82.446115 247.572079 
+L 90.681906 247.572079 
+L 90.681906 226.919949 
+L 98.917697 226.919949 
+L 98.917697 248.996364 
+L 107.153489 248.996364 
+L 107.153489 248.996364 
+L 115.38928 248.996364 
+L 115.38928 236.1778 
+L 123.625071 236.1778 
+L 123.625071 225.495664 
+L 131.860863 225.495664 
+L 131.860863 248.996364 
+L 140.096654 248.996364 
+L 140.096654 215.525671 
+L 148.332445 215.525671 
+L 148.332445 248.996364 
+L 156.568237 248.996364 
+L 156.568237 197.009968 
+L 164.804028 197.009968 
+L 164.804028 248.996364 
+L 173.039819 248.996364 
+L 173.039819 95.885747 
+L 181.275611 95.885747 
+L 181.275611 159.266421 
+L 189.511402 159.266421 
+L 189.511402 248.996364 
+L 197.747193 248.996364 
+L 197.747193 152.857139 
+L 205.982985 152.857139 
+L 205.982985 248.996364 
+L 214.218776 248.996364 
+L 214.218776 45.323636 
+L 222.454567 45.323636 
+L 222.454567 248.996364 
+L 230.690358 248.996364 
+L 230.690358 180.630693 
+L 238.92615 180.630693 
+L 238.92615 190.600687 
+L 247.161941 190.600687 
+L 247.161941 220.510668 
+L 255.397732 220.510668 
+L 255.397732 248.996364 
+L 263.633524 248.996364 
+L 263.633524 248.996364 
+L 271.869315 248.996364 
+L 271.869315 248.996364 
+L 280.105106 248.996364 
+L 280.105106 248.996364 
+L 288.340898 248.996364 
+L 288.340898 248.996364 
+L 296.576689 248.996364 
+L 296.576689 248.996364 
+L 304.81248 248.996364 
+L 304.81248 241.87494 
+L 313.048272 241.87494 
+L 313.048272 248.996364 
+L 321.284063 248.996364 
+L 321.284063 248.996364 
+L 329.519854 248.996364 
+L 329.519854 246.147794 
+L 333.63775 246.147794 
+" clip-path="url(#uncertainty-p9ff6df7824)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="uncertainty-line2d_30">
+    <path d="M 130.277464 259.18 
+L 130.277464 35.14 
+" clip-path="url(#uncertainty-p9ff6df7824)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #91a9bd; stroke-width: 2"/>
+   </g>
+   <g id="uncertainty-patch_3">
+    <path d="M 39.62 259.18 
+L 39.62 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="uncertainty-patch_4">
+    <path d="M 39.62 259.18 
+L 347.638595 259.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="uncertainty-text_17">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="39.62" y="22.14" transform="rotate(-0 39.62 22.14)">VaR uncertainty</text>
+   </g>
+   <g id="uncertainty-legend_1">
+    <g id="uncertainty-line2d_31">
+     <path d="M 258.156095 45.61875 
+L 262.156095 45.61875 
+L 262.156095 45.61875 
+L 270.156095 45.61875 
+L 270.156095 45.61875 
+L 274.156095 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="uncertainty-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="280.556095" y="48.41875" transform="rotate(-0 280.556095 48.41875)">Bootstrap VaR</text>
+    </g>
+    <g id="uncertainty-line2d_32">
+     <path d="M 258.156095 57.36125 
+L 266.156095 57.36125 
+L 274.156095 57.36125 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #91a9bd; stroke-width: 2"/>
+    </g>
+    <g id="uncertainty-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="280.556095" y="60.16125" transform="rotate(-0 280.556095 60.16125)">Population VaR</text>
+    </g>
+   </g>
+  </g>
+  <g id="uncertainty-axes_2">
+   <g id="uncertainty-patch_5">
+    <path d="M 395.898595 259.18 
+L 703.91719 259.18 
+L 703.91719 35.14 
+L 395.898595 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="uncertainty-matplotlib.axis_3">
+    <g id="uncertainty-xtick_8">
+     <g id="uncertainty-line2d_33">
+      <path d="M 430.698378 259.18 
+L 430.698378 35.14 
+" clip-path="url(#uncertainty-p2db4d4386c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_34">
+      <g>
+       <use href="#uncertainty-m7d52f94e3d" x="430.698378" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_20">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="430.698378" y="273.018594" transform="rotate(-0 430.698378 273.018594)">2.6</text>
+     </g>
+    </g>
+    <g id="uncertainty-xtick_9">
+     <g id="uncertainty-line2d_35">
+      <path d="M 475.300319 259.18 
+L 475.300319 35.14 
+" clip-path="url(#uncertainty-p2db4d4386c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_36">
+      <g>
+       <use href="#uncertainty-m7d52f94e3d" x="475.300319" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="475.300319" y="273.018594" transform="rotate(-0 475.300319 273.018594)">2.8</text>
+     </g>
+    </g>
+    <g id="uncertainty-xtick_10">
+     <g id="uncertainty-line2d_37">
+      <path d="M 519.902261 259.18 
+L 519.902261 35.14 
+" clip-path="url(#uncertainty-p2db4d4386c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_38">
+      <g>
+       <use href="#uncertainty-m7d52f94e3d" x="519.902261" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="519.902261" y="273.018594" transform="rotate(-0 519.902261 273.018594)">3.0</text>
+     </g>
+    </g>
+    <g id="uncertainty-xtick_11">
+     <g id="uncertainty-line2d_39">
+      <path d="M 564.504203 259.18 
+L 564.504203 35.14 
+" clip-path="url(#uncertainty-p2db4d4386c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_40">
+      <g>
+       <use href="#uncertainty-m7d52f94e3d" x="564.504203" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="564.504203" y="273.018594" transform="rotate(-0 564.504203 273.018594)">3.2</text>
+     </g>
+    </g>
+    <g id="uncertainty-xtick_12">
+     <g id="uncertainty-line2d_41">
+      <path d="M 609.106144 259.18 
+L 609.106144 35.14 
+" clip-path="url(#uncertainty-p2db4d4386c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_42">
+      <g>
+       <use href="#uncertainty-m7d52f94e3d" x="609.106144" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="609.106144" y="273.018594" transform="rotate(-0 609.106144 273.018594)">3.4</text>
+     </g>
+    </g>
+    <g id="uncertainty-xtick_13">
+     <g id="uncertainty-line2d_43">
+      <path d="M 653.708086 259.18 
+L 653.708086 35.14 
+" clip-path="url(#uncertainty-p2db4d4386c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_44">
+      <g>
+       <use href="#uncertainty-m7d52f94e3d" x="653.708086" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="653.708086" y="273.018594" transform="rotate(-0 653.708086 273.018594)">3.6</text>
+     </g>
+    </g>
+    <g id="uncertainty-xtick_14">
+     <g id="uncertainty-line2d_45">
+      <path d="M 698.310027 259.18 
+L 698.310027 35.14 
+" clip-path="url(#uncertainty-p2db4d4386c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_46">
+      <g>
+       <use href="#uncertainty-m7d52f94e3d" x="698.310027" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="698.310027" y="273.018594" transform="rotate(-0 698.310027 273.018594)">3.8</text>
+     </g>
+    </g>
+    <g id="uncertainty-text_27">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="549.907893" y="285.728906" transform="rotate(-0 549.907893 285.728906)">Estimated loss threshold</text>
+    </g>
+   </g>
+   <g id="uncertainty-matplotlib.axis_4">
+    <g id="uncertainty-ytick_8">
+     <g id="uncertainty-line2d_47">
+      <path d="M 395.898595 251.186393 
+L 703.91719 251.186393 
+" clip-path="url(#uncertainty-p2db4d4386c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_48">
+      <g>
+       <use href="#uncertainty-m1844f298a6" x="395.898595" y="251.186393" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="388.898595" y="254.60569" transform="rotate(-0 388.898595 254.60569)">0.0</text>
+     </g>
+    </g>
+    <g id="uncertainty-ytick_9">
+     <g id="uncertainty-line2d_49">
+      <path d="M 395.898595 202.659471 
+L 703.91719 202.659471 
+" clip-path="url(#uncertainty-p2db4d4386c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_50">
+      <g>
+       <use href="#uncertainty-m1844f298a6" x="395.898595" y="202.659471" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="388.898595" y="206.078768" transform="rotate(-0 388.898595 206.078768)">0.5</text>
+     </g>
+    </g>
+    <g id="uncertainty-ytick_10">
+     <g id="uncertainty-line2d_51">
+      <path d="M 395.898595 154.132549 
+L 703.91719 154.132549 
+" clip-path="url(#uncertainty-p2db4d4386c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_52">
+      <g>
+       <use href="#uncertainty-m1844f298a6" x="395.898595" y="154.132549" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="388.898595" y="157.551846" transform="rotate(-0 388.898595 157.551846)">1.0</text>
+     </g>
+    </g>
+    <g id="uncertainty-ytick_11">
+     <g id="uncertainty-line2d_53">
+      <path d="M 395.898595 105.605627 
+L 703.91719 105.605627 
+" clip-path="url(#uncertainty-p2db4d4386c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_54">
+      <g>
+       <use href="#uncertainty-m1844f298a6" x="395.898595" y="105.605627" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="388.898595" y="109.024924" transform="rotate(-0 388.898595 109.024924)">1.5</text>
+     </g>
+    </g>
+    <g id="uncertainty-ytick_12">
+     <g id="uncertainty-line2d_55">
+      <path d="M 395.898595 57.078705 
+L 703.91719 57.078705 
+" clip-path="url(#uncertainty-p2db4d4386c)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="uncertainty-line2d_56">
+      <g>
+       <use href="#uncertainty-m1844f298a6" x="395.898595" y="57.078705" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="uncertainty-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="388.898595" y="60.498002" transform="rotate(-0 388.898595 60.498002)">2.0</text>
+     </g>
+    </g>
+    <g id="uncertainty-text_33">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="368.714064" y="147.16" transform="rotate(-90 368.714064 147.16)">Bootstrap density</text>
+    </g>
+   </g>
+   <g id="uncertainty-line2d_57">
+    <path d="M 409.89944 248.996364 
+L 414.017336 248.996364 
+L 414.017336 248.996364 
+L 422.253127 248.996364 
+L 422.253127 248.996364 
+L 430.488919 248.996364 
+L 430.488919 244.616305 
+L 438.72471 244.616305 
+L 438.72471 242.426276 
+L 446.960501 242.426276 
+L 446.960501 233.666158 
+L 455.196293 233.666158 
+L 455.196293 233.666158 
+L 463.432084 233.666158 
+L 463.432084 222.716012 
+L 471.667875 222.716012 
+L 471.667875 205.195777 
+L 479.903667 205.195777 
+L 479.903667 220.525982 
+L 488.139458 220.525982 
+L 488.139458 192.055601 
+L 496.375249 192.055601 
+L 496.375249 194.24563 
+L 504.61104 194.24563 
+L 504.61104 176.725396 
+L 512.846832 176.725396 
+L 512.846832 113.214545 
+L 521.082623 113.214545 
+L 521.082623 113.214545 
+L 529.318414 113.214545 
+L 529.318414 119.784633 
+L 537.554206 119.784633 
+L 537.554206 100.07437 
+L 545.789997 100.07437 
+L 545.789997 45.323636 
+L 554.025788 45.323636 
+L 554.025788 45.323636 
+L 562.26158 45.323636 
+L 562.26158 51.893724 
+L 570.497371 51.893724 
+L 570.497371 113.214545 
+L 578.733162 113.214545 
+L 578.733162 100.07437 
+L 586.968954 100.07437 
+L 586.968954 115.404575 
+L 595.204745 115.404575 
+L 595.204745 93.504282 
+L 603.440536 93.504282 
+L 603.440536 141.684927 
+L 611.676328 141.684927 
+L 611.676328 161.395191 
+L 619.912119 161.395191 
+L 619.912119 167.965279 
+L 628.14791 167.965279 
+L 628.14791 178.915425 
+L 636.383701 178.915425 
+L 636.383701 211.765865 
+L 644.619493 211.765865 
+L 644.619493 203.005748 
+L 652.855284 203.005748 
+L 652.855284 233.666158 
+L 661.091075 233.666158 
+L 661.091075 227.09607 
+L 669.326867 227.09607 
+L 669.326867 229.2861 
+L 677.562658 229.2861 
+L 677.562658 242.426276 
+L 685.798449 242.426276 
+L 685.798449 242.426276 
+L 689.916345 242.426276 
+" clip-path="url(#uncertainty-p2db4d4386c)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="uncertainty-line2d_58">
+    <path d="M 445.241782 259.18 
+L 445.241782 35.14 
+" clip-path="url(#uncertainty-p2db4d4386c)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #91a9bd; stroke-width: 2"/>
+   </g>
+   <g id="uncertainty-patch_6">
+    <path d="M 395.898595 259.18 
+L 395.898595 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="uncertainty-patch_7">
+    <path d="M 395.898595 259.18 
+L 703.91719 259.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="uncertainty-text_34">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="395.898595" y="22.14" transform="rotate(-0 395.898595 22.14)">ES uncertainty</text>
+   </g>
+   <g id="uncertainty-legend_2">
+    <g id="uncertainty-line2d_59">
+     <path d="M 619.61469 45.61875 
+L 623.61469 45.61875 
+L 623.61469 45.61875 
+L 631.61469 45.61875 
+L 631.61469 45.61875 
+L 635.61469 45.61875 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="uncertainty-text_35">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="642.01469" y="48.41875" transform="rotate(-0 642.01469 48.41875)">Bootstrap ES</text>
+    </g>
+    <g id="uncertainty-line2d_60">
+     <path d="M 619.61469 57.36125 
+L 627.61469 57.36125 
+L 635.61469 57.36125 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #91a9bd; stroke-width: 2"/>
+    </g>
+    <g id="uncertainty-text_36">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="642.01469" y="60.16125" transform="rotate(-0 642.01469 60.16125)">Population ES</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="uncertainty-p9ff6df7824">
+   <rect x="39.62" y="35.14" width="308.018595" height="224.04"/>
+  </clipPath>
+  <clipPath id="uncertainty-p2db4d4386c">
+   <rect x="395.898595" y="35.14" width="308.018595" height="224.04"/>
+  </clipPath>
+ </defs>
+</svg>

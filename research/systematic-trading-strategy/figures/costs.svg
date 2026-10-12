@@ -1,0 +1,561 @@
+<svg role="img" aria-labelledby="costs-title costs-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="302.4pt" viewBox="0 0 720 302.4" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="costs-title">Figure 07 · Trading-cost sensitivity</title><desc id="costs-desc">Same synthetic market, signal, sizing and common evaluation interval. Cost is an all-in proportional deduction per one-way traded notional; initial investment is charged. Cash earns 2% effective annually. This is not a calibrated broker or market-impact model.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:05:12.303243</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="costs-figure_1">
+  <g id="costs-patch_1">
+   <path d="M 0 302.4 
+L 720 302.4 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="costs-axes_1">
+   <g id="costs-patch_2">
+    <path d="M 64.46 259.18 
+L 357.57 259.18 
+L 357.57 35.14 
+L 64.46 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="costs-matplotlib.axis_1">
+    <g id="costs-xtick_1">
+     <g id="costs-line2d_1">
+      <path d="M 77.783182 259.18 
+L 77.783182 35.14 
+" clip-path="url(#costs-p21457ef764)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_2">
+      <defs>
+       <path id="costs-m5a2b090621" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#costs-m5a2b090621" x="77.783182" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="77.783182" y="273.018594" transform="rotate(-0 77.783182 273.018594)">0</text>
+     </g>
+    </g>
+    <g id="costs-xtick_2">
+     <g id="costs-line2d_3">
+      <path d="M 131.075909 259.18 
+L 131.075909 35.14 
+" clip-path="url(#costs-p21457ef764)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_4">
+      <g>
+       <use href="#costs-m5a2b090621" x="131.075909" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="131.075909" y="273.018594" transform="rotate(-0 131.075909 273.018594)">10</text>
+     </g>
+    </g>
+    <g id="costs-xtick_3">
+     <g id="costs-line2d_5">
+      <path d="M 184.368636 259.18 
+L 184.368636 35.14 
+" clip-path="url(#costs-p21457ef764)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_6">
+      <g>
+       <use href="#costs-m5a2b090621" x="184.368636" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="184.368636" y="273.018594" transform="rotate(-0 184.368636 273.018594)">20</text>
+     </g>
+    </g>
+    <g id="costs-xtick_4">
+     <g id="costs-line2d_7">
+      <path d="M 237.661364 259.18 
+L 237.661364 35.14 
+" clip-path="url(#costs-p21457ef764)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_8">
+      <g>
+       <use href="#costs-m5a2b090621" x="237.661364" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="237.661364" y="273.018594" transform="rotate(-0 237.661364 273.018594)">30</text>
+     </g>
+    </g>
+    <g id="costs-xtick_5">
+     <g id="costs-line2d_9">
+      <path d="M 290.954091 259.18 
+L 290.954091 35.14 
+" clip-path="url(#costs-p21457ef764)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_10">
+      <g>
+       <use href="#costs-m5a2b090621" x="290.954091" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="290.954091" y="273.018594" transform="rotate(-0 290.954091 273.018594)">40</text>
+     </g>
+    </g>
+    <g id="costs-xtick_6">
+     <g id="costs-line2d_11">
+      <path d="M 344.246818 259.18 
+L 344.246818 35.14 
+" clip-path="url(#costs-p21457ef764)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_12">
+      <g>
+       <use href="#costs-m5a2b090621" x="344.246818" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="344.246818" y="273.018594" transform="rotate(-0 344.246818 273.018594)">50</text>
+     </g>
+    </g>
+    <g id="costs-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="211.015" y="285.728906" transform="rotate(-0 211.015 285.728906)">One-way cost (bps)</text>
+    </g>
+   </g>
+   <g id="costs-matplotlib.axis_2">
+    <g id="costs-ytick_1">
+     <g id="costs-line2d_13">
+      <path d="M 64.46 246.628089 
+L 357.57 246.628089 
+" clip-path="url(#costs-p21457ef764)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_14">
+      <defs>
+       <path id="costs-m3dfc5fe50f" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#costs-m3dfc5fe50f" x="64.46" y="246.628089" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="250.047386" transform="rotate(-0 57.46 250.047386)">−3.0%</text>
+     </g>
+    </g>
+    <g id="costs-ytick_2">
+     <g id="costs-line2d_15">
+      <path d="M 64.46 209.421371 
+L 357.57 209.421371 
+" clip-path="url(#costs-p21457ef764)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_16">
+      <g>
+       <use href="#costs-m3dfc5fe50f" x="64.46" y="209.421371" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="212.840668" transform="rotate(-0 57.46 212.840668)">−2.0%</text>
+     </g>
+    </g>
+    <g id="costs-ytick_3">
+     <g id="costs-line2d_17">
+      <path d="M 64.46 172.214654 
+L 357.57 172.214654 
+" clip-path="url(#costs-p21457ef764)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_18">
+      <g>
+       <use href="#costs-m3dfc5fe50f" x="64.46" y="172.214654" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="175.63395" transform="rotate(-0 57.46 175.63395)">−1.0%</text>
+     </g>
+    </g>
+    <g id="costs-ytick_4">
+     <g id="costs-line2d_19">
+      <path d="M 64.46 135.007936 
+L 357.57 135.007936 
+" clip-path="url(#costs-p21457ef764)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_20">
+      <g>
+       <use href="#costs-m3dfc5fe50f" x="64.46" y="135.007936" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="138.427233" transform="rotate(-0 57.46 138.427233)">0.0%</text>
+     </g>
+    </g>
+    <g id="costs-ytick_5">
+     <g id="costs-line2d_21">
+      <path d="M 64.46 97.801218 
+L 357.57 97.801218 
+" clip-path="url(#costs-p21457ef764)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_22">
+      <g>
+       <use href="#costs-m3dfc5fe50f" x="64.46" y="97.801218" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="101.220515" transform="rotate(-0 57.46 101.220515)">1.0%</text>
+     </g>
+    </g>
+    <g id="costs-ytick_6">
+     <g id="costs-line2d_23">
+      <path d="M 64.46 60.5945 
+L 357.57 60.5945 
+" clip-path="url(#costs-p21457ef764)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_24">
+      <g>
+       <use href="#costs-m3dfc5fe50f" x="64.46" y="60.5945" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="64.013797" transform="rotate(-0 57.46 64.013797)">2.0%</text>
+     </g>
+    </g>
+    <g id="costs-text_14">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.182344" y="147.16" transform="rotate(-90 21.182344 147.16)">Annualized return</text>
+    </g>
+   </g>
+   <g id="costs-line2d_25">
+    <path d="M 77.783182 45.323636 
+L 88.441727 53.687114 
+L 99.100273 62.032234 
+L 109.758818 70.359038 
+L 120.417364 78.667567 
+L 131.075909 86.957861 
+L 141.734455 95.22996 
+L 152.393 103.483906 
+L 163.051545 111.719739 
+L 173.710091 119.937499 
+L 184.368636 128.137227 
+L 195.027182 136.318963 
+L 205.685727 144.482746 
+L 216.344273 152.628618 
+L 227.002818 160.756617 
+L 237.661364 168.866783 
+L 248.319909 176.959157 
+L 258.978455 185.033778 
+L 269.637 193.090686 
+L 280.295545 201.129919 
+L 290.954091 209.151518 
+L 301.612636 217.155521 
+L 312.271182 225.141969 
+L 322.929727 233.110899 
+L 333.588273 241.062351 
+L 344.246818 248.996364 
+" clip-path="url(#costs-p21457ef764)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="costs-line2d_26">
+    <path d="M 64.46 60.5945 
+L 357.57 60.5945 
+" clip-path="url(#costs-p21457ef764)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+   </g>
+   <g id="costs-patch_3">
+    <path d="M 64.46 259.18 
+L 64.46 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="costs-patch_4">
+    <path d="M 64.46 259.18 
+L 357.57 259.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="costs-text_15">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="64.46" y="22.14" transform="rotate(-0 64.46 22.14)">The same signal at different trading costs</text>
+   </g>
+   <g id="costs-legend_1">
+    <g id="costs-line2d_27">
+     <path d="M 71.66 235.77375 
+L 79.66 235.77375 
+L 87.66 235.77375 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="costs-text_16">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="94.06" y="238.57375" transform="rotate(-0 94.06 238.57375)">Net CAGR</text>
+    </g>
+    <g id="costs-line2d_28">
+     <path d="M 71.66 247.51625 
+L 79.66 247.51625 
+L 87.66 247.51625 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+    </g>
+    <g id="costs-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="94.06" y="250.31625" transform="rotate(-0 94.06 250.31625)">Cash CAGR</text>
+    </g>
+   </g>
+  </g>
+  <g id="costs-axes_2">
+   <g id="costs-patch_5">
+    <path d="M 413.39 259.18 
+L 706.5 259.18 
+L 706.5 35.14 
+L 413.39 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="costs-matplotlib.axis_3">
+    <g id="costs-xtick_7">
+     <g id="costs-line2d_29">
+      <path d="M 426.713182 259.18 
+L 426.713182 35.14 
+" clip-path="url(#costs-p760156a8a2)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_30">
+      <g>
+       <use href="#costs-m5a2b090621" x="426.713182" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_18">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="426.713182" y="273.018594" transform="rotate(-0 426.713182 273.018594)">0</text>
+     </g>
+    </g>
+    <g id="costs-xtick_8">
+     <g id="costs-line2d_31">
+      <path d="M 480.005909 259.18 
+L 480.005909 35.14 
+" clip-path="url(#costs-p760156a8a2)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_32">
+      <g>
+       <use href="#costs-m5a2b090621" x="480.005909" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_19">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="480.005909" y="273.018594" transform="rotate(-0 480.005909 273.018594)">10</text>
+     </g>
+    </g>
+    <g id="costs-xtick_9">
+     <g id="costs-line2d_33">
+      <path d="M 533.298636 259.18 
+L 533.298636 35.14 
+" clip-path="url(#costs-p760156a8a2)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_34">
+      <g>
+       <use href="#costs-m5a2b090621" x="533.298636" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_20">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="533.298636" y="273.018594" transform="rotate(-0 533.298636 273.018594)">20</text>
+     </g>
+    </g>
+    <g id="costs-xtick_10">
+     <g id="costs-line2d_35">
+      <path d="M 586.591364 259.18 
+L 586.591364 35.14 
+" clip-path="url(#costs-p760156a8a2)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_36">
+      <g>
+       <use href="#costs-m5a2b090621" x="586.591364" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="586.591364" y="273.018594" transform="rotate(-0 586.591364 273.018594)">30</text>
+     </g>
+    </g>
+    <g id="costs-xtick_11">
+     <g id="costs-line2d_37">
+      <path d="M 639.884091 259.18 
+L 639.884091 35.14 
+" clip-path="url(#costs-p760156a8a2)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_38">
+      <g>
+       <use href="#costs-m5a2b090621" x="639.884091" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="639.884091" y="273.018594" transform="rotate(-0 639.884091 273.018594)">40</text>
+     </g>
+    </g>
+    <g id="costs-xtick_12">
+     <g id="costs-line2d_39">
+      <path d="M 693.176818 259.18 
+L 693.176818 35.14 
+" clip-path="url(#costs-p760156a8a2)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_40">
+      <g>
+       <use href="#costs-m5a2b090621" x="693.176818" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="693.176818" y="273.018594" transform="rotate(-0 693.176818 273.018594)">50</text>
+     </g>
+    </g>
+    <g id="costs-text_24">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="559.945" y="285.728906" transform="rotate(-0 559.945 285.728906)">One-way cost (bps)</text>
+    </g>
+   </g>
+   <g id="costs-matplotlib.axis_4">
+    <g id="costs-ytick_7">
+     <g id="costs-line2d_41">
+      <path d="M 413.39 225.254877 
+L 706.5 225.254877 
+" clip-path="url(#costs-p760156a8a2)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_42">
+      <g>
+       <use href="#costs-m3dfc5fe50f" x="413.39" y="225.254877" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="406.39" y="228.674174" transform="rotate(-0 406.39 228.674174)">−0.4</text>
+     </g>
+    </g>
+    <g id="costs-ytick_8">
+     <g id="costs-line2d_43">
+      <path d="M 413.39 188.530581 
+L 706.5 188.530581 
+" clip-path="url(#costs-p760156a8a2)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_44">
+      <g>
+       <use href="#costs-m3dfc5fe50f" x="413.39" y="188.530581" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="406.39" y="191.949878" transform="rotate(-0 406.39 191.949878)">−0.3</text>
+     </g>
+    </g>
+    <g id="costs-ytick_9">
+     <g id="costs-line2d_45">
+      <path d="M 413.39 151.806285 
+L 706.5 151.806285 
+" clip-path="url(#costs-p760156a8a2)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_46">
+      <g>
+       <use href="#costs-m3dfc5fe50f" x="413.39" y="151.806285" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="406.39" y="155.225582" transform="rotate(-0 406.39 155.225582)">−0.2</text>
+     </g>
+    </g>
+    <g id="costs-ytick_10">
+     <g id="costs-line2d_47">
+      <path d="M 413.39 115.081989 
+L 706.5 115.081989 
+" clip-path="url(#costs-p760156a8a2)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_48">
+      <g>
+       <use href="#costs-m3dfc5fe50f" x="413.39" y="115.081989" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="406.39" y="118.501286" transform="rotate(-0 406.39 118.501286)">−0.1</text>
+     </g>
+    </g>
+    <g id="costs-ytick_11">
+     <g id="costs-line2d_49">
+      <path d="M 413.39 78.357693 
+L 706.5 78.357693 
+" clip-path="url(#costs-p760156a8a2)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_50">
+      <g>
+       <use href="#costs-m3dfc5fe50f" x="413.39" y="78.357693" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="406.39" y="81.77699" transform="rotate(-0 406.39 81.77699)">0.0</text>
+     </g>
+    </g>
+    <g id="costs-ytick_12">
+     <g id="costs-line2d_51">
+      <path d="M 413.39 41.633397 
+L 706.5 41.633397 
+" clip-path="url(#costs-p760156a8a2)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="costs-line2d_52">
+      <g>
+       <use href="#costs-m3dfc5fe50f" x="413.39" y="41.633397" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="costs-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="406.39" y="45.052694" transform="rotate(-0 406.39 45.052694)">0.1</text>
+     </g>
+    </g>
+    <g id="costs-text_31">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="378.66375" y="147.16" transform="rotate(-90 378.66375 147.16)">Sharpe estimate</text>
+    </g>
+   </g>
+   <g id="costs-line2d_53">
+    <path d="M 426.713182 45.323636 
+L 437.371727 53.551807 
+L 448.030273 61.778046 
+L 458.688818 70.001708 
+L 469.347364 78.222151 
+L 480.005909 86.438733 
+L 490.664455 94.650813 
+L 501.323 102.857754 
+L 511.981545 111.058921 
+L 522.640091 119.253681 
+L 533.298636 127.441405 
+L 543.957182 135.621467 
+L 554.615727 143.793242 
+L 565.274273 151.956113 
+L 575.932818 160.109463 
+L 586.591364 168.25268 
+L 597.249909 176.385157 
+L 607.908455 184.506293 
+L 618.567 192.615488 
+L 629.225545 200.712149 
+L 639.884091 208.795688 
+L 650.542636 216.865524 
+L 661.201182 224.921077 
+L 671.859727 232.961778 
+L 682.518273 240.98706 
+L 693.176818 248.996364 
+" clip-path="url(#costs-p760156a8a2)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="costs-line2d_54">
+    <path d="M 413.39 78.357693 
+L 706.5 78.357693 
+" clip-path="url(#costs-p760156a8a2)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+   </g>
+   <g id="costs-patch_6">
+    <path d="M 413.39 259.18 
+L 413.39 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="costs-patch_7">
+    <path d="M 413.39 259.18 
+L 706.5 259.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="costs-text_32">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="413.39" y="22.14" transform="rotate(-0 413.39 22.14)">Risk-adjusted results after proportional fees</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="costs-p21457ef764">
+   <rect x="64.46" y="35.14" width="293.11" height="224.04"/>
+  </clipPath>
+  <clipPath id="costs-p760156a8a2">
+   <rect x="413.39" y="35.14" width="293.11" height="224.04"/>
+  </clipPath>
+ </defs>
+</svg>

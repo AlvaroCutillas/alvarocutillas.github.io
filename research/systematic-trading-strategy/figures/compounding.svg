@@ -1,0 +1,454 @@
+<svg role="img" aria-labelledby="compounding-title compounding-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="compounding-title">Figure 03 · Compounding and arithmetic aggregation</title><desc id="compounding-desc">Twenty alternating +10% and −10% returns. Each two-period cycle multiplies wealth by 0.99. Summing simple returns reports zero while compounded wealth falls.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:05:10.855979</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="compounding-figure_1">
+  <g id="compounding-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="compounding-axes_1">
+   <g id="compounding-patch_2">
+    <path d="M 70.22 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 70.22 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="compounding-matplotlib.axis_1">
+    <g id="compounding-xtick_1">
+     <g id="compounding-line2d_1">
+      <path d="M 99.141818 244.78 
+L 99.141818 35.14 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_2">
+      <defs>
+       <path id="compounding-mac5669d210" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#compounding-mac5669d210" x="99.141818" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="99.141818" y="258.618594" transform="rotate(-0 99.141818 258.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="compounding-xtick_2">
+     <g id="compounding-line2d_3">
+      <path d="M 171.446364 244.78 
+L 171.446364 35.14 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_4">
+      <g>
+       <use href="#compounding-mac5669d210" x="171.446364" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="171.446364" y="258.618594" transform="rotate(-0 171.446364 258.618594)">2.5</text>
+     </g>
+    </g>
+    <g id="compounding-xtick_3">
+     <g id="compounding-line2d_5">
+      <path d="M 243.750909 244.78 
+L 243.750909 35.14 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_6">
+      <g>
+       <use href="#compounding-mac5669d210" x="243.750909" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="243.750909" y="258.618594" transform="rotate(-0 243.750909 258.618594)">5.0</text>
+     </g>
+    </g>
+    <g id="compounding-xtick_4">
+     <g id="compounding-line2d_7">
+      <path d="M 316.055455 244.78 
+L 316.055455 35.14 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_8">
+      <g>
+       <use href="#compounding-mac5669d210" x="316.055455" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="316.055455" y="258.618594" transform="rotate(-0 316.055455 258.618594)">7.5</text>
+     </g>
+    </g>
+    <g id="compounding-xtick_5">
+     <g id="compounding-line2d_9">
+      <path d="M 388.36 244.78 
+L 388.36 35.14 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_10">
+      <g>
+       <use href="#compounding-mac5669d210" x="388.36" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="388.36" y="258.618594" transform="rotate(-0 388.36 258.618594)">10.0</text>
+     </g>
+    </g>
+    <g id="compounding-xtick_6">
+     <g id="compounding-line2d_11">
+      <path d="M 460.664545 244.78 
+L 460.664545 35.14 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_12">
+      <g>
+       <use href="#compounding-mac5669d210" x="460.664545" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="460.664545" y="258.618594" transform="rotate(-0 460.664545 258.618594)">12.5</text>
+     </g>
+    </g>
+    <g id="compounding-xtick_7">
+     <g id="compounding-line2d_13">
+      <path d="M 532.969091 244.78 
+L 532.969091 35.14 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_14">
+      <g>
+       <use href="#compounding-mac5669d210" x="532.969091" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="532.969091" y="258.618594" transform="rotate(-0 532.969091 258.618594)">15.0</text>
+     </g>
+    </g>
+    <g id="compounding-xtick_8">
+     <g id="compounding-line2d_15">
+      <path d="M 605.273636 244.78 
+L 605.273636 35.14 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_16">
+      <g>
+       <use href="#compounding-mac5669d210" x="605.273636" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="605.273636" y="258.618594" transform="rotate(-0 605.273636 258.618594)">17.5</text>
+     </g>
+    </g>
+    <g id="compounding-xtick_9">
+     <g id="compounding-line2d_17">
+      <path d="M 677.578182 244.78 
+L 677.578182 35.14 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_18">
+      <g>
+       <use href="#compounding-mac5669d210" x="677.578182" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="677.578182" y="258.618594" transform="rotate(-0 677.578182 258.618594)">20.0</text>
+     </g>
+    </g>
+    <g id="compounding-text_10">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="388.36" y="271.328906" transform="rotate(-0 388.36 271.328906)">Return period</text>
+    </g>
+   </g>
+   <g id="compounding-matplotlib.axis_2">
+    <g id="compounding-ytick_1">
+     <g id="compounding-line2d_19">
+      <path d="M 70.22 239.520169 
+L 706.5 239.520169 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_20">
+      <defs>
+       <path id="compounding-mbcd31e8aa4" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#compounding-mbcd31e8aa4" x="70.22" y="239.520169" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="242.939466" transform="rotate(-0 63.22 242.939466)">−10.0%</text>
+     </g>
+    </g>
+    <g id="compounding-ytick_2">
+     <g id="compounding-line2d_21">
+      <path d="M 70.22 215.163784 
+L 706.5 215.163784 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_22">
+      <g>
+       <use href="#compounding-mbcd31e8aa4" x="70.22" y="215.163784" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="218.583081" transform="rotate(-0 63.22 218.583081)">−7.5%</text>
+     </g>
+    </g>
+    <g id="compounding-ytick_3">
+     <g id="compounding-line2d_23">
+      <path d="M 70.22 190.8074 
+L 706.5 190.8074 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_24">
+      <g>
+       <use href="#compounding-mbcd31e8aa4" x="70.22" y="190.8074" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="194.226697" transform="rotate(-0 63.22 194.226697)">−5.0%</text>
+     </g>
+    </g>
+    <g id="compounding-ytick_4">
+     <g id="compounding-line2d_25">
+      <path d="M 70.22 166.451015 
+L 706.5 166.451015 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_26">
+      <g>
+       <use href="#compounding-mbcd31e8aa4" x="70.22" y="166.451015" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="169.870312" transform="rotate(-0 63.22 169.870312)">−2.5%</text>
+     </g>
+    </g>
+    <g id="compounding-ytick_5">
+     <g id="compounding-line2d_27">
+      <path d="M 70.22 142.09463 
+L 706.5 142.09463 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_28">
+      <g>
+       <use href="#compounding-mbcd31e8aa4" x="70.22" y="142.09463" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="145.513927" transform="rotate(-0 63.22 145.513927)">0.0%</text>
+     </g>
+    </g>
+    <g id="compounding-ytick_6">
+     <g id="compounding-line2d_29">
+      <path d="M 70.22 117.738245 
+L 706.5 117.738245 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_30">
+      <g>
+       <use href="#compounding-mbcd31e8aa4" x="70.22" y="117.738245" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="121.157542" transform="rotate(-0 63.22 121.157542)">2.5%</text>
+     </g>
+    </g>
+    <g id="compounding-ytick_7">
+     <g id="compounding-line2d_31">
+      <path d="M 70.22 93.381861 
+L 706.5 93.381861 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_32">
+      <g>
+       <use href="#compounding-mbcd31e8aa4" x="70.22" y="93.381861" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_17">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="96.801157" transform="rotate(-0 63.22 96.801157)">5.0%</text>
+     </g>
+    </g>
+    <g id="compounding-ytick_8">
+     <g id="compounding-line2d_33">
+      <path d="M 70.22 69.025476 
+L 706.5 69.025476 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_34">
+      <g>
+       <use href="#compounding-mbcd31e8aa4" x="70.22" y="69.025476" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_18">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="72.444773" transform="rotate(-0 63.22 72.444773)">7.5%</text>
+     </g>
+    </g>
+    <g id="compounding-ytick_9">
+     <g id="compounding-line2d_35">
+      <path d="M 70.22 44.669091 
+L 706.5 44.669091 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="compounding-line2d_36">
+      <g>
+       <use href="#compounding-mbcd31e8aa4" x="70.22" y="44.669091" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="compounding-text_19">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="63.22" y="48.088388" transform="rotate(-0 63.22 48.088388)">10.0%</text>
+     </g>
+    </g>
+    <g id="compounding-text_20">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.216094" y="139.96" transform="rotate(-90 21.216094 139.96)">Cumulative return</text>
+    </g>
+   </g>
+   <g id="compounding-line2d_37">
+    <path d="M 99.141818 142.09463 
+L 128.063636 44.669091 
+L 156.985455 151.837184 
+L 185.907273 55.3859 
+L 214.829091 161.482312 
+L 243.750909 65.995541 
+L 272.672727 171.030989 
+L 301.594545 76.499086 
+L 330.516364 180.48418 
+L 359.438182 86.897596 
+L 388.36 189.842838 
+L 417.281818 97.19212 
+L 446.203636 199.10791 
+L 475.125455 107.383699 
+L 504.047273 208.280331 
+L 532.969091 117.473362 
+L 561.890909 217.361028 
+L 590.812727 127.462129 
+L 619.734545 226.350918 
+L 648.656364 137.351008 
+L 677.578182 235.250909 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="compounding-m55f9c55bcf" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#compounding-pcbdebfb367)">
+     <use href="#compounding-m55f9c55bcf" x="99.141818" y="142.09463" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="128.063636" y="44.669091" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="156.985455" y="151.837184" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="185.907273" y="55.3859" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="214.829091" y="161.482312" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="243.750909" y="65.995541" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="272.672727" y="171.030989" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="301.594545" y="76.499086" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="330.516364" y="180.48418" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="359.438182" y="86.897596" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="388.36" y="189.842838" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="417.281818" y="97.19212" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="446.203636" y="199.10791" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="475.125455" y="107.383699" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="504.047273" y="208.280331" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="532.969091" y="117.473362" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="561.890909" y="217.361028" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="590.812727" y="127.462129" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="619.734545" y="226.350918" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="648.656364" y="137.351008" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#compounding-m55f9c55bcf" x="677.578182" y="235.250909" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="compounding-line2d_38">
+    <path d="M 99.141818 142.09463 
+L 128.063636 44.669091 
+L 156.985455 142.09463 
+L 185.907273 44.669091 
+L 214.829091 142.09463 
+L 243.750909 44.669091 
+L 272.672727 142.09463 
+L 301.594545 44.669091 
+L 330.516364 142.09463 
+L 359.438182 44.669091 
+L 388.36 142.09463 
+L 417.281818 44.669091 
+L 446.203636 142.09463 
+L 475.125455 44.669091 
+L 504.047273 142.09463 
+L 532.969091 44.669091 
+L 561.890909 142.09463 
+L 590.812727 44.669091 
+L 619.734545 142.09463 
+L 648.656364 44.669091 
+L 677.578182 142.09463 
+" clip-path="url(#compounding-pcbdebfb367)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+   </g>
+   <g id="compounding-patch_3">
+    <path d="M 70.22 244.78 
+L 70.22 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="compounding-patch_4">
+    <path d="M 70.22 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="compounding-text_21">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="70.22" y="22.14" transform="rotate(-0 70.22 22.14)">Alternating equal percentage moves do not cancel</text>
+   </g>
+   <g id="compounding-legend_1">
+    <g id="compounding-line2d_39">
+     <path d="M 78.32 218.447969 
+L 87.32 218.447969 
+L 96.32 218.447969 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#compounding-m55f9c55bcf" x="87.32" y="218.447969" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="compounding-text_22">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="103.52" y="221.597969" transform="rotate(-0 103.52 221.597969)">Compounded simple return</text>
+    </g>
+    <g id="compounding-line2d_40">
+     <path d="M 78.32 231.658281 
+L 87.32 231.658281 
+L 96.32 231.658281 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+    </g>
+    <g id="compounding-text_23">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="103.52" y="234.808281" transform="rotate(-0 103.52 234.808281)">Sum of simple returns</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="compounding-pcbdebfb367">
+   <rect x="70.22" y="35.14" width="636.28" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

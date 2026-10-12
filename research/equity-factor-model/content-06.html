@@ -1,0 +1,144 @@
+<section id="laboratory" data-title="Interactive attribution and portfolio laboratory">
+<div class="section-kicker">26 / Numerical laboratory</div><h2>Interactive attribution and portfolio laboratory</h2>
+<p>Two experiments separate return attribution from characteristic-based selection. They run locally on embedded synthetic observations. Neither requires market-data access or a network connection.</p>
+<h3>Experiment A: estimate return sensitivities</h3>
+<p>Choose the portfolio's generating exposures, monthly alpha and innovation scale. These parameters generate a portfolio return from five fixed factor series and a fixed disturbance path. Fit either the market-only benchmark or the full style model, using the selected training prefix.</p>
+<p>The subsequent months remain withheld. Fitted coefficients combine with realized factor returns to provide ex post holdout attribution. The tool does not forecast next month's factors in advance. Alpha, classical and HAC uncertainty, training fit and withheld error are reported with their units.</p>
+<p>Changing the HAC lag count changes standard errors but leaves coefficients unchanged. Changing a generating style exposure still changes the target when the selected regression is market only; the omitted influence remains in that benchmark's residual.</p>
+<h3>Experiment B: form a characteristic portfolio</h3>
+<p>Select a formation score and tail size. Unrestricted tails rank the whole universe. Sector-balanced tails select high and low stocks inside each of four sectors and allocate equal gross capital to each sector. Both constructions have long weights summing to one and short weights summing to minus one.</p>
+<p>The next-month returns are observed after weights are selected. The resulting gross return is reduced by one-time entry cost. Pearson and rank IC use the entire formation cross-section, while portfolio returns use only selected tails. The exposure table shows characteristic scores and sector weights, rather than regression betas.</p>
+<h3>Suggested experiments</h3>
+<ol>
+<li>Fit the full reference model, then select market only. Compare alpha and withheld RMSE without changing the generating portfolio.</li>
+<li>Set noise to zero in the full model. The generating coefficients are recovered to numerical precision; statistical uncertainty then becomes degenerate rather than infinitely informative.</li>
+<li>Shorten the training sample and inspect coefficient uncertainty. More observations improve identification under this stable simulation, although actual structural change can alter that trade-off.</li>
+<li>Raise the HAC bandwidth. Verify that the point estimates stay fixed while the alpha standard error changes.</li>
+<li>Compare unrestricted and sector-balanced value tails. Inspect other characteristic exposures as well as sector neutrality.</li>
+<li>Increase entry cost and observe the exact cost deduction. This is a single-entry illustration, not a complete strategy backtest.</li>
+</ol>
+{{interactive}}
+<p class="source-note">Hover, tap or use keyboard arrows to inspect charts; Escape dismisses the neutral inspector. CSV fields identify return decimals and characteristic scores. Data seeds and model assumptions are documented in the following studies.</p>
+</section>
+
+<section id="worked-study" data-title="Worked attribution, signal and risk studies">
+<div class="section-kicker">27 / Computed studies</div><h2>Worked attribution, signal and risk studies</h2>
+<h3>Study A: generating and estimating a portfolio</h3>
+<p>The reference has five generating exposures \(b=(1.05,0.35,0.25,0.45,0.20)\), monthly alpha 0.0004 and a serially dependent disturbance. Factor means are 0.5%, 0.2%, 0.3%, 0.15% and 0.1% monthly; factor volatilities are 4.5%, 2.5%, 3.5%, 2.2% and 2%. These are simulation inputs, not estimated premia.</p>
+<p>The disturbance follows an AR relation with coefficient 0.25 and a market-state-dependent innovation scale. NumPy's generator seed 202608 produces the 240-month panel. The first 180 observations enter OLS and HAC estimation; the final sixty do not.</p>
+{{table:coefficients}}
+<p>Estimated monthly alpha is −25.453506 bp, despite a generating alpha of +4 bp. Its six-lag HAC standard error is 28.343698 bp and t-statistic approximately −0.898031. Finite-sample mean noise is large relative to the small alpha. A known positive generating alpha does not force every sample estimate to be positive.</p>
+<p>The generating betas are not all recovered exactly with noise present. For example, estimated value exposure is approximately 0.505580 versus generating exposure 0.35. The uncertainty table provides the appropriate context for that difference.</p>
+<h3>Study B: changing the attribution benchmark</h3>
+{{table:comparison}}
+<p>The market-only intercept is approximately +4.772221 bp per month, with market beta 1.041928. The full model's negative intercept and improved variation fit describe a different benchmark. Neither sample alpha should be treated as an independently measured amount of manager skill.</p>
+<h3>Study C: matched sample risk attribution</h3>
+<p>Training monthly variance is approximately 0.0033829973, giving volatility 5.816354%. The systematic variance component is 0.0025912952 and the residual component 0.0007917022, using matched \(T-1\) denominators. Their sum equals training sample variance.</p>
+{{table:risk}}
+<p>The low-volatility factor has a negative variance contribution, approximately −0.0000548143. Its covariance offsets other exposures at the reference portfolio. All total and standalone variances remain nonnegative. Signed attribution is not a claim that a factor has negative variance.</p>
+<h3>Study D: formation scores and next-month stock returns</h3>
+<p>A separate seed 991 generates 160 stocks, forty in each synthetic sector. Four raw descriptors are clipped at their cross-sectional 2.5% and 97.5% quantiles and standardized. Subsequent returns combine these scores, sector effects and noise. Selection uses the formation scores, never subsequent returns.</p>
+<p>The sector-balanced value portfolio buys eight and shorts eight names per sector: 32 longs and 32 shorts. Gross next-month return is 3.092075%; after ten-basis-point one-way entry costs, it is 2.892075%. The twenty-basis-point difference follows from gross entry turnover two.</p>
+{{table:sort}}
+<p>The value descriptor exposure is 2.323560 standardized units. Momentum and quality exposures are also nonzero, despite the portfolio being called a value sort. All four sector net weights are zero. Pearson IC is 0.326500 and rank IC 0.342237 over all 160 stocks.</p>
+<h3>Study E: partial cross-sectional effects</h3>
+{{table:cross}}
+<p>The partial value coefficient is about 0.737263% return per standardized score unit after the other styles and sector indicators are included. This is not the 3.092075% tail spread: the spread has larger score separation and additional characteristic exposures. The cross-sectional fit has \(R^2\) approximately 0.402885.</p>
+<p>These studies are reproducible demonstrations of estimation, weighting and units. The simulation's known construction helps diagnose errors; real research must additionally establish data quality, feasibility and evidence across independent samples.</p>
+</section>
+
+<section id="mathematical-appendix" data-title="Mathematical appendix and reference implementation">
+<div class="section-kicker">28 / Mathematical appendix</div><h2>Mathematical appendix and reference implementation</h2>
+<h3>OLS and orthogonality</h3>
+<p>Differentiating squared error gives the normal equations:</p>
+\[ \frac{\partial}{\partial b}(y-Xb)^{\mathsf T}(y-Xb)
+=-2X^{\mathsf T}(y-Xb)=0. \]
+<p>With full rank, \(X^{\mathsf T}e=0\) and the fitted vector is the orthogonal projection onto the columns of \(X\). QR factorization \(X=QR\) solves \(R\widehat b=Q^{\mathsf T}y\), avoiding an explicit normal-equation inversion. The browser uses modified Gram–Schmidt with a second orthogonalization pass and a rank threshold.</p>
+<h3>The omitted-factor slope</h3>
+<p>For a centered two-factor model, covariance with the market gives:</p>
+\[ \operatorname{Cov}(y,M)
+=\beta_M\operatorname{Var}(M)+\beta_V\operatorname{Cov}(V,M). \]
+<p>Dividing by market variance produces the restricted slope. This derivation requires orthogonality of the disturbance and market. Without it, another covariance term remains; adding a factor does not automatically repair endogeneity.</p>
+<h3>Portfolio and factor-mimicking exposures</h3>
+<p>For fixed weights, \(r_p=w^{\mathsf T}r\), so its factor sensitivity is \(B^{\mathsf T}w\). In a full-rank cross-sectional WLS model, coefficient extraction is a linear map:</p>
+\[ \widehat g=(X^{\mathsf T}WX)^{-1}X^{\mathsf T}WR. \]
+<p>Rows of that map define mathematical factor-mimicking stock weights. Economic constraints are not automatically respected. Factor replication with position limits or trading costs is a separate constrained portfolio problem.</p>
+<h3>Risk gradients</h3>
+<p>For \(\sigma=\sqrt{b^{\mathsf T}\Sigma_fb+v_\varepsilon}\), differentiation gives:</p>
+\[ \frac{\partial\sigma}{\partial b_k}
+=\frac{(\Sigma_fb)_k}{\sigma},\qquad
+\sum_k b_k\frac{\partial\sigma}{\partial b_k}
++\frac{v_\varepsilon}{\sigma}=\sigma. \]
+<p>The residual term completes the attribution. If total variance is zero, normalized contributions and marginal volatility are undefined. The laboratory reports an undefined value rather than dividing by zero in that case.</p>
+<h3>A Python OLS/HAC reference</h3>
+<p>This function uses an independent SVD-based least-squares implementation and the same stated HAC normalization as the browser. Factor and target arrays should contain aligned monthly return decimals.</p>
+<pre><code>import numpy as np
+
+def ols_hac(factors, target, lags=6):
+    X = np.column_stack([np.ones(len(target)), factors])
+    y = np.asarray(target, dtype=float)
+    T, p = X.shape
+    beta = np.linalg.lstsq(X, y, rcond=None)[0]
+    residual = y - X @ beta
+    bread = np.linalg.inv(X.T @ X)
+    scores = X * residual[:, None]
+    meat = scores.T @ scores
+    for lag in range(1, lags + 1):
+        cross = scores[lag:].T @ scores[:-lag]
+        weight = 1 - lag / (lags + 1)
+        meat += weight * (cross + cross.T)
+    covariance = bread @ meat @ bread * T / (T - p)
+    se = np.sqrt(np.maximum(0, np.diag(covariance)))
+    return beta, residual, se
+
+# Fit only a chronological training prefix.
+# F is a T-by-K factor array; y is a T-vector of excess returns.
+# beta, residual, se = ols_hac(F[:180], y[:180], lags=6)
+# holdout_attribution = beta[0] + F[180:] @ beta[1:]</code></pre>
+<p>The explicit inverse is used here only for the small, full-rank covariance calculation. Larger or poorly conditioned applications should solve the corresponding systems or use a stable factorization. Detect rank deficiency before interpreting coefficient uncertainty.</p>
+<h3>Implementation checks</h3>
+<p>Verify residual orthogonality, intercept reconstruction, factor-scaling invariance and recovery of a noiseless full-rank model. Check the matched sample variance identity and sum of risk contributions. Confirm that long and short leg weights have their declared normalization and sector constraints.</p>
+<p>Compare implementations using the same input observations and definitions. Differences in HAC bandwidth, finite-sample adjustment, return units or standardization can be legitimate convention differences rather than numerical failures. Those settings should be part of the reproducible result.</p>
+</section>
+
+<section id="exercises" data-title="Exercises and worked solutions">
+<div class="section-kicker">29 / Exercises</div><h2>Exercises and worked solutions</h2>
+<p>Identify whether each quantity is a characteristic, a return sensitivity, an expected premium or a realized outcome. Expand a solution after attempting the calculation.</p>
+<details><summary>Exercise 1 — Match return units</summary><p>A stock earns 2% in one month and the matched risk-free return is 0.3%. What is its excess return? What if the 0.3% field were annualized instead?</p><p><strong>Solution.</strong> With a monthly risk-free return, excess return is 1.7%, or 0.017. An annualized field must first be converted under its compounding convention to the monthly interval. Subtracting it directly would mix units.</p></details>
+<details><summary>Exercise 2 — Compute market beta</summary><p>A stock has volatility 6% per month, the market 4%, and correlation 0.5. Find beta and explain why beta is not stock volatility.</p><p><strong>Solution.</strong> Beta is \(0.5(0.06/0.04)=0.75\). It measures market sensitivity. The 6% volatility includes residual variation that need not covary with the market.</p></details>
+<details><summary>Exercise 3 — Attribute one month's return</summary><p>Alpha is 0.1%, market exposure 1.2 and value exposure 0.4. Market and value factors realize 2% and −1%. Observed excess return is 3%. Find fitted and residual return.</p><p><strong>Solution.</strong> Fitted return is 0.1% + 1.2 × 2% + 0.4 × (−1%) = 2.1%. Residual return is 0.9%. These are realized attribution components, not known advance forecasts.</p></details>
+<details><summary>Exercise 4 — Rescale a factor</summary><p>A factor series is multiplied by two while preserving the same model attribution. What happens to its beta and covariance terms?</p><p><strong>Solution.</strong> Its beta is divided by two. Factor variance is multiplied by four and covariance with other factors by two. Attribution and total model variance remain unchanged when every transformation is applied consistently.</p></details>
+<details><summary>Exercise 5 — Reconstruct alpha</summary><p>The portfolio mean excess return is 0.8% monthly. Market and value factor means are 0.5% and 0.2%, with estimated betas one and 0.5. Find alpha.</p><p><strong>Solution.</strong> Alpha is 0.8% − 1 × 0.5% − 0.5 × 0.2% = 0.2% monthly. It is conditional on that factor benchmark and remains subject to estimation uncertainty.</p></details>
+<details><summary>Exercise 6 — Diagnose timing leakage</summary><p>A June portfolio uses annual statements with a December fiscal-year label but a July publication date. Is the construction point in time?</p><p><strong>Solution.</strong> No. The economic period does not establish availability. The July publication must occur before the formation decision or an appropriately dated earlier version must be used.</p></details>
+<details><summary>Exercise 7 — Distinguish neutrality constraints</summary><p>A portfolio is long one dollar in assets with beta 1.3 and short one dollar in assets with beta 0.8. Is it dollar neutral? Is it beta neutral?</p><p><strong>Solution.</strong> Net dollar weight is zero, but net market exposure is \(1.3-0.8=0.5\). Adjusting notional to remove beta generally changes dollar neutrality unless another financing or hedge position is included.</p></details>
+<details><summary>Exercise 8 — Explain a sort and a partial coefficient</summary><p>A value tail portfolio returns 3%, while a joint regression's value coefficient is 0.8% per score unit. Must one result be wrong?</p><p><strong>Solution.</strong> No. The tail spread has a particular score separation and may carry other style and sector exposures. The coefficient is a partial relation holding included controls fixed. Their units and conditioning differ.</p></details>
+<details><summary>Exercise 9 — Identify sector-dummy redundancy</summary><p>Why does an intercept plus all four sector indicators create a rank-deficient cross-sectional design?</p><p><strong>Solution.</strong> The four indicators sum to the intercept column. Omit a reference sector or impose an identifying constraint. Individual intercept and sector levels otherwise are not uniquely identified.</p></details>
+<details><summary>Exercise 10 — Compute omitted-factor bias</summary><p>True market beta is one and value beta 0.6. Market–value covariance divided by market variance is 0.2. Find the market-only population slope.</p><p><strong>Solution.</strong> The slope is \(1+0.6(0.2)=1.12\), assuming the disturbance is market-orthogonal. The restricted slope absorbs part of the omitted correlated factor.</p></details>
+<details><summary>Exercise 11 — Interpret HAC bandwidth</summary><p>A model's coefficients stay fixed when the HAC lag count changes from zero to six, but its alpha standard error changes. Is that expected?</p><p><strong>Solution.</strong> Yes. HAC estimates the covariance of the OLS estimator; it does not refit the point coefficients. Lag zero handles heteroskedasticity in the stated convention, and positive lags incorporate serial score dependence.</p></details>
+<details><summary>Exercise 12 — Calculate diversified risk</summary><p>Stocks share 4% monthly common-factor volatility and independent 3% specific volatility. What is an equal-weight 25-stock portfolio's volatility?</p><p><strong>Solution.</strong> Variance is \(0.04^2+0.03^2/25=0.001636\). Volatility is approximately 4.044750%. Adding volatility components directly would be incorrect; independent variance components add.</p></details>
+<details><summary>Exercise 13 — Interpret a negative risk contribution</summary><p>A positive low-vol factor exposure has a negative Euler variance contribution. Does the factor have negative variance?</p><p><strong>Solution.</strong> No. The contribution depends on covariance with the whole portfolio. A positive exposure can offset other risk and reduce total variance locally while standalone factor variance remains nonnegative.</p></details>
+<details><summary>Exercise 14 — Apply entry cost and validate claims</summary><p>A long–short spread with gross exposure two returns 1.5% next month. Entry cost is 15 bp per traded unit from cash. What is the net snapshot return, and what costs remain absent?</p><p><strong>Solution.</strong> Entry cost is 30 bp, or 0.3%, so net snapshot return is 1.2%. Borrow, financing, closing, later rebalancing and nonlinear impact remain absent. One period cannot establish a persistent net factor premium.</p></details>
+</section>
+
+<section id="references" data-title="References and further reading">
+<div class="section-kicker">30 / References</div><h2>References and further reading</h2>
+<p>The following primary research and author-maintained methodology provide the theoretical and empirical context. Explanations, synthetic observations, calculations and the interactive implementation were developed for this study.</p>
+<ol class="references">
+<li>Sharpe, W. F. (1964). <em>Capital Asset Prices: A Theory of Market Equilibrium under Conditions of Risk.</em> Journal of Finance, 19(3), 425–442. <a href="https://doi.org/10.1111/j.1540-6261.1964.tb02865.x">Published paper</a>.<p>The covariance-based single-factor equilibrium benchmark.</p></li>
+<li>Ross, S. A. (1976). <em>The Arbitrage Theory of Capital Asset Pricing.</em> Journal of Economic Theory, 13(3), 341–360. <a href="https://doi.org/10.1016/0022-0531(76)90046-6">Published paper</a>.<p>Diversification and multifactor expected-return restrictions.</p></li>
+<li>Fama, E. F. and French, K. R. (1993). <em>Common Risk Factors in the Returns on Stocks and Bonds.</em> Journal of Financial Economics, 33(1), 3–56. <a href="https://doi.org/10.1016/0304-405X(93)90023-5">Published paper</a>.<p>Market, size and value factor construction and attribution.</p></li>
+<li>Carhart, M. M. (1997). <em>On Persistence in Mutual Fund Performance.</em> Journal of Finance, 52(1), 57–82. <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1997.tb03808.x">Published paper</a>.<p>Momentum in a four-factor performance benchmark.</p></li>
+<li>Fama, E. F. and French, K. R. (2015). <em>A Five-Factor Asset Pricing Model.</em> Journal of Financial Economics, 116(1), 1–22. <a href="https://doi.org/10.1016/j.jfineco.2014.10.010">Published paper</a>.<p>Profitability and investment alongside market, size and value.</p></li>
+<li>French, K. R. <em>Data Library.</em> <a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html">Author-maintained library</a>; <a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_5_factors_2x3.html">five-factor definitions</a>; <a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/det_mom_factor.html">momentum definition</a>.<p>Replication requires the documented universe, timing, weighting and source release.</p></li>
+<li>Asness, C. S., Frazzini, A. and Pedersen, L. H. (2019). <em>Quality Minus Junk.</em> Review of Accounting Studies, 24, 34–112. <a href="https://www.aqr.com/Insights/Research/Working-Paper/Quality-Minus-Junk">Author research and working paper</a>.<p>A broad composite quality construction and its pricing.</p></li>
+<li>Frazzini, A. and Pedersen, L. H. (2014). <em>Betting Against Beta.</em> Journal of Financial Economics, 111(1), 1–25. <a href="https://docs.lhpedersen.com/BettingAgainstBeta.pdf">Author manuscript</a>.<p>Leverage constraints and a beta-normalized defensive portfolio.</p></li>
+<li>Fama, E. F. and MacBeth, J. D. (1973). <em>Risk, Return, and Equilibrium: Empirical Tests.</em> Journal of Political Economy, 81(3), 607–636. <a href="https://doi.org/10.1086/260061">Published paper</a>.<p>Cross-sectional asset-pricing estimation across dates.</p></li>
+<li>Newey, W. K. and West, K. D. (1987). <em>A Simple, Positive Semi-Definite, Heteroskedasticity and Autocorrelation Consistent Covariance Matrix.</em> Econometrica, 55(3), 703–708. <a href="https://www.nber.org/papers/t0055">Author working-paper precursor</a>.<p>The HAC covariance construction; bandwidth and normalization must be specified.</p></li>
+<li>Harvey, C. R., Liu, Y. and Zhu, H. (2016). <em>… and the Cross-Section of Expected Returns.</em> Review of Financial Studies, 29(1), 5–68. <a href="https://people.duke.edu/~charvey/Research/Published_Papers/P118_and_the_cross.PDF">Author-hosted paper</a>.<p>Multiple testing and the evidential burden of factor discovery.</p></li>
+<li>Ledoit, O. and Wolf, M. (2004). <em>A Well-Conditioned Estimator for Large-Dimensional Covariance Matrices.</em> Journal of Multivariate Analysis, 88(2), 365–411. <a href="https://www.ledoit.net/Well-conditioned2004.pdf">Author-hosted paper</a>.<p>Covariance shrinkage and high-dimensional estimation.</p></li>
+</ol>
+<h3>A final reading path</h3>
+<p>Reproduce the return identities and simple CAPM beta first. Then distinguish the style scores from traded-factor definitions, reconstruct a neutral tail portfolio and fit a return regression. Study HAC inference before interpreting alpha, and covariance attribution before using estimated exposures to hedge.</p>
+<p>An empirical extension should begin with point-in-time data and a fixed research design. A trading extension should add feasible execution and financing. A risk extension should validate covariance forecasts and stress behavior. Each builds on these notes without treating a descriptive fit as a complete investment process.</p>
+<div class="end-links"><a href="yield-curve-modelling.html">← Quant Basics 07 · Yield Curve Modelling</a><a href="../index.html#quant-basics">Return to Quant Basics ↗</a><a href="black-scholes-basics.html">Start the series · Project 01 ↗</a></div>
+</section>

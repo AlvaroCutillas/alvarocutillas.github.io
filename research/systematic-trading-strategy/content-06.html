@@ -1,0 +1,151 @@
+<section id="laboratory" data-title="Interactive systematic-strategy laboratory">
+<div class="section-kicker">26 / Numerical study</div><h2>Interactive systematic-strategy laboratory</h2>
+<p>The laboratory runs the specified long/cash strategy on a reproducible synthetic price path. It generates market observations, forms trailing signals, optionally scales them by estimated volatility, delays execution and reconciles shares and cash after proportional costs. The same market and eligible interval are used for all displayed account comparisons.</p>
+{{interactive}}
+<h3>Suggested experiments</h3>
+<ol>
+<li><strong>Begin with the benchmark.</strong> Use the five-regime model, seed 5105, 63-session momentum, 12% volatility target, 20-session volatility window, one-session delay, 10 bps cost and 2% annual cash return. The first eligible return is day 65.</li>
+<li><strong>Set costs to zero.</strong> Net and zero-cost strategy curves coincide. Restore 10 bps and compare fees with the change in final wealth. Their difference includes subsequent compounding.</li>
+<li><strong>Disable volatility scaling.</strong> The risky weight is 100% on long-signal days. Compare average exposure, turnover and drawdown, then ask which changes came from sizing rather than the signal.</li>
+<li><strong>Increase the execution delay.</strong> The rule uses older formation information and the common evaluation start moves accordingly. A change in performance reflects both latency and the slightly altered eligible interval.</li>
+<li><strong>Switch to the IID market.</strong> The generator has a constant positive log-return intercept but no serial dependence. A favorable timing outcome on one seed does not establish an edge; compare many independent seeds.</li>
+<li><strong>Compare positive and negative serial dependence.</strong> These artificial models alter the return process while keeping the seed and innovation scale fixed. They are mechanism experiments, not real-market forecasts.</li>
+<li><strong>Try the contrarian rule.</strong> It holds the risky asset only while the rolling price z-score is below −1. It does not maintain a position until a separate exit threshold. Keep that exact policy in mind when interpreting turnover.</li>
+<li><strong>Double initial capital.</strong> Under this proportional-cost, unlimited-fill model, percentage performance stays the same and currency balances and fees double. The capacity discussion explains why this homogeneity can fail in a real market.</li>
+<li><strong>Download the ledger.</strong> Inspect a trade's formation date, execution price, target fraction, fee, cash and subsequent return. Multiply the net return factors to reproduce final wealth.</li>
+</ol>
+<p>The four curves are the net strategy, the same strategy at zero cost, a fully invested passive account paying the specified entry cost, and cash. They finish with holdings valued at the final close; no account is forced to liquidate. Maximum drawdown is signed and includes initial wealth. The Sharpe uses cash-excess returns and the conventional square-root-of-252 scaling.</p>
+<p>Changing a lookback or volatility window can change warm-up and therefore the displayed common evaluation start. For comparisons across such changes, align the interval as in the static robustness experiment. Each run's note reports its start and number of return periods.</p>
+<p>This laboratory has no estimated forecasting model, no parameter optimization and no real price history. Repeatedly trying settings and inspecting results is exploratory research, even though every individual account is computed causally. The synthetic regimes are known to the generator and withheld from the signal.</p>
+</section>
+
+<section id="worked-study" data-title="Worked strategy and walk-forward studies">
+<div class="section-kicker">27 / Worked study</div><h2>Worked strategy and walk-forward studies</h2>
+<h3>Study 1: a fixed long/cash momentum rule</h3>
+<p>Use the benchmark laboratory settings and €100,000 initial wealth. The synthetic market contains 1,512 sessions. The signal requires 63 observed returns and the execution delay is one session, so evaluation starts at close 64 and contains 1,448 account return periods. All four accounts share that interval.</p>
+{{table:performance}}
+<p>The figures are calculated from the full account ledger. A positive net wealth change does not by itself imply useful timing: the cash account also earns a positive compound return. Compare growth, estimated excess-return Sharpe, exposure and drawdown together. The benchmark seed was fixed to make the example reproducible, rather than selected to produce a favorable strategy outcome.</p>
+<p>The zero-cost result answers how the specified policy behaves before proportional trading frictions. The passive result answers what happens from owning the same synthetic asset throughout the common interval. The cash result isolates the deposit convention. These comparisons separate several components without claiming that the single simulated path proves a market anomaly.</p>
+<h3>Study 2: an account calculated by hand</h3>
+<p>Begin with 100 currency units, no cash interest and prices 100, 110, 99, 103.95 and 98.7525. Formation targets alternate long and cash. Use a one-session delay and 10 bps cost. The first interval remains in cash because no target from a negative formation date exists. The first long target is executed at close 1, price 110, and earns the interval ending at day 2.</p>
+{{table:ledger}}
+<p>At the first purchase, stock value after fees is \(100/1.001\approx99.90010\). The 10% asset loss reduces stock wealth to approximately 89.91009. At the next close the cash target sells the stock and pays a sell fee; the subsequent asset rebound is not earned while the account is in cash. A later long target participates in the next decline. The ledger makes each missed or earned move explicit.</p>
+<p>A formula that buys before observing a signal, forgets the sell cost or earns the rebound with a cash target produces a different result. This miniature path is useful precisely because each event can be checked independently of a large performance report.</p>
+<h3>Study 3: walk-forward parameter selection</h3>
+<p>Select among five momentum lookbacks using past net Sharpe, without volatility scaling. The procedure begins fitting after close 504, refits every 126 sessions and uses at most 504 eligible past sessions. The table records fitting times and the earliest return each new choice can affect.</p>
+{{table:walk}}
+<p>Choices can change as the sample evolves. Their changes are not intrinsically evidence of successful adaptation: they may respond to noise. The evaluation account continues its holdings across switches and pays the resulting costs. Compare it with a fixed 63-session rule beginning at the same evaluation close.</p>
+{{table:walk-results}}
+<p>Both are synthetic demonstrations. Walk-forward selection respects information availability within the declared procedure, while choosing that procedure after inspecting its result would still create an additional research-selection layer.</p>
+<h3>Study 4: conditional return-path uncertainty</h3>
+<p>Resample the fixed strategy's net return series using 600 circular-block replications of length 20. The percentile ranges below are conditional on the observed return series and this resampling design. They are not guarantees about future live performance.</p>
+{{table:bootstrap}}
+<p>Resampling existing strategy returns leaves the original signals and selection fixed. To investigate the full decision system, resample or simulate market inputs and rerun the policy. To investigate a search, repeat that search inside the experiment. The uncertainty question determines what must be recalculated.</p>
+</section>
+
+<section id="appendix" data-title="Implementation and mathematical appendix">
+<div class="section-kicker">28 / Appendix</div><h2>Implementation and mathematical appendix</h2>
+<h3>A minimal cash-and-shares engine</h3>
+<p>The Python routine below accepts positive prices and already formed target weights. Targets are indexed by formation close. It uses the same post-cost fraction equations as the laboratory and can be checked on a short deterministic path. The generator, rolling features and performance statistics are separate components.</p>
+<pre><code>import numpy as np
+
+def simulate_account(prices, targets, start, delay=1,
+                     capital=100.0, cost_bps=10.0, cash_annual=0.02):
+    p = np.asarray(prices, dtype=float)
+    w = np.asarray(targets, dtype=float)
+    if (p.ndim != 1 or w.shape != p.shape
+            or not np.isfinite(p).all() or np.any(p &lt;= 0)
+            or not np.isfinite(w).all() or np.any((w &lt; 0) | (w &gt; 1))):
+        raise ValueError("Positive prices and targets in [0, 1] required")
+    if not 0 &lt;= start &lt; len(p) - 1 or delay &lt; 1 or capital &lt;= 0:
+        raise ValueError("Invalid account interval or capital")
+    c = cost_bps / 10000
+    if not 0 &lt;= c &lt; 1 or cash_annual &lt;= -1:
+        raise ValueError("Invalid cost or cash-rate assumption")
+    rf = (1 + cash_annual) ** (1 / 252) - 1
+    cash, shares, equity = capital, 0.0, capital
+    wealth = [equity]
+    ledger = []
+    for j in range(start + 1, len(p)):
+        formation = j - 1 - delay
+        target = w[formation] if formation &gt;= 0 else 0.0
+        stock_before = shares * p[j - 1]
+        h = stock_before / equity
+        if target &gt;= h:
+            u = target * (1 + c * h) / (1 + c * target)
+        else:
+            u = target * (1 - c * h) / (1 - c * target)
+        traded = equity * abs(u - h)
+        fee = c * traded
+        stock_after = equity * u
+        cash_after = equity - fee - stock_after
+        shares = stock_after / p[j - 1]
+        cash = cash_after * (1 + rf)
+        next_equity = shares * p[j] + cash
+        ledger.append((j, formation, target, traded, fee,
+                       stock_after, cash_after, next_equity))
+        equity = next_equity
+        wealth.append(equity)
+    return np.asarray(wealth), ledger</code></pre>
+<p>For production use, additionally validate integer indices, finite scalar inputs, calendars, instrument constraints and the execution model. The snippet's scope is a single positive-price asset and nonnegative cash, with no distributions, splits, tax, short borrow or leverage.</p>
+<h3>Portfolio exposure and return attribution</h3>
+<p>For a costless one-period portfolio with risky positions \(w_i\) and cash fraction \(w_c=1-\sum_iw_i\):</p>
+\[ R_p=\sum_iw_iR_i+w_c r_f,\qquad
+R_p-r_f=\sum_iw_i(R_i-r_f). \]
+<p>This shows why a low-exposure strategy may mainly earn cash. In a strategy with costs, the exact post-cost wealth factor includes both the cost deduction and subsequent return, as derived in Chapter 14. Currency attribution should reconcile to account wealth rather than only to an approximate weight equation.</p>
+<h3>Duration of return aggregation</h3>
+<p>For stationary additive excess returns \(x_t\), the variance of their sum is:</p>
+\[ \operatorname{Var}\!\left(\sum_{t=1}^{q}x_t\right)
+=q\gamma_0+2\sum_{k=1}^{q-1}(q-k)\gamma_k. \]
+<p>This identity gives the autocorrelation Sharpe multiplier in Chapter 22 after dividing the mean \(q\mu_x\) by the aggregated standard deviation. Compounded wealth is a different nonlinear quantity, so use account returns to calculate CAGR directly.</p>
+<h3>Growth and variance</h3>
+<p>For small simple returns with suitable moments, a second-order expansion gives:</p>
+\[ \mathbb E[\ln(1+R)]\approx
+\mathbb E[R]-\frac12\mathbb E[R^2]
+=\mu-\frac12(\sigma^2+\mu^2). \]
+<p>The approximation explains part of the gap between arithmetic average return and log growth. It is not reliable for large losses near −100%, highly leveraged outcomes or distributions lacking the necessary moments. A strategy can increase arithmetic expected return while reducing expected log growth through increased variance.</p>
+<h3>Risk-matched comparisons</h3>
+<p>A constant risky fraction \(\lambda\) in an asset plus cash has, in a costless one-period model, excess return \(\lambda(R-r_f)\). Scaling changes mean and standard deviation proportionally for \(\lambda&gt;0\), leaving the population Sharpe unchanged under those assumptions. A dynamic timing rule or nonzero costs breaks this simple proportional comparison.</p>
+<p>Select risk-matching parameters from training information. Choosing a passive leverage multiplier using the evaluation sample's realized volatility is useful as a descriptive normalization, but it is not an independently implementable prospective benchmark unless that hindsight is acknowledged.</p>
+<h3>Verification principles</h3>
+<p>Check causal targets, exact fee deductions, post-cost weights, cash accrual, common evaluation dates, entry costs and final marking conventions. Compare independent ledgers on randomized and deterministic inputs. For statistical inference, verify the experiment's assumptions rather than equating arithmetic correctness with evidence of predictability.</p>
+</section>
+
+<section id="exercises" data-title="Exercises and worked solutions">
+<div class="section-kicker">29 / Exercises</div><h2>Exercises and worked solutions</h2>
+<p>Attempt each question before opening its solution. Assume positive asset prices, long/cash exposure and the information convention stated in the question.</p>
+<details><summary>1. Locate the first eligible return</summary><p>A trailing return uses 63 sessions. The target is formed after a close and executed one session later. Which return is first affected?</p><div class="solution"><strong>Solution</strong><p>The first signal exists at close 63, executes at close 64 and earns the interval from close 64 to close 65. The first affected return is day 65. Starting both strategy and benchmarks at close 64 aligns their evaluation.</p></div></details>
+<details><summary>2. Calculate a two-period compounded return</summary><p>An asset gains 10% and then loses 10%. What is its cumulative return? What return restores the loss?</p><div class="solution"><strong>Solution</strong><p>The factor is \(1.10\times0.90=0.99\), a 1% loss. Recovering from that new level requires \(1/0.99-1\approx1.01010\%\). Summing the two original returns gives zero and is incorrect for wealth.</p></div></details>
+<details><summary>3. Fund an all-stock target after costs</summary><p>You have 100 currency units in cash, target 100% stock and pay 10 bps on one-way notional. Find stock value and fee without borrowing.</p><div class="solution"><strong>Solution</strong><p>Stock value is \(100/1.001\approx99.90010\). Fee is \(0.001\times99.90010\approx0.09990\). Cash is zero and stock is exactly 100% of post-cost wealth. Buying stock worth 100 before deducting the fee creates negative cash.</p></div></details>
+<details><summary>4. Rebalance a fractional target</summary><p>Pre-trade wealth is 100, current stock value is 40, target post-cost stock fraction is 60% and cost is 1% of traded notional. Find the new stock value and fee.</p><div class="solution"><strong>Solution</strong><p>With \(h=0.4,w=0.6,c=0.01\), \(u=0.6(1.004)/1.006\approx0.598807157\). Stock value is 59.88072, traded notional is 19.88072 and fee is 0.198807. Post-cost wealth is 99.80119, giving exactly a 60% stock fraction.</p></div></details>
+<details><summary>5. Use drifted weights for turnover</summary><p>A costless portfolio starts 50% stock and 50% cash. Stock rises 10% and cash is unchanged. What is the stock weight before rebalancing?</p><div class="solution"><strong>Solution</strong><p>Stock value becomes 55 and total wealth 105, so the weight is \(55/105\approx52.38095\%\). A return to 50% requires a sale. Comparing a new 50% target only with yesterday's 50% target would report no trade incorrectly.</p></div></details>
+<details><summary>6. Estimate a first-order break-even cost</summary><p>Gross mean excess return is 0.02% per session and mean one-way turnover is 0.20. What proportional cost exhausts that approximate advantage?</p><div class="solution"><strong>Solution</strong><p>\(c\approx0.0002/0.20=0.001\), or 10 bps per one-way traded notional. This ignores cost-return interaction, changing behavior and nonlinear impact, so check it with the full ledger.</p></div></details>
+<details><summary>7. Interpret a volatility target</summary><p>Your signal is long, estimated annual asset volatility is 20%, the portfolio target is 12% and maximum risky weight is 100%. What target weight is formed?</p><div class="solution"><strong>Solution</strong><p>The risky weight is \(12/20=60\%\), with 40% cash. It is a target based on estimated volatility; realized portfolio risk can differ after execution and future market changes.</p></div></details>
+<details><summary>8. Calculate a multiple-testing probability</summary><p>Under independence, twenty null tests each have 5% false-positive probability. What is the chance of at least one false positive?</p><div class="solution"><strong>Solution</strong><p>\(1-0.95^{20}\approx64.1514\%\). Correlation changes this exact expression for a real strategy family, but testing many variants still changes how a selected winner should be assessed.</p></div></details>
+<details><summary>9. Check an unfinished training label</summary><p>A feature at close 98 is labeled with the return through close 103. You fit a model after close 100. Can that row's label be used?</p><div class="solution"><strong>Solution</strong><p>No. The label's outcome is not complete until close 103. Its early feature timestamp does not make its future return known at close 100. Purge or exclude the unfinished label according to the evaluation design.</p></div></details>
+<details><summary>10. Derive recovery after a drawdown</summary><p>Wealth falls from 100 to 80. What gain is required to regain 100? Can a 20% gain do it?</p><div class="solution"><strong>Solution</strong><p>The required gain is \(100/80-1=25\%\). A 20% gain reaches only 96. Drawdown and recovery percentages use different bases.</p></div></details>
+<details><summary>11. Explain gross-minus-net wealth</summary><p>Why is final gross wealth minus final net wealth generally different from the sum of nominal fees?</p><div class="solution"><strong>Solution</strong><p>Fees remove capital that would have earned subsequent gains or losses. Target fractions also generate trades from a changed capital base. Rerun the zero-cost account rather than adding fees to net wealth.</p></div></details>
+<details><summary>12. Evaluate a selected walk-forward parameter</summary><p>A new lookback is selected using returns through close 504. Targets need a one-session execution delay. What is the earliest return that choice can affect?</p><div class="solution"><strong>Solution</strong><p>Form the new target after close 504, execute at close 505 and earn return 506. Applying the new choice to return 505 assumes a fill at the already-observed selection close.</p></div></details>
+<details><summary>13. Distinguish conditional bootstrap questions</summary><p>You resample a winning strategy's realized return series while keeping its parameter fixed. Does this include uncertainty from selecting the winner?</p><div class="solution"><strong>Solution</strong><p>No. It conditions on the selected strategy and observed return series. Selection uncertainty requires repeating the declared search inside an appropriate resampling or simulation design, while respecting future information boundaries.</p></div></details>
+<details><summary>14. Interpret a smooth return curve</summary><p>A strategy has a high hit rate and little observed volatility. Is that sufficient evidence of low risk?</p><div class="solution"><strong>Solution</strong><p>No. Stale marks, omitted costs, leverage or short optionality can produce deceptively smooth samples. Examine executable prices, exposure, tail scenarios and operational constraints, together with the observed return distribution.</p></div></details>
+</section>
+
+<section id="references" data-title="References and further reading">
+<div class="section-kicker">30 / References</div><h2>References and further reading</h2>
+<p>These primary papers support the research, measurement and validation concepts. The page's synthetic experiments and account examples are independently computed illustrations, rather than replications of any paper's market sample.</p>
+<ol class="references">
+<li>Sharpe, W. F. (1994). <a href="https://web.stanford.edu/~wfsharpe/art/sr/SR.htm">The Sharpe Ratio</a>. <em>Journal of Portfolio Management</em>, 21(1), 49–58. Differential returns and performance measurement.</li>
+<li>Lo, A. W. (2002). <a href="https://alo.mit.edu/publications/page/18/">The Statistics of Sharpe Ratios</a>. <em>Financial Analysts Journal</em>, 58(4), 36–52. Sampling uncertainty and time aggregation; author publication page.</li>
+<li>Moskowitz, T. J., Ooi, Y. H. and Pedersen, L. H. (2012). <a href="https://fairmodel.econ.yale.edu/ec439/mosk.pdf">Time Series Momentum</a>. <em>Journal of Financial Economics</em>, 104(2), 228–250. Empirical time-series momentum in futures.</li>
+<li>Almgren, R. and Chriss, N. (2001). <a href="https://doi.org/10.21314/JOR.2001.041">Optimal Execution of Portfolio Transactions</a>. <em>Journal of Risk</em>, 3(2), 5–39. Market impact and execution-risk trade-offs.</li>
+<li>White, H. (2000). <a href="https://onlinelibrary.wiley.com/doi/10.1111/1468-0262.00152">A Reality Check for Data Snooping</a>. <em>Econometrica</em>, 68(5), 1097–1126. Inference after searching a model family.</li>
+<li>Harvey, C. R., Liu, Y. and Zhu, H. (2016). <a href="https://www.nber.org/papers/w20592">… and the Cross-Section of Expected Returns</a>. <em>Review of Financial Studies</em>, 29(1), 5–68; NBER working-paper version. Multiple testing in factor research.</li>
+<li>Bailey, D. H., Borwein, J. M., López de Prado, M. and Zhu, Q. J. (2017). <a href="https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf">The Probability of Backtest Overfitting</a>. <em>Journal of Computational Finance</em>, 20(4), 39–69; author preprint. Structured assessment of selection overfitting.</li>
+<li>Bailey, D. H. and López de Prado, M. (2014). <a href="https://www.davidhbailey.com/dhbpapers/deflated-sharpe.pdf">The Deflated Sharpe Ratio: Correcting for Selection Bias, Backtest Overfitting and Non-Normality</a>. <em>Journal of Portfolio Management</em>, 40(5), 94–107.</li>
+<li>Newey, W. K. and West, K. D. (1987). <a href="https://doi.org/10.2307/1913610">A Simple, Positive Semi-Definite, Heteroskedasticity and Autocorrelation Consistent Covariance Matrix</a>. <em>Econometrica</em>, 55(3), 703–708. Dependence-aware covariance estimation.</li>
+<li>Chan, E. P. (2013). <em>Algorithmic Trading: Winning Strategies and Their Rationale</em>. Wiley. Practical strategy design and implementation discussions.</li>
+<li>López de Prado, M. (2018). <em>Advances in Financial Machine Learning</em>. Wiley. Financial labels, validation and research design.</li>
+</ol>
+<div class="callout"><strong>Connecting the Quant Basics projects</strong><p><a href="black-scholes-basics.html">Black–Scholes</a> supplies instrument valuation, <a href="monte-carlo-option-pricing.html">Monte Carlo</a> supplies simulation design, <a href="markowitz-portfolio-theory.html">Markowitz</a> supplies allocation principles and <a href="var-expected-shortfall.html">VaR &amp; Expected Shortfall</a> supplies tail-risk measurement. A systematic strategy applies those tools inside a timestamped, self-financing decision process.</p></div>
+<div class="end-links"><a href="#introduction">Return to the beginning ↑</a><a href="../index.html#quant-basics">Back to Quant Basics ↗</a></div>
+</section>

@@ -1,0 +1,412 @@
+<svg role="img" aria-labelledby="robustness-title robustness-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="302.4pt" viewBox="0 0 720 302.4" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="robustness-title">Figure 16 · Lookback and trading-cost sensitivity</title><desc id="robustness-desc">Same synthetic market and common start at close 253; no volatility scaling. These are exploratory in-sample variants. Inspecting the surface counts as research selection and does not create new out-of-sample evidence.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:05:15.050615</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="robustness-figure_1">
+  <g id="robustness-patch_1">
+   <path d="M 0 302.4 
+L 720 302.4 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="robustness-axes_1">
+   <g id="robustness-patch_2">
+    <path d="M 64.46 259.18 
+L 706.5 259.18 
+L 706.5 35.14 
+L 64.46 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="robustness-matplotlib.axis_1">
+    <g id="robustness-xtick_1">
+     <g id="robustness-line2d_1">
+      <path d="M 166.918567 259.18 
+L 166.918567 35.14 
+" clip-path="url(#robustness-p72f8f39176)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="robustness-line2d_2">
+      <defs>
+       <path id="robustness-m1f631612ce" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#robustness-m1f631612ce" x="166.918567" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="robustness-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="166.918567" y="273.018594" transform="rotate(-0 166.918567 273.018594)">50</text>
+     </g>
+    </g>
+    <g id="robustness-xtick_2">
+     <g id="robustness-line2d_3">
+      <path d="M 293.254656 259.18 
+L 293.254656 35.14 
+" clip-path="url(#robustness-p72f8f39176)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="robustness-line2d_4">
+      <g>
+       <use href="#robustness-m1f631612ce" x="293.254656" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="robustness-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="293.254656" y="273.018594" transform="rotate(-0 293.254656 273.018594)">100</text>
+     </g>
+    </g>
+    <g id="robustness-xtick_3">
+     <g id="robustness-line2d_5">
+      <path d="M 419.590744 259.18 
+L 419.590744 35.14 
+" clip-path="url(#robustness-p72f8f39176)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="robustness-line2d_6">
+      <g>
+       <use href="#robustness-m1f631612ce" x="419.590744" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="robustness-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="419.590744" y="273.018594" transform="rotate(-0 419.590744 273.018594)">150</text>
+     </g>
+    </g>
+    <g id="robustness-xtick_4">
+     <g id="robustness-line2d_7">
+      <path d="M 545.926832 259.18 
+L 545.926832 35.14 
+" clip-path="url(#robustness-p72f8f39176)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="robustness-line2d_8">
+      <g>
+       <use href="#robustness-m1f631612ce" x="545.926832" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="robustness-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="545.926832" y="273.018594" transform="rotate(-0 545.926832 273.018594)">200</text>
+     </g>
+    </g>
+    <g id="robustness-xtick_5">
+     <g id="robustness-line2d_9">
+      <path d="M 672.26292 259.18 
+L 672.26292 35.14 
+" clip-path="url(#robustness-p72f8f39176)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="robustness-line2d_10">
+      <g>
+       <use href="#robustness-m1f631612ce" x="672.26292" y="259.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="robustness-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="672.26292" y="273.018594" transform="rotate(-0 672.26292 273.018594)">250</text>
+     </g>
+    </g>
+    <g id="robustness-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="385.48" y="285.728906" transform="rotate(-0 385.48 285.728906)">Lookback (sessions)</text>
+    </g>
+   </g>
+   <g id="robustness-matplotlib.axis_2">
+    <g id="robustness-ytick_1">
+     <g id="robustness-line2d_11">
+      <path d="M 64.46 233.394936 
+L 706.5 233.394936 
+" clip-path="url(#robustness-p72f8f39176)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="robustness-line2d_12">
+      <defs>
+       <path id="robustness-mce2fb0b02f" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#robustness-mce2fb0b02f" x="64.46" y="233.394936" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="robustness-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="236.814233" transform="rotate(-0 57.46 236.814233)">−5.0%</text>
+     </g>
+    </g>
+    <g id="robustness-ytick_2">
+     <g id="robustness-line2d_13">
+      <path d="M 64.46 207.358898 
+L 706.5 207.358898 
+" clip-path="url(#robustness-p72f8f39176)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="robustness-line2d_14">
+      <g>
+       <use href="#robustness-mce2fb0b02f" x="64.46" y="207.358898" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="robustness-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="210.778195" transform="rotate(-0 57.46 210.778195)">−2.5%</text>
+     </g>
+    </g>
+    <g id="robustness-ytick_3">
+     <g id="robustness-line2d_15">
+      <path d="M 64.46 181.32286 
+L 706.5 181.32286 
+" clip-path="url(#robustness-p72f8f39176)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="robustness-line2d_16">
+      <g>
+       <use href="#robustness-mce2fb0b02f" x="64.46" y="181.32286" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="robustness-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="184.742157" transform="rotate(-0 57.46 184.742157)">0.0%</text>
+     </g>
+    </g>
+    <g id="robustness-ytick_4">
+     <g id="robustness-line2d_17">
+      <path d="M 64.46 155.286822 
+L 706.5 155.286822 
+" clip-path="url(#robustness-p72f8f39176)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="robustness-line2d_18">
+      <g>
+       <use href="#robustness-mce2fb0b02f" x="64.46" y="155.286822" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="robustness-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="158.706119" transform="rotate(-0 57.46 158.706119)">2.5%</text>
+     </g>
+    </g>
+    <g id="robustness-ytick_5">
+     <g id="robustness-line2d_19">
+      <path d="M 64.46 129.250784 
+L 706.5 129.250784 
+" clip-path="url(#robustness-p72f8f39176)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="robustness-line2d_20">
+      <g>
+       <use href="#robustness-mce2fb0b02f" x="64.46" y="129.250784" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="robustness-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="132.67008" transform="rotate(-0 57.46 132.67008)">5.0%</text>
+     </g>
+    </g>
+    <g id="robustness-ytick_6">
+     <g id="robustness-line2d_21">
+      <path d="M 64.46 103.214745 
+L 706.5 103.214745 
+" clip-path="url(#robustness-p72f8f39176)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="robustness-line2d_22">
+      <g>
+       <use href="#robustness-mce2fb0b02f" x="64.46" y="103.214745" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="robustness-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="106.634042" transform="rotate(-0 57.46 106.634042)">7.5%</text>
+     </g>
+    </g>
+    <g id="robustness-ytick_7">
+     <g id="robustness-line2d_23">
+      <path d="M 64.46 77.178707 
+L 706.5 77.178707 
+" clip-path="url(#robustness-p72f8f39176)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="robustness-line2d_24">
+      <g>
+       <use href="#robustness-mce2fb0b02f" x="64.46" y="77.178707" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="robustness-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="80.598004" transform="rotate(-0 57.46 80.598004)">10.0%</text>
+     </g>
+    </g>
+    <g id="robustness-ytick_8">
+     <g id="robustness-line2d_25">
+      <path d="M 64.46 51.142669 
+L 706.5 51.142669 
+" clip-path="url(#robustness-p72f8f39176)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="robustness-line2d_26">
+      <g>
+       <use href="#robustness-mce2fb0b02f" x="64.46" y="51.142669" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="robustness-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="57.46" y="54.561966" transform="rotate(-0 57.46 54.561966)">12.5%</text>
+     </g>
+    </g>
+    <g id="robustness-text_15">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.182344" y="147.16" transform="rotate(-90 21.182344 147.16)">CAGR</text>
+    </g>
+   </g>
+   <g id="robustness-line2d_27">
+    <path d="M 93.643636 65.622087 
+L 111.330689 45.323636 
+L 129.017741 48.25113 
+L 146.704793 77.394937 
+L 164.391846 119.556076 
+L 182.078898 127.211133 
+L 199.76595 143.599987 
+L 217.453003 102.330719 
+L 235.140055 95.063802 
+L 252.827107 89.131634 
+L 270.51416 113.647277 
+L 288.201212 143.469559 
+L 305.888264 143.824438 
+L 323.575317 149.959276 
+L 341.262369 185.438591 
+L 358.949421 199.233659 
+L 376.636474 217.306234 
+L 394.323526 186.759992 
+L 412.010579 188.930352 
+L 429.697631 155.000328 
+L 447.384683 176.104559 
+L 465.071736 150.522102 
+L 482.758788 139.715388 
+L 500.44584 115.373499 
+L 518.132893 103.774374 
+L 535.819945 123.978446 
+L 553.506997 136.973825 
+L 571.19405 160.657894 
+L 588.881102 158.306422 
+L 606.568154 139.326618 
+L 624.255207 122.88361 
+L 641.942259 89.645045 
+L 659.629311 85.889495 
+L 677.316364 99.510083 
+" clip-path="url(#robustness-p72f8f39176)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="robustness-line2d_28">
+    <path d="M 93.643636 90.367792 
+L 111.330689 63.563553 
+L 129.017741 65.982708 
+L 146.704793 93.330949 
+L 164.391846 136.211166 
+L 182.078898 139.856107 
+L 199.76595 154.346342 
+L 217.453003 117.034857 
+L 235.140055 104.951847 
+L 252.827107 99.971003 
+L 270.51416 125.570706 
+L 288.201212 153.361353 
+L 305.888264 155.850642 
+L 323.575317 162.341689 
+L 341.262369 196.590237 
+L 358.949421 210.237002 
+L 376.636474 230.104178 
+L 394.323526 198.717649 
+L 412.010579 197.995344 
+L 429.697631 167.746984 
+L 447.384683 186.527233 
+L 465.071736 164.170106 
+L 482.758788 151.358575 
+L 500.44584 126.400935 
+L 518.132893 110.918697 
+L 535.819945 133.612958 
+L 553.506997 148.21641 
+L 571.19405 172.496467 
+L 588.881102 166.372018 
+L 606.568154 145.812917 
+L 624.255207 129.030596 
+L 641.942259 98.230901 
+L 659.629311 93.600121 
+L 677.316364 108.02119 
+" clip-path="url(#robustness-p72f8f39176)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="robustness-line2d_29">
+    <path d="M 93.643636 126.497764 
+L 111.330689 90.39508 
+L 129.017741 92.079492 
+L 146.704793 116.820268 
+L 164.391846 160.723609 
+L 182.078898 158.550496 
+L 199.76595 170.265605 
+L 217.453003 138.730098 
+L 235.140055 119.621629 
+L 252.827107 116.036083 
+L 270.51416 143.215992 
+L 288.201212 168.029362 
+L 305.888264 173.639126 
+L 323.575317 180.647906 
+L 341.262369 213.093372 
+L 358.949421 226.520668 
+L 376.636474 248.996364 
+L 394.323526 216.395903 
+L 412.010579 211.444056 
+L 429.697631 186.582281 
+L 447.384683 201.967006 
+L 465.071736 184.31714 
+L 482.758788 168.589136 
+L 500.44584 142.73658 
+L 518.132893 121.549776 
+L 535.819945 147.906601 
+L 553.506997 164.862447 
+L 571.19405 190.007418 
+L 588.881102 178.356002 
+L 606.568154 155.469655 
+L 624.255207 138.186746 
+L 641.942259 110.987896 
+L 659.629311 105.068149 
+L 677.316364 120.667121 
+" clip-path="url(#robustness-p72f8f39176)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="robustness-patch_3">
+    <path d="M 64.46 259.18 
+L 64.46 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="robustness-patch_4">
+    <path d="M 64.46 259.18 
+L 706.5 259.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="robustness-text_16">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="64.46" y="22.14" transform="rotate(-0 64.46 22.14)">A parameter neighborhood rather than one winning point</text>
+   </g>
+   <g id="robustness-legend_1">
+    <g id="robustness-line2d_30">
+     <path d="M 594.21625 45.61875 
+L 602.21625 45.61875 
+L 610.21625 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="robustness-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="616.61625" y="48.41875" transform="rotate(-0 616.61625 48.41875)">0 bps one-way cost</text>
+    </g>
+    <g id="robustness-line2d_31">
+     <path d="M 594.21625 57.36125 
+L 602.21625 57.36125 
+L 610.21625 57.36125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="robustness-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="616.61625" y="60.16125" transform="rotate(-0 616.61625 60.16125)">10 bps one-way cost</text>
+    </g>
+    <g id="robustness-line2d_32">
+     <path d="M 594.21625 69.10375 
+L 602.21625 69.10375 
+L 610.21625 69.10375 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="robustness-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="616.61625" y="71.90375" transform="rotate(-0 616.61625 71.90375)">25 bps one-way cost</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="robustness-p72f8f39176">
+   <rect x="64.46" y="35.14" width="642.04" height="224.04"/>
+  </clipPath>
+ </defs>
+</svg>

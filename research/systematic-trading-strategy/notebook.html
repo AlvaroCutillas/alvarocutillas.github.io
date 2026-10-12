@@ -1,0 +1,35 @@
+<div class="notebook" id="strategy-notebook">
+<div class="notebook-head"><strong>Systematic strategy laboratory</strong><span>Synthetic prices / long and cash / explicit costs</span></div>
+<form id="strategy-form">
+<div class="field"><label for="input-rule">Directional rule</label><select id="input-rule" name="rule"><option value="momentum">Time-series momentum · trailing return &gt; 0</option><option value="contrarian">Contrarian · rolling price z-score &lt; −1</option></select></div>
+<div class="field"><label for="input-model">Synthetic market model</label><select id="input-model" name="model"><option value="regimes">Five changing regimes</option><option value="iid">IID log-return innovations</option><option value="trend">Positive serial dependence</option><option value="reversion">Negative serial dependence</option></select></div>
+<div class="field"><label for="input-lookback">Signal lookback (sessions)</label><input id="input-lookback" name="lookback" type="number" min="5" max="252" value="63" step="1" required></div>
+<div class="field"><label for="input-volmode">Risk scaling</label><select id="input-volmode" name="volmode"><option value="on">Volatility target · risky exposure capped at 100%</option><option value="off">Full risky exposure on long-signal days</option></select></div>
+<div class="field"><label for="input-voltarget">Annual volatility target (%)</label><input id="input-voltarget" name="voltarget" type="number" min="1" max="40" value="12" step="any" required><small>Used when volatility scaling is enabled.</small></div>
+<div class="field"><label for="input-volwindow">Volatility window (sessions)</label><input id="input-volwindow" name="volwindow" type="number" min="5" max="126" value="20" step="1" required></div>
+<div class="field"><label for="input-cost">All-in one-way cost (bps)</label><input id="input-cost" name="cost" type="number" min="0" max="100" value="10" step="any" required></div>
+<div class="field"><label for="input-cash">Effective annual cash return (%)</label><input id="input-cash" name="cash" type="number" min="-5" max="15" value="2" step="any" required></div>
+<div class="field"><label for="input-delay">Execution delay (sessions)</label><input id="input-delay" name="delay" type="number" min="1" max="5" value="1" step="1" required></div>
+<div class="field"><label for="input-sessions">Generated market sessions</label><input id="input-sessions" name="sessions" type="number" min="504" max="3000" value="1512" step="1" required></div>
+<div class="field"><label for="input-capital">Initial capital (€)</label><input id="input-capital" name="capital" type="number" min="100" max="1000000000" value="100000" step="any" required></div>
+<div class="field"><label for="input-seed">Random seed</label><input id="input-seed" name="seed" type="number" min="0" max="4294967295" value="5105" step="1" required></div>
+<div class="notebook-action"><button id="calculate" type="submit">Run strategy</button><button id="reset-inputs" type="button">Reset benchmark</button><button id="download-ledger" type="button">Download ledger CSV</button><p>All scenarios are synthetic. Target formation precedes execution; no shorts or borrowing.</p></div>
+</form>
+<p class="calc-error" id="calc-error" role="alert"></p>
+<div class="notebook-results" aria-label="Net strategy results">
+<div class="result"><small>Net CAGR</small><strong id="result-cagr">—</strong></div>
+<div class="result"><small>Excess-return Sharpe</small><strong id="result-sharpe">—</strong></div>
+<div class="result"><small>Maximum signed drawdown</small><strong id="result-dd">—</strong></div>
+<div class="result"><small>Final wealth</small><strong id="result-wealth">—</strong></div>
+</div>
+<div class="metric-grid">
+<div class="greek-result"><span>Total nominal fees</span><output id="result-fees">—</output></div>
+<div class="greek-result"><span>Average risky exposure</span><output id="result-exposure">—</output></div>
+<div class="greek-result"><span>Annual one-way turnover</span><output id="result-turnover">—</output></div>
+</div>
+<div class="notebook-legend"><span><i class="key-net"></i>Strategy, net</span><span><i class="key-gross"></i>Strategy, zero cost</span><span><i class="key-hold"></i>Buy and hold</span><span><i class="key-cash"></i>Cash</span></div>
+<div class="notebook-plot" id="live-plot"></div>
+<div class="lab-table table-wrap"><table><caption>Common evaluation period · 252-session annualization · final holdings marked without forced liquidation</caption><thead><tr><th scope="col">Account</th><th scope="col">Total return</th><th scope="col">CAGR</th><th scope="col">Volatility</th><th scope="col">Sharpe</th><th scope="col">Signed max DD</th></tr></thead><tbody id="lab-metrics"></tbody></table></div>
+<p class="notebook-note" id="notebook-note" role="status"></p>
+<noscript><p>Enable JavaScript to run the laboratory. All static notes, equations, computed figures and worked tables remain readable offline without it.</p></noscript>
+</div>

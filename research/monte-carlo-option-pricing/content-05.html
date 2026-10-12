@@ -1,0 +1,89 @@
+<section id="correlated-assets" data-title="Correlated assets and basket options">
+<div class="section-label">17 / Multiple assets</div><h2>Correlated assets and basket options</h2>
+<p>A multi-asset payoff depends on the joint distribution, not just the individual distributions. For constant-coefficient correlated GBM, terminal log prices satisfy</p>
+\[ \ln S_{i,T}=\ln S_{i,0}+(r-q_i-\tfrac{1}{2}\sigma_i^2)T+\sigma_i\sqrt T\,Z_i,\qquad \mathbb{E}[Z_iZ_j]=\rho_{ij}. \]
+<p>Build the correlation matrix \(R\), factor it as \(R=LL^\mathsf{T}\), draw an independent standard-normal vector \(U\), and set \(Z=LU\). Since \(\operatorname{Cov}(U)=I\), the transformed covariance is \(LL^\mathsf{T}=R\). Every path needs a new independent base vector; its asset coordinates are intentionally dependent after transformation.</p>
+<h3>Admissible correlation matrices</h3>
+<p>A matrix with ones on the diagonal and pairwise entries between minus one and one is not necessarily a valid correlation matrix. It must also be symmetric and positive semidefinite. Cholesky factorisation generally requires positive definiteness; a valid singular matrix can instead use an eigenvalue factorisation restricted to its nonnegative modes.</p>
+<p>Small negative eigenvalues from numerical roundoff can be handled with a documented tolerance. A materially indefinite matrix is a modelling error; silently taking absolute eigenvalues changes the supplied dependence structure. For \(d\) equal pairwise correlations, admissibility requires \(-1/(d-1)\le\rho\le1\). The three-asset example stays inside that range.</p>
+<h3>Arithmetic and geometric baskets</h3>
+<p>An arithmetic basket call with nonnegative weights summing to one pays \((\sum_i w_iS_{i,T}-K)^+\). Its constituent lognormal variables do not make their arithmetic sum lognormal. Monte Carlo directly evaluates the actual sum without imposing a lognormal approximation.</p>
+\[ V_{\mathrm{basket}}=e^{-rT}\mathbb{E}\left[\left(\sum_{i=1}^{d}w_iS_{i,T}-K\right)^+\right]. \]
+{{figure:basket}}
+<p>A geometric basket \(G_T=\prod_i S_{i,T}^{w_i}\) has a normally distributed logarithm under this model. Its parameters are</p>
+\[ \mu_G=\sum_iw_i\left[\ln S_{i,0}+(r-q_i-\tfrac{1}{2}\sigma_i^2)T\right],\qquad v_G=T\sum_i\sum_jw_iw_j\sigma_i\sigma_j\rho_{ij}. \]
+<p>The geometric-basket call therefore has an analytical lognormal price and can serve as a control for the arithmetic-basket call. Controls built from individual discounted stocks are also available. With nonnegative normalised weights, the arithmetic basket exceeds or equals the geometric basket pathwise; their call values inherit that ordering when all other contract conventions agree.</p>
+<h3>Interpretation and extensions</h3>
+<p>Changing correlation changes how much the assets offset or reinforce each other in a basket. The plotted example shows increasing call value as its equal-correlation parameter increases. This observation is tied to the displayed weights, marginal models and convex payoff; it should not be extrapolated indiscriminately to a spread, a minimum option or a barrier on several assets.</p>
+<p>Historical correlation is not automatically the appropriate calibrated pricing dependence. Under stochastic volatility, jumps or heavy-tailed copulas, the joint model requires further specification. Higher dimensions also increase path cost and can reduce the effectiveness of sampling schemes; dimensional flexibility does not remove the need to validate the joint distribution.</p>
+</section>
+
+<section id="asian" data-title="Asian and other path-dependent options">
+<div class="section-label">18 / Path dependence</div><h2>Asian and other path-dependent options</h2>
+<p>An arithmetic Asian option averages observed stock prices before applying its payoff. For equally weighted dates \(t_j\), the fixed-strike call has</p>
+\[ A=\frac{1}{m}\sum_{j=1}^{m}S_{t_j},\qquad H=(A-K)^+,\qquad V=e^{-rT}\mathbb{E}[H]. \]
+<p>The averaging operation precedes the nonlinear payoff. Averaging vanilla call payoffs over dates produces a different contract. Including the initial spot, using irregular weights, or paying at a date different from the final fixing also changes the cash flow and must be specified.</p>
+<h3>A geometric-average control</h3>
+<p>Define the geometric average on exactly the same dates. Its logarithm is an average of jointly normal log prices, so it is normal. Writing \(a=r-q-\sigma^2/2\), its mean and variance are</p>
+\[ G=\exp\left(\frac{1}{m}\sum_j\ln S_{t_j}\right),\qquad \mu_G=\ln S_0+\frac{a}{m}\sum_jt_j,\qquad v_G=\frac{\sigma^2}{m^2}\sum_i\sum_j\min(t_i,t_j). \]
+<p>For fixings \(t_j=jT/m\), excluding the initial spot, these simplify to</p>
+\[ \mu_G=\ln S_0+aT\frac{m+1}{2m},\qquad v_G=\sigma^2T\frac{(m+1)(2m+1)}{6m^2}. \]
+<p>A lognormal payoff expectation then gives the exact geometric-Asian call price:</p>
+\[ C_G=e^{-rT}\left[e^{\mu_G+v_G/2}\Phi(d_G+\sqrt{v_G})-K\Phi(d_G)\right],\qquad d_G=\frac{\mu_G-\ln K}{\sqrt{v_G}}. \]
+<p>Use \(e^{-rT}(G-K)^+\) as the control and \(C_G\) as its known expectation. Arithmetic and geometric averages tend to move together, so this removes a large portion of payoff variation. The coefficient should be fitted on a separate pilot or treated with an appropriate alternative statistical design.</p>
+{{figure:asian}}
+<div class="callout"><p><strong>Analogy: comparing two almost identical thermometers.</strong> One thermometer is the difficult arithmetic payoff; the other is the closely related geometric payoff whose average reading is known exactly. Their shared deviations can be removed. The closer their scenario responses, the more precise the remaining difference becomes.</p></div>
+<h3>Discrete and continuous averaging</h3>
+<p>For a continuously monitored geometric average, \(\ln G=T^{-1}\int_0^T\ln S_t\,dt\) has mean \(\ln S_0+aT/2\) and variance \(\sigma^2T/3\). These are limits of the displayed discrete parameters. A continuously averaged geometric formula is not an exact control expectation for an average observed on only twelve dates.</p>
+<p>A numerical grid used to approximate a continuously averaged arithmetic contract creates integration bias. Increasing the number of fixing dates in an explicitly discrete contract instead changes the contract. The figure compares different stated discrete schedules and does not describe those prices as numerical errors around a single twelve-fixing contract.</p>
+<h3>Other path functionals</h3>
+<p>Lookback payoffs depend on a maximum or minimum; cliquets aggregate local returns, often with caps and floors; realised-variance contracts depend on a prescribed return statistic. For each, determine which state variables can be accumulated online and which crossing or extrema information is unresolved by the grid. Running sums, extrema and realised-return totals often eliminate the need to retain a full path.</p>
+<p>Path dependence can make simulation useful even in a simple market model. It also makes contract conventions more important: observation calendars, fixing weights, treatment of the initial observation and settlement timing must match between the payoff, control and reference calculation.</p>
+</section>
+
+<section id="barrier" data-title="Barrier options and Brownian bridges">
+<div class="section-label">19 / Barrier monitoring</div><h2>Barrier options and Brownian bridges</h2>
+<p>An up-and-out call with upper barrier \(B>S_0\) and no rebate pays a vanilla call only if the stock never reaches \(B\) during the monitoring period. For continuous monitoring, its payoff is</p>
+\[ H=(S_T-K)^+\mathbb{1}_{\max_{0\le t\le T}S_t<B}. \]
+<p>A grid check sees only its nodes. A stock can cross the barrier and return below it between two observations. Ignoring that event overstates survival and generally overprices a continuously monitored knock-out. Exact lognormal endpoint sampling does not solve this missing-path-information problem by itself.</p>
+<h3>Conditional crossing probabilities</h3>
+<p>Under constant-volatility GBM, log spot is a Brownian motion with constant drift. Conditional on two log endpoints \(x_j,x_{j+1}\) below \(b=\ln B\), the probability of an upper-barrier crossing within an interval \(h\) is</p>
+\[ p_j=\exp\left[-\frac{2(b-x_j)(b-x_{j+1})}{\sigma^2h}\right]. \]
+<p>The drift cancels after conditioning on endpoints. If either endpoint reaches or exceeds the barrier, survival is zero. Conditional bridges on separate intervals are independent given the grid values, allowing their interval survival probabilities to be multiplied.</p>
+\[ Y_{\mathrm{bridge}}=e^{-rT}(S_T-K)^+\prod_{j=0}^{m-1}(1-p_j), \]
+<p>with the product set to zero for any barrier-breaching endpoint. This weighted payoff integrates over the unobserved crossing indicators. Under the stated constant-coefficient GBM assumptions, it targets the continuously monitored value without node-monitoring bias. It is not a general exact formula for arbitrary stochastic volatility, moving barriers, double barriers or additional path-dependent cash flows.</p>
+{{figure:barrier}}
+<h3>A useful terminal-only simplification</h3>
+<p>For this particular upper barrier and terminal vanilla payoff, conditioning only on the terminal stock is already sufficient. A single Brownian bridge spanning the whole life supplies the survival probability. Thus the continuous-monitoring price can be computed by a one-dimensional integral of the terminal payoff times that probability. The horizontal reference in the figure uses numerical quadrature of this conditional expectation.</p>
+<p>This is a stronger simplification than adding more dates. More monitored endpoints can increase conditional-payoff variance because they reveal more information about survival. They may still be required by a more complicated contract; their benefit should follow from that contract rather than from an assumption that more nodes always improve every estimator.</p>
+<h3>Discrete monitoring and rebates</h3>
+<p>If a contract explicitly monitors only specified closing prices, crossings between those dates do not knock it out. Applying continuous bridge survival weights would price a different contract. Continuity corrections that approximate the relation between discrete and continuous barriers are also different from directly integrating conditional crossings.</p>
+<p>Rebates paid immediately at first passage depend on the hitting time and its discount factor. Simply adding a fixed maturity-discounted rebate to a survival-weighted terminal payoff does not represent an immediate rebate. Likewise, knock-in/out parity requires matching the same barrier event, payoff and rebate convention on both sides.</p>
+</section>
+
+<section id="greeks" data-title="Monte Carlo sensitivity estimation">
+<div class="section-label">20 / Greeks</div><h2>Monte Carlo sensitivity estimation</h2>
+<p>A Greek is a derivative of the model expectation with respect to an input. It has its own estimator, standard error and numerical assumptions. A precise price estimate does not automatically imply a precise delta or gamma estimate.</p>
+<h3>Finite differences and common random numbers</h3>
+<p>A central spot difference approximates delta by repricing at two perturbed spots:</p>
+\[ \widehat\Delta_h=\frac{\widehat V(S_0+h)-\widehat V(S_0-h)}{2h}. \]
+<p>For a sufficiently smooth price function its deterministic truncation bias is of order \(h^2\). With independent simulation errors in the two prices, dividing their difference by \(2h\) amplifies noise as the bump decreases. Reusing shocks creates a positive covariance between the two prices and can greatly reduce difference variance.</p>
+\[ \operatorname{Var}(\widehat\Delta_h)=\frac{\operatorname{Var}(\widehat V_+)+\operatorname{Var}(\widehat V_-)-2\operatorname{Cov}(\widehat V_+,\widehat V_-)}{4h^2}. \]
+{{figure:greeks}}
+<p>Calculate a pathwise bumped difference first and take its average and sample variance. Subtracting two reported standard errors is not an uncertainty calculation. Choose the bump by balancing bias, variance and floating-point sensitivity; an extremely small bump is not automatically more accurate.</p>
+<h3>Pathwise differentiation</h3>
+<p>With valid differentiation-under-expectation conditions, differentiate each payoff using the same driving shock. Since \(\partial S_T/\partial S_0=S_T/S_0\), a European call has the pathwise delta estimator</p>
+\[ \widehat\Delta_{\mathrm{PW}}=\frac{1}{N}\sum_i e^{-rT}\mathbb{1}_{S_T^{(i)}>K}\frac{S_T^{(i)}}{S_0}. \]
+<p>The probability of hitting the call kink exactly is zero under a continuous distribution, and the first derivative admits this construction. The corresponding pathwise vega observation is</p>
+\[ e^{-rT}\mathbb{1}_{S_T>K}S_T(\sqrt T\,Z-\sigma T). \]
+<p>Vega here is per unit change in volatility, such as from 0.20 to 1.20; divide by 100 to quote sensitivity per one percentage-point volatility move. The standard error is computed from these Greek observations, using paired units if antithetics are applied.</p>
+<p>A digital indicator has derivative zero away from its jump, yet its expected payoff changes smoothly with spot. Naively differentiating that indicator gives the wrong delta. Differentiating a pathwise call delta again while ignoring the indicator boundary similarly misses gamma. Payoff discontinuities and boundary terms require smoothing, likelihood ratios or another justified method.</p>
+<h3>Likelihood-ratio estimators</h3>
+<p>If a parameter enters the density, differentiation can move to that density. Its derivative divided by the density is the score:</p>
+\[ \partial_\theta V=\mathbb{E}\left[H_\theta(X)\,\partial_\theta\ln f_\theta(X)+\partial_\theta H_\theta(X)\right]. \]
+<p>Include discounting within \(H_\theta\) if it depends on the parameter. For a spot Greek under terminal GBM, the lognormal density score gives</p>
+\[ \widehat\Delta_{\mathrm{LR}}=\frac{1}{N}\sum_i Y_i\frac{Z_i}{S_0\sigma\sqrt T}. \]
+<p>This can handle discontinuous terminal payoffs, but its variance may be larger than pathwise differentiation for a smooth payoff and can be problematic as \(\sigma\sqrt T\) becomes small. “Unbiased” does not imply “efficient”. Hybrid methods combine conditioning, scores and pathwise derivatives.</p>
+<h3>Automatic differentiation</h3>
+<p>Automatic or adjoint differentiation efficiently propagates derivatives through a computational graph while keeping the random inputs fixed. It automates valid pathwise calculations; it does not justify differentiation through a discontinuous exercise decision or barrier indicator. Many-input portfolios can benefit greatly, provided contract nonsmoothness and any regression dependence are handled correctly.</p>
+</section>

@@ -1,0 +1,304 @@
+<svg role="img" aria-labelledby="omission-title omission-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="252pt" viewBox="0 0 792 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="omission-title">Figure 12 · Omitted-variable bias</title><desc id="omission-desc">In a two-factor population model, the market-only slope equals βM + βV Cov(M,V)/Var(M). Volatilities are 4.5% and 2.5% per month; no claim is made about a historical market correlation.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-05T16:04:05.640946</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="omission-figure_1">
+  <g id="omission-patch_1">
+   <path d="M 0 252 
+L 792 252 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="omission-axes_1">
+   <g id="omission-patch_2">
+    <path d="M 48.26 208.78 
+L 778.5 208.78 
+L 778.5 35.14 
+L 48.26 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="omission-matplotlib.axis_1">
+    <g id="omission-xtick_1">
+     <g id="omission-line2d_1">
+      <path d="M 81.452727 208.78 
+L 81.452727 35.14 
+" clip-path="url(#omission-p33e4760150)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="omission-line2d_2">
+      <defs>
+       <path id="omission-mfc3a6e4718" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#omission-mfc3a6e4718" x="81.452727" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="omission-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="81.452727" y="222.618594" transform="rotate(-0 81.452727 222.618594)">−0.8</text>
+     </g>
+    </g>
+    <g id="omission-xtick_2">
+     <g id="omission-line2d_3">
+      <path d="M 164.434545 208.78 
+L 164.434545 35.14 
+" clip-path="url(#omission-p33e4760150)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="omission-line2d_4">
+      <g>
+       <use href="#omission-mfc3a6e4718" x="164.434545" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="omission-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="164.434545" y="222.618594" transform="rotate(-0 164.434545 222.618594)">−0.6</text>
+     </g>
+    </g>
+    <g id="omission-xtick_3">
+     <g id="omission-line2d_5">
+      <path d="M 247.416364 208.78 
+L 247.416364 35.14 
+" clip-path="url(#omission-p33e4760150)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="omission-line2d_6">
+      <g>
+       <use href="#omission-mfc3a6e4718" x="247.416364" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="omission-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="247.416364" y="222.618594" transform="rotate(-0 247.416364 222.618594)">−0.4</text>
+     </g>
+    </g>
+    <g id="omission-xtick_4">
+     <g id="omission-line2d_7">
+      <path d="M 330.398182 208.78 
+L 330.398182 35.14 
+" clip-path="url(#omission-p33e4760150)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="omission-line2d_8">
+      <g>
+       <use href="#omission-mfc3a6e4718" x="330.398182" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="omission-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="330.398182" y="222.618594" transform="rotate(-0 330.398182 222.618594)">−0.2</text>
+     </g>
+    </g>
+    <g id="omission-xtick_5">
+     <g id="omission-line2d_9">
+      <path d="M 413.38 208.78 
+L 413.38 35.14 
+" clip-path="url(#omission-p33e4760150)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="omission-line2d_10">
+      <g>
+       <use href="#omission-mfc3a6e4718" x="413.38" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="omission-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="413.38" y="222.618594" transform="rotate(-0 413.38 222.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="omission-xtick_6">
+     <g id="omission-line2d_11">
+      <path d="M 496.361818 208.78 
+L 496.361818 35.14 
+" clip-path="url(#omission-p33e4760150)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="omission-line2d_12">
+      <g>
+       <use href="#omission-mfc3a6e4718" x="496.361818" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="omission-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="496.361818" y="222.618594" transform="rotate(-0 496.361818 222.618594)">0.2</text>
+     </g>
+    </g>
+    <g id="omission-xtick_7">
+     <g id="omission-line2d_13">
+      <path d="M 579.343636 208.78 
+L 579.343636 35.14 
+" clip-path="url(#omission-p33e4760150)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="omission-line2d_14">
+      <g>
+       <use href="#omission-mfc3a6e4718" x="579.343636" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="omission-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="579.343636" y="222.618594" transform="rotate(-0 579.343636 222.618594)">0.4</text>
+     </g>
+    </g>
+    <g id="omission-xtick_8">
+     <g id="omission-line2d_15">
+      <path d="M 662.325455 208.78 
+L 662.325455 35.14 
+" clip-path="url(#omission-p33e4760150)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="omission-line2d_16">
+      <g>
+       <use href="#omission-mfc3a6e4718" x="662.325455" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="omission-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="662.325455" y="222.618594" transform="rotate(-0 662.325455 222.618594)">0.6</text>
+     </g>
+    </g>
+    <g id="omission-xtick_9">
+     <g id="omission-line2d_17">
+      <path d="M 745.307273 208.78 
+L 745.307273 35.14 
+" clip-path="url(#omission-p33e4760150)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="omission-line2d_18">
+      <g>
+       <use href="#omission-mfc3a6e4718" x="745.307273" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="omission-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="745.307273" y="222.618594" transform="rotate(-0 745.307273 222.618594)">0.8</text>
+     </g>
+    </g>
+    <g id="omission-text_10">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="413.38" y="235.328906" transform="rotate(-0 413.38 235.328906)">Market–value correlation</text>
+    </g>
+   </g>
+   <g id="omission-matplotlib.axis_2">
+    <g id="omission-ytick_1">
+     <g id="omission-line2d_19">
+      <path d="M 48.26 175.235909 
+L 778.5 175.235909 
+" clip-path="url(#omission-p33e4760150)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="omission-line2d_20">
+      <defs>
+       <path id="omission-m1542b87034" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#omission-m1542b87034" x="48.26" y="175.235909" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="omission-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="178.655206" transform="rotate(-0 41.26 178.655206)">0.9</text>
+     </g>
+    </g>
+    <g id="omission-ytick_2">
+     <g id="omission-line2d_21">
+      <path d="M 48.26 139.718636 
+L 778.5 139.718636 
+" clip-path="url(#omission-p33e4760150)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="omission-line2d_22">
+      <g>
+       <use href="#omission-m1542b87034" x="48.26" y="139.718636" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="omission-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="143.137933" transform="rotate(-0 41.26 143.137933)">1.0</text>
+     </g>
+    </g>
+    <g id="omission-ytick_3">
+     <g id="omission-line2d_23">
+      <path d="M 48.26 104.201364 
+L 778.5 104.201364 
+" clip-path="url(#omission-p33e4760150)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="omission-line2d_24">
+      <g>
+       <use href="#omission-m1542b87034" x="48.26" y="104.201364" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="omission-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="107.620661" transform="rotate(-0 41.26 107.620661)">1.1</text>
+     </g>
+    </g>
+    <g id="omission-ytick_4">
+     <g id="omission-line2d_25">
+      <path d="M 48.26 68.684091 
+L 778.5 68.684091 
+" clip-path="url(#omission-p33e4760150)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="omission-line2d_26">
+      <g>
+       <use href="#omission-m1542b87034" x="48.26" y="68.684091" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="omission-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="72.103388" transform="rotate(-0 41.26 72.103388)">1.2</text>
+     </g>
+    </g>
+    <g id="omission-text_15">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.075469" y="121.96" transform="rotate(-90 21.075469 121.96)">Market coefficient</text>
+    </g>
+   </g>
+   <g id="omission-line2d_27">
+    <path d="M 81.452727 121.96 
+L 745.307273 121.96 
+L 745.307273 121.96 
+" clip-path="url(#omission-p33e4760150)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="omission-line2d_28">
+    <path d="M 81.452727 200.887273 
+L 745.307273 43.032727 
+L 745.307273 43.032727 
+" clip-path="url(#omission-p33e4760150)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="omission-patch_3">
+    <path d="M 48.26 208.78 
+L 48.26 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="omission-patch_4">
+    <path d="M 48.26 208.78 
+L 778.5 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="omission-text_16">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="48.26" y="22.14" transform="rotate(-0 48.26 22.14)">Omitting a correlated factor shifts the slope</text>
+   </g>
+   <g id="omission-legend_1">
+    <g id="omission-line2d_29">
+     <path d="M 55.46 45.61875 
+L 63.46 45.61875 
+L 71.46 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="omission-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="77.86" y="48.41875" transform="rotate(-0 77.86 48.41875)">Structural market beta</text>
+    </g>
+    <g id="omission-line2d_30">
+     <path d="M 55.46 57.36125 
+L 63.46 57.36125 
+L 71.46 57.36125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="omission-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="77.86" y="60.16125" transform="rotate(-0 77.86 60.16125)">Population omitted-value slope</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="omission-p33e4760150">
+   <rect x="48.26" y="35.14" width="730.24" height="173.64"/>
+  </clipPath>
+ </defs>
+</svg>

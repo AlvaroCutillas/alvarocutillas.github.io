@@ -1,0 +1,351 @@
+<svg role="img" aria-labelledby="hedge-title hedge-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="hedge-title">Figure 18 · Surface-aware spot sensitivities</title><desc id="hedge-desc">One-year strike 100; rate 3%, yield 1%. Sticky strike holds this option IV constant; sticky log-moneyness keeps sigma(k,T) fixed while the forward changes with spot. Numerical gradients use a 0.15 spot grid; endpoints are one-sided.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:54:55.082659</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="hedge-figure_1">
+  <g id="hedge-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="hedge-axes_1">
+   <g id="hedge-patch_2">
+    <path d="M 48.26 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 48.26 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="hedge-matplotlib.axis_1">
+    <g id="hedge-xtick_1">
+     <g id="hedge-line2d_1">
+      <path d="M 78.18 244.78 
+L 78.18 35.14 
+" clip-path="url(#hedge-p585f295962)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedge-line2d_2">
+      <defs>
+       <path id="hedge-mf444665a86" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#hedge-mf444665a86" x="78.18" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedge-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="78.18" y="258.618594" transform="rotate(-0 78.18 258.618594)">85</text>
+     </g>
+    </g>
+    <g id="hedge-xtick_2">
+     <g id="hedge-line2d_3">
+      <path d="M 177.913333 244.78 
+L 177.913333 35.14 
+" clip-path="url(#hedge-p585f295962)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedge-line2d_4">
+      <g>
+       <use href="#hedge-mf444665a86" x="177.913333" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedge-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="177.913333" y="258.618594" transform="rotate(-0 177.913333 258.618594)">90</text>
+     </g>
+    </g>
+    <g id="hedge-xtick_3">
+     <g id="hedge-line2d_5">
+      <path d="M 277.646667 244.78 
+L 277.646667 35.14 
+" clip-path="url(#hedge-p585f295962)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedge-line2d_6">
+      <g>
+       <use href="#hedge-mf444665a86" x="277.646667" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedge-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="277.646667" y="258.618594" transform="rotate(-0 277.646667 258.618594)">95</text>
+     </g>
+    </g>
+    <g id="hedge-xtick_4">
+     <g id="hedge-line2d_7">
+      <path d="M 377.38 244.78 
+L 377.38 35.14 
+" clip-path="url(#hedge-p585f295962)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedge-line2d_8">
+      <g>
+       <use href="#hedge-mf444665a86" x="377.38" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedge-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="377.38" y="258.618594" transform="rotate(-0 377.38 258.618594)">100</text>
+     </g>
+    </g>
+    <g id="hedge-xtick_5">
+     <g id="hedge-line2d_9">
+      <path d="M 477.113333 244.78 
+L 477.113333 35.14 
+" clip-path="url(#hedge-p585f295962)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedge-line2d_10">
+      <g>
+       <use href="#hedge-mf444665a86" x="477.113333" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedge-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="477.113333" y="258.618594" transform="rotate(-0 477.113333 258.618594)">105</text>
+     </g>
+    </g>
+    <g id="hedge-xtick_6">
+     <g id="hedge-line2d_11">
+      <path d="M 576.846667 244.78 
+L 576.846667 35.14 
+" clip-path="url(#hedge-p585f295962)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedge-line2d_12">
+      <g>
+       <use href="#hedge-mf444665a86" x="576.846667" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedge-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="576.846667" y="258.618594" transform="rotate(-0 576.846667 258.618594)">110</text>
+     </g>
+    </g>
+    <g id="hedge-xtick_7">
+     <g id="hedge-line2d_13">
+      <path d="M 676.58 244.78 
+L 676.58 35.14 
+" clip-path="url(#hedge-p585f295962)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedge-line2d_14">
+      <g>
+       <use href="#hedge-mf444665a86" x="676.58" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedge-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="676.58" y="258.618594" transform="rotate(-0 676.58 258.618594)">115</text>
+     </g>
+    </g>
+    <g id="hedge-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="377.38" y="271.328906" transform="rotate(-0 377.38 271.328906)">Spot</text>
+    </g>
+   </g>
+   <g id="hedge-matplotlib.axis_2">
+    <g id="hedge-ytick_1">
+     <g id="hedge-line2d_15">
+      <path d="M 48.26 235.367547 
+L 706.5 235.367547 
+" clip-path="url(#hedge-p585f295962)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedge-line2d_16">
+      <defs>
+       <path id="hedge-mf55b81b4e6" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#hedge-mf55b81b4e6" x="48.26" y="235.367547" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedge-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="238.786844" transform="rotate(-0 41.26 238.786844)">0.3</text>
+     </g>
+    </g>
+    <g id="hedge-ytick_2">
+     <g id="hedge-line2d_17">
+      <path d="M 48.26 198.482217 
+L 706.5 198.482217 
+" clip-path="url(#hedge-p585f295962)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedge-line2d_18">
+      <g>
+       <use href="#hedge-mf55b81b4e6" x="48.26" y="198.482217" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedge-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="201.901514" transform="rotate(-0 41.26 201.901514)">0.4</text>
+     </g>
+    </g>
+    <g id="hedge-ytick_3">
+     <g id="hedge-line2d_19">
+      <path d="M 48.26 161.596887 
+L 706.5 161.596887 
+" clip-path="url(#hedge-p585f295962)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedge-line2d_20">
+      <g>
+       <use href="#hedge-mf55b81b4e6" x="48.26" y="161.596887" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedge-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="165.016183" transform="rotate(-0 41.26 165.016183)">0.5</text>
+     </g>
+    </g>
+    <g id="hedge-ytick_4">
+     <g id="hedge-line2d_21">
+      <path d="M 48.26 124.711556 
+L 706.5 124.711556 
+" clip-path="url(#hedge-p585f295962)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedge-line2d_22">
+      <g>
+       <use href="#hedge-mf55b81b4e6" x="48.26" y="124.711556" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedge-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="128.130853" transform="rotate(-0 41.26 128.130853)">0.6</text>
+     </g>
+    </g>
+    <g id="hedge-ytick_5">
+     <g id="hedge-line2d_23">
+      <path d="M 48.26 87.826226 
+L 706.5 87.826226 
+" clip-path="url(#hedge-p585f295962)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedge-line2d_24">
+      <g>
+       <use href="#hedge-mf55b81b4e6" x="48.26" y="87.826226" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedge-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="91.245523" transform="rotate(-0 41.26 91.245523)">0.7</text>
+     </g>
+    </g>
+    <g id="hedge-ytick_6">
+     <g id="hedge-line2d_25">
+      <path d="M 48.26 50.940896 
+L 706.5 50.940896 
+" clip-path="url(#hedge-p585f295962)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="hedge-line2d_26">
+      <g>
+       <use href="#hedge-mf55b81b4e6" x="48.26" y="50.940896" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="hedge-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="54.360192" transform="rotate(-0 41.26 54.360192)">0.8</text>
+     </g>
+    </g>
+    <g id="hedge-text_15">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.075469" y="139.96" transform="rotate(-90 21.075469 139.96)">Call delta</text>
+    </g>
+   </g>
+   <g id="hedge-line2d_27">
+    <path d="M 78.18 235.250909 
+L 81.172 234.751841 
+L 114.084 223.651228 
+L 155.972 209.260151 
+L 287.62 163.80881 
+L 323.524 151.766055 
+L 353.444 141.955052 
+L 383.364 132.387347 
+L 410.292 124.01071 
+L 437.22 115.876655 
+L 461.156 108.863616 
+L 485.092 102.065252 
+L 509.028 95.489514 
+L 532.964 89.142632 
+L 556.9 83.029203 
+L 580.836 77.152292 
+L 604.772 71.513539 
+L 628.708 66.113269 
+L 652.644 60.950603 
+L 673.588 56.626656 
+L 676.58 56.324204 
+L 676.58 56.324204 
+" clip-path="url(#hedge-p585f295962)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="hedge-line2d_28">
+    <path d="M 78.18 229.099836 
+L 81.172 228.433762 
+L 144.004 200.556716 
+L 170.932 188.8569 
+L 194.868 178.682439 
+L 215.812 169.991893 
+L 236.756 161.525743 
+L 257.7 153.304078 
+L 278.644 145.342445 
+L 299.588 137.652282 
+L 317.54 131.282772 
+L 335.492 125.121484 
+L 353.444 119.169889 
+L 371.396 113.428113 
+L 389.348 107.895114 
+L 407.3 102.568849 
+L 425.252 97.446424 
+L 443.204 92.524232 
+L 464.148 87.029124 
+L 485.092 81.793357 
+L 506.036 76.80879 
+L 526.98 72.06679 
+L 547.924 67.558391 
+L 568.868 63.274424 
+L 589.812 59.20563 
+L 610.756 55.342752 
+L 634.692 51.168411 
+L 658.628 47.23757 
+L 673.588 44.898594 
+L 676.58 44.669091 
+L 676.58 44.669091 
+" clip-path="url(#hedge-p585f295962)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="hedge-patch_3">
+    <path d="M 48.26 244.78 
+L 48.26 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="hedge-patch_4">
+    <path d="M 48.26 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="hedge-text_16">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="48.26" y="22.14" transform="rotate(-0 48.26 22.14)">A smile-motion assumption changes the hedge</text>
+   </g>
+   <g id="hedge-legend_1">
+    <g id="hedge-line2d_29">
+     <path d="M 55.46 45.61875 
+L 63.46 45.61875 
+L 71.46 45.61875 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="hedge-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="77.86" y="48.41875" transform="rotate(-0 77.86 48.41875)">Sticky strike delta</text>
+    </g>
+    <g id="hedge-line2d_30">
+     <path d="M 55.46 57.36125 
+L 63.46 57.36125 
+L 71.46 57.36125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="hedge-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="77.86" y="60.16125" transform="rotate(-0 77.86 60.16125)">Sticky log-moneyness delta</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="hedge-p585f295962">
+   <rect x="48.26" y="35.14" width="658.24" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

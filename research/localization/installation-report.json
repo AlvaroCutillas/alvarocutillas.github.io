@@ -1,0 +1,57 @@
+[
+  {
+    "page": "index.html",
+    "textUnits": 96,
+    "covered": 794
+  },
+  {
+    "page": "black-scholes-basics.html",
+    "textUnits": 776,
+    "covered": 1505
+  },
+  {
+    "page": "black-scholes.html",
+    "textUnits": 330,
+    "covered": 1094
+  },
+  {
+    "page": "equity-factor-model.html",
+    "textUnits": 945,
+    "covered": 1585
+  },
+  {
+    "page": "implied-volatility-surface.html",
+    "textUnits": 954,
+    "covered": 1667
+  },
+  {
+    "page": "markowitz-portfolio-theory.html",
+    "textUnits": 823,
+    "covered": 1550
+  },
+  {
+    "page": "monte-carlo-option-pricing.html",
+    "textUnits": 879,
+    "covered": 1609
+  },
+  {
+    "page": "portfolio-optimization.html",
+    "textUnits": 260,
+    "covered": 1040
+  },
+  {
+    "page": "systematic-trading-strategy.html",
+    "textUnits": 865,
+    "covered": 1587
+  },
+  {
+    "page": "var-expected-shortfall.html",
+    "textUnits": 863,
+    "covered": 1588
+  },
+  {
+    "page": "yield-curve-modelling.html",
+    "textUnits": 1054,
+    "covered": 1760
+  }
+]

@@ -1,0 +1,916 @@
+{
+  "pages": [
+    {
+      "name": "index.html",
+      "spanishHeading": "Álvaro Cutillas",
+      "widths": [
+        {
+          "width": 320,
+          "documentWidth": 320,
+          "nav": 83,
+          "control": {
+            "x": 236,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 308,
+            "bottom": 46,
+            "left": 236
+          }
+        },
+        {
+          "width": 390,
+          "documentWidth": 390,
+          "nav": 83,
+          "control": {
+            "x": 306,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 378,
+            "bottom": 46,
+            "left": 306
+          }
+        },
+        {
+          "width": 768,
+          "documentWidth": 768,
+          "nav": 59,
+          "control": {
+            "x": 678,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 750,
+            "bottom": 46.5,
+            "left": 678
+          }
+        },
+        {
+          "width": 978,
+          "documentWidth": 978,
+          "nav": 59,
+          "control": {
+            "x": 888,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 960,
+            "bottom": 46.5,
+            "left": 888
+          }
+        },
+        {
+          "width": 1440,
+          "documentWidth": 1440,
+          "nav": 59,
+          "control": {
+            "x": 1350,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 1422,
+            "bottom": 46.5,
+            "left": 1350
+          }
+        }
+      ],
+      "missing": []
+    },
+    {
+      "name": "black-scholes-basics.html",
+      "spanishHeading": "Black–ScholesValoración de opciones",
+      "widths": [
+        {
+          "width": 320,
+          "documentWidth": 320,
+          "nav": 124,
+          "control": {
+            "x": 235,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 307,
+            "bottom": 46,
+            "left": 235
+          }
+        },
+        {
+          "width": 390,
+          "documentWidth": 390,
+          "nav": 99,
+          "control": {
+            "x": 305,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 377,
+            "bottom": 46,
+            "left": 305
+          }
+        },
+        {
+          "width": 768,
+          "documentWidth": 768,
+          "nav": 59,
+          "control": {
+            "x": 672,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 744,
+            "bottom": 46.5,
+            "left": 672
+          }
+        },
+        {
+          "width": 978,
+          "documentWidth": 978,
+          "nav": 59,
+          "control": {
+            "x": 882,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 954,
+            "bottom": 46.5,
+            "left": 882
+          }
+        },
+        {
+          "width": 1440,
+          "documentWidth": 1440,
+          "nav": 59,
+          "control": {
+            "x": 1288,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 1360,
+            "bottom": 46.5,
+            "left": 1288
+          }
+        }
+      ],
+      "missing": []
+    },
+    {
+      "name": "black-scholes.html",
+      "spanishHeading": "Valoración de opciones Black–Scholes,griegas y validación Monte Carlo.",
+      "widths": [
+        {
+          "width": 320,
+          "documentWidth": 320,
+          "nav": 83,
+          "control": {
+            "x": 235,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 307,
+            "bottom": 46,
+            "left": 235
+          }
+        },
+        {
+          "width": 390,
+          "documentWidth": 390,
+          "nav": 83,
+          "control": {
+            "x": 305,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 377,
+            "bottom": 46,
+            "left": 305
+          }
+        },
+        {
+          "width": 768,
+          "documentWidth": 768,
+          "nav": 59,
+          "control": {
+            "x": 672,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 744,
+            "bottom": 46.5,
+            "left": 672
+          }
+        },
+        {
+          "width": 978,
+          "documentWidth": 978,
+          "nav": 59,
+          "control": {
+            "x": 882,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 954,
+            "bottom": 46.5,
+            "left": 882
+          }
+        },
+        {
+          "width": 1440,
+          "documentWidth": 1440,
+          "nav": 59,
+          "control": {
+            "x": 1288,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 1360,
+            "bottom": 46.5,
+            "left": 1288
+          }
+        }
+      ],
+      "missing": []
+    },
+    {
+      "name": "equity-factor-model.html",
+      "spanishHeading": "Modelo de factoresde renta variable",
+      "widths": [
+        {
+          "width": 320,
+          "documentWidth": 320,
+          "nav": 124,
+          "control": {
+            "x": 235,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 307,
+            "bottom": 46,
+            "left": 235
+          }
+        },
+        {
+          "width": 390,
+          "documentWidth": 390,
+          "nav": 99,
+          "control": {
+            "x": 305,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 377,
+            "bottom": 46,
+            "left": 305
+          }
+        },
+        {
+          "width": 768,
+          "documentWidth": 768,
+          "nav": 59,
+          "control": {
+            "x": 672,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 744,
+            "bottom": 46.5,
+            "left": 672
+          }
+        },
+        {
+          "width": 978,
+          "documentWidth": 978,
+          "nav": 59,
+          "control": {
+            "x": 882,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 954,
+            "bottom": 46.5,
+            "left": 882
+          }
+        },
+        {
+          "width": 1440,
+          "documentWidth": 1440,
+          "nav": 59,
+          "control": {
+            "x": 1288,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 1360,
+            "bottom": 46.5,
+            "left": 1288
+          }
+        }
+      ],
+      "missing": []
+    },
+    {
+      "name": "implied-volatility-surface.html",
+      "spanishHeading": "Superficie devolatilidad implícita",
+      "widths": [
+        {
+          "width": 320,
+          "documentWidth": 320,
+          "nav": 124,
+          "control": {
+            "x": 235,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 307,
+            "bottom": 46,
+            "left": 235
+          }
+        },
+        {
+          "width": 390,
+          "documentWidth": 390,
+          "nav": 99,
+          "control": {
+            "x": 305,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 377,
+            "bottom": 46,
+            "left": 305
+          }
+        },
+        {
+          "width": 768,
+          "documentWidth": 768,
+          "nav": 59,
+          "control": {
+            "x": 672,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 744,
+            "bottom": 46.5,
+            "left": 672
+          }
+        },
+        {
+          "width": 978,
+          "documentWidth": 978,
+          "nav": 59,
+          "control": {
+            "x": 882,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 954,
+            "bottom": 46.5,
+            "left": 882
+          }
+        },
+        {
+          "width": 1440,
+          "documentWidth": 1440,
+          "nav": 59,
+          "control": {
+            "x": 1288,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 1360,
+            "bottom": 46.5,
+            "left": 1288
+          }
+        }
+      ],
+      "missing": []
+    },
+    {
+      "name": "markowitz-portfolio-theory.html",
+      "spanishHeading": "MarkowitzTeoría de carteras",
+      "widths": [
+        {
+          "width": 320,
+          "documentWidth": 320,
+          "nav": 124,
+          "control": {
+            "x": 235,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 307,
+            "bottom": 46,
+            "left": 235
+          }
+        },
+        {
+          "width": 390,
+          "documentWidth": 390,
+          "nav": 99,
+          "control": {
+            "x": 305,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 377,
+            "bottom": 46,
+            "left": 305
+          }
+        },
+        {
+          "width": 768,
+          "documentWidth": 768,
+          "nav": 59,
+          "control": {
+            "x": 672,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 744,
+            "bottom": 46.5,
+            "left": 672
+          }
+        },
+        {
+          "width": 978,
+          "documentWidth": 978,
+          "nav": 59,
+          "control": {
+            "x": 882,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 954,
+            "bottom": 46.5,
+            "left": 882
+          }
+        },
+        {
+          "width": 1440,
+          "documentWidth": 1440,
+          "nav": 59,
+          "control": {
+            "x": 1288,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 1360,
+            "bottom": 46.5,
+            "left": 1288
+          }
+        }
+      ],
+      "missing": []
+    },
+    {
+      "name": "monte-carlo-option-pricing.html",
+      "spanishHeading": "Monte CarloValoración de opciones",
+      "widths": [
+        {
+          "width": 320,
+          "documentWidth": 320,
+          "nav": 124,
+          "control": {
+            "x": 235,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 307,
+            "bottom": 46,
+            "left": 235
+          }
+        },
+        {
+          "width": 390,
+          "documentWidth": 390,
+          "nav": 99,
+          "control": {
+            "x": 305,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 377,
+            "bottom": 46,
+            "left": 305
+          }
+        },
+        {
+          "width": 768,
+          "documentWidth": 768,
+          "nav": 59,
+          "control": {
+            "x": 672,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 744,
+            "bottom": 46.5,
+            "left": 672
+          }
+        },
+        {
+          "width": 978,
+          "documentWidth": 978,
+          "nav": 59,
+          "control": {
+            "x": 882,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 954,
+            "bottom": 46.5,
+            "left": 882
+          }
+        },
+        {
+          "width": 1440,
+          "documentWidth": 1440,
+          "nav": 59,
+          "control": {
+            "x": 1288,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 1360,
+            "bottom": 46.5,
+            "left": 1288
+          }
+        }
+      ],
+      "missing": []
+    },
+    {
+      "name": "portfolio-optimization.html",
+      "spanishHeading": "Optimización de carterascon error de estimación.",
+      "widths": [
+        {
+          "width": 320,
+          "documentWidth": 320,
+          "nav": 108,
+          "control": {
+            "x": 235,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 307,
+            "bottom": 46,
+            "left": 235
+          }
+        },
+        {
+          "width": 390,
+          "documentWidth": 390,
+          "nav": 83,
+          "control": {
+            "x": 305,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 377,
+            "bottom": 46,
+            "left": 305
+          }
+        },
+        {
+          "width": 768,
+          "documentWidth": 768,
+          "nav": 59,
+          "control": {
+            "x": 672,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 744,
+            "bottom": 46.5,
+            "left": 672
+          }
+        },
+        {
+          "width": 978,
+          "documentWidth": 978,
+          "nav": 59,
+          "control": {
+            "x": 882,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 954,
+            "bottom": 46.5,
+            "left": 882
+          }
+        },
+        {
+          "width": 1440,
+          "documentWidth": 1440,
+          "nav": 59,
+          "control": {
+            "x": 1288,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 1360,
+            "bottom": 46.5,
+            "left": 1288
+          }
+        }
+      ],
+      "missing": []
+    },
+    {
+      "name": "systematic-trading-strategy.html",
+      "spanishHeading": "Estrategiade trading sistemático",
+      "widths": [
+        {
+          "width": 320,
+          "documentWidth": 320,
+          "nav": 99,
+          "control": {
+            "x": 235,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 307,
+            "bottom": 46,
+            "left": 235
+          }
+        },
+        {
+          "width": 390,
+          "documentWidth": 390,
+          "nav": 99,
+          "control": {
+            "x": 305,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 377,
+            "bottom": 46,
+            "left": 305
+          }
+        },
+        {
+          "width": 768,
+          "documentWidth": 768,
+          "nav": 59,
+          "control": {
+            "x": 672,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 744,
+            "bottom": 46.5,
+            "left": 672
+          }
+        },
+        {
+          "width": 978,
+          "documentWidth": 978,
+          "nav": 59,
+          "control": {
+            "x": 882,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 954,
+            "bottom": 46.5,
+            "left": 882
+          }
+        },
+        {
+          "width": 1440,
+          "documentWidth": 1440,
+          "nav": 59,
+          "control": {
+            "x": 1288,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 1360,
+            "bottom": 46.5,
+            "left": 1288
+          }
+        }
+      ],
+      "missing": []
+    },
+    {
+      "name": "var-expected-shortfall.html",
+      "spanishHeading": "Valor en riesgoy pérdida esperada en colaDéficit",
+      "widths": [
+        {
+          "width": 320,
+          "documentWidth": 320,
+          "nav": 124,
+          "control": {
+            "x": 235,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 307,
+            "bottom": 46,
+            "left": 235
+          }
+        },
+        {
+          "width": 390,
+          "documentWidth": 390,
+          "nav": 99,
+          "control": {
+            "x": 305,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 377,
+            "bottom": 46,
+            "left": 305
+          }
+        },
+        {
+          "width": 768,
+          "documentWidth": 768,
+          "nav": 59,
+          "control": {
+            "x": 672,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 744,
+            "bottom": 46.5,
+            "left": 672
+          }
+        },
+        {
+          "width": 978,
+          "documentWidth": 978,
+          "nav": 59,
+          "control": {
+            "x": 882,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 954,
+            "bottom": 46.5,
+            "left": 882
+          }
+        },
+        {
+          "width": 1440,
+          "documentWidth": 1440,
+          "nav": 59,
+          "control": {
+            "x": 1288,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 1360,
+            "bottom": 46.5,
+            "left": 1288
+          }
+        }
+      ],
+      "missing": []
+    },
+    {
+      "name": "yield-curve-modelling.html",
+      "spanishHeading": "Modelización de lacurva de tipos",
+      "widths": [
+        {
+          "width": 320,
+          "documentWidth": 320,
+          "nav": 124,
+          "control": {
+            "x": 235,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 307,
+            "bottom": 46,
+            "left": 235
+          }
+        },
+        {
+          "width": 390,
+          "documentWidth": 390,
+          "nav": 99,
+          "control": {
+            "x": 305,
+            "y": 11,
+            "width": 72,
+            "height": 35,
+            "top": 11,
+            "right": 377,
+            "bottom": 46,
+            "left": 305
+          }
+        },
+        {
+          "width": 768,
+          "documentWidth": 768,
+          "nav": 59,
+          "control": {
+            "x": 672,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 744,
+            "bottom": 46.5,
+            "left": 672
+          }
+        },
+        {
+          "width": 978,
+          "documentWidth": 978,
+          "nav": 59,
+          "control": {
+            "x": 882,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 954,
+            "bottom": 46.5,
+            "left": 882
+          }
+        },
+        {
+          "width": 1440,
+          "documentWidth": 1440,
+          "nav": 59,
+          "control": {
+            "x": 1288,
+            "y": 11.5,
+            "width": 72,
+            "height": 35,
+            "top": 11.5,
+            "right": 1360,
+            "bottom": 46.5,
+            "left": 1288
+          }
+        }
+      ],
+      "missing": []
+    }
+  ],
+  "dynamicMessages": {
+    "model": "MCO en los meses 1–120; meses 121–240 reservados. 6 coeficientes, incluida una constante. Retardo HAC 6 con ponderaciones de Bartlett y ajuste T/(T−p). Cambiar el número de retardos modifica la incertidumbre, no los coeficientes. Los coeficientes quedan fijados antes de evaluar la muestra reservada.",
+    "sort": "Puntuación de calidad; 20% en cada extremo. 32 posiciones largas y 32 posiciones cortas. Exposición bruta 2.00, peso neto 0.000000. Los pesos están equilibrados dentro de cada sector. Coste de entrada 20.00 pb. El IC utiliza la sección transversal completa de 160 acciones.",
+    "missing": []
+  },
+  "errors": [],
+  "networkRequests": [],
+  "keyboard": "passed",
+  "print": "passed",
+  "navigation": "passed"
+}

@@ -1,0 +1,355 @@
+<svg role="img" aria-labelledby="wings-title wings-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="wings-title">Figure 16 · Total-variance wing behavior</title><desc id="wings-desc">Reference one-year SSVI continued to k in [-5,5]. The slope-2 line is an asymptotic comparison, not a pointwise upper bound at finite strikes; portions above the plotted range are clipped.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:54:54.842640</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="wings-figure_1">
+  <g id="wings-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="wings-axes_1">
+   <g id="wings-patch_2">
+    <path d="M 48.26 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 48.26 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="wings-matplotlib.axis_1">
+    <g id="wings-xtick_1">
+     <g id="wings-line2d_1">
+      <path d="M 138.02 244.78 
+L 138.02 35.14 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="wings-line2d_2">
+      <defs>
+       <path id="wings-m47755b2098" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#wings-m47755b2098" x="138.02" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="wings-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="138.02" y="258.618594" transform="rotate(-0 138.02 258.618594)">−4</text>
+     </g>
+    </g>
+    <g id="wings-xtick_2">
+     <g id="wings-line2d_3">
+      <path d="M 257.7 244.78 
+L 257.7 35.14 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="wings-line2d_4">
+      <g>
+       <use href="#wings-m47755b2098" x="257.7" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="wings-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="257.7" y="258.618594" transform="rotate(-0 257.7 258.618594)">−2</text>
+     </g>
+    </g>
+    <g id="wings-xtick_3">
+     <g id="wings-line2d_5">
+      <path d="M 377.38 244.78 
+L 377.38 35.14 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="wings-line2d_6">
+      <g>
+       <use href="#wings-m47755b2098" x="377.38" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="wings-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="377.38" y="258.618594" transform="rotate(-0 377.38 258.618594)">0</text>
+     </g>
+    </g>
+    <g id="wings-xtick_4">
+     <g id="wings-line2d_7">
+      <path d="M 497.06 244.78 
+L 497.06 35.14 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="wings-line2d_8">
+      <g>
+       <use href="#wings-m47755b2098" x="497.06" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="wings-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="497.06" y="258.618594" transform="rotate(-0 497.06 258.618594)">2</text>
+     </g>
+    </g>
+    <g id="wings-xtick_5">
+     <g id="wings-line2d_9">
+      <path d="M 616.74 244.78 
+L 616.74 35.14 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="wings-line2d_10">
+      <g>
+       <use href="#wings-m47755b2098" x="616.74" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="wings-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="616.74" y="258.618594" transform="rotate(-0 616.74 258.618594)">4</text>
+     </g>
+    </g>
+    <g id="wings-text_6">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="377.38" y="271.328906" transform="rotate(-0 377.38 271.328906)">Log-forward moneyness k</text>
+    </g>
+   </g>
+   <g id="wings-matplotlib.axis_2">
+    <g id="wings-ytick_1">
+     <g id="wings-line2d_11">
+      <path d="M 48.26 244.78 
+L 706.5 244.78 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="wings-line2d_12">
+      <defs>
+       <path id="wings-m02f080af9f" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#wings-m02f080af9f" x="48.26" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="wings-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="248.199297" transform="rotate(-0 41.26 248.199297)">0.0</text>
+     </g>
+    </g>
+    <g id="wings-ytick_2">
+     <g id="wings-line2d_13">
+      <path d="M 48.26 218.575 
+L 706.5 218.575 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="wings-line2d_14">
+      <g>
+       <use href="#wings-m02f080af9f" x="48.26" y="218.575" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="wings-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="221.994297" transform="rotate(-0 41.26 221.994297)">0.1</text>
+     </g>
+    </g>
+    <g id="wings-ytick_3">
+     <g id="wings-line2d_15">
+      <path d="M 48.26 192.37 
+L 706.5 192.37 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="wings-line2d_16">
+      <g>
+       <use href="#wings-m02f080af9f" x="48.26" y="192.37" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="wings-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="195.789297" transform="rotate(-0 41.26 195.789297)">0.2</text>
+     </g>
+    </g>
+    <g id="wings-ytick_4">
+     <g id="wings-line2d_17">
+      <path d="M 48.26 166.165 
+L 706.5 166.165 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="wings-line2d_18">
+      <g>
+       <use href="#wings-m02f080af9f" x="48.26" y="166.165" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="wings-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="169.584297" transform="rotate(-0 41.26 169.584297)">0.3</text>
+     </g>
+    </g>
+    <g id="wings-ytick_5">
+     <g id="wings-line2d_19">
+      <path d="M 48.26 139.96 
+L 706.5 139.96 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="wings-line2d_20">
+      <g>
+       <use href="#wings-m02f080af9f" x="48.26" y="139.96" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="wings-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="143.379297" transform="rotate(-0 41.26 143.379297)">0.4</text>
+     </g>
+    </g>
+    <g id="wings-ytick_6">
+     <g id="wings-line2d_21">
+      <path d="M 48.26 113.755 
+L 706.5 113.755 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="wings-line2d_22">
+      <g>
+       <use href="#wings-m02f080af9f" x="48.26" y="113.755" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="wings-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="117.174297" transform="rotate(-0 41.26 117.174297)">0.5</text>
+     </g>
+    </g>
+    <g id="wings-ytick_7">
+     <g id="wings-line2d_23">
+      <path d="M 48.26 87.55 
+L 706.5 87.55 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="wings-line2d_24">
+      <g>
+       <use href="#wings-m02f080af9f" x="48.26" y="87.55" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="wings-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="90.969297" transform="rotate(-0 41.26 90.969297)">0.6</text>
+     </g>
+    </g>
+    <g id="wings-ytick_8">
+     <g id="wings-line2d_25">
+      <path d="M 48.26 61.345 
+L 706.5 61.345 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="wings-line2d_26">
+      <g>
+       <use href="#wings-m02f080af9f" x="48.26" y="61.345" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="wings-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="64.764297" transform="rotate(-0 41.26 64.764297)">0.7</text>
+     </g>
+    </g>
+    <g id="wings-ytick_9">
+     <g id="wings-line2d_27">
+      <path d="M 48.26 35.14 
+L 706.5 35.14 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="wings-line2d_28">
+      <g>
+       <use href="#wings-m02f080af9f" x="48.26" y="35.14" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="wings-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="41.26" y="38.559297" transform="rotate(-0 41.26 38.559297)">0.8</text>
+     </g>
+    </g>
+    <g id="wings-text_16">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.075469" y="139.96" transform="rotate(-90 21.075469 139.96)">Total variance</text>
+    </g>
+   </g>
+   <g id="wings-line2d_29">
+    <path d="M 78.18 116.660558 
+L 257.7 186.80612 
+L 317.54 209.979902 
+L 345.0664 220.434286 
+L 360.6248 226.144779 
+L 371.396 229.883112 
+L 378.5768 232.174951 
+L 384.5608 233.872332 
+L 389.348 235.026081 
+L 394.1352 235.947172 
+L 398.9224 236.610184 
+L 403.7096 237.026147 
+L 408.4968 237.235767 
+L 414.4808 237.283092 
+L 422.8584 237.089594 
+L 433.6296 236.590464 
+L 449.188 235.627244 
+L 474.3208 233.816349 
+L 517.4056 230.454433 
+L 601.1816 223.657738 
+L 676.58 217.455902 
+L 676.58 217.455902 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="wings-line2d_30">
+    <path d="M 78.18 121.037254 
+L 377.38 238.294557 
+L 676.58 121.037254 
+L 676.58 121.037254 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+   </g>
+   <g id="wings-line2d_31">
+    <path d="M 349.317655 -1 
+L 377.38 244.78 
+L 405.442345 -1 
+L 405.442345 -1 
+" clip-path="url(#wings-pa456ae0f38)" style="fill: none; stroke-dasharray: 2,3.3; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+   </g>
+   <g id="wings-patch_3">
+    <path d="M 48.26 244.78 
+L 48.26 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="wings-patch_4">
+    <path d="M 48.26 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="wings-text_17">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="48.26" y="22.14" transform="rotate(-0 48.26 22.14)">Wing behavior is a tail assumption</text>
+   </g>
+   <g id="wings-legend_1">
+    <g id="wings-line2d_32">
+     <path d="M 574.80375 45.61875 
+L 582.80375 45.61875 
+L 590.80375 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="wings-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="597.20375" y="48.41875" transform="rotate(-0 597.20375 48.41875)">Reference total variance</text>
+    </g>
+    <g id="wings-line2d_33">
+     <path d="M 574.80375 57.36125 
+L 582.80375 57.36125 
+L 590.80375 57.36125 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #7e8d86; stroke-width: 2"/>
+    </g>
+    <g id="wings-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="597.20375" y="60.16125" transform="rotate(-0 597.20375 60.16125)">Largest wing slope guide</text>
+    </g>
+    <g id="wings-line2d_34">
+     <path d="M 574.80375 69.10375 
+L 582.80375 69.10375 
+L 590.80375 69.10375 
+" style="fill: none; stroke-dasharray: 2,3.3; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+    </g>
+    <g id="wings-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="597.20375" y="71.90375" transform="rotate(-0 597.20375 71.90375)">Slope-2 asymptotic guide</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="wings-pa456ae0f38">
+   <rect x="48.26" y="35.14" width="658.24" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,96 @@
+<section id="coherence" data-title="Coherence and diversification">
+<div class="section-kicker">06 / Mathematical properties</div><h2>Coherence and diversification</h2>
+<p>A monetary risk measure maps a random loss to a capital-like quantity. Under the positive-loss convention, adding a certain loss increases risk by that amount. Four properties define coherence on a suitable linear space of integrable losses:</p>
+\[ L_1\le L_2\Rightarrow\rho(L_1)\le\rho(L_2),\qquad
+\rho(L+c)=\rho(L)+c. \]
+\[ \rho(aL)=a\rho(L)\quad(a\ge0),\qquad
+\rho(L_1+L_2)\le\rho(L_1)+\rho(L_2). \]
+<p>These are monotonicity, translation equivariance, positive homogeneity and subadditivity. Monotonicity compares outcomes scenario by scenario. Translation describes a sure cash loss. Homogeneity expresses proportional exposure scaling. Subadditivity says that combined risk should not exceed the sum of standalone risks. It is a statement about diversification and aggregation, not a promise that every combination reduces risk strictly.</p>
+<p>ES satisfies these properties when defined through the quantile integral with the required integrability. VaR satisfies the first three but can fail subadditivity. Under special distributional assumptions, such as jointly normal losses at confidence above 50%, VaR behaves subadditively through the standard-deviation aggregation rule. That special case should not be generalized to arbitrary losses.</p>
+<h3>A concrete VaR counterexample</h3>
+<p>Let each of two independent exposures lose 100 with probability 4%, otherwise zero. At 95% confidence, each standalone VaR is zero. The combined loss is zero with probability \(0.96^2=0.9216\), 100 with probability 0.0768 and 200 with probability 0.0016. Its 95% quantile is 100. Thus combining the positions increases VaR from a standalone sum of zero to 100.</p>
+<p>Individual ES is 80 because the worst 5% includes 4% probability at loss 100 and 1% at zero. Combined ES is 103.2, using all 0.16% probability at 200 and 4.84% at 100. It is below the sum of individual ES values, 160. The example demonstrates a property of the functional, rather than an assertion that the combined exposure is harmless.</p>
+{{figure:coherence}}
+<h3>Convexity and diversification incentives</h3>
+<p>Positive homogeneity and subadditivity imply convexity:</p>
+\[ \rho(\lambda L_1+(1-\lambda)L_2)\le
+\lambda\rho(L_1)+(1-\lambda)\rho(L_2),\qquad 0\le\lambda\le1. \]
+<p>For portfolio optimization, convexity creates a tractable landscape when loss is affine in positions and the feasible set is convex. It does not guarantee stable estimated weights: an optimization can be mathematically convex while depending strongly on a few extreme scenarios. Nor does it incorporate transaction costs or nonlinear liquidation impact unless those features enter the loss map.</p>
+<p>The cash sign convention differs in papers that model future wealth rather than losses. In a future-wealth convention, adding cash reduces required capital. Here the same economic property is written for losses, so adding a certain loss increases the risk value. Translate conventions before comparing formulas.</p>
+</section>
+
+<section id="normal-model" data-title="Normal loss distributions">
+<div class="section-kicker">07 / Analytical models</div><h2>Normal loss distributions</h2>
+<p>Suppose loss is a location-scale transformation of a standard normal variable, with mean \(m\) and standard deviation \(s&gt;0\). Let \(\Phi\) and \(\phi\) denote the standard normal CDF and density, and let \(z_\alpha=\Phi^{-1}(\alpha)\).</p>
+\[ L=m+sZ,\quad Z\sim N(0,1),\qquad
+\operatorname{VaR}_\alpha=m+s z_\alpha. \]
+<p>Substitute into the continuous-tail conditional expectation. Since \(\phi'(z)=-z\phi(z)\), integrating \(z\phi(z)\) from the quantile to infinity gives \(\phi(z_\alpha)\). Therefore:</p>
+\[ \operatorname{ES}_\alpha=m+s\frac{\phi(z_\alpha)}{1-\alpha}. \]
+<p>At 99% confidence, the normal VaR multiplier is approximately 2.32635 and the ES multiplier approximately 2.66521. At 97.5%, the multipliers are approximately 1.95996 and 2.33780. Their difference measures the mean distance from the quantile into the specified normal tail. They are distribution-specific constants, not universal conversion factors.</p>
+<h3>Return-to-loss conversion</h3>
+<p>If a portfolio's simple return is normal with mean \(\mu_p\) and standard deviation \(\sigma_p\), then \(m=-W\mu_p\) and \(s=W\sigma_p\). A positive expected return reduces expected loss and shifts both risk measures downward. This conversion is exact for a linear simple-return loss map, although the assumed normal distribution permits returns below −100% and can be unsuitable for extreme-horizon asset modeling.</p>
+<p>For a €1,000,000 portfolio with zero expected one-day return and 1% daily volatility, normal 99% VaR is €23,263.48 and ES is €26,652.14. The mean is set to zero to isolate tail mechanics. If expected daily return is 0.05%, both figures decrease by €500 under the same model, because this adds a deterministic shift to loss.</p>
+<h3>Estimation and model assumptions</h3>
+<p>The formulas require only two parameters, but that apparent simplicity transfers responsibility to the normality assumption. A fitted standard deviation averages squared deviations across the sample. It does not independently identify the shape of an extreme tail. Normal VaR can be precisely computed and still be a poor risk forecast if losses have skewness, jumps or heavy tails.</p>
+<p>Parameter uncertainty is separate from evaluating the analytical formula. A known-parameter normal model has exact risk values; replacing its mean and volatility with estimates creates uncertainty. Conditional volatility models introduce another layer: the formula may be normal conditional on today's information even when the unconditional mixture is heavy-tailed.</p>
+<p>When \(s=0\), loss is deterministic. Both VaR and ES equal \(m\), including if \(m\) is negative. Code should handle this directly rather than dividing by zero in a density or quantile calculation. An estimated covariance matrix that produces a slightly negative variance through numerical error needs diagnosis, not a silent reinterpretation as a random negative volatility.</p>
+</section>
+
+<section id="student-model" data-title="Student-t distributions and heavy tails">
+<div class="section-kicker">08 / Analytical models</div><h2>Student-t distributions and heavy tails</h2>
+<p>A Student-t variable has a tail that decays polynomially rather than with the normal distribution's exponential quadratic decay. Degrees of freedom \(\nu\) control the tail thickness. Small \(\nu\) assigns more probability to extreme observations, while large \(\nu\) approaches the normal model.</p>
+\[ L=m+aT_\nu,\qquad
+\operatorname{VaR}_\alpha=m+a\,t_{\nu,\alpha},
+\quad t_{\nu,\alpha}=F_\nu^{-1}(\alpha). \]
+<p>The scale \(a\) is not generally the standard deviation. For \(\nu&gt;2\), the variance of a standard Student-t variable is \(\nu/(\nu-2)\). To compare models with the same finite standard deviation \(s\), use:</p>
+\[ a=s\sqrt{\frac{\nu-2}{\nu}},\qquad \nu&gt;2. \]
+<p>Let \(f_\nu\) be the standard Student-t density. Integrating its upper first moment yields the ES formula:</p>
+\[ \operatorname{ES}_\alpha
+=m+a\frac{\nu+t_{\nu,\alpha}^{\,2}}{\nu-1}
+\frac{f_\nu(t_{\nu,\alpha})}{1-\alpha},\qquad \nu&gt;1. \]
+<p>The ES formula requires a finite first moment, so \(\nu&gt;1\). The matched-volatility expression for \(a\) requires \(\nu&gt;2\). A Student-t model with \(1&lt;\nu\le2\) can have finite ES but infinite variance; it can be parameterized by scale, but cannot be assigned a finite population standard deviation. For \(\nu\le1\), the upper-tail mean diverges even though every quantile below one is finite.</p>
+{{figure:student}}
+<h3>What a matched-volatility comparison shows</h3>
+<p>Equal variance does not imply equal VaR at every confidence. The rescaled Student-t distribution concentrates more mass near the centre while retaining much heavier extreme tails. At some moderate quantiles its VaR can be below the normal VaR; sufficiently deep in the tail it overtakes it. ES is especially sensitive because it averages the distribution beyond the boundary.</p>
+<p>For \(\nu=5\), the matched standard-deviation scale is \(\sqrt{3/5}\). Chapter 27 compares this model with the normal distribution across several confidence levels using identical wealth and volatility. Changing \(\nu\) while accidentally holding \(a\), rather than \(s\), fixed mixes a variance change with a tail-shape change. The laboratory avoids that confusion by accepting standard deviation as an input.</p>
+<h3>Fitting and simulation</h3>
+<p>A Student-t variable can be simulated as \(Z/\sqrt{U/\nu}\), where \(Z\) is standard normal, \(U\) is chi-squared with \(\nu\) degrees of freedom, and the variables are independent. The denominator occasionally becomes small, creating extreme observations. This is a useful analogy for a market whose apparent noise scale itself changes from one scenario to another.</p>
+<p>Estimated degrees of freedom can be unstable in a short sample because the most informative observations are rare. Maximum likelihood under a t model is a parametric assumption, not evidence that every future crisis follows that same distribution. Check tail diagnostics, parameter sensitivity and out-of-sample calibration before treating a fitted tail multiplier as a fixed constant.</p>
+</section>
+
+<section id="portfolio-aggregation" data-title="Portfolio aggregation and dependence">
+<div class="section-kicker">09 / Portfolios</div><h2>Portfolio aggregation and dependence</h2>
+<p>Let the vector of simple asset returns have mean \(\mu\) and covariance matrix \(\Sigma\). A portfolio with fixed weights \(w\) and positive wealth \(W\) has the following mean loss and loss standard deviation under a linear return map:</p>
+\[ m_p=-Ww^{\mathsf T}\mu,\qquad
+s_p=W\sqrt{w^{\mathsf T}\Sigma w}. \]
+<p>If the returns are jointly normal, portfolio loss is normal and the analytical formulas apply. Covariance is enough in this setting because a multivariate normal distribution is determined by its means and covariance. For non-normal joint distributions, matching the same covariance matrix does not determine the portfolio tail.</p>
+<p>For two equal-volatility, zero-mean losses with correlation \(\rho\), equal weights give:</p>
+\[ s_p=s\sqrt{\frac{1+\rho}{2}}. \]
+<p>At correlation one there is no volatility diversification. At zero correlation the portfolio standard deviation is \(s/\sqrt2\). At correlation minus one, equal opposing fluctuations cancel in this idealized model. A covariance matrix must be positive semidefinite; selecting arbitrary pairwise correlations in a larger system can violate that requirement and create impossible combinations.</p>
+{{figure:dependence}}
+<h3>Dependence belongs to scenarios</h3>
+<p>Historical simulation preserves observed same-date factor combinations if entire scenario rows are used. Independently shuffling each asset's returns destroys that dependence. A Monte Carlo model must likewise simulate jointly: a matrix factor such as Cholesky can transform independent normal shocks into correlated normal shocks, but a non-Gaussian dependence model requires more than the same linear transformation.</p>
+<p>The portfolio loss distribution depends on both marginal behavior and the joint arrangement of outcomes. An analogy is a group of fire alarms: knowing each alarm's probability of sounding tells you little about how many will sound simultaneously if a common cause can trigger them. Tail dependence measures one aspect of such simultaneous extremes and is treated separately in Chapter 18.</p>
+<h3>Positions and revaluation</h3>
+<p>Returns aggregate through initial capital weights for simple, fixed holdings. Derivative books are often expressed through quantities, contract multipliers and nonlinear pricing functions rather than return weights. An option with near-zero initial value can have enormous percentage returns, so normalizing its risk by its own premium can be misleading. Aggregate currency P&amp;L first and use a clearly defined portfolio capital base if reporting percentages.</p>
+<p>Correlation stress is useful, but scenario consistency matters. A stressed dependence matrix must still define a valid joint model. Replacing all correlations with a high positive value can harm some long-only portfolios while benefiting positions with opposite signs. Inspect the actual loss map rather than assuming that “higher correlation” always increases every book's risk.</p>
+</section>
+
+<section id="horizon-scaling" data-title="Horizon scaling and temporal dependence">
+<div class="section-kicker">10 / Time aggregation</div><h2>Horizon scaling and temporal dependence</h2>
+<p>For independent, identically distributed additive daily normal losses with mean \(m\), standard deviation \(s\) and unchanged exposures, the \(h\)-day sum is normal. Its risk measures are:</p>
+\[ \operatorname{VaR}_{\alpha,h}=hm+\sqrt h\,s z_\alpha,\qquad
+\operatorname{ES}_{\alpha,h}=hm+\sqrt h\,s\frac{\phi(z_\alpha)}{1-\alpha}. \]
+<p>The mean grows linearly with time, while standard deviation grows with the square root of time. Multiplying the entire one-day VaR by \(\sqrt h\) is exact here only when the mean term is zero, or happens to vanish. The general expression must separate location and dispersion.</p>
+{{figure:horizon}}
+<h3>Where the square-root rule breaks</h3>
+<p>For stationary daily losses with autocovariance \(\gamma_k\), the variance of the sum is:</p>
+\[ \operatorname{Var}\!\left(\sum_{j=1}^{h}L_j\right)
+=h\gamma_0+2\sum_{k=1}^{h-1}(h-k)\gamma_k. \]
+<p>Positive autocovariance raises variance above the independence rule; negative autocovariance can reduce it. Uncorrelated returns are not necessarily independent. Volatility clustering can make multi-day conditional risk depart from square-root scaling even when raw return autocorrelation is small. Heavy-tailed daily losses also need not retain the same distributional shape after aggregation.</p>
+<p>Compounded returns, changing exposures, option gamma, time decay, exercise and margin calls introduce further differences. A multi-day option P&amp;L is not a sum of identically distributed one-day fixed-Greek losses. If rebalancing is part of the strategy, the simulated loss should follow the specified trading rule through the horizon.</p>
+<h3>Choose a horizon calculation deliberately</h3>
+<p>One approach uses directly observed multi-day scenarios, with sufficient history and an explicit overlap convention. Another simulates daily market dynamics and revalues the position at the final horizon or through a trading policy. A third uses an analytical aggregation model whose assumptions are appropriate. The square-root rule is a shortcut within a model, rather than a universal identity.</p>
+<p>Overlapping \(h\)-day losses share daily observations. This increases the nominal number of windows while inducing dependence, so an IID standard error or exception test is no longer automatically valid. A 250-day history cannot be turned into hundreds of independent ten-day losses simply by shifting a rolling window one day at a time.</p>
+<p>Regulatory liquidity-horizon adjustments have their own prescribed construction. They should not be inferred from this simple IID benchmark. The regulatory overview in Chapter 21 identifies the official framework separately from the mathematical scaling example.</p>
+</section>

@@ -1,0 +1,719 @@
+<svg role="img" aria-labelledby="negative-title negative-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="252pt" viewBox="0 0 792 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="negative-title">Figure 08 · Negative rates and discount-factor positivity</title><desc id="negative-desc">This hypothetical Nelson–Siegel curve has negative short rates and positive long rates. Positive discounts do not imply decreasing discounts; the admissibility of negative rates depends on the funding and cash-storage framework.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T20:19:13.044691</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="negative-figure_1">
+  <g id="negative-patch_1">
+   <path d="M 0 252 
+L 792 252 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="negative-axes_1">
+   <g id="negative-patch_2">
+    <path d="M 59.78 208.78 
+L 384.03 208.78 
+L 384.03 35.14 
+L 59.78 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="negative-matplotlib.axis_1">
+    <g id="negative-xtick_1">
+     <g id="negative-line2d_1">
+      <path d="M 74.518636 208.78 
+L 74.518636 35.14 
+" clip-path="url(#negative-p2c1e49cadb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_2">
+      <defs>
+       <path id="negative-mfe9f226f92" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#negative-mfe9f226f92" x="74.518636" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="74.518636" y="222.618594" transform="rotate(-0 74.518636 222.618594)">0</text>
+     </g>
+    </g>
+    <g id="negative-xtick_2">
+     <g id="negative-line2d_3">
+      <path d="M 133.473182 208.78 
+L 133.473182 35.14 
+" clip-path="url(#negative-p2c1e49cadb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_4">
+      <g>
+       <use href="#negative-mfe9f226f92" x="133.473182" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="133.473182" y="222.618594" transform="rotate(-0 133.473182 222.618594)">2</text>
+     </g>
+    </g>
+    <g id="negative-xtick_3">
+     <g id="negative-line2d_5">
+      <path d="M 192.427727 208.78 
+L 192.427727 35.14 
+" clip-path="url(#negative-p2c1e49cadb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_6">
+      <g>
+       <use href="#negative-mfe9f226f92" x="192.427727" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="192.427727" y="222.618594" transform="rotate(-0 192.427727 222.618594)">4</text>
+     </g>
+    </g>
+    <g id="negative-xtick_4">
+     <g id="negative-line2d_7">
+      <path d="M 251.382273 208.78 
+L 251.382273 35.14 
+" clip-path="url(#negative-p2c1e49cadb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_8">
+      <g>
+       <use href="#negative-mfe9f226f92" x="251.382273" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="251.382273" y="222.618594" transform="rotate(-0 251.382273 222.618594)">6</text>
+     </g>
+    </g>
+    <g id="negative-xtick_5">
+     <g id="negative-line2d_9">
+      <path d="M 310.336818 208.78 
+L 310.336818 35.14 
+" clip-path="url(#negative-p2c1e49cadb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_10">
+      <g>
+       <use href="#negative-mfe9f226f92" x="310.336818" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="310.336818" y="222.618594" transform="rotate(-0 310.336818 222.618594)">8</text>
+     </g>
+    </g>
+    <g id="negative-xtick_6">
+     <g id="negative-line2d_11">
+      <path d="M 369.291364 208.78 
+L 369.291364 35.14 
+" clip-path="url(#negative-p2c1e49cadb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_12">
+      <g>
+       <use href="#negative-mfe9f226f92" x="369.291364" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="369.291364" y="222.618594" transform="rotate(-0 369.291364 222.618594)">10</text>
+     </g>
+    </g>
+    <g id="negative-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="221.905" y="235.328906" transform="rotate(-0 221.905 235.328906)">Maturity (years)</text>
+    </g>
+   </g>
+   <g id="negative-matplotlib.axis_2">
+    <g id="negative-ytick_1">
+     <g id="negative-line2d_13">
+      <path d="M 59.78 199.600553 
+L 384.03 199.600553 
+" clip-path="url(#negative-p2c1e49cadb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_14">
+      <defs>
+       <path id="negative-m6b8289c57b" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#negative-m6b8289c57b" x="59.78" y="199.600553" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="203.01985" transform="rotate(-0 52.78 203.01985)">0.975</text>
+     </g>
+    </g>
+    <g id="negative-ytick_2">
+     <g id="negative-line2d_15">
+      <path d="M 59.78 177.953188 
+L 384.03 177.953188 
+" clip-path="url(#negative-p2c1e49cadb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_16">
+      <g>
+       <use href="#negative-m6b8289c57b" x="59.78" y="177.953188" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="181.372485" transform="rotate(-0 52.78 181.372485)">0.980</text>
+     </g>
+    </g>
+    <g id="negative-ytick_3">
+     <g id="negative-line2d_17">
+      <path d="M 59.78 156.305823 
+L 384.03 156.305823 
+" clip-path="url(#negative-p2c1e49cadb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_18">
+      <g>
+       <use href="#negative-m6b8289c57b" x="59.78" y="156.305823" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="159.72512" transform="rotate(-0 52.78 159.72512)">0.985</text>
+     </g>
+    </g>
+    <g id="negative-ytick_4">
+     <g id="negative-line2d_19">
+      <path d="M 59.78 134.658458 
+L 384.03 134.658458 
+" clip-path="url(#negative-p2c1e49cadb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_20">
+      <g>
+       <use href="#negative-m6b8289c57b" x="59.78" y="134.658458" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="138.077755" transform="rotate(-0 52.78 138.077755)">0.990</text>
+     </g>
+    </g>
+    <g id="negative-ytick_5">
+     <g id="negative-line2d_21">
+      <path d="M 59.78 113.011093 
+L 384.03 113.011093 
+" clip-path="url(#negative-p2c1e49cadb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_22">
+      <g>
+       <use href="#negative-m6b8289c57b" x="59.78" y="113.011093" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="116.43039" transform="rotate(-0 52.78 116.43039)">0.995</text>
+     </g>
+    </g>
+    <g id="negative-ytick_6">
+     <g id="negative-line2d_23">
+      <path d="M 59.78 91.363728 
+L 384.03 91.363728 
+" clip-path="url(#negative-p2c1e49cadb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_24">
+      <g>
+       <use href="#negative-m6b8289c57b" x="59.78" y="91.363728" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="94.783025" transform="rotate(-0 52.78 94.783025)">1.000</text>
+     </g>
+    </g>
+    <g id="negative-ytick_7">
+     <g id="negative-line2d_25">
+      <path d="M 59.78 69.716363 
+L 384.03 69.716363 
+" clip-path="url(#negative-p2c1e49cadb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_26">
+      <g>
+       <use href="#negative-m6b8289c57b" x="59.78" y="69.716363" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="73.135659" transform="rotate(-0 52.78 73.135659)">1.005</text>
+     </g>
+    </g>
+    <g id="negative-ytick_8">
+     <g id="negative-line2d_27">
+      <path d="M 59.78 48.068997 
+L 384.03 48.068997 
+" clip-path="url(#negative-p2c1e49cadb)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_28">
+      <g>
+       <use href="#negative-m6b8289c57b" x="59.78" y="48.068997" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="52.78" y="51.488294" transform="rotate(-0 52.78 51.488294)">1.010</text>
+     </g>
+    </g>
+    <g id="negative-text_16">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.142969" y="121.96" transform="rotate(-90 21.142969 121.96)">Discount factor</text>
+    </g>
+   </g>
+   <g id="negative-line2d_29">
+    <path d="M 74.518636 91.363728 
+L 77.466364 85.161747 
+L 80.414091 79.52099 
+L 83.361818 74.407967 
+L 86.309545 69.790945 
+L 89.257273 65.639879 
+L 92.205 61.926337 
+L 95.152727 58.623434 
+L 98.100455 55.70576 
+L 101.048182 53.149316 
+L 103.995909 50.931442 
+L 106.943636 49.03076 
+L 109.891364 47.427109 
+L 112.839091 46.10148 
+L 115.786818 45.035968 
+L 118.734545 44.213708 
+L 121.682273 43.618822 
+L 124.63 43.236371 
+L 127.577727 43.052305 
+L 130.525455 43.053409 
+L 134.455758 43.321572 
+L 138.386061 43.869564 
+L 142.316364 44.67221 
+L 146.246667 45.706378 
+L 150.17697 46.950822 
+L 155.089848 48.77253 
+L 160.002727 50.857877 
+L 164.915606 53.175867 
+L 170.811061 56.225653 
+L 176.706515 59.528121 
+L 183.584545 63.651087 
+L 191.445152 68.657574 
+L 200.288333 74.589777 
+L 210.114091 81.46689 
+L 221.905 90.006832 
+L 236.643636 100.97073 
+L 259.242879 118.100372 
+L 317.214848 162.147017 
+L 345.709545 183.459936 
+L 369.291364 200.887273 
+L 369.291364 200.887273 
+" clip-path="url(#negative-p2c1e49cadb)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="negative-line2d_30">
+    <path d="M 59.78 91.363728 
+L 384.03 91.363728 
+" clip-path="url(#negative-p2c1e49cadb)" style="fill: none; stroke: #7e8d86; stroke-linecap: square"/>
+   </g>
+   <g id="negative-patch_3">
+    <path d="M 59.78 208.78 
+L 59.78 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="negative-patch_4">
+    <path d="M 59.78 208.78 
+L 384.03 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="negative-text_17">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="59.78" y="22.14" transform="rotate(-0 59.78 22.14)">D can exceed one</text>
+   </g>
+   <g id="negative-legend_1">
+    <g id="negative-line2d_31">
+     <path d="M 239.31 45.61875 
+L 247.31 45.61875 
+L 255.31 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="negative-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="261.71" y="48.41875" transform="rotate(-0 261.71 48.41875)">Negative short-rate example</text>
+    </g>
+   </g>
+  </g>
+  <g id="negative-axes_2">
+   <g id="negative-patch_5">
+    <path d="M 454.25 208.78 
+L 778.5 208.78 
+L 778.5 35.14 
+L 454.25 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="negative-matplotlib.axis_3">
+    <g id="negative-xtick_7">
+     <g id="negative-line2d_32">
+      <path d="M 468.988636 208.78 
+L 468.988636 35.14 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_33">
+      <g>
+       <use href="#negative-mfe9f226f92" x="468.988636" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_19">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="468.988636" y="222.618594" transform="rotate(-0 468.988636 222.618594)">0</text>
+     </g>
+    </g>
+    <g id="negative-xtick_8">
+     <g id="negative-line2d_34">
+      <path d="M 527.943182 208.78 
+L 527.943182 35.14 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_35">
+      <g>
+       <use href="#negative-mfe9f226f92" x="527.943182" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_20">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="527.943182" y="222.618594" transform="rotate(-0 527.943182 222.618594)">2</text>
+     </g>
+    </g>
+    <g id="negative-xtick_9">
+     <g id="negative-line2d_36">
+      <path d="M 586.897727 208.78 
+L 586.897727 35.14 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_37">
+      <g>
+       <use href="#negative-mfe9f226f92" x="586.897727" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_21">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="586.897727" y="222.618594" transform="rotate(-0 586.897727 222.618594)">4</text>
+     </g>
+    </g>
+    <g id="negative-xtick_10">
+     <g id="negative-line2d_38">
+      <path d="M 645.852273 208.78 
+L 645.852273 35.14 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_39">
+      <g>
+       <use href="#negative-mfe9f226f92" x="645.852273" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_22">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="645.852273" y="222.618594" transform="rotate(-0 645.852273 222.618594)">6</text>
+     </g>
+    </g>
+    <g id="negative-xtick_11">
+     <g id="negative-line2d_40">
+      <path d="M 704.806818 208.78 
+L 704.806818 35.14 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_41">
+      <g>
+       <use href="#negative-mfe9f226f92" x="704.806818" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="704.806818" y="222.618594" transform="rotate(-0 704.806818 222.618594)">8</text>
+     </g>
+    </g>
+    <g id="negative-xtick_12">
+     <g id="negative-line2d_42">
+      <path d="M 763.761364 208.78 
+L 763.761364 35.14 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_43">
+      <g>
+       <use href="#negative-mfe9f226f92" x="763.761364" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="763.761364" y="222.618594" transform="rotate(-0 763.761364 222.618594)">10</text>
+     </g>
+    </g>
+    <g id="negative-text_25">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="616.375" y="235.328906" transform="rotate(-0 616.375 235.328906)">Maturity (years)</text>
+    </g>
+   </g>
+   <g id="negative-matplotlib.axis_4">
+    <g id="negative-ytick_9">
+     <g id="negative-line2d_44">
+      <path d="M 454.25 200.887273 
+L 778.5 200.887273 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_45">
+      <g>
+       <use href="#negative-m6b8289c57b" x="454.25" y="200.887273" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="447.25" y="204.30657" transform="rotate(-0 447.25 204.30657)">−1.50%</text>
+     </g>
+    </g>
+    <g id="negative-ytick_10">
+     <g id="negative-line2d_46">
+      <path d="M 454.25 181.39095 
+L 778.5 181.39095 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_47">
+      <g>
+       <use href="#negative-m6b8289c57b" x="454.25" y="181.39095" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="447.25" y="184.810247" transform="rotate(-0 447.25 184.810247)">−1.25%</text>
+     </g>
+    </g>
+    <g id="negative-ytick_11">
+     <g id="negative-line2d_48">
+      <path d="M 454.25 161.894627 
+L 778.5 161.894627 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_49">
+      <g>
+       <use href="#negative-m6b8289c57b" x="454.25" y="161.894627" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="447.25" y="165.313924" transform="rotate(-0 447.25 165.313924)">−1.00%</text>
+     </g>
+    </g>
+    <g id="negative-ytick_12">
+     <g id="negative-line2d_50">
+      <path d="M 454.25 142.398304 
+L 778.5 142.398304 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_51">
+      <g>
+       <use href="#negative-m6b8289c57b" x="454.25" y="142.398304" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="447.25" y="145.817601" transform="rotate(-0 447.25 145.817601)">−0.75%</text>
+     </g>
+    </g>
+    <g id="negative-ytick_13">
+     <g id="negative-line2d_52">
+      <path d="M 454.25 122.901981 
+L 778.5 122.901981 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_53">
+      <g>
+       <use href="#negative-m6b8289c57b" x="454.25" y="122.901981" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_30">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="447.25" y="126.321278" transform="rotate(-0 447.25 126.321278)">−0.50%</text>
+     </g>
+    </g>
+    <g id="negative-ytick_14">
+     <g id="negative-line2d_54">
+      <path d="M 454.25 103.405658 
+L 778.5 103.405658 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_55">
+      <g>
+       <use href="#negative-m6b8289c57b" x="454.25" y="103.405658" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="447.25" y="106.824955" transform="rotate(-0 447.25 106.824955)">−0.25%</text>
+     </g>
+    </g>
+    <g id="negative-ytick_15">
+     <g id="negative-line2d_56">
+      <path d="M 454.25 83.909335 
+L 778.5 83.909335 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_57">
+      <g>
+       <use href="#negative-m6b8289c57b" x="454.25" y="83.909335" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="447.25" y="87.328632" transform="rotate(-0 447.25 87.328632)">0.00%</text>
+     </g>
+    </g>
+    <g id="negative-ytick_16">
+     <g id="negative-line2d_58">
+      <path d="M 454.25 64.413012 
+L 778.5 64.413012 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_59">
+      <g>
+       <use href="#negative-m6b8289c57b" x="454.25" y="64.413012" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="447.25" y="67.832309" transform="rotate(-0 447.25 67.832309)">0.25%</text>
+     </g>
+    </g>
+    <g id="negative-ytick_17">
+     <g id="negative-line2d_60">
+      <path d="M 454.25 44.916689 
+L 778.5 44.916689 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="negative-line2d_61">
+      <g>
+       <use href="#negative-m6b8289c57b" x="454.25" y="44.916689" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="negative-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="447.25" y="48.335986" transform="rotate(-0 447.25 48.335986)">0.50%</text>
+     </g>
+    </g>
+    <g id="negative-text_35">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="405.246094" y="121.96" transform="rotate(-90 405.246094 121.96)">Continuous annual rate</text>
+    </g>
+   </g>
+   <g id="negative-line2d_62">
+    <path d="M 468.988636 200.887273 
+L 472.918939 193.812436 
+L 476.849242 187.129013 
+L 480.779545 180.813865 
+L 484.709848 174.845266 
+L 488.640152 169.20281 
+L 493.55303 162.579298 
+L 498.465909 156.400637 
+L 503.378788 150.634561 
+L 508.291667 145.25123 
+L 513.204545 140.223041 
+L 518.117424 135.524458 
+L 523.030303 131.131853 
+L 527.943182 127.023365 
+L 532.856061 123.178758 
+L 537.768939 119.579304 
+L 543.664394 115.559239 
+L 549.559848 111.839753 
+L 555.455303 108.395734 
+L 561.350758 105.20427 
+L 567.246212 102.24446 
+L 574.124242 99.058777 
+L 581.002273 96.135046 
+L 587.880303 93.448573 
+L 595.740909 90.640436 
+L 603.601515 88.08359 
+L 611.462121 85.751732 
+L 620.305303 83.368352 
+L 629.148485 81.210915 
+L 638.974242 79.047625 
+L 649.782576 76.917159 
+L 660.590909 75.013826 
+L 672.381818 73.161451 
+L 685.155303 71.381494 
+L 698.911364 69.689306 
+L 713.65 68.09468 
+L 730.353788 66.515676 
+L 749.022727 64.987548 
+L 763.761364 63.927417 
+L 763.761364 63.927417 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="negative-line2d_63">
+    <path d="M 468.988636 200.887273 
+L 471.936364 190.313221 
+L 474.884091 180.399588 
+L 477.831818 171.107107 
+L 480.779545 162.398769 
+L 483.727273 154.2397 
+L 486.675 146.597037 
+L 489.622727 139.439816 
+L 492.570455 132.738864 
+L 495.518182 126.466702 
+L 498.465909 120.597442 
+L 501.413636 115.106704 
+L 504.361364 109.971527 
+L 508.291667 103.640532 
+L 512.22197 97.855561 
+L 516.152273 92.572517 
+L 520.082576 87.750721 
+L 524.012879 83.352653 
+L 527.943182 79.343711 
+L 531.873485 75.691999 
+L 535.803788 72.368113 
+L 539.734091 69.344956 
+L 543.664394 66.597564 
+L 547.594697 64.102942 
+L 551.525 61.839913 
+L 555.455303 59.78898 
+L 560.368182 57.496376 
+L 565.281061 55.475308 
+L 570.193939 53.697011 
+L 575.106818 52.135583 
+L 581.002273 50.515482 
+L 586.897727 49.138353 
+L 592.793182 47.972625 
+L 599.671212 46.842946 
+L 606.549242 45.925007 
+L 614.409848 45.093179 
+L 623.25303 44.385014 
+L 633.078788 43.823704 
+L 644.869697 43.390163 
+L 658.625758 43.124271 
+L 675.329545 43.032727 
+L 698.911364 43.148689 
+L 746.075 43.668324 
+L 763.761364 43.865767 
+L 763.761364 43.865767 
+" clip-path="url(#negative-pb6adb118db)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="negative-patch_6">
+    <path d="M 454.25 208.78 
+L 454.25 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="negative-patch_7">
+    <path d="M 454.25 208.78 
+L 778.5 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="negative-text_36">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="454.25" y="22.14" transform="rotate(-0 454.25 22.14)">Negative rates are an explicit assumption</text>
+   </g>
+   <g id="negative-legend_2">
+    <g id="negative-line2d_64">
+     <path d="M 461.45 45.61875 
+L 469.45 45.61875 
+L 477.45 45.61875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="negative-text_37">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="483.85" y="48.41875" transform="rotate(-0 483.85 48.41875)">Zero</text>
+    </g>
+    <g id="negative-line2d_65">
+     <path d="M 461.45 57.36125 
+L 469.45 57.36125 
+L 477.45 57.36125 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="negative-text_38">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="483.85" y="60.16125" transform="rotate(-0 483.85 60.16125)">Forward</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="negative-p2c1e49cadb">
+   <rect x="59.78" y="35.14" width="324.25" height="173.64"/>
+  </clipPath>
+  <clipPath id="negative-pb6adb118db">
+   <rect x="454.25" y="35.14" width="324.25" height="173.64"/>
+  </clipPath>
+ </defs>
+</svg>

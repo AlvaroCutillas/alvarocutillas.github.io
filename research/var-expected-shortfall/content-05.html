@@ -1,0 +1,100 @@
+<section id="validation" data-title="Forecast validation and regulatory context">
+<div class="section-kicker">21 / Validation</div><h2>Forecast validation and regulatory context</h2>
+<p>A backtest compares forecasts that could have been made in real time with subsequently realized outcomes. At date \(t\), estimate the model using information available then, forecast the next horizon's risk, save that forecast and only later compare it with the realized loss. A historical fit using the entire future sample is an in-sample diagnostic, rather than a valid real-time backtest.</p>
+<p>Rolling windows discard older observations; expanding windows retain them. Both choices should be fixed before inspecting results. If model parameters, confidence levels or trading rules are repeatedly selected on the same evaluation sample, apparent performance can reflect selection bias. Preserve a separate evaluation period or use an appropriate nested procedure.</p>
+<h3>Actual, hypothetical and modeled P&amp;L</h3>
+<p>Actual P&amp;L reflects the trades and events that occurred. Hypothetical P&amp;L typically holds a specified prior portfolio fixed to isolate market changes. Risk-theoretical P&amp;L uses the risk model's factors and valuation conventions. These series need not agree. A breach can indicate a distributional miss, an omitted factor, a valuation mismatch or a position convention mismatch.</p>
+<p>Choose the P&amp;L series consistently with the forecast experiment. Reconcile cash flows, fees, intraday trades and valuation timestamps. A risk forecast can have correct exception frequency against one P&amp;L definition and poor alignment with another because the underlying books differ. Investigating exceptions often reveals more than reporting a test statistic alone.</p>
+<h3>What the Basel framework specifies</h3>
+<p>The Basel market-risk internal models framework specifies a one-tailed 97.5% ES confidence level and a ten-day base liquidity horizon, with prescribed liquidity-horizon adjustments, stressed calibration and additional requirements. VaR-based backtesting and P&amp;L attribution remain distinct model-validation elements. The relevant official source is <a href="https://www.bis.org/committees/bcbs/basel-framework/standard/mar?allChapters=true">the BIS Basel Framework, MAR32–MAR33</a>.</p>
+<p>This educational laboratory calculates generic distributional risk. It does not reproduce the full regulatory capital calculation, liquidity-horizon aggregation, default-risk charge or non-modellable risk-factor treatment. Confidence and horizon parameters alone are insufficient to turn a generic ES estimate into a regulatory capital figure. Consult the applicable framework and jurisdictional rules for such a calculation.</p>
+<h3>Validation layers</h3>
+<p>Use several layers of evidence: reconcile inputs and valuation, check distributional diagnostics, evaluate exceptions and tail severity, assess performance by regime and inspect sensitivity to modeling choices. Statistical failure is evidence against a specific null hypothesis; statistical non-rejection is not proof that all relevant risks are modeled correctly.</p>
+<p>Forecast accuracy and business usefulness also differ. A statistically calibrated risk model can respond too slowly to an emerging exposure or omit a scenario needed for a decision. Risk limits, stress tests and liquidity analysis complement the probability forecast.</p>
+</section>
+
+<section id="coverage-test" data-title="Unconditional coverage and the Kupiec test">
+<div class="section-kicker">22 / Backtesting</div><h2>Unconditional coverage and the Kupiec test</h2>
+<p>For continuous conditional loss distributions, define a VaR breach indicator using the risk forecast \(q_t\) that existed before loss \(L_t\) was observed. At confidence \(\alpha\), the target breach probability is \(p=1-\alpha\).</p>
+\[ I_t=\mathbb 1_{\{L_t&gt;q_t\}},\qquad K=\sum_{t=1}^{T}I_t. \]
+<p>Under correct conditional quantiles and the standard IID hit null, \(K\) is binomial with parameters \(T\) and \(p\). The observed breach rate is \(\widehat p=K/T\). The unconditional coverage likelihood ratio compares the target probability with the fitted breach rate:</p>
+\[ \operatorname{LR}_{\mathrm{uc}}
+=-2\ln\!\left[
+\frac{(1-p)^{T-K}p^K}
+{(1-\widehat p)^{T-K}\widehat p^K}
+\right]. \]
+<p>In a regular large-sample setting the statistic is asymptotically chi-squared with one degree of freedom. The test checks whether the overall breach rate is compatible with the target. It does not check when breaches occur or how severe their losses are. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6697">Kupiec (1995)</a> emphasizes the difficulty of verifying very small tail probabilities with finite observations.</p>
+<h3>Boundary cases and finite samples</h3>
+<p>Compute likelihoods in logs to avoid underflow. Use the limiting convention \(0\ln0=0\), so zero breaches or all breaches still have well-defined maximized log likelihoods. A formula that evaluates \(0\times\ln0\) naively may return a non-number despite a finite theoretical result.</p>
+<p>With 250 days and 99% confidence, the expected count is 2.5. Under an IID calibrated model, the probability of zero breaches is \(0.99^{250}\), approximately 8.1%. A quiet year is therefore not proof of an overconservative model. Sparse counts also make the asymptotic chi-squared approximation questionable; an exact binomial calculation or simulated null distribution can be more informative.</p>
+<h3>Test choices</h3>
+<p>An exact test still requires a stated rejection rule. A two-sided test based on tail probabilities and one based on probabilities of outcomes no more likely than the observed count can differ because the binomial distribution is discrete. Document the method and avoid describing a confidence interval's exclusion rule as universally equivalent to every exact two-sided test.</p>
+<p>For losses with atoms at the forecast quantile, the strict exceedance probability can be below \(1-\alpha\) even when the quantile is correct. The continuous-hit null then needs adjustment. A randomized probability integral transform can allocate boundary mass deliberately, but an operational breach rule may reasonably choose another convention. Mathematical calibration and operational exception definitions must be distinguished.</p>
+<p>Overlapping horizon losses, changing forecast parameters and serially dependent hits also affect inference. Report evaluation length, confidence level, breach count, timing and the assumed null. A p-value describes evidence under that null, rather than the probability that the model is correct.</p>
+</section>
+
+<section id="independence-test" data-title="Independence and conditional coverage">
+<div class="section-kicker">23 / Backtesting</div><h2>Independence and conditional coverage</h2>
+<p>A model can get the total number of breaches right while missing volatility dynamics. If most exceptions occur in one episode, the conditional forecast may have underestimated risk during that period and overestimated it elsewhere. Testing the sequence, rather than only the count, addresses this weakness.</p>
+<p>Count transitions \(n_{ij}\) from breach state \(i\) to state \(j\), with \(i,j\in\{0,1\}\). There are \(T-1\) adjacent transitions. The unrestricted first-order Markov breach probabilities and pooled probability are:</p>
+\[ \widehat\pi_{01}=\frac{n_{01}}{n_{00}+n_{01}},\qquad
+\widehat\pi_{11}=\frac{n_{11}}{n_{10}+n_{11}},\qquad
+\widehat\pi=\frac{n_{01}+n_{11}}{T-1}. \]
+<p>Independence requires the next breach probability to be the same after a breach and after a non-breach. Compare the Markov likelihood with the independent likelihood:</p>
+\[ \operatorname{LR}_{\mathrm{ind}}=-2\ln
+\frac{(1-\widehat\pi)^{n_{00}+n_{10}}\widehat\pi^{n_{01}+n_{11}}}
+{(1-\widehat\pi_{01})^{n_{00}}\widehat\pi_{01}^{n_{01}}
+(1-\widehat\pi_{11})^{n_{10}}\widehat\pi_{11}^{n_{11}}}. \]
+<p>Under regularity and adequate transition counts, this has an asymptotic chi-squared distribution with one degree of freedom. Conditional coverage combines it with the unconditional coverage statistic:</p>
+\[ \operatorname{LR}_{\mathrm{cc}}=
+\operatorname{LR}_{\mathrm{uc}}+\operatorname{LR}_{\mathrm{ind}}
+\ \sim\ \chi^2_2\quad\text{asymptotically under the null}. \]
+<p><a href="https://users.ssc.wisc.edu/~behansen/718/Christoffersen1998.pdf">Christoffersen (1998)</a> develops conditional interval-forecast evaluation. The first-order transition test checks one form of dependence; it does not establish independence at every lag or against every forecast-information variable.</p>
+{{figure:backtest}}
+<h3>Two sequences with identical coverage</h3>
+<p>The figure's 500-day sequences each contain ten breaches at a target probability of 2%. Both have unconditional coverage statistic zero. In the dispersed sequence, the estimated probability after a breach is zero because none of the few breaches are consecutive. In the clustered sequence, nine of the ten transitions out of a breach lead to another breach, producing strong evidence of first-order clustering.</p>
+{{table:backtests}}
+<h3>Degenerate and sparse cases</h3>
+<p>If no observed transition begins in a particular state, its transition probability is unidentified. A sequence with no breaches does not contain evidence about what happens after a breach. Code should report that the standard independence test is unavailable, rather than invent a denominator or claim that independence has been verified.</p>
+<p>Zeros in individual transition cells can be handled with limiting log conventions when row totals are positive, but the usual asymptotic reference may still be unreliable. Small breach counts warrant exact, simulated or appropriately designed alternative tests. Adding arbitrary pseudocounts changes the estimator and should not be disguised as the original likelihood-ratio test.</p>
+<p>Inspect the time series of forecasts and losses beside the formal tests. A clustered exception sequence may identify a delayed volatility response, a crisis regime or omitted basis exposure. The statistical result becomes useful when connected to a model mechanism that can be examined.</p>
+</section>
+
+<section id="es-validation" data-title="Expected Shortfall validation">
+<div class="section-kicker">24 / Backtesting</div><h2>Expected Shortfall validation</h2>
+<p>ES describes tail severity, so counting VaR breaches alone cannot validate it. A model may produce the correct breach frequency while underestimating the losses on those days. Conversely, evaluating an ES forecast by comparing it with every realized loss as if it were an ordinary unconditional mean tests the wrong object.</p>
+<h3>Joint calibration moments</h3>
+<p>For a continuous conditional distribution with correctly forecast VaR \(q_t\) and ES \(e_t\), two population calibration conditions are:</p>
+\[ \mathbb E[I_t-(1-\alpha)\mid\mathcal F_{t-1}]=0,
+\qquad I_t=\mathbb 1_{\{L_t&gt;q_t\}}. \]
+\[ \mathbb E\!\left[
+e_t-q_t-\frac{(L_t-q_t)_+}{1-\alpha}
+\ \middle|\ \mathcal F_{t-1}\right]=0. \]
+<p>The first checks tail probability. The second checks excess-loss severity together with the forecast boundary. Their empirical averages can reveal systematic discrepancies. For inference, account for their joint covariance, dependence and parameter estimation. They are population identities, rather than a universal finite-sample test with an automatic reference distribution.</p>
+<p>If losses have an atom at VaR, the second identity still follows from the general ES representation, while the strict-hit equality in the first requires boundary-mass adjustment. This is another reason not to transfer a continuous-distribution test mechanically to rounded or discrete data.</p>
+<h3>Elicitability and forecast comparison</h3>
+<p>A functional is elicitable if a suitable scoring rule uniquely rewards the correct forecast in expected score over a stated class of distributions. ES alone generally lacks this property on broad distribution classes, but the VaR–ES pair is jointly elicitable under appropriate conditions, as established by <a href="https://arxiv.org/abs/1503.08123">Fissler and Ziegel (2016)</a>. This supports consistent joint scoring and comparison of competing forecast systems.</p>
+<p>“ES is not elicitable alone” does not mean “ES cannot be backtested”. Calibration tests and joint forecast comparisons are different tools. A chosen score must match the loss sign convention, quantile level and domain assumptions. Ordinary squared error between ES and realized loss is not a consistent ES forecast score.</p>
+<h3>Tail-only averages and selection</h3>
+<p>A simple average of losses on forecast breach dates is intuitive, but those dates are selected by a changing forecast threshold. At varying \(q_t\) and \(e_t\), it is not generally an unbiased estimator of one constant population ES. Examine suitably normalized residuals or joint moments instead of assuming that all breach days share the same conditional distribution.</p>
+<p>Severity tests often have low power because the evaluation period contains few tail outcomes. Model rankings can change across stress and quiet regimes. Report the number of informative tail observations, uncertainty in score differences and the economic magnitude of misses. One dramatic exception can be highly informative about exposures while remaining difficult to interpret through a short-sample asymptotic test.</p>
+<p>A coherent validation program combines the VaR boundary, the ES severity forecast and scenario diagnostics. It should identify whether a discrepancy arises from the forecast mean, volatility, dependence, tail shape or valuation rule, because each suggests a different model improvement.</p>
+</section>
+
+<section id="uncertainty" data-title="Sampling uncertainty and model uncertainty">
+<div class="section-kicker">25 / Statistical uncertainty</div><h2>Sampling uncertainty and model uncertainty</h2>
+<p>A tail estimate is an uncertain quantity. Separate three sources: sampling variation in a fixed model or empirical dataset, parameter uncertainty in fitting that model, and uncertainty about the model family itself. A narrow Monte Carlo error band addresses only the first when parameters and distribution are held fixed.</p>
+<h3>Bootstrap estimation</h3>
+<p>An IID nonparametric bootstrap draws observations with replacement from the original sample, recalculates VaR and ES and uses the replicate distribution to describe conditional sampling uncertainty. The procedure must repeat the estimator actually used, including its quantile convention and fractional tail. For a fitted model, refitting inside each replicate includes some parameter uncertainty.</p>
+{{figure:uncertainty}}
+<p>The figure uses one 1,000-observation synthetic normal sample and 1,200 resamples. The original sample happens to have a heavier observed upper tail than its population benchmark. Resampling faithfully reflects those observed values, including their multiplicities. It cannot generate a loss beyond the sample maximum and therefore cannot establish that the empirical tail contains all relevant extremes.</p>
+{{table:bootstrap}}
+<h3>Dependent observations</h3>
+<p>Ordinary IID resampling destroys time dependence. Block bootstrap methods resample groups of consecutive observations to preserve some local dependence, with block length as an additional choice. A filtered-residual bootstrap can instead work with standardized innovations if the fitted conditional model adequately captures dynamics.</p>
+<p>Extreme quantiles have special difficulties. When the effective tail count remains small, asymptotic approximations and ordinary bootstrap confidence intervals can be unstable or misleading. Interpolation may make an interval look smooth without adding information. A parametric tail model supplies extrapolation assumptions; it should not be presented as uncertainty-free merely because it returns a finite interval.</p>
+<h3>Model comparisons and sensitivity</h3>
+<p>Compare normal, heavy-tailed, historical and filtered forecasts on a common loss convention. Vary the estimation window, confidence, dependence model and tail threshold. Reconcile whether differences arise from scale, location, tail shape or repricing. A sensitivity table is often more interpretable than averaging conflicting risk estimates into a single supposedly robust number.</p>
+<p>Scenario uncertainty can dominate computational precision. A model that estimates 99% ES to a simulation standard error of €10 may still differ from another defensible model by €20,000. Report numerical precision in proportion to statistical support and the decision being made. Currency values displayed to cents are useful for reproducing arithmetic, while the economic interpretation should acknowledge larger uncertainty.</p>
+<h3>Communicating a result</h3>
+<p>A useful report states the estimate, horizon, confidence, positions, model assumptions, calibration window, tail information and major sensitivities. Include stress scenarios with their own interpretation and track realized exceptions over time. A reproducible risk estimate is a chain of decisions that can be inspected, rather than a number detached from its probability model.</p>
+</section>

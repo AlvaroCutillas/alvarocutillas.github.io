@@ -1,0 +1,810 @@
+<svg role="img" aria-labelledby="calibration-title calibration-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="266.4pt" viewBox="0 0 792 266.4" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="calibration-title">Figure 12 · Parametric fitting and withheld-maturity validation</title><desc id="calibration-desc">Thirteen of sixteen synthetic zero-rate quotes enter the equal-weight fit. Quotes at 0.75, 4 and 15 years are withheld. Static fits use multistart SciPy least squares on profiled decay times; browser fitting uses its own bounded search.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T20:19:13.685433</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="calibration-figure_1">
+  <g id="calibration-patch_1">
+   <path d="M 0 266.4 
+L 792 266.4 
+L 792 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="calibration-axes_1">
+   <g id="calibration-patch_2">
+    <path d="M 62.66 223.18 
+L 396.99 223.18 
+L 396.99 35.14 
+L 62.66 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="calibration-matplotlib.axis_1">
+    <g id="calibration-xtick_1">
+     <g id="calibration-line2d_1">
+      <path d="M 77.856818 223.18 
+L 77.856818 35.14 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_2">
+      <defs>
+       <path id="calibration-m94e6c266c1" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#calibration-m94e6c266c1" x="77.856818" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="77.856818" y="237.018594" transform="rotate(-0 77.856818 237.018594)">0</text>
+     </g>
+    </g>
+    <g id="calibration-xtick_2">
+     <g id="calibration-line2d_3">
+      <path d="M 128.512879 223.18 
+L 128.512879 35.14 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_4">
+      <g>
+       <use href="#calibration-m94e6c266c1" x="128.512879" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="128.512879" y="237.018594" transform="rotate(-0 128.512879 237.018594)">5</text>
+     </g>
+    </g>
+    <g id="calibration-xtick_3">
+     <g id="calibration-line2d_5">
+      <path d="M 179.168939 223.18 
+L 179.168939 35.14 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_6">
+      <g>
+       <use href="#calibration-m94e6c266c1" x="179.168939" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="179.168939" y="237.018594" transform="rotate(-0 179.168939 237.018594)">10</text>
+     </g>
+    </g>
+    <g id="calibration-xtick_4">
+     <g id="calibration-line2d_7">
+      <path d="M 229.825 223.18 
+L 229.825 35.14 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_8">
+      <g>
+       <use href="#calibration-m94e6c266c1" x="229.825" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="229.825" y="237.018594" transform="rotate(-0 229.825 237.018594)">15</text>
+     </g>
+    </g>
+    <g id="calibration-xtick_5">
+     <g id="calibration-line2d_9">
+      <path d="M 280.481061 223.18 
+L 280.481061 35.14 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_10">
+      <g>
+       <use href="#calibration-m94e6c266c1" x="280.481061" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="280.481061" y="237.018594" transform="rotate(-0 280.481061 237.018594)">20</text>
+     </g>
+    </g>
+    <g id="calibration-xtick_6">
+     <g id="calibration-line2d_11">
+      <path d="M 331.137121 223.18 
+L 331.137121 35.14 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_12">
+      <g>
+       <use href="#calibration-m94e6c266c1" x="331.137121" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="331.137121" y="237.018594" transform="rotate(-0 331.137121 237.018594)">25</text>
+     </g>
+    </g>
+    <g id="calibration-xtick_7">
+     <g id="calibration-line2d_13">
+      <path d="M 381.793182 223.18 
+L 381.793182 35.14 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_14">
+      <g>
+       <use href="#calibration-m94e6c266c1" x="381.793182" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="381.793182" y="237.018594" transform="rotate(-0 381.793182 237.018594)">30</text>
+     </g>
+    </g>
+    <g id="calibration-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="229.825" y="249.728906" transform="rotate(-0 229.825 249.728906)">Maturity (years)</text>
+    </g>
+   </g>
+   <g id="calibration-matplotlib.axis_2">
+    <g id="calibration-ytick_1">
+     <g id="calibration-line2d_15">
+      <path d="M 62.66 210.877434 
+L 396.99 210.877434 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_16">
+      <defs>
+       <path id="calibration-mf615c2f45e" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#calibration-mf615c2f45e" x="62.66" y="210.877434" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="214.296731" transform="rotate(-0 55.66 214.296731)">1.50%</text>
+     </g>
+    </g>
+    <g id="calibration-ytick_2">
+     <g id="calibration-line2d_17">
+      <path d="M 62.66 186.437087 
+L 396.99 186.437087 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_18">
+      <g>
+       <use href="#calibration-mf615c2f45e" x="62.66" y="186.437087" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="189.856384" transform="rotate(-0 55.66 189.856384)">1.75%</text>
+     </g>
+    </g>
+    <g id="calibration-ytick_3">
+     <g id="calibration-line2d_19">
+      <path d="M 62.66 161.99674 
+L 396.99 161.99674 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_20">
+      <g>
+       <use href="#calibration-mf615c2f45e" x="62.66" y="161.99674" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="165.416037" transform="rotate(-0 55.66 165.416037)">2.00%</text>
+     </g>
+    </g>
+    <g id="calibration-ytick_4">
+     <g id="calibration-line2d_21">
+      <path d="M 62.66 137.556393 
+L 396.99 137.556393 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_22">
+      <g>
+       <use href="#calibration-mf615c2f45e" x="62.66" y="137.556393" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="140.97569" transform="rotate(-0 55.66 140.97569)">2.25%</text>
+     </g>
+    </g>
+    <g id="calibration-ytick_5">
+     <g id="calibration-line2d_23">
+      <path d="M 62.66 113.116046 
+L 396.99 113.116046 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_24">
+      <g>
+       <use href="#calibration-mf615c2f45e" x="62.66" y="113.116046" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="116.535343" transform="rotate(-0 55.66 116.535343)">2.50%</text>
+     </g>
+    </g>
+    <g id="calibration-ytick_6">
+     <g id="calibration-line2d_25">
+      <path d="M 62.66 88.675699 
+L 396.99 88.675699 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_26">
+      <g>
+       <use href="#calibration-mf615c2f45e" x="62.66" y="88.675699" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="92.094996" transform="rotate(-0 55.66 92.094996)">2.75%</text>
+     </g>
+    </g>
+    <g id="calibration-ytick_7">
+     <g id="calibration-line2d_27">
+      <path d="M 62.66 64.235352 
+L 396.99 64.235352 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_28">
+      <g>
+       <use href="#calibration-mf615c2f45e" x="62.66" y="64.235352" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="67.654649" transform="rotate(-0 55.66 67.654649)">3.00%</text>
+     </g>
+    </g>
+    <g id="calibration-ytick_8">
+     <g id="calibration-line2d_29">
+      <path d="M 62.66 39.795006 
+L 396.99 39.795006 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_30">
+      <g>
+       <use href="#calibration-mf615c2f45e" x="62.66" y="39.795006" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="43.214302" transform="rotate(-0 55.66 43.214302)">3.25%</text>
+     </g>
+    </g>
+    <g id="calibration-text_17">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.197813" y="129.16" transform="rotate(-90 21.197813 129.16)">Continuous zero</text>
+    </g>
+   </g>
+   <g id="calibration-line2d_31">
+    <path d="M 77.856818 214.632727 
+L 79.680436 190.874626 
+L 81.504055 170.421262 
+L 83.327673 152.816561 
+L 85.151291 137.667189 
+L 86.974909 124.633938 
+L 88.798527 113.42429 
+L 90.622145 103.786002 
+L 92.445764 95.501571 
+L 94.269382 88.383461 
+L 96.093 82.26998 
+L 97.916618 77.021731 
+L 99.740236 72.518542 
+L 101.563855 68.656825 
+L 103.387473 65.347292 
+L 105.211091 62.512988 
+L 107.034709 60.087592 
+L 108.858327 58.013955 
+L 110.681945 56.242835 
+L 112.505564 54.731809 
+L 114.937055 53.059275 
+L 117.368545 51.711808 
+L 119.800036 50.62965 
+L 122.231527 49.763853 
+L 125.270891 48.925522 
+L 128.918127 48.196595 
+L 132.565364 47.693115 
+L 137.428345 47.269539 
+L 143.507073 47.001458 
+L 151.409418 46.901582 
+L 164.174745 47.001489 
+L 241.374582 47.953516 
+L 298.514618 48.278926 
+L 381.793182 48.534341 
+L 381.793182 48.534341 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="calibration-line2d_32">
+    <path d="M 77.856818 211.058051 
+L 79.680436 189.291842 
+L 81.504055 170.190211 
+L 83.327673 153.439477 
+L 85.151291 138.762461 
+L 86.974909 125.91425 
+L 88.798527 114.678451 
+L 90.622145 104.863887 
+L 92.445764 96.301664 
+L 94.269382 88.842591 
+L 96.093 82.354888 
+L 97.916618 76.722165 
+L 99.740236 71.84164 
+L 101.563855 67.622549 
+L 103.387473 63.984759 
+L 105.211091 60.857527 
+L 107.034709 58.17841 
+L 108.858327 55.8923 
+L 110.681945 53.950572 
+L 112.505564 52.310327 
+L 114.329182 50.933729 
+L 116.1528 49.787411 
+L 118.584291 48.566872 
+L 121.015782 47.643571 
+L 123.447273 46.966617 
+L 125.878764 46.493058 
+L 128.918127 46.132508 
+L 132.565364 45.963698 
+L 136.820473 46.031737 
+L 141.683455 46.344111 
+L 148.370055 47.007578 
+L 178.763691 50.306235 
+L 188.489655 51.016482 
+L 198.823491 51.541116 
+L 209.7652 51.85939 
+L 221.314782 51.964962 
+L 234.080109 51.851965 
+L 248.669055 51.486925 
+L 265.081618 50.848274 
+L 285.141418 49.83805 
+L 311.887818 48.253701 
+L 369.635727 44.536213 
+L 381.793182 43.7631 
+L 381.793182 43.7631 
+" clip-path="url(#calibration-pae4ecea9d8)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="calibration-line2d_33">
+    <defs>
+     <path id="calibration-m66d221d96b" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #91a9bd"/>
+    </defs>
+    <g clip-path="url(#calibration-pae4ecea9d8)">
+     <use href="#calibration-m66d221d96b" x="80.389621" y="181.508489" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#calibration-m66d221d96b" x="82.922424" y="157.159268" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#calibration-m66d221d96b" x="87.98803" y="119.389715" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#calibration-m66d221d96b" x="93.053636" y="93.22449" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#calibration-m66d221d96b" x="98.119242" y="76.70129" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#calibration-m66d221d96b" x="108.250455" y="56.608475" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#calibration-m66d221d96b" x="128.512879" y="45.93538" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#calibration-m66d221d96b" x="148.775303" y="47.14783" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#calibration-m66d221d96b" x="179.168939" y="50.418416" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#calibration-m66d221d96b" x="199.431364" y="51.555665" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#calibration-m66d221d96b" x="280.481061" y="49.91776" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#calibration-m66d221d96b" x="331.137121" y="47.235356" style="fill: #91a9bd; stroke: #91a9bd"/>
+     <use href="#calibration-m66d221d96b" x="381.793182" y="43.687273" style="fill: #91a9bd; stroke: #91a9bd"/>
+    </g>
+   </g>
+   <g id="calibration-line2d_34">
+    <defs>
+     <path id="calibration-m91f140cc98" d="M -3 3 
+L 3 3 
+L 3 -3 
+L -3 -3 
+z
+" style="stroke: #bbbac7; stroke-linejoin: miter"/>
+    </defs>
+    <g clip-path="url(#calibration-pae4ecea9d8)">
+     <use href="#calibration-m91f140cc98" x="85.455227" y="135.574708" style="fill: #bbbac7; stroke: #bbbac7; stroke-linejoin: miter"/>
+     <use href="#calibration-m91f140cc98" x="118.381667" y="49.063814" style="fill: #bbbac7; stroke: #bbbac7; stroke-linejoin: miter"/>
+     <use href="#calibration-m91f140cc98" x="229.825" y="51.985074" style="fill: #bbbac7; stroke: #bbbac7; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="calibration-patch_3">
+    <path d="M 62.66 223.18 
+L 62.66 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="calibration-patch_4">
+    <path d="M 62.66 223.18 
+L 396.99 223.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="calibration-text_18">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="62.66" y="22.14" transform="rotate(-0 62.66 22.14)">Same synthetic dataset, different flexibility</text>
+   </g>
+   <g id="calibration-legend_1">
+    <g id="calibration-line2d_35">
+     <path d="M 302.125 176.28875 
+L 310.125 176.28875 
+L 318.125 176.28875 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="calibration-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="324.525" y="179.08875" transform="rotate(-0 324.525 179.08875)">NS fit</text>
+    </g>
+    <g id="calibration-line2d_36">
+     <path d="M 302.125 188.03125 
+L 310.125 188.03125 
+L 318.125 188.03125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="calibration-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="324.525" y="190.83125" transform="rotate(-0 324.525 190.83125)">NSS fit</text>
+    </g>
+    <g id="calibration-line2d_37">
+     <g>
+      <use href="#calibration-m66d221d96b" x="310.125" y="199.77375" style="fill: #91a9bd; stroke: #91a9bd"/>
+     </g>
+    </g>
+    <g id="calibration-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="324.525" y="202.57375" transform="rotate(-0 324.525 202.57375)">Training quotes</text>
+    </g>
+    <g id="calibration-line2d_38">
+     <g>
+      <use href="#calibration-m91f140cc98" x="310.125" y="211.51625" style="fill: #bbbac7; stroke: #bbbac7; stroke-linejoin: miter"/>
+     </g>
+    </g>
+    <g id="calibration-text_22">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="324.525" y="214.31625" transform="rotate(-0 324.525 214.31625)">Withheld quotes</text>
+    </g>
+   </g>
+  </g>
+  <g id="calibration-axes_2">
+   <g id="calibration-patch_5">
+    <path d="M 444.17 223.18 
+L 778.5 223.18 
+L 778.5 35.14 
+L 444.17 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="calibration-matplotlib.axis_3">
+    <g id="calibration-xtick_8">
+     <g id="calibration-line2d_39">
+      <path d="M 456.812731 223.18 
+L 456.812731 35.14 
+" clip-path="url(#calibration-pe5f2c68b45)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_40">
+      <g>
+       <use href="#calibration-m94e6c266c1" x="456.812731" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_23">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="456.812731" y="237.018594" transform="rotate(-0 456.812731 237.018594)">0</text>
+     </g>
+    </g>
+    <g id="calibration-xtick_9">
+     <g id="calibration-line2d_41">
+      <path d="M 507.894473 223.18 
+L 507.894473 35.14 
+" clip-path="url(#calibration-pe5f2c68b45)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_42">
+      <g>
+       <use href="#calibration-m94e6c266c1" x="507.894473" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_24">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="507.894473" y="237.018594" transform="rotate(-0 507.894473 237.018594)">5</text>
+     </g>
+    </g>
+    <g id="calibration-xtick_10">
+     <g id="calibration-line2d_43">
+      <path d="M 558.976215 223.18 
+L 558.976215 35.14 
+" clip-path="url(#calibration-pe5f2c68b45)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_44">
+      <g>
+       <use href="#calibration-m94e6c266c1" x="558.976215" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_25">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="558.976215" y="237.018594" transform="rotate(-0 558.976215 237.018594)">10</text>
+     </g>
+    </g>
+    <g id="calibration-xtick_11">
+     <g id="calibration-line2d_45">
+      <path d="M 610.057956 223.18 
+L 610.057956 35.14 
+" clip-path="url(#calibration-pe5f2c68b45)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_46">
+      <g>
+       <use href="#calibration-m94e6c266c1" x="610.057956" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_26">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="610.057956" y="237.018594" transform="rotate(-0 610.057956 237.018594)">15</text>
+     </g>
+    </g>
+    <g id="calibration-xtick_12">
+     <g id="calibration-line2d_47">
+      <path d="M 661.139698 223.18 
+L 661.139698 35.14 
+" clip-path="url(#calibration-pe5f2c68b45)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_48">
+      <g>
+       <use href="#calibration-m94e6c266c1" x="661.139698" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_27">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="661.139698" y="237.018594" transform="rotate(-0 661.139698 237.018594)">20</text>
+     </g>
+    </g>
+    <g id="calibration-xtick_13">
+     <g id="calibration-line2d_49">
+      <path d="M 712.22144 223.18 
+L 712.22144 35.14 
+" clip-path="url(#calibration-pe5f2c68b45)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_50">
+      <g>
+       <use href="#calibration-m94e6c266c1" x="712.22144" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_28">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="712.22144" y="237.018594" transform="rotate(-0 712.22144 237.018594)">25</text>
+     </g>
+    </g>
+    <g id="calibration-xtick_14">
+     <g id="calibration-line2d_51">
+      <path d="M 763.303182 223.18 
+L 763.303182 35.14 
+" clip-path="url(#calibration-pe5f2c68b45)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_52">
+      <g>
+       <use href="#calibration-m94e6c266c1" x="763.303182" y="223.18" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_29">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="763.303182" y="237.018594" transform="rotate(-0 763.303182 237.018594)">30</text>
+     </g>
+    </g>
+    <g id="calibration-text_30">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="611.335" y="249.728906" transform="rotate(-0 611.335 249.728906)">Maturity (years)</text>
+    </g>
+   </g>
+   <g id="calibration-matplotlib.axis_4">
+    <g id="calibration-ytick_9">
+     <g id="calibration-line2d_53">
+      <path d="M 444.17 196.790633 
+L 778.5 196.790633 
+" clip-path="url(#calibration-pe5f2c68b45)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_54">
+      <g>
+       <use href="#calibration-mf615c2f45e" x="444.17" y="196.790633" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_31">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.17" y="200.20993" transform="rotate(-0 437.17 200.20993)">−4</text>
+     </g>
+    </g>
+    <g id="calibration-ytick_10">
+     <g id="calibration-line2d_55">
+      <path d="M 444.17 159.544344 
+L 778.5 159.544344 
+" clip-path="url(#calibration-pe5f2c68b45)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_56">
+      <g>
+       <use href="#calibration-mf615c2f45e" x="444.17" y="159.544344" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_32">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.17" y="162.963641" transform="rotate(-0 437.17 162.963641)">−2</text>
+     </g>
+    </g>
+    <g id="calibration-ytick_11">
+     <g id="calibration-line2d_57">
+      <path d="M 444.17 122.298055 
+L 778.5 122.298055 
+" clip-path="url(#calibration-pe5f2c68b45)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_58">
+      <g>
+       <use href="#calibration-mf615c2f45e" x="444.17" y="122.298055" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_33">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.17" y="125.717351" transform="rotate(-0 437.17 125.717351)">0</text>
+     </g>
+    </g>
+    <g id="calibration-ytick_12">
+     <g id="calibration-line2d_59">
+      <path d="M 444.17 85.051765 
+L 778.5 85.051765 
+" clip-path="url(#calibration-pe5f2c68b45)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_60">
+      <g>
+       <use href="#calibration-mf615c2f45e" x="444.17" y="85.051765" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_34">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.17" y="88.471062" transform="rotate(-0 437.17 88.471062)">2</text>
+     </g>
+    </g>
+    <g id="calibration-ytick_13">
+     <g id="calibration-line2d_61">
+      <path d="M 444.17 47.805476 
+L 778.5 47.805476 
+" clip-path="url(#calibration-pe5f2c68b45)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="calibration-line2d_62">
+      <g>
+       <use href="#calibration-mf615c2f45e" x="444.17" y="47.805476" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="calibration-text_35">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="437.17" y="51.224773" transform="rotate(-0 437.17 51.224773)">4</text>
+     </g>
+    </g>
+    <g id="calibration-text_36">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="418.030312" y="129.16" transform="rotate(-90 418.030312 129.16)">Residual (basis points)</text>
+    </g>
+   </g>
+   <g id="calibration-line2d_63">
+    <path d="M 459.366818 142.222919 
+L 461.920905 109.807517 
+L 464.474992 118.140681 
+L 467.029079 99.600727 
+L 472.137254 118.169378 
+L 477.245428 118.208536 
+L 487.461776 161.555413 
+L 497.678125 163.595358 
+L 507.894473 166.679303 
+L 528.32717 117.83364 
+L 558.976215 61.605225 
+L 579.408911 45.595845 
+L 610.057956 43.687273 
+L 661.139698 89.498707 
+L 712.22144 144.464773 
+L 763.303182 214.632727 
+" clip-path="url(#calibration-pe5f2c68b45)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="calibration-m4170b0b7e0" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #d3ad84"/>
+    </defs>
+    <g clip-path="url(#calibration-pe5f2c68b45)">
+     <use href="#calibration-m4170b0b7e0" x="459.366818" y="142.222919" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#calibration-m4170b0b7e0" x="461.920905" y="109.807517" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#calibration-m4170b0b7e0" x="464.474992" y="118.140681" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#calibration-m4170b0b7e0" x="467.029079" y="99.600727" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#calibration-m4170b0b7e0" x="472.137254" y="118.169378" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#calibration-m4170b0b7e0" x="477.245428" y="118.208536" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#calibration-m4170b0b7e0" x="487.461776" y="161.555413" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#calibration-m4170b0b7e0" x="497.678125" y="163.595358" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#calibration-m4170b0b7e0" x="507.894473" y="166.679303" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#calibration-m4170b0b7e0" x="528.32717" y="117.83364" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#calibration-m4170b0b7e0" x="558.976215" y="61.605225" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#calibration-m4170b0b7e0" x="579.408911" y="45.595845" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#calibration-m4170b0b7e0" x="610.057956" y="43.687273" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#calibration-m4170b0b7e0" x="661.139698" y="89.498707" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#calibration-m4170b0b7e0" x="712.22144" y="144.464773" style="fill: #d3ad84; stroke: #d3ad84"/>
+     <use href="#calibration-m4170b0b7e0" x="763.303182" y="214.632727" style="fill: #d3ad84; stroke: #d3ad84"/>
+    </g>
+   </g>
+   <g id="calibration-line2d_64">
+    <path d="M 459.366818 123.373115 
+L 461.920905 118.75784 
+L 464.474992 139.929634 
+L 467.029079 124.129592 
+L 472.137254 131.348323 
+L 477.245428 111.691393 
+L 487.461776 122.399419 
+L 497.678125 114.538247 
+L 507.894473 126.723521 
+L 528.32717 120.489226 
+L 558.976215 120.806212 
+L 579.408911 122.474795 
+L 610.057956 120.93496 
+L 661.139698 125.583773 
+L 712.22144 118.354957 
+L 763.303182 123.742542 
+" clip-path="url(#calibration-pe5f2c68b45)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="calibration-mdc67d472be" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #a7bdb3"/>
+    </defs>
+    <g clip-path="url(#calibration-pe5f2c68b45)">
+     <use href="#calibration-mdc67d472be" x="459.366818" y="123.373115" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#calibration-mdc67d472be" x="461.920905" y="118.75784" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#calibration-mdc67d472be" x="464.474992" y="139.929634" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#calibration-mdc67d472be" x="467.029079" y="124.129592" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#calibration-mdc67d472be" x="472.137254" y="131.348323" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#calibration-mdc67d472be" x="477.245428" y="111.691393" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#calibration-mdc67d472be" x="487.461776" y="122.399419" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#calibration-mdc67d472be" x="497.678125" y="114.538247" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#calibration-mdc67d472be" x="507.894473" y="126.723521" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#calibration-mdc67d472be" x="528.32717" y="120.489226" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#calibration-mdc67d472be" x="558.976215" y="120.806212" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#calibration-mdc67d472be" x="579.408911" y="122.474795" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#calibration-mdc67d472be" x="610.057956" y="120.93496" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#calibration-mdc67d472be" x="661.139698" y="125.583773" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#calibration-mdc67d472be" x="712.22144" y="118.354957" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     <use href="#calibration-mdc67d472be" x="763.303182" y="123.742542" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+    </g>
+   </g>
+   <g id="calibration-patch_6">
+    <path d="M 444.17 223.18 
+L 444.17 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="calibration-patch_7">
+    <path d="M 444.17 223.18 
+L 778.5 223.18 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="calibration-text_37">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="444.17" y="22.14" transform="rotate(-0 444.17 22.14)">Fitted minus observed</text>
+   </g>
+   <g id="calibration-legend_2">
+    <g id="calibration-line2d_65">
+     <path d="M 698.52 45.61875 
+L 706.52 45.61875 
+L 714.52 45.61875 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#calibration-m4170b0b7e0" x="706.52" y="45.61875" style="fill: #d3ad84; stroke: #d3ad84"/>
+     </g>
+    </g>
+    <g id="calibration-text_38">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="720.92" y="48.41875" transform="rotate(-0 720.92 48.41875)">NS residual</text>
+    </g>
+    <g id="calibration-line2d_66">
+     <path d="M 698.52 57.36125 
+L 706.52 57.36125 
+L 714.52 57.36125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use href="#calibration-mdc67d472be" x="706.52" y="57.36125" style="fill: #a7bdb3; stroke: #a7bdb3"/>
+     </g>
+    </g>
+    <g id="calibration-text_39">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="720.92" y="60.16125" transform="rotate(-0 720.92 60.16125)">NSS residual</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="calibration-pae4ecea9d8">
+   <rect x="62.66" y="35.14" width="334.33" height="188.04"/>
+  </clipPath>
+  <clipPath id="calibration-pe5f2c68b45">
+   <rect x="444.17" y="35.14" width="334.33" height="188.04"/>
+  </clipPath>
+ </defs>
+</svg>

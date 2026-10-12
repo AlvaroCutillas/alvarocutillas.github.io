@@ -1,0 +1,120 @@
+<section id="factor-covariance" data-title="Factor covariance and specific-risk models">
+<div class="section-kicker">21 / Risk representation</div><h2>Factor covariance and specific-risk models</h2>
+<p>A factor risk model reduces the number of covariance quantities that must be estimated. For \(N\) stocks and \(K\) common factors, the model covariance is:</p>
+\[ \Sigma_r=B\Sigma_fB^{\mathsf T}+D,\qquad
+D=\operatorname{diag}(\sigma_{\varepsilon_1}^2,\ldots,\sigma_{\varepsilon_N}^2)
+\quad\text{under diagonal specific risk}. \]
+<p>The factor covariance contains \(K(K+1)/2\) distinct entries, while a full stock covariance contains \(N(N+1)/2\). The dimensionality reduction can improve stability when \(N\) is large relative to the available time observations.</p>
+<h3>Positive semidefiniteness</h3>
+<p>If \(\Sigma_f\) and \(D\) are positive semidefinite, their mapped sum is positive semidefinite. For any weight vector, model variance is nonnegative. If every diagonal specific variance is strictly positive, the covariance can be positive definite even when the factor component is low rank.</p>
+\[ w^{\mathsf T}\Sigma_rw=
+(B^{\mathsf T}w)^{\mathsf T}\Sigma_f(B^{\mathsf T}w)+w^{\mathsf T}Dw. \]
+<p>Negative variance is a numerical or specification error. Negative individual factor contributions, developed next, are different: covariance offsets can make a signed component reduce total risk.</p>
+<h3>Specific risk is model dependent</h3>
+<p>A residual may contain omitted sector, currency or style risks. Assuming its stock covariance is diagonal can understate common risk if those effects remain. Adding industry factors or structured residual correlation may improve the representation, at the cost of more quantities to estimate.</p>
+<p>Specific volatility estimates can be noisy for short histories or changing businesses. Pooling or shrinking them toward sector or size groups can stabilize estimates. Missing histories should not automatically receive zero specific risk merely because no residual variance can be calculated.</p>
+<h3>Horizon and conditioning</h3>
+<p>Monthly factor covariance is not a daily covariance. Annualizing by twelve requires appropriate temporal assumptions. Forecast covariance may also depend on the state, recent volatility or stress regime. A sample covariance is descriptive of its estimation window; it is not automatically a forecast of the next period.</p>
+<p>Factor returns used to fit betas and estimate covariance should be aligned in currency and frequency. If different observation sets are used pairwise to estimate entries, the resulting matrix can fail positive semidefiniteness. Consistent samples or a suitable PSD estimation method prevent that issue.</p>
+<h3>The laboratory's exact sample identity</h3>
+<p>For its OLS attribution, the laboratory uses centered factor sample covariance with denominator \(T-1\), and residual sum of squares divided by the same denominator. With an intercept and sample orthogonality:</p>
+\[ s_y^2=\widehat\beta^{\mathsf T}S_f\widehat\beta
++\frac{e^{\mathsf T}e}{T-1}. \]
+<p>This is a matched training-sample decomposition. The residual denominator is chosen to preserve that identity, not to claim an unbiased forecast error variance. Classical regression standard errors separately use \(T-p\). Distinguishing these conventions avoids a hidden mismatch between a risk table and sample volatility.</p>
+</section>
+
+<section id="risk-contributions" data-title="Risk contributions, diversification and factor hedging">
+<div class="section-kicker">22 / Portfolio exposure</div><h2>Risk contributions, diversification and factor hedging</h2>
+<p>A portfolio's common-factor loading vector is \(b_p=B^{\mathsf T}w\). Exposures can offset across holdings even when gross stock weights are large. The factor and specific components of variance are:</p>
+\[ \sigma_p^2=b_p^{\mathsf T}\Sigma_fb_p+w^{\mathsf T}Dw. \]
+<h3>Euler attribution</h3>
+<p>Holding other exposures fixed, the marginal volatility with respect to factor exposure \(b_k\) is \((\Sigma_fb)_k/\sigma_p\). Its component contribution is:</p>
+\[ RC_k^\sigma=\frac{b_k(\Sigma_fb)_k}{\sigma_p},\qquad
+q_k=\frac{b_k(\Sigma_fb)_k}{\sigma_p^2}. \]
+<p>The specific component contributes its variance divided by total volatility, or its variance divided by total variance as a share. Together the volatility contributions sum to total volatility, and the variance shares sum to one under the chosen decomposition.</p>
+{{figure:contributions}}
+<p>A negative contribution means the current exposure offsets covariance with other components. It does not mean its own factor variance is negative. Increasing a small hedging exposure can initially lower total risk; increasing it too far can increase risk again. A beta magnitude alone does not rank risk contributions.</p>
+<h3>Diversification</h3>
+<p>For equal weights on \(N\) stocks with identical common exposure and independent specific variance \(\sigma_\varepsilon^2\):</p>
+\[ \sigma_p^2=b^{\mathsf T}\Sigma_fb+\frac{\sigma_\varepsilon^2}{N}. \]
+<p>Specific variance declines with the number of independent names, while common risk remains. If residuals are correlated, the decline is slower and a residual common component can survive. Unequal weights reduce the effective number of holdings; one useful concentration measure is \(1/\sum_iw_i^2\) for nonnegative fully invested weights.</p>
+{{figure:diversification}}
+<h3>Hedging and constraints</h3>
+<p>To hedge a factor, choose instruments with compensating exposures while respecting notional, liquidity and financing constraints. A stock portfolio can have low net market beta and substantial gross leverage, specific risk and style exposure. Beta neutrality is a first-order model condition, not a guarantee of low realized risk.</p>
+<p>Estimated betas and covariance are uncertain. A hedge based on noisy loadings can fail when correlations change. Compare several plausible exposure estimates and stress scenarios, including a joint move in correlated styles. Tail risk can be concentrated in the conditions where a normally diversifying factor ceases to hedge.</p>
+<h3>Reporting conventions</h3>
+<p>Label characteristic exposure, factor beta, variance contribution and volatility contribution separately. A portfolio can be positive in a characteristic, negative in a related return beta, and negative in that factor's Euler contribution without a mathematical contradiction.</p>
+<p>The laboratory reports variance contributions using its estimated return betas and training factor covariance. It also shows characteristic exposures for the stock sort in a separate table. This prevents two different notions of exposure from being merged into one ambiguous number.</p>
+</section>
+
+<section id="statistical-factors" data-title="Statistical factors, PCA and covariance shrinkage">
+<div class="section-kicker">23 / Alternative risk bases</div><h2>Statistical factors, PCA and covariance shrinkage</h2>
+<p>Economic factor models choose interpretable influences. Statistical models extract directions from observed return variation. Both can help estimate risk, but a statistical component does not automatically identify an economic premium.</p>
+<h3>Principal components</h3>
+<p>For a centered stock-return covariance \(S\), eigenvectors satisfy \(Sv_k=\lambda_kv_k\). Leading components maximize explained variance under the selected covariance metric. A low-rank approximation is:</p>
+\[ S_K=\sum_{k=1}^{K}\lambda_kv_kv_k^{\mathsf T}. \]
+<p>The first equity component can resemble a broad market direction, but that interpretation must be examined rather than assumed. Subsequent components can mix sectors and styles. Eigenvector signs are arbitrary, and nearly equal eigenvalues can produce unstable rotations of the corresponding directions.</p>
+<h3>Covariance versus correlation PCA</h3>
+<p>Covariance PCA emphasizes high-variance stocks. Correlation PCA standardizes each stock first, changing the metric. Standardization must be estimated from the appropriate past data for a prospective risk model. A component estimated on the entire future sample is a retrospective statistical basis.</p>
+<p>The sample covariance's rank is at most \(T-1\) after centering. When the universe exceeds the time history, a raw sample matrix cannot be full rank. Even when \(T&gt;N\), small eigenvalues can be imprecise and lead to unstable inverse-covariance portfolios.</p>
+{{figure:covariance}}
+<h3>Shrinkage</h3>
+<p>Combine a noisy sample covariance with a more structured target:</p>
+\[ \Sigma_{\mathrm{shrink}}=(1-\delta)S+\delta F,\qquad 0\le\delta\le1. \]
+<p>A diagonal target suppresses uncertain off-diagonal entries; a factor target supplies common-risk structure. If both matrices are PSD, their convex combination is PSD. Selecting the target and intensity trades bias against estimation variance.</p>
+<p>An arbitrary 50% shrinkage illustration is not an optimality claim. Data-driven intensity estimation or chronological validation can choose a setting under specified loss criteria. A target chosen after inspecting future performance needs an additional evaluation stage.</p>
+<h3>Factor interpretation and expected returns</h3>
+<p>High variance explained by a statistical direction does not establish a high expected return or a price of risk. A component can summarize noise or a nonpriced common influence. Pricing tests need expected-return restrictions and appropriate assets, not just a covariance eigendecomposition.</p>
+<p>Statistical and fundamental models can be combined: economically interpretable factors capture known effects, while residual statistical components describe additional common variation. The resulting risk basis should be assessed for stability, interpretability and forecast accuracy.</p>
+<p>The covariance figure uses a separate synthetic thirty-stock, sixty-month panel. It compares sample, declared diagonal-shrinkage and generating covariance eigenvalues. Those curves illustrate estimation effects; they are not empirical evidence that one covariance method will dominate in every portfolio.</p>
+</section>
+
+<section id="regularization" data-title="Regularization, robust estimation and model uncertainty">
+<div class="section-kicker">24 / Stable estimation</div><h2>Regularization, robust estimation and model uncertainty</h2>
+<p>When factors are correlated or histories short, unregularized coefficients can vary considerably. Regularization introduces structure to reduce variance, while changing the estimator's interpretation.</p>
+<h3>Ridge regression</h3>
+<p>Center and scale factors using training observations. Let \(Z\) contain standardized factors and \(y_c\) a centered target. Ridge solves:</p>
+\[ \widehat b_{\mathrm{ridge}}
+=\arg\min_b\left\{\|y_c-Zb\|^2+\lambda\|b\|^2\right\}
+=(Z^{\mathsf T}Z+\lambda I)^{-1}Z^{\mathsf T}y_c. \]
+<p>The intercept is unpenalized and restored from means. Convert slopes back by dividing by their training factor standard deviations. Penalizing raw coefficients without scaling would treat factors with different return units unequally.</p>
+{{figure:ridge}}
+<p>The meaning of \(\lambda\) depends on whether the loss is a sum or an average of squared errors. Multiplying the loss by a constant changes the equivalent penalty value. Record the objective rather than compare penalty numbers across packages without checking normalization.</p>
+<h3>Sparse and Bayesian alternatives</h3>
+<p>Lasso uses an absolute-value penalty and can set coefficients to zero. With correlated factors, the selected sparse set can be unstable even when fitted returns are stable. Elastic net combines absolute and squared penalties. A selected coefficient's ordinary OLS t-statistic does not account for selection.</p>
+<p>Bayesian priors can shrink exposures toward plausible values or pool estimates across related stocks. Posterior uncertainty depends on both the likelihood and priors. A stable estimate can reflect a strong prior rather than abundant information, which should be made clear.</p>
+<h3>Robust losses</h3>
+<p>Huber and other robust losses reduce the influence of extreme residuals. They can be useful for bad observations or heavy tails, but may also downweight economically important crash behavior. A risk model that removes stress periods merely to improve typical fit can miss its main purpose.</p>
+<p>Inference must match the estimator. Replacing squared error with a robust loss and retaining an unmodified OLS covariance is not automatically valid. The same applies to constraints, ridge penalties and data-driven factor selection.</p>
+<h3>Economic constraints</h3>
+<p>Nonnegative betas, coefficient bounds or neutrality restrictions may be justified for a particular holdings model, but should not be imposed universally. A hedge portfolio can have negative style exposure. Constraints can stabilize estimates while introducing bias and boundary behavior.</p>
+<h3>Model uncertainty</h3>
+<p>Compare plausible factor sets, windows and transforms. Report sensitivity of alpha, risk and hedge weights, rather than just the preferred model's coefficient precision. An almost unchanged fitted return can coexist with a very different attribution across correlated factors.</p>
+<p>The static ridge experiment exposes the shrinkage path and withheld-error sensitivity on the fixed synthetic panel. It does not choose a penalty by looking at the holdout and then call that holdout independent. The interactive laboratory remains OLS, with its uncertainty convention fully specified.</p>
+</section>
+
+<section id="implementation" data-title="Portfolio implementation, costs and research governance">
+<div class="section-kicker">25 / From research to positions</div><h2>Portfolio implementation, costs and research governance</h2>
+<p>A factor signal becomes an investment process only after portfolio constraints, trading and financing are specified. Gross statistical results are useful diagnostics, but they do not establish feasible net returns.</p>
+<h3>Portfolio objectives</h3>
+<p>A characteristic forecast can enter a risk-and-cost objective such as:</p>
+\[ \max_w\left\{w^{\mathsf T}\mu
+-\frac{\gamma}{2}w^{\mathsf T}\Sigma w
+-\sum_i c_i|w_i-w_i^{\mathrm{pre}}|\right\}. \]
+<p>Constraints can include net investment, gross exposure, sector and beta bounds, stock limits, borrow availability and turnover. The cost term is a simplified linear trading model; market impact and capacity can require nonlinear treatment. Expected returns and covariance are themselves uncertain inputs.</p>
+<h3>Turnover conventions</h3>
+<p>Before rebalancing, holdings drift with returns. Compare target weights with those pretrade weights, not automatically yesterday's target. Some reports define turnover as half the sum of absolute changes, while trading-cost calculations often charge on the full traded amount. State the convention.</p>
+\[ \mathrm{Traded\ amount}=\sum_i|w_i^{\mathrm{new}}-w_i^{\mathrm{pre}}|,\qquad
+\mathrm{Cost}=\sum_i c_i|\Delta w_i|. \]
+<p>Entering one unit long and one unit short from cash gives absolute traded amount two in this page's normalization. At ten basis points per traded unit, its one-time entry cost is twenty basis points of declared capital. Closing and later rebalancing would add further trades.</p>
+{{figure:costs}}
+<h3>Shorting and financing</h3>
+<p>Research factors can short stocks that are expensive or impossible to borrow. Borrow fees, recalls and locate constraints can change both feasibility and realized returns. Short proceeds and collateral may earn a different financing rate from the rate paid on leverage. These effects need an explicit financing model.</p>
+<p>Sector or beta neutrality can increase gross positions, concentration and trading. A constraint that improves factor purity can lower the net economic result. Conversely, a less pure long-only tilt may be more feasible for a benchmarked mandate.</p>
+<h3>Capacity and crowding</h3>
+<p>Small-cap and illiquid opportunities can have high gross signal strength but limited capital capacity. Impact depends on trade size, liquidity and execution schedule. Crowded strategies can face correlated unwinds during stress, changing both costs and diversification.</p>
+<p>Assess exposure to adverse factor realizations, sector shocks and correlation changes. A historical spread mean is not a stress model. Include costs and financing in scenarios when they are likely to worsen alongside returns.</p>
+<h3>A reproducible research record</h3>
+<p>Store dated universes, descriptor transformations, model settings, factor definitions, weights, execution assumptions and return sources. Separate research exploration from final evaluation. Keep track of model versions so a change in a factor history can be traced to data revisions or construction changes.</p>
+<p>The snapshot experiment charges one-time linear entry cost only. It demonstrates the relationship between weight normalization and cost arithmetic. It deliberately makes no claim about ongoing borrow, financing, market impact or a complete backtest of a real equity universe.</p>
+</section>

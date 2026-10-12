@@ -1,0 +1,70 @@
+<section id="american" data-title="American options and least-squares Monte Carlo">
+<div class="section-label">21 / Optimal stopping</div><h2>American options and least-squares Monte Carlo</h2>
+<p>European simulation evaluates a known cash flow. American simulation must also determine when exercising is optimal. On a set of exercise dates, the Bermudan value satisfies a backward recursion between immediate payoff and conditional continuation value:</p>
+\[ V_j(s)=\max\left(H_j(s),\ e^{-r(t_{j+1}-t_j)}\mathbb{E}[V_{j+1}(S_{j+1})\mid S_j=s]\right). \]
+<p>A continuously exercisable American option requires a limiting or suitably refined exercise-time treatment. A fifty-date simulation is a Bermudan approximation, even if it is informally described as an American pricing experiment. With the same model and payoff, additional available exercise dates cannot reduce the true value.</p>
+<h3>The information constraint</h3>
+<p>A stopping decision must use information available at that date. Selecting the best exercise date after inspecting the entire realised future path gives a holder perfect foresight. Averaging those maximum path payoffs therefore estimates a different, more valuable claim:</p>
+\[ \mathbb{E}\left[\max_j e^{-rt_j}H_j(S_j)\right]\ge\sup_\tau\mathbb{E}[e^{-r\tau}H_\tau(S_\tau)]. \]
+<div class="callout"><p><strong>Analogy: deciding when to sell without tomorrow's newspaper.</strong> A real decision-maker can use today's state and a forecast of future opportunities, but cannot select today's action using tomorrow's realised outcome. A simulation contains tomorrow's outcome in memory; an exercise algorithm must still obey the decision-maker's information boundary.</p></div>
+<h3>Least-squares continuation estimates</h3>
+<p>The Longstaff–Schwartz approach simulates training paths and works backward. At an exercise date, regress future discounted cash flows on basis functions of the current state, usually focusing the exercise comparison on in-the-money paths:</p>
+\[ \widehat C_j(s)=\sum_{k=0}^{p}\widehat a_{j,k}\psi_k(s),\qquad \widehat a_j=\operatorname{argmin}_{a}\sum_{i\in I_j}\left(Y_{i,j}-\sum_k a_k\psi_k(S_{i,j})\right)^2. \]
+<p>Here \(Y_{i,j}\) is the cash flow from the currently selected later stopping decision, discounted back to \(t_j\); it is not necessarily the payoff at the next date. Compare immediate payoff with fitted continuation, update the selected stopping decision, then move backward.</p>
+<p>Scaling states, choosing a stable basis and solving least squares by QR or SVD avoids unnecessarily ill-conditioned normal equations. Higher polynomial degree can overfit, extrapolate badly or become poorly determined where there are few in-the-money paths. A multi-asset or path-dependent option needs a state representation containing the information relevant to future payoffs.</p>
+<h3>Training versus valuation</h3>
+<p>Freeze the fitted continuation functions and evaluate the resulting exercise policy on independent paths in a forward pass. At each date, the policy uses only the state observed at that date. The average discounted payoff of this policy is unbiased conditional on the trained policy and is bounded above in expectation by the true Bermudan optimum.</p>
+{{figure:lsm}}
+<p>The estimated policy value can exceed the true optimum in a finite sample because of sampling noise. A confidence interval around the held-out estimate quantifies its simulation uncertainty conditional on the policy. It does not automatically include policy suboptimality, training variation, insufficient state variables or exercise-grid error. In-sample valuation can suffer look-ahead effects and should not be treated as an independently validated lower bound.</p>
+<h3>Upper bounds and convergence checks</h3>
+<p>Dual constructions can obtain upper bounds from valid martingales. For a discounted payoff process and a martingale \(M_j\) with \(M_0=0\), the expected maximum of discounted payoff minus \(M_j\) is an upper bound. Implementing such a construction requires preserving the martingale condition; subtracting an arbitrary fitted continuation process is insufficient.</p>
+<p>Useful diagnostics vary the number of training and evaluation paths, basis complexity and exercise dates separately. Compare a vanilla put against a converged lattice benchmark, and separate changes in policy value from noise in its held-out evaluation. The detailed original algorithm and primal–dual development are linked in the references.</p>
+</section>
+
+<section id="validation" data-title="Validation, efficiency and model risk">
+<div class="section-label">22 / Interpretation</div><h2>Validation, efficiency and model risk</h2>
+<p>A useful Monte Carlo result is an estimate whose target, sampling design and limitations can be explained. Numerical validation establishes that the estimator represents the specified model and contract; it does not establish that the model describes every market feature.</p>
+<h3>Financial invariants and known limits</h3>
+<p>For European vanilla GBM, compare prices against Black–Scholes across in-, at- and out-of-the-money strikes, several maturities, yields and volatilities. Validate zero maturity and zero volatility explicitly. Check discounted-stock means against \(S_0e^{-qT}\), with their own uncertainty, and verify sample-level put–call parity using the actual simulated stock mean.</p>
+<p>With the same terminal stock scenarios and otherwise identical call conventions, increasing strike cannot increase any path payoff. The resulting sample price curve is decreasing and convex in strike. Repricing each strike with independent shocks obscures those pathwise properties with unrelated noise; common scenarios give stronger diagnostics.</p>
+<h3>Statistical calibration</h3>
+<p>Across independent repeated runs, examine bias, RMSE and interval coverage against known truth. A nominal 95% interval need not contain the benchmark in every run. Conversely, choosing or publishing only seeds whose intervals contain the benchmark turns a validation experiment into selection on the result.</p>
+<p>For antithetics, verify pair-unit accounting. For controls, verify the exact expected control and independent coefficient fit. For importance sampling, verify density ratios and weighted-payoff moments. For RQMC, use independent scramble means. For LSM, separate training from evaluation and interpret the interval as conditional policy uncertainty.</p>
+<h3>Where uncertainty can remain</h3>
+<div class="table-wrap"><table><caption>Different error sources require different checks</caption><thead><tr><th>Source</th><th>Typical remedy or diagnostic</th></tr></thead><tbody><tr><td>Sampling variation</td><td>More independent units or a more efficient estimator</td></tr><tr><td>Time-scheme bias</td><td>Coupled mesh refinement or exact transitions</td></tr><tr><td>Unresolved continuous monitoring</td><td>Correct conditional crossing or extrema treatment</td></tr><tr><td>Exercise-policy approximation</td><td>Richer validated policies and lower/upper bounds</td></tr><tr><td>Parameter uncertainty</td><td>Calibration uncertainty and parameter sensitivity analysis</td></tr><tr><td>Model inadequacy</td><td>Alternative models and economically relevant comparisons</td></tr><tr><td>Contract convention mismatch</td><td>Correct fixing, exercise and settlement specification</td></tr></tbody></table></div>
+<p>These errors are not all independent and cannot always be added as simple standard deviations. A confidence interval from payoff sampling measures only the component justified by its construction. Naming the unresolved component is more informative than printing extra decimals.</p>
+<h3>Precision and performance</h3>
+<p>Evaluate variance reduction at equal work and include its pilot or setup cost. A more elaborate method can lose at small budgets and win at larger budgets. Memory use, batching, vectorisation and hardware affect performance; benchmark the actual contract rather than a random-number loop in isolation.</p>
+<p>Parallelism speeds calculations but does not repair a wrong payoff or dependence structure. A robust ordering of work is to define the target, simplify it mathematically, validate a transparent estimator, then improve variance and execution speed. Validation cases should remain available after optimisation.</p>
+</section>
+
+<section id="laboratory" data-title="Interactive simulation laboratory">
+<div class="section-label">23 / Interactive study</div><h2>Interactive simulation laboratory</h2>
+<p>Run exact terminal GBM simulations for a European call or put. Change the contract and model inputs, the production payoff budget and the seed. The estimator can use plain sampling, antithetic pairs, an independently fitted discounted-stock control, or their combination.</p>
+<p>The displayed path budget counts <strong>production payoff evaluations</strong>. Antithetic methods have half as many independent units. Controlled methods additionally use a separate 1,024-unit pilot: 1,024 payoff evaluations for a plain control, or 2,048 for a paired control. Its coefficient is frozen before production; the pilot is excluded from the price and included in the reported total work.</p>
+{{interactive}}
+<h3>Suggested experiments</h3>
+<p>Start with the benchmark and compare methods at 20,000 production payoff evaluations. The realised absolute error may be smaller for a less efficient method by chance; the standard error and repeated runs describe reliability. Repeat the same method with several seeds, then increase the budget by a factor of four and compare typical interval widths.</p>
+<p>Raise the strike to 180 for a call and reduce the budget. Notice how rare exercise can destabilise plain sampling and how an all-zero sample can create an uninformative zero-width interval. The laboratory flags that condition; it does not implement importance sampling for every parameter choice. The separate rare-event chapter provides the weighted construction.</p>
+<p>Set volatility or maturity to zero to inspect deterministic limits. Add a continuous yield and check the control expectation \(S_0e^{-qT}\). Compare call and put control signs. All running intervals are pointwise normal approximations; their sequence is an explanatory plot, not a sequential stopping guarantee.</p>
+</section>
+
+<section id="examples" data-title="Worked valuation examples">
+<div class="section-label">24 / Numerical examples</div><h2>Worked valuation examples</h2>
+<h3>European benchmark with comparable work</h3>
+<p>The exact one-year call and put prices are 10.450584 and 5.573526. The following reproducible call experiment compares four estimators at 100,000 production payoff evaluations. Controlled estimates use an independent 2,048-unit pilot in this static experiment; the live laboratory uses its separately documented 1,024-unit pilot.</p>
+{{table:methods}}
+<p>The table's absolute errors are realised outcomes. Its standard errors estimate repeated-sampling precision conditional on the fitted coefficients. At equal production work, independent-unit counts differ for paired methods. Pilot work is additional and should be included in a full timing comparison. A price closer to the reference in this one seed is not by itself evidence of a better estimator.</p>
+<h3>An arithmetic Asian call</h3>
+<p>Observe twelve equally spaced prices from \(T/12\) through \(T\), excluding \(S_0\), average them arithmetically and pay the terminal call payoff on that average. The geometric average on these same dates has an exact call value of 5.940200. Its analytic mean is used by the control, not substituted for the arithmetic contract.</p>
+{{table:asian}}
+<p>The arithmetic value exceeds the geometric value, consistently with their pathwise ordering. The dramatic reduction in standard error comes from measuring the small residual difference between similar payoffs. The controlled estimate is still a Monte Carlo estimate; its interval does not make it an analytical price.</p>
+<h3>A continuously monitored up-and-out call</h3>
+<p>For an upper barrier of 130 and no rebate, exact conditional terminal quadrature gives approximately 3.332858 under the benchmark model. A node-only simulation estimates a different, discretely monitored contract at each mesh; the bridge-weighted simulation targets continuous monitoring.</p>
+{{table:barrier}}
+<p>The difference between node-only values and the continuous reference is economically meaningful. It is not removed by increasing paths at a fixed monitoring grid. Bridge weights supply the missing crossing information under the stated GBM assumptions.</p>
+<h3>A fitted exercise policy</h3>
+<p>For a put with fifty exercise dates, fit polynomial continuation functions on 25,000 paths and evaluate each frozen policy on 50,000 independent paths. The American CRR reference permits a finer exercise grid and is not an exact reference for a particular fitted policy.</p>
+{{table:lsm}}
+<p>Increasing polynomial degree improves some policy estimates here, but there is no universal monotonic guarantee for fitted policies. Their confidence intervals are conditional on the trained functions. Refining exercise dates, training size and state representation addresses different approximation errors and should be studied separately.</p>
+</section>

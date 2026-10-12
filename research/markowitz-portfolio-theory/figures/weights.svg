@@ -1,0 +1,336 @@
+<svg role="img" aria-labelledby="weights-title weights-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="259.2pt" viewBox="0 0 662.4 259.2" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="weights-title">Figure 07 · Unrestricted frontier weights are affine in target return</title><desc id="weights-desc">Benchmark inputs and no leverage bound. The net budget stays at one while gross exposure can exceed one. The ability to extrapolate the frontier is mathematical permission to take long and short positions, not an executable financing assumption.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T17:14:58.700980</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="weights-figure_1">
+  <g id="weights-patch_1">
+   <path d="M 0 259.2 
+L 662.4 259.2 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="weights-axes_1">
+   <g id="weights-patch_2">
+    <path d="M 67.34 215.98 
+L 648.9 215.98 
+L 648.9 13.5 
+L 67.34 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="weights-matplotlib.axis_1">
+    <g id="weights-xtick_1">
+     <g id="weights-line2d_1">
+      <path d="M 108.460404 215.98 
+L 108.460404 13.5 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="weights-line2d_2">
+      <defs>
+       <path id="weights-ma1bdd011c3" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#weights-ma1bdd011c3" x="108.460404" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="weights-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="108.460404" y="229.818594" transform="rotate(-0 108.460404 229.818594)">2.5%</text>
+     </g>
+    </g>
+    <g id="weights-xtick_2">
+     <g id="weights-line2d_3">
+      <path d="M 181.889697 215.98 
+L 181.889697 13.5 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="weights-line2d_4">
+      <g>
+       <use href="#weights-ma1bdd011c3" x="181.889697" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="weights-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="181.889697" y="229.818594" transform="rotate(-0 181.889697 229.818594)">5.0%</text>
+     </g>
+    </g>
+    <g id="weights-xtick_3">
+     <g id="weights-line2d_5">
+      <path d="M 255.31899 215.98 
+L 255.31899 13.5 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="weights-line2d_6">
+      <g>
+       <use href="#weights-ma1bdd011c3" x="255.31899" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="weights-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="255.31899" y="229.818594" transform="rotate(-0 255.31899 229.818594)">7.5%</text>
+     </g>
+    </g>
+    <g id="weights-xtick_4">
+     <g id="weights-line2d_7">
+      <path d="M 328.748283 215.98 
+L 328.748283 13.5 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="weights-line2d_8">
+      <g>
+       <use href="#weights-ma1bdd011c3" x="328.748283" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="weights-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="328.748283" y="229.818594" transform="rotate(-0 328.748283 229.818594)">10.0%</text>
+     </g>
+    </g>
+    <g id="weights-xtick_5">
+     <g id="weights-line2d_9">
+      <path d="M 402.177576 215.98 
+L 402.177576 13.5 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="weights-line2d_10">
+      <g>
+       <use href="#weights-ma1bdd011c3" x="402.177576" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="weights-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="402.177576" y="229.818594" transform="rotate(-0 402.177576 229.818594)">12.5%</text>
+     </g>
+    </g>
+    <g id="weights-xtick_6">
+     <g id="weights-line2d_11">
+      <path d="M 475.606869 215.98 
+L 475.606869 13.5 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="weights-line2d_12">
+      <g>
+       <use href="#weights-ma1bdd011c3" x="475.606869" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="weights-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="475.606869" y="229.818594" transform="rotate(-0 475.606869 229.818594)">15.0%</text>
+     </g>
+    </g>
+    <g id="weights-xtick_7">
+     <g id="weights-line2d_13">
+      <path d="M 549.036162 215.98 
+L 549.036162 13.5 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="weights-line2d_14">
+      <g>
+       <use href="#weights-ma1bdd011c3" x="549.036162" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="weights-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="549.036162" y="229.818594" transform="rotate(-0 549.036162 229.818594)">17.5%</text>
+     </g>
+    </g>
+    <g id="weights-xtick_8">
+     <g id="weights-line2d_15">
+      <path d="M 622.465455 215.98 
+L 622.465455 13.5 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="weights-line2d_16">
+      <g>
+       <use href="#weights-ma1bdd011c3" x="622.465455" y="215.98" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="weights-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="622.465455" y="229.818594" transform="rotate(-0 622.465455 229.818594)">20.0%</text>
+     </g>
+    </g>
+    <g id="weights-text_9">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="358.12" y="242.528906" transform="rotate(-0 358.12 242.528906)">Target expected return</text>
+    </g>
+   </g>
+   <g id="weights-matplotlib.axis_2">
+    <g id="weights-ytick_1">
+     <g id="weights-line2d_17">
+      <path d="M 67.34 187.804978 
+L 648.9 187.804978 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="weights-line2d_18">
+      <defs>
+       <path id="weights-m8a10d82a7a" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#weights-m8a10d82a7a" x="67.34" y="187.804978" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="weights-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="60.34" y="191.224275" transform="rotate(-0 60.34 191.224275)">−100%</text>
+     </g>
+    </g>
+    <g id="weights-ytick_2">
+     <g id="weights-line2d_19">
+      <path d="M 67.34 156.115907 
+L 648.9 156.115907 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="weights-line2d_20">
+      <g>
+       <use href="#weights-m8a10d82a7a" x="67.34" y="156.115907" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="weights-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="60.34" y="159.535203" transform="rotate(-0 60.34 159.535203)">−50%</text>
+     </g>
+    </g>
+    <g id="weights-ytick_3">
+     <g id="weights-line2d_21">
+      <path d="M 67.34 124.426835 
+L 648.9 124.426835 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="weights-line2d_22">
+      <g>
+       <use href="#weights-m8a10d82a7a" x="67.34" y="124.426835" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="weights-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="60.34" y="127.846132" transform="rotate(-0 60.34 127.846132)">0%</text>
+     </g>
+    </g>
+    <g id="weights-ytick_4">
+     <g id="weights-line2d_23">
+      <path d="M 67.34 92.737764 
+L 648.9 92.737764 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="weights-line2d_24">
+      <g>
+       <use href="#weights-m8a10d82a7a" x="67.34" y="92.737764" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="weights-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="60.34" y="96.157061" transform="rotate(-0 60.34 96.157061)">50%</text>
+     </g>
+    </g>
+    <g id="weights-ytick_5">
+     <g id="weights-line2d_25">
+      <path d="M 67.34 61.048693 
+L 648.9 61.048693 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="weights-line2d_26">
+      <g>
+       <use href="#weights-m8a10d82a7a" x="67.34" y="61.048693" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="weights-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="60.34" y="64.46799" transform="rotate(-0 60.34 64.46799)">100%</text>
+     </g>
+    </g>
+    <g id="weights-ytick_6">
+     <g id="weights-line2d_27">
+      <path d="M 67.34 29.359621 
+L 648.9 29.359621 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="weights-line2d_28">
+      <g>
+       <use href="#weights-m8a10d82a7a" x="67.34" y="29.359621" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="weights-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="60.34" y="32.778918" transform="rotate(-0 60.34 32.778918)">150%</text>
+     </g>
+    </g>
+    <g id="weights-text_16">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.196406" y="114.74" transform="rotate(-90 21.196406 114.74)">Portfolio weight</text>
+    </g>
+   </g>
+   <g id="weights-line2d_29">
+    <path d="M 93.774545 22.703636 
+L 622.465455 206.776364 
+L 622.465455 206.776364 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="weights-line2d_30">
+    <path d="M 93.774545 137.738805 
+L 622.465455 54.794992 
+L 622.465455 54.794992 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="weights-line2d_31">
+    <path d="M 93.774545 149.459922 
+L 622.465455 48.331007 
+L 622.465455 48.331007 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="weights-line2d_32">
+    <path d="M 67.34 124.426835 
+L 648.9 124.426835 
+" clip-path="url(#weights-p69544e9d0a)" style="fill: none; stroke: #7e8d86; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="weights-patch_3">
+    <path d="M 67.34 215.98 
+L 67.34 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="weights-patch_4">
+    <path d="M 67.34 215.98 
+L 648.9 215.98 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="weights-legend_1">
+    <g id="weights-line2d_33">
+     <path d="M 74.54 180.83125 
+L 82.54 180.83125 
+L 90.54 180.83125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="weights-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="96.94" y="183.63125" transform="rotate(-0 96.94 183.63125)">Asset A</text>
+    </g>
+    <g id="weights-line2d_34">
+     <path d="M 74.54 192.57375 
+L 82.54 192.57375 
+L 90.54 192.57375 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="weights-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="96.94" y="195.37375" transform="rotate(-0 96.94 195.37375)">Asset B</text>
+    </g>
+    <g id="weights-line2d_35">
+     <path d="M 74.54 204.31625 
+L 82.54 204.31625 
+L 90.54 204.31625 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="weights-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="96.94" y="207.11625" transform="rotate(-0 96.94 207.11625)">Asset C</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="weights-p69544e9d0a">
+   <rect x="67.34" y="13.5" width="581.56" height="202.48"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,45 @@
+<div class="notebook" id="yield-notebook">
+<div class="notebook-head"><strong>Term-structure laboratory</strong><span>Nelson–Siegel / Svensson / synthetic data</span></div>
+<form id="yield-form">
+<div class="field"><label for="input-model">Curve family</label><select id="input-model" name="model"><option value="nss">Svensson (NSS)</option><option value="ns">Nelson–Siegel (NS)</option></select></div>
+<div class="field"><label for="input-b0">Long-run level β₀ (%)</label><input id="input-b0" name="b0" type="number" min="-15" max="15" step="any" value="3.5" required></div>
+<div class="field"><label for="input-b1">Slope coefficient β₁ (%)</label><input id="input-b1" name="b1" type="number" min="-15" max="15" step="any" value="-2" required></div>
+<div class="field"><label for="input-b2">First curvature β₂ (%)</label><input id="input-b2" name="b2" type="number" min="-15" max="15" step="any" value="2.5" required></div>
+<div class="field"><label for="input-b3">Second curvature β₃ (%)</label><input id="input-b3" name="b3" type="number" min="-15" max="15" step="any" value="-1.5" required></div>
+<div class="field"><label for="input-tau1">First decay time τ₁ (years)</label><input id="input-tau1" name="tau1" type="number" min=".05" max="30" step="any" value="1.6" required></div>
+<div class="field"><label for="input-tau2">Second decay time τ₂ (years)</label><input id="input-tau2" name="tau2" type="number" min=".05" max="40" step="any" value="6.5" required></div>
+<div class="field"><label for="input-horizon">Curve horizon (years)</label><input id="input-horizon" name="horizon" type="number" min="2" max="40" step=".5" value="30" required></div>
+<div class="field"><label for="input-face">Bond face value</label><input id="input-face" name="face" type="number" min="1" max="1000000" step="any" value="100" required></div>
+<div class="field"><label for="input-coupon">Annual bond coupon (%)</label><input id="input-coupon" name="coupon" type="number" min="0" max="20" step="any" value="4" required></div>
+<div class="field"><label for="input-frequency">Coupons per year</label><select id="input-frequency" name="frequency"><option value="1">Annual</option><option value="2" selected>Semiannual</option><option value="4">Quarterly</option></select></div>
+<div class="field"><label for="input-maturity">Bond maturity (years)</label><input id="input-maturity" name="maturity" type="number" min=".25" max="40" step="any" value="5" required><small>Maturity × frequency must be an integer.</small></div>
+<div class="field"><label for="input-shock">Parallel zero-rate shock (bps)</label><input id="input-shock" name="shock" type="number" min="-300" max="300" step="any" value="100" required></div>
+<div class="notebook-action"><button id="calculate" type="submit">Build curve</button><button id="fit-quotes" type="button">Fit synthetic quotes</button><button id="reset-inputs" type="button">Reset reference</button><button id="download-curve" type="button">Download curve CSV</button><p>Exact-year schedules, valuation on a coupon date, accrued interest zero.</p></div>
+</form>
+<p class="calc-error" id="calc-error" role="alert"></p>
+<div class="notebook-results" aria-label="Selected bond valuation">
+<div class="result"><small>Bond price</small><strong id="result-price">—</strong></div>
+<div class="result"><small>Nominal bond YTM</small><strong id="result-ytm">—</strong></div>
+<div class="result"><small>Zero-shift duration (years)</small><strong id="result-duration">—</strong></div>
+<div class="result"><small>Linear DV01</small><strong id="result-dv01">—</strong></div>
+</div>
+<div class="metric-grid">
+<div class="greek-result"><span>Zero-shift convexity (years²)</span><output id="result-convexity">—</output></div>
+<div class="greek-result"><span>Exact shocked price</span><output id="result-shocked">—</output></div>
+<div class="greek-result"><span>Quadratic minus exact</span><output id="result-error">—</output></div>
+</div>
+<p class="lab-status" id="curve-status" role="status"></p>
+<div class="lab-section-label">Rate and discount curves <span>Inspect every curve at a shared maturity</span></div>
+<div class="notebook-legend"><span><i style="background:#a7bdb3"></i>Continuous zero / base discount</span><span><i style="background:#d3ad84"></i>Instantaneous forward / shocked discount</span><span><i style="background:#91a9bd"></i>Par rate, continuous equivalent</span></div>
+<div class="notebook-plot" id="live-plot"></div>
+<div class="lab-section-label">Parallel-shift sensitivity <span>Exact price and matching Taylor approximations</span></div>
+<div class="notebook-legend"><span><i style="background:#a7bdb3"></i>Exact</span><span><i style="background:#91a9bd"></i>Duration</span><span><i style="background:#d3ad84"></i>Duration + convexity</span></div>
+<div class="notebook-plot" id="shock-plot"></div>
+<div class="lab-section-label">Calibration audit <span>16 synthetic zero quotes / 13 training / 3 withheld</span></div>
+<p class="lab-status" id="fit-status" role="status"></p>
+<div class="table-wrap lab-table"><table id="quote-table"><caption>Continuous zero rates; residual = fitted minus observed</caption><thead><tr><th scope="col">Years</th><th scope="col">Role</th><th scope="col">Observed</th><th scope="col">Current curve</th><th scope="col">Residual (bps)</th></tr></thead><tbody></tbody></table></div>
+<div class="lab-section-label">Cash-flow ledger <span>Discount factors and present values</span></div>
+<div class="table-wrap lab-table"><table id="cash-table"><caption>Regular coupons and principal, in face-value currency units</caption><thead><tr><th scope="col">Years</th><th scope="col">Cash flow</th><th scope="col">Discount factor</th><th scope="col">Present value</th></tr></thead><tbody></tbody></table></div>
+<p class="notebook-note" id="notebook-note" role="status"></p>
+<noscript><p>Enable JavaScript to use the laboratory. All static notes, formulas, figures and worked tables remain available offline.</p></noscript>
+</div>

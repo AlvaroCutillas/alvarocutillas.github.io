@@ -1,0 +1,444 @@
+<svg role="img" aria-labelledby="skew-title skew-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="288pt" viewBox="0 0 720 288" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="skew-title">Figure 04 · Smile asymmetry and the correlation parameter</title><desc id="skew-desc">Three synthetic SSVI slices at one year. Rho controls asymmetry in this parameterization; it is not an estimated physical correlation of an observed market.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T19:54:53.084926</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="skew-figure_1">
+  <g id="skew-patch_1">
+   <path d="M 0 288 
+L 720 288 
+L 720 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="skew-axes_1">
+   <g id="skew-patch_2">
+    <path d="M 62.66 244.78 
+L 706.5 244.78 
+L 706.5 35.14 
+L 62.66 35.14 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="skew-matplotlib.axis_1">
+    <g id="skew-xtick_1">
+     <g id="skew-line2d_1">
+      <path d="M 91.925455 244.78 
+L 91.925455 35.14 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="skew-line2d_2">
+      <defs>
+       <path id="skew-m7ce90114b7" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#skew-m7ce90114b7" x="91.925455" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="skew-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="91.925455" y="258.618594" transform="rotate(-0 91.925455 258.618594)">−0.6</text>
+     </g>
+    </g>
+    <g id="skew-xtick_2">
+     <g id="skew-line2d_3">
+      <path d="M 189.47697 244.78 
+L 189.47697 35.14 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="skew-line2d_4">
+      <g>
+       <use href="#skew-m7ce90114b7" x="189.47697" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="skew-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="189.47697" y="258.618594" transform="rotate(-0 189.47697 258.618594)">−0.4</text>
+     </g>
+    </g>
+    <g id="skew-xtick_3">
+     <g id="skew-line2d_5">
+      <path d="M 287.028485 244.78 
+L 287.028485 35.14 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="skew-line2d_6">
+      <g>
+       <use href="#skew-m7ce90114b7" x="287.028485" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="skew-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="287.028485" y="258.618594" transform="rotate(-0 287.028485 258.618594)">−0.2</text>
+     </g>
+    </g>
+    <g id="skew-xtick_4">
+     <g id="skew-line2d_7">
+      <path d="M 384.58 244.78 
+L 384.58 35.14 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="skew-line2d_8">
+      <g>
+       <use href="#skew-m7ce90114b7" x="384.58" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="skew-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="384.58" y="258.618594" transform="rotate(-0 384.58 258.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="skew-xtick_5">
+     <g id="skew-line2d_9">
+      <path d="M 482.131515 244.78 
+L 482.131515 35.14 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="skew-line2d_10">
+      <g>
+       <use href="#skew-m7ce90114b7" x="482.131515" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="skew-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="482.131515" y="258.618594" transform="rotate(-0 482.131515 258.618594)">0.2</text>
+     </g>
+    </g>
+    <g id="skew-xtick_6">
+     <g id="skew-line2d_11">
+      <path d="M 579.68303 244.78 
+L 579.68303 35.14 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="skew-line2d_12">
+      <g>
+       <use href="#skew-m7ce90114b7" x="579.68303" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="skew-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="579.68303" y="258.618594" transform="rotate(-0 579.68303 258.618594)">0.4</text>
+     </g>
+    </g>
+    <g id="skew-xtick_7">
+     <g id="skew-line2d_13">
+      <path d="M 677.234545 244.78 
+L 677.234545 35.14 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="skew-line2d_14">
+      <g>
+       <use href="#skew-m7ce90114b7" x="677.234545" y="244.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="skew-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="677.234545" y="258.618594" transform="rotate(-0 677.234545 258.618594)">0.6</text>
+     </g>
+    </g>
+    <g id="skew-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="384.58" y="271.328906" transform="rotate(-0 384.58 271.328906)">Log-forward moneyness k</text>
+    </g>
+   </g>
+   <g id="skew-matplotlib.axis_2">
+    <g id="skew-ytick_1">
+     <g id="skew-line2d_15">
+      <path d="M 62.66 220.791217 
+L 706.5 220.791217 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="skew-line2d_16">
+      <defs>
+       <path id="skew-m7c4c3ab61b" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#skew-m7c4c3ab61b" x="62.66" y="220.791217" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="skew-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="224.210514" transform="rotate(-0 55.66 224.210514)">18.0%</text>
+     </g>
+    </g>
+    <g id="skew-ytick_2">
+     <g id="skew-line2d_17">
+      <path d="M 62.66 194.32965 
+L 706.5 194.32965 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="skew-line2d_18">
+      <g>
+       <use href="#skew-m7c4c3ab61b" x="62.66" y="194.32965" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="skew-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="197.748946" transform="rotate(-0 55.66 197.748946)">20.0%</text>
+     </g>
+    </g>
+    <g id="skew-ytick_3">
+     <g id="skew-line2d_19">
+      <path d="M 62.66 167.868082 
+L 706.5 167.868082 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="skew-line2d_20">
+      <g>
+       <use href="#skew-m7c4c3ab61b" x="62.66" y="167.868082" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="skew-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="171.287379" transform="rotate(-0 55.66 171.287379)">22.0%</text>
+     </g>
+    </g>
+    <g id="skew-ytick_4">
+     <g id="skew-line2d_21">
+      <path d="M 62.66 141.406514 
+L 706.5 141.406514 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="skew-line2d_22">
+      <g>
+       <use href="#skew-m7c4c3ab61b" x="62.66" y="141.406514" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="skew-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="144.825811" transform="rotate(-0 55.66 144.825811)">24.0%</text>
+     </g>
+    </g>
+    <g id="skew-ytick_5">
+     <g id="skew-line2d_23">
+      <path d="M 62.66 114.944946 
+L 706.5 114.944946 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="skew-line2d_24">
+      <g>
+       <use href="#skew-m7c4c3ab61b" x="62.66" y="114.944946" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="skew-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="118.364243" transform="rotate(-0 55.66 118.364243)">26.0%</text>
+     </g>
+    </g>
+    <g id="skew-ytick_6">
+     <g id="skew-line2d_25">
+      <path d="M 62.66 88.483378 
+L 706.5 88.483378 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="skew-line2d_26">
+      <g>
+       <use href="#skew-m7c4c3ab61b" x="62.66" y="88.483378" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="skew-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="91.902675" transform="rotate(-0 55.66 91.902675)">28.0%</text>
+     </g>
+    </g>
+    <g id="skew-ytick_7">
+     <g id="skew-line2d_27">
+      <path d="M 62.66 62.02181 
+L 706.5 62.02181 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="skew-line2d_28">
+      <g>
+       <use href="#skew-m7c4c3ab61b" x="62.66" y="62.02181" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="skew-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="65.441107" transform="rotate(-0 55.66 65.441107)">30.0%</text>
+     </g>
+    </g>
+    <g id="skew-ytick_8">
+     <g id="skew-line2d_29">
+      <path d="M 62.66 35.560242 
+L 706.5 35.560242 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="skew-line2d_30">
+      <g>
+       <use href="#skew-m7c4c3ab61b" x="62.66" y="35.560242" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="skew-text_16">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="38.979539" transform="rotate(-0 55.66 38.979539)">32.0%</text>
+     </g>
+    </g>
+    <g id="skew-text_17">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.197813" y="139.96" transform="rotate(-90 21.197813 139.96)">Implied volatility</text>
+    </g>
+   </g>
+   <g id="skew-line2d_31">
+    <path d="M 91.925455 44.669091 
+L 121.190909 55.667126 
+L 150.456364 66.902791 
+L 179.721818 78.381978 
+L 208.987273 90.107434 
+L 238.252727 102.076745 
+L 267.518182 114.279244 
+L 299.222424 127.733958 
+L 338.24303 144.543273 
+L 401.651515 171.88262 
+L 423.600606 181.087688 
+L 440.672121 188.036841 
+L 455.304848 193.790183 
+L 469.937576 199.305972 
+L 482.131515 203.685154 
+L 494.325455 207.836228 
+L 506.519394 211.732088 
+L 518.713333 215.348542 
+L 528.468485 218.026958 
+L 538.223636 220.50591 
+L 547.978788 222.780083 
+L 557.733939 224.846748 
+L 567.489091 226.70576 
+L 577.244242 228.359427 
+L 586.999394 229.812263 
+L 596.754545 231.070677 
+L 606.509697 232.142608 
+L 618.703636 233.234215 
+L 630.897576 234.068125 
+L 643.091515 234.664711 
+L 655.285455 235.044493 
+L 667.479394 235.227523 
+L 677.234545 235.245186 
+L 677.234545 235.245186 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="skew-line2d_32">
+    <path d="M 91.925455 119.986065 
+L 128.507273 128.239713 
+L 157.772727 134.631376 
+L 182.160606 139.750007 
+L 204.109697 144.142867 
+L 223.62 147.834307 
+L 240.691515 150.865761 
+L 257.76303 153.679862 
+L 272.395758 155.894125 
+L 287.028485 157.903128 
+L 301.661212 159.68519 
+L 316.293939 161.219124 
+L 328.487879 162.293464 
+L 340.681818 163.171297 
+L 352.875758 163.843709 
+L 365.069697 164.303586 
+L 377.263636 164.54591 
+L 389.457576 164.567989 
+L 401.651515 164.369576 
+L 413.845455 163.95288 
+L 426.039394 163.322469 
+L 438.233333 162.48506 
+L 450.427273 161.449233 
+L 465.06 159.958634 
+L 479.692727 158.216481 
+L 494.325455 156.2438 
+L 508.958182 154.062241 
+L 526.029697 151.281828 
+L 543.101212 148.27949 
+L 562.611515 144.61617 
+L 584.560606 140.249076 
+L 608.948485 135.152798 
+L 635.775152 129.320444 
+L 669.918182 121.654567 
+L 677.234545 119.986065 
+L 677.234545 119.986065 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="skew-line2d_33">
+    <path d="M 91.925455 235.245186 
+L 106.558182 235.176672 
+L 118.752121 234.917297 
+L 130.946061 234.453238 
+L 143.14 233.764192 
+L 155.333939 232.829614 
+L 167.527879 231.629407 
+L 177.28303 230.465308 
+L 187.038182 229.110588 
+L 196.793333 227.558028 
+L 206.548485 225.802121 
+L 216.303636 223.839422 
+L 226.058788 221.668826 
+L 235.813939 219.291759 
+L 245.569091 216.712252 
+L 255.324242 213.936875 
+L 267.518182 210.206 
+L 279.712121 206.204956 
+L 291.906061 201.95927 
+L 304.1 197.49682 
+L 318.732727 191.896382 
+L 335.804242 185.086104 
+L 355.314545 177.027438 
+L 379.702424 166.679315 
+L 418.72303 149.826282 
+L 472.376364 126.691337 
+L 506.519394 112.2301 
+L 535.784848 100.065248 
+L 565.050303 88.13611 
+L 594.315758 76.451701 
+L 623.581212 65.013398 
+L 652.846667 53.817809 
+L 677.234545 44.669091 
+L 677.234545 44.669091 
+" clip-path="url(#skew-pf8132b63c0)" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="skew-patch_3">
+    <path d="M 62.66 244.78 
+L 62.66 35.14 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="skew-patch_4">
+    <path d="M 62.66 244.78 
+L 706.5 244.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="skew-text_18">
+    <text style="fill: #c8cec8; font: 500 11px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="62.66" y="22.14" transform="rotate(-0 62.66 22.14)">Changing asymmetry at fixed ATM total variance</text>
+   </g>
+   <g id="skew-legend_1">
+    <g id="skew-line2d_34">
+     <path d="M 350.579375 209.63125 
+L 358.579375 209.63125 
+L 366.579375 209.63125 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="skew-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="372.979375" y="212.43125" transform="rotate(-0 372.979375 212.43125)">rho = -0.65</text>
+    </g>
+    <g id="skew-line2d_35">
+     <path d="M 350.579375 221.37375 
+L 358.579375 221.37375 
+L 366.579375 221.37375 
+" style="fill: none; stroke: #91a9bd; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="skew-text_20">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="372.979375" y="224.17375" transform="rotate(-0 372.979375 224.17375)">rho = 0</text>
+    </g>
+    <g id="skew-line2d_36">
+     <path d="M 350.579375 233.11625 
+L 358.579375 233.11625 
+L 366.579375 233.11625 
+" style="fill: none; stroke: #d3ad84; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="skew-text_21">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="372.979375" y="235.91625" transform="rotate(-0 372.979375 235.91625)">rho = 0.65</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="skew-pf8132b63c0">
+   <rect x="62.66" y="35.14" width="643.84" height="209.64"/>
+  </clipPath>
+ </defs>
+</svg>

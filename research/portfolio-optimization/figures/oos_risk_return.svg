@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="568.105312pt" height="451.51325pt" viewBox="0 0 568.105312 451.51325" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 451.51325 
+L 568.105312 451.51325 
+L 568.105312 0 
+L 0 0 
+z
+" style="fill: #050505"/>
+  </g>
+  <g id="chart-axes">
+   <g id="patch_2">
+    <path d="M 40.345312 407.583562 
+L 553.705312 407.583562 
+L 553.705312 30.591563 
+L 40.345312 30.591563 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 89.005842 407.583562 
+L 89.005842 30.591563 
+" clip-path="url(#pf940952e55)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m6f2c4510d4" d="M 0 0 
+L 0 3.5 
+" style="stroke: #9a9a94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="89.005842" y="407.583562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="89.005842" y="421.741375" transform="rotate(-0 89.005842 421.741375)">5</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 154.042929 407.583562 
+L 154.042929 30.591563 
+" clip-path="url(#pf940952e55)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="154.042929" y="407.583562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="154.042929" y="421.741375" transform="rotate(-0 154.042929 421.741375)">6</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 219.080017 407.583562 
+L 219.080017 30.591563 
+" clip-path="url(#pf940952e55)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="219.080017" y="407.583562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="219.080017" y="421.741375" transform="rotate(-0 219.080017 421.741375)">7</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 284.117104 407.583562 
+L 284.117104 30.591563 
+" clip-path="url(#pf940952e55)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="284.117104" y="407.583562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="284.117104" y="421.741375" transform="rotate(-0 284.117104 421.741375)">8</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 349.154192 407.583562 
+L 349.154192 30.591563 
+" clip-path="url(#pf940952e55)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="349.154192" y="407.583562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="349.154192" y="421.741375" transform="rotate(-0 349.154192 421.741375)">9</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 414.191279 407.583562 
+L 414.191279 30.591563 
+" clip-path="url(#pf940952e55)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="414.191279" y="407.583562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="414.191279" y="421.741375" transform="rotate(-0 414.191279 421.741375)">10</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 479.228367 407.583562 
+L 479.228367 30.591563 
+" clip-path="url(#pf940952e55)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="479.228367" y="407.583562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="479.228367" y="421.741375" transform="rotate(-0 479.228367 421.741375)">11</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_15">
+      <path d="M 544.265454 407.583562 
+L 544.265454 30.591563 
+" clip-path="url(#pf940952e55)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m6f2c4510d4" x="544.265454" y="407.583562" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="544.265454" y="421.741375" transform="rotate(-0 544.265454 421.741375)">12</text>
+     </g>
+    </g>
+    <g id="text_9">
+     <text style="fill: #f5f5f2; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="297.025312" y="435.008562" transform="rotate(-0 297.025312 435.008562)">Realized annual volatility (%)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_17">
+      <path d="M 40.345312 358.306763 
+L 553.705312 358.306763 
+" clip-path="url(#pf940952e55)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18">
+      <defs>
+       <path id="me580be6b42" d="M 0 0 
+L -3.5 0 
+" style="stroke: #9a9a94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#me580be6b42" x="40.345312" y="358.306763" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="33.345312" y="361.885669" transform="rotate(-0 33.345312 361.885669)">3</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_19">
+      <path d="M 40.345312 301.804142 
+L 553.705312 301.804142 
+" clip-path="url(#pf940952e55)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#me580be6b42" x="40.345312" y="301.804142" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="33.345312" y="305.383048" transform="rotate(-0 33.345312 305.383048)">4</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_21">
+      <path d="M 40.345312 245.301521 
+L 553.705312 245.301521 
+" clip-path="url(#pf940952e55)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#me580be6b42" x="40.345312" y="245.301521" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="33.345312" y="248.880428" transform="rotate(-0 33.345312 248.880428)">5</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_23">
+      <path d="M 40.345312 188.798901 
+L 553.705312 188.798901 
+" clip-path="url(#pf940952e55)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#me580be6b42" x="40.345312" y="188.798901" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="33.345312" y="192.377807" transform="rotate(-0 33.345312 192.377807)">6</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_25">
+      <path d="M 40.345312 132.29628 
+L 553.705312 132.29628 
+" clip-path="url(#pf940952e55)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#me580be6b42" x="40.345312" y="132.29628" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="33.345312" y="135.875186" transform="rotate(-0 33.345312 135.875186)">7</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_27">
+      <path d="M 40.345312 75.793659 
+L 553.705312 75.793659 
+" clip-path="url(#pf940952e55)" style="fill: none; stroke: #303030; stroke-opacity: 0.65; stroke-width: 0.65; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_28">
+      <g>
+       <use xlink:href="#me580be6b42" x="40.345312" y="75.793659" style="fill: #9a9a94; stroke: #9a9a94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="fill: #9a9a94; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="33.345312" y="79.372565" transform="rotate(-0 33.345312 79.372565)">8</text>
+     </g>
+    </g>
+    <g id="text_16">
+     <text style="fill: #f5f5f2; font: 10px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="21.679687" y="219.087562" transform="rotate(-90 21.679687 219.087562)">Compounded annual return (%)</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 40.345312 407.583562 
+L 40.345312 30.591562 
+" style="fill: none; stroke: #303030; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 553.705312 407.583562 
+L 553.705312 30.591562 
+" style="fill: none; stroke: #303030; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 40.345313 407.583562 
+L 553.705313 407.583562 
+" style="fill: none; stroke: #303030; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 40.345313 30.591563 
+L 553.705313 30.591563 
+" style="fill: none; stroke: #303030; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_17">
+    <text style="fill: #f5f5f2; font: 9px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="418.678369" y="184.280888" transform="rotate(-0 418.678369 184.280888)">Equal weight</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: #a7bdb3; font: 9px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="76.612002" y="383.888605" transform="rotate(-0 76.612002 383.888605)">GMV · sample</text>
+   </g>
+   <g id="text_19">
+    <text style="fill: #79978b; font: 9px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="443.638555" y="126.159112" transform="rotate(-0 443.638555 126.159112)">Max Sharpe · sample</text>
+   </g>
+   <g id="text_20">
+    <text style="fill: #6e9080; font: 9px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="82.759237" y="347.858635" transform="rotate(-0 82.759237 347.858635)">GMV · Ledoit–Wolf</text>
+   </g>
+   <g id="text_21">
+    <text style="fill: #d3ad84; font: 9px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="329.497984" y="106.409576" transform="rotate(-0 329.497984 106.409576)">Max Sharpe · sample capped</text>
+   </g>
+   <g id="text_22">
+    <text style="fill: #c4d2c9; font: 9px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="331.866648" y="157.822579" transform="rotate(-0 331.866648 157.822579)">Max Sharpe · LW capped</text>
+   </g>
+   <g id="text_23">
+    <text style="fill: #f5f5f2; font: 600 14px 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="297.025312" y="24.591563" transform="rotate(-0 297.025312 24.591563)">Out-of-sample risk and return · net</text>
+   </g>
+   <g id="strategy-0">
+    <defs>
+     <path id="m44de09590b" d="M 0 3.872983 
+C 1.027127 3.872983 2.012324 3.464901 2.738613 2.738613 
+C 3.464901 2.012324 3.872983 1.027127 3.872983 0 
+C 3.872983 -1.027127 3.464901 -2.012324 2.738613 -2.738613 
+C 2.012324 -3.464901 1.027127 -3.872983 0 -3.872983 
+C -1.027127 -3.872983 -2.012324 -3.464901 -2.738613 -2.738613 
+C -3.464901 -2.012324 -3.872983 -1.027127 -3.872983 0 
+C -3.872983 1.027127 -3.464901 2.012324 -2.738613 2.738613 
+C -2.012324 3.464901 -1.027127 3.872983 0 3.872983 
+z
+" style="stroke: #050505; stroke-width: 0.8"/>
+    </defs>
+    <g clip-path="url(#pf940952e55)">
+     <use xlink:href="#m44de09590b" x="411.678369" y="170.006982" style="fill: #f5f5f2; stroke: #050505; stroke-width: 0.8"/>
+    </g>
+   </g>
+   <g id="strategy-1">
+    <defs>
+     <path id="m2649b68d69" d="M 0 3.872983 
+C 1.027127 3.872983 2.012324 3.464901 2.738613 2.738613 
+C 3.464901 2.012324 3.872983 1.027127 3.872983 0 
+C 3.872983 -1.027127 3.464901 -2.012324 2.738613 -2.738613 
+C 2.012324 -3.464901 1.027127 -3.872983 0 -3.872983 
+C -1.027127 -3.872983 -2.012324 -3.464901 -2.738613 -2.738613 
+C -3.464901 -2.012324 -3.872983 -1.027127 -3.872983 0 
+C -3.872983 1.027127 -3.464901 2.012324 -2.738613 2.738613 
+C -2.012324 3.464901 -1.027127 3.872983 0 3.872983 
+z
+" style="stroke: #050505; stroke-width: 0.8"/>
+    </defs>
+    <g clip-path="url(#pf940952e55)">
+     <use xlink:href="#m2649b68d69" x="69.612002" y="376.507121" style="fill: #a7bdb3; stroke: #050505; stroke-width: 0.8"/>
+    </g>
+   </g>
+   <g id="strategy-2">
+    <defs>
+     <path id="mdf0db87a6e" d="M 0 3.872983 
+C 1.027127 3.872983 2.012324 3.464901 2.738613 2.738613 
+C 3.464901 2.012324 3.872983 1.027127 3.872983 0 
+C 3.872983 -1.027127 3.464901 -2.012324 2.738613 -2.738613 
+C 2.012324 -3.464901 1.027127 -3.872983 0 -3.872983 
+C -1.027127 -3.872983 -2.012324 -3.464901 -2.738613 -2.738613 
+C -3.464901 -2.012324 -3.872983 -1.027127 -3.872983 0 
+C -3.872983 1.027127 -3.464901 2.012324 -2.738613 2.738613 
+C -2.012324 3.464901 -1.027127 3.872983 0 3.872983 
+z
+" style="stroke: #050505; stroke-width: 0.8"/>
+    </defs>
+    <g clip-path="url(#pf940952e55)">
+     <use xlink:href="#mdf0db87a6e" x="436.638555" y="130.777628" style="fill: #79978b; stroke: #050505; stroke-width: 0.8"/>
+    </g>
+   </g>
+   <g id="strategy-3">
+    <defs>
+     <path id="m068c65e6cb" d="M 0 3.872983 
+C 1.027127 3.872983 2.012324 3.464901 2.738613 2.738613 
+C 3.464901 2.012324 3.872983 1.027127 3.872983 0 
+C 3.872983 -1.027127 3.464901 -2.012324 2.738613 -2.738613 
+C 2.012324 -3.464901 1.027127 -3.872983 0 -3.872983 
+C -1.027127 -3.872983 -2.012324 -3.464901 -2.738613 -2.738613 
+C -3.464901 -2.012324 -3.872983 -1.027127 -3.872983 0 
+C -3.872983 1.027127 -3.464901 2.012324 -2.738613 2.738613 
+C -2.012324 3.464901 -1.027127 3.872983 0 3.872983 
+z
+" style="stroke: #050505; stroke-width: 0.8"/>
+    </defs>
+    <g clip-path="url(#pf940952e55)">
+     <use xlink:href="#m068c65e6cb" x="75.759237" y="352.531994" style="fill: #6e9080; stroke: #050505; stroke-width: 0.8"/>
+    </g>
+   </g>
+   <g id="strategy-4">
+    <defs>
+     <path id="m79902ea912" d="M 0 3.872983 
+C 1.027127 3.872983 2.012324 3.464901 2.738613 2.738613 
+C 3.464901 2.012324 3.872983 1.027127 3.872983 0 
+C 3.872983 -1.027127 3.464901 -2.012324 2.738613 -2.738613 
+C 2.012324 -3.464901 1.027127 -3.872983 0 -3.872983 
+C -1.027127 -3.872983 -2.012324 -3.464901 -2.738613 -2.738613 
+C -3.464901 -2.012324 -3.872983 -1.027127 -3.872983 0 
+C -3.872983 1.027127 -3.464901 2.012324 -2.738613 2.738613 
+C -2.012324 3.464901 -1.027127 3.872983 0 3.872983 
+z
+" style="stroke: #050505; stroke-width: 0.8"/>
+    </defs>
+    <g clip-path="url(#pf940952e55)">
+     <use xlink:href="#m79902ea912" x="322.497984" y="134.028092" style="fill: #d3ad84; stroke: #050505; stroke-width: 0.8"/>
+    </g>
+   </g>
+   <g id="strategy-5">
+    <defs>
+     <path id="ma2fd4ca08c" d="M 0 3.872983 
+C 1.027127 3.872983 2.012324 3.464901 2.738613 2.738613 
+C 3.464901 2.012324 3.872983 1.027127 3.872983 0 
+C 3.872983 -1.027127 3.464901 -2.012324 2.738613 -2.738613 
+C 2.012324 -3.464901 1.027127 -3.872983 0 -3.872983 
+C -1.027127 -3.872983 -2.012324 -3.464901 -2.738613 -2.738613 
+C -3.464901 -2.012324 -3.872983 -1.027127 -3.872983 0 
+C -3.872983 1.027127 -3.464901 2.012324 -2.738613 2.738613 
+C -2.012324 3.464901 -1.027127 3.872983 0 3.872983 
+z
+" style="stroke: #050505; stroke-width: 0.8"/>
+    </defs>
+    <g clip-path="url(#pf940952e55)">
+     <use xlink:href="#ma2fd4ca08c" x="324.866648" y="135.441094" style="fill: #c4d2c9; stroke: #050505; stroke-width: 0.8"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf940952e55">
+   <rect x="40.345312" y="30.591563" width="513.36" height="376.992"/>
+  </clipPath>
+ </defs>
+<metadata data-chart="true">{"mode":"points","context":"Net walk-forward · 2013-01-07–2026-09-25","points":[{"x":9.961361888830726,"y":6.332584901720795,"title":"Equal weight","rows":[["Realized annual volatility","9.96%"],["Compounded annual return","6.33%"],["Excess Sharpe","0.502"],["Maximum drawdown","-23.08%"],["Mean effective positions","10.00"]],"gid":"strategy-0"},{"x":4.70180337590634,"y":2.6778847093806846,"title":"GMV · sample","rows":[["Realized annual volatility","4.70%"],["Compounded annual return","2.68%"],["Excess Sharpe","0.236"],["Maximum drawdown","-15.39%"],["Mean effective positions","1.25"]],"gid":"strategy-1"},{"x":10.345145769317837,"y":7.0268775529128025,"title":"Max Sharpe · sample","rows":[["Realized annual volatility","10.35%"],["Compounded annual return","7.03%"],["Excess Sharpe","0.550"],["Maximum drawdown","-21.48%"],["Mean effective positions","2.27"]],"gid":"strategy-2"},{"x":4.7963223012402745,"y":3.1022035511075075,"title":"GMV · Ledoit–Wolf","rows":[["Realized annual volatility","4.80%"],["Compounded annual return","3.10%"],["Excess Sharpe","0.318"],["Maximum drawdown","-14.70%"],["Mean effective positions","1.35"]],"gid":"strategy-3"},{"x":8.590138347650477,"y":6.969349888231768,"title":"Max Sharpe · sample capped","rows":[["Realized annual volatility","8.59%"],["Compounded annual return","6.97%"],["Excess Sharpe","0.636"],["Maximum drawdown","-17.39%"],["Mean effective positions","4.40"]],"gid":"strategy-4"},{"x":8.62655856089609,"y":6.944342151507077,"title":"Max Sharpe · LW capped","rows":[["Realized annual volatility","8.63%"],["Compounded annual return","6.94%"],["Excess Sharpe","0.631"],["Maximum drawdown","-17.42%"],["Mean effective positions","4.42"]],"gid":"strategy-5"}],"box":[40.345312,30.591563,553.705312,407.583562],"xlim":[4.25180337590634,12.145145769317837],"ylim":[2.1278847093806847,8.8]}</metadata>
+</svg>

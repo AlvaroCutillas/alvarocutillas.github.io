@@ -1,0 +1,393 @@
+<svg role="img" aria-labelledby="basket-title basket-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="basket-title">Figure 12 · Correlation affects the value of a basket payoff</title><desc id="basket-desc">Three spots initially 100, equal weights, σ = 20%, 25%, 30%, r = 5%, q = 0, K = 100, T = 1; 80,000 common base vectors, seed 1007. The correlation matrix is positive definite throughout the plotted range. Shading shows pointwise Monte Carlo uncertainty.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T19:11:28.659710</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="basket-figure_1">
+  <g id="basket-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="basket-axes_1">
+   <g id="basket-patch_2">
+    <path d="M 45.38 208.78 
+L 648.9 208.78 
+L 648.9 13.5 
+L 45.38 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="basket-matplotlib.axis_1">
+    <g id="basket-xtick_1">
+     <g id="basket-line2d_1">
+      <path d="M 93.133266 208.78 
+L 93.133266 13.5 
+" clip-path="url(#basket-p7a6cee0bcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="basket-line2d_2">
+      <defs>
+       <path id="basket-mda4f628235" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#basket-mda4f628235" x="93.133266" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="basket-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="93.133266" y="222.618594" transform="rotate(-0 93.133266 222.618594)">−0.4</text>
+     </g>
+    </g>
+    <g id="basket-xtick_2">
+     <g id="basket-line2d_3">
+      <path d="M 174.415421 208.78 
+L 174.415421 13.5 
+" clip-path="url(#basket-p7a6cee0bcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="basket-line2d_4">
+      <g>
+       <use href="#basket-mda4f628235" x="174.415421" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="basket-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="174.415421" y="222.618594" transform="rotate(-0 174.415421 222.618594)">−0.2</text>
+     </g>
+    </g>
+    <g id="basket-xtick_3">
+     <g id="basket-line2d_5">
+      <path d="M 255.697576 208.78 
+L 255.697576 13.5 
+" clip-path="url(#basket-p7a6cee0bcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="basket-line2d_6">
+      <g>
+       <use href="#basket-mda4f628235" x="255.697576" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="basket-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="255.697576" y="222.618594" transform="rotate(-0 255.697576 222.618594)">0.0</text>
+     </g>
+    </g>
+    <g id="basket-xtick_4">
+     <g id="basket-line2d_7">
+      <path d="M 336.979731 208.78 
+L 336.979731 13.5 
+" clip-path="url(#basket-p7a6cee0bcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="basket-line2d_8">
+      <g>
+       <use href="#basket-mda4f628235" x="336.979731" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="basket-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="336.979731" y="222.618594" transform="rotate(-0 336.979731 222.618594)">0.2</text>
+     </g>
+    </g>
+    <g id="basket-xtick_5">
+     <g id="basket-line2d_9">
+      <path d="M 418.261886 208.78 
+L 418.261886 13.5 
+" clip-path="url(#basket-p7a6cee0bcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="basket-line2d_10">
+      <g>
+       <use href="#basket-mda4f628235" x="418.261886" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="basket-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="418.261886" y="222.618594" transform="rotate(-0 418.261886 222.618594)">0.4</text>
+     </g>
+    </g>
+    <g id="basket-xtick_6">
+     <g id="basket-line2d_11">
+      <path d="M 499.54404 208.78 
+L 499.54404 13.5 
+" clip-path="url(#basket-p7a6cee0bcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="basket-line2d_12">
+      <g>
+       <use href="#basket-mda4f628235" x="499.54404" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="basket-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="499.54404" y="222.618594" transform="rotate(-0 499.54404 222.618594)">0.6</text>
+     </g>
+    </g>
+    <g id="basket-xtick_7">
+     <g id="basket-line2d_13">
+      <path d="M 580.826195 208.78 
+L 580.826195 13.5 
+" clip-path="url(#basket-p7a6cee0bcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="basket-line2d_14">
+      <g>
+       <use href="#basket-mda4f628235" x="580.826195" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="basket-text_7">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="580.826195" y="222.618594" transform="rotate(-0 580.826195 222.618594)">0.8</text>
+     </g>
+    </g>
+    <g id="basket-text_8">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="347.14" y="235.328906" transform="rotate(-0 347.14 235.328906)">Equal pairwise correlation ρ</text>
+    </g>
+   </g>
+   <g id="basket-matplotlib.axis_2">
+    <g id="basket-ytick_1">
+     <g id="basket-line2d_15">
+      <path d="M 45.38 184.327538 
+L 648.9 184.327538 
+" clip-path="url(#basket-p7a6cee0bcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="basket-line2d_16">
+      <defs>
+       <path id="basket-m26a00fd712" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#basket-m26a00fd712" x="45.38" y="184.327538" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="basket-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="187.746835" transform="rotate(-0 38.38 187.746835)">6</text>
+     </g>
+    </g>
+    <g id="basket-ytick_2">
+     <g id="basket-line2d_17">
+      <path d="M 45.38 158.222737 
+L 648.9 158.222737 
+" clip-path="url(#basket-p7a6cee0bcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="basket-line2d_18">
+      <g>
+       <use href="#basket-m26a00fd712" x="45.38" y="158.222737" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="basket-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="161.642034" transform="rotate(-0 38.38 161.642034)">7</text>
+     </g>
+    </g>
+    <g id="basket-ytick_3">
+     <g id="basket-line2d_19">
+      <path d="M 45.38 132.117936 
+L 648.9 132.117936 
+" clip-path="url(#basket-p7a6cee0bcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="basket-line2d_20">
+      <g>
+       <use href="#basket-m26a00fd712" x="45.38" y="132.117936" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="basket-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="135.537232" transform="rotate(-0 38.38 135.537232)">8</text>
+     </g>
+    </g>
+    <g id="basket-ytick_4">
+     <g id="basket-line2d_21">
+      <path d="M 45.38 106.013134 
+L 648.9 106.013134 
+" clip-path="url(#basket-p7a6cee0bcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="basket-line2d_22">
+      <g>
+       <use href="#basket-m26a00fd712" x="45.38" y="106.013134" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="basket-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="109.432431" transform="rotate(-0 38.38 109.432431)">9</text>
+     </g>
+    </g>
+    <g id="basket-ytick_5">
+     <g id="basket-line2d_23">
+      <path d="M 45.38 79.908333 
+L 648.9 79.908333 
+" clip-path="url(#basket-p7a6cee0bcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="basket-line2d_24">
+      <g>
+       <use href="#basket-m26a00fd712" x="45.38" y="79.908333" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="basket-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="83.32763" transform="rotate(-0 38.38 83.32763)">10</text>
+     </g>
+    </g>
+    <g id="basket-ytick_6">
+     <g id="basket-line2d_25">
+      <path d="M 45.38 53.803532 
+L 648.9 53.803532 
+" clip-path="url(#basket-p7a6cee0bcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="basket-line2d_26">
+      <g>
+       <use href="#basket-m26a00fd712" x="45.38" y="53.803532" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="basket-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="57.222829" transform="rotate(-0 38.38 57.222829)">11</text>
+     </g>
+    </g>
+    <g id="basket-ytick_7">
+     <g id="basket-line2d_27">
+      <path d="M 45.38 27.698731 
+L 648.9 27.698731 
+" clip-path="url(#basket-p7a6cee0bcd)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="basket-line2d_28">
+      <g>
+       <use href="#basket-m26a00fd712" x="45.38" y="27.698731" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="basket-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="38.38" y="31.118028" transform="rotate(-0 38.38 31.118028)">12</text>
+     </g>
+    </g>
+    <g id="basket-text_16">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.055781" y="111.14" transform="rotate(-90 21.055781 111.14)">Basket call value</text>
+    </g>
+   </g>
+   <g id="basket-PolyCollection_1">
+    <defs>
+     <path id="basket-m4559610cbf" d="M 72.812727 -54.099506 
+L 72.812727 -52.096364 
+L 93.133266 -64.392473 
+L 113.453805 -75.129192 
+L 133.774343 -84.802959 
+L 154.094882 -93.74366 
+L 174.415421 -102.096833 
+L 194.73596 -109.948973 
+L 215.056498 -117.400363 
+L 235.377037 -124.475128 
+L 255.697576 -131.230946 
+L 276.018114 -137.707586 
+L 296.338653 -143.936015 
+L 316.659192 -149.939226 
+L 336.979731 -155.766624 
+L 357.300269 -161.426218 
+L 377.620808 -166.919938 
+L 397.941347 -172.259031 
+L 418.261886 -177.445809 
+L 438.582424 -182.51128 
+L 458.902963 -187.437265 
+L 479.223502 -192.246227 
+L 499.54404 -196.947634 
+L 519.864579 -201.569757 
+L 540.185118 -206.088418 
+L 560.505657 -210.507936 
+L 580.826195 -214.801627 
+L 601.146734 -219.002089 
+L 621.467273 -223.087696 
+L 621.467273 -229.623636 
+L 621.467273 -229.623636 
+L 601.146734 -225.423689 
+L 580.826195 -221.10556 
+L 560.505657 -216.691315 
+L 540.185118 -212.14893 
+L 519.864579 -207.504952 
+L 499.54404 -202.755089 
+L 479.223502 -197.923212 
+L 458.902963 -192.981206 
+L 438.582424 -187.919543 
+L 418.261886 -182.715764 
+L 397.941347 -177.387637 
+L 377.620808 -171.90417 
+L 357.300269 -166.262718 
+L 336.979731 -160.45174 
+L 316.659192 -154.468821 
+L 296.338653 -148.305455 
+L 276.018114 -141.912053 
+L 255.697576 -135.265019 
+L 235.377037 -128.33267 
+L 215.056498 -121.07434 
+L 194.73596 -113.431264 
+L 174.415421 -105.377437 
+L 154.094882 -96.810695 
+L 133.774343 -87.641362 
+L 113.453805 -77.719463 
+L 93.133266 -66.708977 
+L 72.812727 -54.099506 
+z
+" style="stroke: #a7bdb3; stroke-opacity: 0.12"/>
+    </defs>
+    <g clip-path="url(#basket-p7a6cee0bcd)">
+     <use href="#basket-m4559610cbf" x="0" y="252" style="fill: #a7bdb3; fill-opacity: 0.12; stroke: #a7bdb3; stroke-opacity: 0.12"/>
+    </g>
+   </g>
+   <g id="basket-line2d_29">
+    <path d="M 72.812727 198.902065 
+L 93.133266 186.449275 
+L 113.453805 175.575672 
+L 133.774343 165.777839 
+L 154.094882 156.722822 
+L 174.415421 148.262865 
+L 194.73596 140.309881 
+L 215.056498 132.762648 
+L 235.377037 125.596101 
+L 255.697576 118.752017 
+L 276.018114 112.190181 
+L 296.338653 105.879265 
+L 316.659192 99.795977 
+L 336.979731 93.890818 
+L 357.300269 88.155532 
+L 377.620808 82.587946 
+L 397.941347 77.176666 
+L 418.261886 71.919213 
+L 438.582424 66.784589 
+L 458.902963 61.790765 
+L 479.223502 56.91528 
+L 499.54404 52.148638 
+L 519.864579 47.462645 
+L 540.185118 42.881326 
+L 560.505657 38.400375 
+L 580.826195 34.046407 
+L 601.146734 29.787111 
+L 621.467273 25.644334 
+" clip-path="url(#basket-p7a6cee0bcd)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="basket-patch_3">
+    <path d="M 45.38 208.78 
+L 45.38 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="basket-patch_4">
+    <path d="M 45.38 208.78 
+L 648.9 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="basket-legend_1">
+    <g id="basket-line2d_30">
+     <path d="M 52.58 23.97875 
+L 60.58 23.97875 
+L 68.58 23.97875 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="basket-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="74.98" y="26.77875" transform="rotate(-0 74.98 26.77875)">Arithmetic basket call</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="basket-p7a6cee0bcd">
+   <rect x="45.38" y="13.5" width="603.52" height="195.28"/>
+  </clipPath>
+ </defs>
+</svg>

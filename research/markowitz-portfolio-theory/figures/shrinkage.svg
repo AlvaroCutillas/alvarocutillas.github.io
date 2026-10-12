@@ -1,0 +1,366 @@
+<svg role="img" aria-labelledby="shrinkage-title shrinkage-desc" xmlns:xlink="http://www.w3.org/1999/xlink" width="662.4pt" height="252pt" viewBox="0 0 662.4 252" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="shrinkage-title">Figure 14 · Estimation and shrinkage in a controlled experiment</title><desc id="shrinkage-desc">240 independent samples of 45 IID one-year multivariate normal simple returns; seed 3002. Covariance only is estimated; GMV does not use means. Diagonal shrinkage intensities are illustrative and not fitted Ledoit–Wolf intensities. Population risk is calculated from the known generating covariance; no intensity is selected using these reported test risks.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T17:15:00.055567</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="shrinkage-figure_1">
+  <g id="shrinkage-patch_1">
+   <path d="M 0 252 
+L 662.4 252 
+L 662.4 0 
+L 0 0 
+z
+" style="fill: #0d0d0d"/>
+  </g>
+  <g id="shrinkage-axes_1">
+   <g id="shrinkage-patch_2">
+    <path d="M 62.66 208.78 
+L 648.9 208.78 
+L 648.9 13.5 
+L 62.66 13.5 
+z
+" style="fill: #0d0d0d"/>
+   </g>
+   <g id="shrinkage-matplotlib.axis_1">
+    <g id="shrinkage-xtick_1">
+     <g id="shrinkage-line2d_1">
+      <path d="M 89.307273 208.78 
+L 89.307273 13.5 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="shrinkage-line2d_2">
+      <defs>
+       <path id="shrinkage-m572a091562" d="M 0 0 
+L 0 3.5 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#shrinkage-m572a091562" x="89.307273" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="shrinkage-text_1">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="89.307273" y="222.618594" transform="rotate(-0 89.307273 222.618594)">0%</text>
+     </g>
+    </g>
+    <g id="shrinkage-xtick_2">
+     <g id="shrinkage-line2d_3">
+      <path d="M 195.896364 208.78 
+L 195.896364 13.5 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="shrinkage-line2d_4">
+      <g>
+       <use href="#shrinkage-m572a091562" x="195.896364" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="shrinkage-text_2">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="195.896364" y="222.618594" transform="rotate(-0 195.896364 222.618594)">20%</text>
+     </g>
+    </g>
+    <g id="shrinkage-xtick_3">
+     <g id="shrinkage-line2d_5">
+      <path d="M 302.485455 208.78 
+L 302.485455 13.5 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="shrinkage-line2d_6">
+      <g>
+       <use href="#shrinkage-m572a091562" x="302.485455" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="shrinkage-text_3">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="302.485455" y="222.618594" transform="rotate(-0 302.485455 222.618594)">40%</text>
+     </g>
+    </g>
+    <g id="shrinkage-xtick_4">
+     <g id="shrinkage-line2d_7">
+      <path d="M 409.074545 208.78 
+L 409.074545 13.5 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="shrinkage-line2d_8">
+      <g>
+       <use href="#shrinkage-m572a091562" x="409.074545" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="shrinkage-text_4">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="409.074545" y="222.618594" transform="rotate(-0 409.074545 222.618594)">60%</text>
+     </g>
+    </g>
+    <g id="shrinkage-xtick_5">
+     <g id="shrinkage-line2d_9">
+      <path d="M 515.663636 208.78 
+L 515.663636 13.5 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="shrinkage-line2d_10">
+      <g>
+       <use href="#shrinkage-m572a091562" x="515.663636" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="shrinkage-text_5">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="515.663636" y="222.618594" transform="rotate(-0 515.663636 222.618594)">80%</text>
+     </g>
+    </g>
+    <g id="shrinkage-xtick_6">
+     <g id="shrinkage-line2d_11">
+      <path d="M 622.252727 208.78 
+L 622.252727 13.5 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="shrinkage-line2d_12">
+      <g>
+       <use href="#shrinkage-m572a091562" x="622.252727" y="208.78" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="shrinkage-text_6">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="622.252727" y="222.618594" transform="rotate(-0 622.252727 222.618594)">100%</text>
+     </g>
+    </g>
+    <g id="shrinkage-text_7">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="355.78" y="235.328906" transform="rotate(-0 355.78 235.328906)">Diagonal shrinkage intensity δ</text>
+    </g>
+   </g>
+   <g id="shrinkage-matplotlib.axis_2">
+    <g id="shrinkage-ytick_1">
+     <g id="shrinkage-line2d_13">
+      <path d="M 62.66 198.642321 
+L 648.9 198.642321 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="shrinkage-line2d_14">
+      <defs>
+       <path id="shrinkage-m605ec1bded" d="M 0 0 
+L -3.5 0 
+" style="stroke: #939b94; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use href="#shrinkage-m605ec1bded" x="62.66" y="198.642321" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="shrinkage-text_8">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="202.061618" transform="rotate(-0 55.66 202.061618)">8.20%</text>
+     </g>
+    </g>
+    <g id="shrinkage-ytick_2">
+     <g id="shrinkage-line2d_15">
+      <path d="M 62.66 173.109136 
+L 648.9 173.109136 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="shrinkage-line2d_16">
+      <g>
+       <use href="#shrinkage-m605ec1bded" x="62.66" y="173.109136" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="shrinkage-text_9">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="176.528433" transform="rotate(-0 55.66 176.528433)">8.40%</text>
+     </g>
+    </g>
+    <g id="shrinkage-ytick_3">
+     <g id="shrinkage-line2d_17">
+      <path d="M 62.66 147.57595 
+L 648.9 147.57595 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="shrinkage-line2d_18">
+      <g>
+       <use href="#shrinkage-m605ec1bded" x="62.66" y="147.57595" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="shrinkage-text_10">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="150.995247" transform="rotate(-0 55.66 150.995247)">8.60%</text>
+     </g>
+    </g>
+    <g id="shrinkage-ytick_4">
+     <g id="shrinkage-line2d_19">
+      <path d="M 62.66 122.042765 
+L 648.9 122.042765 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="shrinkage-line2d_20">
+      <g>
+       <use href="#shrinkage-m605ec1bded" x="62.66" y="122.042765" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="shrinkage-text_11">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="125.462062" transform="rotate(-0 55.66 125.462062)">8.80%</text>
+     </g>
+    </g>
+    <g id="shrinkage-ytick_5">
+     <g id="shrinkage-line2d_21">
+      <path d="M 62.66 96.509579 
+L 648.9 96.509579 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="shrinkage-line2d_22">
+      <g>
+       <use href="#shrinkage-m605ec1bded" x="62.66" y="96.509579" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="shrinkage-text_12">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="99.928876" transform="rotate(-0 55.66 99.928876)">9.00%</text>
+     </g>
+    </g>
+    <g id="shrinkage-ytick_6">
+     <g id="shrinkage-line2d_23">
+      <path d="M 62.66 70.976394 
+L 648.9 70.976394 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="shrinkage-line2d_24">
+      <g>
+       <use href="#shrinkage-m605ec1bded" x="62.66" y="70.976394" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="shrinkage-text_13">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="74.395691" transform="rotate(-0 55.66 74.395691)">9.20%</text>
+     </g>
+    </g>
+    <g id="shrinkage-ytick_7">
+     <g id="shrinkage-line2d_25">
+      <path d="M 62.66 45.443208 
+L 648.9 45.443208 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="shrinkage-line2d_26">
+      <g>
+       <use href="#shrinkage-m605ec1bded" x="62.66" y="45.443208" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="shrinkage-text_14">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="48.862505" transform="rotate(-0 55.66 48.862505)">9.40%</text>
+     </g>
+    </g>
+    <g id="shrinkage-ytick_8">
+     <g id="shrinkage-line2d_27">
+      <path d="M 62.66 19.910023 
+L 648.9 19.910023 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke: #252b26; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="shrinkage-line2d_28">
+      <g>
+       <use href="#shrinkage-m605ec1bded" x="62.66" y="19.910023" style="fill: #939b94; stroke: #939b94; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="shrinkage-text_15">
+      <text style="fill: #939b94; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="55.66" y="23.32932" transform="rotate(-0 55.66 23.32932)">9.60%</text>
+     </g>
+    </g>
+    <g id="shrinkage-text_16">
+     <text style="fill: #c8cec8; font: 9px 'DejaVu Sans', Arial, sans-serif; text-anchor: middle" x="21.197813" y="111.14" transform="rotate(-90 21.197813 111.14)">Average portfolio volatility</text>
+    </g>
+   </g>
+   <g id="shrinkage-line2d_29">
+    <path d="M 89.307273 99.884474 
+L 115.954545 102.375383 
+L 142.601818 105.176998 
+L 169.249091 108.272382 
+L 195.896364 111.648194 
+L 222.543636 115.293883 
+L 249.190909 119.201132 
+L 275.838182 123.36346 
+L 302.485455 127.775924 
+L 329.132727 132.434904 
+L 355.78 137.337937 
+L 382.427273 142.483594 
+L 409.074545 147.871384 
+L 435.721818 153.501689 
+L 462.369091 159.375712 
+L 489.016364 165.495446 
+L 515.663636 171.863657 
+L 542.310909 178.483876 
+L 568.958182 185.360409 
+L 595.605455 192.498355 
+L 622.252727 199.903636 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="shrinkage-line2d_30">
+    <path d="M 89.307273 30.326492 
+L 115.954545 32.632917 
+L 142.601818 34.482031 
+L 169.249091 35.932181 
+L 195.896364 37.028442 
+L 222.543636 37.806288 
+L 249.190909 38.294054 
+L 275.838182 38.514643 
+L 302.485455 38.486732 
+L 329.132727 38.225657 
+L 355.78 37.744062 
+L 382.427273 37.052393 
+L 409.074545 36.159271 
+L 435.721818 35.071786 
+L 462.369091 33.79572 
+L 489.016364 32.33573 
+L 515.663636 30.695484 
+L 542.310909 28.877774 
+L 568.958182 26.884606 
+L 595.605455 24.717264 
+L 622.252727 22.376364 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="shrinkage-line2d_31">
+    <path d="M 62.66 56.280315 
+L 648.9 56.280315 
+" clip-path="url(#shrinkage-pea3696ca07)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+   </g>
+   <g id="shrinkage-patch_3">
+    <path d="M 62.66 208.78 
+L 62.66 13.5 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="shrinkage-patch_4">
+    <path d="M 62.66 208.78 
+L 648.9 208.78 
+" style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="shrinkage-legend_1">
+    <g id="shrinkage-line2d_32">
+     <path d="M 69.86 173.63125 
+L 77.86 173.63125 
+L 85.86 173.63125 
+" style="fill: none; stroke: #7e8d86; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="shrinkage-text_17">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="92.26" y="176.43125" transform="rotate(-0 92.26 176.43125)">Predicted volatility · fitted covariance</text>
+    </g>
+    <g id="shrinkage-line2d_33">
+     <path d="M 69.86 185.37375 
+L 77.86 185.37375 
+L 85.86 185.37375 
+" style="fill: none; stroke: #a7bdb3; stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="shrinkage-text_18">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="92.26" y="188.17375" transform="rotate(-0 92.26 188.17375)">Population volatility · held-out target</text>
+    </g>
+    <g id="shrinkage-line2d_34">
+     <path d="M 69.86 197.11625 
+L 77.86 197.11625 
+L 85.86 197.11625 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #d3ad84; stroke-width: 2"/>
+    </g>
+    <g id="shrinkage-text_19">
+     <text style="fill: #c8cec8; font: 8px 'DejaVu Sans', Arial, sans-serif; text-anchor: start" x="92.26" y="199.91625" transform="rotate(-0 92.26 199.91625)">Population GMV volatility</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="shrinkage-pea3696ca07">
+   <rect x="62.66" y="13.5" width="586.24" height="195.28"/>
+  </clipPath>
+ </defs>
+</svg>
