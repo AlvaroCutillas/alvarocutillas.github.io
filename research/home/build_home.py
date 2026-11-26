@@ -61,8 +61,12 @@ class Plot:
     def add(self, s): self.parts.append(s)
 
     def svg(self, tid, title, desc):
+        # Las curvas se recortan al área de trazado: ninguna línea puede salirse de la figura
+        body = ''.join(self.parts).replace('<path class="curve', f'<path clip-path="url(#{tid}-c)" class="curve')
+        clip = (f'<clipPath id="{tid}-c"><rect x="{self.L}" y="{self.T - 2}" width="{self.W - self.L - self.Rr}" '
+                f'height="{self.H - self.T - self.B + 2}"/></clipPath>')
         return (f'<svg class="fig" viewBox="0 0 {self.W} {self.H}" role="img" aria-labelledby="{tid}-t {tid}-d">'
-                f'<title id="{tid}-t">{title}</title><desc id="{tid}-d">{desc}</desc>' + ''.join(self.parts) + '</svg>')
+                f'<title id="{tid}-t">{title}</title><desc id="{tid}-d">{desc}</desc><defs>{clip}</defs>' + body + '</svg>')
 
 
 # ---------- 3. Figura 1: frontera eficiente (datos reales) ----------
@@ -140,8 +144,8 @@ def g_(f): return pw * math.log(1 + f) + (1 - pw) * math.log(1 - f)
 fs = [i / 400 for i in range(0, 381)]
 fk = 2 * pw - 1
 fz = next(f for f in fs[1:] if g_(f) < 0)
-p4 = Plot(560, 330, (0, 0.95), (-0.04, 0.014), (0, .2, .4, .6, .8), (-.03, -.02, -.01, 0), fx='{:.1f}', fy='{:.0%}', L=46, Rr=24, B=44)
-p4.add(f'<path class="curve accent" pathLength="1" d="{p4.path([(f, g_(f)) for f in fs])}"/>')
+p4 = Plot(560, 330, (0, 0.5), (-0.04, 0.014), (0, .1, .2, .3, .4, .5), (-.03, -.02, -.01, 0), fx='{:.1f}', fy='{:.0%}', L=46, Rr=24, B=44)
+p4.add(f'<path class="curve accent" pathLength="1" d="{p4.path([(f, g_(f)) for f in fs if g_(f) >= p4.yr[0]])}"/>')
 p4.add(f'<g class="gmv"><circle cx="{p4.x(fk):.1f}" cy="{p4.y(g_(fk)):.1f}" r="5"/><text x="{p4.x(fk)+4:.1f}" y="{p4.y(g_(fk))-12:.1f}">Full Kelly</text></g>')
 p4.add(f'<g class="pt"><circle cx="{p4.x(fz):.1f}" cy="{p4.y(0):.1f}" r="3.6"/><text x="{p4.x(fz)+8:.1f}" y="{p4.y(0)+18:.1f}">Growth turns negative</text></g>')
 p4.add(f'<text class="ax" x="{(p4.L+p4.W-p4.Rr)/2:.0f}" y="{p4.H-4}" text-anchor="middle">Staked fraction</text>')
@@ -200,7 +204,7 @@ page = f'''<!DOCTYPE html>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Álvaro Cutillas — Quantitative Finance Portfolio" />
-  <meta name="theme-color" content="#f3eee2" />
+  <meta name="theme-color" content="#0c1018" />
   <title>Álvaro Cutillas — Quantitative Finance</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
