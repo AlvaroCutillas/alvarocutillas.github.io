@@ -73,7 +73,7 @@ class Plot:
 front = [(float(r['volatility']), float(r['return'])) for r in csv.DictReader(open(R / 'efficient_frontier.csv', encoding='utf-8'))]
 assets = [(r['ticker'], float(r['annual_volatility']), float(r['annual_arithmetic_mean']))
           for r in csv.DictReader(open(R / 'descriptive_stats.csv', encoding='utf-8'))]
-p = Plot(900, 460, (0, 0.24), (-0.06, 0.14), (0, .05, .10, .15, .20), (-.05, 0, .05, .10), fx='{:.0%}', fy='{:.0%}', L=58, Rr=24)
+p = Plot(640, 470, (0, 0.24), (-0.06, 0.14), (0, .05, .10, .15, .20), (-.05, 0, .05, .10), fx='{:.0%}', fy='{:.0%}', L=52, Rr=20)
 p.add(f'<path class="curve accent" pathLength="1" d="{p.path(front)}"/>')
 off = {'SPY': (10, -8, 'start'), 'IWM': (10, 4, 'start'), 'EFA': (-10, 4, 'end'), 'EEM': (10, 4, 'start'), 'AGG': (10, 16, 'start'),
        'TLT': (10, 4, 'start'), 'LQD': (12, -6, 'start'), 'VNQ': (-10, -8, 'end'), 'GLD': (10, 4, 'start'), 'DBC': (10, 4, 'start')}
@@ -198,13 +198,15 @@ def basic(c):
 
 CSS = (Path(__file__).parent / 'home.css').read_text(encoding='utf-8')
 mv, mr = minv
+sharpe = re.search(r'<b>([^<]+)</b><span>net OOS Sharpe', OPT_RESULTS)[1]
+ntest = len(rows)
 page = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Álvaro Cutillas — Quantitative Finance Portfolio" />
-  <meta name="theme-color" content="#0c1018" />
+  <meta name="theme-color" content="#1c0e14" />
   <title>Álvaro Cutillas — Quantitative Finance</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -228,23 +230,28 @@ page = f'''<!DOCTYPE html>
 <main class="wrap">
 
   <header class="hero">
-    <h1>Álvaro Cutillas</h1>
-    <div class="hero-meta">
-      <div>
-        <p class="role">Quantitative Finance · Economics · Python</p>
-        <p class="social-links"><a href="https://github.com/AlvaroCutillas">GitHub ↗</a> <a href="https://www.linkedin.com/in/%C3%A1lvaro-cutillas/">LinkedIn ↗</a> <a href="mailto:acutillas.finance@gmail.com">Email ↗</a></p>
-      </div>
+    <div class="hero-copy">
+      <h1>Álvaro Cutillas</h1>
+      <p class="role">Quantitative Finance · Economics · Python</p>
       <p class="thesis">Quantitative research with explicit assumptions, reproducible code and results that hold up out of sample.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" href="assets/Alvaro-Cutillas-CV.pdf" target="_blank" rel="noopener">View CV ↗</a>
+        <a class="btn" href="mailto:acutillas.finance@gmail.com">Contact me</a>
+      </div>
+      <p class="social-links"><a href="https://github.com/AlvaroCutillas">GitHub ↗</a> <a href="https://www.linkedin.com/in/%C3%A1lvaro-cutillas/">LinkedIn ↗</a></p>
     </div>
+    <figure class="hero-figure">
+      {FIG1}
+      <figcaption><b>Figure 1.</b> Long-only efficient frontier of ten ETFs, solved on the 2010–2018 training sample. Dots are individual assets.</figcaption>
+    </figure>
   </header>
 
-  <figure class="lead-figure">
-    {FIG1}
-    <figcaption>
-      <span class="cap"><b>Figure 1.</b> Long-only efficient frontier of ten ETFs, solved on the 2010–2018 training sample. Dots are individual assets.</span>
-      <span class="note">The minimum-variance portfolio sits at {mv:.1%} volatility and {mr:.1%} mean return.</span>
-    </figcaption>
-  </figure>
+  <ul class="proof" aria-label="Key results">
+    <li><b>{sharpe}</b><span>Out-of-sample net Sharpe ratio, walk-forward, after costs</span></li>
+    <li><b>{ntest:,}</b><span>Out-of-sample trading days across 10 ETFs</span></li>
+    <li><b>10,000</b><span>Monte Carlo paths in the Kelly simulator</span></li>
+  </ul>
 
   <section class="projects" id="projects" aria-labelledby="highlighted-projects-title">
     <div class="projects-head">

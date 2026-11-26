@@ -847,7 +847,11 @@
     "Max Sharpe · LW capped": "Máx. Sharpe · LW con tope",
     "Equal weight 2.32×": "Equiponderada 2,32×",
     "Max Sharpe · sample 2.53×": "Máx. Sharpe · muestral 2,53×",
-    "Max Sharpe · LW capped 2.51×": "Máx. Sharpe · LW con tope 2,51×"
+    "Max Sharpe · LW capped 2.51×": "Máx. Sharpe · LW con tope 2,51×",
+    "Out-of-sample net Sharpe ratio, walk-forward, after costs": "Ratio de Sharpe neto fuera de muestra, walk-forward, tras costes",
+    "Out-of-sample trading days across 10 ETFs": "Días de negociación fuera de muestra con 10 ETF",
+    "Monte Carlo paths in the Kelly simulator": "Trayectorias Monte Carlo en el simulador de Kelly",
+    "Key results": "Resultados clave"
   },
   "fragments": {
     "% tails.": "% en cada extremo.",
