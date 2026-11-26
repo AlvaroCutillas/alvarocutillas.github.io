@@ -1,14 +1,14 @@
 :root{
   color-scheme:dark;
-  --paper:#1c0e14;
-  --paper2:#281820;
-  --ink:#f1e9dc;
-  --muted:#bba9ad;
-  --soft:#9a838a;
-  --rule:#43303a;
-  --rule-2:#664853;
-  --accent:#e2a898;
-  --accent-2:#efc3b6;
+  --paper:#0f1621;
+  --paper2:#161f2d;
+  --ink:#e9edf2;
+  --muted:#a3afc0;
+  --soft:#7f8ca1;
+  --rule:#243044;
+  --rule-2:#3a4a64;
+  --accent:#6ea8dc;
+  --accent-2:#9cc4ea;
   --serif:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
   --mono:"IBM Plex Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
   --max:1160px;
@@ -25,7 +25,7 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid var(
 .skip:focus{left:10px}
 
 /* Navegación */
-nav{position:sticky;top:0;z-index:20;background:rgba(28,14,20,.94);border-bottom:1px solid var(--ink);backdrop-filter:blur(6px)}
+nav{position:sticky;top:0;z-index:20;background:rgba(15,22,33,.94);border-bottom:1px solid var(--ink);backdrop-filter:blur(6px)}
 .nav-inner{min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .brand{font-size:18px;font-weight:500;letter-spacing:-.005em}
 .nav-links{display:flex;gap:28px;margin-left:auto}
