@@ -231,8 +231,8 @@ page = f'''<!DOCTYPE html>
 
   <header class="hero">
     <div class="hero-copy">
-      <h1>Álvaro Cutillas</h1>
-      <p class="role">Quantitative Finance · Economics · Python</p>
+      <h1>Optimal on paper. <em>Robust out of sample.</em></h1>
+      <p class="byline"><span>Álvaro Cutillas</span> <span class="role">Quantitative Finance · Economics · Python</span></p>
       <p class="thesis">Quantitative research with explicit assumptions, reproducible code and results that hold up out of sample.</p>
       <div class="hero-actions">
         <a class="btn primary" href="#projects">View projects</a>
