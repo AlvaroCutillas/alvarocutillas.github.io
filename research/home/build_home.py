@@ -231,8 +231,13 @@ page = f'''<!DOCTYPE html>
 
   <header class="hero">
     <div class="hero-copy">
-      <h1>Álvaro Cutillas</h1>
-      <p class="role">Quantitative Finance · Economics · Python</p>
+      <div class="hero-id">
+        <img class="avatar" src="assets/alvaro-cutillas-avatar.jpg" width="96" height="96" alt="Álvaro Cutillas at his desk" />
+        <div>
+          <h1>Álvaro Cutillas</h1>
+          <p class="role">Quantitative Finance · Economics · Python</p>
+        </div>
+      </div>
       <p class="thesis">Quantitative research with explicit assumptions, reproducible code and results that hold up out of sample.</p>
       <div class="hero-actions">
         <a class="btn primary" href="#projects">View projects</a>
@@ -275,16 +280,28 @@ page = f'''<!DOCTYPE html>
 
   <section class="section" id="about">
     <div class="projects-head"><h2>About</h2></div>
-    <div class="about-grid">
-      <p class="about-text">
-        I am building toward a career in <strong>quantitative finance</strong>,
-        combining economics, programming, statistics and mathematical modelling.
-        I care about clear assumptions, reproducible analysis and results that can be defended.
-      </p>
-      <div class="details">
-        <div class="detail"><small>Focus</small><div>Derivatives, risk, portfolio construction, systematic research</div></div>
-        <div class="detail"><small>Tools</small><div>Python, NumPy, Pandas, SciPy, Matplotlib, Git</div></div>
-        <div class="detail"><small>Based in</small><div>Madrid, Spain</div></div>
+    <div class="about-person">
+      <figure class="portrait">
+        <img src="assets/alvaro-cutillas-portrait.jpg" width="720" height="960" loading="lazy" alt="Álvaro Cutillas at his desk, with market data on the screens behind him" />
+        <figcaption>Madrid, Spain</figcaption>
+      </figure>
+      <div class="about-body">
+        <p class="about-text">
+          I am building toward a career in <strong>quantitative finance</strong>,
+          combining economics, programming, statistics and mathematical modelling.
+          I care about clear assumptions, reproducible analysis and results that can be defended.
+        </p>
+        <h3 class="how-title">How I work</h3>
+        <dl class="principles">
+          <div><dt>Clear assumptions</dt><dd>Every study states its universe, data source and limitations, including biases such as ETF selection.</dd></div>
+          <div><dt>Reproducible analysis</dt><dd>Results come with the code and verification scripts needed to re-run them.</dd></div>
+          <div><dt>Defensible results</dt><dd>Where it applies, out-of-sample and walk-forward testing after trading costs, rather than in-sample fit.</dd></div>
+        </dl>
+        <div class="details">
+          <div class="detail"><small>Focus</small><div>Derivatives, risk, portfolio construction, systematic research</div></div>
+          <div class="detail"><small>Tools</small><div>Python, NumPy, Pandas, SciPy, Matplotlib, Git</div></div>
+          <div class="detail"><small>Based in</small><div>Madrid, Spain</div></div>
+        </div>
       </div>
     </div>
   </section>

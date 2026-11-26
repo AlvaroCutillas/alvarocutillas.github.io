@@ -851,7 +851,16 @@
     "Out-of-sample net Sharpe ratio, walk-forward, after costs": "Ratio de Sharpe neto fuera de muestra, walk-forward, tras costes",
     "Out-of-sample trading days across 10 ETFs": "Días de negociación fuera de muestra con 10 ETF",
     "Monte Carlo paths in the Kelly simulator": "Trayectorias Monte Carlo en el simulador de Kelly",
-    "Key results": "Resultados clave"
+    "Key results": "Resultados clave",
+    "Álvaro Cutillas at his desk": "Álvaro Cutillas en su escritorio",
+    "Álvaro Cutillas at his desk, with market data on the screens behind him": "Álvaro Cutillas en su escritorio, con datos de mercado en las pantallas detrás",
+    "How I work": "Cómo trabajo",
+    "Clear assumptions": "Supuestos claros",
+    "Every study states its universe, data source and limitations, including biases such as ETF selection.": "Cada estudio declara su universo, su fuente de datos y sus limitaciones, incluidos sesgos como la selección de ETF.",
+    "Reproducible analysis": "Análisis reproducible",
+    "Results come with the code and verification scripts needed to re-run them.": "Los resultados incluyen el código y los scripts de verificación necesarios para reproducirlos.",
+    "Defensible results": "Resultados defendibles",
+    "Where it applies, out-of-sample and walk-forward testing after trading costs, rather than in-sample fit.": "Cuando procede, pruebas fuera de muestra y walk-forward tras costes de negociación, en lugar de ajuste dentro de muestra."
   },
   "fragments": {
     "% tails.": "% en cada extremo.",
