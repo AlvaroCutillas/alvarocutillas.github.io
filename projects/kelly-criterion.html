@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Álvaro Cutillas — an interactive simulator of the Kelly criterion: how the fraction staked on a favourable bet decides between ruin and growth. Synthetic, reproducible and educational." />
-  <meta name="theme-color" content="#16181c" />
+  <meta name="theme-color" content="#0e0f11" />
   <title>Kelly Criterion: Ruin &amp; Growth Simulator — Álvaro Cutillas</title>
   <style>
     :root{
-      --bg:#16181c;--panel:#1f2227;--panel2:#262a30;--text:#eceef1;
-      --muted:#a9b0ba;--line:#2d3239;--line-2:#454c56;
+      --bg:#0e0f11;--panel:#17191c;--panel2:#1e2125;--text:#eceef1;
+      --muted:#a9b0ba;--line:#272a30;--line-2:#3b4048;
       --accent:#9fb3c8;--accent-deep:#778e84;--warm:#d3ad84;
       --max:1280px;--radius:10px;
     }
@@ -22,7 +22,7 @@
     .skip{position:absolute;left:-9999px;top:10px;background:var(--text);color:var(--bg);padding:10px;z-index:99}
     .skip:focus{left:10px}
     .wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
-    nav{border-bottom:1px solid var(--line);background:rgba(22,24,28,.93);backdrop-filter:blur(12px);position:sticky;top:0;z-index:20}
+    nav{border-bottom:1px solid var(--line);background:rgba(14,15,17,.93);backdrop-filter:blur(12px);position:sticky;top:0;z-index:20}
     .nav-inner{min-height:58px;display:flex;align-items:center;justify-content:space-between;gap:24px}
     .brand{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
     .nav-links{display:flex;gap:22px;color:var(--muted);font-size:12px;align-items:center}
@@ -175,8 +175,9 @@ h2{letter-spacing:-.022em!important}
 h3{letter-spacing:-.012em!important}
 .brand{font-family:"Newsreader","Iowan Old Style",Georgia,serif;font-size:18px;font-weight:500;letter-spacing:-.005em;text-transform:none}
 .eyebrow,.section-label,.micro{font-family:"IBM Plex Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;font-size:12px;font-weight:500;letter-spacing:.02em;text-transform:none}
-::selection{background:#9fb3c8;color:#16181c}
+::selection{background:#9fb3c8;color:#0e0f11}
 body{font-variant-emoji:text}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(rgba(159,179,200,.14) 1px,transparent 1.2px);background-size:26px 26px;-webkit-mask-image:linear-gradient(180deg,#000 0,rgba(0,0,0,.3) 70%);mask-image:linear-gradient(180deg,#000 0,rgba(0,0,0,.3) 70%)}
 </style><!-- /portfolio-theme-css --><!-- portfolio-language-css --><style>.language-switch{display:inline-flex;align-items:center;flex:0 0 auto;position:relative;line-height:1}
 .language-switch select{appearance:none;cursor:pointer;color:#dedee0;background:#0c0c0e;border:1px solid #303034;border-radius:7px;font:500 11px/1.2 Inter,ui-sans-serif,system-ui,sans-serif;padding:10px 30px 10px 12px;min-height:36px;min-width:102px;color-scheme:dark}
 .language-switch::after{content:"";position:absolute;right:13px;top:14px;width:5px;height:5px;border-right:1.5px solid #96969f;border-bottom:1.5px solid #96969f;transform:rotate(45deg);pointer-events:none}
@@ -880,7 +881,7 @@ python -m pytest -q</code></pre>
     // Tu trayectoria se colorea en cálido cuando la fracción actual tiene g(f) < 0.
     const youColor = growth(P.f, P.p, P.b) < 0 ? C.warm : C.you;
     svg('path', { d: pathD(xs, yl, c.sx, c.sy), fill: 'none', stroke: youColor, 'stroke-width': 2 }, c.plot);
-    if (j > 0) svg('circle', { cx: c.sx(j), cy: c.sy(yl[j]), r: 4, fill: play.last ? C.kelly : C.warm, stroke: '#16181c' }, c.plot);
+    if (j > 0) svg('circle', { cx: c.sx(j), cy: c.sy(yl[j]), r: 4, fill: play.last ? C.kelly : C.warm, stroke: '#0e0f11' }, c.plot);
     host.setAttribute('aria-label', tr('Play chart after {j} of {n} bets: your capital {y}, Kelly capital {k}.', { j, n: P.N, y: mult(you), k: mult(kel) }));
     legend($('legend-play'), [
       { cls: youColor === C.warm ? 'k-warm' : 'k-you', label: tr('Your path (f set at each bet)') },

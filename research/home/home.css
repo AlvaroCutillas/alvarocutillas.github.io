@@ -1,12 +1,12 @@
 :root{
   color-scheme:dark;
-  --paper:#16181c;
-  --paper2:#1f2227;
+  --paper:#0e0f11;
+  --paper2:#17191c;
   --ink:#eceef1;
   --muted:#a9b0ba;
   --soft:#858d98;
-  --rule:#2d3239;
-  --rule-2:#454c56;
+  --rule:#272a30;
+  --rule-2:#3b4048;
   --accent:#9fb3c8;
   --accent-2:#c0cfdf;
   --serif:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
@@ -25,7 +25,7 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid var(
 .skip:focus{left:10px}
 
 /* Navegación */
-nav{position:sticky;top:0;z-index:20;background:rgba(22,24,28,.94);border-bottom:1px solid var(--ink);backdrop-filter:blur(6px)}
+nav{position:sticky;top:0;z-index:20;background:rgba(14,15,17,.94);border-bottom:1px solid var(--ink);backdrop-filter:blur(6px)}
 .nav-inner{min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .brand{font-size:18px;font-weight:500;letter-spacing:-.005em}
 .nav-links{display:flex;gap:28px;margin-left:auto}
@@ -179,3 +179,23 @@ nav .language-switch select{color:var(--ink);background:var(--paper);border:1px 
 nav .language-switch select:hover{border-color:var(--ink);color:var(--ink)}
 nav .language-switch::after{border-color:var(--muted)}
 nav .language-switch select:focus-visible{outline-color:var(--accent)}
+
+/* ---- Capa de diseño: puntos, regla de ejes, marcas de esquina y trama ---- */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(rgba(159,179,200,.16) 1px,transparent 1.2px);background-size:26px 26px;-webkit-mask-image:linear-gradient(180deg,#000 0,rgba(0,0,0,.35) 60%,rgba(0,0,0,.18) 100%);mask-image:linear-gradient(180deg,#000 0,rgba(0,0,0,.35) 60%,rgba(0,0,0,.18) 100%)}
+.hero{position:relative;isolation:isolate}
+.hero::before{content:"";position:absolute;z-index:-1;inset:-40px 0 -20px 28%;background:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20300'%20preserveAspectRatio='none'%3E%3Cg%20fill='none'%20stroke='%239fb3c8'%20stroke-opacity='.10'%20stroke-width='1.2'%3E%3Cpath%20d='M0%20280%20C200%20270%20280%20120%20800%2040'/%3E%3Cpath%20d='M0%20290%20C220%20285%20300%20160%20800%2090'/%3E%3Cpath%20d='M0%20298%20C240%20296%20330%20200%20800%20150'/%3E%3Cpath%20d='M0%20300%20C260%20300%20360%20240%20800%20210'/%3E%3C/g%3E%3C/svg%3E") center/100% 100% no-repeat}
+
+.projects-head{border-bottom:0;padding-bottom:22px;background:repeating-linear-gradient(90deg,var(--rule-2) 0 1px,transparent 1px 12px) left bottom/100% 6px no-repeat,repeating-linear-gradient(90deg,var(--accent) 0 1px,transparent 1px 60px) left bottom/100% 11px no-repeat,linear-gradient(var(--ink),var(--ink)) left bottom/100% 1px no-repeat}
+.feature-list>.project-card{position:relative}
+.feature-list>.project-card::before,.feature-list>.project-card::after{content:"";position:absolute;width:14px;height:14px;pointer-events:none;border:0 solid var(--accent);opacity:.55;transition:opacity .25s,width .3s var(--ease),height .3s var(--ease)}
+.feature-list>.project-card::before{left:-1px;top:-1px;border-width:2px 0 0 2px}
+.feature-list>.project-card::after{right:-1px;bottom:-1px;border-width:0 2px 2px 0}
+.feature-list>.project-card:hover::before,.feature-list>.project-card:hover::after{opacity:1;width:26px;height:26px}
+.proof{background:linear-gradient(180deg,rgba(159,179,200,.06),transparent 70%)}
+.cta{position:relative;background-color:var(--paper2);background-image:repeating-linear-gradient(135deg,rgba(159,179,200,.045) 0 1px,transparent 1px 11px);border-top:2px solid var(--accent)}
+@media(max-width:900px){.hero::before{inset:-20px -16px 0 -16px;opacity:.7}.cta::after{opacity:.5;right:-40px}}
+@media(prefers-reduced-motion:reduce){.feature-list>.project-card::before,.feature-list>.project-card::after{transition:none}}
+
+.cta{overflow:hidden}
+.cta::after{content:"";position:absolute;right:6%;top:50%;width:min(380px,46vw);aspect-ratio:1;transform:translateY(-50%);background:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20600'%3E%3Ctext%20x='300'%20y='520'%20text-anchor='middle'%20font-family='Georgia%2CTimes%2Cserif'%20font-style='italic'%20font-size='640'%20fill='none'%20stroke='%239fb3c8'%20stroke-width='2'%20stroke-opacity='.16'%3E%CF%83%3C/text%3E%3C/svg%3E") center/contain no-repeat;pointer-events:none}
+.cta-inner,.cta footer{position:relative;z-index:1}
