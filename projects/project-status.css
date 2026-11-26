@@ -1,10 +1,10 @@
 :root {
-  --bg: #0b0e0c;
+  --bg: #16181c;
   --panel: #0d0d0d;
   --text: #f5f5f2;
   --muted: #9a9a94;
   --line: #262626;
-  --accent: #a7bdb3;
+  --accent: #9fb3c8;
 }
 
 * { box-sizing: border-box; }
@@ -28,7 +28,7 @@ nav {
   top: 0;
   z-index: 20;
   border-bottom: 1px solid var(--line);
-  background: rgba(11,14,12,.93);
+  background: rgba(22,24,28,.93);
   backdrop-filter: blur(12px);
 }
 .nav-inner { min-height: 58px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }

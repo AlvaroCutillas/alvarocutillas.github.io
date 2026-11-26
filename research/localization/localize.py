@@ -15,6 +15,11 @@ def localize_page(path):
     css=(ASSETS/'language.css').read_text(encoding='utf-8')
     js=(ASSETS/'language.js').read_text(encoding='utf-8')
     payload=json.dumps(json.loads(catalog.read_text(encoding='utf-8')),ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')
+    page=re.sub(r'<!-- portfolio-theme-css -->.*?<!-- /portfolio-theme-css -->','',page,flags=re.S)
+    if path.stem!='index':  # la home trae su propio sistema visual; las demás heredan el tema compartido
+        theme=(SITE/'assets'/'site-theme.css').read_text(encoding='utf-8')
+        fonts='<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">'
+        page=page.replace('</head>','<!-- portfolio-theme-css -->'+fonts+'<style>'+theme+'</style><!-- /portfolio-theme-css --></head>',1)
     page=page.replace('</head>','<!-- portfolio-language-css --><style>'+css+'</style><!-- /portfolio-language-css --></head>',1)
     nav=re.search(r'<nav\b.*?</nav>',page,flags=re.S)
     assert nav is not None and 'nav-inner' in nav[0]

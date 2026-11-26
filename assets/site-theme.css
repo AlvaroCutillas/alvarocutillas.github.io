@@ -1,0 +1,8 @@
+/* Tema compartido de las páginas de proyecto (alineado con la home): titulares serif y etiquetas mono. */
+h1,h2,h3,.article h3{font-family:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif!important;font-weight:400!important}
+h1{letter-spacing:-.03em!important;line-height:1.04!important}
+h2{letter-spacing:-.022em!important}
+h3{letter-spacing:-.012em!important}
+.brand{font-family:"Newsreader","Iowan Old Style",Georgia,serif;font-size:18px;font-weight:500;letter-spacing:-.005em;text-transform:none}
+.eyebrow,.section-label,.micro{font-family:"IBM Plex Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;font-size:12px;font-weight:500;letter-spacing:.02em;text-transform:none}
+::selection{background:#9fb3c8;color:#16181c}
