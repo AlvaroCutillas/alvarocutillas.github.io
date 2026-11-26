@@ -281,31 +281,8 @@
     }
   }
 
-  // Transición de salida hacia otra página del sitio
-  function navigate(href, text) {
-    const wipe = $('.wipe');
-    if (RM || !wipe) { location.href = href; return; }
-    $('.wipe-label', wipe).textContent = text || '';
-    wipe.classList.add('on');
-    setTimeout(() => { location.href = href; }, 560);
-  }
-  function pageTransitions() {
-    const wipe = $('.wipe');
-    wipe.setAttribute('translate', 'no');
-    document.addEventListener('click', e => {
-      const a = e.target.closest('a[href]');
-      if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || a.target === '_blank') return;
-      const href = a.getAttribute('href') || '';
-      if (href.startsWith('#') || href.startsWith('mailto:')) return;
-      let url;
-      try { url = new URL(a.href, location.href); } catch (_) { return; }
-      if (url.host !== location.host || !/\.html$/i.test(url.pathname)) return;
-      e.preventDefault();
-      const h3 = $('h3', a);
-      navigate(a.href, h3 ? h3.textContent.trim() : '');
-    });
-    addEventListener('pageshow', () => wipe.classList.remove('on'));
-  }
+  // Navegación entre páginas: la transición la hace el navegador (View Transitions, ver live.css)
+  function navigate(href) { location.href = href; }
 
   /* =====================================================================
      3. Cabecera: Monte Carlo en vivo (GBM) con convergencia a la lognormal
@@ -1461,7 +1438,6 @@
     if (y) y.textContent = new Date().getFullYear();
     splitName();
     chrome();
-    pageTransitions();
     counters();
     hero();
     portfolioLab();

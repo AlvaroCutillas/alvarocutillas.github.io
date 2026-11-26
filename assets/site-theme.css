@@ -26,3 +26,62 @@ figcaption strong{font-size:14px!important}
 pre{font-size:13.5px!important}
 summary{font-size:15px!important}
 footer{font-size:12.5px!important}
+
+/* =====================================================================
+   Capa visual compartida con la portada, en versión sobria: el protagonismo
+   es del resultado y de su explicación (sin lienzos, cursor ni efectos pesados).
+   ===================================================================== */
+:root{--bg:#07080a;--panel:#111318;--panel2:#0d0f12;--site-warm:#e3b26b;--site-pos:#7fc8a9;--site-ease:cubic-bezier(.16,1,.3,1)}
+html,body{background:var(--bg)}
+html{scrollbar-color:#30343c #07080a}
+
+/* Navegación: opaca (sin desenfoque) y con el indicador de la portada */
+nav{background:rgba(7,8,10,.94)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.brand{display:inline-flex;align-items:center;gap:10px}
+.brand::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--site-pos);animation:site-pulse 2.4s infinite}
+@keyframes site-pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.nav-links a{border-radius:999px;padding:6px 12px;transition:background .25s,color .25s}
+.nav-links a:hover{background:rgba(159,179,200,.1);color:var(--text)}
+
+/* Cabecera: luz tenue de fondo en lugar de la simulación animada */
+.hero{background-image:radial-gradient(55% 90% at 88% -10%,rgba(159,179,200,.08),transparent 65%),radial-gradient(40% 60% at 0% 110%,rgba(227,178,107,.035),transparent 60%)}
+
+/* Resultados: cifras en monoespaciada con el degradado de la portada */
+.hero-stats{border-top-color:var(--line-2)!important}
+.stat strong{font-family:"Arr","JetBrains Mono",ui-monospace,Consolas,monospace!important;font-weight:500!important;letter-spacing:-.04em!important;background:linear-gradient(180deg,#eceef1,#9fb3c8);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+.result strong,.mini-metric strong{font-family:"Arr","JetBrains Mono",ui-monospace,Consolas,monospace;letter-spacing:-.02em}
+
+/* Figuras y paneles: el mismo lenguaje que los laboratorios de la portada */
+.figure-card{border-color:var(--line-2)!important;border-radius:14px!important;background:linear-gradient(180deg,#111318,#0b0d10)!important;transition:border-color .3s,box-shadow .4s var(--site-ease)}
+.figure-card:hover{border-color:rgba(159,179,200,.35)!important;box-shadow:0 28px 70px -45px rgba(0,0,0,.95)}
+.panel{border-radius:14px!important;border-color:var(--line-2)!important}
+.callout{background:linear-gradient(90deg,rgba(159,179,200,.07),rgba(159,179,200,.015))!important;border-radius:0 12px 12px 0!important}
+.tag{border-radius:999px!important;background:transparent!important;padding:5px 10px!important}
+table tbody tr{transition:background .2s}
+table tbody tr:hover{background:rgba(159,179,200,.05)}
+
+/* Índice: sección activa resaltada al leer */
+.toc a{transition:color .2s,border-color .2s,background .2s}
+.toc a.is-active{color:var(--text)!important;border-left-color:var(--accent)!important;background:linear-gradient(90deg,rgba(159,179,200,.08),transparent)}
+
+/* Progreso de lectura */
+.reading-progress{position:fixed;left:0;right:0;top:0;height:2px;z-index:60;pointer-events:none;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--accent),var(--site-warm))}
+
+/* Aparición suave de figuras y paneles al llegar a ellos */
+.fx{opacity:0;transform:translateY(14px);transition:opacity .7s var(--site-ease),transform .8s var(--site-ease)}
+.fx.in{opacity:1;transform:none}
+
+/* Transición entre páginas del sitio: fundido nativo del navegador (sin pantalla intermedia) */
+@view-transition{navigation:auto}
+nav{view-transition-name:site-nav}
+::view-transition-old(root){animation:vt-out .2s cubic-bezier(.4,0,1,1) both}
+::view-transition-new(root){animation:vt-in .45s cubic-bezier(.16,1,.3,1) both}
+@keyframes vt-out{to{opacity:0;transform:translateY(-8px)}}
+@keyframes vt-in{from{opacity:0;transform:translateY(12px)}}
+
+@media (prefers-reduced-motion:reduce){
+  .fx{opacity:1;transform:none;transition:none}
+  .brand::before{animation:none}
+  ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}
+}
+@media print{.fx{opacity:1!important;transform:none!important}.reading-progress{display:none}}

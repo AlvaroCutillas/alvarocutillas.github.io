@@ -53,12 +53,6 @@ canvas{display:block}
 .progress{position:fixed;left:0;right:0;top:0;height:2px;z-index:60;pointer-events:none}
 .progress i{display:block;height:100%;width:100%;transform-origin:0 50%;transform:scaleX(var(--p,0));background:linear-gradient(90deg,var(--accent),var(--warm))}
 
-/* Transición de salida hacia las páginas de proyecto */
-.wipe{position:fixed;inset:0;z-index:80;pointer-events:none;background:var(--bg);transform:translateY(100%);display:grid;place-items:center}
-.wipe::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--warm))}
-.wipe-label{font:500 13px var(--mono);color:var(--muted);letter-spacing:.04em;opacity:0;transition:opacity .3s .2s}
-.wipe.on{transform:translateY(0);transition:transform .55s var(--ease-io)}
-.wipe.on .wipe-label{opacity:1}
 
 /* ---------- Navegación ---------- */
 nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .4s,border-color .4s,transform .5s var(--ease);border-bottom:1px solid transparent}
@@ -385,7 +379,15 @@ footer{display:flex;justify-content:space-between;align-items:center;gap:16px;fl
   .pipeline::before{transform:none;transition:none}
   .js .about-text{color:var(--ink);background:none}
 }
-@media print{.progress,.wipe,canvas,.hud,.tape{display:none!important}nav{position:static}}
+@media print{.progress,canvas,.hud,.tape{display:none!important}nav{position:static}}
+/* Transición entre páginas del sitio: fundido nativo del navegador (sin pantalla intermedia) */
+@view-transition{navigation:auto}
+nav{view-transition-name:site-nav}
+::view-transition-old(root){animation:vt-out .2s cubic-bezier(.4,0,1,1) both}
+::view-transition-new(root){animation:vt-in .45s cubic-bezier(.16,1,.3,1) both}
+@keyframes vt-out{to{opacity:0;transform:translateY(-8px)}}
+@keyframes vt-in{from{opacity:0;transform:translateY(12px)}}
+@media (prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}
 </style>
 <!-- portfolio-language-css --><style>.language-switch{display:inline-flex;align-items:center;flex:0 0 auto;position:relative;line-height:1}
 .language-switch select{appearance:none;cursor:pointer;color:#dedee0;background:#0c0c0e;border:1px solid #303034;border-radius:7px;font:500 11px/1.2 Inter,ui-sans-serif,system-ui,sans-serif;padding:10px 30px 10px 12px;min-height:36px;min-width:102px;color-scheme:dark}
@@ -411,7 +413,6 @@ html[lang="es"] .hero h1{hyphens:none}
 
 <!-- Capas globales: progreso de lectura y transición de salida -->
 <div class="progress" aria-hidden="true"><i></i></div>
-<div class="wipe" aria-hidden="true"><span class="wipe-label"></span></div>
 
 <a class="skip" href="#projects">Skip to projects</a>
 <nav>
@@ -1019,31 +1020,8 @@ html[lang="es"] .hero h1{hyphens:none}
     }
   }
 
-  // Transición de salida hacia otra página del sitio
-  function navigate(href, text) {
-    const wipe = $('.wipe');
-    if (RM || !wipe) { location.href = href; return; }
-    $('.wipe-label', wipe).textContent = text || '';
-    wipe.classList.add('on');
-    setTimeout(() => { location.href = href; }, 560);
-  }
-  function pageTransitions() {
-    const wipe = $('.wipe');
-    wipe.setAttribute('translate', 'no');
-    document.addEventListener('click', e => {
-      const a = e.target.closest('a[href]');
-      if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || a.target === '_blank') return;
-      const href = a.getAttribute('href') || '';
-      if (href.startsWith('#') || href.startsWith('mailto:')) return;
-      let url;
-      try { url = new URL(a.href, location.href); } catch (_) { return; }
-      if (url.host !== location.host || !/\.html$/i.test(url.pathname)) return;
-      e.preventDefault();
-      const h3 = $('h3', a);
-      navigate(a.href, h3 ? h3.textContent.trim() : '');
-    });
-    addEventListener('pageshow', () => wipe.classList.remove('on'));
-  }
+  // Navegación entre páginas: la transición la hace el navegador (View Transitions, ver live.css)
+  function navigate(href) { location.href = href; }
 
   /* =====================================================================
      3. Cabecera: Monte Carlo en vivo (GBM) con convergencia a la lognormal
@@ -2199,7 +2177,6 @@ html[lang="es"] .hero h1{hyphens:none}
     if (y) y.textContent = new Date().getFullYear();
     splitName();
     chrome();
-    pageTransitions();
     counters();
     hero();
     portfolioLab();
