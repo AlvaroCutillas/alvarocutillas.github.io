@@ -7,8 +7,8 @@
   --soft:#858d98;
   --rule:#2d3239;
   --rule-2:#454c56;
-  --accent:#86b6f2;
-  --accent-2:#b3d1f8;
+  --accent:#9fb3c8;
+  --accent-2:#c0cfdf;
   --serif:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
   --mono:"IBM Plex Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
   --max:1160px;
@@ -16,7 +16,7 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:70px;scrollbar-color:var(--rule-2) var(--paper)}
-body{overflow-x:clip;margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased;font-variant-numeric:lining-nums tabular-nums;text-rendering:optimizeLegibility}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased;font-variant-numeric:lining-nums tabular-nums;text-rendering:optimizeLegibility}
 a{color:inherit;text-decoration:none}
 a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:2px}
 ::selection{background:var(--accent);color:var(--paper)}
@@ -33,14 +33,10 @@ nav{position:sticky;top:0;z-index:20;background:rgba(22,24,28,.94);border-bottom
 .nav-links a:hover{color:var(--ink);background-size:100% 1px}
 
 /* Cabecera: copy a la izquierda, figura viva a la derecha */
-.hero{position:relative;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,5vw,80px);align-items:center;padding:clamp(48px,7vw,96px) 0 clamp(40px,5vw,64px)}
-.hero::before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(var(--rule) 1px,transparent 1px),linear-gradient(90deg,var(--rule) 1px,transparent 1px);background-size:56px 56px;opacity:.35;-webkit-mask-image:radial-gradient(ellipse 70% 80% at 65% 45%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse 70% 80% at 65% 45%,#000 20%,transparent 75%);pointer-events:none}
-.hero h1{margin:0;font-weight:400;font-size:clamp(2.6rem,5.6vw,4.9rem);line-height:1.02;letter-spacing:-.03em;text-wrap:balance}
-.hero h1 em{display:block;font-style:italic;color:var(--accent)}
-.byline{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;margin:26px 0 0}
-.byline>span:first-child{font-size:1.15rem;font-weight:500}
-.role{margin:0;font-family:var(--mono);font-size:13px;letter-spacing:.01em;color:var(--accent)}
-.thesis{margin:16px 0 0;font-size:clamp(1.2rem,1.9vw,1.5rem);line-height:1.35;letter-spacing:-.01em;text-wrap:pretty;max-width:26em}
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,5vw,80px);align-items:center;padding:clamp(40px,6vw,80px) 0 clamp(36px,5vw,56px)}
+.hero h1{margin:0;font-weight:400;font-size:clamp(2.6rem,5vw,4.2rem);line-height:1.02;letter-spacing:-.025em}
+.role{margin:20px 0 0;font-family:var(--mono);font-size:13px;letter-spacing:.01em;color:var(--accent)}
+.thesis{margin:18px 0 0;font-size:clamp(1.2rem,1.9vw,1.5rem);line-height:1.35;letter-spacing:-.01em;text-wrap:pretty;max-width:26em}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
 .social-links{display:flex;flex-wrap:wrap;gap:6px 22px;margin:22px 0 0}
 .social-links a{font-size:16px;color:var(--muted);border-bottom:1px solid var(--rule-2);padding-bottom:1px;transition:border-color .2s,color .2s}
@@ -73,7 +69,7 @@ nav{position:sticky;top:0;z-index:20;background:rgba(22,24,28,.94);border-bottom
 .proof{list-style:none;margin:0 0 clamp(56px,8vw,96px);padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--rule-2);border-bottom:1px solid var(--rule)}
 .proof li{padding:22px clamp(14px,2.4vw,32px) 22px 0;display:flex;align-items:baseline;gap:16px}
 .proof li+li{padding-left:clamp(14px,2.4vw,32px);border-left:1px solid var(--rule)}
-.proof b{font-family:var(--mono);font-weight:500;font-size:clamp(1.9rem,3vw,2.6rem);letter-spacing:-.03em;color:var(--accent);flex:none}
+.proof b{font-family:var(--mono);font-weight:500;font-size:clamp(1.5rem,2.4vw,2rem);letter-spacing:-.03em;color:var(--accent);flex:none}
 .proof span{font-size:15px;line-height:1.4;color:var(--muted)}
 
 /* Secciones */

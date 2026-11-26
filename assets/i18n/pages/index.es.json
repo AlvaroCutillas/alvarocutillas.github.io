@@ -851,9 +851,7 @@
     "Out-of-sample net Sharpe ratio, walk-forward, after costs": "Ratio de Sharpe neto fuera de muestra, walk-forward, tras costes",
     "Out-of-sample trading days across 10 ETFs": "Días de negociación fuera de muestra con 10 ETF",
     "Monte Carlo paths in the Kelly simulator": "Trayectorias Monte Carlo en el simulador de Kelly",
-    "Key results": "Resultados clave",
-    "Optimal on paper.": "Óptimo sobre el papel.",
-    "Robust out of sample.": "Robusto fuera de muestra."
+    "Key results": "Resultados clave"
   },
   "fragments": {
     "% tails.": "% en cada extremo.",
@@ -1750,7 +1748,6 @@
     "Betting simulator": "Simulador de apuestas"
   },
   "heading": [
-    "Óptimo sobre el papel.",
-    "Robusto fuera de muestra."
+    "Álvaro Cutillas"
   ]
 }
