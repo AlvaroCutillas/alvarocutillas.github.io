@@ -6,3 +6,4 @@ h3{letter-spacing:-.012em!important}
 .brand{font-family:"Newsreader","Iowan Old Style",Georgia,serif;font-size:18px;font-weight:500;letter-spacing:-.005em;text-transform:none}
 .eyebrow,.section-label,.micro{font-family:"IBM Plex Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;font-size:12px;font-weight:500;letter-spacing:.02em;text-transform:none}
 ::selection{background:#9fb3c8;color:#16181c}
+body{font-variant-emoji:text}

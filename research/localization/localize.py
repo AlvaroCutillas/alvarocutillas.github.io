@@ -34,5 +34,7 @@ def localize_page(path):
     page=page[:nav.start()]+updated+page[nav.end():]
     runtime='<!-- portfolio-language-runtime --><script id="portfolio-language-data" type="application/json">'+payload+'</script><script>'+js+'</script><!-- /portfolio-language-runtime -->'
     page=page.replace('</body>',runtime+'</body>',1)
+    # Fuerza presentación de texto (U+FE0E) en las flechas ↗: en móvil (iOS/Android) se dibujan como emoji si no se indica.
+    page=page.replace('︎','').replace('↗','↗︎')
     path.write_text(page,encoding='utf-8')
     return path
