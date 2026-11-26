@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Álvaro Cutillas — Quantitative Finance Portfolio" />
+  <meta name="theme-color" content="#07080a" />
+  <title>Álvaro Cutillas — Quantitative Finance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <script>document.documentElement.classList.replace('no-js','js');</script>
+  <style>/*__CSS__*/</style>
+</head>
+<body>
+
+<!-- Secuencia de arranque (solo la primera visita de la sesión; se puede saltar) -->
+<div class="boot" aria-hidden="true">
+  <div class="boot-inner">
+    <div class="boot-lines"></div>
+    <div class="boot-bar"><i></i></div>
+  </div>
+</div>
+
+<!-- Capas globales: progreso de lectura, cursor, transición de salida y grano -->
+<div class="progress" aria-hidden="true"><i></i></div>
+<div class="cursor" aria-hidden="true"><i class="cursor-dot"></i><i class="cursor-ring"><b class="cursor-label"></b></i></div>
+<div class="wipe" aria-hidden="true"><span class="wipe-label"></span></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip" href="#projects">Skip to projects</a>
+<nav>
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top"><span class="brand-dot" aria-hidden="true"></span>Álvaro Cutillas</a>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#quant-basics">Quant Basics</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <i class="nav-indicator" aria-hidden="true"></i>
+    </div>
+    <button class="cmdk-open" type="button" aria-label="Open command palette"><kbd>⌘K</kbd></button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <canvas class="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow reveal"><span class="live-dot" aria-hidden="true"></span><span>Quantitative Finance · Economics · Python</span></p>
+      <h1 class="hero-name" translate="no" aria-label="Álvaro Cutillas"><span class="hn-line">Álvaro</span><span class="hn-line">Cutillas</span></h1>
+      <p class="thesis reveal">Quantitative research with explicit assumptions, reproducible code and results that hold up out of sample.</p>
+      <div class="hero-actions reveal">
+        <a class="btn primary magnetic" href="#projects">View projects</a>
+        <a class="btn magnetic" href="assets/Alvaro-Cutillas-CV.pdf" target="_blank" rel="noopener">View CV ↗</a>
+        <a class="btn magnetic" href="mailto:acutillas.finance@gmail.com">Contact me</a>
+      </div>
+      <p class="social-links reveal"><a href="https://github.com/AlvaroCutillas">GitHub ↗</a> <a href="https://www.linkedin.com/in/%C3%A1lvaro-cutillas/">LinkedIn ↗</a></p>
+    </div>
+
+    <aside class="hud reveal" aria-label="Live Monte Carlo simulation">
+      <div class="hud-head">
+        <span class="hud-title">Live Monte Carlo</span>
+        <span class="hud-tag" translate="no">GBM · S₀ = 100 · T = 1</span>
+      </div>
+      <dl class="hud-stats" translate="no">
+        <div><dt>n</dt><dd data-hud="n">0</dd></div>
+        <div><dt>Ê[S<sub>T</sub>]</dt><dd data-hud="mean">—</dd></div>
+        <div><dt>E[S<sub>T</sub>]</dt><dd data-hud="exact">—</dd></div>
+        <div><dt>±95%</dt><dd data-hud="ci">—</dd></div>
+      </dl>
+      <div class="hud-conv"><canvas class="hud-spark" aria-hidden="true"></canvas></div>
+      <label class="slider"><span class="slider-name">Volatility σ</span><output data-out="sigma" translate="no">20%</output>
+        <input type="range" min="5" max="60" step="1" value="20" data-hero="sigma" /></label>
+      <label class="slider"><span class="slider-name">Drift μ</span><output data-out="mu" translate="no">5%</output>
+        <input type="range" min="-10" max="20" step="1" value="5" data-hero="mu" /></label>
+      <p class="hud-note">Each line is one simulated price path. The histogram converges to the analytic lognormal density. Click the field to add a burst.</p>
+    </aside>
+  </div>
+  <a class="scroll-cue" href="#proof" aria-label="Scroll to results"><span>Scroll</span><i aria-hidden="true"></i></a>
+</header>
+
+<div class="tape" aria-hidden="true">
+  <div class="tape-track">
+    <span>Net OOS Sharpe <b>0.64</b></span><span>Walk-forward <b>2013–2026</b></span><span>Ledoit–Wolf shrinkage</span><span>Bootstrap uncertainty</span><span>Black–Scholes · 5 Greeks</span><span>Kelly growth <b>g(f*)</b></span><span>Implied volatility surface</span><span>Nelson–Siegel</span><span>VaR · Expected Shortfall</span><span>Fama–French factors</span><span>Variance reduction</span><span>Python · NumPy · SciPy</span>
+  </div>
+</div>
+
+<main>
+  <section class="wrap proof-wrap" id="proof" aria-label="Key results">
+    <ul class="proof">
+      <li class="reveal"><b data-count="0.64" data-dec="2">0.64</b><span>Out-of-sample net Sharpe ratio, walk-forward, after costs</span></li>
+      <li class="reveal"><b data-count="3451" data-dec="0">3,451</b><span>Out-of-sample trading days across 10 ETFs</span></li>
+      <li class="reveal"><b data-count="10000" data-dec="0">10,000</b><span>Monte Carlo paths in the Kelly simulator</span></li>
+      <li class="reveal"><b data-count="11" data-dec="0">11</b><span>Published studies with reproducible code</span></li>
+    </ul>
+  </section>
+
+  <section class="wrap projects" id="projects" aria-labelledby="highlighted-projects-title">
+    <div class="section-head reveal">
+      <span class="section-index" translate="no">01</span>
+      <h2 id="highlighted-projects-title">Highlighted Projects</h2>
+      <span class="section-meta">Reproducible research · Methods · Evidence</span>
+    </div>
+    <p class="projects-intro reveal">My most curated work. Every chart below is live: the data are real results or exact formulas, and you can interact with them.</p>
+
+    <!-- Proyecto 1: optimización de carteras (datos reales) -->
+    <article class="feature reveal-group" data-feature="portfolio">
+      <a class="project-card" href="projects/portfolio-optimization.html">
+        <span class="project-kind"><i>A</i>Portfolio research</span>
+        <h3>Portfolio Optimization Under Estimation Error</h3>
+        <p>Long-only allocation across 10 ETFs, with bootstrap uncertainty, covariance shrinkage and walk-forward testing after trading costs.</p>
+        <!-- portfolio-optimization-results --><div class="metrics"><div class="metric"><b>0.64</b><span>net OOS Sharpe</span></div><div class="metric"><b>4.40</b><span>effective positions</span></div></div><!-- /portfolio-optimization-results -->
+        <span class="metric-context">25% position cap · Walk-forward test</span>
+        <span class="tags"><span class="tag">Python</span><span class="tag">Ledoit–Wolf</span><span class="tag">Walk-forward</span></span>
+        <span class="project-link">Explore study <span aria-hidden="true">↗</span></span>
+      </a>
+      <div class="lab reveal" data-lab="portfolio">
+        <div class="lab-bar">
+          <span class="lab-live"><i aria-hidden="true"></i>Real data</span>
+          <div class="tabs" role="tablist" aria-label="Portfolio views">
+            <button role="tab" aria-selected="true" data-view="frontier">Frontier</button>
+            <button role="tab" aria-selected="false" data-view="wealth">Wealth</button>
+            <button role="tab" aria-selected="false" data-view="weights">Allocation</button>
+            <button role="tab" aria-selected="false" data-view="corr">Correlation</button>
+          </div>
+        </div>
+        <div class="lab-stage"><canvas class="lab-canvas" role="img" aria-label="Interactive portfolio chart"></canvas><div class="tip" aria-hidden="true"></div></div>
+        <div class="lab-legend" data-legend></div>
+        <p class="lab-caption" data-caption="frontier">Long-only efficient frontier of ten ETFs, solved on the 2010–2018 training sample. Hover the curve or the assets.</p>
+        <p class="lab-caption" data-caption="wealth" hidden>Cumulative net wealth of one unit invested, walk-forward, after trading costs. Click the legend to show or hide a rule.</p>
+        <p class="lab-caption" data-caption="weights" hidden>Weights of the capped maximum-Sharpe portfolio at each walk-forward rebalance (25% cap per position).</p>
+        <p class="lab-caption" data-caption="corr" hidden>Correlation of daily returns on the training sample. Hover a cell.</p>
+      </div>
+    </article>
+
+    <!-- Proyecto 2: Black–Scholes (fórmulas exactas) -->
+    <article class="feature flip reveal-group" data-feature="bs">
+      <a class="project-card" href="projects/black-scholes.html">
+        <span class="project-kind"><i>B</i>Derivatives research</span>
+        <h3>Black–Scholes Pricing Lab: Greeks, Volatility &amp; Monte Carlo</h3>
+        <p>Black–Scholes pricing, five Greeks and implied volatility, with Monte Carlo convergence tests and variance reduction.</p>
+        <div class="metrics"><div class="metric"><b>5</b><span>Option Greeks</span></div><div class="metric"><b>3</b><span>Monte Carlo methods</span></div></div>
+        <span class="metric-context">Synthetic option benchmark</span>
+        <span class="tags"><span class="tag">Python</span><span class="tag">Greeks</span><span class="tag">Monte Carlo</span></span>
+        <span class="project-link">Explore study <span aria-hidden="true">↗</span></span>
+      </a>
+      <div class="lab reveal" data-lab="bs">
+        <div class="lab-bar">
+          <span class="lab-live"><i aria-hidden="true"></i>Exact formulas</span>
+          <div class="tabs" role="tablist" aria-label="Option views">
+            <button role="tab" aria-selected="true" data-view="price">Price</button>
+            <button role="tab" aria-selected="false" data-view="delta">Delta</button>
+            <button role="tab" aria-selected="false" data-view="gamma">Gamma</button>
+            <button role="tab" aria-selected="false" data-view="vega">Vega</button>
+            <button role="tab" aria-selected="false" data-view="theta">Theta</button>
+          </div>
+        </div>
+        <div class="lab-stage"><canvas class="lab-canvas" role="img" aria-label="Interactive Black–Scholes chart"></canvas></div>
+        <div class="greeks" translate="no">
+          <div><span>V</span><b data-g="v">—</b></div>
+          <div><span>Δ</span><b data-g="delta">—</b></div>
+          <div><span>Γ</span><b data-g="gamma">—</b></div>
+          <div><span>ν</span><b data-g="vega">—</b></div>
+          <div><span>Θ</span><b data-g="theta">—</b></div>
+          <div><span>ρ</span><b data-g="rho">—</b></div>
+        </div>
+        <div class="controls">
+          <div class="seg" role="group" aria-label="Option type"><button aria-pressed="true" data-type="call">Call</button><button aria-pressed="false" data-type="put">Put</button></div>
+          <label class="slider"><span class="slider-name">Volatility σ</span><output data-out="sig" translate="no">20%</output><input type="range" min="5" max="80" step="1" value="20" data-bs="sig" /></label>
+          <label class="slider"><span class="slider-name">Maturity T</span><output data-out="T" translate="no">1.00y</output><input type="range" min="2" max="200" step="1" value="100" data-bs="T" /></label>
+          <label class="slider"><span class="slider-name">Rate r</span><output data-out="r" translate="no">3.0%</output><input type="range" min="0" max="100" step="1" value="30" data-bs="r" /></label>
+        </div>
+        <p class="lab-caption">European option with strike 100. Drag along the chart to move the spot: the tangent line is the delta. Illustrative parameters.</p>
+      </div>
+    </article>
+
+    <!-- Proyecto 3: criterio de Kelly (simulación con semilla) -->
+    <article class="feature reveal-group" data-feature="kelly">
+      <a class="project-card" href="projects/kelly-criterion.html">
+        <span class="project-kind"><i>C</i>Risk &amp; position sizing</span>
+        <h3>Kelly Criterion: Ruin &amp; Growth Simulator</h3>
+        <p>Interactive position-sizing simulator comparing full and fractional Kelly, drawdown risk and the cost of overestimating an edge.</p>
+        <div class="metrics"><div class="metric"><b>Interactive</b><span>Betting simulator</span></div><div class="metric"><b>10,000</b><span>Possible paths</span></div></div>
+        <span class="metric-context">Browser-based engine · Seeded simulation</span>
+        <span class="tags"><span class="tag">Probability</span><span class="tag">Monte Carlo</span><span class="tag">Kelly</span></span>
+        <span class="project-link">Explore study <span aria-hidden="true">↗</span></span>
+      </a>
+      <div class="lab reveal" data-lab="kelly">
+        <div class="lab-bar">
+          <span class="lab-live"><i aria-hidden="true"></i>Seeded simulation</span>
+          <button class="ghost-btn" type="button" data-kelly="rerun">Re-run ↻</button>
+        </div>
+        <div class="lab-stage tall"><canvas class="lab-canvas" role="img" aria-label="Simulated wealth paths and expected log-growth"></canvas></div>
+        <div class="greeks kelly-stats" translate="no">
+          <div><span>f*</span><b data-k="fstar">—</b></div>
+          <div><span>f</span><b data-k="f">—</b></div>
+          <div><span>g(f)</span><b data-k="g">—</b></div>
+          <div><span>med W</span><b data-k="med">—</b></div>
+          <div><span>W&lt;1</span><b data-k="loss">—</b></div>
+          <div><span>DD&gt;50%</span><b data-k="dd">—</b></div>
+        </div>
+        <div class="controls">
+          <label class="slider"><span class="slider-name">Win probability p</span><output data-out="p" translate="no">0.55</output><input type="range" min="51" max="70" step="1" value="55" data-kelly="p" /></label>
+          <label class="slider wide"><span class="slider-name">Stake as a multiple of Kelly</span><output data-out="mult" translate="no">1.00×</output><input type="range" min="0" max="250" step="5" value="100" data-kelly="mult" /></label>
+        </div>
+        <p class="lab-caption">Sixty seeded paths of 400 even-odds bets on a log scale. Above twice the Kelly fraction, expected growth turns negative.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="projects basics" id="quant-basics" aria-labelledby="quant-basics-title">
+    <div class="surface-band">
+      <canvas class="surface-canvas" role="img" aria-label="Rotating implied volatility surface"></canvas>
+      <div class="wrap surface-copy">
+        <div class="section-head reveal">
+          <span class="section-index" translate="no">02</span>
+          <h2 id="quant-basics-title">Quant Basics</h2>
+          <span class="section-meta">Foundations · 8 studies</span>
+        </div>
+        <p class="projects-intro reveal">Detailed studies on the tools and models behind quantitative finance, combining theory, derivations, computed figures and interactive laboratories.</p>
+        <p class="surface-note reveal">Illustrative implied volatility surface · drag to rotate</p>
+      </div>
+    </div>
+    <div class="wrap basic-grid">
+      <a class="project-card basic reveal" href="projects/black-scholes-basics.html" data-glyph="bs">
+        <canvas class="glyph" aria-hidden="true"></canvas>
+        <span class="index">01</span>
+        <span class="basic-main"><h3>Black–Scholes Option Pricing</h3><p>European and American option valuation, from replication and pricing formulas to Greeks and optimal exercise.</p></span>
+        <span class="tags"><span class="tag">Options</span><span class="tag">Greeks</span><span class="tag">Theory</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="project-card basic reveal" href="projects/monte-carlo-option-pricing.html" data-glyph="mc">
+        <canvas class="glyph" aria-hidden="true"></canvas>
+        <span class="index">02</span>
+        <span class="basic-main"><h3>Monte Carlo Option Pricing</h3><p>Simulation pricing with convergence analysis and variance reduction techniques.</p></span>
+        <span class="tags"><span class="tag">Monte Carlo</span><span class="tag">GBM</span><span class="tag">Simulation</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="project-card basic reveal" href="projects/markowitz-portfolio-theory.html" data-glyph="mk">
+        <canvas class="glyph" aria-hidden="true"></canvas>
+        <span class="index">03</span>
+        <span class="basic-main"><h3>Markowitz Portfolio Theory</h3><p>Mean–variance optimization, diversification and the efficient frontier in the classical Markowitz framework.</p></span>
+        <span class="tags"><span class="tag">Mean–variance</span><span class="tag">Diversification</span><span class="tag">Theory</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="project-card basic reveal" href="projects/var-expected-shortfall.html" data-glyph="var">
+        <canvas class="glyph" aria-hidden="true"></canvas>
+        <span class="index">04</span>
+        <span class="basic-main"><h3>VaR & Expected Shortfall</h3><p>Historical, parametric and Monte Carlo risk estimates with backtesting.</p></span>
+        <span class="tags"><span class="tag">Risk</span><span class="tag">VaR</span><span class="tag">Backtesting</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="project-card basic reveal" href="projects/systematic-trading-strategy.html" data-glyph="ts">
+        <canvas class="glyph" aria-hidden="true"></canvas>
+        <span class="index">05</span>
+        <span class="basic-main"><h3>Systematic Trading Strategy</h3><p>Signal generation, transaction costs, walk-forward testing and performance analysis.</p></span>
+        <span class="tags"><span class="tag">Time Series</span><span class="tag">Signals</span><span class="tag">Backtest</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="project-card basic reveal" href="projects/implied-volatility-surface.html" data-glyph="iv">
+        <canvas class="glyph" aria-hidden="true"></canvas>
+        <span class="index">06</span>
+        <span class="basic-main"><h3>Implied Volatility Surface</h3><p>Calibration and visualization of volatility smiles across strikes and maturities.</p></span>
+        <span class="tags"><span class="tag">Options</span><span class="tag">Calibration</span><span class="tag">Volatility</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="project-card basic reveal" href="projects/yield-curve-modelling.html" data-glyph="yc">
+        <canvas class="glyph" aria-hidden="true"></canvas>
+        <span class="index">07</span>
+        <span class="basic-main"><h3>Yield Curve Modelling</h3><p>Construction and calibration of term structures using parametric curve-fitting methods.</p></span>
+        <span class="tags"><span class="tag">Fixed Income</span><span class="tag">Calibration</span><span class="tag">Rates</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="project-card basic reveal" href="projects/equity-factor-model.html" data-glyph="fm">
+        <canvas class="glyph" aria-hidden="true"></canvas>
+        <span class="index">08</span>
+        <span class="basic-main"><h3>Equity Factor Model</h3><p>Cross-sectional factor analysis covering value, momentum, quality and volatility effects.</p></span>
+        <span class="tags"><span class="tag">Factors</span><span class="tag">Regression</span><span class="tag">Equities</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="wrap section about" id="about" aria-labelledby="about-title">
+    <div class="section-head reveal">
+      <span class="section-index" translate="no">03</span>
+      <h2 id="about-title">About</h2>
+      <span class="section-meta">Madrid, Spain</span>
+    </div>
+    <p class="about-text">
+      I am building toward a career in <strong>quantitative finance</strong>,
+      combining economics, programming, statistics and mathematical modelling.
+      I care about clear assumptions, reproducible analysis and results that can be defended.
+    </p>
+
+    <h3 class="how-title reveal">How I work</h3>
+    <ol class="pipeline">
+      <li class="reveal"><span class="step" translate="no">01</span><div><h4>Clear assumptions</h4><p>Every study states its universe, data source and limitations, including biases such as ETF selection.</p></div></li>
+      <li class="reveal"><span class="step" translate="no">02</span><div><h4>Reproducible analysis</h4><p>Results come with the code and verification scripts needed to re-run them.</p></div></li>
+      <li class="reveal"><span class="step" translate="no">03</span><div><h4>Defensible results</h4><p>Where it applies, out-of-sample and walk-forward testing after trading costs, rather than in-sample fit.</p></div></li>
+    </ol>
+
+    <div class="details">
+      <div class="detail reveal"><small>Focus</small><div>Derivatives, risk, portfolio construction, systematic research</div></div>
+      <div class="detail reveal"><small>Tools</small><div class="chips"><span>Python</span><span>NumPy</span><span>Pandas</span><span>SciPy</span><span>Matplotlib</span><span>Git</span></div></div>
+      <div class="detail reveal"><small>Based in</small><div>Madrid, Spain</div></div>
+    </div>
+  </section>
+</main>
+
+<section class="cta" id="contact">
+  <canvas class="cta-canvas" aria-hidden="true"></canvas>
+  <div class="wrap cta-inner">
+    <span class="section-index reveal" translate="no">04</span>
+    <h2 class="cta-title reveal">See the work. Then let’s talk.</h2>
+    <p class="reveal">
+      If you are hiring for quantitative finance, risk or research roles,
+      I can walk you through the assumptions, implementation and decisions behind every project here.
+    </p>
+    <div class="cta-actions reveal">
+      <a class="btn primary magnetic" href="mailto:acutillas.finance@gmail.com">Contact me</a>
+      <a class="btn magnetic" href="assets/Alvaro-Cutillas-CV.pdf" target="_blank" rel="noopener">View CV ↗</a>
+      <a class="btn magnetic" href="https://github.com/AlvaroCutillas">GitHub ↗</a>
+      <a class="btn magnetic" href="https://www.linkedin.com/in/%C3%A1lvaro-cutillas/">LinkedIn ↗</a>
+    </div>
+    <p class="cta-note reveal">Background: Nelson–Siegel yield curves with illustrative parameters.</p>
+  </div>
+  <footer class="wrap">
+    <div>© <span id="year">2026</span> Álvaro Cutillas</div>
+    <span class="footer-hint">Press <kbd>⌘K</kbd> to navigate</span>
+    <span>Quantitative Finance Portfolio</span>
+  </footer>
+</section>
+
+<!-- Paleta de comandos -->
+<dialog class="cmdk" aria-label="Command palette">
+  <div class="cmdk-box">
+    <input class="cmdk-input" type="text" placeholder="Jump to a project or section…" aria-label="Search" autocomplete="off" spellcheck="false" />
+    <ul class="cmdk-list" role="listbox"></ul>
+    <div class="cmdk-foot"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>↵</kbd> open</span><span><kbd>esc</kbd> close</span></div>
+  </div>
+</dialog>
+
+<script id="home-data" type="application/json">/*__DATA__*/</script>
+<script>/*__JS__*/</script>
+</body>
+</html>

@@ -18,3 +18,7 @@ The published website uses the existing portfolio layout: index.html, projects/,
 - [Portfolio Optimization Under Estimation Error](portfolio-optimization/README.md) · [Published HTML](../projects/portfolio-optimization.html)
 
 The original research project and existing assets are preserved. Each Quant Basics README documents regeneration and verification.
+
+## Portada
+
+- [Portada interactiva](home/live/build_live.py): `python research/home/live/build_live.py` regenera `index.html` a partir de `home/live/` (plantilla, estilos, motor de gráficos y traducciones) y de los resultados reales de `portfolio-optimization/results`.

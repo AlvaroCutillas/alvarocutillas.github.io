@@ -1,4 +1,7 @@
-"""Genera index.html (home del portfolio, mundo visual «working paper»).
+"""[OBSOLETO] Generaba la home estática «working paper». La portada actual se genera con
+research/home/live/build_live.py; ejecutar este script sobrescribiría index.html con la versión antigua.
+
+Genera index.html (home del portfolio, mundo visual «working paper»).
 
 Contenido: textos y métricas de research/home/source-index.html (home original, fuente de contenido).
 Figuras: calculadas aquí con datos reales (frontera y riqueza walk-forward de research/portfolio-optimization)
