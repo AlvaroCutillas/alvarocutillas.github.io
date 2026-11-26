@@ -147,7 +147,7 @@ fz = next(f for f in fs[1:] if g_(f) < 0)
 p4 = Plot(560, 330, (0, 0.5), (-0.04, 0.014), (0, .1, .2, .3, .4, .5), (-.03, -.02, -.01, 0), fx='{:.1f}', fy='{:.0%}', L=46, Rr=24, B=44)
 p4.add(f'<path class="curve accent" pathLength="1" d="{p4.path([(f, g_(f)) for f in fs if g_(f) >= p4.yr[0]])}"/>')
 p4.add(f'<g class="gmv"><circle cx="{p4.x(fk):.1f}" cy="{p4.y(g_(fk)):.1f}" r="5"/><text x="{p4.x(fk)+4:.1f}" y="{p4.y(g_(fk))-12:.1f}">Full Kelly</text></g>')
-p4.add(f'<g class="pt"><circle cx="{p4.x(fz):.1f}" cy="{p4.y(0):.1f}" r="3.6"/><text x="{p4.x(fz)+8:.1f}" y="{p4.y(0)+18:.1f}">Growth turns negative</text></g>')
+p4.add(f'<g class="pt"><circle cx="{p4.x(fz):.1f}" cy="{p4.y(0):.1f}" r="3.6"/><text x="{p4.x(fz)+10:.1f}" y="{p4.y(0)-10:.1f}">Growth turns negative</text></g>')
 p4.add(f'<text class="ax" x="{(p4.L+p4.W-p4.Rr)/2:.0f}" y="{p4.H-4}" text-anchor="middle">Staked fraction</text>')
 FIG4 = p4.svg('f4', 'Expected log-growth against the staked fraction',
               'Expected logarithmic growth per bet for a 55% win probability at even odds, peaking at the full Kelly fraction and turning negative at about twice that fraction.')
