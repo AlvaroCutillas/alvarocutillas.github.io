@@ -100,11 +100,11 @@ for i, r in enumerate(rows):
         if i % 4 == 0 or i == len(rows) - 1:
             wealth[k].append((i, w[k]))
 n = len(rows)
-p2 = Plot(560, 330, (0, n), (0.8, 3.0), (), (1, 2, 3), fx='', fy='{:.0f}×', L=40, Rr=150, B=44)
+p2 = Plot(560, 330, (0, n), (0.8, 3.0), (), (1, 2, 3), fx='', fy='{:.0f}×', L=40, Rr=205, B=44)
 for t in (0, .25, .5, .75, 1.0):  # etiquetas de año reales a partir de las fechas
     i = min(int(t * (n - 1)), n - 1)
     p2.add(f'<text class="tk" x="{p2.x(t*n):.1f}" y="{p2.H-p2.B+18}" text-anchor="middle">{rows[i]["date"][:4]}</text>')
-dy = {'Equal weight': -8, 'Max Sharpe · sample': 12, 'Max Sharpe · LW capped': 4}
+dy = {'Equal weight': 8, 'Max Sharpe · sample': -8, 'Max Sharpe · LW capped': 9}
 for k, c in series.items():
     p2.add(f'<path class="curve {c}" pathLength="1" d="{p2.path(wealth[k])}"/>')
     ex, ey = wealth[k][-1]
