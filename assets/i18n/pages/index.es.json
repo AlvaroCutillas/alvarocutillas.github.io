@@ -815,7 +815,18 @@
     "Interactive": "Interactivo",
     "Probability": "Probabilidad",
     "Possible paths": "Trayectorias posibles",
-    "Betting simulator": "Simulador de apuestas"
+    "Betting simulator": "Simulador de apuestas",
+    "Quantitative research with explicit assumptions, reproducible code and results that hold up out of sample.": "Investigación cuantitativa con supuestos explícitos, código reproducible y resultados que se sostienen fuera de muestra.",
+    "View projects": "Ver proyectos",
+    "Skip to projects": "Saltar a proyectos",
+    "Long-only efficient frontier": "Frontera eficiente long-only",
+    "· 10 ETFs · 2010–2018 training sample. Computed in the": "· 10 ETF · muestra de entrenamiento 2010–2018. Calculada en el",
+    "Portfolio Optimization study": "estudio de optimización de carteras",
+    "Min. variance": "Mín. varianza",
+    "Annualised volatility": "Volatilidad anualizada",
+    "Annualised mean return": "Rentabilidad media anualizada",
+    "Long-only efficient frontier of ten ETFs": "Frontera eficiente long-only de diez ETF",
+    "Annualised volatility against annualised arithmetic mean return for ten ETFs and the long-only efficient frontier solved on the 2010 to 2018 training sample.": "Volatilidad anualizada frente a rentabilidad media aritmética anualizada de diez ETF y frontera eficiente long-only resuelta sobre la muestra de entrenamiento 2010–2018."
   },
   "fragments": {
     "% tails.": "% en cada extremo.",
