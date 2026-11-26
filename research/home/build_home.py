@@ -206,7 +206,7 @@ page = f'''<!DOCTYPE html>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Álvaro Cutillas — Quantitative Finance Portfolio" />
-  <meta name="theme-color" content="#0f1621" />
+  <meta name="theme-color" content="#0e1914" />
   <title>Álvaro Cutillas — Quantitative Finance</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
