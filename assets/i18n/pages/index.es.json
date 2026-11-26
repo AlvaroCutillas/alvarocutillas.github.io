@@ -956,7 +956,8 @@
     "Delta Δ": "Delta Δ",
     "Gamma Γ": "Gamma Γ",
     "Vega ν (per 1 vol pt)": "Vega ν (por punto de vol.)",
-    "Theta Θ (per day)": "Theta Θ (por día)"
+    "Theta Θ (per day)": "Theta Θ (por día)",
+    "Open the full study ↗": "Abrir el estudio completo ↗"
   },
   "fragments": {
     "% tails.": "% en cada extremo.",

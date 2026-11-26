@@ -54,12 +54,12 @@
   }
 
   // Lienzo con densidad de píxeles correcta y redimensionado automático
-  function surface(cv, onResize) {
+  function surface(cv, onResize, maxDpr = 2) {
     const ctx = cv.getContext('2d');
     const s = { cv, ctx, w: 0, h: 0, dpr: 1 };
     s.fit = () => {
       const r = cv.getBoundingClientRect();
-      const dpr = Math.min(2, window.devicePixelRatio || 1);
+      const dpr = Math.min(maxDpr, window.devicePixelRatio || 1);
       const W = Math.max(1, Math.round(r.width * dpr)), H = Math.max(1, Math.round(r.height * dpr));
       if (W === cv.width && H === cv.height && s.w) return;
       cv.width = W; cv.height = H; s.w = r.width; s.h = r.height; s.dpr = dpr;
@@ -175,46 +175,6 @@
     });
   }
 
-  function boot(done) {
-    const el = $('.boot');
-    let seen = false;
-    try { seen = sessionStorage.getItem('ac-boot') === '1'; sessionStorage.setItem('ac-boot', '1'); } catch (_) { /* almacenamiento no disponible */ }
-    if (RM || seen || location.hash || !el) { done(); return; }
-    el.setAttribute('translate', 'no');
-    el.classList.add('on');
-    const lines = [
-      '<em>$</em> python research/home/live/build_live.py',
-      `› load returns ............ <b>${(4207).toLocaleString('en-US')} rows</b>`,
-      `› walk-forward test ....... <b>${DATA.days.toLocaleString('en-US')} days</b>`,
-      `› efficient frontier ...... <b>${DATA.frontier.length} points</b>`,
-      `› rebalances .............. <b>${DATA.weights.length}</b>`,
-      '› seed Monte Carlo engine . <b>ok</b>',
-      '› render ................... <b>ready</b>'
-    ];
-    const box = $('.boot-lines', el), bar = $('.boot-bar', el);
-    let i = 0, finished = false;
-    const finish = () => {
-      if (finished) return;
-      finished = true;
-      el.classList.add('done');
-      done();
-      setTimeout(() => el.remove(), 700);
-    };
-    const tick = () => {
-      if (finished) return;
-      if (i < lines.length) {
-        const d = document.createElement('div');
-        d.innerHTML = lines[i++];
-        box.appendChild(d);
-        bar.style.setProperty('--b', i / lines.length);
-        setTimeout(tick, 120 + Math.random() * 60);
-      } else setTimeout(finish, 260);
-    };
-    el.addEventListener('click', finish);
-    window.addEventListener('keydown', finish, { once: true });
-    setTimeout(tick, 150);
-  }
-
   function reveals() {
     // Escalonado entre hermanos
     const groups = new Map();
@@ -271,7 +231,8 @@
       if (about && !RM) {
         const r = about.getBoundingClientRect();
         const p = clamp((innerHeight * 0.82 - r.top) / (r.height + innerHeight * 0.3), 0, 1);
-        about.style.setProperty('--p', (p * 108).toFixed(1) + '%');
+        const v = (p * 108).toFixed(1) + '%';
+        if (v !== about.dataset.p) { about.dataset.p = v; about.style.setProperty('--p', v); }
       }
     };
     addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
@@ -312,41 +273,12 @@
         });
         b.addEventListener('pointerleave', () => { b.style.transform = ''; });
       });
-      $$('.lab').forEach(l => l.addEventListener('pointermove', e => {
+      $$('.lab, .feature > .project-card').forEach(l => l.addEventListener('pointermove', e => {
         const r = l.getBoundingClientRect();
         l.style.setProperty('--mx', e.clientX - r.left + 'px');
         l.style.setProperty('--my', e.clientY - r.top + 'px');
       }));
     }
-  }
-
-  function cursor() {
-    if (!FINE || RM) return;
-    const c = $('.cursor'), dot = $('.cursor-dot'), ring = $('.cursor-ring'), lab = $('.cursor-label');
-    lab.setAttribute('translate', 'no');
-    root.classList.add('has-cursor');
-    let mx = -100, my = -100, rx = -100, ry = -100;
-    addEventListener('pointermove', e => {
-      if (e.pointerType !== 'mouse') return;
-      mx = e.clientX; my = e.clientY;
-      dot.style.transform = `translate(${mx}px,${my}px)`;
-      c.classList.remove('is-hidden');
-    }, { passive: true });
-    document.addEventListener('pointerleave', () => c.classList.add('is-hidden'));
-    const loop = () => {
-      rx = lerp(rx, mx, 0.2); ry = lerp(ry, my, 0.2);
-      ring.style.transform = `translate(${rx}px,${ry}px)`;
-      requestAnimationFrame(loop);
-    };
-    loop();
-    document.addEventListener('pointerover', e => {
-      const el = e.target;
-      c.classList.remove('is-link', 'is-label', 'is-chart');
-      if (el.closest('.surface-canvas')) { c.classList.add('is-label'); lab.textContent = t('Drag'); }
-      else if (el.closest('.project-card')) { c.classList.add('is-label'); lab.textContent = t('Open'); }
-      else if (el.closest('.lab-canvas, .hero-canvas')) c.classList.add('is-chart');
-      else if (el.closest('a, button, input, select, label')) c.classList.add('is-link');
-    });
   }
 
   // Transición de salida hacia otra página del sitio
@@ -383,16 +315,16 @@
     if (!cv) return;
     const S0 = 100, T = 1, N = 90, dt = T / N, BINS = 56;
     let sigma = 0.2, mu = 0.05;
-    const trail = document.createElement('canvas'), tctx = trail.getContext('2d');
+    const trail = $('.hero-trail'), tctx = trail.getContext('2d');
     let hist = new Float64Array(BINS), n = 0, sumS = 0, sumS2 = 0, conv = [], active = [], ripples = [];
-    let rng = mulberry32(20240607), lo = 0, hi = 1, spawnAcc = 0, hudAcc = 0;
+    let rng = mulberry32(20240607), lo = 0, hi = 1, spawnAcc = 0, hudAcc = 0, fadeAcc = 0;
     const L = {};
     const S = surface(cv, s => {
       trail.width = cv.width; trail.height = cv.height;
       tctx.setTransform(s.dpr, 0, 0, s.dpr, 0, 0);
       layout();
       if (RM) staticRun();
-    });
+    }, 1.25);
     const out = k => $(`[data-hud="${k}"]`);
     const hudEls = { n: out('n'), mean: out('mean'), exact: out('exact'), ci: out('ci') };
     const spark = surface($('.hud-spark'), () => drawSpark());
@@ -497,7 +429,6 @@
       if (!S.w) return;
       const c = S.ctx;
       S.clear();
-      c.drawImage(trail, 0, 0, S.w, S.h);
       const lnS0 = Math.log(S0), m = Math.log(S0) + (mu - sigma * sigma / 2) * T, sd = sigma * Math.sqrt(T);
       // Guías: S0 y E[S_T]
       c.save();
@@ -561,10 +492,14 @@
       while (spawnAcc >= 1 && active.length < target * 1.6) { spawn(); spawnAcc -= 1; }
       if (spawnAcc > 3) spawnAcc = 0;
       // Desvanecimiento del rastro
-      tctx.globalCompositeOperation = 'destination-out';
-      tctx.fillStyle = 'rgba(0,0,0,0.03)';
-      tctx.fillRect(0, 0, S.w, S.h);
-      tctx.globalCompositeOperation = 'source-over';
+      fadeAcc += dt;
+      if (fadeAcc > 0) { // en cada fotograma, proporcional al tiempo transcurrido
+        tctx.globalCompositeOperation = 'destination-out';
+        tctx.fillStyle = `rgba(0,0,0,${(1 - Math.pow(0.97, fadeAcc * 60)).toFixed(3)})`;
+        tctx.fillRect(0, 0, S.w, S.h);
+        tctx.globalCompositeOperation = 'source-over';
+        fadeAcc = 0;
+      }
       const keep = [];
       for (const p of active) {
         const prev = Math.floor(p.k);
@@ -731,9 +666,9 @@
       }
       // Frontera con resplandor
       c.save();
-      c.shadowColor = rgba(C.accent, 0.7); c.shadowBlur = 14;
       c.beginPath(); F.slice(0, k).forEach((q, i) => (i ? c.lineTo(X(q[0]), Y(q[1])) : c.moveTo(X(q[0]), Y(q[1]))));
-      c.strokeStyle = C.accent; c.lineWidth = 2.6; c.lineJoin = 'round'; c.stroke();
+      c.lineJoin = 'round'; c.strokeStyle = rgba(C.accent, 0.16); c.lineWidth = 9; c.stroke();
+      c.strokeStyle = C.accent; c.lineWidth = 2.6; c.stroke();
       c.restore();
       // Activos
       DATA.assets.forEach((a, i) => {
@@ -798,10 +733,11 @@
         if (!visible.has(s)) return;
         const arr = W.series[s], head = s === W.headline;
         c.save();
-        if (head) { c.shadowColor = rgba(SC[s], 0.6); c.shadowBlur = 12; }
         c.beginPath();
         for (let i = 0; i < k; i++) i ? c.lineTo(X(i), Y(arr[i])) : c.moveTo(X(i), Y(arr[i]));
-        c.strokeStyle = head ? SC[s] : rgba(SC[s], 0.75); c.lineWidth = head ? 2.4 : 1.25; c.lineJoin = 'round'; c.stroke();
+        c.lineJoin = 'round';
+        if (head) { c.strokeStyle = rgba(SC[s], 0.16); c.lineWidth = 8; c.stroke(); }
+        c.strokeStyle = head ? SC[s] : rgba(SC[s], 0.75); c.lineWidth = head ? 2.4 : 1.25; c.stroke();
         c.restore();
       });
       // Etiquetas finales sin solapes
@@ -1014,9 +950,10 @@
         c.lineTo(X(150), Y(Math.max(0, yr[0]))); c.lineTo(X(50), Y(Math.max(0, yr[0]))); c.closePath();
         c.fillStyle = grad; c.fill();
       }
-      c.save(); c.shadowColor = rgba(C.hi, 0.6); c.shadowBlur = 12;
+      c.save();
       c.beginPath(); disp.forEach((v, i) => (i ? c.lineTo(X(xs[i]), Y(v)) : c.moveTo(X(xs[i]), Y(v))));
-      c.strokeStyle = C.hi; c.lineWidth = 2.4; c.lineJoin = 'round'; c.stroke(); c.restore();
+      c.lineJoin = 'round'; c.strokeStyle = rgba(C.hi, 0.16); c.lineWidth = 8; c.stroke();
+      c.strokeStyle = C.hi; c.lineWidth = 2.4; c.stroke(); c.restore();
       c.restore();
       // Strike
       label(c, 'K', X(K), box.b - 10, C.muted, 'center', 10.5, 500);
@@ -1146,9 +1083,10 @@
       c.setLineDash([5, 5]);
       c.beginPath(); c.moveTo(X(0), Y(0)); c.lineTo(X(k), Y((k * stats.g) / Math.LN10));
       c.strokeStyle = rgba(C.ink, 0.65); c.lineWidth = 1.2; c.stroke(); c.setLineDash([]);
-      c.save(); c.shadowColor = rgba(C.warm, 0.6); c.shadowBlur = 10;
+      c.save();
       c.beginPath(); c.moveTo(X(0), Y(0));
       for (let b = 1; b <= k; b++) c.lineTo(X(b), Y(med[b]));
+      c.lineJoin = 'round'; c.strokeStyle = rgba(C.warm, 0.18); c.lineWidth = 7; c.stroke();
       c.strokeStyle = C.warm; c.lineWidth = 2.2; c.stroke(); c.restore();
       if (!narrow) {
         label(c, t('Median path'), X(k) - 6, Y(med[k]) - 12, C.warm, 'right', 10.5, 500);
@@ -1226,7 +1164,7 @@
     const cv = $('.surface-canvas');
     if (!cv) return;
     const NX = 26, NZ = 20;
-    let yaw = -0.62, pitch = 0.42, vyaw = 0.1, drag = null, time = 0;
+    let yaw = -0.62, pitch = 0.42, vyaw = 0.18, drag = null, time = 0;
     const S = surface(cv, () => { if (RM) draw(); });
     const iv = (k, T, ph) => {
       const atm = 0.16 + 0.08 * Math.exp(-1.6 * T);
@@ -1297,7 +1235,7 @@
     onLang.push(draw);
     if (!RM) job(cv, dt => {
       time += dt;
-      if (!drag) { vyaw = lerp(vyaw, 0.1, 0.02); yaw += vyaw * dt; }
+      if (!drag) { vyaw = lerp(vyaw, 0.18, 0.02); yaw += vyaw * dt; }
       draw();
     });
   }
@@ -1313,7 +1251,7 @@
     const MC = rngPaths(11, 16, 60, 0.05);
     const TS = (() => { const r = mulberry32(5); let v = 0; const a = []; for (let i = 0; i < 520; i++) { v += 0.9 * gauss(r) + 0.25 * Math.sin(i / 40); a.push(v); } return a; })();
     const ma = (a, n) => a.map((_, i) => { let s = 0, c = 0; for (let j = Math.max(0, i - n + 1); j <= i; j++) { s += a[j]; c++; } return s / c; });
-    const TF = ma(TS, 12), TL = ma(TS, 40);
+    const TF = ma(TS, 12), TL = ma(TS, 40), TSR = { lo: null, hi: null };
     const MKD = (() => { const r = mulberry32(3); return Array.from({ length: 10 }, () => [0.25 + r() * 0.65, 0.15 + r() * 0.55, r() * 6]); })();
     const line = (c, pts, color, w = 1.6) => { c.beginPath(); pts.forEach(([x, y], i) => (i ? c.lineTo(x, y) : c.moveTo(x, y))); c.strokeStyle = color; c.lineWidth = w; c.lineJoin = 'round'; c.stroke(); };
     const G = {
@@ -1326,8 +1264,8 @@
         c.beginPath(); c.arc(X(S), Y(v), 3.5, 0, 7); c.fillStyle = C.warm; c.fill();
       },
       mc(c, w, h, tm) {
-        const r = (tm * 0.35) % 1.3, k = Math.floor(clamp(r, 0, 1) * 60), X = i => 8 + (i / 60) * (w * 0.72), Y = v => h / 2 - v * (h * 0.9);
-        MC.forEach(a => { line(c, a.slice(0, k + 1).map((v, i) => [X(i), Y(v)]), rgba(C.accent, 0.45), 1); if (k >= 60) { c.beginPath(); c.arc(X(60), Y(a[60]), 2, 0, 7); c.fillStyle = C.hi; c.fill(); } });
+        const r = (tm * 0.35) % 1.3, kf = clamp(r, 0, 1) * 60, k = Math.floor(kf), fr = kf - k, X = i => 8 + (i / 60) * (w * 0.72), Y = v => h / 2 - v * (h * 0.9);
+        MC.forEach(a => { const pts = a.slice(0, k + 1).map((v, i) => [X(i), Y(v)]); if (k < 60) pts.push([X(kf), Y(lerp(a[k], a[k + 1], fr))]); line(c, pts, rgba(C.accent, 0.45), 1); if (k >= 60) { c.beginPath(); c.arc(X(60), Y(a[60]), 2, 0, 7); c.fillStyle = C.hi; c.fill(); } });
         const bins = new Array(8).fill(0); MC.forEach(a => { const b = clamp(Math.floor((a[60] + 0.45) / 0.9 * 8), 0, 7); bins[b]++; });
         if (k >= 60) bins.forEach((n, b) => { c.fillStyle = rgba(C.warm, 0.6); const y0 = Y(-0.45 + (b * 0.9) / 8); c.fillRect(w * 0.78, y0 - (h * 0.9 * 0.9) / 8 + 1, n * 6 * clamp(r - 1, 0, 0.3) / 0.3, (h * 0.81) / 8 - 2); });
       },
@@ -1352,15 +1290,19 @@
         label(c, 'ES', X(es), Y(0) - 14, C.warm, 'center', 10, 500);
       },
       ts(c, w, h, tm) {
-        const win = 130, off = Math.floor((tm * 18) % (TS.length - win)), seg = TS.slice(off, off + win);
-        const lo = Math.min(...seg) - 1, hi = Math.max(...seg) + 1, X = i => 6 + (i / (win - 1)) * (w - 12), Y = v => h - 8 - ((v - lo) / (hi - lo)) * (h - 16);
+        const win = 130, pos = (tm * 18) % (TS.length - win - 1), off = Math.floor(pos), fr = pos - off, seg = TS.slice(off, off + win + 1);
+        const tLo = Math.min(...seg) - 1, tHi = Math.max(...seg) + 1;
+        TSR.lo = TSR.lo == null ? tLo : lerp(TSR.lo, tLo, 0.06); TSR.hi = TSR.hi == null ? tHi : lerp(TSR.hi, tHi, 0.06);
+        const lo = TSR.lo, hi = TSR.hi, X = i => 6 + ((i - fr) / (win - 1)) * (w - 12), Y = v => h - 8 - ((v - lo) / (hi - lo)) * (h - 16);
+        c.save(); c.beginPath(); c.rect(0, 0, w, h); c.clip();
         line(c, seg.map((v, i) => [X(i), Y(v)]), rgba(C.ink, 0.5), 1);
-        line(c, TF.slice(off, off + win).map((v, i) => [X(i), Y(v)]), C.accent, 1.6);
-        line(c, TL.slice(off, off + win).map((v, i) => [X(i), Y(v)]), C.warm, 1.6);
-        for (let i = off + 1; i < off + win; i++) {
+        line(c, TF.slice(off, off + win + 1).map((v, i) => [X(i), Y(v)]), C.accent, 1.6);
+        line(c, TL.slice(off, off + win + 1).map((v, i) => [X(i), Y(v)]), C.warm, 1.6);
+        for (let i = off + 1; i <= off + win; i++) {
           const a = TF[i - 1] - TL[i - 1], b = TF[i] - TL[i];
           if (a * b < 0) { const x = X(i - off), y = Y(TF[i]); c.beginPath(); if (b > 0) { c.moveTo(x, y + 4); c.lineTo(x - 4, y + 11); c.lineTo(x + 4, y + 11); } else { c.moveTo(x, y - 4); c.lineTo(x - 4, y - 11); c.lineTo(x + 4, y - 11); } c.fillStyle = b > 0 ? C.pos : C.neg; c.fill(); }
         }
+        c.restore();
       },
       iv(c, w, h, tm) {
         const X = k => 8 + ((k + 0.4) / 0.8) * (w - 16), Y = v => h - 8 - ((v - 0.12) / 0.32) * (h - 16);
@@ -1392,7 +1334,7 @@
     };
     $$('.basic').forEach(card => {
       const cv = $('.glyph', card), kind = card.dataset.glyph;
-      let tm = Math.random() * 10, hov = false, speed = 0.35;
+      let tm = Math.random() * 10, hov = false, speed = 1;
       const S = surface(cv, () => draw());
       function draw() { if (!S.w || !G[kind]) return; S.clear(); G[kind](S.ctx, S.w, S.h, tm, hov); }
       card.addEventListener('pointerenter', () => { hov = true; });
@@ -1402,7 +1344,7 @@
         card.style.transform = `rotateX(${(0.5 - y) * 7}deg) rotateY(${(x - 0.5) * 9}deg) translateY(-4px)`;
         card.style.setProperty('--mx', x * 100 + '%'); card.style.setProperty('--my', y * 100 + '%');
       });
-      if (!RM) job(card, dt => { speed = lerp(speed, hov ? 1.6 : 0.3, 0.08); tm += dt * speed; draw(); }, '40px');
+      if (!RM) job(card, dt => { speed = lerp(speed, hov ? 2.2 : 1, 0.08); tm += dt * speed; draw(); }, '40px');
     });
   }
 
@@ -1413,7 +1355,7 @@
     const cv = $('.cta-canvas');
     if (!cv) return;
     let tm = 0;
-    const S = surface(cv, () => { if (RM) draw(); });
+    const S = surface(cv, () => { if (RM) draw(); }, 1);
     const ns = (tau, b0, b1, b2, l = 2.2) => { const x = tau / l, f = (1 - Math.exp(-x)) / x; return b0 + b1 * f + b2 * (f - Math.exp(-x)); };
     function draw() {
       if (!S.w) return;
@@ -1430,16 +1372,14 @@
         }
         c.beginPath();
         pts.forEach(([x, y], k) => (k ? c.lineTo(x, y) : c.moveTo(x, y)));
-        c.lineTo(x1, h + 10); c.lineTo(x0, h + 10); c.closePath();
+        // Basta tapar la franja inmediatamente inferior (las crestas anteriores no bajan más)
+        const floor = Math.min(h + 10, base + (h * 0.86 / R) * 3);
+        c.lineTo(x1, floor); c.lineTo(x0, floor); c.closePath();
         c.fillStyle = C.bg; c.fill();
         c.beginPath();
         pts.forEach(([x, y], k) => (k ? c.lineTo(x, y) : c.moveTo(x, y)));
         c.strokeStyle = mix(C.accent, C.warm, i / R, 0.14 + 0.6 * (i / R)); c.lineWidth = 1.2; c.stroke();
       }
-      // Velo a la izquierda para que el texto se lea sobre las curvas
-      const veil = c.createLinearGradient(0, 0, w, 0);
-      veil.addColorStop(0, rgba(C.bg, 0.92)); veil.addColorStop(w < 700 ? 0.9 : 0.5, rgba(C.bg, 0.35)); veil.addColorStop(1, rgba(C.bg, 0));
-      c.fillStyle = veil; c.fillRect(0, 0, w, h);
     }
     if (RM) return;
     job(cv, dt => { tm += dt; draw(); });
@@ -1521,7 +1461,6 @@
     if (y) y.textContent = new Date().getFullYear();
     splitName();
     chrome();
-    cursor();
     pageTransitions();
     counters();
     hero();
@@ -1533,7 +1472,8 @@
     ctaCurves();
     commandPalette();
     requestAnimationFrame(frame);
-    boot(() => { root.classList.add('ready'); reveals(); });
+    // Sin pantalla de arranque: la cabecera se revela en el primer fotograma
+    requestAnimationFrame(() => { root.classList.add('ready'); reveals(); });
   }
   // El catálogo de idiomas se ejecuta después de este script: se espera al DOM completo
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();

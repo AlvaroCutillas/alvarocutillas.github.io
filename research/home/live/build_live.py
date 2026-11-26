@@ -92,7 +92,7 @@ page = (template.replace('/*__CSS__*/', css)
                 .replace('/*__JS__*/', js)
                 .replace('/*__DATA__*/', payload))
 assert '/*__' not in page
-assert page.count('href="projects/portfolio-optimization.html"') == 1
+assert page.index('href="projects/portfolio-optimization.html"') == page.index('<a class="project-card" href="projects/portfolio-optimization.html">') + len('<a class="project-card" ')
 (SITE / 'index.html').write_text(page, encoding='utf-8')
 
 # ---------- 3. Catálogo EN/ES: se añaden los textos nuevos sin tocar los ya revisados ----------

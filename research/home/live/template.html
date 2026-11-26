@@ -14,19 +14,9 @@
 </head>
 <body>
 
-<!-- Secuencia de arranque (solo la primera visita de la sesión; se puede saltar) -->
-<div class="boot" aria-hidden="true">
-  <div class="boot-inner">
-    <div class="boot-lines"></div>
-    <div class="boot-bar"><i></i></div>
-  </div>
-</div>
-
-<!-- Capas globales: progreso de lectura, cursor, transición de salida y grano -->
+<!-- Capas globales: progreso de lectura y transición de salida -->
 <div class="progress" aria-hidden="true"><i></i></div>
-<div class="cursor" aria-hidden="true"><i class="cursor-dot"></i><i class="cursor-ring"><b class="cursor-label"></b></i></div>
 <div class="wipe" aria-hidden="true"><span class="wipe-label"></span></div>
-<div class="grain" aria-hidden="true"></div>
 
 <a class="skip" href="#projects">Skip to projects</a>
 <nav>
@@ -44,6 +34,7 @@
 </nav>
 
 <header class="hero" id="top">
+  <canvas class="hero-trail" aria-hidden="true"></canvas>
   <canvas class="hero-canvas" aria-hidden="true"></canvas>
   <div class="hero-shade" aria-hidden="true"></div>
   <div class="wrap hero-grid">
@@ -108,6 +99,7 @@
     <!-- Proyecto 1: optimización de carteras (datos reales) -->
     <article class="feature reveal-group" data-feature="portfolio">
       <a class="project-card" href="projects/portfolio-optimization.html">
+        <span class="card-go" aria-hidden="true">↗</span>
         <span class="project-kind"><i>A</i>Portfolio research</span>
         <h3>Portfolio Optimization Under Estimation Error</h3>
         <p>Long-only allocation across 10 ETFs, with bootstrap uncertainty, covariance shrinkage and walk-forward testing after trading costs.</p>
@@ -132,12 +124,14 @@
         <p class="lab-caption" data-caption="wealth" hidden>Cumulative net wealth of one unit invested, walk-forward, after trading costs. Click the legend to show or hide a rule.</p>
         <p class="lab-caption" data-caption="weights" hidden>Weights of the capped maximum-Sharpe portfolio at each walk-forward rebalance (25% cap per position).</p>
         <p class="lab-caption" data-caption="corr" hidden>Correlation of daily returns on the training sample. Hover a cell.</p>
+        <a class="lab-open" href="projects/portfolio-optimization.html">Open the full study ↗</a>
       </div>
     </article>
 
     <!-- Proyecto 2: Black–Scholes (fórmulas exactas) -->
     <article class="feature flip reveal-group" data-feature="bs">
       <a class="project-card" href="projects/black-scholes.html">
+        <span class="card-go" aria-hidden="true">↗</span>
         <span class="project-kind"><i>B</i>Derivatives research</span>
         <h3>Black–Scholes Pricing Lab: Greeks, Volatility &amp; Monte Carlo</h3>
         <p>Black–Scholes pricing, five Greeks and implied volatility, with Monte Carlo convergence tests and variance reduction.</p>
@@ -173,12 +167,14 @@
           <label class="slider"><span class="slider-name">Rate r</span><output data-out="r" translate="no">3.0%</output><input type="range" min="0" max="100" step="1" value="30" data-bs="r" /></label>
         </div>
         <p class="lab-caption">European option with strike 100. Drag along the chart to move the spot: the tangent line is the delta. Illustrative parameters.</p>
+        <a class="lab-open" href="projects/black-scholes.html">Open the full study ↗</a>
       </div>
     </article>
 
     <!-- Proyecto 3: criterio de Kelly (simulación con semilla) -->
     <article class="feature reveal-group" data-feature="kelly">
       <a class="project-card" href="projects/kelly-criterion.html">
+        <span class="card-go" aria-hidden="true">↗</span>
         <span class="project-kind"><i>C</i>Risk &amp; position sizing</span>
         <h3>Kelly Criterion: Ruin &amp; Growth Simulator</h3>
         <p>Interactive position-sizing simulator comparing full and fractional Kelly, drawdown risk and the cost of overestimating an edge.</p>
@@ -206,6 +202,7 @@
           <label class="slider wide"><span class="slider-name">Stake as a multiple of Kelly</span><output data-out="mult" translate="no">1.00×</output><input type="range" min="0" max="250" step="5" value="100" data-kelly="mult" /></label>
         </div>
         <p class="lab-caption">Sixty seeded paths of 400 even-odds bets on a log scale. Above twice the Kelly fraction, expected growth turns negative.</p>
+        <a class="lab-open" href="projects/kelly-criterion.html">Open the full study ↗</a>
       </div>
     </article>
   </section>
