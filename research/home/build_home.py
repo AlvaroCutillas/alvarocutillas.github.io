@@ -231,13 +231,8 @@ page = f'''<!DOCTYPE html>
 
   <header class="hero">
     <div class="hero-copy">
-      <div class="hero-id">
-        <img class="avatar" src="assets/alvaro-cutillas-avatar.jpg" width="96" height="96" alt="Álvaro Cutillas at his desk" />
-        <div>
-          <h1>Álvaro Cutillas</h1>
-          <p class="role">Quantitative Finance · Economics · Python</p>
-        </div>
-      </div>
+      <h1>Álvaro Cutillas</h1>
+      <p class="role">Quantitative Finance · Economics · Python</p>
       <p class="thesis">Quantitative research with explicit assumptions, reproducible code and results that hold up out of sample.</p>
       <div class="hero-actions">
         <a class="btn primary" href="#projects">View projects</a>
@@ -281,10 +276,6 @@ page = f'''<!DOCTYPE html>
   <section class="section" id="about">
     <div class="projects-head"><h2>About</h2></div>
     <div class="about-person">
-      <figure class="portrait">
-        <img src="assets/alvaro-cutillas-portrait.jpg" width="720" height="960" loading="lazy" alt="Álvaro Cutillas at his desk, with market data on the screens behind him" />
-        <figcaption>Madrid, Spain</figcaption>
-      </figure>
       <div class="about-body">
         <p class="about-text">
           I am building toward a career in <strong>quantitative finance</strong>,

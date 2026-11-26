@@ -127,17 +127,12 @@ nav{position:sticky;top:0;z-index:20;background:rgba(22,24,28,.94);border-bottom
 
 /* Sobre mí */
 .section{margin-top:clamp(64px,9vw,120px)}
-.about-person{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(28px,5vw,80px);padding-top:32px;align-items:start}
-.portrait{margin:0;position:sticky;top:90px}
-.portrait img{display:block;width:100%;height:auto;border:1px solid var(--rule-2);border-radius:4px;filter:saturate(.9)}
-.portrait figcaption{margin-top:10px;font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.about-person{padding-top:32px;max-width:900px}
 .how-title{margin:40px 0 0;padding-bottom:12px;border-bottom:1px solid var(--ink);font-weight:400;font-size:1.5rem;letter-spacing:-.015em}
 .principles{margin:0 0 40px}
 .principles>div{display:grid;grid-template-columns:minmax(150px,1fr) minmax(0,2fr);gap:20px;padding:16px 0;border-bottom:1px solid var(--rule)}
 .principles dt{font-weight:500;font-size:1.1rem}
 .principles dd{margin:0;color:var(--muted);font-size:16px;line-height:1.5}
-.hero-id{display:flex;align-items:center;gap:20px}
-.avatar{width:96px;height:96px;flex:none;border-radius:50%;object-fit:cover;border:1px solid var(--rule-2)}
 .about-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,80px);padding-top:28px;align-items:start}
 .about-text{margin:0;font-size:clamp(1.5rem,2.6vw,2.05rem);line-height:1.32;letter-spacing:-.015em;text-wrap:pretty}
 .about-text strong{font-weight:500;font-style:italic;color:var(--accent)}
@@ -160,7 +155,6 @@ footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;paddin
 /* Responsive */
 @media(max-width:900px){
   .hero,.about-grid,.about-person{grid-template-columns:1fr}
-  .portrait{position:static;max-width:320px}
   .principles>div{grid-template-columns:1fr;gap:6px}
   .proof{grid-template-columns:1fr}
   .proof li,.proof li+li{padding:16px 0;border-left:0}
@@ -235,13 +229,8 @@ html[lang="es"] .hero h1{hyphens:none}
 
   <header class="hero">
     <div class="hero-copy">
-      <div class="hero-id">
-        <img class="avatar" src="assets/alvaro-cutillas-avatar.jpg" width="96" height="96" alt="Álvaro Cutillas at his desk" />
-        <div>
-          <h1>Álvaro Cutillas</h1>
-          <p class="role">Quantitative Finance · Economics · Python</p>
-        </div>
-      </div>
+      <h1>Álvaro Cutillas</h1>
+      <p class="role">Quantitative Finance · Economics · Python</p>
       <p class="thesis">Quantitative research with explicit assumptions, reproducible code and results that hold up out of sample.</p>
       <div class="hero-actions">
         <a class="btn primary" href="#projects">View projects</a>
@@ -369,10 +358,6 @@ html[lang="es"] .hero h1{hyphens:none}
   <section class="section" id="about">
     <div class="projects-head"><h2>About</h2></div>
     <div class="about-person">
-      <figure class="portrait">
-        <img src="assets/alvaro-cutillas-portrait.jpg" width="720" height="960" loading="lazy" alt="Álvaro Cutillas at his desk, with market data on the screens behind him" />
-        <figcaption>Madrid, Spain</figcaption>
-      </figure>
       <div class="about-body">
         <p class="about-text">
           I am building toward a career in <strong>quantitative finance</strong>,
