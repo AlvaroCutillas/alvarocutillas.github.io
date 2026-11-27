@@ -1093,7 +1093,9 @@
     "Monte Carlo Option Pricing · Quant Basics — Álvaro Cutillas": "Monte Carlo: valoración de opciones · Fundamentos quant — Álvaro Cutillas",
     "Systematic Trading Strategy · Quant Basics — Álvaro Cutillas": "Estrategia de trading sistemático · Fundamentos quant — Álvaro Cutillas",
     "VaR & Expected Shortfall · Quant Basics — Álvaro Cutillas": "Valor en riesgo y pérdida esperada en cola · Fundamentos quant — Álvaro Cutillas",
-    "Yield Curve Modelling · Quant Basics - Alvaro Cutillas": "Modelización de la curva de tipos · Fundamentos quant — Álvaro Cutillas"
+    "Yield Curve Modelling · Quant Basics - Alvaro Cutillas": "Modelización de la curva de tipos · Fundamentos quant — Álvaro Cutillas",
+    "For this benchmark it peaks at S = K·exp(−(r + 3σ²/2)T) ≈ 89.6, about 10% below the strike.": "En este caso de referencia el máximo está en S = K·exp(−(r + 3σ²/2)T) ≈ 89,6, un 10 % por debajo del precio de ejercicio.",
+    "The miss is 2.84 estimated standard errors from the analytical value (two-sided p ≈ 0.45%). Across the ten intervals in this table, a deviation at least that large somewhere has a probability of about 4.4% if every interval is correctly calibrated: unusual, but not by itself evidence of a generator defect. A coverage study over many seeds would settle it.": "El fallo está a 2,84 errores estándar estimados del valor analítico (p bilateral ≈ 0,45 %). Entre los diez intervalos de esta tabla, una desviación al menos tan grande en alguno de ellos tiene una probabilidad de alrededor del 4,4 % si todos están bien calibrados: es poco habitual, pero no prueba por sí sola un defecto del generador. Un estudio de cobertura con muchas semillas lo resolvería."
   },
   "fragments": {
     "% tails.": "% en cada extremo.",

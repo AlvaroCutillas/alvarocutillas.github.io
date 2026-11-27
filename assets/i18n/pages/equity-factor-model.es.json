@@ -1584,7 +1584,8 @@
     "Monte Carlo Option Pricing · Quant Basics — Álvaro Cutillas": "Monte Carlo: valoración de opciones · Fundamentos quant — Álvaro Cutillas",
     "Systematic Trading Strategy · Quant Basics — Álvaro Cutillas": "Estrategia de trading sistemático · Fundamentos quant — Álvaro Cutillas",
     "VaR & Expected Shortfall · Quant Basics — Álvaro Cutillas": "Valor en riesgo y pérdida esperada en cola · Fundamentos quant — Álvaro Cutillas",
-    "Yield Curve Modelling · Quant Basics - Alvaro Cutillas": "Modelización de la curva de tipos · Fundamentos quant — Álvaro Cutillas"
+    "Yield Curve Modelling · Quant Basics - Alvaro Cutillas": "Modelización de la curva de tipos · Fundamentos quant — Álvaro Cutillas",
+    "Their signs also differ by design: the cross-sectional generator gives the low-volatility score a next-month premium of −0.4% per standard deviation, while the synthetic low-vol factor series has a mean of +0.10% per month.": "Sus signos también difieren por diseño: el generador transversal asigna a la puntuación de baja volatilidad una prima del mes siguiente de −0,4 % por desviación típica, mientras que la serie sintética del factor de baja volatilidad tiene una media de +0,10 % mensual."
   },
   "fragments": {
     "% tails.": "% en cada extremo.",

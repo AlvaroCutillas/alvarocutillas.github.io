@@ -1884,7 +1884,7 @@ html[lang="es"] .hero h1{hyphens:none}
       if (2 * fs <= fmax) { c.beginPath(); c.moveTo(XF(2 * fs), bot.t); c.lineTo(XF(2 * fs), bot.b); c.stroke(); }
       c.setLineDash([]);
       label(c, 'f*', XF(fs) + 5, bot.t + 9, C.ink, 'left', 10.5, 500);
-      if (2 * fs <= fmax) label(c, '2f* · g = 0', XF(2 * fs) + 5, bot.t + 9, C.neg, 'left', 10.5);
+      if (2 * fs <= fmax) label(c, '2f* · g ≈ 0', XF(2 * fs) + 5, bot.t + 9, C.neg, 'left', 10.5);
       const fx = XF(Math.min(stats.f, fmax)), fy = YG(stats.g);
       c.beginPath(); c.arc(fx, fy, 9, 0, Math.PI * 2); c.fillStyle = rgba(C.warm, 0.2); c.fill();
       c.beginPath(); c.arc(fx, fy, 4.5, 0, Math.PI * 2); c.fillStyle = stats.g >= 0 ? C.warm : C.neg; c.fill();

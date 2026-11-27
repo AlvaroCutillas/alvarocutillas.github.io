@@ -1666,7 +1666,9 @@
     "Monte Carlo Option Pricing · Quant Basics — Álvaro Cutillas": "Monte Carlo: valoración de opciones · Fundamentos quant — Álvaro Cutillas",
     "Systematic Trading Strategy · Quant Basics — Álvaro Cutillas": "Estrategia de trading sistemático · Fundamentos quant — Álvaro Cutillas",
     "VaR & Expected Shortfall · Quant Basics — Álvaro Cutillas": "Valor en riesgo y pérdida esperada en cola · Fundamentos quant — Álvaro Cutillas",
-    "Yield Curve Modelling · Quant Basics - Alvaro Cutillas": "Modelización de la curva de tipos · Fundamentos quant — Álvaro Cutillas"
+    "Yield Curve Modelling · Quant Basics - Alvaro Cutillas": "Modelización de la curva de tipos · Fundamentos quant — Álvaro Cutillas",
+    "Notation.": "Notación.",
+    "Here b is a decay time, unrelated to the SVI wing parameter b of the previous chapters; in SSVI, φ is the shape function, not the standard normal density used for d₁ and d₂.": "Aquí b es un tiempo de decaimiento, sin relación con el parámetro de alas b de SVI de los capítulos anteriores; en SSVI, φ es la función de forma, no la densidad normal estándar usada para d₁ y d₂."
   },
   "fragments": {
     "% tails.": "% en cada extremo.",

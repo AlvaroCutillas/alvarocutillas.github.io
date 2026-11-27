@@ -437,7 +437,7 @@ L 648.9 201.58
 " style="fill: none; stroke: #424842; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="distribution-text_19">
-    <text style="fill: #d3ad84; font: 10px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="631.3992" y="39.8312" transform="rotate(-0 631.3992 39.8312)">ZERO-PAYOFF MASS: 43.6%</text>
+    <text style="fill: #d3ad84; font: 10px 'DejaVu Sans', Arial, sans-serif; text-anchor: end" x="631.3992" y="39.8312" transform="rotate(-0 631.3992 39.8312)">ZERO-PAYOFF MASS: 43.6% · THEORY 44.0%</text>
    </g>
   </g>
  </g>

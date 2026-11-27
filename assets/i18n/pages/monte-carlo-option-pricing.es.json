@@ -259,7 +259,6 @@
     "Figure 02 · Discounted payoffs: zero mass and a right tail": "Figura 02 · Remuneraciones descontadas: masa cero y cola derecha",
     "100,000 exact-terminal observations, seed 1001. The atom at zero is stated separately; histogram heights integrate to the observed mass in the plotted positive-payoff window. Positive payoffs above 65 are omitted from the window, not from the price estimate.": "100.000 observaciones exactas, semillas 1001. El átomo a cero se indica por separado; las alturas del histograma se integran a la masa observada en la ventana de pago positivo trazada. Se omiten de la ventana los pagos positivos por encima de 65, no de la estimación del precio.",
     "Density per currency unit": "Densidad por unidad monetaria",
-    "ZERO-PAYOFF MASS: 43.6%": "MASA DE CERO-PAYOFF: 43,6%",
     "Digital contracts and nonlinearity": "Contratos digitales y no linealidad",
     "A cash-or-nothing digital call with cash amount": "Una opción de compra digital en efectivo o nada con dinero en efectivo",
     "has": "tiene",
@@ -1608,7 +1607,8 @@
     "Markowitz Portfolio Theory · Quant Basics — Álvaro Cutillas": "Markowitz: teoría de carteras · Fundamentos quant — Álvaro Cutillas",
     "Systematic Trading Strategy · Quant Basics — Álvaro Cutillas": "Estrategia de trading sistemático · Fundamentos quant — Álvaro Cutillas",
     "VaR & Expected Shortfall · Quant Basics — Álvaro Cutillas": "Valor en riesgo y pérdida esperada en cola · Fundamentos quant — Álvaro Cutillas",
-    "Yield Curve Modelling · Quant Basics - Alvaro Cutillas": "Modelización de la curva de tipos · Fundamentos quant — Álvaro Cutillas"
+    "Yield Curve Modelling · Quant Basics - Alvaro Cutillas": "Modelización de la curva de tipos · Fundamentos quant — Álvaro Cutillas",
+    "ZERO-PAYOFF MASS: 43.6% · THEORY 44.0%": "MASA DE PAGO NULO: 43,6% · TEÓRICA 44,0%"
   },
   "fragments": {
     "% tails.": "% en cada extremo.",

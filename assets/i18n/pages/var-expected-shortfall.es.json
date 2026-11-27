@@ -550,7 +550,6 @@
     "Rockafellar and Uryasev (2000)": "Rockafellar y Uryasev (2000)",
     ", is especially useful when scenario losses are affine in portfolio positions. Each excess-loss term is convex, so the scenario objective is convex in the threshold and the positions.": ", es especialmente útil cuando las pérdidas del escenario son afín en posiciones de cartera. Cada término de exceso de pérdida es convexo, por lo que el objetivo del escenario es convexo en el umbral y las posiciones.",
     "Figure 15 · Rockafellar–Uryasev representation": "Figura 15 · Representación Rockafellar–Uryasev",
-    "The discrete distribution from Figure 15 at 95% confidence. The minimum of θ + E[(L−θ)₊]/0.05 is 46; a minimizer is the 95% quantile 10.": "La distribución discreta a partir de la Figura 15 con confianza del 95%. El mínimo de E[(L ⁇ )+]/0.05 es 46; un minimizador es el cuantil del 95% 10.",
     "Auxiliary threshold θ": "Umbral auxiliar",
     "Objective value": "Valor objetivo",
     "Convexity turns a tail average into optimization": "Convexity convierte un promedio de cola en optimización",
@@ -1587,7 +1586,8 @@
     "Markowitz Portfolio Theory · Quant Basics — Álvaro Cutillas": "Markowitz: teoría de carteras · Fundamentos quant — Álvaro Cutillas",
     "Monte Carlo Option Pricing · Quant Basics — Álvaro Cutillas": "Monte Carlo: valoración de opciones · Fundamentos quant — Álvaro Cutillas",
     "Systematic Trading Strategy · Quant Basics — Álvaro Cutillas": "Estrategia de trading sistemático · Fundamentos quant — Álvaro Cutillas",
-    "Yield Curve Modelling · Quant Basics - Alvaro Cutillas": "Modelización de la curva de tipos · Fundamentos quant — Álvaro Cutillas"
+    "Yield Curve Modelling · Quant Basics - Alvaro Cutillas": "Modelización de la curva de tipos · Fundamentos quant — Álvaro Cutillas",
+    "The discrete distribution from Figure 02 at 95% confidence. The minimum of θ + E[(L−θ)₊]/0.05 is 46; a minimizer is the 95% quantile 10.": "La distribución discreta a partir de la Figura 02 con confianza del 95%. El mínimo de E[(L ⁇ )+]/0.05 es 46; un minimizador es el cuantil del 95% 10."
   },
   "fragments": {
     "% tails.": "% en cada extremo.",

@@ -578,7 +578,6 @@
     "Some reports display maximum drawdown as the positive magnitude": "Algunos informes muestran la reducción máxima como la magnitud positiva",
     ". This guide's curves and tables use the signed convention. Including initial wealth ensures that an entry fee or immediate first-period loss is not omitted from the drawdown calculation.": ". Las curvas y tablas de esta guía utilizan la convención firmada. La inclusión de la riqueza inicial garantiza que no se omite en el cálculo de la reducción una tasa de entrada o una pérdida inmediata del primer período.",
     "Figure 15 · Equity and drawdown paths": "Figura 15 · Vías de capital y de reducción",
-    "Same common-period strategy and buy-and-hold curves as Figure 15. Drawdown includes the initial wealth observation and is signed: zero at a high-water mark, negative below it.": "La misma estrategia de periodo común y las mismas curvas de compra y retención que la Figura 15. El descenso incluye la observación inicial de la riqueza y está firmado: cero en una marca de alta agua, negativo debajo de ella.",
     "The path matters as well as the endpoint": "La ruta importa, así como el punto final",
     "Strategy": "Estrategia",
     "Drawdown": "Caída desde máximos",
@@ -1586,7 +1585,8 @@
     "Markowitz Portfolio Theory · Quant Basics — Álvaro Cutillas": "Markowitz: teoría de carteras · Fundamentos quant — Álvaro Cutillas",
     "Monte Carlo Option Pricing · Quant Basics — Álvaro Cutillas": "Monte Carlo: valoración de opciones · Fundamentos quant — Álvaro Cutillas",
     "VaR & Expected Shortfall · Quant Basics — Álvaro Cutillas": "Valor en riesgo y pérdida esperada en cola · Fundamentos quant — Álvaro Cutillas",
-    "Yield Curve Modelling · Quant Basics - Alvaro Cutillas": "Modelización de la curva de tipos · Fundamentos quant — Álvaro Cutillas"
+    "Yield Curve Modelling · Quant Basics - Alvaro Cutillas": "Modelización de la curva de tipos · Fundamentos quant — Álvaro Cutillas",
+    "Same common-period strategy and buy-and-hold curves as Figure 10. Drawdown includes the initial wealth observation and is signed: zero at a high-water mark, negative below it.": "La misma estrategia de periodo común y las mismas curvas de compra y retención que la Figura 10. El descenso incluye la observación inicial de la riqueza y está firmado: cero en una marca de alta agua, negativo debajo de ella."
   },
   "fragments": {
     "% tails.": "% en cada extremo.",

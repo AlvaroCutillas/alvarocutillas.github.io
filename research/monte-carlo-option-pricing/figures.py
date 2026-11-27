@@ -1,5 +1,5 @@
 from figure_support import *
-from scipy.special import ndtri
+from scipy.special import ndtri, ndtr
 from scipy.stats import qmc
 from scipy.integrate import quad
 
@@ -37,7 +37,7 @@ def build():
     # A payoff distribution has an atom at zero, in addition to its positive tail.
     fig,ax=plt.subplots(figsize=(9.2,3.4));edges=np.linspace(0,65,66);positive=y[y>0];counts,_=np.histogram(positive,bins=edges);density=counts/(len(y)*np.diff(edges));centres=(edges[:-1]+edges[1:])/2
     ax.stairs(density,edges,color=ACC,lw=1.7);ax._hover_series=[{'label':'Positive-payoff density','color':ACC,'mode':'step','bins':edges.tolist(),'points':np.column_stack([centres,density]).tolist()}]
-    axbase(ax,'Discounted payoff','Density per currency unit');ax.text(.97,.86,f'ZERO-PAYOFF MASS: {(y==0).mean():.1%}',transform=ax.transAxes,ha='right',color=WARM,fontsize=10)
+    axbase(ax,'Discounted payoff','Density per currency unit');ax.text(.97,.86,f'ZERO-PAYOFF MASS: {(y==0).mean():.1%} · THEORY {ndtr(-0.15):.1%}',transform=ax.transAxes,ha='right',color=WARM,fontsize=10)
     out['zero_mass']=float((y==0).mean())
     save('distribution',fig,'Figure 03 · Discounted payoffs: zero mass and a right tail','100,000 exact-terminal observations, seed 1001. The atom at zero is stated separately; histogram heights integrate to the observed mass in the plotted positive-payoff window. Positive payoffs above 65 are omitted from the window, not from the price estimate.')
     # Independent repetitions assess coverage, unlike one attractive convergence trace.
