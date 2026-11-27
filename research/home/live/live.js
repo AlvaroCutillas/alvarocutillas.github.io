@@ -296,6 +296,13 @@
     let hist = new Float64Array(BINS), n = 0, sumS = 0, sumS2 = 0, conv = [], active = [], ripples = [];
     let rng = mulberry32(20240607), lo = 0, hi = 1, spawnAcc = 0, hudAcc = 0, fadeAcc = 0;
     const L = {};
+    const heroEl = cv.parentElement, stage = $('.hud-stage'), narrowMQ = matchMedia('(max-width: 760px)');
+    const mount = () => {
+      if (narrowMQ.matches && stage) { stage.append(trail, cv); }
+      else if (cv.parentElement !== heroEl) { heroEl.insertBefore(cv, heroEl.firstChild); heroEl.insertBefore(trail, cv); }
+    };
+    mount();
+    narrowMQ.addEventListener('change', mount);
     const S = surface(cv, s => {
       trail.width = cv.width; trail.height = cv.height;
       tctx.setTransform(s.dpr, 0, 0, s.dpr, 0, 0);
@@ -313,6 +320,14 @@
       const side = hr && hr.left - cr.left > w * 0.55 && hr.width < w * 0.4;
       L.narrow = narrow;
       L.x0 = narrow ? -10 : w * 0.015;
+      if (cv.parentElement === stage) {
+        // Gráfico propio dentro del panel (móvil): trayectorias a la izquierda, histograma a la derecha
+        L.narrow = true;
+        L.x0 = 6; L.x1 = w * 0.68; L.hx = L.x1 + 8; L.hw = Math.max(40, w - L.hx - 36);
+        L.labelX = w - 6; L.top = 14; L.bot = h - 16;
+        setRange();
+        return;
+      }
       if (side) {
         const end = hr.left - cr.left - 64;
         L.hw = clamp(w * 0.11, 110, 170);
@@ -464,7 +479,7 @@
 
     function step(dt) {
       if (!S.w) return;
-      const target = L.narrow ? 16 : 34;
+      const target = cv.parentElement === stage ? 14 : L.narrow ? 16 : 34;
       spawnAcc += dt * target / 1.4;
       while (spawnAcc >= 1 && active.length < target * 1.6) { spawn(); spawnAcc -= 1; }
       if (spawnAcc > 3) spawnAcc = 0;
@@ -632,7 +647,7 @@
       const X = v => box.l + ((v - xr[0]) / (xr[1] - xr[0])) * box.w, Y = v => box.t + ((yr[1] - v) / (yr[1] - yr[0])) * box.h;
       grid(c, box, X, Y, [0, 0.05, 0.1, 0.15, 0.2, 0.25], [-0.05, 0, 0.05, 0.1, 0.15], v => pct(v, 0), v => pct(v, 0));
       c.strokeStyle = 'rgba(236,238,241,0.2)'; c.beginPath(); c.moveTo(box.l, Y(0)); c.lineTo(box.r, Y(0)); c.stroke();
-      label(c, t('Annualised volatility') + ' →', box.r - 4, box.narrow ? box.t + 24 : box.b - 12, C.soft, 'right', 10.5);
+      if (!box.narrow) label(c, t('Annualised volatility') + ' →', box.r - 4, box.b - 12, C.soft, 'right', 10.5);
       label(c, '↑ ' + t('Annualised return'), box.l + 8, box.t + 8, C.soft, 'left', 10.5);
       const e = easeOut(p), k = Math.max(2, Math.floor(F.length * e));
       // Rayo de máxima razón μ/σ

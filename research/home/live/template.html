@@ -28,7 +28,7 @@
       <a href="#contact">Contact</a>
       <i class="nav-indicator" aria-hidden="true"></i>
     </div>
-    <button class="cmdk-open" type="button" aria-label="Open command palette"><kbd>⌘K</kbd></button>
+    <button class="cmdk-open" type="button" aria-label="Open command palette"><kbd>⌘K</kbd><span class="menu-label">Menu</span></button>
   </div>
 </nav>
 
@@ -54,6 +54,7 @@
         <span class="hud-title">Live Monte Carlo</span>
         <span class="hud-tag" translate="no">GBM · S₀ = 100 · T = 1</span>
       </div>
+      <div class="hud-stage" aria-hidden="true"></div>
       <dl class="hud-stats" translate="no">
         <div><dt>n</dt><dd data-hud="n">0</dd></div>
         <div><dt>Ê[S<sub>T</sub>]</dt><dd data-hud="mean">—</dd></div>
@@ -219,6 +220,7 @@
         <p class="surface-note reveal">Illustrative implied volatility surface · drag to rotate</p>
       </div>
     </div>
+    <p class="wrap swipe-hint" aria-hidden="true">Swipe to explore the 8 studies →</p>
     <div class="wrap basic-grid">
       <a class="project-card basic reveal" href="projects/black-scholes-basics.html" data-glyph="bs">
         <canvas class="glyph" aria-hidden="true"></canvas>

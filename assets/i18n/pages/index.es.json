@@ -957,7 +957,9 @@
     "Gamma Γ": "Gamma Γ",
     "Vega ν (per 1 vol pt)": "Vega ν (por punto de vol.)",
     "Theta Θ (per day)": "Theta Θ (por día)",
-    "Open the full study ↗": "Abrir el estudio completo ↗"
+    "Open the full study ↗": "Abrir el estudio completo ↗",
+    "Menu": "Menú",
+    "Swipe to explore the 8 studies →": "Desliza para ver los 8 estudios →"
   },
   "fragments": {
     "% tails.": "% en cada extremo.",
